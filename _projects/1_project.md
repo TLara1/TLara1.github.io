@@ -9,10 +9,12 @@ related_publications: true
 ---
 
 A time-independent coordinate transform $q_i\rightarrow Q_i$ and $p_i\rightarrow P_i$ is said to be canonical if it preserves Hamilton's equations of motion. Specifically, letting the new Hamiltonian $\mathcal{K}\left(Q_i,P_i\right)=\mathcal{H}\left(q\left(Q_i,P_i\right),p_i\left(Q_i,P_i\right)\right)$, then we have:
-\begin{align}
+
+\begin{equation}
     \dot{Q}_i&=\pdv{\mathcal{K}}{P_i}\\
     \dot{P}_i&=-\pdv{\mathcal{K}}{Q_i}
-\end{align}
+\end{equation}
+
 The most useful criteria for determining if a transform is canonical are \textit{Poisson brackets}. Given coordinates $q_i$ and $p_i$, the Poisson bracket of functions $Q_j\left(q_i,p_i\right)$ and $P_j\left(q_i,p_i\right)$ is given by:
 \begin{equation}
     \{Q_j,P_j\}=\sum_i\pdv{Q_j}{q_i}\pdv{P_j}{p_i}-\pdv{Q_j}{p_i}\pdv{P_j}{q_i}
