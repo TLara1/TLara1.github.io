@@ -16,6 +16,7 @@ A time-independent coordinate transform $$q_i\rightarrow Q_i$$ and $$p_i\rightar
 \begin{equation}
     \dot{Q}_i=\frac{\partial\mathcal{K}}{\partial P_i}
 \end{equation}
+
 \begin{equation
     \dot{P}_i=-\frac{\partial\mathcal{K}}{\partial Q_i}
 \end{equation}{
@@ -25,11 +26,19 @@ The most useful criteria for determining if a transform is canonical are \textit
     \{Q_j,P_j\}=\sum_i\frac{\partial Q_j}{\partial q_i}\frac{\partial P_j}{\partial p_i}-\frac{\partial Q_j}{\partial p_i}\frac{\partial P_j}{\partial q_i}
 \end{equation}
 We show that a transform is canonical if and only if:
+
 \begin{equation}
-    \{ Q_i,Q_j \}=0\label{cannonical 1}\\
-    \{P_i,P_j\}=0\\
+    \{ Q_i,Q_j \}=0\label{cannonical 1}
+\end{equation}
+
+\begin{equation}
+    \{P_i,P_j\}=0
+\end{equation}
+
+\begin{equation}
     \{Q_i,P_j\}=\delta_{ij}\label{cannonical 3}
 \end{equation}
+
 Poisson Brackets can also be used to determine if a function of coordinates $$f\left(p_i,q_i\right)$$ is constant in time:
 \begin{equation}\label{const function}
     \frac{df}{dt}=\sum_i\frac{\partial f}{\partial q_i}\dot{q}_i+\frac{\partial f}{\partial p_i}\dot{p}_i=\{f,\mathcal{H}\}
@@ -45,9 +54,11 @@ Letting $$F=S\left(q_i,P_i,t\right)-Q_iP_i$$, we have:
 \begin{equation}
     Q_i=\frac{\partial S}{\partial P_i}\label{transormned position coordinates}
 \end{equation}
+
 \begin{equation}
     p_i=\frac{\partial S}{\partial q_i}
 \end{equation}
+
 \begin{equation}
     \mathcal{K}=\mathcal{H}+\frac{\partial S}{\partial t}
 \end{equation}
@@ -77,6 +88,7 @@ We rewrite \cref{governing Newton Law} using polar coordinates, with the basis t
 \begin{equation}    
     \hat{e}_x=\cos{f}\hat{e}_r-\sin{f}\hat{e}_f
 \end{equation}
+
 \begin{equation}
     \hat{e}_f=\sin{f}\hat{e}_r+\cos{f}\hat{e}_f
 \end{equation}
@@ -84,9 +96,11 @@ It is not difficult to demonstrate:
 \begin{equation}
     \vec{r}=r\hat{e}_e
 \end{equation}
+
 \begin{equation}
     \vec{\dot{r}}=\dot{r}\hat{e}_r+r\dot{f}\hat{e}_f
 \end{equation}
+
 \begin{equation}
     \vec{\ddot{r}}=(\ddot{r}-{r}\dot{f}^2){\hat{e}_r}+(2\dot{r} \dot{f} + r \ddot{f})\hat{e}_f
 \end{equation}
