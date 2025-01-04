@@ -9,3 +9,7 @@ related_publications: true
 ---
 
 Test project
+
+$$\lambda$$
+
+Is it that easy?
