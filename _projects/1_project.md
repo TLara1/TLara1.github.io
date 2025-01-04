@@ -50,9 +50,48 @@ Letting $$F=S\left(q_i,P_i,t\right)-Q_iP_i$$, we have:
 \end{equation}
 \begin{equation}
     \mathcal{K}=\mathcal{H}+\frac{\partial S}{\partial t}
-\end{align}
+\end{equation}
 Now, suppose we want our transformed Hamiltonian, $$\mathcal{K}=0$$ such that $$\dot{Q}_i=0$$ and $$\dot{P}_i=0$$. So, we look for a generating function with:
 \begin{equation}\label{HJ Equation}
     \mathcal{H}\left(q_i,\frac{\partial S}{\partial q_i},t\right)+\frac{\partial S}{\partial t}=0
 \end{equation}
 This is the Hamilton-Jacobi Equation.
+
+\section{Kepler's Laws}
+\subsection{Newton's Law and Polar Coordinates}
+
+We consider two bodies of mass $$m_0'$$ and $$m_1'$$. Newton's law of gravitation can be written:
+\begin{equation} 
+    \ddot{\vec{r}}_0'=\frac{\mathcal{G}m_1'}{\parallel \vec{r}_1'-\vec{r}_0'\parallel^3}\left(\vec{r}_1'-\vec{r}_0'\right)
+\end{equation}
+\begin{equation}
+    \ddot{\vec{r}}_1'=-\frac{\mathcal{G}m_0'}{\parallel \vec{r}_1'-\vec{r}_0'\parallel^3}\left(\vec{r}_1'-\vec{r}_0'\right)
+\end{equation}
+Defining $$\vec{r}=\vec{r}_1'-\vec{r}_0'$$, we find:
+\begin{equation} \label{governing Newton Law}
+    \ddot{\vec{r}} = -\frac{\mathcal{G}m}{\parallel \vec{r}\parallel^3}\vec{r}
+\end{equation}
+we have defined $$m\coloneqq m_0'+m_1'$$.
+
+We rewrite \cref{governing Newton Law} using polar coordinates, with the basis transformation:
+\begin{equation}    
+    \hat{e}_x=\cos{f}\hat{e}_r-\sin{f}\hat{e}_f
+\end{equation}
+\begin{equation}
+    \hat{e}_f=\sin{f}\hat{e}_r+\cos{f}\hat{e}_f
+\end{equation}
+It is not difficult to demonstrate:
+\begin{equation}
+    \vec{r}=r\hat{e}_e
+\end{equation}
+\begin{equation}
+    \vec{\dot{r}}=\dot{r}\hat{e}_r+r\dot{f}\hat{e}_f
+\end{equation}
+\begin{equation}
+    \vec{\ddot{r}}=(\ddot{r}-{r}\dot{f}^2){\hat{e}_r}+(2\dot{r} \dot{f} + r \ddot{f})\hat{e}_f
+\end{equation}
+\cref{governing Newton Law} becomes:
+\begin{equation}\label{Netwon polar coordinates}
+    (\ddot{r}-{r}\dot{f}^2){\hat{e}_r}+(2\dot{r} \dot{f} + r \ddot{f})\hat{e}_f = -\frac{\mathcal{G}m}{r^2}\hat{e}_r
+\end{equation}
+The norm of the angular momentum vector is given by $$\parallel\vec{r}\times\dot{\vec{r}}\parallel= r^2\dot{f}$$. From \cref{Netwon polar coordinates}, $$\frac{d\left(r^2\dot{f}\right)}{dt}=0$$, a statement of the conservation of total angular momentum. Let us define the reduced mass: $$\mu\coloneqq\frac{m_0'm_1'}{m_0'+m_1'}$$, and defined the quantity $$L\coloneqq\mu\parallel\vec{r}\times\dot{\vec{r}}\parallel=\mu r^2\dot{f}$$. 
