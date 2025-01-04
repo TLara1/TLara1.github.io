@@ -43,16 +43,16 @@ A generating function $$F$$ generates a canonical transformation from coordinate
 \end{equation}
 Letting $$F=S\left(q_i,P_i,t\right)-Q_iP_i$$, we have:
 \begin{equation}
-    Q_i=\pdv{S}{P_i}\label{transormned position coordinates}
+    Q_i=\frac{\partial S}{\partial P_i}\label{transormned position coordinates}
 \end{equation}
 \begin{equation}
-    p_i=\pdv{S}{q_i}
+    p_i=\frac{\partial S}{\partial q_i}
 \end{equation}
 \begin{equation}
-    \mathcal{K}=\mathcal{H}+\pdv{S}{t}
+    \mathcal{K}=\mathcal{H}+\frac{\partial S}{\partial t}
 \end{align}
 Now, suppose we want our transformed Hamiltonian, $$\mathcal{K}=0$$ such that $$\dot{Q}_i=0$$ and $$\dot{P}_i=0$$. So, we look for a generating function with:
 \begin{equation}\label{HJ Equation}
-    \mathcal{H}\left(q_i,\pdv{S}{q_i},t\right)+\pdv{S}{t}=0
+    \mathcal{H}\left(q_i,\frac{\partial S}{\partial q_i},t\right)+\frac{\partial S}{\partial t}=0
 \end{equation}
 This is the Hamilton-Jacobi Equation.
