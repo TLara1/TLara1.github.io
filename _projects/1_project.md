@@ -9,7 +9,6 @@ related_publications: false
 ---
 
 <h2> Introduction</h2>
-\section{Introduction}
 The study of celestial bodies is perhaps one of the most well-studied problems in physics. In particular, one of the early triumphs of Einstein's theory of relativity was explaining the classically unexplainable precession of Mercury's perihelion. Many texts on relativity present a proof of Mercury's relativistic precession, but without an explanation of non-relativistic sources of precession, this result is somewhat meaningless. 
 
 In these notes, we take a classical approach to the three-body problem, examining how other planets affect Mercury's perihelion before turning to the relativistic effect. We assume all bodies are perfect spherical point masses with no spin.
