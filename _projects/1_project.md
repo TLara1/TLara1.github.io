@@ -440,7 +440,7 @@ We have used \eqref{p def} and \eqref{v^2 equation}. To transform $$P_2$$ and $$
 Considering the $$z$$ component of the angular momentum yields:
 
 \begin{equation}
-    \left(\vec{r}\times\dot{\vec{r}}\right)_z=p_\phi=P_2
+    \left(\vec{r}\times\dot{\vec{r}}\right)_{z} = p_{\phi}=P_2
 \end{equation}
 
 As $$L$$ is the norm of the angular momentum, and the angular momentum of the system is normal to the orbital plane, the $$z$$ component of the angular momentum is given by $$P_3=L\cos{I}$$, a projection of the angular momentum onto the $$z$$ axis. With \eqref{L defintion} in summary:
@@ -461,17 +461,17 @@ As $$L$$ is the norm of the angular momentum, and the angular momentum of the sy
 Having expressed our transformed momenta in orbital elements, we must do the same for our transformed position coordinates. We solve for $$S$$ by integrating \eqref{S_t derivative}-\eqref{S_r derivative}:
 
 \begin{equation}
-    S=-P_1t+P_2\phi+\int\sqrt{P_3^2-\frac{P_2^2}{\sin^2\theta}}d\theta+\int\sqrt{2\mu P_1+\frac{2\mathcal{G}\mu^2 m}{r}-\frac{P_3^2}{r^2}}dr
+    S=-P_1 t+P_2 \phi+\int\sqrt{P_3^2-\frac{P_2^2}{\sin^2\theta}}d\theta+\int\sqrt{2\mu P_1+\frac{2\mathcal{G}\mu^2 m}{r}-\frac{P_3^2}{r^2}}dr
 \end{equation}
 
 Using \eqref{transormned position coordinates}:
 
 \begin{equation}
-    Q_1 = frac{\partial {S}{\partial P_1} = -t + \mu \int \frac{dr}{\sqrt{2\mu\left(P_1 + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_3^2}{r^2}}} = -t + \mu I_1
+    Q_1 = frac{\partial {S}{\partial P_{1}} = -t + \mu \int \frac{dr}{\sqrt{2\mu\left(P_{1} + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_3^2}{r^2}}} = -t + \mu I_1
 \end{equation}
 
 \begin{equation}
-    Q_2 = frac{\partial {S}{\partial P_2} = \phi - P_2 \int \frac{d\theta}{\sin^2\theta\sqrt{P_3^2 - \frac{P_2^2}{\sin^2\theta}}} = \phi - P_2 I_3
+    Q_2 = frac{\partial {S}{\partial P_{2}} = \phi - P_{2} \int \frac{d\theta}{\sin^2\theta\sqrt{P_{3}^2 - \frac{P_{2}^2}{\sin^2\theta}}} = \phi - P_2 I_3
 \end{equation}
 
 \begin{equation}
