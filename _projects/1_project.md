@@ -327,11 +327,11 @@ We begin by identifying the Two-Body Hamiltonian in Cartesian coordinates. From 
 \end{equation}
 Via the Euler-Lagrange Equation, \eqref{governing Newton Law} is recovered:
 \begin{equation}
-    \frac{d}{dt}\left(\pdv{\mathcal{L}}{\dot{\vec{r}}}\right)-\pdv{\mathcal{L}}{\vec{r}}=0\rightarrow\mu\ddot{\vec{r}}+\frac{\mathcal{G}\mu m}{\parallel\vec{r}\parallel^3}\vec{r}=0
+    \frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\dot{\vec{r}}}\right)-\frac{\partial \mathcal{L}}{\vec{r}}=0\rightarrow\mu\ddot{\vec{r}}+\frac{\mathcal{G}\mu m}{\parallel\vec{r}\parallel^3}\vec{r}=0
 \end{equation}
 We can now write the Hamiltonian using:
 \begin{equation
-    \vec{p}=\pdv{\mathcal{L}}{\dot{\vec{r}}}=\mu\dot{\vec{r}}\label{p def}
+    \vec{p}=\frac{\partial \mathcal{L}}{\dot{\vec{r}}}=\mu\dot{\vec{r}}\label{p def}
 \end{equation}
 \begin{equation
     \mathcal{H}=p\dot{r}-\mathcal{L}=\frac{1}{2\mu}\parallel\vec{p}\parallel^2-\frac{\mathcal{G}\mu m}{\parallel\vec{r}\parallel}
@@ -370,12 +370,12 @@ Again, it can be shown that this transform satisfies \eqref{cannonical 1}-\eqref
     \mathcal{H}=\frac{1}{2\mu}\left(p_r^2+\frac{p_\theta^2}{r^2}+\frac{p_\phi^2}{r^2\sin^2{\theta}}\right)-\frac{\mathcal{G}\mu m}{r}
 \end{equation}
 
-<h3Action-Angle Variables</h3>
+<h3>Action-Angle Variables</h3>
 We now find a canonical transform, $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ such that our transformed Hamiltonian $$\mathcal{K}$$ is a function of only momenta, $$\mathcal{K}\left(P_i\right)$$. Transformed position coordinates are known as _angles_ and transformed momenta are known as _actions_.
 
 Utilizing the Hamilton-Jacobi Equation (\eqref{HJ Equation}) with a generating function $$S\left(r,\theta,\phi;P_1,P_2,P_3;t\right)$$, where $$P_1$$, $$P_2$$, and $$P_3$$ are constants of motion because the transformed Hamiltonian $$\mathcal{K}$$ is independent of $$Q_i$$. The Hamilton-Jacobi Equation is:
 \begin{equation}
-    \frac{1}{2\mu}\left(\left(\pdv{S}{r}\right)^2+\frac{1}{r^2}\left(\pdv{S}{\theta}\right)^2+\frac{1}{r^2\sin^2{\theta}}\left(\pdv{S}{\phi}\right)^2\right)-\frac{\mathcal{G}\mu m}{r}+\pdv{S}{t}=0
+    \frac{1}{2\mu}\left(\left(\frac{\partial S}{\partial r}\right)^2+\frac{1}{r^2}\left(\frac{\partial S}{\partial \theta}\right)^2+\frac{1}{r^2\sin^2{\theta}}\left(\frac{\partial S}{\partial \phi}\right)^2\right)-\frac{\mathcal{G}\mu m}{r}+\frac{\partial \partial S}{t}=0
 \end{equation}
 Separating $$S$$: $$S\left(r,\theta,\phi;P_1,P_2,P_3;t\right)=S_r\left(r;P_i\right)+S_\theta\left(\theta;P_i\right)+S_\phi\left(\phi;P_i\right)+S_t\left(P_i;t\right)$$, we find:
 \begin{equation}
@@ -398,7 +398,7 @@ We find:
     \left(\frac{dS_r}{dr}\right)^2 + \frac{P_3}{r^2} - \frac{2\mathcal{G}\mu^2 m}{r} = 2\mu P_1 \label{S_r derivative}
 \end{equation}
 
-Now we identify the three constants of motion, $$P_1$$, $$P_2$$, and $$P_3$$. As $$\pdv{\mathcal{H}}{t}=0$$, the energy of the system is conserved.
+Now we identify the three constants of motion, $$P_1$$, $$P_2$$, and $$P_3$$. As $$\frac{\partial \mathcal{H}}{\partial t}=0$$, the energy of the system is conserved.
 \begin{equation}
     P_1=\frac{1}{2\mu}\left(p_r^2+\frac{p_\theta^2}{r^2}+\frac{p_\phi^2}{r^2\sin^2{\theta}}\right)-\frac{\mathcal{G}\mu m}{r}
 \end{equation}
