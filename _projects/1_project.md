@@ -254,9 +254,9 @@ The angle between the _ascending node_ with the $$x$$ axis is the longitude of t
 {% include figure.liquid loading="eager" path="assets/img/Figures_Cmech_Notes/Orbital_3d_elemenets_v2.png" title="Orbital element diagram 3d" class="img-fluid rounded z-depth-0" %}
 Three-dimensional orbital angles.
 
-Schematically, the transformation from a vector $$\vec{r}$$ in the reference plane to a vector $$\vec{q}$$ in the orbiting ellipse can be thought of as three consecutive rotations. First, we rotate around the $$z$$ axis by $$\Omega$$ to align the $$x$$ axis with the ascending node. Then we rotate around the $$x$$ axis by $$I$$ to set the $$z$$ axis normal to the orbiting plane. Lastly, we rotate around the $$z$$ axis by $$\omega$$ to set the $$x$$ axis along the semi-minor axis. In summary we define the rotation:
+Schematically, the transformation from a vector $$\vec{r}$$ in the reference plane to a vector $$\vec{q}$$ in the orbiting ellipse can be thought of as three consecutive rotations. First, we rotate around the $$z$$ axis by $$\Omega$$ to align the $$x$$ axis with the ascending node. Then we rotate around the $$x$$ axis by $$I$$ to set the $$z$$ axis normal to the orbiting plane. Lastly, we rotate around the $$z$$ axis by $$\omega$$ to set the $$x$$ axis along the semi-minor axis. In summary, we define the rotation:
 
-\begin{equation}
+$$\begin{equation}
     \begin{pmatrix}
         x \\
         y \\
@@ -283,22 +283,22 @@ Schematically, the transformation from a vector $$\vec{r}$$ in the reference pla
         q_2 \\
         q_3 \\
     \end{pmatrix}
-\end{equation}
+\end{equation}$$
 
 \begin{equation}
-    \vec{r}=\bm{R}_\Omega \bm{R}_I \bm{R}_\omega=\bm{R}_{xq}\vec{q}
+    \vec{r}=**R**_{\Omega} **R**_I **R**_{\omega} = **R**_{xq} \vec{q}
 \end{equation}
 
-The matrix $$\bm{R}_{xq}$$ transforms $$\vec{q}$$ to $$\vec{r}$$ and $$\bm{R}_{qx}=\bm{R}_{xq}^{-1}$$ does the inverse. 
+The matrix $$**R**_{xq}$$ transforms $$\vec{q}$$ to $$\vec{r}$$ and $$**R**_{qx}=**R**_{xq}^{-1}$$ does the inverse.
 
-\begin{equation}
+$$\begin{equation}
     \bm{R}_{xq}=        
     \begin{pmatrix}
         \cos{\Omega}\cos{\omega}-\sin{\Omega}\cos{I}\sin{\omega} & -\cos{\Omega}\sin{\omega}-\sin{\Omega}\cos{I}\cos{\omega}  & \sin{\Omega}\sin{I}\\
         \sin{\Omega}\cos{\omega}+\cos{\Omega}\cos{I}\sin{\omega} & -\sin{\Omega}\sin{\omega}+\cos{\Omega}\cos{I}\cos{\omega}  & -\cos{\Omega}\sin{I}\\
         \sin{I}\sin{\omega} & \sin{I}\cos{\omega} & \cos{I} \\
     \end{pmatrix}  
-\end{equation}
+\end{equation}$$
 
 From \eqref{q_1 eq} and \eqref{q_2 eq}, and because the orbit is by definition in the orbiting ellipse setting $$q_3=0$$:
 
