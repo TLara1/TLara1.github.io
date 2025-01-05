@@ -4,7 +4,7 @@ title: Celestial Mechanics and the Precession of Mercury
 description:
 img: assets/img/12.jpg
 importance: 1
-category: work
+category: physics
 related_publications: false
 ---
 
