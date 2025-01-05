@@ -433,47 +433,77 @@ Considering the $$z$$ component of the angular momentum yields:
     \left(\vec{r}\times\dot{\vec{r}}\right)_z=p_\phi=P_2
 \end{equation}
 As $$L$$ is the norm of the angular momentum, and the angular momentum of the system is normal to the orbital plane, the $$z$$ component of the angular momentum is given by $$P_3=L\cos{I}$$, a projection of the angular momentum onto the $$z$$ axis. With \eqref{L defintion} in summary:
-\begin{align}
-    P_1=-\frac{\mathcal{G}\mu m}{2a}\label{P_1 def}\\
-    P_3=\mu\sqrt{\mathcal{G}ma\left(1-e^2\right)}\label{P_3 def}\\
-    P_2=P_3\cos{I}\label{P_2 def}
-\end{align}
+\begin{equation}
+    P_1 = -\frac{\mathcal{G}\mu m}{2a} \label{P_1 def}
+\end{equation}
+
+\begin{equation}
+    P_3 = \mu \sqrt{\mathcal{G}ma\left(1 - e^2\right)} \label{P_3 def}
+\end{equation}
+
+\begin{equation}
+    P_2 = P_3 \cos{I} \label{P_2 def}
+\end{equation}
+
 
 Having expressed our transformed momenta in orbital elements, we must do the same for our transformed position coordinates. We solve for $$S$$ by integrating \eqref{S_t derivative}-\eqref{S_r derivative}:
 \begin{equation}
     S=-P_1t+P_2\phi+\int\sqrt{P_3^2-\frac{P_2^2}{\sin^2\theta}}d\theta+\int\sqrt{2\mu P_1+\frac{2\mathcal{G}\mu^2 m}{r}-\frac{P_3^2}{r^2}}dr
 \end{equation}
 Using \eqref{transormned position coordinates}:
-\begin{align}
-    Q_1=\pdv{S}{P_1}=-t+\mu\int\frac{dr}{\sqrt{2\mu\left(P_1+\frac{\mathcal{G}\mu m}{r}\right)-\frac{P_3^2}{r^2}}}=-t+\mu I_1\\
-    Q_2=\pdv{S}{P_2}=\phi-P_2\int\frac{d\theta}{\sin^2\theta\sqrt{P_3^2-\frac{P_2^2}{\sin^2\theta}}}=\phi-P_2I_3\\   
-    Q_3=\pdv{S}{P_3}=P_3\int\frac{d\theta}{\sqrt{P_3^2-\frac{P_2^2}{\sin^2\theta}}}-P_3\int\frac{dr}{r^2\sqrt{2\mu\left(P_1+\frac{\mathcal{G}\mu m}{r}\right)-\frac{P_3^2}{r^2}}}=P_3\left(I_4-I_2\right)
-\end{align}
+\begin{equation}
+    Q_1 = \pdv{S}{P_1} = -t + \mu \int \frac{dr}{\sqrt{2\mu\left(P_1 + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_3^2}{r^2}}} = -t + \mu I_1
+\end{equation}
+
+\begin{equation}
+    Q_2 = \pdv{S}{P_2} = \phi - P_2 \int \frac{d\theta}{\sin^2\theta\sqrt{P_3^2 - \frac{P_2^2}{\sin^2\theta}}} = \phi - P_2 I_3
+\end{equation}
+
+\begin{equation}
+    Q_3 = \pdv{S}{P_3} = P_3 \int \frac{d\theta}{\sqrt{P_3^2 - \frac{P_2^2}{\sin^2\theta}}} - P_3 \int \frac{dr}{r^2 \sqrt{2\mu \left(P_1 + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_3^2}{r^2}}} = P_3 \left(I_4 - I_2\right)
+\end{equation}
 Evaluating the integrals in order, starting with $$I_1$$. With \eqref{P_1 def} and \eqref{P_3 def}:
 \begin{equation}
     I_1=\frac{1}{\mu\sqrt{\mathcal{G}m}}\int\frac{rdr}{\sqrt{-\frac{r^2}{a}+2r-a\left(1-e^2\right)}}
 \end{equation}
 With \eqref{r E equation}, $$dr=ae\sin EdE$$, and $$I_1$$ becomes:
-\begin{align*}
-    I_1=\frac{1}{\mu\sqrt{\mathcal{G}m}}\int\frac{a^2e\left(1-e\cos E\right)\sin EdE}{\sqrt{-{a\left(1-e\cos E\right)^2}+2a\left(1-e\cos E\right)-a\left(1-e^2\right)}}\\
-    =\frac{a^\frac{3}{2}}{\mu\sqrt{\mathcal{G}m}}\int\left(1-e\cos E\right)dE
-\end{align*}
+\begin{equation}
+    I_1 = \frac{1}{\mu \sqrt{\mathcal{G}m}} \int \frac{a^2 e \left(1 - e \cos E\right) \sin E \, dE}{\sqrt{- a \left(1 - e \cos E\right)^2 + 2a \left(1 - e \cos E\right) - a \left(1 - e^2\right)}}
+\end{equation}
+
+\begin{equation}
+    = \frac{a^{\frac{3}{2}}}{\mu \sqrt{\mathcal{G}m}} \int \left(1 - e \cos E\right) dE
+\end{equation}
 Solving and plugging in \eqref{Kepler eq}
 \begin{equation}
     I_1=\frac{a^\frac{3}{2}}{\mu\sqrt{\mathcal{G}m}}\left(E-e\sin E\right)=\frac{\mathcal{M}}{\mu n}
 \end{equation}
 Now for $$I_2$$, with the same substitutions:
-\begin{align*}
-    I_2=\frac{1}{\mu\sqrt{\mathcal{G}m}}\int\frac{dr}{r\sqrt{-\frac{r^2}{a}+2r-a\left(1-e^2\right)}}\\
-    =\frac{1}{\mu\sqrt{\mathcal{G}m}}\int\frac{e\sin EdE}{\left(1-e\cos{E}\right)\sqrt{-{a\left(1-e\cos E\right)^2}+2a\left(1-e\cos E\right)-a\left(1-e^2\right)}}\\
-    =\frac{1}{\mu\sqrt{\mathcal{G}ma}}\int\frac{dE}{1-e\cos{E}}\\
-\end{align*}
+\begin{equation}
+    I_2 = \frac{1}{\mu \sqrt{\mathcal{G}m}} \int \frac{dr}{r \sqrt{-\frac{r^2}{a} + 2r - a\left(1 - e^2\right)}}
+\end{equation}
+
+\begin{equation}
+    = \frac{1}{\mu \sqrt{\mathcal{G}m}} \int \frac{e \sin E \, dE}{\left(1 - e \cos{E}\right) \sqrt{- a \left(1 - e \cos E\right)^2 + 2a \left(1 - e \cos E\right) - a \left(1 - e^2\right)}}
+\end{equation}
+
+\begin{equation}
+    = \frac{1}{\mu \sqrt{\mathcal{G}ma}} \int \frac{dE}{1 - e \cos{E}}
+\end{equation}
+
 Now, with \eqref{cos f equation}:
-\begin{align}
-    \cos{f}=\frac{a}{r}\left(\cos{E}-e\right)=\frac{\cos{E}-e}{1-e\cos E}\\
-    \sin{f}=\sqrt{1-\cos^2 f}=\sqrt{1-e^2}\frac{\sin E}{1-e\cos E}\\
-    -\sin fdf=\frac{\left(e^2-1\right)\sin E}{\left(1-e\cos E\right)^2}dE\rightarrow df= \frac{\sqrt{1-e^2}}{1-e\cos E}dE  
-\end{align}
+\begin{equation}
+    \cos{f} = \frac{a}{r} \left( \cos{E} - e \right) = \frac{\cos{E} - e}{1 - e \cos E}
+\end{equation}
+
+\begin{equation}
+    \sin{f} = \sqrt{1 - \cos^2 f} = \sqrt{1 - e^2} \frac{\sin E}{1 - e \cos E}
+\end{equation}
+
+\begin{equation}
+    -\sin f \, df = \frac{\left(e^2 - 1\right) \sin E}{\left(1 - e \cos E\right)^2} \, dE \quad \rightarrow \quad df = \frac{\sqrt{1 - e^2}}{1 - e \cos E} \, dE
+\end{equation}
+
 Thus, $$I_2$$ becomes:
 \begin{equation}
     I_2=\frac{1}{\mu\sqrt{\mathcal{G}ma\left(1-e^2\right)}}\int df=\frac{f}{P_3}
