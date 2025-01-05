@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Celestial Mechanics and the Precession of Mercury
-description: with background image
+description:
 img: assets/img/12.jpg
 importance: 1
 category: work
@@ -84,7 +84,7 @@ Defining $$\vec{r}=\vec{r}_1'-\vec{r}_0'$$, we find:
 \end{equation}
 we have defined $$m\equiv m_0'+m_1'$$.
 
-We rewrite \cref{governing Newton Law} using polar coordinates, with the basis transformation:
+We rewrite \eqref{governing Newton Law} using polar coordinates, with the basis transformation:
 \begin{equation}    
     \hat{e}_x=\cos{f}\hat{e}_r-\sin{f}\hat{e}_f
 \end{equation}
@@ -104,8 +104,8 @@ It is not difficult to demonstrate:
 \begin{equation}
     \vec{\ddot{r}}=(\ddot{r}-{r}\dot{f}^2){\hat{e}_r}+(2\dot{r} \dot{f} + r \ddot{f})\hat{e}_f
 \end{equation}
-\cref{governing Newton Law} becomes:
+\eqref{governing Newton Law} becomes:
 \begin{equation}\label{Netwon polar coordinates}
     (\ddot{r}-{r}\dot{f}^2){\hat{e}_r}+(2\dot{r} \dot{f} + r \ddot{f})\hat{e}_f = -\frac{\mathcal{G}m}{r^2}\hat{e}_r
 \end{equation}
-The norm of the angular momentum vector is given by $$\parallel\vec{r}\times\dot{\vec{r}}\parallel= r^2\dot{f}$$. From \cref{Netwon polar coordinates}, $$\frac{d\left(r^2\dot{f}\right)}{dt}=0$$, a statement of the conservation of total angular momentum. Let us define the reduced mass: $$\mu\equiv\frac{m_0'm_1'}{m_0'+m_1'}$$, and defined the quantity $$L\equiv\mu\parallel\vec{r}\times\dot{\vec{r}}\parallel=\mu r^2\dot{f}$$. 
+The norm of the angular momentum vector is given by $$\parallel\vec{r}\times\dot{\vec{r}}\parallel= r^2\dot{f}$$. From \eqref{Netwon polar coordinates}, $$\frac{d\left(r^2\dot{f}\right)}{dt}=0$$, a statement of the conservation of total angular momentum. Let us define the reduced mass: $$\mu\equiv\frac{m_0'm_1'}{m_0'+m_1'}$$, and defined the quantity $$L\equiv\mu\parallel\vec{r}\times\dot{\vec{r}}\parallel=\mu r^2\dot{f}$$. 
