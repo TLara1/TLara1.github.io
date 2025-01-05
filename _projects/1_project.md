@@ -255,9 +255,9 @@ $$\begin{pmatrix}
     x \\
     y \\
     z \\
-\end{pmatrix}$$ 
-$$=$$
-$$\begin{pmatrix}
+\end{pmatrix}
+=
+\begin{pmatrix}
     \cos{\Omega} &  -\sin{\Omega} & 0\\\
     \sin{\Omega} &  \cos{\Omega} & 0\\\
     0 & 0 & 1 \\\
