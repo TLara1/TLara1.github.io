@@ -250,6 +250,7 @@ The angle between the \textit{ascending node} with the $$x$$ axis is the longitu
 Three-dimensional orbital angles.
 
 Schematically, the transformation from a vector $$\vec{r}$$ in the reference plane to a vector $$\vec{q}$$ in the orbiting ellipse can be thought of as three consecutive rotations. First, we rotate around the $$z$$ axis by $$\Omega$$ to align the $$x$$ axis with the ascending node. Then we rotate around the $$x$$ axis by $$I$$ to set the $$z$$ axis normal to the orbiting plane. Lastly, we rotate around the $$z$$ axis by $$\omega$$ to set the $$x$$ axis along the semi-minor axis. In summary, we define the rotation:
+
 \begin{equation}
     \begin{pmatrix}
         x \\
@@ -278,10 +279,12 @@ Schematically, the transformation from a vector $$\vec{r}$$ in the reference pla
         q_3 \\
     \end{pmatrix}
 \end{equation}
+
 \begin{equation}
-    \vec{r}=\bm{R}_\Omega \bm{R}_I \bm{R}_\omega=\bm{R}_{xq}\vec{q}
-\end{euqation}
-The matrix $$\bm{R}_{xq}$$ transforms $$\vec{q}$$ to $$\vec{r}$$ and $$\bm{R}_{qx}=\bm{R}_{xq}^{-1}$$ does the inverse. 
+    \vec{r}=\bf{R}_\Omega \bf{R}_{I} \bf{R}_{\omega} = \bf{R}_{xq}\vec{q}
+\end{equation}
+
+The matrix $$\bm{R}_{xq}$$ transforms $$\vec{q}$$ to $$\vec{r}$$ and $$\bm{R}_{qx} =\bm{R}_{xq}^{-1}$$ does the inverse. 
 \begin{equation}
     \bm{R}_{xq}=        
     \begin{pmatrix}
