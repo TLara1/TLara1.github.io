@@ -130,7 +130,7 @@ Solving for $$u$$:
 
 \begin{equation} u=\mathcal{G}m\frac{\mu^2}{L^2}\left(1+e\cos{f}\right) \end{equation}
 
-Where $$e$$ is a dimensionless parameter, the \textit{eccentricity} which we are free to set. Solving for $$r$$:
+Where $$e$$ is a dimensionless parameter, the _eccentricity_  which we are free to set. Solving for $$r$$:
 
 \begin{equation}\label{r equation kepler} r=\frac{L^2}{\mathcal{G}m\mu^2}\frac{1}{1+e\cos{f}} \end{equation}
 
@@ -243,59 +243,63 @@ In summary:
 
 <h3>III.III Three-Dimensional Orbital Elements</h3>
 
-To characterize the orientation of our ellipse in three-dimensional space with respect to a reference plane $$x,y,z$$, we introduce three new angles. The first is the inclination $$i$$, describing the tilt of the orbiting ellipse with respect to the $$x,y$$ plane. Any orbit with a nonzero inclination will intersect the reference plane at two points. The \textit{ascending node} is the point at which the body passes from negative $$z$$ to positive $$z$$, and the \textit{descending node} is the opposite.
-The angle between the \textit{ascending node} with the $$x$$ axis is the longitude of the ascending node, noted by $$\Omega$$. Finally, $$\omega$$, the argument of the pericentre determines the angle from the $$x,y$$ of the pericentre along the orbiting plane.
+To characterize the orientation of our ellipse in three-dimensional space with respect to a reference plane $$x,y,z$$, we introduce three new angles. The first is the inclination $$i$$, describing the tilt of the orbiting ellipse with respect to the $$x,y$$ plane. Any orbit with a nonzero inclination will intersect the reference plane at two points. The _ascending node_ is the point at which the body passes from negative $$z$$ to positive $$z$$, and the _descending node_ is the opposite.
+The angle between the _ascending node_ with the $$x$$ axis is the longitude of the ascending node, noted by $$\Omega$$. Finally, $$\omega$$, the argument of the pericentre determines the angle from the $$x,y$$ of the pericentre along the orbiting plane.
 
 {% include figure.liquid loading="eager" path="assets/img/Figures_Cmech_Notes/Orbital_3d_elemenets_v2.png" title="Orbital element diagram 3d" class="img-fluid rounded z-depth-0" %}
 Three-dimensional orbital angles.
 
 Schematically, the transformation from a vector $$\vec{r}$$ in the reference plane to a vector $$\vec{q}$$ in the orbiting ellipse can be thought of as three consecutive rotations. First, we rotate around the $$z$$ axis by $$\Omega$$ to align the $$x$$ axis with the ascending node. Then we rotate around the $$x$$ axis by $$I$$ to set the $$z$$ axis normal to the orbiting plane. Lastly, we rotate around the $$z$$ axis by $$\omega$$ to set the $$x$$ axis along the semi-minor axis. In summary, we define the rotation:
 
-\begin{pmatrix}
-    x \\
-    y \\
-    z \\
-\end{pmatrix} 
-=
-\begin{pmatrix}
-    \cos{\Omega} &  -\sin{\Omega} & 0\\
-    \sin{\Omega} &  \cos{\Omega} & 0\\
-    0 & 0 & 1 \\
-\end{pmatrix}     
-    \begin{pmatrix}
-    1 &  0 & 0\\
-    0 &  \cos{I} & -\sin{I}\\
-    0 & \sin{I} & \cos{I}\\
-\end{pmatrix}  
-    \begin{pmatrix}
-    \cos{\omega} &  -\sin{\omega} & 0\\
-    \sin{\omega} &  \cos{\omega} & 0\\
-    0 & 0 & 1 \\
-\end{pmatrix}  
-\begin{pmatrix}
-    q_1 \\
-    q_2 \\
-    q_3 \\
-\end{pmatrix}
-
 \begin{equation}
-    \vec{r}=\bf{R}_\Omega \bf{R}_{I} \bf{R}_{\omega} = \bf{R}_{xq}\vec{q}
+    \begin{pmatrix}
+        x \\\
+        y \\\
+        z \\\
+    \end{pmatrix} 
+    =
+    \begin{pmatrix}
+        \cos{\Omega} &  -\sin{\Omega} & 0\\\
+        \sin{\Omega} &  \cos{\Omega} & 0\\\
+        0 & 0 & 1 \\\
+    \end{pmatrix}     
+        \begin{pmatrix}
+        1 &  0 & 0\\\
+        0 &  \cos{I} & -\sin{I}\\\
+        0 & \sin{I} & \cos{I}\\\
+    \end{pmatrix}  
+        \begin{pmatrix}
+        \cos{\omega} &  -\sin{\omega} & 0\\\
+        \sin{\omega} &  \cos{\omega} & 0\\\
+        0 & 0 & 1 \\\
+    \end{pmatrix}  
+    \begin{pmatrix}
+        q_1 \\\
+        q_2 \\\
+        q_3 \\\
+    \end{pmatrix}
+\end{equation}
+\begin{equation}
+    \vec{r}=\**R**_\Omega **R**_{I} \**R**_{\omega} = \**R**_{xq}\vec{q}
 \end{equation}
 
-The matrix $$\bf{R}_{xq}$$ transforms $$\vec{q}$$ to $$\vec{r}$$ and $$\bf{R}_{qx} =\bf{R}_{xq}^{-1}$$ does the inverse. 
-    
-\bf{R}_{xq}=\begin{pmatrix}
-    \cos{\Omega}\cos{\omega}-\sin{\Omega}\cos{I}\sin{\omega} & -\cos{\Omega}\sin{\omega}-\sin{\Omega}\cos{I}\cos{\omega}  & \sin{\Omega}\sin{I}\\
-    \sin{\Omega}\cos{\omega}+\cos{\Omega}\cos{I}\sin{\omega} & -\sin{\Omega}\sin{\omega}+\cos{\Omega}\cos{I}\cos{\omega}  & -\cos{\Omega}\sin{I}\\
-    \sin{I}\sin{\omega} & \sin{I}\cos{\omega} & \cos{I} \\
-\end{pmatrix}  
-    
+The matrix $$\**R**_{xq} $$ transforms $$\vec{q}$$ to $$\vec{r}$$ and $$\**R**_{qx} =\**R**_{xq}^{-1}$$ does the inverse. 
+
+\begin{equation}
+    \**R**_{xq}=\begin{pmatrix}
+        \cos{\Omega}\cos{\omega}-\sin{\Omega}\cos{I}\sin{\omega} & -\cos{\Omega}\sin{\omega}-\sin{\Omega}\cos{I}\cos{\omega}  & \sin{\Omega}\sin{I}\\\
+        \sin{\Omega}\cos{\omega}+\cos{\Omega}\cos{I}\sin{\omega} & -\sin{\Omega}\sin{\omega}+\cos{\Omega}\cos{I}\cos{\omega}  & -\cos{\Omega}\sin{I}\\\
+        \sin{I}\sin{\omega} & \sin{I}\cos{\omega} & \cos{I} \\\
+    \end{pmatrix}  
+\end{equation}
+
 From \eqref{q_1 eq} and \eqref{q_2 eq}, and because the orbit is by definition in the orbiting ellipse setting $$q_3=0$$:
 \begin{equation}
-    \vec{q}=    \begin{pmatrix}
-        a\left(\cos{E}-e\right)\\
-        a\sqrt{1-e^2}\sin{E}\\
-        0 \\
+    \vec{q}=    
+    \begin{pmatrix}
+        a\left(\cos{E}-e\right)\\\
+        a\sqrt{1-e^2}\sin{E}\\\
+        0 \\\
     \end{pmatrix} 
 \end{equation}
 Utilizing our transform and polar coordinates, $$q_1=r\cos{f}$$, $$q_2=r\sin{f}$$:
