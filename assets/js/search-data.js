@@ -402,7 +402,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-celestial-mechanics-and-the-precession-of-mercury",
           title: 'Celestial Mechanics and the Precession of Mercury',
-          description: "with background image",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-project-2",
