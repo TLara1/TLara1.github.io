@@ -400,7 +400,12 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-2",
+          section: "News",},{id: "projects-celestial-mechanics-and-the-precession-of-mercury",
+          title: 'Celestial Mechanics and the Precession of Mercury',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_project/";
+            },},{id: "projects-project-2",
           title: 'project 2',
           description: "a project with a background image and giscus comments",
           section: "Projects",handler: () => {
@@ -440,11 +445,6 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "projects-celestial-mechanics-and-the-precession-of-mercury",
-          title: 'Celestial Mechanics and the Precession of Mercury',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/Celestial_Mechanics/";
             },},{
         id: 'social-email',
         title: 'email',
