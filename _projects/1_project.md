@@ -211,7 +211,7 @@ This is Kepler's Equation, where $$\mathcal{M}$$ is known as the mean anomaly.
 
 <h3>Two-Dimensional Orbital Elliptical Elements</h3>
 
-{% include figure.liquid loading="eager" path="assets/img/Figures_Cmech_Notes/Orbital_Element_diagram_v2.png" title="Orbital element diagram" class="img-fluid rounded z-depth-1" %}
-Orbital elements, definition of $a$, $e$, $E$, and $f$.
+{% include figure.liquid loading="eager" path="assets/img/Figures_Cmech_Notes/Orbital_Element_diagram_v2.png" title="Orbital element diagram" class="img-fluid rounded z-depth-0" %}
+Orbital elements, definition of $$a$$, $$e$$, $$E$$, and $$f$$.
 
 
