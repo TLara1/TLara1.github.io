@@ -410,11 +410,68 @@ and the angular momentum along the $$z$$ axis:
 \begin{equation}
     P_2=p_\phi
 \end{equation}
-are also conserved. It is not hard to show this conservation via \eqref{const function}. $$\{P_1,\mathcal{H}\}=0$$, $$\{P_2^2,\mathcal{H}\}=0$$, and $$\{P_3,\mathcal{H}\}=0$$. It can also be shown that these variables are canonical (\eqref{cannonical 1}-\eqref{cannonical 3}): $$\{P_1,P_2^2\}=0$$, $$\{P_1,P_3\}=0$$, and $$\{P_2^2,P_3\}=0$$. 
+are also conserved. It is not hard to show this conservation via \eqref{const function}. $$\[P_1,\mathcal{H}\]=0$$, $$\[P_2^2,\mathcal{H}\]=0$$, and $$\[P_3,\mathcal{H}\]=0$$. It can also be shown that these variables are canonical (\eqref{cannonical 1}-\eqref{cannonical 3}): $$\[P_1,P_2^2\]=0$$, $$\[P_1,P_3\]=0$$, and $$\[P_2^2,P_3\]=0$$. 
 
 We use our previous results to expand $$P_1$$, $$P_2$$, and $$P_3$$ into orbital elements. $$P_1$$ is the total energy of the system:
 \begin{equation}
     P_1=\frac{\mu}{2}\parallel\dot{\vec{r}}\parallel^2-\frac{\mathcal{G}\mu m}{r}=\mathcal{G}\mu m\left(\frac{1}{r}-\frac{1}{2a}\right)-\frac{\mathcal{G}\mu m}{r}=-\frac{\mathcal{G}\mu m}{2a}
 \end{equation}
-We have used \eqref{p def} and \eqref{v^2 equation}. 
+We have used \eqref{p def} and \eqref{v^2 equation}. To transform $$P_2$$ and $$P_3$$, we need to consider the angular momentum of the system. Recalling that $$L\equiv\mu\parallel\vec{r}\times\dot{\vec{r}}\parallel$$ and using \eqref{polar transform end}-\eqref{polar transform end}:
+\begin{equation}
+    L\equiv\parallel\vec{r}\times{\vec{p}}\parallel=\sqrt{p_\theta^2+\frac{p_\phi^2}{\sin^2{\theta}}}\rightarrow P_3=L
+\end{equation}
+Considering the $$z$$ component of the angular momentum yields:
+\begin{equation}
+    \left(\vec{r}\times\dot{\vec{r}}\right)_z=p_\phi=P_2
+\end{equation}
+As $$L$$ is the norm of the angular momentum, and the angular momentum of the system is normal to the orbital plane, the $$z$$ component of the angular momentum is given by $$P_3=L\cos{I}$$, a projection of the angular momentum onto the $$z$$ axis. With \eqref{L defintion} in summary:
+\begin{align}
+    P_1=-\frac{\mathcal{G}\mu m}{2a}\label{P_1 def}\\
+    P_3=\mu\sqrt{\mathcal{G}ma\left(1-e^2\right)}\label{P_3 def}\\
+    P_2=P_3\cos{I}\label{P_2 def}
+\end{align}
 
+Having expressed our transformed momenta in orbital elements, we must do the same for our transformed position coordinates. We solve for $$S$$ by integrating \eqref{S_t derivative}-\eqref{S_r derivative}:
+\begin{equation}
+    S=-P_1t+P_2\phi+\int\sqrt{P_3^2-\frac{P_2^2}{\sin^2\theta}}d\theta+\int\sqrt{2\mu P_1+\frac{2\mathcal{G}\mu^2 m}{r}-\frac{P_3^2}{r^2}}dr
+\end{equation}
+Using \eqref{transormned position coordinates}:
+\begin{align}
+    Q_1=\pdv{S}{P_1}=-t+\mu\int\frac{dr}{\sqrt{2\mu\left(P_1+\frac{\mathcal{G}\mu m}{r}\right)-\frac{P_3^2}{r^2}}}=-t+\mu I_1\\
+    Q_2=\pdv{S}{P_2}=\phi-P_2\int\frac{d\theta}{\sin^2\theta\sqrt{P_3^2-\frac{P_2^2}{\sin^2\theta}}}=\phi-P_2I_3\\   
+    Q_3=\pdv{S}{P_3}=P_3\int\frac{d\theta}{\sqrt{P_3^2-\frac{P_2^2}{\sin^2\theta}}}-P_3\int\frac{dr}{r^2\sqrt{2\mu\left(P_1+\frac{\mathcal{G}\mu m}{r}\right)-\frac{P_3^2}{r^2}}}=P_3\left(I_4-I_2\right)
+\end{align}
+Evaluating the integrals in order, starting with $$I_1$$. With \eqref{P_1 def} and \eqref{P_3 def}:
+\begin{equation}
+    I_1=\frac{1}{\mu\sqrt{\mathcal{G}m}}\int\frac{rdr}{\sqrt{-\frac{r^2}{a}+2r-a\left(1-e^2\right)}}
+\end{equation}
+With \eqref{r E equation}, $$dr=ae\sin EdE$$, and $$I_1$$ becomes:
+\begin{align*}
+    I_1=\frac{1}{\mu\sqrt{\mathcal{G}m}}\int\frac{a^2e\left(1-e\cos E\right)\sin EdE}{\sqrt{-{a\left(1-e\cos E\right)^2}+2a\left(1-e\cos E\right)-a\left(1-e^2\right)}}\\
+    =\frac{a^\frac{3}{2}}{\mu\sqrt{\mathcal{G}m}}\int\left(1-e\cos E\right)dE
+\end{align*}
+Solving and plugging in \eqref{Kepler eq}
+\begin{equation}
+    I_1=\frac{a^\frac{3}{2}}{\mu\sqrt{\mathcal{G}m}}\left(E-e\sin E\right)=\frac{\mathcal{M}}{\mu n}
+\end{equation}
+Now for $$I_2$$, with the same substitutions:
+\begin{align*}
+    I_2=\frac{1}{\mu\sqrt{\mathcal{G}m}}\int\frac{dr}{r\sqrt{-\frac{r^2}{a}+2r-a\left(1-e^2\right)}}\\
+    =\frac{1}{\mu\sqrt{\mathcal{G}m}}\int\frac{e\sin EdE}{\left(1-e\cos{E}\right)\sqrt{-{a\left(1-e\cos E\right)^2}+2a\left(1-e\cos E\right)-a\left(1-e^2\right)}}\\
+    =\frac{1}{\mu\sqrt{\mathcal{G}ma}}\int\frac{dE}{1-e\cos{E}}\\
+\end{align*}
+Now, with \eqref{cos f equation}:
+\begin{align}
+    \cos{f}=\frac{a}{r}\left(\cos{E}-e\right)=\frac{\cos{E}-e}{1-e\cos E}\\
+    \sin{f}=\sqrt{1-\cos^2 f}=\sqrt{1-e^2}\frac{\sin E}{1-e\cos E}\\
+    -\sin fdf=\frac{\left(e^2-1\right)\sin E}{\left(1-e\cos E\right)^2}dE\rightarrow df= \frac{\sqrt{1-e^2}}{1-e\cos E}dE  
+\end{align}
+Thus, $$I_2$$ becomes:
+\begin{equation}
+    I_2=\frac{1}{\mu\sqrt{\mathcal{G}ma\left(1-e^2\right)}}\int df=\frac{f}{P_3}
+\end{equation}
+Now for $$I_3$$. With \eqref{P_2 def} and \eqref{P_3 def}:
+\begin{equation}
+    I_3=\frac{1}{P_2}\int\frac{\cos Id\theta}{\sin^2\theta\sqrt{1-\frac{\cos^2 I}{\sin^2\theta}}}
+\end{equation}
+To proceed, we must consult spherical trigonometric relationships. In \eqref{spherical trig fig}, we plot the angle created by the body's position on the orbital plane and the reference plane. Because $$\theta$$ is measured from the $$z$$ axis towards the reference plane, we must invert $$I$$.
