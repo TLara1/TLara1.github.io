@@ -292,7 +292,7 @@ $$\begin{equation}
 The matrix $$\bf{R}_{xq}$$ transforms $$\vec{q}$$ to $$\vec{r}$$ and $$\bf{R}_{qx}=\bf{R}_{xq}^{-1}$$ does the inverse.
 
 $$\begin{equation}
-    \bm{R}_{xq}=        
+    \bf{R}_{xq}=        
     \begin{pmatrix}
         \cos{\Omega}\cos{\omega}-\sin{\Omega}\cos{I}\sin{\omega} & -\cos{\Omega}\sin{\omega}-\sin{\Omega}\cos{I}\cos{\omega}  & \sin{\Omega}\sin{I}\\
         \sin{\Omega}\cos{\omega}+\cos{\Omega}\cos{I}\sin{\omega} & -\sin{\Omega}\sin{\omega}+\cos{\Omega}\cos{I}\cos{\omega}  & -\cos{\Omega}\sin{I}\\
