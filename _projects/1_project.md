@@ -323,7 +323,7 @@ Utilizing our transform and polar coordinates, $$q_1=r\cos{f}$$, $$q_2=r\sin{f}$
 \end{equation}
 
 <h2>IV. Expansion of the Two-Body Hamiltonian in Delaunay Variables}\label{Expansion of the Two-Body Hamiltonian in Delaunay Variables</h2>
-Here we write the Hamiltonian for the two-body system and solve the Hamilton-Jacobi Equation to find a set of action-angle variables that are constant over time.
+Here we write the Hamiltonian for the two-body system and solve the Hamilton-Jacobi Equation to find a set of gle variables that are constant over time.
 
 We begin by identifying the Two-Body Hamiltonian in Cartesian coordinates. From \eqref{governing Newton Law}, the Lagrangian of the system is given by:
 \begin{equation}
@@ -374,7 +374,7 @@ Again, it can be shown that this transform satisfies \eqref{cannonical 1}-\eqref
     \mathcal{H}=\frac{1}{2\mu}\left(p_r^2+\frac{p_\theta^2}{r^2}+\frac{p_\phi^2}{r^2\sin^2{\theta}}\right)-\frac{\mathcal{G}\mu m}{r}
 \end{equation}
 
-<h3>Action-Angle Variables</h3>
+<h3>IV.I Action-Angle Variables</h3>
 We now find a canonical transform, $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ such that our transformed Hamiltonian $$\mathcal{K}$$ is a function of only momenta, $$\mathcal{K}\left(P_i\right)$$. Transformed position coordinates are known as _angles_ and transformed momenta are known as _actions_.
 
 Utilizing the Hamilton-Jacobi Equation (\eqref{HJ Equation}) with a generating function $$S\left(r,\theta,\phi;P_1,P_2,P_3;t\right)$$, where $$P_1$$, $$P_2$$, and $$P_3$$ are constants of motion because the transformed Hamiltonian $$\mathcal{K}$$ is independent of $$Q_i$$. The Hamilton-Jacobi Equation is:
