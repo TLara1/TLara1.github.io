@@ -251,62 +251,13 @@ Three-dimensional orbital angles.
 
 Schematically, the transformation from a vector $$\vec{r}$$ in the reference plane to a vector $$\vec{q}$$ in the orbiting ellipse can be thought of as three consecutive rotations. First, we rotate around the $$z$$ axis by $$\Omega$$ to align the $$x$$ axis with the ascending node. Then we rotate around the $$x$$ axis by $$I$$ to set the $$z$$ axis normal to the orbiting plane. Lastly, we rotate around the $$z$$ axis by $$\omega$$ to set the $$x$$ axis along the semi-minor axis. In summary, we define the rotation:
 
-$$\begin{equation}
-\begin{pmatrix}
-    x \\
-    y \\
-    z \\
-\end{pmatrix}
-
-=
-
-\begin{pmatrix}
-    \cos{\Omega} &  -\sin{\Omega} & 0\\
-    \sin{\Omega} &  \cos{\Omega} & 0\\
-    0 & 0 & 1 \\
-\end{pmatrix}
-\end{equation}$$   
-
-$$\begin{pmatrix}
-    1 &  0 & 0\\\
-    0 &  \cos{I} & -\sin{I}\\\
-    0 & \sin{I} & \cos{I}\\\
-\end{pmatrix}$$  
-$$\begin{pmatrix}
-    \cos{\omega} &  -\sin{\omega} & 0\\\
-    \sin{\omega} &  \cos{\omega} & 0\\\
-    0 & 0 & 1 \\\
-\end{pmatrix}$$  
-$$\begin{pmatrix}
-    q_1 \\\
-    q_2 \\\
-    q_3 \\\
-\end{pmatrix}$$
-
 \begin{equation}
     \vec{r}=**R**_\{Omega} **R**_{I} **R**_{\omega} = **R**_{xq} \vec{q}
 \end{equation}
 
-The matrix $$**R**_{xq} $$ transforms $$\vec{q}$$ to $$\vec{r}$$ and $$**R**_{qx} =**R**_{xq}^{-1}$$ does the inverse. 
+The matrix $$**R**_{xq} $$ transforms $$\vec{q}$$ to $$\vec{r}$$ and $$**R**_{qx} =**R**_{xq}^{-1}$$ does the inverse. $$**R**_\{Omega}$$,  $$**R**_{I}$$, and $$**R**_{\omega}$$ are rotation matrices about the $$z$$, $$x$$, and $$z$$ axis. 
 
-\begin{equation}
-    **R**_{xq}=\begin{pmatrix}
-        \cos{\Omega}\cos{\omega}-\sin{\Omega}\cos{I}\sin{\omega} & -\cos{\Omega}\sin{\omega}-\sin{\Omega}\cos{I}\cos{\omega}  & \sin{\Omega}\sin{I}\\\
-        \sin{\Omega}\cos{\omega}+\cos{\Omega}\cos{I}\sin{\omega} & -\sin{\Omega}\sin{\omega}+\cos{\Omega}\cos{I}\cos{\omega}  & -\cos{\Omega}\sin{I}\\\
-        \sin{I}\sin{\omega} & \sin{I}\cos{\omega} & \cos{I} \\\
-    \end{pmatrix}  
-\end{equation}
-
-From \eqref{q_1 eq} and \eqref{q_2 eq}, and because the orbit is by definition in the orbiting ellipse setting $$q_3=0$$:
-\begin{equation}
-    \vec{q}=    
-    \begin{pmatrix}
-        a\left(\cos{E}-e\right)\\\
-        a\sqrt{1-e^2}\sin{E}\\\
-        0 \\\
-    \end{pmatrix} 
-\end{equation}
-Utilizing our transform and polar coordinates, $$q_1=r\cos{f}$$, $$q_2=r\sin{f}$$:
+From \eqref{q_1 eq} and \eqref{q_2 eq}, and because the orbit is by definition in the orbiting ellipse setting $$q_3=0$$. Utilizing our transform and polar coordinates, $$q_1=r\cos{f}$$, $$q_2=r\sin{f}$$:
 \begin{equation}
     \frac{x}{r}=\left(\cos{\Omega}\cos{\omega}-\sin{\Omega}\cos{I}\sin{\omega}\right)\cos{f}+\left(-\cos{\Omega}\sin{\omega}-\sin{\Omega}\cos{I}\cos{\omega}\right)\sin{f}\nonumber
 \end{equation}
