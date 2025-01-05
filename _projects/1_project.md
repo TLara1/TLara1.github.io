@@ -211,5 +211,5 @@ This is Kepler's Equation, where $$\mathcal{M}$$ is known as the mean anomaly.
 
 <h3>Two-Dimensional Orbital Elliptical Elements</h3>
 
-{% include figure.liquid loading="eager" path="assets/Figure/f" title="example image" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/Figures Cmech Notes/Orbital_Element_diagram_v2.png" title="example image" class="img-fluid rounded z-depth-1" %}
 This image can also have a caption. It's like magic.
