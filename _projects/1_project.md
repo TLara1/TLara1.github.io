@@ -110,6 +110,63 @@ It is not difficult to demonstrate:
 \end{equation}
 The norm of the angular momentum vector is given by $$\parallel\vec{r}\times\dot{\vec{r}}\parallel= r^2\dot{f}$$. From \eqref{Netwon polar coordinates}, $$\frac{d\left(r^2\dot{f}\right)}{dt}=0$$, a statement of the conservation of total angular momentum. Let us define the reduced mass: $$\mu\equiv\frac{m_0'm_1'}{m_0'+m_1'}$$, and defined the quantity $$L\equiv\mu\parallel\vec{r}\times\dot{\vec{r}}\parallel=\mu r^2\dot{f}$$. 
 
-\subsection{Kepler's First Law} We rewrite \eqref{Netwon polar coordinates} in the $\hat{e}_r$ direction: \begin{equation}\label{r equation newton} \ddot{r}-\frac{L^2}{\mu^2r^3}=-\frac{\mathcal{G}m}{r^2} \end{equation} Performing the substitution, $u=\frac{1}{r}$: \begin{equation} \dot{r} = \dot{u}\frac{dr}{du} = -r^2\dot{u} = -r^2\dot{f}\frac{du}{df} = -\frac{L}{\mu}\frac{du}{df} \end{equation} \begin{equation} \ddot{r} = \frac{d}{dt}\left(-\frac{L}{\mu}\frac{du}{df}\right)=--\frac{L}{\mu}\dot{f}\frac{d^2u}{df^2} = -\left(\frac{L}{\mu}\right)^2u^2\frac{d^2u}{df^2} \end{equation} \eqref{Netwon polar coordinates} in terms of $u$: \begin{equation} \label{dif eq with u} -\left(\frac{L}{\mu}\right)^2u^2\frac{d^2u}{df^2} -\frac{L^2}{\mu^2r^3} = -\mathcal{G}mu^2 \rightarrow \frac{d^2u}{df^2} + u = \mathcal{G}m\frac{\mu^2}{L^2} \end{equation} Solving for $u$: \begin{equation} u=\mathcal{G}m\frac{\mu^2}{L^2}\left(1+e\cos{f}\right) \end{equation} Where $e$ is a dimensionless parameter, the \textit{eccentricity} which we are free to set. Solving for $r$: \begin{equation}\label{r equation kepler} r=\frac{L^2}{\mathcal{G}m\mu^2}\frac{1}{1+e\cos{f}} \end{equation} We consider only $0<e<1$, giving a closed orbit. Broadly speaking, the closer $e$ is to 0, the more circular an orbit is, and as $e$ approaches 1, the orbit becomes more elliptical. This is Kepler's First Law. Note that because $e$ is a constant we chose, $\dot{e}=0$.
 
-\subsection{Kepler's Third Law} We relate the orbit period $P$ with the orbit's semi-major axis $a$. Converting \eqref{r equation kepler} into Cartesian coordinates: \begin{equation} r+ex=\frac{L^2}{\mathcal{G}m\mu^2}\rightarrow y^2=\left(\frac{L^2}{\mathcal{G}m\mu^2}-ex\right)^2-x^2 \end{equation} We find the length $l$, of the orbiting ellipse by adding the zeros of our ellipse: \begin{equation} l= \frac{L^2}{\mathcal{G}m\mu^2}\frac{1}{e+1} - \frac{L^2}{\mathcal{G}m\mu^2}\frac{1}{e-1} = \frac{2L^2}{\mathcal{G}m\mu^2}\frac{1}{1-e^2} \end{equation} The semi-major axis $a$ is defined as half this length: \begin{equation}\label{a equation} a=\frac{L^2}{\mathcal{G}m\mu^2}\frac{1}{1-e^2} \end{equation} The height, $h$, of our ellipse is given by the maximum of y: \begin{equation} h=\frac{L^2}{\mathcal{G}m\mu^2}\frac{1}{\sqrt{1-e^2}} \end{equation} Finding the area, $A$, of the ellipse: \begin{equation} A=\pi\frac{lh}{2}=\pi\left(\frac{L^2}{\mathcal{G}m\mu^2}\right)^2\left({1-e^2}\right)^{-\frac{3}{2}}=\pi\sqrt{\frac{L^2}{\mathcal{G}m\mu^2}}a^{\frac{3}{2}} \end{equation} Using Kepler's second law, which is easily found by considering the area swept out in our ellipse over time: \begin{equation} \dot{A} \simeq \frac{1}{2}r^2\dot{f} = \frac{L}{2\mu} \end{equation} We can find the period $P$: \begin{equation} P=\frac{A}{\dot{A}}=\frac{2\pi a^{\frac{3}{2}}}{\sqrt{\mathcal{G}m}} \end{equation} We define the mean motion at $n=\frac{2\pi}{P}$ and summarize Kepler's Laws: \begin{align} n&=\sqrt{\frac{\mathcal{G}m}{a^3}}\label{n equation}\ L&=\mu\sqrt{\mathcal{G}ma\left(1-e^2\right)}=\mu na^2\sqrt{1-e^2}\label{L defintion}\ r&=\frac{a\left(1-e^2\right)}{1+e\cos{f}}\label{r theta equation} \end{align}
+<h3>II.II Kepler's First Law</h3>
+We rewrite \eqref{Netwon polar coordinates} in the $$\hat{e}_r$$ direction:
+
+\begin{equation}\label{r equation newton} \ddot{r}-\frac{L^2}{\mu^2r^3}=-\frac{\mathcal{G}m}{r^2} \end{equation}
+
+Performing the substitution, $$u=\frac{1}{r}$$:
+
+\begin{equation} \dot{r} = \dot{u}\frac{dr}{du} = -r^2\dot{u} = -r^2\dot{f}\frac{du}{df} = -\frac{L}{\mu}\frac{du}{df} \end{equation}
+
+\begin{equation} \ddot{r} = \frac{d}{dt}\left(-\frac{L}{\mu}\frac{du}{df}\right)=--\frac{L}{\mu}\dot{f}\frac{d^2u}{df^2} = -\left(\frac{L}{\mu}\right)^2u^2\frac{d^2u}{df^2} \end{equation}
+
+\eqref{Netwon polar coordinates} in terms of $$u$$:
+
+\begin{equation} \label{dif eq with u} -\left(\frac{L}{\mu}\right)^2u^2\frac{d^2u}{df^2} -\frac{L^2}{\mu^2r^3} = -\mathcal{G}mu^2 \rightarrow \frac{d^2u}{df^2} + u = \mathcal{G}m\frac{\mu^2}{L^2} \end{equation}
+
+Solving for $$u$$:
+
+\begin{equation} u=\mathcal{G}m\frac{\mu^2}{L^2}\left(1+e\cos{f}\right) \end{equation}
+
+Where $$e$$ is a dimensionless parameter, the \textit{eccentricity} which we are free to set. Solving for $$r$$:
+
+\begin{equation}\label{r equation kepler} r=\frac{L^2}{\mathcal{G}m\mu^2}\frac{1}{1+e\cos{f}} \end{equation}
+
+We consider only $$0<e<1$$, giving a closed orbit. Broadly speaking, the closer $$e$$ is to 0, the more circular an orbit is, and as $$e$$ approaches 1, the orbit becomes more elliptical. This is Kepler's First Law. Note that because $$e$$ is a constant we chose, $$\dot{e}=0$$.
+
+<h3>II.III Kepler's Third Law</h3>
+
+We relate the orbit period $$P$$ with the orbit's semi-major axis $$a$$. Converting \eqref{r equation kepler} into Cartesian coordinates:
+
+\begin{equation} r+ex=\frac{L^2}{\mathcal{G}m\mu^2}\rightarrow y^2=\left(\frac{L^2}{\mathcal{G}m\mu^2}-ex\right)^2-x^2 \end{equation}
+
+We find the length $$l$$, of the orbiting ellipse by adding the zeros of our ellipse:
+
+\begin{equation} l= \frac{L^2}{\mathcal{G}m\mu^2}\frac{1}{e+1} - \frac{L^2}{\mathcal{G}m\mu^2}\frac{1}{e-1} = \frac{2L^2}{\mathcal{G}m\mu^2}\frac{1}{1-e^2} \end{equation}
+
+The semi-major axis $$a$$ is defined as half this length:
+
+\begin{equation}\label{a equation} a=\frac{L^2}{\mathcal{G}m\mu^2}\frac{1}{1-e^2} \end{equation}
+
+The height, $$h$$, of our ellipse is given by the maximum of y:
+
+\begin{equation} h=\frac{L^2}{\mathcal{G}m\mu^2}\frac{1}{\sqrt{1-e^2}} \end{equation}
+
+Finding the area, $$A$$, of the ellipse:
+
+\begin{equation} A=\pi\frac{lh}{2}=\pi\left(\frac{L^2}{\mathcal{G}m\mu^2}\right)^2\left({1-e^2}\right)^{-\frac{3}{2}}=\pi\sqrt{\frac{L^2}{\mathcal{G}m\mu^2}}a^{\frac{3}{2}} \end{equation}
+
+Using Kepler's second law, which is easily found by considering the area swept out in our ellipse over time:
+
+\begin{equation} \dot{A} \simeq \frac{1}{2}r^2\dot{f} = \frac{L}{2\mu} \end{equation}
+
+We can find the period $$P$$:
+
+\begin{equation} P=\frac{A}{\dot{A}}=\frac{2\pi a^{\frac{3}{2}}}{\sqrt{\mathcal{G}m}} \end{equation}
+
+We define the mean motion at $$n=\frac{2\pi}{P}$$ and summarize Kepler's Laws:
+
+\begin{align} n&=\sqrt{\frac{\mathcal{G}m}{a^3}}\label{n equation}\ L&=\mu\sqrt{\mathcal{G}ma\left(1-e^2\right)}=\mu na^2\sqrt{1-e^2}\label{L defintion}\ r&=\frac{a\left(1-e^2\right)}{1+e\cos{f}}\label{r theta equation} \end{align}
+
