@@ -17,31 +17,31 @@ A time-independent coordinate transform $$q_i\rightarrow Q_i$$ and $$p_i\rightar
     \dot{Q}_i=\frac{\partial\mathcal{K}}{\partial P_i}
 \end{equation}
 
-\begin{equation
+\begin{equation}
     \dot{P}_i=-\frac{\partial\mathcal{K}}{\partial Q_i}
-\end{equation}{
+\end{equation}
 
 The most useful criteria for determining if a transform is canonical are \textit{Poisson brackets}. Given coordinates $$q_i$$ and $$p_i$$, the Poisson bracket of functions $$Q_j\left(q_i,p_i\right)$$ and $$P_j\left(q_i,p_i\right)$$ is given by:
 \begin{equation}
-    \{Q_j,P_j\}=\sum_i\frac{\partial Q_j}{\partial q_i}\frac{\partial P_j}{\partial p_i}-\frac{\partial Q_j}{\partial p_i}\frac{\partial P_j}{\partial q_i}
+    \{ Q_j,P_j \}=\sum_i\frac{\partial Q_j}{\partial q_i}\frac{\partial P_j}{\partial p_i}-\frac{\partial Q_j}{\partial p_i}\frac{\partial P_j}{\partial q_i}
 \end{equation}
 We show that a transform is canonical if and only if:
 
 \begin{equation}
-    \{ Q_i,Q_j \}=0\label{cannonical 1}
+    \{  Q_i,Q_j  \}=0\label{cannonical 1}
 \end{equation}
 
 \begin{equation}
-    \{P_i,P_j\}=0
+    \{ P_i,P_j \}=0
 \end{equation}
 
 \begin{equation}
-    \{Q_i,P_j\}=\delta_{ij}\label{cannonical 3}
+    \{ Q_i,P_j \}=\delta_{ij}\label{cannonical 3}
 \end{equation}
 
 Poisson Brackets can also be used to determine if a function of coordinates $$f\left(p_i,q_i\right)$$ is constant in time:
 \begin{equation}\label{const function}
-    \frac{df}{dt}=\sum_i\frac{\partial f}{\partial q_i}\dot{q}_i+\frac{\partial f}{\partial p_i}\dot{p}_i=\{f,\mathcal{H}\}
+    \frac{df}{dt}=\sum_i\frac{\partial f}{\partial q_i}\dot{q}_i+\frac{\partial f}{\partial p_i}\dot{p}_i=\{ f,\mathcal{H} \}
 \end{equation}
 
 \subsection{The Hamilton-Jacobi Equation}
