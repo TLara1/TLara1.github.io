@@ -23,25 +23,25 @@ A time-independent coordinate transform $$q_i\rightarrow Q_i$$ and $$p_i\rightar
 
 The most useful criteria for determining if a transform is canonical are _Poisson brackets_. Given coordinates $$q_i$$ and $$p_i$$, the Poisson bracket of functions $$Q_j\left(q_i,p_i\right)$$ and $$P_j\left(q_i,p_i\right)$$ is given by:
 \begin{equation}
-    \[ Q_j,P_j \]=\sum_i\frac{\partial Q_j}{\partial q_i}\frac{\partial P_j}{\partial p_i}-\frac{\partial Q_j}{\partial p_i}\frac{\partial P_j}{\partial q_i}
+    \[  Q_j,P_j  \]=\sum_i\frac{\partial Q_j}{\partial q_i}\frac{\partial P_j}{\partial p_i}-\frac{\partial Q_j}{\partial p_i}\frac{\partial P_j}{\partial q_i}
 \end{equation}
 We show that a transform is canonical if and only if:
 
 \begin{equation}
-    \[  Q_i,Q_j  \]=0\label{cannonical 1}
+    \[   Q_i,Q_j   \]=0\label{cannonical 1}
 \end{equation}
 
 \begin{equation}
-    \[ P_i,P_j \]=0
+    \[  P_i,P_j  \]=0
 \end{equation}
 
 \begin{equation}
-    \[ Q_i,P_j \]=\delta_{ij}\label{cannonical 3}
+    \[  Q_i,P_j  \]=\delta_{ij}\label{cannonical 3}
 \end{equation}
 
 Poisson Brackets can also be used to determine if a function of coordinates $$f\left(p_i,q_i\right)$$ is constant in time:
 \begin{equation}\label{const function}
-    \frac{df}{dt}=\sum_i\frac{\partial f}{\partial q_i}\dot{q}_i+\frac{\partial f}{\partial p_i}\dot{p}_i=\[ f,\mathcal{H} \]
+    \frac{df}{dt}=\sum_i\frac{\partial f}{\partial q_i}\dot{q}_i+\frac{\partial f}{\partial p_i}\dot{p}_i=\[  f,\mathcal{H}  \]
 \end{equation}
 
 <h3>I.II The Hamilton-Jacobi Equation</h3>
@@ -322,8 +322,8 @@ Utilizing our transform and polar coordinates, $$q_1=r\cos{f}$$, $$q_2=r\sin{f}$
     =\sin{I}\sin{(\omega+f)}\label{z orbital elements} 
 \end{equation}
 
-<h2>IV. Expansion of the Two-Body Hamiltonian in Delaunay Variables}\label{Expansion of the Two-Body Hamiltonian in Delaunay Variables</h2>
-Here we write the Hamiltonian for the two-body system and solve the Hamilton-Jacobi Equation to find a set of gle variables that are constant over time.
+<h2>IV. Expansion of the Two-Body Hamiltonian in Delaunay Variables}</h2>
+Here we write the Hamiltonian for the two-body system and solve the Hamilton-Jacobi Equation to find a set of action-angle variables that are constant over time.
 
 We begin by identifying the Two-Body Hamiltonian in Cartesian coordinates. From \eqref{governing Newton Law}, the Lagrangian of the system is given by:
 \begin{equation}
@@ -334,13 +334,17 @@ Via the Euler-Lagrange Equation, \eqref{governing Newton Law} is recovered:
     \frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\dot{\vec{r}}}\right)-\frac{\partial \mathcal{L}}{\vec{r}}=0\rightarrow\mu\ddot{\vec{r}}+\frac{\mathcal{G}\mu m}{\parallel\vec{r}\parallel^3}\vec{r}=0
 \end{equation}
 We can now write the Hamiltonian using:
-\begin{equation
+
+\begin{equation}
     \vec{p}=\frac{\partial \mathcal{L}}{\dot{\vec{r}}}=\mu\dot{\vec{r}}\label{p def}
 \end{equation}
-\begin{equation
+
+\begin{equation}
     \mathcal{H}=p\dot{r}-\mathcal{L}=\frac{1}{2\mu}\parallel\vec{p}\parallel^2-\frac{\mathcal{G}\mu m}{\parallel\vec{r}\parallel}
 \end{equation}
+
 From the spherical symmetry of the problem, it is natural for us to proceed using spherical coordinates. We perform another canonical transform from $$p_x$$, $$p_y$$, $$p_z$$, $$r_x$$, $$r_y$$, and $$r_z$$ coordinates to $$p_r$$, $$p_\phi$$, $$p_\theta$$, $$r$$, $$\theta$$, and $$\phi$$ coordinates:
+
 \begin{equation}
     r_x = r \cos{\phi} \sin{\theta} \label{polar transform start}
 \end{equation}
@@ -379,7 +383,7 @@ We now find a canonical transform, $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P
 
 Utilizing the Hamilton-Jacobi Equation (\eqref{HJ Equation}) with a generating function $$S\left(r,\theta,\phi;P_1,P_2,P_3;t\right)$$, where $$P_1$$, $$P_2$$, and $$P_3$$ are constants of motion because the transformed Hamiltonian $$\mathcal{K}$$ is independent of $$Q_i$$. The Hamilton-Jacobi Equation is:
 \begin{equation}
-    \frac{1}{2\mu}\left(\left(\frac{\partial S}{\partial r}\right)^2+\frac{1}{r^2}\left(\frac{\partial S}{\partial \theta}\right)^2+\frac{1}{r^2\sin^2{\theta}}\left(\frac{\partial S}{\partial \phi}\right)^2\right)-\frac{\mathcal{G}\mu m}{r}+\frac{\partial \partial S}{t}=0
+    \frac{1}{2\mu}\left(\left(\frac{\partial S}{\partial r}\right)^2+\frac{1}{r^2}\left(\frac{\partial S}{\partial \theta}\right)^2+\frac{1}{r^2\sin^2{\theta}}\left(\frac{\partial S}{\partial \phi}\right)^2\right)-\frac{\mathcal{G}\mu m}{r}+\frac{ \partial S}{\partial t}=0
 \end{equation}
 Separating $$S$$: $$S\left(r,\theta,\phi;P_1,P_2,P_3;t\right)=S_r\left(r;P_i\right)+S_\theta\left(\theta;P_i\right)+S_\phi\left(\phi;P_i\right)+S_t\left(P_i;t\right)$$, we find:
 \begin{equation}
@@ -414,7 +418,7 @@ and the angular momentum along the $$z$$ axis:
 \begin{equation}
     P_2=p_\phi
 \end{equation}
-are also conserved. It is not hard to show this conservation via \eqref{const function}. $$\[P_1,\mathcal{H}\]=0$$, $$\[P_2^2,\mathcal{H}\]=0$$, and $$\[P_3,\mathcal{H}\]=0$$. It can also be shown that these variables are canonical (\eqref{cannonical 1}-\eqref{cannonical 3}): $$\[P_1,P_2^2\]=0$$, $$\[P_1,P_3\]=0$$, and $$\[P_2^2,P_3\]=0$$. 
+are also conserved. It is not hard to show this conservation via \eqref{const function}. $$\[ P_1,\mathcal{H} \]=0$$, $$\[ P_2^2,\mathcal{H} \]=0$$, and $$\[ P_3,\mathcal{H} \]=0$$. It can also be shown that these variables are canonical (\eqref{cannonical 1}-\eqref{cannonical 3}): $$\[ P_1,P_2^2 \]=0$$, $$\[ P_1,P_3 \]=0$$, and $$\[ P_2^2,P_3 \]=0$$. 
 
 We use our previous results to expand $$P_1$$, $$P_2$$, and $$P_3$$ into orbital elements. $$P_1$$ is the total energy of the system:
 \begin{equation}
