@@ -8,8 +8,8 @@ category: work
 related_publications: true
 ---
 
-\textbf{\Large I. Mechanics}
-\textbf{I.I Canonical Transforms}
+<h2>I. Mechanics</h2>
+<h3>I.I Canonical Transforms</h3>
 
 A time-independent coordinate transform $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ is said to be canonical if it preserves Hamilton's equations of motion. Specifically, letting the new Hamiltonian $$\mathcal{K}\left(Q_i,P_i\right)=\mathcal{H}\left(q\left(Q_i,P_i\right),p_i\left(Q_i,P_i\right)\right)$$, then we have:
 
@@ -23,28 +23,28 @@ A time-independent coordinate transform $$q_i\rightarrow Q_i$$ and $$p_i\rightar
 
 The most useful criteria for determining if a transform is canonical are \textit{Poisson brackets}. Given coordinates $$q_i$$ and $$p_i$$, the Poisson bracket of functions $$Q_j\left(q_i,p_i\right)$$ and $$P_j\left(q_i,p_i\right)$$ is given by:
 \begin{equation}
-    \{ Q_j,P_j \}=\sum_i\frac{\partial Q_j}{\partial q_i}\frac{\partial P_j}{\partial p_i}-\frac{\partial Q_j}{\partial p_i}\frac{\partial P_j}{\partial q_i}
+    <p>{ Q_j,P_j }<p>=\sum_i\frac{\partial Q_j}{\partial q_i}\frac{\partial P_j}{\partial p_i}-\frac{\partial Q_j}{\partial p_i}\frac{\partial P_j}{\partial q_i}
 \end{equation}
 We show that a transform is canonical if and only if:
 
 \begin{equation}
-    \{  Q_i,Q_j  \}=0\label{cannonical 1}
+    <p>{  Q_i,Q_j  }<p>=0\label{cannonical 1}
 \end{equation}
 
 \begin{equation}
-    \{ P_i,P_j \}=0
+    <p>{ P_i,P_j }<p>=0
 \end{equation}
 
 \begin{equation}
-    \{ Q_i,P_j \}=\delta_{ij}\label{cannonical 3}
+    <p>{ Q_i,P_j }<p>=\delta_{ij}\label{cannonical 3}
 \end{equation}
 
 Poisson Brackets can also be used to determine if a function of coordinates $$f\left(p_i,q_i\right)$$ is constant in time:
 \begin{equation}\label{const function}
-    \frac{df}{dt}=\sum_i\frac{\partial f}{\partial q_i}\dot{q}_i+\frac{\partial f}{\partial p_i}\dot{p}_i=\{ f,\mathcal{H} \}
+    \frac{df}{dt}=\sum_i\frac{\partial f}{\partial q_i}\dot{q}_i+\frac{\partial f}{\partial p_i}\dot{p}_i=<p>{ f,\mathcal{H} }<p>
 \end{equation}
 
-\textbf{I.II The Hamilton-Jacobi Equation}
+<h3>I.II The Hamilton-Jacobi Equation</h3>
 
 A generating function $$F$$ generates a canonical transformation from coordinates $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ and a Hamiltonian $$\mathcal{H\rightarrow\mathcal{K}}$$. This generating function satisfies:
 \begin{equation}
@@ -68,8 +68,8 @@ Now, suppose we want our transformed Hamiltonian, $$\mathcal{K}=0$$ such that $$
 \end{equation}
 This is the Hamilton-Jacobi Equation.
 
-\textbf{\Large II. Kepler's Laws}
-\textbf{II.I Newton's Law and Polar Coordinates}
+<h2>II. Kepler's Laws</h2>
+<h3>II.I Newton's Law and Polar Coordinates</h3>
 
 We consider two bodies of mass $$m_0'$$ and $$m_1'$$. Newton's law of gravitation can be written:
 \begin{equation} 
