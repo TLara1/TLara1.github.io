@@ -253,9 +253,9 @@ Schematically, the transformation from a vector $$\vec{r}$$ in the reference pla
 
 \begin{equation}
     \begin{pmatrix}
-        x \\\
-        y \\\
-        z \\\
+        x \\
+        y \\
+        z \\
     \end{pmatrix} 
     =
     \begin{pmatrix}
@@ -268,7 +268,7 @@ Schematically, the transformation from a vector $$\vec{r}$$ in the reference pla
         0 &  \cos{I} & -\sin{I}\\\
         0 & \sin{I} & \cos{I}\\\
     \end{pmatrix}  
-        \begin{pmatrix}
+    \begin{pmatrix}
         \cos{\omega} &  -\sin{\omega} & 0\\\
         \sin{\omega} &  \cos{\omega} & 0\\\
         0 & 0 & 1 \\\
@@ -279,14 +279,14 @@ Schematically, the transformation from a vector $$\vec{r}$$ in the reference pla
         q_3 \\\
     \end{pmatrix}
 \end{equation}
-\begin{equation}
-    \vec{r}=\**R**_\Omega **R**_{I} \**R**_{\omega} = \**R**_{xq}\vec{q}
-\end{equation}
-
-The matrix $$\**R**_{xq} $$ transforms $$\vec{q}$$ to $$\vec{r}$$ and $$\**R**_{qx} =\**R**_{xq}^{-1}$$ does the inverse. 
 
 \begin{equation}
-    \**R**_{xq}=\begin{pmatrix}
+    \vec{r}=**R**_\{Omega} **R**_{I} **R**_{\omega} = **R**_{xq} \vec{q}
+
+The matrix $$**R**_{xq} $$ transforms $$\vec{q}$$ to $$\vec{r}$$ and $$**R**_{qx} =**R**_{xq}^{-1}$$ does the inverse. 
+
+\begin{equation}
+    **R**_{xq}=\begin{pmatrix}
         \cos{\Omega}\cos{\omega}-\sin{\Omega}\cos{I}\sin{\omega} & -\cos{\Omega}\sin{\omega}-\sin{\Omega}\cos{I}\cos{\omega}  & \sin{\Omega}\sin{I}\\\
         \sin{\Omega}\cos{\omega}+\cos{\Omega}\cos{I}\sin{\omega} & -\sin{\Omega}\sin{\omega}+\cos{\Omega}\cos{I}\cos{\omega}  & -\cos{\Omega}\sin{I}\\\
         \sin{I}\sin{\omega} & \sin{I}\cos{\omega} & \cos{I} \\\
