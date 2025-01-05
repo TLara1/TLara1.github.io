@@ -285,11 +285,11 @@ $$\begin{equation}
     \end{pmatrix}
 \end{equation}$$
 
-\begin{equation}
-    \vec{r}=**R**_{\Omega} **R**_I **R**_{\omega} = **R**_{xq} \vec{q}
-\end{equation}
+$$\begin{equation}
+    \vec{r}=\bf{R}_{\Omega} \bf{R}_I \bf{R}_{\omega} = \bf{R}_{xq} \vec{q}
+\end{equation}$$
 
-The matrix $$**R**_{xq}$$ transforms $$\vec{q}$$ to $$\vec{r}$$ and $$**R**_{qx}=**R**_{xq}^{-1}$$ does the inverse.
+The matrix $$\bf{R}_{xq}$$ transforms $$\vec{q}$$ to $$\vec{r}$$ and $$\bf{R}_{qx}=\bf{R}_{xq}^{-1}$$ does the inverse.
 
 $$\begin{equation}
     \bm{R}_{xq}=        
