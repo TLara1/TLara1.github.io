@@ -208,3 +208,8 @@ Integrating, we find:
 \begin{equation}\label{Kepler eq} E-e\sin{E}=n\left(t-t_0\right)\equiv\mathcal{M} \end{equation}
 
 This is Kepler's Equation, where $$\mathcal{M}$$ is known as the mean anomaly.
+
+<h3>Two-Dimensional Orbital Elliptical Elements</h3>
+
+{% include figure.liquid loading="eager" path="assets/Figure/f" title="example image" class="img-fluid rounded z-depth-1" %}
+This image can also have a caption. It's like magic.
