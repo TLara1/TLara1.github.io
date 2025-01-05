@@ -172,5 +172,39 @@ We define the mean motion at $$n=\frac{2\pi}{P}$$ and summarize Kepler's Laws:
 \begin{equation} L=\mu\sqrt{\mathcal{G}ma\left(1-e^2\right)}=\mu na^2\sqrt{1-e^2}\label{L defintion} \end{equation}
 \begin{equation} r=\frac{a\left(1-e^2\right)}{1+e\cos{f}}\label{r theta equation} \end{equation}
 
+<h2>III. Orbital Elements</h2>
+<h3>III.I Derivation of Mean and Eccentric Anomalies</h3>
 
+From \eqref{r theta equation}:
 
+\begin{equation} \dot{r} = \frac{r}{1+e\cos{f}}e\sin{f}\dot{f}=\frac{L}{\mu r\left(1+e\cos{f}\right)}e\sin{f}=\frac{na^2\sqrt{1-e^2}}{r\left(1+e\cos{f}\right)}e\sin{f} \end{equation}
+
+We have used $$L=\mu r^2\dot{f}$$ and \eqref{L defintion}. Again using \eqref{r theta equation}:
+
+\begin{equation} \dot{r} = \frac{na}{\sqrt{1-e^2}}e\sin{f} \end{equation}
+
+In polar coordinates, the magnitude of the velocity vector $$\parallel\dot{\vec{r}}\parallel^2=\parallel\vec{v}\parallel^2=\dot{r}^2+r^2\dot{f}^2$$, resulting in:
+
+\begin{equation} v^2=\dot{r}^2+\frac{L^2}{r^2\mu^2}=\frac{n^2a^2}{1-e^2}e^2\sin^2{f}+\frac{n^2a^2}{1-e^2}\left(1+e\cos{f}\right)^2=\frac{n^2a^2}{1-e^2}\left(1+2e\cos{f}+e^2\right) \end{equation}
+
+With \eqref{r theta equation} and \eqref{n equation}:
+
+\begin{equation}\label{v^2 equation} v^2=\frac{n^2a^2}{1-e^2}\left(\frac{2a(1-e^2)}{r}-1+e^2\right)=\frac{2n^2a^3}{r}-n^2a^2=\mathcal{G}m\left(\frac{2}{r}-\frac{1}{a}\right) \end{equation}
+
+Using \eqref{v^2 equation} to rewrite $$\dot{r}$$:
+
+\begin{equation}\label{r dot equation} \dot{r}^2=v^2-\frac{L^2}{r^2\mu^2}=\frac{2n^2a^3}{r}-n^2a^2-\frac{ n^2a^4\left(1-e^2\right)}{r^2}\rightarrow \dot{r}=\frac{na}{r}\sqrt{a^2e^2-\left(r-a\right)^2} \end{equation}
+
+We have a differential equation for $$r$$, which we solve by writing $$r$$ in terms of the eccentric anomaly $$E$$:
+
+\begin{align} r&=a\left(1-e\cos{E}\right)\label{r E equation}\ \dot{r}&=ae\sin{E}\dot{E} \end{align}
+
+Rewriting \eqref{r dot equation} using $$E$$:
+
+\begin{equation} \dot{E}=\frac{na}{r}=\frac{n}{1-e\cos{E}} \end{equation}
+
+Integrating, we find:
+
+\begin{equation}\label{Kepler eq} E-e\sin{E}=n\left(t-t_0\right)\equiv\mathcal{M} \end{equation}
+
+This is Kepler's Equation, where $$\mathcal{M}$$ is known as the mean anomaly.
