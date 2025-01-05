@@ -8,8 +8,8 @@ category: work
 related_publications: true
 ---
 
-\section{Mechanics}
-\subsection{Canonical Transforms}
+\textbf{\Large I. Mechanics}
+\textbf{I.I Canonical Transforms}
 
 A time-independent coordinate transform $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ is said to be canonical if it preserves Hamilton's equations of motion. Specifically, letting the new Hamiltonian $$\mathcal{K}\left(Q_i,P_i\right)=\mathcal{H}\left(q\left(Q_i,P_i\right),p_i\left(Q_i,P_i\right)\right)$$, then we have:
 
@@ -44,7 +44,7 @@ Poisson Brackets can also be used to determine if a function of coordinates $$f\
     \frac{df}{dt}=\sum_i\frac{\partial f}{\partial q_i}\dot{q}_i+\frac{\partial f}{\partial p_i}\dot{p}_i=\{ f,\mathcal{H} \}
 \end{equation}
 
-\subsection{The Hamilton-Jacobi Equation}
+\textbf{I.II The Hamilton-Jacobi Equation}
 
 A generating function $$F$$ generates a canonical transformation from coordinates $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ and a Hamiltonian $$\mathcal{H\rightarrow\mathcal{K}}$$. This generating function satisfies:
 \begin{equation}
@@ -68,8 +68,8 @@ Now, suppose we want our transformed Hamiltonian, $$\mathcal{K}=0$$ such that $$
 \end{equation}
 This is the Hamilton-Jacobi Equation.
 
-\section{Kepler's Laws}
-\subsection{Newton's Law and Polar Coordinates}
+\textbf{\Large II. Kepler's Laws}
+\textbf{II.I Newton's Law and Polar Coordinates}
 
 We consider two bodies of mass $$m_0'$$ and $$m_1'$$. Newton's law of gravitation can be written:
 \begin{equation} 
@@ -82,7 +82,7 @@ Defining $$\vec{r}=\vec{r}_1'-\vec{r}_0'$$, we find:
 \begin{equation} \label{governing Newton Law}
     \ddot{\vec{r}} = -\frac{\mathcal{G}m}{\parallel \vec{r}\parallel^3}\vec{r}
 \end{equation}
-we have defined $$m\coloneqq m_0'+m_1'$$.
+we have defined $$m\equiv m_0'+m_1'$$.
 
 We rewrite \cref{governing Newton Law} using polar coordinates, with the basis transformation:
 \begin{equation}    
@@ -108,4 +108,4 @@ It is not difficult to demonstrate:
 \begin{equation}\label{Netwon polar coordinates}
     (\ddot{r}-{r}\dot{f}^2){\hat{e}_r}+(2\dot{r} \dot{f} + r \ddot{f})\hat{e}_f = -\frac{\mathcal{G}m}{r^2}\hat{e}_r
 \end{equation}
-The norm of the angular momentum vector is given by $$\parallel\vec{r}\times\dot{\vec{r}}\parallel= r^2\dot{f}$$. From \cref{Netwon polar coordinates}, $$\frac{d\left(r^2\dot{f}\right)}{dt}=0$$, a statement of the conservation of total angular momentum. Let us define the reduced mass: $$\mu\coloneqq\frac{m_0'm_1'}{m_0'+m_1'}$$, and defined the quantity $$L\coloneqq\mu\parallel\vec{r}\times\dot{\vec{r}}\parallel=\mu r^2\dot{f}$$. 
+The norm of the angular momentum vector is given by $$\parallel\vec{r}\times\dot{\vec{r}}\parallel= r^2\dot{f}$$. From \cref{Netwon polar coordinates}, $$\frac{d\left(r^2\dot{f}\right)}{dt}=0$$, a statement of the conservation of total angular momentum. Let us define the reduced mass: $$\mu\equiv\frac{m_0'm_1'}{m_0'+m_1'}$$, and defined the quantity $$L\equiv\mu\parallel\vec{r}\times\dot{\vec{r}}\parallel=\mu r^2\dot{f}$$. 
