@@ -197,7 +197,8 @@ Using \eqref{v^2 equation} to rewrite $$\dot{r}$$:
 
 We have a differential equation for $$r$$, which we solve by writing $$r$$ in terms of the eccentric anomaly $$E$$:
 
-\begin{align} r&=a\left(1-e\cos{E}\right)\label{r E equation}\ \dot{r}&=ae\sin{E}\dot{E} \end{align}
+\begin{equation} r=a\left(1-e\cos{E}\right)\label{r E equation}\end{equation}
+\begin{equation} \dot{r}=ae\sin{E}\dot{E} \end{equation}
 
 Rewriting \eqref{r dot equation} using $$E$$:
 
@@ -213,5 +214,32 @@ This is Kepler's Equation, where $$\mathcal{M}$$ is known as the mean anomaly.
 
 {% include figure.liquid loading="eager" path="assets/img/Figures_Cmech_Notes/Orbital_Element_diagram_v2.png" title="Orbital element diagram" class="img-fluid rounded z-depth-0" %}
 Orbital elements, definition of $$a$$, $$e$$, $$E$$, and $$f$$.
+
+From our orbital element diagram, we can immediately conclude:
+\begin{equation}\label{cos f equation}
+    q_1=r\cos{f}=a\cos{E}-ae
+\end{equation}
+From \cref{r theta equation}:
+\begin{equation}
+    r=\frac{a(1-e^2)}{1+e\cos{f}}=\frac{ra(1-e^2)}{r+eq_1}=\frac{ra(1-e^2)}{r+e\left(a\cos{E}-ae\right)}
+\end{equation}
+\begin{equation}
+    \rightarrow r=a(1-e^2)-e\left(a\cos{E}-ae\right)=a\left(1-e\cos{E}\right)
+\end{equation}
+Aligning with our result of \cref{r E equation}. We can also calculate $$q_2$$:
+\begin{equation}
+    q_2=\sqrt{r^2-q_1^2}= a\sqrt{\left(1-e\cos{E} \right)^2 - \left(\cos{E}-e \right)^2} = a\sqrt{1-e^2}\sin{E}
+\end{equation}
+In summary:
+\begin{equation}
+     q_1=a\left(\cos{E}-e\right)\label{q_1 eq}
+\end{equation}
+\begin{equation}
+     q_2=a\sqrt{1-e^2}\sin{E}\label{q_2 eq}
+\end{equation}
+\begin{equation}
+     r=a\left(1-e\cos{E}\right)
+\end{equation}
+
 
 
