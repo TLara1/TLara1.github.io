@@ -241,15 +241,15 @@ In summary:
      r=a\left(1-e\cos{E}\right)
 \end{equation}
 
-<h3>III.III Three-Dimensional Orbital Elements<\h3>
+<h3>III.III Three-Dimensional Orbital Elements</h3>
 
-To characterize the orientation of our ellipse in three-dimensional space with respect to a reference plane $x,y,z$, we introduce three new angles. The first is the inclination $i$, describing the tilt of the orbiting ellipse with respect to the $x,y$ plane. Any orbit with a nonzero inclination will intersect the reference plane at two points. The \textit{ascending node} is the point at which the body passes from negative $z$ to positive $z$, and the \textit{descending node} is the opposite.
-The angle between the \textit{ascending node} with the $x$ axis is the longitude of the ascending node, noted by $\Omega$. Finally, $\omega$, the argument of the pericentre determines the angle from the $x,y$ of the pericentre along the orbiting plane.
+To characterize the orientation of our ellipse in three-dimensional space with respect to a reference plane $$x,y,z$$, we introduce three new angles. The first is the inclination $$i$$, describing the tilt of the orbiting ellipse with respect to the $$x,y$$ plane. Any orbit with a nonzero inclination will intersect the reference plane at two points. The \textit{ascending node} is the point at which the body passes from negative $$z$$ to positive $$z$$, and the \textit{descending node} is the opposite.
+The angle between the \textit{ascending node} with the $$x$$ axis is the longitude of the ascending node, noted by $$\Omega$$. Finally, $$\omega$$, the argument of the pericentre determines the angle from the $$x,y$$ of the pericentre along the orbiting plane.
 
 {% include figure.liquid loading="eager" path="assets/img/Figures_Cmech_Notes/Orbital_3d_elemenets_v2.png" title="Orbital element diagram 3d" class="img-fluid rounded z-depth-0" %}
 Three-dimensional orbital angles.
 
-Schematically, the transformation from a vector $\vec{r}$ in the reference plane to a vector $\vec{q}$ in the orbiting ellipse can be thought of as three consecutive rotations. First, we rotate around the $z$ axis by $\Omega$ to align the $x$ axis with the ascending node. Then we rotate around the $x$ axis by $I$ to set the $z$ axis normal to the orbiting plane. Lastly, we rotate around the $z$ axis by $\omega$ to set the $x$ axis along the semi-minor axis. In summary, we define the rotation:
+Schematically, the transformation from a vector $$\vec{r}$$ in the reference plane to a vector $$\vec{q}$$ in the orbiting ellipse can be thought of as three consecutive rotations. First, we rotate around the $$z$$ axis by $$\Omega$$ to align the $$x$$ axis with the ascending node. Then we rotate around the $$x$$ axis by $$I$$ to set the $$z$$ axis normal to the orbiting plane. Lastly, we rotate around the $$z$$ axis by $$\omega$$ to set the $$x$$ axis along the semi-minor axis. In summary, we define the rotation:
 \begin{equation}
     \begin{pmatrix}
         x \\
@@ -290,7 +290,7 @@ The matrix $$\bm{R}_{xq}$$ transforms $$\vec{q}$$ to $$\vec{r}$$ and $$\bm{R}_{q
         \sin{I}\sin{\omega} & \sin{I}\cos{\omega} & \cos{I} \\
     \end{pmatrix}  
 \end{equation}
-From \eqref{q_1 eq} and \eqref{q_2 eq}, and because the orbit is by definition in the orbiting ellipse setting $q_3=0$:
+From \eqref{q_1 eq} and \eqref{q_2 eq}, and because the orbit is by definition in the orbiting ellipse setting $$q_3=0$$:
 \begin{equation}
     \vec{q}=    \begin{pmatrix}
         a\left(\cos{E}-e\right)\\
@@ -298,7 +298,7 @@ From \eqref{q_1 eq} and \eqref{q_2 eq}, and because the orbit is by definition i
         0 \\
     \end{pmatrix} 
 \end{equation}
-Utilizing our transform and polar coordinates, $q_1=r\cos{f}$, $q_2=r\sin{f}$:
+Utilizing our transform and polar coordinates, $$q_1=r\cos{f}$$, $$q_2=r\sin{f}$$:
 \begin{equation}
     \frac{x}{r}=\left(\cos{\Omega}\cos{\omega}-\sin{\Omega}\cos{I}\sin{\omega}\right)\cos{f}+\left(-\cos{\Omega}\sin{\omega}-\sin{\Omega}\cos{I}\cos{\omega}\right)\sin{f}\nonumber
 \end{equation}
@@ -317,4 +317,104 @@ Utilizing our transform and polar coordinates, $q_1=r\cos{f}$, $q_2=r\sin{f}$:
 \begin{equation}
     =\sin{I}\sin{(\omega+f)}\label{z orbital elements} 
 \end{equation}
+
+<h2>IV. Expansion of the Two-Body Hamiltonian in Delaunay Variables}\label{Expansion of the Two-Body Hamiltonian in Delaunay Variables</h2>
+Here we write the Hamiltonian for the two-body system and solve the Hamilton-Jacobi Equation to find a set of action-angle variables that are constant over time.
+
+We begin by identifying the Two-Body Hamiltonian in Cartesian coordinates. From \eqref{governing Newton Law}, the Lagrangian of the system is given by:
+\begin{equation}
+    \mathcal{L}=\frac{1}{2}\mu\parallel\dot{\vec{r}}\parallel^2+\frac{\mathcal{G}\mu m}{\parallel\vec{r}\parallel}
+\end{equation}
+Via the Euler-Lagrange Equation, \eqref{governing Newton Law} is recovered:
+\begin{equation}
+    \frac{d}{dt}\left(\pdv{\mathcal{L}}{\dot{\vec{r}}}\right)-\pdv{\mathcal{L}}{\vec{r}}=0\rightarrow\mu\ddot{\vec{r}}+\frac{\mathcal{G}\mu m}{\parallel\vec{r}\parallel^3}\vec{r}=0
+\end{equation}
+We can now write the Hamiltonian using:
+\begin{equation
+    \vec{p}=\pdv{\mathcal{L}}{\dot{\vec{r}}}=\mu\dot{\vec{r}}\label{p def}
+\end{equation}
+\begin{equation
+    \mathcal{H}=p\dot{r}-\mathcal{L}=\frac{1}{2\mu}\parallel\vec{p}\parallel^2-\frac{\mathcal{G}\mu m}{\parallel\vec{r}\parallel}
+\end{equation}
+From the spherical symmetry of the problem, it is natural for us to proceed using spherical coordinates. We perform another canonical transform from $$p_x$$, $$p_y$$, $$p_z$$, $$r_x$$, $$r_y$$, and $$r_z$$ coordinates to $$p_r$$, $$p_\phi$$, $$p_\theta$$, $$r$$, $$\theta$$, and $$\phi$$ coordinates:
+\begin{equation}
+    r_x = r \cos{\phi} \sin{\theta} \label{polar transform start}
+\end{equation}
+
+\begin{equation}
+    r_y = r \sin{\phi} \sin{\theta}
+\end{equation}
+
+\begin{equation}
+    r_z = r \cos{\theta}
+\end{equation}
+
+\begin{equation}
+    p_x = p_r \cos{\phi} \sin{\theta} - \frac{p_\phi}{r \sin{\theta}} \sin{\phi} + \frac{p_\theta}{r} \cos{\phi} \cos{\theta}
+\end{equation}
+
+\begin{equation}
+    p_y = p_r \sin{\phi} \sin{\theta} + \frac{p_\phi}{r \sin{\theta}} \cos{\phi} + \frac{p_\theta}{r} \sin{\phi} \cos{\theta}
+\end{equation}
+
+\begin{equation}
+    p_z = p_r \cos{\theta} - \frac{p_\theta}{r} \sin{\theta}
+\end{equation}
+
+\begin{equation}
+    p_r = \sqrt{p_x^2 + p_y^2 + p_z^2} \label{polar transform end}
+\end{equation}
+
+Again, it can be shown that this transform satisfies \eqref{cannonical 1}-\eqref{cannonical 3}. The Hamiltonian becomes:
+\begin{equation}\label{2 body cartesian hamiltonian}
+    \mathcal{H}=\frac{1}{2\mu}\left(p_r^2+\frac{p_\theta^2}{r^2}+\frac{p_\phi^2}{r^2\sin^2{\theta}}\right)-\frac{\mathcal{G}\mu m}{r}
+\end{equation}
+
+<h3Action-Angle Variables</h3>
+We now find a canonical transform, $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ such that our transformed Hamiltonian $$\mathcal{K}$$ is a function of only momenta, $$\mathcal{K}\left(P_i\right)$$. Transformed position coordinates are known as _angles_ and transformed momenta are known as _actions_.
+
+Utilizing the Hamilton-Jacobi Equation (\eqref{HJ Equation}) with a generating function $$S\left(r,\theta,\phi;P_1,P_2,P_3;t\right)$$, where $$P_1$$, $$P_2$$, and $$P_3$$ are constants of motion because the transformed Hamiltonian $$\mathcal{K}$$ is independent of $$Q_i$$. The Hamilton-Jacobi Equation is:
+\begin{equation}
+    \frac{1}{2\mu}\left(\left(\pdv{S}{r}\right)^2+\frac{1}{r^2}\left(\pdv{S}{\theta}\right)^2+\frac{1}{r^2\sin^2{\theta}}\left(\pdv{S}{\phi}\right)^2\right)-\frac{\mathcal{G}\mu m}{r}+\pdv{S}{t}=0
+\end{equation}
+Separating $$S$$: $$S\left(r,\theta,\phi;P_1,P_2,P_3;t\right)=S_r\left(r;P_i\right)+S_\theta\left(\theta;P_i\right)+S_\phi\left(\phi;P_i\right)+S_t\left(P_i;t\right)$$, we find:
+\begin{equation}
+    \frac{1}{2\mu}\left(\left(\frac{dS_r}{dr}\right)^2+\frac{1}{r^2}\left(\frac{dS_\theta}{d\theta}\right)^2+\frac{1}{r^2\sin^2{\theta}}\left(\frac{dS_\phi}{d\phi}\right)^2\right)-\frac{\mathcal{G}\mu m}{r}+\frac{S_t}{dt}=0
+\end{equation}
+We find:
+\begin{equation}
+    \frac{dS_t}{dt} = -P_1 \label{S_t derivative}
+\end{equation}
+
+\begin{equation}
+    \frac{dS_\phi}{d\phi} = P_2
+\end{equation}
+
+\begin{equation}
+    \left(\frac{dS_\theta}{d\theta}\right)^2 + \frac{P_2^2}{\sin^2\theta} = P_3^2
+\end{equation}
+
+\begin{equation}
+    \left(\frac{dS_r}{dr}\right)^2 + \frac{P_3}{r^2} - \frac{2\mathcal{G}\mu^2 m}{r} = 2\mu P_1 \label{S_r derivative}
+\end{equation}
+
+Now we identify the three constants of motion, $$P_1$$, $$P_2$$, and $$P_3$$. As $$\pdv{\mathcal{H}}{t}=0$$, the energy of the system is conserved.
+\begin{equation}
+    P_1=\frac{1}{2\mu}\left(p_r^2+\frac{p_\theta^2}{r^2}+\frac{p_\phi^2}{r^2\sin^2{\theta}}\right)-\frac{\mathcal{G}\mu m}{r}
+\end{equation}
+The total angular momentum of the system:
+\begin{equation}
+    P_3^2=p_\theta^2+\frac{p_\phi^2}{\sin^2{\theta}}
+\end{equation}
+and the angular momentum along the $$z$$ axis:
+\begin{equation}
+    P_2=p_\phi
+\end{equation}
+are also conserved. It is not hard to show this conservation via \eqref{const function}. $$\{P_1,\mathcal{H}\}=0$$, $$\{P_2^2,\mathcal{H}\}=0$$, and $$\{P_3,\mathcal{H}\}=0$$. It can also be shown that these variables are canonical (\eqref{cannonical 1}-\eqref{cannonical 3}): $$\{P_1,P_2^2\}=0$$, $$\{P_1,P_3\}=0$$, and $$\{P_2^2,P_3\}=0$$. 
+
+We use our previous results to expand $$P_1$$, $$P_2$$, and $$P_3$$ into orbital elements. $$P_1$$ is the total energy of the system:
+\begin{equation}
+    P_1=\frac{\mu}{2}\parallel\dot{\vec{r}}\parallel^2-\frac{\mathcal{G}\mu m}{r}=\mathcal{G}\mu m\left(\frac{1}{r}-\frac{1}{2a}\right)-\frac{\mathcal{G}\mu m}{r}=-\frac{\mathcal{G}\mu m}{2a}
+\end{equation}
+We have used \eqref{p def} and \eqref{v^2 equation}. 
 
