@@ -251,7 +251,8 @@ Three-dimensional orbital angles.
 
 Schematically, the transformation from a vector $$\vec{r}$$ in the reference plane to a vector $$\vec{q}$$ in the orbiting ellipse can be thought of as three consecutive rotations. First, we rotate around the $$z$$ axis by $$\Omega$$ to align the $$x$$ axis with the ascending node. Then we rotate around the $$x$$ axis by $$I$$ to set the $$z$$ axis normal to the orbiting plane. Lastly, we rotate around the $$z$$ axis by $$\omega$$ to set the $$x$$ axis along the semi-minor axis. In summary, we define the rotation:
 
-$$\begin{pmatrix}
+$$\begin{equation}
+\begin{pmatrix}
     x \\
     y \\
     z \\
@@ -263,7 +264,9 @@ $$\begin{pmatrix}
     \cos{\Omega} &  -\sin{\Omega} & 0\\
     \sin{\Omega} &  \cos{\Omega} & 0\\
     0 & 0 & 1 \\
-\end{pmatrix}$$   
+\end{pmatrix}
+\end{equation}$$   
+
 $$\begin{pmatrix}
     1 &  0 & 0\\\
     0 &  \cos{I} & -\sin{I}\\\
