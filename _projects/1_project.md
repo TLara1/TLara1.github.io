@@ -168,5 +168,9 @@ We can find the period $$P$$:
 
 We define the mean motion at $$n=\frac{2\pi}{P}$$ and summarize Kepler's Laws:
 
-\begin{align} n&=\sqrt{\frac{\mathcal{G}m}{a^3}}\label{n equation}\ L&=\mu\sqrt{\mathcal{G}ma\left(1-e^2\right)}=\mu na^2\sqrt{1-e^2}\label{L defintion}\ r&=\frac{a\left(1-e^2\right)}{1+e\cos{f}}\label{r theta equation} \end{align}
+\begin{equation} n=\sqrt{\frac{\mathcal{G}m}{a^3}}\label{n equation} \end{equation}
+\begin{equation} L=\mu\sqrt{\mathcal{G}ma\left(1-e^2\right)}=\mu na^2\sqrt{1-e^2}\label{L defintion} \end{equation}
+\begin{equation} r=\frac{a\left(1-e^2\right)}{1+e\cos{f}}\label{r theta equation} \end{equation}
+
+
 
