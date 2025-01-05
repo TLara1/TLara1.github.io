@@ -251,37 +251,36 @@ Three-dimensional orbital angles.
 
 Schematically, the transformation from a vector $$\vec{r}$$ in the reference plane to a vector $$\vec{q}$$ in the orbiting ellipse can be thought of as three consecutive rotations. First, we rotate around the $$z$$ axis by $$\Omega$$ to align the $$x$$ axis with the ascending node. Then we rotate around the $$x$$ axis by $$I$$ to set the $$z$$ axis normal to the orbiting plane. Lastly, we rotate around the $$z$$ axis by $$\omega$$ to set the $$x$$ axis along the semi-minor axis. In summary, we define the rotation:
 
-\begin{equation}
-    \begin{pmatrix}
-        x \\
-        y \\
-        z \\
-    \end{pmatrix} 
-    =
-    \begin{pmatrix}
-        \cos{\Omega} &  -\sin{\Omega} & 0\\\
-        \sin{\Omega} &  \cos{\Omega} & 0\\\
-        0 & 0 & 1 \\\
-    \end{pmatrix}     
-        \begin{pmatrix}
-        1 &  0 & 0\\\
-        0 &  \cos{I} & -\sin{I}\\\
-        0 & \sin{I} & \cos{I}\\\
-    \end{pmatrix}  
-    \begin{pmatrix}
-        \cos{\omega} &  -\sin{\omega} & 0\\\
-        \sin{\omega} &  \cos{\omega} & 0\\\
-        0 & 0 & 1 \\\
-    \end{pmatrix}  
-    \begin{pmatrix}
-        q_1 \\\
-        q_2 \\\
-        q_3 \\\
-    \end{pmatrix}
-\end{equation}
+$$\begin{pmatrix}
+    x \\
+    y \\
+    z \\
+\end{pmatrix}$$ 
+$$=$$
+$$\begin{pmatrix}
+    \cos{\Omega} &  -\sin{\Omega} & 0\\\
+    \sin{\Omega} &  \cos{\Omega} & 0\\\
+    0 & 0 & 1 \\\
+\end{pmatrix}$$   
+$$\begin{pmatrix}
+    1 &  0 & 0\\\
+    0 &  \cos{I} & -\sin{I}\\\
+    0 & \sin{I} & \cos{I}\\\
+\end{pmatrix}$$  
+$$\begin{pmatrix}
+    \cos{\omega} &  -\sin{\omega} & 0\\\
+    \sin{\omega} &  \cos{\omega} & 0\\\
+    0 & 0 & 1 \\\
+\end{pmatrix}$$  
+$$\begin{pmatrix}
+    q_1 \\\
+    q_2 \\\
+    q_3 \\\
+\end{pmatrix}$$
 
 \begin{equation}
     \vec{r}=**R**_\{Omega} **R**_{I} **R**_{\omega} = **R**_{xq} \vec{q}
+\end{equation}
 
 The matrix $$**R**_{xq} $$ transforms $$\vec{q}$$ to $$\vec{r}$$ and $$**R**_{qx} =**R**_{xq}^{-1}$$ does the inverse. 
 
