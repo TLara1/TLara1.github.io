@@ -737,7 +737,7 @@ Calculating the partial derivatives of the disturbing function:
 \end{equation}
 
 \begin{equation}
-    = \frac{\mu_i \sqrt{\mathcal{G} m_i}}{2 \sqrt{a_i}} \dot{a}_i
+    = \frac{\mu_i \sqrt{\mathcal{G} m_i}}{2 \sqrt{a_i}} \dot{a}_i\nonumber
 \end{equation}
 
 \begin{equation}
@@ -745,7 +745,7 @@ Calculating the partial derivatives of the disturbing function:
 \end{equation}
 
 \begin{equation}
-    = \frac{\mu_i \sqrt{\mathcal{G} m_i}}{2 \sqrt{a_i}} \left( 1 - \sqrt{1 - e_i^2} \right) \dot{a}_i + \frac{\mu_i \sqrt{\mathcal{G} m_i a_i}}{\sqrt{1 - e_i^2}} e_i \dot{e}_i
+    = \frac{\mu_i \sqrt{\mathcal{G} m_i}}{2 \sqrt{a_i}} \left( 1 - \sqrt{1 - e_i^2} \right) \dot{a}_i + \frac{\mu_i \sqrt{\mathcal{G} m_i a_i}}{\sqrt{1 - e_i^2}} e_i \dot{e}_i\nonumber
 \end{equation}
 
 \begin{equation}
@@ -753,7 +753,7 @@ Calculating the partial derivatives of the disturbing function:
 \end{equation}
 
 \begin{equation}
-    = \frac{\mu_i \sqrt{\mathcal{G} m_i}}{\sqrt{a_i}} \sqrt{1 - e_i^2} \sin^2 \frac{I_i}{2} \dot{a}_i - \frac{2 \mu_i \sqrt{\mathcal{G} m_i a_i}}{\sqrt{1 - e_i^2}} e_i \sin^2 \frac{I_i}{2} \dot{e}_i + \mu_i \sqrt{\mathcal{G} m_i a_i} \sqrt{1 - e_i^2} \sin I_i \dot{I}_i
+    = \frac{\mu_i \sqrt{\mathcal{G} m_i}}{\sqrt{a_i}} \sqrt{1 - e_i^2} \sin^2 \frac{I_i}{2} \dot{a}_i - \frac{2 \mu_i \sqrt{\mathcal{G} m_i a_i}}{\sqrt{1 - e_i^2}} e_i \sin^2 \frac{I_i}{2} \dot{e}_i + \mu_i \sqrt{\mathcal{G} m_i a_i} \sqrt{1 - e_i^2} \sin I_i \dot{I}_i\nonumber
 \end{equation}
 
 \begin{equation}
@@ -761,7 +761,7 @@ Calculating the partial derivatives of the disturbing function:
 \end{equation}
 
 \begin{equation}
-    = \frac{2a_i}{\mu_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial a_i} + \frac{1 - e_i^2 - \sqrt{1 - e_i^2}}{\mu_i e_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial e_i} - \frac{\tan \frac{I_i}{2}}{\mu_i \sqrt{\mathcal{G} m_i a_i} \sqrt{1 - e_i^2}} \frac{\partial \mathcal{R}}{\partial I_i}
+    = \frac{2a_i}{\mu_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial a_i} + \frac{1 - e_i^2 - \sqrt{1 - e_i^2}}{\mu_i e_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial e_i} - \frac{\tan \frac{I_i}{2}}{\mu_i \sqrt{\mathcal{G} m_i a_i} \sqrt{1 - e_i^2}} \frac{\partial \mathcal{R}}{\partial I_i}\nonumber
 \end{equation}
 
 \begin{equation}
@@ -769,7 +769,7 @@ Calculating the partial derivatives of the disturbing function:
 \end{equation}
 
 \begin{equation}
-    = \frac{\sqrt{1 - e_i^2}}{\mu_i e_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial e_i} + \frac{\tan \frac{I_i}{2}}{\mu_i \sqrt{\mathcal{G} m_i a_i} \sqrt{1 - e_i^2}} \frac{\partial \mathcal{R}}{\partial I_i}
+    = \frac{\sqrt{1 - e_i^2}}{\mu_i e_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial e_i} + \frac{\tan \frac{I_i}{2}}{\mu_i \sqrt{\mathcal{G} m_i a_i} \sqrt{1 - e_i^2}} \frac{\partial \mathcal{R}}{\partial I_i}\nonumber
 \end{equation}
 
 \begin{equation}
@@ -777,7 +777,7 @@ Calculating the partial derivatives of the disturbing function:
 \end{equation}
 
 \begin{equation}
-    = \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i} \sin I_i \sqrt{1 - e_i^2}} \frac{\partial \mathcal{R}}{\partial I_i}
+    = \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i} \sin I_i \sqrt{1 - e_i^2}} \frac{\partial \mathcal{R}}{\partial I_i}\nonumber
 \end{equation}
 
 And combining \eqref{Delaunay Lagrange 1}-\eqref{Delaunay Lagrange 2} with \eqref{orbital convert 1}-\eqref{orbital convert end}:
