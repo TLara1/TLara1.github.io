@@ -425,7 +425,7 @@ and the angular momentum along the $$z$$ axis:
 \begin{equation}
     P_2=p_\phi
 \end{equation}
-are also conserved. It is not hard to show this conservation via \eqref{const function}. $$\[  P_1,\mathcal{H}  \]=0$$, $$\[  P_2^2,\mathcal{H}  \]=0$$, and $$\[ P_3,\mathcal{H} \]=0$$. It can also be shown that these variables are canonical (\eqref{cannonical 1}-\eqref{cannonical 3}): $$\[ P_1,P_2^2 \]=0$$, $$\[ P_1,P_3 \]=0$$, and $$\[ P_2^2,P_3 \]=0$$. 
+are also conserved. It is not hard to show this conservation via \eqref{const function}. It can also be shown that these variables are canonical (\eqref{cannonical 1}-\eqref{cannonical 3}). 
 
 We use our previous results to expand $$P_1$$, $$P_2$$, and $$P_3$$ into orbital elements. $$P_1$$ is the total energy of the system:
 \begin{equation}
@@ -455,7 +455,6 @@ As $$L$$ is the norm of the angular momentum, and the angular momentum of the sy
     P_2 = P_3 \cos{I} \label{P_2 def}
 \end{equation}
 
-
 Having expressed our transformed momenta in orbital elements, we must do the same for our transformed position coordinates. We solve for $$S$$ by integrating \eqref{S_t derivative}-\eqref{S_r derivative}:
 
 \begin{equation}
@@ -464,17 +463,17 @@ Having expressed our transformed momenta in orbital elements, we must do the sam
 
 Using \eqref{transormned position coordinates}:
 
-\begin{equation}
+$$\begin{equation}
     Q_1 = frac{\partial {S}{\partial P_{1}} = -t + \mu \int \frac{dr}{\sqrt{2\mu\left(P_{1} + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_3^2}{r^2}}} = -t + \mu I_1
-\end{equation}
+\end{equation}$$
 
-\begin{equation}
+$$\begin{equation}
     Q_2 = frac{\partial {S}{\partial P_{2}} = \phi - P_{2} \int \frac{d\theta}{\sin^2\theta\sqrt{P_{3}^2 - \frac{P_{2}^2}{\sin^2\theta}}} = \phi - P_2 I_3
-\end{equation}
+\end{equation}$$
 
-\begin{equation}
+$$\begin{equation}
     Q_3 = frac{\partial {S}{\partial P_3} = P_3 \int \frac{d\theta}{\sqrt{P_3^2 - \frac{P_2^2}{\sin^2\theta}}} - P_3 \int \frac{dr}{r^2 \sqrt{2\mu \left(P_1 + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_3^2}{r^2}}} = P_3 \left(I_4 - I_2\right)
-\end{equation}
+\end{equation}$$
 
 Evaluating the integrals in order, starting with $$I_1$$. With \eqref{P_1 def} and \eqref{P_3 def}:
 
@@ -534,7 +533,46 @@ Now for $$I_3$$. With \eqref{P_2 def} and \eqref{P_3 def}:
     I_3=\frac{1}{P_2}\int\frac{\cos Id\theta}{\sin^2\theta\sqrt{1-\frac{\cos^2 I}{\sin^2\theta}}}
 \end{equation}
 
-To proceed, we must consult spherical trigonometric relationships. In \eqref{spherical trig fig}, we plot the angle created by the body's position on the orbital plane and the reference plane. Because $$\theta$$ is measured from the $$z$$ axis towards the reference plane, we must invert $$I$$.
+{% include figure.liquid loading="eager" path="assets/img/Figures_Cmech_Notes/Spherical_Trig_diagram_v2.png" title="Spherical trigonometry diagram 3d" class="img-fluid rounded z-depth-0" %}
+
+To proceed, we must consult spherical trigonometric relationships. We plot the angle created by the body's position on the orbital plane and the reference plane. Because $$\theta$$ is measured from the $$z$$ axis towards the reference plane, we must invert $$I$$.
+
+From spherical trigonometric relations:
+\begin{equation}
+    \tan{\left(\frac{\pi}{2}-\theta\right)}=\tan{-I}\sin{\chi}\label{sphere_trig tan}
+\end{equations}
+\begin{equation}
+    \sin{\left(\frac{\pi}{2}-\theta\right)}=\sin{-I}\sin{\eta}\label{sphere_trig sin}
+\end{equation}
+From \eqref{sphere_trig tan}:
+\begin{equation}
+    \cot{\theta}=-\tan{I}\sin{\chi}\rightarrow\csc^2\theta d\theta=\tan{I}\cos{\chi}d\chi
+\end{equation}
+\begin{equation}
+    \csc^2\theta=1+\cot^2{\theta}=1+\tan^2{I}\sin^2{\chi}
+\end{equation}
+$$I_3$$ becomes:
+\begin{equation}
+    I_3=\frac{1}{P_2}\int\frac{\cos I\tan{I}\cos{\chi}d\chi}{\sqrt{1-\cos^2 I\left(1+\tan^2{I}\sin^2{\chi}\right)}}
+\end{equation}
+\begin{equation}
+    =\frac{1}{P_2}\int d\chi=\frac{\chi}{P_2}
+\end{equation}
+And for the final integral, $$I_4$$, repeating the process as in $$I_3$$:
+\begin{equation}
+    I_4=\frac{1}{P_3}\int\frac{\sin\theta d\theta}{\sqrt{\sin^2\theta-\cos^2 I}}
+\end{equation}
+With \eqref{sphere_trig sin}:
+\begin{equation}
+    \cos{\theta}=\sin{-I}\sin{\eta}\rightarrow\sin{\theta}d\theta=\sin{I}\cos{\eta}d\eta
+\end{equation}
+\begin{equation}
+    \sin^2{\theta}=1-\cos^2\theta=1-\sin^2{I}\sin^2{\eta}
+\end{equation}
+$$I_4$$ becomes:
+\begin{equation}
+    I_4=\frac{1}{P_3}\int\frac{\sin{I}\cos{\eta}d\eta}{\sqrt{1-\sin^2{I}\sin^2{\eta}-\cos^2 I}}=\frac{1}{P_3}\int d\eta=\frac{\eta}{P_3}
+\end{equation}
 
 
 
