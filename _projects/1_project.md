@@ -51,7 +51,7 @@ Poisson Brackets can also be used to determine if a function of coordinates $$f\
 
 <h3>I.II The Hamilton-Jacobi Equation</h3>
 
-A generating function $$F$$ generates a canonical transformation from coordinates $$q_i\quad\rightarrow\quad Q_i$$ and $$p_i\quad\rightarrow\quad P_i$$ and a Hamiltonian $$\mathcal{H\\quadrightarrow\quad\mathcal{K}}$$. This generating function satisfies:
+A generating function $$F$$ generates a canonical transformation from coordinates $$q_i\quad\rightarrow\quad Q_i$$ and $$p_i\quad\rightarrow\quad P_i$$ and a Hamiltonian $$\mathcal{H\\quad\rightarrow\quad\mathcal{K}}$$. This generating function satisfies:
 \begin{equation}
     p_i\dot{q}_i-\mathcal{H}=P_i\dot{Q}_i-\mathcal{K}+\dot{F}
 \end{equation}
