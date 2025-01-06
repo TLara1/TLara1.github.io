@@ -218,7 +218,6 @@ This is Kepler's Equation, where $$\mathcal{M}$$ is known as the mean anomaly.
 <h3>III.II Two-Dimensional Orbital Elliptical Elements</h3>
 
 {% include figure.liquid loading="eager" path="assets/img/Figures_Cmech_Notes/Orbital_Element_diagram_v2.png" title="Orbital element diagram" class="img-fluid rounded z-depth-0" %}
-Orbital elements, definition of $$a$$, $$e$$, $$E$$, and $$f$$.
 
 From our orbital element diagram, we can immediately conclude:
 \begin{equation}\label{cos f equation}
@@ -252,7 +251,6 @@ To characterize the orientation of our ellipse in three-dimensional space with r
 The angle between the _ascending node_ with the $$x$$ axis is the longitude of the ascending node, noted by $$\Omega$$. Finally, $$\omega$$, the argument of the pericentre determines the angle from the $$x,y$$ of the pericentre along the orbiting plane.
 
 {% include figure.liquid loading="eager" path="assets/img/Figures_Cmech_Notes/Orbital_3d_elemenets_v2.png" title="Orbital element diagram 3d" class="img-fluid rounded z-depth-0" %}
-Three-dimensional orbital angles.
 
 Schematically, the transformation from a vector $$\vec{r}$$ in the reference plane to a vector $$\vec{q}$$ in the orbiting ellipse can be thought of as three consecutive rotations. First, we rotate around the $$z$$ axis by $$\Omega$$ to align the $$x$$ axis with the ascending node. Then we rotate around the $$x$$ axis by $$I$$ to set the $$z$$ axis normal to the orbiting plane. Lastly, we rotate around the $$z$$ axis by $$\omega$$ to set the $$x$$ axis along the semi-minor axis. In summary, we define the rotation:
 
@@ -302,14 +300,14 @@ $$\begin{equation}
 
 From \eqref{q_1 eq} and \eqref{q_2 eq}, and because the orbit is by definition in the orbiting ellipse setting $$q_3=0$$:
 
-\begin{equation}
+$$\begin{equation}
     \vec{q}=    
     \begin{pmatrix}
         a\left(\cos{E}-e\right)\\
         a\sqrt{1-e^2}\sin{E}\\
         0 \\
     \end{pmatrix} 
-\end{equation}
+\end{equation}$$
 
 Utilizing our transform and polar coordinates, $$q_1=r\cos{f}$$, $$q_2=r\sin{f}$$:
 \begin{equation}
@@ -331,7 +329,7 @@ Utilizing our transform and polar coordinates, $$q_1=r\cos{f}$$, $$q_2=r\sin{f}$
     =\sin{I}\sin{(\omega+f)}\label{z orbital elements} 
 \end{equation}
 
-<h2>IV. Expansion of the Two-Body Hamiltonian in Delaunay Variables}</h2>
+<h2>IV. Expansion of the Two-Body Hamiltonian in Delaunay Variables</h2>
 Here we write the Hamiltonian for the two-body system and solve the Hamilton-Jacobi Equation to find a set of action-angle variables that are constant over time.
 
 We begin by identifying the Two-Body Hamiltonian in Cartesian coordinates. From \eqref{governing Newton Law}, the Lagrangian of the system is given by:
@@ -439,9 +437,9 @@ We have used \eqref{p def} and \eqref{v^2 equation}. To transform $$P_2$$ and $$
 \end{equation}
 Considering the $$z$$ component of the angular momentum yields:
 
-\begin{equation}
-    \left(\vec{r}\times\dot{\vec{r}}\right)_{z} = p_{\phi}=P_2
-\end{equation}
+$$\begin{equation}
+    \left(\vec{r}\times\dot{\vec{r}}\right)_{z} = p_{\phi} = P_2
+\end{equation}$$
 
 As $$L$$ is the norm of the angular momentum, and the angular momentum of the system is normal to the orbital plane, the $$z$$ component of the angular momentum is given by $$P_3=L\cos{I}$$, a projection of the angular momentum onto the $$z$$ axis. With \eqref{L defintion} in summary:
 
