@@ -221,25 +221,25 @@ This is Kepler's Equation, where $$\mathcal{M}$$ is known as the mean anomaly.
 
 From our orbital element diagram, we can immediately conclude:
 \begin{equation}\label{cos f equation}
-    Q_{1}=r\cos{f}=a\cos{E}-ae
+    Q_1=r\cos{f}=a\cos{E}-ae
 \end{equation}
 From \eqref{r theta equation}:
 \begin{equation}
-    r=\frac{a(1-e^2)}{1+e\cos{f}}=\frac{ra(1-e^2)}{r+eQ_{1}}=\frac{ra(1-e^2)}{r+e\left(a\cos{E}-ae\right)}
+    r=\frac{a(1-e^2)}{1+e\cos{f}}=\frac{ra(1-e^2)}{r+eQ_1}=\frac{ra(1-e^2)}{r+e\left(a\cos{E}-ae\right)}
 \end{equation}
 \begin{equation}
     \rightarrow r=a(1-e^2)-e\left(a\cos{E}-ae\right)=a\left(1-e\cos{E}\right)
 \end{equation}
-Aligning with our result of \eqref{r E equation}. We can also calculate $$Q_{2}$$:
+Aligning with our result of \eqref{r E equation}. We can also calculate $$Q_2$$:
 \begin{equation}
-    Q_{2}=\sqrt{r^2-Q_{1}^2}= a\sqrt{\left(1-e\cos{E} \right)^2 - \left(\cos{E}-e \right)^2} = a\sqrt{1-e^2}\sin{E}
+    Q_2=\sqrt{r^2-Q_1^2}= a\sqrt{\left(1-e\cos{E} \right)^2 - \left(\cos{E}-e \right)^2} = a\sqrt{1-e^2}\sin{E}
 \end{equation}
 In summary:
 \begin{equation}
-     Q_{1}=a\left(\cos{E}-e\right)\label{Q_{1} eq}
+     Q_1=a\left(\cos{E}-e\right)\label{Q_1 eq}
 \end{equation}
 \begin{equation}
-     Q_{2}=a\sqrt{1-e^2}\sin{E}\label{Q_{2} eq}
+     Q_2=a\sqrt{1-e^2}\sin{E}\label{Q_2 eq}
 \end{equation}
 \begin{equation}
      r=a\left(1-e\cos{E}\right)
@@ -277,9 +277,9 @@ $$\begin{equation}
         0 & 0 & 1 \\
     \end{pmatrix}  
     \begin{pmatrix}
-        Q_{1} \\
-        Q_{2} \\
-        Q_{3} \\
+        Q_1 \\
+        Q_2 \\
+        Q_3 \\
     \end{pmatrix}
 \end{equation}$$
 
@@ -298,7 +298,7 @@ $$\begin{equation}
     \end{pmatrix}  
 \end{equation}$$
 
-From \eqref{Q_{1} eq} and \eqref{Q_{2} eq}, and because the orbit is by definition in the orbiting ellipse setting $$Q_{3}=0$$:
+From \eqref{Q_1 eq} and \eqref{Q_2 eq}, and because the orbit is by definition in the orbiting ellipse setting $$Q_3=0$$:
 
 $$\begin{equation}
     \vec{q}=    
@@ -309,7 +309,7 @@ $$\begin{equation}
     \end{pmatrix} 
 \end{equation}$$
 
-Utilizing our transform and polar coordinates, $$Q_{1}=r\cos{f}$$, $$Q_{2}=r\sin{f}$$:
+Utilizing our transform and polar coordinates, $$Q_1=r\cos{f}$$, $$Q_2=r\sin{f}$$:
 \begin{equation}
     \frac{x}{r}=\left(\cos{\Omega}\cos{\omega}-\sin{\Omega}\cos{I}\sin{\omega}\right)\cos{f}+\left(-\cos{\Omega}\sin{\omega}-\sin{\Omega}\cos{I}\cos{\omega}\right)\sin{f}\nonumber
 \end{equation}
@@ -388,103 +388,103 @@ Again, it can be shown that this transform satisfies \eqref{cannonical 1}-\eqref
 <h3>IV.I Action-Angle Variables</h3>
 We now find a canonical transform, $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ such that our transformed Hamiltonian $$\mathcal{K}$$ is a function of only momenta, $$\mathcal{K}\left(P_i\right)$$. Transformed position coordinates are known as _angles_ and transformed momenta are known as _actions_.
 
-Utilizing the Hamilton-Jacobi Equation (\eqref{HJ Equation}) with a generating function $$S\left(r,\theta,\phi;P_{1},P_{2},P_{3};t\right)$$, where $$P_{1}$$, $$P_{2}$$, and $$P_{3}$$ are constants of motion because the transformed Hamiltonian $$\mathcal{K}$$ is independent of $$Q_i$$. The Hamilton-Jacobi Equation is:
+Utilizing the Hamilton-Jacobi Equation (\eqref{HJ Equation}) with a generating function $$S\left(r,\theta,\phi;P_1,P_2,P_3;t\right)$$, where $$P_1$$, $$P_2$$, and $$P_3$$ are constants of motion because the transformed Hamiltonian $$\mathcal{K}$$ is independent of $$Q_i$$. The Hamilton-Jacobi Equation is:
 \begin{equation}
     \frac{1}{2\mu}\left(\left(\frac{\partial S}{\partial r}\right)^2+\frac{1}{r^2}\left(\frac{\partial S}{\partial \theta}\right)^2+\frac{1}{r^2\sin^2{\theta}}\left(\frac{\partial S}{\partial \phi}\right)^2\right)-\frac{\mathcal{G}\mu m}{r}+\frac{ \partial S}{\partial t}=0
 \end{equation}
-Separating $$S$$: $$S\left(r,\theta,\phi;P_{1},P_{2},P_{3};t\right)=S_r\left(r;P_i\right)+S_\theta\left(\theta;P_i\right)+S_\phi\left(\phi;P_i\right)+S_t\left(P_i;t\right)$$, we find:
+Separating $$S$$: $$S\left(r,\theta,\phi;P_1,P_2,P_3;t\right)=S_r\left(r;P_i\right)+S_\theta\left(\theta;P_i\right)+S_\phi\left(\phi;P_i\right)+S_t\left(P_i;t\right)$$, we find:
 \begin{equation}
     \frac{1}{2\mu}\left(\left(\frac{dS_r}{dr}\right)^2+\frac{1}{r^2}\left(\frac{dS_\theta}{d\theta}\right)^2+\frac{1}{r^2\sin^2{\theta}}\left(\frac{dS_\phi}{d\phi}\right)^2\right)-\frac{\mathcal{G}\mu m}{r}+\frac{S_t}{dt}=0
 \end{equation}
 We find:
 \begin{equation}
-    \frac{dS_t}{dt} = -P_{1} \label{S_t derivative}
+    \frac{dS_t}{dt} = -P_1 \label{S_t derivative}
 \end{equation}
 
 \begin{equation}
-    \frac{dS_\phi}{d\phi} = P_{2}
+    \frac{dS_\phi}{d\phi} = P_2
 \end{equation}
 
 \begin{equation}
-    \left(\frac{dS_\theta}{d\theta}\right)^2 + \frac{P_{2}^2}{\sin^2\theta} = P_{3}^2
+    \left(\frac{dS_\theta}{d\theta}\right)^2 + \frac{P_2^2}{\sin^2\theta} = P_3^2
 \end{equation}
 
 \begin{equation}
-    \left(\frac{dS_r}{dr}\right)^2 + \frac{P_{3}}{r^2} - \frac{2\mathcal{G}\mu^2 m}{r} = 2\mu P_{1} \label{S_r derivative}
+    \left(\frac{dS_r}{dr}\right)^2 + \frac{P_3}{r^2} - \frac{2\mathcal{G}\mu^2 m}{r} = 2\mu P_1 \label{S_r derivative}
 \end{equation}
 
-Now we identify the three constants of motion, $$P_{1}$$, $$P_{2}$$, and $$P_{3}$$. As $$\frac{\partial \mathcal{H}}{\partial t}=0$$, the energy of the system is conserved.
+Now we identify the three constants of motion, $$P_1$$, $$P_2$$, and $$P_3$$. As $$\frac{\partial \mathcal{H}}{\partial t}=0$$, the energy of the system is conserved.
 \begin{equation}
-    P_{1}=\frac{1}{2\mu}\left(p_r^2+\frac{p_\theta^2}{r^2}+\frac{p_\phi^2}{r^2\sin^2{\theta}}\right)-\frac{\mathcal{G}\mu m}{r}
+    P_1=\frac{1}{2\mu}\left(p_r^2+\frac{p_\theta^2}{r^2}+\frac{p_\phi^2}{r^2\sin^2{\theta}}\right)-\frac{\mathcal{G}\mu m}{r}
 \end{equation}
 The total angular momentum of the system:
 \begin{equation}
-    P_{3}^2=p_\theta^2+\frac{p_\phi^2}{\sin^2{\theta}}
+    P_3^2=p_\theta^2+\frac{p_\phi^2}{\sin^2{\theta}}
 \end{equation}
 and the angular momentum along the $$z$$ axis:
 \begin{equation}
-    P_{2}=p_\phi
+    P_2=p_\phi
 \end{equation}
 are also conserved. It is not hard to show this conservation via \eqref{const function}. It can also be shown that these variables are canonical (\eqref{cannonical 1}-\eqref{cannonical 3}). 
 
-We use our previous results to expand $$P_{1}$$, $$P_{2}$$, and $$P_{3}$$ into orbital elements. $$P_{1}$$ is the total energy of the system:
+We use our previous results to expand $$P_1$$, $$P_2$$, and $$P_3$$ into orbital elements. $$P_1$$ is the total energy of the system:
 \begin{equation}
-    P_{1}=\frac{\mu}{2}\parallel\dot{\vec{r}}\parallel^2-\frac{\mathcal{G}\mu m}{r}=\mathcal{G}\mu m\left(\frac{1}{r}-\frac{1}{2a}\right)-\frac{\mathcal{G}\mu m}{r}=-\frac{\mathcal{G}\mu m}{2a}
+    P_1=\frac{\mu}{2}\parallel\dot{\vec{r}}\parallel^2-\frac{\mathcal{G}\mu m}{r}=\mathcal{G}\mu m\left(\frac{1}{r}-\frac{1}{2a}\right)-\frac{\mathcal{G}\mu m}{r}=-\frac{\mathcal{G}\mu m}{2a}
 \end{equation}
-We have used \eqref{p def} and \eqref{v^2 equation}. To transform $$P_{2}$$ and $$P_{3}$$, we need to consider the angular momentum of the system. Recalling that $$L\equiv\mu\parallel\vec{r}\times\dot{\vec{r}}\parallel$$ and using \eqref{polar transform end}-\eqref{polar transform end}:
+We have used \eqref{p def} and \eqref{v^2 equation}. To transform $$P_2$$ and $$P_3$$, we need to consider the angular momentum of the system. Recalling that $$L\equiv\mu\parallel\vec{r}\times\dot{\vec{r}}\parallel$$ and using \eqref{polar transform end}-\eqref{polar transform end}:
 \begin{equation}
-    L\equiv\parallel\vec{r}\times{\vec{p}}\parallel=\sqrt{p_\theta^2+\frac{p_\phi^2}{\sin^2{\theta}}}\rightarrow P_{3}=L
+    L\equiv\parallel\vec{r}\times{\vec{p}}\parallel=\sqrt{p_\theta^2+\frac{p_\phi^2}{\sin^2{\theta}}}\rightarrow P_3=L
 \end{equation}
 Considering the $$z$$ component of the angular momentum yields:
 
 $$\begin{equation}
-    \left(\vec{r}\times\vec{p}\right)_{z} = p_{\phi} = P_{2}
+    \left(\vec{r}\times\vec{p}\right)_{z} = p_{\phi} = P_2
 \end{equation}$$
 
-As $$L$$ is the norm of the angular momentum, and the angular momentum of the system is normal to the orbital plane, the $$z$$ component of the angular momentum is given by $$P_{3}=L\cos{I}$$, a projection of the angular momentum onto the $$z$$ axis. With \eqref{L defintion} in summary:
+As $$L$$ is the norm of the angular momentum, and the angular momentum of the system is normal to the orbital plane, the $$z$$ component of the angular momentum is given by $$P_3=L\cos{I}$$, a projection of the angular momentum onto the $$z$$ axis. With \eqref{L defintion} in summary:
 
 \begin{equation}
-    P_{1} = -\frac{\mathcal{G}\mu m}{2a} \label{P_{1} def}
+    P_1 = -\frac{\mathcal{G}\mu m}{2a} \label{P_1 def}
 \end{equation}
 
 \begin{equation}
-    P_{3} = \mu \sqrt{\mathcal{G}ma\left(1 - e^2\right)} \label{P_{3} def}
+    P_3 = \mu \sqrt{\mathcal{G}ma\left(1 - e^2\right)} \label{P_3 def}
 \end{equation}
 
 \begin{equation}
-    P_{2} = P_{3} \cos{I} \label{P_{2} def}
+    P_2 = P_3 \cos{I} \label{P_2 def}
 \end{equation}
 
 Having expressed our transformed momenta in orbital elements, we must do the same for our transformed position coordinates. We solve for $$S$$ by integrating \eqref{S_t derivative}-\eqref{S_r derivative}:
 
 \begin{equation}
-    S=-P_{1} t+P_{2} \phi+\int\sqrt{P_{3}^2-\frac{P_{2}^2}{\sin^2\theta}}d\theta+\int\sqrt{2\mu P_{1}+\frac{2\mathcal{G}\mu^2 m}{r}-\frac{P_{3}^2}{r^2}}dr
+    S=-P_1 t+P_2 \phi+\int\sqrt{P_3^2-\frac{P_2^2}{\sin^2\theta}}d\theta+\int\sqrt{2\mu P_1+\frac{2\mathcal{G}\mu^2 m}{r}-\frac{P_3^2}{r^2}}dr
 \end{equation}
 
 Using \eqref{transormned position coordinates}:
 
-$$\begin{equation}
-    Q_{1} = frac{\partial {S}{\partial P_{1}} = -t + \mu \int \frac{dr}{\sqrt{2\mu\left(P_{1} + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_{3}^2}{r^2}}} = -t + \mu I_{1}
-\end{equation}$$
-
-$$\begin{equation}
-    Q_{2} = frac{\partial {S}{\partial P_{2}} = \phi - P_{2} \int \frac{d\theta}{\sin^2\theta\sqrt{P_{3}^2 - \frac{P_{2}^2}{\sin^2\theta}}} = \phi - P_{2} I_{3}
-\end{equation}$$
-
-$$\begin{equation}
-    Q_{3} = frac{\partial {S}{\partial P_{3}} = P_{3} \int \frac{d\theta}{\sqrt{P_{3}^2 - \frac{P_{2}^2}{\sin^2\theta}}} - P_{3} \int \frac{dr}{r^2 \sqrt{2\mu \left(P_{1} + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_{3}^2}{r^2}}} = P_{3}\left(I_4 - I_{2}\right)
-\end{equation}$$
-
-Evaluating the integrals in order, starting with $$I_{1}$$. With \eqref{P_{1} def} and \eqref{P_{3} def}:
-
 \begin{equation}
-    I_{1}=\frac{1}{\mu\sqrt{\mathcal{G}m}}\int\frac{rdr}{\sqrt{-\frac{r^2}{a}+2r-a\left(1-e^2\right)}}
+    Q_1 = \frac{\partial {S}{\partial P_1} = -t + \mu \int \frac{dr}{\sqrt{2\mu\left(P_1 + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_3^2}{r^2}}} = -t + \mu I_1
 \end{equation}
 
-With \eqref{r E equation}, $$dr=ae\sin EdE$$, and $$I_{1}$$ becomes:
+\begin{equation}
+    Q_2 = \frac{\partial {S}{\partial P_2} = \phi - P_2 \int \frac{d\theta}{\sin^2\theta\sqrt{P_3^2 - \frac{P_2^2}{\sin^2\theta}}} = \phi - P_2 I_3
+\end{equation}
 
 \begin{equation}
-    I_{1} = \frac{1}{\mu \sqrt{\mathcal{G}m}} \int \frac{a^2 e \left(1 - e \cos E\right) \sin E \, dE}{\sqrt{- a \left(1 - e \cos E\right)^2 + 2a \left(1 - e \cos E\right) - a \left(1 - e^2\right)}}
+    Q_3 = \frac{\partial {S}{\partial P_3} = P_3 \int \frac{d\theta}{\sqrt{P_3^2 - \frac{P_2^2}{\sin^2\theta}}} - P_3 \int \frac{dr}{r^2 \sqrt{2\mu \left(P_1 + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_3^2}{r^2}}} = P_3\left(I_4 - I_2\right)
+\end{equation}
+
+Evaluating the integrals in order, starting with $$I_1$$. With \eqref{P_1 def} and \eqref{P_3 def}:
+
+\begin{equation}
+    I_1=\frac{1}{\mu\sqrt{\mathcal{G}m}}\int\frac{rdr}{\sqrt{-\frac{r^2}{a}+2r-a\left(1-e^2\right)}}
+\end{equation}
+
+With \eqref{r E equation}, $$dr=ae\sin EdE$$, and $$I_1$$ becomes:
+
+\begin{equation}
+    I_1 = \frac{1}{\mu \sqrt{\mathcal{G}m}} \int \frac{a^2 e \left(1 - e \cos E\right) \sin E \, dE}{\sqrt{- a \left(1 - e \cos E\right)^2 + 2a \left(1 - e \cos E\right) - a \left(1 - e^2\right)}}
 \end{equation}
 
 \begin{equation}
@@ -492,13 +492,13 @@ With \eqref{r E equation}, $$dr=ae\sin EdE$$, and $$I_{1}$$ becomes:
 \end{equation}
 Solving and plugging in \eqref{Kepler eq}
 \begin{equation}
-    I_{1}=\frac{a^\frac{3}{2}}{\mu\sqrt{\mathcal{G}m}}\left(E-e\sin E\right)=\frac{\mathcal{M}}{\mu n}
+    I_1=\frac{a^\frac{3}{2}}{\mu\sqrt{\mathcal{G}m}}\left(E-e\sin E\right)=\frac{\mathcal{M}}{\mu n}
 \end{equation}
 
-Now for $$I_{2}$$, with the same substitutions:
+Now for $$I_2$$, with the same substitutions:
 
 \begin{equation}
-    I_{2} = \frac{1}{\mu \sqrt{\mathcal{G}m}} \int \frac{dr}{r \sqrt{-\frac{r^2}{a} + 2r - a\left(1 - e^2\right)}}
+    I_2 = \frac{1}{\mu \sqrt{\mathcal{G}m}} \int \frac{dr}{r \sqrt{-\frac{r^2}{a} + 2r - a\left(1 - e^2\right)}}
 \end{equation}
 
 \begin{equation}
@@ -523,14 +523,14 @@ Now, with \eqref{cos f equation}:
     -\sin f \, df = \frac{\left(e^2 - 1\right) \sin E}{\left(1 - e \cos E\right)^2} \, dE \quad \rightarrow \quad df = \frac{\sqrt{1 - e^2}}{1 - e \cos E} \, dE
 \end{equation}
 
-Thus, $$I_{2}$$ becomes:
+Thus, $$I_2$$ becomes:
 
 \begin{equation}
-    I_{2}=\frac{1}{\mu\sqrt{\mathcal{G}ma\left(1-e^2\right)}}\int df=\frac{f}{P_{3}}
+    I_2=\frac{1}{\mu\sqrt{\mathcal{G}ma\left(1-e^2\right)}}\int df=\frac{f}{P_3}
 \end{equation}
-Now for $$I_{3}$$. With \eqref{P_{2} def} and \eqref{P_{3} def}:
+Now for $$I_3$$. With \eqref{P_2 def} and \eqref{P_3 def}:
 \begin{equation}
-    I_{3}=\frac{1}{P_{2}}\int\frac{\cos Id\theta}{\sin^2\theta\sqrt{1-\frac{\cos^2 I}{\sin^2\theta}}}
+    I_3=\frac{1}{P_2}\int\frac{\cos Id\theta}{\sin^2\theta\sqrt{1-\frac{\cos^2 I}{\sin^2\theta}}}
 \end{equation}
 
 {% include figure.liquid loading="eager" path="assets/img/Figures_Cmech_Notes/Spherical_Trig_diagram_v2.png" title="Spherical trigonometry diagram 3d" class="img-fluid rounded z-depth-0" %}
@@ -551,16 +551,16 @@ From \eqref{sphere_trig tan}:
 \begin{equation}
     \csc^2\theta=1+\cot^2{\theta}=1+\tan^2{I}\sin^2{\chi}
 \end{equation}
-$$I_{3}$$ becomes:
+$$I_3$$ becomes:
 \begin{equation}
-    I_{3}=\frac{1}{P_{2}}\int\frac{\cos I\tan{I}\cos{\chi}d\chi}{\sqrt{1-\cos^2 I\left(1+\tan^2{I}\sin^2{\chi}\right)}}
+    I_3=\frac{1}{P_2}\int\frac{\cos I\tan{I}\cos{\chi}d\chi}{\sqrt{1-\cos^2 I\left(1+\tan^2{I}\sin^2{\chi}\right)}}
 \end{equation}
 \begin{equation}
-    =\frac{1}{P_{2}}\int d\chi=\frac{\chi}{P_{2}}
+    =\frac{1}{P_2}\int d\chi=\frac{\chi}{P_2}
 \end{equation}
-And for the final integral, $$I_4$$, repeating the process as in $$I_{3}$$:
+And for the final integral, $$I_4$$, repeating the process as in $$I_3$$:
 \begin{equation}
-    I_4=\frac{1}{P_{3}}\int\frac{\sin\theta d\theta}{\sqrt{\sin^2\theta-\cos^2 I}}
+    I_4=\frac{1}{P_3}\int\frac{\sin\theta d\theta}{\sqrt{\sin^2\theta-\cos^2 I}}
 \end{equation}
 With \eqref{sphere_trig sin}:
 \begin{equation}
@@ -571,53 +571,53 @@ With \eqref{sphere_trig sin}:
 \end{equation}
 $$I_4$$ becomes:
 \begin{equation}
-    I_4=\frac{1}{P_{3}}\int\frac{\sin{I}\cos{\eta}d\eta}{\sqrt{1-\sin^2{I}\sin^2{\eta}-\cos^2 I}}=\frac{1}{P_{3}}\int d\eta=\frac{\eta}{P_{3}}
+    I_4=\frac{1}{P_3}\int\frac{\sin{I}\cos{\eta}d\eta}{\sqrt{1-\sin^2{I}\sin^2{\eta}-\cos^2 I}}=\frac{1}{P_3}\int d\eta=\frac{\eta}{P_3}
 \end{equation}
 
 We can now evaluate our transformed coordinates:
 
 \begin{equation}
-    Q_{1} = -t + \frac{\mathcal{M}}{n} = -t_0
+    Q_1 = -t + \frac{\mathcal{M}}{n} = -t_0
 \end{equation}
 
 \begin{equation}
-    Q_{2} = \phi - \chi = \Omega
+    Q_2 = \phi - \chi = \Omega
 \end{equation}
 
 \begin{equation}
-    Q_{3} = \eta - f = \omega
+    Q_3 = \eta - f = \omega
 \end{equation}
 
-Together with $$P_{1}$$, $$P_{2}$$, and $$P_{3}$$ we have completed our canonical transform. We perform one more transformation, $$Q_i\rightarrow g,h,l$$, and $$P_i\rightarrow G,H,L$$ to make our coordinate system slightly more convenient. Let our generating function be:
+Together with $$P_1$$, $$P_2$$, and $$P_3$$ we have completed our canonical transform. We perform one more transformation, $$Q_i\rightarrow g,h,l$$, and $$P_i\rightarrow G,H,L$$ to make our coordinate system slightly more convenient. Let our generating function be:
 
 \begin{equation}
-    S\left(Q_{1},Q_{2},Q_{3};G,H,L;t\right)=\left(nL-\frac{3\mathcal{G}\mu m}{2a}\right)\left(t+Q_{1}\right)+HQ_{2}+GQ_{3}
+    S\left(Q_1,Q_2,Q_3;G,H,L;t\right)=\left(nL-\frac{3\mathcal{G}\mu m}{2a}\right)\left(t+Q_1\right)+HQ_2+GQ_3
 \end{equation}
 
 From our canonical transform:
 
 \begin{equation}
-    P_{1} = \frac{\partial S}{\partial Q_{1}} = nL - \frac{3\mathcal{G}\mu m}{2a} \rightarrow L = \frac{\mathcal{G}\mu m}{an} = \mu \sqrt{\mathcal{G}ma}
+    P_1 = \frac{\partial S}{\partial Q_1} = nL - \frac{3\mathcal{G}\mu m}{2a} \rightarrow L = \frac{\mathcal{G}\mu m}{an} = \mu \sqrt{\mathcal{G}ma}
 \end{equation}
 
 \begin{equation}
-    P_{3} = \frac{\partial S}{\partial Q_{3}} = G \rightarrow G = L \sqrt{1 - e^2}
+    P_3 = \frac{\partial S}{\partial Q_3} = G \rightarrow G = L \sqrt{1 - e^2}
 \end{equation}
 
 \begin{equation}
-    P_{2} = \frac{\partial S}{\partial Q_{2}} = H \rightarrow H = G \cos{I}
+    P_2 = \frac{\partial S}{\partial Q_2} = H \rightarrow H = G \cos{I}
 \end{equation}
 
 \begin{equation}
-    l = \frac{\partial S}{\partial L} = n \left( t + Q_{1} \right) = \mathcal{M}
+    l = \frac{\partial S}{\partial L} = n \left( t + Q_1 \right) = \mathcal{M}
 \end{equation}
 
 \begin{equation}
-    g = \frac{\partial S}{\partial G} = Q_{3} = \omega
+    g = \frac{\partial S}{\partial G} = Q_3 = \omega
 \end{equation}
 
 \begin{equation}
-    h = \frac{\partial S}{\partial H} = Q_{2} = \Omega
+    h = \frac{\partial S}{\partial H} = Q_2 = \Omega
 \end{equation}
 
 These are called _Delaunay Variables_, and including the transformed Hamiltonian $$\mathcal{K}$$, we summarize:
@@ -650,7 +650,7 @@ These are called _Delaunay Variables_, and including the transformed Hamiltonian
     \mathcal{K} = -\frac{\mathcal{G}^2 \mu^3 m^2}{2L^2} \label{2 body delauny hamiltonian}
 \end{equation}
 
-Of our six coordinates, only $$l$$ changes in time. As $$e\rightarrow1$$ and $$I\rightarrow0$$, $$g$$, and $$h$$ become ill-defined, which we can correct by another canonical transform to _modified Delaunay Variables_. Using the generating function:
+Of our six coordinates, only $$l$$ changes in time. As $$e\rightarrow1$$ and $$I\rightarrow0$$, $$g$$, and $$h$$ become ill-defined, which we can correct by another canonical transform to _Modified Delaunay Variables_. Using the generating function:
 \begin{equation}
     S\left(l,g,h;\Lambda,P,Q;t\right)=\left(l+g+h\right)\Lambda-\left(g+h\right)P-hQ
 \end{equation}
@@ -684,7 +684,7 @@ We have defined the _longitude of the periapis_: $$\varpi\equiv\omega+\Omega$$. 
 
 <h2>The Three-Body Hamiltonian and the Lagrange Planetary Equations</h2>
 
-In \eqref{Expansion of the Two-Body Hamiltonian in Delaunay Variables}, we considered the two-body case. Now consider a perturbation to the two-body Hamiltonian:
+Now we approach the three-body problem by considering a perturbation to the two-body Hamiltonian:
 \begin{equation}
     \mathcal{H}=-\frac{\mathcal{G}^2\mu_1^3m_1^2}{2\Lambda_1^2}+\mathcal{R}\left(\Lambda_1,...\right)
 \end{equation}
