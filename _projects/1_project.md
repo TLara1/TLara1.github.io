@@ -16,7 +16,7 @@ In these notes, we take a classical approach to the three-body problem, examinin
 <h2>I. Mechanics</h2>
 <h3>I.I Canonical Transforms</h3>
 
-A time-independent coordinate transform $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ is said to be canonical if it preserves Hamilton's equations of motion. Specifically, letting the new Hamiltonian $$\mathcal{K}\left(Q_i,P_i\right)=\mathcal{H}\left(q\left(Q_i,P_i\right),p_i\left(Q_i,P_i\right)\right)$$, then we have:
+A time-independent coordinate transform $$q_i\quad\rightarrow\quad Q_i$$ and $$p_i\quad\rightarrow\quad P_i$$ is said to be canonical if it preserves Hamilton's equations of motion. Specifically, letting the new Hamiltonian $$\mathcal{K}\left(Q_i,P_i\right)=\mathcal{H}\left(q\left(Q_i,P_i\right),p_i\left(Q_i,P_i\right)\right)$$, then we have:
 
 \begin{equation}
     \dot{Q}_i=\frac{\partial\mathcal{K}}{\partial P_i}
@@ -51,7 +51,7 @@ Poisson Brackets can also be used to determine if a function of coordinates $$f\
 
 <h3>I.II The Hamilton-Jacobi Equation</h3>
 
-A generating function $$F$$ generates a canonical transformation from coordinates $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ and a Hamiltonian $$\mathcal{H\rightarrow\mathcal{K}}$$. This generating function satisfies:
+A generating function $$F$$ generates a canonical transformation from coordinates $$q_i\quad\rightarrow\quad Q_i$$ and $$p_i\quad\rightarrow\quad P_i$$ and a Hamiltonian $$\mathcal{H\\quadrightarrow\quad\mathcal{K}}$$. This generating function satisfies:
 \begin{equation}
     p_i\dot{q}_i-\mathcal{H}=P_i\dot{Q}_i-\mathcal{K}+\dot{F}
 \end{equation}
@@ -129,7 +129,7 @@ Performing the substitution, $$u=\frac{1}{r}$$:
 
 \eqref{Netwon polar coordinates} in terms of $$u$$:
 
-\begin{equation} \label{dif eq with u} -\left(\frac{L}{\mu}\right)^2u^2\frac{d^2u}{df^2} -\frac{L^2}{\mu^2r^3} = -\mathcal{G}mu^2 \rightarrow \frac{d^2u}{df^2} + u = \mathcal{G}m\frac{\mu^2}{L^2} \end{equation}
+\begin{equation} \label{dif eq with u} -\left(\frac{L}{\mu}\right)^2u^2\frac{d^2u}{df^2} -\frac{L^2}{\mu^2r^3} = -\mathcal{G}mu^2 \quad\rightarrow\quad \frac{d^2u}{df^2} + u = \mathcal{G}m\frac{\mu^2}{L^2} \end{equation}
 
 Solving for $$u$$:
 
@@ -145,7 +145,7 @@ We consider only $$0<e<1$$, giving a closed orbit. Broadly speaking, the closer 
 
 We relate the orbit period $$P$$ with the orbit's semi-major axis $$a$$. Converting \eqref{r equation kepler} into Cartesian coordinates:
 
-\begin{equation} r+ex=\frac{L^2}{\mathcal{G}m\mu^2}\rightarrow y^2=\left(\frac{L^2}{\mathcal{G}m\mu^2}-ex\right)^2-x^2 \end{equation}
+\begin{equation} r+ex=\frac{L^2}{\mathcal{G}m\mu^2}\quad\rightarrow\quad y^2=\left(\frac{L^2}{\mathcal{G}m\mu^2}-ex\right)^2-x^2 \end{equation}
 
 We find the length $$l$$, of the orbiting ellipse by adding the zeros of our ellipse:
 
@@ -198,7 +198,7 @@ With \eqref{r theta equation} and \eqref{n equation}:
 
 Using \eqref{v^2 equation} to rewrite $$\dot{r}$$:
 
-\begin{equation}\label{r dot equation} \dot{r}^2=v^2-\frac{L^2}{r^2\mu^2}=\frac{2n^2a^3}{r}-n^2a^2-\frac{ n^2a^4\left(1-e^2\right)}{r^2}\rightarrow \dot{r}=\frac{na}{r}\sqrt{a^2e^2-\left(r-a\right)^2} \end{equation}
+\begin{equation}\label{r dot equation} \dot{r}^2=v^2-\frac{L^2}{r^2\mu^2}=\frac{2n^2a^3}{r}-n^2a^2-\frac{ n^2a^4\left(1-e^2\right)}{r^2}\quad\rightarrow\quad \dot{r}=\frac{na}{r}\sqrt{a^2e^2-\left(r-a\right)^2} \end{equation}
 
 We have a differential equation for $$r$$, which we solve by writing $$r$$ in terms of the eccentric anomaly $$E$$:
 
@@ -228,7 +228,7 @@ From \eqref{r theta equation}:
     r=\frac{a(1-e^2)}{1+e\cos{f}}=\frac{ra(1-e^2)}{r+eQ_1}=\frac{ra(1-e^2)}{r+e\left(a\cos{E}-ae\right)}
 \end{equation}
 \begin{equation}
-    \rightarrow r=a(1-e^2)-e\left(a\cos{E}-ae\right)=a\left(1-e\cos{E}\right)
+    \rightarrow\quad r=a(1-e^2)-e\left(a\cos{E}-ae\right)=a\left(1-e\cos{E}\right)
 \end{equation}
 Aligning with our result of \eqref{r E equation}. We can also calculate $$Q_2$$:
 \begin{equation}
@@ -338,7 +338,7 @@ We begin by identifying the Two-Body Hamiltonian in Cartesian coordinates. From 
 \end{equation}
 Via the Euler-Lagrange Equation, \eqref{governing Newton Law} is recovered:
 \begin{equation}
-    \frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{\vec{r}}}\right)-\frac{\partial \mathcal{L}}{\partial \vec{r}}=0\rightarrow\mu\ddot{\vec{r}}+\frac{\mathcal{G}\mu m}{\parallel\vec{r}\parallel^3}\vec{r}=0
+    \frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{\vec{r}}}\right)-\frac{\partial \mathcal{L}}{\partial \vec{r}}=0\quad\rightarrow\quad\mu\ddot{\vec{r}}+\frac{\mathcal{G}\mu m}{\parallel\vec{r}\parallel^3}\vec{r}=0
 \end{equation}
 We can now write the Hamiltonian using:
 
@@ -386,7 +386,7 @@ Again, it can be shown that this transform satisfies \eqref{cannonical 1}-\eqref
 \end{equation}
 
 <h3>IV.I Action-Angle Variables</h3>
-We now find a canonical transform, $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ such that our transformed Hamiltonian $$\mathcal{K}$$ is a function of only momenta, $$\mathcal{K}\left(P_i\right)$$. Transformed position coordinates are known as _angles_ and transformed momenta are known as _actions_.
+We now find a canonical transform, $$q_i\quad\rightarrow\quad Q_i$$ and $$p_i\quad\rightarrow\quad P_i$$ such that our transformed Hamiltonian $$\mathcal{K}$$ is a function of only momenta, $$\mathcal{K}\left(P_i\right)$$. Transformed position coordinates are known as _angles_ and transformed momenta are known as _actions_.
 
 Utilizing the Hamilton-Jacobi Equation (\eqref{HJ Equation}) with a generating function $$S\left(r,\theta,\phi;P_1,P_2,P_3;t\right)$$, where $$P_1$$, $$P_2$$, and $$P_3$$ are constants of motion because the transformed Hamiltonian $$\mathcal{K}$$ is independent of $$Q_i$$. The Hamilton-Jacobi Equation is:
 \begin{equation}
@@ -433,7 +433,7 @@ We use our previous results to expand $$P_1$$, $$P_2$$, and $$P_3$$ into orbital
 \end{equation}
 We have used \eqref{p def} and \eqref{v^2 equation}. To transform $$P_2$$ and $$P_3$$, we need to consider the angular momentum of the system. Recalling that $$L\equiv\mu\parallel\vec{r}\times\dot{\vec{r}}\parallel$$ and using \eqref{polar transform end}-\eqref{polar transform end}:
 \begin{equation}
-    L\equiv\parallel\vec{r}\times{\vec{p}}\parallel=\sqrt{p_\theta^2+\frac{p_\phi^2}{\sin^2{\theta}}}\rightarrow P_3=L
+    L\equiv\parallel\vec{r}\times{\vec{p}}\parallel=\sqrt{p_\theta^2+\frac{p_\phi^2}{\sin^2{\theta}}}\quad\rightarrow\quad P_3=L
 \end{equation}
 Considering the $$z$$ component of the angular momentum yields:
 
@@ -546,7 +546,7 @@ From spherical trigonometric relations:
 \end{equation}
 From \eqref{sphere_trig tan}:
 \begin{equation}
-    \cot{\theta}=-\tan{I}\sin{\chi}\rightarrow\csc^2\theta d\theta=\tan{I}\cos{\chi}d\chi
+    \cot{\theta}=-\tan{I}\sin{\chi}\quad\rightarrow\quad\csc^2\theta d\theta=\tan{I}\cos{\chi}d\chi
 \end{equation}
 \begin{equation}
     \csc^2\theta=1+\cot^2{\theta}=1+\tan^2{I}\sin^2{\chi}
@@ -564,7 +564,7 @@ And for the final integral, $$I_4$$, repeating the process as in $$I_3$$:
 \end{equation}
 With \eqref{sphere_trig sin}:
 \begin{equation}
-    \cos{\theta}=\sin{-I}\sin{\eta}\rightarrow\sin{\theta}d\theta=\sin{I}\cos{\eta}d\eta
+    \cos{\theta}=\sin{-I}\sin{\eta}\quad\rightarrow\quad\sin{\theta}d\theta=\sin{I}\cos{\eta}d\eta
 \end{equation}
 \begin{equation}
     \sin^2{\theta}=1-\cos^2\theta=1-\sin^2{I}\sin^2{\eta}
@@ -588,7 +588,7 @@ We can now evaluate our transformed coordinates:
     Q_3 = \eta - f = \omega
 \end{equation}
 
-Together with $$P_1$$, $$P_2$$, and $$P_3$$ we have completed our canonical transform. We perform one more transformation, $$Q_i\rightarrow g,h,l$$, and $$P_i\rightarrow G,H,L$$ to make our coordinate system slightly more convenient. Let our generating function be:
+Together with $$P_1$$, $$P_2$$, and $$P_3$$ we have completed our canonical transform. We perform one more transformation, $$Q_i\quad\rightarrow\quad g,h,l$$, and $$P_i\quad\rightarrow\quad G,H,L$$ to make our coordinate system slightly more convenient. Let our generating function be:
 
 \begin{equation}
     S\left(Q_1,Q_2,Q_3;G,H,L;t\right)=\left(nL-\frac{3\mathcal{G}\mu m}{2a}\right)\left(t+Q_1\right)+HQ_2+GQ_3
@@ -597,15 +597,15 @@ Together with $$P_1$$, $$P_2$$, and $$P_3$$ we have completed our canonical tran
 From our canonical transform:
 
 \begin{equation}
-    P_1 = \frac{\partial S}{\partial Q_1} = nL - \frac{3\mathcal{G}\mu m}{2a} \rightarrow L = \frac{\mathcal{G}\mu m}{an} = \mu \sqrt{\mathcal{G}ma}
+    P_1 = \frac{\partial S}{\partial Q_1} = nL - \frac{3\mathcal{G}\mu m}{2a} \quad\rightarrow\quad L = \frac{\mathcal{G}\mu m}{an} = \mu \sqrt{\mathcal{G}ma}
 \end{equation}
 
 \begin{equation}
-    P_3 = \frac{\partial S}{\partial Q_3} = G \rightarrow G = L \sqrt{1 - e^2}
+    P_3 = \frac{\partial S}{\partial Q_3} = G \quad\rightarrow\quad G = L \sqrt{1 - e^2}
 \end{equation}
 
 \begin{equation}
-    P_2 = \frac{\partial S}{\partial Q_2} = H \rightarrow H = G \cos{I}
+    P_2 = \frac{\partial S}{\partial Q_2} = H \quad\rightarrow\quad H = G \cos{I}
 \end{equation}
 
 \begin{equation}
@@ -650,7 +650,7 @@ These are called _Delaunay Variables_, and including the transformed Hamiltonian
     \mathcal{K} = -\frac{\mathcal{G}^2 \mu^3 m^2}{2L^2} \label{2 body delauny hamiltonian}
 \end{equation}
 
-Of our six coordinates, only $$l$$ changes in time. As $$e\rightarrow1$$ and $$I\rightarrow0$$, $$g$$, and $$h$$ become ill-defined, which we can correct by another canonical transform to _Modified Delaunay Variables_. Using the generating function:
+Of our six coordinates, only $$l$$ changes in time. As $$e\quad\rightarrow\quad 1$$ and $$I\quad\rightarrow\quad 0$$, $$g$$, and $$h$$ become ill-defined, which we can correct by another canonical transform to _Modified Delaunay Variables_. Using the generating function:
 \begin{equation}
     S\left(l,g,h;\Lambda,P,Q;t\right)=\left(l+g+h\right)\Lambda-\left(g+h\right)P-hQ
 \end{equation}
