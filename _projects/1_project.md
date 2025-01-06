@@ -438,7 +438,7 @@ We have used \eqref{p def} and \eqref{v^2 equation}. To transform $$P_2$$ and $$
 Considering the $$z$$ component of the angular momentum yields:
 
 $$\begin{equation}
-    \left(\vec{r}\times\dot{\vec{r}}\right)_{z} = p_{\phi} = P_2
+    \left(\vec{r}\times\vec{p}\right)_{z} = p_{\phi} = P_2
 \end{equation}$$
 
 As $$L$$ is the norm of the angular momentum, and the angular momentum of the system is normal to the orbital plane, the $$z$$ component of the angular momentum is given by $$P_3=L\cos{I}$$, a projection of the angular momentum onto the $$z$$ axis. With \eqref{L defintion} in summary:
@@ -574,5 +574,111 @@ $$I_4$$ becomes:
     I_4=\frac{1}{P_3}\int\frac{\sin{I}\cos{\eta}d\eta}{\sqrt{1-\sin^2{I}\sin^2{\eta}-\cos^2 I}}=\frac{1}{P_3}\int d\eta=\frac{\eta}{P_3}
 \end{equation}
 
+We can now evaluate our transformed coordinates:
 
+\begin{equation}
+    Q_1 = -t + \frac{\mathcal{M}}{n} = -t_0
+\end{equation}
+
+\begin{equation}
+    Q_2 = \phi - \chi = \Omega
+\end{equation}
+
+\begin{equation}
+    Q_3 = \eta - f = \omega
+\end{equation}
+
+Together with $$P_1$$, $$P_2$$, and $$P_3$$ we have completed our canonical transform. We perform one more transformation, $$Q_i\rightarrow g,h,l$$, and $$P_i\rightarrow G,H,L$$ to make our coordinate system slightly more convenient. Let our generating function be:
+
+\begin{equation}
+    S\left(Q_1,Q_2,Q_3;G,H,L;t\right)=\left(nL-\frac{3\mathcal{G}\mu m}{2a}\right)\left(t+Q_1\right)+HQ_2+GQ_3
+\end{equation}
+
+From our canonical transform:
+
+\begin{equation}
+    P_1 = \pdv{S}{Q_1} = nL - \frac{3\mathcal{G}\mu m}{2a} \rightarrow L = \frac{\mathcal{G}\mu m}{an} = \mu \sqrt{\mathcal{G}ma}
+\end{equation}
+
+\begin{equation}
+    P_3 = \pdv{S}{Q_3} = G \rightarrow G = L \sqrt{1 - e^2}
+\end{equation}
+
+\begin{equation}
+    P_2 = \pdv{S}{Q_2} = H \rightarrow H = G \cos{I}
+\end{equation}
+
+\begin{equation}
+    l = \pdv{S}{L} = n \left( t + Q_1 \right) = \mathcal{M}
+\end{equation}
+
+\begin{equation}
+    g = \pdv{S}{G} = Q_3 = \omega
+\end{equation}
+
+\begin{equation}
+    h = \pdv{S}{H} = Q_2 = \Omega
+\end{equation}
+
+These are called \textit{Delaunay Variables}, and including the transformed Hamiltonian $$\mathcal{K}$$, we summarize:
+
+\begin{equation}
+    L = \mu \sqrt{\mathcal{G}ma}
+\end{equation}
+
+\begin{equation}
+    G = L \sqrt{1 - e^2}
+\end{equation}
+
+\begin{equation}
+    H = G \cos{I}
+\end{equation}
+
+\begin{equation}
+    l = \mathcal{M}
+\end{equation}
+
+\begin{equation}
+    g = \omega
+\end{equation}
+
+\begin{equation}
+    h = \Omega
+\end{equation}
+
+\begin{equation}
+    \mathcal{K} = -\frac{\mathcal{G}^2 \mu^3 m^2}{2L^2} \label{2 body delauny hamiltonian}
+\end{equation}
+
+Of our six coordinates, only $$l$$ changes in time. As $$e\rightarrow1$$ and $$I\rightarrow0$$, $$g$$, and $$h$$ become ill-defined, which we can correct by another canonical transform to \textit{modified Delaunay Variables}. Using the generating function:
+\begin{equation}
+    S\left(l,g,h;\Lambda,P,Q;t\right)=\left(l+g+h\right)\Lambda-\left(g+h\right)P-hQ
+\end{equation}
+We find the new set of coordinates, $$\Lambda$$, $$P$$, $$Q$$, $$\lambda$$, $$p$$, and $$q$$:
+
+\begin{equation}
+    \Lambda = L = \mu \sqrt{\mathcal{G}ma}
+\end{equation}
+
+\begin{equation}
+    P = L - G = \Lambda \left( 1 - \sqrt{1 - e^2} \right)
+\end{equation}
+
+\begin{equation}
+    Q = G - H = 2 \left( \Lambda - P \right) \sin^2 \frac{I}{2}
+\end{equation}
+
+\begin{equation}
+    \lambda = l + g + h = \mathcal{M} + \varpi
+\end{equation}
+
+\begin{equation}
+    p = -g - h = -\varpi
+\end{equation}
+
+\begin{equation}
+    q = -h = -\Omega
+\end{equation}
+
+We have defined the \textit{longitude of the periapis}: $$\varpi\coloneqq\omega+\Omega$$. The advantage here is that $$\lambda$$ is always defined, and $$p$$ and $$q$$ are only ill-defined when their corresponding momenta $$P$$ and $$Q$$ are equal to zero.
 
