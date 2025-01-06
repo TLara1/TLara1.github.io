@@ -463,17 +463,17 @@ Having expressed our transformed momenta in orbital elements, we must do the sam
 
 Using \eqref{transormned position coordinates}:
 
-\begin{equation}
+$$\begin{equation}
     Q_1 = frac{\partial {S}{\partial P_{1}} = -t + \mu \int \frac{dr}{\sqrt{2\mu\left(P_{1} + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_3^2}{r^2}}} = -t + \mu I_1
-\end{equation}
+\end{equation}$$
 
-\begin{equation}
+$$\begin{equation}
     Q_2 = frac{\partial {S}{\partial P_{2}} = \phi - P_{2} \int \frac{d\theta}{\sin^2\theta\sqrt{P_{3}^2 - \frac{P_{2}^2}{\sin^2\theta}}} = \phi - P_2 I_3
-\end{equation}
+\end{equation}$$
 
-\begin{equation}
-    Q_3 = frac{\partial {S}{\partial P_3} = P_3 \int \frac{d\theta}{\sqrt{P_3^2 - \frac{P_2^2}{\sin^2\theta}}} - P_3 \int \frac{dr}{r^2 \sqrt{2\mu \left(P_1 + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_3^2}{r^2}}} = P_3 \left(I_4 - I_2\right)
-\end{equation}
+$$\begin{equation}
+    Q_3 = frac{\partial {S}{\partial P_3} = P_3 \int \frac{d\theta}{\sqrt{P_3^2 - \frac{P_2^2}{\sin^2\theta}}} - P_3 \int \frac{dr}{r^2 \sqrt{2\mu \left(P_1 + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_3^2}{r^2}}} = P_3\left(I_4 - I_2\right)
+\end{equation}$$
 
 Evaluating the integrals in order, starting with $$I_1$$. With \eqref{P_1 def} and \eqref{P_3 def}:
 
@@ -597,30 +597,30 @@ Together with $$P_1$$, $$P_2$$, and $$P_3$$ we have completed our canonical tran
 From our canonical transform:
 
 \begin{equation}
-    P_1 = \pdv{S}{Q_1} = nL - \frac{3\mathcal{G}\mu m}{2a} \rightarrow L = \frac{\mathcal{G}\mu m}{an} = \mu \sqrt{\mathcal{G}ma}
+    P_1 = \frac{\partial S}{\partial Q_1} = nL - \frac{3\mathcal{G}\mu m}{2a} \rightarrow L = \frac{\mathcal{G}\mu m}{an} = \mu \sqrt{\mathcal{G}ma}
 \end{equation}
 
 \begin{equation}
-    P_3 = \pdv{S}{Q_3} = G \rightarrow G = L \sqrt{1 - e^2}
+    P_3 = \frac{\partial S}{\partial Q_3} = G \rightarrow G = L \sqrt{1 - e^2}
 \end{equation}
 
 \begin{equation}
-    P_2 = \pdv{S}{Q_2} = H \rightarrow H = G \cos{I}
+    P_2 = \frac{\partial S}{\partial Q_2} = H \rightarrow H = G \cos{I}
 \end{equation}
 
 \begin{equation}
-    l = \pdv{S}{L} = n \left( t + Q_1 \right) = \mathcal{M}
+    l = \frac{\partial S}{\partial L} = n \left( t + Q_1 \right) = \mathcal{M}
 \end{equation}
 
 \begin{equation}
-    g = \pdv{S}{G} = Q_3 = \omega
+    g = \frac{\partial S}{\partial G} = Q_3 = \omega
 \end{equation}
 
 \begin{equation}
-    h = \pdv{S}{H} = Q_2 = \Omega
+    h = \frac{\partial S}{\partial H} = Q_2 = \Omega
 \end{equation}
 
-These are called \textit{Delaunay Variables}, and including the transformed Hamiltonian $$\mathcal{K}$$, we summarize:
+These are called _Delaunay Variables_, and including the transformed Hamiltonian $$\mathcal{K}$$, we summarize:
 
 \begin{equation}
     L = \mu \sqrt{\mathcal{G}ma}
@@ -650,7 +650,7 @@ These are called \textit{Delaunay Variables}, and including the transformed Hami
     \mathcal{K} = -\frac{\mathcal{G}^2 \mu^3 m^2}{2L^2} \label{2 body delauny hamiltonian}
 \end{equation}
 
-Of our six coordinates, only $$l$$ changes in time. As $$e\rightarrow1$$ and $$I\rightarrow0$$, $$g$$, and $$h$$ become ill-defined, which we can correct by another canonical transform to \textit{modified Delaunay Variables}. Using the generating function:
+Of our six coordinates, only $$l$$ changes in time. As $$e\rightarrow1$$ and $$I\rightarrow0$$, $$g$$, and $$h$$ become ill-defined, which we can correct by another canonical transform to _modified Delaunay Variables_. Using the generating function:
 \begin{equation}
     S\left(l,g,h;\Lambda,P,Q;t\right)=\left(l+g+h\right)\Lambda-\left(g+h\right)P-hQ
 \end{equation}
@@ -680,5 +680,132 @@ We find the new set of coordinates, $$\Lambda$$, $$P$$, $$Q$$, $$\lambda$$, $$p$
     q = -h = -\Omega
 \end{equation}
 
-We have defined the \textit{longitude of the periapis}: $$\varpi\coloneqq\omega+\Omega$$. The advantage here is that $$\lambda$$ is always defined, and $$p$$ and $$q$$ are only ill-defined when their corresponding momenta $$P$$ and $$Q$$ are equal to zero.
+We have defined the _longitude of the periapis_: $$\varpi\coloneqq\omega+\Omega$$. The advantage here is that $$\lambda$$ is always defined, and $$p$$ and $$q$$ are only ill-defined when their corresponding momenta $$P$$ and $$Q$$ are equal to zero.
+
+<h2>The Three-Body Hamiltonian and the Lagrange Planetary Equations</h2>
+
+In \eqref{Expansion of the Two-Body Hamiltonian in Delaunay Variables}, we considered the two-body case. Now consider a perturbation to the two-body Hamiltonian:
+\begin{equation}
+    \mathcal{H}=-\frac{\mathcal{G}^2\mu_1^3m_1^2}{2\Lambda_1^2}+\mathcal{R}\left(\Lambda_1,...\right)
+\end{equation}
+Where $$\mathcal{R}$$ is the _disturbing function_, written in terms of the six modified Delaunay variables. We have adopted a new notation for the total and reduced masses, denoting: $$m_i=m_0'+m_i'$$, $$\mu_i=\frac{m_0'm_i'}{m_0'+m_i'}$$. The equations of motion are easy to calculate:
+
+\begin{equation}
+    \dot{\Lambda}_i = - \frac{\partial \mathcal{R}}{\partial \lambda_i} \label{Delaunay Lagrange 1}
+\end{equation}
+
+\begin{equation}
+    \dot{P}_i = - \frac{\partial \mathcal{R}}{\partial p_i}
+\end{equation}
+
+\begin{equation}
+    \dot{Q}_i = - \frac{\partial \mathcal{R}}{\partial q_i}
+\end{equation}
+
+\begin{equation}
+    \dot{\lambda}_i = \frac{\mathcal{G}^2 \mu_1^3 m_i^2}{\Lambda_i^3} + \frac{\partial \mathcal{R}}{\partial \Lambda_i}
+\end{equation}
+
+\begin{equation}
+    \dot{p}_i = \frac{\partial \mathcal{R}}{\partial P_i}
+\end{equation}
+
+\begin{equation}
+    \dot{q}_i = \frac{\partial \mathcal{R}}{\partial Q_i} \label{Delaunay Lagrange 2}
+\end{equation}
+
+\eqref{Delaunay Lagrange 1}-\eqref{Delaunay Lagrange 2} are the _Lagrange Planetary Equations_, and we can rewrite these in terms of our orbital elements: $$a$$, $$e$$, $$\lambda$$, $$\varpi$$, $$\Omega$$, and $$I$$. 
+
+First expressing $$a$$, $$e$$, and $$e$$ in terms of Delaunay variables:
+
+\begin{equation}
+    a_i = \frac{\Lambda_i^2}{\mathcal{G} \mu_i^2 m_i}
+\end{equation}
+
+\begin{equation}
+    e_i = \sqrt{1 - \left( 1 - \frac{P_i}{\Lambda_i} \right)^2}
+\end{equation}
+
+\begin{equation}
+    \sin{\frac{I_i}{2}} = \sqrt{\frac{Q_i}{2 \left( \Lambda_i - P_i \right)}}
+\end{equation}
+
+Calculating the partial derivatives of the disturbing function:
+
+\begin{equation}
+    \dot{\Lambda}_i = \frac{\partial \Lambda_i}{\partial a_i} \dot{a}_i \label{orbital convert 1}
+\end{equation}
+
+\begin{equation}
+    = \frac{\mu_i \sqrt{\mathcal{G} m_i}}{2 \sqrt{a_i}} \dot{a}_i
+\end{equation}
+
+\begin{equation}
+    \dot{P}_i = \frac{\partial P_i}{\partial a_i} \dot{a}_i + \frac{\partial P_i}{\partial e_i} \dot{e}_i
+\end{equation}
+
+\begin{equation}
+    = \frac{\mu_i \sqrt{\mathcal{G} m_i}}{2 \sqrt{a_i}} \left( 1 - \sqrt{1 - e_i^2} \right) \dot{a}_i + \frac{\mu_i \sqrt{\mathcal{G} m_i a_i}}{\sqrt{1 - e_i^2}} e_i \dot{e}_i
+\end{equation}
+
+\begin{equation}
+    \dot{Q}_i = \frac{\partial Q_i}{\partial a_i} \dot{a}_i + \frac{\partial Q_i}{\partial e_i} \dot{e}_i + \frac{\partial Q_i}{\partial I_i} \dot{I}_i
+\end{equation}
+
+\begin{equation}
+    = \frac{\mu_i \sqrt{\mathcal{G} m_i}}{\sqrt{a_i}} \sqrt{1 - e_i^2} \sin^2 \frac{I_i}{2} \dot{a}_i - \frac{2 \mu_i \sqrt{\mathcal{G} m_i a_i}}{\sqrt{1 - e_i^2}} e_i \sin^2 \frac{I_i}{2} \dot{e}_i + \mu_i \sqrt{\mathcal{G} m_i a_i} \sqrt{1 - e_i^2} \sin I_i \dot{I}_i
+\end{equation}
+
+\begin{equation}
+    \frac{\partial \mathcal{R}}{\partial \Lambda_i} = \frac{\partial \mathcal{R}}{\partial a_i} \frac{da_i}{d\Lambda_i} + \frac{\partial \mathcal{R}}{\partial e_i} \frac{de_i}{d\Lambda_i} + \frac{\partial \mathcal{R}}{\partial I_i} \frac{dI_i}{d\Lambda_i}
+\end{equation}
+
+\begin{equation}
+    = \frac{2a_i}{\mu_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial a_i} + \frac{1 - e_i^2 - \sqrt{1 - e_i^2}}{\mu_i e_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial e_i} - \frac{\tan \frac{I_i}{2}}{\mu_i \sqrt{\mathcal{G} m_i a_i} \sqrt{1 - e_i^2}} \frac{\partial \mathcal{R}}{\partial I_i}
+\end{equation}
+
+\begin{equation}
+    \frac{\partial \mathcal{R}}{\partial P_i} = \frac{\partial \mathcal{R}}{\partial e_i} \frac{de_i}{dP_i} + \frac{\partial \mathcal{R}}{\partial I_i} \frac{dI_i}{dP_i}
+\end{equation}
+
+\begin{equation}
+    = \frac{\sqrt{1 - e_i^2}}{\mu_i e_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial e_i} + \frac{\tan \frac{I_i}{2}}{\mu_i \sqrt{\mathcal{G} m_i a_i} \sqrt{1 - e_i^2}} \frac{\partial \mathcal{R}}{\partial I_i}
+\end{equation}
+
+\begin{equation}
+    \frac{\partial \mathcal{R}}{\partial Q_i} = \frac{\partial \mathcal{R}}{\partial I_i} \frac{dI_i}{dQ_i} \label{orbital convert end}
+\end{equation}
+
+\begin{equation}
+    = \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i} \sin I_i \sqrt{1 - e_i^2}} \frac{\partial \mathcal{R}}{\partial I_i}
+\end{equation}
+
+And combining \eqref{Delaunay Lagrange 1}-\eqref{Delaunay Lagrange 2} with \eqref{orbital convert 1}-\eqref{orbital convert end}:
+
+\begin{equation}
+    \dot{a}_i = -\frac{2 \sqrt{a_i}}{\mu_i \sqrt{\mathcal{G} m_i}} \frac{\partial \mathcal{R}}{\partial \lambda_i} \label{lagrange start}
+\end{equation}
+
+\begin{equation}
+    \dot{e}_i = - \frac{1 - e_i^2 - \sqrt{1 - e_i^2}}{\mu_i e_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial \lambda_i} + \frac{\sqrt{1 - e_i^2}}{\mu_i e_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial \varpi_i}
+\end{equation}
+
+\begin{equation}
+    \dot{I}_i = \frac{\tan \frac{I_i}{2}}{\mu_i \sqrt{\mathcal{G} m_i a_i} \sqrt{1 - e_i^2}} \frac{\partial \mathcal{R}}{\partial \lambda_i} + \frac{\tan \frac{I_i}{2}}{\mu_i \sqrt{\mathcal{G} m_i a_i} \sqrt{1 - e_i^2}} \frac{\partial \mathcal{R}}{\partial \varpi_i} + \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i} \sin I_i \sqrt{1 - e_i^2}} \frac{\partial \mathcal{R}}{\partial \Omega_i}
+\end{equation}
+
+\begin{equation}
+    \dot{\lambda}_i = \frac{\sqrt{\mathcal{G} m_i}}{a_i^{\frac{3}{2}}} + \frac{2 a_i}{\mu_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial a_i} + \frac{1 - e_i^2 - \sqrt{1 - e_i^2}}{\mu_i e_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial e_i} - \frac{\tan \frac{I_i}{2}}{\mu_i \sqrt{\mathcal{G} m_i a_i} \sqrt{1 - e_i^2}} \frac{\partial \mathcal{R}}{\partial I_i}
+\end{equation}
+
+\begin{equation}
+    \dot{\varpi}_i = - \frac{\sqrt{1 - e_i^2}}{\mu_i e_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial e_i} - \frac{\tan \frac{I_i}{2}}{\mu_i \sqrt{\mathcal{G} m_i a_i} \sqrt{1 - e_i^2}} \frac{\partial \mathcal{R}}{\partial I_i} \label{varpi evolve}
+\end{equation}
+
+\begin{equation}
+    \dot{\Omega}_i = - \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i} \sin I_i \sqrt{1 - e_i^2}} \frac{\partial \mathcal{R}}{\partial I_i} \label{lagrange end}
+\end{equation}
+
+We have arrived at the _Lagrange Planetary Equations_. Note that these expressions are entirely independent of the form of the disturbing function $$\mathcal{R}$$ and we have taken no simplifying or approximating steps during our derivation.
+
 
