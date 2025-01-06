@@ -811,19 +811,19 @@ We have arrived at the _Lagrange Planetary Equations_. Note that these expressio
 Finally, we approximate \eqref{lagrange start}-\eqref{lagrange end} to second order for small $$e_i$$ and $$I_i$$:
 
 \begin{equation}
-    \dot{e}_i \simeq \frac{1}{\mu_i e_i \sqrt{\mathcal{G} m_i a_i}} \pdv{\mathcal{R}}{\varpi_i} \label{lagrange simple start}
+    \dot{e}_i \simeq \frac{1}{\mu_i e_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial \varpi_i} \label{lagrange simple start}
 \end{equation}
 
 \begin{equation}
-    \dot{I}_i \simeq \frac{1}{\mu_i I_i \sqrt{\mathcal{G} m_i a_i}} \pdv{\mathcal{R}}{\Omega_i}
+    \dot{I}_i \simeq \frac{1}{\mu_i I_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial \Omega_i}
 \end{equation}
 
 \begin{equation}
-    \dot{\varpi}_i \simeq - \frac{1}{\mu_i e_i \sqrt{\mathcal{G} m_i a_i}} \pdv{\mathcal{R}}{e_i}
+    \dot{\varpi}_i \simeq - \frac{1}{\mu_i e_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial e_i}
 \end{equation}
 
 \begin{equation}
-    \dot{\Omega}_i \simeq - \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i} I_i} \pdv{\mathcal{R}}{I_i} \label{lagrange simple end}
+    \dot{\Omega}_i \simeq - \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i} I_i} \frac{\partial \mathcal{R}}{\partial I_i} \label{lagrange simple end}
 \end{equation}
 
 In this approximation, $$a_1$$ is constant as it varies much slower than the other orbital elements. Similarly, $$\lambda_i$$ varies in time only from the non-perturbed element, independent of $$\mathcal{R}$$. It is convenient to define a few additional variables:
@@ -847,19 +847,19 @@ In this approximation, $$a_1$$ is constant as it varies much slower than the oth
 Rewriting \eqref{lagrange simple start}-\eqref{lagrange simple end} with our new variables:
 
 \begin{equation}
-    \dot{h}_i = \pdv{h_i}{e_i} \dot{e}_i + \pdv{h_i}{\varpi_i} \dot{\varpi}_i \simeq - \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i}} \pdv{\mathcal{R}}{k_i} \label{simplified lagrange start}
+    \dot{h}_i = \frac{\partial h_i}{\partial e_i} \dot{e}_i + \frac{\partial h_i}{\partial \varpi_i} \dot{\varpi}_i \simeq - \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial k_i} \label{simplified lagrange start}
 \end{equation}
 
 \begin{equation}
-    \dot{k}_i = \pdv{k_i}{e_i} \dot{e}_i + \pdv{k_i}{\varpi_i} \dot{\varpi}_i \simeq \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i}} \pdv{\mathcal{R}}{h_i}
+    \dot{k}_i = \frac{\partial k_i}{\partial e_i} \dot{e}_i + \frac{\partial k_i}{\partial \varpi_i} \dot{\varpi}_i \simeq \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial h_i}
 \end{equation}
 
 \begin{equation}
-    \dot{p}_i = \pdv{p_i}{I_i} \dot{I}_i + \pdv{p_i}{\Omega_i} \dot{\Omega}_i \simeq - \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i}} \pdv{\mathcal{R}}{q_i}
+    \dot{p}_i = \frac{\partial p_i}{\partial I_i} \dot{I}_i + \frac{\partial p_i}{\partial \Omega_i} \dot{\Omega}_i \simeq - \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial q_i}
 \end{equation}
 
 \begin{equation}
-    \dot{q}_i = \pdv{q_i}{I_i} \dot{I}_i + \pdv{q_i}{\Omega_i} \dot{\Omega}_i \simeq \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i}} \pdv{\mathcal{R}}{p_i} \label{simplified lagrange end}
+    \dot{q}_i = \frac{\partial q_i}{\partial I_i} \dot{I}_i + \frac{\partial q_i}{\partial \Omega_i} \dot{\Omega}_i \simeq \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial p_i} \label{simplified lagrange end}
 \end{equation}
 
 The simplified form of our planetary equations, \eqref{simplified lagrange start}-\eqref{simplified lagrange end} will be convenient after expanding $$\mathcal{R}$$ to second order in our orbital elements.
