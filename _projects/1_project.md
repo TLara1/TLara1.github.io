@@ -463,17 +463,17 @@ Having expressed our transformed momenta in orbital elements, we must do the sam
 
 Using \eqref{transormned position coordinates}:
 
-$$\begin{equation}
-    Q_1 = \frac{\partial {S}{\partial P_1} = -t + \mu \int \frac{dr}{\sqrt{2\mu\left(P_1 + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_3^2}{r^2}}} = -t + \mu I_1
-\end{equation}$$
+\begin{equation}
+    Q_1 = \frac{\partial {S}}{\partial P_1} = -t + \mu \int \frac{dr}{\sqrt{2\mu\left(P_1 + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_3^2}{r^2}}} = -t + \mu I_1
+\end{equation}
 
-$$\begin{equation}
-    Q_2 = \frac{\partial {S}{\partial P_2} = \phi - P_2 \int \frac{d\theta}{\sin^2\theta\sqrt{P_3^2 - \frac{P_2^2}{\sin^2\theta}}} = \phi - P_2 I_3
-\end{equation}$$
+\begin{equation}
+    Q_2 = \frac{\partial {S}}{\partial P_2} = \phi - P_2 \int \frac{d\theta}{\sin^2\theta\sqrt{P_3^2 - \frac{P_2^2}{\sin^2\theta}}} = \phi - P_2 I_3
+\end{equation}
 
-$$\begin{equation}
-    Q_3 = \frac{\partial {S}{\partial P_3} = P_3 \int \frac{d\theta}{\sqrt{P_3^2 - \frac{P_2^2}{\sin^2\theta}}} - P_3 \int \frac{dr}{r^2 \sqrt{2\mu \left(P_1 + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_3^2}{r^2}}} = P_3\left(I_4 - I_2\right)
-\end{equation}$$
+\begin{equation}
+    Q_3 = \frac{\partial {S}}{\partial P_3} = P_3 \int \frac{d\theta}{\sqrt{P_3^2 - \frac{P_2^2}{\sin^2\theta}}} - P_3 \int \frac{dr}{r^2 \sqrt{2\mu \left(P_1 + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_3^2}{r^2}}} = P_3\left(I_4 - I_2\right)
+\end{equation}
 
 Evaluating the integrals in order, starting with $$I_1$$. With \eqref{P_1 def} and \eqref{P_3 def}:
 
