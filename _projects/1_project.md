@@ -16,7 +16,7 @@ In these notes, we take a classical approach to the three-body problem, examinin
 <h2>I. Mechanics</h2>
 <h3>I.I Canonical Transforms</h3>
 
-A time-independent coordinate transform $$q_i\quad\rightarrow\quad Q_i$$ and $$p_i\quad\rightarrow\quad P_i$$ is said to be canonical if it preserves Hamilton's equations of motion. Specifically, letting the new Hamiltonian $$\mathcal{K}\left(Q_i,P_i\right)=\mathcal{H}\left(q\left(Q_i,P_i\right),p_i\left(Q_i,P_i\right)\right)$$, then we have:
+A time-independent coordinate transform $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ is said to be canonical if it preserves Hamilton's equations of motion. Specifically, letting the new Hamiltonian $$\mathcal{K}\left(Q_i,P_i\right)=\mathcal{H}\left(q\left(Q_i,P_i\right),p_i\left(Q_i,P_i\right)\right)$$, then we have:
 
 \begin{equation}
     \dot{Q}_i=\frac{\partial\mathcal{K}}{\partial P_i}
@@ -51,7 +51,7 @@ Poisson Brackets can also be used to determine if a function of coordinates $$f\
 
 <h3>I.II The Hamilton-Jacobi Equation</h3>
 
-A generating function $$F$$ generates a canonical transformation from coordinates $$q_i\quad\rightarrow\quad Q_i$$ and $$p_i\quad\rightarrow\quad P_i$$ and a Hamiltonian $$\mathcal{H\\quad\rightarrow\quad\mathcal{K}}$$. This generating function satisfies:
+A generating function $$F$$ generates a canonical transformation from coordinates $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ and a Hamiltonian $$\mathcal{H}\rightarrow\mathcal{K}$$. This generating function satisfies:
 \begin{equation}
     p_i\dot{q}_i-\mathcal{H}=P_i\dot{Q}_i-\mathcal{K}+\dot{F}
 \end{equation}
@@ -386,7 +386,7 @@ Again, it can be shown that this transform satisfies \eqref{cannonical 1}-\eqref
 \end{equation}
 
 <h3>IV.I Action-Angle Variables</h3>
-We now find a canonical transform, $$q_i\quad\rightarrow\quad Q_i$$ and $$p_i\quad\rightarrow\quad P_i$$ such that our transformed Hamiltonian $$\mathcal{K}$$ is a function of only momenta, $$\mathcal{K}\left(P_i\right)$$. Transformed position coordinates are known as _angles_ and transformed momenta are known as _actions_.
+We now find a canonical transform, $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ such that our transformed Hamiltonian $$\mathcal{K}$$ is a function of only momenta, $$\mathcal{K}\left(P_i\right)$$. Transformed position coordinates are known as _angles_ and transformed momenta are known as _actions_.
 
 Utilizing the Hamilton-Jacobi Equation (\eqref{HJ Equation}) with a generating function $$S\left(r,\theta,\phi;P_1,P_2,P_3;t\right)$$, where $$P_1$$, $$P_2$$, and $$P_3$$ are constants of motion because the transformed Hamiltonian $$\mathcal{K}$$ is independent of $$Q_i$$. The Hamilton-Jacobi Equation is:
 \begin{equation}
@@ -588,7 +588,7 @@ We can now evaluate our transformed coordinates:
     Q_3 = \eta - f = \omega
 \end{equation}
 
-Together with $$P_1$$, $$P_2$$, and $$P_3$$ we have completed our canonical transform. We perform one more transformation, $$Q_i\quad\rightarrow\quad g,h,l$$, and $$P_i\quad\rightarrow\quad G,H,L$$ to make our coordinate system slightly more convenient. Let our generating function be:
+Together with $$P_1$$, $$P_2$$, and $$P_3$$ we have completed our canonical transform. We perform one more transformation, $$Q_i\rightarrow g,h,l$$, and $$P_i\rightarrow G,H,L$$ to make our coordinate system slightly more convenient. Let our generating function be:
 
 \begin{equation}
     S\left(Q_1,Q_2,Q_3;G,H,L;t\right)=\left(nL-\frac{3\mathcal{G}\mu m}{2a}\right)\left(t+Q_1\right)+HQ_2+GQ_3
@@ -650,7 +650,7 @@ These are called _Delaunay Variables_, and including the transformed Hamiltonian
     \mathcal{K} = -\frac{\mathcal{G}^2 \mu^3 m^2}{2L^2} \label{2 body delauny hamiltonian}
 \end{equation}
 
-Of our six coordinates, only $$l$$ changes in time. As $$e\quad\rightarrow\quad 1$$ and $$I\quad\rightarrow\quad 0$$, $$g$$, and $$h$$ become ill-defined, which we can correct by another canonical transform to _Modified Delaunay Variables_. Using the generating function:
+Of our six coordinates, only $$l$$ changes in time. As $$e\rightarrow 1$$ and $$I\rightarrow 0$$, $$g$$, and $$h$$ become ill-defined, which we can correct by another canonical transform to _Modified Delaunay Variables_. Using the generating function:
 \begin{equation}
     S\left(l,g,h;\Lambda,P,Q;t\right)=\left(l+g+h\right)\Lambda-\left(g+h\right)P-hQ
 \end{equation}
