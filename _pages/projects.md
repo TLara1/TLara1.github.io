@@ -5,7 +5,7 @@ permalink: /projects/
 description: A collection of notes I have compiled on interesting topics in physics and mathematics. These are created mostly for my personal reference, they are more concise than course notes one may find on the same topic. I do not guarantee these are without mistakes, if you find an error, please let me know.
 nav: true
 nav_order: 3
-display_categories: [physics]
+display_categories: [Physics]
 horizontal: false
 ---
 
