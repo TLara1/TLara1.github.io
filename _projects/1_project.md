@@ -682,7 +682,7 @@ We find the new set of coordinates, $$\Lambda$$, $$P$$, $$Q$$, $$\lambda$$, $$p$
 
 We have defined the _longitude of the periapis_: $$\varpi\equiv\omega+\Omega$$. The advantage here is that $$\lambda$$ is always defined, and $$p$$ and $$q$$ are only ill-defined when their corresponding momenta $$P$$ and $$Q$$ are equal to zero.
 
-<h2>The Three-Body Hamiltonian and the Lagrange Planetary Equations</h2>
+<h2>V. The Three-Body Hamiltonian and the Lagrange Planetary Equations</h2>
 
 Now we approach the three-body problem by considering a perturbation to the two-body Hamiltonian:
 \begin{equation}
@@ -863,4 +863,118 @@ Rewriting \eqref{lagrange simple start}-\eqref{lagrange simple end} with our new
 \end{equation}
 
 The simplified form of our planetary equations, \eqref{simplified lagrange start}-\eqref{simplified lagrange end} will be convenient after expanding $$\mathcal{R}$$ to second order in our orbital elements.
+
+<h2>VI. The Disturbing Function For the Three-Body Problem,</h2>
+We now analyse the disturbing function caused by the presence of a third body of mass $$m_2'$$. 
+
+From Newton's Law, the motions of the three bodies are:
+
+\begin{equation}
+    \ddot{\vec{r}}_0' = \frac{\mathcal{G} m_1'}{\parallel \vec{r}_1' - \vec{r}_0' \parallel^3} \left( \vec{r}_1' - \vec{r}_0' \right) + \frac{\mathcal{G} m_2'}{\parallel \vec{r}_2' - \vec{r}_0' \parallel^3} \left( \vec{r}_2' - \vec{r}_0' \right)
+\end{equation}
+
+\begin{equation}
+    \ddot{\vec{r}}_1' = - \frac{\mathcal{G} m_0'}{\parallel \vec{r}_1' - \vec{r}_0' \parallel^3} \left( \vec{r}_1' - \vec{r}_0' \right) + \frac{\mathcal{G} m_2'}{\parallel \vec{r}_2' - \vec{r}_1' \parallel^3} \left( \vec{r}_2' - \vec{r}_1' \right)
+\end{equation}
+
+\begin{equation}
+    \ddot{\vec{r}}_2' = - \frac{\mathcal{G} m_0'}{\parallel \vec{r}_2' - \vec{r}_0' \parallel^3} \left( \vec{r}_2' - \vec{r}_0' \right) - \frac{\mathcal{G} m_1'}{\parallel \vec{r}_2' - \vec{r}_1' \parallel^3} \left( \vec{r}_2' - \vec{r}_1' \right)
+\end{equation}
+
+We first adjust our coordinate system, defining the centre of mass between $$m_0'$$ and $$m_1'$$, $$\vec{R}_1=\frac{m_0'\vec{r}_0'+m_1'\vec{r}_1'}{m_1}$$. Let $$\vec{R}_2=\vec{r}_2'-\vec{R}_1$$ be the vector from the $$m_0'$$, $$m_1'$$ centre of mass to $$m_2'$$. We write:
+
+\begin{equation*}
+    \vec{r}_2 = \vec{r}_2' - \vec{r}_0' = \vec{R}_2 + \vec{R}_1 - \vec{r}_0' = \vec{R}_2 + \frac{m_1'}{m_1} \vec{r}_1
+\end{equation*}
+
+\begin{equation*}
+    \vec{r}_2 - \vec{r}_1 = \vec{R}_2 + \vec{R}_1 - \vec{r}_1' = \vec{R}_2 - \frac{m_0'}{m_1} \vec{r}_1
+\end{equation*}
+
+\begin{equation}
+    \ddot{\vec{r}}_1 = \frac{\mathcal{G} m_1}{\parallel \vec{r}_1 \parallel^3} \vec{r}_1 + \frac{\mathcal{G} m_2'}{\parallel \vec{R}_2 - \frac{m_0'}{m_1} \vec{r}_1 \parallel^3} \left( \vec{R}_2 - \frac{m_0'}{m_1} \vec{r}_1 \right) - \frac{\mathcal{G} m_2'}{\parallel \vec{R}_2 + \frac{m_1'}{m_1} \vec{r}_1 \parallel^3} \left( \vec{R}_2 + \frac{m_1'}{m_1} \vec{r}_1 \right)
+\end{equation}
+
+\begin{equation}
+    \ddot{\vec{R}}_2 = - \frac{\mathcal{G} m_1' \left( m_1 + m_2' \right)}{m_1 \parallel \vec{R}_2 - \frac{m_0'}{m_1} \vec{r}_1 \parallel^3} \left( \vec{R}_2 - \frac{m_0'}{m_1} \vec{r}_1 \right) - \frac{\mathcal{G} m_0' \left( m_1 + m_2' \right)}{m_1 \parallel \vec{R}_2 + \frac{m_1'}{m_1} \vec{r}_1 \parallel^3} \left( \vec{R}_2 + \frac{m_1'}{m_1} \vec{r}_1 \right)
+\end{equation}
+
+We write the Lagrangian of the system:
+
+\begin{equation}
+    \mathcal{L}=\frac{\mu_1}{2}\parallel\dot{\vec{r}}_1\parallel^2+\frac{m_1m_2'}{2\left(m_1+m_2'\right)}\parallel\dot{\vec{R}}_2\parallel^2+\frac{\mathcal{G}\mu_1m_1}{\parallel \vec{r}_1\parallel}+\frac{\mathcal{G}\mu_1m_1m_2'}{m_0'\parallel\vec{R}_2-\frac{m_0'}{m_1}\vec{r}_1\parallel}+\frac{\mathcal{G}\mu_1m_1m_2'}{m_1'\parallel \vec{R}_2+\frac{m_1'}{m_1}\vec{r}_1\parallel}
+\end{equation}
+
+From which we can write our three body Hamiltonian:
+
+\begin{equation}\label{3 body hamiltonian}
+    \mathcal{H}=\frac{1}{2\mu_1}\parallel{\vec{p}}_1\parallel^2+\frac{m_1+m_2'}{2m_1m_2'}\parallel{\vec{P}}_2\parallel^2-\frac{\mathcal{G}\mu_1m_1}{\parallel\vec{r}_1\parallel}-\frac{\mathcal{G}\mu_1m_1m_2'}{m_0'\parallel\vec{R}_2-\frac{m_0'}{m_1}\vec{r}_1\parallel}-\frac{\mathcal{G}\mu_1m_1m_2'}{m_1'\parallel \vec{R}_2+\frac{m_1'}{m_1}\vec{r}_1\parallel}
+\end{equation}
+
+Now we must isolate the disturbing function. First, we observe, via the law of cosines, we can write:
+
+\begin{equation}\label{cosine 1/r expression}
+    \frac{1}{\parallel\vec{q}-\vec{q}'\parallel}=\left(q^2+q'^2-2qq'\cos{\psi}\right)^{-\frac{1}{2}}
+\end{equation}
+
+Where $$\psi$$ is the angle between vectors $$\vec{q}$$ and $$\vec{q}'$$. We can write \eqref{cosine 1/r expression} as a power series using \textit{Legendre Polynomials}, $$P_n$$:
+
+\begin{equation}\label{legendre expansion}
+    \frac{1}{\parallel\vec{q}-\vec{q}'\parallel}=\frac{1}{q}\left(1+t^2-2t\cos{\psi}\right)^{-\frac{1}{2}}=\frac{1}{q}\sum_{n=0}^\infty t^nP_n\left(\cos{\psi}\right)
+\end{equation}
+
+Where $$t=\frac{q'}{q}$$ is an expansion parameter. Here we do not study the $$P_n$$ polynomials, using them only as a tool in our calculations, the first few polynomials are:
+
+\begin{equation}
+    P_0\left(x\right) = 1 \nonumber
+\end{equation}
+
+\begin{equation}
+    P_1\left(x\right) = x \nonumber
+\end{equation}
+
+\begin{equation}
+    P_2\left(x\right) = \frac{1}{2} \left( 3x^2 - 1 \right) \nonumber
+\end{equation}
+
+\begin{equation}
+    P_3\left(x\right) = \frac{1}{2} \left( 5x^3 - 3x \right) \nonumber
+\end{equation}
+
+\begin{equation}
+    P_4\left(x\right) = \frac{1}{8} \left( 35x^4 - 30x^2 + 3 \right) \nonumber
+\end{equation}
+
+
+Using \eqref{legendre expansion}:
+
+\begin{equation}
+    \frac{\mathcal{G}\mu_1m_1m_2'}{m_0'\parallel\vec{R}_2-\frac{m_0'}{m_1}\vec{r}_1\parallel} = \frac{\mathcal{G}\mu_1m_1m_2'}{R_2m_0'} \sum_{n=0}^\infty \left( \frac{m_0'}{m_1} \right)^n \left( \frac{r_1}{R_2} \right)^n P_n \left( \cos{\psi} \right)
+\end{equation}
+
+\begin{equation}
+    \frac{\mathcal{G}\mu_1m_1m_2'}{m_1'\parallel \vec{R}_2+\frac{m_1'}{m_1}\vec{r}_1\parallel} = \frac{\mathcal{G}\mu_1m_1m_2'}{R_2m_1'} \sum_{n=0}^\infty \left( -1 \right)^n \left( \frac{m_1'}{m_1} \right)^n \left( \frac{r_1}{R_2} \right)^n P_n \left( \cos{\psi} \right)
+\end{equation}
+
+We consider the case where $$m_0'>>m_1',m_2'$$, two planets orbiting a star. Defining $$\delta_1\equiv\frac{m_1'}{m_0'}$$ and $$\delta_2\equiv\frac{m_2'}{m_0'}$$, we expand to second order in $$\delta_i$$:
+\begin{align}
+    \frac{\mathcal{G}\mu_1m_1m_2'}{R_2m_0'}\sum_{n=0}^\infty\left(\frac{m_0'}{m_1}\right)^n\left(\frac{r_1}{R_2}\right)^nP_n\left(\cos{\psi}\right)&=\frac{\mathcal{G}m_0'^2}{R_2}\delta_1\delta_2\sum_{n=0}^\infty\left(\frac{r_1}{R_2}\right)^nP_n\left(\cos{\psi}\right)\\
+    \frac{\mathcal{G}\mu_1m_1m_2'}{R_2m_1'}\sum_{n=0}^\infty\left(-1\right)^n\left(\frac{m_1'}{m_1}\right)^n\left(\frac{r_1}{R_2}\right)^nP_n\left(\cos{\psi}\right)&=\frac{\mathcal{G}m_0'^2}{R_2}\left(\delta_2-\left(\frac{r_1}{R_2}\right)P_1\left(\cos{\psi}\right)\delta_1\delta_2\right)  
+\end{align}
+Rewriting our Hamiltonian (\eqref{3 body hamiltonian} using $$P_0$$ and $$P_1$$:
+
+\begin{equation}
+    \mathcal{H} = \frac{1}{2\mu_1} \parallel{\vec{p}}_1\parallel^2 + \frac{m_1 + m_2'}{2m_1 m_2'} \parallel{\vec{P}}_2\parallel^2 - \frac{\mathcal{G}\mu_1 m_1}{r_1} - \frac{\mathcal{G}m_1 m_2'}{R_2} - \frac{\mathcal{G}m_0'^2}{R_2} \delta_1 \delta_2 \sum_{n=2}^\infty \left( \frac{r_1}{R_2} \right)^n P_n \left( \cos{\psi} \right)\nonumber
+\end{equation}
+
+\begin{equation}
+    = \frac{1}{2\mu_1} \parallel{\vec{p}}_1\parallel^2 + \frac{m_1 + m_2'}{2m_1 m_2'} \parallel{\vec{P}}_2\parallel^2 - \frac{\mathcal{G}\mu_1 m_1}{r_1} - \frac{\mathcal{G}m_0' m_2'}{R_2} + \mathcal{G} m_0'^2 \delta_1 \delta_2 \left( -\left( r_1^2 + R_2^2 - 2r_1 R_2 \cos{\psi} \right)^{-\frac{1}{2}} + \frac{r_1}{R_2^2} \cos{\psi} \right) \label{3 body hamiltonian with R}
+\end{equation}
+
+The first four terms of \eqref{3 body hamiltonian with R} correspond to two separate two-body problems which we studied in \eqref{Expansion of the Two-Body Hamiltonian in Delaunay Variables}, and it is clear that the disturbing function is:
+
+\begin{equation}\label{disturbing Function}
+    \mathcal{R}=\mathcal{G}m_0'^2\delta_1\delta_2\left(-\left(r_1^2+R_2^2-2r_1R_2\cos{\psi}\right)^{-\frac{1}{2}}+\frac{r_1}{R_2^2}\cos{\psi}\right)
+\end{equation}
+
 
