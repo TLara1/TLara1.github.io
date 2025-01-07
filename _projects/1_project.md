@@ -1413,7 +1413,6 @@ With \eqref{x orbital elements}-\eqref{z orbital elements}, to second order in $
     \simeq 2\sin{\frac{I}{2}}\sin{(\omega+\mathcal{M})}+2\sin{\frac{I}{2}}\left(\sin{(\omega+2\mathcal{M})}-\sin{\omega}\right)e
 \end{equation}
 
-<h4>VI.I.II Expansion of $$\cos{\psi}$$</h4>
 We have all the tools we need to find a series representation for $$\cos{\psi}$$, to second order in $$e_1$$, $$I_1$$, $$e_2$$ and $$I_2$$:
 
 \begin{equation}
@@ -1463,7 +1462,7 @@ Before rewriting, we recall $$\varpi=\omega +\Omega$$, and $$\lambda = \varpi +\
 \end{equation}
 
 \begin{equation} 
-    \frac{z_1}{r_1}\frac{z_2}{R_2} &\simeq 4\sin{(\lambda_1-\Omega_1)}\sin{(\lambda_2-\Omega_2)}\sin{\frac{I_1}{2}}\sin{\frac{I_2}{2}}
+    \frac{z_1}{r_1}\frac{z_2}{R_2} \simeq 4\sin{(\lambda_1-\Omega_1)}\sin{(\lambda_2-\Omega_2)}\sin{\frac{I_1}{2}}\sin{\frac{I_2}{2}}
 \end{equation}
 
 Hence, 
