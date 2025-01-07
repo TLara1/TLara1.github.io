@@ -1232,3 +1232,213 @@ To second order in $$e$$:
 \begin{equation} \label{theta expansion in e}
     f = \mathcal{M}+2e\sin{\mathcal{M}}+\frac{5}{4}e^2\sin{2\mathcal{M}} + \mathcal{O}(e^3)
 \end{equation}
+
+
+
+
+
+
+
+
+And carrying out the series expansions as done previously:
+
+\begin{equation}
+    \frac{dE}{d\mathcal{M}} = 1+e\cos{\mathcal{M}}+e^2\cos{2\mathcal{M}}+e^3\left(-\frac{1}{8}\cos{\mathcal{M}}+\frac{9}{8}\cos{3\mathcal{M}} \right)+e^4\left(-\frac{1}{3}\cos{2\mathcal{M}}+\frac{4}{3}\cos{4\mathcal{M}} \right) + \mathcal{O}(e^5)
+\end{equation}
+
+\begin{equation}
+    \left(\frac{dE}{d\mathcal{M}}\right)^2 = 1+2e\cos{\mathcal{M}}+e^2 \left(\cos^2{(\mathcal{M})}+2\cos{2\mathcal{M}} \right)+e^3\left(-\frac{1}{4}\cos{\mathcal{M}}+2\cos{\mathcal{M}}\cos{2\mathcal{M}}+\frac{9}{4}\cos{3\mathcal{M}} \right) + \mathcal{O}(e^4)
+\end{equation}
+
+\begin{equation}
+    f =  \sqrt{1-e^2}\mathcal{M} + 2e\sqrt{1-e^2}\sin{\mathcal{M}} + \frac{e^2}{4}\sqrt{1-e^2}\left(5\sin{2\mathcal{M}}+2\mathcal{M} \right) \nonumber
+\end{equation}
+
+\begin{equation}
+    + \frac{1}{12}e^3\sqrt{1-e^2}\left(9\sin{\mathcal{M}}+13\sin{3\mathcal{M}}\right) + \mathcal{O}(e^4)
+\end{equation}
+
+
+To second order in $$e$$:
+
+\begin{equation} \label{theta expansion in e}
+    f = \mathcal{M}+2e\sin{\mathcal{M}}+\frac{5}{4}e^2\sin{2\mathcal{M}} + \mathcal{O}(e^3)
+\end{equation}
+
+We are ready to compute $$\sin{f}$$ and $$\cos{f}$$. The latter is easier, and we can calculate it through \eqref{q_1 eq}, expanding to second order in $$e$$ and utilizing trigonometric identities.
+
+\begin{equation} 
+    \cos{f} = \frac{\cos{E}-e}{1-e\cos{E}} \simeq \cos{\mathcal{M}} + \left(-\frac{3}{2} + \frac{1}{2}\cos{2\mathcal{M}} + \cos^2{\mathcal{M}} \right)e \nonumber
+\end{equation}
+
+\begin{equation}
+    + \frac{1}{2}\left(\frac{3}{4}\cos{3\mathcal{M}} + \cos{2\mathcal{M}}\cos{\mathcal{M}} - \frac{7}{4}\cos{\mathcal{M}} + \cos{\mathcal{M}} \left(-3 + \cos{2\mathcal{M}} + 2\cos^2{\mathcal{M}} \right) \right)e^2 \nonumber
+\end{equation}
+
+\begin{equation}\label{cos expansion e}
+    \simeq \cos{\mathcal{M}} + \left(\cos{2\mathcal{M}} - 1\right)e + \left(\frac{9}{8}\cos{3\mathcal{M}} - \frac{9}{8}\cos{\mathcal{M}} \right)e^2
+\end{equation}
+
+
+To calculate $$\sin{f}$$ we need to be a little more subtle, we use \eqref{df dM eq}, the chain rule, and integrate:
+
+\begin{equation}
+    \frac{d\sin{f}}{d\mathcal{M}}=\frac{df}{d\mathcal{M}}\cos{\theta}=\sqrt{1-e^2}\left(\frac{dE}{d\mathcal{M}}\right)^2\cos{f} \nonumber
+\end{equation}
+
+\begin{equation}
+    \sin{f}=\int_0^\mathcal{M}\sqrt{1-e^2}\left(\frac{dE}{d\bar{\mathcal{M}}}\right)^2\cos{f}d\bar{\mathcal{M}} \nonumber
+\end{equation}  
+
+To second order in $$e$$:
+
+\begin{equation} 
+    \sin{f} \simeq \sqrt{1-e^2}\int_0^\mathcal{M} \left( 1 + 2e\cos{\mathcal{M}} + e^2 \left(\cos^2{\mathcal{M}} + 2\cos{2\mathcal{M}}\right) \right) \nonumber
+\end{equation}
+
+\begin{equation}
+    \quad \times \left( \cos{\mathcal{M}} + \left(\cos{2\mathcal{M}}-1\right)e + \left(\frac{9}{8}\cos{3\mathcal{M}} - \frac{9}{8}\cos{\mathcal{M}} \right)e^2 \right) d\mathcal{M} \nonumber
+\end{equation}
+
+\begin{equation}
+    \simeq \sqrt{1-e^2}\left(\sin\mathcal{M} + 2\cos\mathcal{M}\sin\mathcal{M}e + \left(\frac{9}{2}\cos^{2}\mathcal{M}-\frac{3}{2}\right)\sin\left(\mathcal{M}\right)e^{2}\right) \nonumber
+\end{equation}
+
+\begin{equation} \label{sin expansion e}
+    \simeq \sin\mathcal{M} + \sin2\mathcal{M}e + \left(\frac{9}{8}\sin3\mathcal{M}-\frac{7}{8}\sin\mathcal{M}\right)e^{2}
+\end{equation}
+
+
+Now, with double-angle relations:
+
+\begin{equation} 
+    \cos{(\omega + f)} = \cos{\omega}\cos{f} - \sin{\omega}\sin{f} \nonumber
+\end{equation}
+
+\begin{equation} 
+    \simeq \cos{(\omega + \mathcal{M})} + \left(\cos{(\omega + 2\mathcal{M})} -\cos{\omega} \right)e \nonumber
+\end{equation}
+
+\begin{equation} \label{cos omega + f expansion}
+    +\left(-\cos{(\omega + \mathcal{M})}-\frac{1}{8}\cos{(\omega - \mathcal{M})}+\frac{9}{8}\cos{(\omega + 3\mathcal{M})} \right)e^2
+\end{equation}
+
+
+\begin{equation} 
+    \sin{(\omega + f)} = \sin{\omega}\cos{f} + \cos{\omega}\sin{f} \nonumber
+\end{equation}
+
+\begin{equation} 
+    \simeq \sin{(\omega + \mathcal{M})} + \left(\sin{(\omega + 2\mathcal{M})} -\sin{\omega} \right)e \nonumber
+\end{equation}
+
+\begin{equation} \label{sin omega + theta expansion}
+    +\left(-\sin{(\omega + \mathcal{M})}-\frac{1}{8}\sin{(\omega - \mathcal{M})}+\frac{9}{8}\sin{(\omega + 3\mathcal{M})} \right)e^2
+\end{equation}
+
+
+Now allow us to return to Cartesian coordinates with expansions around $$e$$. We assume that our inclinations are small, that $$I$$ is of order $$\mathcal{O}(e)$$.
+
+\begin{equation}
+    \cos{I} = 1-2\sin^2{\frac{I}{2}}
+\end{equation}
+
+\begin{equation}
+    \sin{I} = 2\sin{\frac{I}{2}}\left(1-\sin^2{\frac{I}{2} }\right)^{\frac{1}{2}} = 2\sin{\frac{I}{2}} + \mathcal{O}\left(\sin^3{\frac{I}{2}}\right)
+\end{equation}
+
+With \eqref{x orbital elements}-\eqref{z orbital elements}, to second order in $$e$$ and $$\sin{\frac{I}{2}}$$:
+
+\begin{equation} 
+    \frac{x}{r} \simeq \cos{\Omega}\left( \cos{(\omega + \mathcal{M})} + \left(\cos{(\omega + 2\mathcal{M})} -\cos{\omega} \right)e\right. \nonumber
+\end{equation}
+
+\begin{equation} 
+    \left.+\left(-\cos{(\omega + \mathcal{M})}-\frac{1}{8}\cos{(\omega - \mathcal{M})}+\frac{9}{8}\cos{(\omega + 3\mathcal{M})} \right)e^2 \right) \nonumber
+\end{equation}
+
+\begin{equation} 
+    -\sin{\Omega}\cos{I}\left( \sin{(\omega + \mathcal{M})} + \left(\sin{(\omega + 2\mathcal{M})} -\sin{\omega} \right)e\right. \nonumber
+\end{equation}
+
+\begin{equation} 
+    \left.+\left(-\sin{(\omega + \mathcal{M})}-\frac{1}{8}\sin{(\omega - \mathcal{M})}+\frac{9}{8}\sin{(\omega + 3\mathcal{M})} \right)e^2 \right) \nonumber
+\end{equation}
+
+\begin{equation} 
+    \simeq \cos{(\Omega+\omega +\mathcal{M})}+\left(\cos{(\Omega+\omega +2\mathcal{M})}-\cos{(\Omega+\omega)}\right)e \nonumber
+\end{equation}
+
+\begin{equation} 
+    +\left(-\cos{(\Omega+\omega +\mathcal{M})}-\frac{1}{8}\cos{(\Omega+\omega-\mathcal{M})}+\frac{9}{8}\cos{(\Omega+\omega +3\mathcal{M})} \right)e^2 \nonumber
+\end{equation}
+
+\begin{equation} 
+    +(1-\cos{I})\sin{\Omega} \sin{(\mathcal{M}+\omega)} \nonumber
+\end{equation}
+
+\begin{equation} 
+    \simeq \cos{(\Omega+\omega +\mathcal{M})}+\left(\cos{(\Omega+\omega +2\mathcal{M})}-\cos{(\Omega+\omega)}\right)e \nonumber
+\end{equation}
+
+\begin{equation} 
+    +\left(-\cos{(\Omega+\omega +\mathcal{M})}-\frac{1}{8}\cos{(\Omega+\omega-\mathcal{M})}+\frac{9}{8}\cos{(\Omega+\omega +3\mathcal{M})} \right)e^2 \nonumber
+\end{equation}
+
+\begin{equation} \label{sin omega + theta expansion}
+    + \sin^2{\frac{I}{2}}\left(\cos{(-\Omega+\omega+\mathcal{M})}-\cos{(\Omega+\omega+\mathcal{M})} \right)
+\end{equation}
+
+\begin{equation} 
+    \frac{y}{r} \simeq \sin{\Omega}\left( \cos{(\omega + \mathcal{M})} + \left(\cos{(\omega + 2\mathcal{M})} -\cos{\omega} \right)e\right. \nonumber
+\end{equation} 
+
+\begin{equation} 
+    \left.+\left(-\cos{(\omega + \mathcal{M})}-\frac{1}{8}\cos{(\omega - \mathcal{M})}+\frac{9}{8}\cos{(\omega + 3\mathcal{M})} \right)e^2 \right) \nonumber
+\end{equation}
+
+\begin{equation} 
+    +\cos{\Omega}\cos{I}\left( \sin{(\omega + \mathcal{M})} + \left(\sin{(\omega + 2\mathcal{M})} -\sin{\omega} \right)e\right. \nonumber
+\end{equation}
+
+\begin{equation} 
+    \left.+\left(-\sin{(\omega + \mathcal{M})}-\frac{1}{8}\sin{(\omega - \mathcal{M})}+\frac{9}{8}\sin{(\omega + 3\mathcal{M})} \right)e^2 \right) \nonumber
+\end{equation}
+
+\begin{equation} 
+    \simeq \sin{(\Omega+\omega +\mathcal{M})}+\left(\sin{(\Omega+\omega +2\mathcal{M})}-\sin{(\Omega+\omega)}\right)e \nonumber
+\end{equation}
+
+\begin{equation} 
+    +\left(-\sin{(\Omega+\omega +\mathcal{M})}-\frac{1}{8}\sin{(\Omega+\omega-\mathcal{M})}+\frac{9}{8}\sin{(\Omega+\omega +3\mathcal{M})} \right)e^2 \nonumber
+\end{equation}
+
+\begin{equation} 
+    +(1-\sin{I})\sin{\Omega} \sin{(\mathcal{M}+\omega)} \nonumber
+\end{equation}
+
+\begin{equation} 
+    \simeq \sin{(\Omega+\omega +\mathcal{M})}+\left(\sin{(\Omega+\omega +2\mathcal{M})}-\sin{(\Omega+\omega)}\right)e \nonumber
+\end{equation}
+
+\begin{equation} 
+    +\left(-\sin{(\Omega+\omega +\mathcal{M})}-\frac{1}{8}\sin{(\Omega+\omega-\mathcal{M})}+\frac{9}{8}\sin{(\Omega+\omega +3\mathcal{M})} \right)e^2 \nonumber
+\end{equation}
+
+\begin{equation} \label{sin omega + theta expansion 2}
+    + \sin^2{\frac{I}{2}}\left(\sin{(-\Omega+\omega+\mathcal{M})}+\sin{(\Omega+\omega+\mathcal{M})} \right)
+\end{equation}
+
+\begin{equation} 
+    \frac{z}{r} \simeq \sin{I}\left(\sin{(\omega+\mathcal{M})}+\left(\sin{(\omega+2\mathcal{M})}-\sin{\omega}\right)e\right. \nonumber
+\end{equation}
+
+\begin{equation} 
+    \left.+\left(-\sin{(\omega+\mathcal{M})}-\frac{1}{8}\sin{(\omega-\mathcal{M})}+\frac{9}{8}\sin{(\omega+3\mathcal{M})} \right)e^2\right) \nonumber
+\end{equation}
+
+\begin{equation} 
+    \simeq 2\sin{\frac{I}{2}}\sin{(\omega+\mathcal{M})}+2\sin{\frac{I}{2}}\left(\sin{(\omega+2\mathcal{M})}-\sin{\omega}\right)e
+\end{equation}
+
+
