@@ -958,8 +958,8 @@ Using \eqref{legendre expansion}:
 
 We consider the case where $$m_0'>>m_1',m_2'$$, two planets orbiting a star. Defining $$\delta_1\equiv\frac{m_1'}{m_0'}$$ and $$\delta_2\equiv\frac{m_2'}{m_0'}$$, we expand to second order in $$\delta_i$$:
 \begin{align}
-    \frac{\mathcal{G}\mu_1m_1m_2'}{R_2m_0'}\sum_{n=0}^\infty\left(\frac{m_0'}{m_1}\right)^n\left(\frac{r_1}{R_2}\right)^nP_n\left(\cos{\psi}\right)&=\frac{\mathcal{G}m_0'^2}{R_2}\delta_1\delta_2\sum_{n=0}^\infty\left(\frac{r_1}{R_2}\right)^nP_n\left(\cos{\psi}\right)\\
-    \frac{\mathcal{G}\mu_1m_1m_2'}{R_2m_1'}\sum_{n=0}^\infty\left(-1\right)^n\left(\frac{m_1'}{m_1}\right)^n\left(\frac{r_1}{R_2}\right)^nP_n\left(\cos{\psi}\right)&=\frac{\mathcal{G}m_0'^2}{R_2}\left(\delta_2-\left(\frac{r_1}{R_2}\right)P_1\left(\cos{\psi}\right)\delta_1\delta_2\right)  
+    \frac{\mathcal{G}\mu_1m_1m_2'}{R_2m_0'}\sum_{n=0}^\infty\left(\frac{m_0'}{m_1}\right)^n\left(\frac{r_1}{R_2}\right)^nP_n\left(\cos{\psi}\right)=\frac{\mathcal{G}m_0'^2}{R_2}\delta_1\delta_2\sum_{n=0}^\infty\left(\frac{r_1}{R_2}\right)^nP_n\left(\cos{\psi}\right)\\
+    \frac{\mathcal{G}\mu_1m_1m_2'}{R_2m_1'}\sum_{n=0}^\infty\left(-1\right)^n\left(\frac{m_1'}{m_1}\right)^n\left(\frac{r_1}{R_2}\right)^nP_n\left(\cos{\psi}\right)=\frac{\mathcal{G}m_0'^2}{R_2}\left(\delta_2-\left(\frac{r_1}{R_2}\right)P_1\left(\cos{\psi}\right)\delta_1\delta_2\right)  
 \end{align}
 Rewriting our Hamiltonian (\eqref{3 body hamiltonian} using $$P_0$$ and $$P_1$$:
 
@@ -977,4 +977,103 @@ The first four terms of \eqref{3 body hamiltonian with R} correspond to two sepa
     \mathcal{R}=\mathcal{G}m_0'^2\delta_1\delta_2\left(-\left(r_1^2+R_2^2-2r_1R_2\cos{\psi}\right)^{-\frac{1}{2}}+\frac{r_1}{R_2^2}\cos{\psi}\right)
 \end{equation}
 
+<h3>VI.I Series Expansion of Disturbing Function</h3>
 
+Defining the direct and indirect disturbing functions:
+
+\begin{equation}
+    \mathcal{R} = \mathcal{R}_D + \mathcal{R}_E \nonumber
+\end{equation}
+
+\begin{equation}
+    \mathcal{R}_D \equiv -\mathcal{G} m_0'^2 \delta_1 \delta_2 \left( r_1^2 + R_2^2 - 2r_1 R_2 \cos{\psi} \right)^{-\frac{1}{2}} \nonumber
+\end{equation}
+
+\begin{equation}
+    \mathcal{R}_E \equiv \mathcal{G} m_0'^2 \delta_1 \delta_2 \frac{r_1}{R_2^2} \cos{\psi} \nonumber
+\end{equation}
+
+
+Starting with an expansion of the direct disturbing function. Define:
+
+\begin{equation}
+    \frac{1}{\mathcal{F}}\equiv-\frac{\mathcal{R}_D}{\mathcal{G}m_0'^2\delta_1\delta_2}
+\end{equation}
+
+Now we define the following:
+
+\begin{equation*}
+    \epsilon\equiv\cos{\psi}-\cos{\left(\vartheta_1-\vartheta_2\right)}
+\end{equation*}
+
+With $$\vartheta_i\equiv\varpi_i+f_i$$. Thus:
+
+\begin{equation}
+    \frac{1}{\mathcal{F}}=(r_1^2+R_2^2-2r_rR_2\cos{(\vartheta_1-\vartheta_2)}-2r_1R_2\epsilon)^{-\frac{1}{2}}
+\end{equation}
+
+We now expand around $$\epsilon=0$$:
+
+\begin{equation}
+    \frac{1}{\mathcal{F}} = \left( \frac{1}{\mathcal{F}_0} + r_1R_2\epsilon\frac{1}{\mathcal{F}_0^3}  + \frac{3}{2}(r_1R_2\epsilon)^2\frac{1}{\mathcal{F}_0^3} + ... \right) = \sum^{\infty}_{k = 0} \frac{(2k)!}{(k!)^2}\left(\frac{1}{2}r_1R_2\epsilon \right)^k\frac{1}{\mathcal{F}_0^{2k+1}}
+\end{equation}
+
+Where $$\mathcal{F}_0=\mathcal{F}\left(\epsilon=0\right)$$. We now expand $$\frac{1}{\mathcal{F}_0^{2k+1}}$$ around $$r_1=a$$ and $$R_2=a_2$$:
+
+\begin{equation} \label{F_0 expansion}
+    \frac{1}{\mathcal{F}_0^{2k+1}} = \frac{1}{\rho_0^{2k+1}} + (r_1-a_1)\pdv{}{a_1}\left(\frac{1}{\rho_0^{2k+1}}\right)+ (R_2-a_2)\pdv{}{a_2}\left(\frac{1}{\rho_0^{2k+1}}\right)+...
+\end{equation}
+
+Having defined:
+
+\begin{equation}
+    \rho_0\equiv\mathcal{F}_0(r_1=a_1,R_2=a_2)
+\end{equation}
+
+We now expand $$\frac{1}{\rho_0^{2k+1}}$$ as a Fourier Series:
+
+\begin{equation}
+    \frac{1}{\rho_0^{2k+1}} = (a_1^2 + a_2^2 - 2a_1a_2 \cos{\left( \vartheta_1 - \vartheta_2 \right)})^{-k - \frac{1}{2}} \nonumber
+\end{equation}
+
+\begin{equation}
+    = a_2^{-2k-1} \left( 1 + \alpha^2 - 2\alpha \cos{\left( \vartheta_1 - \vartheta_2 \right)} \right)^{-k - \frac{1}{2}} \nonumber
+\end{equation}
+
+\begin{equation}
+    = a_2^{-2k-1} \sum_{j=-\infty}^{\infty} b^{(j)}_{k + \frac{1}{2}}(\alpha) \cos{\left( j \left( \vartheta_1 - \vartheta_2 \right) \right)}
+\end{equation}
+
+
+Where $$\alpha=\frac{a_1}{a_2}$$. $$b^{(j)}_{s}$$ terms are known as \textit{Laplace Coefficients}.
+
+\begin{equation*} \label{laplace coefficient definitions}
+    b^{(j)}_{s}(\alpha) \equiv \frac{1}{2\pi}\int_0^{2\pi}\frac{\cos{(j{\phi})}d{\phi}}{\left(1+\alpha^2-2\alpha\cos{({\phi})}\right)^s}
+\end{equation*}
+
+For convenience, we now define the operator $$A_{k,j,m,n}$$:
+
+\begin{equation} \label{def A}
+    A_{k,j,m,n} \equiv a_1^ma_2^n\pdv{^{m+n}}{a_1^m\partial a_2^n}\left(a_2^{-2k-1} b^{(j)}_{k+\frac{1}{2}}\right)
+\end{equation}
+
+We also define $$\zeta_i$$:
+
+\begin{equation}
+    \zeta_1\equiv\frac{r_1}{a_1}-1
+\end{equation}
+\begin{equation}
+    \zeta_2\equiv\frac{R_2}{a_2}-1
+\end{equation}
+
+We use these to rewrite \cref{F_0 expansion}:
+
+\begin{equation}
+    \frac{1}{\mathcal{F}_0^{2k+1}} = \sum_{j=-\infty}^\infty \left(A_{k,j,0,0}+\zeta_1A_{k,j,1,0}+ \zeta_2A_{k,j,0,1}+\frac{1}{2}\zeta_1^2 A_{k,j,2,0}+\frac{1}{2}\zeta_2^2 A_{k,j,0,2}+\zeta_1 \zeta_2A_{k,j,1,1}+...\right)\cos{\left(j(\vartheta_1-\vartheta_2)\right)}
+\end{equation}
+
+We can now write $$\mathcal{R}_D$$ as product of two series:
+
+\begin{equation} \label{R_D expression}
+    \mathcal{R}_D =-\mathcal{G}m_0'^2\delta_1\delta_2\sum^{\infty}_{k = 0} \frac{(2k)!}{(k!)^2}\left(\frac{1}{2}\frac{r_1}{a_1}\frac{R_2}{a_2}\epsilon\right)^ka_1^ka_2^k\times\sum_{j=-\infty}^\infty \left(A_{k,j,0,0}+\zeta_1A_{k,j,1,0}+ \zeta_2A_{k,j,0,1}+\frac{1}{2}\zeta_1^2 A_{k,j,2,0}+\frac{1}{2}\zeta_2^2 A_{k,j,0,2}+\zeta_1 \zeta_2A_{k,j,1,1}+...\right)\cos{\left(j(\vartheta_1-\vartheta_2)\right)}
+\end{equation}
