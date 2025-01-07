@@ -1087,7 +1087,7 @@ We use these to rewrite \eqref{F_0 expansion}:
 We can now write $$\mathcal{R}_D$$ as product of two series:
 
 \begin{equation} \label{R_D expression}
-    \mathcal{R}_D = -\mathcal{G} m_0' ^2 \delta_1 \delta_2 \sum _{k=0} ^{\infty} \frac{(2k!)}{(k!)^2}  \left(\frac{1}{2}\frac{r_1}{a_1}\frac{R_2}{a_2} epsilon\right)^k a_1^k a_2^k \nonumber
+    \mathcal{R}_D = -\mathcal{G} m_0' ^2 \delta_1 \delta_2 \sum _{k=0} ^{\infty} \frac{(2k!)}{(k!)^2}  \left(\frac{1}{2}\frac{r_1}{a_1}\frac{R_2}{a_2} \epsilon\right)^k a_1^k a_2^k \nonumber
 \end{equation}  
 
 \begin{equation}   
