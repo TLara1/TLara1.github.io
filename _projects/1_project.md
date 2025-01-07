@@ -1089,23 +1089,31 @@ We can now write $$\mathcal{R}_D$$ as product of two series:
 
 <h4>VI.I.I Series Expansion of Orbital Elements</h4>
 
-We now address the $$\cos{\left(j(\vartheta_1-\vartheta_2)\right)}$$ term. We expand trigonometric terms in $$E$$ using Bessel Functions in a power series of $$e$$. Let us write:
+We now address the $$\cos{\left(j(\vartheta_1-\vartheta_2)\right)}$$ term. We expand trigonometric terms in $$E$$ using Bessel Functions in a power series of $$e$$. Let us write: 
+
 \begin{equation} \label{exp E}
     e^{iE} = \sum_{n=-\infty}^{\infty}A_ne^{in\mathcal{M}}
 \end{equation}
+
 It follows, using a Fourier expansion:
 \begin{equation}
     A_n = \frac{1}{2\pi}\int_{0}^{2\pi}{e^{iE}e^{-in\mathcal{M}}d\mathcal{M}} = \frac{1}{2\pi}\int_{0}^{2\pi}{e^{i(E-n\mathcal{M})}d\mathcal{M}}
 \end{equation}
 Using integration by parts:
+
 \begin{equation}
-\frac{1}{2\pi}\int_{0}^{2\pi}{e^{i(E-n\mathcal{M})}d\mathcal{M}} = \frac{1}{2\pi}\left.\left(-\frac{1}{in}e^{iE}e^{-in\mathcal{M}} \right)\right\vert_0^{2\pi}+\frac{1}{2\pi}\int_{0}^{2\pi}{\frac{1}{n}e^{-in\mathcal{M}}e^{iE}dE} = \frac{1}{2n\pi}\int_{0}^{2\pi}{e^{i(E-n\mathcal{M})}dE}
+\frac{1}{2\pi}\int_{0}^{2\pi}{e^{i(E-n\mathcal{M})}d\mathcal{M}} = \frac{1}{2\pi}\left.\left(-\frac{1}{in}e^{iE}e^{-in\mathcal{M}} \right)\right\vert_0^{2\pi}+\frac{1}{2\pi}\int_{0}^{2\pi}{\frac{1}{n}e^{-in\mathcal{M}}e^{iE}dE} \nonumber
 \end{equation}
+
+\begin{equation}
+    = \frac{1}{2n\pi}\int_{0}^{2\pi}{e^{i(E-n\mathcal{M})}dE}
+\end{equation}
+
 And, using $$\mathcal{M} = E-e\sin{E}$$, we find:
 \begin{equation}
     A_n = \frac{1}{2n\pi}\int_{0}^{2\pi}{e^{i(E-n\mathcal{M})}dE} = \frac{1}{2n\pi}\int_{0}^{2\pi}{e^{-i((n-1)E-ne\sin{E})}dE} = \frac{J_{n-1}(ne)}{n}
 \end{equation}
-We have used the integral definition of Bessel Functions. In the case of $$n=0$$, we use L'Hopital's rule and recall that $$J_{-1}\left(x\right) = -J_n\left(x\right):
+We have used the integral definition of Bessel Functions. In the case of $$n=0$$, we use L'Hopital's rule and recall that $$J_{-1}\left(x\right) = -J_n\left(x\right)$$:
 
 \begin{equation}
    A_0(ne) = \lim_{n \rightarrow 0} \frac{J_{-1}(ne)}{n} = \lim_{n \rightarrow 0} -e\frac{d}{d(ne)}\left( J_1 \left(ne\right) \right) = -\frac{e}{2}
@@ -1114,64 +1122,105 @@ We have used the integral definition of Bessel Functions. In the case of $$n=0$$
 The real portion of \eqref{exp E} reveals:
 
 \begin{equation}
-    \cos{E} = \sum_{n=0}^{\infty}(A_n+A_{-n})\cos{n\mathcal{M}} = -\frac{e}{2}+ \sum_{n=1}^{\infty}\left(\frac{J_{n-1}(ne)-J_{-n-1}(-ne)}{n}\right)\cos{n\mathcal{M}} = -\frac{e}{2}+ \sum_{n=1}^{\infty}\left(\frac{J_{n-1}(ne)-J_{n+1}(ne)}{n}\right)\cos{n\mathcal{M}}
+    \cos{E} = \sum_{n=0}^{\infty}(A_n+A_{-n})\cos{n\mathcal{M}} = -\frac{e}{2}+ \sum_{n=1}^{\infty}\left(\frac{J_{n-1}(ne)-J_{-n-1}(-ne)}{n}\right)\cos{n\mathcal{M}} \nonumber
 \end{equation}
-
-
-
+\begin{equation}   
+     = -\frac{e}{2}+ \sum_{n=1}^{\infty}\left(\frac{J_{n-1}(ne)-J_{n+1}(ne)}{n}\right)\cos{n\mathcal{M}}
+\end{equation}
 
 Likewise, with the imaginary portion:
-\begin{align}
-\begin{split}
-    \sin{E} = \sum_{n=0}^{\infty}(A_n-A_{-n})\sin{n\mathcal{M}} = \sum_{n=1}^{\infty}\left(\frac{J_{n-1}(ne)+J_{-n-1}(-ne)}{n}\right)\sin{n\mathcal{M}}\\
+\begin{equation}
+    \sin{E} = \sum_{n=0}^{\infty}(A_n-A_{-n})\sin{n\mathcal{M}} = \sum_{n=1}^{\infty}\left(\frac{J_{n-1}(ne)+J_{-n-1}(-ne)}{n}\right)\sin{n\mathcal{M}}\nonumber
+\end{equation}
+
+\begin{equation} 
     = \sum_{n=1}^{\infty}\left(\frac{J_{n-1}(ne)+J_{n+1}(ne)}{n}\right)\sin{n\mathcal{M}}
-\end{split}
-\end{align}
+\end{equation}
+
 Now we use our series expansions for Bessel Functions:
 \begin{equation}\label{cosE e expansion}
-    \cos{E} = \cos{\mathcal{M}}+e\left(-\frac{1}{2}+\frac{1}{2}\cos{2\mathcal{M}} \right)+e^2\left(-\frac{3}{8}\cos{\mathcal{M}}+\frac{3}{8}\cos{3\mathcal{M}} \right)+e^3\left(-\frac{1}{3}\cos{2\mathcal{M}}+\frac{1}{3}\cos{4\mathcal{M}} \right) + \mathcal{O}(e^4)
+    \cos{E} = \cos{\mathcal{M}}+e\left(-\frac{1}{2}+\frac{1}{2}\cos{2\mathcal{M}} \right)+e^2\left(-\frac{3}{8}\cos{\mathcal{M}}+\frac{3}{8}\cos{3\mathcal{M}} \right)
 \end{equation}
+
 \begin{equation}
-    \sin{E} = \sin{\mathcal{M}}+\frac{e}{2}\sin{2\mathcal{M}}+e^2\left(-\frac{1}{8}\sin{\mathcal{M}}+\frac{3}{8}\sin{3\mathcal{M}} \right)+e^3\left(-\frac{1}{6}\sin{2\mathcal{M}}+\frac{1}{3}\sin{4\mathcal{M}} \right) + \mathcal{O}(e^4)
+    +e^3\left(-\frac{1}{3}\cos{2\mathcal{M}}+\frac{1}{3}\cos{4\mathcal{M}} \right) + \mathcal{O}(e^4)\nonumber
 \end{equation}
+
+\begin{equation}
+    \sin{E} = \sin{\mathcal{M}}+\frac{e}{2}\sin{2\mathcal{M}}+e^2\left(-\frac{1}{8}\sin{\mathcal{M}}+\frac{3}{8}\sin{3\mathcal{M}} \right)
+\end{equation}
+
+\begin{equation}
+    +e^3\left(-\frac{1}{6}\sin{2\mathcal{M}}+\frac{1}{3}\sin{4\mathcal{M}} \right) + \mathcal{O}(e^4)\nonumber
+\end{equation}
+
 From \eqref{Kepler eq}, we find:
-\begin{align}
-\begin{split}
-    E = \mathcal{M}+e\sin{E} = \mathcal{M}+e\sin{\mathcal{M}}+\frac{e^2}{2}\sin{2\mathcal{M}}+e^3\left(-\frac{1}{8}\sin{\mathcal{M}}+\frac{3}{8}\sin{3\mathcal{M}} \right)\\
-    &+e^4\left(-\frac{1}{6}\sin{2\mathcal{M}}+\frac{1}{3}\sin{4\mathcal{M}} \right) + \mathcal{O}(e^5)
-\end{split}
-\end{align}
+
+\begin{equation}
+    E = \mathcal{M}+e\sin{E} = \mathcal{M}+e\sin{\mathcal{M}}+\frac{e^2}{2}\sin{2\mathcal{M}}+e^3\left(-\frac{1}{8}\sin{\mathcal{M}}+\frac{3}{8}\sin{3\mathcal{M}} \right)
+\end{equation}
+\begin{equation}
+    +e^4\left(-\frac{1}{6}\sin{2\mathcal{M}}+\frac{1}{3}\sin{4\mathcal{M}} \right) + \mathcal{O}(e^5)\nonumber
+\end{equation}
+
 And from \eqref{r E equation}:
-\begin{align} \label{zeta expansion e}
-\begin{split}
-    \frac{r}{a} = 1-e\cos{E} = 1-e\cos{\mathcal{M}}+e^2\left(\frac{1}{2}-\frac{1}{2}\cos{2\mathcal{M}} \right)\\
-    &+e^3\left(\frac{3}{8}\cos{\mathcal{M}}-\frac{3}{8}\cos{3\mathcal{M}} \right)+e^4\left(\frac{1}{3}\cos{2\mathcal{M}}-\frac{1
-}{3}\cos{4\mathcal{M}} \right) + \mathcal{O}(e^5)
-\end{split}
-\end{align}
+
+\begin{equation}\label{zeta expansion e}
+\frac{r}{a} = 1-e\cos{E} = 1-e\cos{\mathcal{M}}+e^2\left(\frac{1}{2}-\frac{1}{2}\cos{2\mathcal{M}} \right)
+\end{equation}
+\begin{equation}
++e^3\left(\frac{3}{8}\cos{\mathcal{M}}-\frac{3}{8}\cos{3\mathcal{M}} \right)+e^4\left(\frac{1}{3}\cos{2\mathcal{M}}-\frac{1
+}{3}\cos{4\mathcal{M}} \right) + \mathcal{O}(e^5)\nonumber
+\end{equation}
+
 \eqref{r E equation} also easily gives an expansion for $$\zeta_i$$. From \eqref{L defintion}, \eqref{Kepler eq}, and \eqref{r E equation}:
-\begin{align*}
-    \dot{f}= \frac{na^2}{r^2}\sqrt{1-e^2}\\
-    \dot{\mathcal{M}}=n\\
-    \frac{r}{a}= 1-e\cos{E} = \frac{d\mathcal{M}}{dE}
-\end{align*}
-\begin{align}
-    \frac{df}{d\mathcal{M}}=\dot{f}\frac{dt}{d\mathcal{M}}=\frac{a^2}{r^2}\sqrt{1-e^2}=\sqrt{1-e^2}\left(\frac{dE}{d\mathcal{M}}\right)^2\label{df dM eq}\\
-    \rightarrow f = \sqrt{1-e^2}\int_0^{\mathcal{M}}{\left(\frac{dE}{d\bar{\mathcal{M}}}\right)^2d\bar{\mathcal{M}}}
-\end{align}
+
+\begin{equation}
+    \dot{f} = \frac{na^2}{r^2} \sqrt{1-e^2} \nonumber
+\end{equation}
+
+\begin{equation}
+    \dot{\mathcal{M}} = n \nonumber
+\end{equation}
+
+\begin{equation}
+    \frac{r}{a} = 1 - e \cos{E} = \frac{d\mathcal{M}}{dE} \nonumber
+\end{equation}
+
+\begin{equation}
+    \frac{df}{d\mathcal{M}} = \dot{f} \frac{dt}{d\mathcal{M}} = \frac{a^2}{r^2} \sqrt{1-e^2} = \sqrt{1-e^2} \left(\frac{dE}{d\mathcal{M}}\right)^2 \label{df dM eq}
+\end{equation}
+
+\begin{equation}
+    \rightarrow f = \sqrt{1-e^2} \int_0^{\mathcal{M}} \left( \frac{dE}{d\bar{\mathcal{M}}} \right)^2 d\bar{\mathcal{M}}
+\end{equation}
+
 And carrying out the series expansions as done previously:
+
 \begin{equation}
-    \frac{dE}{d\mathcal{M}} = 1+e\cos{\mathcal{M}}+e^2\cos{2\mathcal{M}}+e^3\left(-\frac{1}{8}\cos{\mathcal{M}}+\frac{9}{8}\cos{3\mathcal{M}} \right)+e^4\left(-\frac{1}{3}\cos{2\mathcal{M}}+\frac{4}{3}\cos{4\mathcal{M}} \right) + \mathcal{O}(e^5)
+    \frac{dE}{d\mathcal{M}} = 1+e\cos{\mathcal{M}}+e^2\cos{2\mathcal{M}}+e^3\left(-\frac{1}{8}\cos{\mathcal{M}}+\frac{9}{8}\cos{3\mathcal{M}} \right)
 \end{equation}
+
 \begin{equation}
-    \left(\frac{dE}{d\mathcal{M}}\right)^2 = 1+2e\cos{\mathcal{M}}+e^2 \left(\cos^2{(\mathcal{M})}+2\cos{2\mathcal{M}} \right)+e^3\left(-\frac{1}{4}\cos{\mathcal{M}}+2\cos{\mathcal{M}}\cos{2\mathcal{M}}+\frac{9}{4}\cos{3\mathcal{M}} \right) + \mathcal{O}(e^4)
+    +e^4\left(-\frac{1}{3}\cos{2\mathcal{M}}+\frac{4}{3}\cos{4\mathcal{M}} \right) + \mathcal{O}(e^5)\nonumber
 \end{equation}
-\begin{align}
-\begin{split}
-    f=  \sqrt{1-e^2}\mathcal{M}+2e\sqrt{1-e^2}\sin{\mathcal{M}}+\frac{e^2}{4}\sqrt{1-e^2}\left(5\sin{2\mathcal{M}}+2\mathcal{M} \right) \\
-    &+\frac{1}{12}e^3\sqrt{1-e^2}\left(9\sin{\mathcal{M}}+13\sin{3\mathcal{M}}\right)+ \mathcal{O}(e^4)
-\end{split}
-\end{align}
+
+\begin{equation}
+    \left(\frac{dE}{d\mathcal{M}}\right)^2 = 1+2e\cos{\mathcal{M}}+e^2 \left(\cos^2{(\mathcal{M})}+2\cos{2\mathcal{M}} \right)
+\end{equation}
+
+\begin{equation}
+    +e^3\left(-\frac{1}{4}\cos{\mathcal{M}}+2\cos{\mathcal{M}}\cos{2\mathcal{M}}+\frac{9}{4}\cos{3\mathcal{M}} \right) + \mathcal{O}(e^4) \nonumber
+\end{equation}
+
+\begin{equation}
+    f=  \sqrt{1-e^2}\mathcal{M}+2e\sqrt{1-e^2}\sin{\mathcal{M}}+\frac{e^2}{4}\sqrt{1-e^2}\left(5\sin{2\mathcal{M}}+2\mathcal{M} \right)
+\end{equation}
+
+\begin{equation}
+    +\frac{1}{12}e^3\sqrt{1-e^2}\left(9\sin{\mathcal{M}}+13\sin{3\mathcal{M}}\right)+ \mathcal{O}(e^4)\nonumber
+\end{equation}
+
 To second order in $$e$$:
 \begin{equation} \label{theta expansion in e}
     f = \mathcal{M}+2e\sin{\mathcal{M}}+\frac{5}{4}e^2\sin{2\mathcal{M}} + \mathcal{O}(e^3)
