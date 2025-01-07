@@ -1414,3 +1414,147 @@ With \eqref{x orbital elements}-\eqref{z orbital elements}, to second order in $
 \end{equation}
 
 
+
+
+<h4>Expansion of $$\cos{\psi}$$</h4>
+We have all the tools we need to find a series representation for $$\cos{\psi}$$, to second order in $$e_1$$, $$I_1$$, $$e_2$$ and $$I_2$$:
+
+\begin{equation}
+    \vec{r}_1\cdot\vec{R}_2 = r_1R_2\cos{\psi} \rightarrow \cos{\psi}=\frac{x_1}{r_1}\frac{x_2}{R_2}+\frac{y_1}{r_1}\frac{y_2}{R_2}+\frac{z_1}{r_1}\frac{z_2}{R_2}
+\end{equation}
+
+Before rewriting, we recall $$\varpi=\omega +\Omega$$, and $$\lambda = \varpi +\mathcal{M}$$, expressing our expansions in terms of longitudes.
+
+\begin{equation} 
+    \frac{x_1}{r_1}\frac{x_2}{R_2} \simeq \cos{\lambda_1}\cos{\lambda_2}+\cos{\lambda_2}\left(\cos{(2\lambda_1-\varpi_1)}-\cos{\varpi_1}\right)e_1+\cos{\lambda_1}\left(\cos{(2\lambda_2-\varpi_2)}-\cos{\varpi_2}\right)e_2 \nonumber
+\end{equation}
+
+\begin{equation} 
+    +\cos{\lambda_2}\left(-\cos{\lambda_1}-\frac{1}{8}\cos{(-\lambda_1+2\varpi_1)}+\frac{9}{8}\sin{(3\lambda_1-2\varpi_1)} \right)e_1^2 \nonumber
+\end{equation}
+
+\begin{equation} 
+    +\cos{\lambda_1}\left(-\cos{\lambda_2}-\frac{1}{8}\cos{(-\lambda_2+2\varpi_2)}+\frac{9}{8}\sin{(3\lambda_2-2\varpi_2)} \right)e_2^2 \nonumber
+\end{equation}
+
+\begin{equation} 
+    +\left(\cos{(2\lambda_1-\varpi_1)}-\cos{\varpi_1}\right)\left(\cos{(2\lambda_2-\varpi_2)}-\cos{\varpi_2}\right)e_1e_2 \nonumber
+\end{equation}
+
+\begin{equation} 
+    + \cos{\lambda_2}\left(\cos{(\lambda_1-2\Omega_1)}-\cos{\lambda_1} \right)\sin^2{\frac{I_1}{2}}+ \cos{\lambda_1}\left(\cos{(\lambda_2-2\Omega_2)}-\cos{\lambda_2} \right)\sin^2{\frac{I_2}{2}}
+\end{equation}
+
+\begin{equation} 
+    \frac{y_1}{r_1}\frac{y_2}{R_2} \simeq \sin{\lambda_1}\sin{\lambda_2}+\sin{\lambda_2}\left(\sin{(2\lambda_1-\varpi_1)}-\sin{\varpi_1}\right)e_1+\sin{\lambda_1}\left(\sin{(2\lambda_2-\varpi_2)}-\sin{\varpi_2}\right)e_2  \nonumber
+\end{equation}
+
+\begin{equation} 
+    +\sin{\lambda_2}\left(-\sin{\lambda_1}-\frac{1}{8}\sin{(-\lambda_1+2\varpi_1)}+\frac{9}{8}\sin{(3\lambda_1-2\varpi_1)} \right)e_1^2  \nonumber
+\end{equation}
+
+\begin{equation} 
+    +\sin{\lambda_1}\left(-\sin{\lambda_2}-\frac{1}{8}\sin{(-\lambda_2+2\varpi_2)}+\frac{9}{8}\sin{(3\lambda_2-2\varpi_2)} \right)e_2^2  \nonumber
+\end{equation}
+
+\begin{equation} 
+    +\left(\sin{(2\lambda_1-\varpi_1)}-\sin{\varpi_1}\right)\left(\sin{(2\lambda_2-\varpi_2)}-\sin{\varpi_2}\right)e_1e_2  \nonumber
+\end{equation}
+
+\begin{equation} 
+    + \sin{\lambda_2}\left(\sin{(\lambda_1-2\Omega_1)}+\sin{\lambda_1} \right)\sin^2{\frac{I_1}{2}}+ \sin{\lambda_1}\left(\sin{(\lambda_2-2\Omega_2)}+\sin{\lambda_2} \right)\sin^2{\frac{I_2}{2}}
+\end{equation}
+
+\begin{equation} 
+    \frac{z_1}{r_1}\frac{z_2}{R_2} &\simeq 4\sin{(\lambda_1-\Omega_1)}\sin{(\lambda_2-\Omega_2)}\sin{\frac{I_1}{2}}\sin{\frac{I_2}{2}}
+\end{equation}
+
+Hence, 
+
+\begin{equation} 
+    \cos{\psi} \simeq \cos{(\lambda_1-\lambda_2)} + \cos{(\lambda_2-2\lambda_1+\varpi_1)}e_1-\cos{(\lambda_2-\varpi_1)}e_1 \nonumber
+\end{equation}
+
+\begin{equation} 
+    + \cos{(\lambda_1-2\lambda_2+\varpi_2)}e_2-\cos{(\lambda_1-\varpi_2)}e_2 \nonumber
+\end{equation}
+
+\begin{equation} 
+    -\cos{(\lambda_1-\lambda_2)}e_1^2-\frac{1}{8}\cos{(\lambda_1+\lambda_2-2\varpi_1)}e_1^2+\frac{9}{8}\cos{(3\lambda_1-\lambda_2-2\varpi_1)}e_1^2\nonumber
+\end{equation}
+
+\begin{equation} 
+    -\cos{(\lambda_1-\lambda_2)}e_2^2-\frac{1}{8}\cos{(\lambda_1+\lambda_2-2\varpi_2)}e_2^2+\frac{9}{8}\cos{(3\lambda_2-\lambda_1-2\varpi_2)}e_2^2\nonumber
+\end{equation}
+
+\begin{equation} 
+    +\cos{(2{\lambda_1}-2\lambda_2-\varpi_1+\varpi_2)}e_1e_2 - \cos{(2\lambda_1-\varpi_1-\varpi_2)}e_1e_2\nonumber
+\end{equation}
+
+\begin{equation} 
+    - \cos{(2\lambda_2-\varpi_1-\varpi_2)}e_1e_2+\cos{(\varpi_1-\varpi_2)}e_1e_2\nonumber
+\end{equation}
+
+\begin{equation} 
+    +\cos{(\lambda_1+\lambda_2-2\Omega_1)}\sin^2{\frac{I_1}{2}}-\cos{(\lambda_1+\lambda_2)}\sin^2{\frac{I_1}{2}}\nonumber
+\end{equation}
+
+\begin{equation} 
+    +\cos{(\lambda_1+\lambda_2-2\Omega_2)}\sin^2{\frac{I_2}{2}}-\cos{(\lambda_1+\lambda_2)}\sin^2{\frac{I_2}{2}}\nonumber
+\end{equation}
+
+\begin{equation} 
+    + 2\cos{(\lambda_1-\lambda_2-\Omega_1+\Omega_2)}\sin{\frac{I_1}{2}}\sin{\frac{I_2}{2}}\nonumber
+\end{equation}
+
+\begin{equation} 
+    - 2\cos{(\lambda_1+\lambda_2-\Omega_1-\Omega_2)}\sin{\frac{I_1}{2}}\sin{\frac{I_2}{2}} \label{cos psi expansion}
+\end{equation}
+
+Now we note that since the true longitude, $$\vartheta$$, describes a body's anomaly if its' inclination were zero, $$\cos{\left(\vartheta_1-\vartheta_2\right)}$$ can be found by setting the inclination terms of $$\cos{\psi}$$ to zero.
+
+\begin{equation} 
+    \cos{\left(\vartheta_1-\vartheta_2\right)} \simeq \cos{(\lambda_1-\lambda_2)} + \cos{(\lambda_2-2\lambda_1+\varpi_1)}e_1-\cos{(\lambda_2-\varpi_1)}e_1\nonumber
+\end{equation}
+
+\begin{equation} 
+    + \cos{(\lambda_1-2\lambda_2+\varpi_2)}e_2-\cos{(\lambda_1-\varpi_2)}e_2\nonumber
+\end{equation}
+
+\begin{equation} 
+    -\cos{(\lambda_1-\lambda_2)}e_1^2-\frac{1}{8}\cos{(\lambda_1+\lambda_2-2\varpi_1)}e_1^2+\frac{9}{8}\cos{(3\lambda_1-\lambda_2-2\varpi_1)}e_1^2\nonumber
+\end{equation}
+
+\begin{equation} 
+    -\cos{(\lambda_1-\lambda_2)}e_2^2-\frac{1}{8}\cos{(\lambda_1+\lambda_2-2\varpi_2)}e_2^2+\frac{9}{8}\cos{(3\lambda_2-\lambda_1-2\varpi_2)}e_2^2\nonumber
+\end{equation}
+
+\begin{equation} 
+    +\cos{(2{\lambda_1}-2\lambda_1-\varpi_1+\varpi_2)}e_1e_2 - \cos{(2\lambda_1-\varpi_1-\varpi_2)}e_1e_2\nonumber
+\end{equation}
+
+\begin{equation} 
+    - \cos{(2\lambda_2-\varpi_1-\varpi_2)}e_1e_2+\cos{(\varpi_1-\varpi_2)}e_1e_2
+\end{equation}
+
+
+And, as $$\epsilon=\cos{\psi}-\cos{\left(\vartheta_1-\vartheta_2\right)}$$: 
+
+\begin{equation}
+    \epsilon \simeq \cos{(\lambda_1+\lambda_2-2\Omega_1)}\sin^2{\frac{I_1}{2}}-\cos{(\lambda_1+\lambda_2)}\sin^2{\frac{I_1}{2}}\nonumber
+\end{equation}
+
+\begin{equation}
+    +\cos{(\lambda_1+\lambda_2-2\Omega_2)}\sin^2{\frac{I_2}{2}}-\cos{(\lambda_1+\lambda_2)}\sin^2{\frac{I_2}{2}}\nonumber
+\end{equation}
+
+\begin{equation}
+    +2\cos{(\lambda_1-\lambda_2-\Omega_1+\Omega_2)}\sin{\frac{I_1}{2}}\sin{\frac{I_2}{2}}\nonumber
+\end{equation}
+
+\begin{equation} \label{epsilon expansion}
+    - 2\cos{(\lambda_1+\lambda_2-\Omega_1-\Omega_2)}\sin{\frac{I_1}{2}}\sin{\frac{I_2}{2}}
+\end{equation}
+
+
+
