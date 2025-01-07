@@ -883,13 +883,13 @@ From Newton's Law, the motions of the three bodies are:
 
 We first adjust our coordinate system, defining the centre of mass between $$m_0'$$ and $$m_1'$$, $$\vec{R}_1=\frac{m_0'\vec{r}_0'+m_1'\vec{r}_1'}{m_1}$$. Let $$\vec{R}_2=\vec{r}_2'-\vec{R}_1$$ be the vector from the $$m_0'$$, $$m_1'$$ centre of mass to $$m_2'$$. We write:
 
-\begin{equation*}
-    \vec{r}_2 = \vec{r}_2' - \vec{r}_0' = \vec{R}_2 + \vec{R}_1 - \vec{r}_0' = \vec{R}_2 + \frac{m_1'}{m_1} \vec{r}_1
-\end{equation*}
+\begin{equation}
+    \vec{r}_2 = \vec{r}_2' - \vec{r}_0' = \vec{R}_2 + \vec{R}_1 - \vec{r}_0' = \vec{R}_2 + \frac{m_1'}{m_1} \vec{r}_1 \nonumber
+\end{equation}
 
-\begin{equation*}
-    \vec{r}_2 - \vec{r}_1 = \vec{R}_2 + \vec{R}_1 - \vec{r}_1' = \vec{R}_2 - \frac{m_0'}{m_1} \vec{r}_1
-\end{equation*}
+\begin{equation}
+    \vec{r}_2 - \vec{r}_1 = \vec{R}_2 + \vec{R}_1 - \vec{r}_1' = \vec{R}_2 - \frac{m_0'}{m_1} \vec{r}_1 \nonumber
+\end{equation}
 
 \begin{equation}
     \ddot{\vec{r}}_1 = \frac{\mathcal{G} m_1}{\parallel \vec{r}_1 \parallel^3} \vec{r}_1 + \frac{\mathcal{G} m_2'}{\parallel \vec{R}_2 - \frac{m_0'}{m_1} \vec{r}_1 \parallel^3} \left( \vec{R}_2 - \frac{m_0'}{m_1} \vec{r}_1 \right) - \frac{\mathcal{G} m_2'}{\parallel \vec{R}_2 + \frac{m_1'}{m_1} \vec{r}_1 \parallel^3} \left( \vec{R}_2 + \frac{m_1'}{m_1} \vec{r}_1 \right)
@@ -949,11 +949,11 @@ Where $$t=\frac{q'}{q}$$ is an expansion parameter. Here we do not study the $$P
 Using \eqref{legendre expansion}:
 
 \begin{equation}
-    \frac{\mathcal{G}\mu_1m_1m_2'}{m_0'\parallel\vec{R}_2-\frac{m_0'}{m_1}\vec{r}_1\parallel} = \frac{\mathcal{G}\mu_1m_1m_2'}{R_2m_0'} \sum_{n=0}^\infty \left( \frac{m_0'}{m_1} \right)^n \left( \frac{r_1}{R_2} \right)^n P_n \left( \cos{\psi} \right)
+    \frac{\mathcal{G}\mu_1 m_1 m_2'}{m_0'\parallel \vec{R}_2 - \frac{m_0'}{m_1} \vec{r}_1\parallel } = \frac{\mathcal{G}\mu_1m_1m_2'}{R_2 m_0'} \sum_n ^\infty \left( \frac{m_0'}{m_1} \right)^n \left( \frac{r_1} {R_2} \right)^n P_n \left( \cos{\psi} \right)  
 \end{equation}
 
 \begin{equation}
-    \frac{\mathcal{G}\mu_1m_1m_2'}{m_1'\parallel \vec{R}_2+\frac{m_1'}{m_1}\vec{r}_1\parallel} = \frac{\mathcal{G}\mu_1m_1m_2'}{R_2m_1'} \sum_{n=0}^\infty \left( -1 \right)^n \left( \frac{m_1'}{m_1} \right)^n \left( \frac{r_1}{R_2} \right)^n P_n \left( \cos{\psi} \right)
+    \frac{\mathcal{G}\mu_1m_1m_2'}{m_1'\parallel \vec{R}_2+\frac{m_1'}{m_1}\vec{r}_1\parallel} = \frac{\mathcal{G}\mu_1m_1m_2'}{R_2m_1'} \sum_n^\infty \left( -1 \right)^n \left( \frac{m_1'}{m_1} \right)^n \left( \frac{r_1}{R_2} \right)^n P_n \left( \cos{\psi} \right)
 \end{equation}
 
 We consider the case where $$m_0'>>m_1',m_2'$$, two planets orbiting a star. Defining $$\delta_1\equiv\frac{m_1'}{m_0'}$$ and $$\delta_2\equiv\frac{m_2'}{m_0'}$$, we expand to second order in $$\delta_i$$:
