@@ -959,23 +959,27 @@ Using \eqref{legendre expansion}:
 We consider the case where $$m_0'>>m_1',m_2'$$, two planets orbiting a star. Defining $$\delta_1\equiv\frac{m_1'}{m_0'}$$ and $$\delta_2\equiv\frac{m_2'}{m_0'}$$, we expand to second order in $$\delta_i$$:
 
 \begin{equation}
-    \frac{\mathcal{G}\mu_1m_1m_2'}{R_2m_0'}\sum_{n=0}^\infty\left(\frac{m_0'}{m_1}\right)^n\left(\frac{r_1}{R_2}\right)^nP_n\left(\cos{\psi}\right)=\frac{\mathcal{G}m_0'^2}{R_2}\delta_1\delta_2\sum_{n=0}^\infty\left(\frac{r_1}{R_2}\right)^nP_n\left(\cos{\psi}\right)
+    \frac{\mathcal{G}\mu_1m_1m_2'}{R_2m_0'}\sum_{n=0}^\infty\left(\frac{m_0'}{m_1}\right)^n\left(\frac{r_1}{R_2}\right)^n P_n\left(\cos{\psi}\right)=\frac{\mathcal{G}m_0'^2 }{R_2}\delta_1\delta_2\sum_{n=0}^\infty\left(\frac{r_1}{R_2}\right)^n P_n\left(\cos{\psi}\right)
 \begin{equation}
+
 \end{equation}
-    \frac{\mathcal{G}\mu_1m_1m_2'}{R_2m_1'}\sum_{n=0}^\infty\left(-1\right)^n\left(\frac{m_1'}{m_1}\right)^n\left(\frac{r_1}{R_2}\right)^nP_n\left(\cos{\psi}\right)=\frac{\mathcal{G}m_0'^2}{R_2}\left(\delta_2-\left(\frac{r_1}{R_2}\right)P_1\left(\cos{\psi}\right)\delta_1\delta_2\right)  
+    \frac{\mathcal{G}\mu_1m_1m_2'}{R_2m_1'}\sum_{n=0}^\infty\left(-1\right)^n\left(\frac{m_1'}{m_1}\right)^n\left(\frac{r_1}{R_2}\right)^nP_n\left(\cos{\psi}\right)=\frac{\mathcal{G}m_0' ^2}{R_2}\left(\delta_2-\left(\frac{r_1}{R_2}\right)P_1\left(\cos{\psi}\right)\delta_1\delta_2\right)  
 \end{equation}
 
-Rewriting our Hamiltonian (\eqref{3 body hamiltonian} using $$P_0$$ and $$P_1$$:
+Rewriting our Hamiltonian, (\eqref{3 body hamiltonian}, using $$P_0$$ and $$P_1$$:
 
 \begin{equation}
     \mathcal{H} = \frac{1}{2\mu_1} \parallel{\vec{p}}_1\parallel^2 + \frac{m_1 + m_2'}{2m_1 m_2'} \parallel{\vec{P}}_2\parallel^2 - \frac{\mathcal{G}\mu_1 m_1}{r_1} - \frac{\mathcal{G}m_1 m_2'}{R_2} - \frac{\mathcal{G}m_0'^2}{R_2} \delta_1 \delta_2 \sum _{n=2} ^\infty \left( \frac{r_1}{R_2} \right)^n P_n \left( \cos{\psi} \right)\nonumber
 \end{equation}
 
 \begin{equation}
-    = \frac{1}{2\mu_1} \parallel{\vec{p}}_1\parallel^2 + \frac{m_1 + m_2'}{2m_1 m_2'} \parallel{\vec{P}}_2\parallel^2 - \frac{\mathcal{G}\mu_1 m_1}{r_1} - \frac{\mathcal{G}m_0' m_2'}{R_2} + \mathcal{G} m_0'^2 \delta_1 \delta_2 \left( -\left( r_1^2 + R_2^2 - 2r_1 R_2 \cos{\psi} \right)^{-\frac{1}{2}} + \frac{r_1}{R_2^2} \cos{\psi} \right) \label{3 body hamiltonian with R}
+    = \frac{1}{2\mu_1} \parallel{\vec{p}}_1\parallel^2 + \frac{m_1 + m_2'}{2m_1 m_2'} \parallel{\vec{P}}_2\parallel^2 - \frac{\mathcal{G}\mu_1 m_1}{r_1} - \frac{\mathcal{G}m_0' m_2'}{R_2} \nonumber
+\end{equation}
+\begin{equation}
+    +\mathcal{G} m_0'^2 \delta_1 \delta_2 \left( -\left( r_1^2 + R_2^2 - 2r_1 R_2 \cos{\psi} \right)^{-\frac{1}{2}} + \frac{r_1}{R_2^2} \cos{\psi} \right) \label{3 body hamiltonian with R}
 \end{equation}
 
-The first four terms of \eqref{3 body hamiltonian with R} correspond to two separate two-body problems which we studied in \eqref{Expansion of the Two-Body Hamiltonian in Delaunay Variables}, and it is clear that the disturbing function is:
+The first four terms of \eqref{3 body hamiltonian with R} correspond to two separate two-body problems which we studied previously, and it is clear that the disturbing function is:
 
 \begin{equation}\label{disturbing Function}
     \mathcal{R}=\mathcal{G}m_0'^2\delta_1\delta_2\left(-\left(r_1^2+R_2^2-2r_1R_2\cos{\psi}\right)^{-\frac{1}{2}}+\frac{r_1}{R_2^2}\cos{\psi}\right)
@@ -1019,7 +1023,7 @@ With $$\vartheta_i\equiv\varpi_i+f_i$$. Thus:
 We now expand around $$\epsilon=0$$:
 
 \begin{equation}
-    \frac{1}{\mathcal{F}} = \left( \frac{1}{\mathcal{F}_0} + r_1R_2\epsilon\frac{1}{\mathcal{F}_0^3}  + \frac{3}{2}(r_1R_2\epsilon)^2\frac{1}{\mathcal{F}_0^3} + ... \right) = \sum^{\infty}_{k = 0} \frac{(2k)!}{(k!)^2}\left(\frac{1}{2}r_1R_2\epsilon \right)^k\frac{1}{\mathcal{F}_0^{2k+1}}
+    \frac{1}{\mathcal{F}} = \left( \frac{1}{\mathcal{F}_0} + r_1R_2\epsilon\frac{1}{\mathcal{F}_0^3}  + \frac{3}{2}(r_1R_2\epsilon)^2\frac{1}{\mathcal{F}_0^3} + ... \right) = \sum^{\infty} _{k = 0} \frac{(2k)!}{(k!)^2}\left(\frac{1}{2}r_1R_2\epsilon \right)^k\frac{1}{\mathcal{F}_0^{2k+1}}
 \end{equation}
 
 Where $$\mathcal{F}_0=\mathcal{F}\left(\epsilon=0\right)$$. We now expand $$\frac{1}{\mathcal{F}_0^{2k+1}}$$ around $$r_1=a$$ and $$R_2=a_2$$:
@@ -1073,13 +1077,14 @@ We also define $$\zeta_i$$:
 We use these to rewrite \eqref{F_0 expansion}:
 
 \begin{equation}
-    \frac{1}{\mathcal{F}_0^{2k+1}} = \sum_{j=-\infty}^\infty \left(A_{k,j,0,0}+\zeta_1A_{k,j,1,0}+ \zeta_2A_{k,j,0,1}+\frac{1}{2}\zeta_1^2 A_{k,j,2,0}+\frac{1}{2}\zeta_2^2 A_{k,j,0,2}+\zeta_1 \zeta_2A_{k,j,1,1}+...\right)\cos{\left(j(\vartheta_1-\vartheta_2)\right)}
+    \frac{1}{ \mathcal{F} _0 ^{2k+1}} = \sum _{j=-\infty} ^\infty \left(A _{k,j,0,0}+\zeta _1 A _{k,j,1,0}+ \zeta _2 A _{k,j,0,1}+\frac{1}{2}\zeta _1 ^2 A _{k,j,2,0}+\frac{1}{2}\zeta _2^2 A _{k,j,0,2} + \zeta _1 
+ \zeta _2 A _{k,j,1,1}+...\right)\cos{\left(j(\vartheta_1-\vartheta_2)\right)}
 \end{equation}
 
 We can now write $$\mathcal{R}_D$$ as product of two series:
 
 \begin{equation} \label{R_D expression}
-    \mathcal{R}_D = -\mathcal{G} m_0' ^2 \delta_1 \delta_2 \sum _{k=0} ^{\infty} \frac{(2k!)}{(k!)^2}  \left(\frac{1}{2}\frac{r_1}{a_1}\frac{R_2}{a_2} epsilon\right)^k a_1^k a_2^k \times \sum _{j=-\infty} ^\infty \left(A _{k,j,0,0} +\zeta _1 A _{k,j,1,0} + \zeta _2 A _{k,j,0,1} +\frac{1}{2} \zeta _1 ^2 A _{k,j,2,0} + \frac{1}{2} \zeta _2 ^2 A_ {k,j,0,2}+\zeta_1 \zeta _2 A_ {k,j,1,1}+...\right)\cos{\left(j(\vartheta _1 -\vartheta _2 )\right)}
+    \mathcal{R}_D = -\mathcal{G} m_0' ^2 \delta_1 \delta_2 \sum _{k=0} ^{\infty} \frac{(2k!)}{(k!)^2}  \left(\frac{1}{2}\frac{r_1}{a_1}\frac{R_2}{a_2} epsilon\right)^k a_1^k a_2^k \times \sum _{j=-\infty} ^\infty \left(A _{k,j,0,0} +\zeta _1 A _{k,j,1,0} + \zeta _2 A _{k,j,0,1} +\frac{1}{2} \zeta _1 ^2 A _{k,j,2,0} + \frac{1}{2} \zeta _2 ^2 A _{k,j,0,2}+\zeta_1 \zeta _2 A _{k,j,1,1}+...\right)\cos{\left(j(\vartheta _1 -\vartheta _2 )\right)}
 \end{equation}
 
 <h4>VI.I.I Series Expansion of Orbital Elements</h4>
