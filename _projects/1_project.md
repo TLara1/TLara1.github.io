@@ -959,11 +959,11 @@ Using \eqref{legendre expansion}:
 We consider the case where $$m_0'>>m_1',m_2'$$, two planets orbiting a star. Defining $$\delta_1\equiv\frac{m_1'}{m_0'}$$ and $$\delta_2\equiv\frac{m_2'}{m_0'}$$, we expand to second order in $$\delta_i$$:
 
 \begin{equation}
-    \frac{\mathcal{G}\mu_1m_1m_2'}{R_2m_0'}\sum_{n=0}^\infty\left(\frac{m_0'}{m_1}\right)^n\left(\frac{r_1}{R_2}\right)^n P_n\left(\cos{\psi}\right)=\frac{\mathcal{G}m_0'^2 }{R_2}\delta_1\delta_2\sum_{n=0}^\infty\left(\frac{r_1}{R_2}\right)^n P_n\left(\cos{\psi}\right)
-\begin{equation}
-
+    \frac{\mathcal{G}\mu_1m_1m_2'}{R_2m_0'}\sum _{n=0} ^\infty\left(\frac{m _0'}{m _1 }\right)^n\left(\frac{r _1}{R _2}\right)^n P_n\left(\cos{\psi}\right)=\frac{\mathcal{G}m _0' ^2 }{R_2}\delta _1\delta _2\sum _{n=0}^\infty\left(\frac{r _1}{R _2}\right)^n P _n\left(\cos{\psi}\right)
 \end{equation}
-    \frac{\mathcal{G}\mu_1m_1m_2'}{R_2m_1'}\sum_{n=0}^\infty\left(-1\right)^n\left(\frac{m_1'}{m_1}\right)^n\left(\frac{r_1}{R_2}\right)^nP_n\left(\cos{\psi}\right)=\frac{\mathcal{G}m_0' ^2}{R_2}\left(\delta_2-\left(\frac{r_1}{R_2}\right)P_1\left(\cos{\psi}\right)\delta_1\delta_2\right)  
+
+\begin{equation}
+    \frac{\mathcal{G} \mu_1 m_1 m_2'}{R_2m_1'}\sum _{n=0} ^\infty \left(-1\right)^n\left(\frac{m _1'}{m _1}\right)^n\left(\frac{r _1}{R _2}\right)^n P_n \left(\cos{\psi}\right)=\frac{\mathcal{G}m_0' ^2}{R_2}\left(\delta_2-\left(\frac{r _1}{R _2}\right)P_1\left(\cos{\psi}\right)\delta _1 \delta _2\right)  
 \end{equation}
 
 Rewriting our Hamiltonian, (\eqref{3 body hamiltonian}, using $$P_0$$ and $$P_1$$:
@@ -1078,13 +1078,20 @@ We use these to rewrite \eqref{F_0 expansion}:
 
 \begin{equation}
     \frac{1}{ \mathcal{F} _0 ^{2k+1}} = \sum _{j=-\infty} ^\infty \left(A _{k,j,0,0}+\zeta _1 A _{k,j,1,0}+ \zeta _2 A _{k,j,0,1}+\frac{1}{2}\zeta _1 ^2 A _{k,j,2,0}+\frac{1}{2}\zeta _2^2 A _{k,j,0,2} + \zeta _1 
- \zeta _2 A _{k,j,1,1}+...\right)\cos{\left(j(\vartheta_1-\vartheta_2)\right)}
+ \zeta _2 A _{k,j,1,1}+...\right)
+\end{equation}
+\begin{equation}
+    \times\cos{\left(j(\vartheta_1-\vartheta_2)\right)} \nonumber
 \end{equation}
 
 We can now write $$\mathcal{R}_D$$ as product of two series:
 
 \begin{equation} \label{R_D expression}
-    \mathcal{R}_D = -\mathcal{G} m_0' ^2 \delta_1 \delta_2 \sum _{k=0} ^{\infty} \frac{(2k!)}{(k!)^2}  \left(\frac{1}{2}\frac{r_1}{a_1}\frac{R_2}{a_2} epsilon\right)^k a_1^k a_2^k \times \sum _{j=-\infty} ^\infty \left(A _{k,j,0,0} +\zeta _1 A _{k,j,1,0} + \zeta _2 A _{k,j,0,1} +\frac{1}{2} \zeta _1 ^2 A _{k,j,2,0} + \frac{1}{2} \zeta _2 ^2 A _{k,j,0,2}+\zeta_1 \zeta _2 A _{k,j,1,1}+...\right)\cos{\left(j(\vartheta _1 -\vartheta _2 )\right)}
+    \mathcal{R}_D = -\mathcal{G} m_0' ^2 \delta_1 \delta_2 \sum _{k=0} ^{\infty} \frac{(2k!)}{(k!)^2}  \left(\frac{1}{2}\frac{r_1}{a_1}\frac{R_2}{a_2} epsilon\right)^k a_1^k a_2^k \nonumber
+\end{equation}  
+
+\begin{equation}   
+    \times \sum _{j=-\infty} ^\infty \left(A _{k,j,0,0} +\zeta _1 A _{k,j,1,0} + \zeta _2 A _{k,j,0,1} +\frac{1}{2} \zeta _1 ^2 A _{k,j,2,0} + \frac{1}{2} \zeta _2 ^2 A _{k,j,0,2}+\zeta_1 \zeta _2 A _{k,j,1,1}+...\right)\cos{\left(j(\vartheta _1 -\vartheta _2 )\right)}
 \end{equation}
 
 <h4>VI.I.I Series Expansion of Orbital Elements</h4>
