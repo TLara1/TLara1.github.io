@@ -917,7 +917,7 @@ Now we must isolate the disturbing function. First, we observe, via the law of c
     \frac{1}{\parallel\vec{q}-\vec{q}'\parallel}=\left(q^2+q'^2-2qq'\cos{\psi}\right)^{-\frac{1}{2}}
 \end{equation}
 
-Where $$\psi$$ is the angle between vectors $$\vec{q}$$ and $$\vec{q}'$$. We can write \eqref{cosine 1/r expression} as a power series using \textit{Legendre Polynomials}, $$P_n$$:
+Where $$\psi$$ is the angle between vectors $$\vec{q}$$ and $$\vec{q}'$$. We can write \eqref{cosine 1/r expression} as a power series using _Legendre Polynomials_, $$P_n$$:
 
 \begin{equation}\label{legendre expansion}
     \frac{1}{\parallel\vec{q}-\vec{q}'\parallel}=\frac{1}{q}\left(1+t^2-2t\cos{\psi}\right)^{-\frac{1}{2}}=\frac{1}{q}\sum_{n=0}^\infty t^nP_n\left(\cos{\psi}\right)
@@ -1021,7 +1021,7 @@ We now expand around $$\epsilon=0$$:
 Where $$\mathcal{F}_0=\mathcal{F}\left(\epsilon=0\right)$$. We now expand $$\frac{1}{\mathcal{F}_0^{2k+1}}$$ around $$r_1=a$$ and $$R_2=a_2$$:
 
 \begin{equation} \label{F_0 expansion}
-    \frac{1}{\mathcal{F}_0^{2k+1}} = \frac{1}{\rho_0^{2k+1}} + (r_1-a_1)\pdv{}{a_1}\left(\frac{1}{\rho_0^{2k+1}}\right)+ (R_2-a_2)\pdv{}{a_2}\left(\frac{1}{\rho_0^{2k+1}}\right)+...
+    \frac{1}{\mathcal{F}_0^{2k+1}} = \frac{1}{\rho_0^{2k+1}} + (r_1-a_1)\frac{\partial }{\partial a_1}\left(\frac{1}{\rho_0^{2k+1}}\right)+ (R_2-a_2)\frac{\partial }{\partial a_2}\left(\frac{1}{\rho_0^{2k+1}}\right)+...
 \end{equation}
 
 Having defined:
@@ -1045,7 +1045,7 @@ We now expand $$\frac{1}{\rho_0^{2k+1}}$$ as a Fourier Series:
 \end{equation}
 
 
-Where $$\alpha=\frac{a_1}{a_2}$$. $$b^{(j)}_{s}$$ terms are known as \textit{Laplace Coefficients}.
+Where $$\alpha=\frac{a_1}{a_2}$$. $$b^{(j)}_{s}$$ terms are known as _Laplace Coefficients_.
 
 \begin{equation*} \label{laplace coefficient definitions}
     b^{(j)}_{s}(\alpha) \equiv \frac{1}{2\pi}\int_0^{2\pi}\frac{\cos{(j{\phi})}d{\phi}}{\left(1+\alpha^2-2\alpha\cos{({\phi})}\right)^s}
@@ -1054,7 +1054,7 @@ Where $$\alpha=\frac{a_1}{a_2}$$. $$b^{(j)}_{s}$$ terms are known as \textit{Lap
 For convenience, we now define the operator $$A_{k,j,m,n}$$:
 
 \begin{equation} \label{def A}
-    A_{k,j,m,n} \equiv a_1^ma_2^n\pdv{^{m+n}}{a_1^m\partial a_2^n}\left(a_2^{-2k-1} b^{(j)}_{k+\frac{1}{2}}\right)
+    A_{k,j,m,n} \equiv a_1^ma_2^n\frac{\partial ^{m+n}}{\partial a_1^m\partial a_2^n}\left(a_2^{-2k-1} b^{(j)}_{k+\frac{1}{2}}\right)
 \end{equation}
 
 We also define $$\zeta_i$$:
