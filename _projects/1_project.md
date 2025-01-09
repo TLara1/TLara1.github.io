@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Celestial Mechanics and the Precession of Mercury
+title: Celestial Mechanics and the Perihelion Precession of Mercury
 description:
 img: assets/img/12.jpg
 importance: 1
