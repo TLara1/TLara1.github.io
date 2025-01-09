@@ -1668,9 +1668,6 @@ Expanding $$\cos{(j(\vartheta-\vartheta_2))}$$ to second order:
     +j^2e_1e_2\cos{((1-j){\lambda}_1-(1-j){\lambda}_2-\varpi_1-\varpi_2)} \label{cos vartheta expansion}
 \end{equation}
 
-
-
-
 We have all the ingredients to expand $$\mathcal{R}_D$$. From \eqref{r/a and epsilon expansion}, we omit $$k>1$$ terms and since $$\zeta_i$$ is first-order, we omit $$\mathcal{O}\left(\zeta^3\right)$$ terms. With \eqref{R_D expression}:
 \begin{equation} 
     \mathcal{R}_D \simeq-\frac{\mathcal{G}m_0'^2\delta_1 \delta _2} {a _2} \sum _{j=-\infty} ^\infty \left(a _2 A _{0,j,0,0} + a _2 \zeta _1 A _{0,j,1,0} + a _2 \zeta _2 A_{0,j,0,1} +\frac{1}{2}a _2\zeta _1 ^2 A _{0,j,2,0} \right. \nonumber
@@ -1684,7 +1681,130 @@ We have all the ingredients to expand $$\mathcal{R}_D$$. From \eqref{r/a and eps
     =-\frac{\mathcal{G}m_0'^2\delta_1\delta_2}{a_2}\sum_{j=-\infty}^\infty\mathcal{R}_D^{(j)}
 \end{equation}
 
+Using our definition of $$A_{k,j,m,n}$$ (\eqref{def A}), transforming derivatives with respect to $$\alpha$$ because $$b^{(j)}_s$$ is a function of $$\alpha$$:
+
+\begin{equation}
+    a_2A_{0,j,0,0} = b^{(j)}_{\frac{1}{2}}(\alpha) \nonumber
+\end{equation}
+
+\begin{equation}
+    a_2A_{0,j,1,0} = \alpha \frac{\partial }{\partial\alpha}\left(b^{(j)}_{\frac{1}{2}}(\alpha)\right) \nonumber
+\end{equation}
+
+\begin{equation}
+    a_2A_{0,j,0,1} = a_2\frac{\partial }{\partial a_2}\left(b^{(j)}_{\frac{1}{2}}(\alpha)\right) -b^{(j)}_ {\frac{1}{2}}(\alpha) = -\alpha\frac{\partial }{\partial\alpha}\left(b^{(j)}_{\frac{1}{2}}(\alpha)\right)-b^{(j)}_{\frac{1}{2}}(\alpha) \nonumber
+\end{equation}
+
+\begin{equation}
+    a_2A_{0,j,2,0} = \alpha^2 \frac{\partial ^2}{\partial\alpha^2}\left(b^{(j)}_{\frac{1}{2}}(\alpha)\right) \nonumber
+\end{equation}
+
+\begin{equation}
+    a_2A_{0,j,0,2} = a_2^3 \frac{\partial }{\partial a_2} \left(a_2^{-1} \frac{\partial }{\partial a_2}\left(b^{(j)}_{\frac{1}{2}}(\alpha)\right)-a_2^{-2}b^{(j)} _{\frac{1}{2}} (\alpha) \right) = \alpha^2\frac{\partial ^2}{\partial\alpha^2}\left(b^{(j)} _{\frac{1}{2}}(\alpha)\right) +4\alpha\frac{\partial }{\partial\alpha} \left(b^{(j)} _{\frac{1}{2}} (\alpha)\right)+2b^{(j)} _{\frac{1}{2}}(\alpha) \nonumber
+\end{equation}
+
+\begin{equation}
+    a_2A_{0,j,1,1} = -\alpha^2\frac{\partial ^2}{\partial\alpha^2}\left(b^{(j)} _{\frac{1}{2}}(\alpha)\right)-2\alpha\frac{\partial }{\partial\alpha}\left(b^{(j)} _{\frac{1}{2}}(\alpha)\right) \nonumber
+\end{equation}
+
+\begin{equation}
+    a_1a_2^2A_{1,j,0,0} = \alpha b^{(j)}_{\frac{3}{2}}(\alpha) \nonumber
+\end{equation}
+
+What follows is a hefty quantity of tedious algebra, using \eqref{epsilon expansion}, \eqref{r/a and epsilon expansion}, and \eqref{cos vartheta expansion}. We expand \eqref{RDj expression} to 2nd order in $$e_i$$ and $$\sin{\frac{I_i}{2}}$$.
+We also recall the trigonometric identity: $$\cos{a}\cos{b}=\frac{1}{2}\cos{(a+b)}+\frac{1}{2}\cos{(a-b)}$$. We write $$\mathcal{R}_D^{(j)}=\mathcal{R}_D^{(j)(0)}+\mathcal{R}_D^{(j)(1)}+\mathcal{R}_D^{(j)(2)}$$, categorizing terms by the sum of the coefficients of $${\lambda_1}$$ and $${\lambda_2}$$.
+
+\begin{equation}
+    \mathcal{R}_D^{(j)(0)} \simeq \left( 1+\frac{1}{4}(e_1^2+e_2^2)\left(-4j^2+2\alpha\frac{\partial }{\alpha}+\alpha^2\frac{\partial ^2}{\alpha^2}\right)\right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{(j({\lambda_1}-\lambda_2))} \nonumber
+\end{equation}
+
+\begin{equation}
+    \mathcal{R} _D^{(j)(0)} \simeq \frac{1}{4}e _1 e _2\left(2j+4j^2-2\alpha\frac{\partial }{\alpha}-\alpha^2\frac{\partial ^2}{\alpha^2}\right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{((1+j){\lambda_1}-(1+j)\lambda_2-\varpi_1+\varpi_2)} \nonumber
+\end{equation}
+
+\begin{equation}
+    \mathcal{R} _D^{(j)(0)} \simeq \frac{1}{4}e _1 e _2\left(-2j+4j^2-2\alpha\frac{\partial }{\alpha}-\alpha^2\frac{\partial ^2}{\alpha^2}\right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{((1-j){\lambda_1}-(1-j)\lambda_2-\varpi_1+\varpi _2)} \nonumber
+\end{equation}
+
+\begin{equation}
+    \mathcal{R}_D^{(j)(0)} \simeq -\frac{1}{2}\left(\sin^2{\frac{I_1}{2}}+\sin^2{\frac{I_2}{2}} \right)\alpha b^{(j)} _{\frac{3}{2}}(\alpha)\cos{((1+j){\lambda_1}-(1+j)\lambda_2)} \nonumber
+\end{equation}
+
+\begin{equation}
+    \mathcal{R}_D^{(j)(0)} \simeq -\frac{1}{2}\left(\sin^2{\frac{I_1}{2}}+\sin^2{\frac{I_2}{2}} \right)\alpha b^{(j)} _{\frac{3}{2}}(\alpha)\cos{((1-j){\lambda_1}-(1-j)\lambda_2)} \nonumber
+\end{equation}
+
+\begin{equation}
+    \mathcal{R}_D^{(j)(0)} \simeq \sin{\frac{I _1}{2}} \sin{\frac{I_2}{2}}\alpha b^{(j)} _{\frac{3}{2}}(\alpha)\cos{((1+j){\lambda_1}-(1+j)\lambda_2-\Omega_1+\Omega_2)} \nonumber
+\end{equation}
+
+\begin{equation}
+    \mathcal{R}_D^{(j)(0)} \simeq \sin{\frac{I _1}{2}} \sin{\frac{I_2}{2}}\alpha b^{(j)} _{\frac{3}{2}}(\alpha)\cos{((1-j){\lambda_1}-(1-j)\lambda_2-\Omega_1+\Omega_2)}
+\end{equation}
+
+\begin{equation}
+    \mathcal{R} _D^{(j)(1)} \simeq \frac{1}{2}e _1\left(2j-\alpha\frac{\partial }{\alpha} \right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{((1+j){\lambda_1}-j\lambda_2-\varpi_1)} \nonumber
+\end{equation}
+
+\begin{equation}
+    -\frac{1}{2}e_1\left(2j+\alpha\frac{\partial }{\alpha} \right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{((1-j){\lambda_1}+j\lambda_2-\varpi_1)} \nonumber
+\end{equation}
+
+\begin{equation}
+    +\frac{1}{2}e_2\left(1+2j+\alpha\frac{\partial }{\alpha} \right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{(j{\lambda_1}-(1+j)\lambda_2+\varpi_2)} \nonumber
+\end{equation}
+
+\begin{equation}
+    +\frac{1}{2}e_2\left(1-2j+\alpha\frac{\partial }{\alpha} \right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{(j{\lambda_1}+(1-j)\lambda_2-\varpi_2)}
+\end{equation}
 
 
+\begin{equation}
+    \mathcal{R} _D^{(j)(2)} \simeq \frac{1}{8}e_1^2\left(5j+4j^2-2\alpha\frac{\partial }{\alpha}-4j\alpha\frac{\partial }{\alpha}+\alpha^2\frac{\partial ^2}{\alpha^2}\right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{((2+j){\lambda_1}-j\lambda_2-2\varpi_1)} \nonumber
+\end{equation}
+
+\begin{equation}
+    +\frac{1}{8}e_1^2\left(-5j+4j^2-2\alpha\frac{\partial }{\alpha}+4j\alpha\frac{\partial }{\alpha}+\alpha^2\frac{\partial ^2}{\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{((2-j){\lambda_1}+j\lambda_2-2\varpi_1)} \nonumber
+\end{equation}
+
+\begin{equation}
+    +\frac{1}{4}e_1e_2\left(2j-4j^2-2\alpha\frac{\partial }{\alpha}+4j\alpha\frac{\partial }{\alpha}-\alpha^2\frac{\partial ^2}{\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{((1+j){\lambda_1}+(1-j)\lambda_2-\varpi_1-\varpi_2)} \nonumber
+\end{equation}
+
+\begin{equation}
+    -\frac{1}{4}e_1e_2\left(2j+4j^2+2\alpha\frac{\partial }{\alpha}+4j\alpha\frac{\partial }{\alpha}+\alpha^2\frac{\partial ^2}{\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{((1-j){\lambda_1}+(1+j)\lambda_2-\varpi_1-\varpi_2)} \nonumber
+\end{equation}
+
+\begin{equation}
+    +\frac{1}{8}e_2^2\left(4+9j+4j^2+6\alpha\frac{\partial }{\alpha}+4j\alpha\frac{\partial }{\alpha}+\alpha^2\frac{\partial ^2}{\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{(j{\lambda_1}-(2+j)\lambda_2+2\varpi_2)} \nonumber
+\end{equation}
+
+\begin{equation}
+    +\frac{1}{8}e_2^2\left(4-9j+4j^2+6\alpha\frac{\partial }{\alpha}-4j\alpha\frac{\partial }{\alpha}+\alpha^2\frac{\partial ^2}{\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{(j{\lambda_1}+(2-j)\lambda_2-2\varpi_2)} \nonumber
+\end{equation}
+
+\begin{equation}
+    +\frac{1}{2}\sin^2{\frac{I_1}{2}}\alpha b^{(j)}_{\frac{3}{2}}(\alpha)\cos{((1-j){\lambda_1}+(1+j)\lambda_2-2\Omega_1)} \nonumber
+\end{equation}
+
+\begin{equation}
+    +\frac{1}{2}\sin^2{\frac{I_1}{2}}\alpha b^{(j)}_{\frac{3}{2}}(\alpha)\cos{((1+j){\lambda_1}+(1-j)\lambda_2-2\Omega_1)} \nonumber
+\end{equation}
+
+\begin{equation}
+    -\sin{\frac{I_1}{2}} \sin{\frac{I_2}{2}}\alpha b^{(j)}_{\frac{3}{2}}(\alpha)\cos{((1-j){\lambda_1}+(1+j)\lambda_2-\Omega_1-\Omega_2)} \nonumber
+\end{equation}
+
+\begin{equation}
+    -\sin{\frac{I_1}{2}} \sin{\frac{I_2}{2}}\alpha b^{(j)}_{\frac{3}{2}}(\alpha)\cos{((1+j){\lambda_1}+(1-j)\lambda_2-\Omega_1-\Omega_2)} \nonumber
+\end{equation}
+
+\begin{equation}
+    +\frac{1}{2}\sin^2{\frac{I_2}{2}}\alpha b^{(j)}_{\frac{3}{2}}(\alpha)\cos{((1-j){\lambda_1}+(1+j)\lambda_2-2\Omega_2)} \nonumber
+\end{equation}
+
+\begin{equation}
+    +\frac{1}{2}\sin^2{\frac{I_2}{2}}\alpha b^{(j)}_{\frac{3}{2}}(\alpha)\cos{((1+j){\lambda_1}+(1-j)\lambda_2-2\Omega_2)}
+\end{equation}
 
 
