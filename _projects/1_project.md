@@ -1553,4 +1553,138 @@ And, as $$\epsilon=\cos{\psi}-\cos{\left(\vartheta_1-\vartheta_2\right)}$$:
 \end{equation}
 
 
+<h4>VI.I.III Series Expansion of Direct Disturbing Function</h4>
+
+With \eqref{zeta expansion e} and \eqref{epsilon expansion}:
+
+\begin{equation}
+    \frac{1}{2}\frac{r_1}{a_1}\frac{R_2}{a_2}\epsilon \simeq \frac{1}{2}\left(\cos{(\lambda_1+\lambda_2-2\Omega_1)} - \cos{(\lambda_1+\lambda_2)}\right)\sin^2{\frac{I_1}{2}} + \left(\cos{(\lambda_1+\lambda_2-2\Omega_2)} - \cos{(\lambda_1+\lambda_2)}\right)\sin^2{\frac{I_2}{2}}\nonumber
+\end{equation}
+
+\begin{equation}
+\label{r/a and epsilon expansion}
+    + \left(\cos{(\lambda_1-\lambda_2-\Omega_1+\Omega_2)} - \cos{(\lambda_1+\lambda_2-\Omega_1-\Omega_2)}\right)\sin{\frac{I_1}{2}}\sin{\frac{I_2}{2}}
+\end{equation}
+
+As $$\frac{1}{2}\frac{r_1}{a_1}\frac{R_2}{a_2}\epsilon$$ is already of second order, we can ignore $$k>1$$ terms in \eqref{R_D expression}. Now we need an expansion for $$\cos{(j(\vartheta_1-\vartheta_2))}$$, where $$j$$ is an arbitrary integer. We start by noting:
+
+\begin{equation}
+    \cos{(j(\vartheta_1-\vartheta_2))} = \cos{(j(\varpi_1 + f_1))}\cos{(j(\varpi_2 + f_2))} + \sin{(j(\varpi_1 + f_1))}\sin{(j(\varpi_2 + f_2))}
+\end{equation}
+
+We use our \eqref{theta expansion in e} and expand:
+
+\begin{equation}
+    \cos{(j(\varpi+f))} \simeq \cos{\left(j\left(\varpi + \mathcal{M}+2e\sin{(\mathcal{M})}+\frac{5}{4}e^2\sin{(2\mathcal{M})} \right)\right)} \nonumber
+\end{equation}
+
+\begin{equation}
+    \simeq \cos{\left(j\left(\varpi + \mathcal{M} \right)\right)} -2j\sin{\mathcal{M}}\sin{\left(j\left(\varpi + \mathcal{M} \right)\right)}e \nonumber
+\end{equation}
+
+\begin{equation}
+    -2j^2 \sin^2{\mathcal{M}}\cos{\left(j\left(\varpi + \mathcal{M} \right)\right)}e^2-\frac{5}{4}j\sin{2\mathcal{M}}\sin{\left(j\left(\varpi + \mathcal{M} \right)\right)}e^2 \nonumber
+\end{equation}
+
+\begin{equation}
+    \simeq \left(1-j^2e^2\right)\cos{j{\lambda}}+\left(\frac{1}{2}j^2e^2-\frac{5}{8}je^2 \right)\cos{((2-j){\lambda}-2\varpi)} \nonumber
+\end{equation}
+
+\begin{equation}
+    +\left(\frac{1}{2}j^2e^2+\frac{5}{8}je^2 \right)\cos{((2+j){\lambda}-2\varpi)} \nonumber
+\end{equation}
+
+\begin{equation}
+    -je\cos{((1-j){\lambda}-\varpi)}+je\cos{((1+j){\lambda}-\varpi)}
+\end{equation}
+
+\begin{equation}
+    \sin{(j(\varpi+f))} \simeq \sin{\left(j\left(\varpi + \mathcal{M}+2e\sin{\mathcal{M}}+\frac{5}{4}e^2\sin{2\mathcal{M}} \right)\right)} \nonumber
+\end{equation}
+
+\begin{equation}
+    \simeq \sin{\left(j\left(\varpi + \mathcal{M} \right)\right)} + 2j\sin{\mathcal{M}}\cos{\left(j\left(\varpi + \mathcal{M} \right)\right)}e \nonumber
+\end{equation}
+
+\begin{equation}
+    -2j^2 \sin^2{\mathcal{M}}\sin{\left(j\left(\varpi + \mathcal{M} \right)\right)}e^2 + \frac{5}{4}j\sin{(2\mathcal{M})}\cos{\left(j\left(\varpi + \mathcal{M} \right)\right)}e^2 \nonumber
+\end{equation}
+
+\begin{equation}
+    \simeq \left(1-j^2e^2\right)\sin{j{\lambda}}-\left(\frac{1}{2}j^2e^2-\frac{5}{8}je^2 \right)\sin{((2-j){\lambda}-2\varpi)} \nonumber
+\end{equation}
+
+\begin{equation}
+    +\left(\frac{1}{2}j^2e^2+\frac{5}{8}je^2 \right)\sin{((2+j){\lambda}-2\varpi)} \nonumber
+\end{equation}
+
+\begin{equation}
+    +je\sin{((1-j){\lambda}-\varpi)}+je\sin{((1+j){\lambda}-\varpi)}
+\end{equation}
+
+Expanding $$\cos{(j(\vartheta-\vartheta_2))}$$ to second order:
+
+\begin{equation}
+    \cos{(j(\vartheta_1-\vartheta_2))} \simeq \left(1-j^2e_1^2-j^2e_2^2 \right)\cos{(j({\lambda}_1-{\lambda}_2))}  \nonumber
+\end{equation}
+
+\begin{equation}
+    +\left(\frac{1}{2}j^2e_1^2+\frac{5}{8}je^2 \right)\cos{((2+j){\lambda}_1-j{\lambda}_2-2\varpi_1)}  \nonumber
+\end{equation}
+
+\begin{equation}
+    +\left(\frac{1}{2}j^2e_1^2-\frac{5}{8}je_1^2 \right)\cos{((2-j){\lambda}_1+j{\lambda}_2-2\varpi_1)}  \nonumber
+\end{equation}
+
+\begin{equation}
+    +\left(\frac{1}{2}j^2e_2^2+\frac{5}{8}je_2^2 \right)\cos{(j{\lambda}_1-(2+j){\lambda}_2+2\varpi_2)}  \nonumber
+\end{equation}
+
+\begin{equation}
+    +\left(\frac{1}{2}j^2e_2^2-\frac{5}{8}je_2^2 \right)\cos{(j{\lambda}_1+(2-j){\lambda}_2-2\varpi_2)}  \nonumber
+\end{equation}
+
+\begin{equation}
+    +je_1\cos{((1+j){\lambda}_1-j{\lambda}_2-\varpi_1)} - je_1\cos{((1-j){\lambda}_1+j{\lambda}_2-\varpi_1)}  \nonumber
+\end{equation}
+
+\begin{equation}
+    +je_2\cos{(j{\lambda}_1-(1+j){\lambda}_2+\varpi_2)} - je_2\cos{(j{\lambda}_1+(1-j){\lambda}_2-\varpi_2)}  \nonumber
+\end{equation}
+
+\begin{equation}
+    -j^2e_1e_2\cos{((1+j){\lambda}+(1-j){\lambda}_2-\varpi_1-\varpi_2)}  \nonumber
+\end{equation}
+
+\begin{equation}
+    -j^2e_1e_2\cos{((1-j){\lambda}_1+(1+j){\lambda}_2-\varpi_1-\varpi_2)}  \nonumber
+\end{equation}
+
+\begin{equation}
+    +j^2e_1e_2\cos{((1+j){\lambda}_1-(1+j){\lambda}_2-\varpi_1-\varpi_2)}  \nonumber
+\end{equation}
+
+\begin{equation}
+    +j^2e_1e_2\cos{((1-j){\lambda}_1-(1-j){\lambda}_2-\varpi_1-\varpi_2)} \label{cos vartheta expansion}
+\end{equation}
+
+
+
+
+We have all the ingredients to expand $$\mathcal{R}_D$$. From \eqref{r/a and epsilon expansion}, we omit $$k>1$$ terms and since $$\zeta_i$$ is first-order, we omit $$\mathcal{O}\left(\zeta^3\right)$$ terms. With \eqref{R_D expression}:
+\begin{equation} 
+    \mathcal{R}_D \simeq-\frac{\mathcal{G}m_0'^2\delta_1 \delta _2} {a _2} \sum _{j=-\infty} ^\infty \left(a _2 A _{0,j,0,0} + a _2 \zeta _1 A _{0,j,1,0} + a _2 \zeta _2 A_{0,j,0,1} +\frac{1}{2}a _2\zeta _1 ^2 A _{0,j,2,0} \right. \nonumber
+\end{equation}
+
+\begin{equation}
+    \left.+\frac{1}{2}a_2\zeta_2^2 A_{0,j,0,2}+a_2\zeta_1 \zeta_2A_{0,j,1,1}+\frac{r_1}{a_1}\frac{R_2}{a_2}\epsilon a_1a_2^2A_{1,j,0,0}\right)\cos{\left(j(\vartheta_1-\vartheta_2)\right)} \nonumber
+\end{equation}
+
+\begin{equation} \label{RDj expression}
+    =-\frac{\mathcal{G}m_0'^2\delta_1\delta_2}{a_2}\sum_{j=-\infty}^\infty\mathcal{R}_D^{(j)}
+\end{equation}
+
+
+
+
 
