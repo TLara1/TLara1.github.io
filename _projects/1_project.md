@@ -1720,27 +1720,27 @@ We also recall the trigonometric identity: $$\cos{a}\cos{b}=\frac{1}{2}\cos{(a+b
 \end{equation}
 
 \begin{equation}
-    \mathcal{R} _D^{(j)(0)} \simeq \frac{1}{4}e _1 e _2\left(2j+4j^2-2\alpha\frac{\partial }{\alpha}-\alpha^2\frac{\partial ^2}{\alpha^2}\right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{((1+j){\lambda_1}-(1+j)\lambda_2-\varpi_1+\varpi_2)} \nonumber
+    +\frac{1}{4}e _1 e _2\left(2j+4j^2-2\alpha\frac{\partial }{\alpha}-\alpha^2\frac{\partial ^2}{\alpha^2}\right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{((1+j){\lambda_1}-(1+j)\lambda_2-\varpi_1+\varpi_2)} \nonumber
 \end{equation}
 
 \begin{equation}
-    \mathcal{R} _D^{(j)(0)} \simeq \frac{1}{4}e _1 e _2\left(-2j+4j^2-2\alpha\frac{\partial }{\alpha}-\alpha^2\frac{\partial ^2}{\alpha^2}\right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{((1-j){\lambda_1}-(1-j)\lambda_2-\varpi_1+\varpi _2)} \nonumber
+    +\frac{1}{4}e _1 e _2\left(-2j+4j^2-2\alpha\frac{\partial }{\alpha}-\alpha^2\frac{\partial ^2}{\alpha^2}\right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{((1-j){\lambda_1}-(1-j)\lambda_2-\varpi_1+\varpi _2)} \nonumber
 \end{equation}
 
 \begin{equation}
-    \mathcal{R}_D^{(j)(0)} \simeq -\frac{1}{2}\left(\sin^2{\frac{I_1}{2}}+\sin^2{\frac{I_2}{2}} \right)\alpha b^{(j)} _{\frac{3}{2}}(\alpha)\cos{((1+j){\lambda_1}-(1+j)\lambda_2)} \nonumber
+    -\frac{1}{2}\left(\sin^2{\frac{I_1}{2}}+\sin^2{\frac{I_2}{2}} \right)\alpha b^{(j)} _{\frac{3}{2}}(\alpha)\cos{((1+j){\lambda_1}-(1+j)\lambda_2)} \nonumber
 \end{equation}
 
 \begin{equation}
-    \mathcal{R}_D^{(j)(0)} \simeq -\frac{1}{2}\left(\sin^2{\frac{I_1}{2}}+\sin^2{\frac{I_2}{2}} \right)\alpha b^{(j)} _{\frac{3}{2}}(\alpha)\cos{((1-j){\lambda_1}-(1-j)\lambda_2)} \nonumber
+    -\frac{1}{2}\left(\sin^2{\frac{I_1}{2}}+\sin^2{\frac{I_2}{2}} \right)\alpha b^{(j)} _{\frac{3}{2}}(\alpha)\cos{((1-j){\lambda_1}-(1-j)\lambda_2)} \nonumber
 \end{equation}
 
 \begin{equation}
-    \mathcal{R}_D^{(j)(0)} \simeq \sin{\frac{I _1}{2}} \sin{\frac{I_2}{2}}\alpha b^{(j)} _{\frac{3}{2}}(\alpha)\cos{((1+j){\lambda_1}-(1+j)\lambda_2-\Omega_1+\Omega_2)} \nonumber
+    +\sin{\frac{I _1}{2}} \sin{\frac{I_2}{2}}\alpha b^{(j)} _{\frac{3}{2}}(\alpha)\cos{((1+j){\lambda_1}-(1+j)\lambda_2-\Omega_1+\Omega_2)} \nonumber
 \end{equation}
 
 \begin{equation}
-    \mathcal{R}_D^{(j)(0)} \simeq \sin{\frac{I _1}{2}} \sin{\frac{I_2}{2}}\alpha b^{(j)} _{\frac{3}{2}}(\alpha)\cos{((1-j){\lambda_1}-(1-j)\lambda_2-\Omega_1+\Omega_2)}
+    +\sin{\frac{I _1}{2}} \sin{\frac{I_2}{2}}\alpha b^{(j)} _{\frac{3}{2}}(\alpha)\cos{((1-j){\lambda_1}-(1-j)\lambda_2-\Omega_1+\Omega_2)}
 \end{equation}
 
 \begin{equation}
@@ -1815,7 +1815,7 @@ These equations can be simplified further, notice that all the terms come in pai
 \end{equation}
 
 \begin{equation}
-    \left.-\frac{1}{2}\alpha\left(\sin^2{\frac{I_1}{2}}+\sin^2{\frac{I_2}{2}} \right)\left(b^{(j-1)}_{\frac{3}{2}}(\alpha)+b^{(j+1)}_{\frac{3}{2}}(\alpha) \right)\right)\cos{(j({\lambda_1}-\lambda_2))} \nonumber
+    \left.-\frac{1}{2}\alpha\left(\sin^2{\frac{I _1}{2}}+\sin^2{\frac{I _2}{2}} \right)\left(b^{(j-1)} _{\frac{3}{2}}(\alpha)+b^{(j+1)} _{\frac{3}{2}}(\alpha) \right)\right)\cos{(j({\lambda _1}-\lambda _2))} \nonumber
 \end{equation}
 
 \begin{equation}
