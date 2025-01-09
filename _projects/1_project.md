@@ -1086,15 +1086,15 @@ We use these to rewrite \eqref{F_0 expansion}:
 
 We can now write $$\mathcal{R}_D$$ as product of two series:
 
-\begin{equation} \label{R_D expression}
+\begin{equation}
     \mathcal{R}_D = -\mathcal{G} m_0' ^2 \delta_1 \delta_2 \sum _{k=0} ^{\infty} \frac{(2k!)}{(k!)^2}  \left(\frac{1}{2}\frac{r_1}{a_1}\frac{R_2}{a_2} \epsilon\right)^k a_1^k a_2^k \nonumber
 \end{equation}  
 
 \begin{equation}   
-    \times \sum _{j=-\infty} ^\infty \left(A _{k,j,0,0} +\zeta _1 A _{k,j,1,0} + \zeta _2 A _{k,j,0,1} +\frac{1}{2} \zeta _1 ^2 A _{k,j,2,0} + \frac{1}{2} \zeta _2 ^2 A _{k,j,0,2}+\zeta_1 \zeta _2 A _{k,j,1,1}+...\right)
+    \times \sum _{j=-\infty} ^\infty \left(A _{k,j,0,0} +\zeta _1 A _{k,j,1,0} + \zeta _2 A _{k,j,0,1} +\frac{1}{2} \zeta _1 ^2 A _{k,j,2,0} + \frac{1}{2} \zeta _2 ^2 A _{k,j,0,2}+\zeta_1 \zeta _2 A _{k,j,1,1}+...\right)  \nonumber
 \end{equation}
 
-\begin{equation}   
+\begin{equation}   \label{R_D expression} 
     \times \cos{\left(j(\vartheta _1 -\vartheta _2 )\right)}
 \end{equation}
 
@@ -1237,7 +1237,7 @@ To second order in $$e$$:
     f = \mathcal{M}+2e\sin{\mathcal{M}}+\frac{5}{4}e^2\sin{2\mathcal{M}} + \mathcal{O}(e^3)
 \end{equation}
 
-We are ready to compute $$\sin{f}$$ and $$\cos{f}$$. The latter is easier, and we can calculate it through \eqref{q_1 eq}, expanding to second order in $$e$$ and utilizing trigonometric identities.
+We are ready to compute $$\sin{f}$$ and $$\cos{f}$$. The latter is easier, and we can calculate it through \eqref{Q_1 eq}, expanding to second order in $$e$$ and utilizing trigonometric identities.
 
 \begin{equation} 
     \cos{f} = \frac{\cos{E}-e}{1-e\cos{E}} \simeq \cos{\mathcal{M}} + \left(-\frac{3}{2} + \frac{1}{2}\cos{2\mathcal{M}} + \cos^2{\mathcal{M}} \right)e \nonumber
@@ -1553,7 +1553,7 @@ And, as $$\epsilon=\cos{\psi}-\cos{\left(\vartheta_1-\vartheta_2\right)}$$:
 \end{equation}
 
 
-<h4>VI.I.III Series Expansion of Direct Disturbing Function</h4>
+<h4>VI.I.II Series Expansion of Direct Disturbing Function</h4>
 
 With \eqref{zeta expansion e} and \eqref{epsilon expansion}:
 
@@ -1671,7 +1671,7 @@ Expanding $$\cos{(j(\vartheta-\vartheta_2))}$$ to second order:
 We have all the ingredients to expand $$\mathcal{R}_D$$. From \eqref{r/a and epsilon expansion}, we omit $$k>1$$ terms and since $$\zeta_i$$ is first-order, we omit $$\mathcal{O}\left(\zeta^3\right)$$ terms. With \eqref{R_D expression}: 
 
 \begin{equation} 
-    \mathcal{R}_D \simeq-\frac{\mathcal{G}m_0'^2\delta_1 \delta _2} {a _2} \sum _{j=-\infty} ^\infty \left(a _2 A _{0,j,0,0} + a _2 \zeta _1 A _{0,j,1,0} + a _2 \zeta _2 A_{0,j,0,1} +\frac{1}{2}a _2\zeta _1 ^2 A _{0,j,2,0} \right. \nonumber
+    \mathcal{R}_D \simeq-\frac{\mathcal{G}m_0'^2\delta_1 \delta _2} {a _2} \sum _{j=-\infty} ^\infty \left(a _2 A _{0,j,0,0} + a _2 \zeta _1 A _{0,j,1,0} + a _2 \zeta _2 A _{0,j,0,1} +\frac{1}{2}a _2\zeta _1 ^2 A _{0,j,2,0} \right. \nonumber
 \end{equation}
 
 \begin{equation}
@@ -1693,7 +1693,7 @@ Using our definition of $$A_{k,j,m,n}$$ (\eqref{def A}), transforming derivative
 \end{equation}
 
 \begin{equation}
-    a_2A_{0,j,0,1} = a_2\frac{\partial }{\partial a_2}\left(b^{(j)}_{\frac{1}{2}}(\alpha)\right) -b^{(j)}_ {\frac{1}{2}}(\alpha) = -\alpha\frac{\partial }{\partial\alpha}\left(b^{(j)}_{\frac{1}{2}}(\alpha)\right)-b^{(j)}_{\frac{1}{2}}(\alpha) \nonumber
+    a_2A_{0,j,0,1} = a_2\frac{\partial }{\partial a_2}\left(b^{(j)} _{\frac{1}{2}} (\alpha)\right) -b^{(j)} _{\frac{1}{2}} (\alpha) = -\alpha\frac{\partial }{\partial\alpha}\left(b^{(j)} _{\frac{1}{2}} (\alpha)\right)-b^{(j)} _{\frac{1}{2}}(\alpha) \nonumber
 \end{equation}
 
 \begin{equation}
@@ -1808,13 +1808,10 @@ We also recall the trigonometric identity: $$\cos{a}\cos{b}=\frac{1}{2}\cos{(a+b
     +\frac{1}{2}\sin^2{\frac{I_2}{2}}\alpha b^{(j)}_{\frac{3}{2}}(\alpha)\cos{((1+j){\lambda_1}+(1-j)\lambda_2-2\Omega_2)}
 \end{equation}
 
-
-
-
 These equations can be simplified further, notice that all the terms come in pairs, and since our sum of $$j$$ is from $$-\infty$$ to $$\infty$$, we can perform arbitrary index changes $$j \rightarrow \pm j \pm k$$. This allows us to combine terms and reduce from $$23$$ to $$11$$ arguments. 
 
 \begin{equation}
-    \mathcal{R}_D^{(j)(0)} \simeq \left( 1+\frac{1}{4}(e_1^2+e_2^2)\left(-4j^2+2\alpha\pdv{}{\alpha}+\alpha^2\pdv{^2}{\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\right) \nonumber
+    \mathcal{R}_D^{(j)(0)} \simeq \left( 1+\frac{1}{4}(e_1^2+e_2^2)\left(-4j^2+2\alpha\frac{\partial }{\partial \alpha}+\alpha^2\frac{\partial ^2}{\partial \alpha^2}\right)b^{(j)} _{\frac{1}{2}}(\alpha)\right) \nonumber
 \end{equation}
 
 \begin{equation}
@@ -1822,7 +1819,7 @@ These equations can be simplified further, notice that all the terms come in pai
 \end{equation}
 
 \begin{equation}
-    +\frac{1}{2}e_1e_2\left(2+6j+4j^2-2\alpha\pdv{}{\alpha}-\alpha^2\pdv{^2}{\alpha^2}\right)b^{(j+1)}_{\frac{1}{2}}(\alpha)\cos{(j{\lambda_1}-j\lambda_2-\varpi_1+\varpi_2)} \nonumber
+    +\frac{1}{2}e_1e_2\left(2+6j+4j^2-2\alpha\frac{\partial }{\partial \alpha}-\alpha^2\frac{\partial ^2}{\partial \alpha^2}\right)b^{(j+1)}_{\frac{1}{2}}(\alpha)\cos{(j{\lambda_1}-j\lambda_2-\varpi_1+\varpi_2)} \nonumber
 \end{equation}
 
 \begin{equation} \label{RD0}
@@ -1830,23 +1827,23 @@ These equations can be simplified further, notice that all the terms come in pai
 \end{equation}
 
 \begin{equation} 
-    \mathcal{R}_D^{(j)(1)} \simeq -e_1\left(2j+\alpha\pdv{}{\alpha} \right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{((1-j){\lambda_1}+j\lambda_2-\varpi_1)} \nonumber
+    \mathcal{R}_D^{(j)(1)} \simeq -e_1\left(2j+\alpha\frac{\partial }{\partial \alpha} \right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{((1-j){\lambda_1}+j\lambda_2-\varpi_1)} \nonumber
 \end{equation}
 
 \begin{equation} \label{RD1}
-    +e_2\left(1-2j+\alpha\pdv{}{\alpha} \right)b^{(j-1)}_{\frac{1}{2}}(\alpha)\cos{((1-j){\lambda_1}+j\lambda_2-\varpi_2)}
+    +e_2\left(1-2j+\alpha\frac{\partial }{\partial \alpha} \right)b^{(j-1)}_{\frac{1}{2}}(\alpha)\cos{((1-j){\lambda_1}+j\lambda_2-\varpi_2)}
 \end{equation}
 
 \begin{equation} 
-    \mathcal{R}_D^{(j)(2)} \simeq \frac{1}{4}e_1^2\left(-5j+4j^2-2\alpha\pdv{}{\alpha}+4j\alpha\pdv{}{\alpha}+\alpha^2\pdv{^2}{\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{((2+j){\lambda_1}+j\lambda_2-2\varpi_1)} \nonumber
+    \mathcal{R}_D^{(j)(2)} \simeq \frac{1}{4}e_1^2\left(-5j+4j^2-2\alpha\frac{\partial }{\partial \alpha}+4j\alpha\frac{\partial }{\partial \alpha}+\alpha^2\frac{\partial ^2}{\partial \alpha^2}\right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{((2+j){\lambda_1}+j\lambda_2-2\varpi_1)} \nonumber
 \end{equation}
 
 \begin{equation}
-    +\frac{1}{2}e_1e_2\left(-2+6j-4j^2+2\alpha\pdv{}{\alpha}-4j\alpha\pdv{}{\alpha}-\alpha^2\pdv{^2}{\alpha^2}\right)b^{(j-1)}_{\frac{1}{2}}(\alpha)\cos{((2-j){\lambda_1}+j\lambda_2-\varpi_1-\varpi_2)} \nonumber
+    +\frac{1}{2}e_1e_2\left(-2+6j-4j^2+2\alpha\frac{\partial }{\partial \alpha}-4j\alpha\frac{\partial }{\partial \alpha}-\alpha^2\frac{\partial ^2}{\partial \alpha^2}\right)b^{(j-1)}_{\frac{1}{2}}(\alpha)\cos{((2-j){\lambda_1}+j\lambda_2-\varpi_1-\varpi_2)} \nonumber
 \end{equation}
 
 \begin{equation}
-    +\frac{1}{4}e_2^2\left(2-7j+4j^2-2\alpha\pdv{}{\alpha}+4j\alpha\pdv{}{\alpha}-\alpha^2\pdv{^2}{\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{((2-j){\lambda_1}+j\lambda_2-2\varpi_2)} \nonumber
+    +\frac{1}{4}e_2^2\left(2-7j+4j^2-2\alpha\frac{\partial }{\partial \alpha}+4j\alpha\frac{\partial }{\partial \alpha}-\alpha^2\frac{\partial ^2}{\partial \alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{((2-j){\lambda_1}+j\lambda_2-2\varpi_2)} \nonumber
 \end{equation}
 
 \begin{equation}
@@ -1862,6 +1859,49 @@ These equations can be simplified further, notice that all the terms come in pai
 \end{equation}
 
 
+
+<h4>VI.I.III Series Expansion of Indirect Disturbing Function</h4>
+The indirect portion of the disturbing function is much less involved. Rewriting the indirect portion:
+
+\begin{equation}
+    \mathcal{R}_E=\mathcal{G}m_0'^2\delta_1\delta_2\frac{\alpha}{a_2}\frac{r_1}{a_1}\left(\frac{a_2}{R_2}\right)^2\cos{\psi}
+\end{equation}
+
+We expand in the same way we expanded $$\mathcal{R}_D$$. First, via \eqref{cosE e expansion}:
+
+\begin{equation}
+    \left(\frac{a_2}{R_2}\right)^2 = \left(\frac{1}{1-e_2\cos{E_2}}\right)^2 \simeq 1+2\cos{\mathcal{M}_2}e_2+\left(3\cos^2{\mathcal{M}_2}+\cos{2\mathcal{M_2}}-1\right)e_2^2 \nonumber
+\end{equation}
+
+\begin{equation}
+    \simeq 1+2\cos{(\lambda_2-\varpi_2)}e_2+\frac{1}{2}\left(5\cos{(2(\lambda_2-\varpi_2))}+1\right)e_2^2 
+\end{equation}
+
+And consulting \eqref{zeta expansion e} and \eqref{cos psi expansion}:
+
+\begin{equation}
+     \frac{\mathcal{R}_Ea_2}{\mathcal{G}m_0'^2\delta_1\delta_2\alpha} \simeq \frac{1}{2}\left(-2+e_1^2+e_2^2+2\sin^2{\frac{I_1}{2}}+2\sin^2{\frac{I_2}{2}}\right) \cos{(\lambda_1-\lambda_2)}
+    -\frac{1}{2}e_1\cos{(2\lambda_1-\lambda_2-\varpi_1)} \nonumber
+\end{equation}
+
+\begin{equation}
+    +\frac{3}{2}e_1\cos{(\lambda_2-\varpi_1)}-2e_2\cos{(\lambda_1-2\lambda_2+\varpi_2)} 
+    -e_1e_2\cos{(2\lambda_1-\lambda_2-\varpi_1+\varpi_2)}+3e_1e_2\cos{(2\lambda_1-\varpi_1-\varpi_2)} \nonumber
+\end{equation}
+
+\begin{equation}
+    -\frac{1}{8}e_1^2\cos{(\lambda_1+\lambda_2-2\varpi_1)}-\frac{3}{8}e_1^2\cos{(3\lambda_1-\lambda_2-2\varpi_1)}
+    -\frac{1}{8}e_2^2\cos{(\lambda_1+\lambda_2-2\varpi_2)} \nonumber
+\end{equation}
+
+\begin{equation}
+    -\frac{27}{8}e_2^2\cos{(\lambda_1-3\lambda_2+2\varpi_2)} -2\sin^2{\frac{I_1}{2}}\cos{(\lambda_1+\lambda_2-2\Omega_1)}
+    -2\sin^2{\frac{I_2}{2}}\cos{(\lambda_1+\lambda_2-2\Omega_2)} \nonumber
+\end{equation}
+
+\begin{equation}
+    +2\sin{\frac{I_1}{2}}\sin{\frac{I_2}{2}}\cos{(\lambda_1+\lambda_2-\Omega_1-\Omega_2)} -2\sin{\frac{I_1}{2}}\sin{\frac{I_2}{2}}\cos{(\lambda_1-\lambda_2-\Omega_1+\Omega_2)}   \nonumber 
+\end{equation}
 
 
 
