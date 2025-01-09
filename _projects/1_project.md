@@ -1809,3 +1809,59 @@ We also recall the trigonometric identity: $$\cos{a}\cos{b}=\frac{1}{2}\cos{(a+b
 \end{equation}
 
 
+
+
+These equations can be simplified further, notice that all the terms come in pairs, and since our sum of $$j$$ is from $$-\infty$$ to $$\infty$$, we can perform arbitrary index changes $$j \rightarrow \pm j \pm k$$. This allows us to combine terms and reduce from $$23$$ to $$11$$ arguments. 
+
+\begin{equation}
+    \mathcal{R}_D^{(j)(0)} \simeq \left( 1+\frac{1}{4}(e_1^2+e_2^2)\left(-4j^2+2\alpha\pdv{}{\alpha}+\alpha^2\pdv{^2}{\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\right) \nonumber
+\end{equation}
+
+\begin{equation}
+    \left.-\frac{1}{2}\alpha\left(\sin^2{\frac{I_1}{2}}+\sin^2{\frac{I_2}{2}} \right)\left(b^{(j-1)}_{\frac{3}{2}}(\alpha)+b^{(j+1)}_{\frac{3}{2}}(\alpha) \right)\right)\cos{(j({\lambda_1}-\lambda_2))} \nonumber
+\end{equation}
+
+\begin{equation}
+    +\frac{1}{2}e_1e_2\left(2+6j+4j^2-2\alpha\pdv{}{\alpha}-\alpha^2\pdv{^2}{\alpha^2}\right)b^{(j+1)}_{\frac{1}{2}}(\alpha)\cos{(j{\lambda_1}-j\lambda_2-\varpi_1+\varpi_2)} \nonumber
+\end{equation}
+
+\begin{equation} \label{RD0}
+    +2\sin{\frac{I_1}{2}} \sin{\frac{I_2}{2}}\alpha b^{(j+1)}_{\frac{3}{2}}(\alpha)\cos{(j{\lambda_1}-j\lambda_2-\Omega_1+\Omega_2)}
+\end{equation}
+
+\begin{equation} 
+    \mathcal{R}_D^{(j)(1)} \simeq -e_1\left(2j+\alpha\pdv{}{\alpha} \right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{((1-j){\lambda_1}+j\lambda_2-\varpi_1)} \nonumber
+\end{equation}
+
+\begin{equation} \label{RD1}
+    +e_2\left(1-2j+\alpha\pdv{}{\alpha} \right)b^{(j-1)}_{\frac{1}{2}}(\alpha)\cos{((1-j){\lambda_1}+j\lambda_2-\varpi_2)}
+\end{equation}
+
+\begin{equation} 
+    \mathcal{R}_D^{(j)(2)} \simeq \frac{1}{4}e_1^2\left(-5j+4j^2-2\alpha\pdv{}{\alpha}+4j\alpha\pdv{}{\alpha}+\alpha^2\pdv{^2}{\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{((2+j){\lambda_1}+j\lambda_2-2\varpi_1)} \nonumber
+\end{equation}
+
+\begin{equation}
+    +\frac{1}{2}e_1e_2\left(-2+6j-4j^2+2\alpha\pdv{}{\alpha}-4j\alpha\pdv{}{\alpha}-\alpha^2\pdv{^2}{\alpha^2}\right)b^{(j-1)}_{\frac{1}{2}}(\alpha)\cos{((2-j){\lambda_1}+j\lambda_2-\varpi_1-\varpi_2)} \nonumber
+\end{equation}
+
+\begin{equation}
+    +\frac{1}{4}e_2^2\left(2-7j+4j^2-2\alpha\pdv{}{\alpha}+4j\alpha\pdv{}{\alpha}-\alpha^2\pdv{^2}{\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{((2-j){\lambda_1}+j\lambda_2-2\varpi_2)} \nonumber
+\end{equation}
+
+\begin{equation}
+    +\sin^2{\frac{I_1}{2}}\alpha b^{(j-1)}_{\frac{3}{2}}(\alpha)\cos{((2-j){\lambda_1}+j\lambda_2-2\Omega_1)} \nonumber
+\end{equation}
+
+\begin{equation}
+    -2\sin{\frac{I_1}{2}} \sin{\frac{I_2}{2}}\alpha b^{(j-1)}_{\frac{3}{2}}(\alpha)\cos{((2-j){\lambda_1}+j\lambda_2-\Omega_1-\Omega_2)} \nonumber
+\end{equation}
+
+\begin{equation} \label{RD2}
+    +\frac{1}{2}\sin^2{\frac{I_2}{2}}\alpha b^{(j-1)}_{\frac{3}{2}}(\alpha)\cos{((2-j){\lambda_1}+j\lambda_2-2\Omega_2)}
+\end{equation}
+
+
+
+
+
