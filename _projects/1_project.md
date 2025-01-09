@@ -1668,7 +1668,8 @@ Expanding $$\cos{(j(\vartheta-\vartheta_2))}$$ to second order:
     +j^2e_1e_2\cos{((1-j){\lambda}_1-(1-j){\lambda}_2-\varpi_1-\varpi_2)} \label{cos vartheta expansion}
 \end{equation}
 
-We have all the ingredients to expand $$\mathcal{R}_D$$. From \eqref{r/a and epsilon expansion}, we omit $$k>1$$ terms and since $$\zeta_i$$ is first-order, we omit $$\mathcal{O}\left(\zeta^3\right)$$ terms. With \eqref{R_D expression}:
+We have all the ingredients to expand $$\mathcal{R}_D$$. From \eqref{r/a and epsilon expansion}, we omit $$k>1$$ terms and since $$\zeta_i$$ is first-order, we omit $$\mathcal{O}\left(\zeta^3\right)$$ terms. With \eqref{R_D expression}: 
+
 \begin{equation} 
     \mathcal{R}_D \simeq-\frac{\mathcal{G}m_0'^2\delta_1 \delta _2} {a _2} \sum _{j=-\infty} ^\infty \left(a _2 A _{0,j,0,0} + a _2 \zeta _1 A _{0,j,1,0} + a _2 \zeta _2 A_{0,j,0,1} +\frac{1}{2}a _2\zeta _1 ^2 A _{0,j,2,0} \right. \nonumber
 \end{equation}
