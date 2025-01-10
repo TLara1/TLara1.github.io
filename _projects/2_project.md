@@ -8,6 +8,49 @@ category: Physics
 giscus_comments: false
 ---
 
+\begin{equation} 
+    \cos{\left(\vartheta_1-\vartheta_2\right)} \simeq \cos{(\lambda_1-\lambda_2)} + \cos{(\lambda_2-2\lambda_1+\varpi_1)}e_1-\cos{(\lambda_2-\varpi_1)}e_1\nonumber
+\end{equation}
+
+\begin{equation} 
+    + \cos{(\lambda_1-2\lambda_2+\varpi_2)}e_2-\cos{(\lambda_1-\varpi_2)}e_2\nonumber
+\end{equation}
+
+\begin{equation} 
+    -\cos{(\lambda_1-\lambda_2)}e_1^2-\frac{1}{8}\cos{(\lambda_1+\lambda_2-2\varpi_1)}e_1^2+\frac{9}{8}\cos{(3\lambda_1-\lambda_2-2\varpi_1)}e_1^2\nonumber
+\end{equation}
+
+\begin{equation} 
+    -\cos{(\lambda_1-\lambda_2)}e_2^2-\frac{1}{8}\cos{(\lambda_1+\lambda_2-2\varpi_2)}e_2^2+\frac{9}{8}\cos{(3\lambda_2-\lambda_1-2\varpi_2)}e_2^2\nonumber
+\end{equation}
+
+\begin{equation} 
+    +\cos{(2{\lambda_1}-2\lambda_1-\varpi_1+\varpi_2)}e_1e_2 - \cos{(2\lambda_1-\varpi_1-\varpi_2)}e_1e_2\nonumber
+\end{equation}
+
+\begin{equation} 
+    - \cos{(2\lambda_2-\varpi_1-\varpi_2)}e_1e_2+\cos{(\varpi_1-\varpi_2)}e_1e_2
+\end{equation}
+
+
+And, as $$\epsilon=\cos{\psi}-\cos{\left(\vartheta_1-\vartheta_2\right)}$$: 
+
+\begin{equation}
+    \epsilon \simeq \cos{(\lambda_1+\lambda_2-2\Omega_1)}\sin^2{\frac{I_1}{2}}-\cos{(\lambda_1+\lambda_2)}\sin^2{\frac{I_1}{2}}\nonumber
+\end{equation}
+
+\begin{equation}
+    +\cos{(\lambda_1+\lambda_2-2\Omega_2)}\sin^2{\frac{I_2}{2}}-\cos{(\lambda_1+\lambda_2)}\sin^2{\frac{I_2}{2}}\nonumber
+\end{equation}
+
+\begin{equation}
+    +2\cos{(\lambda_1-\lambda_2-\Omega_1+\Omega_2)}\sin{\frac{I_1}{2}}\sin{\frac{I_2}{2}}\nonumber
+\end{equation}
+
+\begin{equation} \label{epsilon expansion}
+    - 2\cos{(\lambda_1+\lambda_2-\Omega_1-\Omega_2)}\sin{\frac{I_1}{2}}\sin{\frac{I_2}{2}}
+\end{equation}
+
 
 <h4>V.I.II Series Expansion of Direct Disturbing Function</h4>
 
