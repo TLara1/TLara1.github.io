@@ -215,15 +215,15 @@ What follows is a hefty quantity of tedious algebra, using \eqref{epsilon expans
 We also recall the trigonometric identity: $$\cos{a}\cos{b}=\frac{1}{2}\cos{(a+b)}+\frac{1}{2}\cos{(a-b)}$$. We write $$\mathcal{R}_D^{(j)}=\mathcal{R}_D^{(j)(0)}+\mathcal{R}_D^{(j)(1)}+\mathcal{R}_D^{(j)(2)}$$, categorizing terms by the sum of the coefficients of $${\lambda_1}$$ and $${\lambda_2}$$.
 
 \begin{equation}
-    \mathcal{R}_D^{(j)(0)} \simeq \left( 1+\frac{1}{4}(e_1^2+e_2^2)\left(-4j^2+2\alpha\frac{\partial }{\alpha}+\alpha^2\frac{\partial ^2}{\alpha^2}\right)\right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{(j({\lambda_1}-\lambda_2))} \nonumber
+    \mathcal{R}_D^{(j)(0)} \simeq \left( 1+\frac{1}{4}(e_1^2+e_2^2)\left(-4j^2+2\alpha\frac{\partial }{\partial\alpha}+\alpha^2\frac{\partial ^2}{\partial\alpha^2}\right)\right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{(j({\lambda_1}-\lambda_2))} \nonumber
 \end{equation}
 
 \begin{equation}
-    +\frac{1}{4}e _1 e _2\left(2j+4j^2-2\alpha\frac{\partial }{\alpha}-\alpha^2\frac{\partial ^2}{\alpha^2}\right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{((1+j){\lambda_1}-(1+j)\lambda_2-\varpi_1+\varpi_2)} \nonumber
+    +\frac{1}{4}e _1 e _2\left(2j+4j^2-2\alpha\frac{\partial }{\partial\alpha}-\alpha^2\frac{\partial ^2}{\partial\alpha^2}\right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{((1+j){\lambda_1}-(1+j)\lambda_2-\varpi_1+\varpi_2)} \nonumber
 \end{equation}
 
 \begin{equation}
-    +\frac{1}{4}e _1 e _2\left(-2j+4j^2-2\alpha\frac{\partial }{\alpha}-\alpha^2\frac{\partial ^2}{\alpha^2}\right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{((1-j){\lambda_1}-(1-j)\lambda_2-\varpi_1+\varpi _2)} \nonumber
+    +\frac{1}{4}e _1 e _2\left(-2j+4j^2-2\alpha\frac{\partial }{\partial\alpha}-\alpha^2\frac{\partial ^2}{\partial\alpha^2}\right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{((1-j){\lambda_1}-(1-j)\lambda_2-\varpi_1+\varpi _2)} \nonumber
 \end{equation}
 
 \begin{equation}
@@ -243,19 +243,19 @@ We also recall the trigonometric identity: $$\cos{a}\cos{b}=\frac{1}{2}\cos{(a+b
 \end{equation}
 
 \begin{equation}
-    \mathcal{R} _D^{(j)(1)} \simeq \frac{1}{2}e _1\left(2j-\alpha\frac{\partial }{\alpha} \right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{((1+j){\lambda_1}-j\lambda_2-\varpi_1)} \nonumber
+    \mathcal{R} _D^{(j)(1)} \simeq \frac{1}{2}e _1\left(2j-\alpha\frac{\partial }{\partial\alpha} \right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{((1+j){\lambda_1}-j\lambda_2-\varpi_1)} \nonumber
 \end{equation}
 
 \begin{equation}
-    -\frac{1}{2}e_1\left(2j+\alpha\frac{\partial }{\alpha} \right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{((1-j){\lambda_1}+j\lambda_2-\varpi_1)} \nonumber
+    -\frac{1}{2}e_1\left(2j+\alpha\frac{\partial }{\partial\alpha} \right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{((1-j){\lambda_1}+j\lambda_2-\varpi_1)} \nonumber
 \end{equation}
 
 \begin{equation}
-    +\frac{1}{2}e_2\left(1+2j+\alpha\frac{\partial }{\alpha} \right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{(j{\lambda_1}-(1+j)\lambda_2+\varpi_2)} \nonumber
+    +\frac{1}{2}e_2\left(1+2j+\alpha\frac{\partial }{\partial\alpha} \right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{(j{\lambda_1}-(1+j)\lambda_2+\varpi_2)} \nonumber
 \end{equation}
 
 \begin{equation}
-    +\frac{1}{2}e_2\left(1-2j+\alpha\frac{\partial }{\alpha} \right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{(j{\lambda_1}+(1-j)\lambda_2-\varpi_2)}
+    +\frac{1}{2}e_2\left(1-2j+\alpha\frac{\partial }{\partial\alpha} \right)b^{(j)} _{\frac{1}{2}}(\alpha)\cos{(j{\lambda_1}+(1-j)\lambda_2-\varpi_2)}
 \end{equation}
 
 
@@ -264,23 +264,23 @@ We also recall the trigonometric identity: $$\cos{a}\cos{b}=\frac{1}{2}\cos{(a+b
 \end{equation}
 
 \begin{equation}
-    +\frac{1}{8}e_1^2\left(-5j+4j^2-2\alpha\frac{\partial }{\alpha}+4j\alpha\frac{\partial }{\alpha}+\alpha^2\frac{\partial ^2}{\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{((2-j){\lambda_1}+j\lambda_2-2\varpi_1)} \nonumber
+    +\frac{1}{8}e_1^2\left(-5j+4j^2-2\alpha\frac{\partial }{\partial\alpha}+4j\alpha\frac{\partial }{\partial\alpha}+\alpha^2\frac{\partial ^2}{\partial\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{((2-j){\lambda_1}+j\lambda_2-2\varpi_1)} \nonumber
 \end{equation}
 
 \begin{equation}
-    +\frac{1}{4}e_1e_2\left(2j-4j^2-2\alpha\frac{\partial }{\alpha}+4j\alpha\frac{\partial }{\alpha}-\alpha^2\frac{\partial ^2}{\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{((1+j){\lambda_1}+(1-j)\lambda_2-\varpi_1-\varpi_2)} \nonumber
+    +\frac{1}{4}e_1e_2\left(2j-4j^2-2\alpha\frac{\partial }{\partial\alpha}+4j\alpha\frac{\partial }{\partial\alpha}-\alpha^2\frac{\partial ^2}{\partial\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{((1+j){\lambda_1}+(1-j)\lambda_2-\varpi_1-\varpi_2)} \nonumber
 \end{equation}
 
 \begin{equation}
-    -\frac{1}{4}e_1e_2\left(2j+4j^2+2\alpha\frac{\partial }{\alpha}+4j\alpha\frac{\partial }{\alpha}+\alpha^2\frac{\partial ^2}{\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{((1-j){\lambda_1}+(1+j)\lambda_2-\varpi_1-\varpi_2)} \nonumber
+    -\frac{1}{4}e_1e_2\left(2j+4j^2+2\alpha\frac{\partial }{\partial\alpha}+4j\alpha\frac{\partial }{\partial\alpha}+\alpha^2\frac{\partial ^2}{\partial\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{((1-j){\lambda_1}+(1+j)\lambda_2-\varpi_1-\varpi_2)} \nonumber
 \end{equation}
 
 \begin{equation}
-    +\frac{1}{8}e_2^2\left(4+9j+4j^2+6\alpha\frac{\partial }{\alpha}+4j\alpha\frac{\partial }{\alpha}+\alpha^2\frac{\partial ^2}{\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{(j{\lambda_1}-(2+j)\lambda_2+2\varpi_2)} \nonumber
+    +\frac{1}{8}e_2^2\left(4+9j+4j^2+6\alpha\frac{\partial }{\partial\alpha}+4j\alpha\frac{\partial }{\partial\alpha}+\alpha^2\frac{\partial ^2}{\partial\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{(j{\lambda_1}-(2+j)\lambda_2+2\varpi_2)} \nonumber
 \end{equation}
 
 \begin{equation}
-    +\frac{1}{8}e_2^2\left(4-9j+4j^2+6\alpha\frac{\partial }{\alpha}-4j\alpha\frac{\partial }{\alpha}+\alpha^2\frac{\partial ^2}{\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{(j{\lambda_1}+(2-j)\lambda_2-2\varpi_2)} \nonumber
+    +\frac{1}{8}e_2^2\left(4-9j+4j^2+6\alpha\frac{\partial }{\partial\alpha}-4j\alpha\frac{\partial }{\partial\alpha}+\alpha^2\frac{\partial ^2}{\partial\alpha^2}\right)b^{(j)}_{\frac{1}{2}}(\alpha)\cos{(j{\lambda_1}+(2-j)\lambda_2-2\varpi_2)} \nonumber
 \end{equation}
 
 \begin{equation}
@@ -407,7 +407,7 @@ And consulting \eqref{zeta expansion e} and \eqref{cos psi expansion}:
 
 
 <h3>V.II Using the Disturbing Function</h3>
-From our Planetary Equations, the time variations in our orbital elements (excluding the orbital $$\lambda$$ changes from the non-perturbed Hamiltonian) are proportional to $$\sim\frac{1}{\mu_1\sqrt{\mathcal{G}m_1a_1}}\pdv{R}{i}$$, so from our disturbing function, the time variation in our elements is $$\sim\frac{\sqrt{\mathcal{G}}m_1'm_2'}{\mu_1R_2\sqrt{m_1a_1}}=\frac{\sqrt{\mathcal{G}m_1}\delta_2}{R_2\sqrt{a_1}}\approx n\delta_2$$, where we have approximated $$R_2\approx a_1$$, which is reasonable in our proportionality arguments. Thus, our orbital elements vary $$\sim\delta_2$$ times slower than the orbital period. We call these elements \textit{secular}, varying much slower than planetary orbits, so, to evaluate the impact of our Disturbing Function, we can average over the orbital cycles of $$\lambda_1$$ and $$\lambda_2$$.
+From our Planetary Equations, the time variations in our orbital elements (excluding the orbital $$\lambda$$ changes from the non-perturbed Hamiltonian) are proportional to $$\sim\frac{1}{\mu_1\sqrt{\mathcal{G}m_1a_1}}\frac{\partial R}{\partial i}$$, so from our disturbing function, the time variation in our elements is $$\sim\frac{\sqrt{\mathcal{G}}m_1'm_2'}{\mu_1R_2\sqrt{m_1a_1}}=\frac{\sqrt{\mathcal{G}m_1}\delta_2}{R_2\sqrt{a_1}}\approx n\delta_2$$, where we have approximated $$R_2\approx a_1$$, which is reasonable in our proportionality arguments. Thus, our orbital elements vary $$\sim\delta_2$$ times slower than the orbital period. We call these elements \textit{secular}, varying much slower than planetary orbits, so, to evaluate the impact of our Disturbing Function, we can average over the orbital cycles of $$\lambda_1$$ and $$\lambda_2$$.
 
 \begin{equation}
     \langle\langle\mathcal{R}\rangle\rangle=\frac{1}{4\pi^2}\int_0^{2\pi}\int_0^{2\pi}\mathcal{R}d\lambda_1d\lambda_2
@@ -417,7 +417,7 @@ As all the terms in our disturbing function feature trigonometric terms of $$\la
 ^{(0)(0)}$$:
 
 \begin{equation}
-    -\langle\langle\frac{a_2\mathcal{R}}{\mathcal{G}m_0'^2\delta_1\delta _2}\rangle\rangle = -\frac{a_2\mathcal{R} _D^{(0)(0)}}{\mathcal{G}m _0'^2\delta _1\delta_2} \simeq b^{(0)} _{\frac{1}{2}}(\alpha) + \frac{1}{4}(e_1^2 + e_2^2) \left( 2\alpha \pdv{}{\alpha} + \alpha^2 \pdv{^2}{\alpha^2} \right) b^{(0)} _{\frac{1}{2}}(\alpha) \noname
+    -\langle\langle\frac{a_2\mathcal{R}}{\mathcal{G}m_0'^2\delta_1\delta _2}\rangle\rangle = -\frac{a_2\mathcal{R} _D^{(0)(0)}}{\mathcal{G}m _0'^2\delta _1\delta_2} \simeq b^{(0)} _{\frac{1}{2}}(\alpha) + \frac{1}{4}(e_1^2 + e_2^2) \left( 2\alpha \frac{\partial }{\partial\alpha} + \alpha^2 \frac{\partial ^2}{\partial\alpha^2} \right) b^{(0)} _{\frac{1}{2}}(\alpha) \noname
 \end{equation}
 
 \begin{equation}
@@ -425,7 +425,7 @@ As all the terms in our disturbing function feature trigonometric terms of $$\la
 \end{equation}
 
 \begin{equation}
-    + \frac{1}{2} e_1 e_2 \left( 2 - 2\alpha \pdv{}{\alpha} - \alpha^2 \pdv{^2}{\alpha^2} \right) b^{(1)}_{\frac{1}{2}}(\alpha) \cos{(\varpi_1 - \varpi_2)} \noname
+    + \frac{1}{2} e_1 e_2 \left( 2 - 2\alpha \frac{\partial }{\partial\alpha} - \alpha^2 \frac{\partial ^2}{\partial\alpha^2} \right) b^{(1)}_{\frac{1}{2}}(\alpha) \cos{(\varpi_1 - \varpi_2)} \noname
 \end{equation}
 
 \begin{equation}
@@ -436,11 +436,11 @@ As all the terms in our disturbing function feature trigonometric terms of $$\la
 We have made use of the fact that $$b_s^{(-j)}(\alpha)=b_s^{(j)}(\alpha)$$. With the properties of Laplace coefficients (\eqref{laplace coefficient definitions}):
 
 \begin{equation}
-    \left( 2\alpha \pdv{}{\alpha} + \alpha^2 \pdv{^2}{\alpha^2} \right) b^{(0)}_{\frac{1}{2}}(\alpha) = \alpha b^{(1)}_{\frac{3}{2}}(\alpha) \noname
+    \left( 2\alpha \frac{\partial }{\partial\alpha} + \alpha^2 \frac{\partial ^2}{\partial\alpha^2} \right) b^{(0)}_{\frac{1}{2}}(\alpha) = \alpha b^{(1)}_{\frac{3}{2}}(\alpha) \noname
 \end{equation}
 
 \begin{equation}
-    \left( 2 - 2\alpha \pdv{}{\alpha} - \alpha^2 \pdv{^2}{\alpha^2} \right) b^{(0)}_{\frac{1}{2}}(\alpha) = -\alpha b^{(2)}_{\frac{3}{2}}(\alpha)
+    \left( 2 - 2\alpha \frac{\partial }{\partial\alpha} - \alpha^2 \frac{\partial ^2}{\partial\alpha^2} \right) b^{(0)}_{\frac{1}{2}}(\alpha) = -\alpha b^{(2)}_{\frac{3}{2}}(\alpha)
 \end{equation}
 
 And, taking $$\sin{I_i}\simeq I_i$$:
@@ -664,7 +664,7 @@ Averaging our disturbing function:
 With \eqref{varpi evolve}:
 
 \begin{equation}
-    \dot{\varpi}=-\frac{\sqrt{1-e^2}}{\mu e\sqrt{\mathcal{G}ma}}\pdv{\mathcal{R}}{e}=\frac{3\left(\mathcal{G}ma\right)^{\frac{3}{2}}}{a^4c^2\left(1-e^2\right)^2}
+    \dot{\varpi}=-\frac{\sqrt{1-e^2}}{\mu e\sqrt{\mathcal{G}ma}}\frac{\partial \mathcal{R}}{\partial e}=\frac{3\left(\mathcal{G}ma\right)^{\frac{3}{2}}}{a^4c^2\left(1-e^2\right)^2}
 \end{equation}
 
 And, somewhat unsurprisingly, using current values, we find:
