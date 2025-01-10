@@ -89,7 +89,7 @@ Defining $$\vec{r}=\vec{r}_1'-\vec{r}_0'$$, we find:
 \end{equation}
 we have defined $$m\equiv m_0'+m_1'$$.
 
-We rewrite \eqref{governing Newton Law} using polar coordinates, with the basis transformation:
+We rewrite \cref{governing Newton Law} using polar coordinates, with the basis transformation:
 \begin{equation}    
     \hat{e}_x=\cos{f}\hat{e}_r-\sin{f}\hat{e}_f
 \end{equation}
@@ -109,15 +109,15 @@ It is not difficult to demonstrate:
 \begin{equation}
     \vec{\ddot{r}}=(\ddot{r}-{r}\dot{f}^2){\hat{e}_r}+(2\dot{r} \dot{f} + r \ddot{f})\hat{e}_f
 \end{equation}
-\eqref{governing Newton Law} becomes:
+\cref{governing Newton Law} becomes:
 \begin{equation}\label{Netwon polar coordinates}
     (\ddot{r}-{r}\dot{f}^2){\hat{e}_r}+(2\dot{r} \dot{f} + r \ddot{f})\hat{e}_f = -\frac{\mathcal{G}m}{r^2}\hat{e}_r
 \end{equation}
-The norm of the angular momentum vector is given by $$\parallel\vec{r}\times\dot{\vec{r}}\parallel= r^2\dot{f}$$. From \eqref{Netwon polar coordinates}, $$\frac{d\left(r^2\dot{f}\right)}{dt}=0$$, a statement of the conservation of total angular momentum. Let us define the reduced mass: $$\mu\equiv\frac{m_0'm_1'}{m_0'+m_1'}$$, and defined the quantity $$L\equiv\mu\parallel\vec{r}\times\dot{\vec{r}}\parallel=\mu r^2\dot{f}$$. 
+The norm of the angular momentum vector is given by $$\parallel\vec{r}\times\dot{\vec{r}}\parallel= r^2\dot{f}$$. From \cref{Netwon polar coordinates}, $$\frac{d\left(r^2\dot{f}\right)}{dt}=0$$, a statement of the conservation of total angular momentum. Let us define the reduced mass: $$\mu\equiv\frac{m_0'm_1'}{m_0'+m_1'}$$, and defined the quantity $$L\equiv\mu\parallel\vec{r}\times\dot{\vec{r}}\parallel=\mu r^2\dot{f}$$. 
 
 
 <h3>II.II Kepler's First Law</h3>
-We rewrite \eqref{Netwon polar coordinates} in the $$\hat{e}_r$$ direction:
+We rewrite \cref{Netwon polar coordinates} in the $$\hat{e}_r$$ direction:
 
 \begin{equation}\label{r equation newton} \ddot{r}-\frac{L^2}{\mu^2r^3}=-\frac{\mathcal{G}m}{r^2} \end{equation}
 
@@ -127,7 +127,7 @@ Performing the substitution, $$u=\frac{1}{r}$$:
 
 \begin{equation} \ddot{r} = \frac{d}{dt}\left(-\frac{L}{\mu}\frac{du}{df}\right)=--\frac{L}{\mu}\dot{f}\frac{d^2u}{df^2} = -\left(\frac{L}{\mu}\right)^2u^2\frac{d^2u}{df^2} \end{equation}
 
-\eqref{Netwon polar coordinates} in terms of $$u$$:
+\cref{Netwon polar coordinates} in terms of $$u$$:
 
 \begin{equation} \label{dif eq with u} -\left(\frac{L}{\mu}\right)^2u^2\frac{d^2u}{df^2} -\frac{L^2}{\mu^2r^3} = -\mathcal{G}mu^2 \quad\rightarrow\quad \frac{d^2u}{df^2} + u = \mathcal{G}m\frac{\mu^2}{L^2} \end{equation}
 
@@ -143,7 +143,7 @@ We consider only $$0<e<1$$, giving a closed orbit. Broadly speaking, the closer 
 
 <h3>II.III Kepler's Third Law</h3>
 
-We relate the orbit period $$P$$ with the orbit's semi-major axis $$a$$. Converting \eqref{r equation kepler} into Cartesian coordinates:
+We relate the orbit period $$P$$ with the orbit's semi-major axis $$a$$. Converting \cref{r equation kepler} into Cartesian coordinates:
 
 \begin{equation} r+ex=\frac{L^2}{\mathcal{G}m\mu^2}\quad\rightarrow\quad y^2=\left(\frac{L^2}{\mathcal{G}m\mu^2}-ex\right)^2-x^2 \end{equation}
 
@@ -180,11 +180,11 @@ We define the mean motion at $$n=\frac{2\pi}{P}$$ and summarize Kepler's Laws:
 <h2>III. Orbital Elements</h2>
 <h3>III.I Derivation of Mean and Eccentric Anomalies</h3>
 
-From \eqref{r theta equation}:
+From \cref{r theta equation}:
 
 \begin{equation} \dot{r} = \frac{r}{1+e\cos{f}}e\sin{f}\dot{f}=\frac{L}{\mu r\left(1+e\cos{f}\right)}e\sin{f}=\frac{na^2\sqrt{1-e^2}}{r\left(1+e\cos{f}\right)}e\sin{f} \end{equation}
 
-We have used $$L=\mu r^2\dot{f}$$ and \eqref{L defintion}. Again using \eqref{r theta equation}:
+We have used $$L=\mu r^2\dot{f}$$ and \cref{L defintion}. Again using \cref{r theta equation}:
 
 \begin{equation} \dot{r} = \frac{na}{\sqrt{1-e^2}}e\sin{f} \end{equation}
 
@@ -192,11 +192,11 @@ In polar coordinates, the magnitude of the velocity vector $$\parallel\dot{\vec{
 
 \begin{equation} v^2=\dot{r}^2+\frac{L^2}{r^2\mu^2}=\frac{n^2a^2}{1-e^2}e^2\sin^2{f}+\frac{n^2a^2}{1-e^2}\left(1+e\cos{f}\right)^2=\frac{n^2a^2}{1-e^2}\left(1+2e\cos{f}+e^2\right) \end{equation}
 
-With \eqref{r theta equation} and \eqref{n equation}:
+With \cref{r theta equation} and \cref{n equation}:
 
 \begin{equation}\label{v^2 equation} v^2=\frac{n^2a^2}{1-e^2}\left(\frac{2a(1-e^2)}{r}-1+e^2\right)=\frac{2n^2a^3}{r}-n^2a^2=\mathcal{G}m\left(\frac{2}{r}-\frac{1}{a}\right) \end{equation}
 
-Using \eqref{v^2 equation} to rewrite $$\dot{r}$$:
+Using \cref{v^2 equation} to rewrite $$\dot{r}$$:
 
 \begin{equation}\label{r dot equation} \dot{r}^2=v^2-\frac{L^2}{r^2\mu^2}=\frac{2n^2a^3}{r}-n^2a^2-\frac{ n^2a^4\left(1-e^2\right)}{r^2}\quad\rightarrow\quad \dot{r}=\frac{na}{r}\sqrt{a^2e^2-\left(r-a\right)^2} \end{equation}
 
@@ -205,7 +205,7 @@ We have a differential equation for $$r$$, which we solve by writing $$r$$ in te
 \begin{equation} r=a\left(1-e\cos{E}\right)\label{r E equation}\end{equation}
 \begin{equation} \dot{r}=ae\sin{E}\dot{E} \end{equation}
 
-Rewriting \eqref{r dot equation} using $$E$$:
+Rewriting \cref{r dot equation} using $$E$$:
 
 \begin{equation} \dot{E}=\frac{na}{r}=\frac{n}{1-e\cos{E}} \end{equation}
 
@@ -223,14 +223,14 @@ From our orbital element diagram, we can immediately conclude:
 \begin{equation}\label{cos f equation}
     Q_1=r\cos{f}=a\cos{E}-ae
 \end{equation}
-From \eqref{r theta equation}:
+From \cref{r theta equation}:
 \begin{equation}
     r=\frac{a(1-e^2)}{1+e\cos{f}}=\frac{ra(1-e^2)}{r+eQ_1}=\frac{ra(1-e^2)}{r+e\left(a\cos{E}-ae\right)}
 \end{equation}
 \begin{equation}
     \rightarrow\quad r=a(1-e^2)-e\left(a\cos{E}-ae\right)=a\left(1-e\cos{E}\right)
 \end{equation}
-Aligning with our result of \eqref{r E equation}. We can also calculate $$Q_2$$:
+Aligning with our result of \cref{r E equation}. We can also calculate $$Q_2$$:
 \begin{equation}
     Q_2=\sqrt{r^2-Q_1^2}= a\sqrt{\left(1-e\cos{E} \right)^2 - \left(\cos{E}-e \right)^2} = a\sqrt{1-e^2}\sin{E}
 \end{equation}
@@ -298,7 +298,7 @@ $$\begin{equation}
     \end{pmatrix}  
 \end{equation}$$
 
-From \eqref{Q_1 eq} and \eqref{Q_2 eq}, and because the orbit is by definition in the orbiting ellipse setting $$Q_3=0$$:
+From \cref{Q_1 eq} and \cref{Q_2 eq}, and because the orbit is by definition in the orbiting ellipse setting $$Q_3=0$$:
 
 $$\begin{equation}
     \vec{q}=    
@@ -332,11 +332,11 @@ Utilizing our transform and polar coordinates, $$Q_1=r\cos{f}$$, $$Q_2=r\sin{f}$
 <h2>IV. Expansion of the Two-Body Hamiltonian in Delaunay Variables</h2>
 Here we write the Hamiltonian for the two-body system and solve the Hamilton-Jacobi Equation to find a set of action-angle variables that are constant over time.
 
-We begin by identifying the Two-Body Hamiltonian in Cartesian coordinates. From \eqref{governing Newton Law}, the Lagrangian of the system is given by:
+We begin by identifying the Two-Body Hamiltonian in Cartesian coordinates. From \cref{governing Newton Law}, the Lagrangian of the system is given by:
 \begin{equation}
     \mathcal{L}=\frac{1}{2}\mu\parallel\dot{\vec{r}}\parallel^2+\frac{\mathcal{G}\mu m}{\parallel\vec{r}\parallel}
 \end{equation}
-Via the Euler-Lagrange Equation, \eqref{governing Newton Law} is recovered:
+Via the Euler-Lagrange Equation, \cref{governing Newton Law} is recovered:
 \begin{equation}
     \frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{\vec{r}}}\right)-\frac{\partial \mathcal{L}}{\partial \vec{r}}=0\quad\rightarrow\quad\mu\ddot{\vec{r}}+\frac{\mathcal{G}\mu m}{\parallel\vec{r}\parallel^3}\vec{r}=0
 \end{equation}
@@ -380,7 +380,7 @@ From the spherical symmetry of the problem, it is natural for us to proceed usin
     p_r = \sqrt{p_x^2 + p_y^2 + p_z^2} \label{polar transform end}
 \end{equation}
 
-Again, it can be shown that this transform satisfies \eqref{cannonical 1}-\eqref{cannonical 3}. The Hamiltonian becomes:
+Again, it can be shown that this transform satisfies \cref{cannonical 1}-\cref{cannonical 3}. The Hamiltonian becomes:
 \begin{equation}\label{2 body cartesian hamiltonian}
     \mathcal{H}=\frac{1}{2\mu}\left(p_r^2+\frac{p_\theta^2}{r^2}+\frac{p_\phi^2}{r^2\sin^2{\theta}}\right)-\frac{\mathcal{G}\mu m}{r}
 \end{equation}
@@ -388,7 +388,7 @@ Again, it can be shown that this transform satisfies \eqref{cannonical 1}-\eqref
 <h3>IV.I Action-Angle Variables</h3>
 We now find a canonical transform, $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ such that our transformed Hamiltonian $$\mathcal{K}$$ is a function of only momenta, $$\mathcal{K}\left(P_i\right)$$. Transformed position coordinates are known as _angles_ and transformed momenta are known as _actions_.
 
-Utilizing the Hamilton-Jacobi Equation (\eqref{HJ Equation}) with a generating function $$S\left(r,\theta,\phi;P_1,P_2,P_3;t\right)$$, where $$P_1$$, $$P_2$$, and $$P_3$$ are constants of motion because the transformed Hamiltonian $$\mathcal{K}$$ is independent of $$Q_i$$. The Hamilton-Jacobi Equation is:
+Utilizing the Hamilton-Jacobi Equation (\cref{HJ Equation}) with a generating function $$S\left(r,\theta,\phi;P_1,P_2,P_3;t\right)$$, where $$P_1$$, $$P_2$$, and $$P_3$$ are constants of motion because the transformed Hamiltonian $$\mathcal{K}$$ is independent of $$Q_i$$. The Hamilton-Jacobi Equation is:
 \begin{equation}
     \frac{1}{2\mu}\left(\left(\frac{\partial S}{\partial r}\right)^2+\frac{1}{r^2}\left(\frac{\partial S}{\partial \theta}\right)^2+\frac{1}{r^2\sin^2{\theta}}\left(\frac{\partial S}{\partial \phi}\right)^2\right)-\frac{\mathcal{G}\mu m}{r}+\frac{ \partial S}{\partial t}=0
 \end{equation}
@@ -425,13 +425,13 @@ and the angular momentum along the $$z$$ axis:
 \begin{equation}
     P_2=p_\phi
 \end{equation}
-are also conserved. It is not hard to show this conservation via \eqref{const function}. It can also be shown that these variables are canonical (\eqref{cannonical 1}-\eqref{cannonical 3}). 
+are also conserved. It is not hard to show this conservation via \cref{const function}. It can also be shown that these variables are canonical (\cref{cannonical 1}-\cref{cannonical 3}). 
 
 We use our previous results to expand $$P_1$$, $$P_2$$, and $$P_3$$ into orbital elements. $$P_1$$ is the total energy of the system:
 \begin{equation}
     P_1=\frac{\mu}{2}\parallel\dot{\vec{r}}\parallel^2-\frac{\mathcal{G}\mu m}{r}=\mathcal{G}\mu m\left(\frac{1}{r}-\frac{1}{2a}\right)-\frac{\mathcal{G}\mu m}{r}=-\frac{\mathcal{G}\mu m}{2a}
 \end{equation}
-We have used \eqref{p def} and \eqref{v^2 equation}. To transform $$P_2$$ and $$P_3$$, we need to consider the angular momentum of the system. Recalling that $$L\equiv\mu\parallel\vec{r}\times\dot{\vec{r}}\parallel$$ and using \eqref{polar transform end}-\eqref{polar transform end}:
+We have used \cref{p def} and \cref{v^2 equation}. To transform $$P_2$$ and $$P_3$$, we need to consider the angular momentum of the system. Recalling that $$L\equiv\mu\parallel\vec{r}\times\dot{\vec{r}}\parallel$$ and using \cref{polar transform end}-\cref{polar transform end}:
 \begin{equation}
     L\equiv\parallel\vec{r}\times{\vec{p}}\parallel=\sqrt{p_\theta^2+\frac{p_\phi^2}{\sin^2{\theta}}}\quad\rightarrow\quad P_3=L
 \end{equation}
@@ -441,7 +441,7 @@ $$\begin{equation}
     \left(\vec{r}\times\vec{p}\right)_{z} = p_{\phi} = P_2
 \end{equation}$$
 
-As $$L$$ is the norm of the angular momentum, and the angular momentum of the system is normal to the orbital plane, the $$z$$ component of the angular momentum is given by $$P_3=L\cos{I}$$, a projection of the angular momentum onto the $$z$$ axis. With \eqref{L defintion} in summary:
+As $$L$$ is the norm of the angular momentum, and the angular momentum of the system is normal to the orbital plane, the $$z$$ component of the angular momentum is given by $$P_3=L\cos{I}$$, a projection of the angular momentum onto the $$z$$ axis. With \cref{L defintion} in summary:
 
 \begin{equation}
     P_1 = -\frac{\mathcal{G}\mu m}{2a} \label{P_1 def}
@@ -455,13 +455,13 @@ As $$L$$ is the norm of the angular momentum, and the angular momentum of the sy
     P_2 = P_3 \cos{I} \label{P_2 def}
 \end{equation}
 
-Having expressed our transformed momenta in orbital elements, we must do the same for our transformed position coordinates. We solve for $$S$$ by integrating \eqref{S_t derivative}-\eqref{S_r derivative}:
+Having expressed our transformed momenta in orbital elements, we must do the same for our transformed position coordinates. We solve for $$S$$ by integrating \cref{S_t derivative}-\cref{S_r derivative}:
 
 \begin{equation}
     S=-P_1 t+P_2 \phi+\int\sqrt{P_3^2-\frac{P_2^2}{\sin^2\theta}}d\theta+\int\sqrt{2\mu P_1+\frac{2\mathcal{G}\mu^2 m}{r}-\frac{P_3^2}{r^2}}dr
 \end{equation}
 
-Using \eqref{transormned position coordinates}:
+Using \cref{transormned position coordinates}:
 
 \begin{equation}
     Q_1 = \frac{\partial {S}}{\partial P_1} = -t + \mu \int \frac{dr}{\sqrt{2\mu\left(P_1 + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_3^2}{r^2}}} = -t + \mu I_1
@@ -475,13 +475,13 @@ Using \eqref{transormned position coordinates}:
     Q_3 = \frac{\partial {S}}{\partial P_3} = P_3 \int \frac{d\theta}{\sqrt{P_3^2 - \frac{P_2^2}{\sin^2\theta}}} - P_3 \int \frac{dr}{r^2 \sqrt{2\mu \left(P_1 + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_3^2}{r^2}}} = P_3\left(I_4 - I_2\right)
 \end{equation}
 
-Evaluating the integrals in order, starting with $$I_1$$. With \eqref{P_1 def} and \eqref{P_3 def}:
+Evaluating the integrals in order, starting with $$I_1$$. With \cref{P_1 def} and \cref{P_3 def}:
 
 \begin{equation}
     I_1=\frac{1}{\mu\sqrt{\mathcal{G}m}}\int\frac{rdr}{\sqrt{-\frac{r^2}{a}+2r-a\left(1-e^2\right)}}
 \end{equation}
 
-With \eqref{r E equation}, $$dr=ae\sin EdE$$, and $$I_1$$ becomes:
+With \cref{r E equation}, $$dr=ae\sin EdE$$, and $$I_1$$ becomes:
 
 \begin{equation}
     I_1 = \frac{1}{\mu \sqrt{\mathcal{G}m}} \int \frac{a^2 e \left(1 - e \cos E\right) \sin E \, dE}{\sqrt{- a \left(1 - e \cos E\right)^2 + 2a \left(1 - e \cos E\right) - a \left(1 - e^2\right)}}
@@ -490,7 +490,7 @@ With \eqref{r E equation}, $$dr=ae\sin EdE$$, and $$I_1$$ becomes:
 \begin{equation}
     = \frac{a^{\frac{3}{2}}}{\mu \sqrt{\mathcal{G}m}} \int \left(1 - e \cos E\right) dE
 \end{equation}
-Solving and plugging in \eqref{Kepler eq}
+Solving and plugging in \cref{Kepler eq}
 \begin{equation}
     I_1=\frac{a^\frac{3}{2}}{\mu\sqrt{\mathcal{G}m}}\left(E-e\sin E\right)=\frac{\mathcal{M}}{\mu n}
 \end{equation}
@@ -509,7 +509,7 @@ Now for $$I_2$$, with the same substitutions:
     = \frac{1}{\mu \sqrt{\mathcal{G}ma}} \int \frac{dE}{1 - e \cos{E}}
 \end{equation}
 
-Now, with \eqref{cos f equation}:
+Now, with \cref{cos f equation}:
 
 \begin{equation}
     \cos{f} = \frac{a}{r} \left( \cos{E} - e \right) = \frac{\cos{E} - e}{1 - e \cos E}
@@ -528,7 +528,7 @@ Thus, $$I_2$$ becomes:
 \begin{equation}
     I_2=\frac{1}{\mu\sqrt{\mathcal{G}ma\left(1-e^2\right)}}\int df=\frac{f}{P_3}
 \end{equation}
-Now for $$I_3$$. With \eqref{P_2 def} and \eqref{P_3 def}:
+Now for $$I_3$$. With \cref{P_2 def} and \cref{P_3 def}:
 \begin{equation}
     I_3=\frac{1}{P_2}\int\frac{\cos Id\theta}{\sin^2\theta\sqrt{1-\frac{\cos^2 I}{\sin^2\theta}}}
 \end{equation}
@@ -544,7 +544,7 @@ From spherical trigonometric relations:
 \begin{equation}
     \sin{\left(\frac{\pi}{2}-\theta\right)}=\sin{-I}\sin{\eta}\label{sphere_trig sin}
 \end{equation}
-From \eqref{sphere_trig tan}:
+From \cref{sphere_trig tan}:
 \begin{equation}
     \cot{\theta}=-\tan{I}\sin{\chi}\quad\rightarrow\quad\csc^2\theta d\theta=\tan{I}\cos{\chi}d\chi
 \end{equation}
@@ -562,7 +562,7 @@ And for the final integral, $$I_4$$, repeating the process as in $$I_3$$:
 \begin{equation}
     I_4=\frac{1}{P_3}\int\frac{\sin\theta d\theta}{\sqrt{\sin^2\theta-\cos^2 I}}
 \end{equation}
-With \eqref{sphere_trig sin}:
+With \cref{sphere_trig sin}:
 \begin{equation}
     \cos{\theta}=\sin{-I}\sin{\eta}\quad\rightarrow\quad\sin{\theta}d\theta=\sin{I}\cos{\eta}d\eta
 \end{equation}
@@ -714,7 +714,7 @@ Where $$\mathcal{R}$$ is the _disturbing function_, written in terms of the six 
     \dot{q}_i = \frac{\partial \mathcal{R}}{\partial Q_i} \label{Delaunay Lagrange 2}
 \end{equation}
 
-\eqref{Delaunay Lagrange 1}-\eqref{Delaunay Lagrange 2} are the _Lagrange Planetary Equations_, and we can rewrite these in terms of our orbital elements: $$a$$, $$e$$, $$\lambda$$, $$\varpi$$, $$\Omega$$, and $$I$$. 
+\cref{Delaunay Lagrange 1}-\cref{Delaunay Lagrange 2} are the _Lagrange Planetary Equations_, and we can rewrite these in terms of our orbital elements: $$a$$, $$e$$, $$\lambda$$, $$\varpi$$, $$\Omega$$, and $$I$$. 
 
 First expressing $$a$$, $$e$$, and $$e$$ in terms of Delaunay variables:
 
@@ -780,7 +780,7 @@ Calculating the partial derivatives of the disturbing function:
     = \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i} \sin I_i \sqrt{1 - e_i^2}} \frac{\partial \mathcal{R}}{\partial I_i}\nonumber
 \end{equation}
 
-And combining \eqref{Delaunay Lagrange 1}-\eqref{Delaunay Lagrange 2} with \eqref{orbital convert 1}-\eqref{orbital convert end}:
+And combining \cref{Delaunay Lagrange 1}-\cref{Delaunay Lagrange 2} with \cref{orbital convert 1}-\cref{orbital convert end}:
 
 \begin{equation}
     \dot{a}_i = -\frac{2 \sqrt{a_i}}{\mu_i \sqrt{\mathcal{G} m_i}} \frac{\partial \mathcal{R}}{\partial \lambda_i} \label{lagrange start}
@@ -808,7 +808,7 @@ And combining \eqref{Delaunay Lagrange 1}-\eqref{Delaunay Lagrange 2} with \eqre
 
 We have arrived at the _Lagrange Planetary Equations_. Note that these expressions are entirely independent of the form of the disturbing function $$\mathcal{R}$$ and we have taken no simplifying or approximating steps during our derivation.
 
-Finally, we approximate \eqref{lagrange start}-\eqref{lagrange end} to second order for small $$e_i$$ and $$I_i$$:
+Finally, we approximate \cref{lagrange start}-\cref{lagrange end} to second order for small $$e_i$$ and $$I_i$$:
 
 \begin{equation}
     \dot{e}_i \simeq \frac{1}{\mu_i e_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial \varpi_i} \label{lagrange simple start}
@@ -844,7 +844,7 @@ In this approximation, $$a_1$$ is constant as it varies much slower than the oth
     q_i \equiv I_i \cos \Omega_i \label{orbital vector end}
 \end{equation}
 
-Rewriting \eqref{lagrange simple start}-\eqref{lagrange simple end} with our new variables:
+Rewriting \cref{lagrange simple start}-\cref{lagrange simple end} with our new variables:
 
 \begin{equation}
     \dot{h}_i = \frac{\partial h_i}{\partial e_i} \dot{e}_i + \frac{\partial h_i}{\partial \varpi_i} \dot{\varpi}_i \simeq - \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial k_i} \label{simplified lagrange start}
@@ -862,9 +862,9 @@ Rewriting \eqref{lagrange simple start}-\eqref{lagrange simple end} with our new
     \dot{q}_i = \frac{\partial q_i}{\partial I_i} \dot{I}_i + \frac{\partial q_i}{\partial \Omega_i} \dot{\Omega}_i \simeq \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial p_i} \label{simplified lagrange end}
 \end{equation}
 
-The simplified form of our planetary equations, \eqref{simplified lagrange start}-\eqref{simplified lagrange end} will be convenient after expanding $$\mathcal{R}$$ to second order in our orbital elements.
+The simplified form of our planetary equations, \cref{simplified lagrange start}-\cref{simplified lagrange end} will be convenient after expanding $$\mathcal{R}$$ to second order in our orbital elements.
 
-<h2>VI. The Disturbing Function For the Three-Body Problem,</h2>
+<h2>V. The Disturbing Function For the Three-Body Problem,</h2>
 We now analyse the disturbing function caused by the presence of a third body of mass $$m_2'$$. 
 
 From Newton's Law, the motions of the three bodies are:
@@ -917,7 +917,7 @@ Now we must isolate the disturbing function. First, we observe, via the law of c
     \frac{1}{\parallel\vec{q}-\vec{q}'\parallel}=\left(q^2+q'^2-2qq'\cos{\psi}\right)^{-\frac{1}{2}}
 \end{equation}
 
-Where $$\psi$$ is the angle between vectors $$\vec{q}$$ and $$\vec{q}'$$. We can write \eqref{cosine 1/r expression} as a power series using _Legendre Polynomials_, $$P_n$$:
+Where $$\psi$$ is the angle between vectors $$\vec{q}$$ and $$\vec{q}'$$. We can write \cref{cosine 1/r expression} as a power series using _Legendre Polynomials_, $$P_n$$:
 
 \begin{equation}\label{legendre expansion}
     \frac{1}{\parallel\vec{q}-\vec{q}'\parallel}=\frac{1}{q}\left(1+t^2-2t\cos{\psi}\right)^{-\frac{1}{2}}=\frac{1}{q}\sum_{n=0}^\infty t^nP_n\left(\cos{\psi}\right)
@@ -946,7 +946,7 @@ Where $$t=\frac{q'}{q}$$ is an expansion parameter. Here we do not study the $$P
 \end{equation}
 
 
-Using \eqref{legendre expansion}:
+Using \cref{legendre expansion}:
 
 \begin{equation}
     \frac{\mathcal{G}\mu_1 m_1 m_2'}{m_0'\parallel \vec{R}_2 - \frac{m_0'}{m_1} \vec{r}_1\parallel } = \frac{\mathcal{G}\mu_1m_1m_2'}{R_2 m_0'} \sum _{n=1} ^\infty \left( \frac{m_0'}{m_1} \right)^n \left( \frac{r_1} {R_2} \right)^n P_n \left( \cos{\psi} \right)  
@@ -966,7 +966,7 @@ We consider the case where $$m_0'>>m_1',m_2'$$, two planets orbiting a star. Def
     \frac{\mathcal{G} \mu_1 m_1 m_2'}{R_2m_1'}\sum _{n=0} ^\infty \left(-1\right)^n\left(\frac{m _1'}{m _1}\right)^n\left(\frac{r _1}{R _2}\right)^n P_n \left(\cos{\psi}\right)=\frac{\mathcal{G}m_0' ^2}{R_2}\left(\delta_2-\left(\frac{r _1}{R _2}\right)P_1\left(\cos{\psi}\right)\delta _1 \delta _2\right)  
 \end{equation}
 
-Rewriting our Hamiltonian, (\eqref{3 body hamiltonian}, using $$P_0$$ and $$P_1$$:
+Rewriting our Hamiltonian, (\cref{3 body hamiltonian}, using $$P_0$$ and $$P_1$$:
 
 \begin{equation}
     \mathcal{H} = \frac{1}{2\mu_1} \parallel{\vec{p}}_1\parallel^2 + \frac{m_1 + m_2'}{2m_1 m_2'} \parallel{\vec{P}}_2\parallel^2 - \frac{\mathcal{G}\mu_1 m_1}{r_1} - \frac{\mathcal{G}m_1 m_2'}{R_2} - \frac{\mathcal{G}m_0'^2}{R_2} \delta_1 \delta_2 \sum _{n=2} ^\infty \left( \frac{r_1}{R_2} \right)^n P_n \left( \cos{\psi} \right)\nonumber
@@ -979,13 +979,13 @@ Rewriting our Hamiltonian, (\eqref{3 body hamiltonian}, using $$P_0$$ and $$P_1$
     +\mathcal{G} m_0'^2 \delta_1 \delta_2 \left( -\left( r_1^2 + R_2^2 - 2r_1 R_2 \cos{\psi} \right)^{-\frac{1}{2}} + \frac{r_1}{R_2^2} \cos{\psi} \right) \label{3 body hamiltonian with R}
 \end{equation}
 
-The first four terms of \eqref{3 body hamiltonian with R} correspond to two separate two-body problems which we studied previously, and it is clear that the disturbing function is:
+The first four terms of \cref{3 body hamiltonian with R} correspond to two separate two-body problems which we studied previously, and it is clear that the disturbing function is:
 
 \begin{equation}\label{disturbing Function}
     \mathcal{R}=\mathcal{G}m_0'^2\delta_1\delta_2\left(-\left(r_1^2+R_2^2-2r_1R_2\cos{\psi}\right)^{-\frac{1}{2}}+\frac{r_1}{R_2^2}\cos{\psi}\right)
 \end{equation}
 
-<h3>VI.I Series Expansion of Disturbing Function</h3>
+<h3>V.I Series Expansion of Disturbing Function</h3>
 
 Defining the direct and indirect disturbing functions:
 
@@ -1074,7 +1074,7 @@ We also define $$\zeta_i$$:
     \zeta_2\equiv\frac{R_2}{a_2}-1
 \end{equation}
 
-We use these to rewrite \eqref{F_0 expansion}:
+We use these to rewrite \cref{F_0 expansion}:
 
 \begin{equation}
     \frac{1}{ \mathcal{F} _0 ^{2k+1}} = \sum _{j=-\infty} ^\infty \left(A _{k,j,0,0}+\zeta _1 A _{k,j,1,0}+ \zeta _2 A _{k,j,0,1}+\frac{1}{2}\zeta _1 ^2 A _{k,j,2,0}+\frac{1}{2}\zeta _2^2 A _{k,j,0,2} + \zeta _1 
@@ -1098,7 +1098,7 @@ We can now write $$\mathcal{R}_D$$ as product of two series:
     \times \cos{\left(j(\vartheta _1 -\vartheta _2 )\right)}
 \end{equation}
 
-<h4>VI.I.I Series Expansion of Orbital Elements</h4>
+<h4>V.I.I Series Expansion of Orbital Elements</h4>
 
 We now address the $$\cos{\left(j(\vartheta_1-\vartheta_2)\right)}$$ term. We expand trigonometric terms in $$E$$ using Bessel Functions in a power series of $$e$$. Let us write: 
 
@@ -1130,7 +1130,7 @@ We have used the integral definition of Bessel Functions. In the case of $$n=0$$
    A_0(ne) = \lim_{n \rightarrow 0} \frac{J_{-1}(ne)}{n} = \lim_{n \rightarrow 0} -e\frac{d}{d(ne)}\left( J_1 \left(ne\right) \right) = -\frac{e}{2}
 \end{equation}
 
-The real portion of \eqref{exp E} reveals:
+The real portion of \cref{exp E} reveals:
 
 \begin{equation}
     \cos{E} = \sum_{n=0}^{\infty}(A_n+A_{-n})\cos{n\mathcal{M}} = -\frac{e}{2}+ \sum_{n=1}^{\infty}\left(\frac{J_{n-1}(ne)-J_{-n-1}(-ne)}{n}\right)\cos{n\mathcal{M}} \nonumber
@@ -1165,7 +1165,7 @@ Now we use our series expansions for Bessel Functions:
     +e^3\left(-\frac{1}{6}\sin{2\mathcal{M}}+\frac{1}{3}\sin{4\mathcal{M}} \right) + \mathcal{O}(e^4)\nonumber
 \end{equation}
 
-From \eqref{Kepler eq}, we find:
+From \cref{Kepler eq}, we find:
 
 \begin{equation}
     E = \mathcal{M}+e\sin{E} = \mathcal{M}+e\sin{\mathcal{M}}+\frac{e^2}{2}\sin{2\mathcal{M}}+e^3\left(-\frac{1}{8}\sin{\mathcal{M}}+\frac{3}{8}\sin{3\mathcal{M}} \right)
@@ -1174,7 +1174,7 @@ From \eqref{Kepler eq}, we find:
     +e^4\left(-\frac{1}{6}\sin{2\mathcal{M}}+\frac{1}{3}\sin{4\mathcal{M}} \right) + \mathcal{O}(e^5)\nonumber
 \end{equation}
 
-And from \eqref{r E equation}:
+And from \cref{r E equation}:
 
 \begin{equation}\label{zeta expansion e}
 \frac{r}{a} = 1-e\cos{E} = 1-e\cos{\mathcal{M}}+e^2\left(\frac{1}{2}-\frac{1}{2}\cos{2\mathcal{M}} \right)
@@ -1184,7 +1184,7 @@ And from \eqref{r E equation}:
 }{3}\cos{4\mathcal{M}} \right) + \mathcal{O}(e^5)\nonumber
 \end{equation}
 
-\eqref{r E equation} also easily gives an expansion for $$\zeta_i$$. From \eqref{L defintion}, \eqref{Kepler eq}, and \eqref{r E equation}:
+\cref{r E equation} also easily gives an expansion for $$\zeta_i$$. From \cref{L defintion}, \cref{Kepler eq}, and \cref{r E equation}:
 
 \begin{equation}
     \dot{f} = \frac{na^2}{r^2} \sqrt{1-e^2} \nonumber
@@ -1237,7 +1237,7 @@ To second order in $$e$$:
     f = \mathcal{M}+2e\sin{\mathcal{M}}+\frac{5}{4}e^2\sin{2\mathcal{M}} + \mathcal{O}(e^3)
 \end{equation}
 
-We are ready to compute $$\sin{f}$$ and $$\cos{f}$$. The latter is easier, and we can calculate it through \eqref{Q_1 eq}, expanding to second order in $$e$$ and utilizing trigonometric identities.
+We are ready to compute $$\sin{f}$$ and $$\cos{f}$$. The latter is easier, and we can calculate it through \cref{Q_1 eq}, expanding to second order in $$e$$ and utilizing trigonometric identities.
 
 \begin{equation} 
     \cos{f} = \frac{\cos{E}-e}{1-e\cos{E}} \simeq \cos{\mathcal{M}} + \left(-\frac{3}{2} + \frac{1}{2}\cos{2\mathcal{M}} + \cos^2{\mathcal{M}} \right)e \nonumber
@@ -1252,7 +1252,7 @@ We are ready to compute $$\sin{f}$$ and $$\cos{f}$$. The latter is easier, and w
 \end{equation}
 
 
-To calculate $$\sin{f}$$ we need to be a little more subtle, we use \eqref{df dM eq}, the chain rule, and integrate:
+To calculate $$\sin{f}$$ we need to be a little more subtle, we use \cref{df dM eq}, the chain rule, and integrate:
 
 \begin{equation}
     \frac{d\sin{f}}{d\mathcal{M}}=\frac{df}{d\mathcal{M}}\cos{\theta}=\sqrt{1-e^2}\left(\frac{dE}{d\mathcal{M}}\right)^2\cos{f} \nonumber
@@ -1319,7 +1319,7 @@ Now allow us to return to Cartesian coordinates with expansions around $$e$$. We
     \sin{I} = 2\sin{\frac{I}{2}}\left(1-\sin^2{\frac{I}{2} }\right)^{\frac{1}{2}} = 2\sin{\frac{I}{2}} + \mathcal{O}\left(\sin^3{\frac{I}{2}}\right)
 \end{equation}
 
-With \eqref{x orbital elements}-\eqref{z orbital elements}, to second order in $$e$$ and $$\sin{\frac{I}{2}}$$:
+With \cref{x orbital elements}-\cref{z orbital elements}, to second order in $$e$$ and $$\sin{\frac{I}{2}}$$:
 
 \begin{equation} 
     \frac{x}{r} \simeq \cos{\Omega}\left( \cos{(\omega + \mathcal{M})} + \left(\cos{(\omega + 2\mathcal{M})} -\cos{\omega} \right)e\right. \nonumber
@@ -1553,9 +1553,9 @@ And, as $$\epsilon=\cos{\psi}-\cos{\left(\vartheta_1-\vartheta_2\right)}$$:
 \end{equation}
 
 
-<h4>VI.I.II Series Expansion of Direct Disturbing Function</h4>
+<h4>V.I.II Series Expansion of Direct Disturbing Function</h4>
 
-With \eqref{zeta expansion e} and \eqref{epsilon expansion}:
+With \cref{zeta expansion e} and \cref{epsilon expansion}:
 
 \begin{equation}
     \frac{1}{2}\frac{r_1}{a_1}\frac{R_2}{a_2}\epsilon \simeq \frac{1}{2}\left(\cos{(\lambda_1+\lambda_2-2\Omega_1)} - \cos{(\lambda_1+\lambda_2)}\right)\sin^2{\frac{I_1}{2}} + \left(\cos{(\lambda_1+\lambda_2-2\Omega_2)} - \cos{(\lambda_1+\lambda_2)}\right)\sin^2{\frac{I_2}{2}}\nonumber
@@ -1566,13 +1566,13 @@ With \eqref{zeta expansion e} and \eqref{epsilon expansion}:
     + \left(\cos{(\lambda_1-\lambda_2-\Omega_1+\Omega_2)} - \cos{(\lambda_1+\lambda_2-\Omega_1-\Omega_2)}\right)\sin{\frac{I_1}{2}}\sin{\frac{I_2}{2}}
 \end{equation}
 
-As $$\frac{1}{2}\frac{r_1}{a_1}\frac{R_2}{a_2}\epsilon$$ is already of second order, we can ignore $$k>1$$ terms in \eqref{R_D expression}. Now we need an expansion for $$\cos{(j(\vartheta_1-\vartheta_2))}$$, where $$j$$ is an arbitrary integer. We start by noting:
+As $$\frac{1}{2}\frac{r_1}{a_1}\frac{R_2}{a_2}\epsilon$$ is already of second order, we can ignore $$k>1$$ terms in \cref{R_D expression}. Now we need an expansion for $$\cos{(j(\vartheta_1-\vartheta_2))}$$, where $$j$$ is an arbitrary integer. We start by noting:
 
 \begin{equation}
     \cos{(j(\vartheta_1-\vartheta_2))} = \cos{(j(\varpi_1 + f_1))}\cos{(j(\varpi_2 + f_2))} + \sin{(j(\varpi_1 + f_1))}\sin{(j(\varpi_2 + f_2))}
 \end{equation}
 
-We use our \eqref{theta expansion in e} and expand:
+We use our \cref{theta expansion in e} and expand:
 
 \begin{equation}
     \cos{(j(\varpi+f))} \simeq \cos{\left(j\left(\varpi + \mathcal{M}+2e\sin{(\mathcal{M})}+\frac{5}{4}e^2\sin{(2\mathcal{M})} \right)\right)} \nonumber
@@ -1668,7 +1668,7 @@ Expanding $$\cos{(j(\vartheta-\vartheta_2))}$$ to second order:
     +j^2e_1e_2\cos{((1-j){\lambda}_1-(1-j){\lambda}_2-\varpi_1-\varpi_2)} \label{cos vartheta expansion}
 \end{equation}
 
-We have all the ingredients to expand $$\mathcal{R}_D$$. From \eqref{r/a and epsilon expansion}, we omit $$k>1$$ terms and since $$\zeta_i$$ is first-order, we omit $$\mathcal{O}\left(\zeta^3\right)$$ terms. With \eqref{R_D expression}: 
+We have all the ingredients to expand $$\mathcal{R}_D$$. From \cref{r/a and epsilon expansion}, we omit $$k>1$$ terms and since $$\zeta_i$$ is first-order, we omit $$\mathcal{O}\left(\zeta^3\right)$$ terms. With \cref{R_D expression}: 
 
 \begin{equation} 
     \mathcal{R}_D \simeq-\frac{\mathcal{G}m_0'^2\delta_1 \delta _2} {a _2} \sum _{j=-\infty} ^\infty \left(a _2 A _{0,j,0,0} + a _2 \zeta _1 A _{0,j,1,0} + a _2 \zeta _2 A _{0,j,0,1} +\frac{1}{2}a _2\zeta _1 ^2 A _{0,j,2,0} \right. \nonumber
@@ -1682,7 +1682,7 @@ We have all the ingredients to expand $$\mathcal{R}_D$$. From \eqref{r/a and eps
     =-\frac{\mathcal{G}m_0'^2\delta_1\delta_2}{a_2}\sum_{j=-\infty}^\infty\mathcal{R}_D^{(j)}
 \end{equation}
 
-Using our definition of $$A_{k,j,m,n}$$ (\eqref{def A}), transforming derivatives with respect to $$\alpha$$ because $$b^{(j)}_s$$ is a function of $$\alpha$$:
+Using our definition of $$A_{k,j,m,n}$$ (\cref{def A}), transforming derivatives with respect to $$\alpha$$ because $$b^{(j)}_s$$ is a function of $$\alpha$$:
 
 \begin{equation}
     a_2A_{0,j,0,0} = b^{(j)}_{\frac{1}{2}}(\alpha) \nonumber
@@ -1712,7 +1712,7 @@ Using our definition of $$A_{k,j,m,n}$$ (\eqref{def A}), transforming derivative
     a_1a_2^2A_{1,j,0,0} = \alpha b^{(j)}_{\frac{3}{2}}(\alpha) \nonumber
 \end{equation}
 
-What follows is a hefty quantity of tedious algebra, using \eqref{epsilon expansion}, \eqref{r/a and epsilon expansion}, and \eqref{cos vartheta expansion}. We expand \eqref{RDj expression} to 2nd order in $$e_i$$ and $$\sin{\frac{I_i}{2}}$$.
+What follows is a hefty quantity of tedious algebra, using \cref{epsilon expansion}, \cref{r/a and epsilon expansion}, and \cref{cos vartheta expansion}. We expand \cref{RDj expression} to 2nd order in $$e_i$$ and $$\sin{\frac{I_i}{2}}$$.
 We also recall the trigonometric identity: $$\cos{a}\cos{b}=\frac{1}{2}\cos{(a+b)}+\frac{1}{2}\cos{(a-b)}$$. We write $$\mathcal{R}_D^{(j)}=\mathcal{R}_D^{(j)(0)}+\mathcal{R}_D^{(j)(1)}+\mathcal{R}_D^{(j)(2)}$$, categorizing terms by the sum of the coefficients of $${\lambda_1}$$ and $${\lambda_2}$$.
 
 \begin{equation}
@@ -1860,14 +1860,14 @@ These equations can be simplified further, notice that all the terms come in pai
 
 
 
-<h4>VI.I.III Series Expansion of Indirect Disturbing Function</h4>
+<h4>V.I.III Series Expansion of Indirect Disturbing Function</h4>
 The indirect portion of the disturbing function is much less involved. Rewriting the indirect portion:
 
 \begin{equation}
     \mathcal{R}_E=\mathcal{G}m_0'^2\delta_1\delta_2\frac{\alpha}{a_2}\frac{r_1}{a_1}\left(\frac{a_2}{R_2}\right)^2\cos{\psi}
 \end{equation}
 
-We expand in the same way we expanded $$\mathcal{R}_D$$. First, via \eqref{cosE e expansion}:
+We expand in the same way we expanded $$\mathcal{R}_D$$. First, via \cref{cosE e expansion}:
 
 \begin{equation}
     \left(\frac{a_2}{R_2}\right)^2 = \left(\frac{1}{1-e_2\cos{E_2}}\right)^2 \simeq 1+2\cos{\mathcal{M}_2}e_2+\left(3\cos^2{\mathcal{M}_2}+\cos{2\mathcal{M_2}}-1\right)e_2^2 \nonumber
@@ -1877,7 +1877,7 @@ We expand in the same way we expanded $$\mathcal{R}_D$$. First, via \eqref{cosE 
     \simeq 1+2\cos{(\lambda_2-\varpi_2)}e_2+\frac{1}{2}\left(5\cos{(2(\lambda_2-\varpi_2))}+1\right)e_2^2 
 \end{equation}
 
-And consulting \eqref{zeta expansion e} and \eqref{cos psi expansion}:
+And consulting \cref{zeta expansion e} and \cref{cos psi expansion}:
 
 \begin{equation}
      \frac{\mathcal{R}_Ea_2}{\mathcal{G}m_0'^2\delta_1\delta_2\alpha} \simeq \frac{1}{2}\left(-2+e_1^2+e_2^2+2\sin^2{\frac{I_1}{2}}+2\sin^2{\frac{I_2}{2}}\right) \cos{(\lambda_1-\lambda_2)}
@@ -1903,5 +1903,200 @@ And consulting \eqref{zeta expansion e} and \eqref{cos psi expansion}:
     +2\sin{\frac{I_1}{2}}\sin{\frac{I_2}{2}}\cos{(\lambda_1+\lambda_2-\Omega_1-\Omega_2)} -2\sin{\frac{I_1}{2}}\sin{\frac{I_2}{2}}\cos{(\lambda_1-\lambda_2-\Omega_1+\Omega_2)}   \nonumber 
 \end{equation}
 
+
+
+
+
+<h3>V.II Using the Disturbing Function</h3>
+From our Planetary Equations, the time variations in our orbital elements (excluding the orbital $$\lambda$$ changes from the non-perturbed Hamiltonian) are proportional to $$\sim\frac{1}{\mu_1\sqrt{\mathcal{G}m_1a_1}}\pdv{R}{i}$$, so from our disturbing function, the time variation in our elements is $$\sim\frac{\sqrt{\mathcal{G}}m_1'm_2'}{\mu_1R_2\sqrt{m_1a_1}}=\frac{\sqrt{\mathcal{G}m_1}\delta_2}{R_2\sqrt{a_1}}\approx n\delta_2$$, where we have approximated $$R_2\approx a_1$$, which is reasonable in our proportionality arguments. Thus, our orbital elements vary $$\sim\delta_2$$ times slower than the orbital period. We call these elements \textit{secular}, varying much slower than planetary orbits, so, to evaluate the impact of our Disturbing Function, we can average over the orbital cycles of $$\lambda_1$$ and $$\lambda_2$$.
+
+\begin{equation}
+    \langle\langle\mathcal{R}\rangle\rangle=\frac{1}{4\pi^2}\int_0^{2\pi}\int_0^{2\pi}\mathcal{R}d\lambda_1d\lambda_2
+\end{equation}
+
+As all the terms in our disturbing function feature trigonometric terms of $$\lambda_1$$ and $$\lambda_2$$. It is only terms without these angles that remain post-averaging. The only contributing term is $$\mathcal{R} _D
+^{(0)(0)}$$:
+
+\begin{equation}
+    -\langle\langle\frac{a_2\mathcal{R}}{\mathcal{G}m_0'^2\delta_1\delta _2}\rangle\rangle = -\frac{a_2\mathcal{R} _D^{(0)(0)}}{\mathcal{G}m _0'^2\delta _1\delta_2} \simeq b^{(0)} _{\frac{1}{2}}(\alpha) + \frac{1}{4}(e_1^2 + e_2^2) \left( 2\alpha \pdv{}{\alpha} + \alpha^2 \pdv{^2}{\alpha^2} \right) b^{(0)} _{\frac{1}{2}}(\alpha) \noname
+\end{equation}
+
+\begin{equation}
+    -\alpha \left( \sin^2{\frac{I_1}{2}} + \sin^2{\frac{I_2}{2}} \right) b^{(1)}_{\frac{3}{2}}(\alpha) \noname
+\end{equation}
+
+\begin{equation}
+    + \frac{1}{2} e_1 e_2 \left( 2 - 2\alpha \pdv{}{\alpha} - \alpha^2 \pdv{^2}{\alpha^2} \right) b^{(1)}_{\frac{1}{2}}(\alpha) \cos{(\varpi_1 - \varpi_2)} \noname
+\end{equation}
+
+\begin{equation}
+    + 2 \sin{\frac{I_1}{2}} \sin{\frac{I_2}{2}} \alpha b^{(1)}_{\frac{3}{2}}(\alpha) \cos{(\Omega_1 - \Omega_2)}
+\end{equation}
+
+
+We have made use of the fact that $$b_s^{(-j)}(\alpha)=b_s^{(j)}(\alpha)$$. With the properties of Laplace coefficients (\cref{laplace coefficient definitions}):
+
+\begin{equation}
+    \left( 2\alpha \pdv{}{\alpha} + \alpha^2 \pdv{^2}{\alpha^2} \right) b^{(0)}_{\frac{1}{2}}(\alpha) = \alpha b^{(1)}_{\frac{3}{2}}(\alpha) \noname
+\end{equation}
+
+\begin{equation}
+    \left( 2 - 2\alpha \pdv{}{\alpha} - \alpha^2 \pdv{^2}{\alpha^2} \right) b^{(0)}_{\frac{1}{2}}(\alpha) = -\alpha b^{(2)}_{\frac{3}{2}}(\alpha)
+\end{equation}
+
+And, taking $$\sin{I_i}\simeq I_i$$:
+
+\begin{equation}
+    -\langle\langle \frac{a_2 \mathcal{R}}{\mathcal{G} m_0'^2 \delta_1 \delta_2} \rangle \rangle \simeq b^{(0)}_{\frac{1}{2}}(\alpha) + \frac{1}{4} (e_1^2 + e_2^2) \alpha b^{(1)}_{\frac{3}{2}}(\alpha) - \frac{1}{4} (I_1^2 + I_2^2) \alpha b^{(1)} _{\frac{3}{2}}(\alpha) \noname
+\end{equation}
+
+\begin{equation}
+    -\frac{1}{2} e_1 e_2 \alpha b^{(2)}_{\frac{3}{2}}(\alpha) \cos{(\varpi_1 - \varpi_2)} + \frac{1}{2} I_1 I_2 \alpha b^{(1)} _{\frac{3}{2}}(\alpha) \cos{(\Omega_1 - \Omega_2)}
+\end{equation}
+
+Now in terms of our simplifying variables (\cref{orbital convert 1}-\cref{orbital convert end}):
+
+\begin{equation}
+    \langle\langle \mathcal{R} \rangle \rangle \simeq -\frac{\mathcal{G} m_0'^2 \delta_1 \delta_2}{a_2} \alpha \left( \frac{1}{4} \left( h_1^2 + h_2^2 + k_1^2 + k_2^2 \right) b^{(1)} _{\frac{3}{2}}(\alpha) - \frac{1}{4} \left( p_1^2 + p_2^2 + q_1^2 + q_2^2 \right) b^{(1)} _{\frac{3}{2}}(\alpha) \right)
+\end{equation}
+
+\begin{equation}
+    \left. - \frac{1}{2} \left( h_1 h_2 + k_1 k_2 \right) b^{(2)}_{\frac{3}{2}}(\alpha) + \frac{1}{2} \left( p_1 p_2 + q_1 q_2 \right) b^{(1)} _{\frac{3}{2}}(\alpha) \right)
+\end{equation}
+
+Because we are assuming $$\alpha$$ is constant (recall that variations in $$a_i$$ are much slower than those for other secular elements), we have omitted the $$b^{(0)}_{\frac{1}{2}}\left(\alpha\right)$$ term. Our evolution equations for our simplified elements using \cref{lagrange simple start}-\cref{lagrange simple end}:
+
+\begin{equation}
+    \dot{h}_1 = \frac{n_1 \alpha^2}{2} \delta_2 \left( k_1 b^{(1)} _{\frac{3}{2}} - k_2 b^{(2)} _{\frac{3}{2}} \right)
+\end{equation}
+
+\begin{equation}
+    \dot{k}_1 = -\frac{n_1 \alpha^2}{2} \delta _2 \left( h_1 b^{(1)} _{\frac{3}{2}} - h_2 b^{(2)} _{\frac{3}{2}} \right)
+\end{equation}
+
+\begin{equation}
+    \dot{p}_1 = \frac{n_1 \alpha^2}{2} \delta _2 \left( -q_1 b^{(1)} _{\frac{3}{2}} + q_2 b^{(1)} _{\frac{3}{2}} \right)
+\end{equation}
+
+\begin{equation}
+    \dot{q}_1 = -\frac{n _1 \alpha^2}{2} \delta _2 \left( -p_1 b^{(1)} _{\frac{3}{2}} + p_2 b^{(1)} _{\frac{3}{2}} \right)
+\end{equation}
+
+
+We can use \cref{3 body hamiltonian with R} to do something similar for $$m_2'$$, identifying $$\mu_2=\frac{m_0'm_2'+m_1'm_2'}{m_0'+m_1'+m_2'}$$ and $$m_2=\frac{m_0'm_2'}{\mu_2}$$ as the variables to utilize in our evolution equations:
+
+\begin{equation}
+    \dot{h}_2 = \sqrt{\frac{\mathcal{G}m_2}{a_2^3}} \alpha \delta_1 \left( k_2 b^{(1)} _{\frac{3}{2}} - k_1 b^{(2)} _{\frac{3}{2}} \right)
+\end{equation}
+
+\begin{equation}
+    \dot{k}_2 = -\sqrt{\frac{\mathcal{G}m_2}{a_2^3}} \alpha \delta_1 \left( h_2 b^{(1)} _{\frac{3}{2}} - h_1 b^{(2)} _{\frac{3}{2}} \right)
+\end{equation}
+
+\begin{equation}
+    \dot{p}_2 = \sqrt{\frac{\mathcal{G}m_2}{a_2^3}} \alpha \delta_1 \left( -q_2 b^{(1)} _{\frac{3}{2}} + q_1 b^{(1)} _{\frac{3}{2}} \right)
+\end{equation}
+
+\begin{equation}
+    \dot{q}_2 = -\sqrt{\frac{\mathcal{G}m_2}{a_2^3}} \alpha \delta_1 \left( -p_2 b^{(1)} _{\frac{3}{2}} + p_1 b^{(1)} _{\frac{3}{2}} \right)
+\end{equation}
+
+So, to second order in $$e_i$$ and $$I_i$$ and in $$\delta_i$$, averaged over long-timescales, and ignoring variations in $$a_i$$, the effect of the disturbing function reduces to an eigenvalue problem.
+
+
+
+<h2>VI. The Perihelion Precession of Mercury</h2>
+
+<h3>VI. Gravitational Effects</h3>
+
+We are ready to apply what we have learned to study the precession of Mercury's perihelion. We consider a three-body system of the Sun, Mercury, and each of the other seven planets. 
+
+Beginning with $$m_1'$$, Mercury, $$m_2'$$, Venus, we have the following values for constants in units of AU, and earth masses:
+
+\begin{equation}
+    n_1=26.098 && \alpha=0.535 && a_2=0.732 && \delta_1=1.66\times10^{-7} && \delta_2=2.448\times10^{-6} && m_2 = 0.815 \noname
+\end{equation}
+
+\begin{equation}
+     b^{(1)} _{\frac{3}{2}}(\alpha) = 1.519 && b^{(2)} _{\frac{3}{2}}(\alpha) = 0.976 \noname
+\end{equation}
+
+As an eigenvalue problem for $$h_1$$, $$k_1$$, $$h_2$$, and $$k_2$$:
+
+\begin{equation}
+    \begin{pmatrix}
+        \dot{h}_1\\
+        \dot{h}_2\\
+        \dot{h}_1\\
+        \dot{k}_2\\
+    \end{pmatrix}=
+    \begin{pmatrix}
+        0 & 0 & 1.39\times10^{-5} & -8.93\times10^{-6}\\
+        0 & 0 & -8.87\times10^{-7} & 1.38\times10^{-6}\\
+        -1.39\times10^{-5} & 8.93\times10^{-6} & 0 & 0\\
+        8.87\times10^{-7} & -1.38\times10^{-6} & 0 & 0       
+    \end{pmatrix}
+    \begin{pmatrix}
+        h_1\\
+        h_2\\
+        k_1\\
+        k_2\\
+    \end{pmatrix}
+\end{equation}
+
+We use the current orbital elements of Mercury and Venus as initial parameters. 
+
+\begin{equation}
+    e_1 = 0.206 && e_2=0.0068 && I_1 = 7.004^{\circ} && I_2 = 3.394^{\circ}\\ \varpi_1 = 77.456^{\circ} && \varpi_2 = 131.533^{\circ} && \Omega_1 = 48.332^{\circ} && \Omega_2=76.681^{\circ} \noname
+\end{equation}
+
+\begin{equation}
+    h_1(0) = 0.201 && h_2(0)=0.00509 && k_1(0)=0.0447 && k_2(0) =-0.00451 \noname
+\end{equation}
+
+Solving the eigenvalue problem:
+
+\begin{equation}
+    h_1(t) = 0.0121\cos{\left(7.763 \times 10^{-7}t \right)}+ 0.189\cos{\left(1.450\times 10^{-5}t \right)}
+\end{equation}
+
+\begin{equation}
+    -9.70 \times 10^{-4}\sin{\left(7.763 \times 10^{-7}t \right)}+0.0456\sin{\left(1.450 \times 10^{-5}t \right)}
+\end{equation}
+
+\begin{equation}
+    k_1(t) = -0.0121\sin{\left(7.763 \times 10^{-7}t \right)}- 0.189\sin{\left(1.450\times 10^{-5}t \right)}
+\end{equation}
+
+\begin{equation}
+    -9.70 \times 10^{-4}\cos{\left(7.763 \times 10^{-7}t \right)}+0.0456\cos{\left(1.450 \times 10^{-5}t \right)}
+\end{equation}
+
+And calculating, we find the precession of Mercury's perihelion in arcseconds per century from the influence of Venus. 
+
+\begin{equation}
+    \dot{\varpi}_1=\frac{\dot{h}_1k_1-h_1\dot{k}_1}{h_1^2+k_1^2}\approx283.114''\text{ century}^{-1}
+\end{equation}
+
+Repeating the analysis with the other planets of the solar system we find the results of \cref{table precess}.
+
+\begin{table}\label{table precess}
+    \centering
+    \begin{tabular}{c|c}
+         Planet & $$\dot{\varpi}_1$$
+         century$$^{-1}$$\\
+         \hline Venus & 283.114'' \\
+         Earth & 92.065'' \\
+         Mars & 2.476'' \\
+         Jupiter & 158.566'' \\
+         Saturn & 7.554'' \\
+         Uranus & 0.145'' \\
+         Neptune & 0.0438'' \\
+         \hline Total & 543.964''
+    \end{tabular}
+    \caption{Influence of other planets on Mercury's Nodal Precession}
+\end{table}
+
+Our total precession $$\approx544''$$ per century is puzzling, as it is lower than the actual precession of Mercury's perihelion which is nearer to $$\approx 585''$$ per century. Even considering our result as a second-order approximation does not account for this deviation, to find the missing source of precession, we must consider Einstein's General Relativity.
 
 
