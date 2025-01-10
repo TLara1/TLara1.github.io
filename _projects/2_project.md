@@ -54,7 +54,7 @@ And, as $$\epsilon=\cos{\psi}-\cos{\left(\vartheta_1-\vartheta_2\right)}$$:
 
 <h4>V.I.II Series Expansion of Direct Disturbing Function</h4>
 
-With \cref{zeta expansion e} and \cref{epsilon expansion}:
+With \eqref{zeta expansion e} and \eqref{epsilon expansion}:
 
 \begin{equation}
     \frac{1}{2}\frac{r_1}{a_1}\frac{R_2}{a_2}\epsilon \simeq \frac{1}{2}\left(\cos{(\lambda_1+\lambda_2-2\Omega_1)} - \cos{(\lambda_1+\lambda_2)}\right)\sin^2{\frac{I_1}{2}} + \left(\cos{(\lambda_1+\lambda_2-2\Omega_2)} - \cos{(\lambda_1+\lambda_2)}\right)\sin^2{\frac{I_2}{2}}\nonumber
@@ -65,13 +65,13 @@ With \cref{zeta expansion e} and \cref{epsilon expansion}:
     + \left(\cos{(\lambda_1-\lambda_2-\Omega_1+\Omega_2)} - \cos{(\lambda_1+\lambda_2-\Omega_1-\Omega_2)}\right)\sin{\frac{I_1}{2}}\sin{\frac{I_2}{2}}
 \end{equation}
 
-As $$\frac{1}{2}\frac{r_1}{a_1}\frac{R_2}{a_2}\epsilon$$ is already of second order, we can ignore $$k>1$$ terms in \cref{R_D expression}. Now we need an expansion for $$\cos{(j(\vartheta_1-\vartheta_2))}$$, where $$j$$ is an arbitrary integer. We start by noting:
+As $$\frac{1}{2}\frac{r_1}{a_1}\frac{R_2}{a_2}\epsilon$$ is already of second order, we can ignore $$k>1$$ terms in \eqref{R_D expression}. Now we need an expansion for $$\cos{(j(\vartheta_1-\vartheta_2))}$$, where $$j$$ is an arbitrary integer. We start by noting:
 
 \begin{equation}
     \cos{(j(\vartheta_1-\vartheta_2))} = \cos{(j(\varpi_1 + f_1))}\cos{(j(\varpi_2 + f_2))} + \sin{(j(\varpi_1 + f_1))}\sin{(j(\varpi_2 + f_2))}
 \end{equation}
 
-We use our \cref{theta expansion in e} and expand:
+We use our \eqref{theta expansion in e} and expand:
 
 \begin{equation}
     \cos{(j(\varpi+f))} \simeq \cos{\left(j\left(\varpi + \mathcal{M}+2e\sin{(\mathcal{M})}+\frac{5}{4}e^2\sin{(2\mathcal{M})} \right)\right)} \nonumber
@@ -167,7 +167,7 @@ Expanding $$\cos{(j(\vartheta-\vartheta_2))}$$ to second order:
     +j^2e_1e_2\cos{((1-j){\lambda}_1-(1-j){\lambda}_2-\varpi_1-\varpi_2)} \label{cos vartheta expansion}
 \end{equation}
 
-We have all the ingredients to expand $$\mathcal{R}_D$$. From \cref{r/a and epsilon expansion}, we omit $$k>1$$ terms and since $$\zeta_i$$ is first-order, we omit $$\mathcal{O}\left(\zeta^3\right)$$ terms. With \cref{R_D expression}: 
+We have all the ingredients to expand $$\mathcal{R}_D$$. From \eqref{r/a and epsilon expansion}, we omit $$k>1$$ terms and since $$\zeta_i$$ is first-order, we omit $$\mathcal{O}\left(\zeta^3\right)$$ terms. With \eqref{R_D expression}: 
 
 \begin{equation} 
     \mathcal{R}_D \simeq-\frac{\mathcal{G}m_0'^2\delta_1 \delta _2} {a _2} \sum _{j=-\infty} ^\infty \left(a _2 A _{0,j,0,0} + a _2 \zeta _1 A _{0,j,1,0} + a _2 \zeta _2 A _{0,j,0,1} +\frac{1}{2}a _2\zeta _1 ^2 A _{0,j,2,0} \right. \nonumber
@@ -181,7 +181,7 @@ We have all the ingredients to expand $$\mathcal{R}_D$$. From \cref{r/a and epsi
     =-\frac{\mathcal{G}m_0'^2\delta_1\delta_2}{a_2}\sum_{j=-\infty}^\infty\mathcal{R}_D^{(j)}
 \end{equation}
 
-Using our definition of $$A_{k,j,m,n}$$ (\cref{def A}), transforming derivatives with respect to $$\alpha$$ because $$b^{(j)}_s$$ is a function of $$\alpha$$:
+Using our definition of $$A_{k,j,m,n}$$ (\eqref{def A}), transforming derivatives with respect to $$\alpha$$ because $$b^{(j)}_s$$ is a function of $$\alpha$$:
 
 \begin{equation}
     a_2A_{0,j,0,0} = b^{(j)}_{\frac{1}{2}}(\alpha) \nonumber
@@ -211,7 +211,7 @@ Using our definition of $$A_{k,j,m,n}$$ (\cref{def A}), transforming derivatives
     a_1a_2^2A_{1,j,0,0} = \alpha b^{(j)}_{\frac{3}{2}}(\alpha) \nonumber
 \end{equation}
 
-What follows is a hefty quantity of tedious algebra, using \cref{epsilon expansion}, \cref{r/a and epsilon expansion}, and \cref{cos vartheta expansion}. We expand \cref{RDj expression} to 2nd order in $$e_i$$ and $$\sin{\frac{I_i}{2}}$$.
+What follows is a hefty quantity of tedious algebra, using \eqref{epsilon expansion}, \eqref{r/a and epsilon expansion}, and \eqref{cos vartheta expansion}. We expand \eqref{RDj expression} to 2nd order in $$e_i$$ and $$\sin{\frac{I_i}{2}}$$.
 We also recall the trigonometric identity: $$\cos{a}\cos{b}=\frac{1}{2}\cos{(a+b)}+\frac{1}{2}\cos{(a-b)}$$. We write $$\mathcal{R}_D^{(j)}=\mathcal{R}_D^{(j)(0)}+\mathcal{R}_D^{(j)(1)}+\mathcal{R}_D^{(j)(2)}$$, categorizing terms by the sum of the coefficients of $${\lambda_1}$$ and $${\lambda_2}$$.
 
 \begin{equation}
@@ -366,7 +366,7 @@ The indirect portion of the disturbing function is much less involved. Rewriting
     \mathcal{R}_E=\mathcal{G}m_0'^2\delta_1\delta_2\frac{\alpha}{a_2}\frac{r_1}{a_1}\left(\frac{a_2}{R_2}\right)^2\cos{\psi}
 \end{equation}
 
-We expand in the same way we expanded $$\mathcal{R}_D$$. First, via \cref{cosE e expansion}:
+We expand in the same way we expanded $$\mathcal{R}_D$$. First, via \eqref{cosE e expansion}:
 
 \begin{equation}
     \left(\frac{a_2}{R_2}\right)^2 = \left(\frac{1}{1-e_2\cos{E_2}}\right)^2 \simeq 1+2\cos{\mathcal{M}_2}e_2+\left(3\cos^2{\mathcal{M}_2}+\cos{2\mathcal{M_2}}-1\right)e_2^2 \nonumber
@@ -376,7 +376,7 @@ We expand in the same way we expanded $$\mathcal{R}_D$$. First, via \cref{cosE e
     \simeq 1+2\cos{(\lambda_2-\varpi_2)}e_2+\frac{1}{2}\left(5\cos{(2(\lambda_2-\varpi_2))}+1\right)e_2^2 
 \end{equation}
 
-And consulting \cref{zeta expansion e} and \cref{cos psi expansion}:
+And consulting \eqref{zeta expansion e} and \eqref{cos psi expansion}:
 
 \begin{equation}
      \frac{\mathcal{R}_Ea_2}{\mathcal{G}m_0'^2\delta_1\delta_2\alpha} \simeq \frac{1}{2}\left(-2+e_1^2+e_2^2+2\sin^2{\frac{I_1}{2}}+2\sin^2{\frac{I_2}{2}}\right) \cos{(\lambda_1-\lambda_2)}
@@ -433,7 +433,7 @@ As all the terms in our disturbing function feature trigonometric terms of $$\la
 \end{equation}
 
 
-We have made use of the fact that $$b_s^{(-j)}(\alpha)=b_s^{(j)}(\alpha)$$. With the properties of Laplace coefficients (\cref{laplace coefficient definitions}):
+We have made use of the fact that $$b_s^{(-j)}(\alpha)=b_s^{(j)}(\alpha)$$. With the properties of Laplace coefficients (\eqref{laplace coefficient definitions}):
 
 \begin{equation}
     \left( 2\alpha \pdv{}{\alpha} + \alpha^2 \pdv{^2}{\alpha^2} \right) b^{(0)}_{\frac{1}{2}}(\alpha) = \alpha b^{(1)}_{\frac{3}{2}}(\alpha) \noname
@@ -453,7 +453,7 @@ And, taking $$\sin{I_i}\simeq I_i$$:
     -\frac{1}{2} e_1 e_2 \alpha b^{(2)}_{\frac{3}{2}}(\alpha) \cos{(\varpi_1 - \varpi_2)} + \frac{1}{2} I_1 I_2 \alpha b^{(1)} _{\frac{3}{2}}(\alpha) \cos{(\Omega_1 - \Omega_2)}
 \end{equation}
 
-Now in terms of our simplifying variables (\cref{orbital convert 1}-\cref{orbital convert end}):
+Now in terms of our simplifying variables (\eqref{orbital convert 1}-\eqref{orbital convert end}):
 
 \begin{equation}
     \langle\langle \mathcal{R} \rangle \rangle \simeq -\frac{\mathcal{G} m_0'^2 \delta_1 \delta_2}{a_2} \alpha \left( \frac{1}{4} \left( h_1^2 + h_2^2 + k_1^2 + k_2^2 \right) b^{(1)} _{\frac{3}{2}}(\alpha) - \frac{1}{4} \left( p_1^2 + p_2^2 + q_1^2 + q_2^2 \right) b^{(1)} _{\frac{3}{2}}(\alpha) \right)
@@ -463,7 +463,7 @@ Now in terms of our simplifying variables (\cref{orbital convert 1}-\cref{orbita
     \left. - \frac{1}{2} \left( h_1 h_2 + k_1 k_2 \right) b^{(2)}_{\frac{3}{2}}(\alpha) + \frac{1}{2} \left( p_1 p_2 + q_1 q_2 \right) b^{(1)} _{\frac{3}{2}}(\alpha) \right)
 \end{equation}
 
-Because we are assuming $$\alpha$$ is constant (recall that variations in $$a_i$$ are much slower than those for other secular elements), we have omitted the $$b^{(0)}_{\frac{1}{2}}\left(\alpha\right)$$ term. Our evolution equations for our simplified elements using \cref{lagrange simple start}-\cref{lagrange simple end}:
+Because we are assuming $$\alpha$$ is constant (recall that variations in $$a_i$$ are much slower than those for other secular elements), we have omitted the $$b^{(0)}_{\frac{1}{2}}\left(\alpha\right)$$ term. Our evolution equations for our simplified elements using \eqref{lagrange simple start}-\eqref{lagrange simple end}:
 
 \begin{equation}
     \dot{h}_1 = \frac{n_1 \alpha^2}{2} \delta_2 \left( k_1 b^{(1)} _{\frac{3}{2}} - k_2 b^{(2)} _{\frac{3}{2}} \right)
@@ -482,7 +482,7 @@ Because we are assuming $$\alpha$$ is constant (recall that variations in $$a_i$
 \end{equation}
 
 
-We can use \cref{3 body hamiltonian with R} to do something similar for $$m_2'$$, identifying $$\mu_2=\frac{m_0'm_2'+m_1'm_2'}{m_0'+m_1'+m_2'}$$ and $$m_2=\frac{m_0'm_2'}{\mu_2}$$ as the variables to utilize in our evolution equations:
+We can use \eqref{3 body hamiltonian with R} to do something similar for $$m_2'$$, identifying $$\mu_2=\frac{m_0'm_2'+m_1'm_2'}{m_0'+m_1'+m_2'}$$ and $$m_2=\frac{m_0'm_2'}{\mu_2}$$ as the variables to utilize in our evolution equations:
 
 \begin{equation}
     \dot{h}_2 = \sqrt{\frac{\mathcal{G}m_2}{a_2^3}} \alpha \delta_1 \left( k_2 b^{(1)} _{\frac{3}{2}} - k_1 b^{(2)} _{\frac{3}{2}} \right)
@@ -577,7 +577,7 @@ And calculating, we find the precession of Mercury's perihelion in arcseconds pe
     \dot{\varpi}_1=\frac{\dot{h}_1k_1-h_1\dot{k}_1}{h_1^2+k_1^2}\approx283.114''\text{ century}^{-1}
 \end{equation}
 
-Repeating the analysis with the other planets of the solar system we find the results of \cref{table precess}.
+Repeating the analysis with the other planets of the solar system we find the results of \eqref{table precess}.
 
 \begin{table}\label{table precess}
     \centering
@@ -597,5 +597,84 @@ Repeating the analysis with the other planets of the solar system we find the re
 \end{table}
 
 Our total precession $$\approx544''$$ per century is puzzling, as it is lower than the actual precession of Mercury's perihelion which is nearer to $$\approx 585''$$ per century. Even considering our result as a second-order approximation does not account for this deviation, to find the missing source of precession, we must consider Einstein's General Relativity.
+
+<h2>VII. The Relativistic Disturbing Function</h2>
+
+From relativistic effects, an extra term is added to the two-body Hamiltonian:
+
+\begin{equation}
+    \mathcal{H}=\frac{1}{2\mu}\parallel\vec{p}\parallel^2-\frac{\mathcal{G}\mu m}{\parallel{\vec{r}}\parallel}-\frac{\mathcal{G}L^2 m}{\mu c^2{\parallel{\vec{r}}\parallel}^3}
+\end{equation}
+
+The disturbing function is easy to recognize:
+
+\begin{equation}
+    \mathcal{R}=-\frac{\mathcal{G}L^2 m}{\mu c^2r^3}=-\frac{\mathcal{G}^2\mu m^2a}{c^2r^3}
+\end{equation}
+
+Fortunately, dealing with this disturbing function is much easier than in the three-body case. Again, we will average over orbits to find the secular perturbations brought about by $$\mathcal{R}$$. We calculate:
+
+\begin{equation}
+    \langle\mathcal{R}\rangle=\frac{1}{2\pi}\int_0^{2\pi}\mathcal{R}d\mathcal{M}
+\end{equation}
+
+Using \eqref{Kepler eq} and \eqref{r E equation} and \eqref{r theta equation}:
+
+\begin{equation}\label{dM equation}
+    d\mathcal{M}=\left(1-e\cos{E}\right)dE=\frac{r}{a}dE=\frac{1-e^2}{1+e\cos{f}}dE
+\end{equation}
+
+Now, with \eqref{r theta equation} and \eqref{q_1 eq} and \eqref{q_2 eq}:
+
+\begin{equation}
+    \cos{E} = \frac{r}{a}\cos{f} + e = \frac{\cos{f} + e}{1 + e\cos{f}} \label{cos E f equation}
+\end{equation}
+
+\begin{equation}
+    \sin{E} = \frac{r}{a\sqrt{1-e^2}}\sin{f} = \frac{\sqrt{1-e^2}\sin{f}}{1+e\cos{f}} \label{sin E f equation}
+\end{equation}
+
+
+
+We continue, expressing $$dE$$ in terms of $$df$$:
+
+\begin{equation}
+    \cos{E}dE=\frac{\sqrt{1-e^2}\left(\cos{f}+e\right)}{\left(1+e\cos{f}\right)^2}df\rightarrow dE=\frac{\sqrt{1-e^2}}{1+e\cos{f}}df
+\end{equation}
+
+Thus:
+
+\begin{equation}
+    d\mathcal{M}=\frac{\left(1-e^2\right)^{\frac{3}{2}}}{\left(1+e\cos{f}\right)^2}df
+\end{equation}
+
+Writing $$\frac{1}{r^3}$$ in terms of $$f$$ with \eqref{r theta equation}:
+
+\begin{equation}
+    \frac{1}{r^3}=\frac{\left(1+e\cos{f}\right)^3}{a^3\left(1-e^2\right)^3}
+\end{equation}
+
+Averaging our disturbing function:
+
+\begin{equation}
+    \langle\mathcal{R}\rangle=\frac{1}{2\pi}\int_0^{2\pi}\mathcal{R}d\mathcal{M}=-\frac{\mathcal{G}^2\mu m^2a}{c^2}
+    \frac{1}{2\pi}\int_0^{2\pi}\frac{1+e\cos{f}}{a^3\left(1-e^2\right)^\frac{3}{2}}df=-\frac{\mathcal{G}^2\mu m^2}{a^2c^2\left(1-e^2\right)^\frac{3}{2}}
+\end{equation}
+
+With \eqref{varpi evolve}:
+
+\begin{equation}
+    \dot{\varpi}=-\frac{\sqrt{1-e^2}}{\mu e\sqrt{\mathcal{G}ma}}\pdv{\mathcal{R}}{e}=\frac{3\left(\mathcal{G}ma\right)^{\frac{3}{2}}}{a^4c^2\left(1-e^2\right)^2}
+\end{equation}
+
+And, somewhat unsurprisingly, using current values, we find:
+
+\begin{equation}
+    \dot{\varpi}=44.908'' \text{ century}^{-1}
+\end{equation}
+
+This brings the total precession to $$\approx588.872$$, much closer to the observed value.
+
+Of course, there are other sources of perihelion precession such as the oblateness of the sun and the interactions of other planets with each other, but these corrections are of a higher order than the second-order approximations we have carried out.
 
 
