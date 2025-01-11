@@ -158,15 +158,19 @@ Having defined:
 \end{equation}
 
 We now expand $$\frac{1}{\rho_0^{2k+1}}$$ as a Fourier Series:
+
 \begin{equation}
     \frac{1}{\rho_0^{2k+1}} = (a_1^2 + a_2^2 - 2a_1a_2 \cos{\left( \vartheta_1 - \vartheta_2 \right)})^{-k - \frac{1}{2}} \nonumber
 \end{equation}
+
 \begin{equation}
     = a_2^{-2k-1} \left( 1 + \alpha^2 - 2\alpha \cos{\left( \vartheta_1 - \vartheta_2 \right)} \right)^{-k - \frac{1}{2}} \nonumber
 \end{equation}
+
 \begin{equation}
     = a_2^{-2k-1} \sum_{j=-\infty}^{\infty} b^{(j)}_{k + \frac{1}{2}}(\alpha) \cos{\left( j \left( \vartheta_1 - \vartheta_2 \right) \right)}
 \end{equation}
+
 Where $$\alpha=\frac{a_1}{a_2}$$. $$b^{(j)}_{s}$$ terms are known as _Laplace Coefficients_.
 
 \begin{equation} \label{laplace coefficient definitions}
@@ -1067,7 +1071,28 @@ $$\begin{equation}
 We use the current orbital elements of Mercury and Venus as initial parameters. 
 
 \begin{equation}
-    e_1 = 0.206 && e_2=0.0068 && I_1 = 7.004^{\circ} && I_2 = 3.394^{\circ}\\ \varpi_1 = 77.456^{\circ} && \varpi_2 = 131.533^{\circ} && \Omega_1 = 48.332^{\circ} && \Omega_2=76.681^{\circ} \nonumber
+    e_1 = 0.206 \nonumber
+\end{equation}
+\begin{equation}
+    e_2=0.0068 \nonumber
+\end{equation}
+\begin{equation}
+   I_1 = 7.004^{\circ} \nonumber
+\end{equation}
+\begin{equation}
+    I_2 = 3.394^{\circ}\nonumber
+\end{equation}
+\begin{equation}
+    \varpi_1 = 77.456^{\circ} \nonumber
+\end{equation}
+\begin{equation}
+    \varpi_2 = 131.533^{\circ} \nonumber
+\end{equation}
+\begin{equation}
+   \Omega_1 = 48.332^{\circ} \nonumber
+\end{equation}
+\begin{equation}
+    \Omega_2=76.681^{\circ} \nonumber
 \end{equation}
 
 \begin{equation}
