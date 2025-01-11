@@ -886,15 +886,15 @@ As all the terms in our disturbing function feature trigonometric terms of $$\la
 ^{(0)(0)}$$:
 
 \begin{equation}
-    -\langle\langle\frac{a_2\mathcal{R}}{\mathcal{G}m_0'^2\delta_1\delta _2}\rangle\rangle = -\frac{a_2\mathcal{R} _D^{(0)(0)}}{\mathcal{G}m _0'^2\delta _1\delta_2} \simeq b^{(0)} _{\frac{1}{2}}(\alpha) + \frac{1}{4}(e_1^2 + e_2^2) \left( 2\alpha \frac{\partial }{\partial\alpha} + \alpha^2 \frac{\partial ^2}{\partial\alpha^2} \right) b^{(0)} _{\frac{1}{2}}(\alpha) \noname
+    -\langle\langle\frac{a_2\mathcal{R}}{\mathcal{G}m_0'^2\delta_1\delta _2}\rangle\rangle = -\frac{a_2\mathcal{R} _D^{(0)(0)}}{\mathcal{G}m _0'^2\delta _1\delta_2} \simeq b^{(0)} _{\frac{1}{2}}(\alpha) + \frac{1}{4}(e_1^2 + e_2^2) \left( 2\alpha \frac{\partial }{\partial\alpha} + \alpha^2 \frac{\partial ^2}{\partial\alpha^2} \right) b^{(0)} _{\frac{1}{2}}(\alpha) \nonumber
 \end{equation}
 
 \begin{equation}
-    -\alpha \left( \sin^2{\frac{I_1}{2}} + \sin^2{\frac{I_2}{2}} \right) b^{(1)}_{\frac{3}{2}}(\alpha) \noname
+    -\alpha \left( \sin^2{\frac{I_1}{2}} + \sin^2{\frac{I_2}{2}} \right) b^{(1)}_{\frac{3}{2}}(\alpha) \nonumber
 \end{equation}
 
 \begin{equation}
-    + \frac{1}{2} e_1 e_2 \left( 2 - 2\alpha \frac{\partial }{\partial\alpha} - \alpha^2 \frac{\partial ^2}{\partial\alpha^2} \right) b^{(1)}_{\frac{1}{2}}(\alpha) \cos{(\varpi_1 - \varpi_2)} \noname
+    + \frac{1}{2} e_1 e_2 \left( 2 - 2\alpha \frac{\partial }{\partial\alpha} - \alpha^2 \frac{\partial ^2}{\partial\alpha^2} \right) b^{(1)}_{\frac{1}{2}}(\alpha) \cos{(\varpi_1 - \varpi_2)} \nonumber
 \end{equation}
 
 \begin{equation}
@@ -905,17 +905,17 @@ As all the terms in our disturbing function feature trigonometric terms of $$\la
 We have made use of the fact that $$b_s^{(-j)}(\alpha)=b_s^{(j)}(\alpha)$$. With the properties of Laplace coefficients (\eqref{laplace coefficient definitions}):
 
 \begin{equation}
-    \left( 2\alpha \frac{\partial }{\partial\alpha} + \alpha^2 \frac{\partial ^2}{\partial\alpha^2} \right) b^{(0)}_{\frac{1}{2}}(\alpha) = \alpha b^{(1)}_{\frac{3}{2}}(\alpha) \noname
+    \left( 2\alpha \frac{\partial }{\partial\alpha} + \alpha^2 \frac{\partial ^2}{\partial\alpha^2} \right) b^{(0)} _{\frac{1}{2}}(\alpha) = \alpha b^{(1)} _{\frac{3}{2}}(\alpha) \nonumber
 \end{equation}
 
 \begin{equation}
-    \left( 2 - 2\alpha \frac{\partial }{\partial\alpha} - \alpha^2 \frac{\partial ^2}{\partial\alpha^2} \right) b^{(0)}_{\frac{1}{2}}(\alpha) = -\alpha b^{(2)}_{\frac{3}{2}}(\alpha)
+    \left( 2 - 2\alpha \frac{\partial }{\partial\alpha} - \alpha^2 \frac{\partial ^2}{\partial\alpha^2} \right) b^{(0)} _{\frac{1}{2}}(\alpha) = -\alpha b^{(2)} _{\frac{3}{2}}(\alpha)
 \end{equation}
 
 And, taking $$\sin{I_i}\simeq I_i$$:
 
 \begin{equation}
-    -\langle\langle \frac{a_2 \mathcal{R}}{\mathcal{G} m_0'^2 \delta_1 \delta_2} \rangle \rangle \simeq b^{(0)}_{\frac{1}{2}}(\alpha) + \frac{1}{4} (e_1^2 + e_2^2) \alpha b^{(1)}_{\frac{3}{2}}(\alpha) - \frac{1}{4} (I_1^2 + I_2^2) \alpha b^{(1)} _{\frac{3}{2}}(\alpha) \noname
+    -\langle\langle \frac{a_2 \mathcal{R}}{\mathcal{G} m_0'^2 \delta_1 \delta_2} \rangle \rangle \simeq b^{(0)} _{\frac{1}{2}}(\alpha) + \frac{1}{4} (e_1^2 + e_2^2) \alpha b^{(1)} _{\frac{3}{2}}(\alpha) - \frac{1}{4} (I_1^2 + I_2^2) \alpha b^{(1)} _{\frac{3}{2}}(\alpha) \nonumber
 \end{equation}
 
 \begin{equation}
@@ -932,7 +932,7 @@ Now in terms of our simplifying variables (\eqref{orbital convert 1}-\eqref{orbi
     \left. - \frac{1}{2} \left( h_1 h_2 + k_1 k_2 \right) b^{(2)}_{\frac{3}{2}}(\alpha) + \frac{1}{2} \left( p_1 p_2 + q_1 q_2 \right) b^{(1)} _{\frac{3}{2}}(\alpha) \right)
 \end{equation}
 
-Because we are assuming $$\alpha$$ is constant (recall that variations in $$a_i$$ are much slower than those for other secular elements), we have omitted the $$b^{(0)}_{\frac{1}{2}}\left(\alpha\right)$$ term. Our evolution equations for our simplified elements using \eqref{lagrange simple start}-\eqref{lagrange simple end}:
+Because we are assuming $$\alpha$$ is constant (recall that variations in $$a_i$$ are much slower than those for other secular elements), we have omitted the $$b^{(0)} _{\frac{1}{2}}\left(\alpha\right)$$ term. Our evolution equations for our simplified elements using \eqref{lagrange simple start}-\eqref{lagrange simple end}:
 
 \begin{equation}
     \dot{h}_1 = \frac{n_1 \alpha^2}{2} \delta_2 \left( k_1 b^{(1)} _{\frac{3}{2}} - k_2 b^{(2)} _{\frac{3}{2}} \right)
@@ -982,16 +982,37 @@ We are ready to apply what we have learned to study the precession of Mercury's 
 Beginning with $$m_1'$$, Mercury, $$m_2'$$, Venus, we have the following values for constants in units of AU, and earth masses:
 
 \begin{equation}
-    n_1=26.098 && \alpha=0.535 && a_2=0.732 && \delta_1=1.66\times10^{-7} && \delta_2=2.448\times10^{-6} && m_2 = 0.815 \noname
+    n_1 = 26.098 \noname
 \end{equation}
 
 \begin{equation}
-     b^{(1)} _{\frac{3}{2}}(\alpha) = 1.519 && b^{(2)} _{\frac{3}{2}}(\alpha) = 0.976 \noname
+    \alpha = 0.535 \noname
+\end{equation}
+
+\begin{equation}
+    a_2 = 0.732 \noname
+\end{equation}
+
+\begin{equation}
+    \delta_1 = 1.66 \times 10^{-7} \noname
+\end{equation}
+
+\begin{equation}
+    \delta_2 = 2.448 \times 10^{-6} \noname
+\end{equation}
+
+\begin{equation}
+    m_2 = 0.815 \noname
+\end{equation}
+
+
+\begin{equation}
+     b^{(1)} _{\frac{3}{2}}(\alpha) = 1.519 && b^{(2)} _{\frac{3}{2}}(\alpha) = 0.976 \nonumber
 \end{equation}
 
 As an eigenvalue problem for $$h_1$$, $$k_1$$, $$h_2$$, and $$k_2$$:
 
-\begin{equation}
+$$\begin{equation}
     \begin{pmatrix}
         \dot{h}_1\\
         \dot{h}_2\\
@@ -1010,16 +1031,16 @@ As an eigenvalue problem for $$h_1$$, $$k_1$$, $$h_2$$, and $$k_2$$:
         k_1\\
         k_2\\
     \end{pmatrix}
-\end{equation}
+\end{equation}$$
 
 We use the current orbital elements of Mercury and Venus as initial parameters. 
 
 \begin{equation}
-    e_1 = 0.206 && e_2=0.0068 && I_1 = 7.004^{\circ} && I_2 = 3.394^{\circ}\\ \varpi_1 = 77.456^{\circ} && \varpi_2 = 131.533^{\circ} && \Omega_1 = 48.332^{\circ} && \Omega_2=76.681^{\circ} \noname
+    e_1 = 0.206 && e_2=0.0068 && I_1 = 7.004^{\circ} && I_2 = 3.394^{\circ}\\ \varpi_1 = 77.456^{\circ} && \varpi_2 = 131.533^{\circ} && \Omega_1 = 48.332^{\circ} && \Omega_2=76.681^{\circ} \nonumber
 \end{equation}
 
 \begin{equation}
-    h_1(0) = 0.201 && h_2(0)=0.00509 && k_1(0)=0.0447 && k_2(0) =-0.00451 \noname
+    h_1(0) = 0.201 && h_2(0)=0.00509 && k_1(0)=0.0447 && k_2(0) =-0.00451 \nonumber
 \end{equation}
 
 Solving the eigenvalue problem:
@@ -1048,22 +1069,37 @@ And calculating, we find the precession of Mercury's perihelion in arcseconds pe
 
 Repeating the analysis with the other planets of the solar system we find the results of \eqref{table precess}.
 
-\begin{table}\label{table precess}
-    \centering
-    \begin{tabular}{c|c}
-         Planet & $$\dot{\varpi}_1$$
-         century$$^{-1}$$\\
-         \hline Venus & 283.114'' \\
-         Earth & 92.065'' \\
-         Mars & 2.476'' \\
-         Jupiter & 158.566'' \\
-         Saturn & 7.554'' \\
-         Uranus & 0.145'' \\
-         Neptune & 0.0438'' \\
-         \hline Total & 543.964''
-    \end{tabular}
-    \caption{Influence of other planets on Mercury's Nodal Precession}
-\end{table}
+\begin{equation}
+    \text{Venus- } 283.114''\text{ century}^{-1} \nonumber
+\end{equation}
+
+\begin{equation}
+    \text{Earth- }  92.065''\text{ century}^{-1} \nonumber
+\end{equation}
+
+\begin{equation}
+    \text{Mars- }  2.476''\text{ century}^{-1} \nonumber
+\end{equation}
+
+\begin{equation}
+    \text{Jupiter- }  158.566''\text{ century}^{-1} \nonumber
+\end{equation}
+
+\begin{equation}
+    \text{Saturn- }  7.554''\text{ century}^{-1} \nonumber
+\end{equation}
+
+\begin{equation}
+    \text{Uranus- }  0.145''\text{ century}^{-1} \nonumber
+\end{equation}
+
+\begin{equation}
+    \text{Neptune- }  0.0438''\text{ century}^{-1}  \nonumber
+\end{equation}
+
+\begin{equation}
+    \text{Total- }  543.964''\text{ century}^{-1} \nonumber
+\end{equation}
 
 Our total precession $$\approx544''$$ per century is puzzling, as it is lower than the actual precession of Mercury's perihelion which is nearer to $$\approx 585''$$ per century. Even considering our result as a second-order approximation does not account for this deviation, to find the missing source of precession, we must consider Einstein's General Relativity.
 
