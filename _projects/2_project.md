@@ -1,6 +1,6 @@
 ---
 layout: page
-title: On the Gravitational and Relativistic Precession of Mercury
+title: On the Gravitational and Relativistic Precession Mercury's Perihelion
 description:
 img: assets/img/3.jpg
 importance: 2
