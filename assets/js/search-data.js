@@ -405,8 +405,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-on-the-gravitational-and-relativistic-precession-of-mercury",
-          title: 'On the Gravitational and Relativistic Precession of Mercury',
+            },},{id: "projects-on-the-gravitational-and-relativistic-precession-mercury-39-s-perihelion",
+          title: 'On the Gravitational and Relativistic Precession Mercury&amp;#39;s Perihelion',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
