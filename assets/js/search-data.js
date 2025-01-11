@@ -405,8 +405,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-derivation-of-the-lagrange-planetary-equations",
-          title: 'Derivation of the Lagrange Planetary Equations',
+            },},{id: "projects-on-the-gravitational-and-relativistic-precession-of-mercury",
+          title: 'On the Gravitational and Relativistic Precession of Mercury',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
