@@ -7,22 +7,26 @@ importance: 2
 category: Physics
 giscus_comments: false
 ---
-<h2>!. Introduction</h2>
+<h2>Introduction</h2>
 
 
 
 <h2>V. The Disturbing Function For the Three-Body Problem,</h2>
 We now analyse the disturbing function caused by the presence of a third body of mass $$m_2'$$. 
 From Newton's Law, the motions of the three bodies are:
+
 \begin{equation}
     \ddot{\vec{r}}_0' = \frac{\mathcal{G} m_1'}{\parallel \vec{r}_1' - \vec{r}_0' \parallel^3} \left( \vec{r}_1' - \vec{r}_0' \right) + \frac{\mathcal{G} m_2'}{\parallel \vec{r}_2' - \vec{r}_0' \parallel^3} \left( \vec{r}_2' - \vec{r}_0' \right)
 \end{equation}
+
 \begin{equation}
     \ddot{\vec{r}}_1' = - \frac{\mathcal{G} m_0'}{\parallel \vec{r}_1' - \vec{r}_0' \parallel^3} \left( \vec{r}_1' - \vec{r}_0' \right) + \frac{\mathcal{G} m_2'}{\parallel \vec{r}_2' - \vec{r}_1' \parallel^3} \left( \vec{r}_2' - \vec{r}_1' \right)
 \end{equation}
+
 \begin{equation}
     \ddot{\vec{r}}_2' = - \frac{\mathcal{G} m_0'}{\parallel \vec{r}_2' - \vec{r}_0' \parallel^3} \left( \vec{r}_2' - \vec{r}_0' \right) - \frac{\mathcal{G} m_1'}{\parallel \vec{r}_2' - \vec{r}_1' \parallel^3} \left( \vec{r}_2' - \vec{r}_1' \right)
 \end{equation}
+
 We first adjust our coordinate system, defining the centre of mass between $$m_0'$$ and $$m_1'$$, $$\vec{R}_1=\frac{m_0'\vec{r}_0'+m_1'\vec{r}_1'}{m_1}$$. Let $$\vec{R}_2=\vec{r}_2'-\vec{R}_1$$ be the vector from the $$m_0'$$, $$m_1'$$ centre of mass to $$m_2'$$. We write:
 \begin{equation}
     \vec{r}_2 = \vec{r}_2' - \vec{r}_0' = \vec{R}_2 + \vec{R}_1 - \vec{r}_0' = \vec{R}_2 + \frac{m_1'}{m_1} \vec{r}_1 \nonumber
@@ -41,14 +45,18 @@ We write the Lagrangian of the system:
     \mathcal{L}=\frac{\mu_1}{2}\parallel\dot{\vec{r}}_1\parallel^2+\frac{m_1m_2'}{2\left(m_1+m_2'\right)}\parallel\dot{\vec{R}}_2\parallel^2+\frac{\mathcal{G}\mu_1m_1}{\parallel \vec{r}_1\parallel}+\frac{\mathcal{G}\mu_1m_1m_2'}{m_0'\parallel\vec{R}_2-\frac{m_0'}{m_1}\vec{r}_1\parallel}+\frac{\mathcal{G}\mu_1m_1m_2'}{m_1'\parallel \vec{R}_2+\frac{m_1'}{m_1}\vec{r}_1\parallel}
 \end{equation}
 From which we can write our three body Hamiltonian:
+
 \begin{equation}\label{3 body hamiltonian}
     \mathcal{H}=\frac{1}{2\mu_1}\parallel{\vec{p}}_1\parallel^2+\frac{m_1+m_2'}{2m_1m_2'}\parallel{\vec{P}}_2\parallel^2-\frac{\mathcal{G}\mu_1m_1}{\parallel\vec{r}_1\parallel}-\frac{\mathcal{G}\mu_1m_1m_2'}{m_0'\parallel\vec{R}_2-\frac{m_0'}{m_1}\vec{r}_1\parallel}-\frac{\mathcal{G}\mu_1m_1m_2'}{m_1'\parallel \vec{R}_2+\frac{m_1'}{m_1}\vec{r}_1\parallel}
 \end{equation}
+
 Now we must isolate the disturbing function. First, we observe, via the law of cosines, we can write:
+
 \begin{equation}\label{cosine 1/r expression}
     \frac{1}{\parallel\vec{q}-\vec{q}'\parallel}=\left(q^2+q'^2-2qq'\cos{\psi}\right)^{-\frac{1}{2}}
 \end{equation}
-Where $$\psi$$ is the angle between vectors $$\vec{q}$$ and $$\vec{q}'$$. We can write \cref{cosine 1/r expression} as a power series using _Legendre Polynomials_, $$P_n$$:
+
+Where $$\psi$$ is the angle between vectors $$\vec{q}$$ and $$\vec{q}'$$. We can write \eqref{cosine 1/r expression} as a power series using _Legendre Polynomials_, $$P_n$$:
 \begin{equation}\label{legendre expansion}
     \frac{1}{\parallel\vec{q}-\vec{q}'\parallel}=\frac{1}{q}\left(1+t^2-2t\cos{\psi}\right)^{-\frac{1}{2}}=\frac{1}{q}\sum_{n=0}^\infty t^nP_n\left(\cos{\psi}\right)
 \end{equation}
@@ -68,7 +76,7 @@ Where $$t=\frac{q'}{q}$$ is an expansion parameter. Here we do not study the $$P
 \begin{equation}
     P_4\left(x\right) = \frac{1}{8} \left( 35x^4 - 30x^2 + 3 \right) \nonumber
 \end{equation}
-Using \cref{legendre expansion}:
+Using \eqref{legendre expansion}:
 \begin{equation}
     \frac{\mathcal{G}\mu_1 m_1 m_2'}{m_0'\parallel \vec{R}_2 - \frac{m_0'}{m_1} \vec{r}_1\parallel } = \frac{\mathcal{G}\mu_1m_1m_2'}{R_2 m_0'} \sum _{n=1} ^\infty \left( \frac{m_0'}{m_1} \right)^n \left( \frac{r_1} {R_2} \right)^n P_n \left( \cos{\psi} \right)  
 \end{equation}
@@ -82,7 +90,9 @@ We consider the case where $$m_0'>>m_1',m_2'$$, two planets orbiting a star. Def
 \begin{equation}
     \frac{\mathcal{G} \mu_1 m_1 m_2'}{R_2m_1'}\sum _{n=0} ^\infty \left(-1\right)^n\left(\frac{m _1'}{m _1}\right)^n\left(\frac{r _1}{R _2}\right)^n P_n \left(\cos{\psi}\right)=\frac{\mathcal{G}m_0' ^2}{R_2}\left(\delta_2-\left(\frac{r _1}{R _2}\right)P_1\left(\cos{\psi}\right)\delta _1 \delta _2\right)  
 \end{equation}
-Rewriting our Hamiltonian, (\cref{3 body hamiltonian}, using $$P_0$$ and $$P_1$$:
+
+Rewriting our Hamiltonian, (\eqref{3 body hamiltonian}, using $$P_0$$ and $$P_1$$:
+
 \begin{equation}
     \mathcal{H} = \frac{1}{2\mu_1} \parallel{\vec{p}}_1\parallel^2 + \frac{m_1 + m_2'}{2m_1 m_2'} \parallel{\vec{P}}_2\parallel^2 - \frac{\mathcal{G}\mu_1 m_1}{r_1} - \frac{\mathcal{G}m_1 m_2'}{R_2} - \frac{\mathcal{G}m_0'^2}{R_2} \delta_1 \delta_2 \sum _{n=2} ^\infty \left( \frac{r_1}{R_2} \right)^n P_n \left( \cos{\psi} \right)\nonumber
 \end{equation}
@@ -92,45 +102,61 @@ Rewriting our Hamiltonian, (\cref{3 body hamiltonian}, using $$P_0$$ and $$P_1$$
 \begin{equation}
     +\mathcal{G} m_0'^2 \delta_1 \delta_2 \left( -\left( r_1^2 + R_2^2 - 2r_1 R_2 \cos{\psi} \right)^{-\frac{1}{2}} + \frac{r_1}{R_2^2} \cos{\psi} \right) \label{3 body hamiltonian with R}
 \end{equation}
-The first four terms of \cref{3 body hamiltonian with R} correspond to two separate two-body problems which we studied previously, and it is clear that the disturbing function is:
+The first four terms of \eqref{3 body hamiltonian with R} correspond to two separate two-body problems which we studied previously, and it is clear that the disturbing function is:
 \begin{equation}\label{disturbing Function}
     \mathcal{R}=\mathcal{G}m_0'^2\delta_1\delta_2\left(-\left(r_1^2+R_2^2-2r_1R_2\cos{\psi}\right)^{-\frac{1}{2}}+\frac{r_1}{R_2^2}\cos{\psi}\right)
 \end{equation}
+
 <h3>V.I Series Expansion of Disturbing Function</h3>
+
 Defining the direct and indirect disturbing functions:
+
 \begin{equation}
     \mathcal{R} = \mathcal{R}_D + \mathcal{R}_E \nonumber
 \end{equation}
+
 \begin{equation}
     \mathcal{R}_D \equiv -\mathcal{G} m_0'^2 \delta_1 \delta_2 \left( r_1^2 + R_2^2 - 2r_1 R_2 \cos{\psi} \right)^{-\frac{1}{2}} \nonumber
 \end{equation}
+
 \begin{equation}
     \mathcal{R}_E \equiv \mathcal{G} m_0'^2 \delta_1 \delta_2 \frac{r_1}{R_2^2} \cos{\psi} \nonumber
 \end{equation}
+
 Starting with an expansion of the direct disturbing function. Define:
+
 \begin{equation}
     \frac{1}{\mathcal{F}}\equiv-\frac{\mathcal{R}_D}{\mathcal{G}m_0'^2\delta_1\delta_2}
 \end{equation}
+
 Now we define the following:
+
 \begin{equation}
     \epsilon\equiv\cos{\psi}-\cos{\left(\vartheta_1-\vartheta_2\right)} \nonumber
 \end{equation}
+
 With $$\vartheta_i\equiv\varpi_i+f_i$$. Thus:
 \begin{equation}
     \frac{1}{\mathcal{F}}=(r_1^2+R_2^2-2r_rR_2\cos{(\vartheta_1-\vartheta_2)}-2r_1R_2\epsilon)^{-\frac{1}{2}}
 \end{equation}
 We now expand around $$\epsilon=0$$:
+
 \begin{equation}
     \frac{1}{\mathcal{F}} = \left( \frac{1}{\mathcal{F}_0} + r_1R_2\epsilon\frac{1}{\mathcal{F}_0^3}  + \frac{3}{2}(r_1R_2\epsilon)^2\frac{1}{\mathcal{F}_0^3} + ... \right) = \sum^{\infty} _{k = 0} \frac{(2k)!}{(k!)^2}\left(\frac{1}{2}r_1R_2\epsilon \right)^k\frac{1}{\mathcal{F}_0^{2k+1}}
 \end{equation}
+
 Where $$\mathcal{F}_0=\mathcal{F}\left(\epsilon=0\right)$$. We now expand $$\frac{1}{\mathcal{F}_0^{2k+1}}$$ around $$r_1=a$$ and $$R_2=a_2$$:
+
 \begin{equation} \label{F_0 expansion}
     \frac{1}{\mathcal{F}_0^{2k+1}} = \frac{1}{\rho_0^{2k+1}} + (r_1-a_1)\frac{\partial }{\partial a_1}\left(\frac{1}{\rho_0^{2k+1}}\right)+ (R_2-a_2)\frac{\partial }{\partial a_2}\left(\frac{1}{\rho_0^{2k+1}}\right)+...
 \end{equation}
+
 Having defined:
+
 \begin{equation}
     \rho_0\equiv\mathcal{F}_0(r_1=a_1,R_2=a_2)
 \end{equation}
+
 We now expand $$\frac{1}{\rho_0^{2k+1}}$$ as a Fourier Series:
 \begin{equation}
     \frac{1}{\rho_0^{2k+1}} = (a_1^2 + a_2^2 - 2a_1a_2 \cos{\left( \vartheta_1 - \vartheta_2 \right)})^{-k - \frac{1}{2}} \nonumber
@@ -142,9 +168,11 @@ We now expand $$\frac{1}{\rho_0^{2k+1}}$$ as a Fourier Series:
     = a_2^{-2k-1} \sum_{j=-\infty}^{\infty} b^{(j)}_{k + \frac{1}{2}}(\alpha) \cos{\left( j \left( \vartheta_1 - \vartheta_2 \right) \right)}
 \end{equation}
 Where $$\alpha=\frac{a_1}{a_2}$$. $$b^{(j)}_{s}$$ terms are known as _Laplace Coefficients_.
+
 \begin{equation} \label{laplace coefficient definitions}
     b^{(j)}_{s}(\alpha) \equiv \frac{1}{2\pi}\int_0^{2\pi}\frac{\cos{(j{\phi})}d{\phi}}{\left(1+\alpha^2-2\alpha\cos{({\phi})}\right)^s} \nonumber
 \end{equation}
+
 For convenience, we now define the operator $$A_{k,j,m,n}$$:
 \begin{equation} \label{def A}
     A_{k,j,m,n} \equiv a_1^ma_2^n\frac{\partial ^{m+n}}{\partial a_1^m\partial a_2^n}\left(a_2^{-2k-1} b^{(j)}_{k+\frac{1}{2}}\right)
@@ -156,7 +184,7 @@ We also define $$\zeta_i$$:
 \begin{equation}
     \zeta_2\equiv\frac{R_2}{a_2}-1
 \end{equation}
-We use these to rewrite \cref{F_0 expansion}:
+We use these to rewrite \eqref{F_0 expansion}:
 \begin{equation}
     \frac{1}{ \mathcal{F} _0 ^{2k+1}} = \sum _{j=-\infty} ^\infty \left(A _{k,j,0,0}+\zeta _1 A _{k,j,1,0}+ \zeta _2 A _{k,j,0,1}+\frac{1}{2}\zeta _1 ^2 A _{k,j,2,0}+\frac{1}{2}\zeta _2^2 A _{k,j,0,2} + \zeta _1 
  \zeta _2 A _{k,j,1,1}+...\right)
@@ -198,7 +226,7 @@ We have used the integral definition of Bessel Functions. In the case of $$n=0$$
 \begin{equation}
    A_0(ne) = \lim_{n \rightarrow 0} \frac{J_{-1}(ne)}{n} = \lim_{n \rightarrow 0} -e\frac{d}{d(ne)}\left( J_1 \left(ne\right) \right) = -\frac{e}{2}
 \end{equation}
-The real portion of \cref{exp E} reveals:
+The real portion of \eqref{exp E} reveals:
 \begin{equation}
     \cos{E} = \sum_{n=0}^{\infty}(A_n+A_{-n})\cos{n\mathcal{M}} = -\frac{e}{2}+ \sum_{n=1}^{\infty}\left(\frac{J_{n-1}(ne)-J_{-n-1}(-ne)}{n}\right)\cos{n\mathcal{M}} \nonumber
 \end{equation}
@@ -225,14 +253,14 @@ Now we use our series expansions for Bessel Functions:
 \begin{equation}
     +e^3\left(-\frac{1}{6}\sin{2\mathcal{M}}+\frac{1}{3}\sin{4\mathcal{M}} \right) + \mathcal{O}(e^4)\nonumber
 \end{equation}
-From \cref{Kepler eq}, we find:
+From \eqref{Kepler eq}, we find:
 \begin{equation}
     E = \mathcal{M}+e\sin{E} = \mathcal{M}+e\sin{\mathcal{M}}+\frac{e^2}{2}\sin{2\mathcal{M}}+e^3\left(-\frac{1}{8}\sin{\mathcal{M}}+\frac{3}{8}\sin{3\mathcal{M}} \right)
 \end{equation}
 \begin{equation}
     +e^4\left(-\frac{1}{6}\sin{2\mathcal{M}}+\frac{1}{3}\sin{4\mathcal{M}} \right) + \mathcal{O}(e^5)\nonumber
 \end{equation}
-And from \cref{r E equation}:
+And from \eqref{r E equation}:
 \begin{equation}\label{zeta expansion e}
 \frac{r}{a} = 1-e\cos{E} = 1-e\cos{\mathcal{M}}+e^2\left(\frac{1}{2}-\frac{1}{2}\cos{2\mathcal{M}} \right)
 \end{equation}
@@ -240,7 +268,7 @@ And from \cref{r E equation}:
 +e^3\left(\frac{3}{8}\cos{\mathcal{M}}-\frac{3}{8}\cos{3\mathcal{M}} \right)+e^4\left(\frac{1}{3}\cos{2\mathcal{M}}-\frac{1
 }{3}\cos{4\mathcal{M}} \right) + \mathcal{O}(e^5)\nonumber
 \end{equation}
-\cref{r E equation} also easily gives an expansion for $$\zeta_i$$. From \cref{L defintion}, \cref{Kepler eq}, and \cref{r E equation}:
+\eqref{r E equation} also easily gives an expansion for $$\zeta_i$$. From \eqref{L defintion}, \eqref{Kepler eq}, and \eqref{r E equation}:
 \begin{equation}
     \dot{f} = \frac{na^2}{r^2} \sqrt{1-e^2} \nonumber
 \end{equation}
@@ -279,7 +307,7 @@ To second order in $$e$$:
 \begin{equation} \label{theta expansion in e}
     f = \mathcal{M}+2e\sin{\mathcal{M}}+\frac{5}{4}e^2\sin{2\mathcal{M}} + \mathcal{O}(e^3)
 \end{equation}
-We are ready to compute $$\sin{f}$$ and $$\cos{f}$$. The latter is easier, and we can calculate it through \cref{Q_1 eq}, expanding to second order in $$e$$ and utilizing trigonometric identities.
+We are ready to compute $$\sin{f}$$ and $$\cos{f}$$. The latter is easier, and we can calculate it through \eqref{Q_1 eq}, expanding to second order in $$e$$ and utilizing trigonometric identities.
 \begin{equation} 
     \cos{f} = \frac{\cos{E}-e}{1-e\cos{E}} \simeq \cos{\mathcal{M}} + \left(-\frac{3}{2} + \frac{1}{2}\cos{2\mathcal{M}} + \cos^2{\mathcal{M}} \right)e \nonumber
 \end{equation}
@@ -289,7 +317,7 @@ We are ready to compute $$\sin{f}$$ and $$\cos{f}$$. The latter is easier, and w
 \begin{equation}\label{cos expansion e}
     \simeq \cos{\mathcal{M}} + \left(\cos{2\mathcal{M}} - 1\right)e + \left(\frac{9}{8}\cos{3\mathcal{M}} - \frac{9}{8}\cos{\mathcal{M}} \right)e^2
 \end{equation}
-To calculate $$\sin{f}$$ we need to be a little more subtle, we use \cref{df dM eq}, the chain rule, and integrate:
+To calculate $$\sin{f}$$ we need to be a little more subtle, we use \eqref{df dM eq}, the chain rule, and integrate:
 \begin{equation}
     \frac{d\sin{f}}{d\mathcal{M}}=\frac{df}{d\mathcal{M}}\cos{\theta}=\sqrt{1-e^2}\left(\frac{dE}{d\mathcal{M}}\right)^2\cos{f} \nonumber
 \end{equation}
@@ -335,7 +363,7 @@ Now allow us to return to Cartesian coordinates with expansions around $$e$$. We
 \begin{equation}
     \sin{I} = 2\sin{\frac{I}{2}}\left(1-\sin^2{\frac{I}{2} }\right)^{\frac{1}{2}} = 2\sin{\frac{I}{2}} + \mathcal{O}\left(\sin^3{\frac{I}{2}}\right)
 \end{equation}
-With \cref{x orbital elements}-\cref{z orbital elements}, to second order in $$e$$ and $$\sin{\frac{I}{2}}$$:
+With \eqref{x orbital elements}-\eqref{z orbital elements}, to second order in $$e$$ and $$\sin{\frac{I}{2}}$$:
 \begin{equation} 
     \frac{x}{r} \simeq \cos{\Omega}\left( \cos{(\omega + \mathcal{M})} + \left(\cos{(\omega + 2\mathcal{M})} -\cos{\omega} \right)e\right. \nonumber
 \end{equation}
