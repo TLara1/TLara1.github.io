@@ -400,8 +400,8 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-celestial-mechanics-and-the-perihelion-precession-of-mercury",
-          title: 'Celestial Mechanics and the Perihelion Precession of Mercury',
+          section: "News",},{id: "projects-on-the-lagrange-planetary-equations",
+          title: 'On the Lagrange Planetary Equations',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
