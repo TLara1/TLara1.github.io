@@ -1120,44 +1120,44 @@ Solving the eigenvalue problem:
 And calculating, we find the precession of Mercury's perihelion in arcseconds per century from the influence of Venus. 
 
 \begin{equation}
-    \dot{\varpi}_1=\frac{\dot{h}_1k_1-h_1\dot{k}_1}{h_1^2+k_1^2}\approx283.114^{''}\text{ century}^{-1}
+    \dot{\varpi}_1=\frac{\dot{h}_1k_1-h_1\dot{k}_1}{h_1^2+k_1^2}\approx283.114^{"}\text{ century}^{-1}
 \end{equation}
 
 Repeating the analysis with the other planets of the solar system we find the results of \eqref{table precess}.
 
 \begin{equation}
-    \text{Venus- } 283.114^{''}\text{ century}^{-1} \nonumber
+    \text{Venus- } 283.114^{"}\text{ century}^{-1} \nonumber
 \end{equation}
 
 \begin{equation}
-    \text{Earth- }  92.065^{''}\text{ century}^{-1} \nonumber
+    \text{Earth- }  92.065^{"}\text{ century}^{-1} \nonumber
 \end{equation}
 
 \begin{equation}
-    \text{Mars- }  2.476^{''}\text{ century}^{-1} \nonumber
+    \text{Mars- }  2.476^{"}\text{ century}^{-1} \nonumber
 \end{equation}
 
 \begin{equation}
-    \text{Jupiter- }  158.566^{''}\text{ century}^{-1} \nonumber
+    \text{Jupiter- }  158.566^{"}\text{ century}^{-1} \nonumber
 \end{equation}
 
 \begin{equation}
-    \text{Saturn- }  7.554^{''}\text{ century}^{-1} \nonumber
+    \text{Saturn- }  7.554^{"}\text{ century}^{-1} \nonumber
 \end{equation}
 
 \begin{equation}
-    \text{Uranus- }  0.145^{''}\text{ century}^{-1} \nonumber
+    \text{Uranus- }  0.145^{"}\text{ century}^{-1} \nonumber
 \end{equation}
 
 \begin{equation}
-    \text{Neptune- }  0.0438^{''}\text{ century}^{-1}  \nonumber
+    \text{Neptune- }  0.0438^{"}\text{ century}^{-1}  \nonumber
 \end{equation}
 
 \begin{equation}
-    \text{Total- }  543.964^{''}\text{ century}^{-1} \nonumber
+    \text{Total- }  543.964^{"}\text{ century}^{-1} \nonumber
 \end{equation}
 
-Our total precession $$\approx544^{''}$$ per century is puzzling, as it is lower than the actual precession of Mercury's perihelion which is nearer to $$\approx 585^{''}$$ per century. Even considering our result as a second-order approximation does not account for this deviation, to find the missing source of precession, we must consider Einstein's General Relativity.
+Our total precession $$\approx544^{"}$$ per century is puzzling, as it is lower than the actual precession of Mercury's perihelion which is nearer to $$\approx 585^{"}$$ per century. Even considering our result as a second-order approximation does not account for this deviation, to find the missing source of precession, we must consider Einstein's General Relativity.
 
 <h2>VII. The Relativistic Disturbing Function</h2>
 
@@ -1231,7 +1231,7 @@ With \eqref{varpi evolve}:
 And, somewhat unsurprisingly, using current values, we find:
 
 \begin{equation}
-    \dot{\varpi}=44.908^{''} \text{ century}^{-1}
+    \dot{\varpi}=44.908^{"} \text{ century}^{-1}
 \end{equation}
 
 This brings the total precession to $$\approx588.872$$, much closer to the observed value.
