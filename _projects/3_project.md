@@ -60,8 +60,9 @@ Clearly $$A_{,y}=B_{,x}$$, so allow $$U_{,x}=A$$ and $$U_{,y}=B$$. $$U$$ is the 
 
 Now, from \eqref{Hooke's law}:
 
-\begin{equation}
-  \sigma_{xx,yy}+\sigma_{yy,xx}=\left(\lambda+2\mu\right)\left(\epsilon_{xx,yy}+\epsilon_{yy,xx}\right)+\lambda\left(\epsilon_{yy,yy}+\epsilon_{xx,xx}\right) \nonumber
+\begin{equation}\label{grad sigma plus}
+  \left(\sigma_{xx}+\sigma_{yy}\right) _{,kk} = \sigma _{xx,xx} + \sigma _{xx,yy} + \sigma _{yy,xx} + \sigma _{yy,yy} = 2\left(\lambda+\mu\right)\left(\epsilon _{xx,xx}+\epsilon _{yy,yy}+\epsilon _{xx,yy}+\epsilon _{yy,xx}\right)
 \end{equation}
+With \eqref{grad sigma plus}
 
 
