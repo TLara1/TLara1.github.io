@@ -26,7 +26,7 @@ The stress tensor for an isotropic, homogenous material is given via Hooke's law
   \sigma_{ij}=C_{ijkl}\epsilon_{kl}=\lambda\delta_{ij}\epsilon_{kk}+2\mu\epsilon_{ij}
 \end{equation}
 
-Where $$\epsilon_{ij}\equiv\frac{1}{2}\left(u_{i,j}+u_{j,i}\right)$$ is the strain tensor with displacements $$u_i$$. Note that both $S\sigma_{ij}$$ and $$\epsilon_{ij}$$ are symmetric. Now propose functions $$A$$ and $$B$$ such that:
+Where $$\epsilon_{ij}\equiv\frac{1}{2}\left(u_{i,j}+u_{j,i}\right)$$ is the strain tensor with displacements $$u_i$$. Note that both $$\sigma_{ij}$$ and $$\epsilon_{ij}$$ are symmetric. Now propose functions $$A$$ and $$B$$ such that:
 
 \begin{equation}
   B_{,x}=-\sigma_{xy} \nonumber
@@ -107,7 +107,7 @@ With \eqref{force law}:
 After pairing \eqref{full sigma} and \eqref{sigma cross}:
 
 \begin{equation}\label{grad big sigma}
-  left(\sigma _{xx}+\sigma _{yy}\right) _{,kk}=0
+  left( \sigma _{xx} + \sigma _{yy} \right) _{,kk}=0
 \end{equation}
 
 \eqref{grad big sigma} has the immediate consequence that $$U$$ is biharmonic:
@@ -115,5 +115,13 @@ After pairing \eqref{full sigma} and \eqref{sigma cross}:
   U_{,iijj}=0
 \end{equation}
 
+<h3>I.II Complex Representations</h3>
+Define $$P\equiv U_{,ii}$$, as $$U$$ is biharmonic, $$P_{,ii}=0$$; $$P$$ is harmonic. Allow $$Q$$ to be the harmonic conjugate to $$P$$, and from the Cauchy-Reimann Equations:
 
+\begin{equation}
+P_{,x}=Q_{,y} \nonumber
+\end{equation}
 
+\begin{equation}
+P_{,y}=-Q_{,x} \nonumber
+\end{equation}
