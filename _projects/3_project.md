@@ -16,8 +16,8 @@ giscus_comments: false
 <h3>I.I The Airy Stress Function</h3>
 For a body in equilibrium, in Einstein's summation convention:
 
-\begin{equation}
-\sigma_{ij,j}=0
+\begin{equation}\label{force law}
+  \sigma_{ij,j}=0
 \end{equation}
 
 The stress tensor for an isotropic, homogenous material is given via Hooke's law:
@@ -26,7 +26,7 @@ The stress tensor for an isotropic, homogenous material is given via Hooke's law
   \sigma_{ij}=C_{ijkl}\epsilon_{kl}=\lambda\delta_{ij}\epsilon_{kk}+2\mu\epsilon_{ij}
 \end{equation}
 
-Where $$\epsilon_{ij}\equiv\frac{1}{2}\left(u_{i,j}+u_{j,i}\right)$$ is the strain tensor with displacements $$u_i$$. Now propose functions $$A$$ and $$B$$ such that:
+Where $$\epsilon_{ij}\equiv\frac{1}{2}\left(u_{i,j}+u_{j,i}\right)$$ is the strain tensor with displacements $$u_i$$. Note that both $S\sigma_{ij}$$ and $$\epsilon_{ij}$$ are symmetric. Now propose functions $$A$$ and $$B$$ such that:
 
 \begin{equation}
   B_{,x}=-\sigma_{xy} \nonumber
@@ -47,7 +47,7 @@ Where $$\epsilon_{ij}\equiv\frac{1}{2}\left(u_{i,j}+u_{j,i}\right)$$ is the stra
 Clearly $$A_{,y}=B_{,x}$$, so allow $$U_{,x}=A$$ and $$U_{,y}=B$$. $$U$$ is the _Airy Stress Function_. The following are evident:
 
 \begin{equation}
-  \sigma_{xx}=U_{,yy}
+  \sigma_{xx}=U_{,yy}=
 \end{equation}
 
 \begin{equation}
@@ -63,6 +63,39 @@ Now, from \eqref{Hooke's law}:
 \begin{equation}\label{grad sigma plus}
   \left(\sigma_{xx}+\sigma_{yy}\right) _{,kk} = \sigma _{xx,xx} + \sigma _{xx,yy} + \sigma _{yy,xx} + \sigma _{yy,yy} = 2\left(\lambda+\mu\right)\left(\epsilon _{xx,xx}+\epsilon _{yy,yy}+\epsilon _{xx,yy}+\epsilon _{yy,xx}\right)
 \end{equation}
-With \eqref{grad sigma plus}
+
+With \eqref{grad sigma plus}:
+
+\begin{equation}\label{sigma sum}
+  \sigma _{xx,yy} + \sigma _{yy,xx} - \frac{\lambda}{2\left(\lambda+\mu\right)} \left(\sigma _{xx}+\sigma _{yy}\right) _{,kk} = 2\mu\left(\epsilon _{xx,yy}+\epsilon _{yy,xx}\right)
+\end{equation}
+
+With \eqref{Hooke's law}:
+
+\begin{equation}\label{sigma cross grad}
+  \sigma_{xy,xy} = 2\mu\epsilon_{xy,xy} = 2\mu\left(u_{x,yxy}+u_{y,xxy}\right)=\mu\left(\epsilon_{xx,yy}+\epsilon_{yy,xx}\right)
+\end{equation}
+
+So, combining \eqref{sigma sum} and \eqref{sigma cross grad}:
+\begin{equation}\label{full sigma}
+  \sigma _{xx,yy} + \sigma _{yy,xx} - \frac{\lambda}{2\left(\lambda+\mu\right)} \left(\sigma _{xx}+\sigma _{yy}\right) _{,kk} - 2\sigma _{xy,xy} = 0
+\end{equation}
+
+With \eqref{force law}:
+\begin{equation}\label{sigma cross}
+  \sigma_{xx,xx}+\sigma_{xy,yx}+\sigma_{yy,yy}+\sigma_{yx,xy}=0\quad\rightarrow\quad - 2\sigma _{xy,xy} = \sigma _{xx,xx} +\sigma _{yy,yy}
+\end{equation}
+
+After pairing \eqref{full sigma} and \eqref{sigma cross}:
+
+\begin{equation}\label{grad big sigma}
+  left(\sigma _{xx}+\sigma _{yy}\right) _{,kk}=0
+\end{equation}
+
+\eqref{grad big sigma} has the immediate consequence that $$U$$ is biharmonic:
+\begin{equation}
+  U_{,iijj}=0
+\end{equation}
+
 
 
