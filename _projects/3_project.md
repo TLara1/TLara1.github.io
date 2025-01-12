@@ -47,7 +47,7 @@ Where $$\epsilon_{ij}\equiv\frac{1}{2}\left(u_{i,j}+u_{j,i}\right)$$ is the stra
 Clearly $$A_{,y}=B_{,x}$$, so allow $$U_{,x}=A$$ and $$U_{,y}=B$$. $$U$$ is the _Airy Stress Function_. The following are evident:
 
 \begin{equation}
-  \sigma_{xx}=U_{,yy}=
+  \sigma_{xx}=U_{,yy}
 \end{equation}
 
 \begin{equation}
@@ -56,6 +56,24 @@ Clearly $$A_{,y}=B_{,x}$$, so allow $$U_{,x}=A$$ and $$U_{,y}=B$$. $$U$$ is the 
 
 \begin{equation}
   \sigma_{xy}=-U_{,xy}
+\end{equation}
+
+With \eqref{Hooke's law} we write $$U$$ in terms of displacements:
+\begin{equation} \label{dis uxx}
+  U_{,xx}=\left(\lambda+2\mu\right)\epsilon_{yy}+\lambda\epsilon_{xx}=\left(\lambda+2\mu\right)u_{y,y}+\lambda u_{x,x}
+\end{equation}
+
+\begin{equation} \label{dis uyy}
+  U_{,yy}=\left(\lambda+2\mu\right)\epsilon_{xx}+\lambda\epsilon_{yy}=\left(\lambda+2\mu\right)u_{x,x}+\lambda u_{y,y}
+\end{equation}
+
+So with \eqref{dis uxx} and \eqref{dis uyy}:
+\begin{equation}
+  2\mu u_{x,x} = U_{,yy}- \frac{\lambda}{2\left(\lambda+\mu\right)}U_{,kk}
+\end{equation}
+
+\begin{equation}
+  2\mu u_{y,y} = U_{,xx}- \frac{\lambda}{2\left(\lambda+\mu\right)}U_{,kk}
 \end{equation}
 
 Now, from \eqref{Hooke's law}:
