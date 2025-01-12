@@ -67,12 +67,16 @@ With \eqref{Hooke's law} we write $$U$$ in terms of displacements:
   U_{,yy}=\left(\lambda+2\mu\right)\epsilon_{xx}+\lambda\epsilon_{yy}=\left(\lambda+2\mu\right)u_{x,x}+\lambda u_{y,y}
 \end{equation}
 
+\begin{equation} \label{dis uxy}
+  U_{,xy}=-2\mu\epsilon_{xy}=-\mu\left(u_{x,y}+u_{y,x}\right)
+\end{equation}
+
 So with \eqref{dis uxx} and \eqref{dis uyy}:
-\begin{equation}
+\begin{equation} \label{ux U}
   2\mu u_{x,x} = U_{,yy}- \frac{\lambda}{2\left(\lambda+\mu\right)}U_{,kk}
 \end{equation}
 
-\begin{equation}
+\begin{equation} \label{uy U}
   2\mu u_{y,y} = U_{,xx}- \frac{\lambda}{2\left(\lambda+\mu\right)}U_{,kk}
 \end{equation}
 
@@ -116,7 +120,7 @@ After pairing \eqref{full sigma} and \eqref{sigma cross}:
 \end{equation}
 
 <h3>I.II Complex Representations</h3>
-Define $$P\equiv U_{,ii}$$, as $$U$$ is biharmonic, $$P_{,ii}=0$$; $$P$$ is harmonic. Allow $$Q$$ to be the harmonic conjugate to $$P$$, and from the Cauchy-Reimann Equations:
+Define $$P\equiv U_{,kk}$$, as $$U$$ is biharmonic, $$P_{,kk}=0$$; $$P$$ is harmonic. Allow $$Q$$ to be the harmonic conjugate to $$P$$, and from the Cauchy-Reimann Equations:
 
 \begin{equation}
 P_{,x}=Q_{,y} \nonumber
@@ -125,3 +129,63 @@ P_{,x}=Q_{,y} \nonumber
 \begin{equation}
 P_{,y}=-Q_{,x} \nonumber
 \end{equation}
+
+Define $$\varphi=p+iq$$ such that:
+
+\begin{equation}
+  \varphi_{,z}=\varphi_{,x}=p_[,x}+iq_{,x}=\frac{1}{4}\left(P+iQ\right)
+\end{equation}
+
+Via Cauchy-Reimann:
+
+\begin{equation}
+  p_{,x}=q_{,y}=\frac{1}{4}P \nonumber
+\end{equation}
+
+\begin{equation}
+  p_{,y}=-q_{,x}=-\frac{1}{4}Q \nonumber
+\end{equation}
+
+With \eqref{ux U} and \eqref{uy U}:
+
+\begin{equation}
+  2\mu u_{x,x} = -U_{,xx}+\frac{\lambda+2\mu}{2\left(\lambda+\mu\right)}P
+\end{equation}
+
+\begin{equation}
+  2\mu u_{y,y} = -U_{,yy}+\frac{\lambda+2\mu}{2\left(\lambda+\mu\right)}P
+\end{equation}
+
+Integrating:
+
+\begin{equation}
+  2\mu u_{x} = -U_{,x}+\frac{2\lambda+2\mu}{\left(\lambda+\mu\right)}p+C_{1}\left(y\right)
+\end{equation}
+
+\begin{equation}
+  2\mu u_{y} = -U_{,y}+\frac{2\lambda+2\mu}{\left(\lambda+\mu\right)}q+C_{2}\left(x\right)
+\end{equation}
+
+From the Cauchy-Reimann Equations:
+
+\begin{equation}
+  2\mu \left(u_{x,y}+u_{y,x}\right) = -2U_{,xy}+C_{1,y}\left(y\right)+C_{2,x}\left(x\right)
+\end{equation}
+
+From \eqref{dis uxy}:
+\begin{equation}
+  C_{1,y}\left(y\right)+C_{2,x}\left(x\right)=0
+\end{equation}
+So, $$C_1\sim y$$ and $$C_2\sim x$$, corresponding to rigid body displacements which we can safely ignore. 
+
+Now consider:
+\begin{equation}
+  \left(U-xp-yq\right) _{,kk}= U _{,kk} - xp _{,kk} - yq _{,kk} -2p _{,x} - 2q _{,y} = U _{,kk} - xp _{,kk} - yq _{,kk} - P = xp _{,kk} - yq _{,kk} = 0
+\end{equation}
+We have used the fact that $$p$$ and $$q$$ are harmonic as $$p _{,kk} = p _{,xx} +p _{,yy} = q _{,yx} - q _{,xy} = 0$$
+
+So:
+\begin{equation}
+  U = xp+yq+\mathcal{p}
+\end{equation}
+Where $$\mathcal{p}$$ is a harmonic function: $$\mathcal{p}_{,kk}=0$$.
