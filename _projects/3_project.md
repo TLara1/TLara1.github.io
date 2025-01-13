@@ -239,7 +239,7 @@ For a complex function $$f$$, which is analytic in the simply closed region $$S$
   f(z)=\frac{1}{2\pi i}\oint_\gamma\frac{f\left(t\right)}{t-z}dt\quad z\in S
 \end{equation}
 Where $$\gamma$$ is the contour around the boundry of $$S$$, and $$z$$ lies within $$S$$, for $$z$$ outisde of $$S$$, $$\frac{f\left(t\right)}{t-z}$$ is analytic, so:
-\begin{equation}
+\begin{equation}\label{not anal}
   f(z)=\frac{1}{2\pi i}\oint_\gamma\frac{f\left(t\right)}{t-z}dt=0\quad z\notin S
 \end{equation}
 
@@ -265,10 +265,19 @@ We find:
   \oint_\gamma\frac{g\left(t\right)}{t-z}dt =-2\pi i\sum_{k=1}^\infty a_kz^{-k} = 2\pi i\left(g\left(\infty\right)-g\left(z\right)\right)
 \end{equation}
 In other words:
-\begin{equation}
+\begin{equation} \label{g inf}
   g(z)=g\left(\infty\right)-\frac{1}{2\pi i}\oint_\gamma\frac{g\left(t\right)}{t-z}dt \quad z\notin S
 \end{equation}
 
+Now, lets consider the case where $$S$$ is the unit circle, importantly for $$t$$ along the boundry of $$S$$, $$\bar{t}=\frac{1}{t}$$. Now consider $$g*\left(z\right)\equiv g\left(\frac{1}{z}\right)$$, with eqref{g inf}:
+\begin{equation}
+  g*(z)=g*\left(0\right)-\frac{1}{2\pi i}\oint_\gamma\frac{g*\left(\bar{t}\right)}{t-\frac{1}{z}}dt \quad z\notin S
+\end{equation}
 
+As $$g*$$ is analytic only in $$z\in S$$, by \eqref{not anal}, $$g *(z)=0$$ in $$z\notin S$$, and as $$S$$ is the unit circle, $$\frac{1}{z}$$ for $$z\notin S$$ is equivalent to $$z$$ for $$z\in S$$. So:
+\begin{equation}
+  \frac{1}{2\pi i}\oint_\gamma\frac{f\left(\bar{t}\right)}{t-z}dt = f\left(0\right)  \quad z\in S
+\end{equation}
+Where $$f$$ is a function that is analytic for $$z\in S$$.
 
 
