@@ -158,12 +158,12 @@ With \eqref{ux U} and \eqref{uy U}:
 
 Integrating:
 
-\begin{equation}
-  2\mu u_{x} = -U_{,x}+\frac{2\lambda+2\mu}{\left(\lambda+\mu\right)}p+C_{1}\left(y\right)
+\begin{equation} \label{ux U}
+  2\mu u_{x} = -U_{,x}+\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}p+C_{1}\left(y\right)
 \end{equation}
 
-\begin{equation}
-  2\mu u_{y} = -U_{,y}+\frac{2\lambda+2\mu}{\left(\lambda+\mu\right)}q+C_{2}\left(x\right)
+\begin{equation} \label{uy U}
+  2\mu u_{y} = -U_{,y}+\frac{2\left(\lambda+2\mu\right)}{(\lambda+\mu}q+C_{2}\left(x\right)
 \end{equation}
 
 From the Cauchy-Reimann Equations:
@@ -208,10 +208,14 @@ Using \eqref{imaginary U}:
 
 Combing \eqref{Ux im} and \eqref{Uy im}:
 \begin{equation}
-  U_{,x}+iU_{,y}=\varphi++z\bar{\varphi}_{,z}+\bar{\chi} _{,z}
+  U_{,x}+iU_{,y}=\varphi+z\bar{\varphi}_{,z}+\bar{\chi} _{,z}
 \end{equation}
 
-
+Now with \eqref{ux U} and \eqref{uy U}:
+\begin{equation}
+  2\mu\left(u_{x}+iu_{y}\right)=-\left(U_{,x}+iU_{,y}\right)+\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}\left(p+iq\right)=\kappa\varphi-z\bar{\varphi}_{,z}-\bar{\chi} _{,z}
+\end{equation}
+Where $\kappa\equiv\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}-1=\frac{\lambda+3\mu}{\lambda+\mu}=3-4\sigma$$
 
 
 
