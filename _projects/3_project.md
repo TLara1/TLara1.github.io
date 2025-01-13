@@ -269,12 +269,13 @@ In other words:
   g(z)=g\left(\infty\right)-\frac{1}{2\pi i}\oint_\gamma\frac{g\left(t\right)}{t-z}dt \quad z\notin S
 \end{equation}
 
-Now, lets consider the case where $$S$$ is the unit circle, importantly for $$t$$ along the boundry of $$S$$, $$\bar{t}=\frac{1}{t}$$. Now consider $$g*\left(z\right)\equiv g\left(\frac{1}{z}\right)$$, with eqref{g inf}:
+Now, lets consider the case where $$S$$ is the unit circle, importantly for $$t$$ along the boundry of $$S$$, $$\bar{t}=\frac{1}{t}$$. Now consider $$g^ {'}\left(z\right)\equiv g\left(\frac{1}{z}\right)$$, with eqref{g inf}:
+
 \begin{equation}
-  g*(z)=g*\left(0\right)-\frac{1}{2\pi i}\oint_\gamma\frac{g*\left(\bar{t}\right)}{t-\frac{1}{z}}dt \quad z\notin S
+  g ^{'} \left( z \right) = g ^{'} \left(0\right)-\frac{1}{2\pi i}\oint _\gamma \frac{g ^{'} \left(\bar{t}\right)}{t-\frac{1}{z}}dt \quad z\notin S
 \end{equation}
 
-As $$g*$$ is analytic only in $$z\in S$$, by \eqref{not anal}, $$g *(z)=0$$ in $$z\notin S$$, and as $$S$$ is the unit circle, $$\frac{1}{z}$$ for $$z\notin S$$ is equivalent to $$z$$ for $$z\in S$$. So:
+As $$g ^{'}$$ is analytic only in $$z\in S$$, by \eqref{not anal}, $$g '(z)=0$$ in $$z\notin S$$, and as $$S$$ is the unit circle, $$\frac{1}{z}$$ for $$z\notin S$$ is equivalent to $$z$$ for $$z\in S$$. So:
 \begin{equation}
   \frac{1}{2\pi i}\oint_\gamma\frac{f\left(\bar{t}\right)}{t-z}dt = f\left(0\right)  \quad z\in S
 \end{equation}
