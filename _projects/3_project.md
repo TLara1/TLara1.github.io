@@ -111,7 +111,7 @@ With \eqref{force law}:
 After pairing \eqref{full sigma} and \eqref{sigma cross}:
 
 \begin{equation}\label{grad big sigma}
-  left( \sigma _{xx} + \sigma _{yy} \right) _{,kk}=0
+  \left( \sigma _{xx} + \sigma _{yy} \right) _{,kk}=0
 \end{equation}
 
 \eqref{grad big sigma} has the immediate consequence that $$U$$ is biharmonic:
@@ -133,7 +133,7 @@ P_{,y}=-Q_{,x} \nonumber
 Define $$\varphi=p+iq$$ such that:
 
 \begin{equation}
-  \varphi_{,z}=\varphi_{,x}=p_[,x}+iq_{,x}=\frac{1}{4}\left(P+iQ\right)
+  \varphi_{,z}=\varphi_{,x}=p_{,x}+iq_{,x}=\frac{1}{4}\left(P+iQ\right)
 \end{equation}
 
 Via Cauchy-Reimann:
@@ -186,6 +186,34 @@ We have used the fact that $$p$$ and $$q$$ are harmonic as $$p _{,kk} = p _{,xx}
 
 So:
 \begin{equation}
-  U = xp+yq+\mathcal{p}
+  U = xp+yq+r
 \end{equation}
-Where $$\mathcal{p}$$ is a harmonic function: $$\mathcal{p}_{,kk}=0$$.
+Where $$r$$ is a harmonic function: $$r_{,kk}=0$$.
+
+Now let $$r=\text{Re}\left(\chi\right)$$,
+
+\begin{equation}\label{imaginary U}
+  U=\text{Re}\left(\bar{z}\varphi+\chi\right)\quad\rightarrow\quad 2U=\bar{z}\varphi+\chi+z\bar{\varphi}+\bar{\chi}
+\end{equation}
+
+Using \eqref{imaginary U}:
+
+\begin{equation} \label{Ux im}
+  2U_{,x}=\varphi+\bar{z}\varphi_{,z}+\chi_{,z}+\bar{\varphi}+z\bar{\varphi}_{,z}+\bar{\chi} _{,z}
+\end{equation}
+
+\begin{equation} \label{Uy im}
+  2U_{,y}=i\left(-\varphi+\bar{z}\varphi_{,z}+\chi_{,z}+\bar{\varphi}-z\bar{\varphi}_{,z}-\bar{\chi} _{,z}\right)
+\end{equation}
+
+Combing \eqref{Ux im} and \eqref{Uy im}:
+\begin{equation}
+  U_{,x}+iU_{,y}=\varphi++z\bar{\varphi}_{,z}+\bar{\chi} _{,z}
+\end{equation}
+
+
+
+
+
+
+
