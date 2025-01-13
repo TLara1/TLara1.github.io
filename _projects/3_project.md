@@ -231,3 +231,44 @@ We can also express stress components in terms of our complex functions with \eq
   2\sigma _{xx} + 2\sigma _{yy} = 4\varphi _{,z}+4\bar{\varphi} _{,z}\quad\rightarrow\quad\sigma _{xx} + \sigma _{yy} = 4\text{Re}\left(\varphi _{,z}\right)
 \end{equation}
 
+<h2>II. Relevant Details From Complex Analysis</h2>
+We are not going to delve into Complex Analysis too extensively or prove the results here too rigorously as that as has been done _ad naseam_ in a plethora of other sources. 
+
+For a complex function $$f$$, which is analytic in the simply closed region $$S$$ not containing $$\infty$$, and continuous outside of $$S$$, by Cauchy's integral theorem: 
+\begin{equation}
+  f(z)=\frac{1}{2\pi i}\oint_\gamma\frac{f\left(t\right)}{t-z}dt\quad z\in S
+\end{equation}
+Where $$\gamma$$ is the contour around the boundry of $$S$$, and $$z$$ lies within $$S$$, for $$z$$ outisde of $$S$$, $$\frac{f\left(t\right)}{t-z}$$ is analytic, so:
+\begin{equation}
+  f(z)=\frac{1}{2\pi i}\oint_\gamma\frac{f\left(t\right)}{t-z}dt=0\quad z\notin S
+\end{equation}
+
+Now let's consider a complex function $$g$$, which is analytic outside the closed region $$S$$, such that $$G$$ is analytic at infinity. We can write $$g$$ as a _Laurent Series_ for $$z\notin S$$:
+
+\begin{equation}
+  g=\sum_{k=0}^\infty a_k z^{-k}\quad z\notin S
+\end{equation}
+So for $$z\notin S$$:
+\begin{equation}
+  \oint_\gamma\frac{g\left(t\right)}{t-z}dt =\sum_{k=0}^\infty a_k\oint_\gamma\frac{1}{t^k\left(t-z\right)}dt
+\end{equation}
+The integrand, $$\frac{1}{t^k\left(t-z\right)}$$ is only singular at $$t=0$$ as $$z\notin S$$ and $$\gamma$$ is a contour around $$S$$. By the residue theorem:
+\begin{equation}
+  =\oint_\gamma\frac{1}{t^k\left(t-z\right)}dt=2\pi i\text{Res}\left(\frac{1}{t^k\left(t-z\right)},t=0\right)=2\pi i \frac{1}{k!}\frac{d^k}{dt^k}\left(\frac{t}{t-z}\right)\vline_{t=0}\quad k>0
+\end{equation}
+
+\begin{equation}
+  =-2\pi i \frac{1}{z^k}}\quad k>0
+\end{equation}
+We find:
+\begin{equation}
+  \oint_\gamma\frac{g\left(t\right)}{t-z}dt =-2\pi i\sum_{k=1}^\infty a_kz^{-k} = 2\pi i\left(g\left(\infty\right)-g\left(z\right)\right)
+\end{equation}
+In other words:
+\begin{equation}
+  g(z)=g\left(\infty\right)-\frac{1}{2\pi i}\oint_\gamma\frac{g\left(t\right)}{t-z}dt \quad z\notin S
+\end{equation}
+
+
+
+
