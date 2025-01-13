@@ -254,11 +254,11 @@ So for $$z\notin S$$:
 \end{equation}
 The integrand, $$\frac{1}{t^k\left(t-z\right)}$$ is only singular at $$t=0$$ as $$z\notin S$$ and $$\gamma$$ is a contour around $$S$$. By the residue theorem:
 \begin{equation}
-  =\oint_\gamma\frac{1}{t^k\left(t-z\right)}dt=2\pi i\text{Res}\left(\frac{1}{t^k\left(t-z\right)},t=0\right)=2\pi i \frac{1}{k!}\frac{d^k}{dt^k}\left(\frac{t}{t-z}\right)\vline_{t=0}\quad k>0
+  =\oint_\gamma\frac{1}{t^k\left(t-z\right)}dt=2\pi i\text{Res}\left(\frac{1}{t^k\left(t-z\right)},t=0\right)=2\pi i \frac{1}{k!}\frac{d^k}{dt^k}\left(\frac{t}{t-z}\right)\left|_{t=0}\right.\quad k>0
 \end{equation}
 
 \begin{equation}
-  =-2\pi i \frac{1}{z^k}}\quad k>0
+  =-2\pi i \frac{1}{z^k}\quad k>0
 \end{equation}
 We find:
 \begin{equation}
