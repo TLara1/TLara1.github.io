@@ -72,11 +72,11 @@ With \eqref{Hooke's law} we write $$U$$ in terms of displacements:
 \end{equation}
 
 So with \eqref{dis uxx} and \eqref{dis uyy}:
-\begin{equation} \label{ux U}
+\begin{equation}
   2\mu u_{x,x} = U_{,yy}- \frac{\lambda}{2\left(\lambda+\mu\right)}U_{,kk}
 \end{equation}
 
-\begin{equation} \label{uy U}
+\begin{equation}
   2\mu u_{y,y} = U_{,xx}- \frac{\lambda}{2\left(\lambda+\mu\right)}U_{,kk}
 \end{equation}
 
@@ -146,7 +146,7 @@ Via Cauchy-Reimann:
   p_{,y}=-q_{,x}=-\frac{1}{4}Q \nonumber
 \end{equation}
 
-With \eqref{ux U} and \eqref{uy U}:
+With \eqref{} and \eqref{uy U}:
 
 \begin{equation}
   2\mu u_{x,x} = -U_{,xx}+\frac{\lambda+2\mu}{2\left(\lambda+\mu\right)}P
@@ -215,7 +215,7 @@ Now with \eqref{ux U} and \eqref{uy U}:
 \begin{equation}
   2\mu\left(u_{x}+iu_{y}\right)=-\left(U_{,x}+iU_{,y}\right)+\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}\left(p+iq\right)=\kappa\varphi-z\bar{\varphi}_{,z}-\bar{\chi} _{,z}
 \end{equation}
-Where $\kappa\equiv\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}-1=\frac{\lambda+3\mu}{\lambda+\mu}=3-4\sigma$$
+Where $$\kappa\equiv\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}-1=\frac{\lambda+3\mu}{\lambda+\mu}=3-4\sigma$$
 
 We can also express stress components in terms of our complex functions with \eqref{ux U} and \eqref{uy U}:
 
