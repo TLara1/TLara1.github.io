@@ -217,7 +217,17 @@ Now with \eqref{ux U} and \eqref{uy U}:
 \end{equation}
 Where $\kappa\equiv\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}-1=\frac{\lambda+3\mu}{\lambda+\mu}=3-4\sigma$$
 
+We can also express stress components in terms of our complex functions with \eqref{ux U} and \eqref{uy U}:
 
+\begin{equation}
+  2U_{,yy}=\sigma_{xx}=i\left(-2i\varphi_{,z}+i\bar{z}\varphi_{,zz}+i\chi_{,zz}-2i\bar{\varphi} _{,z}+iz\bar{\varphi} _{,zz}+i\bar{\varphi} _{,zz}\right)
+\end{equation}
 
+\begin{equation}
+  2U _{,xx}=\sigma _{yy}=2\varphi _{,z}+\bar{z}\varphi _{,zz}+\chi _{,zz}+2\bar{\varphi} _{,z}+z\bar{\varphi} _{,zz}+\bar{\chi} _{,zz}
+\end{equation}
 
+\begin{equation}
+  2\sigma _{xx} + 2\sigma _{yy} = 4\varphi _{,z}+4\bar{\varphi} _{,z}\quad\rightarrow\quad\sigma _{xx} + \sigma _{yy} = 4\text{Re}\left(\varphi _{,z}\right)
+\end{equation}
 
