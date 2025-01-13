@@ -206,32 +206,36 @@ Using \eqref{imaginary U}:
   2U_{,y}=i\left(-\varphi+\bar{z}\varphi_{,z}+\chi_{,z}+\bar{\varphi}-z\bar{\varphi}_{,z}-\bar{\chi} _{,z}\right)
 \end{equation}
 
-Combing \eqref{Ux im} and \eqref{Uy im}:
-\begin{equation}
+Combining \eqref{Ux im} and \eqref{Uy im}:
+\begin{equation}\label{U complex}
   U_{,x}+iU_{,y}=\varphi+z\bar{\varphi}_{,z}+\bar{\chi} _{,z}
 \end{equation}
+We have defined, $$\psi\equiv\chi _{,z}$$
 
 Now with \eqref{ux U} and \eqref{uy U}:
 \begin{equation}
-  2\mu\left(u_{x}+iu_{y}\right)=-\left(U_{,x}+iU_{,y}\right)+\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}\left(p+iq\right)=\kappa\varphi-z\bar{\varphi}_{,z}-\bar{\chi} _{,z}
+  2\mu\left(u_{x}+iu_{y}\right)=-\left(U_{,x}+iU_{,y}\right)+\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}\left(p+iq\right)=\kappa\varphi-z\bar{\varphi}_{,z}-\bar{\psi}
 \end{equation}
 Where $$\kappa\equiv\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}-1=\frac{\lambda+3\mu}{\lambda+\mu}=3-4\sigma$$
 
 We can also express stress components in terms of our complex functions with \eqref{ux U} and \eqref{uy U}:
 
 \begin{equation}
-  2U_{,yy}=\sigma_{xx}=i\left(-2i\varphi_{,z}+i\bar{z}\varphi_{,zz}+i\chi_{,zz}-2i\bar{\varphi} _{,z}+iz\bar{\varphi} _{,zz}+i\bar{\varphi} _{,zz}\right)
+  2U_{,yy}=\sigma_{xx}=i\left(-2i\varphi_{,z}+i\bar{z}\varphi_{,zz}+i\psi{,z}-2i\bar{\varphi} _{,z}+iz\bar{\varphi} _{,zz}+i\bar{\varphi} _{,zz}\right)
 \end{equation}
 
 \begin{equation}
-  2U _{,xx}=\sigma _{yy}=2\varphi _{,z}+\bar{z}\varphi _{,zz}+\chi _{,zz}+2\bar{\varphi} _{,z}+z\bar{\varphi} _{,zz}+\bar{\chi} _{,zz}
+  2U _{,xx}=\sigma _{yy}=2\varphi _{,z}+\bar{z}\varphi _{,zz}+\psi _{,z}+2\bar{\varphi} _{,z}+z\bar{\varphi} _{,zz}+\bar{\psi} _{,z}
 \end{equation}
 
 \begin{equation}
   2\sigma _{xx} + 2\sigma _{yy} = 4\varphi _{,z}+4\bar{\varphi} _{,z}\quad\rightarrow\quad\sigma _{xx} + \sigma _{yy} = 4\text{Re}\left(\varphi _{,z}\right)
 \end{equation}
 
-<h2>II. Relevant Details From Complex Analysis</h2>
+<h2>II. Solutions for Boundry Problems</h2>
+
+<h3>II.I Relevant Details From Complex Analysis</h3>
+
 We are not going to delve into Complex Analysis too extensively or prove the results here too rigorously as that as has been done _ad naseam_ in a plethora of other sources. 
 
 For a complex function $$f$$, which is analytic in the simply closed region $$S$$ not containing $$\infty$$, and continuous outside of $$S$$, by Cauchy's integral theorem: 
@@ -280,5 +284,12 @@ As $$g ^{'}$$ is analytic only in $$z\in S$$, by \eqref{not anal}, $$g '(z)=0$$ 
   \frac{1}{2\pi i}\oint_\gamma\frac{f\left(\bar{t}\right)}{t-z}dt = f\left(0\right)  \quad z\in S
 \end{equation}
 Where $$f$$ is a function that is analytic for $$z\in S$$.
+
+<h3>II.II Complex Mapping</h3>
+
+In general, we will study a finite region $$S$$ in the complex plane, we will move this region to a unit disk in the $$\zeta$$ plane, via: $$z=\omega\left(\zeta\right)$$. With \eqref{U complex}:
+\begin{equation}
+    \varphi\left(\zeta\right)+\frac{\omega\left(\zeta\right)\bar{\varphi\left(\zeta\right)}}{\bar{\omega_{,zeta}\left(\zeta\right)}+\bar\psi\left(\zeta\right)= U_{,x}+iU_{,y}
+\end{equation}
 
 
