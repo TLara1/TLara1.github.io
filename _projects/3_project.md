@@ -334,24 +334,24 @@ With \eqref{f0 comp} and setting $$\bar{\psi}\left(0\right)=0$$:
 
 Defining:
 \begin{equation}
-  \Alpha\equiv\frac{1}{2\pi i}\oint _\gamma\frac{f}{\varsigma-\zeta}d\varsigma\nonumber
+  \mathcal{A}\equiv\frac{1}{2\pi i}\oint _\gamma\frac{f}{\varsigma-\zeta}d\varsigma\nonumber
 \end{equation}
 
 With \eqref{varphi complex map}:
 
 \begin{equation}\label{varphi complex final}
-    \varphi\left(\zeta\right)+\frac{1}{2\pi i}\oint_\gamma\frac{\omega\left(\varsigma\right)\bar{\varphi}_{,\zeta}\left(\bar{\varsigma}\right)}{\bar{\omega} _{,\zeta}\left(\bar{\varsigma}\right)\left(\varsigma-\zeta\right)}d\varsigma=\Alpha
+    \varphi\left(\zeta\right)+\frac{1}{2\pi i}\oint_\gamma\frac{\omega\left(\varsigma\right)\bar{\varphi}_{,\zeta}\left(\bar{\varsigma}\right)}{\bar{\omega} _{,\zeta}\left(\bar{\varsigma}\right)\left(\varsigma-\zeta\right)}d\varsigma=\mathcal{A}
 \end{equation}
 
 We can take the complex conjugate of \eqref{edge complex varphi psi} to find a similar expression for $$\psi\left(\zeta\right)$$, except we cannot remove $$\bar{\varphi}\left(0\right)$$ because we have already chosen to set $$\bar{\psi}\left(0\right)=0$$.
 
 \begin{equation}\label{psi complex final}
-  \psi\left(\zeta\right)+\bar{\varphi}\left(0\right)+\frac{1}{2\pi i}\oint_\gamma\frac{\bar{\omega}\left(\bar{\varsigma}\right)\varphi_{,\zeta}\left(\varsigma\right)}{\omega _{,\zeta}\left(\varsigma\right)\left(\varsigma-\zeta\right)}d\varsigma=\Beta
+  \psi\left(\zeta\right)+\bar{\varphi}\left(0\right)+\frac{1}{2\pi i}\oint_\gamma\frac{\bar{\omega}\left(\bar{\varsigma}\right)\varphi_{,\zeta}\left(\varsigma\right)}{\omega _{,\zeta}\left(\varsigma\right)\left(\varsigma-\zeta\right)}d\varsigma=\mathcal{B}
 \end{equation}
 
 With:
 \begin{equation}
-  \Beta\equiv\frac{1}{2\pi i}\oint _\gamma\frac{\bar{f}}{\varsigma-\zeta}d\varsigma\nonumber
+  \mathcal{B}\equiv\frac{1}{2\pi i}\oint _\gamma\frac{\bar{f}}{\varsigma-\zeta}d\varsigma\nonumber
 \end{equation}
 
 <h3>II.III Specific Solution for a Circular Body</h3>
@@ -359,7 +359,7 @@ With:
 For a circular object centred at $$z=0$$ of radius $$R$$, clearly $$z=\omega\left(\zeta\right)=R\zeta$$. \eqref{varphi complex final} becomes:
 
 \begin{equation}\label{varphi a expand}
-    \varphi\left(\zeta\right)+\frac{1}{2\pi i}\oint_\gamma\frac{\varsigma\bar{\varphi}_{,\zeta}\left(\bar{\varsigma}\right)}{\varsigma-\zeta}d\varsigma=\Alpha
+    \varphi\left(\zeta\right)+\frac{1}{2\pi i}\oint_\gamma\frac{\varsigma\bar{\varphi}_{,\zeta}\left(\bar{\varsigma}\right)}{\varsigma-\zeta}d\varsigma=\mathcal{A}
 \end{equation}
 
 Because $$\varphi\left(\zeta\right)$$ is analytic in the unit circle, we express the function as a power series: $$\varphi\left(\zeta\right)=a_0+a_1\zeta+a_2\zeta^2+...$$. Using $$\bar{\varsigma}\varsigma=1$$ on the unit circle:
@@ -377,17 +377,17 @@ With \eqref{f0 comp}:
 So, reducing \eqref{varphi a expand} and simplfying integrals:
 
 \begin{equation}\label{varphi simple}
-  \varphi\left(\zeta\right)+\bar{a_1}\zeta+2\bar{a_2}=\Alpha
+  \varphi\left(\zeta\right)+\bar{a_1}\zeta+2\bar{a_2}=\mathcal{A}
 \end{equation}
 
 By definition $$a_1\equiv\varphi_{,\zeta}\left(0\right)$$ and $$a_2\equiv\varphi_{,\zeta\zeta}\left(0\right)$$, using \eqref{varphi simple}, taking derivatives and setting $$\zeta=0$$, we find:
 
 \begin{equation}
-  a_1+\bar{a_1}=\Alpha_{,\zeta} \nonumber
+  a_1+\bar{a_1}=\mathcal{A}_{,\zeta} \nonumber
 \end{equation}
 
 \begin{equation}
-  a_2=\Alpha_{,\zeta\zeta} \nonumber
+  a_2=\mathcal{A}_{,\zeta\zeta} \nonumber
 \end{equation}
 
 Only the real part of $$a_1$$ is determined, as the imaginary portion cancels in \eqref{varphi simple}. 
@@ -401,7 +401,7 @@ Using \eqref{{psi complex final} we can find a similar expression for $$\psi\lef
 And:
 
 \begin{equation}
-  \psi\left(\zeta\right)+\Alpha-2a_2+\frac{\Alpha_{,\zeta}}{\zeta}-\frac{\bar{a_1}}{\zeta}=\Beta
+  \psi\left(\zeta\right)+\mathcal{A}-2a_2+\frac{\mathcal{A}_{,\zeta}}{\zeta}-\frac{\bar{a_1}}{\zeta}=\mathcal{B}
 \end{equation}
 
 
