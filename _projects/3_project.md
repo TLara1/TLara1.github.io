@@ -208,7 +208,7 @@ Using \eqref{imaginary U}:
 
 Combining \eqref{Ux im} and \eqref{Uy im}:
 \begin{equation}\label{U complex}
-  U_{,x}+iU_{,y}=\varphi+z\bar{\varphi}_{,z}+\bar{\chi} _{,z}
+  U_{,x}+iU_{,y}=\varphi+z\bar{\varphi}_{,z}+\bar{\psi}
 \end{equation}
 We have defined, $$\psi\equiv\chi _{,z}$$
 
@@ -218,18 +218,26 @@ Now with \eqref{ux U} and \eqref{uy U}:
 \end{equation}
 Where $$\kappa\equiv\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}-1=\frac{\lambda+3\mu}{\lambda+\mu}=3-4\sigma$$
 
-We can also express stress components in terms of our complex functions with \eqref{ux U} and \eqref{uy U}:
+We can also express stress components in terms of our complex functions with \eqref{Ux im} and \eqref{Uy im}:
 
 \begin{equation}
-  2U_{,yy}=\sigma_{xx}=i\left(-2i\varphi_{,z}+i\bar{z}\varphi_{,zz}+i\psi{,z}-2i\bar{\varphi} _{,z}+iz\bar{\varphi} _{,zz}+i\bar{\varphi} _{,zz}\right)
+  2U_{,yy}=2\sigma_{xx}=i\left(-2i\varphi_{,z}+i\bar{z}\varphi_{,zz}+i\psi{,z}-2i\bar{\varphi} _{,z}+iz\bar{\varphi} _{,zz}+iz\bar{\varphi} _{,zz}\right)
 \end{equation}
 
 \begin{equation}
-  2U _{,xx}=\sigma _{yy}=2\varphi _{,z}+\bar{z}\varphi _{,zz}+\psi _{,z}+2\bar{\varphi} _{,z}+z\bar{\varphi} _{,zz}+\bar{\psi} _{,z}
+  2U _{,xx}=2\sigma _{yy}=2\varphi _{,z}+\bar{z}\varphi _{,zz}+\psi _{,z}+2\bar{\varphi} _{,z}+z\bar{\varphi} _{,zz}+\bar{\psi} _{,z}
+\end{equation}
+
+\begin{equation}
+  2U _{,yx}=-2\sigma _{xy}=i\left(\bar{z}\varphi _{,zz}+\psi _{,z}-z\bar{\varphi} _{,zz}-\bar{\psi} _{,z}\right)
 \end{equation}
 
 \begin{equation}
   2\sigma _{xx} + 2\sigma _{yy} = 4\varphi _{,z}+4\bar{\varphi} _{,z}\quad\rightarrow\quad\sigma _{xx} + \sigma _{yy} = 4\text{Re}\left(\varphi _{,z}\right)
+\end{equation}
+
+\begin{equation}
+  2\sigma _{xx} - 2\sigma _{yy}+4i\sigma _{xy}=4\bar{z}\varphi _{,zz}+4\psi{,z}\quad\rightarrow\quad \sigma _{xx} - \sigma _{yy}+2i\sigma _{xy}=2\left(\bar{z}\varphi _{,zz}+\psi{,z}\right)
 \end{equation}
 
 <h2>II. Solutions for Boundry Problems</h2>
