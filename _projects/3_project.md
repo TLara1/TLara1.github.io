@@ -319,4 +319,10 @@ Now allow $$\varsigma=e^{i\theta}$$ to describe the edge of the unit disk in the
     \varphi\left(\varsigma\right)+\frac{\omega\left(\varsigma\right)\bar{\varphi\left(\varsigma\right)}}{\bar{\omega_{,zeta}\left(\varsigma\right)}}+\bar\psi\left(\varsigma\right)= f
 \end{equation}
 
+We will evaluate $$f$$ in a later section. 
 
+Using a Cauchy's integral around the unit circle $$\gamma$$:
+
+\begin{equation}
+    \varphi\left(\zeta\right)=\frac{1}{2\pi i}\onit_\gamma\frac{\varphi\left(\varsigma\right)}{\varsigma-\zeta}d\varsigma=-\frac{1}{2\pi i}\onit_\gamma\frac{\omega\left(\varsigma\right)\bar{\varphi\left(\varsigma\right)}}{\bar{\omega_{,zeta}\left(\varsigma\right)}\left(\varsigma-\zeta\right)}d\varsigma-\frac{1}{2\pi i}\onit_\gamma\frac{\bar\psi\left(\varsigma\right)}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi i}\onit_\gamma\frac{f}{\varsigma-\zeta}d\varsigma
+  \end{equation}
