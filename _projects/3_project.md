@@ -310,13 +310,13 @@ Where $$f$$ is a function that is analytic for $$z\in S$$.
 In general, we will study a finite region $$S$$ in the complex plane, we will move this region to a unit disk in the $$\zeta$$ plane, via: $$z=\omega\left(\zeta\right)$$. With \eqref{U complex}:
 
 \begin{equation}
-    \varphi\left(\zeta\right)+\frac{\omega\left(\zeta\right)\bar{\varphi\left(\zeta\right)}}{\bar{\omega_{,zeta}\left(\zeta\right)}+\bar\psi\left(\zeta\right)= U_{,x}+iU_{,y}
+  $$\varphi\left(\zeta\right)+\frac{\omega\left(\zeta\right)\bar{\varphi\left(\zeta\right)}}{\bar{\omega_{,\zeta}\left(\zeta\right)}}+\bar\psi\left(\zeta\right)= U_{,x}+iU_{,y}$$
 \end{equation}
 
-Now allow $$\varsigma=e^{i\theta}$$ to describe the edge of the unit disk in the $$\zeta$$ plane. We take the boundry conditions to be given, $U_{,x}+iU_{,y}=f$ along $$\zeta=\varsigma$$, so:
+Now allow $$\varsigma=e^{i\theta}$$ to describe the edge of the unit disk in the $$\zeta$$ plane. We take the boundary conditions to be given, $U_{,x}+iU_{,y}=f$ along $$\zeta=\varsigma$$, so:
 
 \begin{equation}
-    \varphi\left(\varsigma\right)+\frac{\omega\left(\varsigma\right)\bar{\varphi\left(\varsigma\right)}}{\bar{\omega_{,zeta}\left(\varsigma\right)}+\bar\psi\left(\varsigma\right)= f
+    \varphi\left(\varsigma\right)+\frac{\omega\left(\varsigma\right)\bar{\varphi\left(\varsigma\right)}}{\bar{\omega_{,zeta}\left(\varsigma\right)}}+\bar\psi\left(\varsigma\right)= f
 \end{equation}
 
 
