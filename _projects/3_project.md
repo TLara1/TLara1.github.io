@@ -213,7 +213,7 @@ Combining \eqref{Ux im} and \eqref{Uy im}:
 We have defined, $$\psi\equiv\chi _{,z}$$
 
 Now with \eqref{ux U} and \eqref{uy U}:
-\begin{equation}
+\begin{equation}\label{ux+uy complex}
   2\mu\left(u_{x}+iu_{y}\right)=-\left(U_{,x}+iU_{,y}\right)+\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}\left(p+iq\right)=\kappa\varphi-z\bar{\varphi}_{,z}-\bar{\psi}
 \end{equation}
 Where $$\kappa\equiv\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}-1=\frac{\lambda+3\mu}{\lambda+\mu}=3-4\sigma$$
@@ -232,13 +232,25 @@ We can also express stress components in terms of our complex functions with \eq
   2U _{,yx}=-2\sigma _{xy}=i\left(\bar{z}\varphi _{,zz}+\psi _{,z}-z\bar{\varphi} _{,zz}-\bar{\psi} _{,z}\right)
 \end{equation}
 
-\begin{equation}
+\begin{equation}\label{sigmaxx+sigmayy complex}
   2\sigma _{xx} + 2\sigma _{yy} = 4\varphi _{,z}+4\bar{\varphi} _{,z}\quad\rightarrow\quad\sigma _{xx} + \sigma _{yy} = 4\text{Re}\left(\varphi _{,z}\right)
 \end{equation}
 
-\begin{equation}
+\begin{equation}\label{sigmaxx-sigmayy complex}
   2\sigma _{xx} - 2\sigma _{yy}+4i\sigma _{xy}=4\bar{z}\varphi _{,zz}+4\psi{,z}\quad\rightarrow\quad \sigma _{xx} - \sigma _{yy}+2i\sigma _{xy}=2\left(\bar{z}\varphi _{,zz}+\psi{,z}\right)
 \end{equation}
+
+Now let's discuss the arbitrariness of $$\varphi$$ and $$\psi$$. Suppose we transform $$\varphi\rightarrow\varphi^{'}$$ and $$\psi\rightarrow\psi^{'}$$. 
+
+From \eqref{sigmaxx+sigmayy complex}, $$\varphi^ { '} _{,z}$$ must be complex, so $$\varphi^{'} _{,z} = \varphi _{,z} + iD\quad\rightarrow\quad\varphi ^{ ' }=\varphi + iDz + \gamma$$ and from \eqref{sigmaxx-sigmayy complex}, $$\psi^{'}=\psi+\gamma^{'}$$. Applying \eqref{ux+uy complex}:
+
+\begin{equation}
+  2\mu\left(u_{x}^{'}+iu_{y}^{'}\right)=2\mu\left(u_{x}+iu_{y}\right)\quad\rightarrow\quad \kappa\varphi-z\bar{\varphi}_{,z}-\bar{\psi}=\kappa\varphi^{'}-z\bar{\varphi}^{'} _{,z}-\bar{\psi}^{'}
+\end{equation}
+\begin{equation}
+  \rightarrow iDz\left(\kappa +1\right) +\kappa\gamma-\bar{\gamma^{'}}=0
+\end{equation}
+It is immediately obvious that $$D=0$$ and we are free to set either $$\gamma$$ or $$\gamma^{'}$$, so in principal, this means we can chose $$\varphi\left(0\right)=0$$ or $$\psi\left(0\right)=0$$, but never both.
 
 <h2>II. Solutions for Boundry Problems</h2>
 
