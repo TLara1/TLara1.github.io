@@ -237,7 +237,7 @@ We can also express stress components in terms of our complex functions with \eq
 \end{equation}
 
 \begin{equation}\label{sigmaxx-sigmayy complex}
-  2\sigma _{xx} - 2\sigma _{yy}+4i\sigma _{xy}=4\bar{z}\varphi _{,zz}+4\psi{,z}\quad\rightarrow\quad \sigma _{xx} - \sigma _{yy}+2i\sigma _{xy}=2\left(\bar{z}\varphi _{,zz}+\psi{,z}\right)
+  2\sigma _{xx} - 2\sigma _{yy}+4i\sigma _{xy}=4\bar{z}\varphi _{,zz}+4\psi{,z}\quad\rightarrow\quad \sigma _{xx} - \sigma _{yy}+2i\sigma _{xy}=2\left(\bar{z}\varphi _{,zz}+\psi _{,z}\right)
 \end{equation}
 
 Now let's discuss the arbitrariness of $$\varphi$$ and $$\psi$$. Suppose we transform $$\varphi\rightarrow\varphi^{'}$$ and $$\psi\rightarrow\psi^{'}$$. 
