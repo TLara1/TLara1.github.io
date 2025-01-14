@@ -324,12 +324,12 @@ We will evaluate $$f$$ in a later section.
 Using a Cauchy's integral around the unit circle $$\gamma$$:
 
 \begin{equation}
-    \varphi\left(\zeta\right)=\frac{1}{2\pi i}\onit_\gamma\frac{\varphi\left(\varsigma\right)}{\varsigma-\zeta}d\varsigma=-\frac{1}{2\pi i}\onit_\gamma\frac{\omega\left(\varsigma\right)\bar{\varphi}\left(\bar{\varsigma}\right)}{\bar{\omega_{,\zeta}}\left(\bar{\varsigma}\right)\left(\varsigma-\zeta\right)}d\varsigma-\frac{1}{2\pi i}\onit_\gamma\frac{\bar{\psi}\left(\bar{\varsigma}\right)}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi i}\onit_\gamma\frac{f}{\varsigma-\zeta}d\varsigma
+    \varphi\left(\zeta\right)=\frac{1}{2\pi i}\oint_\gamma\frac{\varphi\left(\varsigma\right)}{\varsigma-\zeta}d\varsigma=-\frac{1}{2\pi i}\oint_\gamma\frac{\omega\left(\varsigma\right)\bar{\varphi}\left(\bar{\varsigma}\right)}{\bar{\omega_{,\zeta}}\left(\bar{\varsigma}\right)\left(\varsigma-\zeta\right)}d\varsigma-\frac{1}{2\pi i}\oint_\gamma\frac{\bar{\psi}\left(\bar{\varsigma}\right)}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi i}\oint_\gamma\frac{f}{\varsigma-\zeta}d\varsigma
 \end{equation}
 
 With \eqref{f0 comp} and setting $$\bar{\psi}\left(\varsigma\right)=0$$:
 \begin{equation}
-  \frac{1}{2\pi i}\onit_\gamma\frac{\bar{\psi}\left(\bar{\varsigma}\right)}{\varsigma-\zeta}d\varsigma=\bar{\psi}\left(0\right)=0
+  \frac{1}{2\pi i}\oint_\gamma\frac{\bar{\psi}\left(\bar{\varsigma}\right)}{\varsigma-\zeta}d\varsigma=\bar{\psi}\left(0\right)=0
 \end{equation}
 
 
