@@ -313,7 +313,7 @@ In general, we will study a finite region $$S$$ in the complex plane, we will mo
   \varphi\left(\zeta\right)+\frac{\omega\left(\zeta\right)\bar{\varphi}_{,\zeta}\left(\bar{\zeta}\right)}{\bar{\omega} _{,\zeta}\left(\bar{\zeta}\right)}+\bar{\psi}\left(\bar{\zeta}\right)= U _{,x}+iU _{,y}
 \end{equation}
 
-Now allow $$\varsigma=e^{i\theta}$$ to describe the edge of the unit disk in the $$\zeta$$ plane. We take the boundary conditions to be given, $U_{,x}+iU_{,y}=f$ along $$\zeta=\varsigma$$, so:
+Now allow $$\varsigma=e^{i\theta}$$ to describe the edge of the unit disk in the $$\zeta$$ plane. We take the boundary conditions to be given, $$U_{,x}+iU_{,y}=f$$ along $$\zeta=\varsigma$$, so:
 
 \begin{equation}\label{edge complex varphi psi}
     \varphi\left(\varsigma\right)+\frac{\omega\left(\varsigma\right)\bar{\varphi} _{,\zeta}\left(\bar{\varsigma}\right)}{\bar{\omega} _{,\varsigma}\left(\bar{\varsigma}\right)}+\bar{\psi}\left(\bar{\varsigma}\right)= f
