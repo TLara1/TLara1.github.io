@@ -11,7 +11,7 @@ giscus_comments: false
 
 
 
-<h2>V. The Disturbing Function For the Three-Body Problem,</h2>
+<h2>V. The Disturbing Function For the Three-Body Problem</h2>
 We now analyse the disturbing function caused by the presence of a third body of mass $$m_2'$$. 
 From Newton's Law, the motions of the three bodies are:
 
@@ -1096,8 +1096,18 @@ We use the current orbital elements of Mercury and Venus as initial parameters.
 \end{equation}
 
 \begin{equation}
-    h_1(0) = 0.201 && h_2(0)=0.00509 && k_1(0)=0.0447 && k_2(0) =-0.00451 \nonumber
+    h_1(0) = 0.201  \nonumber
 \end{equation}
+\begin{equation}
+     h_2(0)=0.00509  \nonumber
+\end{equation}
+\begin{equation}
+    k_1(0)=0.0447 \nonumber
+\end{equation}
+\begin{equation}
+    k_2(0) =-0.00451 \nonumber
+\end{equation}
+
 
 Solving the eigenvalue problem:
 
@@ -1234,7 +1244,7 @@ And, somewhat unsurprisingly, using current values, we find:
     \dot{\varpi}=44.908^{"} \text{ century}^{-1}
 \end{equation}
 
-This brings the total precession to $$\approx588.872$$, much closer to the observed value.
+This brings the total precession to $$\approx588.87^{"}2$$, much closer to the observed value.
 
 Of course, there are other sources of perihelion precession such as the oblateness of the sun and the interactions of other planets with each other, but these corrections are of a higher order than the second-order approximations we have carried out.
 
