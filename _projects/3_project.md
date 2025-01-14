@@ -300,7 +300,7 @@ Now, lets consider the case where $$S$$ is the unit circle, importantly for $$t$
 \end{equation}
 
 As $$g ^{'}$$ is analytic only in $$z\in S$$, by \eqref{not anal}, $$g '(z)=0$$ in $$z\notin S$$, and as $$S$$ is the unit circle, $$\frac{1}{z}$$ for $$z\notin S$$ is equivalent to $$z$$ for $$z\in S$$. So:
-\begin{equation}
+\begin{equation} \label{f0 comp}
   \frac{1}{2\pi i}\oint_\gamma\frac{f\left(\bar{t}\right)}{t-z}dt = f\left(0\right)  \quad z\in S
 \end{equation}
 Where $$f$$ is a function that is analytic for $$z\in S$$.
@@ -310,13 +310,13 @@ Where $$f$$ is a function that is analytic for $$z\in S$$.
 In general, we will study a finite region $$S$$ in the complex plane, we will move this region to a unit disk in the $$\zeta$$ plane, via: $$z=\omega\left(\zeta\right)$$. With \eqref{U complex}:
 
 \begin{equation}
-  $$\varphi\left(\zeta\right)+\frac{\omega\left(\zeta\right)\bar{\varphi\left(\zeta\right)}}{\bar{\omega_{,\zeta}\left(\zeta\right)}}+\bar\psi\left(\zeta\right)= U_{,x}+iU_{,y}$$
+  \varphi\left(\zeta\right)+\frac{\omega\left(\zeta\right)\bar{\varphi}\left(\bar{\zeta}\right)}{\bar{\omega_{,\zeta}}\left(\bar{\zeta}\right)}+\bar{\psi}\left(\bar{\zeta}\right)= U_{,x}+iU_{,y}
 \end{equation}
 
 Now allow $$\varsigma=e^{i\theta}$$ to describe the edge of the unit disk in the $$\zeta$$ plane. We take the boundary conditions to be given, $U_{,x}+iU_{,y}=f$ along $$\zeta=\varsigma$$, so:
 
 \begin{equation}
-    \varphi\left(\varsigma\right)+\frac{\omega\left(\varsigma\right)\bar{\varphi\left(\varsigma\right)}}{\bar{\omega_{,zeta}\left(\varsigma\right)}}+\bar\psi\left(\varsigma\right)= f
+    \varphi\left(\varsigma\right)+\frac{\omega\left(\varsigma\right)\bar{\varphi}\left(\bar{\varsigma}\right)}{\bar{\omega_{,\varsigma}}\left(\bar{\varsigma}\right)}+\bar{\psi}\left(\bar{\varsigma}\right)= f
 \end{equation}
 
 We will evaluate $$f$$ in a later section. 
@@ -324,5 +324,12 @@ We will evaluate $$f$$ in a later section.
 Using a Cauchy's integral around the unit circle $$\gamma$$:
 
 \begin{equation}
-    \varphi\left(\zeta\right)=\frac{1}{2\pi i}\onit_\gamma\frac{\varphi\left(\varsigma\right)}{\varsigma-\zeta}d\varsigma=-\frac{1}{2\pi i}\onit_\gamma\frac{\omega\left(\varsigma\right)\bar{\varphi\left(\varsigma\right)}}{\bar{\omega_{,zeta}\left(\varsigma\right)}\left(\varsigma-\zeta\right)}d\varsigma-\frac{1}{2\pi i}\onit_\gamma\frac{\bar\psi\left(\varsigma\right)}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi i}\onit_\gamma\frac{f}{\varsigma-\zeta}d\varsigma
-  \end{equation}
+    \varphi\left(\zeta\right)=\frac{1}{2\pi i}\onit_\gamma\frac{\varphi\left(\varsigma\right)}{\varsigma-\zeta}d\varsigma=-\frac{1}{2\pi i}\onit_\gamma\frac{\omega\left(\varsigma\right)\bar{\varphi}\left(\bar{\varsigma}\right)}{\bar{\omega_{,\zeta}}\left(\bar{\varsigma}\right)\left(\varsigma-\zeta\right)}d\varsigma-\frac{1}{2\pi i}\onit_\gamma\frac{\bar{\psi}\left(\bar{\varsigma}\right)}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi i}\onit_\gamma\frac{f}{\varsigma-\zeta}d\varsigma
+\end{equation}
+
+With \eqref{f0 comp} and setting $$\bar{\psi}\left(\varsigma\right)=0$$:
+\begin{equation}
+  \frac{1}{2\pi i}\onit_\gamma\frac{\bar{\psi}\left(\bar{\varsigma}\right)}{\varsigma-\zeta}d\varsigma=\bar{\psi}\left(0\right)=0
+\end{equation}
+
+
