@@ -310,21 +310,21 @@ Where $$f$$ is a function that is analytic for $$z\in S$$.
 In general, we will study a finite region $$S$$ in the complex plane, we will move this region to a unit disk in the $$\zeta$$ plane, via: $$z=\omega\left(\zeta\right)$$. With \eqref{U complex}:
 
 \begin{equation}
-  \varphi\left(\zeta\right)+\frac{\omega\left(\zeta\right)\bar{\varphi}\left(\bar{\zeta}\right)}{\bar{\omega} _{,\zeta}\left(\bar{\zeta}\right)}+\bar{\psi}\left(\bar{\zeta}\right)= U _{,x}+iU _{,y}
+  \varphi\left(\zeta\right)+\frac{\omega\left(\zeta\right)\bar{\varphi}_{,\zeta}\left(\bar{\zeta}\right)}{\bar{\omega} _{,\zeta}\left(\bar{\zeta}\right)}+\bar{\psi}\left(\bar{\zeta}\right)= U _{,x}+iU _{,y}
 \end{equation}
 
 Now allow $$\varsigma=e^{i\theta}$$ to describe the edge of the unit disk in the $$\zeta$$ plane. We take the boundary conditions to be given, $U_{,x}+iU_{,y}=f$ along $$\zeta=\varsigma$$, so:
 
-\begin{equation}
-    \varphi\left(\varsigma\right)+\frac{\omega\left(\varsigma\right)\bar{\varphi}\left(\bar{\varsigma}\right)}{\bar{\omega}_{,\varsigma}\left(\bar{\varsigma}\right)}+\bar{\psi}\left(\bar{\varsigma}\right)= f
+\begin{equation}\label{edge complex varphi psi}
+    \varphi\left(\varsigma\right)+\frac{\omega\left(\varsigma\right)\bar{\varphi} _{,\zeta}\left(\bar{\varsigma}\right)}{\bar{\omega} _{,\varsigma}\left(\bar{\varsigma}\right)}+\bar{\psi}\left(\bar{\varsigma}\right)= f
 \end{equation}
 
 We will evaluate $$f$$ in a later section. 
 
 Using a Cauchy's integral around the unit circle $$\gamma$$:
 
-\begin{equation}
-    \varphi\left(\zeta\right)=\frac{1}{2\pi i}\oint_\gamma\frac{\varphi\left(\varsigma\right)}{\varsigma-\zeta}d\varsigma=-\frac{1}{2\pi i}\oint_\gamma\frac{\omega\left(\varsigma\right)\bar{\varphi}\left(\bar{\varsigma}\right)}{\bar{\omega} _{,\zeta}\left(\bar{\varsigma}\right)\left(\varsigma-\zeta\right)}d\varsigma-\frac{1}{2\pi i}\oint _\gamma\frac{\bar{\psi}\left(\bar{\varsigma}\right)}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi i}\oint _\gamma\frac{f}{\varsigma-\zeta}d\varsigma
+\begin{equation}\label{varphi complex map}
+    \varphi\left(\zeta\right)=\frac{1}{2\pi i}\oint_\gamma\frac{\varphi\left(\varsigma\right)}{\varsigma-\zeta}d\varsigma=-\frac{1}{2\pi i}\oint_\gamma\frac{\omega\left(\varsigma\right)\bar{\varphi}_{,\zeta}\left(\bar{\varsigma}\right)}{\bar{\omega} _{,\zeta}\left(\bar{\varsigma}\right)\left(\varsigma-\zeta\right)}d\varsigma-\frac{1}{2\pi i}\oint _\gamma\frac{\bar{\psi}\left(\bar{\varsigma}\right)}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi i}\oint _\gamma\frac{f}{\varsigma-\zeta}d\varsigma
 \end{equation}
 
 With \eqref{f0 comp} and setting $$\bar{\psi}\left(0\right)=0$$:
@@ -332,4 +332,25 @@ With \eqref{f0 comp} and setting $$\bar{\psi}\left(0\right)=0$$:
   \frac{1}{2\pi i}\oint_\gamma\frac{\bar{\psi}\left(\bar{\varsigma}\right)}{\varsigma-\zeta}d\varsigma=\bar{\psi}\left(0\right)=0
 \end{equation}
 
+Defining:
+\begin{equation}
+  \Alpha\equiv\frac{1}{2\pi i}\oint _\gamma\frac{f}{\varsigma-\zeta}d\varsigma\nonumber
+\end{equation}
+
+With \eqref{varphi complex map}:
+
+\begin{equation}
+    \varphi\left(\zeta\right)+\frac{1}{2\pi i}\oint_\gamma\frac{\omega\left(\varsigma\right)\bar{\varphi}_{,\zeta}\left(\bar{\varsigma}\right)}{\bar{\omega} _{,\zeta}\left(\bar{\varsigma}\right)\left(\varsigma-\zeta\right)}d\varsigma=\Alpha
+\end{equation}
+
+We can take the complex conjugate of \eqref{edge complex varphi psi} to find a similar expression for $$\psi\left(\zeta\right)$$, except we cannot remove $$\bar{\varphi}\left(0\right)$$ because we have already chosen to set $$\bar{\psi}\left(0\right)=0$$.
+
+\begin{equation}
+  \psi\left(\zeta\right)+\bar{\varphi}\left(0\right)+\frac{1}{2\pi i}\oint_\gamma\frac{\bar{\omega}\left(\bar{\varsigma}\right)\varphi_{,\zeta}\left(\varsigma\right)}{\omega _{,\zeta}\left(\varsigma\right)\left(\varsigma-\zeta\right)}d\varsigma=\Beta
+\end{equation}
+
+With:
+\begin{equation}
+  \Beta\equiv\frac{1}{2\pi i}\oint _\gamma\frac{\bar{f}}{\varsigma-\zeta}d\varsigma\nonumber
+\end{equation}
 
