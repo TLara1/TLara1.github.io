@@ -457,7 +457,7 @@ So, solving for $$\mathcal{A}$$:
 \end{equation}
 
 \begin{equation}
-   = \frac{1}{2\pi}\int_\alpha^{\left(1\right)}^\alpha^{\left(2\right)}\frac{F_x^{\left(1\right)}+iF_y^{\left(1\right)}}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi }\int_\alpha^{\left(2\right)}^\alpha^{\left(3\right)}\frac{F_x^{\left(1\right)}+F_x^{\left(2\right)}+iF_y^{\left(1\right)+iF_y^{\left(2\right)}}{\varsigma-\zeta}d\varsigma+\quad...\quad+\frac{1}{2\pi }\int_\alpha^{\left(n\right)}^\alpha^{\left(1\right)}\frac{F_x^{\left(1\right)}+...+F_x^{\left(n\right)}+iF_y^{\left(1\right)+...+iF_y^{\left(n\right)}}{\varsigma-\zeta}d\varsigma
+   = \frac{1}{2\pi}\int _{\alpha^{\left(1\right)}} ^ {\alpha^{\left(2\right)}} \frac{F_x^{\left(1\right)}+iF _y^{\left(1\right)}}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi }\int _{\alpha^{\left(2\right)}} ^ {\alpha^{\left(3\right)}} \frac{F_x^{\left(1\right)}+F_x^{\left(2\right)}+iF_y^{\left(1\right)+iF_y^{\left(2\right)}}{\varsigma-\zeta}d\varsigma+\quad...\quad+\frac{1}{2\pi } \int _{\alpha^{\left(n\right)}} ^ {\alpha^{\left(1\right)}} \frac{F_x^{\left(1\right)}+...+F_x^{\left(n\right)}+iF_y^{\left(1\right)+...+iF_y^{\left(n\right)}}{\varsigma-\zeta}d\varsigma
 \end{equation}
   
 
