@@ -440,12 +440,10 @@ Using \eqref{psi comp final} we can find a similar expression for $$\psi\left(\z
   \frac{1}{2\pi i}\oint_\gamma\frac{\bar{\varsigma}\varphi_{,\zeta}\left(\varsigma\right)}{\varsigma-\zeta}d\varsigma = \frac{1}{2\pi i}\oint_\gamma\frac{\varphi_{,\zeta}\left(\varsigma\right)}{\varsigma\left(\varsigma-\zeta\right)}d\varsigma=\frac{\varphi_{,\zeta}\left(\zeta\right)}{\zeta}
 \end{equation}
 
-We can omit the 
-
 And:
 
-\begin{equation}
-  \psi\left(\zeta\right)+\mathcal{A}-2a_2+\frac{\mathcal{A}_{,\zeta}}{\zeta}-\frac{\bar{a_1}}{\zeta}=\mathcal{B}
+\begin{equation}\label{psi simple}
+  \psi\left(\zeta\right)+\bar{\varphi}\left(0\right)+\frac{\varphi_{,\zeta}\left(\zeta\right)}{\zeta}=\mathcal{B}
 \end{equation}
 
 <h3>III.II Forcing Terms</h3>
@@ -492,4 +490,15 @@ Solving for $$a_1$$ and $$a_2$$ using \eqref{a2 comp} and \eqref{a1 comp}:
   a_2=\frac{1}{2\pi}\sum_{k=1}^{n} \frac{F_x^{\left(k\right)}+iF _y^{\left(k\right)}}{\left(\varsigma ^ {\left(k\right)}\right)^2}
 \end{equation}
 
-With \eqref{}
+With \eqref{varphi simple} and \eqref{psi simple}
+
+\begin{equation}
+  \varphi\left(\zeta\right)=-\sum_{k=1}^{n}\frac{\zeta}{4\pi}\sum_{k=1}^{n} F_x^{\left(k\right)}-iF _y^{\left(k\right)}\varsigma ^ {\left(k\right)}+\frac{1}{\pi} \frac{F_x^{\left(k\right)}+iF _y^{\left(k\right)}}{\left(\varsigma ^ {\left(k\right)}\right)^2}+\frac{1}{2\pi} \left(F_x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\ln{\varsigma ^ {\left(k\right)}-\zeta}
+\end{equation}
+
+\begin{equation}
+  \psi\left(\zeta\right)=\sum_{k=1}^{n}\frac{1}{\pi} \frac{F_x^{\left(k\right)}+iF _y^{\left(k\right)}}{\left(\varsigma ^ {\left(k\right)}\right)^2}+\frac{1}{2\pi} \left(F_x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\ln{\varsigma ^ {\left(k\right)}}
+  
+  
+  \bar{\varphi}\left(0\right)+\frac{\varphi_{,\zeta}\left(\zeta\right)}{\zeta}=\mathcal{B}
+\end{equation}
