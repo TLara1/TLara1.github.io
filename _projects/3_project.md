@@ -354,8 +354,45 @@ With:
   \mathcal{B}\equiv\frac{1}{2\pi i}\oint _\gamma\frac{\bar{f}}{\varsigma-\zeta}d\varsigma\nonumber
 \end{equation}
 
+<h3>II.III Boundry terms</h3>
+Here we discuss the physical meaning of the $$f=U_{,x}+iU_{,y}$$ function. First consider a length of the edge of our body from points $$A$$ to $$B$$. Considering $$ds$$ as an infinitesimal length along the edge of our object, the $$x$$ and $$y$$ components of the force normal to the length $$AB$$ can be found by:
 
-<h3>II.III Solution for a Circular Disk</h3>
+\begin{equation}\label{F i equation}
+  F_i = \int_A^B\sigma_{ij}n_jds \nonumber
+\end{equation}
+
+Where $$n_i$$ is the normal direction pointing out of the solid. The components of the normal vector are found by differentiating since the tangential direction is given by $$t_i\equiv\frac{dx_i}{ds}$$, we find:
+
+\begin{equation}
+  n_x=\frac{dy}{ds}\nonumber
+\end{equation}
+
+\begin{equation}
+  n_y=-\frac{dx}{ds}\nonumber
+\end{equation}
+
+So:
+\begin{equation}
+  \sigma_{xj}n_j = \sigma_{xx}\frac{dy}{ds}-\sigma_{xy}\frac{dx}{ds} = U_{,yy}\frac{dy}{ds}+U_{,xy}\frac{dx}{ds} = \frac{d}{ds}\left(U_{,y}\right)
+\end{equation}
+
+\begin{equation}
+  \sigma_{yj}n_j = \sigma_{yx}\frac{dy}{ds}-\sigma_{yy}\frac{dx}{ds} = -U_{,yx}\frac{dy}{ds}-U_{,xx}\frac{dx}{ds} = -\frac{d}{ds}\left(U_{,x}\right)
+\end{equation}
+
+And, with \eqref{F i equation}:
+\begin{equation}
+  F_x+iF_y = \int_A^B\sigma_{xj}n_j+\sigma_{yj}n_jds = \int_A^B\frac{d}{ds}\left(U_{,y}-iU_{,x}\right)ds = -i\left(U_{,x}+iU_{,y}\right)
+\end{equation}
+
+We can express $$f$$ in terms of the force distributions in the $$x$$ and $$y$$ directions along the surface of our object:
+\begin{equation}
+  f = U_{,x}+iU_{,y} = i\left(F_x+iF_y\right)
+\end{equation}
+
+<h2>III Solution for a Circular Disk With Point Forces</h2>
+
+<h3>III.I Complex Mapping</h3>
 
 For a circular object centred at $$z=0$$ of radius $$R$$, clearly $$z=\omega\left(\zeta\right)=R\zeta$$. \eqref{varphi complex final} becomes:
 
@@ -405,38 +442,4 @@ And:
   \psi\left(\zeta\right)+\mathcal{A}-2a_2+\frac{\mathcal{A}_{,\zeta}}{\zeta}-\frac{\bar{a_1}}{\zeta}=\mathcal{B}
 \end{equation}
 
-<h4>II.III.I Boundry terms</h4>
-Here we discuss the physical meaning of the $$f=U_{,x}+iU_{,y}$$ function. First consider a length of the edge of our body from points $$A$$ to $$B$$. Considering $$ds$$ as an infinitesimal length along the edge of our object, the $$x$$ and $$y$$ components of the force normal to the length $$AB$$ can be found by:
-
-\begin{equation}\label{F i equation}
-  F_i = \int_A^B\sigma_{ij}n_jds \nonumber
-\end{equation}
-
-Where $$n_i$$ is the normal direction pointing out of the solid. The components of the normal vector are found by differentiating since the tangential direction is given by $$t_i\equiv\frac{dx_i}{ds}$$, we find:
-
-\begin{equation}
-  n_x=\frac{dy}{ds}\nonumber
-\end{equation}
-
-\begin{equation}
-  n_y=-\frac{dx}{ds}\nonumber
-\end{equation}
-
-So:
-\begin{equation}
-  \sigma_{xj}n_j = \sigma_{xx}\frac{dy}{ds}-\sigma_{xy}\frac{dx}{ds} = U_{,yy}\frac{dy}{ds}+U_{,xy}\frac{dx}{ds} = \frac{d}{ds}\left(U_{,y}\right)
-\end{equation}
-
-\begin{equation}
-  \sigma_{yj}n_j = \sigma_{yx}\frac{dy}{ds}-\sigma_{yy}\frac{dx}{ds} = -U_{,yx}\frac{dy}{ds}-U_{,xx}\frac{dx}{ds} = -\frac{d}{ds}\left(U_{,x}\right)
-\end{equation}
-
-And, with \eqref{F i equation}:
-\begin{equation}
-  F_x+iF_y = \int_A^B\sigma_{xj}n_j+\sigma_{yj}n_jds = \int_A^B\frac{d}{ds}\left(U_{,y}-iU_{,x}\right)ds = -i\left(U_{,x}+iU_{,y}\right)
-\end{equation}
-
-We can express $$f$$ in terms of the force distributions in the $$x$$ and $$y$$ directions along the surface of our object:
-\begin{equation}
-  f = U_{,x}+iU_{,y} = i\left(F_x+iF_y\right)
-\end{equation}
+<h3>III.II Forcing Terms</h3>
