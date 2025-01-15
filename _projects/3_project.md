@@ -345,7 +345,7 @@ With \eqref{varphi complex map}:
 
 We can take the complex conjugate of \eqref{edge complex varphi psi} to find a similar expression for $$\psi\left(\zeta\right)$$, except we cannot remove $$\bar{\varphi}\left(0\right)$$ because we have already chosen to set $$\bar{\psi}\left(0\right)=0$$.
 
-\begin{equation}\label{psi complex final}
+\begin{equation}\label{psi comp final}
   \psi\left(\zeta\right)+\bar{\varphi}\left(0\right)+\frac{1}{2\pi i}\oint_\gamma\frac{\bar{\omega}\left(\bar{\varsigma}\right)\varphi_{,\zeta}\left(\varsigma\right)}{\omega _{,\zeta}\left(\varsigma\right)\left(\varsigma-\zeta\right)}d\varsigma=\mathcal{B}
 \end{equation}
 
@@ -393,7 +393,7 @@ By definition $$a_1\equiv\varphi_{,\zeta}\left(0\right)$$ and $$a_2\equiv\varphi
 
 Only the real part of $$a_1$$ is determined, as the imaginary portion cancels in \eqref{varphi simple}. 
 
-Using \eqref{psi complex final} we can find a similar expression for $$\psi\left(\zeta\right)$$, noting that for our circular case:
+Using \eqref{psi comp final} we can find a similar expression for $$\psi\left(\zeta\right)$$, noting that for our circular case:
 
 \begin{equation}
   \frac{1}{2\pi i}\oint_\gamma\frac{\bar{\varsigma}\varphi_{,\zeta}\left(\varsigma\right)}{\varsigma-\zeta}d\varsigma = \frac{\varphi_{,\zeta}\left(\zeta\right)}{\zeta}
