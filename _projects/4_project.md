@@ -4,77 +4,57 @@ title: project 4
 description: another without an image
 img:
 importance: 3
-category: fun
+category: Physics
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<h3>Solution for a Circular Disk</h3>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+For a circular object centred at $$z=0$$ of radius $$R$$, clearly $$z=\omega\left(\zeta\right)=R\zeta$$. \eqref{varphi complex final} becomes:
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+\begin{equation}\label{varphi a expand}
+    \varphi\left(\zeta\right)+\frac{1}{2\pi i}\oint_\gamma\frac{\varsigma\bar{\varphi}_{,\zeta}\left(\bar{\varsigma}\right)}{\varsigma-\zeta}d\varsigma=\mathcal{A}
+\end{equation}
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Because $$\varphi\left(\zeta\right)$$ is analytic in the unit circle, we express the function as a power series: $$\varphi\left(\zeta\right)=a_0+a_1\zeta+a_2\zeta^2+...$$. Using $$\bar{\varsigma}\varsigma=1$$ on the unit circle:
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+\begin{equation}
+  \frac{1}{2\pi i}\oint_\gamma\frac{\varsigma\bar{\varphi}_{,\zeta}\left(\bar{\varsigma}\right)}{\varsigma-\zeta} d\varsigma= \frac{1}{2\pi i}\oint _\gamma\frac{\bar{a_1}\varsigma+2\bar{a_2}}{\varsigma-\zeta}d\varsigma+\sum _{k=3}^\infty\frac{1}{2\pi i}\oint _\gamma\frac{n!\bar{a} _n \bar{\varsigma}^{k-2}}{\varsigma-\zeta}d\varsigma
+\end{equation}
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+With \eqref{f0 comp}:
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+\begin{equation}
+  \frac{1}{2\pi i}\oint _\gamma\frac{\bar{a} _n \bar{\varsigma}^{k-2}}{\varsigma-\zeta}d\varsigma = 0^n = 0
+\end{equation}
 
-{% raw %}
+So, reducing \eqref{varphi a expand} and simplfying integrals:
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+\begin{equation}\label{varphi simple}
+  \varphi\left(\zeta\right)+\bar{a_1}\zeta+2\bar{a_2}=\mathcal{A}
+\end{equation}
 
-{% endraw %}
+By definition $$a_1\equiv\varphi_{,\zeta}\left(0\right)$$ and $$a_2\equiv\varphi_{,\zeta\zeta}\left(0\right)$$, using \eqref{varphi simple}, taking derivatives and setting $$\zeta=0$$, we find:
+
+\begin{equation}
+  a_1+\bar{a_1}=\mathcal{A}_{,\zeta} \nonumber
+\end{equation}
+
+\begin{equation}
+  a_2=\mathcal{A}_{,\zeta\zeta} \nonumber
+\end{equation}
+
+Only the real part of $$a_1$$ is determined, as the imaginary portion cancels in \eqref{varphi simple}. 
+
+Using \eqref{{psi complex final} we can find a similar expression for $$\psi\left(\zeta\right)$$, noting that for our circular case:
+
+\begin{equation}
+  \frac{1}{2\pi i}\oint_\gamma\frac{\bar{\varsigma}\varphi_{,\zeta}\left(\varsigma\right)}{\varsigma-\zeta}d\varsigma = \frac{\varphi_{,\zeta}\left(\zeta\right)}{\zeta}
+\end{equation}
+
+And:
+
+\begin{equation}
+  \psi\left(\zeta\right)+\mathcal{A}-2a_2+\frac{\mathcal{A}_{,\zeta}}{\zeta}-\frac{\bar{a_1}}{\zeta}=\mathcal{B}
+\end{equation}
+
+
