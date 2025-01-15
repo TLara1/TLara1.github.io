@@ -353,5 +353,3 @@ With:
 \begin{equation}
   \mathcal{B}\equiv\frac{1}{2\pi i}\oint _\gamma\frac{\bar{f}}{\varsigma-\zeta}d\varsigma\nonumber
 \end{equation}
-
-
