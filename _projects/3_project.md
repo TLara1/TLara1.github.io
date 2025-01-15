@@ -366,13 +366,13 @@ For a circular object centred at $$z=0$$ of radius $$R$$, clearly $$z=\omega\lef
 Because $$\varphi\left(\zeta\right)$$ is analytic in the unit circle, we express the function as a power series: $$\varphi\left(\zeta\right)=a_0+a_1\zeta+a_2\zeta^2+...$$. Using $$\bar{\varsigma}\varsigma=1$$ on the unit circle:
 
 \begin{equation}
-  \frac{1}{2\pi i}\oint_\gamma\frac{\varsigma\bar{\varphi}_{,\zeta}\left(\bar{\varsigma}\right)}{\varsigma-\zeta} d\varsigma= \frac{1}{2\pi i}\oint _\gamma\frac{\bar{a_1}\varsigma+2\bar{a_2}}{\varsigma-\zeta}d\varsigma+\sum _{k=3}^\infty\frac{1}{2\pi i}\oint _\gamma\frac{n!\bar{a} _n \bar{\varsigma}^{k-2}}{\varsigma-\zeta}d\varsigma
+  \frac{1}{2\pi i}\oint_\gamma\frac{\varsigma\bar{\varphi}_{,\zeta}\left(\bar{\varsigma}\right)}{\varsigma-\zeta} d\varsigma= \frac{1}{2\pi i}\oint _\gamma\frac{\bar{a_1}\varsigma+2\bar{a_2}}{\varsigma-\zeta}d\varsigma+\sum _{k=3}^\infty\frac{1}{2\pi i}\oint _\gamma\frac{k!\bar{a_k }  \bar{\varsigma}^{k-2}}{\varsigma-\zeta}d\varsigma
 \end{equation}
 
 With \eqref{f0 comp}:
 
 \begin{equation}
-  \frac{1}{2\pi i}\oint _\gamma\frac{\bar{a} _n \bar{\varsigma}^{k-2}}{\varsigma-\zeta}d\varsigma = 0^n = 0
+  \frac{1}{2\pi i}\oint _\gamma\frac{\bar{a_k } \bar{\varsigma}^{k-2}}{\varsigma-\zeta}d\varsigma = \bar{a_k} 0^{k-2} = 0
 \end{equation}
 
 So, reducing \eqref{varphi a expand} and simplfying integrals:
