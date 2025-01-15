@@ -464,4 +464,14 @@ So, solving for $$\mathcal{A}$$:
    = \frac{F_x^{\left(1\right)}+iF _y^{\left(1\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(2\right)}-\zeta}{\varsigma ^ {\left(1\right)}-\zeta}} + \frac{F_x^{\left(1\right)}+F_x^{\left(2\right)}+iF_y^{\left(1\right)+iF_y^{\left(2\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(3\right)}-\zeta}{\varsigma ^ {\left(2\right)}-\zeta}}+\quad...\quad+\frac{F_x^{\left(1\right)}+...+F_x^{\left(n\right)}+iF_y^{\left(1\right)+...+iF_y^{\left(n\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(1\right)}-\zeta}{\varsigma ^ {\left(n\right)}-\zeta}}
 \end{equation}
 
+We rewrite to find:
 
+\begin{equation}
+  \mathcal{A}=-\frac{1}{2\pi}\sum_{k=1}^{n} \left(F_x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\ln{\varsigma ^ {\left(k\right)}-\zeta}
+\end{equation}
+
+And similarly:
+
+\begin{equation}
+  \mathcal{B}=-\frac{1}{2\pi}\sum_{k=1}^{n} \left(F_x^{\left(k\right)}-iF _y^{\left(k\right)}\right)\ln{\varsigma ^ {\left(k\right)}-\zeta}
+\end{equation}
