@@ -448,10 +448,21 @@ We consider a disk under $$n$$ concentrated point forces, $$F_i^{\left(1\right)}
 Along each arc $$\alpha^{\left(1\right)}\alpha^{\left(2\right)}$$, $$\alpha^{\left(2\right)}\alpha^{\left(3\right)}$$, ..., $$\alpha^{\left(n\right)}\alpha^{\left(1\right)}$$, $$f$$ will be constant, as there are no forces along these arcs. But, $$f=i\left(F_x+iF_y\right)$$ will change by $$i\left(F_x^{\left(k\right)}+iF_y^{\left(k\right)}\right)$$ when passing through the point $$\varsigma^{\left(k\right)}=e^{i\alpha^{\left(k\right)}}$$. We can set $$f=0$$ along $$\alpha^{\left(n\right)}\alpha^{\left(1\right)}$$, and $$f=i\left(F_x^{\left(1\right)}+iF_y^{\left(1\right)}\right)$$ along $$\alpha^{\left(1\right)}\alpha^{\left(2\right)}$$,  $$f=i\left(F_x^{\left(1\right)}+iF_y^{\left(1\right)}\right)+i\left(F_x^{\left(2\right)}+iF_y^{\left(2\right)}\right)$$ along $$\alpha^{\left(2\right)}\alpha^{\left(3\right)}$$ and so fourth. An integral over the unit circle can be split into an integration over each of these arcs:
 
 \begin{equation}
-  \oint d\varsigma = \int_\alpha^{\left(1\right)}^\alpha^{\left(2\right)}d\varsigma+\int_\alpha^{\left(2\right)}^\alpha^{\left(3\right)}d\varsigma+...+\int_\alpha^{\left(n\right)}^\alpha^{\left(1\right)}d\varsigma
+  \oint_ \gamma  d\varsigma =\int_\alpha^{\left(1\right)}^\alpha^{\left(2\right)}d\varsigma+\int_\alpha^{\left(2\right)}^\alpha^{\left(3\right)}d\varsigma+\quad...\quad+\int_\alpha^{\left(n\right)}^\alpha^{\left(1\right)}d\varsigma
 \end{equation}
 
 So, solving for $$\mathcal{A}$$:
+\begin{equation}
+  \mathcal{A} = \frac{1}{2\pi i}\oint _ \gamma \frac{f}{\varsigma-\zeta}d\varsigma = \frac{1}{2\pi i}\int_\alpha^{\left(1\right)}^\alpha^{\left(2\right)}\frac{f}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi i}\int_\alpha^{\left(2\right)}^\alpha^{\left(3\right)}\frac{f}{\varsigma-\zeta}d\varsigma+\quad...\quad+\frac{1}{2\pi i}\int_\alpha^{\left(n\right)}^\alpha^{\left(1\right)}\frac{f}{\varsigma-\zeta}d\varsigma
+\end{equation}
+
+\begin{equation}
+ = \frac{1}{2\pi}\int_\alpha^{\left(1\right)}^\alpha^{\left(2\right)}\frac{F_x^{\left(1\right)}+iF_y^{\left(1\right)}}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi }\int_\alpha^{\left(2\right)}^\alpha^{\left(3\right)}\frac{F_x^{\left(1\right)}+F_x^{\left(2\right)}+iF_y^{\left(1\right)+iF_y^{\left(2\right)}}{\varsigma-\zeta}d\varsigma+\quad...\quad+\frac{1}{2\pi }\int_\alpha^{\left(n\right)}^\alpha^{\left(1\right)}\frac{F_x^{\left(1\right)}+...+F_x^{\left(n\right)}+iF_y^{\left(1\right)+...+iF_y^{\left(n\right)}}{\varsigma-\zeta}d\varsigma
+\end{equation}
+  
+  
+  \int_\alpha^{\left(1\right)}^\alpha^{\left(2\right)}d\varsigma+\int_\alpha^{\left(2\right)}^\alpha^{\left(3\right)}d\varsigma+...+\int_\alpha^{\left(n\right)}^\alpha^{\left(1\right)}d\varsigma
+\end{equation}
 
 
 
