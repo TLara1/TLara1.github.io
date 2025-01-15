@@ -453,16 +453,13 @@ Along each arc $$\alpha^{\left(1\right)}\alpha^{\left(2\right)}$$, $$\alpha^{\le
 
 So, solving for $$\mathcal{A}$$:
 \begin{equation}
-  \mathcal{A} = \frac{1}{2\pi i}\oint _ \gamma \frac{f}{\varsigma-\zeta}d\varsigma = \frac{1}{2\pi i}\int_\alpha^{\left(1\right)}^\alpha^{\left(2\right)}\frac{f}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi i}\int_\alpha^{\left(2\right)}^\alpha^{\left(3\right)}\frac{f}{\varsigma-\zeta}d\varsigma+\quad...\quad+\frac{1}{2\pi i}\int_\alpha^{\left(n\right)}^\alpha^{\left(1\right)}\frac{f}{\varsigma-\zeta}d\varsigma
+  \mathcal{A} = \frac{1}{2\pi i}\oint _ \gamma \frac{f}{\varsigma-\zeta}d\varsigma = \frac{1}{2\pi i}\int _{\alpha^{\left(1\right)}} ^ {\alpha^{\left(2\right)}} \frac{f}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi i}\int _{\alpha ^{\left(2\right)}} ^{\alpha ^{\left(3\right)}}\frac{f}{\varsigma-\zeta}d\varsigma+\quad...\quad+\frac{1}{2\pi i}\int _{\alpha ^ {\left(n\right)}} ^ {\alpha^{\left(1\right)}} \frac{f}{\varsigma-\zeta}d\varsigma
 \end{equation}
 
 \begin{equation}
- = \frac{1}{2\pi}\int_\alpha^{\left(1\right)}^\alpha^{\left(2\right)}\frac{F_x^{\left(1\right)}+iF_y^{\left(1\right)}}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi }\int_\alpha^{\left(2\right)}^\alpha^{\left(3\right)}\frac{F_x^{\left(1\right)}+F_x^{\left(2\right)}+iF_y^{\left(1\right)+iF_y^{\left(2\right)}}{\varsigma-\zeta}d\varsigma+\quad...\quad+\frac{1}{2\pi }\int_\alpha^{\left(n\right)}^\alpha^{\left(1\right)}\frac{F_x^{\left(1\right)}+...+F_x^{\left(n\right)}+iF_y^{\left(1\right)+...+iF_y^{\left(n\right)}}{\varsigma-\zeta}d\varsigma
+   = \frac{1}{2\pi}\int_\alpha^{\left(1\right)}^\alpha^{\left(2\right)}\frac{F_x^{\left(1\right)}+iF_y^{\left(1\right)}}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi }\int_\alpha^{\left(2\right)}^\alpha^{\left(3\right)}\frac{F_x^{\left(1\right)}+F_x^{\left(2\right)}+iF_y^{\left(1\right)+iF_y^{\left(2\right)}}{\varsigma-\zeta}d\varsigma+\quad...\quad+\frac{1}{2\pi }\int_\alpha^{\left(n\right)}^\alpha^{\left(1\right)}\frac{F_x^{\left(1\right)}+...+F_x^{\left(n\right)}+iF_y^{\left(1\right)+...+iF_y^{\left(n\right)}}{\varsigma-\zeta}d\varsigma
 \end{equation}
   
-  
-  \int_\alpha^{\left(1\right)}^\alpha^{\left(2\right)}d\varsigma+\int_\alpha^{\left(2\right)}^\alpha^{\left(3\right)}d\varsigma+...+\int_\alpha^{\left(n\right)}^\alpha^{\left(1\right)}d\varsigma
-\end{equation}
 
 
 
