@@ -355,4 +355,11 @@ With:
 \end{equation}
 
 
-<h3>II.III Solution for a Circular Disk</h3>
+
+For a circular object centred at $$z=0$$ of radius $$R$$, clearly $$z=\omega\left(\zeta\right)=R\zeta$$. \eqref{varphi complex final} becomes:
+
+\begin{equation}\label{varphi a expand}
+    \varphi\left(\zeta\right)+\frac{1}{2\pi i}\oint_\gamma\frac{\varsigma\bar{\varphi}_{,\zeta}\left(\bar{\varsigma}\right)}{\varsigma-\zeta}d\varsigma=\mathcal{A}
+\end{equation}
+
+Because $$\varphi\left(\zeta\right)$$ is analytic in the unit circle, we express the function as a power series: $$\varphi\left(\zeta\right)=a_0+a_1\zeta+a_2\zeta^2+...$$. Using $$\bar{\varsigma}\varsigma=1$$ on the unit circle:
