@@ -443,3 +443,4 @@ And:
 \end{equation}
 
 <h3>III.II Forcing Terms</h3>
+We consider a disk under $$n$$ concentrated point forces, $$F_i^{\left(1\right)},F_i^{\left(2\right)},...,F_i^{\left(n\right)}$$. Each force acts at an edge of the circular disk, $$F_i^{\left(1\right)}$$ acts at $$z^{\left(1\right)}=Re^{i\alpha^{\left(1\right)}}$$, an so forth, where $$\alpha^{\left(k\right)}$$ is an angle along the disk edge. Without loss of generality, let $$\alpha^{\left(1\right)} < \alpha ^{\left(2\right)} < ...< \alpha^{\left(n\right)}$$
