@@ -431,7 +431,7 @@ By definition $$a_1\equiv\varphi_{,\zeta}\left(0\right)$$ and $$a_2\equiv\varphi
 Only the real part of $$a_1$$ is determined, as the imaginary portion cancels in \eqref{varphi simple}. So, we can conveniently set $$\text{Im}\left(a_1\right)=0$$ and use:
 
 \begin{equation} \label{a1 comp}
-  a_1=\frac{1}{2}\mathcal{A}_{,\zeta}
+  a_1=\frac{1}{2}\mathcal{A}_{,\zeta}\left(0\right)
 \end{equation}
 
 Using \eqref{psi comp final} we can find a similar expression for $$\psi\left(\zeta\right)$$, noting that for our circular case:
@@ -494,7 +494,7 @@ And similarly:
 Solving for $$a_1$$ and $$a_2$$ using \eqref{a2 comp} and \eqref{a1 comp}:
 
 \begin{equation}
-  a_1=\frac{1}{4\pi}\sum_{k=1}^{n} \frac{F_x^{\left(k\right)}+iF _y^{\left(k\right)}}{\varsigma ^ {\left(k\right)}}
+  a_1=\frac{1}{4\pi}\sum_{k=1}^{n} \frac{F_x^{\left(k\right)}+iF _y^{\left(k\right)}}{\varsigma ^ {\left(k\right)}}=\bar{a_1}=\frac{1}{4\pi}\sum _{k=1}^{n} \left(F_x^{\left(k\right)}-iF _y^{\left(k\right)}\right)\varsigma ^ {\left(k\right)}
 \end{equation}
 
 \begin{equation}
@@ -516,5 +516,7 @@ With \eqref{varphi simple} and \eqref{psi simple}
 \end{equation}
 
 We have used the fact that $$\frac{\varphi_{,\zeta}\left(\zeta\right)}{\zeta}-\frac{a_1}{\zeta}=\frac{\mathcal{A}_{,\zeta}}{\zeta}-\frac{\bar{a_1}}{\zeta}-\frac{a_1}{\zeta}$$, and as $$\text{Im}\left(a_1\right)=0$$, $$\bar{a_1}-a_1=0$$. 
+
+
 
 
