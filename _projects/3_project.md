@@ -501,7 +501,21 @@ Solving for $$a_1$$ and $$a_2$$ using \eqref{a2 comp} and \eqref{a1 comp}:
   a_2=\frac{1}{2\pi}\sum_{k=1}^{n} \frac{F_x^{\left(k\right)}+iF _y^{\left(k\right)}}{\left(\varsigma ^ {\left(k\right)}\right)^2}
 \end{equation}
 
-With \eqref{varphi simple} and \eqref{psi simple}
+With \eqref{varphi simple} and \eqref{psi simple}:
+
+\begin{equation}
+  \varphi\left(\zeta\right)=\mathcal{A}-\bar{a_1}\zeta-2\bar{a_2}
+\end{equation}
+\begin{equation}
+  \psi\left(\zeta\right)=\mathcal{B}+\frac{2a_1}{\zeta}-\frac{\mathcal{A}_{,\zeta}}{\zeta}-\bar{\mathcal{A}\left(0\right)}+2\bar{a_2}
+\end{equation}
+
+
+
+
+
+
+
 
 \begin{equation}
   \varphi\left(\zeta\right)=-\sum_{k=1}^{n}\frac{\zeta}{4\pi} \left(F_x^{\left(k\right)}-iF _y^{\left(k\right)}\right)\varsigma ^ {\left(k\right)}-\frac{1}{\pi} \frac{F_x^{\left(k\right)}+iF _y^{\left(k\right)}}{\left(\varsigma ^ {\left(k\right)}\right)^2}+\frac{1}{2\pi} \left(F_x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\ln{\left(\varsigma ^ {\left(k\right)}-\zeta\right)}
