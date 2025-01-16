@@ -472,11 +472,11 @@ So, solving for $$\mathcal{A}$$:
 \end{equation}
 
 \begin{equation}
-   = \frac{1}{2\pi}\int _{\varsigma^{\left(1\right)}} ^ {\varsigma^{\left(2\right)}} \frac{F_x^{\left(1\right)}+iF _y^{\left(1\right)}}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi }\int _{\varsigma^{\left(2\right)}} ^ {\varsigma^{\left(3\right)}} \frac{F _x^{\left(1\right)}+F_x^{\left(2\right)}+iF _y^{\left(1\right)+iF _y^{\left(2\right)}}{\varsigma-\zeta}d\varsigma+\quad...\quad+\frac{1}{2\pi} \int _{\varsigma^{\left(n\right)}} ^ {\varsigma^{\left(1\right)}} \frac{F _x^{\left(1\right)}+...+F _x^{\left(n\right)}+iF _y^{\left(1\right)+...+iF _y^{\left(n\right)}}{\varsigma-\zeta}d\varsigma
+   = \frac{1}{2\pi}\int _{\varsigma^{\left(1\right)}} ^ {\varsigma^{\left(2\right)}} \frac{F_x^{\left(1\right)}+iF _y^{\left(1\right)}}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi }\int _{\varsigma^{\left(2\right)}} ^ {\varsigma^{\left(3\right)}} \frac{F _x^{\left(1\right)}+F_x^{\left(2\right)}+iF _y^{\left(1\right)+iF _y^{\left(2\right)}}{\varsigma-\zeta}d\varsigma+\quad ...\quad+\frac{1}{2\pi} \int _{\varsigma^{\left(n\right)}} ^ {\varsigma^{\left(1\right)}} \frac{F _x^{\left(1\right)}+...+F _x^{\left(n\right)}+iF _y^{\left(1\right)+...+iF _y^{\left(n\right)}}{\varsigma-\zeta}d\varsigma
 \end{equation}
   
 \begin{equation}
-   = \frac{F_x^{\left(1\right)}+iF _y^{\left(1\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(2\right)}-\zeta}{\varsigma ^ {\left(1\right)}-\zeta}} + \frac{F_x^{\left(1\right)}+F_x^{\left(2\right)}+iF_y^{\left(1\right)+iF_y^{\left(2\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(3\right)}-\zeta}{\varsigma ^ {\left(2\right)}-\zeta}}+\quad...\quad+\frac{F_x^{\left(1\right)}+...+F_x^{\left(n\right)}+iF_y^{\left(1\right)+...+iF_y^{\left(n\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(1\right)}-\zeta}{\varsigma ^ {\left(n\right)}-\zeta}}
+   = \frac{F_x^{\left(1\right)}+iF _y^{\left(1\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(2\right)}-\zeta}{\varsigma ^ {\left(1\right)}-\zeta}} + \frac{F_x^{\left(1\right)}+F_x^{\left(2\right)}+iF_y^{\left(1\right)+iF_y^{\left(2\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(3\right)}-\zeta}{\varsigma ^ {\left(2\right)}-\zeta}}+\quad ...\quad+\frac{F_x^{\left(1\right)}+...+F_x^{\left(n\right)}+iF_y^{\left(1\right)+...+iF_y^{\left(n\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(1\right)}-\zeta}{\varsigma ^ {\left(n\right)}-\zeta}}
 \end{equation}
 
 We rewrite to find:
