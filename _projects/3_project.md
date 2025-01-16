@@ -443,7 +443,7 @@ Using \eqref{psi comp final} we can find a similar expression for $$\psi\left(\z
 Using a taylor series to expand $$\psi\left(\varsigma\right)$$, as it is analytic on the unit disk:
 
 \begin{equation}
-  =\frac{1}{2\pi i}\oint_\gamma\frac{a_1\bar{\varsigma}}{\varsigma-\zeta\right}d\varsigma+\frac{1}{2\pi i}\oint_\gamma\sum_{k=2}^\infty \frac{ka_k\varsigma^{k-2}}{\varsigma-\zeta}d\varsigma
+  =\frac{1}{2\pi i}\oint_\gamma\frac{a_1\bar{\varsigma}}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi i}\oint_\gamma\sum_{k=2}^\infty \frac{ka_k\varsigma^{k-2}}{\varsigma-\zeta}d\varsigma
 \end{equation}
 
 With \eqref{f0  comp}:
@@ -508,5 +508,13 @@ With \eqref{varphi simple} and \eqref{psi simple}
 \end{equation}
 
 \begin{equation}
-  \psi\left(\zeta\right)=-\sum_{k=1}^{n} \frac{1}{\pi} \frac{F_x^{\left(k\right)}+iF _y^{\left(k\right)}}{\left(\varsigma ^ {\left(k\right)}\right)^2}-\frac{1}{2\pi} \left(F_x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\ln{\left(\varsigma ^ {\left(k\right)}\right)}-\frac{1}{4\pi\zeta} \left(F_x^{\left(k\right)}-iF _y^{\left(k\right)}\right)\varsigma ^ {\left(k\right)}+\frac{1}{2\pi} \left(F _x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\frac{1}{\zeta\left(\varsigma ^ {\left(k\right)}-\zeta\right)}-\frac{1}{4\pi\zeta}\sum _{k=1}^{n} \frac{F _x^{\left(k\right)}+iF _y^{\left(k\right)}}{\varsigma ^ {\left(k\right)}}-\frac{1}{2\pi}\left(F_x^{\left(k\right)}-iF _y^{\left(k\right)}\right)\ln{\left(\varsigma ^ {\left(k\right)}-\zeta\right)}
+  \psi\left(\zeta\right)=-\sum_{k=1}^{n} \frac{1}{\pi} \frac{F_x^{\left(k\right)}+iF _y^{\left(k\right)}}{\left(\varsigma ^ {\left(k\right)}\right)^2}-\frac{1}{2\pi} \left(F_x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\ln{\left(\varsigma ^ {\left(k\right)}\right)}-\frac{1}{4\pi\zeta} \left(F_x^{\left(k\right)}-iF _y^{\left(k\right)}\right)\varsigma ^ {\left(k\right)}+\frac{1}{2\pi} \left(F _x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\frac{1}{\zeta\left(\varsigma ^ {\left(k\right)}-\zeta\right)}-\frac{1}{4\pi\zeta} \frac{F _x^{\left(k\right)}+iF _y^{\left(k\right)}}{\varsigma ^ {\left(k\right)}}-\frac{1}{2\pi}\left(F_x^{\left(k\right)}-iF _y^{\left(k\right)}\right)\ln{\left(\varsigma ^ {\left(k\right)}-\zeta\right)}
 \end{equation}
+
+\begin{equation}
+  =-\sum_{k=1}^{n} \frac{1}{\pi} \frac{F_x^{\left(k\right)}+iF _y^{\left(k\right)}}{\left(\varsigma ^ {\left(k\right)}\right)^2}-\frac{1}{2\pi} \left(F_x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\ln{\left(\varsigma ^ {\left(k\right)}\right)}+\frac{1}{2\pi} \left(F _x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\frac{1}{\zeta\left(\varsigma ^ {\left(k\right)}-\zeta\right)}-\frac{1}{2\pi}\left(F_x^{\left(k\right)}-iF _y^{\left(k\right)}\right)\ln{\left(\varsigma ^ {\left(k\right)}-\zeta\right)}
+\end{equation}
+
+We have used the fact that $$\frac{\varphi_{,\zeta}\left(\zeta\right)}{\zeta}-\frac{a_1}{\zeta}=\frac{\mathcal{A}_{,\zeta}}{\zeta}-\frac{\bar{a_1}}{\zeta}-\frac{a_1}{\zeta}$$, and as $$\text{Im}\left(a_1\right)=0$$, $$\bar{a_1}-a_1=0$$. 
+
+
