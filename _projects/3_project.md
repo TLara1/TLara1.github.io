@@ -463,16 +463,16 @@ We consider a disk under $$n$$ concentrated point forces, $$F_i^{\left(1\right)}
 Along each arc $$\varsigma^{\left(1\right)}\varsigma^{\left(2\right)}$$, $$\varsigma^{\left(2\right)}\varsigma^{\left(3\right)}$$, ..., $$\varsigma^{\left(n\right)}\varsigma^{\left(1\right)}$$, $$f$$ will be constant, as there are no forces along these arcs. But, $$f=i\left(F_x+iF_y\right)$$ will change by $$i\left(F_x^{\left(k\right)}+iF_y^{\left(k\right)}\right)$$ when passing through the point $$\varsigma^{\left(k\right)}=e^{i\varsigma^{\left(k\right)}}$$. We can set $$f=0$$ along $$\varsigma^{\left(n\right)}\varsigma^{\left(1\right)}$$, and $$f=i\left(F_x^{\left(1\right)}+iF_y^{\left(1\right)}\right)$$ along $$\varsigma^{\left(1\right)}\varsigma^{\left(2\right)}$$,  $$f=i\left(F_x^{\left(1\right)}+iF_y^{\left(1\right)}\right)+i\left(F_x^{\left(2\right)}+iF_y^{\left(2\right)}\right)$$ along $$\varsigma^{\left(2\right)}\varsigma^{\left(3\right)}$$ and so fourth. An integral over the unit circle can be split into an integration over each of these arcs:
 
 \begin{equation}
-  \oint_ \gamma  d\varsigma =\int _{\varsigma^{\left(1\right)}} ^ {\varsigma^{\left(2\right)}} d\varsigma+\int _{\varsigma^{\left(2\right)}} ^ {\varsigma^{\left(3\right)}}d\varsigma+\quad...\quad+\int _{\varsigma^{\left(n\right)}} ^ {\varsigma^{\left(1\right)}}d\varsigma
+  \oint _\gamma  d\varsigma =\int _{\varsigma^{\left(1\right)}} ^ {\varsigma^{\left(2\right)}} d\varsigma+\int _{\varsigma^{\left(2\right)}} ^ {\varsigma^{\left(3\right)}}d\varsigma+\quad...\quad+\int _{\varsigma^{\left(n\right)}} ^ {\varsigma^{\left(1\right)}}d\varsigma
 \end{equation}
 
 So, solving for $$\mathcal{A}$$:
 \begin{equation}
-  \mathcal{A} = \frac{1}{2\pi i}\oint _ \gamma \frac{f}{\varsigma-\zeta}d\varsigma = \frac{1}{2\pi i}\int _{\varsigma^{\left(1\right)}} ^ {\varsigma^{\left(2\right)}} \frac{f}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi i}\int _{\varsigma ^{\left(2\right)}} ^{\varsigma ^{\left(3\right)}}\frac{f}{\varsigma-\zeta}d\varsigma+\quad...\quad+\frac{1}{2\pi i}\int _{\varsigma ^ {\left(n\right)}} ^ {\varsigma^{\left(1\right)}} \frac{f}{\varsigma-\zeta}d\varsigma
+  \mathcal{A} = \frac{1}{2\pi i}\oint _\gamma \frac{f}{\varsigma-\zeta}d\varsigma = \frac{1}{2\pi i}\int _{\varsigma^{\left(1\right)}} ^ {\varsigma^{\left(2\right)}} \frac{f}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi i}\int _{\varsigma ^{\left(2\right)}} ^{\varsigma ^{\left(3\right)}}\frac{f}{\varsigma-\zeta}d\varsigma+\quad...\quad+\frac{1}{2\pi i}\int _{\varsigma ^ {\left(n\right)}} ^ {\varsigma^{\left(1\right)}} \frac{f}{\varsigma-\zeta}d\varsigma
 \end{equation}
 
 \begin{equation}
-   = \frac{1}{2\pi}\int _{\varsigma^{\left(1\right)}} ^ {\varsigma^{\left(2\right)}} \frac{F_x^{\left(1\right)}+iF _y^{\left(1\right)}}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi }\int _{\varsigma^{\left(2\right)}} ^ {\varsigma^{\left(3\right)}} \frac{F_x^{\left(1\right)}+F_x^{\left(2\right)}+iF_y^{\left(1\right)+iF_y^{\left(2\right)}}{\varsigma-\zeta}d\varsigma+\quad...\quad+\frac{1}{2\pi } \int _{\varsigma^{\left(n\right)}} ^ {\varsigma^{\left(1\right)}} \frac{F_x^{\left(1\right)}+...+F_x^{\left(n\right)}+iF_y^{\left(1\right)+...+iF_y^{\left(n\right)}}{\varsigma-\zeta}d\varsigma
+   = \frac{1}{2\pi}\int _{\varsigma^{\left(1\right)}} ^ {\varsigma^{\left(2\right)}} \frac{F_x^{\left(1\right)}+iF _y^{\left(1\right)}}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi }\int _{\varsigma^{\left(2\right)}} ^ {\varsigma^{\left(3\right)}} \frac{F _x^{\left(1\right)}+F_x^{\left(2\right)}+iF _y^{\left(1\right)+iF _y^{\left(2\right)}}{\varsigma-\zeta}d\varsigma+\quad...\quad+\frac{1}{2\pi} \int _{\varsigma^{\left(n\right)}} ^ {\varsigma^{\left(1\right)}} \frac{F _x^{\left(1\right)}+...+F _x^{\left(n\right)}+iF _y^{\left(1\right)+...+iF _y^{\left(n\right)}}{\varsigma-\zeta}d\varsigma
 \end{equation}
   
 \begin{equation}
@@ -488,7 +488,7 @@ We rewrite to find:
 And similarly:
 
 \begin{equation}
-  \mathcal{B}=-\frac{1}{2\pi}\sum_{k=1}^{n} \left(F_x^{\left(k\right)}-iF _y^{\left(k\right)}\right)\ln{\left(\varsigma ^ {\left(k\right)}-\zeta\right)}
+  \mathcal{B}=\frac{1}{2\pi}\sum_{k=1}^{n} \left(F_x^{\left(k\right)}-iF _y^{\left(k\right)}\right)\ln{\left(\varsigma ^ {\left(k\right)}-\zeta\right)}
 \end{equation}
 
 Solving for $$a_1$$ and $$a_2$$ using \eqref{a2 comp} and \eqref{a1 comp}:
@@ -508,11 +508,5 @@ With \eqref{varphi simple} and \eqref{psi simple}
 \end{equation}
 
 \begin{equation}
-  \psi\left(\zeta\right)=-\sum_{k=1}^{n}
-  
-  
-  \frac{1}{\pi} \frac{F_x^{\left(k\right)}+iF _y^{\left(k\right)}}{\left(\varsigma ^ {\left(k\right)}\right)^2}+\frac{1}{2\pi} \left(F_x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\ln{\varsigma ^ {\left(k\right)}}
-  
-  
-  \bar{\varphi}\left(0\right)+\frac{\varphi_{,\zeta}\left(\zeta\right)}{\zeta}=\mathcal{B}
+  \psi\left(\zeta\right)=-\sum_{k=1}^{n} \frac{1}{\pi} \frac{F_x^{\left(k\right)}+iF _y^{\left(k\right)}}{\left(\varsigma ^ {\left(k\right)}\right)^2}-\frac{1}{2\pi} \left(F_x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\ln{\left(\varsigma ^ {\left(k\right)}\right)}-\frac{1}{4\pi\zeta} \left(F_x^{\left(k\right)}-iF _y^{\left(k\right)}\right)\varsigma ^ {\left(k\right)}+\frac{1}{2\pi} \left(F _x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\frac{1}{\zeta\left(\varsigma ^ {\left(k\right)}-\zeta\right)}-\frac{1}{4\pi\zeta}\sum _{k=1}^{n} \frac{F _x^{\left(k\right)}+iF _y^{\left(k\right)}}{\varsigma ^ {\left(k\right)}}-\frac{1}{2\pi}\left(F_x^{\left(k\right)}-iF _y^{\left(k\right)}\right)\ln{\left(\varsigma ^ {\left(k\right)}-\zeta\right)}
 \end{equation}
