@@ -507,14 +507,18 @@ With \eqref{varphi simple} and \eqref{psi simple}:
   \varphi\left(\zeta\right)=\mathcal{A}-a_1\zeta-2\bar{a_2}
 \end{equation}
 \begin{equation}
-  \psi\left(\zeta\right)=\mathcal{B}+\frac{2a_1}{\zeta}-\frac{\mathcal{A}_{,\zeta}}{\zeta}-\bar{\mathcal{A}\left(0\right)}+2\bar{a_2}
+  \psi\left(\zeta\right)=\mathcal{B}+\frac{2a_1}{\zeta}-\frac{\mathcal{A}_{,\zeta}}{\zeta}-\bar{\mathcal{A}}\left(0\right)+2\bar{a_2}
 \end{equation}
 
 We have used $$a_1=\bar{a_1}$$. We have all the ingredients to write $$\varphi\left(\zeta\right)$$ and $$\psi\left(\zeta\right)$$, but we are much more interested in the physical displacements $$u_x$$ and $$u_y$$ causing by our forces. With \eqref{ux+uy complex}:
 
 \begin{equation}
-  2\mu\left(u_{x}+iu_{y}\right)=\kappa\varphi-z\bar{\varphi}_{,z}-\bar{\psi}=\kappa\left(\mathcal{A}-a_1\zeta-2\bar{a_2}\right)-\zeta\left(\bar{\mathcal{A}} _{,\zeta} - a_1\right) - \bar{\mathcal{B}}-\frac{2a_1}{\bar{\zeta}}+\frac{\bar{\mathcal{A}} _{,\zeta}}{\bar{\zeta}}+{\mathcal{A}\left(0\right)}-2a_2 = \kappa\left(\mathcal{A}-a_1\zeta-2\bar{a_2}\right) - \bar{\mathcal{B}}-a_1{\zeta}+{\mathcal{A}\left(0\right)}-2a_2
+  2\mu\left(u_{x}+iu_{y}\right)=\kappa\varphi-z\bar{\varphi}_{,z}-\bar{\psi}=\kappa\left(\mathcal{A}-a_1\zeta-2\bar{a_2}\right)-\zeta\left(\bar{\mathcal{A}} _{,\zeta} - a_1\right) - \bar{\mathcal{B}}-\frac{2a_1}{\bar{\zeta}}+\frac{\bar{\mathcal{A}} _{,\zeta}}{\bar{\zeta}}+{\mathcal{A}\left(0\right)}-2a_2
 \end{equation}
+
+
+
+
 
 
 
