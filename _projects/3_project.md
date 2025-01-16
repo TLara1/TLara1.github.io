@@ -437,13 +437,24 @@ Only the real part of $$a_1$$ is determined, as the imaginary portion cancels in
 Using \eqref{psi comp final} we can find a similar expression for $$\psi\left(\zeta\right)$$, noting that for our circular case:
 
 \begin{equation}
-  \frac{1}{2\pi i}\oint_\gamma\frac{\bar{\varsigma}\varphi_{,\zeta}\left(\varsigma\right)}{\varsigma-\zeta}d\varsigma = \frac{1}{2\pi i}\oint_\gamma\frac{\varphi_{,\zeta}\left(\varsigma\right)}{\varsigma\left(\varsigma-\zeta\right)}d\varsigma=\frac{\varphi_{,\zeta}\left(\zeta\right)}{\zeta}
+  \frac{1}{2\pi i}\oint_\gamma\frac{\bar{\varsigma}\varphi_{,\zeta}\left(\varsigma\right)}{\varsigma-\zeta}d\varsigma = \frac{1}{2\pi i}\oint_\gamma\frac{\varphi_{,\zeta}\left(\varsigma\right)}{\varsigma\left(\varsigma-\zeta\right)}d\varsigma
+\end{equation}
+
+Using a taylor series to expand $$\psi\left(\varsigma\right)$$, as it is analytic on the unit disk:
+
+\begin{equation}
+  =\frac{1}{2\pi i}\oint_\gamma\frac{a_1\bar{\varsigma}}{\varsigma-\zeta\right}d\varsigma+\frac{1}{2\pi i}\oint_\gamma\sum_{k=2}^\infty \frac{ka_k\varsigma^{k-2}}{\varsigma-\zeta}d\varsigma
+\end{equation}
+
+With \eqref{f0  comp}:
+\begin{equation}
+  =a_1 0 + \sum_{k=2}^\infty ka_k\zeta^{k-2} = frac{\varphi_{,\zeta}\left(\zeta\right)}{\zeta}-\frac{a_1}{\zeta}
 \end{equation}
 
 And:
 
 \begin{equation}\label{psi simple}
-  \psi\left(\zeta\right)+\bar{\varphi}\left(0\right)+\frac{\varphi_{,\zeta}\left(\zeta\right)}{\zeta}=\mathcal{B}
+  \psi\left(\zeta\right)+\bar{\varphi}\left(0\right)+\frac{\varphi_{,\zeta}\left(\zeta\right)}{\zeta}-\frac{a_1}{\zeta}=\mathcal{B}
 \end{equation}
 
 <h3>III.II Forcing Terms</h3>
@@ -493,11 +504,14 @@ Solving for $$a_1$$ and $$a_2$$ using \eqref{a2 comp} and \eqref{a1 comp}:
 With \eqref{varphi simple} and \eqref{psi simple}
 
 \begin{equation}
-  \varphi\left(\zeta\right)=-\sum_{k=1}^{n}\frac{\zeta}{4\pi}\sum_{k=1}^{n} F_x^{\left(k\right)}-iF _y^{\left(k\right)}\varsigma ^ {\left(k\right)}+\frac{1}{\pi} \frac{F_x^{\left(k\right)}+iF _y^{\left(k\right)}}{\left(\varsigma ^ {\left(k\right)}\right)^2}+\frac{1}{2\pi} \left(F_x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\ln{\varsigma ^ {\left(k\right)}-\zeta}
+  \varphi\left(\zeta\right)=-\sum_{k=1}^{n}\frac{\zeta}{4\pi} \left(F_x^{\left(k\right)}-iF _y^{\left(k\right)}\right)\varsigma ^ {\left(k\right)}-\frac{1}{\pi} \frac{F_x^{\left(k\right)}+iF _y^{\left(k\right)}}{\left(\varsigma ^ {\left(k\right)}\right)^2}+\frac{1}{2\pi} \left(F_x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\ln{\left(\varsigma ^ {\left(k\right)}-\zeta\right)}
 \end{equation}
 
 \begin{equation}
-  \psi\left(\zeta\right)=\sum_{k=1}^{n}\frac{1}{\pi} \frac{F_x^{\left(k\right)}+iF _y^{\left(k\right)}}{\left(\varsigma ^ {\left(k\right)}\right)^2}+\frac{1}{2\pi} \left(F_x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\ln{\varsigma ^ {\left(k\right)}}
+  \psi\left(\zeta\right)=-\sum_{k=1}^{n}
+  
+  
+  \frac{1}{\pi} \frac{F_x^{\left(k\right)}+iF _y^{\left(k\right)}}{\left(\varsigma ^ {\left(k\right)}\right)^2}+\frac{1}{2\pi} \left(F_x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\ln{\varsigma ^ {\left(k\right)}}
   
   
   \bar{\varphi}\left(0\right)+\frac{\varphi_{,\zeta}\left(\zeta\right)}{\zeta}=\mathcal{B}
