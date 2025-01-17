@@ -481,13 +481,13 @@ So, solving for $$\mathcal{A}$$:
 
 We rewrite to find:
 
-\begin{equation}
-  \mathcal{A}=-\frac{1}{2\pi}\sum_{k=1}^{n} \left(F_x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\ln{\varsigma ^ {\left(k\right)}-\zeta}
+\begin{equation}\label{A equation}
+  \mathcal{A}=-\frac{1}{2\pi}\sum_{k=1}^{n} \left(F_x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\ln{\left(\varsigma ^ {\left(k\right)}-\zeta\right)}
 \end{equation}
 
 And similarly:
 
-\begin{equation}
+\begin{equation}\label{B equation}
   \mathcal{B}=\frac{1}{2\pi}\sum_{k=1}^{n} \left(F_x^{\left(k\right)}-iF _y^{\left(k\right)}\right)\ln{\left(\varsigma ^ {\left(k\right)}-\zeta\right)}
 \end{equation}
 
@@ -503,40 +503,33 @@ Solving for $$a_1$$ and $$a_2$$ using \eqref{a2 comp} and \eqref{a1 comp}:
 
 With \eqref{varphi simple} and \eqref{psi simple}:
 
-\begin{equation}
+\begin{equation}\label{varphi final eq}
   \varphi\left(\zeta\right)=\mathcal{A}-a_1\zeta-2\bar{a_2}
 \end{equation}
-\begin{equation}
+\begin{equation}\label{psi final eq}
   \psi\left(\zeta\right)=\mathcal{B}+\frac{2a_1}{\zeta}-\frac{\mathcal{A}_{,\zeta}}{\zeta}-\bar{\mathcal{A}}\left(0\right)+2\bar{a_2}
 \end{equation}
 
-We have used $$a_1=\bar{a_1}$$. We have all the ingredients to write $$\varphi\left(\zeta\right)$$ and $$\psi\left(\zeta\right)$$, but we are much more interested in the physical displacements $$u_x$$ and $$u_y$$ causing by our forces. With \eqref{ux+uy complex}:
+We have used $$a_1=\bar{a_1}$$. 
 
+<h2>III Specific Solution in the Case of Two Opposing Point Forces</h2>
+
+We could in principle approach a circle acted on by $$n$$ point forces, but for simplicity, let's take there to be two opposing forces, parallel to the $$x$$ axis acting on the disk at points $$z_1=Re^{i\alpha}$$ and $$z_2=Re^{i\left(\pi-\alpha\right)}$$. So, $$F_x^{\left(1\right)}=F$$ at $$z_1=Re^{i\alpha}$$ and $$F_x^{\left(2\right)}=-F$$ at $$z_2=Re^{i\left(\pi-\alpha\right)}$$. There are no force components in the $$y$$ direction. 
+
+With \eqref{A equation} and \eqref{B equation}:
 \begin{equation}
-  2\mu\left(u_{x}+iu_{y}\right)=\kappa\varphi-z\bar{\varphi}_{,z}-\bar{\psi}=\kappa\left(\mathcal{A}-a_1\zeta-2\bar{a_2}\right)-\zeta\left(\bar{\mathcal{A}} _{,\zeta} - a_1\right) - \bar{\mathcal{B}}-\frac{2a_1}{\bar{\zeta}}+\frac{\bar{\mathcal{A}} _{,\zeta}}{\bar{\zeta}}+{\mathcal{A}\left(0\right)}-2a_2
+  \mathcal{A}=-\frac{F}{2\pi}\left(\ln{\left(\varsigma ^ {\left(1\right)}-\zeta\right)}-\ln{\left(\varsigma ^ {\left(2\right)}-\zeta\right)}\right)
+\end{equation}
+\begin{equation}
+  \mathcal{B}=-\mathcal{A}
 \end{equation}
 
-
-
-
-
-
-
-
+Using \eqref{varphi final eq} and \eqref{psi final eq}:
 \begin{equation}
-  \varphi\left(\zeta\right)=-\sum_{k=1}^{n}\frac{\zeta}{4\pi} \left(F_x^{\left(k\right)}-iF _y^{\left(k\right)}\right)\varsigma ^ {\left(k\right)}-\frac{1}{\pi} \frac{F_x^{\left(k\right)}+iF _y^{\left(k\right)}}{\left(\varsigma ^ {\left(k\right)}\right)^2}+\frac{1}{2\pi} \left(F_x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\ln{\left(\varsigma ^ {\left(k\right)}-\zeta\right)}
+  \varphi\left(\zeta\right)=-\frac{F}{2\pi}\left(\ln{\left(\varsigma ^ {\left(1\right)}-\zeta\right)}-\ln{\left(\varsigma ^ {\left(2\right)}-\zeta\right)}+\
+  frac{\left(\varsigma ^ {\left(1\right)}-\varsigma ^ {\left(2\right)}\right)}{2}\zeta\right)
 \end{equation}
-
-\begin{equation}
-  \psi\left(\zeta\right)=-\sum_{k=1}^{n} \frac{1}{\pi} \frac{F_x^{\left(k\right)}+iF _y^{\left(k\right)}}{\left(\varsigma ^ {\left(k\right)}\right)^2}-\frac{1}{2\pi} \left(F_x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\ln{\left(\varsigma ^ {\left(k\right)}\right)}-\frac{1}{4\pi\zeta} \left(F_x^{\left(k\right)}-iF _y^{\left(k\right)}\right)\varsigma ^ {\left(k\right)}+\frac{1}{2\pi} \left(F _x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\frac{1}{\zeta\left(\varsigma ^ {\left(k\right)}-\zeta\right)}-\frac{1}{4\pi\zeta} \frac{F _x^{\left(k\right)}+iF _y^{\left(k\right)}}{\varsigma ^ {\left(k\right)}}-\frac{1}{2\pi}\left(F_x^{\left(k\right)}-iF _y^{\left(k\right)}\right)\ln{\left(\varsigma ^ {\left(k\right)}-\zeta\right)}
+\begin{equation}\label{varphi final eq}
+  \psi\left(\zeta\right)=\frac{F}{2\pi}\left(\ln{\left(\varsigma ^ {\left(1\right)}-\zeta\right)}-\ln{\left(\varsigma ^ {\left(2\right)}-\zeta\right)}+\
+  frac{\zeta}{\varsigma ^ {\left(1\right)}-\zeta}-frac{\zeta}{\varsigma ^ {\left(2\right)}-\zeta}\right)
 \end{equation}
-
-\begin{equation}
-  =-\sum_{k=1}^{n} \frac{1}{\pi} \frac{F_x^{\left(k\right)}+iF _y^{\left(k\right)}}{\left(\varsigma ^ {\left(k\right)}\right)^2}-\frac{1}{2\pi} \left(F_x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\ln{\left(\varsigma ^ {\left(k\right)}\right)}+\frac{1}{2\pi} \left(F _x^{\left(k\right)}+iF _y^{\left(k\right)}\right)\frac{1}{\zeta\left(\varsigma ^ {\left(k\right)}-\zeta\right)}-\frac{1}{2\pi}\left(F_x^{\left(k\right)}-iF _y^{\left(k\right)}\right)\ln{\left(\varsigma ^ {\left(k\right)}-\zeta\right)}
-\end{equation}
-
-We have used the fact that $$\frac{\varphi_{,\zeta}\left(\zeta\right)}{\zeta}-\frac{a_1}{\zeta}=\frac{\mathcal{A}_{,\zeta}}{\zeta}-\frac{\bar{a_1}}{\zeta}-\frac{a_1}{\zeta}$$, and as $$\text{Im}\left(a_1\right)=0$$, $$\bar{a_1}-a_1=0$$. 
-
-
-
-
