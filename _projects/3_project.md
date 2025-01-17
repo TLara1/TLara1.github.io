@@ -527,9 +527,16 @@ With \eqref{A equation} and \eqref{B equation}:
 Using \eqref{varphi final eq} and \eqref{psi final eq}:
 \begin{equation}
   \varphi\left(\zeta\right)=-\frac{F}{2\pi}\left(\ln{\left(\varsigma ^ {\left(1\right)}-\zeta\right)}-\ln{\left(\varsigma ^ {\left(2\right)}-\zeta\right)}+\
-  frac{\left(\varsigma ^ {\left(1\right)}-\varsigma ^ {\left(2\right)}\right)}{2}\zeta\right)
+  frac{\varsigma ^ {\left(1\right)}-\varsigma ^ {\left(2\right)}}{2}\zeta\right)
 \end{equation}
-\begin{equation}\label{varphi final eq}
-  \psi\left(\zeta\right)=\frac{F}{2\pi}\left(\ln{\left(\varsigma ^ {\left(1\right)}-\zeta\right)}-\ln{\left(\varsigma ^ {\left(2\right)}-\zeta\right)}+\
-  frac{\zeta}{\varsigma ^ {\left(1\right)}-\zeta}-frac{\zeta}{\varsigma ^ {\left(2\right)}-\zeta}\right)
+\begin{equation}
+  \psi\left(\zeta\right)=\frac{F}{2\pi}\left(\ln{\left(\varsigma ^ {\left(1\right)}-\zeta\right)}-\ln{\left(\varsigma ^ {\left(2\right)}-\zeta\right)}-\
+  frac{\zeta}{\varsigma ^ {\left(1\right)}-\zeta}+frac{\zeta}{\varsigma ^ {\left(2\right)}-\zeta}\right)+\frac{\varsigma ^ {\left(1\right)}-\varsigma ^ {\left(2\right)}}{\zeta}
+\end{equation}
+
+Note that we have removed constant terms, as these result in translational displacement. 
+
+And finding the displacements with \eqref{ux+uy complex}
+\begin{equation}
+
 \end{equation}
