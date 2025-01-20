@@ -526,8 +526,7 @@ With \eqref{A equation} and \eqref{B equation}:
 
 Using \eqref{varphi final eq} and \eqref{psi final eq}:
 \begin{equation}
-  \varphi\left(\zeta\right)=-\frac{F}{2\pi}\left(\ln{\left(\varsigma ^ {\left(1\right)}-\zeta\right)}-\ln{\left(\varsigma ^ {\left(2\right)}-\zeta\right)}+\
-  frac{\varsigma ^ {\left(1\right)}-\varsigma ^ {\left(2\right)}}{2}\zeta\right)
+  \varphi\left(\zeta\right)=-\frac{F}{2\pi}\left(\ln{\left(\varsigma ^ {\left(1\right)}-\zeta\right)}-\ln{\left(\varsigma ^ {\left(2\right)}-\zeta\right)}+\frac{\varsigma ^ {\left(1\right)}-\varsigma ^ {\left(2\right)}}{2}\zeta\right)
 \end{equation}
 \begin{equation}
   \psi\left(\zeta\right)=\frac{F}{2\pi}\left(\ln{\left(\varsigma ^ {\left(1\right)}-\zeta\right)}-\ln{\left(\varsigma ^ {\left(2\right)}-\zeta\right)}-\frac{\zeta}{\varsigma ^ {\left(1\right)}-\zeta}+\frac{\zeta}{\varsigma ^ {\left(2\right)}-\zeta}\right)+\frac{\varsigma ^ {\left(1\right)}-\varsigma ^ {\left(2\right)}}{\zeta}
@@ -535,7 +534,15 @@ Using \eqref{varphi final eq} and \eqref{psi final eq}:
 
 Note that we have removed constant terms, as these result in translational displacement. 
 
-And finding the displacements with \eqref{ux+uy complex}
-\begin{equation}
+And finding the displacements with \eqref{ux+uy complex} after a bit of simplification becomes:
+\begin{equation}\label{u+v long comp}
   2\mu\left(u_{x}+iu_{y}\right)=\kappa\varphi-z\bar{\varphi}_{,z}-\bar{\psi}=\frac{F}{2\pi}\left(\ln{\left(\kappa\frac{\varsigma ^ {\left(2\right)}-\zeta}{\varsigma ^ {\left(1\right)}-\zeta}\right)}+\ln{\left(\kappa\frac{\bar{\varsigma} ^ {\left(2\right)}-\bar{\zeta}}{\bar{\varsigma} ^ {\left(1\right)}-\bar{\zeta}}\right)}+\frac{\varsigma ^ {\left(1\right)}-\zeta}{\bar{\varsigma} ^ {\left(1\right)}-\bar{\zeta}}-\frac{\varsigma ^ {\left(2\right)}-\zeta}{\bar{\varsigma} ^ {\left(2\right)}-\bar{\zeta}}-\left(\kappa-1\right)\zeta\text{Re}\left(\varsigma ^ {\left(1\right)}\right)\right)
 \end{equation}
+
+We can separate the real and imaginary components of \eqref{u+v long comp}, and replacing $$\kappa=\frac{\lambda+3\mu}{\lambda+\mu}$$
+
+\begin{equation}
+  u_{x}=\frac{F}{4\pi\mu}\left(\right)
+\end{equation}
+
+
