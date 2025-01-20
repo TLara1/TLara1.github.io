@@ -180,7 +180,10 @@ So, $$C_1\sim y$$ and $$C_2\sim x$$, corresponding to rigid body displacements w
 
 Now consider:
 \begin{equation}
-  \left(U-xp-yq\right) _{,kk}= U _{,kk} - xp _{,kk} - yq _{,kk} -2p _{,x} - 2q _{,y} = U _{,kk} - xp _{,kk} - yq _{,kk} - P = xp _{,kk} - yq _{,kk} = 0
+  \left(U-xp-yq\right) _{,kk}= U _{,kk} - xp _{,kk} - yq _{,kk} -2p _{,x} - 2q _{,y} \nonumber
+\end{equation}
+\begin{equation}
+  = U _{,kk} - xp _{,kk} - yq _{,kk} - P = xp _{,kk} - yq _{,kk} = 0  \nonumber
 \end{equation}
 We have used the fact that $$p$$ and $$q$$ are harmonic as $$p _{,kk} = p _{,xx} +p _{,yy} = q _{,yx} - q _{,xy} = 0$$
 
@@ -242,7 +245,7 @@ We can also express stress components in terms of our complex functions with \eq
 
 Now let's discuss the arbitrariness of $$\varphi$$ and $$\psi$$. Suppose we transform $$\varphi\rightarrow\varphi^{'}$$ and $$\psi\rightarrow\psi^{'}$$. 
 
-From \eqref{sigmaxx+sigmayy complex}, $$\varphi^ { '} _{,z}$$ must be complex, so $$\varphi^{'} _{,z} = \varphi _{,z} + iD\quad\rightarrow\quad\varphi ^{ ' }=\varphi + iDz + \gamma$$ and from \eqref{sigmaxx-sigmayy complex}, $$\psi^{'}=\psi+\gamma^{'}$$. Applying \eqref{ux+uy complex}:
+From \eqref{sigmaxx+sigmayy complex}, $$\varphi^ { '} _{,z}$$ must be complex, so $$\varphi^{'} _{,z} = \varphi _{,z} + iD\rightarrow\varphi ^{ ' }=\varphi + iDz + \gamma$$ and from \eqref{sigmaxx-sigmayy complex}, $$\psi^{'}=\psi+\gamma^{'}$$. Applying \eqref{ux+uy complex}:
 
 \begin{equation}
   2\mu\left(u_{x}^{'}+iu_{y}^{'}\right)=2\mu\left(u_{x}+iu_{y}\right)\quad\rightarrow\quad \kappa\varphi-z\bar{\varphi}_{,z}-\bar{\psi}=\kappa\varphi^{'}-z\bar{\varphi}^{'} _{,z}-\bar{\psi}^{'}
@@ -448,7 +451,7 @@ Using a taylor series to expand $$\psi\left(\varsigma\right)$$, as it is analyti
 
 With \eqref{f0  comp}:
 \begin{equation}
-  =a_1 0 + \sum_{k=2}^\infty ka_k\zeta^{k-2} = frac{\varphi_{,\zeta}\left(\zeta\right)}{\zeta}-\frac{a_1}{\zeta}
+  =a_1 0 + \sum_{k=2}^\infty ka_k\zeta^{k-2} = \frac{\varphi_{,\zeta}\left(\zeta\right)}{\zeta}-\frac{a_1}{\zeta}
 \end{equation}
 
 And:
@@ -472,11 +475,18 @@ So, solving for $$\mathcal{A}$$:
 \end{equation}
 
 \begin{equation}
- = \frac{1}{2\pi}\int _{\varsigma^{\left(1\right)}} ^ {\varsigma^{\left(2\right)}} \frac{F _x^{\left(1\right)}+iF _y^{\left(1\right)}}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi }\int _{\varsigma^{\left(2\right)}} ^ {\varsigma^{\left(3\right)}} \frac{F _x^{\left(1\right)}+F_x^{\left(2\right)}+iF _y^{\left(1\right)}+iF _y^{\left(2\right)}}{\varsigma-\zeta}d\varsigma+\quad ...\quad+\frac{1}{2\pi} \int _{\varsigma^{\left(n\right)}} ^ {\varsigma^{\left(1\right)}} \frac{F _x^{\left(1\right)}+...+F _x^{\left(n\right)}+iF _y^{\left(1\right)}+...+iF _y^{\left(n\right)}}{\varsigma-\zeta}d\varsigma
+ = \frac{1}{2\pi}\int _{\varsigma^{\left(1\right)}} ^ {\varsigma^{\left(2\right)}} \frac{F _x^{\left(1\right)}+iF _y^{\left(1\right)}}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi }\int _{\varsigma^{\left(2\right)}} ^ {\varsigma^{\left(3\right)}} \frac{F _x^{\left(1\right)}+F_x^{\left(2\right)}+iF _y^{\left(1\right)}+iF _y^{\left(2\right)}}{\varsigma-\zeta}d\varsigma\nonumber
+ \end{equation}
+
+ \begin{equation}
++\frac{1}{2\pi} \int _{\varsigma^{\left(n\right)}} ^ {\varsigma^{\left(1\right)}} \frac{F _x^{\left(1\right)}+...+F _x^{\left(n\right)}+iF _y^{\left(1\right)}+...+iF _y^{\left(n\right)}}{\varsigma-\zeta}d\varsigma
  \end{equation}
   
 \begin{equation}
-   = \frac{F_x^{\left(1\right)}+iF _y^{\left(1\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(2\right)}-\zeta}{\varsigma ^ {\left(1\right)}-\zeta}} + \frac{F_x^{\left(1\right)}+F_x^{\left(2\right)}+iF_y^{\left(1\right)}+iF_y^{\left(2\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(3\right)}-\zeta}{\varsigma ^ {\left(2\right)}-\zeta}}+\quad ...\quad+\frac{F_x^{\left(1\right)}+...+F_x^{\left(n\right)}+iF_y^{\left(1\right)}+...+iF_y^{\left(n\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(1\right)}-\zeta}{\varsigma ^ {\left(n\right)}-\zeta}}
+   = \frac{F_x^{\left(1\right)}+iF _y^{\left(1\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(2\right)}-\zeta}{\varsigma ^ {\left(1\right)}-\zeta}} + \frac{F_x^{\left(1\right)}+F_x^{\left(2\right)}+iF_y^{\left(1\right)}+iF_y^{\left(2\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(3\right)}-\zeta}{\varsigma ^ {\left(2\right)}-\zeta}}+\quad ...\quad\nonumber
+
+\begin{equation}
++\frac{F_x^{\left(1\right)}+...+F_x^{\left(n\right)}+iF_y^{\left(1\right)}+...+iF_y^{\left(n\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(1\right)}-\zeta}{\varsigma ^ {\left(n\right)}-\zeta}}
 \end{equation}
 
 We rewrite to find:
