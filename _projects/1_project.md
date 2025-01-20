@@ -215,7 +215,7 @@ This is Kepler's Equation, where $$\mathcal{M}$$ is known as the mean anomaly.
 
 <h3>III.II Two-Dimensional Orbital Elliptical Elements</h3>
 
-{% include figure.liquid loading="eager" path="assets/img/Figures_Cmech_Notes/Orbital_Element_diagram_v2.png" title="Orbital element diagram" class="img-fluid rounded z-depth-0" %}
+{% include figure.liquid loading="eager" path="assets/img/Figures_Cmech_Notes/Orbital_Element_diagram_v2." title="Orbital element diagram" class="img-fluid rounded z-depth-0" %}
 
 From our orbital element diagram, we can immediately conclude:
 \begin{equation}\label{cos f equation}
