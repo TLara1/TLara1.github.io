@@ -552,4 +552,7 @@ We can separate the real and imaginary components of \eqref{u+v long comp}, and 
   u_{y}=\frac{F}{4\pi\mu}\left(\frac{2\mu}{\lambda+\mu}\left(\theta_1+\theta_2\right)-2\sin{2\theta_1}-2\sin{2\theta_2}-\frac{2\mu\cos{\alpha}}{\lambda+\mu}\frac{y}{R}\right)
 \end{equation}
 
-We have introducd
+We have introduced several variables outlined in the diagram below:
+
+{% include figure.liquid loading="eager" path="assets/img/Figures_Solidmech_Notes/Circle_Solid_diagram.png" title="Orbital element diagram 3d" class="img-fluid rounded z-depth-0" %}
+
