@@ -535,14 +535,20 @@ Using \eqref{varphi final eq} and \eqref{psi final eq}:
 Note that we have removed constant terms, as these result in translational displacement. 
 
 And finding the displacements with \eqref{ux+uy complex} after a bit of simplification becomes:
+\begin{equation}
+  2\mu\left(u_{x}+iu_{y}\right)=\kappa\varphi-z\bar{\varphi}_{,z}-\bar{\psi}
+\end{equation}
+
 \begin{equation}\label{u+v long comp}
-  2\mu\left(u_{x}+iu_{y}\right)=\kappa\varphi-z\bar{\varphi}_{,z}-\bar{\psi}=\frac{F}{2\pi}\left(\ln{\left(\kappa\frac{\varsigma ^ {\left(2\right)}-\zeta}{\varsigma ^ {\left(1\right)}-\zeta}\right)}+\ln{\left(\kappa\frac{\bar{\varsigma} ^ {\left(2\right)}-\bar{\zeta}}{\bar{\varsigma} ^ {\left(1\right)}-\bar{\zeta}}\right)}+\frac{\varsigma ^ {\left(1\right)}-\zeta}{\bar{\varsigma} ^ {\left(1\right)}-\bar{\zeta}}-\frac{\varsigma ^ {\left(2\right)}-\zeta}{\bar{\varsigma} ^ {\left(2\right)}-\bar{\zeta}}-\left(\kappa-1\right)\zeta\text{Re}\left(\varsigma ^ {\left(1\right)}\right)\right)
+  =\frac{F}{2\pi}\left(\ln{\left(\kappa\frac{\varsigma ^ {\left(2\right)}-\zeta}{\varsigma ^ {\left(1\right)}-\zeta}\right)}+\ln{\left(\kappa\frac{\bar{\varsigma} ^ {\left(2\right)}-\bar{\zeta}}{\bar{\varsigma} ^ {\left(1\right)}-\bar{\zeta}}\right)}+\frac{\varsigma ^ {\left(1\right)}-\zeta}{\bar{\varsigma} ^ {\left(1\right)}-\bar{\zeta}}-\frac{\varsigma ^ {\left(2\right)}-\zeta}{\bar{\varsigma} ^ {\left(2\right)}-\bar{\zeta}}-\left(\kappa-1\right)\zeta\text{Re}\left(\varsigma ^ {\left(1\right)}\right)\right)
 \end{equation}
 
 We can separate the real and imaginary components of \eqref{u+v long comp}, and replacing $$\kappa=\frac{\lambda+3\mu}{\lambda+\mu}$$
 
 \begin{equation}
-  u_{x}=\frac{F}{4\pi\mu}\left(\right)
+  u_{x}=\frac{F}{4\pi\mu}\left(\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}\ln\left(\frac{r_2}{r_1}\right)+2\cos{2\theta_1}-2\cos{2\theta_2}-\frac{2\mu\cos{\alpha}}{\lamba+\mu}\frac{x}{R}\right)
 \end{equation}
-
+\begin{equation}
+  u_{y}=\frac{F}{4\pi\mu}\left(\frac{2\mu}{\lambda+\mu}\left(\theta_1+\theta_2\right)-2\sin{2\theta_1}-2\sin{2\theta_2}-\frac{2\mu\cos{\alpha}}{\lamba+\mu}\frac{y}{R}\right)
+\end{equation}
 
