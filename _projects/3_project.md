@@ -472,11 +472,11 @@ So, solving for $$\mathcal{A}$$:
 \end{equation}
 
 \begin{equation}
-   = \frac{1}{2\pi}\int _{\varsigma^{\left(1\right)}} ^ {\varsigma^{\left(2\right)}} \frac{F_x^{\left(1\right)}+iF _y^{\left(1\right)}}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi }\int _{\varsigma^{\left(2\right)}} ^ {\varsigma^{\left(3\right)}} \frac{F _x^{\left(1\right)}+F_x^{\left(2\right)}+iF _y^{\left(1\right)+iF _y^{\left(2\right)}}{\varsigma-\zeta}d\varsigma+\quad ...\quad+\frac{1}{2\pi} \int _{\varsigma^{\left(n\right)}} ^ {\varsigma^{\left(1\right)}} \frac{F _x^{\left(1\right)}+...+F _x^{\left(n\right)}+iF _y^{\left(1\right)+...+iF _y^{\left(n\right)}}{\varsigma-\zeta}d\varsigma
-\end{equation}
+ = \frac{1}{2\pi}\int _{\varsigma^{\left(1\right)}} ^ {\varsigma^{\left(2\right)}} \frac{F _x^{\left(1\right)}+iF _y^{\left(1\right)}}{\varsigma-\zeta}d\varsigma+\frac{1}{2\pi }\int _{\varsigma^{\left(2\right)}} ^ {\varsigma^{\left(3\right)}} \frac{F _x^{\left(1\right)}+F_x^{\left(2\right)}+iF _y^{\left(1\right)}+iF _y^{\left(2\right)}}{\varsigma-\zeta}d\varsigma+\quad ...\quad+\frac{1}{2\pi} \int _{\varsigma^{\left(n\right)}} ^ {\varsigma^{\left(1\right)}} \frac{F _x^{\left(1\right)}+...+F _x^{\left(n\right)}+iF _y^{\left(1\right)}+...+iF _y^{\left(n\right)}}{\varsigma-\zeta}d\varsigma
+ \end{equation}
   
 \begin{equation}
-   = \frac{F_x^{\left(1\right)}+iF _y^{\left(1\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(2\right)}-\zeta}{\varsigma ^ {\left(1\right)}-\zeta}} + \frac{F_x^{\left(1\right)}+F_x^{\left(2\right)}+iF_y^{\left(1\right)+iF_y^{\left(2\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(3\right)}-\zeta}{\varsigma ^ {\left(2\right)}-\zeta}}+\quad ...\quad+\frac{F_x^{\left(1\right)}+...+F_x^{\left(n\right)}+iF_y^{\left(1\right)+...+iF_y^{\left(n\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(1\right)}-\zeta}{\varsigma ^ {\left(n\right)}-\zeta}}
+   = \frac{F_x^{\left(1\right)}+iF _y^{\left(1\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(2\right)}-\zeta}{\varsigma ^ {\left(1\right)}-\zeta}} + \frac{F_x^{\left(1\right)}+F_x^{\left(2\right)}+iF_y^{\left(1\right)}+iF_y^{\left(2\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(3\right)}-\zeta}{\varsigma ^ {\left(2\right)}-\zeta}}+\quad ...\quad+\frac{F_x^{\left(1\right)}+...+F_x^{\left(n\right)}+iF_y^{\left(1\right)}+...+iF_y^{\left(n\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(1\right)}-\zeta}{\varsigma ^ {\left(n\right)}-\zeta}}
 \end{equation}
 
 We rewrite to find:
@@ -546,9 +546,10 @@ And finding the displacements with \eqref{ux+uy complex} after a bit of simplifi
 We can separate the real and imaginary components of \eqref{u+v long comp}, and replacing $$\kappa=\frac{\lambda+3\mu}{\lambda+\mu}$$
 
 \begin{equation}
-  u_{x}=\frac{F}{4\pi\mu}\left(\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}\ln\left(\frac{r_2}{r_1}\right)+2\cos{2\theta_1}-2\cos{2\theta_2}-\frac{2\mu\cos{\alpha}}{\lamba+\mu}\frac{x}{R}\right)
+  u_{x}=\frac{F}{4\pi\mu}\left(\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}\ln\left(\frac{r_2}{r_1}\right)+2\cos{2\theta_1}-2\cos{2\theta_2}-\frac{2\mu\cos{\alpha}}{\lambda+\mu}\frac{x}{R}\right)
 \end{equation}
 \begin{equation}
-  u_{y}=\frac{F}{4\pi\mu}\left(\frac{2\mu}{\lambda+\mu}\left(\theta_1+\theta_2\right)-2\sin{2\theta_1}-2\sin{2\theta_2}-\frac{2\mu\cos{\alpha}}{\lamba+\mu}\frac{y}{R}\right)
+  u_{y}=\frac{F}{4\pi\mu}\left(\frac{2\mu}{\lambda+\mu}\left(\theta_1+\theta_2\right)-2\sin{2\theta_1}-2\sin{2\theta_2}-\frac{2\mu\cos{\alpha}}{\lambda+\mu}\frac{y}{R}\right)
 \end{equation}
 
+We have introducd
