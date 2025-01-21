@@ -410,8 +410,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-on-hertzian-contacts-of-two-disks",
-          title: 'On Hertzian Contacts of Two Disks',
+            },},{id: "projects-elasticity-theory-and-the-deformation-of-two-colliding-disks",
+          title: 'Elasticity Theory and the Deformation of Two Colliding Disks',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
