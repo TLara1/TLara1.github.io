@@ -556,10 +556,10 @@ And finding the displacements with \eqref{ux+uy complex} after a bit of simplifi
 We can separate the real and imaginary components of \eqref{u+v long comp}, and replacing $$\kappa=\frac{\lambda+3\mu}{\lambda+\mu}$$
 
 \begin{equation}\label{u_x long}
-  u_{x}=\frac{F}{4\pi\mu}\left(\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}\ln\left(\frac{r_2}{r_1}\right)+2\cos{2\theta_1}-2\cos{2\theta_2}-\frac{2\mu\cos{\alpha}}{\lambda+\mu}\frac{x}{R}\right)
+  u_{x}=\frac{F}{4\pi\mu}\left(\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}\ln\left(\frac{r_2}{r_1}\right)+\cos{2\theta_1}-\cos{2\theta_2}-\frac{2\mu\cos{\alpha}}{\lambda+\mu}\frac{x}{R}\right)
 \end{equation}
 \begin{equation}
-  u_{y}=\frac{F}{4\pi\mu}\left(\frac{2\mu}{\lambda+\mu}\left(\theta_1+\theta_2\right)-2\sin{2\theta_1}-2\sin{2\theta_2}-\frac{2\mu\cos{\alpha}}{\lambda+\mu}\frac{y}{R}\right)
+  u_{y}=\frac{F}{4\pi\mu}\left(\frac{2\mu}{\lambda+\mu}\left(\theta_1+\theta_2\right)-\sin{2\theta_1}-\sin{2\theta_2}-\frac{2\mu\cos{\alpha}}{\lambda+\mu}\frac{y}{R}\right)
 \end{equation}
 
 We have introduced several variables outlined in the diagram below:
@@ -591,5 +591,7 @@ The $$+$$ in the $$\pm$$ accounts for $$\phi>\alpha$$ and the $$-$$ the inverse.
 We can rewrite \eqref{u_x long}:
 
 \begin{equation}
-  u_{x}=\frac{F}{4\pi\mu}\left(\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}\ln\left(\pm\frac{\cos{\left(\frac{1}{2}\left(\phi+\alpha\right)\right)}}{\sin{\left(\frac{1}{2}\left(\phi-\alpha\right)\right)}}\right)\right)
+  u_{x}=-F\frac{\lambda+2\mu}{2\pi\mu\left(\lambda+\mu\right)}\left(\ln\left(\tan{\left(\frac{|\phi-\alpha|}{2}\right)}\right)+\ln\left(\tan{\left(\frac{|\phi+\alpha|}{2}\right)}\right)\right)+2\cos{\alpha}\cos{\phi}\right)
 \end{equation}
+
+
