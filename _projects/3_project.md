@@ -591,12 +591,19 @@ The $$+$$ in the $$\pm$$ accounts for $$\phi>\alpha$$ and the $$-$$ the inverse.
 We can rewrite \eqref{u_x long}:
 
 \begin{equation}
-  u_{x}=-F\frac{\lambda+2\mu}{2\pi\mu\left(\lambda+\mu\right)}\left(\ln\left(\tan{\left(\frac{|\phi-\alpha|}{2}\right)}\right)+\ln\left(\tan{\left(\frac{|\phi+\alpha|}{2}\right)}\right)\right)+2\cos{\alpha}\cos{\phi}\right)
+  u_{x}=-F\frac{\lambda+2\mu}{2\pi\mu\left(\lambda+\mu\right)}\left(\ln\left(\tan{\left(\frac{|\phi-\alpha|}{2}\right)}\right)+\ln\left(\tan{\left(\frac{|\phi+\alpha|}{2}\right)}\right)+2\cos{\alpha}\cos{\phi}\right)
 \end{equation}
 
 Now, let's suppose instead of a concentrated force $$F$$, there is a force distribution, $$p\left(\phi\right)$$. Let us first write this distribution as acting from $$0$$ to $$\vartheta$$, integrating with polar coordinates:
 
 \begin{equation}
-  u_{x}=-\frac{\lambda+2\mu}{2\pi\mu\left(\lambda+\mu\right)}\int_0^\vartheta\left(\ln\left(\tan{\left(\frac{|\phi-\alpha|}{2}\right)}\right)+\ln\left(\tan{\left(\frac{|\phi+\alpha|}{2}\right)}\right)\right)+2\cos{\alpha}\cos{\phi}\right)
+  u_{x}=-R\frac{\lambda+2\mu}{2\pi\mu\left(\lambda+\mu\right)}\int_0^\vartheta\left(\ln\left(\tan{\left(\frac{|\phi-\alpha|}{2}\right)}\right)+\ln\left(\tan{\left(\frac{|\phi+\alpha|}{2}\right)}\right)+2\cos{\alpha}\cos{\phi}\right)p\left(\phi\right)d\phi
 \end{equation}
+
+Using symmetry, $$p\left(\phi\right=p\left(-\phi\right)$$
+
+\begin{equation}
+  u_{x}=-R\frac{\lambda+2\mu}{2\pi\mu\left(\lambda+\mu\right)}\int_0^\vartheta\left(\ln\left(\tan{\left(\frac{|\phi-\alpha|}{2}\right)}\right)\cos{\alpha}\cos{\phi}\right)p\left(\phi\right)d\phi
+\end{equation}
+
 
