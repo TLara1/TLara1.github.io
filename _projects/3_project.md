@@ -2,7 +2,7 @@
 layout: page
 title: On Hertzian Contacts of Two Disks
 description:
-img: assets/img/mercury_precession.png
+img: assets/img/Colliding_Disk.png
 importance: 3
 category: Physics
 giscus_comments: false
