@@ -1,6 +1,6 @@
 ---
 layout: page
-title: On Hertzian Contacts of Two Disks
+title: Elasticity Theory and the Deformation of Two Colliding Disks
 description:
 img: assets/img/Colliding_Disk.png
 importance: 3
