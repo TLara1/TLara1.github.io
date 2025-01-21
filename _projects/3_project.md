@@ -636,18 +636,26 @@ Hence:
 
  Combining \eqref{u_1 eq} and \eqref{u_2 eq} together with \eqref{disp rule}:
 
+\begin{equation}
+  K_1\int_{-s_0}^{s_0}\left(\ln\left(\tan{\left(\frac{|t-s|}{2R_1}\right)}\right)+\cos{\frac{t}{R_1}}\cos{\frac{s}{R_1}}\right)p\left(s\right)ds\nonumber
+\end{equation}
+
+\begin{equation}
+  +2K_2\int_{-s_0}^{s_0}\left(\ln\left(\tan{\left(\frac{|t-s|}{2R_2}\right)}\right)+\cos{\frac{t}{R_2}}\cos{\frac{s}{R_2}}\right)p\left(s\right)ds+d\nonumber
+\end{equation}
+
 \begin{equation}\label{complex integral t and s}
-  K_1\int_{-s_0}^{s_0}\left(\ln\left(\tan{\left(\frac{|t-s|}{2R_1}\right)}\right)+\cos{\frac{t}{R_1}}\cos{\frac{s}{R_1}}\right)p\left(s\right)ds+2K_2\int_{-s_0}^{s_0}\left(\ln\left(\tan{\left(\frac{|t-s|}{2R_2}\right)}\right)+\cos{\frac{t}{R_2}}\cos{\frac{s}{R_2}}\right)p\left(s\right)ds+d=R_1\left(1-\cos{\frac{t}{R_1}}\right)+R_2\left(1-\cos{\frac{t}{R_2}}\right)
+  =R_1\left(1-\cos{\frac{t}{R_1}}\right)+R_2\left(1-\cos{\frac{t}{R_2}}\right)
 \end{equation}
 
  \eqref{complex integral t and s} is difficult to solve analytically, but if the contact arc is small, $$s_0\lll R_1, R_2$$, we can expand to first order:
 
  \begin{equation}
-  -\left(K_1+K_2\right)\int_{-s_0}^{s_0}\ln\left(\frac{1}{|t-s|}\right)p\left(s\right)ds-P\left(K_1\ln{2R_1}+K_2\ln{2R_2}\right)+P\left(K_1+K_2\right)-P\left(\frac{K_1}{2R_1^2}+\frac{K_2}{2R_2^2}\right)t^2+d\nonumber
+  -\left(K_1+K_2\right)\int_{-s_0}^{s_0}\ln\left(\frac{1}{|t-s|}\right)p\left(s\right)ds-P\left(K_1\ln{2R_1}+K_2\ln{2R_2}\right)+P\left(K_1+K_2\right)-P\left(\frac{K_1}{2R_1^2}+\frac{K_2}{2R_2^2}\right)t^2\nonumber
 \end{equation}
 
  \begin{equation}
-  =\frac{1}{2}\left(\frac{1}{R_1}+\frac{1}{R^2}\right)t^2
+  +d=\frac{1}{2}\left(\frac{1}{R_1}+\frac{1}{R^2}\right)t^2
 \end{equation}
 
 Where $$P=\int_{-s_0}^{s_0}p\left(s\right)ds$$ is the total applied force magnitude. We can write:
@@ -660,8 +668,21 @@ Where $$P=\int_{-s_0}^{s_0}p\left(s\right)ds$$ is the total applied force magnit
   B\equiv \frac{1}{2\left(K_1+K_2\right)}\left(\left(\frac{1}{R_1}+\frac{1}{R_2}\right)+P\left(\frac{K_1}{R_1^2}+\frac{K_2}{R_2^2}\right)\right) \nonumber
 \end{equation}
 
-\begin{equation}
+\begin{equation}\label{simplified indent}
   \int_{-s_0}^{s_0}\ln\left(\frac{1}{|t-s|}\right)p\left(s\right)ds=A-Bt^2
 \end{equation}
 
+\eqref{simplified indent} is solved by the following:
+\begin{equation}
+  p\left(t\right)=\frac{2P}{\pi s_0^2}\sqrt{s_0^2-t^2}
+\end{equation}
 
+\begin{equation}
+  s_0=\sqrt{\frac{P}{B}}
+\end{equation}
+
+As $$B$$ is constant, given a force $$P$$ pushing our disks together, the contact half-width, $$s_0$$ and pressure distribution $$P\left(t\right)$$ can be found. The indentation depth can also be measured:
+
+\begin{equation}
+  d=P\left(K_1\ln{2R_1}+K_2\ln{2R_2}+\left(K_1+K_2\right)\ln{\left(\sqrt{\frac{4d}{P}}\right)}-\frac{1}{2}\left(K_1+K_2\right)\right)
+\end{equation}
