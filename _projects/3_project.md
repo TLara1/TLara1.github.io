@@ -594,26 +594,26 @@ We can rewrite \eqref{u_x long}:
   u_{x}=-F\frac{\lambda+2\mu}{2\pi\mu\left(\lambda+\mu\right)}\left(\ln\left(\tan{\left(\frac{|\phi-\alpha|}{2}\right)}\right)+\ln\left(\tan{\left(\frac{|\phi+\alpha|}{2}\right)}\right)+2\cos{\alpha}\cos{\phi}\right)
 \end{equation}
 
-Now, let's suppose instead of a concentrated force $$F$$, there is a force distribution, $$p\left(\phi\right)$$. Let us first write this distribution as acting from $$0$$ to $$\vartheta$$, integrating with polar coordinates:
+Now, let's suppose instead of a concentrated force $$F$$, there is a force distribution, $$p\left(\phi\right)$$. Let us first write this distribution as acting from $$0$$ to $$\phi_0$$, integrating with polar coordinates:
 
 \begin{equation}
-  u_{x}=-RK\int_0^\vartheta\left(\ln\left(\tan{\left(\frac{|\alpha-\phi|}{2}\right)}\right)+\ln\left(\tan{\left(\frac{|\alpha+\phi|}{2}\right)}\right)+2\cos{\alpha}\cos{\phi}\right)p\left(\phi\right)d\phi
+  u_{x}=-RK\int_0^{\phi_0}\left(\ln\left(\tan{\left(\frac{|\alpha-\phi|}{2}\right)}\right)+\ln\left(\tan{\left(\frac{|\alpha+\phi|}{2}\right)}\right)+2\cos{\alpha}\cos{\phi}\right)p\left(\phi\right)d\phi
 \end{equation}
 
 Where $$K=\frac{\lambda+2\mu}{2\pi\mu\left(\lambda+\mu\right)}$$. Using symmetry, $$p\left(\phi\right=p\left(-\phi\right)$$
 
 \begin{equation}
-  u_{x}=-RK\int_0^\vartheta\left(\ln\left(\tan{\left(\frac{|\alpha-\phi|}{2}\right)}\right)\cos{\alpha}+\cos{\phi}\right)p\left(\phi\right)d\phi
+  u_{x}=-RK\int_{-\phi_0}^{\phi_0}\left(\ln\left(\tan{\left(\frac{|\alpha-\phi|}{2}\right)}\right)\cos{\alpha}+\cos{\phi}\right)p\left(\phi\right)d\phi
 \end{equation}
 
 Now, let's consider the case of two colliding disks. Marking displacements with $$_1$$ and $$_2$$ subscripts, and taking $$p$$ to be in the negative direction, indenting the circle:
 
 \begin{equation}\label{u_1 eq}
-  u_{x\quad 1}=R_1K_1\int_0^\vartheta\left(\ln\left(\tan{\left(\frac{|\alpha_1-\phi_1|}{2}\right)}\right)+\cos{\alpha_1}\cos{\phi_1}\right)p_1\left(\phi_1\right)d\phi_1
+  u_{x\quad 1}=R_1K_1\int_{-\phi_0}^{\phi_0}\left(\ln\left(\tan{\left(\frac{|\alpha_1-\phi_1|}{2}\right)}\right)+\cos{\alpha_1}\cos{\phi_1}\right)p_1\left(\phi_1\right)d\phi_1
 \end{equation}
 
 \begin{equation}\label{u_2 eq}
-  u_{x\quad 2}=R_2K_2\int_0^\vartheta\left(\ln\left(\tan{\left(\frac{|\alpha_2-\phi_2|}{2}\right)}\right)+\cos{\alpha_2}\cos{\phi_2}\right)p_2\left(\phi_2\right)d\phi_2
+  u_{x\quad 2}=R_2K_2\int_{-\phi_0}^{\phi_0}\left(\ln\left(\tan{\left(\frac{|\alpha_2-\phi_2|}{2}\right)}\right)+\cos{\alpha_2}\cos{\phi_2}\right)p_2\left(\phi_2\right)d\phi_2
 \end{equation}
 
 Now let $$s$$ or $$t$$ be a point along the circumference of both disks in the region of contact:
@@ -637,7 +637,7 @@ Hence:
  Combining \eqref{u_1 eq} and \eqref{u_2 eq} together with \eqref{disp rule}:
 
 \begin{equation}
-  K_1\int_0^\vartheta\left(\ln\left(\tan{\left(\frac{|t-s|}{2R_1}\right)}\right)+\cos{\frac{t}{R_1}}\cos{\frac{s}{R_1}}\right)p\left(s\right)d\s+2K_2\int_0^\vartheta\left(\ln\left(\tan{\left(\frac{|t-s|}{2R_2}\right)}\right)+\cos{\frac{t}{R_2}}\cos{\frac{s}{R_2}}p\left(s\right)ds=R_1\left(1-\cos{\frac{t}{R_1}}\right)+R_2\left(1-\cos{\frac{t}{R_2}}\right)
+  K_1\int_{-s_0}^{s_0}\left(\ln\left(\tan{\left(\frac{|t-s|}{2R_1}\right)}\right)+\cos{\frac{t}{R_1}}\cos{\frac{s}{R_1}}\right)p\left(s\right)d\s+2K_2\int_{-s_0}^{s_0}\left(\ln\left(\tan{\left(\frac{|t-s|}{2R_2}\right)}\right)+\cos{\frac{t}{R_2}}\cos{\frac{s}{R_2}}p\left(s\right)ds=R_1\left(1-\cos{\frac{t}{R_1}}\right)+R_2\left(1-\cos{\frac{t}{R_2}}\right)
 \end{equation}
  
 
