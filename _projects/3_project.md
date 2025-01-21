@@ -555,7 +555,7 @@ And finding the displacements with \eqref{ux+uy complex} after a bit of simplifi
 
 We can separate the real and imaginary components of \eqref{u+v long comp}, and replacing $$\kappa=\frac{\lambda+3\mu}{\lambda+\mu}$$
 
-\begin{equation}
+\begin{equation}\label{u_x long}
   u_{x}=\frac{F}{4\pi\mu}\left(\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}\ln\left(\frac{r_2}{r_1}\right)+2\cos{2\theta_1}-2\cos{2\theta_2}-\frac{2\mu\cos{\alpha}}{\lambda+\mu}\frac{x}{R}\right)
 \end{equation}
 \begin{equation}
@@ -566,3 +566,30 @@ We have introduced several variables outlined in the diagram below:
 
 {% include figure.liquid loading="eager" path="assets/img/Figures_Solidmech_Notes/Circle_Solid_diagram.png" title="Orbital element diagram 3d" class="img-fluid rounded z-depth-0" %}
 
+<h2>IV. The Problem of Two Colliding Disks</h2>
+
+Let us consider a point on the circumference of our circular disk. In polar coordinates, let this point have radius $$R$$ and angle $$\phi$$. With trigonometric relations:
+
+\begin{equation}
+  r_1^2=2R^2\left(1-\cos{\left(\phi-\alpha\right)}\right)
+\end{equation}
+
+\begin{equation}
+  r_2^2=2R^2\left(1-\cos{\left(\pi-\left(\phi+\alpha\right)\right)}\right)
+\end{equation}
+
+\begin{equation}
+  \frac{r_2}{r_1}=\pm\sqrt{\frac{1+\cos{\left(\phi+\alpha\right)}{1-\cos{\left(\phi-\alpha\right)}}=\pm\frac{\cos{\left(\frac{1}{2}\left(\phi+\alpha\right)\right)}}{\sin{\left(\frac{1}{2}\left(\phi-\alpha\right)\right)}}
+\end{equation}
+
+The $$+$$ in the $$\pm$$ accounts for $$\phi>\alpha$$ and the $$-$$ the inverse. Furthermore:
+
+\begin{equation}
+  cos{2\theta_1}-cos{2\theta_2}=-2\cos{\alpha}\cos{\phi}
+\end{equation}
+
+We can rewrite \eqref{u_x long}:
+
+\begin{equation}
+  u_{x}=\frac{F}{4\pi\mu}\left(\frac{2\left(\lambda+2\mu\right)}{\lambda+\mu}\ln\left(\pm\frac{\cos{\left(\frac{1}{2}\left(\phi+\alpha\right)\right)}}{\sin{\left(\frac{1}{2}\left(\phi-\alpha\right)\right)}}\right)\right)
+\end{equation}
