@@ -637,19 +637,23 @@ Hence:
  Combining \eqref{u_1 eq} and \eqref{u_2 eq} together with \eqref{disp rule}:
 
 \begin{equation}\label{complex integral t and s}
-  K_1\int_{-s_0}^{s_0}\left(\ln\left(\tan{\left(\frac{|t-s|}{2R_1}\right)}\right)+\cos{\frac{t}{R_1}}\cos{\frac{s}{R_1}}\right)p\left(s\right)ds+2K_2\int_{-s_0}^{s_0}\left(\ln\left(\tan{\left(\frac{|t-s|}{2R_2}\right)}\right)+\cos{\frac{t}{R_2}}\cos{\frac{s}{R_2}}p\left(s\right)ds+d=R_1\left(1-\cos{\frac{t}{R_1}}\right)+R_2\left(1-\cos{\frac{t}{R_2}}\right)
+  K_1\int_{-s_0}^{s_0}\left(\ln\left(\tan{\left(\frac{|t-s|}{2R_1}\right)}\right)+\cos{\frac{t}{R_1}}\cos{\frac{s}{R_1}}\right)p\left(s\right)ds+2K_2\int_{-s_0}^{s_0}\left(\ln\left(\tan{\left(\frac{|t-s|}{2R_2}\right)}\right)+\cos{\frac{t}{R_2}}\cos{\frac{s}{R_2}}\right)p\left(s\right)ds+d=R_1\left(1-\cos{\frac{t}{R_1}}\right)+R_2\left(1-\cos{\frac{t}{R_2}}\right)
 \end{equation}
 
  \eqref{complex integral t and s} is difficult to solve analytically, but if the contact arc is small, $$s_0\lll R_1, R_2$$, we can expand to first order:
 
  \begin{equation}
-  -\left(K_1+K_2\right)\int_{-s_0}^{s_0}\ln\left(\frac{1}{|t-s|}\right)p\left(s\right)ds-P\left(K_1\ln{2R_1}+K_2\ln{2R_2}\right)+P\left(K_1+K_2\right)-P\left(\frac{K_1}{2R_1^2}+\frac{K_2}{2R_2^2}\right)t^2+d=\frac{1}{2}\left(\frac{1}{R_1}+\frac{1}{R^2}\right)t^2
+  -\left(K_1+K_2\right)\int_{-s_0}^{s_0}\ln\left(\frac{1}{|t-s|}\right)p\left(s\right)ds-P\left(K_1\ln{2R_1}+K_2\ln{2R_2}\right)+P\left(K_1+K_2\right)-P\left(\frac{K_1}{2R_1^2}+\frac{K_2}{2R_2^2}\right)t^2+d\nonumber
+\end{equation}
+
+ \begin{equation}
+  =\frac{1}{2}\left(\frac{1}{R_1}+\frac{1}{R^2}\right)t^2
 \end{equation}
 
 Where $$P=\int_{-s_0}^{s_0}p\left(s\right)ds$$ is the total applied force magnitude. We can write:
 
 \begin{equation}
-  A\equiv P\left(1-\frac{K_1}{K_1+K_2}\ln{2R_1}-\frac{K_2}{K_1+K_2}\ln{2R_2}\right)+\frac{d}{K_1+K_2} \nonumner
+  A\equiv P\left(1-\frac{K_1}{K_1+K_2}\ln{2R_1}-\frac{K_2}{K_1+K_2}\ln{2R_2}\right)+\frac{d}{K_1+K_2} \nonumber
 \end{equation}
 
 \begin{equation}
