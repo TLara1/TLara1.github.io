@@ -579,7 +579,7 @@ Let us consider a point on the circumference of our circular disk. In polar coor
 \end{equation}
 
 \begin{equation}
-  \frac{r_2}{r_1}=\pm\sqrt{\frac{1+\cos{\left(\phi+\alpha\right)}{1-\cos{\left(\phi-\alpha\right)}}=\pm\frac{\cos{\left(\frac{1}{2}\left(\phi+\alpha\right)\right)}}{\sin{\left(\frac{1}{2}\left(\phi-\alpha\right)\right)}}
+  \frac{r_2}{r_1}=\pm\sqrt{\frac{1+\cos{\left(\phi+\alpha\right)}}{1-\cos{\left(\phi-\alpha\right)}}}=\pm\frac{\cos{\left(\frac{1}{2}\left(\phi+\alpha\right)\right)}}{\sin{\left(\frac{1}{2}\left(\phi-\alpha\right)\right)}}
 \end{equation}
 
 The $$+$$ in the $$\pm$$ accounts for $$\phi>\alpha$$ and the $$-$$ the inverse. Furthermore:
@@ -646,5 +646,18 @@ Hence:
   -\left(K_1+K_2\right)\int_{-s_0}^{s_0}\ln\left(\frac{1}{|t-s|}\right)p\left(s\right)ds-P\left(K_1\ln{2R_1}+K_2\ln{2R_2}\right)+P\left(K_1+K_2\right)-P\left(\frac{K_1}{2R_1^2}+\frac{K_2}{2R_2^2}\right)t^2+d=\frac{1}{2}\left(\frac{1}{R_1}+\frac{1}{R^2}\right)t^2
 \end{equation}
 
-Where $$P=\int_{-s_0}^{s_0}p\left(s\right)ds$$ is the total applied force magnitude. 
+Where $$P=\int_{-s_0}^{s_0}p\left(s\right)ds$$ is the total applied force magnitude. We can write:
+
+\begin{equation}
+  A\equiv P\left(1-\frac{K_1}{K_1+K_2}\ln{2R_1}-\frac{K_2}{K_1+K_2}\ln{2R_2}\right)+\frac{d}{K_1+K_2} \nonumner
+\end{equation}
+
+\begin{equation}
+  B\equiv \frac{1}{2\left(K_1+K_2\right)}\left(\left(\frac{1}{R_1}+\frac{1}{R_2}\right)+P\left(\frac{K_1}{R_1^2}+\frac{K_2}{R_2^2}\right)\right) \nonumber
+\end{equation}
+
+\begin{equation}
+  \int_{-s_0}^{s_0}\ln\left(\frac{1}{|t-s|}\right)p\left(s\right)ds=A-Bt^2
+\end{equation}
+
 
