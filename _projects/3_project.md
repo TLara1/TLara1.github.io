@@ -637,7 +637,7 @@ Hence:
  Combining \eqref{u_1 eq} and \eqref{u_2 eq} together with \eqref{disp rule}:
 
 \begin{equation}
-  K_1\int_{-s_0}^{s_0}\left(\ln\left(\tan{\left(\frac{|t-s|}{2R_1}\right)}\right)+\cos{\frac{t}{R_1}}\cos{\frac{s}{R_1}}\right)p\left(s\right)d\s+2K_2\int_{-s_0}^{s_0}\left(\ln\left(\tan{\left(\frac{|t-s|}{2R_2}\right)}\right)+\cos{\frac{t}{R_2}}\cos{\frac{s}{R_2}}p\left(s\right)ds=R_1\left(1-\cos{\frac{t}{R_1}}\right)+R_2\left(1-\cos{\frac{t}{R_2}}\right)
+  K_1\int_{-s_0}^{s_0}\left(\ln\left(\tan{\left(\frac{|t-s|}{2R_1}\right)}\right)+\cos{\frac{t}{R_1}}\cos{\frac{s}{R_1}}\right)p\left(s\right)d\s+2K_2\int_{-s_0}^{s_0}\left(\ln\left(\tan{\left(\frac{|t-s|}{2R_2}\right)}\right)+\cos{\frac{t}{R_2}}\cos{\frac{s}{R_2}}p\left(s\right)ds+d=R_1\left(1-\cos{\frac{t}{R_1}}\right)+R_2\left(1-\cos{\frac{t}{R_2}}\right)
 \end{equation}
  
 
