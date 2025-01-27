@@ -87,7 +87,7 @@ Defining $$\vec{r}=\vec{r}_1'-\vec{r}_0'$$, we find:
 \end{equation}
 we have defined $$m\equiv m_0'+m_1'$$.
 
-We rewrite \cref{governing Newton Law} using polar coordinates, with the basis transformation:
+We rewrite \eqref{governing Newton Law} using polar coordinates, with the basis transformation:
 \begin{equation}    
     \hat{e}_x=\cos{f}\hat{e}_r-\sin{f}\hat{e}_f
 \end{equation}
@@ -107,15 +107,15 @@ It is not difficult to demonstrate:
 \begin{equation}
     \vec{\ddot{r}}=(\ddot{r}-{r}\dot{f}^2){\hat{e}_r}+(2\dot{r} \dot{f} + r \ddot{f})\hat{e}_f
 \end{equation}
-\cref{governing Newton Law} becomes:
+\eqref{governing Newton Law} becomes:
 \begin{equation}\label{Netwon polar coordinates}
     (\ddot{r}-{r}\dot{f}^2){\hat{e}_r}+(2\dot{r} \dot{f} + r \ddot{f})\hat{e}_f = -\frac{\mathcal{G}m}{r^2}\hat{e}_r
 \end{equation}
-The norm of the angular momentum vector is given by $$\parallel\vec{r}\times\dot{\vec{r}}\parallel= r^2\dot{f}$$. From \cref{Netwon polar coordinates}, $$\frac{d\left(r^2\dot{f}\right)}{dt}=0$$, a statement of the conservation of total angular momentum. Let us define the reduced mass: $$\mu\equiv\frac{m_0'm_1'}{m_0'+m_1'}$$, and defined the quantity $$L\equiv\mu\parallel\vec{r}\times\dot{\vec{r}}\parallel=\mu r^2\dot{f}$$. 
+The norm of the angular momentum vector is given by $$\parallel\vec{r}\times\dot{\vec{r}}\parallel= r^2\dot{f}$$. From \eqref{Netwon polar coordinates}, $$\frac{d\left(r^2\dot{f}\right)}{dt}=0$$, a statement of the conservation of total angular momentum. Let us define the reduced mass: $$\mu\equiv\frac{m_0'm_1'}{m_0'+m_1'}$$, and defined the quantity $$L\equiv\mu\parallel\vec{r}\times\dot{\vec{r}}\parallel=\mu r^2\dot{f}$$. 
 
 
 <h3>II.II Kepler's First Law</h3>
-We rewrite \cref{Netwon polar coordinates} in the $$\hat{e}_r$$ direction:
+We rewrite \eqref{Netwon polar coordinates} in the $$\hat{e}_r$$ direction:
 
 \begin{equation}\label{r equation newton} \ddot{r}-\frac{L^2}{\mu^2r^3}=-\frac{\mathcal{G}m}{r^2} \end{equation}
 
@@ -125,7 +125,7 @@ Performing the substitution, $$u=\frac{1}{r}$$:
 
 \begin{equation} \ddot{r} = \frac{d}{dt}\left(-\frac{L}{\mu}\frac{du}{df}\right)=--\frac{L}{\mu}\dot{f}\frac{d^2u}{df^2} = -\left(\frac{L}{\mu}\right)^2u^2\frac{d^2u}{df^2} \end{equation}
 
-\cref{Netwon polar coordinates} in terms of $$u$$:
+\eqref{Netwon polar coordinates} in terms of $$u$$:
 
 \begin{equation} \label{dif eq with u} -\left(\frac{L}{\mu}\right)^2u^2\frac{d^2u}{df^2} -\frac{L^2}{\mu^2r^3} = -\mathcal{G}mu^2 \quad\rightarrow\quad \frac{d^2u}{df^2} + u = \mathcal{G}m\frac{\mu^2}{L^2} \end{equation}
 
@@ -141,7 +141,7 @@ We consider only $$0<e<1$$, giving a closed orbit. Broadly speaking, the closer 
 
 <h3>II.III Kepler's Third Law</h3>
 
-We relate the orbit period $$P$$ with the orbit's semi-major axis $$a$$. Converting \cref{r equation kepler} into Cartesian coordinates:
+We relate the orbit period $$P$$ with the orbit's semi-major axis $$a$$. Converting \eqref{r equation kepler} into Cartesian coordinates:
 
 \begin{equation} r+ex=\frac{L^2}{\mathcal{G}m\mu^2}\quad\rightarrow\quad y^2=\left(\frac{L^2}{\mathcal{G}m\mu^2}-ex\right)^2-x^2 \end{equation}
 
@@ -178,11 +178,11 @@ We define the mean motion at $$n=\frac{2\pi}{P}$$ and summarize Kepler's Laws:
 <h2>III. Orbital Elements</h2>
 <h3>III.I Derivation of Mean and Eccentric Anomalies</h3>
 
-From \cref{r theta equation}:
+From \eqref{r theta equation}:
 
 \begin{equation} \dot{r} = \frac{r}{1+e\cos{f}}e\sin{f}\dot{f}=\frac{L}{\mu r\left(1+e\cos{f}\right)}e\sin{f}=\frac{na^2\sqrt{1-e^2}}{r\left(1+e\cos{f}\right)}e\sin{f} \end{equation}
 
-We have used $$L=\mu r^2\dot{f}$$ and \cref{L defintion}. Again using \cref{r theta equation}:
+We have used $$L=\mu r^2\dot{f}$$ and \eqref{L defintion}. Again using \eqref{r theta equation}:
 
 \begin{equation} \dot{r} = \frac{na}{\sqrt{1-e^2}}e\sin{f} \end{equation}
 
@@ -190,11 +190,11 @@ In polar coordinates, the magnitude of the velocity vector $$\parallel\dot{\vec{
 
 \begin{equation} v^2=\dot{r}^2+\frac{L^2}{r^2\mu^2}=\frac{n^2a^2}{1-e^2}e^2\sin^2{f}+\frac{n^2a^2}{1-e^2}\left(1+e\cos{f}\right)^2=\frac{n^2a^2}{1-e^2}\left(1+2e\cos{f}+e^2\right) \end{equation}
 
-With \cref{r theta equation} and \cref{n equation}:
+With \eqref{r theta equation} and \eqref{n equation}:
 
 \begin{equation}\label{v^2 equation} v^2=\frac{n^2a^2}{1-e^2}\left(\frac{2a(1-e^2)}{r}-1+e^2\right)=\frac{2n^2a^3}{r}-n^2a^2=\mathcal{G}m\left(\frac{2}{r}-\frac{1}{a}\right) \end{equation}
 
-Using \cref{v^2 equation} to rewrite $$\dot{r}$$:
+Using \eqref{v^2 equation} to rewrite $$\dot{r}$$:
 
 \begin{equation}\label{r dot equation} \dot{r}^2=v^2-\frac{L^2}{r^2\mu^2}=\frac{2n^2a^3}{r}-n^2a^2-\frac{ n^2a^4\left(1-e^2\right)}{r^2}\quad\rightarrow\quad \dot{r}=\frac{na}{r}\sqrt{a^2e^2-\left(r-a\right)^2} \end{equation}
 
@@ -203,7 +203,7 @@ We have a differential equation for $$r$$, which we solve by writing $$r$$ in te
 \begin{equation} r=a\left(1-e\cos{E}\right)\label{r E equation}\end{equation}
 \begin{equation} \dot{r}=ae\sin{E}\dot{E} \end{equation}
 
-Rewriting \cref{r dot equation} using $$E$$:
+Rewriting \eqref{r dot equation} using $$E$$:
 
 \begin{equation} \dot{E}=\frac{na}{r}=\frac{n}{1-e\cos{E}} \end{equation}
 
@@ -221,14 +221,14 @@ From our orbital element diagram, we can immediately conclude:
 \begin{equation}\label{cos f equation}
     Q_1=r\cos{f}=a\cos{E}-ae
 \end{equation}
-From \cref{r theta equation}:
+From \eqref{r theta equation}:
 \begin{equation}
     r=\frac{a(1-e^2)}{1+e\cos{f}}=\frac{ra(1-e^2)}{r+eQ_1}=\frac{ra(1-e^2)}{r+e\left(a\cos{E}-ae\right)}
 \end{equation}
 \begin{equation}
     \rightarrow\quad r=a(1-e^2)-e\left(a\cos{E}-ae\right)=a\left(1-e\cos{E}\right)
 \end{equation}
-Aligning with our result of \cref{r E equation}. We can also calculate $$Q_2$$:
+Aligning with our result of \eqref{r E equation}. We can also calculate $$Q_2$$:
 \begin{equation}
     Q_2=\sqrt{r^2-Q_1^2}= a\sqrt{\left(1-e\cos{E} \right)^2 - \left(\cos{E}-e \right)^2} = a\sqrt{1-e^2}\sin{E}
 \end{equation}
@@ -296,7 +296,7 @@ $$\begin{equation}
     \end{pmatrix}  
 \end{equation}$$
 
-From \cref{Q_1 eq} and \cref{Q_2 eq}, and because the orbit is by definition in the orbiting ellipse setting $$Q_3=0$$:
+From \eqref{Q_1 eq} and \eqref{Q_2 eq}, and because the orbit is by definition in the orbiting ellipse setting $$Q_3=0$$:
 
 $$\begin{equation}
     \vec{q}=    
@@ -330,11 +330,11 @@ Utilizing our transform and polar coordinates, $$Q_1=r\cos{f}$$, $$Q_2=r\sin{f}$
 <h2>IV. Expansion of the Two-Body Hamiltonian in Delaunay Variables</h2>
 Here we write the Hamiltonian for the two-body system and solve the Hamilton-Jacobi Equation to find a set of action-angle variables that are constant over time.
 
-We begin by identifying the Two-Body Hamiltonian in Cartesian coordinates. From \cref{governing Newton Law}, the Lagrangian of the system is given by:
+We begin by identifying the Two-Body Hamiltonian in Cartesian coordinates. From \eqref{governing Newton Law}, the Lagrangian of the system is given by:
 \begin{equation}
     \mathcal{L}=\frac{1}{2}\mu\parallel\dot{\vec{r}}\parallel^2+\frac{\mathcal{G}\mu m}{\parallel\vec{r}\parallel}
 \end{equation}
-Via the Euler-Lagrange Equation, \cref{governing Newton Law} is recovered:
+Via the Euler-Lagrange Equation, \eqref{governing Newton Law} is recovered:
 \begin{equation}
     \frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{\vec{r}}}\right)-\frac{\partial \mathcal{L}}{\partial \vec{r}}=0\quad\rightarrow\quad\mu\ddot{\vec{r}}+\frac{\mathcal{G}\mu m}{\parallel\vec{r}\parallel^3}\vec{r}=0
 \end{equation}
@@ -378,7 +378,7 @@ From the spherical symmetry of the problem, it is natural for us to proceed usin
     p_r = \sqrt{p_x^2 + p_y^2 + p_z^2} \label{polar transform end}
 \end{equation}
 
-Again, it can be shown that this transform satisfies \cref{cannonical 1}-\cref{cannonical 3}. The Hamiltonian becomes:
+Again, it can be shown that this transform satisfies \eqref{cannonical 1}-\eqref{cannonical 3}. The Hamiltonian becomes:
 \begin{equation}\label{2 body cartesian hamiltonian}
     \mathcal{H}=\frac{1}{2\mu}\left(p_r^2+\frac{p_\theta^2}{r^2}+\frac{p_\phi^2}{r^2\sin^2{\theta}}\right)-\frac{\mathcal{G}\mu m}{r}
 \end{equation}
@@ -386,7 +386,7 @@ Again, it can be shown that this transform satisfies \cref{cannonical 1}-\cref{c
 <h3>IV.I Action-Angle Variables</h3>
 We now find a canonical transform, $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ such that our transformed Hamiltonian $$\mathcal{K}$$ is a function of only momenta, $$\mathcal{K}\left(P_i\right)$$. Transformed position coordinates are known as _angles_ and transformed momenta are known as _actions_.
 
-Utilizing the Hamilton-Jacobi Equation (\cref{HJ Equation}) with a generating function $$S\left(r,\theta,\phi;P_1,P_2,P_3;t\right)$$, where $$P_1$$, $$P_2$$, and $$P_3$$ are constants of motion because the transformed Hamiltonian $$\mathcal{K}$$ is independent of $$Q_i$$. The Hamilton-Jacobi Equation is:
+Utilizing the Hamilton-Jacobi Equation (\eqref{HJ Equation}) with a generating function $$S\left(r,\theta,\phi;P_1,P_2,P_3;t\right)$$, where $$P_1$$, $$P_2$$, and $$P_3$$ are constants of motion because the transformed Hamiltonian $$\mathcal{K}$$ is independent of $$Q_i$$. The Hamilton-Jacobi Equation is:
 \begin{equation}
     \frac{1}{2\mu}\left(\left(\frac{\partial S}{\partial r}\right)^2+\frac{1}{r^2}\left(\frac{\partial S}{\partial \theta}\right)^2+\frac{1}{r^2\sin^2{\theta}}\left(\frac{\partial S}{\partial \phi}\right)^2\right)-\frac{\mathcal{G}\mu m}{r}+\frac{ \partial S}{\partial t}=0
 \end{equation}
@@ -423,13 +423,13 @@ and the angular momentum along the $$z$$ axis:
 \begin{equation}
     P_2=p_\phi
 \end{equation}
-are also conserved. It is not hard to show this conservation via \cref{const function}. It can also be shown that these variables are canonical (\cref{cannonical 1}-\cref{cannonical 3}). 
+are also conserved. It is not hard to show this conservation via \eqref{const function}. It can also be shown that these variables are canonical (\eqref{cannonical 1}-\eqref{cannonical 3}). 
 
 We use our previous results to expand $$P_1$$, $$P_2$$, and $$P_3$$ into orbital elements. $$P_1$$ is the total energy of the system:
 \begin{equation}
     P_1=\frac{\mu}{2}\parallel\dot{\vec{r}}\parallel^2-\frac{\mathcal{G}\mu m}{r}=\mathcal{G}\mu m\left(\frac{1}{r}-\frac{1}{2a}\right)-\frac{\mathcal{G}\mu m}{r}=-\frac{\mathcal{G}\mu m}{2a}
 \end{equation}
-We have used \cref{p def} and \cref{v^2 equation}. To transform $$P_2$$ and $$P_3$$, we need to consider the angular momentum of the system. Recalling that $$L\equiv\mu\parallel\vec{r}\times\dot{\vec{r}}\parallel$$ and using \cref{polar transform end}-\cref{polar transform end}:
+We have used \eqref{p def} and \eqref{v^2 equation}. To transform $$P_2$$ and $$P_3$$, we need to consider the angular momentum of the system. Recalling that $$L\equiv\mu\parallel\vec{r}\times\dot{\vec{r}}\parallel$$ and using \eqref{polar transform end}-\eqref{polar transform end}:
 \begin{equation}
     L\equiv\parallel\vec{r}\times{\vec{p}}\parallel=\sqrt{p_\theta^2+\frac{p_\phi^2}{\sin^2{\theta}}}\quad\rightarrow\quad P_3=L
 \end{equation}
@@ -439,7 +439,7 @@ $$\begin{equation}
     \left(\vec{r}\times\vec{p}\right)_{z} = p_{\phi} = P_2
 \end{equation}$$
 
-As $$L$$ is the norm of the angular momentum, and the angular momentum of the system is normal to the orbital plane, the $$z$$ component of the angular momentum is given by $$P_3=L\cos{I}$$, a projection of the angular momentum onto the $$z$$ axis. With \cref{L defintion} in summary:
+As $$L$$ is the norm of the angular momentum, and the angular momentum of the system is normal to the orbital plane, the $$z$$ component of the angular momentum is given by $$P_3=L\cos{I}$$, a projection of the angular momentum onto the $$z$$ axis. With \eqref{L defintion} in summary:
 
 \begin{equation}
     P_1 = -\frac{\mathcal{G}\mu m}{2a} \label{P_1 def}
@@ -453,13 +453,13 @@ As $$L$$ is the norm of the angular momentum, and the angular momentum of the sy
     P_2 = P_3 \cos{I} \label{P_2 def}
 \end{equation}
 
-Having expressed our transformed momenta in orbital elements, we must do the same for our transformed position coordinates. We solve for $$S$$ by integrating \cref{S_t derivative}-\cref{S_r derivative}:
+Having expressed our transformed momenta in orbital elements, we must do the same for our transformed position coordinates. We solve for $$S$$ by integrating \eqref{S_t derivative}-\eqref{S_r derivative}:
 
 \begin{equation}
     S=-P_1 t+P_2 \phi+\int\sqrt{P_3^2-\frac{P_2^2}{\sin^2\theta}}d\theta+\int\sqrt{2\mu P_1+\frac{2\mathcal{G}\mu^2 m}{r}-\frac{P_3^2}{r^2}}dr
 \end{equation}
 
-Using \cref{transormned position coordinates}:
+Using \eqref{transormned position coordinates}:
 
 \begin{equation}
     Q_1 = \frac{\partial {S}}{\partial P_1} = -t + \mu \int \frac{dr}{\sqrt{2\mu\left(P_1 + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_3^2}{r^2}}} = -t + \mu I_1
@@ -473,13 +473,13 @@ Using \cref{transormned position coordinates}:
     Q_3 = \frac{\partial {S}}{\partial P_3} = P_3 \int \frac{d\theta}{\sqrt{P_3^2 - \frac{P_2^2}{\sin^2\theta}}} - P_3 \int \frac{dr}{r^2 \sqrt{2\mu \left(P_1 + \frac{\mathcal{G}\mu m}{r}\right) - \frac{P_3^2}{r^2}}} = P_3\left(I_4 - I_2\right)
 \end{equation}
 
-Evaluating the integrals in order, starting with $$I_1$$. With \cref{P_1 def} and \cref{P_3 def}:
+Evaluating the integrals in order, starting with $$I_1$$. With \eqref{P_1 def} and \eqref{P_3 def}:
 
 \begin{equation}
     I_1=\frac{1}{\mu\sqrt{\mathcal{G}m}}\int\frac{rdr}{\sqrt{-\frac{r^2}{a}+2r-a\left(1-e^2\right)}}
 \end{equation}
 
-With \cref{r E equation}, $$dr=ae\sin EdE$$, and $$I_1$$ becomes:
+With \eqref{r E equation}, $$dr=ae\sin EdE$$, and $$I_1$$ becomes:
 
 \begin{equation}
     I_1 = \frac{1}{\mu \sqrt{\mathcal{G}m}} \int \frac{a^2 e \left(1 - e \cos E\right) \sin E \, dE}{\sqrt{- a \left(1 - e \cos E\right)^2 + 2a \left(1 - e \cos E\right) - a \left(1 - e^2\right)}}
@@ -488,7 +488,7 @@ With \cref{r E equation}, $$dr=ae\sin EdE$$, and $$I_1$$ becomes:
 \begin{equation}
     = \frac{a^{\frac{3}{2}}}{\mu \sqrt{\mathcal{G}m}} \int \left(1 - e \cos E\right) dE
 \end{equation}
-Solving and plugging in \cref{Kepler eq}
+Solving and plugging in \eqref{Kepler eq}
 \begin{equation}
     I_1=\frac{a^\frac{3}{2}}{\mu\sqrt{\mathcal{G}m}}\left(E-e\sin E\right)=\frac{\mathcal{M}}{\mu n}
 \end{equation}
@@ -507,7 +507,7 @@ Now for $$I_2$$, with the same substitutions:
     = \frac{1}{\mu \sqrt{\mathcal{G}ma}} \int \frac{dE}{1 - e \cos{E}}
 \end{equation}
 
-Now, with \cref{cos f equation}:
+Now, with \eqref{cos f equation}:
 
 \begin{equation}
     \cos{f} = \frac{a}{r} \left( \cos{E} - e \right) = \frac{\cos{E} - e}{1 - e \cos E}
@@ -526,7 +526,7 @@ Thus, $$I_2$$ becomes:
 \begin{equation}
     I_2=\frac{1}{\mu\sqrt{\mathcal{G}ma\left(1-e^2\right)}}\int df=\frac{f}{P_3}
 \end{equation}
-Now for $$I_3$$. With \cref{P_2 def} and \cref{P_3 def}:
+Now for $$I_3$$. With \eqref{P_2 def} and \eqref{P_3 def}:
 \begin{equation}
     I_3=\frac{1}{P_2}\int\frac{\cos Id\theta}{\sin^2\theta\sqrt{1-\frac{\cos^2 I}{\sin^2\theta}}}
 \end{equation}
@@ -542,7 +542,7 @@ From spherical trigonometric relations:
 \begin{equation}
     \sin{\left(\frac{\pi}{2}-\theta\right)}=\sin{-I}\sin{\eta}\label{sphere_trig sin}
 \end{equation}
-From \cref{sphere_trig tan}:
+From \eqref{sphere_trig tan}:
 \begin{equation}
     \cot{\theta}=-\tan{I}\sin{\chi}\quad\rightarrow\quad\csc^2\theta d\theta=\tan{I}\cos{\chi}d\chi
 \end{equation}
@@ -560,7 +560,7 @@ And for the final integral, $$I_4$$, repeating the process as in $$I_3$$:
 \begin{equation}
     I_4=\frac{1}{P_3}\int\frac{\sin\theta d\theta}{\sqrt{\sin^2\theta-\cos^2 I}}
 \end{equation}
-With \cref{sphere_trig sin}:
+With \eqref{sphere_trig sin}:
 \begin{equation}
     \cos{\theta}=\sin{-I}\sin{\eta}\quad\rightarrow\quad\sin{\theta}d\theta=\sin{I}\cos{\eta}d\eta
 \end{equation}
@@ -712,7 +712,7 @@ Where $$\mathcal{R}$$ is the _disturbing function_, written in terms of the six 
     \dot{q}_i = \frac{\partial \mathcal{R}}{\partial Q_i} \label{Delaunay Lagrange 2}
 \end{equation}
 
-\cref{Delaunay Lagrange 1}-\cref{Delaunay Lagrange 2} are the _Lagrange Planetary Equations_, and we can rewrite these in terms of our orbital elements: $$a$$, $$e$$, $$\lambda$$, $$\varpi$$, $$\Omega$$, and $$I$$. 
+\eqref{Delaunay Lagrange 1}-\eqref{Delaunay Lagrange 2} are the _Lagrange Planetary Equations_, and we can rewrite these in terms of our orbital elements: $$a$$, $$e$$, $$\lambda$$, $$\varpi$$, $$\Omega$$, and $$I$$. 
 
 First expressing $$a$$, $$e$$, and $$e$$ in terms of Delaunay variables:
 
@@ -778,7 +778,7 @@ Calculating the partial derivatives of the disturbing function:
     = \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i} \sin I_i \sqrt{1 - e_i^2}} \frac{\partial \mathcal{R}}{\partial I_i}\nonumber
 \end{equation}
 
-And combining \cref{Delaunay Lagrange 1}-\cref{Delaunay Lagrange 2} with \cref{orbital convert 1}-\cref{orbital convert end}:
+And combining \eqref{Delaunay Lagrange 1}-\eqref{Delaunay Lagrange 2} with \eqref{orbital convert 1}-\eqref{orbital convert end}:
 
 \begin{equation}
     \dot{a}_i = -\frac{2 \sqrt{a_i}}{\mu_i \sqrt{\mathcal{G} m_i}} \frac{\partial \mathcal{R}}{\partial \lambda_i} \label{lagrange start}
@@ -806,7 +806,7 @@ And combining \cref{Delaunay Lagrange 1}-\cref{Delaunay Lagrange 2} with \cref{o
 
 We have arrived at the _Lagrange Planetary Equations_. Note that these expressions are entirely independent of the form of the disturbing function $$\mathcal{R}$$ and we have taken no simplifying or approximating steps during our derivation.
 
-Finally, we approximate \cref{lagrange start}-\cref{lagrange end} to second order for small $$e_i$$ and $$I_i$$:
+Finally, we approximate \eqref{lagrange start}-\eqref{lagrange end} to second order for small $$e_i$$ and $$I_i$$:
 
 \begin{equation}
     \dot{e}_i \simeq \frac{1}{\mu_i e_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial \varpi_i} \label{lagrange simple start}
@@ -842,7 +842,7 @@ In this approximation, $$a_1$$ is constant as it varies much slower than the oth
     q_i \equiv I_i \cos \Omega_i \label{orbital vector end}
 \end{equation}
 
-Rewriting \cref{lagrange simple start}-\cref{lagrange simple end} with our new variables:
+Rewriting \eqref{lagrange simple start}-\eqref{lagrange simple end} with our new variables:
 
 \begin{equation}
     \dot{h}_i = \frac{\partial h_i}{\partial e_i} \dot{e}_i + \frac{\partial h_i}{\partial \varpi_i} \dot{\varpi}_i \simeq - \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial k_i} \label{simplified lagrange start}
@@ -860,4 +860,4 @@ Rewriting \cref{lagrange simple start}-\cref{lagrange simple end} with our new v
     \dot{q}_i = \frac{\partial q_i}{\partial I_i} \dot{I}_i + \frac{\partial q_i}{\partial \Omega_i} \dot{\Omega}_i \simeq \frac{1}{\mu_i \sqrt{\mathcal{G} m_i a_i}} \frac{\partial \mathcal{R}}{\partial p_i} \label{simplified lagrange end}
 \end{equation}
 
-The simplified form of our planetary equations, \cref{simplified lagrange start}-\cref{simplified lagrange end} will be convenient after expanding $$\mathcal{R}$$ to second order in our orbital elements.
+The simplified form of our planetary equations, \eqref{simplified lagrange start}-\eqref{simplified lagrange end} will be convenient after expanding $$\mathcal{R}$$ to second order in our orbital elements.
