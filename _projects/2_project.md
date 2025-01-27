@@ -39,167 +39,196 @@ We use \eqref{bessel recursion 1} and \eqref{bessel recursion 2} to take the tem
     \rightarrow \frac{d}{dx}J_n(x) = \frac{1}{2}\left(J_{n-1}(x)-J_{n+1}(x)\right)
 \end{equation}
 
+\begin{equation}
+    t\frac{d}{dt}g(x,t) = \frac{x}{2}\left(t + \frac{1}{t}\right)e^{\frac{x}{2}\left(t - \frac{1}{t}\right)} \nonumber
+\end{equation}
 
+\begin{equation}
+    = \sum_{n=-\infty}^{\infty}\frac{x}{2}(t^{n+1} + t^{n-1})J_n(x) = \sum_{n=-\infty}^{\infty}\frac{x}{2}(J_{n-1}(x) + J_{n+1}(x))t^n    = \sum_{n=-\infty}^{\infty}nJ_n(x)t^n \nonumber
+\end{equation}
 
+\begin{equation} \label{Bessel time derivative}
+    \rightarrow J_{n-1}(x) = \frac{2n}{x}J_n(x) - J_{n+1}(x).
+\end{equation}
 
-
-
-
-\begin{align} \label{Bessel time derivative}
-\begin{split}
-    t\frac{d}{dt}g(x,t) = \frac{x}{2}\left(t+\frac{1}{t}\right)e^{\frac{x}{2}\left(t-\frac{1}{t}\right)} = \sum_{n=-\infty}^{\infty}\frac{x}{2}(t^{n+1}+t^{n-1})J_n(x) = \sum_{n=-\infty}^{\infty}\frac{x}{2}(J_{n-1}(x)+J_{n+1}(x))t^n\\
-    =\sum_{n=-\infty}^{\infty}nJ_n(x)t^n\\
-    \rightarrow J_{n-1}(x) = \frac{2n}{x}J_n(x)-J_{n+1}(x)
-\end{split}
-\end{align}
 Combing \eqref{Bessel space derivative} and \eqref{Bessel time derivative}:
+
 \begin{equation} \label{bessel recursion full 1}
     \frac{d}{dx}J_n(x) = \frac{1}{2}(J_{n-1}(x)-J_{n+1}(x)) = \frac{1}{2}(\frac{2n}{x}J_n(x)-2J_{n+1}(x)) = \frac{n}{x}J_n(x)-J_{n+1}(x)
 \end{equation}
+
 \begin{equation} \label{bessel recursion full 2}
     \frac{d}{dx}J_n(x) = \frac{1}{2}(J_{n-1}(x)-J_{n+1}(x)) = \frac{1}{2}(2J_{n-1}(x)-\frac{2n}{x}J_n(x)) = J_{n-1}(x)-\frac{n}{x}J_n(x)
 \end{equation}
+
 Now let us calculate $$\frac{d^2}{dx^2}J_n(x)$$ with \eqref{bessel recursion full 1} and \eqref{bessel recursion full 2}.
-\begin{align*}
-    \frac{d^2}{dx^2}J_n(x)= -\frac{n}{x^2}J_n(x)+\frac{n}{x}\frac{d}{dx}J_n(x)-\frac{d}{dx}J_{n+1}(x)\\
-    = -\frac{n}{x^2}J_n(x)+\frac{n}{x}\left(\frac{n}{x}J_n(x)-J_{n+1}(x)\right)-J_n(x)+\frac{n+1}{x}J_{n+1}(x)
-\end{align*}
+
+\begin{equation}
+    \frac{d^2}{dx^2}J_n(x)= -\frac{n}{x^2}J_n(x)+\frac{n}{x}\frac{d}{dx}J_n(x)-\frac{d}{dx}J_{n+1}(x)\nonumber
+\end{equation}
+
+\begin{equation}
+    = -\frac{n}{x^2}J_n(x)+\frac{n}{x}\left(\frac{n}{x}J_n(x)-J_{n+1}(x)\right)-J_n(x)+\frac{n+1}{x}J_{n+1}(x)\nonumber
+\end{equation}
+
+
 \begin{equation}
      = -\frac{n}{x^2}J_n(x)+\frac{n^2}{x^2}J_n(x)-J_n(x)+\frac{1}{x}J_{n+1}(x)
 \end{equation}
+
 And, eliminating $$J_{n+1}(x)$$ using $$J_{n+1}(x) = \frac{n}{x}J_{n}(x) - \frac{d}{dx}J_n(x)$$:
-\begin{equation*}
-    \frac{d^2}{dx^2}J_n(x) = -\frac{n}{x^2}J_n(x)+\frac{n^2}{x^2}J_n(x)-J_n(x)+\frac{n}{x^2}J_n(x)-\frac{1}{x}\frac{d}{dx}J_n(x)
-\end{equation*}
-\begin{equation*}
-    x^2\frac{d^2}{dx^2}J_n(x) = n^2J_n(x)-x^2J_n(x)-x\frac{d}{dx}J_n(x)
-\end{equation*}
+
+\begin{equation}
+    \frac{d^2}{dx^2}J_n(x) = -\frac{n}{x^2}J_n(x)+\frac{n^2}{x^2}J_n(x)-J_n(x)+\frac{n}{x^2}J_n(x)-\frac{1}{x}\frac{d}{dx}J_n(x) \nonumber
+\end{equation}
+
+\begin{equation}
+    x^2\frac{d^2}{dx^2}J_n(x) = n^2J_n(x)-x^2J_n(x)-x\frac{d}{dx}J_n(x) \nonumber
+\end{equation}
+
 We conclude that $$J_n(x)$$ solves the following differential equation:
+
 \begin{equation} \label{bessel diffeq}
     x^2\frac{d^2}{dx^2}J_n(x) + x\frac{d}{dx}J_n(x) + (x^2-n^2) J_n(x)= 0
 \end{equation}
 
 <h3>I.II Expansion of Bessel Function Through Frobenius Method</h3>
+
 In this section, we develop a power series for Bessel Functions which we will use to expand orbital elements around $$e$$. First, suppose $$J_n(x)$$ can be expressed as a power series:
+
 \begin{equation} \label{bessel power series}
     J_n(x) = x^r\sum_{k=0}^\infty A_k x^k
 \end{equation}
+
 It follows:
+
 \begin{equation}
     \frac{dJ_n(x)}{dx} = \sum_{k=0}^\infty A_k (k+r)x^{k+r-1}
 \end{equation}
+
 \begin{equation}
     \frac{d^2J_n(x)}{dx^2} = \sum_{k=0}^\infty A_k (k+r)(k+r-1)x^{k+r-2}
 \end{equation}
+
 Rewriting \eqref{bessel diffeq}:
-\begin{align}
-\begin{split}
-    &x^2\sum_{k=0}^\infty A_k (k+r)(k+r-1)x^{k+r-2}+x\sum_{k=0}^\infty A_k (k+r)x^{k+r-1}+(x^2-n^2)\sum_{k=0}^\infty A_k x^{k+r} \\
-    = \sum_{k=0}^\infty A_k ((k+r)^2-n^2)x^{k+r}+\sum_{k=2}^\infty A_{k-2} x^{k+r}\\
-    = 0
-\end{split}
-\end{align}
+
+\begin{equation}
+    x^2\sum_{k=0}^\infty A_k (k+r)(k+r-1)x^{k+r-2}+x\sum_{k=0}^\infty A_k (k+r)x^{k+r-1}+(x^2-n^2)\sum_{k=0}^\infty A_k x^{k+r} \nonumber
+\end{equation}
+
+\begin{equation}
+    = \sum_{k=0}^\infty A_k ((k+r)^2-n^2)x^{k+r}+\sum_{k=2}^\infty A_{k-2} x^{k+r} = 0
+\end{equation}
+
 Letting $$k=0$$:
+
 \begin{equation}
     A_0(r^2-n^2)x^r=0
 \end{equation}
+
 As $$x^r \neq 0$$ and $$A_0 \neq 0$$, we find $$r = n$$.
 Letting $$k=1$$:
-\begin{equation*}
-    A_1((1+n)^2-n^2)x^{1+r}=A_1(2n+1)x^{1+r}=0
-\end{equation*}
+
+\begin{equation}
+    A_1((1+n)^2-n^2)x^{1+r}=A_1(2n+1)x^{1+r}=0 \nonumber
+\end{equation}
+
 Therefore, $$A_1=0$$.
+
 Letting $$K\geq2$$:
-\begin{equation*}
-    (A_k((k+n)^2-n^2)+A_{k-2})x^{k+r}=0
-\end{equation*}
+
+\begin{equation}
+    (A_k((k+n)^2-n^2)+A_{k-2})x^{k+r}=0 \nonumber
+\end{equation}
+
 \begin{equation}
     A_k=-\frac{1}{k(k+2n)}A_{k-2}
 \end{equation}
+
 As $$A_1 = 0$$, for any odd $$k$$, $$A_k=0$$. So, $$k$$ must be even for $$A_k \neq 0$$, and we replace $$k$$ with $$2k$$:
-\begin{equation*}
-    A_{2k}=-\frac{1}{2k(2k+2n)}A_{2k-2}
-\end{equation*}
-\begin{equation*}
-    A_{2k}=\frac{(-1)^2}{2k(2k-2)(2k+2n)(2k+2n-2)}A_{2k-4}
-\end{equation*}
-\begin{equation*}
-    A_{2k}=\frac{(-1)^2}{2^4k(k-1)(k+n)(k+n-1)}A_{2k-4}
-\end{equation*}
-\begin{equation*}
-    A_{2k}=\frac{(-1)^k}{2^{2k}k(k-1)...(1)(k+n)(k+n-1)...(n+1)}A_{0}
-\end{equation*}
+
+\begin{equation}
+    A_{2k}=-\frac{1}{2k(2k+2n)}A_{2k-2} \nonumber
+\end{equation}
+
+\begin{equation}
+    A_{2k}=\frac{(-1)^2}{2k(2k-2)(2k+2n)(2k+2n-2)}A_{2k-4} \nonumber
+\end{equation}
+
+\begin{equation}
+    A_{2k}=\frac{(-1)^2}{2^4k(k-1)(k+n)(k+n-1)}A_{2k-4} \nonumber
+\end{equation}
+
+\begin{equation}
+    A_{2k}=\frac{(-1)^k}{2^{2k}k(k-1)...(1)(k+n)(k+n-1)...(n+1)}A_{0} \nonumber
+\end{equation}
+
 \begin{equation}
     A_{2k}=\frac{(-1)^k}{2^{2k}k!\frac{(k+n)!}{n!}}A_{0}
 \end{equation}
+
 We chose $$A_0=\frac{2^{-n}}{n!}$$ such that:
+
 \begin{equation}
     A_{2k}=\frac{(-1)^k}{2^{n+2k}k!(k+n)!}
 \end{equation}
+
 Returning to \eqref{bessel power series}:
-\begin{equation*}
-    J_n(x) = \sum_{k=0}^\infty A_{2k} x^{2k+n}
-\end{equation*}
-\begin{equation*}
-    J_n(x) = \sum_{k=0}^\infty \frac{(-1)^k}{2^{n+2k}k!(k+n)!} x^{2k+n}
-\end{equation*}
+
+\begin{equation}
+    J_n(x) = \sum_{k=0}^\infty A_{2k} x^{2k+n} \nonumber
+\end{equation}
+
+\begin{equation}
+    J_n(x) = \sum_{k=0}^\infty \frac{(-1)^k}{2^{n+2k}k!(k+n)!} x^{2k+n} \nonumber
+\end{equation}
+
 \begin{equation}
     J_n(x) = \left(\frac{x}{2}\right)^n\sum_{k=0}^\infty \frac{(-1)^k}{k!(k+n)!} \left(\frac{x}{2}\right)^{2k}
 \end{equation}
+
 We note in particular for negative $$n$$, as our factorial terms cannot contain negative values:
+
 \begin{equation} \label{bessel -n}
     J_{-n}(x) = \left(\frac{x}{2}\right)^{-n}\sum_{k=n}^\infty \frac{(-1)^k}{k!(k-n)!} \left(\frac{x}{2}\right)^{2k} = \left(\frac{x}{2}\right)^{-n}\sum_{k=0}^\infty \frac{(-1)^{k+n}}{(k+n)!((k+n)-n)!} \left(\frac{x}{2}\right)^{2(k+n)}=(-1)^nJ_n(x)
 \end{equation}
+
 We also note:
+
 \begin{equation}
     J_{-n}(-x) = (-1)^n\left(\frac{-x}{2}\right)^n\sum_{k=0}^\infty \frac{(-1)^k}{k!(k+n)!} \left(\frac{-x}{2}\right)^{2k} = (-1)^n\left(\frac{x}{2}\right)^n\sum_{k=0}^\infty \frac{(-1)^k(-1)^{-n-2k}}{k!(k+n)!} \left(\frac{x}{2}\right)^{2k} = J_{n}(x)
 \end{equation}
+
 Let us evaluate our series expansion for a few values of $$n$$:
+
 \begin{equation}
     J_0(x) = 1-\frac{x^2}{4}+\frac{x^4}{64}+\mathcal{O}(x^6)
 \end{equation}
+
 \begin{equation}
     J_1(x) = \frac{x}{2}-\frac{x^3}{16}+\frac{x^5}{384}+\mathcal{O}(x^7)
 \end{equation}
+
 \begin{equation}
     J_2(x) = \frac{x^2}{8}-\frac{x^4}{96}+\mathcal{O}(x^6)
 \end{equation}
+
 \begin{equation}
     J_3(x) = \frac{x^3}{48}-\frac{x^5}{768}+\mathcal{O}(x^7)
 \end{equation}
 
 <h3>I.III Integral Representation of Bessel Function</h3>
 Now we return to \eqref{bessel definition}. Let $$t = e^{i\theta}$$ such that:
+
 \begin{equation}
     t-\frac{1}{t} = 2i\sin{\theta} \rightarrow e^{\frac{x}{2}\left(t-\frac{1}{t}\right)} = e^{ix\sin{\theta}} = \sum_{n=-\infty}^{\infty}J_n(x)e^{in\theta}
 \end{equation}
+
 So, $$J_n(x)$$ can represent the Fourier coefficients of $$e^{ix\sin{(\theta)}}$$, and therefore:
+
 \begin{equation}
     J_n(x) = \frac{1}{2\pi} \int_0 ^{2\pi}{e^{-i(n\theta-x\sin{\theta})}d\theta} = \frac{1}{\pi} \int_0 ^{\pi}{\cos{\left(x\sin{\theta-n\theta}\right)}d\theta}
 \end{equation}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <h2>V. The Disturbing Function For the Three-Body Problem</h2>
 We now analyse the disturbing function caused by the presence of a third body of mass $$m_2'$$. 
