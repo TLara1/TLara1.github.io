@@ -8,8 +8,7 @@ category: Physics
 giscus_comments: false
 ---
 <h2>Introduction</h2>
-a
-
+Elasticity and contact mechanics were first studied in depth during the nineteenth century, later formalized by Russian mathematicians during the back half of the twentieth century. The subject of a deforming solid under stress is quite intriguing, a rather direct application of the topics of complex analysis. Here we study the case of two disks colliding in two-dimensions, although many of our results can be generalized to other forms. 
 
 <h2>I. Solid Mechanics in Two-Dimensions</h2>
 
@@ -72,11 +71,11 @@ With \eqref{Hooke's law} we write $$U$$ in terms of displacements:
 \end{equation}
 
 So with \eqref{dis uxx} and \eqref{dis uyy}:
-\begin{equation}
+\begin{equation}\label{ux U def}
   2\mu u_{x,x} = U_{,yy}- \frac{\lambda}{2\left(\lambda+\mu\right)}U_{,kk}
 \end{equation}
 
-\begin{equation}
+\begin{equation}\label{uy U def}
   2\mu u_{y,y} = U_{,xx}- \frac{\lambda}{2\left(\lambda+\mu\right)}U_{,kk}
 \end{equation}
 
@@ -146,7 +145,7 @@ Via Cauchy-Reimann:
   p_{,y}=-q_{,x}=-\frac{1}{4}Q \nonumber
 \end{equation}
 
-With \eqref{} and \eqref{uy U}:
+With \eqref{ux U def} and \eqref{uy U def}:
 
 \begin{equation}
   2\mu u_{x,x} = -U_{,xx}+\frac{\lambda+2\mu}{2\left(\lambda+\mu\right)}P
@@ -360,7 +359,7 @@ With:
 <h3>II.III Boundry terms</h3>
 Here we discuss the physical meaning of the $$f=U_{,x}+iU_{,y}$$ function. First consider a length of the edge of our body from points $$A$$ to $$B$$. Considering $$ds$$ as an infinitesimal length along the edge of our object, the $$x$$ and $$y$$ components of the force normal to the length $$AB$$ can be found by:
 
-\begin{equation}\label{F i equation}
+\begin{equation}\label{Fiequation}
   F_i = \int_A^B\sigma_{ij}n_jds \nonumber
 \end{equation}
 
@@ -383,7 +382,7 @@ So:
   \sigma_{yj}n_j = \sigma_{yx}\frac{dy}{ds}-\sigma_{yy}\frac{dx}{ds} = -U_{,yx}\frac{dy}{ds}-U_{,xx}\frac{dx}{ds} = -\frac{d}{ds}\left(U_{,x}\right)
 \end{equation}
 
-And, with \eqref{F i equation}:
+And, with \eqref{Fiequation}:
 \begin{equation}
   F_x+iF_y = \int_A^B\sigma_{xj}n_j+\sigma_{yj}n_jds = \int_A^B\frac{d}{ds}\left(U_{,y}-iU_{,x}\right)ds = -i\left(U_{,x}+iU_{,y}\right)
 \end{equation}
@@ -483,7 +482,8 @@ So, solving for $$\mathcal{A}$$:
  \end{equation}
   
 \begin{equation}
-   = \frac{F_x^{\left(1\right)}+iF _y^{\left(1\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(2\right)}-\zeta}{\varsigma ^ {\left(1\right)}-\zeta}} + \frac{F_x^{\left(1\right)}+F_x^{\left(2\right)}+iF_y^{\left(1\right)}+iF_y^{\left(2\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(3\right)}-\zeta}{\varsigma ^ {\left(2\right)}-\zeta}}+\quad ...\quad\nonumber
+   = \frac{F_x^{\left(1\right)}+iF _y^{\left(1\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(2\right)}-\zeta}{\varsigma ^ {\left(1\right)}-\zeta}} + \frac{F_x^{\left(1\right)}+F_x^{\left(2\right)}+iF_y^{\left(1\right)}+iF_y^{\left(2\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(3\right)}-\zeta}{\varsigma ^ {\left(2\right)}-\zeta}}+\quad ... \nonumber
+\end{equation}
 
 \begin{equation}
 +\frac{F_x^{\left(1\right)}+...+F_x^{\left(n\right)}+iF_y^{\left(1\right)}+...+iF_y^{\left(n\right)}}{2\pi}\ln{\frac{\varsigma ^ {\left(1\right)}-\zeta}{\varsigma ^ {\left(n\right)}-\zeta}}
