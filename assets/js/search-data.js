@@ -42,7 +42,7 @@ ninja.data = [{
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/_pages/other_interests.html";
+            window.location.href = "/other_interests/";
           },
         },{id: "post-a-post-with-image-galleries",
       
