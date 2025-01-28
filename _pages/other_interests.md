@@ -8,9 +8,14 @@ horizontal: false
 <!-- _pages/other_interests.md -->
 
 <h2>Rock Climbing</h2>
-
-{% include figure.liquid loading="eager" path="assets/img/Pictures_climbing/Finals (81 of 311).jpg" title="Framingham Finals" class="img-fluid rounded z-depth-0" %}
-{% include figure.liquid loading="eager" path="assets/img/Pictures_climbing/hospital_boulders.jpg" title="Mega Man" class="img-fluid rounded z-depth-0" %}
+<div class="row">
+    <div class="col-sm mt-2 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/Pictures_climbing/hospital_boulders.jpg" title="Mega Man" class="img-fluid rounded z-depth-0" %}
+    </div>
+    <div class="col-sm mt-2 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/Pictures_climbing/Finals (81 of 311).jpg" title="Framingham Finals" class="img-fluid rounded z-depth-0" %}
+    </div>
+</div>
 
 I have climbed since sixth grade, focusing mostly on bouldering. Some of my notable ascents include:
 
