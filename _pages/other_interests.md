@@ -15,21 +15,20 @@ horizontal: false
 I have climbed since sixth grade, focusing mostly on bouldering. Some of my notable ascents include:
 
 <ul>
-  <li>_God Module V11_, Horspens 40, AL</li>
-  <li>_Mega Man V11_, Hospital Boulders, AL</li>
-  <li>_Pocket Sands V10/11_, Hospital Boulders, AL</li>
-  <li>_Golden Harvert V10_, Rocktown, GA</li>
+  <li><em>God Module V11</em>, Horspens 40, AL</li>
+  <li><em>Mega Man V11</em>, Hospital Boulders, AL</li>
+  <li><em>Pocket Sands V10/11</em>, Hospital Boulders, AL</li>
+  <li><em>Golden Harvert V10</em>, Rocktown, GA</li>
 </ul>
 
-I also occasionally partake in local climbing competitions, over the last two years I have ended as a finalist in these competitions:
+<p>I also occasionally partake in local climbing competitions. Over the last two years, I have ended as a finalist in these competitions:</p>
 
 <ul>
-  <li>Rockspot Brookline Spooky Send-Off 2024</i1>
-  <i1>Benchmark Climbing Battle of the Beast 2024</i1>
-  <i1>Central Rock Gym Harvard Ritual 2024</i1>
-  <i1>Central Rock Gym Framingham Flaming Ham 2023</i1>
+  <li>Rockspot Brookline Spooky Send-Off 2024</li>
+  <li>Benchmark Climbing Battle of the Beast 2024</li>
+  <li>Central Rock Gym Harvard Ritual 2024</li>
+  <li>Central Rock Gym Framingham Flaming Ham 2023</li>
 </ul>
-
 
 <h2>Clarinet Playing</h2>
 I have played the clarinet for 12 years, first with the Decatur High School Wind Ensemble and currently with the MIT Wind Ensemble. In high school I played with the Georgia District Honour band and more recently, I played for two years with the <a href="https://www.youtube.com/channel/UCVtU0-ALytaxlR68Tv8xZ2g">MIT Video Game Orchestra (VGO)</a>. I also occasionally play with chamber groups such as the  <a href="https://ribotones.mit.edu/">MIT Ribotones </a>.
