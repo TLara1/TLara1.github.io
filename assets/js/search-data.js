@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/Publications/";
           },
+        },{id: "nav-research",
+          title: "Research",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/research/";
+          },
         },{id: "nav-notes",
           title: "Notes",
           description: "A collection of notes I have compiled on interesting topics in physics and mathematics. These are created mostly for my personal reference, they are more concise than course notes one may find on the same topic. I do not guarantee these are without mistakes, if you find an error, please let me know.",
@@ -29,13 +36,6 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
-          },
-        },{id: "nav-research",
-          title: "Research",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/research/";
           },
         },{id: "nav-other-interests",
           title: "Other Interests",
