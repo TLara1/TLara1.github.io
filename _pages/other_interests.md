@@ -2,7 +2,7 @@
 layout: page
 title: Other Interests
 nav: true
-nav_order: 8
+nav_order: 6
 dropdown: false
 ---
 
