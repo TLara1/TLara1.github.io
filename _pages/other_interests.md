@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Other Interests
+permalink: /other_interests/
 nav: true
 nav_order: 6
 horizontal: false
