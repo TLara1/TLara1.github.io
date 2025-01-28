@@ -36,6 +36,8 @@ I have climbed since sixth grade, focusing mostly on bouldering. Some of my nota
 </ul>
 
 <h2>Clarinet Playing</h2>
+% include figure.liquid loading="eager" path="assets/img/clarinet_picture/ribotones_playing.png" title="Playing With Ribotones" class="img-fluid rounded z-depth-0" style="display: inline;" %
+
 I have played the clarinet for 12 years, first with the Decatur High School Wind Ensemble and currently with the MIT Wind Ensemble. In high school I played with the Georgia District Honour band and more recently, I played for two years with the <a href="https://www.youtube.com/channel/UCVtU0-ALytaxlR68Tv8xZ2g">MIT Video Game Orchestra (VGO)</a>. I also occasionally play with chamber groups such as the  <a href="https://ribotones.mit.edu/">MIT Ribotones </a>.
 
 <h2>Board Gaming</h2>
