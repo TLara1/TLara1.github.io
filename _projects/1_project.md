@@ -386,7 +386,7 @@ Again, it can be shown that this transform satisfies \eqref{cannonical 1}-\eqref
 <h3>IV.I Action-Angle Variables</h3>
 We now find a canonical transform, $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ such that our transformed Hamiltonian $$\mathcal{K}$$ is a function of only momenta, $$\mathcal{K}\left(P_i\right)$$. Transformed position coordinates are known as _angles_ and transformed momenta are known as _actions_.
 
-Utilizing the Hamilton-Jacobi Equation (\eqref{HJ Equation}) with a generating function $$S\left(r,\theta,\phi;P_1,P_2,P_3;t\right)$$, where $$P_1$$, $$P_2$$, and $$P_3$$ are constants of motion because the transformed Hamiltonian $$\mathcal{K}$$ is independent of $$Q_i$$. The Hamilton-Jacobi Equation is:
+Utilizing the Hamilton-Jacobi Equation \eqref{HJ Equation} with a generating function $$S\left(r,\theta,\phi;P_1,P_2,P_3;t\right)$$, where $$P_1$$, $$P_2$$, and $$P_3$$ are constants of motion because the transformed Hamiltonian $$\mathcal{K}$$ is independent of $$Q_i$$. The Hamilton-Jacobi Equation is:
 \begin{equation}
     \frac{1}{2\mu}\left(\left(\frac{\partial S}{\partial r}\right)^2+\frac{1}{r^2}\left(\frac{\partial S}{\partial \theta}\right)^2+\frac{1}{r^2\sin^2{\theta}}\left(\frac{\partial S}{\partial \phi}\right)^2\right)-\frac{\mathcal{G}\mu m}{r}+\frac{ \partial S}{\partial t}=0
 \end{equation}
@@ -423,7 +423,7 @@ and the angular momentum along the $$z$$ axis:
 \begin{equation}
     P_2=p_\phi
 \end{equation}
-are also conserved. It is not hard to show this conservation via \eqref{const function}. It can also be shown that these variables are canonical (\eqref{cannonical 1}-\eqref{cannonical 3}). 
+are also conserved. It is not hard to show this conservation via \eqref{const function}. It can also be shown that these variables are canonical \eqref{cannonical 1}-\eqref{cannonical 3}. 
 
 We use our previous results to expand $$P_1$$, $$P_2$$, and $$P_3$$ into orbital elements. $$P_1$$ is the total energy of the system:
 \begin{equation}
