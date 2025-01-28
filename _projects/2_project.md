@@ -310,7 +310,7 @@ We consider the case where $$m_0'>>m_1',m_2'$$, two planets orbiting a star. Def
     \frac{\mathcal{G} \mu_1 m_1 m_2'}{R_2m_1'}\sum _{n=0} ^\infty \left(-1\right)^n\left(\frac{m _1'}{m _1}\right)^n\left(\frac{r _1}{R _2}\right)^n P_n \left(\cos{\psi}\right)=\frac{\mathcal{G}m_0' ^2}{R_2}\left(\delta_2-\left(\frac{r _1}{R _2}\right)P_1\left(\cos{\psi}\right)\delta _1 \delta _2\right)  
 \end{equation}
 
-Rewriting our Hamiltonian, (\eqref{3 body hamiltonian}), using $$P_0$$ and $$P_1$$:
+Rewriting our Hamiltonian, \eqref{3 body hamiltonian}, using $$P_0$$ and $$P_1$$:
 
 \begin{equation}
     \mathcal{H} = \frac{1}{2\mu_1} \parallel{\vec{p}}_1\parallel^2 + \frac{m_1 + m_2'}{2m_1 m_2'} \parallel{\vec{P}}_2\parallel^2 - \frac{\mathcal{G}\mu_1 m_1}{r_1} - \frac{\mathcal{G}m_1 m_2'}{R_2} - \frac{\mathcal{G}m_0'^2}{R_2} \delta_1 \delta_2 \sum _{n=2} ^\infty \left( \frac{r_1}{R_2} \right)^n P_n \left( \cos{\psi} \right)\nonumber
