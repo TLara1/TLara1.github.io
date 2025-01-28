@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-notes",
           title: "Notes",
-          description: "A collection of notes I have compiled on interesting topics in physics and mathematics. These are created mostly for my personal reference, they are more concise than course notes one may find on the same topic. I do not guarantee these are without mistakes, if you find an error, please let me know.",
+          description: "A collection of notes I have compiled on interesting topics in physics and mathematics. These are created mostly for my personal reference, they are more concise than course notes one may find on the same topic. I do not guarantee these are without mistakes, if you find an error, please let me know. In the future, I may provide notes on Oppenheimer-Snyder Stellar Collapse, a derivation of the relativistic Euler equations, the hyperfine hydrogen transition, and the Weierstrass function.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/notes/";
