@@ -14,3 +14,11 @@ children:
   - title: blog
     permalink: /blog/
 ---
+
+<h2>Rock Climbing</h2>
+
+<h2>Clarinet Playing</h2>
+
+<h2>Cooking</h2>
+
+<h2>Board Gaming</h2>
