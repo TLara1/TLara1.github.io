@@ -8,12 +8,19 @@ horizontal: false
 <!-- _pages/other_interests.md -->
 
 <h2>Rock Climbing</h2>
-I have climbed since sixth grade, focusing mostly on bouldering. I climb outside less often than I would like, though I have completed a few notable problems including:
+I have climbed since sixth grade, focusing mostly on bouldering. Some of my notable ascents include:
 <ul>
   <li>_God Module V11_, Horspens 40, AL</li>
   <li>_Mega Man V11_, Hospital Boulders, AL</li>
   <li>_Pocket Sands V10/11_, Hospital Boulders, AL</li>
   <li>_Golden Harvert V10_, Rocktown, GA</li>
+</ul>
+I also occasionally partake in local climbing competitions, over the last two years I have ended as a finalist in these competitions:
+<ul>
+  <li>Rockspot Brookline Spooky Send-Off 2024</i1>
+  <i1>Benchmark Climbing Battle of the Beast 2024</i1>
+  <i1>Central Rock Gym Harvard Ritual 2024</i1>
+  <i1>Central Rock Gym Framingham Flaming Ham 2023</i1>
 </ul>
 
 <h2>Clarinet Playing</h2>
