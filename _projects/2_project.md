@@ -189,14 +189,21 @@ Returning to \eqref{bessel power series}:
 
 We note in particular for negative $$n$$, as our factorial terms cannot contain negative values:
 
+\begin{equation}
+    J_{-n}(x) = \left(\frac{x}{2}\right)^{-n}\sum_{k=n}^\infty \frac{(-1)^k}{k!(k-n)!} \left(\frac{x}{2}\right)^{2k} \nonumber
+\end{equation}
 \begin{equation} \label{bessel -n}
-    J_{-n}(x) = \left(\frac{x}{2}\right)^{-n}\sum_{k=n}^\infty \frac{(-1)^k}{k!(k-n)!} \left(\frac{x}{2}\right)^{2k} = \left(\frac{x}{2}\right)^{-n}\sum_{k=0}^\infty \frac{(-1)^{k+n}}{(k+n)!((k+n)-n)!} \left(\frac{x}{2}\right)^{2(k+n)}=(-1)^nJ_n(x)
+     = \left(\frac{x}{2}\right)^{-n}\sum_{k=0}^\infty \frac{(-1)^{k+n}}{(k+n)!((k+n)-n)!} \left(\frac{x}{2}\right)^{2(k+n)}=(-1)^nJ_n(x)
 \end{equation}
 
 We also note:
 
 \begin{equation}
-    J_{-n}(-x) = (-1)^n\left(\frac{-x}{2}\right)^n\sum_{k=0}^\infty \frac{(-1)^k}{k!(k+n)!} \left(\frac{-x}{2}\right)^{2k} = (-1)^n\left(\frac{x}{2}\right)^n\sum_{k=0}^\infty \frac{(-1)^k(-1)^{-n-2k}}{k!(k+n)!} \left(\frac{x}{2}\right)^{2k} = J_{n}(x)
+    J_{-n}(-x) = (-1)^n\left(\frac{-x}{2}\right)^n\sum_{k=0}^\infty \frac{(-1)^k}{k!(k+n)!} \left(\frac{-x}{2}\right)^{2k} \nonumber
+\end{equation}
+
+\begin{equation}
+   = (-1)^n\left(\frac{x}{2}\right)^n\sum_{k=0}^\infty \frac{(-1)^k(-1)^{-n-2k}}{k!(k+n)!} \left(\frac{x}{2}\right)^{2k} = J_{n}(x)
 \end{equation}
 
 Let us evaluate our series expansion for a few values of $$n$$:
@@ -230,7 +237,7 @@ So, $$J_n(x)$$ can represent the Fourier coefficients of $$e^{ix\sin{(\theta)}}$
     J_n(x) = \frac{1}{2\pi} \int_0 ^{2\pi}{e^{-i(n\theta-x\sin{\theta})}d\theta} = \frac{1}{\pi} \int_0 ^{\pi}{\cos{\left(x\sin{\theta-n\theta}\right)}d\theta}
 \end{equation}
 
-<h2>V. The Disturbing Function For the Three-Body Problem</h2>
+<h2>II. The Disturbing Function For the Three-Body Problem</h2>
 We now analyse the disturbing function caused by the presence of a third body of mass $$m_2'$$. 
 From Newton's Law, the motions of the three bodies are:
 
@@ -326,7 +333,7 @@ The first four terms of \eqref{3 body hamiltonian with R} correspond to two sepa
     \mathcal{R}=\mathcal{G}m_0'^2\delta_1\delta_2\left(-\left(r_1^2+R_2^2-2r_1R_2\cos{\psi}\right)^{-\frac{1}{2}}+\frac{r_1}{R_2^2}\cos{\psi}\right)
 \end{equation}
 
-<h3>V.I Series Expansion of Disturbing Function</h3>
+<h3>II.I Series Expansion of Disturbing Function</h3>
 
 Defining the direct and indirect disturbing functions:
 
@@ -425,7 +432,7 @@ We can now write $$\mathcal{R}_D$$ as product of two series:
 \begin{equation}   \label{R_D expression} 
     \times \cos{\left(j(\vartheta _1 -\vartheta _2 )\right)}
 \end{equation}
-<h4>V.I.I Series Expansion of Orbital Elements</h4>
+<h4>II.I.I Series Expansion of Orbital Elements</h4>
 We now address the $$\cos{\left(j(\vartheta_1-\vartheta_2)\right)}$$ term. We expand trigonometric terms in $$E$$ using Bessel Functions in a power series of $$e$$. Let us write: 
 \begin{equation} \label{exp E}
     e^{iE} = \sum_{n=-\infty}^{\infty}A_ne^{in\mathcal{M}}
@@ -476,14 +483,15 @@ Now we use our series expansions for Bessel Functions:
 \begin{equation}
     +e^3\left(-\frac{1}{6}\sin{2\mathcal{M}}+\frac{1}{3}\sin{4\mathcal{M}} \right) + \mathcal{O}(e^4)\nonumber
 \end{equation}
-From \eqref{Kepler eq}, we find:
+From the <a href="https://tlara1.github.io/projects/1_project/">definition of our orbital elements</a>, we find:
+
 \begin{equation}
     E = \mathcal{M}+e\sin{E} = \mathcal{M}+e\sin{\mathcal{M}}+\frac{e^2}{2}\sin{2\mathcal{M}}+e^3\left(-\frac{1}{8}\sin{\mathcal{M}}+\frac{3}{8}\sin{3\mathcal{M}} \right)
 \end{equation}
 \begin{equation}
     +e^4\left(-\frac{1}{6}\sin{2\mathcal{M}}+\frac{1}{3}\sin{4\mathcal{M}} \right) + \mathcal{O}(e^5)\nonumber
 \end{equation}
-And from \eqref{r E equation}:
+And:
 \begin{equation}\label{zeta expansion e}
 \frac{r}{a} = 1-e\cos{E} = 1-e\cos{\mathcal{M}}+e^2\left(\frac{1}{2}-\frac{1}{2}\cos{2\mathcal{M}} \right)
 \end{equation}
@@ -491,7 +499,7 @@ And from \eqref{r E equation}:
 +e^3\left(\frac{3}{8}\cos{\mathcal{M}}-\frac{3}{8}\cos{3\mathcal{M}} \right)+e^4\left(\frac{1}{3}\cos{2\mathcal{M}}-\frac{1
 }{3}\cos{4\mathcal{M}} \right) + \mathcal{O}(e^5)\nonumber
 \end{equation}
-\eqref{r E equation} also easily gives an expansion for $$\zeta_i$$. From \eqref{L defintion}, \eqref{Kepler eq}, and \eqref{r E equation}:
+We can also easily get an expansion for $$\zeta_i$$.
 \begin{equation}
     \dot{f} = \frac{na^2}{r^2} \sqrt{1-e^2} \nonumber
 \end{equation}
@@ -530,7 +538,7 @@ To second order in $$e$$:
 \begin{equation} \label{theta expansion in e}
     f = \mathcal{M}+2e\sin{\mathcal{M}}+\frac{5}{4}e^2\sin{2\mathcal{M}} + \mathcal{O}(e^3)
 \end{equation}
-We are ready to compute $$\sin{f}$$ and $$\cos{f}$$. The latter is easier, and we can calculate it through \eqref{Q_1 eq}, expanding to second order in $$e$$ and utilizing trigonometric identities.
+We are ready to compute $$\sin{f}$$ and $$\cos{f}$$. Expanding to second order in $$e$$ and utilizing trigonometric identities:
 \begin{equation} 
     \cos{f} = \frac{\cos{E}-e}{1-e\cos{E}} \simeq \cos{\mathcal{M}} + \left(-\frac{3}{2} + \frac{1}{2}\cos{2\mathcal{M}} + \cos^2{\mathcal{M}} \right)e \nonumber
 \end{equation}
@@ -586,7 +594,7 @@ Now allow us to return to Cartesian coordinates with expansions around $$e$$. We
 \begin{equation}
     \sin{I} = 2\sin{\frac{I}{2}}\left(1-\sin^2{\frac{I}{2} }\right)^{\frac{1}{2}} = 2\sin{\frac{I}{2}} + \mathcal{O}\left(\sin^3{\frac{I}{2}}\right)
 \end{equation}
-With \eqref{x orbital elements}-\eqref{z orbital elements}, to second order in $$e$$ and $$\sin{\frac{I}{2}}$$:
+Finally, to second order in $$e$$ and $$\sin{\frac{I}{2}}$$:
 \begin{equation} 
     \frac{x}{r} \simeq \cos{\Omega}\left( \cos{(\omega + \mathcal{M})} + \left(\cos{(\omega + 2\mathcal{M})} -\cos{\omega} \right)e\right. \nonumber
 \end{equation}
@@ -772,7 +780,7 @@ And, as $$\epsilon=\cos{\psi}-\cos{\left(\vartheta_1-\vartheta_2\right)}$$:
 \end{equation}
 
 
-<h4>V.I.II Series Expansion of Direct Disturbing Function</h4>
+<h4>II.I.II Series Expansion of Direct Disturbing Function</h4>
 
 With \eqref{zeta expansion e} and \eqref{epsilon expansion}:
 
@@ -901,7 +909,7 @@ We have all the ingredients to expand $$\mathcal{R}_D$$. From \eqref{r/a and eps
     =-\frac{\mathcal{G}m_0'^2\delta_1\delta_2}{a_2}\sum_{j=-\infty}^\infty\mathcal{R}_D^{(j)}
 \end{equation}
 
-Using our definition of $$A_{k,j,m,n}$$ (\eqref{def A}), transforming derivatives with respect to $$\alpha$$ because $$b^{(j)}_s$$ is a function of $$\alpha$$:
+Using our definition of $$A_{k,j,m,n}$$ \eqref{def A}, transforming derivatives with respect to $$\alpha$$ because $$b^{(j)}_s$$ is a function of $$\alpha$$:
 
 \begin{equation}
     a_2A_{0,j,0,0} = b^{(j)}_{\frac{1}{2}}(\alpha) \nonumber
@@ -1079,7 +1087,7 @@ These equations can be simplified further, notice that all the terms come in pai
 
 
 
-<h4>V.I.III Series Expansion of Indirect Disturbing Function</h4>
+<h4>II.I.III Series Expansion of Indirect Disturbing Function</h4>
 The indirect portion of the disturbing function is much less involved. Rewriting the indirect portion:
 
 \begin{equation}
@@ -1126,7 +1134,7 @@ And consulting \eqref{zeta expansion e} and \eqref{cos psi expansion}:
 
 
 
-<h3>V.II Using the Disturbing Function</h3>
+<h3>II.II Using the Disturbing Function</h3>
 From our Planetary Equations, the time variations in our orbital elements (excluding the orbital $$\lambda$$ changes from the non-perturbed Hamiltonian) are proportional to $$\sim\frac{1}{\mu_1\sqrt{\mathcal{G}m_1a_1}}\frac{\partial R}{\partial i}$$, so from our disturbing function, the time variation in our elements is $$\sim\frac{\sqrt{\mathcal{G}}m_1'm_2'}{\mu_1R_2\sqrt{m_1a_1}}=\frac{\sqrt{\mathcal{G}m_1}\delta_2}{R_2\sqrt{a_1}}\approx n\delta_2$$, where we have approximated $$R_2\approx a_1$$, which is reasonable in our proportionality arguments. Thus, our orbital elements vary $$\sim\delta_2$$ times slower than the orbital period. We call these elements \textit{secular}, varying much slower than planetary orbits, so, to evaluate the impact of our Disturbing Function, we can average over the orbital cycles of $$\lambda_1$$ and $$\lambda_2$$.
 
 \begin{equation}
@@ -1153,7 +1161,7 @@ As all the terms in our disturbing function feature trigonometric terms of $$\la
 \end{equation}
 
 
-We have made use of the fact that $$b_s^{(-j)}(\alpha)=b_s^{(j)}(\alpha)$$. With the properties of Laplace coefficients (\eqref{laplace coefficient definitions}):
+We have made use of the fact that $$b_s^{(-j)}(\alpha)=b_s^{(j)}(\alpha)$$. With the properties of Laplace coefficients \eqref{laplace coefficient definitions}:
 
 \begin{equation}
     \left( 2\alpha \frac{\partial }{\partial\alpha} + \alpha^2 \frac{\partial ^2}{\partial\alpha^2} \right) b^{(0)} _{\frac{1}{2}}(\alpha) = \alpha b^{(1)} _{\frac{3}{2}}(\alpha) \nonumber
@@ -1173,7 +1181,7 @@ And, taking $$\sin{I_i}\simeq I_i$$:
     -\frac{1}{2} e_1 e_2 \alpha b^{(2)}_{\frac{3}{2}}(\alpha) \cos{(\varpi_1 - \varpi_2)} + \frac{1}{2} I_1 I_2 \alpha b^{(1)} _{\frac{3}{2}}(\alpha) \cos{(\Omega_1 - \Omega_2)}
 \end{equation}
 
-Now in terms of our simplifying variables (\eqref{orbital convert 1}-\eqref{orbital convert end}):
+Now in terms of our simplifying variables \eqref{orbital convert 1}-\eqref{orbital convert end}:
 
 \begin{equation}
     \langle\langle \mathcal{R} \rangle \rangle \simeq -\frac{\mathcal{G} m_0'^2 \delta_1 \delta_2}{a_2} \alpha \left( \frac{1}{4} \left( h_1^2 + h_2^2 + k_1^2 + k_2^2 \right) b^{(1)} _{\frac{3}{2}}(\alpha) - \frac{1}{4} \left( p_1^2 + p_2^2 + q_1^2 + q_2^2 \right) b^{(1)} _{\frac{3}{2}}(\alpha) \right)
@@ -1224,9 +1232,9 @@ So, to second order in $$e_i$$ and $$I_i$$ and in $$\delta_i$$, averaged over lo
 
 
 
-<h2>VI. The Perihelion Precession of Mercury</h2>
+<h2>III. The Perihelion Precession of Mercury</h2>
 
-<h3>VI. Gravitational Effects</h3>
+<h3>III.I Gravitational Effects</h3>
 
 We are ready to apply what we have learned to study the precession of Mercury's perihelion. We consider a three-body system of the Sun, Mercury, and each of the other seven planets. 
 
@@ -1388,7 +1396,7 @@ Repeating the analysis with the other planets of the solar system we find the re
 
 Our total precession $$\approx544^{"}$$ per century is puzzling, as it is lower than the actual precession of Mercury's perihelion which is nearer to $$\approx 585^{"}$$ per century. Even considering our result as a second-order approximation does not account for this deviation, to find the missing source of precession, we must consider Einstein's General Relativity.
 
-<h2>VII. The Relativistic Disturbing Function</h2>
+<h2>III.II The Relativistic Disturbing Function</h2>
 
 From relativistic effects, an extra term is added to the two-body Hamiltonian:
 
