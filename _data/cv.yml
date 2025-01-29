@@ -42,6 +42,13 @@
       description:
         - Programmed deep-learning image recognition program to track the movement of fluid droplets in “walking” droplet experiments to obtain both overhead and vertical dynamics.
 
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+      year: 2015-now
+      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+      
 - title: Honors and Awards
   type: time_table
   contents:
@@ -52,3 +59,22 @@
     - year: 2029
       items:
         - Max Planck Medal
+
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Topic 1.
+      items:
+        - Description 1.
+        - Description 2.
+    - title: Topic 2.
+      items:
+        - Description 1.
+        - Description 2.
+
+- title: Other Interests
+  type: list
+  contents:
+    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+
+        
