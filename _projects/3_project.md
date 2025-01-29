@@ -6,12 +6,9 @@ img: assets/img/Colliding_Disk.png
 importance: 3
 category: Physics
 giscus_comments: false
----
-
-```yml
 toc:
   beginning: true
-```
+---
 
 <h2>Introduction</h2>
 Elasticity and contact mechanics were first studied in depth during the nineteenth century, later formalized by Russian mathematicians during the back half of the twentieth century. The subject of a deforming solid under stress is quite intriguing, a rather direct application of the topics of complex analysis. Here we study the case of two disks colliding in two-dimensions, although many of our results can be generalized to other forms. 
