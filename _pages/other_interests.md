@@ -24,7 +24,7 @@ I have climbed since sixth grade, focusing mostly on bouldering. Some of my nota
   <li><em>God Module V11</em>, Horspens 40, AL</li>
   <li><em>Mega Man V11</em>, Hospital Boulders, AL</li>
   <li><em>Pocket Sands V10/11</em>, Hospital Boulders, AL</li>
-  <li><em>Golden Harvert V10</em>, Rocktown, GA</li>
+  <li><em>Golden Harvest V10</em>, Rocktown, GA</li>
 </ul>
 
 <p>I also occasionally partake in local climbing competitions. Over the last two years, I have ended as a finalist in these competitions:</p>
@@ -40,6 +40,7 @@ I have climbed since sixth grade, focusing mostly on bouldering. Some of my nota
 <div style="text-align: center;">
   {% include figure.liquid loading="eager" path="assets/img/clarinet_picture/ribotones_playing.png" title="Playing With Ribotones" class="img-fluid rounded z-depth-0" width="450" height="auto" %}
 </div>
+<div class="caption">
     Playing at a concert with the MIT Ribotones.
 </div>
 
