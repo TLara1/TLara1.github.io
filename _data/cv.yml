@@ -22,25 +22,25 @@
       institution: Massachusetts Institute of Technology & University of California, Berkeley
       year: 2023 - 2025
       description:
-        -  Researching Eulerian methods for contact interactions of soft solid bodies in fluids using reference map techniques. 
+        - Researching Eulerian methods for contact interactions of soft solid bodies in fluids using reference map techniques. 
 
     - title: Vising Summer Undergraduate Researcher
       institution: Lawrence-Berkeley National Laboratory Center for Computational Engineering
       year: 2024
       description:
-        -  Implementing Non-Equilibrium-Green’s Function formalism to simulate quantum transport in carbon nanotubes.
+        - Implementing Non-Equilibrium-Green’s Function formalism to simulate quantum transport in carbon nanotubes.
         
     - title: Undergraduate Researcher with Professor Sarah Millholland
       institution:  Massachusetts Institute of Technology Kavli Institute
       year: 2022 - 2023
       description:
-        -  Studied exoplanet resonance chains and obliquity sculpting during planetary migration periods using the REBOUNDx n-body integrator.
+        - Studied exoplanet resonance chains and obliquity sculpting during planetary migration periods using the REBOUNDx n-body integrator.
 
    - title: Undergraduate Researcher with the Bush Applied Mathematics Laboratory
       institution:  Massachusetts Institute of Technology
       year: 2022 - 2023
       description:
-        -  Programmed deep-learning image recognition program to track the movement of fluid droplets in “walking” droplet experiments to obtain both overhead and vertical dynamics.
+        - Programmed deep-learning image recognition program to track the movement of fluid droplets in “walking” droplet experiments to obtain both overhead and vertical dynamics.
 
 - title: Honors and Awards
   type: time_table
