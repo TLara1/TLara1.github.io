@@ -32,12 +32,35 @@ From \eqref{continuity eq}:
 \begin{equation}
 0 = T^{\mu\nu}_{;\nu}h^\gamma_\mu
 \end{equation}
+
 \begin{equation}
-0 = h^\gamma_\mu\left(\rho u^\mu u^\nu\right) _{;\nu} +h^\gamma _\mu\left(P h^{\mu\nu}\right) _{;\nu}
+0 = h^\gamma_\mu\left(\left(\rho u^\mu u^\nu\right) _{;\nu}+P _{;\nu} h^{\mu\nu} + P h^{\mu\nu} _{;\nu} \right)
+\end{equation}
+
+Using $$h^{\mu\nu} _{;\nu} =\left(g^{\mu\nu}+u^\mu u^\nu\right) _{;\nu}=\left(u^\mu u^\nu\right) _{;\nu}$$:
+
+\begin{equation}
+0 = h^\gamma_\mu\left(\rho_{;\nu} + \left(\rho+P\right)\left(u^\mu u^\nu\right) _{;\nu}+P _{;\nu} h^{\mu\nu}\right)
+\end{equation}
+
+
+
+
+ _{;\nu} +h^\gamma _\mu\left(P h^{\mu\nu}\right) _{;\nu}
 \end{equation}
 
 \begin{equation}
-0 = g^\gamma _\nu\left(\rho u^\mu u^\nu\right) _{;\nu} + u^\gamma u _\mu \left(\rho u^\mu u^\nu\right) _{;\nu}+ g^\gamma _\nu\left(P h^{\mu\nu}\right) _{;\nu} + u^\gamma u _\mu \left(P h^{\mu\nu}\right) _{;\nu}
+0 = g^\gamma _\mu\left(\rho u^\mu u^\nu\right) _{;\nu} + u^\gamma u _\mu \left(\rho u^\mu u^\nu\right) _{;\nu}+ g^\gamma _\mu\left(P h^{\mu\nu}\right) _{;\nu} + u^\gamma u _\mu \left(P h^{\mu\nu}\right) _{;\nu}
+\end{equation}
+
+\begin{equation}
+0 = \rho u^\gamma u^\nu_{;\nu} + \rho 
+
+g^\gamma _\mu\left
+
+
+
+(\rho u^\mu u^\nu\right) _{;\nu} + u^\gamma u _\mu \left(\rho u^\mu u^\nu\right) _{;\nu}+ g^\gamma _\mu\left(P h^{\mu\nu}\right) _{;\nu} + u^\gamma u _\mu \left(P h^{\mu\nu}\right) _{;\nu}
 \end{equation}
 
 
