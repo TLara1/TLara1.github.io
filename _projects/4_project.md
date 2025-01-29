@@ -75,7 +75,7 @@ So:
 Taking $$P _{,0}$$ to be of the same order as $$v^i$$, we can set $$v^i P _{,0}=0$$ and find:
 
 \begin{equation}
-v_{i,0} + v^j v^_{i,j} = -\frac{1}{\rho}P_{,i}
+v _{i,0} + v^j v _{i,j} = -\frac{1}{\rho}P _{,i}
 \end{equation}
 
 Or in direct notation for a more familiar form:
