@@ -6,12 +6,9 @@ img: assets/img/Lagrage_planetary.png
 importance: 1
 category: Physics
 related_publications: false
----
-
-```yml
 toc:
   beginning: true
-```
+---
 
 <h2>Introduction</h2>
 The study of planetary motion has long been a cornerstone of celestial mechanics, offering insights into the dynamics of the solar system. One of the key tools used to describe the motion of planets and other heavenly bodies are the Lagrange Planetary Equations. These equations describe the evolution of orbital elements due to the influence of a general perturbing function. Here we derive these equations, starting with a description of the two-body problem and orbital elements, we then perform a an appropriate canonical transform to move our Hamiltonian in terms of orbital elements. From these, we can derive the effects of a perturbing function, whose form we need not specify. 
