@@ -10,12 +10,12 @@ toc:
   beginning: true
 ---
 
-<h2>Introduction</h2>
-Elasticity and contact mechanics were first studied in depth during the nineteenth century, later formalized by Russian mathematicians during the back half of the twentieth century. The subject of a deforming solid under stress is quite intriguing, a rather direct application of the topics of complex analysis. Here we study the case of two disks colliding in two-dimensions, although many of our results can be generalized to other forms. 
+## Introduction
+Elasticity and contact mechanics were first studied in depth during the nineteenth century, later formalized by Russian mathematicians during the back half of the twentieth century. The subject of a deforming solid under stress is quite intriguing, a rather direct application of the topics of complex analysis. Here we study the case of two disks colliding in two dimensions, although many of our results can be generalized to other forms. 
 
-<h2>I. Solid Mechanics in Two-Dimensions</h2>
+## I. Solid Mechanics in Two-Dimensions
 
-<h3>I.I The Airy Stress Function</h3>
+### I.I The Airy Stress Function
 For a body in equilibrium, in Einstein's summation convention:
 
 \begin{equation}\label{force law}
@@ -121,7 +121,7 @@ After pairing \eqref{full sigma} and \eqref{sigma cross}:
   U_{,iijj}=0
 \end{equation}
 
-<h3>I.II Complex Representations</h3>
+### I.II Complex Representations
 Define $$P\equiv U_{,kk}$$, as $$U$$ is biharmonic, $$P_{,kk}=0$$; $$P$$ is harmonic. Allow $$Q$$ to be the harmonic conjugate to $$P$$, and from the Cauchy-Reimann Equations:
 
 \begin{equation}
@@ -257,9 +257,9 @@ From \eqref{sigmaxx+sigmayy complex}, $$\varphi^ { '} _{,z}$$ must be complex, s
 \end{equation}
 It is immediately obvious that $$D=0$$ and we are free to set either $$\gamma$$ or $$\gamma^{'}$$, so in principal, this means we can chose $$\varphi\left(0\right)=0$$ or $$\psi\left(0\right)=0$$, but never both.
 
-<h2>II. Solutions for Boundry Problems</h2>
+## II. Solutions for Boundry Problems
 
-<h3>II.I Relevant Details From Complex Analysis</h3>
+### II.I Relevant Details From Complex Analysis
 
 We are not going to delve into Complex Analysis too extensively or prove the results here too rigorously as that as has been done _ad naseam_ in a plethora of other sources. 
 
@@ -310,7 +310,7 @@ As $$g ^{'}$$ is analytic only in $$z\in S$$, by \eqref{not anal}, $$g '(z)=0$$ 
 \end{equation}
 Where $$f$$ is a function that is analytic for $$z\in S$$.
 
-<h3>II.II Complex Mapping</h3>
+### II.II Complex Mapping
 
 In general, we will study a finite region $$S$$ in the complex plane, we will move this region to a unit disk in the $$\zeta$$ plane, via: $$z=\omega\left(\zeta\right)$$. With \eqref{U complex}:
 
@@ -359,7 +359,7 @@ With:
   \mathcal{B}\equiv\frac{1}{2\pi i}\oint _\gamma\frac{\bar{f}}{\varsigma-\zeta}d\varsigma\nonumber
 \end{equation}
 
-<h3>II.III Boundry terms</h3>
+### II.III Boundry terms
 Here we discuss the physical meaning of the $$f=U_{,x}+iU_{,y}$$ function. First consider a length of the edge of our body from points $$A$$ to $$B$$. Considering $$ds$$ as an infinitesimal length along the edge of our object, the $$x$$ and $$y$$ components of the force normal to the length $$AB$$ can be found by:
 
 \begin{equation}\label{Fiequation}
@@ -395,9 +395,9 @@ We can express $$f$$ in terms of the force distributions in the $$x$$ and $$y$$ 
   f = U_{,x}+iU_{,y} = i\left(F_x+iF_y\right)
 \end{equation}
 
-<h2>III Solution for a Circular Disk With Point Forces</h2>
+## III Solution for a Circular Disk With Point Forces
 
-<h3>III.I Complex Mapping</h3>
+### III.I Complex Mapping
 
 For a circular object centred at $$z=0$$ of radius $$R$$, clearly $$z=\omega\left(\zeta\right)=R\zeta$$. \eqref{varphi complex final} becomes:
 
@@ -462,7 +462,7 @@ And:
   \psi\left(\zeta\right)+\bar{\varphi}\left(0\right)+\frac{\varphi_{,\zeta}\left(\zeta\right)}{\zeta}-\frac{a_1}{\zeta}=\mathcal{B}
 \end{equation}
 
-<h3>III.II Forcing Terms</h3>
+### III.II Forcing Terms
 We consider a disk under $$n$$ concentrated point forces, $$F_i^{\left(1\right)},F_i^{\left(2\right)},...,F_i^{\left(n\right)}$$. Each force acts at an edge of the circular disk, $$F_i^{\left(1\right)}$$ acts at $$z^{\left(1\right)}=Re^{i\alpha^{\left(1\right)}}$$, an so forth, where $$\alpha^{\left(k\right)}$$ is an angle along the disk edge. Without loss of generality, let $$\alpha^{\left(1\right)} < \alpha ^{\left(2\right)} < ...< \alpha^{\left(n\right)}$$. we can easily move to the unit disk, denoting forces to act at $$\varsigma^{\left(k\right)}=e^{i\alpha^{\left(k\right)}}$$.
 
 Along each arc $$\varsigma^{\left(1\right)}\varsigma^{\left(2\right)}$$, $$\varsigma^{\left(2\right)}\varsigma^{\left(3\right)}$$, ..., $$\varsigma^{\left(n\right)}\varsigma^{\left(1\right)}$$, $$f$$ will be constant, as there are no forces along these arcs. But, $$f=i\left(F_x+iF_y\right)$$ will change by $$i\left(F_x^{\left(k\right)}+iF_y^{\left(k\right)}\right)$$ when passing through the point $$\varsigma^{\left(k\right)}=e^{i\varsigma^{\left(k\right)}}$$. We can set $$f=0$$ along $$\varsigma^{\left(n\right)}\varsigma^{\left(1\right)}$$, and $$f=i\left(F_x^{\left(1\right)}+iF_y^{\left(1\right)}\right)$$ along $$\varsigma^{\left(1\right)}\varsigma^{\left(2\right)}$$,  $$f=i\left(F_x^{\left(1\right)}+iF_y^{\left(1\right)}\right)+i\left(F_x^{\left(2\right)}+iF_y^{\left(2\right)}\right)$$ along $$\varsigma^{\left(2\right)}\varsigma^{\left(3\right)}$$ and so fourth. An integral over the unit circle can be split into an integration over each of these arcs:
@@ -525,7 +525,7 @@ With \eqref{varphi simple} and \eqref{psi simple}:
 
 We have used $$a_1=\bar{a_1}$$. 
 
-<h2>III Specific Solution in the Case of Two Opposing Point Forces</h2>
+## III Specific Solution in the Case of Two Opposing Point Forces
 
 We could in principle approach a circle acted on by $$n$$ point forces, but for simplicity, let's take there to be two opposing forces, parallel to the $$x$$ axis acting on the disk at points $$z_1=Re^{i\alpha}$$ and $$z_2=Re^{i\left(\pi-\alpha\right)}$$. So, $$F_x^{\left(1\right)}=F$$ at $$z_1=Re^{i\alpha}$$ and $$F_x^{\left(2\right)}=-F$$ at $$z_2=Re^{i\left(\pi-\alpha\right)}$$. There are no force components in the $$y$$ direction. 
 
@@ -569,7 +569,7 @@ We have introduced several variables outlined in the diagram below:
 
 {% include figure.liquid loading="eager" path="assets/img/Figures_Solidmech_Notes/Circle_Solid_diagram.png" title="Orbital element diagram 3d" class="img-fluid rounded z-depth-0" %}
 
-<h2>IV. The Problem of Two Colliding Disks</h2>
+## IV. The Problem of Two Colliding Disks
 
 Let us consider a point on the circumference of our circular disk. In polar coordinates, let this point have radius $$R$$ and angle $$\phi$$. With trigonometric relations:
 
