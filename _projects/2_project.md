@@ -10,11 +10,11 @@ toc:
   beginning: true
 ---
 
-##Introduction
+## Introduction
 One of the earliest triumphs of Einstein's Theory of Relativity was the correct prediction of the perihelion precession of Mercury. Many sources derive this relativistic precession, but this is in itself meaningless if the classical precession is not understood. Mercury's perihelion is impacted both by the pull of other planets and the effects of general relativity. Here we use the Lagrange Planetary Equations to quantify the perihelion precession from both sources, showing that together they lead to the correct observed precession. 
 
-##I. Bessel Functions
-###I.I Introduction to Bessel Functions
+## I. Bessel Functions
+### I.I Introduction to Bessel Functions
 Here we discuss Bessel Functions and their series expansions, which will help in our later analysis of orbital elements. Bessel functions, $$J_n(x)$$, of the first kind are defined as follows:
 \begin{equation} \label{bessel definition}
     g(x,t) \equiv e^{\frac{x}{2}\left(t-\frac{1}{t}\right)} = \sum_{n=-\infty}^{\infty}J_n(x)t^n
@@ -95,7 +95,7 @@ We conclude that $$J_n(x)$$ solves the following differential equation:
     x^2\frac{d^2}{dx^2}J_n(x) + x\frac{d}{dx}J_n(x) + (x^2-n^2) J_n(x)= 0
 \end{equation}
 
-###I.II Expansion of Bessel Function Through Frobenius Method
+### I.II Expansion of Bessel Function Through Frobenius Method
 
 In this section, we develop a power series for Bessel Functions which we will use to expand orbital elements around $$e$$. First, suppose $$J_n(x)$$ can be expressed as a power series:
 
@@ -227,7 +227,7 @@ Let us evaluate our series expansion for a few values of $$n$$:
     J_3(x) = \frac{x^3}{48}-\frac{x^5}{768}+\mathcal{O}(x^7)
 \end{equation}
 
-###I.III Integral Representation of Bessel Function
+### I.III Integral Representation of Bessel Function
 Now we return to \eqref{bessel definition}. Let $$t = e^{i\theta}$$ such that:
 
 \begin{equation}
@@ -240,7 +240,7 @@ So, $$J_n(x)$$ can represent the Fourier coefficients of $$e^{ix\sin{(\theta)}}$
     J_n(x) = \frac{1}{2\pi} \int_0 ^{2\pi}{e^{-i(n\theta-x\sin{\theta})}d\theta} = \frac{1}{\pi} \int_0 ^{\pi}{\cos{\left(x\sin{\theta-n\theta}\right)}d\theta}
 \end{equation}
 
-##II. The Disturbing Function For the Three-Body Problem
+## II. The Disturbing Function For the Three-Body Problem
 We now analyse the disturbing function caused by the presence of a third body of mass $$m_2'$$. 
 From Newton's Law, the motions of the three bodies are:
 
@@ -336,7 +336,7 @@ The first four terms of \eqref{3 body hamiltonian with R} correspond to two sepa
     \mathcal{R}=\mathcal{G}m_0'^2\delta_1\delta_2\left(-\left(r_1^2+R_2^2-2r_1R_2\cos{\psi}\right)^{-\frac{1}{2}}+\frac{r_1}{R_2^2}\cos{\psi}\right)
 \end{equation}
 
-###II.I Series Expansion of Disturbing Function
+### II.I Series Expansion of Disturbing Function
 
 Defining the direct and indirect disturbing functions:
 
@@ -435,7 +435,9 @@ We can now write $$\mathcal{R}_D$$ as product of two series:
 \begin{equation}   \label{R_D expression} 
     \times \cos{\left(j(\vartheta _1 -\vartheta _2 )\right)}
 \end{equation}
-####II.I.I Series Expansion of Orbital Elements
+
+#### II.I.I Series Expansion of Orbital Elements
+
 We now address the $$\cos{\left(j(\vartheta_1-\vartheta_2)\right)}$$ term. We expand trigonometric terms in $$E$$ using Bessel Functions in a power series of $$e$$. Let us write: 
 \begin{equation} \label{exp E}
     e^{iE} = \sum_{n=-\infty}^{\infty}A_ne^{in\mathcal{M}}
@@ -783,7 +785,7 @@ And, as $$\epsilon=\cos{\psi}-\cos{\left(\vartheta_1-\vartheta_2\right)}$$:
 \end{equation}
 
 
-####II.I.II Series Expansion of Direct Disturbing Function
+#### II.I.II Series Expansion of Direct Disturbing Function
 
 With \eqref{zeta expansion e} and \eqref{epsilon expansion}:
 
@@ -1090,7 +1092,8 @@ These equations can be simplified further, notice that all the terms come in pai
 
 
 
-####II.I.III Series Expansion of Indirect Disturbing Function
+#### II.I.III Series Expansion of Indirect Disturbing Function
+
 The indirect portion of the disturbing function is much less involved. Rewriting the indirect portion:
 
 \begin{equation}
@@ -1137,7 +1140,8 @@ And consulting \eqref{zeta expansion e} and \eqref{cos psi expansion}:
 
 
 
-###II.II Using the Disturbing Function
+### II.II Using the Disturbing Function
+
 From our Planetary Equations, the time variations in our orbital elements (excluding the orbital $$\lambda$$ changes from the non-perturbed Hamiltonian) are proportional to $$\sim\frac{1}{\mu_1\sqrt{\mathcal{G}m_1a_1}}\frac{\partial R}{\partial i}$$, so from our disturbing function, the time variation in our elements is $$\sim\frac{\sqrt{\mathcal{G}}m_1'm_2'}{\mu_1R_2\sqrt{m_1a_1}}=\frac{\sqrt{\mathcal{G}m_1}\delta_2}{R_2\sqrt{a_1}}\approx n\delta_2$$, where we have approximated $$R_2\approx a_1$$, which is reasonable in our proportionality arguments. Thus, our orbital elements vary $$\sim\delta_2$$ times slower than the orbital period. We call these elements _secular_, varying much slower than planetary orbits, so, to evaluate the impact of our Disturbing Function, we can average over the orbital cycles of $$\lambda_1$$ and $$\lambda_2$$.
 
 \begin{equation}
@@ -1235,9 +1239,9 @@ So, to second order in $$e_i$$ and $$I_i$$ and in $$\delta_i$$, averaged over lo
 
 
 
-##III. The Perihelion Precession of Mercury
+## III. The Perihelion Precession of Mercury
 
-###III.I Gravitational Effects
+### III.I Gravitational Effects
 
 We are ready to apply what we have learned to study the precession of Mercury's perihelion. We consider a three-body system of the Sun, Mercury, and each of the other seven planets. 
 
@@ -1399,7 +1403,7 @@ Repeating the analysis with the other planets of the solar system we find the fo
 
 Our total precession $$\approx544^{"}$$ per century is puzzling, as it is lower than the actual precession of Mercury's perihelion which is nearer to $$\approx 585^{"}$$ per century. Even considering our result as a second-order approximation does not account for this deviation, to find the missing source of precession, we must consider Einstein's General Relativity.
 
-##III.II The Relativistic Disturbing Function
+## III.II The Relativistic Disturbing Function
 
 From relativistic effects, an extra term is added to the two-body Hamiltonian:
 
