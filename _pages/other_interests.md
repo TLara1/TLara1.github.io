@@ -11,10 +11,10 @@ horizontal: false
 <h2>Rock Climbing</h2>
 <div class="row">
     <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Pictures_climbing/hospital_boulders.jpg" title="Mega Man" class="img-fluid rounded z-depth-0" %}
+        {% include figure.liquid loading="eager" path="assets/img/Pictures_climbing/hospital_boulders.jpg" title="Mega Man" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
     </div>
     <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Pictures_climbing/Finals (81 of 311).jpg" title="Framingham Finals" class="img-fluid rounded z-depth-0" %}
+        {% include figure.liquid loading="eager" path="assets/img/Pictures_climbing/Finals (81 of 311).jpg" title="Framingham Finals" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
     </div>
 </div>
 
@@ -37,8 +37,9 @@ I have climbed since sixth grade, focusing mostly on bouldering. Some of my nota
 </ul>
 
 <h2>Clarinet Playing</h2>
-{% include figure.liquid loading="eager" path="assets/img/clarinet_picture/ribotones_playing.png" title="Playing With Ribotones" class="img-fluid rounded z-depth-0" width="500" height="auto" %}
-<div class="caption">
+<div style="text-align: center;">
+  {% include figure.liquid loading="eager" path="assets/img/clarinet_picture/ribotones_playing.png" title="Playing With Ribotones" class="img-fluid rounded z-depth-0" width="450" height="auto" %}
+</div>
     Playing at a concert with the MIT Ribotones.
 </div>
 
