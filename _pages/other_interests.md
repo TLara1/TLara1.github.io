@@ -42,7 +42,13 @@ I have climbed since sixth grade, focusing mostly on bouldering. Some of my nota
     Playing at a concert with the MIT Ribotones.
 </div>
 
+<div align="justify">
 I have played the clarinet for 12 years, first with the Decatur High School Wind Ensemble and currently with the MIT Wind Ensemble. In high school I played with the Georgia District Honour band and more recently, I played for two years with the <a href="https://www.youtube.com/channel/UCVtU0-ALytaxlR68Tv8xZ2g">MIT Video Game Orchestra (VGO)</a>. I also occasionally play with chamber groups such as the  <a href="https://ribotones.mit.edu/">MIT Ribotones </a>.
+</div>
+
+<div align="justify">
+    My favourite pieces include Crussel's Third Clarinet Concerto Op. 11, Busoni's Clarient Concertino Op. 47, Cavallini's <em>Adagio e Tarantella</em>, and Weber's Clarinet Concertino Op. 26.
+</div>
 
 <h2>Origami</h2>
 
