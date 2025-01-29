@@ -8,6 +8,7 @@ category: Physics
 related_publications: false
 ---
 
+```yml
 toc:
   beginning: true
 ```
