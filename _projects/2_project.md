@@ -10,11 +10,11 @@ toc:
   beginning: true
 ---
 
-<h2>Introduction</h2>
+##Introduction
 One of the earliest triumphs of Einstein's Theory of Relativity was the correct prediction of the perihelion precession of Mercury. Many sources derive this relativistic precession, but this is in itself meaningless if the classical precession is not understood. Mercury's perihelion is impacted both by the pull of other planets and the effects of general relativity. Here we use the Lagrange Planetary Equations to quantify the perihelion precession from both sources, showing that together they lead to the correct observed precession. 
 
-<h2>I. Bessel Functions</h2>
-<h3>I.I Introduction to Bessel Functions</h3>
+##I. Bessel Functions
+###I.I Introduction to Bessel Functions
 Here we discuss Bessel Functions and their series expansions, which will help in our later analysis of orbital elements. Bessel functions, $$J_n(x)$$, of the first kind are defined as follows:
 \begin{equation} \label{bessel definition}
     g(x,t) \equiv e^{\frac{x}{2}\left(t-\frac{1}{t}\right)} = \sum_{n=-\infty}^{\infty}J_n(x)t^n
@@ -95,7 +95,7 @@ We conclude that $$J_n(x)$$ solves the following differential equation:
     x^2\frac{d^2}{dx^2}J_n(x) + x\frac{d}{dx}J_n(x) + (x^2-n^2) J_n(x)= 0
 \end{equation}
 
-<h3>I.II Expansion of Bessel Function Through Frobenius Method</h3>
+###I.II Expansion of Bessel Function Through Frobenius Method
 
 In this section, we develop a power series for Bessel Functions which we will use to expand orbital elements around $$e$$. First, suppose $$J_n(x)$$ can be expressed as a power series:
 
@@ -227,7 +227,7 @@ Let us evaluate our series expansion for a few values of $$n$$:
     J_3(x) = \frac{x^3}{48}-\frac{x^5}{768}+\mathcal{O}(x^7)
 \end{equation}
 
-<h3>I.III Integral Representation of Bessel Function</h3>
+###I.III Integral Representation of Bessel Function
 Now we return to \eqref{bessel definition}. Let $$t = e^{i\theta}$$ such that:
 
 \begin{equation}
@@ -240,7 +240,7 @@ So, $$J_n(x)$$ can represent the Fourier coefficients of $$e^{ix\sin{(\theta)}}$
     J_n(x) = \frac{1}{2\pi} \int_0 ^{2\pi}{e^{-i(n\theta-x\sin{\theta})}d\theta} = \frac{1}{\pi} \int_0 ^{\pi}{\cos{\left(x\sin{\theta-n\theta}\right)}d\theta}
 \end{equation}
 
-<h2>II. The Disturbing Function For the Three-Body Problem</h2>
+##II. The Disturbing Function For the Three-Body Problem
 We now analyse the disturbing function caused by the presence of a third body of mass $$m_2'$$. 
 From Newton's Law, the motions of the three bodies are:
 
@@ -336,7 +336,7 @@ The first four terms of \eqref{3 body hamiltonian with R} correspond to two sepa
     \mathcal{R}=\mathcal{G}m_0'^2\delta_1\delta_2\left(-\left(r_1^2+R_2^2-2r_1R_2\cos{\psi}\right)^{-\frac{1}{2}}+\frac{r_1}{R_2^2}\cos{\psi}\right)
 \end{equation}
 
-<h3>II.I Series Expansion of Disturbing Function</h3>
+###II.I Series Expansion of Disturbing Function
 
 Defining the direct and indirect disturbing functions:
 
@@ -435,7 +435,7 @@ We can now write $$\mathcal{R}_D$$ as product of two series:
 \begin{equation}   \label{R_D expression} 
     \times \cos{\left(j(\vartheta _1 -\vartheta _2 )\right)}
 \end{equation}
-<h4>II.I.I Series Expansion of Orbital Elements</h4>
+####II.I.I Series Expansion of Orbital Elements
 We now address the $$\cos{\left(j(\vartheta_1-\vartheta_2)\right)}$$ term. We expand trigonometric terms in $$E$$ using Bessel Functions in a power series of $$e$$. Let us write: 
 \begin{equation} \label{exp E}
     e^{iE} = \sum_{n=-\infty}^{\infty}A_ne^{in\mathcal{M}}
@@ -783,7 +783,7 @@ And, as $$\epsilon=\cos{\psi}-\cos{\left(\vartheta_1-\vartheta_2\right)}$$:
 \end{equation}
 
 
-<h4>II.I.II Series Expansion of Direct Disturbing Function</h4>
+####II.I.II Series Expansion of Direct Disturbing Function
 
 With \eqref{zeta expansion e} and \eqref{epsilon expansion}:
 
@@ -1090,7 +1090,7 @@ These equations can be simplified further, notice that all the terms come in pai
 
 
 
-<h4>II.I.III Series Expansion of Indirect Disturbing Function</h4>
+####II.I.III Series Expansion of Indirect Disturbing Function
 The indirect portion of the disturbing function is much less involved. Rewriting the indirect portion:
 
 \begin{equation}
@@ -1137,8 +1137,8 @@ And consulting \eqref{zeta expansion e} and \eqref{cos psi expansion}:
 
 
 
-<h3>II.II Using the Disturbing Function</h3>
-From our Planetary Equations, the time variations in our orbital elements (excluding the orbital $$\lambda$$ changes from the non-perturbed Hamiltonian) are proportional to $$\sim\frac{1}{\mu_1\sqrt{\mathcal{G}m_1a_1}}\frac{\partial R}{\partial i}$$, so from our disturbing function, the time variation in our elements is $$\sim\frac{\sqrt{\mathcal{G}}m_1'm_2'}{\mu_1R_2\sqrt{m_1a_1}}=\frac{\sqrt{\mathcal{G}m_1}\delta_2}{R_2\sqrt{a_1}}\approx n\delta_2$$, where we have approximated $$R_2\approx a_1$$, which is reasonable in our proportionality arguments. Thus, our orbital elements vary $$\sim\delta_2$$ times slower than the orbital period. We call these elements \textit{secular}, varying much slower than planetary orbits, so, to evaluate the impact of our Disturbing Function, we can average over the orbital cycles of $$\lambda_1$$ and $$\lambda_2$$.
+###II.II Using the Disturbing Function
+From our Planetary Equations, the time variations in our orbital elements (excluding the orbital $$\lambda$$ changes from the non-perturbed Hamiltonian) are proportional to $$\sim\frac{1}{\mu_1\sqrt{\mathcal{G}m_1a_1}}\frac{\partial R}{\partial i}$$, so from our disturbing function, the time variation in our elements is $$\sim\frac{\sqrt{\mathcal{G}}m_1'm_2'}{\mu_1R_2\sqrt{m_1a_1}}=\frac{\sqrt{\mathcal{G}m_1}\delta_2}{R_2\sqrt{a_1}}\approx n\delta_2$$, where we have approximated $$R_2\approx a_1$$, which is reasonable in our proportionality arguments. Thus, our orbital elements vary $$\sim\delta_2$$ times slower than the orbital period. We call these elements _secular_, varying much slower than planetary orbits, so, to evaluate the impact of our Disturbing Function, we can average over the orbital cycles of $$\lambda_1$$ and $$\lambda_2$$.
 
 \begin{equation}
     \langle\langle\mathcal{R}\rangle\rangle=\frac{1}{4\pi^2}\int_0^{2\pi}\int_0^{2\pi}\mathcal{R}d\lambda_1d\lambda_2
@@ -1184,7 +1184,7 @@ And, taking $$\sin{I_i}\simeq I_i$$:
     -\frac{1}{2} e_1 e_2 \alpha b^{(2)}_{\frac{3}{2}}(\alpha) \cos{(\varpi_1 - \varpi_2)} + \frac{1}{2} I_1 I_2 \alpha b^{(1)} _{\frac{3}{2}}(\alpha) \cos{(\Omega_1 - \Omega_2)}
 \end{equation}
 
-Now in terms of our simplifying variables \eqref{orbital convert 1}-\eqref{orbital convert end}:
+Now in terms of our simplifying variables which we described in <a href="https://tlara1.github.io/projects/1_project/">our derivation of the Lagrange Planetary Equations</a>:
 
 \begin{equation}
     \langle\langle \mathcal{R} \rangle \rangle \simeq -\frac{\mathcal{G} m_0'^2 \delta_1 \delta_2}{a_2} \alpha \left( \frac{1}{4} \left( h_1^2 + h_2^2 + k_1^2 + k_2^2 \right) b^{(1)} _{\frac{3}{2}}(\alpha) - \frac{1}{4} \left( p_1^2 + p_2^2 + q_1^2 + q_2^2 \right) b^{(1)} _{\frac{3}{2}}(\alpha) \right)
@@ -1194,7 +1194,7 @@ Now in terms of our simplifying variables \eqref{orbital convert 1}-\eqref{orbit
     \left. - \frac{1}{2} \left( h_1 h_2 + k_1 k_2 \right) b^{(2)}_{\frac{3}{2}}(\alpha) + \frac{1}{2} \left( p_1 p_2 + q_1 q_2 \right) b^{(1)} _{\frac{3}{2}}(\alpha) \right)
 \end{equation}
 
-Because we are assuming $$\alpha$$ is constant (recall that variations in $$a_i$$ are much slower than those for other secular elements), we have omitted the $$b^{(0)} _{\frac{1}{2}}\left(\alpha\right)$$ term. Our evolution equations for our simplified elements using \eqref{lagrange simple start}-\eqref{lagrange simple end}:
+Because we are assuming $$\alpha$$ is constant (recall that variations in $$a_i$$ are much slower than those for other secular elements), we have omitted the $$b^{(0)} _{\frac{1}{2}}\left(\alpha\right)$$ term. Our evolution equations for our simplified elements are:
 
 \begin{equation}
     \dot{h}_1 = \frac{n_1 \alpha^2}{2} \delta_2 \left( k_1 b^{(1)} _{\frac{3}{2}} - k_2 b^{(2)} _{\frac{3}{2}} \right)
@@ -1235,9 +1235,9 @@ So, to second order in $$e_i$$ and $$I_i$$ and in $$\delta_i$$, averaged over lo
 
 
 
-<h2>III. The Perihelion Precession of Mercury</h2>
+##III. The Perihelion Precession of Mercury
 
-<h3>III.I Gravitational Effects</h3>
+###III.I Gravitational Effects
 
 We are ready to apply what we have learned to study the precession of Mercury's perihelion. We consider a three-body system of the Sun, Mercury, and each of the other seven planets. 
 
@@ -1363,7 +1363,7 @@ And calculating, we find the precession of Mercury's perihelion in arcseconds pe
     \dot{\varpi}_1=\frac{\dot{h}_1k_1-h_1\dot{k}_1}{h_1^2+k_1^2}\approx283.114^{"}\text{ century}^{-1}
 \end{equation}
 
-Repeating the analysis with the other planets of the solar system we find the results of \eqref{table precess}.
+Repeating the analysis with the other planets of the solar system we find the following:
 
 \begin{equation}
     \text{Venus- } 283.114^{"}\text{ century}^{-1} \nonumber
@@ -1399,7 +1399,7 @@ Repeating the analysis with the other planets of the solar system we find the re
 
 Our total precession $$\approx544^{"}$$ per century is puzzling, as it is lower than the actual precession of Mercury's perihelion which is nearer to $$\approx 585^{"}$$ per century. Even considering our result as a second-order approximation does not account for this deviation, to find the missing source of precession, we must consider Einstein's General Relativity.
 
-<h2>III.II The Relativistic Disturbing Function</h2>
+##III.II The Relativistic Disturbing Function
 
 From relativistic effects, an extra term is added to the two-body Hamiltonian:
 
@@ -1419,13 +1419,13 @@ Fortunately, dealing with this disturbing function is much easier than in the th
     \langle\mathcal{R}\rangle=\frac{1}{2\pi}\int_0^{2\pi}\mathcal{R}d\mathcal{M}
 \end{equation}
 
-Using \eqref{Kepler eq} and \eqref{r E equation} and \eqref{r theta equation}:
+Using <a href="https://tlara1.github.io/projects/1_project/">orbital elements</a>:
 
 \begin{equation}\label{dM equation}
     d\mathcal{M}=\left(1-e\cos{E}\right)dE=\frac{r}{a}dE=\frac{1-e^2}{1+e\cos{f}}dE
 \end{equation}
 
-Now, with \eqref{r theta equation} and \eqref{q_1 eq} and \eqref{q_2 eq}:
+Similarly:
 
 \begin{equation}
     \cos{E} = \frac{r}{a}\cos{f} + e = \frac{\cos{f} + e}{1 + e\cos{f}} \label{cos E f equation}
@@ -1449,7 +1449,7 @@ Thus:
     d\mathcal{M}=\frac{\left(1-e^2\right)^{\frac{3}{2}}}{\left(1+e\cos{f}\right)^2}df
 \end{equation}
 
-Writing $$\frac{1}{r^3}$$ in terms of $$f$$ with \eqref{r theta equation}:
+Writing $$\frac{1}{r^3}$$ in terms of $$f$$:
 
 \begin{equation}
     \frac{1}{r^3}=\frac{\left(1+e\cos{f}\right)^3}{a^3\left(1-e^2\right)^3}
@@ -1462,7 +1462,7 @@ Averaging our disturbing function:
     \frac{1}{2\pi}\int_0^{2\pi}\frac{1+e\cos{f}}{a^3\left(1-e^2\right)^\frac{3}{2}}df=-\frac{\mathcal{G}^2\mu m^2}{a^2c^2\left(1-e^2\right)^\frac{3}{2}}
 \end{equation}
 
-With \eqref{varpi evolve}:
+With <a href="https://tlara1.github.io/projects/1_project/">the plantery equations</a>:
 
 \begin{equation}
     \dot{\varpi}=-\frac{\sqrt{1-e^2}}{\mu e\sqrt{\mathcal{G}ma}}\frac{\partial \mathcal{R}}{\partial e}=\frac{3\left(\mathcal{G}ma\right)^{\frac{3}{2}}}{a^4c^2\left(1-e^2\right)^2}
