@@ -8,6 +8,7 @@ category: Physics
 giscus_comments: false
 ---
 
+```yml
 toc:
   beginning: true
 ```
