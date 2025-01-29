@@ -10,11 +10,13 @@ toc:
   beginning: true
 ---
 
-##Introduction
+## Introduction
+
 The study of planetary motion has long been a cornerstone of celestial mechanics, offering insights into the dynamics of the solar system. One of the key tools used to describe the motion of planets and other heavenly bodies are the Lagrange Planetary Equations. These equations describe the evolution of orbital elements due to the influence of a general perturbing function. Here we derive these equations, starting with a description of the two-body problem and orbital elements, we then perform a an appropriate canonical transform to move our Hamiltonian in terms of orbital elements. From these, we can derive the effects of a perturbing function, whose form we need not specify. 
 
-##I. Mechanics
-###I.I Canonical Transforms
+## I. Mechanics
+
+### I.I Canonical Transforms
 
 A time-independent coordinate transform $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ is said to be canonical if it preserves Hamilton's equations of motion. Specifically, letting the new Hamiltonian $$\mathcal{K}\left(Q_i,P_i\right)=\mathcal{H}\left(q\left(Q_i,P_i\right),p_i\left(Q_i,P_i\right)\right)$$, then we have:
 
@@ -49,7 +51,7 @@ Poisson Brackets can also be used to determine if a function of coordinates $$f\
     \frac{df}{dt}=\sum_i\frac{\partial f}{\partial q_i}\dot{q}_i+\frac{\partial f}{\partial p_i}\dot{p}_i=\[  f,\mathcal{H}  \]
 \end{equation}
 
-###I.II The Hamilton-Jacobi Equation
+### I.II The Hamilton-Jacobi Equation
 
 A generating function $$F$$ generates a canonical transformation from coordinates $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ and a Hamiltonian $$\mathcal{H}\rightarrow\mathcal{K}$$. This generating function satisfies:
 \begin{equation}
@@ -73,8 +75,9 @@ Now, suppose we want our transformed Hamiltonian, $$\mathcal{K}=0$$ such that $$
 \end{equation}
 This is the Hamilton-Jacobi Equation.
 
-##II. Kepler's Laws
-###II.I Newton's Law and Polar Coordinates
+## II. Kepler's Laws
+
+### II.I Newton's Law and Polar Coordinates
 
 We consider two bodies of mass $$m_0'$$ and $$m_1'$$. Newton's law of gravitation can be written:
 \begin{equation} 
@@ -116,7 +119,8 @@ It is not difficult to demonstrate:
 The norm of the angular momentum vector is given by $$\parallel\vec{r}\times\dot{\vec{r}}\parallel= r^2\dot{f}$$. From \eqref{Netwon polar coordinates}, $$\frac{d\left(r^2\dot{f}\right)}{dt}=0$$, a statement of the conservation of total angular momentum. Let us define the reduced mass: $$\mu\equiv\frac{m_0'm_1'}{m_0'+m_1'}$$, and defined the quantity $$L\equiv\mu\parallel\vec{r}\times\dot{\vec{r}}\parallel=\mu r^2\dot{f}$$. 
 
 
-###II.II Kepler's First Law
+### II.II Kepler's First Law
+
 We rewrite \eqref{Netwon polar coordinates} in the $$\hat{e}_r$$ direction:
 
 \begin{equation}\label{r equation newton} \ddot{r}-\frac{L^2}{\mu^2r^3}=-\frac{\mathcal{G}m}{r^2} \end{equation}
@@ -141,7 +145,7 @@ Where $$e$$ is a dimensionless parameter, the _eccentricity_  which we are free 
 
 We consider only $$0<e<1$$, giving a closed orbit. Broadly speaking, the closer $$e$$ is to 0, the more circular an orbit is, and as $$e$$ approaches 1, the orbit becomes more elliptical. This is Kepler's First Law. Note that because $$e$$ is a constant we chose, $$\dot{e}=0$$.
 
-###II.III Kepler's Third Law
+### II.III Kepler's Third Law
 
 We relate the orbit period $$P$$ with the orbit's semi-major axis $$a$$. Converting \eqref{r equation kepler} into Cartesian coordinates:
 
@@ -177,8 +181,9 @@ We define the mean motion at $$n=\frac{2\pi}{P}$$ and summarize Kepler's Laws:
 \begin{equation} L=\mu\sqrt{\mathcal{G}ma\left(1-e^2\right)}=\mu na^2\sqrt{1-e^2}\label{L defintion} \end{equation}
 \begin{equation} r=\frac{a\left(1-e^2\right)}{1+e\cos{f}}\label{r theta equation} \end{equation}
 
-##III. Orbital Elements
-###III.I Derivation of Mean and Eccentric Anomalies
+## III. Orbital Elements
+
+### III.I Derivation of Mean and Eccentric Anomalies
 
 From \eqref{r theta equation}:
 
@@ -215,7 +220,7 @@ Integrating, we find:
 
 This is Kepler's Equation, where $$\mathcal{M}$$ is known as the mean anomaly.
 
-###III.II Two-Dimensional Orbital Elliptical Elements
+### III.II Two-Dimensional Orbital Elliptical Elements
 
 {% include figure.liquid loading="eager" path="assets/img/Figures_Cmech_Notes/Orbital_Element_diagram_v2." title="Orbital element diagram" class="img-fluid rounded z-depth-0" %}
 
@@ -245,7 +250,7 @@ In summary:
      r=a\left(1-e\cos{E}\right)
 \end{equation}
 
-###III.III Three-Dimensional Orbital Elements
+### III.III Three-Dimensional Orbital Elements
 
 To characterize the orientation of our ellipse in three-dimensional space with respect to a reference plane $$x,y,z$$, we introduce three new angles. The first is the inclination $$i$$, describing the tilt of the orbiting ellipse with respect to the $$x,y$$ plane. Any orbit with a nonzero inclination will intersect the reference plane at two points. The _ascending node_ is the point at which the body passes from negative $$z$$ to positive $$z$$, and the _descending node_ is the opposite.
 The angle between the _ascending node_ with the $$x$$ axis is the longitude of the ascending node, noted by $$\Omega$$. Finally, $$\omega$$, the argument of the pericentre determines the angle from the $$x,y$$ of the pericentre along the orbiting plane.
@@ -329,7 +334,7 @@ Utilizing our transform and polar coordinates, $$Q_1=r\cos{f}$$, $$Q_2=r\sin{f}$
     =\sin{I}\sin{(\omega+f)}\label{z orbital elements} 
 \end{equation}
 
-##IV. Expansion of the Two-Body Hamiltonian in Delaunay Variables
+## IV. Expansion of the Two-Body Hamiltonian in Delaunay Variables
 Here we write the Hamiltonian for the two-body system and solve the Hamilton-Jacobi Equation to find a set of action-angle variables that are constant over time.
 
 We begin by identifying the Two-Body Hamiltonian in Cartesian coordinates. From \eqref{governing Newton Law}, the Lagrangian of the system is given by:
@@ -385,7 +390,8 @@ Again, it can be shown that this transform satisfies \eqref{cannonical 1}-\eqref
     \mathcal{H}=\frac{1}{2\mu}\left(p_r^2+\frac{p_\theta^2}{r^2}+\frac{p_\phi^2}{r^2\sin^2{\theta}}\right)-\frac{\mathcal{G}\mu m}{r}
 \end{equation}
 
-###IV.I Action-Angle Variables
+### IV.I Action-Angle Variables
+
 We now find a canonical transform, $$q_i\rightarrow Q_i$$ and $$p_i\rightarrow P_i$$ such that our transformed Hamiltonian $$\mathcal{K}$$ is a function of only momenta, $$\mathcal{K}\left(P_i\right)$$. Transformed position coordinates are known as _angles_ and transformed momenta are known as _actions_.
 
 Utilizing the Hamilton-Jacobi Equation \eqref{HJ Equation} with a generating function $$S\left(r,\theta,\phi;P_1,P_2,P_3;t\right)$$, where $$P_1$$, $$P_2$$, and $$P_3$$ are constants of motion because the transformed Hamiltonian $$\mathcal{K}$$ is independent of $$Q_i$$. The Hamilton-Jacobi Equation is:
@@ -682,7 +688,7 @@ We find the new set of coordinates, $$\Lambda$$, $$P$$, $$Q$$, $$\lambda$$, $$p$
 
 We have defined the _longitude of the periapis_: $$\varpi\equiv\omega+\Omega$$. The advantage here is that $$\lambda$$ is always defined, and $$p$$ and $$q$$ are only ill-defined when their corresponding momenta $$P$$ and $$Q$$ are equal to zero.
 
-##V. The Three-Body Hamiltonian and the Lagrange Planetary Equations
+## V. The Three-Body Hamiltonian and the Lagrange Planetary Equations
 
 Now we approach the three-body problem by considering a perturbation to the two-body Hamiltonian:
 \begin{equation}
