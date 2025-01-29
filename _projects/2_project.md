@@ -7,6 +7,11 @@ importance: 2
 category: Physics
 giscus_comments: false
 ---
+
+toc:
+  beginning: true
+```
+
 <h2>Introduction</h2>
 One of the earliest triumphs of Einstein's Theory of Relativity was the correct prediction of the perihelion precession of Mercury. Many sources derive this relativistic precession, but this is in itself meaningless if the classical precession is not understood. Mercury's perihelion is impacted both by the pull of other planets and the effects of general relativity. Here we use the Lagrange Planetary Equations to quantify the perihelion precession from both sources, showing that together they lead to the correct observed precession. 
 
