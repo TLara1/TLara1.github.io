@@ -1,7 +1,7 @@
 ---
 layout: page
 title: On the Relativistic Euler Equations
-description: another without an image
+description:
 img:
 importance: 3
 category: Physics
