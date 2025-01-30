@@ -14,28 +14,34 @@
       year: 2022 - 2026
       description:
         - Majoring in Physics and Applied Mathematics
+        - 4.9/5.0 GPA
+    - title: International Baccalaureate Recipient
+      institution: Decatur High School, Decatur, Georgia
+      year: 2018 - 2022
+      description:
+        - 4.0/4.0 GPA
 
 - title: Experience
   type: time_table
   contents:
     - title: Undergraduate Researcher with the Kamrin Solid Modelling Group
       institution: Massachusetts Institute of Technology and University of California, Berkeley
-      year: 2023-2025
+      year: 2023 - 2025
       description:
         - Description 1.
-    - title: Summer Research Intern 
+    - title: SULI Summer Research Intern 
       institution: Lawrence Berkeley National Laboratory Center of Computational Engineering
       year: 2024
       description:
         - Description 1.
-    - title: Undergraduate Researcher with the Kamrin Solid Modelling Group
-      institution: Massachusetts Institute of Technology and University of California, Berkeley
-      year: 2022-2023
+    - title: Undergraduate Researcher with the Millholland Group
+      institution: Massachusetts Institute of Technology Kavli Institue
+      year: 2022 - 2023
       description:
         - Description 1.
     - title: Undergraduate Researcher with the Bush Applied Mathematics Group
-      institution: Massachusetts Institute of Technology and University of California, Berkeley
-      year: 2022-2023
+      institution: Massachusetts Institute of Technology
+      year: 2022 - 2023
       description:
         - Description 1.
 
@@ -49,13 +55,18 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2024
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Paul E. Gray UROP Fund Recipient
+    - year: 2023
       items:
-        - Max Planck Medal
+        - John P. Perry Memorial Fund Scholarship Recipient
+    - year: 2022
+      items:
+        - Georgia Scholar Honoree
+    - year: 2021
+      items:
+        - Hispanic Scholarship Fund Scholar   
 
 - title: Academic Interests
   type: nested_list
