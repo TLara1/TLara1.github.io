@@ -5,10 +5,13 @@ permalink: /other_interests/
 nav: true
 nav_order: 6
 horizontal: false
+toc:
+  sidebar: left
 ---
 <!-- _pages/other_interests.md -->
 
-<h2>Rock Climbing</h2>
+## Rock Climbing
+
 <div class="row">
     <div class="col-sm mt-2 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/Pictures_climbing/hospital_boulders.jpg" title="Mega Man" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
@@ -36,7 +39,7 @@ I have climbed since sixth grade, focusing mostly on bouldering. Some of my nota
   <li>Central Rock Gym Framingham Flaming Ham 2023</li>
 </ul>
 
-<h2>Clarinet Playing</h2>
+## Clarinet Playing
 <div style="text-align: center;">
   {% include figure.liquid loading="eager" path="assets/img/clarinet_picture/ribotones_playing.png" title="Playing With Ribotones" class="img-fluid rounded z-depth-0" width="450" height="auto" %}
 </div>
@@ -52,9 +55,8 @@ I have played the clarinet for 12 years, first with the Decatur High School Wind
     My favourite pieces include Crussel's Third Clarinet Concerto Op. 11, Busoni's Clarient Concertino Op. 47, Cavallini's <em>Adagio e Tarantella</em>, and Weber's Clarinet Concertino Op. 26.
 </div>
 
-<h2>Origami</h2>
 
-<h2>Board, War, and Role-Playing Games</h2>
+## Board, War, and Role-Playing Games
 <div class="row">
     <div class="col-sm mt-2 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/warhammer_video/Dinos1.png" title="Mega Man" class="img-fluid rounded z-depth-0" %}
@@ -68,3 +70,5 @@ I have played the clarinet for 12 years, first with the Decatur High School Wind
 </div>
 
 In the little free time I do have, I enjoy playing games, particularly with the <a href="https://www.mit.edu/~sgs/games/games.html">MIT Strategic Game Society (SGS)</a>. My favourite board games include <em>Spirit Island</em>, <em>Oath</em>, <em>Caverna</em>, <em>Barrage</em>, <em>War of the Ring</em>, and of course, <em>Twilight Imperium</em>. I also played a good amount of <em>Warhammer: Age of Sigmar</em> back in high school, although I am less able to indulge my miniature-painting desires nowadays. I have also recently begun exploring role-playing games, hosting a <em>Dungeon World</em> campaign for my friends over the last month.
+
+## Origami
