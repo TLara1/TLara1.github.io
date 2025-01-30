@@ -4,7 +4,7 @@ title: Modelling Fluid-Solid Interaction and Collision Problems
 description:
 img: assets/img/Lagrage_planetary.png
 importance: 1
-category: Research
+category: Research1
 related_publications: true
 ---
 
