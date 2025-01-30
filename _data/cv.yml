@@ -45,13 +45,6 @@
       description:
         - Description 1.
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
 - title: Honors and Awards
   type: time_table
   contents:
@@ -68,16 +61,17 @@
       items:
         - Hispanic Scholarship Fund Scholar   
 
-- title: Academic Interests
+- title: Relevant Coursework
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Physics
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Quantum Mechanics I, II
+        - Special + General Relativity
+        - 
+    - title: Applied Mathematics
       items:
-        - Description 1.
+        - Fluid-solid interaction problems
         - Description 2.
 
 - title: Other Interests
