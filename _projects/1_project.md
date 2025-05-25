@@ -12,7 +12,7 @@ toc:
 
 ## Introduction
 
-The study of planetary motion has long been a cornerstone of celestial mechanics, offering insights into the dynamics of the solar system. One of the key tools used to describe the motion of planets and other heavenly bodies are the Lagrange Planetary Equations. These equations describe the evolution of orbital elements due to the influence of a general perturbing function. Here we derive these equations, starting with a description of the two-body problem and orbital elements, we then perform a an appropriate canonical transform to move our Hamiltonian in terms of orbital elements. From these, we can derive the effects of a perturbing function, whose form we need not specify. 
+The study of planetary motion has long been a cornerstone of celestial mechanics, offering insights into the dynamics of the solar system. One of the key tools used to describe the motion of planets and other heavenly bodies are the Lagrange Planetary Equations. These equations describe the evolution of orbital elements due to the influence of a general perturbing function. Here we derive these equations. We start with a description of the two-body problem and orbital elements, we then perform an appropriate canonical transform to convert our Hamiltonian into relevant orbital elements. From these, we can derive the effects of a perturbing function, whose form we need not specify. 
 
 ## I. Mechanics
 
@@ -32,7 +32,7 @@ The most useful criteria for determining if a transform is canonical are _Poisso
 \begin{equation}
     \[  Q_j,P_j  \]=\sum_i\frac{\partial Q_j}{\partial q_i}\frac{\partial P_j}{\partial p_i}-\frac{\partial Q_j}{\partial p_i}\frac{\partial P_j}{\partial q_i}
 \end{equation}
-We show that a transform is canonical if and only if:
+It can be shown that a transform is canonical if and only if:
 
 \begin{equation}
     \[ Q_i,Q_j   \]=0\label{cannonical 1}
@@ -50,6 +50,8 @@ Poisson Brackets can also be used to determine if a function of coordinates $$f\
 \begin{equation}\label{const function}
     \frac{df}{dt}=\sum_i\frac{\partial f}{\partial q_i}\dot{q}_i+\frac{\partial f}{\partial p_i}\dot{p}_i=\[  f,\mathcal{H}  \]
 \end{equation}
+
+This fact will help us as we study the two and three-body problems.
 
 ### I.II The Hamilton-Jacobi Equation
 
@@ -222,7 +224,7 @@ This is Kepler's Equation, where $$\mathcal{M}$$ is known as the mean anomaly.
 
 ### III.II Two-Dimensional Orbital Elliptical Elements
 
-{% include figure.liquid loading="eager" path="assets/img/Figures_Cmech_Notes/Orbital_Element_diagram_v2." title="Orbital element diagram" class="img-fluid rounded z-depth-0" %}
+{% include figure.liquid loading="eager" path="assets/img/Figures_Cmech_Notes/Orbital_Element_diagram_v2.png" title="Orbital element diagram" class="img-fluid rounded z-depth-0" %}
 
 From our orbital element diagram, we can immediately conclude:
 \begin{equation}\label{cos f equation}
