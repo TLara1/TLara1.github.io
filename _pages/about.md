@@ -17,9 +17,11 @@ social: true # includes social icons at the bottom of the page
 ---
 
 <div align="justify" style="margin-bottom: 20px;">
-    I am a third-year undergraduate at the Massachusetts Institute of Technology. For the past three years, I have studied physics and applied mathematics, researching problems in computational celestial, fluid, and continuum mechanics.
-</div>
+  Hello!
+  
+  I am a third-year undergraduate at the Massachusetts Institute of Technology, and I currently study physics and mathematics. Over the past three years, I have mostly done research in applied maths, studying computational celestial, fluid, and continuum mechanics. 
+  </div>
 
 <div align="justify">
-    This website is meant to be a part research portfolio, part cv, and part personal project repository. 
+    This website is meant to be a part research portfolio, part CV, and part personal project repository.
 </div>
