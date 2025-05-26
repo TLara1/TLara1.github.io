@@ -44,7 +44,7 @@ I have climbed since sixth grade, focusing mostly on bouldering. Some of my nota
 
 ## Clarinet Playing
 <div style="text-align: center;">
-  {% include figure.liquid loading="eager" path="assets/img/clarinet_picture/ribotones_playing.png" title="Playing With Ribotones" class="img-fluid rounded z-depth-0" width="450" height="auto" %}
+  {% include figure.liquid loading="eager" path="assets/img/clarinet_picture/ribotones_playing.png" title="Playing With Ribotones" class="img-fluid rounded z-depth-0" width="300" height="auto" %}
 </div>
 <div class="caption">
     Playing at a concert with the MIT Ribotones.
@@ -62,10 +62,10 @@ I have played the clarinet for 12 years, first with the Decatur High School Wind
 ## Board, War, and Role-Playing Games
 <div class="row">
     <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/warhammer_video/Dinos1.png" title="Mega Man" class="img-fluid rounded z-depth-0" %}
+        {% include figure.liquid loading="eager" path="assets/img/warhammer_video/Dinos1.png" title="Seraphon 1" class="img-fluid rounded z-depth-0" %}
     </div>
     <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/warhammer_video/Dinos2.png" title="Mega Man" class="img-fluid rounded z-depth-0" %}
+        {% include figure.liquid loading="eager" path="assets/img/warhammer_video/Dinos2.png" title="Seraphon 2" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
 <div class="caption">
