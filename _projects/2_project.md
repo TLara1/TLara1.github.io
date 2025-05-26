@@ -403,7 +403,7 @@ We now expand $$\frac{1}{\rho_0^{2k+1}}$$ as a Fourier Series:
 Where $$\alpha=\frac{a_1}{a_2}$$. $$b^{(j)}_{s}$$ terms are known as _Laplace Coefficients_.
 
 \begin{equation} \label{laplace coefficient definitions}
-    b^{(j)}_{s}(\alpha) \equiv \frac{1}{2\pi}\int_0^{2\pi}\frac{\cos{(j{\phi})}d{\phi}}{\left(1+\alpha^2-2\alpha\cos{({\phi})}\right)^s} \nonumber
+    b^{(j)}_{s}(\alpha) \equiv \frac{1}{2\pi}\int_0^{2\pi}\frac{\cos{(j{\phi})}d{\phi}}{\left(1+\alpha^2-2\alpha\cos{({\phi})}\right)^s}
 \end{equation}
 
 For convenience, we now define the operator $$A_{k,j,m,n}$$:
@@ -1168,7 +1168,7 @@ As all the terms in our disturbing function feature trigonometric terms of $$\la
 \end{equation}
 
 
-We have made use of the fact that $$b_s^{(-j)}(\alpha)=b_s^{(j)}(\alpha)$$. With the properties of Laplace coefficients \eqref{laplace coefficient definitions}:
+We have made use of the fact that $$b_s^{(-j)}(\alpha)=b_s^{(j)}(\alpha)$$. With the properties of Laplace coefficients, which can be derived from \eqref{laplace coefficient definitions}:
 
 \begin{equation}
     \left( 2\alpha \frac{\partial }{\partial\alpha} + \alpha^2 \frac{\partial ^2}{\partial\alpha^2} \right) b^{(0)} _{\frac{1}{2}}(\alpha) = \alpha b^{(1)} _{\frac{3}{2}}(\alpha) \nonumber
@@ -1478,7 +1478,7 @@ And, somewhat unsurprisingly, using current values, we find:
     \dot{\varpi}=44.908^{"} \text{ century}^{-1}
 \end{equation}
 
-This brings the total precession to $$\approx588.87^{"}2$$, much closer to the observed value.
+This brings the total precession to $$\approx588.872^{"}$$, much closer to the observed value.
 
 Of course, there are other sources of perihelion precession such as the oblateness of the sun and the interactions of other planets with each other, but these corrections are of a higher order than the second-order approximations we have carried out.
 
