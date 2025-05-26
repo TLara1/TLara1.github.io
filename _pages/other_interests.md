@@ -51,7 +51,7 @@ I have climbed since sixth grade, focusing mostly on bouldering. Some of my nota
 </div>
 
 <div align="justify">
-I have played the clarinet for 12 years, first with the Decatur High School Wind Ensemble and currently with the MIT Wind Ensemble. In high school, I played with the Georgia District Honour band, and more recently, I played for two years with the <a href="https://www.youtube.com/channel/UCVtU0-ALytaxlR68Tv8xZ2g">MIT Video Game Orchestra (VGO)</a>. I also occasionally play with chamber groups such as the <a href="https://ribotones.mit.edu/">MIT Ribotones</a>, a group of MIT students who perform in retirement homes in the Boston and Cambridge area.
+I have played the clarinet for 12 years, first with the Decatur High School Wind Ensemble and currently with the MIT Wind Ensemble. In high school, I played with the Georgia District Honour band, and more recently, I played for two years with the <a href="https://www.youtube.com/channel/UCVtU0-ALytaxlR68Tv8xZ2g">MIT Video Game Orchestra (VGO)</a>. I also occasionally play with chamber groups such as the <a href="https://ribotones.mit.edu">MIT Ribotones</a>, a group of MIT students who perform in retirement homes in the Boston and Cambridge area.
 </div>
 
 <div align="justify">
