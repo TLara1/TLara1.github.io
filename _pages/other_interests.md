@@ -25,8 +25,11 @@ I have climbed since sixth grade, focusing mostly on bouldering. Some of my nota
 
 <ul>
   <li><em>God Module V11</em>, Horspens 40, AL</li>
+  <li><em>Stasis V11</em>, Calico Basin, NV</li>
   <li><em>Mega Man V11</em>, Hospital Boulders, AL</li>
   <li><em>Pocket Sands V10/11</em>, Hospital Boulders, AL</li>
+  <li><em><a href="https://www.mountainproject.com/area/200694491/candy-with-a-k-boulder-area">3 Pads and a Toddler V10 FA</a></em>, Calico Basin, NV</li>
+  <li><em>Hustle and Flow V10</em>, Hospital Boulders, AL</li>
   <li><em>Golden Harvest V10</em>, Rocktown, GA</li>
 </ul>
 
@@ -48,11 +51,11 @@ I have climbed since sixth grade, focusing mostly on bouldering. Some of my nota
 </div>
 
 <div align="justify">
-I have played the clarinet for 12 years, first with the Decatur High School Wind Ensemble and currently with the MIT Wind Ensemble. In high school I played with the Georgia District Honour band and more recently, I played for two years with the <a href="https://www.youtube.com/channel/UCVtU0-ALytaxlR68Tv8xZ2g">MIT Video Game Orchestra (VGO)</a>. I also occasionally play with chamber groups such as the  <a href="https://ribotones.mit.edu/">MIT Ribotones </a>.
+I have played the clarinet for 12 years, first with the Decatur High School Wind Ensemble and currently with the MIT Wind Ensemble. In high school, I played with the Georgia District Honour band, and more recently, I played for two years with the <a href="https://www.youtube.com/channel/UCVtU0-ALytaxlR68Tv8xZ2g">MIT Video Game Orchestra (VGO)</a>. I also occasionally play with chamber groups such as the <a href="https://ribotones.mit.edu/">MIT Ribotones</a>, a group of MIT students who perform in retirement homes in the Boston and Cambridge area.
 </div>
 
 <div align="justify">
-    My favourite pieces include Crussel's Third Clarinet Concerto Op. 11, Busoni's Clarient Concertino Op. 47, Cavallini's <em>Adagio e Tarantella</em>, and Weber's Clarinet Concertino Op. 26.
+    My favourite pieces include Crussel's Third Clarinet Concerto Op. 11, Busoni's Clarinet Concertino Op. 47, Cavallini's <em>Adagio e Tarantella</em>, and Weber's Clarinet Concertino Op. 26.
 </div>
 
 
