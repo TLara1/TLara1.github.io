@@ -2,6 +2,7 @@
 layout: page
 title: Research
 permalink: /research/
+description: A collection of research projects and topics I have studied in the past.
 nav: true
 nav_order: 3
 display_categories: [Research]
