@@ -362,7 +362,7 @@ With:
 ### II.III Boundry terms
 Here we discuss the physical meaning of the $$f=U_{,x}+iU_{,y}$$ function. First consider a length of the edge of our body from points $$A$$ to $$B$$. Considering $$ds$$ as an infinitesimal length along the edge of our object, the $$x$$ and $$y$$ components of the force normal to the length $$AB$$ can be found by:
 
-\begin{equation}\label{Fiequation}
+\begin{equation} \label{Fequation}
   F_i = \int_A^B\sigma_{ij}n_jds \nonumber
 \end{equation}
 
@@ -385,7 +385,7 @@ So:
   \sigma_{yj}n_j = \sigma_{yx}\frac{dy}{ds}-\sigma_{yy}\frac{dx}{ds} = -U_{,yx}\frac{dy}{ds}-U_{,xx}\frac{dx}{ds} = -\frac{d}{ds}\left(U_{,x}\right)
 \end{equation}
 
-And, with \eqref{Fiequation}:
+And, with \eqref{Fequation}:
 \begin{equation}
   F_x+iF_y = \int_A^B\sigma_{xj}n_j+\sigma_{yj}n_jds = \int_A^B\frac{d}{ds}\left(U_{,y}-iU_{,x}\right)ds = -i\left(U_{,x}+iU_{,y}\right)
 \end{equation}
