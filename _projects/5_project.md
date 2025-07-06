@@ -1,10 +1,9 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
+title: Observing Walking Fluid Droplet Dynamics
 img: assets/img/1.jpg
-importance: 3
-category: fun
+importance: 1
+category: [Research]
 ---
 
 Every project has a beautiful feature showcase page.
