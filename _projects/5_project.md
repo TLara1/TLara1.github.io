@@ -16,15 +16,14 @@ Over the summer of 2023, I spent the majority of my days in the Bush Applied Mat
   {% include figure.liquid loading="eager" path="assets/img/Images_Figures_Videos_website_bush_22/EasytoFollowExample.jpg" title="Sample Droplet" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
 </div>
 
-
-<p>My work mostly involved running experiments with our vibrating baths and tracking the resulting droplet movement. These droplets
+<p>My work mostly involved running experiments with our vibrating baths and tracking the resulting droplet movement. These droplets move around in occasionally interesting shapes from simple orbits to more complex patterns. We still don't fully understand the complex fluid mechanics at play in these systems, but it is speculated our little bouncing droplets may serve as quantum-mechanical analagoues due to their pilot-wave properties. 
 
 <div class="row">
     <div class="col-sm mt-2 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/Images_Figures_Videos_website_bush_22/Untitled(1).png" title="Droplet track 1" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
     </div>
     <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid loading="eager" path=assets/img/Images_Figures_Videos_website_bush_22/Untitled.png" title="Droplet track 2" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
+        {% include figure.liquid loading="eager" path"=assets/img/Images_Figures_Videos_website_bush_22/Untitled.png" title="Droplet track 2" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
     </div>
 </div>
 
