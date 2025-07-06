@@ -5,6 +5,7 @@ description: a project with no image
 img:
 importance: 4
 category: 2023
+related_publications: true
 ---
 
 Every project has a beautiful feature showcase page.
