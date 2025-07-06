@@ -5,7 +5,7 @@ permalink: /research/
 description: A collection of research projects and topics I have studied in the past.
 nav: true
 nav_order: 3
-display_categories: [Research]
+display_categories: [2022] [2023] [2024] [2025]
 horizontal: false
 ---
 
