@@ -2,7 +2,7 @@
 layout: page
 title: Research
 permalink: /research/
-description: A collection of research projects and topics I have studied in the past.
+description: A collection of research projects and topics I have studied in the past. These include both formal research work with a specific group, and less formal projects undertaken for classes.
 nav: true
 nav_order: 3
 display_categories: [2025,2024,2023]
