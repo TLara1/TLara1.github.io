@@ -437,8 +437,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
+            },},{id: "projects-studying-resonance-in-exoplanet-migrations",
+          title: 'Studying Resonance in Exoplanet Migrations',
           description: "a project with no image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
