@@ -3,7 +3,7 @@ layout: page
 title: Observing Walking Fluid Droplet Dynamics
 img: assets/img/1.jpg
 importance: 1
-category: [Research]
+category: [2022]
 ---
 
 Every project has a beautiful feature showcase page.
