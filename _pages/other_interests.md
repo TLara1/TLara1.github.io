@@ -21,7 +21,7 @@ toc:
     </div>
 </div>
 
-I have climbed since sixth grade, focusing mostly on bouldering. Some of my notable ascents include:
+I have climbed for almost 10 year now, focusing mostly on bouldering. Some of my notable ascents include:
 
 <ul>
   <li><em>God Module V11</em>, Horspens 40, AL</li>
