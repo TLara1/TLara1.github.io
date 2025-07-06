@@ -4,7 +4,7 @@ title: Observing Walking Fluid Droplet Dynamics
 img: assets/img/1.jpg
 importance: 1
 category: [2022]
-
+related_publications: false
 ---
 
 Every project has a beautiful feature showcase page.
