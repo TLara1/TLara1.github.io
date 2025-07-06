@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-research",
           title: "Research",
-          description: "A collection of research projects and topics I have studied in the past.",
+          description: "A collection of research projects and topics I have studied in the past. These include both formal research work with a specific group, and less formal projects undertaken for classes.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
