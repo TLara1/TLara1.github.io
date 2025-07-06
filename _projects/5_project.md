@@ -1,21 +1,13 @@
 ---
 layout: page
 title: Observing Walking Fluid Droplet Dynamics
+description:
 img: assets/img/1.jpg
 importance: 1
-category: [2022]
+category: [2023]
 related_publications: false
+toc:
+  beginning: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Over the summer of 2023, I spent the majority of my days in the Bush Applied Math Lab, under the MIT department. My work involving observing and studying "walking" droplet behaviours. Turns out, when a thin layer of oil is vibrated quickly enough, small droplets will bounce over the oil's surface, propelled by their own wave patterns in so called "pilot-wave" dynamics. 
