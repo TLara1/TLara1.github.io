@@ -412,8 +412,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/10_project/";
-            },},{id: "projects-negf-simulations-for-qunatum-transport-in-carbon-nanotubes",
-          title: 'NEGF simulations for Qunatum Transport in Carbon Nanotubes',
+            },},{id: "projects-negf-simulations-for-quantum-transport-in-carbon-nanotubes",
+          title: 'NEGF simulations for Quantum Transport in Carbon Nanotubes',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/11_project/";
