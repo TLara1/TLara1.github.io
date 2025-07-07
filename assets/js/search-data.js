@@ -417,6 +417,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/11_project/";
+            },},{id: "projects-investigating-the-fast-multipole-method-fmm",
+          title: 'Investigating the Fast Multipole Method (FMM)',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/12_project/";
             },},{id: "projects-on-the-lagrange-planetary-equations",
           title: 'On the Lagrange Planetary Equations',
           description: "",
