@@ -422,8 +422,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/12_project/";
-            },},{id: "projects-submerged-eulerian-self-contact",
-          title: 'Submerged Eulerian Self-Contact',
+            },},{id: "projects-simulating-jellyfish-feeding-efficiency",
+          title: 'Simulating Jellyfish Feeding Efficiency',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/13_project/";
