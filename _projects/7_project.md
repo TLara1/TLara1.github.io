@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Arriving at Keplerian Orbits from the Quantum Elliptic State
-description: with background image
+description:
 img:
 importance: 1
 category: 2025
