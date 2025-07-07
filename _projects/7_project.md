@@ -12,4 +12,4 @@ My Quantum Physics III class involved studying and writing a paper about a selec
 
 <p> As put in my conclusion: "However, supposing that Kepler was not interested in celestial mechanics, and no physicist after him had developed a solution to the two-body problem, we have shown that the motion of two classical bodies can be found starting from a quantum mechanical perspective."
 
-<p> The full paper can be read <em><a href="[https://drive.google.com/file/d/1Vzr2LcNpEe-kQVy9OxoxAD-pADWrHU6W/view?usp=sharing]">here</a></em> for the intrepid quantum mechanist.
+<p> The full paper can be read <a href="https://drive.google.com/file/d/1Vzr2LcNpEe-kQVy9OxoxAD-pADWrHU6W/view?usp=sharing">here</a> for the intrepid quantum mechanist.
