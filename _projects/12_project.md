@@ -10,7 +10,6 @@ related_publications: false
 
 For my numerical methods class, I studied the Fast Multipole Method (FMM). This clever technique allows for quick distance-independent calculations of far-field potential functions between many points. Envision a cluster of $$n$$ stars interacting with each other gravitationally. To calculate the gravitational potential at each star from each other star, we would ordinarily need $$\mathcal{O}\left(n^2\right)$$ operations, but with the FMM, this can be accelerated to a linear $$\mathcal{O}\left(n\right)$$ operation.
 
-
 <div class="row">
   <div style="text-align: center;">
     {% include figure.liquid loading="eager" path="assets/img/website_figure/error_figure.png" title="Error_figure" class="img-fluid rounded z-depth-0" width="450" height="auto" %}
@@ -20,6 +19,7 @@ For my numerical methods class, I studied the Fast Multipole Method (FMM). This 
   </div>
 </div>
 
+<p> If this sounds interesting, you can read my report as well as see the code I used to implement the method <a href="https://drive.google.com/file/d/1IKm5jCbkaCGbUbEIB7pB-hIkhG-VT7h8/view?usp=sharing">here</a>.
 
 
 
