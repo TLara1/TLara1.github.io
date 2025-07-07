@@ -439,7 +439,7 @@ ninja.data = [{
               window.location.href = "/projects/5_project/";
             },},{id: "projects-studying-resonance-in-exoplanet-migrations",
           title: 'Studying Resonance in Exoplanet Migrations',
-          description: "a project with no image",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
             },},{id: "projects-arriving-at-keplerian-orbits-from-the-quantum-elliptic-state",
