@@ -2,7 +2,7 @@
 layout: page
 title: NEGF simulations for Quantum Transport in Carbon Nanotubes
 description:
-img: assets/assets/img/images_website_Sawant_2024/TopgateDiagram.png
+img: assets/img/images_website_Sawant_2024/TopgateDiagram.png
 importance: 1
 category: 2024
 related_publications: false
