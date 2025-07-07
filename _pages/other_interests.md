@@ -37,8 +37,9 @@ I have climbed for almost 10 year now, focusing mostly on bouldering. Some of my
 
 <ul>
   <li>Rockspot Brookline Spooky Send-Off 2024</li>
-  <li>Benchmark Climbing Battle of the Beast 2024</li>
+  <li>Benchmark Climbing Battle of the Beast 2024 - 3rd place</li>
   <li>Central Rock Gym Harvard Ritual 2024</li>
+  <li>Central Rock Gym Harvard Summer Boulder Bash 2023 - 1st place</li>
   <li>Central Rock Gym Framingham Flaming Ham 2023</li>
 </ul>
 
@@ -72,6 +73,6 @@ I have played the clarinet for 12 years, first with the Decatur High School Wind
     My beloved 0-5 Seraphon.
 </div>
 
-In the little free time I do have, I enjoy playing games, particularly with the <a href="https://www.mit.edu/~sgs/games/games.html">MIT Strategic Game Society (SGS)</a>. My favourite board games include <em>Spirit Island</em>, <em>Oath</em>, <em>Caverna</em>, <em>Barrage</em>, <em>War of the Ring</em>, and of course, <em>Twilight Imperium</em>. I also played a good amount of <em>Warhammer: Age of Sigmar</em> back in high school, although I am less able to indulge my miniature-painting desires nowadays. I have also recently begun exploring role-playing games, hosting a <em>Dungeon World</em> campaign for my friends over the last month.
+In the little free time I do have, I enjoy playing games, particularly with the <a href="https://www.mit.edu/~sgs/games/games.html">MIT Strategic Game Society (SGS)</a>. I mainly enjoyer heavier highly-interactive games and my favourites include <em>Spirit Island</em>, <em>Oath</em>, <em>Caverna</em>, <em>Barrage</em>, <em>War of the Ring</em>, <em>Clash of Cultures</em>, and of course, <em>Twilight Imperium</em>. I also played a good amount of <em>Warhammer: Age of Sigmar</em> back in high school, although I am less able to indulge my miniature-painting desires nowadays. I have also recently begun exploring role-playing games, hosting a <em>Dungeon World</em> campaign for my friends over the last few months.
 
 ## Origami
