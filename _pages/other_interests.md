@@ -61,12 +61,12 @@ I have played the clarinet for 12 years, first with the Decatur High School Wind
 
 
 ## Board, War, and Role-Playing Games
-<div class="row">
+<div class="column">
     <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/warhammer_video/Dinos1.png" title="Seraphon 1" class="img-fluid rounded z-depth-0" %}
+        {% include figure.liquid loading="eager" path="assets/img/warhammer_video/Dinos1.png" title="Seraphon 1" class="img-fluid rounded z-depth-0" width="500" height="auto" %}
     </div>
     <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/warhammer_video/Dinos2.png" title="Seraphon 2" class="img-fluid rounded z-depth-0" %}
+        {% include figure.liquid loading="eager" path="assets/img/warhammer_video/Dinos2.png" title="Seraphon 2" class="img-fluid rounded z-depth-0" width="500" height="auto" %}
     </div>
 </div>
 <div class="caption">
