@@ -449,7 +449,7 @@ ninja.data = [{
               window.location.href = "/projects/7_project/";
             },},{id: "projects-mapping-the-milky-way-via-21cm-hydrogen-emissions",
           title: 'Mapping the Milky Way via 21cm Hydrogen Emissions',
-          description: "with background image",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
             },},{id: "projects-project-9",
