@@ -444,7 +444,7 @@ ninja.data = [{
               window.location.href = "/projects/6_project/";
             },},{id: "projects-arriving-at-keplerian-orbits-from-the-quantum-elliptic-state",
           title: 'Arriving at Keplerian Orbits from the Quantum Elliptic State',
-          description: "with background image",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
             },},{id: "projects-mapping-the-milky-way-via-21cm-hydrogen-emissions",
