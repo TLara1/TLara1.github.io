@@ -412,6 +412,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/10_project/";
+            },},{id: "projects-negf-simulations-for-qunatum-transport-in-carbon-nanotubes",
+          title: 'NEGF simulations for Qunatum Transport in Carbon Nanotubes',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/11_project/";
             },},{id: "projects-on-the-lagrange-planetary-equations",
           title: 'On the Lagrange Planetary Equations',
           description: "",
