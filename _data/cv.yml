@@ -9,12 +9,12 @@
 - title: Education
   type: time_table
   contents:
-    - title: Third Year Undergraduate
+    - title: Fourth Year Undergraduate
       institution: Massachusetts Institute of Technology, Cambridge, Massachusetts
       year: 2022 - 2026
       description:
         - Majoring in Physics and Applied Mathematics
-        - 4.9/5.0 GPA
+        - 5.0/5.0 GPA
     - title: International Baccalaureate Recipient
       institution: Decatur High School, Decatur, Georgia
       year: 2018 - 2022
@@ -24,6 +24,11 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Undergraduate Researcher with the Dunkel Group
+      institution: Massachusetts Institute of Technology
+      year: 2025
+      description:
+        - Researching the feeding efficiency of swimming jellyfish via fluid-solid simulations using IBAMR.
     - title: Undergraduate Researcher with the Kamrin Solid Modelling Group
       institution: Massachusetts Institute of Technology and University of California, Berkeley
       year: 2023 - 2025
@@ -66,11 +71,14 @@
   contents:
     - title: Physics
       items:
-        - Quantum Mechanics I, II
+        - Relativistic Quantum Field Theory
+        - Quantum Mechanics I, II, III
         - Special + General Relativity
-        - Classical Mechancis I, II
+        - Statistical Mechanics
+        - Classical Mechanics I, II
         - Experimental Physics + Radio Astronomy Laboratory
     - title: Mathematics
       items:
+        - Numerical Methods for Linear Algebra
         - Numerical Methods for PDEs
         - Real + Complex Analysis
