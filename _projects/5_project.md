@@ -3,7 +3,7 @@ layout: page
 title: Observing Walking Fluid Droplet Dynamics
 description:
 img: assets/img/Images_Figures_Videos_website_bush_22/Sample_Droplet_Bounce.png
-importance: 1
+importance: 2
 category: [2023]
 related_publications: false
 toc:
