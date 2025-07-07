@@ -1,22 +1,17 @@
 ---
 layout: page
 title: Studying Resonance in Exoplanet Migrations
-description: a project with no image
-img:
-importance: 4
+description:
+img: assets/img/Pictures-Website_Millholland2023/title_migration.jpg
+importance: 1
 category: 2023
 related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+While astronomical surveys of exoplanets can often reveal important planetary orbital behaviours, a planet's axial tilt can be just as important in studying the planet's characteristics. Earth's axial tilt for example, is responsible for seasons. This tilt is very difficult to determine observationally, but we can simulate exoplanet systems to study axial tilt evolution. 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<p> Specifically, we focused on migrating exoplanet systems with planets in resonance, as the characteristics of these planets are well known and resonance chains tend to evolve toward stable states. Migrating these planets while tracking their axial tilt vectors helps us understand the system's evolution and predict its current-day properties. We simulated these systems using the <em><a href="[https://www.mountainproject.com/area/200694491/candy-with-a-k-boulder-area](https://rebound.readthedocs.io/en/latest/)">REBOUND</a></em> N-body integrator, and my work focused specifically on the TOI-1136 system. 
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    --'
+<div style="text-align: center;">
+  {% include figure.liquid loading="eager" path="assets/img/Pictures-Website_Millholland2023/TOImigrationchart(7x7).png" title="TOI Migration Chart" class="img-fluid rounded z-depth-0" width="300" height="auto" %}
+</div>
