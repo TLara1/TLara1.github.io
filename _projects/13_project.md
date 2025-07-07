@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Submerged Eulerian Self-Contact
+title: Simulating Jellyfish Feeding Efficiency
 description:
 img: assets/img/figurespaper/Galaxy-Map-Overlap.png
 importance: 1
