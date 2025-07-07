@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Mapping the Milky Way via 21cm Hydrogen Emissions
-description: with background image
-img: assets/img/4.jpg
+description:
+img: assets/img/figurespaper/Galaxy-Map-Overlap.png
 importance: 1
 category: 2024
 related_publications: false
@@ -14,10 +14,10 @@ For strange quantum reasons, the electron in a hydrogen atom can very rarely fli
 
 <div class="row">
     <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/figures paper/Spiral_arms_onecurve.png" title="Droplet track 1" class="img-fluid rounded z-depth-0" width="auto" height="500" %}
+        {% include figure.liquid loading="eager" path="assets/img/figurespaper/Spiral_arms_onecurve.png" title="Droplet track 1" class="img-fluid rounded z-depth-0" width="auto" height="500" %}
     </div>
     <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/figures paper/galacticmap2.png" title="Galaxy Map" class="img-fluid rounded z-depth-0" width="auto" height="500" %}
+        {% include figure.liquid loading="eager" path="assets/img/figurespaper/galacticmap2.png" title="Galaxy Map" class="img-fluid rounded z-depth-0" width="auto" height="500" %}
     </div>
 </div>
 
