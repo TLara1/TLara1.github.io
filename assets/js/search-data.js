@@ -422,6 +422,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/12_project/";
+            },},{id: "projects-submerged-eulerian-self-contact",
+          title: 'Submerged Eulerian Self-Contact',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/13_project/";
             },},{id: "projects-on-the-lagrange-planetary-equations",
           title: 'On the Lagrange Planetary Equations',
           description: "",
