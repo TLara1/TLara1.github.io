@@ -30,7 +30,7 @@ Where $$h_{\mu\nu} = g_{\mu\nu} + u_\mu u_\nu$$ and $$u_\mu$$ is a 4-velocity el
 From \eqref{continuity eq}:
 
 \begin{equation}
-0 = T^{\mu\nu}_{;\nu}h _\gamma_\mu
+0 = T^{\mu\nu}_{;\nu}h _{\gamma\mu}
 \end{equation}
 
 \begin{equation}
