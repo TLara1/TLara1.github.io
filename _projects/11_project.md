@@ -18,5 +18,5 @@ During the summer of 2024, I undertook an internship at the Lawrence Berkeley Na
 
 <p> Motivated by discrepancies with experimental results, we also implemented point charges as external boundary conditions, which we demonstrated to have drastic impacts in our simulations.
 
-<p> My final report can read <a href="https://drive.google.com/file/d/16Znx879Naj6zRpNXD1cFaAO-uI8B4h6g/view?usp=sharing"> here </a>a> and my poster can be found <a href="https://drive.google.com/file/d/1KLGDdQcSs8IwyPmsHNvougbv114AbVYe/view?usp=sharing"> here </a>a>.
+<p> My final report can read <a href="https://drive.google.com/file/d/16Znx879Naj6zRpNXD1cFaAO-uI8B4h6g/view?usp=sharing"> here </a> and my poster can be found <a href="https://drive.google.com/file/d/1KLGDdQcSs8IwyPmsHNvougbv114AbVYe/view?usp=sharing"> here </a>.
 
