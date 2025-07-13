@@ -21,7 +21,7 @@ My longest continued research project involves modelling immersed solid self-con
 </div>
 
 <div style="text-align: center;">
-  {% include figure.liquid loading="eager" path="assets/img/Figures_Solidmech_Notes/assets/img/Figures_Solidmech_Notes/Accordian_snapshots_v2.png" title="Accordian snapshots" class="img-fluid rounded z-depth-0" width="auto" height="400" %}
+  {% include figure.liquid loading="eager" path="assets/img/Figures_Solidmech_Notes/Accordian_snapshots_v2.png" title="Accordian snapshots" class="img-fluid rounded z-depth-0" width="auto" height="400" %}
 </div>
 
 <p> We have published <a href="https://www.sciencedirect.com/science/article/abs/pii/S0045782525000179?via%3Dihub"> one publication</a> related to this work, and are currently working to extend our formalism to involve frictional contacts. 
