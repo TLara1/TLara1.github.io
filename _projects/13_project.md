@@ -13,6 +13,6 @@ My current work is with the Dunkel Applied Math group, doing research as part of
 <p> The idea behind our work is to find the optimal efficiency of jellyfish feeding by comparing the food intake and the power expended by jellyfish that scoop food into their mouths while swimming. We predict that jellyfish living at different scales will need to adopt distinct feeding patterns to most efficiently consume food. 
 
 <div style="text-align: center;">
-  {% include figure.liquid loading="eager" path="assets/img/Pictures_Website_Jellyfish/Jellyswim2.png" title="Jellyfish Swimming" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
+  {% include figure.liquid loading="eager" path="assets/img/Pictures_Website_Jellyfish/Jellyswim2.png" title="Jellyfish Swimming" class="img-fluid rounded z-depth-0" width="auto" height="400" %}
 </div>
 
