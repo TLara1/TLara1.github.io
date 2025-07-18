@@ -431,6 +431,11 @@ ninja.data = [{
           title: 'On the Lagrange Planetary Equations',
           description: "",
           section: "Projects",handler: () => {
+              window.location.href = "/projects/14_project/";
+            },},{id: "projects-on-the-lagrange-planetary-equations",
+          title: 'On the Lagrange Planetary Equations',
+          description: "",
+          section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-on-the-precession-of-mercury-39-s-perihelion",
           title: 'On the Precession of Mercury&amp;#39;s Perihelion',
