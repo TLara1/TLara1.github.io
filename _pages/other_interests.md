@@ -80,10 +80,10 @@ In middle and high school, I did a good amount of origami, even designing my own
 
 <div class="row">
     <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Pictures_climbing/hospital_boulders.jpg" title="Mega Man" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
+        {% include figure.liquid loading="eager" path="assets/img/AnárionFront.JPG" title="Anarion" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
     </div>
     <div class="caption">
-      My beloved 0-5 Seraphon.
+      _Anárion_, 2022. Original model done with 48x48 box pleating. 
     </div>
     <div class="col-sm mt-2 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/Pictures_climbing/Finals (81 of 311).jpg" title="Framingham Finals" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
