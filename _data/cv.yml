@@ -54,7 +54,7 @@
   type: nested_list
 
 - title: Conference Attendances
-type: time_table
+  type: time_table
 
 - title: Honours and Awards
   type: time_table
