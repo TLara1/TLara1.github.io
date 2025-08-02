@@ -28,31 +28,43 @@
       institution: Massachusetts Institute of Technology
       year: 2025
       description:
-        - Researching the feeding efficiency of swimming jellyfish via fluid-solid simulations using IBAMR.
+        - Developing high-fidelity fluid–structure interaction simulations in IBAMR to analyse jellyfish propulsion and feeding efficiency.
     - title: Undergraduate Researcher with the Kamrin Solid Modelling Group
       institution: Massachusetts Institute of Technology and University of California, Berkeley
       year: 2023 - 2025
       description:
-        - Researching Eulerian methods for contact interactions of soft elastic bodies in fluids using reference map techniques.
-    - title: SULI Summer Research Intern 
-      institution: Lawrence Berkeley National Laboratory Center of Computational Engineering
+        - Creating advanced Eulerian computational frameworks to model soft solid–fluid interactions using reference map techniques.
+    - title: Student Undergraduate Laboratory Internship (SULI) Student Researcher
+      institution: Lawrence Berkeley National Laboratory Centre of Computational Engineering
       year: 2024
       description:
         - Implemented Non-Equilibrium-Green’s Function (NEGF) formalism to simulate quantum transport in carbon nanotubes.
     - title: Undergraduate Researcher with the Millholland Group
-      institution: Massachusetts Institute of Technology Kavli Institue
+      institution: Massachusetts Institute of Technology Kavli Institute
       year: 2022 - 2023
       description:
-        - Studied exoplanet resonance chains and obliquity sculpting during planetary migration periods using the REBOUNDx n-body integrator.
+        - Investigated planetary system dynamics by modelling exoplanet resonance chains and obliquity evolution during migration phases using the REBOUNDx n-body integrator.
     - title: Undergraduate Researcher with the Bush Applied Mathematics Group
       institution: Massachusetts Institute of Technology
       year: 2022 - 2023
       description:
-        - Programmed deep-learning image recognition program to track the movement of fluid droplets in “walking” droplet experiments to obtain both overhead and vertical dynamics.
+        - Formulated a deep-learning image recognition pipeline to track and analyse trajectories of fluid droplets in “walking droplet” hydrodynamics experiments.
+        
+- title: Publications
+  type: nested_list
 
-- title: Honors and Awards
+- title: Conference Attendances
+type: time_table
+
+- title: Honours and Awards
   type: time_table
   contents:
+    - year: 2025
+      items:
+        - MIT Mathematics Department Summer Program for Undergraduate Research (SPUR) Participant
+    - year: 2024
+      items:
+        - John Reed UROP Fund Recipient
     - year: 2024
       items:
         - Paul E. Gray UROP Fund Recipient
@@ -62,10 +74,16 @@
     - year: 2022
       items:
         - Georgia Scholar Honoree
+    - year: 2022
+      items:
+        - College Board Hispanic Recognition Award
     - year: 2021
       items:
-        - Hispanic Scholarship Fund Scholar   
-
+        - HSF Youth Leadership Institute Participant and Scholar
+    - year: 2021
+      items:
+        - Georgia Certificate of Merit
+        
 - title: Relevant Coursework
   type: nested_list
   contents:
