@@ -61,18 +61,19 @@ I have played the clarinet for 12 years, first with the Decatur High School Wind
 
 
 ## Board, War, and Role-Playing Games
-<div class="column">
-    <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/warhammer_video/Dinos1.png" title="Seraphon 1" class="img-fluid rounded z-depth-0" width="500" height="auto" %}
-    </div>
-    <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/warhammer_video/Dinos2.png" title="Seraphon 2" class="img-fluid rounded z-depth-0" width="500" height="auto" %}
-    </div>
-</div>
+<div style="text-align: center;">
+      {% include figure.liquid loading="eager" path="assets/img/warhammer_video/Dinos1.png" title="Seraphon 1" class="img-fluid rounded z-depth-0" width="500" height="auto" %}
+</div>  
+<div style="text-align: center;">
+      {% include figure.liquid loading="eager" path="assets/img/warhammer_video/Dinos2.png" title="Seraphon 1" class="img-fluid rounded z-depth-0" width="500" height="auto" %}
+</div>  
 <div class="caption">
     My beloved 0-5 Seraphon.
 </div>
 
+<div align="justify">
 In the little free time I do have, I enjoy playing games, particularly with the <a href="https://www.mit.edu/~sgs/games/games.html">MIT Strategic Game Society (SGS)</a>. I mainly enjoyer heavier highly-interactive games and my favourites include <em>Spirit Island</em>, <em>Oath</em>, <em>Caverna</em>, <em>Barrage</em>, <em>War of the Ring</em>, <em>Clash of Cultures</em>, and of course, <em>Twilight Imperium</em>. I also played a good amount of <em>Warhammer: Age of Sigmar</em> back in high school, although I am less able to indulge my miniature-painting desires nowadays. I have also recently begun exploring role-playing games, hosting a <em>Dungeon World</em> campaign for my friends over the last few months.
+</div>
 
 ## Origami
+In middle and high school I did a good amount of origami. 
