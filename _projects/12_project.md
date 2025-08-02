@@ -3,7 +3,7 @@ layout: page
 title: Investigating the Fast Multipole Method (FMM)
 description:
 img: assets/img/website_figure/figureA_B.png
-importance: 1
+importance: 3
 category: 2025
 related_publications: false
 ---
