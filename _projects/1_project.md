@@ -2,7 +2,7 @@
 layout: page
 title: On the Lagrange Planetary Equations
 description:
-img: assets/img/Lagrage_planetary.png
+img: 
 importance: 1
 category: Physics
 related_publications: false
