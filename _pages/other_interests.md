@@ -101,6 +101,3 @@ In middle and high school, I did a good amount of origami, even designing my own
 <div class="caption">
     (Left) Origami Exhibition at my local library 2022. (Right) Origami Exhibition at my high school 2022. 
 </div>
-
-</div>
-
