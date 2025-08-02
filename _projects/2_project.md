@@ -2,7 +2,7 @@
 layout: page
 title: On the Precession of Mercury's Perihelion
 description:
-img: assets/img/mercury_precession.png
+img: 
 importance: 2
 category: Physics
 giscus_comments: false
