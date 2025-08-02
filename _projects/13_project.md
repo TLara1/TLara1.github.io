@@ -23,5 +23,5 @@ My project report can be found <a href="https://drive.google.com/file/d/1wSpSQzP
   {% include figure.liquid loading="eager" path="assets/img/Pictures_Website_Jellyfish/visualize_4_panel_cbar.png" title="Jellyfish Swimming" class="img-fluid rounded z-depth-0" width="auto" height="400" %}
 </div>
 <div class="caption">
-    _C. Hemisphaerica_ swimming.
+    <em>C. Hemisphaerica</em> swimming.
 </div>
