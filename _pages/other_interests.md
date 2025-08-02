@@ -72,8 +72,26 @@ I have played the clarinet for 12 years, first with the Decatur High School Wind
 </div>
 
 <div align="justify">
-In the little free time I do have, I enjoy playing games, particularly with the <a href="https://www.mit.edu/~sgs/games/games.html">MIT Strategic Game Society (SGS)</a>. I mainly enjoyer heavier highly-interactive games and my favourites include <em>Spirit Island</em>, <em>Oath</em>, <em>Caverna</em>, <em>Barrage</em>, <em>War of the Ring</em>, <em>Clash of Cultures</em>, and of course, <em>Twilight Imperium</em>. I also played a good amount of <em>Warhammer: Age of Sigmar</em> back in high school, although I am less able to indulge my miniature-painting desires nowadays. I have also recently begun exploring role-playing games, hosting a <em>Dungeon World</em> campaign for my friends over the last few months.
+In the little free time I do have, I enjoy playing games, particularly with the <a href="https://www.mit.edu/~sgs/games/games.html">MIT Strategic Game Society (SGS)</a>. I mainly enjoyer heavier highly-interactive games and my favourites include <em>Spirit Island</em>, <em>Oath</em>, <em>Caverna</em>, <em>Barrage</em>, <em>War of the Ring</em>, <em>Clash of Cultures</em>, and of course, <em>Twilight Imperium</em>. I also played a good amount of <em>Warhammer: Age of Sigmar</em> back in high school, although I am less able to indulge my miniature-painting desires nowadays (although rumours have it, I am becoming interested in _Trench Crusade_). I have also recently begun exploring role-playing games, hosting a <em>Dungeon World</em> campaign for my friends over the last few months.
 </div>
 
 ## Origami
-In middle and high school I did a good amount of origami. 
+In middle and high school, I did a good amount of origami, even designing my own models. I did a few exhibitions at my high school and library, but these days I'm afraid I have not the time. Someday, I may go back to relearn some paper folding, but for now my works remain a pleasant memory of simpler, less busy times. 
+
+<div class="row">
+    <div class="col-sm mt-2 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/Pictures_climbing/hospital_boulders.jpg" title="Mega Man" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
+    </div>
+    <div class="caption">
+      My beloved 0-5 Seraphon.
+    </div>
+    <div class="col-sm mt-2 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/Pictures_climbing/Finals (81 of 311).jpg" title="Framingham Finals" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
+    </div>
+    <div class="caption">
+    My beloved 0-5 Seraphon.
+    </div>
+</div>
+
+</div>
+
