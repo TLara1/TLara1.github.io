@@ -60,7 +60,7 @@
   contents:
     - year: 2025
       items:
-        - USNCCM18 Conference, Speaker and Poster: <em>Unified Eulerian method for fluid-immersed self- and multi-body solid contact</em>
+        - USNCCM18 Conference, Speaker and Poster: "Unified Eulerian method for fluid-immersed self- and multi-body solid contact"
 
 - title: Honours and Awards
   type: time_table
