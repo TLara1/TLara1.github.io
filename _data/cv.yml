@@ -25,26 +25,31 @@
   type: time_table
   contents:
     - title: Undergraduate Researcher with the Dunkel Group
+      Faculty Supervisor: Jörn Dunkel
       institution: Massachusetts Institute of Technology
       year: 2025
       description:
         - Developing high-fidelity fluid–structure interaction simulations in IBAMR to analyse jellyfish propulsion and feeding efficiency.
     - title: Undergraduate Researcher with the Kamrin Solid Modelling Group
+      Faculty Supervisor: Ken Kamrin
       institution: Massachusetts Institute of Technology and University of California, Berkeley
       year: 2023 - 2025
       description:
         - Creating advanced Eulerian computational frameworks to model soft solid–fluid interactions using reference map techniques.
     - title: Student Undergraduate Laboratory Internship (SULI) Student Researcher
+      Faculty Supervisor: Saurabh Sawant and Andy Nonaka
       institution: Lawrence Berkeley National Laboratory Centre of Computational Engineering
       year: 2024
       description:
         - Implemented Non-Equilibrium-Green’s Function (NEGF) formalism to simulate quantum transport in carbon nanotubes.
     - title: Undergraduate Researcher with the Millholland Group
+      Faculty Supervisor: Sarah Millholland
       institution: Massachusetts Institute of Technology Kavli Institute
       year: 2022 - 2023
       description:
         - Investigated planetary system dynamics by modelling exoplanet resonance chains and obliquity evolution during migration phases using the REBOUNDx n-body integrator.
     - title: Undergraduate Researcher with the Bush Applied Mathematics Group
+      Faculty Supervisor: Bauyrzhan Primkulov
       institution: Massachusetts Institute of Technology
       year: 2022 - 2023
       description:
@@ -55,6 +60,10 @@
 
 - title: Conference Attendances
   type: time_table
+  contents:
+    - year: 2025
+      items:
+        - USNCCM18 Conference, Speaker and Poster: <em>Unified Eulerian method for fluid-immersed self- and multi-body solid contact</em>
 
 - title: Honours and Awards
   type: time_table
