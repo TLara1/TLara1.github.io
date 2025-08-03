@@ -54,9 +54,6 @@
       year: 2022 - 2023
       description:
         - Formulated a deep-learning image recognition pipeline to track and analyse trajectories of fluid droplets in “walking droplet” hydrodynamics experiments.
-        
-- title: Publications
-  type: nested_list
 
 - title: Conference Attendances
   type: time_table
