@@ -25,3 +25,5 @@ My longest continued research project involves modelling immersed solid self-con
 </div>
 
 <p> We have published <a href="https://www.sciencedirect.com/science/article/abs/pii/S0045782525000179?via%3Dihub"> one publication</a> related to this work, and are currently working to extend our formalism to involve frictional contacts. 
+
+<p> I recently presented my work at the USNCCM18 Conference in Chicago, Illinois. My presentation can be found <a href="https://docs.google.com/presentation/d/1tAO3QS8aAjAiHbTJm3rTAeqcX5P3auQOAXWGJ3dWSbY/edit?usp=sharing"> here</a>.
