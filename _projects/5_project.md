@@ -20,7 +20,7 @@ Over the summer of 2023, I spent the majority of my days in the Bush Applied Mat
 
 <div class="row">
     <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Images_Figures_Videos_website_bush_22/Untitled(1).png" title="Droplet track 1" class="img-fluid rounded z-depth-0" width="400" height="auto" %}
+        {% include figure.liquid loading="eager" path="assets/img/Images_Figures_Videos_website_bush_22/Untitled(1).png" title="Droplet track 1" class="img-fluid rounded z-depth-0" width="450" height="auto" %}
     </div>
     <div class="col-sm mt-2 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/Images_Figures_Videos_website_bush_22/Untitled.png" title="Droplet track 2" class="img-fluid rounded z-depth-0" width="400" height="auto" %}
