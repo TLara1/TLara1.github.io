@@ -42,6 +42,7 @@ I have climbed for almost 10 years now, focusing mostly on bouldering. Some of m
   <li>Central Rock Gym Harvard Summer Boulder Bash 2023 - 1st place</li>
   <li>Central Rock Gym Framingham Flaming Ham 2023</li>
 </ul>
+</div>
 
 ## Clarinet Playing
 <div style="text-align: center;">
@@ -58,7 +59,6 @@ I have played the clarinet for 12 years, first with the Decatur High School Wind
 <div align="justify">
     My favourite pieces include Crussel's Third Clarinet Concerto Op. 11, Busoni's Clarinet Concertino Op. 47, Cavallini's <em>Adagio e Tarantella</em>, and Weber's Clarinet Concertino Op. 26.
 </div>
-
 
 ## Board, War, and Role-Playing Games
 <div style="text-align: center;">
