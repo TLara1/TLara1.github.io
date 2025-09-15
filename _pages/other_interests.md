@@ -33,16 +33,17 @@ I have climbed for almost 10 years now, focusing mostly on bouldering. Some of m
   <li><em>Golden Harvest V10</em>, Rocktown, GA</li>
 </ul>
 
-<p>I also occasionally partake in local climbing competitions. Over the last two years, I have ended as a finalist in these competitions:</p>
+<p>I also occasionally partake in local climbing competitions. Over the last two years, I have been a finalist in these competitions:</p>
 
 <ul>
-  <li>Rockspot Brookline Spooky Send-Off 2024</li>
+  <li>Rockspot Brookline Spooky Send-Off 2024 - 5th place</li>
   <li>Benchmark Climbing Battle of the Beast 2024 - 3rd place</li>
-  <li>Central Rock Gym Harvard Ritual 2024</li>
+  <li>Central Rock Gym Harvard Ritual 2024 - 6th place</li>
   <li>Central Rock Gym Harvard Summer Boulder Bash 2023 - 1st place</li>
-  <li>Central Rock Gym Framingham Flaming Ham 2023</li>
+  <li>Central Rock Gym Framingham Flaming Ham 2023 - 6th place</li>
 </ul>
-</div>
+
+<p>I also do a dangerously high amount of Moonboarding, having completed 489 benchmarks. I am ranked 62nd in the United States in the Moonboard rankings, a testament to my love of 40-degree crimp ladders.</p>
 
 ## Clarinet Playing
 <div style="text-align: center;">
