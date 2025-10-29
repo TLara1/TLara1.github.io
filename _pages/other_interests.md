@@ -33,7 +33,7 @@ I have climbed for almost 10 years now, focusing mostly on bouldering. Some of m
   <li><em>Golden Harvest V10</em>, Rocktown, GA</li>
 </ul>
 
-<p>I also occasionally partake in local climbing competitions. Over the last two years, I have been a finalist in these competitions:</p>
+<p>I also occasionally partake in local climbing competitions. Over the last few years, I have been a finalist in these competitions:</p>
 
 <ul>
   <li>Rockspot Brookline Spooky Send-Off 2024 - 5th place</li>
@@ -43,7 +43,7 @@ I have climbed for almost 10 years now, focusing mostly on bouldering. Some of m
   <li>Central Rock Gym Framingham Flaming Ham 2023 - 6th place</li>
 </ul>
 
-<p>I also do a dangerously high amount of Moonboarding, having completed 489 benchmarks. I am ranked 62nd in the United States in the Moonboard rankings, a testament to my love of 40-degree crimp ladders.</p>
+<p>I also do a dangerously high amount of Moonboarding, having completed 491 benchmark problems. I am ranked 62nd in the United States in the Moonboard rankings, a testament to my love of 40-degree crimp ladders. I also do a good amount of setting on CRG Cambridge's new spray wall, which is good fun!</p>
 
 ## Clarinet Playing
 <div style="text-align: center;">
@@ -54,7 +54,7 @@ I have climbed for almost 10 years now, focusing mostly on bouldering. Some of m
 </div>
 
 <div align="justify">
-I have played the clarinet for 12 years, first with the Decatur High School Wind Ensemble and currently with the MIT Wind Ensemble. In high school, I played with the Georgia District Honour band, and more recently, I played for two years with the <a href="https://www.youtube.com/channel/UCVtU0-ALytaxlR68Tv8xZ2g">MIT Video Game Orchestra (VGO)</a>. I also occasionally play with chamber groups such as the <a href="https://ribotones.mit.edu">MIT Ribotones</a>, a group of MIT students who perform in retirement homes in the Boston and Cambridge area.
+I have played the clarinet for 12 years, first with the Decatur High School Wind Ensemble and currently with the <a href="https://mta.mit.edu/music/performance/mit-wind-ensemble">MIT Wind Ensemble</a>. In high school, I played with the Georgia District Honour band, and more recently, I played for two years with the <a href="https://www.youtube.com/channel/UCVtU0-ALytaxlR68Tv8xZ2g">MIT Video Game Orchestra (VGO)</a>. I also occasionally play with chamber groups such as the <a href="https://ribotones.mit.edu">MIT Ribotones</a>, a group of MIT students who perform in retirement homes in the Boston and Cambridge area.
 </div>
 
 <div align="justify">
@@ -73,7 +73,7 @@ I have played the clarinet for 12 years, first with the Decatur High School Wind
 </div>
 
 <div align="justify">
-In the little free time I do have, I enjoy playing games, particularly with the <a href="https://www.mit.edu/~sgs/games/games.html">MIT Strategic Game Society (SGS)</a>. I mainly enjoyer heavier highly-interactive games and my favourites include <em>Spirit Island</em>, <em>Oath</em>, <em>Caverna</em>, <em>Barrage</em>, <em>War of the Ring</em>, <em>Clash of Cultures</em>, and of course, <em>Twilight Imperium</em>. I also played a good amount of <em>Warhammer: Age of Sigmar</em> back in high school, although I am less able to indulge my miniature-painting desires nowadays (although rumours have it, I am becoming interested in <em>Trench Crusade</em>). I have also recently begun exploring role-playing games, hosting a <em>Dungeon World</em> campaign for my friends over the last few months. I wish I could say I play <em>Magic: The Gathering</em>; I mostly read articles on the meta of CEDH and watch LSV's Vintage Cube drafts. 
+In the little free time I do have, I enjoy playing board games, particularly with the <a href="https://www.mit.edu/~sgs/games/games.html">MIT Strategic Game Society (SGS)</a>. I mainly enjoyer heavier interactive games and my favourites include <em>Spirit Island</em>, <em>Oath</em>, <em>Caverna</em>, <em>Barrage</em>, <em>War of the Ring</em>, <em>Clash of Cultures</em>, and of course, <em>Twilight Imperium</em>. I also played a good amount of <em>Warhammer: Age of Sigmar</em> back in high school. I was quite fond of my little plastic dinosuar army and the angry dwarf who accompanied them, although I was never too good at actually playing the game. Unfortunately, nowadays I am much less able to indulge in my miniature-painting pursuits (although rumours have it, I am becoming interested in <em>Trench Crusade</em>). I have also explored tabletop role-playing games, hosting a <em>Dungeon World</em> campaign for my friends over the last year. I wish I could say I played <em>Magic: The Gathering</em>, but I mostly just read articles on the CEDH meta and watch LSV's force artifacts in Vintage Cube. 
 </div>
 
 ## Origami
