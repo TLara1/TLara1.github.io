@@ -52,7 +52,7 @@ I have climbed for almost 10 years now, focusing mostly on bouldering. Some of m
   <li>Central Rock Gym Framingham Flaming Ham 2023 - 6th place</li>
 </ul>
 
-<p>I also do a dangerously high amount of Moonboarding, having completed 491 benchmark problems. I am ranked 62nd in the United States in the Moonboard rankings, a testament to my love of 40-degree crimp ladders. I also do a good amount of setting on CRG Cambridge's new spray wall, which is good fun!</p>
+<p>I also do a dangerously high amount of Moonboarding, having completed 496 benchmark problems. I am ranked 62nd in the United States in the Moonboard rankings, a testament to my love of 40-degree crimp ladders. I also do a good amount of setting on CRG Cambridge's new spray wall, which is good fun!</p>
 
 ## Clarinet Playing
 <div style="text-align: center;">
