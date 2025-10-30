@@ -21,6 +21,15 @@ toc:
     </div>
 </div>
 
+<div class="row">
+    <div class="col-sm mt-2 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/Pictures_climbing/crg_classic.png" title="Climbing at the Cambridge Classic" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
+    </div>
+    <div class="col-sm mt-2 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/Pictures_climbing/stasis.png" title="Stasis" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
+    </div>
+</div>
+
 I have climbed for almost 10 years now, focusing mostly on bouldering. Some of my notable ascents include:
 
 <ul>
