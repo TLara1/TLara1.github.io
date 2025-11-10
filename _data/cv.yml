@@ -106,3 +106,27 @@
         - Numerical Methods for Linear Algebra
         - Numerical Methods for PDEs
         - Real + Complex Analysis
+
+- title: Leadership and Extracurriculars
+  type: time_table
+  contents:
+    - title: President of MIT French House Living Group
+      year: 2025
+      description:
+        - Leading a 40-member residential community, overseeing operations, budgeting, event planning, and house engagement. 
+    - title: Treasurer of MIT Strategic Game Society
+      year: 2025
+      description:
+        - Managing and allocating funds for club operations, events, and new game acquisitions. 
+    - title: MIT Climbing Team Captain/Coach
+      year: 2023-2025
+      description:
+        - Directed practices, mentored team members, and coordinated logistics for competitions and training programs every week. 
+    - title: Arranging Chair of MIT Video Game Orchestra (VGO)
+      year: 2022 - 2024
+      description:
+        - Curated musical arrangements and helped organize concerts for MIT’s largest student-run orchestral musical group. 
+    - title: Executive Member of OrigaMIT
+      year: 2022 - 2023
+      description:
+        - Planned and executed club meetings and events, including the 2022 OrigaMIT Convention, featuring 100+ attendees and dozens of workshops. 
