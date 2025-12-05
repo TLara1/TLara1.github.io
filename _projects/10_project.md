@@ -5,7 +5,7 @@ description:
 img: assets/img/Figures_Solidmech_Notes/matlab_psi_examples.png
 importance: 2
 category: 2025
-related_publications: false
+related_publications: true
 ---
 
 My longest continued research project involves modelling immersed solid self-contact in an entirely Eulerian framework. Most fluid-structure interaction formalisms model fluid and solid regions as distinct entities, usually using a fixed Eulerian grid for the former and a set of evolving Lagrangian points for the latter. Our method is entirely Eulerian, placing the fluid and solid on equal footing on a constant grid. This is advantageous in its simplicity and efficiency, but with only one universal velocity field, simulating solid contacts is tricky. Specifically, solid self-contacts are complicated as solids cannot "see" themselves and have no natural way to prevent self-penetration.
