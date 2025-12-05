@@ -5,7 +5,7 @@ description:
 img: assets/img/Pictures-Website_Millholland2023/title_migration.jpg
 importance: 1
 category: 2023
-related_publications: false
+related_publications: true
 ---
 
 While astronomical surveys of exoplanets can often reveal important planetary orbital behaviours, a planet's axial tilt can be just as important in studying the planet's characteristics. Earth's axial tilt for example, is responsible for seasons. This tilt is very difficult to determine observationally, but we can simulate exoplanet systems to study axial tilt evolution. During my freshman summer, I worked with <a href="https://sarahmillholland.com/"> Professor Sarah Millholland</a> to study the axial tilt evolution of exoplanets. 
