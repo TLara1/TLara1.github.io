@@ -433,7 +433,7 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/14_project/";
             },},{id: "projects-a-simplified-model-for-flapping-flag-dynamics",
-          title: 'A simplified Model for Flapping Flag Dynamics',
+          title: 'A Simplified Model for Flapping Flag Dynamics',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/15_project/";
