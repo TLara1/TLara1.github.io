@@ -432,6 +432,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/14_project/";
+            },},{id: "projects-a-simplified-model-for-flapping-flag-dynamics",
+          title: 'A simplified Model for Flapping Flag Dynamics',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/15_project/";
             },},{id: "projects-on-the-lagrange-planetary-equations",
           title: 'On the Lagrange Planetary Equations',
           description: "",
