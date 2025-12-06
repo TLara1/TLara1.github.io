@@ -17,4 +17,6 @@ Field theory for fluid beyond just stokes flow
 
 flag flapping 3d more realistic
 
+field theory for classical gravity? as in perturbative expansion in low mass ratio?
+
 simulating tentacles for swimming, thin boundaries with contact/self contact
