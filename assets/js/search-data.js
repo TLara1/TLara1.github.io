@@ -437,6 +437,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/15_project/";
+            },},{id: "projects-on-the-schwarzchild-and-kerr-metrics",
+          title: 'On the Schwarzchild and Kerr Metrics',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/16_project/";
             },},{id: "projects-on-the-lagrange-planetary-equations",
           title: 'On the Lagrange Planetary Equations',
           description: "",
