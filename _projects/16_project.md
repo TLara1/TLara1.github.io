@@ -64,7 +64,7 @@ Now define $$\beta=\psi+\nu$$, and calculating the difference of $$G_{22}$$ and 
 e^{\mu_3-\mu_2}\left(\partial_r\left(\nu-\mu_2-\mu_3\right)\partial_r\nu+\partial_r^2\beta+\partial_r\left(\psi-\mu_2-\mu_3\right)\partial_r\psi\right)-e^{\mu_2-\mu_3}\left(\partial_\theta\left(\nu-\mu_2-\mu_3\right)\partial_\theta\nu+\partial_\theta^2\beta+\partial_\theta\left(\psi-\mu_2-\mu_3\right)\partial_\theta\psi\right)=0
 \end{equation}
 which we rewrite as
-\begin{equation}
+\begin{equation}\label{long beta eq}
 e^{-\beta}\left(\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\beta\right)-\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\beta\right)\right)=2e^{\mu_3-\mu_2}\left(\partial_r\beta\partial_r\mu_3+\partial_r\psi\partial_r\nu\right)-2e^{\mu_2-\mu_3}\left(\partial_\theta\beta\partial_\theta\mu_2+\partial_\theta\psi\partial_\theta\nu\right)
 \end{equation}
 We can rewrite $$R_{00}$$ and $$R_{11}$$ as
@@ -110,4 +110,8 @@ which we can express as
 \end{equation}
 \begin{equation}
 0=\chi\left(\partial_r\left(\Delta\partial_r\chi\right)+\partial_\mu\left(\delta\partial_\mu\left(\chi\right)\right)\right)=\Delta\left(\partial_r\chi\right)^2+\delta\left(\partial_\mu\chi\right)^2
+\end{equation}
+We can also write \ref{long beta eq} with these new definitions
+\begin{equation}
+\frac{1}{2\sqrt{\Delta}}\left(\partial_r^2\Delta-\partial_\mu^2\delta\right)=2\sqrt{\Delta}\left(\partial_r\beta\partial_r\mu_3+\partial_r\psi\partial_r\nu\right)-2e^{\mu_2-\mu_3}\left(\partial_\theta\beta\partial_\theta\mu_2+\partial_\theta\psi\partial_\theta\nu\right)
 \end{equation}
