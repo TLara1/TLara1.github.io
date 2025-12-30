@@ -35,7 +35,7 @@ In vacua, Einstein's field equations are $$G_{\mu\nu}=0$$ which implies $$R_{\mu
 
 ## II. The Schwarzschild Solution
 
-The Schwarzschild metric is the exact solution to the Einstein field equations for the gravitational field outside a spherical mass with no angular momentum. We work in spherical coordinates $$t,r,\theta,\phi$$. Due to a static solution and rotational and azimuthal invariance, we expect our metric to be invariant under $$t\rightarrow-t$$, $$\theta\rightarrow-\theta$$, and $$\phi\rightarrow-\phi$$, which removes off-diagonal terms from our metric. Furthermore, due to spherical symmetry, our metric should only depend on $$r$$. Our line element is
+The Schwarzschild metric is the exact solution to the Einstein field equations for the gravitational field outside a spherical mass with no angular momentum. We work in spherical coordinates $$t,r,\theta,\phi$$. Due to a static solution and rotational and azimuthal invariance, we expect our metric to be invariant under $$t\rightarrow-t$$, $$\theta\rightarrow-\theta$$, and $$\phi\rightarrow-\phi$$, which removes off-diagonal terms from our metric. Furthermore, due to spherical symmetry, our metric should only depend on $$r$$ and $$\theta$$. Our line element is
 \begin{equation}
 ds^2=g_ttd_t^2+g_rrdr^2+g_{\theta\theta}d\theta^2+g_{\phi\phi}d\phi^2
 \end{equation}
@@ -43,5 +43,10 @@ which we rewrite as
 \begin{equation}
 ds^2=-e^{2\nu}dt^2+e^{2\mu_2}dr^2+e^{2\mu_3}d\theta^2+e^{2\psi}d\phi^2
 \end{equation}
+where $$\nu$$, $$\mu_2$$, $$\mu_3$$, and $$\psi$$ are functions of $$r$$ and $$\theta$$.
 
+Now the Ricci tensor has six nonzero elements, of which $$R_{00}$$ and $$R_{11}$$ are of interest. Setting these to zero yields
+\begin{equation}
+R_{00}=0\rightarrow e^{\mu_3-\mu_2}\left(\partial_r\right)
+\end{equation}
 
