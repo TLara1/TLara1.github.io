@@ -56,5 +56,8 @@ The important componenets of the Einstein tensor are $$G_{22}$$ and $$G_{33}$$.
 \begin{equation}
 G_{22}=e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\mu_3\right)\partial_r\nu+\partial_r\mu_3\partial_r\psi\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu-\mu_3\right)\partial_\theta\nu+\partial_\theta^2\left(\nu+\psi\right)+\partial_\theta\left(\psi-\mu_3\right)\partial_\theta\psi\right)=0
 \end{equation}
-
+\begin{equation}
+G_{33}=e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\mu_2\right)\partial_\theta\nu+\partial_\theta\mu_2\partial_\theta\psi\right)+e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu-\mu_2\right)\partial_r\nu+\partial_r^2\left(\nu+\psi\right)+\partial_r\left(\psi-\mu_2\right)\partial_r\psi\right)=0
+\end{equation}
+Now define $$\beta=\psi+\nu$$, and calculating the difference of $$G_{22}$$ and $$G_{33}$$
 
