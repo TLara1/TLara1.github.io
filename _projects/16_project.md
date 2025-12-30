@@ -104,3 +104,10 @@ with $$\mu=\cos\left(\theta\right)$$ and $$\delta=1-\mu^2=\sin^2\left(\theta\rig
 \begin{equation}
 0=\partial_r\left(\Delta\partial_r\left(\nu-\psi\right)\right)+\partial_\mu\left(\delta\partial_\mu\left(\nu-\psi\right)\right)
 \end{equation}
+which we can express as
+\begin{equation}
+0=\partial_r\left(\frac{Delta}{\chi}\partial_r\chi\right)+\partial_\mu\left(\frac{\delta}{\chi}\partial_\mu\left(\chi\right)\right)
+\end{equation}
+\begin{equation}
+0=\chi\left(\partial_r\left(\Delta\partial_r\chi\right)+\partial_\mu\left(\delta\partial_\mu\left(\chi\right)\right)\right)=\Delta\left(\partial_r\chi\right)^2+\delta\left(\partial_\mu\chi\right)^2
+\end{equation}
