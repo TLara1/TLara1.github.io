@@ -75,7 +75,7 @@ We can rewrite $$R_{00}$$ and $$R_{11}$$ as
 0=\partial_\theta\left(e^{\beta+\mu_3-\mu_2}\partial_r\psi\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\psi\right)
 \end{equation}
 and adding and subtracting these two equations
-\begin{equation}
+\begin{equation}\label{beta eq 1}
 0=\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\beta\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\beta\right)
 \end{equation}
 \begin{equation}
@@ -84,5 +84,14 @@ and adding and subtracting these two equations
 Defining $$\chi=e^{\nu-\psi}$$, we obtain
 \begin{equation}
 0=\partial_r\left(e^{3\psi-\nu+\mu_3-\mu_2}\partial_r\left(\chi^2\right)\right)+\partial_\theta\left(e^{3\psi-\nu+\mu_2-\mu_3}\partial_\theta\left(\chi^2\right)\right)
+\end{equation}
+
+Now we now there exists a null surface $$N(r,\theta)$$ such that $$g^{\nu\mu}N_\nuN_\mu=0$$. For our ansatz, this reduces to
+\begin{equation}
+e^{2\mu_3-2\mu_2}\left(\partial_rN\right)^2+\left(\partial_\theta N\right)^2=0
+\end{equation}
+Now we chose $$e^{2\mu_3-2\mu_2}=\Delta\left(r\right)$$, and seperate $$e^\beta=\sqrt{\Delta(r)}f(\theta)$$. Inserting these two functions into \ref{beta eq 1}
+\begin{equation}
+
 \end{equation}
 
