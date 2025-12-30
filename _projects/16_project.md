@@ -47,6 +47,10 @@ where $$\nu$$, $$\mu_2$$, $$\mu_3$$, and $$\psi$$ are functions of $$r$$ and $$\
 
 Now the Ricci tensor has six nonzero elements, of which $$R_{00}$$ and $$R_{11}$$ are of interest. Setting these to zero yields
 \begin{equation}
-R_{00}=0\rightarrow e^{\mu_3-\mu_2}\left(\partial_r\right)
+R_{00}=0\rightarrow e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu+\mu_3-\mu_2\right)\partial_r\nu+\partial_r^2\nu\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu+\mu_2-\mu_3\right)\partial_\theta\nu+\partial_\theta^2\nu\right)
 \end{equation}
+\begin{equation}
+R_{11}=0\rightarrow e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu+\mu_3-\mu_2\right)\partial_r\psi+\partial_r^2\psi\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu+\mu_2-\mu_3\right)\partial_\theta\psi+\partial_\theta^2\psi\right)
+\end{equation}
+
 
