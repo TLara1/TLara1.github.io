@@ -78,7 +78,7 @@ and adding and subtracting these two equations
 \begin{equation}\label{beta eq 1}
 0=\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\beta\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\beta\right)
 \end{equation}
-\begin{equation}
+\begin{equation}\label{beta eq 2}
 0=\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\left(\nu-\psi\right)\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\left(\nu-\psi\right)\right)
 \end{equation}
 Defining $$\chi=e^{\nu-\psi}$$, we obtain
@@ -96,4 +96,11 @@ Now we chose $$e^{2\mu_3-2\mu_2}=\Delta\left(r\right)$$, and seperate $$e^\beta=
 \end{equation}
 This is solved by $$\partial_r^2\Delta=2$$ and $$f=\sin\left(\theta\right)$$. Introducing the constants $$M$$ and $$a$$, we write $$\Delta=r^2+a^2-2Mr$$.
 
-
+Using our solutions
+\begin{equations}
+e^{\mu_3-\mu_2}=\sqrt{\Delta}\quad e^\beta=\sqrt{\Delta\delta}
+\end{equation}
+with $$\mu=\cos\left(\theta\right)$$ and $$\delta=1-\mu^2=\sin^2\left(\theta\right)$$. Note that $$\partial_theta=-\sqrt{\delta}\partial_\mu$$. Now writing \ref{beta eq 2}
+\begin{equation}
+0=\partial_r\left(\Delta\partial_r\left(\nu-\psi\right)\right)+\partial_\mu\left(\delta\partial_\mu\left(\nu-\psi\right)\right)
+\end{equation}
