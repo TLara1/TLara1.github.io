@@ -92,6 +92,8 @@ e^{2\mu_3-2\mu_2}\left(\partial_rN\right)^2+\left(\partial_\theta N\right)^2=0
 \end{equation}
 Now we chose $$e^{2\mu_3-2\mu_2}=\Delta\left(r\right)$$, and seperate $$e^\beta=\sqrt{\Delta(r)}f(\theta)$$. Inserting these two functions into \ref{beta eq 1}
 \begin{equation}
-
+0=\frac{f}{2}\partial_r^2\Delta+\partial_\theta^2f
 \end{equation}
+This is solved by $$\partial_r^2\Delta=2$$ and $$f=\sin\left(\theta\right)$$. Introducing the constants $$M$$ and $$a$$, we write $$\Delta=r^2+a^2-2Mr$$.
+
 
