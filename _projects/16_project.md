@@ -86,7 +86,7 @@ Defining $$\chi=e^{\nu-\psi}$$, we obtain
 0=\partial_r\left(e^{3\psi-\nu+\mu_3-\mu_2}\partial_r\left(\chi^2\right)\right)+\partial_\theta\left(e^{3\psi-\nu+\mu_2-\mu_3}\partial_\theta\left(\chi^2\right)\right)
 \end{equation}
 
-Now we now there exists a null surface $$N(r,\theta)$$ such that $$g^{\nu\mu}N_\nuN_\mu=0$$. For our ansatz, this reduces to
+Now we now there exists a null surface $$N(r,\theta)$$ such that $$g^{\nu\mu}N_\nu N_\mu=0$$. For our ansatz, this reduces to
 \begin{equation}
 e^{2\mu_3-2\mu_2}\left(\partial_rN\right)^2+\left(\partial_\theta N\right)^2=0
 \end{equation}
