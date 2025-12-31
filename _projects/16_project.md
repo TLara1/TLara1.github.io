@@ -105,7 +105,7 @@ with $$\mu=\cos\left(\theta\right)$$ and $$\delta=1-\mu^2=\sin^2\left(\theta\rig
 0=\partial_r\left(\Delta\partial_r\left(\nu-\psi\right)\right)+\partial_\mu\left(\delta\partial_\mu\left(\nu-\psi\right)\right)
 \end{equation}
 which we can express as
-\begin{equation}
+\begin{equation}\label{partial Delta and chi eq}
 0=\partial_r\left(\frac{\Delta}{\chi}\partial_r\chi\right)+\partial_\mu\left(\frac{\delta}{\chi}\partial_\mu\chi\right)
 \end{equation}
 \begin{equation}
@@ -150,3 +150,15 @@ And simplifying further with $$\mu^2=1-\delta$$ and $$(r-M)^2=\Delta+M^2-a^2$$
 \begin{equation}
 2\left(\left(r-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)-\frac{1}{2\chi^2}\left(\Delta\left(\partial_r\chi\right)^2-\delta\left(\partial_\mu\chi\right)^2\right)+3\frac{M^2-a^2}{\Delta}-\frac{1}{\delta}
 \end{equation}
+
+We next define $$f=e^{2\nu}=e^\beta\chi=\sqrt{\Delta\delta}\chi$$, note that $$f\in\mathcal{R}$$. Writing \ref{partial Delta and chi eq} in terms of $$f$$
+\begin{equation}
+0=\partial_r\left(\frac{\Delta}{f}\partial_rf\right)+\partial_\mu\left(\frac{\delta}{f}\partial_\mu f\right)
+\end{equation}
+\begin{equation}
+\frac{\Delta}{f}\left(\partial_rf\right)^2+\frac{\delta}{f}\left(\partial_\muf\right)^2=\partial_r\left(\Delta\partial_rf\right)+\partial_\mu\left(\delta\partial_\mu f\right)
+\end{equation}
+This equation is easier to solve if we make the change of variable
+\begin{equation}
+f=\frac{1+\epsilon}{1-\epsilon}
+end{equation}
