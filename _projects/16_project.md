@@ -135,5 +135,7 @@ And we reduce \ref{intermediate 2= eq} to
 \begin{equation}
 2=\partial_r\Delta\partial_r\mu_3-\partial_\mu\delta\partial_\mu\mu_2+\frac{1}{8\Delta}\left(\partial_r\Delta\right)^2-\frac{1}{8\delta}\left(\partial_\mu\delta\right)^2+\frac{\delta}{2\chi^2}\left(\partial_\mu\chi\right)^2-\frac{\Delta}{2\chi^2}\left(\partial_r\chi\right)^2
 \end{equation}
-
-
+With $$\partial_r\Delta=2\left(r-M\right)$$ and $$\partial_\mu\delta=-2\mu$$
+\begin{equation}
+2=2\left(r-M\right)\partial_r\mu_3+2\mu\partial_\mu\mu_2+\frac{1}{2\Delta}\left(r-M\right)^2-\frac{1}{2\delta}\mu^2+\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-\Delta\left(\partial_r\chi\right)^2\right)
+\end{equation}
