@@ -148,7 +148,7 @@ We now observe $$\partial_r\left(\mu_3-\mu_2\right)=\partial_r\log\left(\sqrt{\D
 \end{equation}
 And simplifying further with $$\mu^2=1-\delta$$ and $$(r-M)^2=\Delta+M^2-a^2$$
 \begin{equation}
-2\left(\left(r-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)-\frac{1}{2\chi^2}\left(\Delta\left(\partial_r\chi\right)^2-\delta\left(\partial_\mu\chi\right)^2\right)+3\frac{M^2-a^2}{\Delta}-\frac{1}{\delta}
+2\left(\left(r-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)-\frac{1}{\chi^2}\left(\Delta\left(\partial_r\chi\right)^2-\delta\left(\partial_\mu\chi\right)^2\right)+3\frac{M^2-a^2}{\Delta}-\frac{1}{\delta}=0
 \end{equation}
 
 We next define $$f=e^{2\nu}=e^\beta\chi=\sqrt{\Delta\delta}\chi$$, note that $$f\in\mathcal{R}$$. Writing \ref{partial Delta and chi eq} in terms of $$f$$
@@ -156,9 +156,9 @@ We next define $$f=e^{2\nu}=e^\beta\chi=\sqrt{\Delta\delta}\chi$$, note that $$f
 0=\partial_r\left(\frac{\Delta}{f}\partial_rf\right)+\partial_\mu\left(\frac{\delta}{f}\partial_\mu f\right)
 \end{equation}
 \begin{equation}
-\frac{\Delta}{f}\left(\partial_rf\right)^2+\frac{\delta}{f}\left(\partial_\muf\right)^2=\partial_r\left(\Delta\partial_rf\right)+\partial_\mu\left(\delta\partial_\mu f\right)
+\frac{\Delta}{f}\left(\partial_rf\right)^2+\frac{\delta}{f}\left(\partial_\mu f\right)^2=\partial_r\left(\Delta\partial_rf\right)+\partial_\mu\left(\delta\partial_\mu f\right)
 \end{equation}
 This equation is easier to solve if we make the change of variable
 \begin{equation}
 f=\frac{1+\epsilon}{1-\epsilon}
-end{equation}
+\end{equation}
