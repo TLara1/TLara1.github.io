@@ -97,21 +97,21 @@ Now we chose $$e^{2\mu_3-2\mu_2}=\Delta\left(r\right)$$, and seperate $$e^\beta=
 This is solved by $$\partial_r^2\Delta=2$$ and $$f=\sin\left(\theta\right)$$. Introducing the constants $$M$$ and $$a$$, we write $$\Delta=r^2+a^2-2Mr$$.
 
 Using our solutions
-\begin{equations}
+\begin{equation}
 e^{\mu_3-\mu_2}=\sqrt{\Delta}\quad e^\beta=\sqrt{\Delta\delta}
 \end{equation}
-with $$\mu=\cos\left(\theta\right)$$ and $$\delta=1-\mu^2=\sin^2\left(\theta\right)$$. Note that $$\partial_theta=-\sqrt{\delta}\partial_\mu$$. Now writing \ref{beta eq 2}
+with $$\mu=\cos\left(\theta\right)$$ and $$\delta=1-\mu^2=\sin^2\left(\theta\right)$$. Note that $$\partial_\theta=-\sqrt{\delta}\partial_\mu$$. Now writing \ref{beta eq 2}
 \begin{equation}
 0=\partial_r\left(\Delta\partial_r\left(\nu-\psi\right)\right)+\partial_\mu\left(\delta\partial_\mu\left(\nu-\psi\right)\right)
 \end{equation}
 which we can express as
 \begin{equation}
-0=\partial_r\left(\frac{Delta}{\chi}\partial_r\chi\right)+\partial_\mu\left(\frac{\delta}{\chi}\partial_\mu\left(\chi\right)\right)
+0=\partial_r\left(\frac{\Delta}{\chi}\partial_r\chi\right)+\partial_\mu\left(\frac{\delta}{\chi}\partial_\mu\chi\right)
 \end{equation}
 \begin{equation}
-0=\chi\left(\partial_r\left(\Delta\partial_r\chi\right)+\partial_\mu\left(\delta\partial_\mu\left(\chi\right)\right)\right)=\Delta\left(\partial_r\chi\right)^2+\delta\left(\partial_\mu\chi\right)^2
+\chi\left(\partial_r\left(\Delta\partial_r\chi\right)+\partial_\mu\left(\delta\partial_\mu\chi\right)\right)=\Delta\left(\partial_r\chi\right)^2+\delta\left(\partial_\mu\chi\right)^2
 \end{equation}
 We can also write \ref{long beta eq} with these new definitions
 \begin{equation}
-\frac{1}{2\sqrt{\Delta}}\left(\partial_r^2\Delta-\partial_\mu^2\delta\right)=2\sqrt{\Delta}\left(\partial_r\beta\partial_r\mu_3+\partial_r\psi\partial_r\nu\right)-2e^{\mu_2-\mu_3}\left(\partial_\theta\beta\partial_\theta\mu_2+\partial_\theta\psi\partial_\theta\nu\right)
+\frac{1}{2}\left(\partial_r^2\Delta-\partial_\mu^2\delta\right)=\partial_r\Delta\partial_r\mu_3+2\Delta\partial_r\psi\partial_r\nu-\partial_\mu\delta\partial_\mu\mu_2-2\delta\partial_\mu\psi\partial_\mu\nu
 \end{equation}
