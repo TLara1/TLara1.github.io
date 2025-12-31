@@ -162,3 +162,7 @@ This equation is easier to solve if we make the change of variable
 \begin{equation}
 f=\frac{1+\epsilon}{1-\epsilon}
 \end{equation}
+with $$\partial_r f=\frac{2}{\left(1-\epsilon\right)^2}\partial_r\epsilon$$
+\begin{equation}
+\frac{4}{1-\epsilon^2}\left(\Delta\left(\partial_r\epsilon\right)^2+\delta\left(\partial_\mu\epsilon\right)^2\right)=\frac{4}{1-\epsilon}\left(\Delta\left(\partial_r\epsilon\right)^2+\delta\left(\partial_\mu\epsilon\right)^2\right)+2\left(\partial_r\left(\Delta\partial_r\epsilon\right)+\partial_\mu\left(\delta\partial_\mu\epsilon\right)\right)
+\end{equation}
