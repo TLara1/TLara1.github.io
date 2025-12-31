@@ -139,3 +139,14 @@ With $$\partial_r\Delta=2\left(r-M\right)$$ and $$\partial_\mu\delta=-2\mu$$
 \begin{equation}
 2=2\left(r-M\right)\partial_r\mu_3+2\mu\partial_\mu\mu_2+\frac{1}{2\Delta}\left(r-M\right)^2-\frac{1}{2\delta}\mu^2+\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-\Delta\left(\partial_r\chi\right)^2\right)
 \end{equation}
+We now observe $$\partial_r\left(\mu_3-\mu_2\right)=\partial_r\log\left(\sqrt{\Delta}\right)=\left(r-M\right)\Delta^{-1}$$ and $$\partial_\mu\left(\mu_2-\mu_3\right)=-\partial_\mu\log\left(\sqrt{\Delta}\right)=0$$, so
+\begin{equation}
+2=\left(\left(r-M\right)\partial_r\right)\left(\mu_2+\mu_3\right)+\left(r-M\right)\partial_r\left(\mu_3-\mu_2\right)+\left(\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\mu\partial_\mu\left(\mu_2-\mu_3\right)+\frac{1}{2\Delta}\left(r-M\right)^2-\frac{1}{2\delta}\mu^2+\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-\Delta\left(\partial_r\chi\right)^2\right)
+\end{equation}
+\begin{equation}
+2=\left(\left(r-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\frac{3}{2\Delta}\left(r-M\right)^2-\frac{1}{2\delta}\mu^2+\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-\Delta\left(\partial_r\chi\right)^2\right)
+\end{equation}
+And simplifying further with $$\mu^2=1-\delta$$ and $$(r-M)^2=\Delta+M^2-a^2$$
+\begin{equation}
+2\left(\left(r-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)-\frac{1}{2\chi^2}\left(\Delta\left(\partial_r\chi\right)^2-\delta\left(\partial_\mu\chi\right)^2\right)+3\frac{M^2-a^2}{\Delta}-\frac{1}{\delta}
+\end{equation}
