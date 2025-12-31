@@ -130,5 +130,10 @@ with $$e^{2\psi}=e^\beta\chi^{-1}$$ and $$e^{2\nu}=e^\beta\chi$$
 \end{equation}
 And we reduce \ref{intermediate 2= eq} to
 \begin{equation}
-2=\partial_r\Delta\partial_r\mu_3+2\Delta\partial_r\psi\partial_r\nu-\partial_\mu\delta\partial_\mu\mu_2-2\delta\partial_\mu\psi\partial_\mu\nu
+2=\partial_r\Delta\partial_r\mu_3-\partial_\mu\delta\partial_\mu\mu_2+\frac{\Delta}{2}\left(\frac{1}{2\Delta}\partial_r\Delta-\frac{1}{\chi}\partial_r\chi\right)\left(\frac{1}{2\Delta}\partial_r\Delta+\frac{1}{\chi}\partial_r\chi\right)-\frac{\delta}{2}\left(\frac{1}{2\delta}\partial_\mu\delta-\frac{1}{\chi}\partial_\mu\chi\right)\left(\frac{1}{2\delta}\partial_\mu\delta+\frac{1}{\chi}\partial_\mu\chi\right)
 \end{equation}
+\begin{equation}
+2=\partial_r\Delta\partial_r\mu_3-\partial_\mu\delta\partial_\mu\mu_2+\frac{1}{8\Delta}\left(\partial_r\Delta\right)^2-\frac{1}{8\delta}\left(\partial_\mu\delta\right)^2+\frac{\delta}{2\chi^2}\left(\partial_\mu\chi\right)^2-\frac{\Delta}{2\chi^2}\left(\partial_r\chi\right)^2
+\end{equation}
+
+
