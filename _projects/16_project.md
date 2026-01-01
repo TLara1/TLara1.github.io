@@ -147,7 +147,7 @@ We now observe $$\partial_r\left(\mu_3-\mu_2\right)=\partial_r\log\left(\sqrt{\D
 2=\left(\left(r-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\frac{3}{2\Delta}\left(r-M\right)^2-\frac{1}{2\delta}\mu^2+\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-\Delta\left(\partial_r\chi\right)^2\right)
 \end{equation}
 And simplifying further with $$\mu^2=1-\delta$$ and $$(r-M)^2=\Delta+M^2-a^2$$
-\begin{equation}
+\begin{equation}\label{chi^2 master eq}
 2\left(\left(r-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)-\frac{1}{\chi^2}\left(\Delta\left(\partial_r\chi\right)^2-\delta\left(\partial_\mu\chi\right)^2\right)+3\frac{M^2-a^2}{\Delta}-\frac{1}{\delta}=0
 \end{equation}
 
@@ -177,11 +177,11 @@ Now define $$\eta=\frac{\left(r-M\right)^2}{M^2-a^2}=\frac{\Delta}{M^2-a^2}+1$$,
 this equation is solved by $$\epsilon=\pm\nu$$ and $$\epsilon=\pm\mu$$.
 First let's consider $$\epsilon=\mu$$, from which we have $$f=\frac{1+\mu}{1-\mu}$$, from which we arive at
 \begin{equation}
-\chi=\frac{1}{\sqrt{\Delta\delta}}\frac{1+\sqrt{1-\delta^2}}{1-\sqrt{1-\delta^2}}$$
+\chi=\frac{1}{\sqrt{\Delta\delta}}\frac{1+\mu}{1-\mu}}
 \end{equation}
+Now from \ref{chi^2 master eq}, with our solution for $$\chi$$
 \begin{equation}
-e^{2\nu}=\frac{1+\sqrt{1-\delta^2}}{1-\sqrt{1-\delta^2}}$$
+\left(\left(r-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\frac{M^2-a^2}{\Delta}+\frac{1+\mu}{1-\mu}=0
 \end{equation}
-\begin{equation}
-e^{2\psi}=\Delta\delta\frac{1-\sqrt{1-\delta^2}}{1+\sqrt{1-\delta^2}}$$
 \end{equation}
+
