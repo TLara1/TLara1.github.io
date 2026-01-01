@@ -185,7 +185,7 @@ Now from \ref{chi^2 master eq}, with our solution for $$\chi$$
 \end{equation}
 We solve this to find
 \begin{equation}
-\mu_2+\mu_3=\log{\left(\frac{\left(r-M\right)\left(1-\mu\right)^2}{\mu\Sqrt{\Delta}}\right)}
+\mu_2+\mu_3=\log\left(\frac{\left(r-M\right)\left(1-\mu\right)^2}{\mu\Sqrt{\Delta}}\right)
 \end{equation}
 And finally, obtaining the componenets of the metric
 \begin{equation}
