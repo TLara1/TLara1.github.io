@@ -37,7 +37,7 @@ In vacua, Einstein's field equations are $$G_{\mu\nu}=0$$ which implies $$R_{\mu
 
 The Schwarzschild metric is the exact solution to the Einstein field equations for the gravitational field outside a spherical mass with no angular momentum. We work in spherical coordinates $$t,r,\theta,\phi$$. Due to a static solution and rotational and azimuthal invariance, we expect our metric to be invariant under $$t\rightarrow-t$$, $$\theta\rightarrow-\theta$$, and $$\phi\rightarrow-\phi$$, which removes off-diagonal terms from our metric. Furthermore, due to spherical symmetry, our metric should only depend on $$r$$ and $$\theta$$. Our line element is
 \begin{equation}
-ds^2=g_ttd_t^2+g_rrdr^2+g_{\theta\theta}d\theta^2+g_{\phi\phi}d\phi^2
+ds^2=g_{tt}d_t^2+g_{rr}dr^2+g_{\theta\theta}d\theta^2+g_{\phi\phi}d\phi^2
 \end{equation}
 which we rewrite as
 \begin{equation}
@@ -185,6 +185,18 @@ Now from \ref{chi^2 master eq}, with our solution for $$\chi$$
 \end{equation}
 We solve this to find
 \begin{equation}
-\mu_2+\mu_3=\log{\frac{\left(r-M\right)\left(1-\mu\right)^2}{\mu\Sqrt{\Delta}}
+\mu_2+\mu_3=\log{\left(\frac{\left(r-M\right)\left(1-\mu\right)^2}{\mu\Sqrt{\Delta}}\right)}
 \end{equation}
-
+And finally, obtaining the componenets of the metric
+\begin{equation}
+g_{tt}=-e^{2\nu}=-f=\frac{1-\mu}{1+\mu}
+\end{equation}
+\begin{equation}
+g_{rr}=e^{2\mu_2}=\frac{1}{\sqrt[\Delta}}e^{\mu_2+\mu_3}=\frac{\left(r-M\right)\left(1-\mu\right)^2}{\mu\Delta}
+\end{equation}
+\begin{equation}
+g_{\theta\theta}=e^{2\mu_3}=\sqrt{\Delta}e^{\mu_2+\mu_3}=\frac{\left(r-M\right)\left(1-\mu\right)^2}{\mu}
+\end{equation}
+\begin{equation}
+g_{\phi\phi}=e^{2\psi}=\frac{f}{\chi^2}=\Delta\left(1-\mu\right)^2
+\end{equation}
