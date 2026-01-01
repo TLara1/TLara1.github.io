@@ -177,11 +177,14 @@ Now define $$\eta=\frac{\left(r-M\right)^2}{M^2-a^2}=\frac{\Delta}{M^2-a^2}+1$$,
 this equation is solved by $$\epsilon=\pm\nu$$ and $$\epsilon=\pm\mu$$.
 First let's consider $$\epsilon=\mu$$, from which we have $$f=\frac{1+\mu}{1-\mu}$$, from which we arive at
 \begin{equation}
-\chi=\frac{1}{\sqrt{\Delta\delta}}\frac{1+\mu}{1-\mu}}
+\chi=\frac{1}{\sqrt{\Delta\delta}}\frac{1+\mu}{1-\mu}
 \end{equation}
 Now from \ref{chi^2 master eq}, with our solution for $$\chi$$
 \begin{equation}
 \left(\left(r-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\frac{M^2-a^2}{\Delta}+\frac{1+\mu}{1-\mu}=0
 \end{equation}
+We solve this to find
+\begin{equation}
+\mu_2+\mu_3=\log{\frac{\left(r-M\right)\left(1-\mu\right)^2}{\mu\Sqrt{\Delta}}
 \end{equation}
 
