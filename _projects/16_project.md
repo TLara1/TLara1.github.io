@@ -187,20 +187,20 @@ Now from \ref{chi^2 master eq}, with our solution for $$\chi$$
 \end{equation}
 We solve this to find
 \begin{equation}
-\mu_2+\mu_3=\log\left(\frac{\left(\frac{r}{R}-M\right)\left(1-\mu\right)^2}{\mu\sqrt{\Delta}}\right)
+\mu_2+\mu_3=\log\left(\frac{\left(\frac{r}{R}-M\right)\left(1-\mu\right)^2}{\mu\sqrt{\Delta}}\right)+C
 \end{equation}
-And finally, obtaining the componenets of the metric
+With $$C$$ as an arbitrary function of $$\left(\frac{\frac{r}{R}-M}{\mu}\right)$$. And finally, obtaining the componenets of the metric
 \begin{equation}
 g_{tt}=-e^{2\nu}=-f=\frac{1-\mu}{1+\mu}
 \end{equation}
 \begin{equation}
-g_{rr}=e^{2\mu_2}=\frac{1}{\sqrt{\Delta}}e^{\mu_2+\mu_3}=\frac{\left(r-M\right)\left(1-\mu\right)^2}{\mu\Delta}
+g_{rr}=e^{2\mu_2}=e^{\mu_2+\mu_3}e^{\mu_2-\mu_3}=C\frac{\left(\frac{r}{R}-M\right)\left(1-\mu\right)^2}{\mu\Delta}
 \end{equation}
 \begin{equation}
-g_{\theta\theta}=e^{2\mu_3}=\sqrt{\Delta}e^{\mu_2+\mu_3}=\frac{\left(r-M\right)\left(1-\mu\right)^2}{\mu}
+g_{\theta\theta}=e^{2\mu_3}=e^{\mu_2+\mu_3}e^{\mu_3-\mu_2}=C\frac{\left(\frac{r}{R}-M\right)\left(1-\mu\right)^2}{\mu}
 \end{equation}
 \begin{equation}
-g_{\phi\phi}=e^{2\psi}=\frac{f}{\chi^2}=\Delta\left(1-\mu\right)^2
+g_{\phi\phi}=e^{2\psi}=e^\beta\chi^{-1}=\frac{f}{\chi^2}=\Delta\delta\frac{1+\mu}{1-\mu}
 \end{equation}
 
 
