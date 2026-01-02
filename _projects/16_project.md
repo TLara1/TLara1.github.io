@@ -184,6 +184,6 @@ In the limit of $$M\rightarrow0$$ and $$a\rightarrow0$$, we expect the metric to
 
 Now, let's instead use $$\epsilon=\eta$$. Simplifying, this yields
 \begin{equation}
-f=\frac{1+\eta}{1-\eta}=2/frac{a^2-M^2}{\Delta}-1
+f=\frac{1+\eta}{1-\eta}=\frac{r+R\left(-M+\sqrt{M^2-a^2}\right)}{-r+R\left(M+\sqrt{M^2-a^2}\right)}
 \end{equation}
 
