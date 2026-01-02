@@ -186,4 +186,7 @@ Now, let's instead use $$\epsilon=\eta$$. Simplifying, this yields
 \begin{equation}
 f=\frac{1+\eta}{1-\eta}=\frac{r+R\left(-M+\sqrt{M^2-a^2}\right)}{-r+R\left(M+\sqrt{M^2-a^2}\right)}
 \end{equation}
-
+Now employing \ref{chi^2 master eq}
+\begin{equation}
+\frac{1}{\chi^2}\left(R^2\Delta\left(\partial_r\chi\right)^2-\delta\left(\partial_\mu\chi\right)^2\right)=\frac{\left(\frac{r}{R}-M+2\sqrt{M^2-a^2}\right)^2}{\Delta}-\frac{\mu^2}{1-\mu^2}
+\end{equation}
