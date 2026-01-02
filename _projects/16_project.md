@@ -72,7 +72,7 @@ We can rewrite $$R_{00}$$ and $$R_{33}$$ as
 0=R^2\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\nu\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\nu\right)
 \end{equation}
 \begin{equation}
-0=\partial_\theta\left(e^{\beta+\mu_3-\mu_2}\partial_\theta\psi\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\psi\right)
+0=R^2\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\psi\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\psi\right)
 \end{equation}
 and adding and subtracting these two equations
 \begin{equation}\label{beta eq 1}
