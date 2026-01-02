@@ -45,21 +45,21 @@ ds^2=-e^{2\nu}dt^2+e^{2\mu_2}dr^2+e^{2\mu_3}d\theta^2+e^{2\psi}d\phi^2
 \end{equation}
 where $$\nu$$, $$\mu_2$$, $$\mu_3$$, and $$\psi$$ are functions of $$r$$ and $$\theta$$.
 
-Now the Ricci tensor has six nonzero elements, of which $$R_{00}$$ and $$R_{11}$$ are of interest. Setting these to zero yields
+Now the Ricci tensor has six nonzero elements, of which $$R_{00}$$ and $$R_{33}$$ are of interest. Setting these to zero yields
 \begin{equation}
 R_{00}=0\rightarrow e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu+\mu_3-\mu_2\right)\partial_r\nu+\partial_r^2\nu\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu+\mu_2-\mu_3\right)\partial_\theta\nu+\partial_\theta^2\nu\right)=0
 \end{equation}
 \begin{equation}
-R_{11}=0\rightarrow e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu+\mu_3-\mu_2\right)\partial_r\psi+\partial_r^2\psi\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu+\mu_2-\mu_3\right)\partial_\theta\psi+\partial_\theta^2\psi\right)=0
+R_{33}=0\rightarrow e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu+\mu_3-\mu_2\right)\partial_r\psi+\partial_r^2\psi\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu+\mu_2-\mu_3\right)\partial_\theta\psi+\partial_\theta^2\psi\right)=0
 \end{equation}
 The important components of the Einstein tensor are $$G_{22}$$ and $$G_{33}$$.
 \begin{equation}
-G_{22}=e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\mu_3\right)\partial_r\nu+\partial_r\mu_3\partial_r\psi\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu-\mu_3\right)\partial_\theta\nu+\partial_\theta^2\left(\nu+\psi\right)+\partial_\theta\left(\psi-\mu_3\right)\partial_\theta\psi\right)=0
+G_{22}=e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\mu_2\right)\partial_\theta\nu+\partial_\theta\mu_2\partial_\theta\psi\right)+e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu-\mu_2\right)\partial_r\nu+\partial_r^2\left(\nu+\psi\right)+\partial_r\left(\psi-\mu_2\right)\partial_r\psi\right)=0
 \end{equation}
 \begin{equation}
-G_{33}=e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\mu_2\right)\partial_\theta\nu+\partial_\theta\mu_2\partial_\theta\psi\right)+e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu-\mu_2\right)\partial_r\nu+\partial_r^2\left(\nu+\psi\right)+\partial_r\left(\psi-\mu_2\right)\partial_r\psi\right)=0
+G_{33}=e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\mu_3\right)\partial_r\nu+\partial_r\mu_3\partial_r\psi\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu-\mu_3\right)\partial_\theta\nu+\partial_\theta^2\left(\nu+\psi\right)+\partial_\theta\left(\psi-\mu_3\right)\partial_\theta\psi\right)=0
 \end{equation}
-Now define $$\beta=\psi+\nu$$, and calculating the difference of $$G_{22}$$ and $$G_{33}$$
+Now define $$\beta=\psi+\nu$$, and calculating the difference of $$G_{33}$$ and $$G_{22}$$
 \begin{equation}
 e^{\mu_3-\mu_2}\left(\partial_r\left(\nu-\mu_2-\mu_3\right)\partial_r\nu+\partial_r^2\beta+\partial_r\left(\psi-\mu_2-\mu_3\right)\partial_r\psi\right)-e^{\mu_2-\mu_3}\left(\partial_\theta\left(\nu-\mu_2-\mu_3\right)\partial_\theta\nu+\partial_\theta^2\beta+\partial_\theta\left(\psi-\mu_2-\mu_3\right)\partial_\theta\psi\right)=0
 \end{equation}
@@ -67,7 +67,7 @@ which we rewrite as
 \begin{equation}\label{long beta eq}
 e^{-\beta}\left(\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\beta\right)-\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\beta\right)\right)=2e^{\mu_3-\mu_2}\left(\partial_r\beta\partial_r\mu_3+\partial_r\psi\partial_r\nu\right)-2e^{\mu_2-\mu_3}\left(\partial_\theta\beta\partial_\theta\mu_2+\partial_\theta\psi\partial_\theta\nu\right)
 \end{equation}
-We can rewrite $$R_{00}$$ and $$R_{11}$$ as
+We can rewrite $$R_{00}$$ and $$R_{33}$$ as
 \begin{equation}
 0=\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\nu\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\nu\right)
 \end{equation}
@@ -192,7 +192,7 @@ And finally, obtaining the componenets of the metric
 g_{tt}=-e^{2\nu}=-f=\frac{1-\mu}{1+\mu}
 \end{equation}
 \begin{equation}
-g_{rr}=e^{2\mu_2}=\frac{1}{\sqrt[\Delta}}e^{\mu_2+\mu_3}=\frac{\left(r-M\right)\left(1-\mu\right)^2}{\mu\Delta}
+g_{rr}=e^{2\mu_2}=\frac{1}{\sqrt{\Delta}}e^{\mu_2+\mu_3}=\frac{\left(r-M\right)\left(1-\mu\right)^2}{\mu\Delta}
 \end{equation}
 \begin{equation}
 g_{\theta\theta}=e^{2\mu_3}=\sqrt{\Delta}e^{\mu_2+\mu_3}=\frac{\left(r-M\right)\left(1-\mu\right)^2}{\mu}
@@ -206,8 +206,9 @@ g_{\phi\phi}=e^{2\psi}=\frac{f}{\chi^2}=\Delta\left(1-\mu\right)^2
 
 ## Trying Again With New Dimensions
 \begin{equation}
-ds^2=-e^{2\nu}dt^2+e^{2\mu_2}dr^2+r^2e^{2\mu_3}d\theta^2+r^2e^{2\psi}d\phi^2
+ds^2=-e^{2\nu}dt^2+e^{2\mu_2}dr^2+R^2e^{2\mu_3}d\theta^2+R^2e^{2\psi}d\phi^2
 \end{equation}
+$$R$$ is some constant with dimensions of length
 \begin{equation}
 R_{00}=0\rightarrow r e^{\mu_3-\mu_2}\left(\partial_r\left(\left(\psi+\nu+\mu_3-\mu_2\right)\partial_r\nu+\partial_r\nu\right)+2\partial_r\nu\right)
 +e^{\mu_2-\mu_3}\left(\partial_\theta\left(\left(\psi+\nu+\mu_2-\mu_3\right)\partial_\theta\nu+\partial_\theta\nu\right)\right)=0
