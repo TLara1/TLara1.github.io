@@ -117,7 +117,7 @@ We can also write \ref{long beta eq} with these new definitions
 \end{equation}
 Now using $$\partial_r\Delta=2$$ and $$\partial_\mu\delta=-2$$
 \begin{equation}\label{intermediate 2= eq}
-2=\partial_r\Delta\partial_r\mu_3+2\Delta\partial_r\psi\partial_r\nu-\partial_\mu\delta\partial_\mu\mu_2-2\delta\partial_\mu\psi\partial_\mu\nu
+2=R^2\partial_r\Delta\partial_r\mu_3+2R^2\Delta\partial_r\psi\partial_r\nu-\partial_\mu\delta\partial_\mu\mu_2-2\delta\partial_\mu\psi\partial_\mu\nu
 \end{equation}
 with $$e^{2\psi}=e^\beta\chi^{-1}$$ and $$e^{2\nu}=e^\beta\chi$$
 \begin{equation}
@@ -130,14 +130,14 @@ with $$e^{2\psi}=e^\beta\chi^{-1}$$ and $$e^{2\nu}=e^\beta\chi$$
 \end{equation}
 And we reduce \ref{intermediate 2= eq} to
 \begin{equation}
-2=\partial_r\Delta\partial_r\mu_3-\partial_\mu\delta\partial_\mu\mu_2+\frac{\Delta}{2}\left(\frac{1}{2\Delta}\partial_r\Delta-\frac{1}{\chi}\partial_r\chi\right)\left(\frac{1}{2\Delta}\partial_r\Delta+\frac{1}{\chi}\partial_r\chi\right)-\frac{\delta}{2}\left(\frac{1}{2\delta}\partial_\mu\delta-\frac{1}{\chi}\partial_\mu\chi\right)\left(\frac{1}{2\delta}\partial_\mu\delta+\frac{1}{\chi}\partial_\mu\chi\right)
+2=R^2\partial_r\Delta\partial_r\mu_3-\partial_\mu\delta\partial_\mu\mu_2+R^2\frac{\Delta}{2}\left(\frac{1}{2\Delta}\partial_r\Delta-\frac{1}{\chi}\partial_r\chi\right)\left(\frac{1}{2\Delta}\partial_r\Delta+\frac{1}{\chi}\partial_r\chi\right)-\frac{\delta}{2}\left(\frac{1}{2\delta}\partial_\mu\delta-\frac{1}{\chi}\partial_\mu\chi\right)\left(\frac{1}{2\delta}\partial_\mu\delta+\frac{1}{\chi}\partial_\mu\chi\right)
 \end{equation}
 \begin{equation}
-2=\partial_r\Delta\partial_r\mu_3-\partial_\mu\delta\partial_\mu\mu_2+\frac{1}{8\Delta}\left(\partial_r\Delta\right)^2-\frac{1}{8\delta}\left(\partial_\mu\delta\right)^2+\frac{\delta}{2\chi^2}\left(\partial_\mu\chi\right)^2-\frac{\Delta}{2\chi^2}\left(\partial_r\chi\right)^2
+2=R^2\partial_r\Delta\partial_r\mu_3-\partial_\mu\delta\partial_\mu\mu_2+\frac{R^2}{8\Delta}\left(\partial_r\Delta\right)^2-\frac{1}{8\delta}\left(\partial_\mu\delta\right)^2+\frac{\delta}{2\chi^2}\left(\partial_\mu\chi\right)^2-\frac{\Delta}{2\chi^2}\left(\partial_r\chi\right)^2
 \end{equation}
-With $$\partial_r\Delta=2\left(r-M\right)$$ and $$\partial_\mu\delta=-2\mu$$
+With $$\partial_r\Delta=\frac{2}{R}\left(\frac{r}{R}-M\right)$$ and $$\partial_\mu\delta=-2\mu$$
 \begin{equation}
-2=2\left(r-M\right)\partial_r\mu_3+2\mu\partial_\mu\mu_2+\frac{1}{2\Delta}\left(r-M\right)^2-\frac{1}{2\delta}\mu^2+\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-\Delta\left(\partial_r\chi\right)^2\right)
+2=2R\left(\frac{r}{R}-M\right)\partial_r\mu_3+2\mu\partial_\mu\mu_2+\frac{1}{2\Delta}\left(\frac{r}{R}-M\right)^2-\frac{1}{2\delta}\mu^2+\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-R^2\Delta\left(\partial_r\chi\right)^2\right)
 \end{equation}
 We now observe $$\partial_r\left(\mu_3-\mu_2\right)=\partial_r\log\left(\sqrt{\Delta}\right)=\left(r-M\right)\Delta^{-1}$$ and $$\partial_\mu\left(\mu_2-\mu_3\right)=-\partial_\mu\log\left(\sqrt{\Delta}\right)=0$$, so
 \begin{equation}
