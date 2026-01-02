@@ -69,32 +69,32 @@ R^2e^{-\beta}\left(\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\beta\right)-\
 \end{equation}
 We can rewrite $$R_{00}$$ and $$R_{33}$$ as
 \begin{equation}
-0=\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\nu\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\nu\right)
+0=R^2\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\nu\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\nu\right)
 \end{equation}
 \begin{equation}
-0=\partial_\theta\left(e^{\beta+\mu_3-\mu_2}\partial_r\psi\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\psi\right)
+0=\partial_\theta\left(e^{\beta+\mu_3-\mu_2}\partial_\theta\psi\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\psi\right)
 \end{equation}
 and adding and subtracting these two equations
 \begin{equation}\label{beta eq 1}
-0=\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\beta\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\beta\right)
+0=R^2\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\beta\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\beta\right)
 \end{equation}
 \begin{equation}\label{beta eq 2}
-0=\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\left(\nu-\psi\right)\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\left(\nu-\psi\right)\right)
+0=R^2\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\left(\nu-\psi\right)\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\left(\nu-\psi\right)\right)
 \end{equation}
 Defining $$\chi=e^{\nu-\psi}$$, we obtain
 \begin{equation}
-0=\partial_r\left(e^{3\psi-\nu+\mu_3-\mu_2}\partial_r\left(\chi^2\right)\right)+\partial_\theta\left(e^{3\psi-\nu+\mu_2-\mu_3}\partial_\theta\left(\chi^2\right)\right)
+0=R^2\partial_r\left(e^{3\psi-\nu+\mu_3-\mu_2}\partial_r\left(\chi^2\right)\right)+\partial_\theta\left(e^{3\psi-\nu+\mu_2-\mu_3}\partial_\theta\left(\chi^2\right)\right)
 \end{equation}
 
 Now we now there exists a null surface $$N(r,\theta)$$ such that $$g^{\nu\mu}N_\nu N_\mu=0$$. For our ansatz, this reduces to
 \begin{equation}
-e^{2\mu_3-2\mu_2}\left(\partial_rN\right)^2+\left(\partial_\theta N\right)^2=0
+R^2e^{2\mu_3-2\mu_2}\left(\partial_rN\right)^2+\left(\partial_\theta N\right)^2=0
 \end{equation}
 Now we chose $$e^{2\mu_3-2\mu_2}=\Delta\left(r\right)$$, and seperate $$e^\beta=\sqrt{\Delta(r)}f(\theta)$$. Inserting these two functions into \ref{beta eq 1}
 \begin{equation}
-0=\frac{f}{2}\partial_r^2\Delta+\partial_\theta^2f
+0=R^2\frac{f}{2}\partial_r^2\Delta+\partial_\theta^2f
 \end{equation}
-This is solved by $$\partial_r^2\Delta=2$$ and $$f=\sin\left(\theta\right)$$. Introducing the constants $$M$$ and $$a$$, we write $$\Delta=r^2+a^2-2Mr$$.
+This is solved by $$\partial_r^2\Delta=\frac{2}{R^2}$$ and $$f=\sin\left(\theta\right)$$. Introducing dimensionless constants $$M$$ and $$a$$, we write $$\Delta=\frac{r^2}{R^2}+a^2-2M\frac{r}{R}$$.
 
 Using our solutions
 \begin{equation}
