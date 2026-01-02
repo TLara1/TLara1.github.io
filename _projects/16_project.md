@@ -113,7 +113,7 @@ R^2\chi\left(\partial_r\left(\Delta\partial_r\chi\right)+\partial_\mu\left(\delt
 \end{equation}
 We can also write \ref{long beta eq} with these new definitions
 \begin{equation}
-\frac{1}{2}\left(R^2\partial_r^2\Delta-\partial_\mu^2\delta\right)=R^2\partial_r\Delta\partial_r\mu_3+2\R^2Delta\partial_r\psi\partial_r\nu-\partial_\mu\delta\partial_\mu\mu_2-2\delta\partial_\mu\psi\partial_\mu\nu
+\frac{1}{2}\left(R^2\partial_r^2\Delta-\partial_\mu^2\delta\right)=R^2\partial_r\Delta\partial_r\mu_3+2R^2\Delta\partial_r\psi\partial_r\nu-\partial_\mu\delta\partial_\mu\mu_2-2\delta\partial_\mu\psi\partial_\mu\nu
 \end{equation}
 Now using $$\partial_r\Delta=2$$ and $$\partial_\mu\delta=-2$$
 \begin{equation}\label{intermediate 2= eq}
