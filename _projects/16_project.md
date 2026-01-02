@@ -174,33 +174,15 @@ Now define $$\eta=\frac{\left(\frac{r}{R}-M\right)^2}{M^2-a^2}=\frac{\Delta}{M^2
 \begin{equation}
 -2\epsilon\left(\left(\eta^2-1\right)\left(\partial_\eta\epsilon\right)^2+\left(1-\mu^2\right)\left(\partial_\mu\epsilon\right)^2\right)=\left(1-\epsilon^2\right)\left(\partial_\eta\left(\left(\eta^2-1\right)\partial_\eta\epsilon\right)+\partial_\mu\left(\left(1-\mu^2\right)\partial_\mu\epsilon\right)\right)
 \end{equation}
-this equation is solved by $$\epsilon=\pm\nu$$ and $$\epsilon=\pm\mu$$.
+this equation is solved by $$\epsilon=\pm\eta$$ and $$\epsilon=\pm\mu$$.
 
-
-First let's consider $$\epsilon=\mu$$, from which we have $$f=\frac{1+\mu}{1-\mu}$$, from which we arive at
-\begin{equation}
-\chi=\frac{1}{\sqrt{\Delta\delta}}\frac{1+\mu}{1-\mu}
-\end{equation}
-Now from \ref{chi^2 master eq}, with our solution for $$\chi$$
-\begin{equation}
-\left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\frac{M^2-a^2}{\Delta}+\frac{1+\mu}{1-\mu}=0
-\end{equation}
-We solve this to find
-\begin{equation}
-\mu_2+\mu_3=\log\left(\frac{\left(\frac{r}{R}-M\right)\left(1-\mu\right)^2}{\mu\sqrt{\Delta}}\right)+C
-\end{equation}
-With $$C$$ as an arbitrary function of $$\left(\frac{\frac{r}{R}-M}{\mu}\right)$$. And finally, obtaining the componenets of the metric
+First let's consider $$\epsilon=\mu$$, from which we have $$f=\frac{1+\mu}{1-\mu}$$. This results in the $$tt$$ component of the metric
 \begin{equation}
 g_{tt}=-e^{2\nu}=-f=-\frac{1+\mu}{1-\mu}
 \end{equation}
-\begin{equation}
-g_{rr}=e^{2\mu_2}=e^{\mu_2+\mu_3}e^{\mu_2-\mu_3}=C\frac{\left(\frac{r}{R}-M\right)\left(1-\mu\right)^2}{\mu\Delta}
-\end{equation}
-\begin{equation}
-g_{\theta\theta}=e^{2\mu_3}=e^{\mu_2+\mu_3}e^{\mu_3-\mu_2}=C\frac{\left(\frac{r}{R}-M\right)\left(1-\mu\right)^2}{\mu}
-\end{equation}
-\begin{equation}
-g_{\phi\phi}=e^{2\psi}=e^\beta\chi^{-1}=\frac{f}{\chi^2}=\Delta\left(1-\mu\right)^2
-\end{equation}
+In the limit of $$M\rightarrow0$$ and $$a\rightarrow0$$, we expect the metric to be Minkowskian with $$g_{tt}=-1$$, and if we use $$\epsilon=\pm\mu$$, this limit is not recovered. 
 
-
+Now, let's instead use $$\epsilon=\eta$$. Simplifying, this yields
+\begin{equation}
+f=\frac{1+\eta}{1-\eta}=2/frac{a^2-M^2}{\Delta}-1
+\end{equation}
