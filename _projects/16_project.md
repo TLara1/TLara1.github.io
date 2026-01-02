@@ -170,7 +170,7 @@ with $$\partial_r f=\frac{2}{\left(1-\epsilon\right)^2}\partial_r\epsilon$$
 \begin{equation}
 -2R^2\epsilon\left(\Delta\left(\partial_r\epsilon\right)^2+\delta\left(\partial_\mu\epsilon\right)^2\right)=R^2\left(1-\epsilon^2\right)\left(\partial_r\left(\Delta\partial_r\epsilon\right)+\partial_\mu\left(\delta\partial_\mu\epsilon\right)\right)
 \end{equation}
-Now define $$\eta=\frac{\left(\frac{r}{R}-M\right)^2}{M^2-a^2}=\frac{\Delta}{M^2-a^2}+1$$, $$\partial_r=\frac{1}{R}\frac{1}{\sqrt{M^2-a^2}}\partial_\eta$$ and with $$\delta=1-\mu^2$$
+Now define $$\eta^2=\frac{\left(\frac{r}{R}-M\right)^2}{M^2-a^2}=\frac{\Delta}{M^2-a^2}+1$$, $$\partial_r=\frac{1}{R}\frac{1}{\sqrt{M^2-a^2}}\partial_\eta$$ and with $$\delta=1-\mu^2$$
 \begin{equation}
 -2\epsilon\left(\left(\eta^2-1\right)\left(\partial_\eta\epsilon\right)^2+\left(1-\mu^2\right)\left(\partial_\mu\epsilon\right)^2\right)=\left(1-\epsilon^2\right)\left(\partial_\eta\left(\left(\eta^2-1\right)\partial_\eta\epsilon\right)+\partial_\mu\left(\left(1-\mu^2\right)\partial_\mu\epsilon\right)\right)
 \end{equation}
@@ -186,3 +186,4 @@ Now, let's instead use $$\epsilon=\eta$$. Simplifying, this yields
 \begin{equation}
 f=\frac{1+\eta}{1-\eta}=2/frac{a^2-M^2}{\Delta}-1
 \end{equation}
+
