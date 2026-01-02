@@ -184,9 +184,14 @@ In the limit of $$M\rightarrow0$$ and $$a\rightarrow0$$, we expect the metric to
 
 Now, let's instead use $$\epsilon=\eta$$. Simplifying, this yields
 \begin{equation}
-f=\frac{1+\eta}{1-\eta}=\frac{r+R\left(-M+\sqrt{M^2-a^2}\right)}{-r+R\left(M+\sqrt{M^2-a^2}\right)}
+f=\frac{1+\eta}{1-\eta}=-\frac{\rho^2}{\Delta}
 \end{equation}
+With $$\rho=\left(\frac{r}{R}-M\right)+\sqrt{a^2-M^2}$$
+
 Now employing \ref{chi^2 master eq}
 \begin{equation}
 \frac{1}{\chi^2}\left(R^2\Delta\left(\partial_r\chi\right)^2-\delta\left(\partial_\mu\chi\right)^2\right)=\frac{\left(\frac{r}{R}-M+2\sqrt{M^2-a^2}\right)^2}{\Delta}-\frac{\mu^2}{1-\mu^2}
+\end{equation}
+\begin{equation}
+2\left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)=6\frac{\left(\frac{r}{R}-M\right)^2}{\Delta}-4\frac{\frac{r}{R}-M}{\rho}
 \end{equation}
