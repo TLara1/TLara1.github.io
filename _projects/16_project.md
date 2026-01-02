@@ -191,7 +191,7 @@ We solve this to find
 \end{equation}
 With $$C$$ as an arbitrary function of $$\left(\frac{\frac{r}{R}-M}{\mu}\right)$$. And finally, obtaining the componenets of the metric
 \begin{equation}
-g_{tt}=-e^{2\nu}=-f=\frac{1-\mu}{1+\mu}
+g_{tt}=-e^{2\nu}=-f=-\frac{1+\mu}{1-\mu}
 \end{equation}
 \begin{equation}
 g_{rr}=e^{2\mu_2}=e^{\mu_2+\mu_3}e^{\mu_2-\mu_3}=C\frac{\left(\frac{r}{R}-M\right)\left(1-\mu\right)^2}{\mu\Delta}
