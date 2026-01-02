@@ -200,7 +200,7 @@ g_{rr}=e^{2\mu_2}=e^{\mu_2+\mu_3}e^{\mu_2-\mu_3}=C\frac{\left(\frac{r}{R}-M\righ
 g_{\theta\theta}=e^{2\mu_3}=e^{\mu_2+\mu_3}e^{\mu_3-\mu_2}=C\frac{\left(\frac{r}{R}-M\right)\left(1-\mu\right)^2}{\mu}
 \end{equation}
 \begin{equation}
-g_{\phi\phi}=e^{2\psi}=e^\beta\chi^{-1}=\frac{f}{\chi^2}=\Delta\left(1+\mu\right)^2
+g_{\phi\phi}=e^{2\psi}=e^\beta\chi^{-1}=\frac{f}{\chi^2}=\Delta\left(1-\mu\right)^2
 \end{equation}
 
 
