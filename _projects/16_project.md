@@ -139,9 +139,9 @@ With $$\partial_r\Delta=\frac{2}{R}\left(\frac{r}{R}-M\right)$$ and $$\partial_\
 \begin{equation}
 2=2R\left(\frac{r}{R}-M\right)\partial_r\mu_3+2\mu\partial_\mu\mu_2+\frac{1}{2\Delta}\left(\frac{r}{R}-M\right)^2-\frac{1}{2\delta}\mu^2+\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-R^2\Delta\left(\partial_r\chi\right)^2\right)
 \end{equation}
-We now observe $$\partial_r\left(\mu_3-\mu_2\right)=\partial_r\log\left(\sqrt{\Delta}\right)=\left(r-M\right)\Delta^{-1}$$ and $$\partial_\mu\left(\mu_2-\mu_3\right)=-\partial_\mu\log\left(\sqrt{\Delta}\right)=0$$, so
+We now observe $$\partial_r\left(\mu_3-\mu_2\right)=\partial_r\log\left(\sqrt{\Delta}\right)=\frac{1}{R}\left(\frac{r}{R}-M\right)\Delta^{-1}$$ and $$\partial_\mu\left(\mu_2-\mu_3\right)=-\partial_\mu\log\left(\sqrt{\Delta}\right)=0$$, so
 \begin{equation}
-2=\left(\left(r-M\right)\partial_r\right)\left(\mu_2+\mu_3\right)+\left(r-M\right)\partial_r\left(\mu_3-\mu_2\right)+\left(\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\mu\partial_\mu\left(\mu_2-\mu_3\right)+\frac{1}{2\Delta}\left(r-M\right)^2-\frac{1}{2\delta}\mu^2+\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-\Delta\left(\partial_r\chi\right)^2\right)
+2=R\left(\frac{r}{R}-M\right)\partial_r\right)\left(\mu_2+\mu_3\right)+R\left(\frac{r}{R}-M\right)\partial_r\left(\mu_3-\mu_2\right)+\mu\partial_\mu\left(\mu_2+\mu_3\right)+\mu\partial_\mu\left(\mu_2-\mu_3\right)+\frac{1}{2\Delta}\left(\frac{r}{R}-M\right)^2-\frac{1}{2\delta}\mu^2+\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-R^2\Delta\left(\partial_r\chi\right)^2\right)
 \end{equation}
 \begin{equation}
 2=\left(\left(r-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\frac{3}{2\Delta}\left(r-M\right)^2-\frac{1}{2\delta}\mu^2+\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-\Delta\left(\partial_r\chi\right)^2\right)
