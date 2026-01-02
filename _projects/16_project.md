@@ -102,18 +102,18 @@ e^{\mu_3-\mu_2}=\sqrt{\Delta}\quad e^\beta=\sqrt{\Delta\delta}
 \end{equation}
 with $$\mu=\cos\left(\theta\right)$$ and $$\delta=1-\mu^2=\sin^2\left(\theta\right)$$. Note that $$\partial_\theta=-\sqrt{\delta}\partial_\mu$$. Now writing \ref{beta eq 2}
 \begin{equation}
-0=\partial_r\left(\Delta\partial_r\left(\nu-\psi\right)\right)+\partial_\mu\left(\delta\partial_\mu\left(\nu-\psi\right)\right)
+0=R^2\partial_r\left(\Delta\partial_r\left(\nu-\psi\right)\right)+\partial_\mu\left(\delta\partial_\mu\left(\nu-\psi\right)\right)
 \end{equation}
 which we can express as
 \begin{equation}\label{partial Delta and chi eq}
-0=\partial_r\left(\frac{\Delta}{\chi}\partial_r\chi\right)+\partial_\mu\left(\frac{\delta}{\chi}\partial_\mu\chi\right)
+0=R^2\partial_r\left(\frac{\Delta}{\chi}\partial_r\chi\right)+\partial_\mu\left(\frac{\delta}{\chi}\partial_\mu\chi\right)
 \end{equation}
 \begin{equation}
-\chi\left(\partial_r\left(\Delta\partial_r\chi\right)+\partial_\mu\left(\delta\partial_\mu\chi\right)\right)=\Delta\left(\partial_r\chi\right)^2+\delta\left(\partial_\mu\chi\right)^2
+R^2\chi\left(\partial_r\left(\Delta\partial_r\chi\right)+\partial_\mu\left(\delta\partial_\mu\chi\right)\right)=R^2\Delta\left(\partial_r\chi\right)^2+\delta\left(\partial_\mu\chi\right)^2
 \end{equation}
 We can also write \ref{long beta eq} with these new definitions
 \begin{equation}
-\frac{1}{2}\left(\partial_r^2\Delta-\partial_\mu^2\delta\right)=\partial_r\Delta\partial_r\mu_3+2\Delta\partial_r\psi\partial_r\nu-\partial_\mu\delta\partial_\mu\mu_2-2\delta\partial_\mu\psi\partial_\mu\nu
+\frac{1}{2}\left(R^2\partial_r^2\Delta-\partial_\mu^2\delta\right)=R^2\partial_r\Delta\partial_r\mu_3+2\R^2Delta\partial_r\psi\partial_r\nu-\partial_\mu\delta\partial_\mu\mu_2-2\delta\partial_\mu\psi\partial_\mu\nu
 \end{equation}
 Now using $$\partial_r\Delta=2$$ and $$\partial_\mu\delta=-2$$
 \begin{equation}\label{intermediate 2= eq}
