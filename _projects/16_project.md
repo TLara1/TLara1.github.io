@@ -144,11 +144,11 @@ We now observe $$\partial_r\left(\mu_3-\mu_2\right)=\partial_r\log\left(\sqrt{\D
 2=R\left(\frac{r}{R}-M\right)\partial_r\left(\mu_2+\mu_3\right)+R\left(\frac{r}{R}-M\right)\partial_r\left(\mu_3-\mu_2\right)+\mu\partial_\mu\left(\mu_2+\mu_3\right)+\mu\partial_\mu\left(\mu_2-\mu_3\right)+\frac{1}{2\Delta}\left(\frac{r}{R}-M\right)^2-\frac{1}{2\delta}\mu^2+\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-R^2\Delta\left(\partial_r\chi\right)^2\right)
 \end{equation}
 \begin{equation}
-2=R\left(\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\frac{3}{2\Delta}\left(\frac{r}{R}-M\right)^2-\frac{1}{2\delta}\mu^2+\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-R^2\Delta\left(\partial_r\chi\right)^2\right)
+2=\left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\frac{3}{2\Delta}\left(\frac{r}{R}-M\right)^2-\frac{1}{2\delta}\mu^2+\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-R^2\Delta\left(\partial_r\chi\right)^2\right)
 \end{equation}
 And simplifying further with $$\mu^2=1-\delta$$ and $$(\frac{r}{R}-M)^2=\Delta+M^2-a^2$$
 \begin{equation}\label{chi^2 master eq}
-2R\left(\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)-\frac{R^2}{\chi^2}\left(\Delta\left(\partial_r\chi\right)^2-\delta\left(\partial_\mu\chi\right)^2\right)+3\frac{M^2-a^2}{\Delta}-\frac{1}{\delta}=0
+2\left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)-\frac{1}{\chi^2}\left(R^2\Delta\left(\partial_r\chi\right)^2-\delta\left(\partial_\mu\chi\right)^2\right)+3\frac{M^2-a^2}{\Delta}-\frac{1}{\delta}=0
 \end{equation}
 
 We next define $$f=e^{2\nu}=e^\beta\chi=\sqrt{\Delta\delta}\chi$$. Writing \ref{partial Delta and chi eq} in terms of $$f$$
@@ -183,11 +183,11 @@ First let's consider $$\epsilon=\mu$$, from which we have $$f=\frac{1+\mu}{1-\mu
 \end{equation}
 Now from \ref{chi^2 master eq}, with our solution for $$\chi$$
 \begin{equation}
-\left(\left(r-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\frac{M^2-a^2}{\Delta}+\frac{1+\mu}{1-\mu}=0
+\left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\frac{M^2-a^2}{\Delta}+\frac{1+\mu}{1-\mu}=0
 \end{equation}
 We solve this to find
 \begin{equation}
-\mu_2+\mu_3=\log\left(\frac{\left(r-M\right)\left(1-\mu\right)^2}{\mu\sqrt{\Delta}}\right)
+\mu_2+\mu_3=\log\left(\frac{\left(\frac{r}{R}-M\right)\left(1-\mu\right)^2}{\mu\sqrt{\Delta}}\right)
 \end{equation}
 And finally, obtaining the componenets of the metric
 \begin{equation}
