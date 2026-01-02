@@ -200,3 +200,15 @@ g_{\theta\theta}=e^{2\mu_3}=\sqrt{\Delta}e^{\mu_2+\mu_3}=\frac{\left(r-M\right)\
 \begin{equation}
 g_{\phi\phi}=e^{2\psi}=\frac{f}{\chi^2}=\Delta\left(1-\mu\right)^2
 \end{equation}
+
+
+
+
+## Trying Again With New Dimensions
+\begin{equation}
+ds^2=-e^{2\nu}dt^2+e^{2\mu_2}dr^2+r^2e^{2\mu_3}d\theta^2+r^2e^{2\psi}d\phi^2
+\end{equation}
+\begin{equation}
+R_{00}=0\rightarrow r e^{\mu_3-\mu_2}\left(\partial_r\left(\left(\psi+\nu+\mu_3-\mu_2\right)\partial_r\nu+\partial_r\nu\right)+2\partial_r\nu\right)
++e^{\mu_2-\mu_3}\left(\partial_\theta\left(\left(\psi+\nu+\mu_2-\mu_3\right)\partial_\theta\nu+\partial_\theta\nu\right)\right)=0
+\end{equation}
