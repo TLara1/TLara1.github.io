@@ -141,7 +141,7 @@ With $$\partial_r\Delta=\frac{2}{R}\left(\frac{r}{R}-M\right)$$ and $$\partial_\
 \end{equation}
 We now observe $$\partial_r\left(\mu_3-\mu_2\right)=\partial_r\log\left(\sqrt{\Delta}\right)=\frac{1}{R}\left(\frac{r}{R}-M\right)\Delta^{-1}$$ and $$\partial_\mu\left(\mu_2-\mu_3\right)=-\partial_\mu\log\left(\sqrt{\Delta}\right)=0$$, so
 \begin{equation}
-2=R\left(\frac{r}{R}-M\right)\partial_r\right)\left(\mu_2+\mu_3\right)+R\left(\frac{r}{R}-M\right)\partial_r\left(\mu_3-\mu_2\right)+\mu\partial_\mu\left(\mu_2+\mu_3\right)+\mu\partial_\mu\left(\mu_2-\mu_3\right)+\frac{1}{2\Delta}\left(\frac{r}{R}-M\right)^2-\frac{1}{2\delta}\mu^2+\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-R^2\Delta\left(\partial_r\chi\right)^2\right)
+2=R\left(\frac{r}{R}-M\right)\partial_r\left(\mu_2+\mu_3\right)+R\left(\frac{r}{R}-M\right)\partial_r\left(\mu_3-\mu_2\right)+\mu\partial_\mu\left(\mu_2+\mu_3\right)+\mu\partial_\mu\left(\mu_2-\mu_3\right)+\frac{1}{2\Delta}\left(\frac{r}{R}-M\right)^2-\frac{1}{2\delta}\mu^2+\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-R^2\Delta\left(\partial_r\chi\right)^2\right)
 \end{equation}
 \begin{equation}
 2=R\left(\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\frac{3}{2\Delta}\left(\frac{r}{R}-M\right)^2-\frac{1}{2\delta}\mu^2+\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-R^2\Delta\left(\partial_r\chi\right)^2\right)
@@ -175,6 +175,8 @@ Now define $$\eta=\frac{\left(\frac{r}{R}-M\right)^2}{M^2-a^2}=\frac{\Delta}{M^2
 -2\epsilon\left(\left(\eta^2-1\right)\left(\partial_\eta\epsilon\right)^2+\left(1-\mu^2\right)\left(\partial_\mu\epsilon\right)^2\right)=\left(1-\epsilon^2\right)\left(\partial_\eta\left(\left(\eta^2-1\right)\partial_\eta\epsilon\right)+\partial_\mu\left(\left(1-\mu^2\right)\partial_\mu\epsilon\right)\right)
 \end{equation}
 this equation is solved by $$\epsilon=\pm\nu$$ and $$\epsilon=\pm\mu$$.
+
+
 First let's consider $$\epsilon=\mu$$, from which we have $$f=\frac{1+\mu}{1-\mu}$$, from which we arive at
 \begin{equation}
 \chi=\frac{1}{\sqrt{\Delta\delta}}\frac{1+\mu}{1-\mu}
@@ -202,14 +204,3 @@ g_{\phi\phi}=e^{2\psi}=\frac{f}{\chi^2}=\Delta\left(1-\mu\right)^2
 \end{equation}
 
 
-
-
-## Trying Again With New Dimensions
-\begin{equation}
-ds^2=-e^{2\nu}dt^2+e^{2\mu_2}dr^2+R^2e^{2\mu_3}d\theta^2+R^2e^{2\psi}d\phi^2
-\end{equation}
-$$R$$ is some constant with dimensions of length
-\begin{equation}
-R_{00}=0\rightarrow r e^{\mu_3-\mu_2}\left(\partial_r\left(\left(\psi+\nu+\mu_3-\mu_2\right)\partial_r\nu+\partial_r\nu\right)+2\partial_r\nu\right)
-+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\left(\psi+\nu+\mu_2-\mu_3\right)\partial_\theta\nu+\partial_\theta\nu\right)\right)=0
-\end{equation}
