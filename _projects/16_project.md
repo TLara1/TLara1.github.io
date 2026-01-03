@@ -258,7 +258,7 @@ As we did previously, adding and subtracting $$R_{00}$$ and $$R_{33}$$ and writi
 \begin{equation}
 0=R^2\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\beta\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\beta\right)
 \end{equation}
-\begin{equation}
+\begin{equation}\label{add R00 R33 eq}
 e^{3\psi-\nu}X=R^2\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\left(\nu-\psi\right)\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\left(\nu-\psi\right)\right)
 \end{equation}
 Where
@@ -266,6 +266,10 @@ Where
 X=R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2+e^{\mu_2-\mu_3}\left(\partial_\theta\omega\right)^2
 \end{equation}
 We can also use $$R_{03}=0$$ to find
-\begin{equation}
+\begin{equation}\label{R03 eq}
 e^{3\psi-\nu}X=R^2\partial_r\left(e^{3\psi-nu+\mu_3-\mu_2}\omega\partial_r\omega\right)+\partial_\theta\left(e^{3\psi-nu+\mu_2-\mu_3}\omega\partial_\theta\omega\right)
+\end{equation}
+Inserting \ref{R03 eq} into \ref{add R00 R33 eq}
+\begin{equation}
+R^2\partial_r\left(e^{3\psi-\nu+\mu_3-\mu_2}\left(e^{2\nu-2\psi}\partial_r\left(\psi-\nu\right)+\frac{1}{2}\partial_r\left(\omega^2\right)\right)\right)+\partial_\theta\left(e^{3\psi-\nu+\mu_2-\mu_3}\left(e^{2\nu-2\psi}\partial_\theta\left(\psi-\nu\right)+\frac{1}{2}\partial_\theta\left(\omega^2\right)\right)\right)=0
 \end{equation}
