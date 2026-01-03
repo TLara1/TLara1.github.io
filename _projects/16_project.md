@@ -312,4 +312,4 @@ R^2\partial_r\left(\frac{\Delta}{\chi^2}\partial_r\omega\right)+\partial_\mu\lef
 \rightarrow
 R^2\Delta\left(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2+R^2\Delta\left(\partial_r\chi\right)^2+\delta\left(\partial_\mu\chi\right)^2=\chi\left(R^2\partial_r\left(\Delta\partial_r\chi\right)+\partial_\mu\left(\delta\partial_\mu\chi\right)\right)
 \end{equation}
-
+Now we define $$\mathcal{A}=\chi+\omega$$ and $$\mathcal{B}=\chi-\omega$$
