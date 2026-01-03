@@ -299,14 +299,14 @@ R^2\partial_r\left(e^{2\psi-2\nu}\Delta\partial_r\omega\right)+\partial_\mu\left
 e^{2\psi-2\nu}\left(R^2\Delta\left(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2\right)=R^2\partial_r\left(\Delta\partial_r\left(\nu-\psi\right)\right)+\partial_\mu\left(\delta\partial_\mu\left(\nu-\psi\right)\right)
 \end{equation}
 which we reexpress as
-\begin{equation}
+\begin{equation}\label{chi eq 1 form 1}
 R^2\partial_r\left(\frac{\Delta}{\chi^2}\partial_r\omega\right)+\partial_\mu\left(\frac{\delta}{\chi^2}\partial_\mu\omega\right)=0
 \end{equation}
 \begin{equation}\label{chi eq 1}
 \rightarrow 2\left(R^2\Delta\partial_r\chi\partial_r\omega+\delta\partial_\mu\chi\partial_\mu\omega\right)=\chi\left(R^2\partial_r\left(\Delta\partial_r\omega\right)+\partial_\mu\left(\delta\partial_\mu\omega\right)\right)
 \end{equation}
-\begin{equation}
-\frac{1}{\chi^2}\left(R^2\Delta\left(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2\right)=R^2\partial_r\left(\frac{\Delta}{\chi}\partial_r\left(\chi\right)\right)+\partial_\mu\left(\frac{\delta}{\chi}\partial_\mu\left(\chi\right)\right)
+\begin{equation}\label{chi eq 2 form 1}
+\frac{1}{\chi^2}\left(R^2\Delta\left(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2\right)=R^2\partial_r\left(\frac{\Delta}{\chi}\partial_r\chi\right)+\partial_\mu\left(\frac{\delta}{\chi}\partial_\mu\chi\right)
 \end{equation}
 \begin{equation}\label{chi eq 2}
 \rightarrow
@@ -339,7 +339,7 @@ Again, following our past work and inserting $$\mathcal{A}$$ and $$\mathcal{B}$$
 2=\left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\frac{3}{2\Delta}\left(\frac{r}{R}-M\right)^2-\frac{1}{2\delta}\mu^2-\frac{1}{8\chi^2}\left(R^2\Delta\left(\partial_r\left(\mathcal{A}+\mathcal{B}\right)\right)^2+\delta\left(\partial_\mu\left(\mathcal{A}-\mathcal{B}\right)\right)^2\right)+\frac{1}{8\chi^2}\left(R^2\Delta\left(\partial_r\left(\mathcal{A}-\mathcal{B}\right)\right)^2-\delta\left(\partial_\mu\left(\mathcal{A}-\mathcal{B}\right)\right)^2\right)
 \end{equation}
 \begin{equation}
-2=\left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\frac{3}{2\Delta}\left(\frac{r}{R}-M\right)^2-\frac{1}{2\delta}\mu^2-\frac{1}{2\chi^2}\left(R^2\Delta\left(\partial_r\mathcal{A}\partial_r\mathcal{B}-\delta\left(\partial_\mu\mathcal{A}\partial_\mu\mathcal{B}\right)
+2=\left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\frac{3}{2\Delta}\left(\frac{r}{R}-M\right)^2-\frac{1}{2\delta}\mu^2-\frac{1}{2\chi^2}\left(R^2\Delta\partial_r\mathcal{A}\partial_r\mathcal{B}-\delta\left(\partial_\mu\mathcal{A}\partial_\mu\mathcal{B}\right)
 \end{equation}
 To arrive at
 \begin{equation}\label{mu_2+mu_3 master eq}
@@ -349,14 +349,30 @@ Our remaining task is to solve the symmetric \label{A master eq} and \label{B ma
 
 Now, we will define
 \begin{equation}
-\mathcal{W}=\frac{\mathcal{A}-\mathcal{B}}{2\mathcal{A}\mathcal{B}}=\frac{\omega}{\chi^2-\omega^2}\quad\mathcal{Y}=\mathcal{A}\mathcal{B}e^{2\psi}=\sqrt{\Delta\delta}\frac{\chi^2-\omega^2}/{\chi}
+\mathcal{W}=\frac{\mathcal{A}-\mathcal{B}}{2\mathcal{A}\mathcal{B}}=\frac{\omega}{\chi^2-\omega^2}\quad\mathcal{Y}=\mathcal{A}\mathcal{B}e^{2\psi}=\sqrt{\Delta\delta}\frac{\chi^2-\omega^2}{\chi}
 \end{equation}
 Now consider
-\begin{align}
-&\partial_r\left(\frac{\mathcal{Y}^2}{\delta}\partial_r\mathcal{W}\right)+\partial_\mu\left(\frac{\mathcal{Y}^2}{\Delta}\partial_\mu\mathcal{W}\right)\\
-&=\partial_r\left(\frac{\Delta}{\chi^2}\left(\mathcal{A}\mathcal{B}\right)^2\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_r\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)\right)+\partial_\mu\left(\frac{\delta}{\chi^2}\left(\mathcal{A}\mathcal{B}\right)^2\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_\mu\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)\right)\\
-&=\partial_r\left(\frac{\Delta}{\chi^2}\left(\left(\mathcal{A}\mathcal{B}\right)\partial_r\omega-\omega\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)\right)+\partial_\mu\left(\frac{\delta}{\chi^2}\left(\left(\mathcal{A}\mathcal{B}\right)\partial_\mu\omega-\omega\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)\right)\\
-&=\left(\chi^2-\omega^2\right)\left(\partial_r\left(\frac{\Delta}{\chi^2}\partial_r\omega\right)+\partial_\mu\left(\frac{\delta}{\chi^2}\partial_\mu\omega\right)\right)-\omega\left(\partial_r\left(\frac{\Delta}{\chi^2}\partial_r\left(\chi^2-\omega^2\right)\right)+\partial_\mu\left(\frac{\delta}{\chi^2}\partial_\mu\left(\chi^2-\omega^2\right)\right)\right)
-&=0
-\end{align}
-We have used \ref{omega eq} and \ref{chi^2-omega^2 eq}.
+\begin{equation}
+R^2\partial_r\left(\frac{\mathcal{Y}^2}{\delta}\partial_r\mathcal{W}\right)+\partial_\mu\left(\frac{\mathcal{Y}^2}{\Delta}\partial_\mu\mathcal{W}\right)\label{W function eq 1}
+\end{equation}
+\begin{equation}
+=R^2\partial_r\left(\frac{\Delta}{\chi^2}\left(\mathcal{A}\mathcal{B}\right)^2\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_r\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)\right)+\partial_\mu\left(\frac{\delta}{\chi^2}\left(\mathcal{A}\mathcal{B}\right)^2\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_\mu\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)\right)
+\end{equation}
+\begin{equation}
+=R^2\partial_r\left(\frac{\Delta}{\chi^2}\left(\left(\mathcal{A}\mathcal{B}\right)\partial_r\omega-\omega\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)\right)+\partial_\mu\left(\frac{\delta}{\chi^2}\left(\left(\mathcal{A}\mathcal{B}\right)\partial_\mu\omega-\omega\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)\right)
+\end{equation}
+\begin{equation}
+=\left(\chi^2-\omega^2\right)\left(R^2\partial_r\left(\frac{\Delta}{\chi^2}\partial_r\omega\right)+\partial_\mu\left(\frac{\delta}{\chi^2}\partial_\mu\omega\right)\right)-\omega\left(R^2\partial_r\left(\frac{\Delta}{\chi^2}\partial_r\left(\chi^2-\omega^2\right)\right)+\partial_\mu\left(\frac{\delta}{\chi^2}\partial_\mu\left(\chi^2-\omega^2\right)\right)\right)=0
+\end{equation}
+We have used \ref{omega eq} and \ref{chi^2-omega^2 eq}. This implies that we can derive $$\mathcal{W}$$ from a function $$\mathcal{G}$$ with
+\begin{equation}
+\partial_r\mathcal{G}=\frac{1}{R}\frac{\mathcal{Y}^2}{\Delta}\partial_\mu\mathcal{W}\quad\partial_\mu\mathcal{G}=-R\frac{\mathcal{Y}^2}{\delta}\partial_r\mathcal{W}
+\end{equation}
+And $$\mathcal{G}$$ obviously satisfies
+\begin{equation}\label{potential G function 1}
+R^2\partial_r\left(\frac{\Delta}{\mathcal{Y}^2}\partial_r\mathcal{G}\right)+\partial_\mu\left(\frac{\delta}{\mathcal{Y}^2}\partial_\mu\mathcal{G}\right)=0
+\end{equation}
+If we compare \ref{potential G function 1} to \ref{chi eq 1 form 1}, we notice we effectively replaced $$\omega\rightarrow\mathcal{G}$$ and $$\chi\rightarrow\mathcal{Y}$$. Performing the same change of variables on \ref{chi eq 2 form 1} we have
+\begin{equation}
+\frac{1}{\mathcal{Y}^2}\left(R^2\Delta\left(\partial_r\mathcal{G}\right)^2+\delta\left(\partial_\mu\mathcal{G}\right)^2\right)=R^2\partial_r\left(\frac{\Delta}{\mathcal{Y}}\partial_r\mathcal{Y}\right)+\partial_\mu\left(\frac{\delta}{\mathcal{Y}}\partial_\mu\chi\right)
+\end{equation}
