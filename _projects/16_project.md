@@ -209,8 +209,8 @@ g_{tt}=-e^{2\nu}=-\chi e^\beta=\frac{\Delta}{\rho^2}
 g_{rr}=e^{2\mu_2}=e^{\mu_2+\mu_3}e^{\mu_2-\mu_3}=C\frac{\rho^2}{\Delta}
 \end{equation}
 \begin{equation}
-g_{\theta\theta}=R^2e^{2\mu_3}=R^2e^{\mu_2+\mu_3}e^{\mu_3-\mu_2}=CR^2\frac{\rho^2}
+g_{\theta\theta}=R^2e^{2\mu_3}=R^2e^{\mu_2+\mu_3}e^{\mu_3-\mu_2}=CR^2\rho^2
 \end{equation}
 \begin{equation}
-g_{\phi\phi}=R^2e^{2\psi}=R^2e^\beta\chi^{-1}=-\delta\rho^2
+g_{\phi\phi}=R^2e^{2\psi}=R^2e^\beta\chi^{-1}=-R^2\delta\rho^2
 \end{equation}
