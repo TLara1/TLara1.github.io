@@ -228,6 +228,18 @@ And we have arrived at the Schwarzschild metric.
 ## II. The Kerr Solution
 Our derivation of the Schwarzschild metric was not the simplest or most straightforward approach. We took this approach because it closely parallels the more complex derivation of the Kerr metric. In this case, our line element is identical to our spherically symmetric solution, except we allow the off-diagonal term $$g_{t\phi}$$.
 \begin{equation}
-ds^2=g_{tt}dt^2+g_{t\phi}dtd\phi+g_{rr}dr^2+R^2g_{\theta\theta}d\theta^2+R^2g_{\phi\phi}d\phi^2
+ds^2=g_{tt}dt^2+Rg_{t\phi}dtd\phi+g_{rr}dr^2+R^2g_{\theta\theta}d\theta^2+R^2g_{\phi\phi}d\phi^2
 \end{equation}
 $$g_{t\phi}$$ will introduce a new unkown into our equations, and we write
+\begin{equation}
+ds^2=\left(-e^{2\nu}+omega^2e^{2\psi}\right)dt^2-2R\omega e^{2\psi}dtd\phi^2+e^{2\mu_2}dr^2+R^2e^{2\mu_3}d\theta^2+R^2e^{2\psi}d\phi^2
+\end{equation}
+where $$\nu$$, $$\mu_2$$, $$\mu_3$$, $$\omega$$ and $$\psi$$ are dimensionless functions of $$\frac{r}{R}$$ and $$\theta$$. We will once again employ $$R$$ to restore dimensions.
+
+Proceeding as we did previously calculating $$R_{00}$$ and $$R_{33}$$
+\begin{equation}
+R_{00}=0\rightarrow R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu+\mu_3-\mu_2\right)\partial_r\nu+\partial_r^2\nu\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu+\mu_2-\mu_3\right)\partial_\theta\nu+\partial_\theta^2\nu\right)-\frac{1}{2}e^{2\psi-2\nu}\left(R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2+e^{\mu_2-\mu_3}\left(\partial_\theta\omega\right)^2\right)=0
+\end{equation}
+\begin{equation}
+R_{33}=0\rightarrow R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu+\mu_3-\mu_2\right)\partial_r\psi+\partial_r^2\psi\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu+\mu_2-\mu_3\right)\partial_\theta\psi+\partial_\theta^2\psi\right)+\frac{1}{2}e^{2\psi-2\nu}\left(R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2+e^{\mu_2-\mu_3}\left(\partial_\theta\omega\right)^2\right)=0
+\end{equation}
