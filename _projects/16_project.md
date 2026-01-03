@@ -245,9 +245,7 @@ R_{33}=0\rightarrow R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu+\mu_3-\mu_2
 \end{equation}
 We will also use $$R_{03}$$ to resolve $$\omega$$
 \begin{equation}\label{omega eq}
-R_{03}=0\rightarrow R^2\partial_r\left(e^{3\psi-
-u+\mu_3-\mu_2}\partial_r\omega\right)+\partial_\theta\left(e^{3\psi-
-u+\mu_2-\mu_3}\partial_\theta\omega\right)=0
+R_{03}=0\rightarrow R^2\partial_r\left(e^{3\psi-\nu+\mu_3-\mu_2}\partial_r\omega\right)+\partial_\theta\left(e^{3\psi-\nu+\mu_2-\mu_3}\partial_\theta\omega\right)=0
 \end{equation}
 Proceeding with $$G_{22}$$ and $$G_{33}$$
 \begin{equation}
@@ -269,9 +267,7 @@ X=R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2+e^{\mu_2-\mu_3}\left(\partia
 \end{equation}
 We can also use $$R_{03}=0$$ to find
 \begin{equation}\label{R03 eq}
-e^{3\psi-\nu}X=R^2\partial_r\left(e^{3\psi-
-u+\mu_3-\mu_2}\omega\partial_r\omega\right)+\partial_\theta\left(e^{3\psi-
-u+\mu_2-\mu_3}\omega\partial_\theta\omega\right)
+e^{3\psi-\nu}X=R^2\partial_r\left(e^{3\psi-\nu+\mu_3-\mu_2}\omega\partial_r\omega\right)+\partial_\theta\left(e^{3\psi-\nu+\mu_2-\mu_3}\omega\partial_\theta\omega\right)
 \end{equation}
 Inserting \ref{R03 eq} into \ref{add R00 R33 eq}
 \begin{equation}
@@ -293,4 +289,18 @@ e^\beta=\sqrt{\Delta\delta}\quad e^{\mu_3-\mu_2}=\sqrt{\Delta}
 with $$\Delta=r^2+a^2-2Mr$$, $$\delta=\sin^2\left(\theta\right)=1-\mu^2$$. We substitute these solutions to obtain
 \begin{equation}
 X=R^2\sqrt{\Delta}\left(\partial_r\omega\right)^2+\frac{\delta}{\sqrt{\Delta}}\left(\partial_\mu\omega\right)^2
+\end{equation}
+We can rewrite \ref{omega eq} and \ref{add R00 R33 eq}
+\begin{equation}
+R^2\partial_r\left(e^{2\psi-2\nu}\Delta\partial_r\omega\right)+\partial_\mu\left(e^{2\psi-2\nu}\delta\partial_\mu\omega\right)=0
+\end{equation}
+\begin{equation}
+e^{2\psi-2\nu}\left(R^2\Deltaleft(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2\right)=R^2\partial_r\left(\Delta\partial_r\left(\nu-\psi\right)\right)+\partial_\mu\left(\delta\partial_\mu\left(\nu-\psi\right)\right)
+\end{equation}
+which we rexpress as
+\begin{equation}
+R^2\partial_r\left(e^{2\psi-2\nu}\Delta\partial_r\omega\right)+\partial_\mu\left(e^{2\psi-2\nu}\delta\partial_\mu\omega\right)=0
+\end{equation}
+\begin{equation}
+e^{2\psi-2\nu}\left(R^2\Deltaleft(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2\right)=R^2\partial_r\left(\Delta\partial_r\left(\nu-\psi\right)\right)+\partial_\mu\left(\delta\partial_\mu\left(\nu-\psi\right)\right)
 \end{equation}
