@@ -332,5 +332,16 @@ With our definitions we now rewrite \ref{long beta eq kerr}
 \end{equation}
 As we did previously, with our solutions for $$\partial_r\psi$$, $$\partial_\mu\psi$$, $$\partial_\nu\psi$$, and $$\partial_\nu\psi$$
 \begin{equation}
-2=R^2\partial_r\Delta\partial_r\mu_3-\partial_\mu\delta\partial_\mu\mu_2+R^2\frac{\Delta}{2}\left(\frac{1}{2\Delta}\partial_r\Delta-\frac{1}{\chi}\partial_r\chi\right)\left(\frac{1}{2\Delta}\partial_r\Delta+\frac{1}{\chi}\partial_r\chi\right)-\frac{\delta}{2}\left(\frac{1}{2\delta}\partial_\mu\delta-\frac{1}{\chi}\partial_\mu\chi\right)\left(\frac{1}{2\delta}\partial_\mu\delta+\frac{1}{\chi}\partial_\mu\chi\right)+\frac{1}{8\chi^2}\left(R^2\Delta\left(\partial_r\left(\mathcal{A}+\mathcal{B}\right)\right)^2-\delta\left(\partial_\mu\left(\mathcal{A}+\mathcal{B}\right)\right)^2\right)
+2=R^2\partial_r\Delta\partial_r\mu_3-\partial_\mu\delta\partial_\mu\mu_2+R^2\frac{\Delta}{2}\left(\frac{1}{2\Delta}\partial_r\Delta-\frac{1}{\chi}\partial_r\chi\right)\left(\frac{1}{2\Delta}\partial_r\Delta+\frac{1}{\chi}\partial_r\chi\right)-\frac{\delta}{2}\left(\frac{1}{2\delta}\partial_\mu\delta-\frac{1}{\chi}\partial_\mu\chi\right)\left(\frac{1}{2\delta}\partial_\mu\delta+\frac{1}{\chi}\partial_\mu\chi\right)+\frac{1}{8\chi^2}\left(R^2\Delta\left(\partial_r\left(\mathcal{A}-\mathcal{B}\right)\right)^2-\delta\left(\partial_\mu\left(\mathcal{A}-\mathcal{B}\right)\right)^2\right)
+\end{equation}
+Again, following our past work and inserting $$\mathcal{A}$$ and $$\mathcal{B}$$
+\begin{equation}
+2=\left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\frac{3}{2\Delta}\left(\frac{r}{R}-M\right)^2-\frac{1}{2\delta}\mu^2-\frac{1}{8\chi^2}\left(R^2\Delta\left(\partial_r\left(\mathcal{A}+\mathcal{B}\right)\right)^2+\delta\left(\partial_\mu\left(\mathcal{A}-\mathcal{B}\right)\right)^2\right)+\frac{1}{8\chi^2}\left(R^2\Delta\left(\partial_r\left(\mathcal{A}-\mathcal{B}\right)\right)^2-\delta\left(\partial_\mu\left(\mathcal{A}-\mathcal{B}\right)\right)^2\right)
+\end{equation}
+\begin{equation}
+2=\left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\frac{3}{2\Delta}\left(\frac{r}{R}-M\right)^2-\frac{1}{2\delta}\mu^2-\frac{1}{2\chi^2}\left(R^2\Delta\left(\partial_r\mathcal{A}\partial_r\mathcal{B}-\delta\left(\partial_\mu\mathcal{A}\partial_\mu\mathcal{B}\right)
+\end{equation}
+To arrive at
+\begin{equation}\label{chi^2 master eq}
+2\left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)-\frac{1}{2\chi^2}\left(R^2\Delta\left(\partial_r\mathcal{A}\partial_r\mathcal{B}-\delta\left(\partial_\mu\mathcal{A}\partial_\mu\mathcal{B}\right)+3\frac{M^2-a^2}{\Delta}-\frac{1}{\delta}=0
 \end{equation}
