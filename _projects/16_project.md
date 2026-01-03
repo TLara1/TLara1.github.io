@@ -328,5 +328,9 @@ R^2\Delta\left(\partial_r\mathcal{B}\right)^2+\delta\left(\partial_\mu\mathcal{B
 \end{equation}
 With our definitions we now rewrite \ref{long beta eq kerr}
 \begin{equation}
-R^2e^{-\beta}\left(\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\beta\right)-\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\beta\right)\right)=2R^2e^{\mu_3-\mu_2}\left(\partial_r\beta\partial_r\mu_3+\partial_r\psi\partial_r\nu\right)-2e^{\mu_2-\mu_3}\left(\partial_\theta\beta\partial_\theta\mu_2+\partial_\theta\psi\partial_\theta\nu\right)+\frac{1}{2}e^{2\psi-2\nu}\left(R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2-e^{\mu_2-\mu_3}\left(\partial_\theta\omega\right)^2\right)
+\frac{1}{2}\left(R^2\partial_r^2\Delta-\partial_\mu^2\delta\right)=R^2\partial_r\Delta\partial_r\mu_3+2R^2\Delta\partial_r\psi\partial_r\nu-\partial_\mu\delta\partial_\mu\mu_2-2\delta\partial_\mu\psi\partial_\mu\nu+\frac{1}{2\chi^2}\left(R^2\Delta\left(\partial_r\omega\right)^2-\delta\left(\partial_\mu\omega\right)^2\right)
+\end{equation}
+As we did previously, with our solutions for $$\partial_r\psi$$, $$\partial_\mu\psi$$, $$\partial_\nu\psi$$, and $$\partial_\nu\psi$$
+\begin{equation}
+2=R^2\partial_r\Delta\partial_r\mu_3-\partial_\mu\delta\partial_\mu\mu_2+R^2\frac{\Delta}{2}\left(\frac{1}{2\Delta}\partial_r\Delta-\frac{1}{\chi}\partial_r\chi\right)\left(\frac{1}{2\Delta}\partial_r\Delta+\frac{1}{\chi}\partial_r\chi\right)-\frac{\delta}{2}\left(\frac{1}{2\delta}\partial_\mu\delta-\frac{1}{\chi}\partial_\mu\chi\right)\left(\frac{1}{2\delta}\partial_\mu\delta+\frac{1}{\chi}\partial_\mu\chi\right)+\frac{1}{8\chi^2}\left(R^2\Delta\left(\partial_r\left(\mathcal{A}+\mathcal{B}\right)\right)^2-\delta\left(\partial_\mu\left(\mathcal{A}+\mathcal{B}\right)\right)^2\right)
 \end{equation}
