@@ -320,10 +320,10 @@ Now we define $$\mathcal{A}=\chi+\omega$$ and $$\mathcal{B}=\chi-\omega$$, notin
 2\left(R^2\Delta\left(\partial_r\mathcal{A}\right)^2+R^2\Delta\left(\partial_r\mathcal{B}\right)^2+\delta\left(\partial_\mu\mathcal{A}\right)^2+\delta\left(\partial_\mu\mathcal{B}\right)^2\right)=\left(\mathcal{A}+\mathcal{B}\right)\left(R^2\partial_r\left(\Delta\left(\partial_r\mathcal{A}\right)\right)+R^2\partial_r\left(\Delta\left(\partial_r\mathcal{B}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{A}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{B}\right)\right)\right)
 \end{equation}
 and adding and subtracting these two
-\begin{equation}
+\begin{equation}\label{A master eq}
 R^2\Delta\left(\partial_r\mathcal{A}\right)^2+\delta\left(\partial_\mu\mathcal{A}\right)^2=\frac{1}{2}\left(\mathcal{A}+\mathcal{B}\right)\left(R^2\partial_r\left(\Delta\left(\partial_r\mathcal{A}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{A}\right)\right)\right)
 \end{equation}
-\begin{equation}
+\begin{equation}\label{B master eq}
 R^2\Delta\left(\partial_r\mathcal{B}\right)^2+\delta\left(\partial_\mu\mathcal{B}\right)^2=\frac{1}{2}\left(\mathcal{A}+\mathcal{B}\right)\left(R^2\partial_r\left(\Delta\left(\partial_r\mathcal{B}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{B}\right)\right)\right)
 \end{equation}
 With our definitions we now rewrite \ref{long beta eq kerr}
@@ -342,6 +342,21 @@ Again, following our past work and inserting $$\mathcal{A}$$ and $$\mathcal{B}$$
 2=\left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\frac{3}{2\Delta}\left(\frac{r}{R}-M\right)^2-\frac{1}{2\delta}\mu^2-\frac{1}{2\chi^2}\left(R^2\Delta\left(\partial_r\mathcal{A}\partial_r\mathcal{B}-\delta\left(\partial_\mu\mathcal{A}\partial_\mu\mathcal{B}\right)
 \end{equation}
 To arrive at
-\begin{equation}\label{chi^2 master eq}
+\begin{equation}\label{mu_2+mu_3 master eq}
 2\left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)-\frac{1}{2\chi^2}\left(R^2\Delta\left(\partial_r\mathcal{A}\partial_r\mathcal{B}-\delta\left(\partial_\mu\mathcal{A}\partial_\mu\mathcal{B}\right)+3\frac{M^2-a^2}{\Delta}-\frac{1}{\delta}=0
 \end{equation}
+Our remaining task is to solve the symmetric \label{A master eq} and \label{B master eq} after which we solve for $$\mu_2+\mu_3$$ using \ref{mu_2+mu_3 master eq}.
+
+Now, we will define
+\begin{equation}
+\mathcal{W}=\frac{\mathcal{A}-\mathcal{B}}{2\mathcal{A}\mathcal{B}}=\frac{\omega}{\chi^2-\omega^2}\quad\mathcal{Y}=\mathcal{A}\mathcal{B}e^{2\psi}=\sqrt{\Delta\delta}\frac{\chi^2-\omega^2}/{\chi}
+\end{equation}
+Now consider
+\begin{align}
+&\partial_r\left(\frac{\mathcal{Y}^2}{\delta}\partial_r\mathcal{W}\right)+\partial_\mu\left(\frac{\mathcal{Y}^2}{\Delta}\partial_\mu\mathcal{W}\right)\\
+&=\partial_r\left(\frac{\Delta}{\chi^2}\left(\mathcal{A}\mathcal{B}\right)^2\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_r\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)\right)+\partial_\mu\left(\frac{\delta}{\chi^2}\left(\mathcal{A}\mathcal{B}\right)^2\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_\mu\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)\right)\\
+&=\partial_r\left(\frac{\Delta}{\chi^2}\left(\left(\mathcal{A}\mathcal{B}\right)\partial_r\omega-\omega\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)\right)+\partial_\mu\left(\frac{\delta}{\chi^2}\left(\left(\mathcal{A}\mathcal{B}\right)\partial_\mu\omega-\omega\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)\right)\\
+&=\left(\chi^2-\omega^2\right)\left(\partial_r\left(\frac{\Delta}{\chi^2}\partial_r\omega\right)+\partial_\mu\left(\frac{\delta}{\chi^2}\partial_\mu\omega\right)\right)-\omega\left(\partial_r\left(\frac{\Delta}{\chi^2}\partial_r\left(\chi^2-\omega^2\right)\right)+\partial_\mu\left(\frac{\delta}{\chi^2}\partial_\mu\left(\chi^2-\omega^2\right)\right)\right)
+&=0
+\end{align}
+We have used \ref{omega eq} and \ref{chi^2-omega^2 eq}.
