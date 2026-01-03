@@ -296,20 +296,33 @@ We can rewrite \ref{omega eq} and \ref{add R00 R33 eq}
 R^2\partial_r\left(e^{2\psi-2\nu}\Delta\partial_r\omega\right)+\partial_\mu\left(e^{2\psi-2\nu}\delta\partial_\mu\omega\right)=0
 \end{equation}
 \begin{equation}
-e^{2\psi-2\nu}\left(R^2\Deltaleft(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2\right)=R^2\partial_r\left(\Delta\partial_r\left(\nu-\psi\right)\right)+\partial_\mu\left(\delta\partial_\mu\left(\nu-\psi\right)\right)
+e^{2\psi-2\nu}\left(R^2\Delta\left(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2\right)=R^2\partial_r\left(\Delta\partial_r\left(\nu-\psi\right)\right)+\partial_\mu\left(\delta\partial_\mu\left(\nu-\psi\right)\right)
 \end{equation}
 which we reexpress as
 \begin{equation}
 R^2\partial_r\left(\frac{\Delta}{\chi^2}\partial_r\omega\right)+\partial_\mu\left(\frac{\delta}{\chi^2}\partial_\mu\omega\right)=0
 \end{equation}
-\begin{equation}
+\begin{equation}\label{chi eq 1}
 \rightarrow 2\left(R^2\Delta\partial_r\chi\partial_r\omega+\delta\partial_\mu\chi\partial_\mu\omega\right)=\chi\left(R^2\partial_r\left(\Delta\partial_r\omega\right)+\partial_\mu\left(\delta\partial_\mu\omega\right)\right)
 \end{equation}
 \begin{equation}
-\frac{1}{\chi^2}\left(R^2\Deltaleft(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2\right)=R^2\partial_r\left(\frac{\Delta}{\chi}\partial_r\left(\chi\right)\right)+\partial_\mu\left(\frac{\delta}{\chi}\partial_\mu\left(\chi\right)\right)
+\frac{1}{\chi^2}\left(R^2\Delta\left(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2\right)=R^2\partial_r\left(\frac{\Delta}{\chi}\partial_r\left(\chi\right)\right)+\partial_\mu\left(\frac{\delta}{\chi}\partial_\mu\left(\chi\right)\right)
 \end{equation}
-\begin{equation}
+\begin{equation}\label{chi eq 2}
 \rightarrow
 R^2\Delta\left(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2+R^2\Delta\left(\partial_r\chi\right)^2+\delta\left(\partial_\mu\chi\right)^2=\chi\left(R^2\partial_r\left(\Delta\partial_r\chi\right)+\partial_\mu\left(\delta\partial_\mu\chi\right)\right)
 \end{equation}
-Now we define $$\mathcal{A}=\chi+\omega$$ and $$\mathcal{B}=\chi-\omega$$
+Now we define $$\mathcal{A}=\chi+\omega$$ and $$\mathcal{B}=\chi-\omega$$, noting that $$\mathcal{A}\mathcal{B}=\chi^2-\omega^2$$ and rewrite \ref{chi eq 1} and \ref{chi eq 2}
+\begin{equation}
+2\left(\Delta\left(\partial_r\mathcal{A}\right)^2-\Delta\left(\partial_r\mathcal{B}\right)^2+\delta\left(\partial_\mu\mathcal{A}\right)^2-\delta\left(\partial_\mu\mathcal{B}\right)^2\right)=\left(\mathcal{A}+\mathcal{B}\right)\left(\partial_r\left(\Delta\left(\partial_r\mathcal{A}\right)\right)-\partial_r\left(\Delta\left(\partial_r\mathcal{B}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{A}\right)\right)-\partial_\mu\left(\delta\left(\partial_\mu\mathcal{B}\right)\right)\right)
+\end{equation}
+\begin{equation}
+2\left(\Delta\left(\partial_r\mathcal{A}\right)^2+\Delta\left(\partial_r\mathcal{B}\right)^2+\delta\left(\partial_\mu\mathcal{A}\right)^2+\delta\left(\partial_\mu\mathcal{B}\right)^2\right)=\left(\mathcal{A}+\mathcal{B}\right)\left(\partial_r\left(\Delta\left(\partial_r\mathcal{A}\right)\right)+\partial_r\left(\Delta\left(\partial_r\mathcal{B}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{A}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{B}\right)\right)\right)
+\end{equation}
+and adding and subtracting these two
+\begin{equation}
+\Delta\left(\partial_r\mathcal{A}\right)^2+\delta\left(\partial_\mu\mathcal{A}\right)^2=\frac{1}{2}\left(\mathcal{A}+\mathcal{B}\right)\left(\partial_r\left(\Delta\left(\partial_r\mathcal{A}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{A}\right)\right)\right)
+\end{equation}
+\begin{equation}
+\Delta\left(\partial_r\mathcal{B}\right)^2+\delta\left(\partial_\mu\mathcal{B}\right)^2=\frac{1}{2}\left(\mathcal{A}+\mathcal{B}\right)\left(\partial_r\left(\Delta\left(\partial_r\mathcal{B}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{B}\right)\right)\right)
+\end{equation}
