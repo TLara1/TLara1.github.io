@@ -110,7 +110,8 @@ which we can express as
 0=R^2\partial_r\left(\frac{\Delta}{\chi}\partial_r\chi\right)+\partial_\mu\left(\frac{\delta}{\chi}\partial_\mu\chi\right)
 \end{equation}
 \begin{equation}
-R^2\chi\left(\partial_r\left(\Delta\partial_r\chi\right)+\partial_\mu\left(\delta\partial_\mu\chi\right)\right)=R^2\Delta\left(\partial_r\chi\right)^2+\delta\left(\partial_\mu\chi\right)^2
+\rightarrow
+\chi\left(R^2\partial_r\left(\Delta\partial_r\chi\right)+\partial_\mu\left(\delta\partial_\mu\chi\right)\right)=R^2\Delta\left(\partial_r\chi\right)^2+\delta\left(\partial_\mu\chi\right)^2
 \end{equation}
 We can also write \ref{long beta eq} with these new definitions
 \begin{equation}
@@ -282,7 +283,7 @@ Comparing \ref{chi^2-omega^2 eq} with \ref{omega eq} we see that both $$\omega$$
 R^2e^{-\beta}\left(\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\beta\right)-\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\beta\right)\right)=2R^2e^{\mu_3-\mu_2}\left(\partial_r\beta\partial_r\mu_3+\partial_r\psi\partial_r\nu\right)-2e^{\mu_2-\mu_3}\left(\partial_\theta\beta\partial_\theta\mu_2+\partial_\theta\psi\partial_\theta\nu\right)+\frac{1}{2}e^{2\psi-2\nu}\left(R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2-e^{\mu_2-\mu_3}\left(\partial_\theta\omega\right)^2\right)
 \end{equation}
 
-Now, using the same null surface arguement we did previously, we write
+Now, using the same null surface argument we did previously, we write
 \begin{equation}
 e^\beta=\sqrt{\Delta\delta}\quad e^{\mu_3-\mu_2}=\sqrt{\Delta}
 \end{equation}
@@ -297,10 +298,18 @@ R^2\partial_r\left(e^{2\psi-2\nu}\Delta\partial_r\omega\right)+\partial_\mu\left
 \begin{equation}
 e^{2\psi-2\nu}\left(R^2\Deltaleft(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2\right)=R^2\partial_r\left(\Delta\partial_r\left(\nu-\psi\right)\right)+\partial_\mu\left(\delta\partial_\mu\left(\nu-\psi\right)\right)
 \end{equation}
-which we rexpress as
+which we reexpress as
 \begin{equation}
-R^2\partial_r\left(e^{2\psi-2\nu}\Delta\partial_r\omega\right)+\partial_\mu\left(e^{2\psi-2\nu}\delta\partial_\mu\omega\right)=0
+R^2\partial_r\left(\frac{\Delta}{\chi^2}\partial_r\omega\right)+\partial_\mu\left(\frac{\delta}{\chi^2}\partial_\mu\omega\right)=0
 \end{equation}
 \begin{equation}
-e^{2\psi-2\nu}\left(R^2\Deltaleft(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2\right)=R^2\partial_r\left(\Delta\partial_r\left(\nu-\psi\right)\right)+\partial_\mu\left(\delta\partial_\mu\left(\nu-\psi\right)\right)
+\rightarrow 2\left(R^2\Delta\partial_r\chi\partial_r\omega+\delta\partial_\mu\chi\partial_\mu\omega\right)=\chi\left(R^2\partial_r\left(\Delta\partial_r\omega\right)+\partial_\mu\left(\delta\partial_\mu\omega\right)\right)
 \end{equation}
+\begin{equation}
+\frac{1}{\chi^2}\left(R^2\Deltaleft(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2\right)=R^2\partial_r\left(\frac{\Delta}{\chi}\partial_r\left(\chi\right)\right)+\partial_\mu\left(\frac{\delta}{\chi}\partial_\mu\left(\chi\right)\right)
+\end{equation}
+\begin{equation}
+\rightarrow
+R^2\Delta\left(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2+R^2\Delta\left(\partial_r\chi\right)^2+\delta\left(\partial_\mu\chi\right)^2=\chi\left(R^2\partial_r\left(\Delta\partial_r\chi\right)+\partial_\mu\left(\delta\partial_\mu\chi\right)\right)
+\end{equation}
+
