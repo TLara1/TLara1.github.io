@@ -196,3 +196,21 @@ Now employing \ref{chi^2 master eq}, and using $$\chi=-\sqrt{\frac{\Delta}{\delt
 \left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)=\frac{\Delta}{\rho^2}-\frac{\left(\frac{r}{R}-M\right)^{2}}{\Delta}+1
 \end{equation}
 From which we obtain
+\begin{equation}
+\left(\mu_2+\mu_3\right)=\log\left(\frac{\rho^2}{\sqrt{\Delta}}\right)+C
+\end{equation}
+where $$C$$ is an arbitrary function of $$\frac{\frac{r}{R}-M}{\mu}$$.
+
+We are now ready to assemble all components of the metric tensor
+\begin{equation}
+g_{tt}=-e^{2\nu}=-\chi e^\beta=\frac{\Delta}{\rho^2}
+\end{equation}
+\begin{equation}
+g_{rr}=e^{2\mu_2}=e^{\mu_2+\mu_3}e^{\mu_2-\mu_3}=C\frac{\rho^2}{\Delta}
+\end{equation}
+\begin{equation}
+g_{\theta\theta}=R^2e^{2\mu_3}=R^2e^{\mu_2+\mu_3}e^{\mu_3-\mu_2}=CR^2\frac{\rho^2}
+\end{equation}
+\begin{equation}
+g_{\phi\phi}=R^2e^{2\psi}=R^2e^\beta\chi^{-1}=-\delta\rho^2
+\end{equation}
