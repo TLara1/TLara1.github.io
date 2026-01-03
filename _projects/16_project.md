@@ -372,7 +372,10 @@ And $$\mathcal{G}$$ obviously satisfies
 \begin{equation}\label{potential G function 1}
 R^2\partial_r\left(\frac{\Delta}{\mathcal{Y}^2}\partial_r\mathcal{G}\right)+\partial_\mu\left(\frac{\delta}{\mathcal{Y}^2}\partial_\mu\mathcal{G}\right)=0
 \end{equation}
-If we compare \ref{potential G function 1} to \ref{chi eq 1 form 1}, we notice we effectively replaced $$\omega\rightarrow\mathcal{G}$$ and $$\chi\rightarrow\mathcal{Y}$$. Performing the same change of variables on \ref{chi eq 2 form 1} we have
+Now, consider
 \begin{equation}
-\frac{1}{\mathcal{Y}^2}\left(R^2\Delta\left(\partial_r\mathcal{G}\right)^2+\delta\left(\partial_\mu\mathcal{G}\right)^2\right)=R^2\partial_r\left(\frac{\Delta}{\mathcal{Y}}\partial_r\mathcal{Y}\right)+\partial_\mu\left(\frac{\delta}{\mathcal{Y}}\partial_\mu\chi\right)
+R^2\partial_r\left(\frac{\Delta}{\mathcal{Y}}\partial_r\mathcal{Y}\right)+\partial_\mu\left(\frac{\delta}{\mathcal{Y}}\partial_\mu\mathcal{Y}\right)
+\end{equation}
+\begin{equation}
+=R^2\partial_r\left(\frac{\Delta}{\mathcal{Y}}\left(\frac{\sqrt{\Delta\delta}}{\chi}\partial_r\left(\mathcal{A}\mathcal{B}\right)+\mathcal{A}\mathcal{B}\partial_r\left(\frac{\sqrt{\Delta\delta}}{\chi}\right)\right)\right)+\partial_\mu\left(\frac{\delta}{\mathcal{Y}}\left(\frac{\sqrt{\Delta\delta}}{\chi}\partial_\mu\left(\mathcal{A}\mathcal{B}\right)+\mathcal{A}\mathcal{B}\partial_\mu\left(\frac{\sqrt{\Delta\delta}}
 \end{equation}
