@@ -37,7 +37,7 @@ In vacua, Einstein's field equations are $$G_{\mu\nu}=0$$ which implies $$R_{\mu
 
 The Schwarzschild metric is the exact solution to the Einstein field equations for the gravitational field outside a spherical mass with no angular momentum. We work in spherical coordinates $$t,r,\theta,\phi$$. Due to a static solution and rotational and azimuthal invariance, we expect our metric to be invariant under $$t\rightarrow-t$$, $$\theta\rightarrow-\theta$$, and $$\phi\rightarrow-\phi$$, which removes off-diagonal terms from our metric. Furthermore, due to spherical symmetry, our metric should only depend on $$r$$ and $$\theta$$. Our line element is
 \begin{equation}
-ds^2=g_{tt}d_t^2+g_{rr}dr^2+R^2g_{\theta\theta}d\theta^2+R^2g_{\phi\phi}d\phi^2
+ds^2=g_{tt}dt^2+g_{rr}dr^2+R^2g_{\theta\theta}d\theta^2+R^2g_{\phi\phi}d\phi^2
 \end{equation}
 which we rewrite as
 \begin{equation}
@@ -45,7 +45,7 @@ ds^2=-e^{2\nu}dt^2+e^{2\mu_2}dr^2+R^2e^{2\mu_3}d\theta^2+R^2e^{2\psi}d\phi^2
 \end{equation}
 where $$\nu$$, $$\mu_2$$, $$\mu_3$$, and $$\psi$$ are dimensionless functions of $$\frac{r}{R}$$ and $$\theta$$. $$R$$ is a constant with units of length needed to restore dimensions.
 
-Now the Ricci tensor has six nonzero elements, of which $$R_{00}$$ and $$R_{33}$$ are of interest. Setting these to zero yields
+Now the Ricci tensor has five nonzero elements, of which $$R_{00}$$ and $$R_{33}$$ are of interest. Setting these to zero yields
 \begin{equation}
 R_{00}=0\rightarrow R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu+\mu_3-\mu_2\right)\partial_r\nu+\partial_r^2\nu\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu+\mu_2-\mu_3\right)\partial_\theta\nu+\partial_\theta^2\nu\right)=0
 \end{equation}
@@ -59,6 +59,7 @@ G_{22}=e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\mu_2\right)\partial_\thet
 \begin{equation}
 G_{33}=R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\mu_3\right)\partial_r\nu+\partial_r\mu_3\partial_r\psi\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu-\mu_3\right)\partial_\theta\nu+\partial_\theta^2\left(\nu+\psi\right)+\partial_\theta\left(\psi-\mu_3\right)\partial_\theta\psi\right)=0
 \end{equation}
+Our solution, with four unknowns $$\nu$$, $$\mu_2$$, $$\mu_3$$, and $$\psi$$ will solve these from the four equations $$R_{00}=0$$, $$R_{33}=0$$, $$G_{22}=0$$, and $$G_{33}=0$$. 
 Now define $$\beta=\psi+\nu$$, and calculating the difference of $$G_{33}$$ and $$G_{22}$$
 \begin{equation}
 R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\nu-\mu_2-\mu_3\right)\partial_r\nu+\partial_r^2\beta+\partial_r\left(\psi-\mu_2-\mu_3\right)\partial_r\psi\right)-e^{\mu_2-\mu_3}\left(\partial_\theta\left(\nu-\mu_2-\mu_3\right)\partial_\theta\nu+\partial_\theta^2\beta+\partial_\theta\left(\psi-\mu_2-\mu_3\right)\partial_\theta\psi\right)=0
@@ -223,3 +224,10 @@ Now changing our coordiantes $$r\rightarrow R\rho$$ and defining an effective ma
 ds^2=\left(1-\frac{2M}{r}\right)dt^2-\left(1-\frac{2M}{r}\right)^{-1}dr^2-r^2d\theta^2-r^2\sin^2(\theta)d\phi^2
 \end{equation}
 And we have arrived at the Schwarzschild metric.
+
+## II. The Kerr Solution
+Our derivation of the Schwarzschild metric was not the simplest or most straightforward approach. We took this approach because it closely parallels the more complex derivation of the Kerr metric. In this case, our line element is identical to our spherically symmetric solution, except we allow the off-diagonal term $$g_{t\phi}$$.
+\begin{equation}
+ds^2=g_{tt}dt^2+g_{t\phi}dtd\phi+g_{rr}dr^2+R^2g_{\theta\theta}d\theta^2+R^2g_{\phi\phi}d\phi^2
+\end{equation}
+$$g_{t\phi}$$ will introduce a new unkown into our equations, and we write
