@@ -236,10 +236,33 @@ ds^2=\left(-e^{2\nu}+omega^2e^{2\psi}\right)dt^2-2R\omega e^{2\psi}dtd\phi^2+e^{
 \end{equation}
 where $$\nu$$, $$\mu_2$$, $$\mu_3$$, $$\omega$$ and $$\psi$$ are dimensionless functions of $$\frac{r}{R}$$ and $$\theta$$. We will once again employ $$R$$ to restore dimensions.
 
-Proceeding as we did previously calculating $$R_{00}$$ and $$R_{33}$$
+Proceeding as we did previously, calculating $$R_{00}$$ and $$R_{33}$$
 \begin{equation}
 R_{00}=0\rightarrow R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu+\mu_3-\mu_2\right)\partial_r\nu+\partial_r^2\nu\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu+\mu_2-\mu_3\right)\partial_\theta\nu+\partial_\theta^2\nu\right)-\frac{1}{2}e^{2\psi-2\nu}\left(R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2+e^{\mu_2-\mu_3}\left(\partial_\theta\omega\right)^2\right)=0
 \end{equation}
 \begin{equation}
 R_{33}=0\rightarrow R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu+\mu_3-\mu_2\right)\partial_r\psi+\partial_r^2\psi\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu+\mu_2-\mu_3\right)\partial_\theta\psi+\partial_\theta^2\psi\right)+\frac{1}{2}e^{2\psi-2\nu}\left(R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2+e^{\mu_2-\mu_3}\left(\partial_\theta\omega\right)^2\right)=0
+\end{equation}
+We will also use $$R_{03}$$ to resolve $$\omega$$
+\begin{equation}
+R_{30}=0\rightarrow R^2\partial_r\left(e^{3\psi-nu+\mu_3-\mu_2}\partial_r\omega\right)+\partial_\theta\left(e^{3\psi-nu+\mu_2-\mu_3}\partial_\theta\omega\right)=0
+\end{equation}
+Proceeding with $$G_{22}$$ and $$G_{33}$$
+\begin{equation}
+G_{22}=e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\mu_2\right)\partial_\theta\nu+\partial_\theta\mu_2\partial_\theta\psi\right)+R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu-\mu_2\right)\partial_r\nu+\partial_r^2\left(\nu+\psi\right)+\partial_r\left(\psi-\mu_2\right)\partial_r\psi\right)-\frac{1}{4}e^{2\psi-2\nu}\left(R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2-e^{\mu_2-\mu_3}\left(\partial_\theta\omega\right)^2\right)=0
+\end{equation}
+\begin{equation}
+G_{33}=R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\mu_3\right)\partial_r\nu+\partial_r\mu_3\partial_r\psi\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu-\mu_3\right)\partial_\theta\nu+\partial_\theta^2\left(\nu+\psi\right)+\partial_\theta\left(\psi-\mu_3\right)\partial_\theta\psi\right)+\frac{1}{4}e^{2\psi-2\nu}\left(R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2-e^{\mu_2-\mu_3}\left(\partial_\theta\omega\right)^2\right)=0
+\end{equation}
+As we did previously, adding and subtracting $$R_{00}$$ and $$R_{33}$$ and writing $$\beta=\psi+\nu$$
+
+\begin{equation}\label{beta eq 1}
+0=R^2\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\beta\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\beta\right)
+\end{equation}
+\begin{equation}\label{beta eq 2}
+e^{3\psi-\nu}X=R^2\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\left(\nu-\psi\right)\right)+\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\left(\nu-\psi\right)\right)
+\end{equation}
+Where
+\begin{equation}
+X=R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2+e^{\mu_2-\mu_3}\left(\partial_\theta\omega\right)^2
 \end{equation}
