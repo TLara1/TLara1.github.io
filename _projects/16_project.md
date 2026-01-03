@@ -214,3 +214,12 @@ g_{\theta\theta}=R^2e^{2\mu_3}=R^2e^{\mu_2+\mu_3}e^{\mu_3-\mu_2}=CR^2\rho^2
 \begin{equation}
 g_{\phi\phi}=R^2e^{2\psi}=R^2e^\beta\chi^{-1}=-R^2\delta\rho^2
 \end{equation}
+Now with a simple change of coordinates we can relate this metric to the usual Schwarzschild metric, observing that $$\Delta=\rho^2-2\rho\sqrt{M^2-a^2}$$
+\begin{equation}
+ds^2=\left(1-\frac{2\sqrt{M^2-a^2}}{\rho}\right)dt^2+C\left(1-\frac{2\sqrt{M^2-a^2}}{\rho}\right)^{-1}dr^2+CR^2\rho^2d\theta^2-R^2\rho^2\sin^2(\theta)d\phi^2
+\end{equation}
+Now changing our coordiantes $$r\rightarrow R\rho$$ and defining an effective mass $$M\rightarrow\sqrt{M^2-a^2}R$$, and setting $$C=-1$$ to recover Minkowskian spacetime in the limit of $$M\rightarrow0$$, we obtain 
+\begin{equation}
+ds^2=\left(1-\frac{2M}{r}\right)dt^2-\left(1-\frac{2M}{r}\right)^{-1}dr^2-r^2d\theta^2-r^2\sin^2(\theta)d\phi^2
+\end{equation}
+And we have arrived at the Schwarzschild metric.
