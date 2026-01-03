@@ -279,7 +279,7 @@ And once again defining $$\chi=e^{\nu-\psi}$$
 0=R^2\partial_r\left(e^{3\psi-\nu+\mu_3-\mu_2}\partial_r\left(\chi^2-\omega^2\right)\right)+\partial_\theta\left(e^{3\psi-\nu+\mu_2-\mu_3}\partial_\theta\left(\chi^2-\omega^2\right)\right)
 \end{equation}
 Comparing \ref{chi^2-omega^2 eq} with \ref{omega eq} we see that both $$\omega$$ and $$\chi^2-\omega^2$$ are determined by the same equation. Finally, taking the difference of $$G_{22}$$ and $$G_{33}$$ and using $$\beta$$, we have
-\begin{equation}
+\begin{equation}\label{long beta eq kerr}
 R^2e^{-\beta}\left(\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\beta\right)-\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\beta\right)\right)=2R^2e^{\mu_3-\mu_2}\left(\partial_r\beta\partial_r\mu_3+\partial_r\psi\partial_r\nu\right)-2e^{\mu_2-\mu_3}\left(\partial_\theta\beta\partial_\theta\mu_2+\partial_\theta\psi\partial_\theta\nu\right)+\frac{1}{2}e^{2\psi-2\nu}\left(R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2-e^{\mu_2-\mu_3}\left(\partial_\theta\omega\right)^2\right)
 \end{equation}
 
@@ -314,15 +314,19 @@ R^2\Delta\left(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2
 \end{equation}
 Now we define $$\mathcal{A}=\chi+\omega$$ and $$\mathcal{B}=\chi-\omega$$, noting that $$\mathcal{A}\mathcal{B}=\chi^2-\omega^2$$ and rewrite \ref{chi eq 1} and \ref{chi eq 2}
 \begin{equation}
-2\left(\Delta\left(\partial_r\mathcal{A}\right)^2-\Delta\left(\partial_r\mathcal{B}\right)^2+\delta\left(\partial_\mu\mathcal{A}\right)^2-\delta\left(\partial_\mu\mathcal{B}\right)^2\right)=\left(\mathcal{A}+\mathcal{B}\right)\left(\partial_r\left(\Delta\left(\partial_r\mathcal{A}\right)\right)-\partial_r\left(\Delta\left(\partial_r\mathcal{B}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{A}\right)\right)-\partial_\mu\left(\delta\left(\partial_\mu\mathcal{B}\right)\right)\right)
+2\left(R^2\Delta\left(\partial_r\mathcal{A}\right)^2-R^2\Delta\left(\partial_r\mathcal{B}\right)^2+\delta\left(\partial_\mu\mathcal{A}\right)^2-\delta\left(\partial_\mu\mathcal{B}\right)^2\right)=\left(\mathcal{A}+\mathcal{B}\right)\left(R^2\partial_r\left(\Delta\left(\partial_r\mathcal{A}\right)\right)-R^2\partial_r\left(\Delta\left(\partial_r\mathcal{B}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{A}\right)\right)-\partial_\mu\left(\delta\left(\partial_\mu\mathcal{B}\right)\right)\right)
 \end{equation}
 \begin{equation}
-2\left(\Delta\left(\partial_r\mathcal{A}\right)^2+\Delta\left(\partial_r\mathcal{B}\right)^2+\delta\left(\partial_\mu\mathcal{A}\right)^2+\delta\left(\partial_\mu\mathcal{B}\right)^2\right)=\left(\mathcal{A}+\mathcal{B}\right)\left(\partial_r\left(\Delta\left(\partial_r\mathcal{A}\right)\right)+\partial_r\left(\Delta\left(\partial_r\mathcal{B}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{A}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{B}\right)\right)\right)
+2\left(R^2\Delta\left(\partial_r\mathcal{A}\right)^2+R^2\Delta\left(\partial_r\mathcal{B}\right)^2+\delta\left(\partial_\mu\mathcal{A}\right)^2+\delta\left(\partial_\mu\mathcal{B}\right)^2\right)=\left(\mathcal{A}+\mathcal{B}\right)\left(R^2\partial_r\left(\Delta\left(\partial_r\mathcal{A}\right)\right)+R^2\partial_r\left(\Delta\left(\partial_r\mathcal{B}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{A}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{B}\right)\right)\right)
 \end{equation}
 and adding and subtracting these two
 \begin{equation}
-\Delta\left(\partial_r\mathcal{A}\right)^2+\delta\left(\partial_\mu\mathcal{A}\right)^2=\frac{1}{2}\left(\mathcal{A}+\mathcal{B}\right)\left(\partial_r\left(\Delta\left(\partial_r\mathcal{A}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{A}\right)\right)\right)
+R^2\Delta\left(\partial_r\mathcal{A}\right)^2+\delta\left(\partial_\mu\mathcal{A}\right)^2=\frac{1}{2}\left(\mathcal{A}+\mathcal{B}\right)\left(R^2\partial_r\left(\Delta\left(\partial_r\mathcal{A}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{A}\right)\right)\right)
 \end{equation}
 \begin{equation}
-\Delta\left(\partial_r\mathcal{B}\right)^2+\delta\left(\partial_\mu\mathcal{B}\right)^2=\frac{1}{2}\left(\mathcal{A}+\mathcal{B}\right)\left(\partial_r\left(\Delta\left(\partial_r\mathcal{B}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{B}\right)\right)\right)
+R^2\Delta\left(\partial_r\mathcal{B}\right)^2+\delta\left(\partial_\mu\mathcal{B}\right)^2=\frac{1}{2}\left(\mathcal{A}+\mathcal{B}\right)\left(R^2\partial_r\left(\Delta\left(\partial_r\mathcal{B}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{B}\right)\right)\right)
+\end{equation}
+With our definitions we now rewrite \ref{long beta eq kerr}
+\begin{equation}
+R^2e^{-\beta}\left(\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\beta\right)-\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\beta\right)\right)=2R^2e^{\mu_3-\mu_2}\left(\partial_r\beta\partial_r\mu_3+\partial_r\psi\partial_r\nu\right)-2e^{\mu_2-\mu_3}\left(\partial_\theta\beta\partial_\theta\mu_2+\partial_\theta\psi\partial_\theta\nu\right)+\frac{1}{2}e^{2\psi-2\nu}\left(R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2-e^{\mu_2-\mu_3}\left(\partial_\theta\omega\right)^2\right)
 \end{equation}
