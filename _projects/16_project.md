@@ -232,7 +232,7 @@ ds^2=g_{tt}dt^2+Rg_{t\phi}dtd\phi+g_{rr}dr^2+R^2g_{\theta\theta}d\theta^2+R^2g_{
 \end{equation}
 $$g_{t\phi}$$ will introduce a new unkown into our equations, and we write
 \begin{equation}
-ds^2=\left(-e^{2\nu}+omega^2e^{2\psi}\right)dt^2-2R\omega e^{2\psi}dtd\phi^2+e^{2\mu_2}dr^2+R^2e^{2\mu_3}d\theta^2+R^2e^{2\psi}d\phi^2
+ds^2=\left(-e^{2\nu}+\omega^2e^{2\psi}\right)dt^2-2R\omega e^{2\psi}dtd\phi^2+e^{2\mu_2}dr^2+R^2e^{2\mu_3}d\theta^2+R^2e^{2\psi}d\phi^2
 \end{equation}
 where $$\nu$$, $$\mu_2$$, $$\mu_3$$, $$\omega$$ and $$\psi$$ are dimensionless functions of $$\frac{r}{R}$$ and $$\theta$$. We will once again employ $$R$$ to restore dimensions.
 
@@ -244,8 +244,10 @@ R_{00}=0\rightarrow R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu+\mu_3-\mu_2
 R_{33}=0\rightarrow R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu+\mu_3-\mu_2\right)\partial_r\psi+\partial_r^2\psi\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu+\mu_2-\mu_3\right)\partial_\theta\psi+\partial_\theta^2\psi\right)+\frac{1}{2}e^{2\psi-2\nu}\left(R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2+e^{\mu_2-\mu_3}\left(\partial_\theta\omega\right)^2\right)=0
 \end{equation}
 We will also use $$R_{03}$$ to resolve $$\omega$$
-\begin{equation}
-R_{03}=0\rightarrow R^2\partial_r\left(e^{3\psi-nu+\mu_3-\mu_2}\partial_r\omega\right)+\partial_\theta\left(e^{3\psi-nu+\mu_2-\mu_3}\partial_\theta\omega\right)=0
+\begin{equation}\label{omega eq}
+R_{03}=0\rightarrow R^2\partial_r\left(e^{3\psi-
+u+\mu_3-\mu_2}\partial_r\omega\right)+\partial_\theta\left(e^{3\psi-
+u+\mu_2-\mu_3}\partial_\theta\omega\right)=0
 \end{equation}
 Proceeding with $$G_{22}$$ and $$G_{33}$$
 \begin{equation}
@@ -267,9 +269,28 @@ X=R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2+e^{\mu_2-\mu_3}\left(\partia
 \end{equation}
 We can also use $$R_{03}=0$$ to find
 \begin{equation}\label{R03 eq}
-e^{3\psi-\nu}X=R^2\partial_r\left(e^{3\psi-nu+\mu_3-\mu_2}\omega\partial_r\omega\right)+\partial_\theta\left(e^{3\psi-nu+\mu_2-\mu_3}\omega\partial_\theta\omega\right)
+e^{3\psi-\nu}X=R^2\partial_r\left(e^{3\psi-
+u+\mu_3-\mu_2}\omega\partial_r\omega\right)+\partial_\theta\left(e^{3\psi-
+u+\mu_2-\mu_3}\omega\partial_\theta\omega\right)
 \end{equation}
 Inserting \ref{R03 eq} into \ref{add R00 R33 eq}
 \begin{equation}
 R^2\partial_r\left(e^{3\psi-\nu+\mu_3-\mu_2}\left(e^{2\nu-2\psi}\partial_r\left(\psi-\nu\right)+\frac{1}{2}\partial_r\left(\omega^2\right)\right)\right)+\partial_\theta\left(e^{3\psi-\nu+\mu_2-\mu_3}\left(e^{2\nu-2\psi}\partial_\theta\left(\psi-\nu\right)+\frac{1}{2}\partial_\theta\left(\omega^2\right)\right)\right)=0
+\end{equation}
+And once again defining $$\chi=e^{\nu-\psi}$$
+\begin{equation}\label{chi^2-omega^2 eq}
+0=R^2\partial_r\left(e^{3\psi-\nu+\mu_3-\mu_2}\partial_r\left(\chi^2-\omega^2\right)\right)+\partial_\theta\left(e^{3\psi-\nu+\mu_2-\mu_3}\partial_\theta\left(\chi^2-\omega^2\right)\right)
+\end{equation}
+Comparing \ref{chi^2-omega^2 eq} with \ref{omega eq} we see that both $$\omega$$ and $$\chi^2-\omega^2$$ are determined by the same equation. Finally, taking the difference of $$G_{22}$$ and $$G_{33}$$ and using $$\beta$$, we have
+\begin{equation}
+R^2e^{-\beta}\left(\partial_r\left(e^{\beta+\mu_3-\mu_2}\partial_r\beta\right)-\partial_\theta\left(e^{\beta+\mu_2-\mu_3}\partial_\theta\beta\right)\right)=2R^2e^{\mu_3-\mu_2}\left(\partial_r\beta\partial_r\mu_3+\partial_r\psi\partial_r\nu\right)-2e^{\mu_2-\mu_3}\left(\partial_\theta\beta\partial_\theta\mu_2+\partial_\theta\psi\partial_\theta\nu\right)+\frac{1}{2}e^{2\psi-2\nu}\left(R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2-e^{\mu_2-\mu_3}\left(\partial_\theta\omega\right)^2\right)
+\end{equation}
+
+Now, using the same null surface arguement we did previously, we write
+\begin{equation}
+e^\beta=\sqrt{\Delta\delta}\quad e^{\mu_3-\mu_2}=\sqrt{\Delta}
+\end{equation}
+with $$\Delta=r^2+a^2-2Mr$$, $$\delta=\sin^2\left(\theta\right)=1-\mu^2$$. We substitute these solutions to obtain
+\begin{equation}
+X=R^2\sqrt{\Delta}\left(\partial_r\omega\right)^2+\frac{\delta}{\sqrt{\Delta}}\left(\partial_\mu\omega\right)^2
 \end{equation}
