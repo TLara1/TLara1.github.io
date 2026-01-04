@@ -354,11 +354,11 @@ Our remaining task is to solve the symmetric \ref{A master eq} and \ref{B master
 
 Now, we will define
 \begin{equation}
-\mathcal{W}=\frac{\mathcal{A}-\mathcal{B}}{2\mathcal{A}\mathcal{B}}=\frac{\omega}{\chi^2-\omega^2}\quad\mathcal{Y}=\mathcal{A}\mathcal{B}e^{2\psi}=\sqrt{\Delta\delta}\frac{\chi^2-\omega^2}{\chi}
+\mathcal{W}=\frac{\mathcal{A}-\mathcal{B}}{2\mathcal{A}\mathcal{B}}=\frac{\omega}{\chi^2-\omega^2}\quad\mathcal{F}=\mathcal{A}\mathcal{B}e^{2\psi}=\sqrt{\Delta\delta}\frac{\chi^2-\omega^2}{\chi}
 \end{equation}
 Now consider
 \begin{equation}
-R^2\partial_r\left(\frac{\mathcal{Y}^2}{\delta}\partial_r\mathcal{W}\right)+\partial_\mu\left(\frac{\mathcal{Y}^2}{\Delta}\partial_\mu\mathcal{W}\right)\label{W function eq 1}
+R^2\partial_r\left(\frac{\mathcal{F}^2}{\delta}\partial_r\mathcal{W}\right)+\partial_\mu\left(\frac{\mathcal{F}^2}{\Delta}\partial_\mu\mathcal{W}\right)\label{W function eq 1}
 \end{equation}
 \begin{equation}
 =R^2\partial_r\left(\frac{\Delta}{\chi^2}\left(\mathcal{A}\mathcal{B}\right)^2\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_r\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)\right)+\partial_\mu\left(\frac{\delta}{\chi^2}\left(\mathcal{A}\mathcal{B}\right)^2\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_\mu\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)\right)
@@ -371,16 +371,16 @@ R^2\partial_r\left(\frac{\mathcal{Y}^2}{\delta}\partial_r\mathcal{W}\right)+\par
 \end{equation}
 We have used \ref{omega eq} and \ref{chi^2-omega^2 eq}. This implies that we can derive $$\mathcal{W}$$ from a function $$\mathcal{G}$$ with
 \begin{equation}
-\partial_r\mathcal{G}=\frac{1}{R}\frac{\mathcal{Y}^2}{\Delta}\partial_\mu\mathcal{W}\quad\partial_\mu\mathcal{G}=-R\frac{\mathcal{Y}^2}{\delta}\partial_r\mathcal{W}
+\partial_r\mathcal{G}=\frac{1}{R}\frac{\mathcal{F}^2}{\Delta}\partial_\mu\mathcal{W}\quad\partial_\mu\mathcal{G}=-R\frac{\mathcal{F}^2}{\delta}\partial_r\mathcal{W}
 \end{equation}
 And $$\mathcal{G}$$ obviously satisfies
 \begin{equation}\label{potential G function 1}
-R^2\partial_r\left(\frac{\Delta}{\mathcal{Y}^2}\partial_r\mathcal{G}\right)+\partial_\mu\left(\frac{\delta}{\mathcal{Y}^2}\partial_\mu\mathcal{G}\right)=0
+R^2\partial_r\left(\frac{\Delta}{\mathcal{F}^2}\partial_r\mathcal{G}\right)+\partial_\mu\left(\frac{\delta}{\mathcal{F}^2}\partial_\mu\mathcal{G}\right)=0
 \end{equation}
 
 Now we will derive a second equation for $$\mathcal{G}$$. Consider
 \begin{equation}
-\mathcal{Y}^2\left(R^2\frac{1}{\delta}\left(\partial_r\mathcal{W}\right)^2+\frac{1}{\Delta}\left(\partial_\mu\mathcal{W}\right)^2\right)
+\mathcal{F}^2\left(R^2\frac{1}{\delta}\left(\partial_r\mathcal{W}\right)^2+\frac{1}{\Delta}\left(\partial_\mu\mathcal{W}\right)^2\right)
 \end{equation}
 \begin{equation}
 =R^2\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\Delta}\partial_r\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2+\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\delta}\partial_\mu\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2
@@ -405,10 +405,10 @@ R^2\Delta\left(\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)^2+\delta\lef
 \end{equation}
 Now, consider the following
 \begin{equation}
-R^2\partial_r\left(\frac{\Delta}{\mathcal{Y}}\partial_r\mathcal{Y}\right)+\partial_\mu\left(\frac{\delta}{\mathcal{Y}}\partial_\mu\mathcal{Y}\right)
+R^2\partial_r\left(\frac{\Delta}{\mathcal{F}}\partial_r\mathcal{F}\right)+\partial_\mu\left(\frac{\delta}{\mathcal{F}}\partial_\mu\mathcal{F}\right)
 \end{equation}
 \begin{equation}
-=R^2\partial_r\left(\frac{\Delta}{\mathcal{Y}}\left(\frac{\sqrt{\Delta\delta}}{\chi}\partial_r\left(\mathcal{A}\mathcal{B}\right)+\mathcal{A}\mathcal{B}\partial_r\left(\frac{\sqrt{\Delta\delta}}{\chi}\right)\right)\right)+\partial_\mu\left(\frac{\delta}{\mathcal{Y}}\left(\frac{\sqrt{\Delta\delta}}{\chi}\partial_\mu\left(\mathcal{A}\mathcal{B}\right)+\mathcal{A}\mathcal{B}\partial_\mu\left(\frac{\sqrt{\Delta\delta}}{\chi}\right)\right)\right)
+=R^2\partial_r\left(\frac{\Delta}{\mathcal{F}}\left(\frac{\sqrt{\Delta\delta}}{\chi}\partial_r\left(\mathcal{A}\mathcal{B}\right)+\mathcal{A}\mathcal{B}\partial_r\left(\frac{\sqrt{\Delta\delta}}{\chi}\right)\right)\right)+\partial_\mu\left(\frac{\delta}{\mathcal{F}}\left(\frac{\sqrt{\Delta\delta}}{\chi}\partial_\mu\left(\mathcal{A}\mathcal{B}\right)+\mathcal{A}\mathcal{B}\partial_\mu\left(\frac{\sqrt{\Delta\delta}}{\chi}\right)\right)\right)
 \end{equation}
 \begin{equation}
 =R^2\partial_r\left(\frac{\sqrt{\Delta}\chi}{\mathcal{A}\mathcal{B}}\left(\frac{\sqrt{\Delta}}{\chi}\partial_r\left(\mathcal{A}\mathcal{B}\right)+\mathcal{A}\mathcal{B}\partial_r\left(\frac{\sqrt{\Delta}}{\chi}\right)\right)\right)+\partial_\mu\left(\frac{\sqrt{\delta}\chi}{\mathcal{A}\mathcal{B}}\left(\frac{\sqrt{\delta}}{\chi}\partial_\mu\left(\mathcal{A}\mathcal{B}\right)+\mathcal{A}\mathcal{B}\partial_\mu\left(\frac{\sqrt{\delta}}{\chi}\right)\right)\right)
@@ -433,9 +433,13 @@ R^2\Delta\left(\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)^2+\delta\lef
 \end{equation}
 Comparing to \ref{RHS Ernst eq 2} yields
 \begin{equation}\label{potential G function 2}
-R^2\partial_r\left(\frac{\Delta}{\mathcal{Y}}\partial_r\mathcal{Y}\right)+\partial_\mu\left(\frac{\delta}{\mathcal{Y}}\partial_\mu\mathcal{Y}\right)=-\mathcal{Y}^2\left(R^2\frac{1}{\delta}\left(\partial_r\mathcal{W}\right)^2+\frac{1}{\Delta}\left(\partial_\mu\mathcal{W}\right)^2\right)
+R^2\partial_r\left(\frac{\Delta}{\mathcal{F}}\partial_r\mathcal{F}\right)+\partial_\mu\left(\frac{\delta}{\mathcal{F}}\partial_\mu\mathcal{F}\right)=-\mathcal{F}^2\left(R^2\frac{1}{\delta}\left(\partial_r\mathcal{W}\right)^2+\frac{1}{\Delta}\left(\partial_\mu\mathcal{W}\right)^2\right)
 \end{equation}
-And expanding both \ref{potential G function 1} and \ref{potential G function 2} in terms of both $$\mathcal{Y}$$ and $$\mathcal{G}$$
+
+And expanding both \ref{potential G function 1} and \ref{potential G function 2} in terms of both $$\mathcal{F}$$ and $$\mathcal{G}$$
 \begin{equation}
-\mathcal{Y}\left(R^2\partial_r\left(\Delta\partial_r\mathcal{G}\right)+\partial_\mu\left(\delta\partial_\mu\mathcal{G}\right)\right)=2R^2\Delta\partial_r\mathcal{Y}\partial_r\mathcal{G}+2R^2\delta\partial_\mu\mathcal{Y}\partial_\mu\mathcal{G}
+\mathcal{F}\left(R^2\partial_r\left(\Delta\partial_r\mathcal{G}\right)+\partial_\mu\left(\delta\partial_\mu\mathcal{G}\right)\right)=2R^2\Delta\partial_r\mathcal{F}\partial_r\mathcal{G}+2R^2\delta\partial_\mu\mathcal{F}\partial_\mu\mathcal{G}
+\end{equation}
+\begin{equation}
+\mathcal{F}\left(R^2\partial_r\left(\Delta\partial_r\mathcal{F}\right)+\partial_\mu\left(\delta\partial_\mu\mathcal{F}\right)\right)=R^2\Delta\left(\partial_r\mathcal{F}\right)^2+\delta\left(\partial_\mu\mathcal{F}\right)^2-R^2\Delta\left(\partial_r\mathcal{G}\right)^2+\delta\left(\partial_\mu\mathcal{G}\right)^2
 \end{equation}
