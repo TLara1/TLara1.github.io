@@ -432,6 +432,10 @@ R^2\Delta\left(\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)^2+\delta\lef
 -\frac{1}{\chi^2}\left(R^2\Delta\left(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2\right)
 \end{equation}
 Comparing to \ref{RHS Ernst eq 2} yields
-\begin{equation}
+\begin{equation}\label{potential G function 2}
 R^2\partial_r\left(\frac{\Delta}{\mathcal{Y}}\partial_r\mathcal{Y}\right)+\partial_\mu\left(\frac{\delta}{\mathcal{Y}}\partial_\mu\mathcal{Y}\right)=-\mathcal{Y}^2\left(R^2\frac{1}{\delta}\left(\partial_r\mathcal{W}\right)^2+\frac{1}{\Delta}\left(\partial_\mu\mathcal{W}\right)^2\right)
+\end{equation}
+And expanding both \ref{potential G function 1} and \ref{potential G function 2} in terms of both $$\mathcal{Y}$$ and $$\mathcal{G}$$
+\begin{equation}
+\mathcal{Y}\left(R^2\partial_r\left(\Delta\partial_r\mathcal{G}\right)+\partial_\mu\left(\delta\partial_\mu\mathcal{G}\right)\right)=2R^2\Delta\partial_r\mathcal{Y}\partial_r\mathcal{G}+2R^2\delta\partial_\mu\mathcal{Y}\partial_\mu\mathcal{G}
 \end{equation}
