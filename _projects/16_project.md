@@ -350,7 +350,7 @@ To arrive at
 \begin{equation}\label{mu_2+mu_3 master eq}
 2\left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)-\frac{1}{2\chi^2}\left(R^2\Delta\partial_r\mathcal{A}\partial_r\mathcal{B}-\delta\partial_\mu\mathcal{A}\partial_\mu\mathcal{B}\right)+3\frac{M^2-a^2}{\Delta}-\frac{1}{\delta}=0
 \end{equation}
-Our remaining task is to solve the symmetric \label{A master eq} and \label{B master eq} after which we solve for $$\mu_2+\mu_3$$ using \ref{mu_2+mu_3 master eq}.
+Our remaining task is to solve the symmetric \ref{A master eq} and \ref{B master eq} after which we solve for $$\mu_2+\mu_3$$ using \ref{mu_2+mu_3 master eq}.
 
 Now, we will define
 \begin{equation}
@@ -383,7 +383,7 @@ Now we will derive a second equation for $$\mathcal{G}$$. Consider
 \mathcal{Y}^2\left(R^2\frac{1}{\delta}\left(\partial_r\mathcal{W}\right)^2+\frac{1}{\Delta}\left(\partial_\mu\mathcal{W}\right)^2\right)
 \end{equation}
 \begin{equation}
-=R^2\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\Delta}\partial_r\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2+\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\delta}\partial_mu\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2
+=R^2\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\Delta}\partial_r\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2+\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\delta}\partial_\mu\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2
 \end{equation}
 \begin{equation}
 =R^2\Delta\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_r\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)\right)^2
@@ -393,13 +393,17 @@ Now we will derive a second equation for $$\mathcal{G}$$. Consider
 =R^2\Delta\left(\frac{1}{\chi}\partial_r\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)\chi}\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)^2
 +\delta\left(\frac{1}{\chi}\partial_\mu\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)\chi}\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)^2
 \end{equation}
-
-
-
-
-
-
-
+\begin{equation}
+=\frac{1}{\chi^2}\left(R^2\Delta\left(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2\right)+
+\frac{\omega^2}{\left(\mathcal{A}\mathcal{B}\right)^2\chi^2}\left(R^2\Delta\left(\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)^2+\delta\left(\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)^2\right)-
+\frac{2\omega}{\mathcal{A}\mathcal{B}\chi}\left(R^2\Delta\partial_r\omega\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)+\delta\partial_\mu\omega\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)\right)
+\end{equation}
+The next step is somewhat tediuos, replacing $$\omega=\chi-\mathcal{B}$$, and $$\partial_r\left(\mathcal{A}\mathcal{B}\right)=\mathcal{A}\partial_r\left(\mathcal{B}\right)+\mathcal{B}\partial_r\left(\mathcal{A}\right)$$ when needed. The end result is
+\begin{equation}\label{RHS Ernst eq 2}
+=\frac{1}{\chi^2}\left(R^2\Delta\left(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2\right)-\frac{2}{\chi}\frac{1}{\mathcal{A}\mathcal{B}}\left(R^2\Delta\partial_r\chi\partial_r\left(\mathcal{A}\mathcal{B}\right)+\delta\partial_\mu\chi\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)+\frac{1}{\left(\mathcal{A}\mathcal{B}\right)^2}\left(
+R^2\Delta\left(\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)^2+\delta\left(\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)^2\right)
+\end{equation}
+Now, consider the following
 \begin{equation}
 R^2\partial_r\left(\frac{\Delta}{\mathcal{Y}}\partial_r\mathcal{Y}\right)+\partial_\mu\left(\frac{\delta}{\mathcal{Y}}\partial_\mu\mathcal{Y}\right)
 \end{equation}
@@ -421,11 +425,13 @@ R^2\Delta\left(\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)^2+\delta\lef
 -R^2\partial_r\left(\frac{\Delta}{\chi}\partial_r\chi\right)-R^2\partial_r\left(\sqrt{\Delta}\partial_r\left(\sqrt{\Delta}\right)\right)
 -\partial_\mu\left(\frac{\delta}{\chi}\partial_\mu\chi\right)-\partial_\mu\left(\sqrt{\delta}\partial_\mu\left(\sqrt{\delta}\right)\right)
 \end{equation}
-Via \ref{AB master eq} and \ref{chi eq 2 form 1}
+Via \ref{AB master eq} and \ref{chi eq 2 form 1}, and noting $$R^2\partial_r\left(\sqrt{\Delta}\partial_r\left(\sqrt{\Delta}\right)\right)+\partial_\mu\left(\sqrt{\delta}\partial_\mu\left(\sqrt{\delta}\right)\right)=0$$
 \begin{equation}
-=\frac{1}{\chi}\frac{1}{\mathcal{A}\mathcal{B}}\left(R^2\Delta\partial_r\left(\mathcal{A}+\mathcal{B}\right)\partial_r\left(\mathcal{A}\mathcal{B}\right)+\delta\partial_\mu\left(\mathcal{A}+\mathcal{B}\right)\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)-\frac{1}{\left(\mathcal{A}\mathcal{B}\right)^2}\left(
+=\frac{2}{\chi}\frac{1}{\mathcal{A}\mathcal{B}}\left(R^2\Delta\partial_r\chi\partial_r\left(\mathcal{A}\mathcal{B}\right)+\delta\partial_\mu\chi\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)-\frac{1}{\left(\mathcal{A}\mathcal{B}\right)^2}\left(
 R^2\Delta\left(\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)^2+\delta\left(\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)^2\right)
--R^2\partial_r\left(\sqrt{\Delta}\partial_r\left(\sqrt{\Delta}\right)\right)
--\partial_\mu\left(\sqrt{\delta}\partial_\mu\left(\sqrt{\delta}\right)\right)
 -\frac{1}{\chi^2}\left(R^2\Delta\left(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2\right)
+\end{equation}
+Comparing to \ref{RHS Ernst eq 2} yields
+\begin{equation}
+R^2\partial_r\left(\frac{\Delta}{\mathcal{Y}}\partial_r\mathcal{Y}\right)+\partial_\mu\left(\frac{\delta}{\mathcal{Y}}\partial_\mu\mathcal{Y}\right)=-\mathcal{Y}^2\left(R^2\frac{1}{\delta}\left(\partial_r\mathcal{W}\right)^2+\frac{1}{\Delta}\left(\partial_\mu\mathcal{W}\right)^2\right)
 \end{equation}
