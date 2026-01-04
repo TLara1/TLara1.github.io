@@ -411,13 +411,14 @@ R^2\partial_r\left(\frac{\Delta}{\mathcal{Y}}\partial_r\mathcal{Y}\right)+\parti
 \begin{equation}
 =R^2\frac{1}{\mathcal{A}\mathcal{B}}\left(\partial_r\left(\Delta\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)+\partial_\mu\left(\delta\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)\right)-\frac{1}{\left(\mathcal{A}\mathcal{B}\right)^2}\left(
 R^2\Delta\left(\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)^2+\delta\left(\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)^2\right)
--R^2\partial_r\left(\frac{\Delta}{\chi}\partial_r\chi\right)-R^2\partial_r\left(\Delta\partial_r\left(\sqrt{\Delta}\right)\right)
--\partial_\mu\left(\frac{delta}{\chi}\partial_\mu\chi\right)-\partial_\mu\left(\delta\partial_\mu\left(\sqrt{\delta}\right)\right)
+-R^2\partial_r\left(\frac{\Delta}{\chi}\partial_r\chi\right)-R^2\partial_r\left(\sqrt{\Delta}\partial_r\left(\sqrt{\Delta}\right)\right)
+-\partial_\mu\left(\frac{\delta}{\chi}\partial_\mu\chi\right)-\partial_\mu\left(\sqrt{\delta}\partial_\mu\left(\sqrt{\delta}\right)\right)
 \end{equation}
-Via \ref{AB master eq}
+Via \ref{AB master eq} and \ref{chi eq 2 form 1}
 \begin{equation}
-=\frac{2}{\mathcal{A}\mathcal{B}}\frac{1}{\mathcal{A}+\mathcal{B}}\left(R^2\Delta\partial_r\left(\mathcal{A}+\mathcal{B}\right)\partial_r\left(\mathcal{A}\mathcal{B}\right)+\delta\partial_\mu\left(\mathcal{A}+\mathcal{B}\right)\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)-\frac{1}{\left(\mathcal{A}\mathcal{B}\right)^2}\left(
+=\frac{1}{\chi}\frac{1}{\mathcal{A}+\mathcal{B}}\left(R^2\Delta\partial_r\left(\mathcal{A}+\mathcal{B}\right)\partial_r\left(\mathcal{A}\mathcal{B}\right)+\delta\partial_\mu\left(\mathcal{A}+\mathcal{B}\right)\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)-\frac{1}{\left(\mathcal{A}\mathcal{B}\right)^2}\left(
 R^2\Delta\left(\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)^2+\delta\left(\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)^2\right)
--R^2\partial_r\left(\frac{\Delta}{\chi}\partial_r\chi\right)-R^2\partial_r\left(\Delta\partial_r\left(\sqrt{\Delta}\right)\right)
--\partial_\mu\left(\frac{\delta}{\chi}\partial_\mu\chi\right)-\partial_\mu\left(\delta\partial_\mu\left(\sqrt{\delta}\right)\right)
+-R^2\partial_r\left(\sqrt{\Delta}\partial_r\left(\sqrt{\Delta}\right)\right)
+-\partial_\mu\left(\sqrt{\delta}\partial_\mu\left(\sqrt{\delta}\right)\right)
+-\frac{1}{\chi^2}\left(R^2\Delta\left(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2\right)
 \end{equation}
