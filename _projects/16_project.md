@@ -383,15 +383,15 @@ Now we will derive a second equation for $$\mathcal{G}$$. Consider
 \mathcal{Y}^2\left(R^2\frac{1}{\delta}\left(\partial_r\mathcal{W}\right)^2+\frac{1}{\Delta}\left(\partial_\mu\mathcal{W}\right)^2\right)
 \end{equation}
 \begin{equation}
-=R^2\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\frac{\Delta}{\delta}}\partial_r\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2+\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\frac{\delta}{\Delta}}\partial_mu\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2
+=R^2\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\Delta}\partial_r\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2+\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\delta}\partial_mu\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2
 \end{equation}
 \begin{equation}
-=R^2\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\frac{\Delta}{\delta}}\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_r\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)\right)^2
-+\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\frac{\delta}{\Delta}}\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_\mu\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)\right)^2
+=R^2\Delta\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_r\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)\right)^2
++\delta\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_\mu\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)\right)^2
 \end{equation}
 \begin{equation}
-=R^2\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\frac{\Delta}{\delta}}\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_r\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)\right)^2
-+\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\frac{\delta}{\Delta}}\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_\mu\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)\right)^2
+=R^2\Delta\left(\frac{1}{\chi}\partial_r\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)\chi}\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)^2
++\delta\left(\frac{1}{\chi}\partial_\mu\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)\chi}\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)^2
 \end{equation}
 
 
