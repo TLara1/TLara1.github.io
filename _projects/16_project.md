@@ -447,7 +447,44 @@ Now introduce the complex $$\mathcal{Z}=\mathcal{F}+i\mathcal{G}$$ and add \ref{
 \begin{equation}
 \Re{\left(\mathcal{Z}\right)}\left(R^2\partial_r\left(\Delta\partial_r\mathcal{Z}\right)+\partial_\mu\left(\delta\partial_\mu\mathcal{Z}\right)\right)=R^2\Delta\left(\partial_r\mathcal{Z}\right)^2+\delta\left(\partial_\mu\mathcal{Z}\right)^2
 \end{equation}
-This equation is just $$\{real ernst}$$ exceot our solutions are allowed to be in the complex plane. We introduce the same transform
+This equation is just \ref{real ernst} except our solutions are allowed to be in the complex plane. We introduce the same transform
 \begin{equation}
 \mathcal{Z}=\frac{1+\xi}{1-\xi}=\frac{1-\xi\bar{\xi}}{\left|1-\xi\right|^2}+\frac{\xi-\bar{\xi}}{\left|1-\xi\right|^2}
 \end{equation}
+\begin{equation}
+\frac{1-\xi\bar{\xi}}{\left|1-\xi\right|^2}\left(R^2\frac{2}{\left(1-\xi\right)^2}\partial_r\left(\Delta\partial_r\mathcal{\xi}\right)+\frac{2}{\left(1-\xi\right)^2}\partial_\mu\left(\delta\partial_\mu\mathcal{\xi}\right)+R^2\frac{4\Delta}{\left(1-\xi\right)^3}\left(\partial_r\xi\right)^2+\frac{4\delta}{\left(1-\xi\right)^3}\left(\partial_\mu\xi\right)^2\right)=R^2\frac{4\Delta}{\left(1-\xi\right)^4}\left(\partial_r\xi\right)^2+\frac{4\delta}{\left(1-\xi\right)^4}\left(\partial_\mu\xi\right)^2
+\end{equation}
+\begin{equation}
+\left(1-\xi\bar{\xi}\right)\left(R^2\partial_r\left(\Delta\partial_r\mathcal{\xi}\right)+\partial_\mu\left(\Delta\partial_\mu\mathcal{\xi}\right)\right)=-2\bar{\xi}\left(\Delta\left(\partial_r\xi\right)^2+\delta\left(\partial_\mu\xi\right)^2\right)
+\end{equation}
+Introducing the same transform $$\eta^2=\frac{\left(\frac{r}{R}-M\right)^2}{M^2-a^2}=\frac{\Delta}{M^2-a^2}+1$$ and as before we arive at
+\begin{equation}
+\left(1-\xi\bar{\xi}\right)\left(\partial_\eta\left(\left(\eta^2-1\right)\partial_\eta\mathcal{\xi}\right)+\partial_\mu\left(\left(1-\mu^2\right)\partial_\mu\mathcal{\xi}\right)\right)=-2\bar{\xi}\left(\left(\eta^2-1\right)\left(\partial_r\xi\right)^2+\left(1-\mu^2\right)\left(\partial_\mu\xi\right)^2\right)
+\end{equation}
+Now we substitute $$\xi=p\eta+iq\mu$$ to find
+\begin{equation}
+\left(1-\xi\bar{\xi}\right)\left(\partial_\eta\left(\left(\eta^2-1\right)\partial_\eta\mathcal{\xi}\right)+\partial_\mu\left(\left(1-\mu^2\right)\partial_\mu\mathcal{\xi}\right)\right)+2\bar{\xi}\left(\left(\eta^2-1\right)\left(\partial_r\xi\right)^2+\left(1-\mu^2\right)\left(\partial_\mu\xi\right)^2\right)=-2\left(p^2+q^2-1\right)\bar{\xi}=0
+\end{equation}
+implying $$p^2+q^2=1$$ solves the equation. Now solving for $$\mathcal{F}$$ and $$\mathcal{G}$$
+\begin{equation}
+\mathcal{F}=\Re{\left(\mathcal{Z}\right)}=\frac{1-\xi\bar{\xi}}{\left|1-\xi\right|^2}=\frac{1-p^2\eta^2-q^2\mu^2}{\left(1+p\eta\right)^2+q^2\mu^2}
+\end{equation}
+\begin{equation}
+\mathcal{G}=\Im{\left(\mathcal{Z}\right)}=-i\frac{\xi-\bar{\xi}}{\left|1-\xi\right|^2}=-\frac{2q\mu}{\left(1+p\eta\right)^2+q^2\mu^2}
+\end{equation}
+Next we pick $$p=-\frac{\sqrt{M^2-a^2}}{M}$$, $$q=\frac{a}{M}$$, which satisfies $$p^2+q^2=1$$. Choices of different signs of $$p$$ and $$q$$ are still valid and the result metrics are related to each othe via rescalings. After some simplification we arrive at
+\begin{equation}
+\mathcal{F}=\frac{\Delta-a^2\delta}{\rho^2}
+\end{equation}
+\begin{equation}
+\mathcal{G}=\frac{2aM\mu}{\rho^2}
+\end{equation}
+with $$\rho^2=r^2+a^2\mu$$
+Next, solving for $$\mathcal{W}$$
+\begin{equation}
+R\partial_r\mathcal{G}=-\frac{4aM\mu r}{R\rho^4}=\frac{\left(\Delta-a^2\delta\right)^2}{\Delta\rho^4}\partial_\mu\mathcal{W}
+\end{equation}
+\begin{equation}
+\partial_\mu\mathcal{G}=\frac{2aM\left(r^2-a^2\mu^2\right)}{R\rho^4}=-R\frac{\left(\Delta-a^2\delta\right)^2}{\delta\rho^4}\partial_\r\mathcal{W}
+\end{equation}
+These conditions are satisfied 
