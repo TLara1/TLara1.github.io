@@ -386,5 +386,5 @@ R^2\partial_r\left(\frac{\Delta}{\mathcal{Y}}\partial_r\mathcal{Y}\right)+\parti
 =R^2\partial_r\left(\frac{\Delta}{\mathcal{A}\mathcal{B}}\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)+\partial_\mu\left(\frac{\delta}{\mathcal{A}\mathcal{B}}\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)+R^2\partial_r\left(\sqrt{\Delta}\chi\partial_r\left(\frac{\sqrt{\Delta}}{\chi}\right)\right)+\partial_\mu\left(\sqrt{\delta}\chi\partial_\mu\left(\frac{\sqrt{\delta}}{\chi}\right)\right)
 \end{equation}
 \begin{equation}
-=R^2\partial_r\left(\frac{\Delta}{\mathcal{A}\mathcal{B}}\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)+\partial_\mu\left(\frac{\delta}{\mathcal{A}\mathcal{B}}\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)-R^2\partial_r\left(\frac{\sqrt{\Delta}}{\chi}\partial_r\left(\sqrt{\Delta}\chi\right)\right)-\partial_\mu\left(\frac{\sqrt{\delta}}{\chi^2}\partial_\mu\left(\sqrt{\delta}\chi\right)\right)
+=R^2\partial_r\left(\frac{\Delta}{\mathcal{A}\mathcal{B}}\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)+\partial_\mu\left(\frac{\delta}{\mathcal{A}\mathcal{B}}\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)-R^2\partial_r\left(\frac{\sqrt{\Delta}}{\chi}\partial_r\left(\sqrt{\Delta}\chi\right)\right)-\partial_\mu\left(\frac{\sqrt{\delta}}{\chi}\partial_\mu\left(\sqrt{\delta}\chi\right)\right)
 \end{equation}
