@@ -487,4 +487,32 @@ R\partial_r\mathcal{G}=-\frac{4aM\mu r}{R\rho^4}=\frac{\left(\Delta-a^2\delta\ri
 \begin{equation}
 \partial_\mu\mathcal{G}=\frac{2aM\left(r^2-a^2\mu^2\right)}{R\rho^4}=-R\frac{\left(\Delta-a^2\delta\right)^2}{\delta\rho^4}\partial_\r\mathcal{W}
 \end{equation}
-These conditions are satisfied 
+These conditions are satisfied by
+\begin{equation}
+\mathcal{W}=\frac{2aM\delta r}{\Delta-a^2\delta}
+\end{equation}
+Now using $$\omega e^{2\psi}=\mathcal{F}\mathcal{W}$$, we find
+\begin{equation}
+\omega e^{2\psi}=\frac{2aM\delta r}{\rho^2}
+\end{equation}
+And employing $$\mathcal{F}=\left(\chi^2-\omega^2\right)e^{2\psi}$$
+\begin{equation}
+\mathcal{F}e^{2\psi}=e^{2\beta}-\omega^2e^{4\psi}=\frac{\Delta\delta\rho^4-4a^2M^2\delta^2 r^2}{\rho^4}
+\end{equation}
+Thus
+\begin{equation}
+e^{2\psi}=e^{2\beta}-\omega^2e^{4\psi}=\frac{\Delta\delta\rho^4-4a^2M^2\delta^2 r^2}{\rho^2\left(\Delta-a^2\delta\right)}=\frac{\delta\sigma^2}{\rho^2}
+\end{equation}
+and
+\begin{equation}
+\omega=\frac{2aMr}{\sigma^2}
+\end{equation}
+where
+\begin{equation}
+\sigma^2=\frac{\Delta\rho^4-4a^2M^2\delta r^2}{\Delta-a^2\delta}
+\end{equation}
+Continuing to solve for componenets of our metric, we identify
+\begin{equation}
+e^{2\nu}=e^{2\beta-2\psi}=\frac{\Delta\rho^2}{\sigma^2}
+\end{equation}
+Finally, we must compute $$\mathcal{A}$$ and $$\mathcal{B}$$
