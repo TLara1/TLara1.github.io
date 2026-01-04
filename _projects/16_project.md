@@ -437,9 +437,13 @@ R^2\partial_r\left(\frac{\Delta}{\mathcal{F}}\partial_r\mathcal{F}\right)+\parti
 \end{equation}
 
 And expanding both \ref{potential G function 1} and \ref{potential G function 2} in terms of both $$\mathcal{F}$$ and $$\mathcal{G}$$
-\begin{equation}
+\begin{equation}\label{ernst 1}
 \mathcal{F}\left(R^2\partial_r\left(\Delta\partial_r\mathcal{G}\right)+\partial_\mu\left(\delta\partial_\mu\mathcal{G}\right)\right)=2R^2\Delta\partial_r\mathcal{F}\partial_r\mathcal{G}+2R^2\delta\partial_\mu\mathcal{F}\partial_\mu\mathcal{G}
 \end{equation}
-\begin{equation}
+\begin{equation}\label{ernst 2}
 \mathcal{F}\left(R^2\partial_r\left(\Delta\partial_r\mathcal{F}\right)+\partial_\mu\left(\delta\partial_\mu\mathcal{F}\right)\right)=R^2\Delta\left(\partial_r\mathcal{F}\right)^2+\delta\left(\partial_\mu\mathcal{F}\right)^2-R^2\Delta\left(\partial_r\mathcal{G}\right)^2+\delta\left(\partial_\mu\mathcal{G}\right)^2
+\end{equation}
+Now introduce the complex $$\mathcal{Z}=\mathcal{F}+i\mathcal{G}$$ and add \ref{ernst 1} and \ref{ernst 2}
+\begin{equation}
+\Re{\left(\mathcal{Z}\right)}\left(R^2\partial_r\left(\Delta\partial_r\mathcal{Z}\right)+\partial_\mu\left(\delta\partial_\mu\mathcal{Z}\right)\right)=R^2\Delta\left(\partial_r\mathcal{Z}\right)^2+\delta\left(\partial_\mu\mathcal{Z}\right)^2
 \end{equation}
