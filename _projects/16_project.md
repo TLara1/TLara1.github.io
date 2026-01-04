@@ -423,7 +423,7 @@ R^2\Delta\left(\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)^2+\delta\lef
 \end{equation}
 Via \ref{AB master eq} and \ref{chi eq 2 form 1}
 \begin{equation}
-=\frac{1}{\chi}\frac{1}{\mathcal{A}+\mathcal{B}}\left(R^2\Delta\partial_r\left(\mathcal{A}+\mathcal{B}\right)\partial_r\left(\mathcal{A}\mathcal{B}\right)+\delta\partial_\mu\left(\mathcal{A}+\mathcal{B}\right)\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)-\frac{1}{\left(\mathcal{A}\mathcal{B}\right)^2}\left(
+=\frac{1}{\chi}\frac{1}{\mathcal{A}\mathcal{B}}\left(R^2\Delta\partial_r\left(\mathcal{A}+\mathcal{B}\right)\partial_r\left(\mathcal{A}\mathcal{B}\right)+\delta\partial_\mu\left(\mathcal{A}+\mathcal{B}\right)\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)-\frac{1}{\left(\mathcal{A}\mathcal{B}\right)^2}\left(
 R^2\Delta\left(\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)^2+\delta\left(\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)^2\right)
 -R^2\partial_r\left(\sqrt{\Delta}\partial_r\left(\sqrt{\Delta}\right)\right)
 -\partial_\mu\left(\sqrt{\delta}\partial_\mu\left(\sqrt{\delta}\right)\right)
