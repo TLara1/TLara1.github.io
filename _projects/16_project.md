@@ -380,14 +380,15 @@ R^2\partial_r\left(\frac{\Delta}{\mathcal{Y}^2}\partial_r\mathcal{G}\right)+\par
 
 Now we will derive a second equation for $$\mathcal{G}$$. Consider
 \begin{equation}
-\matchal{Y}^2\left(R^2\frac{1}{\delta}\left(\partial_r\mathcal{W}\right)^2+\frac{1}{\Delta}\left(\partial_mu\mathcal{W}\right)^2\right)
+\mathcal{Y}^2\left(R^2\frac{1}{\delta}\left(\partial_r\mathcal{W}\right)^2+\frac{1}{\Delta}\left(\partial_\mu\mathcal{W}\right)^2\right)
 \end{equation}
 \begin{equation}
-=\left(R^2\left(\frac{\chi}{\delta\sqrt{\Delta}mathcal{\mathcal{A}\mathcal{B}}}\partial_r\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2+\left(\frac{\chi}{\Delta\sqrt{\delta}mathcal{\mathcal{A}\mathcal{B}}}\partial_mu\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2\right)
+=\left(R^2\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\frac{\Delta}{\delta}}\partial_r\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2+\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\frac{\delta}{\Delta}}\partial_mu\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2\right)
 \end{equation}
-\begin{equation}
-=\left(R^2\left(\frac{\chi}{\delta\sqrt{\Delta}mathcal{\mathcal{A}\mathcal{B}}}\partial_r\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2+\left(\frac{\chi}{\Delta\sqrt{\delta}mathcal{\mathcal{A}\mathcal{B}}}\partial_mu\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2\right)
-\end{equation}
+
+
+
+
 
 
 
