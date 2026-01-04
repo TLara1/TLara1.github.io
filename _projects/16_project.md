@@ -377,7 +377,22 @@ And $$\mathcal{G}$$ obviously satisfies
 \begin{equation}\label{potential G function 1}
 R^2\partial_r\left(\frac{\Delta}{\mathcal{Y}^2}\partial_r\mathcal{G}\right)+\partial_\mu\left(\frac{\delta}{\mathcal{Y}^2}\partial_\mu\mathcal{G}\right)=0
 \end{equation}
-Now, consider
+
+Now we will derive a second equation for $$\mathcal{G}$$. Consider
+\begin{equation}
+\matchal{Y}^2\left(R^2\frac{1}{\delta}\left(\partial_r\mathcal{W}\right)^2+\frac{1}{\Delta}\left(\partial_mu\mathcal{W}\right)^2\right)
+\end{equation}
+\begin{equation}
+=\left(R^2\left(\frac{\chi}{\delta\sqrt{\Delta}mathcal{\mathcal{A}\mathcal{B}}}\partial_r\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2+\left(\frac{\chi}{\Delta\sqrt{\delta}mathcal{\mathcal{A}\mathcal{B}}}\partial_mu\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2\right)
+\end{equation}
+\begin{equation}
+=\left(R^2\left(\frac{\chi}{\delta\sqrt{\Delta}mathcal{\mathcal{A}\mathcal{B}}}\partial_r\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2+\left(\frac{\chi}{\Delta\sqrt{\delta}mathcal{\mathcal{A}\mathcal{B}}}\partial_mu\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2\right)
+\end{equation}
+
+
+
+
+
 \begin{equation}
 R^2\partial_r\left(\frac{\Delta}{\mathcal{Y}}\partial_r\mathcal{Y}\right)+\partial_\mu\left(\frac{\delta}{\mathcal{Y}}\partial_\mu\mathcal{Y}\right)
 \end{equation}
