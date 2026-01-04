@@ -157,7 +157,7 @@ We next define $$f=e^{2\nu}=e^\beta\chi=\sqrt{\Delta\delta}\chi$$. Writing \ref{
 \begin{equation}
 0=R^2\partial_r\left(\frac{\Delta}{f}\partial_rf\right)+\partial_\mu\left(\frac{\delta}{f}\partial_\mu f\right)
 \end{equation}
-\begin{equation}
+\begin{equation}\label{real ernst}
 R^2\frac{\Delta}{f}\left(\partial_rf\right)^2+\frac{\delta}{f}\left(\partial_\mu f\right)^2=R^2\partial_r\left(\Delta\partial_rf\right)+\partial_\mu\left(\delta\partial_\mu f\right)
 \end{equation}
 This equation is easier to solve if we make the change of variable
@@ -396,9 +396,9 @@ Now we will derive a second equation for $$\mathcal{G}$$. Consider
 \begin{equation}
 =\frac{1}{\chi^2}\left(R^2\Delta\left(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2\right)+
 \frac{\omega^2}{\left(\mathcal{A}\mathcal{B}\right)^2\chi^2}\left(R^2\Delta\left(\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)^2+\delta\left(\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)^2\right)-
-\frac{2\omega}{\mathcal{A}\mathcal{B}\chi}\left(R^2\Delta\partial_r\omega\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)+\delta\partial_\mu\omega\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)\right)
+\frac{2\omega}{\mathcal{A}\mathcal{B}\chi}\left(R^2\Delta\partial_r\omega\partial_r\left(\mathcal{A}\mathcal{B}\right)+\delta\partial_\mu\omega\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)
 \end{equation}
-The next step is somewhat tediuos, replacing $$\omega=\chi-\mathcal{B}$$, and $$\partial_r\left(\mathcal{A}\mathcal{B}\right)=\mathcal{A}\partial_r\left(\mathcal{B}\right)+\mathcal{B}\partial_r\left(\mathcal{A}\right)$$ when needed. The end result is
+The next step is somewhat tediuos, replacing $$\omega=\chi-\mathcal{B}$$, and $$\partial_r\left(\mathcal{A}\mathcal{B}\right)=\mathcal{A}\partial_r\mathcal{B}+\mathcal{B}\partial_r\mathcal{A}$$ when needed. The end result is
 \begin{equation}\label{RHS Ernst eq 2}
 =\frac{1}{\chi^2}\left(R^2\Delta\left(\partial_r\omega\right)^2+\delta\left(\partial_\mu\omega\right)^2\right)-\frac{2}{\chi}\frac{1}{\mathcal{A}\mathcal{B}}\left(R^2\Delta\partial_r\chi\partial_r\left(\mathcal{A}\mathcal{B}\right)+\delta\partial_\mu\chi\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)+\frac{1}{\left(\mathcal{A}\mathcal{B}\right)^2}\left(
 R^2\Delta\left(\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)^2+\delta\left(\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)^2\right)
@@ -446,4 +446,8 @@ And expanding both \ref{potential G function 1} and \ref{potential G function 2}
 Now introduce the complex $$\mathcal{Z}=\mathcal{F}+i\mathcal{G}$$ and add \ref{ernst 1} and \ref{ernst 2}
 \begin{equation}
 \Re{\left(\mathcal{Z}\right)}\left(R^2\partial_r\left(\Delta\partial_r\mathcal{Z}\right)+\partial_\mu\left(\delta\partial_\mu\mathcal{Z}\right)\right)=R^2\Delta\left(\partial_r\mathcal{Z}\right)^2+\delta\left(\partial_\mu\mathcal{Z}\right)^2
+\end{equation}
+This equation is just $$\{real ernst}$$ exceot our solutions are allowed to be in the complex plane. We introduce the same transform
+\begin{equation}
+\mathcal{Z}=\frac{1+\xi}{1-\xi}=\frac{1-\xi\bar{\xi}}{\left|1-\xi\right|^2}+\frac{\xi-\bar{\xi}}{\left|1-\xi\right|^2}
 \end{equation}
