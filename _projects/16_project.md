@@ -509,7 +509,7 @@ and
 \end{equation}
 where
 \begin{equation}
-\Sigma^2=\frac{\Delta\rho^4-4a^2M^2\delta\frac{r^2}{R^2}}{\Delta-a^2\delta}=\left(\frac{r^2}{R^2}+a^2\right)-a^2\Delta\delta
+\Sigma^2=\frac{\Delta\rho^4-4a^2M^2\delta\frac{r^2}{R^2}}{\Delta-a^2\delta}=\left(\frac{r^2}{R^2}+a^2\right)^2-a^2\Delta\delta
 \end{equation}
 Continuing to solve for componenets of our metric, we identify
 \begin{equation}
@@ -542,5 +542,7 @@ ds^2=-\frac{\Delta\rho^2}{\Sigma^2}dt^2+\frac{\Sigma^2}{\rho^2}\sin^2\left(\thet
 \rho^2=\frac{r^2}{R^2}+a^2\cos^2\left(\theta\right)
 \end{equation}
 \begin{equation}
-\Sigma^2=\left(\frac{r^2}{R^2}+a^2\right)-a^2\Delta\sin^2\left(\theta\right)
+\Sigma^2=\left(\frac{r^2}{R^2}+a^2\right)^2-a^2\Delta\sin^2\left(\theta\right)
 \end{equation}
+
+We find in the limit $$a\rightarrow0$$, the metric appropriatly reduces to the Schwarzschild metric and in the limit of $$a\rightarrow0$$ and $$M\rightarrow0$$ we arrive at spherical Minkowski.
