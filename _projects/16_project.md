@@ -386,10 +386,13 @@ Now we will derive a second equation for $$\mathcal{G}$$. Consider
 =R^2\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\frac{\Delta}{\delta}}\partial_r\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2+\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\frac{\delta}{\Delta}}\partial_mu\left(\frac{\omega}{\mathcal{A}\mathcal{B}}\right)\right)^2
 \end{equation}
 \begin{equation}
-=R^2\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\frac{\Delta}{\delta}}\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_r\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)^2\right)+
-\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\frac{\delta}{\Delta}}\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_\mu\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)^2\right)
+=R^2\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\frac{\Delta}{\delta}}\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_r\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)\right)^2
++\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\frac{\delta}{\Delta}}\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_\mu\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)\right)^2
 \end{equation}
-
+\begin{equation}
+=R^2\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\frac{\Delta}{\delta}}\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_r\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)\right)^2
++\left(\frac{\mathcal{A}\mathcal{B}}{\chi}\sqrt{\frac{\delta}{\Delta}}\left(\frac{1}{\mathcal{A}\mathcal{B}}\partial_\mu\omega-\frac{\omega}{\left(\mathcal{A}\mathcal{B}\right)^2}\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)\right)^2
+\end{equation}
 
 
 
