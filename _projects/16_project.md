@@ -326,9 +326,9 @@ R^2\Delta\left(\partial_r\mathcal{A}\right)^2+\delta\left(\partial_\mu\mathcal{A
 \begin{equation}\label{B master eq}
 R^2\Delta\left(\partial_r\mathcal{B}\right)^2+\delta\left(\partial_\mu\mathcal{B}\right)^2=\frac{1}{2}\left(\mathcal{A}+\mathcal{B}\right)\left(R^2\partial_r\left(\Delta\left(\partial_r\mathcal{B}\right)\right)+\partial_\mu\left(\delta\left(\partial_\mu\mathcal{B}\right)\right)\right)
 \end{equation}
-Furthermore, since we know \ref{chi eq 1 form 1} is satisfied by both $$\omega$$ and $$\chi^2-\omega^2$$ (via comparing \ref{chi^2-omega^2 eq} with \ref{omega eq}), \ref{chi eq 1} is also satisfied by $$\chi^2-\omega^2=\mathcal{A}\mathcal{B}$$
+Furthermore, since we know \ref{chi eq 1 form 1} is satisfied by both $$\omega$$ and $$\chi^2-\omega^2$$ (via comparing \ref{chi^2-omega^2 eq} with \ref{omega eq}), \ref{chi eq 1} is also satisfied by $$\chi^2-\omega^2=\mathcal{A}\mathcal{B}$$, employing this and using $$\chi=\frac{1}{2}\left(\mathcal{A}+\mathcal{B}\right)$$
 \begin{equation}
-2\left(R^2\Delta\partial_r\chi\partial_r\left(\mathcal{A}\mathcal{B}\right)+\delta\partial_\mu\chi\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)=\chi\left(R^2\partial_r\left(\Delta\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)+\partial_\mu\left(\delta\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)\right)
+\left(R^2\Delta\partial_r\left(\mathcal{A}+\mathcal{B}\right)\partial_r\left(\mathcal{A}\mathcal{B}\right)+\delta\partial_\mu\left(\mathcal{A}+\mathcal{B}\right)\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)=\frac{1}{2}\left(\mathcal{A}+\mathcal{B}\right)\left(R^2\partial_r\left(\Delta\partial_r\left(\mathcal{A}\mathcal{B}\right)\right)+\partial_\mu\left(\delta\partial_\mu\left(\mathcal{A}\mathcal{B}\right)\right)\right)
 \end{equation}
 
 With our definitions we now rewrite \ref{long beta eq kerr}
