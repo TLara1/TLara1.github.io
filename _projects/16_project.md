@@ -164,13 +164,13 @@ This equation is easier to solve if we make the change of variable
 \begin{equation}
 f=\frac{1+\epsilon}{1-\epsilon}
 \end{equation}
-We know note that $$f\in\mathcal{R}$$, so $$\Im\left(\epsilon\right)=0$$.
+We now note that $$f\in\mathcal{R}$$, so $$\Im\left(\epsilon\right)=0$$.
 with $$\partial_r f=\frac{2}{\left(1-\epsilon\right)^2}\partial_r\epsilon$$
 \begin{equation}
-\frac{4R^2}{1-\epsilon^2}\left(\Delta\left(\partial_r\epsilon\right)^2+\delta\left(\partial_\mu\epsilon\right)^2\right)=\frac{4R^2}{1-\epsilon}\left(\Delta\left(\partial_r\epsilon\right)^2+\delta\left(\partial_\mu\epsilon\right)^2\right)+2R^2\left(\partial_r\left(\Delta\partial_r\epsilon\right)+\partial_\mu\left(\delta\partial_\mu\epsilon\right)\right)
+\frac{4}{1-\epsilon^2}\left(R^2\Delta\left(\partial_r\epsilon\right)^2+\delta\left(\partial_\mu\epsilon\right)^2\right)=\frac{4}{1-\epsilon}\left(R^2\Delta\left(\partial_r\epsilon\right)^2+\delta\left(\partial_\mu\epsilon\right)^2\right)+2\left(R^2\partial_r\left(\Delta\partial_r\epsilon\right)+\partial_\mu\left(\delta\partial_\mu\epsilon\right)\right)
 \end{equation}
 \begin{equation}
--2R^2\epsilon\left(\Delta\left(\partial_r\epsilon\right)^2+\delta\left(\partial_\mu\epsilon\right)^2\right)=R^2\left(1-\epsilon^2\right)\left(\partial_r\left(\Delta\partial_r\epsilon\right)+\partial_\mu\left(\delta\partial_\mu\epsilon\right)\right)
+-2\epsilon\left(R^2\Delta\left(\partial_r\epsilon\right)^2+\delta\left(\partial_\mu\epsilon\right)^2\right)=\left(1-\epsilon^2\right)\left(R^2\partial_r\left(\Delta\partial_r\epsilon\right)+\partial_\mu\left(\delta\partial_\mu\epsilon\right)\right)
 \end{equation}
 Now define $$\eta^2=\frac{\left(\frac{r}{R}-M\right)^2}{M^2-a^2}=\frac{\Delta}{M^2-a^2}+1$$, $$\partial_r=\frac{1}{R}\frac{1}{\sqrt{M^2-a^2}}\partial_\eta$$ and with $$\delta=1-\mu^2$$
 \begin{equation}
