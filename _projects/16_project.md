@@ -20,7 +20,7 @@ We will need the Riemann and Einstein tensors to write the Einstein field equati
 
 The Riemann curvature tensor is built from the Christoffel symbols of a metric $$g_{\mu\nu}$$
 \begin{equation}
-R^\rho_{\sigma\mu\nu}=\Gamma^\rho_{\nu\sigma,\mu}-\Gamma^\rho_{\mu\sigma,\nu}+\Gamma^\rho_{\mu\lambda}\Gamma^\lambda_{\nu\sigma}-\Gamma^\rho_{\nu\lambda}\Gamma^\lambda_{\mu\sigma}
+R^\rho_{\Sigma\mu\nu}=\Gamma^\rho_{\nu\Sigma,\mu}-\Gamma^\rho_{\mu\Sigma,\nu}+\Gamma^\rho_{\mu\lambda}\Gamma^\lambda_{\nu\Sigma}-\Gamma^\rho_{\nu\lambda}\Gamma^\lambda_{\mu\Sigma}
 \end{equation}
 With Christoffel symbols given by
 \begin{equation}
@@ -348,7 +348,7 @@ Again, following our past work and inserting $$\mathcal{A}$$ and $$\mathcal{B}$$
 \end{equation}
 To arrive at
 \begin{equation}\label{mu_2+mu_3 master eq}
-2\left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)-\frac{1}{2\chi^2}\left(R^2\Delta\partial_r\mathcal{A}\partial_r\mathcal{B}-\delta\partial_\mu\mathcal{A}\partial_\mu\mathcal{B}\right)+3\frac{M^2-a^2}{\Delta}-\frac{1}{\delta}=0
+2\left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)-\frac{1}{\chi^2}\left(R^2\Delta\partial_r\mathcal{A}\partial_r\mathcal{B}-\delta\partial_\mu\mathcal{A}\partial_\mu\mathcal{B}\right)+3\frac{M^2-a^2}{\Delta}-\frac{1}{\delta}=0
 \end{equation}
 Our remaining task is to solve the symmetric \ref{A master eq} and \ref{B master eq} after which we solve for $$\mu_2+\mu_3$$ using \ref{mu_2+mu_3 master eq}.
 
@@ -479,40 +479,68 @@ Next we pick $$p=-\frac{\sqrt{M^2-a^2}}{M}$$, $$q=\frac{a}{M}$$, which satisfies
 \begin{equation}
 \mathcal{G}=\frac{2aM\mu}{\rho^2}
 \end{equation}
-with $$\rho^2=r^2+a^2\mu$$
+with $$\rho^2=\frac{r^2}{R^2}+a^2\mu$$
 Next, solving for $$\mathcal{W}$$
 \begin{equation}
-R\partial_r\mathcal{G}=-\frac{4aM\mu r}{R\rho^4}=\frac{\left(\Delta-a^2\delta\right)^2}{\Delta\rho^4}\partial_\mu\mathcal{W}
+R\partial_r\mathcal{G}=-\frac{4aM\mu\frac{r}{R}}{\rho^4}=\frac{\left(\Delta-a^2\delta\right)^2}{\Delta\rho^4}\partial_\mu\mathcal{W}
 \end{equation}
 \begin{equation}
-\partial_\mu\mathcal{G}=\frac{2aM\left(r^2-a^2\mu^2\right)}{R\rho^4}=-R\frac{\left(\Delta-a^2\delta\right)^2}{\delta\rho^4}\partial_\r\mathcal{W}
+\partial_\mu\mathcal{G}=\frac{2aM\left(\frac{r^2}{R^2}-a^2\mu^2\right)}{\rho^4}=-R\frac{\left(\Delta-a^2\delta\right)^2}{\delta\rho^4}\partial_\r\mathcal{W}
 \end{equation}
 These conditions are satisfied by
 \begin{equation}
-\mathcal{W}=\frac{2aM\delta r}{\Delta-a^2\delta}
+\mathcal{W}=\frac{2aM\delta\frac{r}{R}}{\left(\Delta-a^2\delta\right)}
 \end{equation}
 Now using $$\omega e^{2\psi}=\mathcal{F}\mathcal{W}$$, we find
 \begin{equation}
-\omega e^{2\psi}=\frac{2aM\delta r}{\rho^2}
+\omega e^{2\psi}=\frac{2aM\delta\frac{r}{R}}{\rho^2}
 \end{equation}
 And employing $$\mathcal{F}=\left(\chi^2-\omega^2\right)e^{2\psi}$$
 \begin{equation}
-\mathcal{F}e^{2\psi}=e^{2\beta}-\omega^2e^{4\psi}=\frac{\Delta\delta\rho^4-4a^2M^2\delta^2 r^2}{\rho^4}
+\mathcal{F}e^{2\psi}=e^{2\beta}-\omega^2e^{4\psi}=\frac{\Delta\delta\rho^4-4a^2M^2\delta^2 \frac{r^2}{R^2}}{\rho^4}
 \end{equation}
 Thus
 \begin{equation}
-e^{2\psi}=e^{2\beta}-\omega^2e^{4\psi}=\frac{\Delta\delta\rho^4-4a^2M^2\delta^2 r^2}{\rho^2\left(\Delta-a^2\delta\right)}=\frac{\delta\sigma^2}{\rho^2}
+e^{2\psi}=e^{2\beta}-\omega^2e^{4\psi}=\frac{\Delta\delta\rho^4-4a^2M^2\delta^2 r^2}{\rho^2\left(\Delta-a^2\delta\right)}=\frac{\delta\Sigma^2}{\rho^2}
 \end{equation}
 and
 \begin{equation}
-\omega=\frac{2aMr}{\sigma^2}
+\omega=\frac{2aM\frac{r}{R}}{\Sigma^2}
 \end{equation}
 where
 \begin{equation}
-\sigma^2=\frac{\Delta\rho^4-4a^2M^2\delta r^2}{\Delta-a^2\delta}
+\Sigma^2=\frac{\Delta\rho^4-4a^2M^2\delta\frac{r^2}{R^2}}{\Delta-a^2\delta}=\left(\frac{r^2}{R^2}+a^2\right)-a^2\Delta\delta
 \end{equation}
 Continuing to solve for componenets of our metric, we identify
 \begin{equation}
-e^{2\nu}=e^{2\beta-2\psi}=\frac{\Delta\rho^2}{\sigma^2}
+e^{2\nu}=e^{2\beta-2\psi}=\frac{\Delta\rho^2}{\Sigma^2}
 \end{equation}
 Finally, we must compute $$\mathcal{A}$$ and $$\mathcal{B}$$
+\begin{equation}
+\mathcal{A}=\chi+\omega=\frac{1}{\sqrt{\delta}}\frac{\Delta-a^2\delta}{\rho^2\sqrt{\Delta}-2aM\frac{r}{R}\sqrt{\delta}}
+\end{equation}
+\begin{equation}
+\mathcal{B}=\chi-\omega=\frac{1}{\sqrt{\delta}}\frac{\Delta-a^2\delta}{\rho^2\sqrt{\Delta}+2aM\frac{r}{R}\sqrt{\delta}}
+\end{equation}
+Where we have used $$\rho^2\sqrt{\Delta}-4a^2M^2\frac{r^2}{R^2}\delta=\left(\rho^2\sqrt{\Delta}+2aM\frac{r}{R}\sqrt{\delta}\right)\left(\rho^2\sqrt{\Delta}-2aM\frac{r}{R}\sqrt{\delta}\right). Inserting these quantities into \ref{mu_2+mu_3 master eq} and simplifying a lot yields
+\begin{equation}
+\left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)=2-\frac{\frac{r}{R}-M}{\Delta}-2\frac{M\frac{r}{R}}{\rho^2}
+\end{equation}
+which is solved by $$e^{\mu_2+\mu_3}=\frac{\rho^2}{\sqrt{\Delta}}$$. 
+
+And finally, assembling all the components of our metric
+\begin{equation}
+ds^2=-e^{2\nu}dt^2+e^{2\psi}\left(Rd\phi-\omega dt\right)^2+e^{2\mu_2}dr^2+R^2e^{\mu_3}d\theta^2
+\end{equation}
+\begin{equation}
+ds^2=-\frac{\Delta\rho^2}{\Sigma^2}dt^2+\frac{\Sigma^2}{\rho^2}\sin^2\left(\theta\right)\left(Rd\phi-\frac{2aM\frac{r}{R}}{\Sigma^2}dt\right)^2+\frac{\rho^2}{\Delta}\left(dr^2+\R^2\Delta d\theta^2\right)
+\end{equation}
+\begin{equation}
+\Delta=\frac{r^2}{R^2}+a^2-2M\frac{r}{R}
+\end{equation}
+\begin{equation}
+\rho^2=\frac{r^2}{R^2}+a^2\cos^2\left(\theta\right)
+\end{equation}
+\begin{equation}
+\Sigma^2=\left(\frac{r^2}{R^2}+a^2\right)-a^2\Delta\sin^2\left(\theta\right)
+\end{equation}
