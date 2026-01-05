@@ -3,7 +3,7 @@ layout: page
 title: On the Relativistic Euler Equations
 description:
 img:
-importance: 3
+importance: 4
 category: Physics
 toc:
   beginning: true
@@ -86,7 +86,8 @@ Or in direct notation for a more familiar form:
 
  Which are the Newtonian Euler Equations. 
 
-
+## Sources
+This derivation is from a problem set from my General Relativity class, 8.962, taught by Professor Scott Hughes in Spring 2024.
 
 
 
