@@ -485,7 +485,7 @@ Next, solving for $$\mathcal{W}$$
 R\partial_r\mathcal{G}=-\frac{4aM\mu\frac{r}{R}}{\rho^4}=\frac{\left(\Delta-a^2\delta\right)^2}{\Delta\rho^4}\partial_\mu\mathcal{W}
 \end{equation}
 \begin{equation}
-\partial_\mu\mathcal{G}=\frac{2aM\left(\frac{r^2}{R^2}-a^2\mu^2\right)}{\rho^4}=-R\frac{\left(\Delta-a^2\delta\right)^2}{\delta\rho^4}\partial_\r\mathcal{W}
+\partial_\mu\mathcal{G}=\frac{2aM\left(\frac{r^2}{R^2}-a^2\mu^2\right)}{\rho^4}=-R\frac{\left(\Delta-a^2\delta\right)^2}{\delta\rho^4}\partial_r\mathcal{W}
 \end{equation}
 These conditions are satisfied by
 \begin{equation}
