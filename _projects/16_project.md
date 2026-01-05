@@ -12,7 +12,7 @@ toc:
 
 ## Introduction
 
-Here we derive the Schwarzschild and Kerr Metrics for static and rotating spherical bodies.
+Here we derive the Schwarzschild and Kerr Metrics for static and rotating spherical bodies. We use natural units for simplicity, setting $$c=G=1$$
 
 ## I. Riemann and Einstein Tensors
 
@@ -613,21 +613,21 @@ Inserting these quantities into \ref{mu_2+mu_3 master eq} and simplifying extens
 \end{equation}
 which is solved by $$e^{\mu_2+\mu_3}=\frac{\rho^2}{\sqrt{\Delta}}$$. 
 
-And finally, assembling all the components of our metric
+And finally, assembling all the components of our metric and performing a rescaling to remove $$R$$ factors
 \begin{equation}
 ds^2=-e^{2\nu}dt^2+e^{2\psi}\left(Rd\phi-\omega dt\right)^2+e^{2\mu_2}dr^2+R^2e^{\mu_3}d\theta^2
 \end{equation}
 \begin{equation}
-ds^2=-\frac{\Delta\rho^2}{\Sigma^2}dt^2+\frac{\Sigma^2}{\rho^2}\sin^2\left(\theta\right)\left(Rd\phi-\frac{2aM\frac{r}{R}}{\Sigma^2}dt\right)^2+\frac{\rho^2}{\Delta}\left(dr^2+R^2\Delta d\theta^2\right)
+ds^2=-\frac{\Delta\rho^2}{\Sigma^2}dt^2+\frac{\Sigma^2}{\rho^2}\sin^2\left(\theta\right)\left(d\phi-\frac{2aMr}{\Sigma^2}dt\right)^2+\frac{\rho^2}{\Delta}\left(dr^2+\Delta d\theta^2\right)
 \end{equation}
 \begin{equation}
-\Delta=\frac{r^2}{R^2}+a^2-2M\frac{r}{R}
+\Delta=r^2+a^2-2Mr
 \end{equation}
 \begin{equation}
-\rho^2=\frac{r^2}{R^2}+a^2\cos^2\left(\theta\right)
+\rho^2=r^2+a^2\cos^2\left(\theta\right)
 \end{equation}
 \begin{equation}
-\Sigma^2=\left(\frac{r^2}{R^2}+a^2\right)^2-a^2\Delta\sin^2\left(\theta\right)
+\Sigma^2=\left(r^2+a^2\right)^2-a^2\Delta\sin^2\left(\theta\right)
 \end{equation}
 
 We find in the limit $$a\rightarrow0$$, the metric appropriatly reduces to the Schwarzschild metric and in the limit of $$a\rightarrow0$$ and $$M\rightarrow0$$ we arrive at spherical Minkowski.
