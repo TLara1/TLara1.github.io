@@ -3,7 +3,7 @@ layout: page
 title: On the Lagrange Planetary Equations
 description:
 img: 
-importance: 1
+importance: 2
 category: Physics
 related_publications: false
 toc:
@@ -871,3 +871,20 @@ Rewriting \eqref{lagrange simple start}-\eqref{lagrange simple end} with our new
 \end{equation}
 
 The simplified form of our planetary equations, \eqref{simplified lagrange start}-\eqref{simplified lagrange end} will be convenient after expanding $$\mathcal{R}$$ to second order in our orbital elements.
+
+## Sources
+
+These notes a conglomeration of several derivations, I mainly followed Fitzpatrick's 2012 book:
+
+_Fitzpatrick R. An Introduction to Celestial Mechanics. Cambridge University Press; 2012._
+
+But I also consulted a few other sources including
+
+_Modern celestial mechanics : aspects of solar system dynamics, by Alessandro Morbidelli. London: Taylor & Francis, 2002, ISBN 0415279399_
+
+_Methods of celestial mechanics. Vol. I, Gerhard Beutler. In cooperation with Leos Mervart and Andreas Verdun. Astronomy and Astrophysics Library. Berlin: Springer, ISBN 3-540-40749-9, 2005_
+
+_Murray CD, Dermott SF. Solar System Dynamics. Cambridge University Press; 2000._
+
+
+
