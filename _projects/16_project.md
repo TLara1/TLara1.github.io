@@ -631,3 +631,10 @@ ds^2=-\frac{\Delta\rho^2}{\Sigma^2}dt^2+\frac{\Sigma^2}{\rho^2}\sin^2\left(\thet
 \end{equation}
 
 We find in the limit $$a\rightarrow0$$, the metric appropriatly reduces to the Schwarzschild metric and in the limit of $$a\rightarrow0$$ and $$M\rightarrow0$$ we arrive at spherical Minkowski.
+
+### Sources
+I closely followed <a href="https://itp.uni-frankfurt.de/~hees/gen-phys/derivation-of-the-kerr-metric-Wagner.pdf"> this derivation</a> by David Wagner. 
+
+I also consulted Chandreskar's Derivation from 1978:
+
+_Subrahmanyan Chandrasekhar; The Kerr metric and stationary axisymmetric gravitational fields. Proc. A 1 January 1978; 358 (1695): 405–420._
