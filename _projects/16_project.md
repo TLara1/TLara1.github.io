@@ -54,16 +54,16 @@ R_{33}\rightarrow R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu+\mu_3-\mu_2\r
 \end{equation}
 The important components of the Einstein tensor are $$G_{22}$$ and $$G_{33}$$.
 \begin{equation}
-G_{22}=e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\mu_2\right)\partial_\theta\nu+\partial_\theta\mu_2\partial_\theta\psi\right)+R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu-\mu_2\right)\partial_r\nu+\partial_r^2\left(\nu+\psi\right)\nonumber
+G_{22}=e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\mu_2\right)\partial_\theta\nu+\partial_\theta\mu_2\partial_\theta\psi\right)\nonumber
 \end{equation}
 \begin{equation}
-+\partial_r\left(\psi-\mu_2\right)\partial_r\psi\right)=0
++R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu-\mu_2\right)\partial_r\nu+\partial_r^2\left(\nu+\psi\right)+\partial_r\left(\psi-\mu_2\right)\partial_r\psi\right)=0
 \end{equation}
 \begin{equation}
-G_{33}=R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\mu_3\right)\partial_r\nu+\partial_r\mu_3\partial_r\psi\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu-\mu_3\right)\partial_\theta\nu+\partial_\theta^2\left(\nu+\psi\right)\nonumber
+G_{33}=R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\mu_3\right)\partial_r\nu+\partial_r\mu_3\partial_r\psi\right)\nonumber
 \end{equation}
 \begin{equation}
-+\partial_\theta\left(\psi-\mu_3\right)\partial_\theta\psi\right)=0
++e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu-\mu_3\right)\partial_\theta\nu+\partial_\theta^2\left(\nu+\psi\right)+\partial_\theta\left(\psi-\mu_3\right)\partial_\theta\psi\right)=0
 \end{equation}
 Our solution, with four unknowns $$\nu$$, $$\mu_2$$, $$\mu_3$$, and $$\psi$$ will solve these from the four equations $$R_{00}=0$$, $$R_{33}=0$$, $$G_{22}=0$$, and $$G_{33}=0$$. 
 Now define $$\beta=\psi+\nu$$, and calculating the difference of $$G_{33}$$ and $$G_{22}$$
@@ -164,7 +164,10 @@ We now observe $$\partial_r\left(\mu_3-\mu_2\right)=\partial_r\log\left(\sqrt{\D
 +\frac{1}{2\Delta}\left(\frac{r}{R}-M\right)^2-\frac{1}{2\delta}\mu^2+\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-R^2\Delta\left(\partial_r\chi\right)^2\right)
 \end{equation}
 \begin{equation}
-2=\left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\frac{3}{2\Delta}\left(\frac{r}{R}-M\right)^2-\frac{1}{2\delta}\mu^2+\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-R^2\Delta\left(\partial_r\chi\right)^2\right)
+2=\left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)+\frac{3}{2\Delta}\left(\frac{r}{R}-M\right)^2-\frac{1}{2\delta}\mu^2\nonumber
+\end{equation}
+\begin{equation}
++\frac{1}{2\chi^2}\left(\delta\left(\partial_\mu\chi\right)^2-R^2\Delta\left(\partial_r\chi\right)^2\right)
 \end{equation}
 And simplifying further with $$\mu^2=1-\delta$$ and $$(\frac{r}{R}-M)^2=\Delta+M^2-a^2$$
 \begin{equation}\label{chi^2 master eq}
@@ -521,7 +524,10 @@ This equation is just \ref{real ernst} except our solutions are allowed to be in
 \mathcal{Z}=\frac{1+\xi}{1-\xi}=\frac{1-\xi\bar{\xi}}{\left|1-\xi\right|^2}+\frac{\xi-\bar{\xi}}{\left|1-\xi\right|^2}
 \end{equation}
 \begin{equation}
-\frac{1-\xi\bar{\xi}}{\left|1-\xi\right|^2}\left(R^2\frac{2}{\left(1-\xi\right)^2}\partial_r\left(\Delta\partial_r\mathcal{\xi}\right)+\frac{2}{\left(1-\xi\right)^2}\partial_\mu\left(\delta\partial_\mu\mathcal{\xi}\right)+R^2\frac{4\Delta}{\left(1-\xi\right)^3}\left(\partial_r\xi\right)^2+\frac{4\delta}{\left(1-\xi\right)^3}\left(\partial_\mu\xi\right)^2\right)=R^2\frac{4\Delta}{\left(1-\xi\right)^4}\left(\partial_r\xi\right)^2+\frac{4\delta}{\left(1-\xi\right)^4}\left(\partial_\mu\xi\right)^2
+\frac{1-\xi\bar{\xi}}{\left|1-\xi\right|^2}\left(R^2\frac{2}{\left(1-\xi\right)^2}\partial_r\left(\Delta\partial_r\mathcal{\xi}\right)+\frac{2}{\left(1-\xi\right)^2}\partial_\mu\left(\delta\partial_\mu\mathcal{\xi}\right)+R^2\frac{4\Delta}{\left(1-\xi\right)^3}\left(\partial_r\xi\right)^2+\frac{4\delta}{\left(1-\xi\right)^3}\left(\partial_\mu\xi\right)^2\right)\nonumber
+\end{equation}
+\begin{equation}
+=R^2\frac{4\Delta}{\left(1-\xi\right)^4}\left(\partial_r\xi\right)^2+\frac{4\delta}{\left(1-\xi\right)^4}\left(\partial_\mu\xi\right)^2
 \end{equation}
 \begin{equation}
 \left(1-\xi\bar{\xi}\right)\left(R^2\partial_r\left(\Delta\partial_r\mathcal{\xi}\right)+\partial_\mu\left(\Delta\partial_\mu\mathcal{\xi}\right)\right)=-2\bar{\xi}\left(\Delta\left(\partial_r\xi\right)^2+\delta\left(\partial_\mu\xi\right)^2\right)
@@ -532,7 +538,10 @@ Introducing the same transform $$\eta^2=\frac{\left(\frac{r}{R}-M\right)^2}{M^2-
 \end{equation}
 Now we substitute $$\xi=p\eta+iq\mu$$ to find
 \begin{equation}
-\left(1-\xi\bar{\xi}\right)\left(\partial_\eta\left(\left(\eta^2-1\right)\partial_\eta\mathcal{\xi}\right)+\partial_\mu\left(\left(1-\mu^2\right)\partial_\mu\mathcal{\xi}\right)\right)+2\bar{\xi}\left(\left(\eta^2-1\right)\left(\partial_r\xi\right)^2+\left(1-\mu^2\right)\left(\partial_\mu\xi\right)^2\right)=-2\left(p^2+q^2-1\right)\bar{\xi}=0
+\left(1-\xi\bar{\xi}\right)\left(\partial_\eta\left(\left(\eta^2-1\right)\partial_\eta\mathcal{\xi}\right)+\partial_\mu\left(\left(1-\mu^2\right)\partial_\mu\mathcal{\xi}\right)\right)+2\bar{\xi}\left(\left(\eta^2-1\right)\left(\partial_r\xi\right)^2+\left(1-\mu^2\right)\left(\partial_\mu\xi\right)^2\right)\nonumber
+\end{equation}
+\begin{equation}
+=-2\left(p^2+q^2-1\right)\bar{\xi}=0
 \end{equation}
 implying $$p^2+q^2=1$$ solves the equation. Now solving for $$\mathcal{F}$$ and $$\mathcal{G}$$
 \begin{equation}
@@ -593,10 +602,10 @@ Finally, we must compute $$\mathcal{A}$$ and $$\mathcal{B}$$
 \end{equation}
 Where we have used $$\rho^2\sqrt{\Delta}-4a^2M^2\frac{r^2}{R^2}\delta=\left(\rho^2\sqrt{\Delta}+2aM\frac{r}{R}\sqrt{\delta}\right)\left(\rho^2\sqrt{\Delta}-2aM\frac{r}{R}\sqrt{\delta}\right)$$. Now differentiating these quantities
 \begin{equation}
-R\partial_r\mathcal{A}=\frac{\left(\frac{r}{R}-M\right)\rho^2-2\sqrt{\Delta}\frac{r}{R}\left(\sqrt{\Delta}+a\sqrt{\delta}\right)}{\sqrt{\Delta\delta}\left(\frac{r^2}{R^2}+a^2+a\sqrt{\Delta\delta}\right)^2},\quad \partial_\mu\mathcal{A}=\frac{\mu\sqrt{\Delta}}\left(\frac{r^2}{R^2}+a^2+a^2\delta+2a\sqrt{\Delta\delta}\right){\sqrt{\Delta\delta}\left(\frac{r^2}{R^2}+a^2+a\sqrt{\Delta\delta}\right)^2}{\delta^{3/2}\left(\frac{r^2}{R^2}+a^2+a\sqrt{\Delta\delta}\right)^2}
+R\partial_r\mathcal{A}=\frac{\left(\frac{r}{R}-M\right)\rho^2-2\sqrt{\Delta}\frac{r}{R}\left(\sqrt{\Delta}+a\sqrt{\delta}\right)}{\sqrt{\Delta\delta}\left(\frac{r^2}{R^2}+a^2+a\sqrt{\Delta\delta}\right)^2},\quad \partial_\mu\mathcal{A}=\frac{\mu\sqrt{\Delta}\left(\frac{r^2}{R^2}+a^2+a^2\delta+2a\sqrt{\Delta\delta}\right)}{\delta^{3/2}\left(\frac{r^2}{R^2}+a^2+a\sqrt{\Delta\delta}\right)^2}
 \end{equation}
 \begin{equation}
-R\partial_r\mathcal{B}=\frac{\left(\frac{r}{R}-M\right)\rho^2-2\sqrt{\Delta}\frac{r}{R}\left(\sqrt{\Delta}-a\sqrt{\delta}\right)}{\sqrt{\Delta\delta}\left(\frac{r^2}{R^2}+a^2-a\sqrt{\Delta\delta}\right)^2},\quad \partial_\mu\mathcal{B}=\frac{\mu\sqrt{\Delta}}\left(\frac{r^2}{R^2}+a^2+a^2\delta-2a\sqrt{\Delta\delta}\right){\sqrt{\Delta\delta}\left(\frac{r^2}{R^2}+a^2+a\sqrt{\Delta\delta}\right)^2}{\delta^{3/2}\left(\frac{r^2}{R^2}+a^2-a\sqrt{\Delta\delta}\right)^2}
+R\partial_r\mathcal{B}=\frac{\left(\frac{r}{R}-M\right)\rho^2-2\sqrt{\Delta}\frac{r}{R}\left(\sqrt{\Delta}-a\sqrt{\delta}\right)}{\sqrt{\Delta\delta}\left(\frac{r^2}{R^2}+a^2-a\sqrt{\Delta\delta}\right)^2},\quad \partial_\mu\mathcal{B}=\frac{\mu\sqrt{\Delta}\left(\frac{r^2}{R^2}+a^2+a^2\delta-2a\sqrt{\Delta\delta}\right)}{\delta^{3/2}\left(\frac{r^2}{R^2}+a^2-a\sqrt{\Delta\delta}\right)^2}
 \end{equation}
 Inserting these quantities into \ref{mu_2+mu_3 master eq} and simplifying extensively (I would advice using Mathematica)
 \begin{equation}
