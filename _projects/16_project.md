@@ -239,10 +239,10 @@ where $$\nu$$, $$\mu_2$$, $$\mu_3$$, $$\omega$$ and $$\psi$$ are dimensionless f
 
 Proceeding as we did previously, calculating $$R_{00}$$ and $$R_{33}$$
 \begin{equation}
-R_{00}=0\rightarrow R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu+\mu_3-\mu_2\right)\partial_r\nu+\partial_r^2\nu\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu+\mu_2-\mu_3\right)\partial_\theta\nu+\partial_\theta^2\nu\right)-\frac{1}{2}e^{2\psi-2\nu}\left(R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2+e^{\mu_2-\mu_3}\left(\partial_\theta\omega\right)^2\right)=0
+R_{00}\rightarrow R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu+\mu_3-\mu_2\right)\partial_r\nu+\partial_r^2\nu\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu+\mu_2-\mu_3\right)\partial_\theta\nu+\partial_\theta^2\nu\right)-\frac{1}{2}e^{2\psi-2\nu}\left(R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2+e^{\mu_2-\mu_3}\left(\partial_\theta\omega\right)^2\right)=0
 \end{equation}
 \begin{equation}
-R_{33}=0\rightarrow R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu+\mu_3-\mu_2\right)\partial_r\psi+\partial_r^2\psi\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu+\mu_2-\mu_3\right)\partial_\theta\psi+\partial_\theta^2\psi\right)+\frac{1}{2}e^{2\psi-2\nu}\left(R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2+e^{\mu_2-\mu_3}\left(\partial_\theta\omega\right)^2\right)=0
+R_{33}\rightarrow R^2e^{\mu_3-\mu_2}\left(\partial_r\left(\psi+\nu+\mu_3-\mu_2\right)\partial_r\psi+\partial_r^2\psi\right)+e^{\mu_2-\mu_3}\left(\partial_\theta\left(\psi+\nu+\mu_2-\mu_3\right)\partial_\theta\psi+\partial_\theta^2\psi\right)+\frac{1}{2}e^{2\psi-2\nu}\left(R^2e^{\mu_3-\mu_2}\left(\partial_r\omega\right)^2+e^{\mu_2-\mu_3}\left(\partial_\theta\omega\right)^2\right)=0
 \end{equation}
 We will also use $$R_{03}$$ to resolve $$\omega$$
 \begin{equation}\label{omega eq}
