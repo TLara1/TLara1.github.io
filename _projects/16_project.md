@@ -12,7 +12,7 @@ toc:
 
 ## Introduction
 
-Here we derive the Schwarzschild and Kerr Metrics for static and rotating spherical bodies. We use natural units for simplicity, setting $$c=G=1$$
+Here we derive the Schwarzschild and Kerr Metrics for static and rotating spherical bodies. We use natural units for simplicity, setting $$c=G=1$$.
 
 ## I. Riemann and Einstein Tensors
 
