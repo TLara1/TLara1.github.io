@@ -82,11 +82,20 @@ I have played the clarinet for 12 years, first with the Decatur High School Wind
 </div>
 
 <div align="justify">
-In the little free time I do have, I enjoy playing board games, particularly with the <a href="https://www.mit.edu/~sgs/games/games.html">MIT Strategic Game Society (SGS)</a>. I mainly enjoyer heavier interactive games and my favourites include <em>Spirit Island</em>, <em>Oath</em>, <em>Caverna</em>, <em>Barrage</em>, <em>War of the Ring</em>, <em>Clash of Cultures</em>, and of course, <em>Twilight Imperium</em>. I also played a good amount of <em>Warhammer: Age of Sigmar</em> back in high school. I was quite fond of my little plastic dinosuar army and the angry dwarf who accompanied them, although I was never too good at actually playing the game. Unfortunately, nowadays I am much less able to indulge in my miniature-painting pursuits (although rumours have it, I am becoming interested in <em>Trench Crusade</em>). I have also explored tabletop role-playing games, hosting a <em>Dungeon World</em> campaign for my friends over the last year. I wish I could say I played <em>Magic: The Gathering</em>, but I mostly just read articles on the CEDH meta and watch LSV force artifacts in Vintage Cube. 
+In the little free time I do have, I enjoy playing board games, particularly with the <a href="https://www.mit.edu/~sgs/games/games.html">MIT Strategic Game Society (SGS)</a>. I mainly enjoyer heavier interactive games and my favourites include <em>Spirit Island</em>, <em>Oath</em>, <em>Caverna</em>, <em>Barrage</em>, <em>War of the Ring</em>, <em>Clash of Cultures</em>, and of course, <em>Twilight Imperium</em>. 
+  
+I also played a good amount of <em>Warhammer: Age of Sigmar</em> back in high school. I was quite fond of my little plastic dinosuar army and the angry dwarf who accompanied them, although I was never too good at actually playing the game. Unfortunately, nowadays I am much less able to indulge in my miniature-painting pursuits (although rumours have it, I am becoming interested in <em>Trench Crusade</em>). 
+
+As one may guess, I have also explored tabletop role-playing games, game-mastering <em>Dungeon World</em> and <em>Dungeons and Dragons</em> campaigns for my friends over the last year. 
+
+I wish I could say I played <em>Magic: The Gathering</em>, but I mostly just read articles on the CEDH meta and watch LSV force artifacts in Vintage Cube, which is always entertaining.
 </div>
 
+## MIT French House _La Maison Française_
+I am currently the president of the <a href="https://web.mit.edu/lmf/www/index.html"> La Maison Française</a> (LMF) living group. We are a 40 person community dedicated to daily dinners, a clean kitchen, and various vaguely French-themed activities and events. If you are a current or incoming MIT student, I highly recommend checking us out.
+
 ## Origami
-In middle and high school, I did a good amount of origami, even designing my own models. I did a few exhibitions at my high school and library, but these days I'm afraid I have not the time. Someday, I may go back to relearn some paper folding, but for now my works remain a pleasant memory of simpler, less busy times. 
+In middle and high school, I did a good amount of origami, even designing my own models. I did a few exhibitions at my high school and library, and during my freshman year I was a member of <a href="http://origamit.mit.edu/"> OrigaMIT</a>, but these days I'm afraid I have not the time. Someday, I may go back to relearn some paper folding, but for now my works remain a pleasant memory of simpler, less busy times. 
 
 <div class="row">
     <div class="col-sm mt-2 mt-md-0">
