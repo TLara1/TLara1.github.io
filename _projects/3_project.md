@@ -3,7 +3,7 @@ layout: page
 title: Elasticity Theory and the Deformation of Two Colliding Disks
 description:
 img:
-importance: 3
+importance: 4
 category: Physics
 giscus_comments: false
 toc:
@@ -690,7 +690,7 @@ As $$B$$ is constant, given a force $$P$$ pushing our disks together, the contac
   d=P\left(K_1\ln{2R_1}+K_2\ln{2R_2}+\left(K_1+K_2\right)\ln{\left(\sqrt{\frac{4d}{P}}\right)}-\frac{1}{2}\left(K_1+K_2\right)\right)
 \end{equation}
 
-Note that in the limit of large $R_1$ and $R_2$, the above formulas reduce to Hertzian solutions for contacting cylinders. Removing $$R_i^{-2}$$ terms:
+Note that in the limit of large $$R_1$$ and $$R_2$$, the above formulas reduce to Hertzian solutions for contacting cylinders. Removing $$R_i^{-2}$$ terms:
 \begin{equation}
   B\simeq \frac{1}{2\left(K_1+K_2\right)}\left(\frac{1}{R_1}+\frac{1}{R_2}\right)
 \end{equation}
@@ -702,3 +702,9 @@ Where $$R=\left(\frac{1}{R_1}+\frac{1}{R_2}\right)^{-1}$$ and $$E^{*}=\left(\fra
 \begin{equation}
   d\simeq2\left(K_1+K_2\right)F=\frac{4F}{\pi E^{*}}
 \end{equation}
+
+## Sources
+
+I mainly followed Muskhelishvili's _Some Basic Problems of the Mathematical Theory of Elasticity_ 1977.
+
+
