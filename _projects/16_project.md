@@ -479,7 +479,7 @@ Next we pick $$p=-\frac{\sqrt{M^2-a^2}}{M}$$, $$q=\frac{a}{M}$$, which satisfies
 \begin{equation}
 \mathcal{G}=\frac{2aM\mu}{\rho^2}
 \end{equation}
-with $$\rho^2=\frac{r^2}{R^2}+a^2\mu$$
+with $$\rho^2=\frac{r^2}{R^2}+a^2\mu^2$$
 Next, solving for $$\mathcal{W}$$
 \begin{equation}
 R\partial_r\mathcal{G}=-\frac{4aM\mu\frac{r}{R}}{\rho^4}=\frac{\left(\Delta-a^2\delta\right)^2}{\Delta\rho^4}\partial_\mu\mathcal{W}
@@ -517,12 +517,19 @@ e^{2\nu}=e^{2\beta-2\psi}=\frac{\Delta\rho^2}{\Sigma^2}
 \end{equation}
 Finally, we must compute $$\mathcal{A}$$ and $$\mathcal{B}$$
 \begin{equation}
-\mathcal{A}=\chi+\omega=\frac{1}{\sqrt{\delta}}\frac{\Delta-a^2\delta}{\rho^2\sqrt{\Delta}-2aM\frac{r}{R}\sqrt{\delta}}
+\mathcal{A}=\chi+\omega=\frac{1}{\sqrt{\delta}}\frac{\Delta-a^2\delta}{\rho^2\sqrt{\Delta}-2aM\frac{r}{R}\sqrt{\delta}}=\frac{1}{\sqrt{\delta}}\frac{\sqrt{\Delta}+a\sqrt{\delta}}{\frac{r^2}{R^2}+a^2+a\sqrt{\Delta\delta}}
 \end{equation}
 \begin{equation}
-\mathcal{B}=\chi-\omega=\frac{1}{\sqrt{\delta}}\frac{\Delta-a^2\delta}{\rho^2\sqrt{\Delta}+2aM\frac{r}{R}\sqrt{\delta}}
+\mathcal{B}=\chi-\omega=\frac{1}{\sqrt{\delta}}\frac{\Delta-a^2\delta}{\rho^2\sqrt{\Delta}+2aM\frac{r}{R}\sqrt{\delta}}=\frac{1}{\sqrt{\delta}}\frac{\sqrt{\Delta}-a\sqrt{\delta}}{\frac{r^2}{R^2}+a^2-a\sqrt{\Delta\delta}}
 \end{equation}
-Where we have used $$\rho^2\sqrt{\Delta}-4a^2M^2\frac{r^2}{R^2}\delta=\left(\rho^2\sqrt{\Delta}+2aM\frac{r}{R}\sqrt{\delta}\right)\left(\rho^2\sqrt{\Delta}-2aM\frac{r}{R}\sqrt{\delta}\right). Inserting these quantities into \ref{mu_2+mu_3 master eq} and simplifying a lot yields
+Where we have used $$\rho^2\sqrt{\Delta}-4a^2M^2\frac{r^2}{R^2}\delta=\left(\rho^2\sqrt{\Delta}+2aM\frac{r}{R}\sqrt{\delta}\right)\left(\rho^2\sqrt{\Delta}-2aM\frac{r}{R}\sqrt{\delta}\right)$$. Now differentiating these quantities
+\begin{equation}
+R\partial_r\mathcal{A}=\frac{\left(\frac{r}{R}-M\right)\rho^2-2\sqrt{\Delta}\frac{r}{R}\left(\sqrt{\Delta}+a\sqrt{\delta}\right)}{\sqrt{\Delta\delta}\left(\frac{r^2}{R^2}+a^2+a\sqrt{\Delta\delta}\right)^2},\quad \partial_\mu\mathcal{A}=\frac{\mu\sqrt{\Delta}}\left(\frac{r^2}{R^2}+a^2+a^2\delta+2a\sqrt{\Delta\delta}\right){\sqrt{\Delta\delta}\left(\frac{r^2}{R^2}+a^2+a\sqrt{\Delta\delta}\right)^2}{\delta^{3/2}\left(\frac{r^2}{R^2}+a^2+a\sqrt{\Delta\delta}\right)^2}
+\end{equation}
+\begin{equation}
+R\partial_r\mathcal{B}=\frac{\left(\frac{r}{R}-M\right)\rho^2-2\sqrt{\Delta}\frac{r}{R}\left(\sqrt{\Delta}-a\sqrt{\delta}\right)}{\sqrt{\Delta\delta}\left(\frac{r^2}{R^2}+a^2-a\sqrt{\Delta\delta}\right)^2},\quad \partial_\mu\mathcal{B}=\frac{\mu\sqrt{\Delta}}\left(\frac{r^2}{R^2}+a^2+a^2\delta-2a\sqrt{\Delta\delta}\right){\sqrt{\Delta\delta}\left(\frac{r^2}{R^2}+a^2+a\sqrt{\Delta\delta}\right)^2}{\delta^{3/2}\left(\frac{r^2}{R^2}+a^2-a\sqrt{\Delta\delta}\right)^2}
+\end{equation}
+Inserting these quantities into \ref{mu_2+mu_3 master eq} and simplifying extensively (I would advice using Mathematica)
 \begin{equation}
 \left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)=2-\frac{\frac{r}{R}-M}{\Delta}-2\frac{M\frac{r}{R}}{\rho^2}
 \end{equation}
@@ -533,7 +540,7 @@ And finally, assembling all the components of our metric
 ds^2=-e^{2\nu}dt^2+e^{2\psi}\left(Rd\phi-\omega dt\right)^2+e^{2\mu_2}dr^2+R^2e^{\mu_3}d\theta^2
 \end{equation}
 \begin{equation}
-ds^2=-\frac{\Delta\rho^2}{\Sigma^2}dt^2+\frac{\Sigma^2}{\rho^2}\sin^2\left(\theta\right)\left(Rd\phi-\frac{2aM\frac{r}{R}}{\Sigma^2}dt\right)^2+\frac{\rho^2}{\Delta}\left(dr^2+\R^2\Delta d\theta^2\right)
+ds^2=-\frac{\Delta\rho^2}{\Sigma^2}dt^2+\frac{\Sigma^2}{\rho^2}\sin^2\left(\theta\right)\left(Rd\phi-\frac{2aM\frac{r}{R}}{\Sigma^2}dt\right)^2+\frac{\rho^2}{\Delta}\left(dr^2+R^2\Delta d\theta^2\right)
 \end{equation}
 \begin{equation}
 \Delta=\frac{r^2}{R^2}+a^2-2M\frac{r}{R}
