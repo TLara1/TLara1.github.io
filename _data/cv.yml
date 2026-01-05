@@ -95,7 +95,7 @@
   contents:
     - title: Physics
       items:
-        - Relativistic Quantum Field Theory
+        - Relativistic Quantum Field Theory I, II
         - Quantum Mechanics I, II, III
         - Special + General Relativity
         - Statistical Mechanics
@@ -106,6 +106,8 @@
         - Numerical Methods for Linear Algebra
         - Numerical Methods for PDEs
         - Real + Complex Analysis
+        - Differnetial Geometry
+        - Nonlinear Dynamics and Chaos
 
 - title: Leadership and Extracurriculars
   type: time_table
