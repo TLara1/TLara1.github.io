@@ -1482,4 +1482,16 @@ This brings the total precession to $$\approx588.872^{"}$$, much closer to the o
 
 Of course, there are other sources of perihelion precession such as the oblateness of the sun and the interactions of other planets with each other, but these corrections are of a higher order than the second-order approximations we have carried out.
 
+## Sources
 
+These notes a conglomeration of several derivations, I mainly followed Fitzpatrick's 2012 book:
+
+_Fitzpatrick R. An Introduction to Celestial Mechanics. Cambridge University Press; 2012._
+
+But I also consulted a few other sources including
+
+_Modern celestial mechanics : aspects of solar system dynamics, by Alessandro Morbidelli. London: Taylor & Francis, 2002, ISBN 0415279399_
+
+_Methods of celestial mechanics. Vol. I, Gerhard Beutler. In cooperation with Leos Mervart and Andreas Verdun. Astronomy and Astrophysics Library. Berlin: Springer, ISBN 3-540-40749-9, 2005_
+
+_Murray CD, Dermott SF. Solar System Dynamics. Cambridge University Press; 2000._
