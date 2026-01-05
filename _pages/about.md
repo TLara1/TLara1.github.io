@@ -24,7 +24,7 @@ social: true # includes social icons at the bottom of the page
   </div>
 
 <div align="justify">
-    This website is a bit of everything. I have found it to be a good place to dump my research experiences, publications, CV, and notes. Although mostly academic in scope, I have included some of my other interests because I do, after all, spend a good bit of brain power thinking of non-physics-y things. Feel free to click around and explore, although be warned that this entire website is still somewhat under construction, as I tend to update it infrequently on my rather limited free time. 
+    This website is a bit of everything. I have found it to be a good place to dump my research experiences, publications, CV, and notes. Although mostly academic in scope, I have included some of my other interests because I do, after all, spend a good bit of brain power thinking of non-physics-y things. Feel free to click around and explore, although be warned that this entire website is still somewhat under construction, as I tend to update it infrequently on my rather limited free time. I am also by no means an expert at website-building, so certain pages may look a bit rough. 
 </div>
 <div align="justify" style="margin-bottom: 20px;">
   Enjoy!
