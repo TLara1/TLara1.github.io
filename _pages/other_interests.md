@@ -67,7 +67,7 @@ I have played the clarinet for 12 years, first with the Decatur High School Wind
 </div>
 
 <div align="justify">
-    My favourite pieces include Crussel's Third Clarinet Concerto Op. 11, Busoni's Clarinet Concertino Op. 47, Cavallini's <em>Adagio e Tarantella</em>, and Weber's Clarinet Concertino Op. 26.
+    My favourite pieces include Crussel's 3rd Clarinet Concerto Op. 11, Busoni's Clarinet Concertino Op. 47, Cavallini's <em>Adagio e Tarantella</em>, Spohr's 1st Clarinet Concerto Op. 26, and Weber's Clarinet Concertino Op. 26. All pieces that I've found on IMSLP.
 </div>
 
 ## Board, War, and Role-Playing Games
@@ -82,12 +82,15 @@ I have played the clarinet for 12 years, first with the Decatur High School Wind
 </div>
 
 <div align="justify">
-In the little free time I do have, I enjoy playing board games, particularly with the <a href="https://www.mit.edu/~sgs/games/games.html">MIT Strategic Game Society (SGS)</a>. I mainly enjoyer heavier interactive games and my favourites include <em>Spirit Island</em>, <em>Oath</em>, <em>Caverna</em>, <em>Barrage</em>, <em>War of the Ring</em>, <em>Clash of Cultures</em>, and of course, <em>Twilight Imperium</em>. 
-  
+In the little free time I do have, I enjoy playing board games, particularly with the <a href="https://www.mit.edu/~sgs/games/games.html">MIT Strategic Game Society (SGS)</a>. I mainly enjoyer heavier interactive games and my favourites include all the usual suspects: <em>Spirit Island</em>, <em>Oath</em>, <em>Caverna</em>, <em>Barrage</em>, <em>War of the Ring</em>, <em>Glomhaven</em>, <em>Clash of Cultures</em>, and of course, <em>Twilight Imperium</em>. Notably, I actually prefer the 3rd edition of <em>Twilight Imperium</em> over the fourth. A worse game perhaps, but there is a certain old-fashioned charm that I feel was polished away in TI4.
+</div>
+<div align="justify">
 I also played a good amount of <em>Warhammer: Age of Sigmar</em> back in high school. I was quite fond of my little plastic dinosuar army and the angry dwarf who accompanied them, although I was never too good at actually playing the game. Unfortunately, nowadays I am much less able to indulge in my miniature-painting pursuits (although rumours have it, I am becoming interested in <em>Trench Crusade</em>). 
-
-As one may guess, I have also explored tabletop role-playing games, game-mastering <em>Dungeon World</em> and <em>Dungeons and Dragons</em> campaigns for my friends over the last year. 
-
+</div>
+<div align="justify">
+As one may guess, I have also explored tabletop role-playing games, game-mastering <em>Dungeon World</em> and <em>Dungeons and Dragons</em> campaigns for my friends over the last year. I've become quite curious about <em>Draw Steel</em> recently, though I haven't played yet.
+</div>
+<div align="justify">
 I wish I could say I played <em>Magic: The Gathering</em>, but I mostly just read articles on the CEDH meta and watch LSV force artifacts in Vintage Cube, which is always entertaining.
 </div>
 
