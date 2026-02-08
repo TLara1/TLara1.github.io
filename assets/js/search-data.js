@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-notes",
           title: "Notes",
-          description: "A collection of notes I have compiled on interesting topics in physics and mathematics. These are created mostly for my personal reference, they are more concise and less clear than course notes one may find on the same topic. I don&#39;t promise these are without mistakes, if you find an error, please don&#39;t hesitate to let me know. In the future, I may provide notes on Oppenheimer-Snyder Stellar Collapse, the Weierstrass function, the electron&#39;s magnetic moment, or any other topic I encounter in my classes or research.",
+          description: "A collection of notes I have compiled on interesting topics in physics and mathematics. These are created mostly for my personal reference, they are more concise and less clear than course notes one may find on the same topic. I don&#39;t promise these are without mistakes, if you find an error, please don&#39;t hesitate to let me know. In the future, I may provide notes on Oppenheimer-Snyder Stellar Collapse, the Weierstrass function, the electron&#39;s magnetic moment, the Fokker-Planck equation, or any other topic I encounter in my classes or research.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/notes/";
