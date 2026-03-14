@@ -31,8 +31,14 @@ Natural fliers? little flying seedpods, optimization of nature doing what.
 
 growth and matter, fsi problem solid has constantly changing reference configuration
 
+cracking? how do things crack, underwater? related, designs on coral reefs? 
+
+What's the best shape for a hat? 
+
 To DO summer 2026
 Get better handwriting, find blackboard, get good at writing on it.
 Publish CNT paper, jellyfish paper, Ken FSI paper.
+
+
 
 
