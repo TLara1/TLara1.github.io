@@ -38,6 +38,7 @@ What's the best shape for a hat?
 To DO summer 2026
 Get better handwriting, find blackboard, get good at writing on it.
 Publish CNT paper, jellyfish paper, Ken FSI paper.
+AMR for RMT code?
 
 
 
