@@ -43,21 +43,25 @@ Big QFT notes
 bird project github?
 AMR vortex project github?
 fisherman story polish and add to website?
+get better dressed
 
 
 INTERESTING PEOPLE
-Karthik Menon
+Karthik Menon - Georgia Tech
 Suhas Jain
-Leif Ritroph
+Leif Ritroph - Courant
 Michael Shelly
 Charles Peskin
 Eric Lauga
 Peter Howell
 Ian Hewitt
 Duncan Hewitt
-Sarah Waters
-Laurel Ohm
-Dallas Albritton
+Sarah Waters - Oxford
+Laurel Ohm - UW Madison
+Dallas Albritton - UW Madison
+John Bush - MIT
+Jorn Dunkel - MIT
+Keaton Burns - MIT
 
 
 
