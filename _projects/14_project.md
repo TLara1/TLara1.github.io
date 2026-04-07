@@ -1,6 +1,6 @@
 ---
 layout: page
-title: On the Lagrange Planetary Equations
+title: research ideas misc
 description:
 img:
 importance: 1
@@ -8,7 +8,7 @@ category:
 related_publications: false
 ---
 
-Miscellaneous research ideas
+Miscellaneous research ideas - REMBER THIS IS PUBLIC
 
 actual real advection diffusion with a solid boundry in ibamr. 
 problem is only the solid is only enforced with the fluid, not the advection field. There is no way to keep the advection field 0 inside in the solid area.
@@ -42,26 +42,34 @@ AMR for RMT code?
 Big QFT notes
 bird project github?
 AMR vortex project github?
+RMT github
+Website polish, add videos links to papers, etc.
 fisherman story polish and add to website?
 get better dressed
 
 
 INTERESTING PEOPLE
 Karthik Menon - Georgia Tech
-Suhas Jain
-Leif Ritroph - Courant
-Michael Shelly
-Charles Peskin
-Eric Lauga
-Peter Howell
-Ian Hewitt
-Duncan Hewitt
+Suhas Jain - Georgia Tech
+Leif Ritroph - NYU Courant
+Michael Shelly - NYU Courant
+Charles Peskin - NYU Courant
+Mike O'Neal - NYU Courant
+Leslie Greengard - NYU Courant
+Marsha Berger - NYU Courant
+Eric Lauga - Cambridge
+Duncan Hewitt - Cambridge
+Peter Howell - Oxford
+Ian Hewitt - Oxford
 Sarah Waters - Oxford
 Laurel Ohm - UW Madison
 Dallas Albritton - UW Madison
+Saverio Spagnolie - UW Madison
+Chris Rycroft - UW Madison
 John Bush - MIT
 Jorn Dunkel - MIT
 Keaton Burns - MIT
+Ken Kamrin - UC Berkeley
 
 
 
