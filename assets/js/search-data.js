@@ -427,8 +427,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/13_project/";
-            },},{id: "projects-on-the-lagrange-planetary-equations",
-          title: 'On the Lagrange Planetary Equations',
+            },},{id: "projects-research-ideas-misc",
+          title: 'research ideas misc',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/14_project/";
