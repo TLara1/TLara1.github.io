@@ -65,6 +65,9 @@
 - title: Honours and Awards
   type: time_table
   contents:
+    - year: 2026
+      items:
+        - Member of Phi Beta Kappa Academic Honour Society
     - year: 2025
       items:
         - MIT Mathematics Department Summer Program for Undergraduate Research (SPUR) Participant
