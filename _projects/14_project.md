@@ -15,6 +15,9 @@ problem is only the solid is only enforced with the fluid, not the advection fie
 
 Field theory for fluid beyond just stokes flow. THe idea here being is that I think we are doing dissipation wrong. There has to be a more fundamental represntation that enforce energy "dissipation." I mean dissipation is just turning energy into something else. Can we interpt dissipation in this way such that somethign is conserved? random thought, but dissipation is just moving into thermal noise right? See Dalls Albritton Research
 
+RMT spectral method and RMT amr. this is a fully eulerian method, I think a chebyshev solver could be really fast, just have to work out the stiff insides of the solids?
+but spectral rmt would be cool
+
 flag flapping 3d more realistic
 
 field theory for classical gravity? as in perturbative expansion in low mass ratio?
