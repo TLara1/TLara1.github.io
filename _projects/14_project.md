@@ -49,6 +49,8 @@ RMT github
 Website polish, add videos links to papers, etc.
 fisherman story polish and add to website?
 get better dressed
+buy new computer
+buy headphones
 
 
 INTERESTING PEOPLE
