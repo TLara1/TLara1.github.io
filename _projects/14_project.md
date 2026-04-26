@@ -8,7 +8,7 @@ category:
 related_publications: false
 ---
 
-Miscellaneous research ideas - REMBER THIS IS PUBLIC
+Miscellaneous research ideas - REMEMBER THIS IS PUBLIC
 
 actual real advection diffusion with a solid boundry in ibamr. 
 problem is only the solid is only enforced with the fluid, not the advection field. There is no way to keep the advection field 0 inside in the solid area.
@@ -38,15 +38,21 @@ cracking? how do things crack, underwater? related, designs on coral reefs?
 
 What's the best shape for a hat? 
 
+bird migration, more general noisy sensing navigation without gradient
+
 To DO summer 2026
 Get better handwriting, find blackboard, get good at writing on it.
 Publish CNT paper, jellyfish paper, Ken FSI paper.
+Ken RMT code organize
 AMR for RMT code?
+remanage passwords
+clean up google files
+github for AMR 18.336 code - organized
 Big QFT notes
 bird project github?
 AMR vortex project github?
 RMT github
-Website polish, add videos links to papers, etc.
+Website polish, add videos links to papers, etc. remove old links/leftovers
 fisherman story polish and add to website?
 get better dressed
 buy new computer
