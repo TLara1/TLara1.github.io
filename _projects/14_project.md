@@ -43,6 +43,8 @@ bird migration, more general noisy sensing navigation without gradient
 To DO summer 2026
 Get better handwriting, find blackboard, get good at writing on it.
 Publish CNT paper, jellyfish paper, Ken FSI paper.
+take notes ocean dynamics class
+take notes fluids for PhD
 Ken RMT code organize
 AMR for RMT code?
 remanage passwords
