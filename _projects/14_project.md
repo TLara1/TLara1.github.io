@@ -60,6 +60,27 @@ get better dressed
 buy new computer
 buy headphones
 
+Reading List
+
+For actual PhD-related work,
+The Fluid Dynamics of Cell Motility, Lauga 
+Microhydrodynamics: Principles and Selected Applications, Kim & Karrila
+Advanced Transport Phenomena: Fluid Mechanics and Convective Transport Processes, Leal
+Mechanics of Swimming and Flying, Childress
+Boundary Integral and Singularity Methods for Linearized Viscous Flow, Pozrikidis 
+The Mathematical Theory of Viscous Incompressible Flow, Ladyzhenskaia 
+Microhydrodynamics, Brownian Motion, and Complex Fluids, Graham
+A Physical Introduction to Suspension Dynamics, Gauzzelli
+Introduction to Hydrodynamic Stability, Drazin
+Vorticity and Incompressible Flow, Majda
+Applied Analysis of the Navier-Stokes Equations, Doering
+Perturbation Methods, Hinch
+
+For fun,
+Some Basic Problems of the Mathematical Theory of Elasticity, Muskhelishvili
+Numerical Relativity, Shibata
+An Introduction To Quantum Field Theory, Peskin & Shroeder
+
 
 INTERESTING PEOPLE
 Karthik Menon - Georgia Tech
