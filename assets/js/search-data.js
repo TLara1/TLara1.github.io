@@ -427,11 +427,6 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/13_project/";
-            },},{id: "projects-research-ideas-misc",
-          title: 'research ideas misc',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/14_project/";
             },},{id: "projects-a-simplified-model-for-flapping-flag-dynamics",
           title: 'A Simplified Model for Flapping Flag Dynamics',
           description: "",
@@ -487,4 +482,9 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-research-ideas-misc",
+          title: 'research ideas misc',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Research_ideas+Brainstorming/";
             },},];
