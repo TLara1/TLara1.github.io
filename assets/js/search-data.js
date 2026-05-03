@@ -427,6 +427,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/13_project/";
+            },},{id: "projects-a-study-of-avian-magnetonavigation",
+          title: 'A Study of Avian Magnetonavigation',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/14_project/";
             },},{id: "projects-a-simplified-model-for-flapping-flag-dynamics",
           title: 'A Simplified Model for Flapping Flag Dynamics',
           description: "",
