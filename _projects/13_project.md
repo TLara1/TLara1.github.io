@@ -18,7 +18,8 @@ The underlying modelling challenge is a fluid-solid interaction problem in which
 
 So far, I've compared paddling motions and feeding dynamics for two jellyfish species, _Aurelia Aurita_ (moon jellyfish), and the smaller _Clytia Hemisphaerica_. Specific bell deformations were extracted from recordings via point-tracking and encoded as prescribed deformations in our model. We have found that the larger, _A. Aurita_, feeds optimally at lower paddling frequencies (~1 Hz). In contrast, the smaller _C. Hemisphaerica_ feeds more effectively at higher paddling frequencies (~10 Hz), consistent with the different size scales and Reynold’s number regime for the two species.
 
-My project report can be found <a href="https://drive.google.com/file/d/1wSpSQzPye7aIVxnDeCHH4aIk0SdDPu-X/view?usp=sharing"> here </a>and my presentation is available <a href="https://docs.google.com/presentation/d/1Gu6dFYhLzMP1EHaO5eUDJuQ-xhAA6g5VM6_iXALEbM0/edit?usp=sharing"> here</a>.
+My project report can be found <a href="https://drive.google.com/file/d/1wSpSQzPye7aIVxnDeCHH4aIk0SdDPu-X/view?usp=sharing"> here </a> or on the <a href="https://math.mit.edu/research/undergraduate/spur/past-projects.html
+"> MIT Math website </a> and my presentation is available <a href="https://docs.google.com/presentation/d/1Gu6dFYhLzMP1EHaO5eUDJuQ-xhAA6g5VM6_iXALEbM0/edit?usp=sharing"> here</a>. 
 
 <div style="text-align: center;">
   {% include figure.liquid loading="eager" path="assets/img/Pictures_Website_Jellyfish/visualize_4_panel_cbar.png" title="Jellyfish Swimming" class="img-fluid rounded z-depth-0" width="auto" height="400" %}
