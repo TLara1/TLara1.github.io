@@ -88,24 +88,25 @@ Karthik Menon - Georgia Tech
 Suhas Jain - Georgia Tech
 Leif Ritroph - NYU Courant
 Michael Shelly - NYU Courant
-Charles Peskin - NYU Courant
+Charles Peskin - NYU Courant, FSI problems, IB method
 Mike O'Neal - NYU Courant
-Leslie Greengard - NYU Courant
-Marsha Berger - NYU Courant
-Eric Lauga - Cambridge
+Leslie Greengard - NYU Courant, numerical PDEs, FMM
+Marsha Berger - NYU Courant, numerical PDEs, AMR
+Eric Lauga - Cambridge, Low Re swimming, biomathematics
 Duncan Hewitt - Cambridge
 Ray Goldstein - Cambridge
+Shreyas Mandre - Cambridge, biomathematics, evolution math
 Peter Howell - Oxford
-Ian Hewitt - Oxford
-Sarah Waters - Oxford
-Laurel Ohm - UW Madison
-Dallas Albritton - UW Madison
+Ian Hewitt - Oxford, geological flows, ice/glacier modeling
+Sarah Waters - Oxford, psychological flows, biomathematics
+Laurel Ohm - UW Madison, numerics Stokes Flow
+Dallas Albritton - UW Madison, PDE analysis on Navier-Stokes
 Saverio Spagnolie - UW Madison
-Chris Rycroft - UW Madison
-John Bush - MIT
-Jorn Dunkel - MIT
-Keaton Burns - MIT
-Ken Kamrin - UC Berkeley
+Chris Rycroft - UW Madison, numerical FSI, RMT
+John Bush - MIT, hydrodynamic quantum analogs, biomathematics
+Jorn Dunkel - MIT, inverse problems biomathematics
+Keaton Burns - MIT, spectral methods, numberical PDEs, Dedalus
+Ken Kamrin - UC Berkeley, solid mechanics, granular media, FSI
 
 
 
