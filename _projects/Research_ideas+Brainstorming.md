@@ -77,6 +77,8 @@ Vorticity and Incompressible Flow, Majda
 Applied Analysis of the Navier-Stokes Equations, Doering
 Perturbation Methods, Hinch
 
+https://www.damtp.cam.ac.uk/user/hinch/teaching/FluidsIInotes.pdf and similar lecture notes
+
 For fun,
 Some Basic Problems of the Mathematical Theory of Elasticity, Muskhelishvili
 Numerical Relativity, Shibata
