@@ -41,7 +41,7 @@ linkedin_username: teo-lara-890b9a216 # your LinkedIn user name
 orcid_id: 0009-0005-2685-3946 # your ORCID ID
 
 contact_note: >
-  Best way to contact me is via email.
+  The best way to contact me is via email.
 
 # -----------------------------------------------------------------------------
 # RSS Feed
@@ -88,7 +88,7 @@ pirsch_analytics: # your Pirsch analytics site ID (length 32 characters)
 openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
-google_site_verification: # your google-site-verification ID (Google Search Console)
+google_site_verification: H4c8qOpPPK4TWZ8H3Y3-37S1xjC7zJ-qY9GSSjTay60
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
@@ -395,7 +395,7 @@ lazy_loading_images: true # enables lazy loading of images (recommended)
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics: false # enables google analytics
+enable_google_analytics: true # enables google analytics
 enable_cronitor_analytics: false # enables cronitor RUM analytics
 enable_pirsch_analytics: false # enables Pirsch analytics (https://pirsch.io/)
 enable_openpanel_analytics: false # enables Openpanel analytics (https://openpanel.dev/)
