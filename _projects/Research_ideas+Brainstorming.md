@@ -76,6 +76,7 @@ Introduction to Hydrodynamic Stability, Drazin
 Vorticity and Incompressible Flow, Majda
 Applied Analysis of the Navier-Stokes Equations, Doering
 Perturbation Methods, Hinch
+Advanced Mathematical Methods for Scientists and Engineers: Asymptotic Methods and Perturbation Theory, Bender
 
 https://www.damtp.cam.ac.uk/user/hinch/teaching/FluidsIInotes.pdf and similar lecture notes
 
