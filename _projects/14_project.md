@@ -2,7 +2,7 @@
 layout: page
 title: A Study of Avian Magnetonavigation
 description:
-img: 
+img: assets/img/Warby-darby.JPG
 importance: 3
 category: 2026
 related_publications: false
