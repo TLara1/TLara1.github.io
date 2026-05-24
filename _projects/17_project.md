@@ -2,7 +2,7 @@
 layout: page
 title: Block-Structured AMR
 description:
-img: assets/img/Final_Project_Figures/image.png
+img: assets/img/Final_Project_Figures/image1.png
 importance: 1
 category: 2026
 related_publications: false
