@@ -43,17 +43,15 @@ bird migration, more general noisy sensing navigation without gradient
 To DO summer 2026
 Get better handwriting, find blackboard, get good at writing on it.
 Publish CNT paper, jellyfish paper, Ken FSI paper.
-take notes ocean dynamics class
 take notes fluids for PhD
 Ken RMT code organize - add to RMT github
 AMR for RMT code?
 remanage passwords
+new headshot
 clean up google files
 get a good note taking system for PhD
-github for AMR 18.336 code - organized
 Big QFT notes
 bird project github?
-AMR vortex project github?
 RMT github
 Website polish, add videos links to papers, etc. remove old links/leftovers, figure out related publications
 fisherman story polish and add to website?
