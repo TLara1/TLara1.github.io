@@ -58,6 +58,7 @@ fisherman story polish and add to website?
 get better dressed
 buy new computer
 buy headphones
+buy new formal shoes
 
 Reading List
 
