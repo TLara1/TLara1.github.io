@@ -59,6 +59,7 @@ get better dressed
 buy new computer
 buy headphones
 buy new formal shoes
+buy new belt
 
 Reading List
 
