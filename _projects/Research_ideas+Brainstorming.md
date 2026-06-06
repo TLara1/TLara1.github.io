@@ -53,12 +53,11 @@ get a good note taking system for PhD
 Big QFT notes
 bird project github?
 RMT github
-Website polish, add videos links to papers, etc. remove old links/leftovers, figure out related publications
+Website polish, add videos links to papers, etc. remove old links/leftovers, figure out related publications, many videos would be big!
 fisherman story polish and add to website?
 get better dressed
 buy new computer
 buy headphones
-buy new formal shoes
 buy new belt
 
 Reading List
