@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-notes",
+          title: "Notes",
+          description: "A collection of notes I have compiled on interesting topics in physics and mathematics. These are created mostly for my personal reference; they are more concise and less clear than course notes one may find on the same topic. I don&#39;t promise these are without mistakes; if you find an error, please don&#39;t hesitate to let me know. In the future, I may provide notes on Oppenheimer-Snyder Stellar Collapse, the Weierstrass function, the electron&#39;s magnetic moment, the Fokker-Planck equation, Kalman filters, the stability of thin-core vortex rings, or any other topic I encounter in my classes or research.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/notes/";
+          },
         },{id: "nav-other-interests",
           title: "Other Interests",
           description: "",
@@ -440,6 +447,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/17_project/";
+            },},{id: "projects-on-kalman-filters",
+          title: 'On Kalman Filters',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/18_project/";
             },},{id: "projects-on-the-lagrange-planetary-equations",
           title: 'On the Lagrange Planetary Equations',
           description: "",
