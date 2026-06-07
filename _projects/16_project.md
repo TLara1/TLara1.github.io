@@ -12,7 +12,7 @@ toc:
 
 ## Introduction
 
-Here we derive the Schwarzschild and Kerr Metrics for static and rotating spherical bodies. We use natural units for simplicity, setting $$c=G=1$$.
+Here, we derive the Schwarzschild and Kerr Metrics for static and rotating spherical bodies. We use natural units for simplicity, setting $$c=G=1$$.
 
 ## I. Riemann and Einstein Tensors
 
@@ -589,7 +589,7 @@ where
 \begin{equation}
 \Sigma^2=\frac{\Delta\rho^4-4a^2M^2\delta\frac{r^2}{R^2}}{\Delta-a^2\delta}=\left(\frac{r^2}{R^2}+a^2\right)^2-a^2\Delta\delta
 \end{equation}
-Continuing to solve for componenets of our metric, we identify
+Continuing to solve for components of our metric, we identify
 \begin{equation}
 e^{2\nu}=e^{2\beta-2\psi}=\frac{\Delta\rho^2}{\Sigma^2}
 \end{equation}
@@ -607,7 +607,7 @@ R\partial_r\mathcal{A}=\frac{\left(\frac{r}{R}-M\right)\rho^2-2\sqrt{\Delta}\fra
 \begin{equation}
 R\partial_r\mathcal{B}=\frac{\left(\frac{r}{R}-M\right)\rho^2-2\sqrt{\Delta}\frac{r}{R}\left(\sqrt{\Delta}-a\sqrt{\delta}\right)}{\sqrt{\Delta\delta}\left(\frac{r^2}{R^2}+a^2-a\sqrt{\Delta\delta}\right)^2},\quad \partial_\mu\mathcal{B}=\frac{\mu\sqrt{\Delta}\left(\frac{r^2}{R^2}+a^2+a^2\delta-2a\sqrt{\Delta\delta}\right)}{\delta^{3/2}\left(\frac{r^2}{R^2}+a^2-a\sqrt{\Delta\delta}\right)^2}
 \end{equation}
-Inserting these quantities into \ref{mu_2+mu_3 master eq} and simplifying extensively (I would advice using Mathematica)
+Inserting these quantities into \ref{mu_2+mu_3 master eq} and simplifying extensively (I would advise using Mathematica)
 \begin{equation}
 \left(R\left(\frac{r}{R}-M\right)\partial_r+\mu\partial_\mu\right)\left(\mu_2+\mu_3\right)=2-\frac{\frac{r}{R}-M}{\Delta}-2\frac{M\frac{r}{R}}{\rho^2}
 \end{equation}
@@ -630,7 +630,7 @@ ds^2=-\frac{\Delta\rho^2}{\Sigma^2}dt^2+\frac{\Sigma^2}{\rho^2}\sin^2\left(\thet
 \Sigma^2=\left(r^2+a^2\right)^2-a^2\Delta\sin^2\left(\theta\right)
 \end{equation}
 
-We find in the limit $$a\rightarrow0$$, the metric appropriatly reduces to the Schwarzschild metric and in the limit of $$a\rightarrow0$$ and $$M\rightarrow0$$ we arrive at spherical Minkowski.
+We find that, in the limit $$a\rightarrow0$$, the metric reduces to the Schwarzschild metric, and in the limits of $$a\rightarrow0$$ and $$M\rightarrow0$$ we arrive at spherical Minkowski.
 
 ### Sources
 I closely followed <a href="https://itp.uni-frankfurt.de/~hees/gen-phys/derivation-of-the-kerr-metric-Wagner.pdf"> this derivation</a> by David Wagner. 
