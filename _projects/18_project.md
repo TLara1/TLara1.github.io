@@ -49,9 +49,11 @@ where $$\mathbf{F}$$ is some unknown time-independent evolution matrix which bri
 \end{equation}
 
 Suppose we have some prior estimate of our system gained by our previous knowledge and possibly previous estimates called $$\hat{\mathbf{x}}_k'$$ that we wish to update using a new data measurement. We write our new estimate using the old estimate as,
+
 \begin{equation}\label{eq: x_k estimate update}
 \hat{\mathbf{x}}_k=\hat{\mathbf{x}}_k'+\mathbf{K}_k\left(\mathbf{y}_k-\mathbf{A}\hat{\mathbf{x}}_k'\right).
 \end{equation}
+
 $$\mathbf{y}_k$$ is our signal at time $$k$$, Eq. \ref{eq: signal update equation}, and $$\mathbf{K}_k$$ is the time-_dependent_ Kalman gain, which we will derive shortly. The term $$\mathbf{y}_k-\mathbf{A}\hat{\mathbf{x}}_k'$$ is called the innovation $$\mathbf{i}_k$$, and substituting Eq. \ref{eq: signal update equation}, we obtain,
 \begin{equation}
 \mathbf{i}_k=\mathbf{A}\mathbf{x}_k+\mathbf{n}_k-\mathbf{A}\hat{\mathbf{x}}_k'.
