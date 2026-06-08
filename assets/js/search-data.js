@@ -452,8 +452,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/18_project/";
-            },},{id: "projects-on-the-lagrange-planetary-equations-2-24",
-          title: 'On the Lagrange Planetary Equations - 2/24',
+            },},{id: "projects-on-the-lagrange-planetary-equations-1-25",
+          title: 'On the Lagrange Planetary Equations - 1/25',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
