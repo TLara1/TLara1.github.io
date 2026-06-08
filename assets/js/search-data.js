@@ -467,8 +467,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-on-the-relativistic-euler-equations",
-          title: 'On the Relativistic Euler Equations',
+            },},{id: "projects-on-the-relativistic-euler-equations-1-25",
+          title: 'On the Relativistic Euler Equations - 1/25',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
