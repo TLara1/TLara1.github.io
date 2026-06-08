@@ -60,6 +60,11 @@ Now inserting the updated estimate, Eq. \ref{eq: x_k estimate update} into the m
 \begin{equation}
 \mathbf{P}_k=\mathbb{E}\left[\left(\left(\mathbf{I}-\mathbf{K}_k\mathbf{A}\right)\left(\hat{\mathbf{x}}_k'-{\mathbf{x}}_k\right)+\mathbf{K}_k\mathbf{n}_k\right)\left(\left(\mathbf{I}-\mathbf{K}_k\mathbf{A}\right)\left(\hat{\mathbf{x}}_k'-{\mathbf{x}}_k\right)+\mathbf{K}_k\mathbf{n}_k\right)^T\right].
 \end{equation}
+We can recognize that error of the prior estimate, $$\hat{\mathbf{x}}_k'-{\mathbf{x}}_k$$ is uncorrelated with the measurement noise, $$\mathbf{n}_k$$, so the covariance may be rewritten as,
+\begin{equation}
+\mathbf{P}_k=\left(\mathbf{I}-\mathbf{K}_k\mathbf{A}\right)\mathbb{E}\left[\left(\hat{\mathbf{x}}_k'-{\mathbf{x}}_k\right)\left(\hat{\mathbf{x}}_k'-{\mathbf{x}}_k\right)^T\right]\left(\mathbf{I}-\mathbf{K}_k\mathbf{A}\right)^T+\mathbf{K}_k\mathbb{E}\left[\mathbf{n}_k\mathbf{n}_k^T\right]\mathbf{K}_k^T.
+\end{equation}
+
 
 
 
