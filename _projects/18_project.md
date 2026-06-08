@@ -30,4 +30,11 @@ We want our filter to work over a long period of time, so we define the mean squ
 \begin{equation}
 \epsilon=\mathbb{E}(e_k).
 \end{equation}
+Good, now we proceed with the filter.
 
+## State Space Derivation
+Now we assume that the data variable evolves in time as,
+\begin{equation}
+\mathbf{x}_{k+1}=\mathbf{F}\mathbf{x}_k+\mathbf{w}_k,
+\end{equation}
+where $\mathbf{F}$ is some unknown time-independent evolution matrix which brings the state from $k$ to $k+1$, and $\mathbf{w}_k$ is the associated white noise of the process.
