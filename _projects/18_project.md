@@ -20,9 +20,9 @@ Define our signal,
 \begin{equation}
 \mathbf{y}_k=\mathbf{A}_k\mathbf{x}_k+\mathbf{n}_k,
 \end{equation}
-where $\mathbf{x}_k$ is our time-dependent observed signal at time $t_k$, $\mathbf{A}_k$ is a gain matrix connecting the information data $\mathbf{x}_k$ to $\mathbf{Y}_k$. $\mathbf{n}_k$ is an additive noise term arising from our imperfect sensing mechanisms. Note that all the terms are $n$-dimensional vectors for $n$ datapoints.
+where $$\mathbf{x}_k$$ is our time-dependent observed signal at time $$t_k$$, $$\mathbf{A}_k$$ is a gain matrix connecting the information data $$\mathbf{x}_k$$ to $$\mathbf{Y}_k$$. $$\mathbf{n}_k$$ is an additive noise term arising from our imperfect sensing mechanisms. Note that all the terms are $$n$$-dimensional vectors for $$n$$ datapoints.
 
-Our objective is to estimate $\mathbf{x}_k$, and let $\hat{\mathbf{x}}_k$ be our best estimate of $\mathbf{x}_k$. The loss function for our estimator is the squared norm of the error vector,
+Our objective is to estimate $$\mathbf{x}_k$$, and let $$\hat{\mathbf{x}}_k$$ be our best estimate of $$\mathbf{x}_k$$. The loss function for our estimator is the squared norm of the error vector,
 \begin{equation}
 e_k=\left(\hat{\mathbf{x}}_k-{\mathbf{x}}_k\right)^T\left(\hat{\mathbf{x}}_k-{\mathbf{x}}_k\right).
 \end{equation}
