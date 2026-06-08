@@ -18,8 +18,16 @@ Here, we derive and discuss a basic Kalman filter. The idea being that, given a 
 ## The Mean Squared Error
 Define our signal,
 \begin{equation}
-\mathbf{y}_k=A_kx+n_k,
+\mathbf{y}_k=\mathbf{A}_k\mathbf{x}_k+\mathbf{n}_k,
 \end{equation}
-where $y_k$ is our time-dependent observed signal at time $t_k$, $a_k$ is a gain term connecting the information data $x_k$ to $y_k$. $n_k$ is an additive noise term arising from our imperfect sensing mechanisms. Note that
+where $\mathbf{x}_k$ is our time-dependent observed signal at time $t_k$, $\mathbf{A}_k$ is a gain matrix connecting the information data $\mathbf{x}_k$ to $\mathbf{Y}_k$. $\mathbf{n}_k$ is an additive noise term arising from our imperfect sensing mechanisms. Note that all the terms are $n$-dimensional vectors for $n$ datapoints.
 
-Our objective is to estimate $x_k$, and let $\hat{x}_k$ be our best estimate of $x_k$. We wish to minimise the mean-squared error
+Our objective is to estimate $\mathbf{x}_k$, and let $\hat{\mathbf{x}}_k$ be our best estimate of $\mathbf{x}_k$. The loss function for our estimator is the squared norm of the error vector,
+\begin{equation}
+e_k=\left(\hat{\mathbf{x}}_k-{\mathbf{x}}_k\right)^T\left(\hat{\mathbf{x}}_k-{\mathbf{x}}_k\right).
+\end{equation}
+We want our filter to work over a long period of time, so we define the mean squared error function, which is the average of the loss function over all of our samples,
+\begin{equation}
+\epsilon=\mathbb{E}(e_k).
+\end{equation}
+
