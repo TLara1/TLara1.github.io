@@ -447,8 +447,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/17_project/";
-            },},{id: "projects-on-kalman-filters",
-          title: 'On Kalman Filters',
+            },},{id: "projects-on-kalman-filters-6-26",
+          title: 'On Kalman Filters - 6/26',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/18_project/";
