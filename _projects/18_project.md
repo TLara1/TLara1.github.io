@@ -58,3 +58,9 @@ $$\mathbf{y}_k$$ is our signal at time $$k$$ (\ref{eq: signal update equation}) 
 \end{equation}
 
 
+
+
+
+### Sources
+This derivation essentially follows from these lecture notes, <a href="https://web.mit.edu/kirtley/kirtley/binlustuff/literature/control/Kalman%20filter.pdf"> this derivation</a>.
+
