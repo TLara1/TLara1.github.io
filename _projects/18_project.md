@@ -34,7 +34,7 @@ The mean-squared covariance matrix is the outer product of the error vectors, av
 \begin{equation}\label{eq: mean-squared covariance}
 \mathbf{P}_k=\mathbb{E}\left[\left(\hat{\mathbf{x}}_k-{\mathbf{x}}_k\right)\left(\hat{\mathbf{x}}_k-{\mathbf{x}}_k\right)^T\right],
 \end{equation}
-which will be helpful later.
+note that the trace of the mean-squared covariance matrix gives the mean-squared error function.
 
 Good, now we proceed with the filter.
 
@@ -67,10 +67,15 @@ We can recognize that error of the prior estimate, $$\hat{\mathbf{x}}_k'-{\mathb
 \mathbf{P}_k=\left(\mathbf{I}-\mathbf{K}_k\mathbf{A}\right)\mathbb{E}\left[\left(\hat{\mathbf{x}}_k'-{\mathbf{x}}_k\right)\left(\hat{\mathbf{x}}_k'-{\mathbf{x}}_k\right)^T\right]\left(\mathbf{I}-\mathbf{K}_k\mathbf{A}\right)^T+\mathbf{K}_k\mathbb{E}\left[\mathbf{n}_k\mathbf{n}_k^T\right]\mathbf{K}_k^T.
 \end{equation}
 The $$\mathbb{E}\left[\left(\hat{\mathbf{x}}_k'-{\mathbf{x}}_k\right)\left(\hat{\mathbf{x}}_k'-{\mathbf{x}}_k\right)^T\right]$$ in Eq. \ref{eq: covariance matrix from updated xk} is nothing more than the mean-squared covariance of the prior estimate, $$\mathbf{P}_k'$$, so we may update the mean-squared covariance directly using,
-\begin{equation}
+\begin{equation}\label{eq: covar matrix update final}
 \mathbf{P}_k=\left(\mathbf{I}-\mathbf{K}_k\mathbf{A}\right)\mathbf{P}_k'\left(\mathbf{I}-\mathbf{K}_k\mathbf{A}\right)^T+\mathbf{K}_k\mathbf{R}\mathbf{K}_k^T,
 \end{equation}
-where we have used the measurement noise covariance $$\mathbf{R}$$.
+where we have used the measurement noise covariance $$\mathbf{R}$$. 
+
+We wish to pick $$\mathbf{K}_k$$ such that the mean-squared error is minimized, which is equivalent to minimizing the trace of $$\mathbf{P}_k$$. Taking the trace of Eq. \ref{eq: covar matrix update final}, 
+\begin{equation}
+\text{Tr}\left[\mathbf{P}_k\right]=\text{Tr}\left[\mathbf{P}_k'\right]-\text{Tr}\left[\mathbf{K}_k\mathbf{A}\mathbf{P}_k'\right]-\text{Tr}\left[\mathbf{P}_k'\mathbf{A}^T\mathbf{K}_k^T\right]+\text{Tr}\left[\mathbf{K}_k\left(\mathbf{A}\mathbf{P}_k'\mathbf{A}^T+\mathbf{R}\right)\mathbf{K}_k^T\right].
+\end{equation}
 
 
 
