@@ -457,8 +457,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-on-the-precession-of-mercury-39-s-perihelion",
-          title: 'On the Precession of Mercury&amp;#39;s Perihelion',
+            },},{id: "projects-on-the-precession-of-mercury-39-s-perihelion-2-24",
+          title: 'On the Precession of Mercury&amp;#39;s Perihelion - 2/24',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
