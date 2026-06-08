@@ -18,9 +18,9 @@ Here, we derive and discuss a basic Kalman filter. The idea being that, given a 
 ## The Mean-Squared Error
 Define our signal,
 \begin{equation}
-\mathbf{y}_k=\mathbf{A}_k\mathbf{x}_k+\mathbf{n}_k,
+\mathbf{y}_k=\mathbf{A}\mathbf{x}_k+\mathbf{n}_k,
 \end{equation}
-where $$\mathbf{x}_k$$ is our time-dependent observed observation at time $$t_k$$, $$\mathbf{A}_k$$ is a time-independent  matrix connecting the information data $$\mathbf{x}_k$$ to $$\mathbf{Y}_k$$. $$\mathbf{n}_k$$ is an additive noise term arising from our imperfect sensing mechanisms. Note that all the terms are $$n$$-dimensional vectors for $$n$$ datapoints.
+where $$\mathbf{x}_k$$ is our time-dependent observed observation at time $$t_k$$, $$\mathbf{A}$$ is a time-independent  matrix connecting the information data $$\mathbf{x}_k$$ to $$\mathbf{Y}_k$$. $$\mathbf{n}_k$$ is an additive noise term arising from our imperfect sensing mechanisms. Note that all the terms are $$n$$-dimensional vectors for $$n$$ datapoints.
 
 Our objective is to estimate $$\mathbf{x}_k$$, and let $$\hat{\mathbf{x}}_k$$ be our best estimate of $$\mathbf{x}_k$$. The loss function for our estimator is the squared norm of the error vector,
 \begin{equation}
@@ -49,3 +49,6 @@ where $\mathbf{F}$ is some unknown time-independent evolution matrix which bring
 \end{equation}
 
 Suppose we have some measurement of the system
+
+
+
