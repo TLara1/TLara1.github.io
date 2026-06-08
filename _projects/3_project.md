@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Elasticity Theory and the Deformation of Two Colliding Disks - 1/24
+title: Elasticity Theory and the Deformation of Two Colliding Disks - 1/25
 description:
 img:
 importance: 4
