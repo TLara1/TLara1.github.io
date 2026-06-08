@@ -462,8 +462,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-elasticity-theory-and-the-deformation-of-two-colliding-disks-2-24",
-          title: 'Elasticity Theory and the Deformation of Two Colliding Disks - 2/24',
+            },},{id: "projects-elasticity-theory-and-the-deformation-of-two-colliding-disks-1-24",
+          title: 'Elasticity Theory and the Deformation of Two Colliding Disks - 1/24',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
