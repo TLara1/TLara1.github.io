@@ -45,7 +45,7 @@ Now we assume that the data variable evolves in time as,
 \end{equation}
 where $$\mathbf{F}$$ is some unknown time-independent evolution matrix which brings the state from $$k$$ to $$k+1$$, and $$\mathbf{w}_k$$ is the associated white noise of the process. The covariances of the noises are assumed to be time-independent and are given by,
 \begin{equation}
-\mathbf{Q}_k=\mathbb{E}\left[\mathbf{w}_k\mathbf{w}_k^T\right], \quad\mathbf{R}_k=\mathbb{E}\left[\mathbf{n}_k\mathbf{n}_k^T\right].
+\mathbf{Q}=\mathbb{E}\left[\mathbf{w}_k\mathbf{w}_k^T\right], \quad\mathbf{R}=\mathbb{E}\left[\mathbf{n}_k\mathbf{n}_k^T\right].
 \end{equation}
 
 Suppose we have some prior estimate of our system gained by our previous knowledge and possibly previous estimates called $$\hat{\mathbf{x}}_k'$$ that we wish to update using a new data measurement. We write our new estimate using the old estimate as,
@@ -63,11 +63,14 @@ Now inserting the updated estimate, Eq. \ref{eq: x_k estimate update} into the m
 \mathbf{P}_k=\mathbb{E}\left[\left(\left(\mathbf{I}-\mathbf{K}_k\mathbf{A}\right)\left(\hat{\mathbf{x}}_k'-{\mathbf{x}}_k\right)+\mathbf{K}_k\mathbf{n}_k\right)\left(\left(\mathbf{I}-\mathbf{K}_k\mathbf{A}\right)\left(\hat{\mathbf{x}}_k'-{\mathbf{x}}_k\right)+\mathbf{K}_k\mathbf{n}_k\right)^T\right].
 \end{equation}
 We can recognize that error of the prior estimate, $$\hat{\mathbf{x}}_k'-{\mathbf{x}}_k$$ is uncorrelated with the measurement noise, $$\mathbf{n}_k$$, so the covariance may be rewritten as,
-\begin{equation}
+\begin{equation}\label{eq: covariance matrix from updated xk}
 \mathbf{P}_k=\left(\mathbf{I}-\mathbf{K}_k\mathbf{A}\right)\mathbb{E}\left[\left(\hat{\mathbf{x}}_k'-{\mathbf{x}}_k\right)\left(\hat{\mathbf{x}}_k'-{\mathbf{x}}_k\right)^T\right]\left(\mathbf{I}-\mathbf{K}_k\mathbf{A}\right)^T+\mathbf{K}_k\mathbb{E}\left[\mathbf{n}_k\mathbf{n}_k^T\right]\mathbf{K}_k^T.
 \end{equation}
-
-
+The $$\mathbb{E}\left[\left(\hat{\mathbf{x}}_k'-{\mathbf{x}}_k\right)\left(\hat{\mathbf{x}}_k'-{\mathbf{x}}_k\right)^T\right]$$ in Eq. \ref{eq: covariance matrix from updated xk} is nothing more than the mean-squared covariance of the prior estimate, $$\mathbf{P}_k'$$, so we may update the mean-squared covariance directly using,
+\begin{equation}
+\mathbf{P}_k=\left(\mathbf{I}-\mathbf{K}_k\mathbf{A}\right)\mathbf{P}_k'\left(\mathbf{I}-\mathbf{K}_k\mathbf{A}\right)^T+\mathbf{K}_k\mathbf{R}\mathbf{K}_k^T,
+\end{equation}
+where we have used the measurement noise covariance $$\mathbf{R}$$.
 
 
 
