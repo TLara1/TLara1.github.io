@@ -31,7 +31,7 @@ We want our filter to work over a long period of time, so we define the mean-squ
 \epsilon_k=\mathbb{E}[e_k].
 \end{equation}
 The mean-squared covariance matrix is the outer product of the error vectors, averaged over time,
-\begin{equation}
+\begin{equation}\label{eq: mean-squared covariance}
 \mathbf{P}_k=\mathbb{E}\left[\left(\hat{\mathbf{x}}_k-{\mathbf{x}}_k\right)\left(\hat{\mathbf{x}}_k-{\mathbf{x}}_k\right)^T\right],
 \end{equation}
 which will be helpful later.
@@ -49,17 +49,16 @@ where $$\mathbf{F}$$ is some unknown time-independent evolution matrix which bri
 \end{equation}
 
 Suppose we have some prior estimate of our system gained by our previous knowledge and possibly previous estimates called $$\hat{\mathbf{x}}_k'$$ that we wish to update using a new data measurement. We write our new estimate using the old estimate as,
-\begin{equation}
-\hat{\mathbf{x}}_k=\hat{\mathbf{x}}_k'
-\end{equation}
-
-\begin{equation}
+\begin{equation}\label{eq: x_k estimate update}
 \hat{\mathbf{x}}_k=\hat{\mathbf{x}}_k'+\mathbf{K}_k\left(\mathbf{y}_k-\mathbf{A}\hat{\mathbf{x}}_k'\right).
 \end{equation}
-
-$$\mathbf{y}_k$$ is our signal at time $$k$$ (Eq. \ref{eq: signal update equation}) and $$\mathbf{K}_k$$ is the time-_dependent_ Kalman gain, which we will derive shortly. The term $$\mathbf{y}_k-\mathbf{A}\hat{\mathbf{x}}_k'$$ is called the innovation $$\mathbf{i}_k$$, and substituting Eq. \ref{eq: signal update equation}, we obtain,
+$$\mathbf{y}_k$$ is our signal at time $$k$$, Eq. \ref{eq: signal update equation}, and $$\mathbf{K}_k$$ is the time-_dependent_ Kalman gain, which we will derive shortly. The term $$\mathbf{y}_k-\mathbf{A}\hat{\mathbf{x}}_k'$$ is called the innovation $$\mathbf{i}_k$$, and substituting Eq. \ref{eq: signal update equation}, we obtain,
 \begin{equation}
 \mathbf{i}_k=\mathbf{A}\mathbf{x}_k+\mathbf{n}_k-\mathbf{A}\hat{\mathbf{x}}_k'.
+\end{equation}
+Now inserting the updated estimate, Eq. \ref{eq: x_k estimate update} into the mean-squared covariance, Eq. \ref{eq: mean-squared covariance},
+\begin{equation}
+\mathbf{P}_k=\mathbb{E}\left[\left(\left(\mathbf{I}-\mathbf{K}_k\mathbf{A}\right)\left(\hat{\mathbf{x}}_k'-{\mathbf{x}}_k\right)+\mathbf{K}_k\mathbf{n}_k\right)\left(\left(\mathbf{I}-\mathbf{K}_k\mathbf{A}\right)\left(\hat{\mathbf{x}}_k'-{\mathbf{x}}_k\right)+\mathbf{K}_k\mathbf{n}_k\right)^T\right].
 \end{equation}
 
 
