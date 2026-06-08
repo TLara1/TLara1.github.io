@@ -1,6 +1,6 @@
 ---
 layout: page
-title: On the Relativistic Euler Equations
+title: On the Relativistic Euler Equations - 1/25
 description:
 img:
 importance: 4
