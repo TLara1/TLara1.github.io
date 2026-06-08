@@ -437,8 +437,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/15_project/";
-            },},{id: "projects-on-the-schwarzchild-and-kerr-metrics",
-          title: 'On the Schwarzchild and Kerr Metrics',
+            },},{id: "projects-on-the-schwarzchild-and-kerr-metrics-12-25",
+          title: 'On the Schwarzchild and Kerr Metrics - 12/25',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/16_project/";
