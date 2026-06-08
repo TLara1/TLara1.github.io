@@ -1,6 +1,6 @@
 ---
 layout: page
-title: On the Lagrange Planetary Equations - 2/24
+title: On the Lagrange Planetary Equations - 1/25
 description:
 img: 
 importance: 2
