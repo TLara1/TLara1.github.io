@@ -67,5 +67,5 @@ $$\mathbf{y}_k$$ is our signal at time $$k$$ (Eq. \ref{eq: signal update equatio
 
 
 ### Sources
-This derivation essentially follows from these lecture notes, <a href="https://web.mit.edu/kirtley/kirtley/binlustuff/literature/control/Kalman%20filter.pdf"> this derivation</a>.
+This derivation essentially follows from these, <a href="https://web.mit.edu/kirtley/kirtley/binlustuff/literature/control/Kalman%20filter.pdf"> lecture notes</a>.
 
