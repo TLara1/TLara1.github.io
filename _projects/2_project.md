@@ -1,6 +1,6 @@
 ---
 layout: page
-title: On the Precession of Mercury's Perihelion - 2/24
+title: On the Precession of Mercury's Perihelion - 1/25
 description:
 img: 
 importance: 3
