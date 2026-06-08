@@ -15,21 +15,27 @@ Back when I was working on my <a href="https://tlara1.github.io/projects/14_proj
 
 Here, we derive and discuss a basic Kalman filter. The idea being that, given a noisy signal with noisy sampling, we define a cost function and a filter that operates to minimize this loss function, giving us the best estimate of the signal subject to our sensory limitations. 
 
-## The Mean Squared Error
+## The Mean-Squared Error
 Define our signal,
 \begin{equation}
 \mathbf{y}_k=\mathbf{A}_k\mathbf{x}_k+\mathbf{n}_k,
 \end{equation}
-where $$\mathbf{x}_k$$ is our time-dependent observed signal at time $$t_k$$, $$\mathbf{A}_k$$ is a gain matrix connecting the information data $$\mathbf{x}_k$$ to $$\mathbf{Y}_k$$. $$\mathbf{n}_k$$ is an additive noise term arising from our imperfect sensing mechanisms. Note that all the terms are $$n$$-dimensional vectors for $$n$$ datapoints.
+where $$\mathbf{x}_k$$ is our time-dependent observed observation at time $$t_k$$, $$\mathbf{A}_k$$ is a time-independent  matrix connecting the information data $$\mathbf{x}_k$$ to $$\mathbf{Y}_k$$. $$\mathbf{n}_k$$ is an additive noise term arising from our imperfect sensing mechanisms. Note that all the terms are $$n$$-dimensional vectors for $$n$$ datapoints.
 
 Our objective is to estimate $$\mathbf{x}_k$$, and let $$\hat{\mathbf{x}}_k$$ be our best estimate of $$\mathbf{x}_k$$. The loss function for our estimator is the squared norm of the error vector,
 \begin{equation}
 e_k=\left(\hat{\mathbf{x}}_k-{\mathbf{x}}_k\right)^T\left(\hat{\mathbf{x}}_k-{\mathbf{x}}_k\right).
 \end{equation}
-We want our filter to work over a long period of time, so we define the mean squared error function, which is the average of the loss function over all of our samples,
+We want our filter to work over a long period of time, so we define the mean-squared error function, which is the average of the loss function over all of our samples,
 \begin{equation}
-\epsilon=\mathbb{E}(e_k).
+\epsilon_k=\mathbb{E}(e_k).
 \end{equation}
+The mean-squared covariance matrix is the outer product of the error vectors, averaged over time,
+\begin{equation}
+\mathbf{P}_k=\mathbb{E}\left(\left(\hat{\mathbf{x}}_k-{\mathbf{x}}_k\right)\left(\hat{\mathbf{x}}_k-{\mathbf{x}}_k\right)^T\right),
+\end{equation}
+which will be helpful later.
+
 Good, now we proceed with the filter.
 
 ## State Space Derivation
@@ -37,4 +43,9 @@ Now we assume that the data variable evolves in time as,
 \begin{equation}
 \mathbf{x}_{k+1}=\mathbf{F}\mathbf{x}_k+\mathbf{w}_k,
 \end{equation}
-where $\mathbf{F}$ is some unknown time-independent evolution matrix which brings the state from $k$ to $k+1$, and $\mathbf{w}_k$ is the associated white noise of the process.
+where $\mathbf{F}$ is some unknown time-independent evolution matrix which brings the state from $k$ to $k+1$, and $\mathbf{w}_k$ is the associated white noise of the process. The covariances of the noises are assumed to be time-independent and are given by,
+\begin{equation}
+\mathbf{Q}_k=\mathbb{E}\left(\mathbf{w}_k\mathbf{w}_k^T\right),\quad\mathbf{R}_k=\mathbb{E}\left(\mathbf{n}_k\mathbf{n}_k^T\right).
+\end{equation}
+
+Suppose we have some measurement of the system
