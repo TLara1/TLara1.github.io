@@ -37,6 +37,7 @@ I have climbed for almost 11 years now, focusing mostly on bouldering. Some of m
   <li><em>Stasis V11</em>, Calico Basin, NV</li>
   <li><em>Mega Man V11</em>, Hospital Boulders, AL</li>
   <li><em>Pocket Sands V10/11</em>, Hospital Boulders, AL</li>
+  <li><em>Marietta Mangler V10</em>, Palisades Boulders, GA</li>
   <li><em><a href="https://www.mountainproject.com/area/200694491/candy-with-a-k-boulder-area">3 Pads and a Toddler V10 FA</a></em>, Calico Basin, NV</li>
   <li><em>Hustle and Flow V10</em>, Hospital Boulders, AL</li>
   <li><em>Golden Harvest V10</em>, Rocktown, GA</li>
