@@ -44,16 +44,14 @@ Now we assume that the data variable evolves in time as,
 \mathbf{x}_{k+1}=\mathbf{F}\mathbf{x}_k+\mathbf{w}_k,
 \end{equation}
 where $$\mathbf{F}$$ is some unknown time-independent evolution matrix which brings the state from $$k$$ to $$k+1$$, and $$\mathbf{w}_k$$ is the associated white noise of the process. The covariances of the noises are assumed to be time-independent and are given by,
-\begin{equation}
+\begin{equation}\label{eq: Q and R definitions}
 \mathbf{Q}=\mathbb{E}\left[\mathbf{w}_k\mathbf{w}_k^T\right], \quad\mathbf{R}=\mathbb{E}\left[\mathbf{n}_k\mathbf{n}_k^T\right].
 \end{equation}
 
 Suppose we have some prior estimate of our system gained by our previous knowledge and possibly previous estimates called $$\hat{\mathbf{x}}_k'$$ that we wish to update using a new data measurement. We write our new estimate using the old estimate as,
-
 \begin{equation}\label{eq: x_k estimate update}
 \hat{\mathbf{x}}_k=\hat{\mathbf{x}}_k'+\mathbf{K}_k\left(\mathbf{y}_k-\mathbf{A}\hat{\mathbf{x}}_k'\right).
 \end{equation}
-
 $$\mathbf{y}_k$$ is our signal at time $$k$$, Eq. \ref{eq: signal update equation}, and $$\mathbf{K}_k$$ is the time-_dependent_ Kalman gain, which we will derive shortly. The term $$\mathbf{y}_k-\mathbf{A}\hat{\mathbf{x}}_k'$$ is called the innovation $$\mathbf{i}_k$$, and substituting Eq. \ref{eq: signal update equation}, we obtain,
 \begin{equation}
 \mathbf{i}_k=\mathbf{A}\mathbf{x}_k+\mathbf{n}_k-\mathbf{A}\hat{\mathbf{x}}_k'.
@@ -76,11 +74,14 @@ We wish to pick $$\mathbf{K}_k$$ such that the mean-squared error is minimized, 
 \begin{equation}
 \text{Tr}\left[\mathbf{P}_k\right]=\text{Tr}\left[\mathbf{P}_k'\right]-\text{Tr}\left[\mathbf{K}_k\mathbf{A}\mathbf{P}_k'\right]-\text{Tr}\left[\mathbf{P}_k'\mathbf{A}^T\mathbf{K}_k^T\right]+\text{Tr}\left[\mathbf{K}_k\left(\mathbf{A}\mathbf{P}_k'\mathbf{A}^T+\mathbf{R}\right)\mathbf{K}_k^T\right].
 \end{equation}
-Observing that $$\mathbf{P}_k$$ is symmetric due to \ref{eq: mean-squared covariance} and differentiating with respect to $$\mathbf{K}_k$$, we obtain,
+Observing that $$\mathbf{P}_k$$ is symmetric due to \ref{eq: mean-squared covariance} and $$\mathbf{R}$$ is symmetric due to \ref{eq: Q and R definitions} and differentiating with respect to $$\mathbf{K}_k$$, we obtain,
 \begin{equation}
-\frac{d\mathbf{P}_k}{d\mathbf{K}_k}=-2\left(\mathbf{A}\mathbf{P}_k'\right)^T+\mathbf{K}_k\left(\mathbf{A}\mathbf{P}_k'\mathbf{A}^T+\mathbf{R}\right)^T+\mathbf{K}_k\left(\mathbf{A}\mathbf{P}_k'\mathbf{A}^T+\mathbf{R}\right).
+\frac{d\mathbf{P}_k}{d\mathbf{K}_k}=-2\left(\mathbf{A}\mathbf{P}_k'\right)^T+2\mathbf{K}_k\left(\mathbf{A}\mathbf{P}_k'\mathbf{A}^T+\mathbf{R}\right)^T.
 \end{equation}
-
+Setting to zero and solving for $$\mathbf{K}_k$$ yields the Kalman gain equation,
+\begin{equation}
+\mathbf{K}_k=
+\end{equation}
 
 
 
