@@ -76,6 +76,10 @@ We wish to pick $$\mathbf{K}_k$$ such that the mean-squared error is minimized, 
 \begin{equation}
 \text{Tr}\left[\mathbf{P}_k\right]=\text{Tr}\left[\mathbf{P}_k'\right]-\text{Tr}\left[\mathbf{K}_k\mathbf{A}\mathbf{P}_k'\right]-\text{Tr}\left[\mathbf{P}_k'\mathbf{A}^T\mathbf{K}_k^T\right]+\text{Tr}\left[\mathbf{K}_k\left(\mathbf{A}\mathbf{P}_k'\mathbf{A}^T+\mathbf{R}\right)\mathbf{K}_k^T\right].
 \end{equation}
+Observing that $$\mathbf{P}_k$$ is symmetric due to \ref{eq: mean-squared covariance} and differentiating with respect to $$\mathbf{K}_k$$, we obtain,
+\begin{equation}
+\frac{d\mathbf{P}_k}{d\mathbf{K}_k}=-2\left(\mathbf{A}\mathbf{P}_k'\right)^T+\mathbf{K}_k\left(\mathbf{A}\mathbf{P}_k'\mathbf{A}^T+\mathbf{R}\right)^T+\mathbf{K}_k\left(\mathbf{A}\mathbf{P}_k'\mathbf{A}^T+\mathbf{R}\right).
+\end{equation}
 
 
 
