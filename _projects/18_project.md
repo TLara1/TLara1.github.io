@@ -13,7 +13,7 @@ toc:
 ## Introduction
 Back when I was working on my <a href="https://tlara1.github.io/projects/14_project/"> magnetonavigatory bird project</a>, I became interested in sensing and filtering techniques. My birds used a flavour of sensing filter based on certain biological assumptions, but the more time I spent working on the project, the more I wondered if there wasn't a better way to go about the problem of noisy sensing. I, being a physicist and mathematician, had never encountered control theory, which, in my experience, is more often taught in engineering departments. And what a shame, because it turns out Kalman filters are quite fascinating!
 
-Here, we derive and discuss a basic Kalman filter. The idea being that, given a noisy signal with noisy sampling, we define a cost function and a filter that operates to minimize this loss function, giving us the best estimate of the signal subject to our sensory limitations. 
+Here, we derive and discuss a basic Kalman filter. The idea being that, given a noisy signal with noisy sampling and knowledge of the system dynamics, we define a cost function and a filter that operates to minimize this loss function, giving us the best estimate of the signal subject to our sensory limitations. 
 
 ## The Mean-Squared Error
 Define our signal,
@@ -43,12 +43,14 @@ Now we assume that the data variable evolves in time as,
 \begin{equation}
 \mathbf{x}_{k+1}=\mathbf{F}\mathbf{x}_k+\mathbf{w}_k,
 \end{equation}
-where $$\mathbf{F}$$ is some unknown time-independent evolution matrix which brings the state from $$k$$ to $$k+1$$, and $$\mathbf{w}_k$$ is the associated white noise of the process. The covariances of the noises are assumed to be time-independent and are given by,
+where $$\mathbf{F}$$ is some time-independent evolution matrix which brings the state from $$k$$ to $$k+1$$, and $$\mathbf{w}_k$$ is the associated white noise of the process. We assume $$\mathbf{F}$$ is known from our understanding of the physics of the problem, but the noisy data $$\mathbf{x}_k$$ remains hidden.
+
+The covariances of the noises are assumed to be time-independent and are given by,
 \begin{equation}\label{eq: Q and R definitions}
 \mathbf{Q}=\mathbb{E}\left[\mathbf{w}_k\mathbf{w}_k^T\right], \quad\mathbf{R}=\mathbb{E}\left[\mathbf{n}_k\mathbf{n}_k^T\right].
 \end{equation}
 
-Suppose we have some prior estimate of our system gained by our previous knowledge and possibly previous estimates called $$\hat{\mathbf{x}}_k'$$ that we wish to update using a new data measurement. We write our new estimate using the old estimate as,
+Suppose we have a prior estimate of our system, based on our previous knowledge and possibly previous estimates denoted by $$\hat{\mathbf{x}}_k'$$ that we wish to update using a new data measurement. We write our new estimate using the old estimate as,
 \begin{equation}\label{eq: x_k estimate update}
 \hat{\mathbf{x}}_k=\hat{\mathbf{x}}_k'+\mathbf{K}_k\left(\mathbf{y}_k-\mathbf{A}\hat{\mathbf{x}}_k'\right).
 \end{equation}
@@ -82,6 +84,20 @@ Setting to zero and solving for $$\mathbf{K}_k$$ yields the Kalman gain equation
 \begin{equation}
 \mathbf{K}_k=\mathbf{P}_k'\mathbf{A}^T\left(\mathbf{A}\mathbf{P}_k'\mathbf{A}^T+\mathbf{R}\right)^{-1}.
 \end{equation}
+With our gain equation, we are ready to update our covariance matrix to update our estimate $$\hat{\mathbf{x}}_k'$$ to $$\hat{\mathbf{x}}_k$$.
+
+All that is left is updating between timesteps in the prediction step. The state is updated simply using $$\mathbf{F}$$,
+\begin{equation}
+\hat{\mathbf{x}}_{k+1}'=\mathbf{F}\hat{\mathbf{x}}_{k}.
+\end{equation}
+The error covariance matrix is updated based on the definition \cref{eq: mean-squared covariance},
+\begin{align}
+\end{align}
+
+
+
+## The Kalman Filter Algorithm
+**Algorithm:** <em>Given</em> $$$$
 
 
 
