@@ -76,12 +76,15 @@ We wish to pick $$\mathbf{K}_k$$ such that the mean-squared error is minimized, 
 \end{equation}
 Observing that $$\mathbf{P}_k$$ is symmetric due to \ref{eq: mean-squared covariance} and $$\mathbf{R}$$ is symmetric due to \ref{eq: Q and R definitions} and differentiating with respect to $$\mathbf{K}_k$$, we obtain,
 \begin{equation}
-\frac{d\mathbf{P}_k}{d\mathbf{K}_k}=-2\left(\mathbf{A}\mathbf{P}_k'\right)^T+2\mathbf{K}_k\left(\mathbf{A}\mathbf{P}_k'\mathbf{A}^T+\mathbf{R}\right)^T.
+\frac{d\mathbf{P}_k}{d\mathbf{K}_k}=-2\left(\mathbf{A}\mathbf{P}_k'\right)^T+2\mathbf{K}_k\left(\mathbf{A}\mathbf{P}_k'\mathbf{A}^T+\mathbf{R}\right).
 \end{equation}
 Setting to zero and solving for $$\mathbf{K}_k$$ yields the Kalman gain equation,
 \begin{equation}
-\mathbf{K}_k=
+\mathbf{K}_k=\mathbf{P}_k'\mathbf{A}^T\left(\mathbf{A}\mathbf{P}_k'\mathbf{A}^T+\mathbf{R}\right)^{-1}.
 \end{equation}
+
+
+
 
 
 
