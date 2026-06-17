@@ -30,7 +30,7 @@ toc:
     </div>
 </div>
 
-I have climbed for almost 11 years now, focusing mostly on bouldering. Some of my notable ascents include:
+I have climbed for almost 12 years now, focusing mostly on bouldering. Some of my notable ascents include:
 
 <ul>
   <li><em>God Module V11</em>, Horspens 40, AL</li>
@@ -64,11 +64,11 @@ I have climbed for almost 11 years now, focusing mostly on bouldering. Some of m
 </div>
 
 <div align="justify">
-I have played the clarinet for 12 years, first with the Decatur High School Wind Ensemble and currently with the <a href="https://mta.mit.edu/music/performance/mit-wind-ensemble">MIT Wind Ensemble</a>. In high school, I played with the Georgia District Honour band, and more recently, I played for two years with the <a href="https://www.youtube.com/channel/UCVtU0-ALytaxlR68Tv8xZ2g">MIT Video Game Orchestra (VGO)</a>. I also occasionally play with chamber groups such as the <a href="https://ribotones.mit.edu">MIT Ribotones</a>, a group of MIT students who perform in retirement homes in the Boston and Cambridge area.
+I have played the clarinet for 13 years, first with the Decatur High School Wind Ensemble and then with the <a href="https://mta.mit.edu/music/performance/mit-wind-ensemble">MIT Wind Ensemble</a>. In high school, I played with the Georgia District Honour band a few times, and more recently, I played for two years with the <a href="https://www.youtube.com/channel/UCVtU0-ALytaxlR68Tv8xZ2g">MIT Video Game Orchestra (VGO)</a>. I also occasionally play with chamber groups such as the <a href="https://ribotones.mit.edu">MIT Ribotones</a>, a group of MIT students who perform in retirement homes in the Boston and Cambridge area.
 </div>
 
 <div align="justify">
-    My favourite pieces include Crussel's 3rd Clarinet Concerto Op. 11, Busoni's Clarinet Concertino Op. 47, Cavallini's <em>Adagio e Tarantella</em>, Spohr's 1st Clarinet Concerto Op. 26, and Weber's Clarinet Concertino Op. 26. All pieces that I've found on IMSLP.
+    My favourite pieces include Crussel's 3rd Clarinet Concerto Op. 11, Busoni's Clarinet Concertino Op. 47, Cavallini's <em>Adagio e Tarantella</em>, Spohr's 1st Clarinet Concerto Op. 26, and Weber's Clarinet Concertino Op. 26. All pieces that I've found on IMSLP!
 </div>
 
 ## Board, War, and Role-Playing Games
@@ -83,20 +83,21 @@ I have played the clarinet for 12 years, first with the Decatur High School Wind
 </div>
 
 <div align="justify">
-In the little free time I do have, I enjoy playing board games, particularly with the <a href="https://www.mit.edu/~sgs/games/games.html">MIT Strategic Game Society (SGS)</a>. I mainly enjoyer heavier interactive games and my favourites include all the usual suspects: <em>Spirit Island</em>, <em>Oath</em>, <em>Caverna</em>, <em>Barrage</em>, <em>War of the Ring</em>, <em>Glomhaven</em>, <em>Clash of Cultures</em>, and of course, <em>Twilight Imperium</em>. Notably, I actually prefer the 3rd edition of <em>Twilight Imperium</em> over the fourth. A worse game perhaps, but there is a certain old-fashioned charm that I feel was polished away in TI4.
+In the little free time I do have, I enjoy playing board games, particularly with the <a href="https://www.mit.edu/~sgs/games/games.html">MIT Strategic Game Society (SGS)</a>. I mainly enjoyer heavier thematic games and my favourites include all the usual suspects: <em>Spirit Island</em>, <em>Oath</em>, <em>Caverna</em>, <em>Barrage</em>, <em>War of the Ring</em>, <em>Glomhaven</em>, <em>Root</em>, <em>Clash of Cultures</em>, and of course, <em>Twilight Imperium</em>. Notably, I actually prefer the 3rd edition of <em>Twilight Imperium</em> over the fourth. A worse game perhaps, but there is a certain old-fashioned charm that I feel was polished away in TI4. In terms of lighter games, I think <em>Fort</em> is the best deck-building game money can buy, and I recently acquired <em>Irish Gauge</em>, which is a devilishly good time. Last but not least, I always forget how good <em>The King is Dead</em> is, a beauty of minimalist design.
+  
 </div>
 <div align="justify">
-I also played a good amount of <em>Warhammer: Age of Sigmar</em> back in high school. I was quite fond of my little plastic dinosuar army and the angry dwarf who accompanied them, although I was never too good at actually playing the game. Unfortunately, nowadays I am much less able to indulge in my miniature-painting pursuits (although rumours have it, I am becoming interested in <em>Trench Crusade</em>). 
+I also played a good amount of <em>Warhammer: Age of Sigmar</em> back in high school. I was quite fond of my little plastic dinosaur army and the angry dwarf who accompanied them, although I was never too good at actually playing the game. Unfortunately, nowadays I am much less able to indulge in my miniature-painting pursuits (although rumours have it, I am becoming interested in <em>Trench Crusade</em>). 
 </div>
 <div align="justify">
 As one may guess, I have also explored tabletop role-playing games, game-mastering <em>Dungeon World</em> and <em>Dungeons and Dragons</em> campaigns for my friends over the last year. I've become quite curious about <em>Draw Steel</em> recently, though I haven't played yet.
 </div>
 <div align="justify">
-I wish I could say I played <em>Magic: The Gathering</em>, but I mostly just read articles on the CEDH meta and watch LSV force artifacts in Vintage Cube, which is always entertaining.
+I wish I could say I played <em>Magic: The Gathering</em>, but I mostly just read articles on the CEDH meta and watch LSV force artifacts in Vintage Cube, which is always entertaining. Every now and then, when an interesting in-universe set is released, you may find me at the prerelease convincing myself that five-colour good stuff is in fact not viable.
 </div>
 
 ## MIT French House _La Maison Française_
-I am currently the president of the <a href="https://web.mit.edu/lmf/www/index.html"> La Maison Française</a> (LMF) living group. We are a 40 person community dedicated to daily dinners, a clean kitchen, and various vaguely French-themed activities and events. If you are a current or incoming MIT student, I highly recommend checking us out.
+During my time at MIT, I was the president of the <a href="https://web.mit.edu/lmf/www/index.html">La Maison Française</a> (LMF) living group. We are a 40-person community dedicated to daily dinners, a clean kitchen, and various vaguely French-themed activities and events. If you are a current or incoming MIT student, I highly recommend checking us out.
 
 ## Origami
 In middle and high school, I did a good amount of origami, even designing my own models. I did a few exhibitions at my high school and library, and during my freshman year I was a member of <a href="http://origamit.mit.edu/"> OrigaMIT</a>, but these days I'm afraid I have not the time. Someday, I may go back to relearn some paper folding, but for now my works remain a pleasant memory of simpler, less busy times. 
