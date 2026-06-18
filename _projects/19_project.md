@@ -29,15 +29,15 @@ where $$V$$ denotes the volume element and $$\partial V$$ denotes its surface. W
 \begin{equation}\label{eq: continuity equation}
 \partial_t\rho+\partial_i\left(\rho u^i\right)=0.
 \end{equation}
-\ref{eq: continuity equation} is the **continuity equation**, which we recognize as a consequence of the conservation of mass. 
+Eq. \ref{eq: continuity equation} is the **continuity equation**, which we recognize as a consequence of the conservation of mass. 
 
 It is also convenient to define the convective time derivative of a scalar quantity, $$D_t B$$. $$B$$ may change with respect to time at a fixed point at a rate $$\partial_t B$$ and because the physical material point moves through space along with the fluid. It follows that the convected time derivative of a scalar $$B$$ is expressible in terms of both the partial derivatives of $$B$$ with respect to space and time,
 \begin{equation}
 D_t B=\partial_t B + \partial_t x^i \partial_i B = \partial_t B + u^i \partial_i B.
 \end{equation}
 
-We may use this convective derivative to perform an alternative derivation of \ref{eq: continuity equation}. Consider instead of a volume element with <em>fixed</em> position, a volume element that moves with the fluid, denoted by $$V_m(t)$$. This is a material volume. The set of material points contained within this volume do not change over time since the volume moves along with these points. Therefore, the local flux of mass through all points on the surface of the material volume must be zero at all times. This results in the statement,
-\begin{equation}
+We may use this convective derivative to perform an alternative derivation of Eq. \ref{eq: continuity equation}. Consider instead of a volume element with <em>fixed</em> position, a volume element that moves with the fluid, denoted by $$V_m(t)$$. This is a material volume. The set of material points contained within this volume does not change over time since the volume moves along with these points. Therefore, the local flux of mass through all points on the surface of the material volume must be zero at all times. This results in the statement,
+\begin{equation}\label{eq: continuity equation integral convective form}
 D_t\left[ \int_{V_m(t)} dV\ \rho\right]=0,
 \end{equation}
 as a consequence of the conservation of mass. Now we derive the **Reynolds Transport Theorem** for a scalar quantity $$B\left(\mathbf{x}(t),t\right)$$ associated with a moving fluid. Every point $$\mathbf{x}(t)$$ within the material control volume has a position independent of the spatial coordinate $$x^i$$, so the convective derivative should be considered as acting only over time,
@@ -60,11 +60,24 @@ To evaluate, observe that any surface element $$dA(t)$$ of $$V _m(t)$$ will move
 \begin{equation}
 \lim_{\delta t\rightarrow 0}\left{\frac{1}{\delta t}\left[\int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right)\right]\right}=\lim_{\delta t\rightarrow 0}\left{\frac{1}{\delta t}\left[\int_{A_m(t)} dA\ B\left(t+\delta t\right)u^i\hat{n} _i\delta t\right]\right}=\int_{A_m(t)} dA\ B u^i\hat{n}_i.
 \end{equation}
-And via the divergence theorem, applied to the surface integral we obtain the transport theorem,
+And via the divergence theorem, applied to the surface integral, we obtain the transport theorem,
 \begin{equation}\label{eq: Reynolds transport theorem}
-D_t\left[ \int_{V_m(t)} dV\ B\left(\mathbf{x}(t),t\right)\right]=\int_{V_m(t)}dV\ \left[\partial_t B + \partial_i\left(B u^i\right)\right].
+D_t\left[\int_{V_m(t)} dV\ B\left(\mathbf{x}(t),t\right)\right]=\int_{V_m(t)}dV\ \left[\partial_t B + \partial_i\left(B u^i\right)\right].
 \end{equation}
-We can immediately see that
+We can immediately see that Eq. \ref{eq: continuity equation integral convective form} combined with Eq. \ref{eq: Reynolds transport theorem} yields the continuity equation Eq. \ref{eq: continuity equation} once again.
+
+## The Momentum Equation
+In this section, we consider Newton's second law of motion applied to the same material control volume. This law states that the temporal rate of change of linear momentum of a given body is equal to the sum of forces acting on that body. Applying this law directly to the material control fluid volume $$V_m(t)$$ with our convective derivative, we obtain,
+\begin{equation}
+D_t\left[\int_{V_m(t)} dV\ \rho u^i \right] =\left{\text{sum of forces acting on }V_m(t)\right}^i.
+\end{equation}
+We should distinguish between the two types of forces acting on the control volume. First, there are <em>body forces</em> that act everywhere in the fluid. Two such forces could be gravity or the force from an electromagnetic field. A second type of force are <em>surface forces</em> that act on the surface of the material control volume. With these forces in mind, we write the more mathematical statement,
+\begin{equation}
+D_t\left[\int_{V_m(t)} dV\ \rho u^i \right] =\int_{V_m(t)} dV\ f^i + \int_{A_m(t)} dA\ t^i.
+\end{equation}
+
+
+
 
 
 ### Sources
