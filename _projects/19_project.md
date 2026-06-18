@@ -69,8 +69,6 @@ To evaluate, observe that any surface element $$dA(t)$$ of $$V _m(t)$$ will move
 \lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right) \right]\right)
 \end{equation}
 
-
-
 And via the divergence theorem, applied to the surface integral, we obtain the transport theorem,
 
 \begin{equation}\label{eq: Reynolds transport theorem}
@@ -122,9 +120,12 @@ Again with the divergence theorem, applying what we have learned to Eq. \ref{eq:
 \int_{V_m(t)} dV\ \left[\partial_t\left(\rho u^i\right)+\partial_j\left(\rho u^ju^i\right)-f^i-\partial_j\sigma^{ij}\right]  = 0.
 \end{equation}
 Applying the continuity equation, Eq. \ref{eq: continuity equation}, and realizing that the integrand must be zero for an arbitrary volume, 
-\begin{equation}
+\begin{equation}\label{eq: Cauchy momentum equation}
 \rho\left(\partial_tu^i+u^j\partial_ju^i\right)=f^i+\partial_j\sigma^{ij}.
 \end{equation}
+Eq. \ref{eq: Cauchy momentum equation} is known as **Cauchy's Momentum Equation**, which is nothing more than Newton's second law applied to a moving fluid.
+
+We have made progress, but still have a good ways to go. The introduction of $$\sigma^{ij}$$ actually complicates the problem further by adding $$9$$ more unknown componenets of the tensor, while Eq. \ref{eq: Cauchy momentum equation} only gives three more equations.
 
 
 
