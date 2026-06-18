@@ -452,6 +452,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/18_project/";
+            },},{id: "projects-on-the-navier-stokes-equations-6-26",
+          title: 'On The Navier-Stokes Equations - 6/26',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/19_project/";
             },},{id: "projects-on-the-lagrange-planetary-equations-1-25",
           title: 'On the Lagrange Planetary Equations - 1/25',
           description: "",
