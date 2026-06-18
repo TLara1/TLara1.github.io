@@ -155,6 +155,14 @@ Inserting this result into Eq. \ref{eq: angular momentum conservation integral f
 \end{equation}
 From this, we conclude that the stress tensor $$\sigma^{ij}$$ must be symmetric, $$\sigma^{ij}=\sigma^{ji}$$  to balance angular momentum. This reduces the number of unknowns in the stress tensor from $$9$$ to $$6$$, progress, but we have more to do.
 
+## Conservation of Energy
+We again begin by considering a material volume moving with the fluid, considering the change in its energy over time. There are two componenets to the total energy, the <em>kinetic energy</em> associated with the macroscopic velocity $$\mathbf{u}$$ and the <em>internal energy</em> associated with the intensity of random molecular motion relative to the mean velocity. From this Perspective, the total energy of an arbitrary control volume is,
+\begin{equation}
+\mathcal{E}=\int_{V_m(t)} dV\ \left[\frac{1}{2}\rho u^iu_i + \rho e\right],
+\end{equation}
+where $$e$$ is the internal energy per unit mass.
+
+
 
 
 ### Sources
