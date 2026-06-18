@@ -156,7 +156,7 @@ Inserting this result into Eq. \ref{eq: angular momentum conservation integral f
 From this, we conclude that the stress tensor $$\sigma^{ij}$$ must be symmetric, $$\sigma^{ij}=\sigma^{ji}$$  to balance angular momentum. This reduces the number of unknowns in the stress tensor from $$9$$ to $$6$$, progress, but we have more to do.
 
 ## Conservation of Energy
-We again begin by considering a material volume moving with the fluid, considering the change in its energy over time. There are two componenets to the total energy, the <em>kinetic energy</em> associated with the macroscopic velocity $$\mathbf{u}$$ and the <em>internal energy</em> associated with the intensity of random molecular motion relative to the mean velocity. From this Perspective, the total energy of an arbitrary control volume is,
+We again begin by considering a material volume moving with the fluid, considering the change in its energy over time. There are two components to the total energy, the <em>kinetic energy</em> associated with the macroscopic velocity $$\mathbf{u}$$ and the <em>internal energy</em> associated with the intensity of random molecular motion relative to the mean velocity. From this Perspective, the total energy of an arbitrary control volume is,
 \begin{equation}
 \mathcal{E}=\int_{V_m(t)} dV\ \left[\frac{1}{2}\rho u^iu_i + \rho e\right],
 \end{equation}
@@ -173,7 +173,11 @@ We already investigated the forces acting on $$V_m(t)$$; the first term on the r
 
 For the second term, we define a <em>surface flux vector</em> $$\mathbf{q}$$ which describes the net flux of internal energy across the surface transferred by random particle motion. We adopt the convention that a flux of head into the material control is positive. Rewriting Eq. {eq: energy conservation schematic form} mathematically,
 \begin{equation}
-D_t\left[\int_{V_m(t)} dV\ \left[\frac{1}{2}\rho u^iu_i + \rho e\right]\right] = \int_{V_m(t)} dV\ u_if^i + \int _{A_m(t)} dA\ u_i\hat{n} _j\sigma^{ij} - \int _{A_m(t)} dA\ \hat{n} _jq^i.
+D_t\left[\int_{V_m(t)} dV\ \left[\frac{1}{2}\rho u^iu_i + \rho e\right]\right] = \int_{V_m(t)} dV\ u_if^i + \int _{A_m(t)} dA\ u_i\hat{n} _j\sigma^{ij} - \int _{A_m(t)} dA\ \hat{n} _iq^i.
+\end{equation}
+Proceeding as usual, employing the divergence theorem, the Reynolds transport theorem, mass conservation, and setting the integrand to $$0$$, we find,
+\begin{equation}
+\rho\D_t\left[\frac{1}{2}\rho u^iu_i + \rho e\right]=\partial_i\left(u_j\sigma^{ij}\right)+u_if^i-\partial_iq^i.
 \end{equation}
 
 
