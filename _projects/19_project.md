@@ -99,7 +99,7 @@ So it is clear that the traction vector should depend not only on position and t
 $$\left<\right>$$ represent mean values over a surface and $$\Delta A_i$$ is the projected area of the normal face area $$\Delta A_n$$ onto the plane perpendicular to the $$\hat{\mathbf{e}}_(i)$$ axis. Thus,
 
 \begin{equation}\label{eq: tetrahedron surface area normal}
-\Delta A_i = \left(\hat{n}_j\mathbf{e}}_{(i)}^j\right)\Delta A_n,
+\Delta A_i = \left(\hat{n}_j\hat{\mathbf{e}} _{(i)}^j\right)\Delta A_n,
 \end{equation}
 
 where $$\mathbf{e}}_{(i)}^j$$ should be understood as the $$j$$-th component of the $$i$$-th coordinate basis vector. Combining Eq. \ref{eq: mean traction balance} with Eq. \ref{eq: tetrahedron surface area normal} and collapsing the area of the tetrahedron to zero,
