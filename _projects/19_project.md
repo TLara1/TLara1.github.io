@@ -23,9 +23,9 @@ With this idea in mind, we go on to derive the governing physics using the class
 ## Conservation of Mass
 Consider an arbitrarily chosen volume element of a fixed position and shape. Essentially, a "chunk" of space filled with fluid. At each point on the surface of this volume, there is a mass flux of fluid, $$\rho u^i\hat{n}_i$$, where $$u^i$$ is the local fluid velocity. Chosing $$\hat{n}_i$$ as the unit normal to the surface pointing outwards, this flux is negative when fluid enters the volume and positive when it exits. Conservation of mass requires that the total mass in the volume is equal to the imbalance of mass flux in and out of the surface,
 \begin{equation}
-\int_V dV\ \partial_t\rho=-\int _{\partial V} dA\ \rho u^i\hat{n}_i,
+\int_V dV\ \partial_t\rho=-\int _{A} dA\ \rho u^i\hat{n}_i,
 \end{equation}
-where $$V$$ denotes the volume element and $$\partial V$$ denotes its surface. We may apply the divergence theorem and note that the integrand must be zero to be satisfied for an arbitrarily chosen volume element. This results in,
+where $$V$$ denotes the volume element and $$A$$ denotes its surface. We may apply the divergence theorem and note that the integrand must be zero to be satisfied for an arbitrarily chosen volume element. This results in,
 \begin{equation}\label{eq: continuity equation}
 \partial_t\rho+\partial_i\left(\rho u^i\right)=0.
 \end{equation}
@@ -51,15 +51,15 @@ Adding and subtracting $$\int_{V_m(t)} dV\ B\left(t+\delta t\right)$$,
 D_t\left[ \int_{V_m(t)} dV\ B\right]=\lim_{\delta t\rightarrow 0} \left(\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)} dV\ B\left(t+\delta t\right)-\int_{V_m(t)} dV\ B\left(t+\delta t\right)\right]\right)
 \end{equation}
 \begin{equation}
-+\lim_{\delta t\rightarrow 0} \left(\frac{1}{\delta t}\left[\int_{V_m(t)} dV\ B\left(t+\delta t\right)-\int_{V_m(t)} dV\ B\left(t\right)\right]\right). \nolabel
++\lim_{\delta t\rightarrow 0} \left(\frac{1}{\delta t}\left[\int_{V_m(t)} dV\ B\left(t+\delta t\right)-\int_{V_m(t)} dV\ B\left(t\right)\right]\right). \nonumber
 \end{equation}
 
 The second term is nothing more than,
 \begin{equation}
-\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[\int_{V_m(t)} dV\ B\left(t+\delta t\right)-\int_{V_m(t)} dV\ B\left(t\right)\right]\right)=\int_{V_m(t)} dV\ \partial_t B.
+\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[\int_{V_m(t)} dV\ B\left(t+\delta t\right)-\int_{V_m(t)} dV\ B\left(t\right)\right]\right)=\int_{V_m(t)} dV\ \partial_t B,
 \end{equation}
 
-We now rewrite the first term as,
+and we rewrite the first term as,
 \begin{equation}
 \lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[\int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right)\right]\right).
 \end{equation}
@@ -161,6 +161,20 @@ We again begin by considering a material volume moving with the fluid, consideri
 \mathcal{E}=\int_{V_m(t)} dV\ \left[\frac{1}{2}\rho u^iu_i + \rho e\right],
 \end{equation}
 where $$e$$ is the internal energy per unit mass.
+
+The rate of change of the total energy with time is determined by the principle of energy conservation,
+\begin{equation}\label{eq: energy conservation schematic form}
+D_t\left[\int_{V_m(t)} dV\ \left[\frac{1}{2}\rho u^iu_i + \rho e\right]\right] =\left(\text{rate of work done on }V_m(t)\right) - \left(\text{rate of internal energy flux across }A_m(t)\right).
+\end{equation}
+We already investigated the forces acting on $$V_m(t)$$; the first term on the right-hand side has a body force and a tangential component,
+\begin{equation}
+\left(\text{rate of work done on }V_m(t)\right) = \int_{V_m(t)} dV\ u_if^i + \int _{A _m(t)} dA\ u _i\hat{n} _j\sigma^{ij}.
+\end{equation}
+
+For the second term, we define a <em>surface flux vector</em> $$\mathbf{q}$$ which describes the net flux of internal energy across the surface transferred by random particle motion. We adopt the convention that a flux of head into the material control is positive. Rewriting Eq. {eq: energy conservation schematic form} mathematically,
+\begin{equation}
+D_t\left[\int_{V_m(t)} dV\ \left[\frac{1}{2}\rho u^iu_i + \rho e\right]\right] = \int_{V_m(t)} dV\ u_if^i + \int _{A_m(t)} dA\ u_i\hat{n} _j\sigma^{ij} - \int _{A_m(t)} dA\ \hat{n} _jq^i.
+\end{equation}
 
 
 
