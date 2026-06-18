@@ -41,36 +41,36 @@ We may use this convective derivative to perform an alternative derivation of Eq
 D_t\left[ \int_{V_m(t)} dV\ \rho\right]=0,
 \end{equation}
 as a consequence of the conservation of mass. Now we derive the **Reynolds Transport Theorem** for a scalar quantity $$B\left(\mathbf{x}(t),t\right)$$ associated with a moving fluid. Every point $$\mathbf{x}(t)$$ within the material control volume has a position independent of the spatial coordinate $$x^i$$, so the convective derivative should be considered as acting only over time,
-\begin{equation}
-D_t\left[ \int_{V_m(t)} dV\ B\left(\mathbf{x}(t),t\right) \right]
-\end{equation}
+
 \begin{equation}
 D_t\left[ \int_{V_m(t)} dV\ B\left(\mathbf{x}(t),t\right) \right]=\lim_{\delta t\rightarrow 0} \left(\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)} dV\ B\left(t+\delta t\right)-\int_{V_m(t)} dV\ B\left(t\right)\right]\right).
 \end{equation}
-
-
-
 
 Adding and subtracting $$\int_{V_m(t)} dV\ B\left(t+\delta t\right)$$, 
 \begin{equation}
 D_t\left[ \int_{V_m(t)} dV\ B\right]=\lim_{\delta t\rightarrow 0} \left(\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)} dV\ B\left(t+\delta t\right)-\int_{V_m(t)} dV\ B\left(t+\delta t\right)\right]+\frac{1}{\delta t}\left[\int_{V_m(t)} dV\ B\left(t+\delta t\right)-\int_{V_m(t)} dV\ B\left(t\right)\right]\right).
 \end{equation}
 The second term is nothing more than,
+
 \begin{equation}
 \lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[\int_{V_m(t)} dV\ B\left(t+\delta t\right)-\int_{V_m(t)} dV\ B\left(t\right)\right]\right)=\int_{V_m(t)} dV\ \partial_t B\right).
 \end{equation}
+
 We now rewrite the first term as,
 \begin{equation}
 \lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[\int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right)\right]\right).
 \end{equation}
-To evaluate, observe that any surface element $$dA(t)$$ of $$V _m(t)$$ will move a distance $$u^i\hat{n}_i\delta t$$ over the time interval $$\delta t$$. So for small time, $$dV\rightarrow dA u^i\hat{n} _i\delta t$$, and our volume intergral over $$V _m(t+\delta t)-V _m(t)$$ can be converted into an integral over the surface of $$V _m(t)$$.,
+To evaluate, observe that any surface element $$dA(t)$$ of $$V _m(t)$$ will move a distance $$u^i\hat{n}_i\delta t$$ over the time interval $$\delta t$$. So for small time, $$dV\rightarrow dA u^i\hat{n} _i\delta t$$, and our volume intergral over $$V _m(t+\delta t)-V _m(t)$$ can be converted into an integral over the surface of $$V _m(t)$$,
+
 \begin{equation}
 \lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[\int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right)\right]\right)=\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[\int_{A_m(t)} dA\ B\left(t+\delta t\right)u^i\hat{n} _i\delta t\right]\right)=\int_{A_m(t)} dA\ B u^i\hat{n}_i.
 \end{equation}
+
 And via the divergence theorem, applied to the surface integral, we obtain the transport theorem,
 \begin{equation}\label{eq: Reynolds transport theorem}
 D_t\left[\int_{V_m(t)} dV\ B\left(\mathbf{x}(t),t\right)\right]=\int_{V_m(t)}dV\ \left[\partial_t B + \partial_i\left(B u^i\right)\right].
 \end{equation}
+
 We can immediately see that Eq. \ref{eq: continuity equation integral convective form} combined with Eq. \ref{eq: Reynolds transport theorem} yields the continuity equation Eq. \ref{eq: continuity equation} once again.
 
 ## The Momentum Equation
@@ -89,7 +89,15 @@ using Eq. \ref{eq: Reynolds transport theorem},
 
 We now discuss the traction vector $$t^i$$ in more depth. Because the left-hand side of Eq. \ref{eq: continuity equation integral form} is a volume integral, we expect the result to go with the cube of the characteristic volume length $$\ell^3$$, compared to the right-hand side, a surface integral going with the square of the characteristic length $$\ell^2$$. So as we shrink the size of the arbitrary volume to $$0$$ and reduce the characteristic length $$\ell\rightarrow0$$, we see that the traction vector $$t^i$$ must vanish. Physically, this requires that surface forces must be in local equilibrium for an arbitrarily small volume.
 
-
+So it is clear that the traction vector should depend not only on position and time, but also on the local orientation of the surface to satisfy local force equilibrium. Consider a tetrahedron with three faces perpendicular to each of the coordinate directions $$\hat{e}_i$$ and a fourth face perpendicular to the normal direction $$\hat{n}_i$$. Denote the component of a stress vector on a surface with normal $$\hat{\mathbf{n}}$$ as $$t^i\left(\hat{\mathbf{n}}\right)$$. As a consequence of surface-stress equilibrium, as we shrink the volume of our tetrahedron, the traction integrated over the surface normal to $$\hat{n}_i$$ should be balanced by the sum of the tractions integrated over the other three faces, 
+\begin{equation}
+\left<t^i\left(\hat{\mathbf{n}}\right)\right>\Delta A_n = \left<t^i\left(\hat{\mathbf{e}}_1\right)\right>\Delta A_1 + \left<t^i\left(\hat{\mathbf{e}}_2\right)\right>\Delta A_2 + \left<t^i\left(\hat{\mathbf{e}}_3\right)\right>\Delta A_3.
+\end{equation}
+$$\left<\right>$$ represent mean values over a surface and $$\Delta A_i$$ is the projected area of the normal face area $$\Delta A_n$$ onto the plane perpendicular to the $$\hat{\mathbf{e}}_i$$ axis. Thus,
+\begin{equation}
+\Delta A_i = \left(\hat{n}_j\mathbf{e}}_{(i)}^j\right)\Delta A_n,
+\end{equation}
+where $$\mathbf{e}}_{(i)}^j$$ should be understood as the $$j$$-th component of the $$i$$-th coordinate basis vector. Combining
 
 
 
