@@ -21,15 +21,26 @@ The desired description of fluid motion is much larger than any molecular length
 With this idea in mind, we go on to derive the governing physics using the classical conservation of mass and energy plus Newton's second and third laws of mechanics.
 
 ## Conservation of Mass
-Consider an arbitrarily chosen volume element of a fixed position and shape. Essentially, a "chunk" of space filled with fluid. At each point on the surface of this volume, there is a mass flux of fluid, $$\rho u^i\hat{n}_i$$. Chosing $$\hat{n}_i$$ as the unit normal to the surface pointing outwards, this flux is negative when fluid enters the volume and positive when it exits. Conservation of mass requires that the total mass in the volume is equal to the imbalance of mass flux in and out of the surface,
+Consider an arbitrarily chosen volume element of a fixed position and shape. Essentially, a "chunk" of space filled with fluid. At each point on the surface of this volume, there is a mass flux of fluid, $$\rho u^i\hat{n}_i$$, where $$u^i$$ is the local fluid velocity. Chosing $$\hat{n}_i$$ as the unit normal to the surface pointing outwards, this flux is negative when fluid enters the volume and positive when it exits. Conservation of mass requires that the total mass in the volume is equal to the imbalance of mass flux in and out of the surface,
 \begin{equation}
-\int_V dV \partial_t\rho=-\int _{\partial V} dA \rho\rho u^i\hat{n}_i,
+\int_V dV\ \partial_t\rho=-\int _{\partial V} dA\ \rho\rho u^i\hat{n}_i,
 \end{equation}
 where $$V$$ denotes the volume element and $$\partial V$$ denotes its surface. We may apply the divergence theorem and note that the integrand must be zero to be satisfied for an arbitrarily chosen volume element. This results in,
 \begin{equation}\label{eq: continuity equation}
 \partial_t\rho+\partial_i\left(\rho u^i\right)=0.
 \end{equation}
 \ref{eq: continuity equation} is the **continuity equation**, which we recognize as a consequence of the conservation of mass. 
+
+It is also convenient to define the convective time derivative of a scalar quantity, $$D_t B$$. $$B$$ may change with respect to time at a fixed point at a rate $$\partial_t B$$ and because the physical material point moves through space along with the fluid. It follows that the convected time derivative of a scalar $$B$$ is expressible in terms of both the partial derivatives of $$B$$ with respect to space and time,
+\begin{equation}
+D_t B=\partial_t B + \partial_t x^i \partial_i B = \partial_t B + u^i \partial_i B.
+\end{equation}
+
+We may use this convective derivative to perform an alternative derivation of \ref{eq: continuity equation}. Consider instead of a volume element with <em>fixed</em> position, a volume element that moves with the fluid, denoted by $$V_m(t)$$. This is a material volume. The set of material points contained within this volume do not change over time since the volume moves along with these points. Therefore, the local flux of mass through all points on the surface of the material volume must be zero at all times. This results in the statement,
+\begin{equation}
+D_t\left[ \int_{V_m(t)} dV\ \rho\right]=0,
+\end{equation}
+as a consequence of the conservation of mass. Now we derive the **Reynolds Transport Theorem** for a scalar quantity $$B\left(\mathbf{x},t\right)$$ associated with a moving fluid,
 
 
 ### Sources
