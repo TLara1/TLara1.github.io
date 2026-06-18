@@ -40,7 +40,14 @@ We may use this convective derivative to perform an alternative derivation of \r
 \begin{equation}
 D_t\left[ \int_{V_m(t)} dV\ \rho\right]=0,
 \end{equation}
-as a consequence of the conservation of mass. Now we derive the **Reynolds Transport Theorem** for a scalar quantity $$B\left(\mathbf{x},t\right)$$ associated with a moving fluid,
+as a consequence of the conservation of mass. Now we derive the **Reynolds Transport Theorem** for a scalar quantity $$B\left(\mathbf{x}(t),t\right)$$ associated with a moving fluid. Every point $$\mathbf{x}(t)$$ within the material control volume has a position independent of the spatial coordinate $$x^i$$, so the convective derivative should be considered as acting only over time,
+\begin{equation}
+D_t\left[ \int_{V_m(t)} dV\ B\left(\mathbf{x}(t),t\right)\right]=\lim_{\delta t\rightarrow 0} \left{\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)} dV\ B\left(t+\delta t\right)-\int_{V_m(t)} dV\ B\left(t\right)\right]\right}.
+\end{equation}
+Adding and subtracting $$\int_{V_m(t)} dV\ B\left(t+\delta t\right)$$, 
+\begin{equation}
+D_t\left[ \int_{V_m(t)} dV\ B\right]=\lim_{\delta t\rightarrow 0} \left{\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)} dV\ B\left(t+\delta t\right)-\int_{V_m(t)} dV\ B\left(t+\delta t\right)\right]+\frac{1}{\delta t}\left[\int_{V_m(t)} dV\ B\left(t+\delta t\right)-\int_{V_m(t)} dV\ B\left(t\right)\right]\right}.
+\end{equation}
 
 
 ### Sources
