@@ -53,6 +53,9 @@ D_t\left[ \int_{V_m(t)} dV\ B\right]=\lim_{\delta t\rightarrow 0} \left(\frac{1}
 The second term is nothing more than,
 
 \begin{equation}
+\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[\int_{V_m(t)} dV\ B\left(t+\delta t\right)-\int_{V_m(t)} dV\ B\left(t\right)\right]\right)
+\end{equation}
+\begin{equation}
 \lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[\int_{V_m(t)} dV\ B\left(t+\delta t\right)-\int_{V_m(t)} dV\ B\left(t\right)\right]\right)=\int_{V_m(t)} dV\ \partial_t B\right).
 \end{equation}
 
@@ -63,7 +66,7 @@ We now rewrite the first term as,
 To evaluate, observe that any surface element $$dA(t)$$ of $$V _m(t)$$ will move a distance $$u^i\hat{n}_i\delta t$$ over the time interval $$\delta t$$. So for small time, $$dV\rightarrow dA u^i\hat{n} _i\delta t$$, and our volume intergral over $$V _m(t+\delta t)-V _m(t)$$ can be converted into an integral over the surface of $$V _m(t)$$,
 
 \begin{equation}
-\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[\int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right)\right]\right)=\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[\int_{A_m(t)} dA\ B\left(t+\delta t\right)u^i\hat{n} _i\delta t\right]\right)=\int_{A_m(t)} dA\ B u^i\hat{n}_i.
+\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right) \right]\right)=\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{A_m(t)} dA\ B\left(t+\delta t\right)u^i\hat{n}_i\delta t \right]\right)=\int_{A_m(t)} dA\ B u^i\hat{n}_i.
 \end{equation}
 
 And via the divergence theorem, applied to the surface integral, we obtain the transport theorem,
