@@ -176,11 +176,20 @@ For the second term, we define a <em>surface flux vector</em> $$\mathbf{q}$$ whi
 D_t\left[\int_{V_m(t)} dV\ \left[\frac{1}{2}\rho u^iu_i + \rho e\right]\right] = \int_{V_m(t)} dV\ u_if^i + \int _{A_m(t)} dA\ u_i\hat{n} _j\sigma^{ij} - \int _{A_m(t)} dA\ \hat{n} _iq^i.
 \end{equation}
 Proceeding as usual, employing the divergence theorem, the Reynolds transport theorem, mass conservation, and setting the integrand to $$0$$, we find,
+\begin{equation}\label{eq: total energy balance}
+\rho\D_t\left[\frac{1}{2} u^iu_i +  e\right]=\partial_i\left(u_j\sigma^{ij}\right)+u_if^i-\partial_iq^i.
+\end{equation}
+Luckily, we already have a relationship for the mechanical energy balance through Eq. \ref{eq: Cauchy momentum equation},
 \begin{equation}
-\rho\D_t\left[\frac{1}{2}\rho u^iu_i + \rho e\right]=\partial_i\left(u_j\sigma^{ij}\right)+u_if^i-\partial_iq^i.
+\frac{1}{2}\rho D_t\left[u^iu_i\right]=u_if^i+u_i\partial_j\sigma^{ij}.
+\end{equation}
+Inserting this relationship into Eq. \ref{eq: total energy balance}, and recalling the symmetry of the stress tensor, we obtain an equation for the thermal energy balance,
+
+\begin{equation}
+\rho D_t e = \sigma^{ij}\partial_iu_j=\frac{1}{2}\sigma^{ij}\left(\partial_iu_j+\partial_ju_i\right)=\sigma^{ij}E_{ij},
 \end{equation}
 
-
+We have defined the rate-of-strain tensor, $$E_{ij}=\frac{1}{2}\left(\partial_iu_j+\partial_ju_i\right)$$.
 
 
 ### Sources
