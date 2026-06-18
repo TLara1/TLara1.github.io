@@ -23,7 +23,7 @@ With this idea in mind, we go on to derive the governing physics using the class
 ## Conservation of Mass
 Consider an arbitrarily chosen volume element of a fixed position and shape. Essentially, a "chunk" of space filled with fluid. At each point on the surface of this volume, there is a mass flux of fluid, $$\rho u^i\hat{n}_i$$, where $$u^i$$ is the local fluid velocity. Chosing $$\hat{n}_i$$ as the unit normal to the surface pointing outwards, this flux is negative when fluid enters the volume and positive when it exits. Conservation of mass requires that the total mass in the volume is equal to the imbalance of mass flux in and out of the surface,
 \begin{equation}
-\int_V dV\ \partial_t\rho=-\int _{\partial V} dA\ \rho\rho u^i\hat{n}_i,
+\int_V dV\ \partial_t\rho=-\int _{\partial V} dA\ \rho u^i\hat{n}_i,
 \end{equation}
 where $$V$$ denotes the volume element and $$\partial V$$ denotes its surface. We may apply the divergence theorem and note that the integrand must be zero to be satisfied for an arbitrarily chosen volume element. This results in,
 \begin{equation}\label{eq: continuity equation}
