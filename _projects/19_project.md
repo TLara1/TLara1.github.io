@@ -111,7 +111,17 @@ $$\left<\ \right>$$ represent mean values over a surface and $$\Delta A_i$$ is t
 
 where $$\hat{\mathbf{e}}_{(i)}^j$$ should be understood as the $$j$$-th component of the $$i$$-th coordinate basis vector. Combining Eq. \ref{eq: mean traction balance} with Eq. \ref{eq: tetrahedron surface area normal} and collapsing the area of the tetrahedron to zero,
 \begin{equation}
-t^i\left(\hat{\mathbf{n}}\right)=\hat{n}_j\left(\mathbf{e}}_{(1)}^jt^i\left(\hat{\mathbf{e}}_1\right)+\mathbf{e}}_{(2)}^jt^i\left(\hat{\mathbf{e}}_2\right)+\mathbf{e}}_{(3)}^jt^i\left(\hat{\mathbf{e}}_3\right)\right).
+t^i\left(\hat{\mathbf{n}}\right)=\hat{n} _j\left(\mathbf{e}} _{(1)}^jt^i\left(\hat{\mathbf{e}} _1\right)+\mathbf{e}} _{(2)}^jt^i\left(\hat{\mathbf{e}} _2\right)+\mathbf{e}} _{(3)}^jt^i\left(\hat{\mathbf{e}} _3\right)\right).
+\end{equation}
+
+With this form in mind, we define the stress tensor, $$\sigma^{ij}=\mathbf{e}} _{(1)}^jt^i\left(\hat{\mathbf{e}} _1\right)+\mathbf{e}} _{(2)}^jt^i\left(\hat{\mathbf{e}} _2\right)+\mathbf{e}} _{(3)}^jt^i\left(\hat{\mathbf{e}} _3\right)$$, such that the traction vector in along a surface normal to the direction $$\hat{\mathbf{n}}$$ is given by,
+\begin{equation}
+t^i\left(\hat{\mathbf{n}}\right)=\hat{n} _j\sigma^{ij}.
+\end{equation}
+
+Again with the divergence theorem, applying what we have learned to Eq. \ref{eq: continuity equation integral form}
+\begin{equation}
+\int_{V_m(t)} dV\ \left[\partial_t\left(\rho u^i\right)+\partial_j\left(\rho u^ju^i\right)-f^i-\partial_j\sigma^{ij}\right]  = 0.
 \end{equation}
 
 
