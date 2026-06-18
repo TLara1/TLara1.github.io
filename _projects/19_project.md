@@ -67,6 +67,7 @@ To evaluate, observe that any surface element $$dA(t)$$ of $$V _m(t)$$ will move
 \end{equation}
 
 And via the divergence theorem, applied to the surface integral, we obtain the transport theorem,
+
 \begin{equation}\label{eq: Reynolds transport theorem}
 D_t\left[\int_{V_m(t)} dV\ B\left(\mathbf{x}(t),t\right)\right]=\int_{V_m(t)}dV\ \left[\partial_t B + \partial_i\left(B u^i\right)\right].
 \end{equation}
@@ -89,11 +90,13 @@ using Eq. \ref{eq: Reynolds transport theorem},
 
 We now discuss the traction vector $$t^i$$ in more depth. Because the left-hand side of Eq. \ref{eq: continuity equation integral form} is a volume integral, we expect the result to go with the cube of the characteristic volume length $$\ell^3$$, compared to the right-hand side, a surface integral going with the square of the characteristic length $$\ell^2$$. So as we shrink the size of the arbitrary volume to $$0$$ and reduce the characteristic length $$\ell\rightarrow0$$, we see that the traction vector $$t^i$$ must vanish. Physically, this requires that surface forces must be in local equilibrium for an arbitrarily small volume.
 
-So it is clear that the traction vector should depend not only on position and time, but also on the local orientation of the surface to satisfy local force equilibrium. Consider a tetrahedron with three faces perpendicular to each of the coordinate directions $$\hat{e}_i$$ and a fourth face perpendicular to the normal direction $$\hat{n}_i$$. Denote the component of a stress vector on a surface with normal $$\hat{\mathbf{n}}$$ as $$t^i\left(\hat{\mathbf{n}}\right)$$. As a consequence of surface-stress equilibrium, as we shrink the volume of our tetrahedron, the traction integrated over the surface normal to $$\hat{n}_i$$ should be balanced by the sum of the tractions integrated over the other three faces, 
+So it is clear that the traction vector should depend not only on position and time, but also on the local orientation of the surface to satisfy local force equilibrium. Consider a tetrahedron with three faces perpendicular to each of the coordinate directions $$\hat{\mathbf{e}}_(i)$$ and a fourth face perpendicular to the normal direction $$\hat{\mathbf{n}}$$. Denote the component of a stress vector on a surface with normal $$\hat{\mathbf{n}}$$ as $$t^i\left(\hat{\mathbf{n}}\right)$$. As a consequence of surface-stress equilibrium, as we shrink the volume of our tetrahedron, the traction integrated over the surface normal to $$\hat{\mathbf{n}}$$ should be balanced by the sum of the tractions integrated over the other three faces, 
+
 \begin{equation}\label{eq: mean traction balance}
-\left<t^i\left(\hat{\mathbf{n}}\right)\right>\Delta A_n = \left<t^i\left(\hat{\mathbf{e}}_1\right)\right>\Delta A_1 + \left<t^i\left(\hat{\mathbf{e}}_2\right)\right>\Delta A_2 + \left<t^i\left(\hat{\mathbf{e}}_3\right)\right>\Delta A_3.
+\left<t^i\left(\hat{\mathbf{n}}\right)\right>\Delta A_n = \left<t^i\left(\hat{\mathbf{e}}_(1)\right)\right>\Delta A_1 + \left<t^i\left(\hat{\mathbf{e}}_(2)\right)\right>\Delta A_2 + \left<t^i\left(\hat{\mathbf{e}}_(3)\right)\right>\Delta A_3.
 \end{equation}
-$$\left<\right>$$ represent mean values over a surface and $$\Delta A_i$$ is the projected area of the normal face area $$\Delta A_n$$ onto the plane perpendicular to the $$\hat{\mathbf{e}}_i$$ axis. Thus,
+
+$$\left<\right>$$ represent mean values over a surface and $$\Delta A_i$$ is the projected area of the normal face area $$\Delta A_n$$ onto the plane perpendicular to the $$\hat{\mathbf{e}}_(i)$$ axis. Thus,
 
 \begin{equation}\label{eq: tetrahedron surface area normal}
 \Delta A_i = \left(\hat{n}_j\mathbf{e}}_{(i)}^j\right)\Delta A_n,
