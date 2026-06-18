@@ -91,11 +91,15 @@ All that is left is updating between timesteps in the prediction step. The state
 \hat{\mathbf{x}}_{k+1}'=\mathbf{F}\hat{\mathbf{x}} _{k}.
 \end{equation}
 The error covariance matrix is updated based on the definition \cref{eq: mean-squared covariance},
-\begin{align}
-\mathbf{P} _{k+1}'&=\mathbb{E}\left[ \left(\hat{\mathbf{x}} _{k+1}' -{\mathbf{x}} _{k+1}\right)\left(\hat{\mathbf{x}} _{k+1}' -{\mathbf{x}} _{k+1}\right)^T \right],
+\begin{equation}
+\mathbf{P} _{k+1}'=\mathbb{E}\left[ \left(\hat{\mathbf{x}} _{k+1}' -{\mathbf{x}} _{k+1}\right)\left(\hat{\mathbf{x}} _{k+1}' -{\mathbf{x}} _{k+1}\right)^T \right],
+\end{equation}
+\begin{equation}
 =\mathbb{E}\left[\left(\mathbf{F}\hat{\mathbf{x}} _{k} -\mathbf{F}{\mathbf{x}} _{k}\right) \left(\mathbf{F}\hat{\mathbf{x}} _{k}-\mathbf{F}{\mathbf{x}} _{k}\right)^T \right] +\mathbb{E}\left[\mathbf{w} _k\mathbf{w} _k^T\right],
-&=\mathbf{F}\mathbf{P} _{k}\mathbf{F}^T+\mathbf{Q},
-\end{align}
+\end{equation}
+\begin{equation}
+=\mathbf{F}\mathbf{P} _{k}\mathbf{F}^T+\mathbf{Q},
+\end{equation}
 where we have used \ref{eq: data update equation} and \ref{eq: Q and R definitions}.
 
 ## The Kalman Filter Algorithm
@@ -105,34 +109,29 @@ For clarity, we drop the $$'$$ notation and adopt the notation $$\hat{\mathbf{x}
 
 **Prediction Step:**
 We advance the state estimate forward in time,
-
 \begin{equation}
 \hat{\mathbf{x}} _{k|k-1} =\mathbf{F}\hat{\mathbf{x}} _{k-1|k-1}.
 \end{equation}
-
 And we advance the estimate covariance forward in time,
-
 \begin{equation}
 \mathbf{P} _{k|k-1}=\mathbf{F}\mathbf{P} _{k-1|k-1}\mathbf{F}^T+\mathbf{Q}.
 \end{equation}
 
 **Update Step:**
 Construct the optimal Kalman gain,
-
+\begin{equation}
+\mathbf{K}_k=\mathbf{P} _{k|k-1}
+\end{equation}
 \begin{equation}
 \mathbf{K}_k=\mathbf{P} _{k|k-1}\mathbf{A}^T\left( \mathbf{A}\mathbf{P} _{k|k-1}\mathbf{A}^T+\mathbf{R} \right)^{-1}.
 \end{equation}
-
 Using this gain, advance the state estimate using the measurement $$\mathbf{y}_k$$,
-
 \begin{equation}
-\hat{\mathbf{x}} _{k|k}=\hat{\mathbf{x}} _{k|k-1}+\mathbf{K}_k\left(\mathbf{y}_k-\mathbf{A}\hat{\mathbf{x}} _{k|k-1}\right).
+\hat{\mathbf{x}} _{k|k}=\hat{\mathbf{x}} _{k|k-1}+\mathbf{K} _k\left(\mathbf{y} _k-\mathbf{A}\hat{\mathbf{x}} _{k|k-1} \right).
 \end{equation}
-
 Update the covariance estimate,
-
 \begin{equation}
-\mathbf{P}_{k|k}=\left(\mathbf{I}-\mathbf{K} _k\mathbf{A}\right)\mathbf{P} _{k|k-1}\left(\mathbf{I}-\mathbf{K}_k\mathbf{A}\right)^T+\mathbf{K}_k\mathbf{R}\mathbf{K}_k^T.
+\mathbf{P} _{k|k}=\left(\mathbf{I}-\mathbf{K} _k\mathbf{A}\right)\mathbf{P} _{k|k-1}\left(\mathbf{I}-\mathbf{K}_k\mathbf{A}\right)^T+\mathbf{K}_k\mathbf{R}\mathbf{K}_k^T.
 \end{equation}
 
 The algorithm is completed. Note that the Prediction and Update steps usually alternate, but this is generally not necessary. If an observation $$\mathbf{y}_k$$ is unavailable, the update can be skipped, and several predictions can be performed. Vice versa, if many observations are available, the prediction can be skipped in favour of more update steps. 
