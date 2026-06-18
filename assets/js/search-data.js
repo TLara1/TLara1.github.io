@@ -462,6 +462,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
+            },},{id: "projects-on-the-fokker-planck-equation-6-26",
+          title: 'On the Fokker-Planck Equation - 6/26',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20_project/";
             },},{id: "projects-on-the-precession-of-mercury-39-s-perihelion-1-25",
           title: 'On the Precession of Mercury&amp;#39;s Perihelion - 1/25',
           description: "",
