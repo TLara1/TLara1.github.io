@@ -123,6 +123,12 @@ Again with the divergence theorem, applying what we have learned to Eq. \ref{eq:
 \begin{equation}
 \int_{V_m(t)} dV\ \left[\partial_t\left(\rho u^i\right)+\partial_j\left(\rho u^ju^i\right)-f^i-\partial_j\sigma^{ij}\right]  = 0.
 \end{equation}
+Applying the continuity equation, Eq. \ref{eq: continuity equation}, and realizing that the integrand must be zero for an arbitrary volume, 
+\begin{equation}
+\rho\left(\partial_tu^i+u^j\partial_ju^i\right)=f^i+\partial_j\sigma^{ij}.
+\end{equation}
+
+
 
 
 
