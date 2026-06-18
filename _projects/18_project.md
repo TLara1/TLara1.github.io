@@ -120,9 +120,6 @@ And we advance the estimate covariance forward in time,
 **Update Step:**
 Construct the optimal Kalman gain,
 \begin{equation}
-\mathbf{K}_k=\mathbf{P} _{k|k-1}
-\end{equation}
-\begin{equation}
 \mathbf{K}_k=\mathbf{P} _{k|k-1}\mathbf{A}^T\left( \mathbf{A}\mathbf{P} _{k|k-1}\mathbf{A}^T+\mathbf{R} \right)^{-1}.
 \end{equation}
 Using this gain, advance the state estimate using the measurement $$\mathbf{y}_k$$,
