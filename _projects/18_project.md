@@ -92,11 +92,10 @@ All that is left is updating between timesteps in the prediction step. The state
 \end{equation}
 The error covariance matrix is updated based on the definition \cref{eq: mean-squared covariance},
 \begin{align}
-\mathbf{P} _{k+1}'&=\mathbb{E}\left[\left(\hat{\mathbf{x}}_{k+1}'-{\mathbf{x}}_{k+1}\right)\left(\hat{\mathbf{x}}_{k+1}'-{\mathbf{x}}_{k+1}\right)^T\right],
-&=\mathbb{E}\left[\left(\mathbf{F}\hat{\mathbf{x}}_{k}-\mathbf{F}{\mathbf{x}}_{k}\right)\left(\mathbf{F}\hat{\mathbf{x}}_{k}-\mathbf{F}{\mathbf{x}}_{k}\right)^T\right]+\mathbb{E}\left[\mathbf{w}_k\mathbf{w}_k^T\right],
+\mathbf{P} _{k+1}'&=\mathbb{E}\left[ \left(\hat{\mathbf{x}} _{k+1}' -{\mathbf{x}} _{k+1}\right)\left(\hat{\mathbf{x}} _{k+1}' -{\mathbf{x}} _{k+1}\right)^T \right],
+=\mathbb{E}\left[\left(\mathbf{F}\hat{\mathbf{x}} _{k} -\mathbf{F}{\mathbf{x}} _{k}\right) \left(\mathbf{F}\hat{\mathbf{x}} _{k}-\mathbf{F}{\mathbf{x}} _{k}\right)^T \right] +\mathbb{E}\left[\mathbf{w} _k\mathbf{w} _k^T\right],
 &=\mathbf{F}\mathbf{P} _{k}\mathbf{F}^T+\mathbf{Q},
 \end{align}
-
 where we have used \ref{eq: data update equation} and \ref{eq: Q and R definitions}.
 
 ## The Kalman Filter Algorithm
@@ -121,7 +120,7 @@ And we advance the estimate covariance forward in time,
 Construct the optimal Kalman gain,
 
 \begin{equation}
-\mathbf{K}_k=\mathbf{P} _{k|k-1}\mathbf{A}^T\left(\mathbf{A}\mathbf{P}_{k|k-1}\mathbf{A}^T+\mathbf{R}\right)^{-1}.
+\mathbf{K}_k=\mathbf{P} _{k|k-1}\mathbf{A}^T\left( \mathbf{A}\mathbf{P} _{k|k-1}\mathbf{A}^T+\mathbf{R} \right)^{-1}.
 \end{equation}
 
 Using this gain, advance the state estimate using the measurement $$\mathbf{y}_k$$,
