@@ -127,10 +127,29 @@ Applying the continuity equation, Eq. \ref{eq: continuity equation}, and realizi
 \end{equation}
 Eq. \ref{eq: Cauchy momentum equation} is known as **Cauchy's Momentum Equation**, which is nothing more than Newton's second law applied to a moving fluid.
 
-We have made progress, but still have a good ways to go. The introduction of $$\sigma^{ij}$$ actually complicates the problem further by adding $$9$$ more unknown componenets of the tensor, while Eq. \ref{eq: Cauchy momentum equation} only gives three more equations.
+We have made progress, but still have a good ways to go. The introduction of $$\sigma^{ij}$$ actually complicates the problem further by adding $$9$$ more unknown components of the tensor, while Eq. \ref{eq: Cauchy momentum equation} only gives three more equations.
 
 ### Angular Momentum
-To constrain the stress tensor, we consider the generalization of Newton's second law to angular momentum,
+To constrain the stress tensor, we consider the generalization of Newton's second law to angular momentum. The range of change of the angular momentum inside the control volume must be equal to the sum of torques acting on said volume,
+\begin{equation}
+D_t\left[\int_{V_m(t)} dV\ \rho\epsilon^i_{jk}x^j u^k \right] =\left(\text{sum of torques acting on }V_m(t)\right)^i,
+\end{equation}
+where $$\epsilon^i_{jk}$$ is the Levi-Cevita symbol. The sources of torque arise from external body forces and from the surface traction,
+\begin{equation}\label{eq: angular momentum conservation integral form}
+D_t\left[\int_{V_m(t)} dV\ \rho\epsilon^i_{jk}x^j u^k \right] =\int_{V_m(t)} dV\ \epsilon^i_{jk}x^jf^k + \int_{A_m(t)} dA\ \epsilon^i_{jk}x^j \hat{n} _l \sigma^{kl}.
+\end{equation}
+
+We have used $$t^k=\hat{n} _l \sigma^{kl}$$. Applying the divergence theorem,
+
+\begin{equation}
+\int_{A_m(t)} dA\ \epsilon^i_{jk}x^j\hat{n} _l \sigma^{kl} = \int _{V_m(t)} dV\ \left[\epsilon^i_{lk}\sigma^{kl} + \epsilon^i_{jk}x^j\partial_l\sigma^{kl}\right].
+\end{equation}
+Inserting this result into Eq. \ref{eq: angular momentum conservation integral form}, and using Eq. {eq: Cauchy momentum equation}, we find
+
+\begin{equation}
+\int_{V_m(t)} dV\ \epsilon^i_{lk}\sigma^{kl} = 0.
+\end{equation}
+From this, we conclude that the stress tensor $$\sigma^{ij}$$ must be symmetric, $$\sigma^{ij}=\sigma^{ji}$$  to balance angular momentum. This reduces the number of unknowns in the stress tensor from $$9$$ to $$6$$, progress, but we have more to do.
 
 
 
