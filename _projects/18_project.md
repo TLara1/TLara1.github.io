@@ -76,7 +76,7 @@ We wish to pick $$\mathbf{K}_k$$ such that the mean-squared error is minimized, 
 \begin{equation}
 \text{Tr}\left[\mathbf{P}_k\right]=\text{Tr}\left[\mathbf{P}_k'\right]-\text{Tr}\left[\mathbf{K}_k\mathbf{A}\mathbf{P}_k'\right]-\text{Tr}\left[\mathbf{P}_k'\mathbf{A}^T\mathbf{K}_k^T\right]+\text{Tr}\left[\mathbf{K}_k\left(\mathbf{A}\mathbf{P}_k'\mathbf{A}^T+\mathbf{R}\right)\mathbf{K}_k^T\right].
 \end{equation}
-Observing that $$\mathbf{P}_k$$ is symmetric due to \ref{eq: mean-squared covariance} and $$\mathbf{R}$$ is symmetric due to \ref{eq: Q and R definitions} and differentiating with respect to $$\mathbf{K}_k$$, we obtain,
+Observing that $$\mathbf{P}_k$$ is symmetric due to Eq. \ref{eq: mean-squared covariance} and $$\mathbf{R}$$ is symmetric due to Eq. \ref{eq: Q and R definitions} and differentiating with respect to $$\mathbf{K}_k$$, we obtain,
 \begin{equation}
 \frac{d\mathbf{P}_k}{d\mathbf{K}_k}=-2\left(\mathbf{A}\mathbf{P}_k'\right)^T+2\mathbf{K}_k\left(\mathbf{A}\mathbf{P}_k'\mathbf{A}^T+\mathbf{R}\right).
 \end{equation}
@@ -90,7 +90,7 @@ All that is left is updating between timesteps in the prediction step. The state
 \begin{equation}
 \hat{\mathbf{x}}_{k+1}'=\mathbf{F}\hat{\mathbf{x}} _{k}.
 \end{equation}
-The error covariance matrix is updated based on the definition \cref{eq: mean-squared covariance},
+The error covariance matrix is updated based on the definition Eq. \ref{eq: mean-squared covariance},
 \begin{equation}
 \mathbf{P} _{k+1}'=\mathbb{E}\left[ \left(\hat{\mathbf{x}} _{k+1}' -{\mathbf{x}} _{k+1}\right)\left(\hat{\mathbf{x}} _{k+1}' -{\mathbf{x}} _{k+1}\right)^T \right],
 \end{equation}
@@ -100,7 +100,7 @@ The error covariance matrix is updated based on the definition \cref{eq: mean-sq
 \begin{equation}
 =\mathbf{F}\mathbf{P} _{k}\mathbf{F}^T+\mathbf{Q},
 \end{equation}
-where we have used \ref{eq: data update equation} and \ref{eq: Q and R definitions}.
+where we have used Eq. \ref{eq: data update equation} and Eq. \ref{eq: Q and R definitions}.
 
 ## The Kalman Filter Algorithm
 For clarity, we drop the $$'$$ notation and adopt the notation $$\hat{\mathbf{x}}_{n|m}$$ to represent the estimate of the variable $$\mathbf{x}$$ at time $$\mathbf{n}$$ given observations including and up to $$m\leq n$$.
