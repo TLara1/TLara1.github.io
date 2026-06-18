@@ -66,8 +66,10 @@ To evaluate, observe that any surface element $$dA(t)$$ of $$V _m(t)$$ will move
 \end{equation}
 
 \begin{equation}
-\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right) \right]\right)=\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{A_m(t)} dA\ B\left(t+\delta t\right)u^i\hat{n}_i\delta t \right]\right)=\int_{A_m(t)} dA\ B u^i\hat{n}_i.
+\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right) \right]\right)
 \end{equation}
+
+
 
 And via the divergence theorem, applied to the surface integral, we obtain the transport theorem,
 
@@ -96,11 +98,7 @@ We now discuss the traction vector $$t^i$$ in more depth. Because the left-hand 
 So it is clear that the traction vector should depend not only on position and time, but also on the local orientation of the surface to satisfy local force equilibrium. Consider a tetrahedron with three faces perpendicular to each of the coordinate directions $$\hat{\mathbf{e}}_(i)$$ and a fourth face perpendicular to the normal direction $$\hat{\mathbf{n}}$$. Denote the component of a stress vector on a surface with normal $$\hat{\mathbf{n}}$$ as $$t^i\left(\hat{\mathbf{n}}\right)$$. As a consequence of surface-stress equilibrium, as we shrink the volume of our tetrahedron, the traction integrated over the surface normal to $$\hat{\mathbf{n}}$$ should be balanced by the sum of the tractions integrated over the other three faces, 
 
 \begin{equation}\label{eq: mean traction balance}
-\left<t^i\left(\hat{\mathbf{n}}\right)\right>\Delta A_n = \left<t^i\left(\hat{\mathbf{e}} _(1)\right)\right>\Delta A _1 + \left<t^i\left(\hat{\mathbf{e}} _(2)\right)\right>\Delta A _2 + \left<t^i\left(\hat{\mathbf{e}} _(3)\right)\right>\Delta A _3.
-\end{equation}
-
-\begin{equation}
-\left<t^i\left(\hat{\mathbf{n}}\right)\right>\Delta A_n = \left<t^i\left(\hat{\mathbf{e}}_(1)\right)\right>\Delta A_1 + \left<t^i\left(\hat{\mathbf{e}}_(2)\right)\right>\Delta A_2 + \left<t^i\left(\hat{\mathbf{e}}_(3)\right)\right>\Delta A_3.
+\left<t^i\left(\hat{\mathbf{n}}\right)\right>\Delta A_n = \left<t^i\left(\hat{\mathbf{e}} _{(1)}\right)\right>\Delta A _1 + \left<t^i\left(\hat{\mathbf{e}} _{(2)}\right)\right>\Delta A _2 + \left<t^i\left(\hat{\mathbf{e}} _{(3)}\right)\right>\Delta A _3.
 \end{equation}
 
 $$\left<\ \right>$$ represent mean values over a surface and $$\Delta A_i$$ is the projected area of the normal face area $$\Delta A_n$$ onto the plane perpendicular to the $$\hat{\mathbf{e}}_(i)$$ axis. Thus,
@@ -111,10 +109,10 @@ $$\left<\ \right>$$ represent mean values over a surface and $$\Delta A_i$$ is t
 
 where $$\hat{\mathbf{e}}_{(i)}^j$$ should be understood as the $$j$$-th component of the $$i$$-th coordinate basis vector. Combining Eq. \ref{eq: mean traction balance} with Eq. \ref{eq: tetrahedron surface area normal} and collapsing the area of the tetrahedron to zero,
 \begin{equation}
-t^i\left(\hat{\mathbf{n}}\right)=\hat{n} _j\left(\mathbf{e}} _{(1)}^jt^i\left(\hat{\mathbf{e}} _1\right)+\mathbf{e}} _{(2)}^jt^i\left(\hat{\mathbf{e}} _2\right)+\mathbf{e}} _{(3)}^jt^i\left(\hat{\mathbf{e}} _3\right)\right).
+t^i\left(\hat{\mathbf{n}}\right)=\hat{n} _j\left(\mathbf{e}} _{(1)}^jt^i\left(\hat{\mathbf{e}} _{(1)}\right)+\mathbf{e}} _{(2)}^jt^i\left(\hat{\mathbf{e}} _{(2)}\right)+\mathbf{e}} _{(3)}^jt^i\left(\hat{\mathbf{e}} _{(3)}\right)\right).
 \end{equation}
 
-With this form in mind, we define the stress tensor, $$\sigma^{ij}=\mathbf{e}} _{(1)}^jt^i\left(\hat{\mathbf{e}} _1\right)+\mathbf{e}} _{(2)}^jt^i\left(\hat{\mathbf{e}} _2\right)+\mathbf{e}} _{(3)}^jt^i\left(\hat{\mathbf{e}} _3\right)$$, such that the traction vector in along a surface normal to the direction $$\hat{\mathbf{n}}$$ is given by,
+With this form in mind, we define the stress tensor, $$\sigma^{ij}\mathbf{e}} _{(1)}^jt^i\left(\hat{\mathbf{e}} _{(1)}\right)+\mathbf{e}} _{(2)}^jt^i\left(\hat{\mathbf{e}} _{(2)}\right)+\mathbf{e}} _{(3)}^jt^i\left(\hat{\mathbf{e}} _{(3)}\right)$$, such that the traction vector in along a surface normal to the direction $$\hat{\mathbf{n}}$$ is given by,
 \begin{equation}
 t^i\left(\hat{\mathbf{n}}\right)=\hat{n} _j\sigma^{ij}.
 \end{equation}
