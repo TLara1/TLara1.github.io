@@ -66,7 +66,7 @@ To evaluate, observe that any surface element $$dA(t)$$ of $$V _m(t)$$ will move
 \end{equation}
 
 \begin{equation}
-\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right) \right]\right)
+\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right) \right]\right)=\lim_{\delta t\rightarrow 0}\left(\right)
 \end{equation}
 
 And via the divergence theorem, applied to the surface integral, we obtain the transport theorem,
@@ -78,6 +78,8 @@ D_t\left[\int_{V_m(t)} dV\ B\left(\mathbf{x}(t),t\right)\right]=\int_{V_m(t)}dV\
 We can immediately see that Eq. \ref{eq: continuity equation integral convective form} combined with Eq. \ref{eq: Reynolds transport theorem} yields the continuity equation Eq. \ref{eq: continuity equation} once again.
 
 ## The Momentum Equation
+
+### Linear Momentum
 In this section, we consider Newton's second law of motion applied to the same material control volume. This law states that the temporal rate of change of linear momentum of a given body is equal to the sum of forces acting on that body. Applying this law directly to the material control fluid volume $$V_m(t)$$ with our convective derivative, we obtain,
 \begin{equation}
 D_t\left[\int_{V_m(t)} dV\ \rho u^i \right] =\left(\text{sum of forces acting on }V_m(t)\right)^i.
@@ -107,10 +109,10 @@ $$\left<\ \right>$$ represent mean values over a surface and $$\Delta A_i$$ is t
 
 where $$\hat{\mathbf{e}}_{(i)}^j$$ should be understood as the $$j$$-th component of the $$i$$-th coordinate basis vector. Combining Eq. \ref{eq: mean traction balance} with Eq. \ref{eq: tetrahedron surface area normal} and collapsing the area of the tetrahedron to zero,
 \begin{equation}
-t^i\left(\hat{\mathbf{n}}\right)=\hat{n} _j\left(\mathbf{e}} _{(1)}^jt^i\left(\hat{\mathbf{e}} _{(1)}\right)+\mathbf{e}} _{(2)}^jt^i\left(\hat{\mathbf{e}} _{(2)}\right)+\mathbf{e}} _{(3)}^jt^i\left(\hat{\mathbf{e}} _{(3)}\right)\right).
+t^i\left(\hat{\mathbf{n}}\right)=\hat{n} _j\left(\hat{\mathbf{e}} _{(1)}^jt^i\left(\hat{\mathbf{e}} _{(1)}\right)+\hat{\mathbf{e}} _{(2)}^jt^i\left(\hat{\mathbf{e}} _{(2)}\right)+\hat{\mathbf{e}} _{(3)}^jt^i\left(\hat{\mathbf{e}} _{(3)}\right)\right).
 \end{equation}
 
-With this form in mind, we define the stress tensor, $$\sigma^{ij}\mathbf{e}} _{(1)}^jt^i\left(\hat{\mathbf{e}} _{(1)}\right)+\mathbf{e}} _{(2)}^jt^i\left(\hat{\mathbf{e}} _{(2)}\right)+\mathbf{e}} _{(3)}^jt^i\left(\hat{\mathbf{e}} _{(3)}\right)$$, such that the traction vector in along a surface normal to the direction $$\hat{\mathbf{n}}$$ is given by,
+With this form in mind, we define the stress tensor, $$\sigma^{ij}=\hat{\mathbf{e}} _{(1)}^jt^i\left(\hat{\mathbf{e}} _{(1)}\right)+\hat{\mathbf{e}} _{(2)}^jt^i\left(\hat{\mathbf{e}} _{(2)}\right)+\hat{\mathbf{e}} _{(3)}^jt^i\left(\hat{\mathbf{e}} _{(3)}\right)$$, such that the traction vector in along a surface normal to the direction $$\hat{\mathbf{n}}$$ is given by,
 \begin{equation}
 t^i\left(\hat{\mathbf{n}}\right)=\hat{n} _j\sigma^{ij}.
 \end{equation}
@@ -127,7 +129,8 @@ Eq. \ref{eq: Cauchy momentum equation} is known as **Cauchy's Momentum Equation*
 
 We have made progress, but still have a good ways to go. The introduction of $$\sigma^{ij}$$ actually complicates the problem further by adding $$9$$ more unknown componenets of the tensor, while Eq. \ref{eq: Cauchy momentum equation} only gives three more equations.
 
-
+### Angular Momentum
+To constrain the stress tensor, we consider the generalization of Newton's second law to angular momentum,
 
 
 
