@@ -90,14 +90,19 @@ using Eq. \ref{eq: Reynolds transport theorem},
 We now discuss the traction vector $$t^i$$ in more depth. Because the left-hand side of Eq. \ref{eq: continuity equation integral form} is a volume integral, we expect the result to go with the cube of the characteristic volume length $$\ell^3$$, compared to the right-hand side, a surface integral going with the square of the characteristic length $$\ell^2$$. So as we shrink the size of the arbitrary volume to $$0$$ and reduce the characteristic length $$\ell\rightarrow0$$, we see that the traction vector $$t^i$$ must vanish. Physically, this requires that surface forces must be in local equilibrium for an arbitrarily small volume.
 
 So it is clear that the traction vector should depend not only on position and time, but also on the local orientation of the surface to satisfy local force equilibrium. Consider a tetrahedron with three faces perpendicular to each of the coordinate directions $$\hat{e}_i$$ and a fourth face perpendicular to the normal direction $$\hat{n}_i$$. Denote the component of a stress vector on a surface with normal $$\hat{\mathbf{n}}$$ as $$t^i\left(\hat{\mathbf{n}}\right)$$. As a consequence of surface-stress equilibrium, as we shrink the volume of our tetrahedron, the traction integrated over the surface normal to $$\hat{n}_i$$ should be balanced by the sum of the tractions integrated over the other three faces, 
-\begin{equation}
+\begin{equation}\label{eq: mean traction balance}
 \left<t^i\left(\hat{\mathbf{n}}\right)\right>\Delta A_n = \left<t^i\left(\hat{\mathbf{e}}_1\right)\right>\Delta A_1 + \left<t^i\left(\hat{\mathbf{e}}_2\right)\right>\Delta A_2 + \left<t^i\left(\hat{\mathbf{e}}_3\right)\right>\Delta A_3.
 \end{equation}
 $$\left<\right>$$ represent mean values over a surface and $$\Delta A_i$$ is the projected area of the normal face area $$\Delta A_n$$ onto the plane perpendicular to the $$\hat{\mathbf{e}}_i$$ axis. Thus,
-\begin{equation}
+
+\begin{equation}\label{eq: tetrahedron surface area normal}
 \Delta A_i = \left(\hat{n}_j\mathbf{e}}_{(i)}^j\right)\Delta A_n,
 \end{equation}
-where $$\mathbf{e}}_{(i)}^j$$ should be understood as the $$j$$-th component of the $$i$$-th coordinate basis vector. Combining
+
+where $$\mathbf{e}}_{(i)}^j$$ should be understood as the $$j$$-th component of the $$i$$-th coordinate basis vector. Combining Eq. \ref{eq: mean traction balance} with Eq. \ref{eq: tetrahedron surface area normal} and collapsing the area of the tetrahedron to zero,
+\begin{equation}
+t^i\left(\hat{\mathbf{n}}\right)=\hat{n}_j\left(\mathbf{e}}_{(1)}^jt^i\left(\hat{\mathbf{e}}_1\right)+\mathbf{e}}_{(2)}^jt^i\left(\hat{\mathbf{e}}_2\right)+\mathbf{e}}_{(3)}^jt^i\left(\hat{\mathbf{e}}_3\right)\right).
+\end{equation}
 
 
 
