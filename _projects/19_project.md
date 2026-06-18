@@ -18,6 +18,9 @@ The desired description of fluid motion is much larger than any molecular length
 
 With this idea in mind, we go on to derive the governing physics using the classical conservation of mass and energy plus Newton's second and third laws of mechanics.
 
+## Conservation of Mass
+Consider an arbitrary 
+
 
 ### Sources
 
