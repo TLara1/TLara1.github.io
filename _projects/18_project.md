@@ -92,6 +92,7 @@ All that is left is updating between timesteps in the prediction step. The state
 \end{equation}
 The error covariance matrix is updated based on the definition \cref{eq: mean-squared covariance},
 \begin{align}
+
 \end{align}
 
 
@@ -105,5 +106,5 @@ The error covariance matrix is updated based on the definition \cref{eq: mean-sq
 
 
 ### Sources
-This derivation essentially follows from these, <a href="https://web.mit.edu/kirtley/kirtley/binlustuff/literature/control/Kalman%20filter.pdf"> lecture notes</a>.
+This derivation essentially follows from these <a href="https://web.mit.edu/kirtley/kirtley/binlustuff/literature/control/Kalman%20filter.pdf"> lecture notes</a>.
 
