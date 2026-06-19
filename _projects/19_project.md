@@ -152,11 +152,7 @@ D_t\left[\int_{V_m(t)} dV\ \rho\epsilon^i_{jk}x^j u^k \right] =\int_{V_m(t)} dV\
 We have used $$t^k=\hat{n} _l \sigma^{kl}$$. Applying the divergence theorem,
 
 \begin{equation}
-\int_{A_m(t)} dA\ \epsilon^i _{jk}x^j\hat{n} _l \sigma^{kl} = \int _{V _m(t)} dV\ \left[ \epsilon^i _{lk} \sigma^{kl} + \epsilon^i _{jk} \right].
-\end{equation}
-
-\begin{equation}
-\int_{A_m(t)} dA\ \epsilon^i_{jk}x^j\hat{n} _l \sigma^{kl} = \int _{V_m(t)} dV\ \left[\epsilon^i_{lk}\sigma^{kl} + \epsilon^i_{jk}x^j\partial_l\sigma^{kl}\right].
+\int_{A_m(t)} dA\ \epsilon^i _{jk}x^j\hat{n} _l \sigma^{kl} = \int _{V _m(t)} dV\ \left[ \epsilon^i _{lk} \sigma^{kl} + \epsilon^i _{jk} x^j\partial _l\sigma^{kl} \right].
 \end{equation}
 
 Inserting this result into Eq. \ref{eq: angular momentum conservation integral form}, and using Eq. {eq: Cauchy momentum equation}, we find
