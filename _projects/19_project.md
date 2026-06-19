@@ -191,7 +191,7 @@ Luckily, we already have a relationship for the mechanical energy balance throug
 Inserting this relationship into Eq. \ref{eq: total energy balance}, and recalling the symmetry of the stress tensor, we obtain an equation for the thermal energy balance,
 
 \begin{equation}
-\rho D_t e = \sigma^{ij}\partial_iu_j=\frac{1}{2}\sigma^{ij}\left(\partial_iu_j+\partial_ju_i\right)=\sigma^{ij}E_{ij},
+\rho D_t e = \sigma^{ij}E_{ij}-\partial_iq^i,
 \end{equation}
 We have defined the rate-of-strain tensor, $$E_{ij}=\frac{1}{2}\left(\partial_iu_j+\partial_ju_i\right)$$.
 
@@ -203,6 +203,12 @@ where $$p$$ is the fluid pressure. It follows that, with the continuity equation
 \begin{equation}
 \rho D_t e = \rho D_t h - D_t p + \frac{p}{\rho} D_t\rho =  \rho D_t h - D_t p - p\partial_i u^i.
 \end{equation}
+Expressing thermal energy balance in terms of $$h$$,
+\begin{equation}
+\rho D_t h = D_t p + p\partial_i u^i + \sigma^{ij}E_{ij}-\partial_iq^i.
+\end{equation}
+
+
 
 ### Sources
 
