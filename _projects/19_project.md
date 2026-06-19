@@ -297,7 +297,7 @@ Now we employ the thermodynamic relationship, Eq. \ref{eq: first law of thermody
 \rho \theta D_t s = \rho D_t e -\frac{p}{\rho}D_t \rho.
 \end{equation}
 Substituting $$D_t e$$ using our expression for the thermal energy balance from Eq. \ref{eq: thermal energy balance} and using the continuity equation, Eq. \ref{eq: continuity equation convective derivative form}, we obtain the inequality,
-\begin{equation}
+\begin{equation}\label{eq: entropy constitutive inequality}
 \sigma^{ij}E_{ij}+p\partial_iu^i - \frac{1}{\theta}q^i\partial_i\theta\geq 0.
 \end{equation}
 Although this result is not instantly helpful, we will see that it aids in obtaining constitutive relationships for the stress tensor and heat flux vector.
@@ -311,16 +311,37 @@ Let's pause and take stock of our progress. So far, we have obtained five differ
 </ol>
 We also have a restriction on the symmetry of the stress tensor based on the conservation of angular momentum and an inequality based on the second law of thermodynamics. Unfortunately, our system is still severely undertermined, we have $$14$$ unkowns, $$\rho + u^i + \sigma^{ij} + p + q^i$$, for our five equations. We must find additional relationships in order to determine solutions for our independent variables.
 
-## Fourier's Law
-Let's begin by remembering that $$\mathbf{q}$$ represents the flux of moledular energy due to random motion of particles, this called convective heat transport. It is clear that this flux should depend on the temperature gradient in the fluid. When there is no temperature gradient, there should be zero flux of heat. Furthermore, this fluid is assumed to be homogeneous in that the relationship between the heat flux and temperature gradient is the same throughout the fluid.
+### Fourier's Law
+Let's begin by remembering that $$\mathbf{q}$$ represents the flux of molecular energy due to the random motion of particles, this called convective heat transport. It is clear that this flux should depend on the temperature gradient in the fluid. When there is no temperature gradient, there should be zero flux of heat. Furthermore, this fluid is assumed to be homogeneous in that the relationship between the heat flux and temperature gradient is the same throughout the fluid.
 
-We also assume that the heat flux depends only on the temperature gradient magnitude, not its orientation. This is a statement of <em>istoropy</em>, reflecting the symmetry of the particles constituting the fluid. Generally this is not the case for a general material, but we assume this to be the case for most common fluids viewed from the spatially averged continuum viewpoint.
+We also assume that the heat flux depends only on the temperature gradient magnitude, not its orientation. This is a statement of <em>istoropy</em>, reflecting the symmetry of the particles constituting the fluid. Generally, this is not the case for a general material, but we assume this to be the case for most common fluids viewed from the spatially averaged continuum viewpoint.
 
 From here, we guess the simplest possible linear relationship,
 \begin{equation}
 q^i=-k\partial^i\theta.
 \end{equation}
 This is known as **Fourier's Law of Heat Conduction**, where $$k$$ is a constant of thermal conductivity. Although this conduction law is known to be experimentally accurate for many real substances, it is important to keep in mind that this is little more than an educated guess.
+
+Applying this to our entropy inequality, Eq. \ref{eq: entropy constitutive inequality}, for a static fluid, $$u^i=0$$,
+\begin{equation}
+k\partial_i\theta\partial^i\theta\geq 0,
+\end{equation}
+from which we conclude the thermal conductivity must be nonnegative, $$k\geq0$$.
+
+### The Newtonian Fluid
+Now for the stress tensor, $$\sigma^{ij}$$. First, consider the momentum equation, Eq. \ref{eq: Cauchy momentum equation}, in the absence of fluid motion with an external forcing,
+\begin{equation}
+\delta_j\sigma^{ij}+f^i=0.
+\end{equation}
+In this case, the only surface force must be through the pressure $$p$$, acting normal to a surface with a magnitude independent of its orientation. The surface force vector takes the form,
+\begin{equation}
+t^i=-p\hat{n}^i,
+\end{equation}
+From which we conclude that the stress tensor must satisfy,
+\begin{equation}
+\sigma^{ij}=-p\delta^{ij}+\tau^{ij}\left(\mathbf{u}\right),
+\end{equation}
+where $$\tau^{ij}$$ is an unknown element that depends on the fluid velocity and vanishes in the case of zero fluid motion.
 
 
 
