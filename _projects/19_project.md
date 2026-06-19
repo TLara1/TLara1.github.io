@@ -193,9 +193,16 @@ Inserting this relationship into Eq. \ref{eq: total energy balance}, and recalli
 \begin{equation}
 \rho D_t e = \sigma^{ij}\partial_iu_j=\frac{1}{2}\sigma^{ij}\left(\partial_iu_j+\partial_ju_i\right)=\sigma^{ij}E_{ij},
 \end{equation}
-
 We have defined the rate-of-strain tensor, $$E_{ij}=\frac{1}{2}\left(\partial_iu_j+\partial_ju_i\right)$$.
 
+It is easiest to express the thermal energy balance in terms of the specific enthalpy $$h$$, defined as,
+\begin{equation}
+h=e+p/\rho,
+\end{equation}
+where $$p$$ is the fluid pressure. It follows that, with the continuity equation,
+\begin{equation}
+\rho D_t e = \rho D_t h - D_t p + \frac{p}{\rho} D_t\rho =  \rho D_t h - D_t p - p\partial_i u^i.
+\end{equation}
 
 ### Sources
 
