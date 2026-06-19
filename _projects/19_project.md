@@ -323,7 +323,7 @@ q^i=-k\partial^i\theta.
 This is known as **Fourier's Law of Heat Conduction**, where $$k$$ is a constant of thermal conductivity. Although this conduction law is known to be experimentally accurate for many real substances, it is important to keep in mind that this is little more than an educated guess.
 
 Applying this to our entropy inequality, Eq. \ref{eq: entropy constitutive inequality}, for a static fluid, $$u^i=0$$,
-\begin{equation}
+\begin{equation}\label{eq: fourier law constitutive}
 k\partial_i\theta\partial^i\theta\geq 0,
 \end{equation}
 from which we conclude the thermal conductivity must be nonnegative, $$k\geq0$$.
@@ -369,6 +369,16 @@ From which we constrain the constants,
 $$\mu$$ is the fluid viscosity and $$\left(\lambda+\frac{2}{3}\right)$$ is known as the bulk viscosity. 
 
 ## The Equations of Motion for A Newtonian Fluid
+We are ready to assemble the equations of motion for a Newtonian fluid. Armed with nine new constitutive equations, we now have $$14$$ equations to match $$14$$ unknowns. Applying our constitutive relations, Eq. \ref{eq: fourier law constitutive} and Eq. \ref{eq: stress tensor constitutive relation}, we obtain the following set of differential equations,
+\begin{equation}
+D_t\rho+\rho\partial_iu^i=0,
+\end{equation}
+\begin{equation}
+\rho D_tu^i=f^i-\partial^ip+\partial^i\left[\left(\lambda+\frac{2}{3}\mu\right)\partial_ju^j\right]+2\partial_j\left[\mu E^{ij}\right]-\frac{2}{3}\partial^i\left[\mu\partial_ju^j\right],
+\end{equation}
+\begin{equation}
+\rho c_p D_t\theta =  \left(\lambda +\frac{2}{3}\mu\right)\left(E^k_k\right)^2+2\mu \left(E^{ij}-\frac{1}{3}E^k_k\delta^{ij}\right) \left(E_{ij}-\frac{1}{3}E^k_k\delta_{ij}\right) + k\partial_i\theta\partial^i\theta - \frac{\theta}{\rho} \frac{d\rho}{d\theta}\|_p D_t p.
+\end{equation}
 
 
 
