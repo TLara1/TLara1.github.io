@@ -453,7 +453,7 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/18_project/";
             },},{id: "projects-on-the-navier-stokes-equations-6-26",
-          title: 'On The Navier-Stokes Equations - 6/26',
+          title: 'On the Navier-Stokes Equations - 6/26',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/19_project/";
