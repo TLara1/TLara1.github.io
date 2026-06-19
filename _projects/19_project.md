@@ -80,7 +80,7 @@ D_t\left[\int_{V_m(t)} dV\ B\left(\mathbf{x}(t),t\right)\right]=\int_{V_m(t)}dV\
 \end{equation}
 
 We can immediately see that Eq. \ref{eq: continuity equation integral convective form} combined with Eq. \ref{eq: Reynolds transport theorem} yields the continuity equation Eq. \ref{eq: continuity equation} once again. It is also convenient to write Eq. \ref{eq: continuity equation} in terms of the convective derivative,
-\begin{equation}
+\begin{equation}\label{eq: continuity equation convective derivative form}
 D_t \rho + \rho\partial_iu^i=0.
 \end{equation}
 From this, we see that if we approximate the material derivative of the density to be zero, $$D_t\rho=0$$, the continuity equation reduces to the incompressibility assumption, $$\partial_iu^i=0$$ for fluids.
@@ -163,7 +163,7 @@ Inserting this result into Eq. \ref{eq: angular momentum conservation integral f
 \begin{equation}
 \int_{V_m(t)} dV\ \epsilon^i_{lk}\sigma^{kl} = 0.
 \end{equation}
-From this, we conclude that the stress tensor $$\sigma^{ij}$$ must be symmetric, $$\sigma^{ij}=\sigma^{ji}$$  to balance angular momentum. This reduces the number of unknowns in the stress tensor from $$9$$ to $$6$$, progress, but we have more to do.
+From this, we conclude that the stress tensor $$\sigma^{ij}$$ must be symmetric, $$\sigma^{ij}=\sigma^{ji}$$  to balance angular momentum. This reduces the number of unknowns in the stress tensor from nine to six, progress, but we have more to do.
 
 ## Conservation of Energy
 We again begin by considering a material volume moving with the fluid, considering the change in its energy over time. There are two components to the total energy, the <em>kinetic energy</em> associated with the macroscopic velocity $$\mathbf{u}$$ and the <em>internal energy</em> associated with the intensity of random molecular motion relative to the mean velocity. From this Perspective, the total energy of an arbitrary control volume is,
@@ -200,7 +200,7 @@ Luckily, we already have a relationship for the mechanical energy balance throug
 \end{equation}
 Inserting this relationship into Eq. \ref{eq: total energy balance}, and recalling the symmetry of the stress tensor, we obtain an equation for the thermal energy balance,
 
-\begin{equation}
+\begin{equation}\label{eq: thermal energy balance}
 \rho D_t e = \sigma^{ij}E_{ij}-\partial_iq^i,
 \end{equation}
 We have defined the rate-of-strain tensor, $$E_{ij}=\frac{1}{2}\left(\partial_iu_j+\partial_ju_i\right)$$.
@@ -224,7 +224,7 @@ Enthalpy is helpful, but we can use equilibrium thermodynamic relationships to r
 dh = de + pdv + vdp,
 \end{equation}
 where $$v=1/\rho$$ is the specific volume. Via the first law of thermodynamics, 
-\begin{equation}
+\begin{equation}\label{eq: first law of thermodynamics}
 de=\theta dd - p dV,
 \end{equation}
 where $$dd$$ is the change in specific entropy of the system,
@@ -271,7 +271,7 @@ dh = c_p d\theta + \left(v - \theta \frac{dv}{d\theta}|_p \right)dp = c_p d\thet
 \end{equation}
 
 This result allows us to express Eq. \ref{eq: enthalpy balance equation} in terms of $$\theta$$ rather $$h$$,
-\begin{equation}
+\begin{equation}\label{eq: thermal energy balance equation}
 \rho c_p D_t\theta =  p\partial_i u^i + \sigma^{ij}E_{ij}-\partial_iq^i - \frac{\theta}{\rho} \frac{d\rho}{d\theta}\|_p D_t p.
 \end{equation}
 
@@ -291,7 +291,26 @@ Proceeding as usual with the Reynolds transport theorem, continuity equation, an
 \begin{equation}
 \rho D_t s + \partial_i\left(\frac{q^i}{\theta}\right)\geq 0.
 \end{equation}
+Now we employ the thermodynamic relationship, Eq. \ref{eq: first law of thermodynamics}, to remove the entropy,
+\begin{equation}
+\rho \theta D_t s = \rho D_t e -\frac{p}{\rho}D_t \rho.
+\end{equation}
+Substituting $$D_t e$$ using our expression for the thermal energy balance from Eq. \ref{eq: thermal energy balance} and using the continuity equation, Eq. \ref{eq: continuity equation convective derivative form}, we obtain the inequality,
+\begin{equation}
+\sigma^{ij}E_{ij}+p\partial_iu^i - \frac{1}{\theta}q^i\partial_i\theta\geq 0.
+\end{equation}
+Although this result is not instantly helpful, we will see that it aids in obtaining constitutive relationships for the stress tensor and heat flux vector.
 
+## Constitutive Relationships
+Let's pause and take stock of our progress. So far, we have obtained five differential equations from basic principles of mass, momentum, and energy conservation:
+\begin{enumerate}
+\item The continuity equation, Eq. \ref{{eq: continuity equation}}
+\item Cauchy's equation, Eq. \ref{eq: Cauchy momentum equation}
+\item Thermal energy balance equation, Eq. \ref{eq: thermal energy balance equation}
+\end{enumerate}
+We also have a restriction on the symmetry of the stress tensor based on the conservation of angular momentum and an inequality based on the second law of thermodynamics. Unfortunately, our system is still severely undertermined, we have $$14$$ unkowns, $$\rho + u^i + \sigma^{ij} + p + q^i$$, for our five equations. We must find additional relationships in order to determine solutions for our independent variables.
+
+## Fourier's Law
 
 
 ### Sources
