@@ -186,7 +186,7 @@ We already investigated the forces acting on $$V_m(t)$$; the first term on the r
 \left(\text{rate of work done on }V_m(t)\right) = \int_{V_m(t)} dV\ u_if^i + \int _{A _m(t)} dA\ u _i\hat{n} _j\sigma^{ij}.
 \end{equation}
 
-For the second term, we define a <em>surface flux vector</em> $$\mathbf{q}$$ which describes the net flux of internal energy across the surface transferred by random particle motion. We adopt the convention that a flux of head into the material control is positive. Rewriting Eq. {eq: energy conservation schematic form} mathematically,
+For the second term, we define a <em>surface flux vector</em> $$\mathbf{q}$$ which describes the net flux of internal energy across the surface transferred by random particle motion. We adopt the convention that a flux of heat into the material control is positive. Rewriting Eq. {eq: energy conservation schematic form} mathematically,
 \begin{equation}
 D_t\left[\int_{V_m(t)} dV\ \left[\frac{1}{2}\rho u^iu_i + \rho e\right]\right] = \int_{V_m(t)} dV\ u_if^i + \int _{A_m(t)} dA\ u_i\hat{n} _j\sigma^{ij} - \int _{A_m(t)} dA\ \hat{n} _iq^i.
 \end{equation}
@@ -221,53 +221,53 @@ Expressing thermal energy balance in terms of $$h$$,
 ### A Brief Interlude to Thermodynamics
 Enthalpy is helpful, but we can use equilibrium thermodynamic relationships to relate this quantity to the more relevant variables of temperature $$\theta$$ and pressure $$p$$. From the definition of enthalpy, Eq. \ref{eq: enthalpy definition},
 \begin{equation}
-dh = de + pdV + Vdp,
+dh = de + pdv + vdp,
 \end{equation}
-where $$V=1/\rho$$ is the specific volume. Via the first law of thermodyamics, 
+where $$v=1/\rho$$ is the specific volume. Via the first law of thermodyamics, 
 \begin{equation}
-de=\theta dS - p dV,
+de=\theta dd - p dV,
 \end{equation}
-where $$dS$$ is the change in entropy of the system,
+where $$dd$$ is the change in specific entropy of the system,
 \begin{equation}\label{eq: enthalpy differential element}
-dh = \theta dS + Vdp.
+dh = \theta ds + vdp.
 \end{equation}
 
-Now, consider the Gibbs free energy, defined as,
+Now, consider the Gibbs free energy per unit mass, defined as,
 \begin{equation}
-g=h-\theta S.
+g=h-\theta s.
 \end{equation}
 From Eq. \ref{eq: enthalpy differential element},
 \begin{equation}
-dg= Vdp-Sd\theta.
+dg= vdp-sd\theta.
 \end{equation}
 So the change in $$g$$ with respect to $$\theta$$ at a constant pressure is nothing more than the negative entropy,
 \begin{equation}
-\frac{dg}{d\theta}\vline_p = -S,
+\frac{dg}{d\theta}\vline_p = -s,
 \end{equation}
-and similarly, the change in $$g$$ with respect to $$P$$ at a constant temperature is nothing more than the specific volume,
+and similarly, the change in $$g$$ with respect to $$p$$ at a constant temperature is nothing more than the specific volume,
 \begin{equation}
-\frac{dg}{dp}\vline_\theta = V.
+\frac{dg}{dp}\vline_\theta = v.
 \end{equation}
 From these two results, we obtain the Maxwell relation,
 \begin{equation}
--\frac{dS}{dp}\vline_\theta = \frac{dV}{d\theta}\vline_p.
+-\frac{ds}{dp}\vline_\theta = \frac{dv}{d\theta}\vline_p.
 \end{equation}
 Great, we are almost there. Taking the differential element of the entropy,
 \begin{equation}
-dS = \frac{dS}{d\theta}\vline_pd\theta + \frac{dS}{dp}\vline_\theta dp,
+ds = \frac{ds}{d\theta}\vline_pd\theta + \frac{ds}{dp}\vline_\theta dp,
 \end{equation}
-We use our Maxwell relation and the definition of the Specific Heat Capacity at Constant Pressure, $$C_p$$,
+We use our Maxwell relation and the definition of the <em>Specific Heat Capacity at Constant Pressure</em>, $$C_p$$,
 \begin{equation}
-C_p = \frac{de}{d\theta}\vline_p=\theta\frac{dS}{d\theta}\vline_p,
+C_p = \frac{de}{d\theta}\vline_p=\theta\frac{ds}{d\theta}\vline_p,
 \end{equation}
 to find,
 \begin{equation}\label{eq: entropy differential element final}
-dS = \frac{C_p}{\theta}d\theta -\frac{dV}{d\theta}\vline_p dp.
+ds = \frac{C_p}{\theta}d\theta -\frac{dv}{d\theta}\vline_p dp.
 \end{equation}
 
 Finally, we combine Eq. {eq: enthalpy differential element} with Eq. \ref{eq: entropy differential element final} to write the change in enthalpy in terms of the pressure, density, and temperature,
 \begin{equation}
-dh = c_p d\theta + \left(V - \theta \frac{dV}{d\theta}\vline_p \right)dp = c_p d\theta + \left(\frac{1}{\rho} + \frac{\theta}{\rho^2} \frac{d\rho}{d\theta}\vline_p \right)dp.
+dh = c_p d\theta + \left(v - \theta \frac{dv}{d\theta}\vline_p \right)dp = c_p d\theta + \left(\frac{1}{\rho} + \frac{\theta}{\rho^2} \frac{d\rho}{d\theta}\vline_p \right)dp.
 \end{equation}
 
 This result allows us to express Eq. \ref{eq: enthalpy balance equation} in terms of $$\theta$$ rather $$h$$,
@@ -275,6 +275,22 @@ This result allows us to express Eq. \ref{eq: enthalpy balance equation} in term
 \rho c_p D_t\theta =  p\partial_i u^i + \sigma^{ij}E_{ij}-\partial_iq^i - \frac{\theta}{\rho} \frac{d\rho}{d\theta}\vline_p D_t p.
 \end{equation}
 
+The good news is that we now have a relationship between the temperature and our other variables of interest. The bad news is that we are no closer to solving our problem since we have introduced four new variables, $$\theta$$ and the $$3$$ components of $$\mathbf{q}$$ and only one equation. Perhaps the second law of thermodynamics will prove useful.
+
+### The Second Law of Thermodynamics
+The second law states that the entropy change of a system multiplied by the temperature is greater than or equal to the total heat change caused by heat exchange with the system's surroundings. In differential form, this is stated as,
+\begin{equation}
+dS\geq \frac{dQ}{\theta}.
+\end{equation}
+When we apply the second law to our material volume, we find,
+\begin{equation}
+D_t\left[\int_{v_m(t)}dV\ \rho s\right]+\int_{A_m(t)}dA\ \frac{\hat{n}}_iq^i{\theta}\geq 0.
+\end{equation}
+Proceeding as usual with the Reynolds transport theorem, continuity equation, and applying our result to an arbitrary control volume,
+
+\begin{equation}
+\rho D_t s + \partial_i\left(\frac{q^i}{\theta}\right)\geq 0.
+\end{equation}
 
 
 
