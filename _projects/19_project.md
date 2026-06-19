@@ -1,6 +1,6 @@
 ---
 layout: page
-title: On The Navier-Stokes Equations - 6/26
+title: On the Navier-Stokes Equations - 6/26
 description:
 img: 
 importance: 1
