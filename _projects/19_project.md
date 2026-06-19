@@ -70,7 +70,7 @@ To evaluate, observe that any surface element $$dA(t)$$ of $$V _m(t)$$ will move
 \end{equation}
 
 \begin{equation}
-\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right) \right]\right)=\lim_{\delta t\rightarrow 0}\left(\right)
+\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right) \right]\right)=\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[\right]\right)
 \end{equation}
 
 And via the divergence theorem, applied to the surface integral, we obtain the transport theorem,
@@ -146,8 +146,13 @@ D_t\left[\int_{V_m(t)} dV\ \rho\epsilon^i_{jk}x^j u^k \right] =\int_{V_m(t)} dV\
 We have used $$t^k=\hat{n} _l \sigma^{kl}$$. Applying the divergence theorem,
 
 \begin{equation}
+\int_{A_m(t)} dA\ \epsilon^i_{jk}x^j\hat{n} _l \sigma^{kl} = \int _{V_m(t)} dV\ .
+\end{equation}
+
+\begin{equation}
 \int_{A_m(t)} dA\ \epsilon^i_{jk}x^j\hat{n} _l \sigma^{kl} = \int _{V_m(t)} dV\ \left[\epsilon^i_{lk}\sigma^{kl} + \epsilon^i_{jk}x^j\partial_l\sigma^{kl}\right].
 \end{equation}
+
 Inserting this result into Eq. \ref{eq: angular momentum conservation integral form}, and using Eq. {eq: Cauchy momentum equation}, we find
 
 \begin{equation}
