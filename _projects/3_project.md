@@ -3,7 +3,7 @@ layout: page
 title: Elasticity Theory and the Deformation of Two Colliding Disks - 1/25
 description:
 img:
-importance: 4
+importance: 5
 category: Physics
 giscus_comments: false
 toc:
