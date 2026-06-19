@@ -214,7 +214,7 @@ where $$p$$ is the fluid pressure. It follows that, with the continuity equation
 \rho D_t e = \rho D_t h - D_t p + \frac{p}{\rho} D_t\rho =  \rho D_t h - D_t p - p\partial_i u^i.
 \end{equation}
 Expressing thermal energy balance in terms of $$h$$,
-\begin{equation}
+\begin{equation}\label{eq: enthalpy balance equation}
 \rho D_t h = D_t p + p\partial_i u^i + \sigma^{ij}E_{ij}-\partial_iq^i.
 \end{equation}
 
@@ -270,7 +270,10 @@ Finally, we combine Eq. {eq: enthalpy differential element} with Eq. \ref{eq: en
 dh = c_p d\theta + \left(V - \theta \frac{dV}{d\theta}\vline_p \right)dp = c_p d\theta + \left(\frac{1}{\rho} + \frac{\theta}{\rho^2} \frac{d\rho}{d\theta}\vline_p \right)dp.
 \end{equation}
 
-
+This result allows us to express Eq. \ref{eq: enthalpy balance equation} in terms of $$\theta$$ rather $$h$$,
+\begin{equation}
+\rho c_p D_t\theta =  p\partial_i u^i + \sigma^{ij}E_{ij}-\partial_iq^i - \frac{\theta}{\rho} \frac{d\rho}{d\theta}\vline_p D_t p.
+\end{equation}
 
 
 
