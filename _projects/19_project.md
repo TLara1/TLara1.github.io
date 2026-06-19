@@ -70,7 +70,7 @@ To evaluate, observe that any surface element $$dA(t)$$ of $$V _m(t)$$ will move
 \end{equation}
 
 \begin{equation}
-\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right) \right]\right)=\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{A_m(t)} dA\ \right]\right)
+\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right) \right]\right)=\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{A_m(t)} dA\ B\left(t+\delta t\right)u^i\hat{n}_i\delta t  \right]\right)
 \end{equation}
 
 And via the divergence theorem, applied to the surface integral, we obtain the transport theorem,
@@ -151,7 +151,7 @@ D_t\left[\int_{V_m(t)} dV\ \rho\epsilon^i_{jk}x^j u^k \right] =\int_{V_m(t)} dV\
 We have used $$t^k=\hat{n} _l \sigma^{kl}$$. Applying the divergence theorem,
 
 \begin{equation}
-\int_{A_m(t)} dA\ \epsilon^i_{jk}x^j\hat{n} _l \sigma^{kl} = \int _{V_m(t)} dV\ \left[\epsilon^i \right].
+\int_{A_m(t)} dA\ \epsilon^i_{jk}x^j\hat{n} _l \sigma^{kl} = \int _{V_m(t)} dV\ \left[ \epsilon^i_{lk}\sigma^{kl} \right].
 \end{equation}
 
 \begin{equation}
@@ -173,12 +173,14 @@ We again begin by considering a material volume moving with the fluid, consideri
 where $$e$$ is the internal energy per unit mass.
 
 The rate of change of the total energy with time is determined by the principle of energy conservation,
+
 \begin{equation}\label{eq: energy conservation schematic form}
 D_t\left[\int_{V_m(t)} dV\ \left[\frac{1}{2}\rho u^iu_i + \rho e\right]\right] =\left(\text{rate of work done on }V_m(t)\right)
 \end{equation}
 \begin{equation}
-- \left(\text{rate of internal energy flux across }A_m(t)\right).\noname
+-\left(\text{rate of internal energy flux across }A_m(t)\right).\noname
 \end{equation}
+
 We already investigated the forces acting on $$V_m(t)$$; the first term on the right-hand side has a body force and a tangential component,
 \begin{equation}
 \left(\text{rate of work done on }V_m(t)\right) = \int_{V_m(t)} dV\ u_if^i + \int _{A _m(t)} dA\ u _i\hat{n} _j\sigma^{ij}.
