@@ -172,7 +172,7 @@ where $$e$$ is the internal energy per unit mass.
 The rate of change of the total energy with time is determined by the principle of energy conservation,
 
 \begin{equation}\label{eq: energy conservation schematic form}
-D_t\left[\int_{V_m(t)} dV\ \left[\frac{1}{2}\rho u^iu_i + \rho e\right]\right] =\left(\text{rate of work done on }V_m(t)\right)
+D_t\mathcal{E}=D_t\left[\int_{V_m(t)} dV\ \left[\frac{1}{2}\rho u^iu_i + \rho e\right]\right] =\left(\text{rate of work done on }V_m(t)\right)
 \end{equation}
 \begin{equation}
 -\left(\text{rate of internal energy flux across }A_m(t)\right).\nonumber
@@ -356,11 +356,11 @@ Fluids for which this serves as a constitutive model are known as <em>Newtonian 
 
 Finally, inserting Eq. \ref{eq: stress tensor constitutive relation} into our second-law inequality, Eq. \ref{eq: entropy constitutive inequality}, 
 \begin{equation}
-\left(\lambda +\frac{2}{3}\mu\right)\left(E^k_k\right)^2+2\mu \left(E^{ij}-\frac{1}{3}E^k_k\delta^{ij}\right) \left(E_{ij}-\frac{1}{3}E^k_k\delta_{ij}\right) + k\partial_i\theta\partial^i\theta\geq 0.
+\left(\lambda +\frac{2}{3}\mu\right)\left(E^k_k\right)^2+2\mu \left(E^{ij}-\frac{1}{3}E^l_l\delta^{ij}\right) \left(E_{ij}-\frac{1}{3}E^k_k\delta_{ij}\right) + k\partial_i\theta\partial^i\theta\geq 0.
 \end{equation}
 From which we constrain the constants,
 \begin{equation}
-\left(\lambda+\frac{2}{3}\right)\geq 0,\quad\mu\geq0,\quad k\geq0.,
+\left(\lambda+\frac{2}{3}\right)\geq 0,\quad\mu\geq0,\quad k\geq0,
 \end{equation}
 $$\mu$$ is the fluid viscosity and $$\left(\lambda+\frac{2}{3}\right)$$ is known as the bulk viscosity. 
 
@@ -373,7 +373,7 @@ D_t\rho+\rho\partial_iu^i=0,
 \rho D_tu^i=f^i-\partial^ip+\partial^i\left[\left(\lambda+\frac{2}{3}\mu\right)\partial_ju^j\right]+2\partial_j\left[\mu E^{ij}\right]-\frac{2}{3}\partial^i\left[\mu\partial_ju^j\right],
 \end{equation}
 \begin{equation}
-\rho c_p D_t\theta =  \left(\lambda +\frac{2}{3}\mu\right)\left(E^k_k\right)^2+2\mu \left(E^{ij}-\frac{1}{3}E^k_k\delta^{ij}\right) \left(E_{ij}-\frac{1}{3}E^k_k\delta_{ij}\right) + \partial_i\left(k\partial^i\theta\right) - \frac{\theta}{\rho} \frac{d\rho}{d\theta}\|_p D_t p.
+\rho c_p D_t\theta =  \left(\lambda +\frac{2}{3}\mu\right)\left(E^k_k\right)^2+2\mu \left(E^{ij}-\frac{1}{3}E^l_l\delta^{ij}\right) \left(E_{ij}-\frac{1}{3}E^k_k\delta_{ij}\right) + \partial_i\left(k\partial^i\theta\right) - \frac{\theta}{\rho} \frac{d\rho}{d\theta}\|_p D_t p.
 \end{equation}
 These are the continuity equation, the momentum equation, and the equation of thermal energy balance. The most common assumption to make is that of incompressibility, which is a statement that the density is independent of the pressure sch that $$D_t \rho=0$$. This is a very reasonable assumption if the characteristic fluid velocity is much lower than the speed of sound in the fluid, which is usually the case for liquids. Therefore, for an incompressible fluid, $$\partial_iu^i=0$$, and the velocity field is solenoidal.
 
