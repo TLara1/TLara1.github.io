@@ -3,7 +3,7 @@ layout: page
 title: On the Lagrange Planetary Equations - 1/25
 description:
 img: 
-importance: 2
+importance: 3
 category: Physics
 related_publications: false
 toc:
