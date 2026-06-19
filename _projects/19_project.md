@@ -402,5 +402,5 @@ which should look somewhat familiar!
 ### Sources
 These notes follow very closely the first chapter of Leal's excellent book,
 
-Leal G. Advanced Transport Phenomena. Cambridge University Press; 2007.
+_Leal G. Advanced Transport Phenomena. Cambridge University Press; 2007._
 
