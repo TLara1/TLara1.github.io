@@ -874,13 +874,13 @@ The simplified form of our planetary equations, \eqref{simplified lagrange start
 
 ## Sources
 
-These notes a conglomeration of several derivations, I mainly followed Fitzpatrick's 2012 book:
+These notes are a conglomeration of several derivations. I mainly followed Fitzpatrick's 2012 book:
 
 _Fitzpatrick R. An Introduction to Celestial Mechanics. Cambridge University Press; 2012._
 
 But I also consulted a few other sources including
 
-_Modern celestial mechanics : aspects of solar system dynamics, by Alessandro Morbidelli. London: Taylor & Francis, 2002, ISBN 0415279399_
+_Modern celestial mechanics: aspects of solar system dynamics, by Alessandro Morbidelli. London: Taylor & Francis, 2002, ISBN 0415279399_
 
 _Methods of celestial mechanics. Vol. I, Gerhard Beutler. In cooperation with Leos Mervart and Andreas Verdun. Astronomy and Astrophysics Library. Berlin: Springer, ISBN 3-540-40749-9, 2005_
 
