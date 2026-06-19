@@ -204,7 +204,7 @@ Inserting this relationship into Eq. \ref{eq: total energy balance}, and recalli
 We have defined the rate-of-strain tensor, $$E_{ij}=\frac{1}{2}\left(\partial_iu_j+\partial_ju_i\right)$$.
 
 It is easiest to express the thermal energy balance in terms of the specific enthalpy $$h$$, defined as,
-\begin{equation}
+\begin{equation}\label{eq: enthalpy definition}
 h=e+p/\rho,
 \end{equation}
 where $$p$$ is the fluid pressure. It follows that, with the continuity equation,
@@ -215,6 +215,61 @@ Expressing thermal energy balance in terms of $$h$$,
 \begin{equation}
 \rho D_t h = D_t p + p\partial_i u^i + \sigma^{ij}E_{ij}-\partial_iq^i.
 \end{equation}
+
+### A Brief Interlude to Thermodynamics
+Enthalpy is helpful, but we can use equilibrium thermodynamic relationships to relate this quantity to the more relevant variables of temperature $$\theta$$ and pressure $$p$$. From the definition of enthalpy, Eq. \ref{eq: enthalpy definition},
+\begin{equation}
+dh = de + pdV + Vdp,
+\end{equation}
+where $$V=1/\rho$$ is the specific volume. Via the first law of thermodyamics, 
+\begin{equation}
+de=\theta dS - p dV,
+\end{equation}
+where $$dS$$ is the change in entropy of the system,
+\begin{equation}\label{eq: enthalpy differential element}
+dh = \theta dS + Vdp.
+\end{equation}
+
+Now, consider the Gibbs free energy, defined as,
+\begin{equation}
+g=h-\theta S.
+\end{equation}
+From Eq. \ref{eq: enthalpy differential element},
+\begin{equation}
+dg= Vdp-Sd\theta.
+\end{equation}
+So the change in $$g$$ with respect to $$\theta$$ at a constant pressure is nothing more than the negative entropy,
+\begin{equation}
+\frac{dg}{d\theta}\vline_p = -S,
+\end{equation}
+and similarly, the change in $$g$$ with respect to $$P$$ at a constant temperature is nothing more than the specific volume,
+\begin{equation}
+\frac{dg}{dp}\vline_\theta = V.
+\end{equation}
+From these two results, we obtain the Maxwell relation,
+\begin{equation}
+-\frac{dS}{dp}\vline_\theta = \frac{dV}{d\theta}\vline_p.
+\end{equation}
+Great, we are almost there. Taking the differential element of the entropy,
+\begin{equation}
+dS = \frac{dS}{d\theta}\vline_pd\theta + \frac{dS}{dp}\vline_\theta dp,
+\end{equation}
+We use our Maxwell relation and the definition of the Specific Heat Capacity at Constant Pressure, $$C_p$$,
+\begin{equation}
+C_p = \frac{de}{d\theta}\vline_p=\theta\frac{dS}{d\theta}\vline_p,
+\end{equation}
+to find,
+\begin{equation}\label{eq: entropy differential element final}
+dS = \frac{C_p}{\theta}d\theta -\frac{dV}{d\theta}\vline_p dp.
+\end{equation}
+
+Finally, we combine Eq. {eq: enthalpy differential element} with Eq. \ref{eq: entropy differential element final} to write the change in enthalpy in terms of the pressure, density, and temperature,
+\begin{equation}
+dh = c_p d\theta + \left(V - \theta \frac{dV}{d\theta}\vline_p \right)dp = c_p d\theta + \left(\frac{1}{\rho} + \frac{\theta}{\rho^2} \frac{d\rho}{d\theta}\vline_p \right)dp.
+\end{equation}
+
+
+
 
 
 
