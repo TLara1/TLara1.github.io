@@ -354,11 +354,21 @@ A_{ijkl}=\lambda\delta_{ij}\delta_{kl}+\mu\left(\delta_{ik}\delta_{jl}+\delta_{i
 \end{equation}
 With this choice, we find the most general constitutive relation for the stress tensor is,
 \begin{equation}\label{eq: stress tensor constitutive relation} 
-\sigma^{ij}=\left(-p+E^k_k\right)\delta^{ij}+2\mu E^{ij}.
+\sigma^{ij}=\left(-p+\lambda E^k_k\right)\delta^{ij}+2\mu E^{ij}.
 \end{equation}
 Fluids for which this serves as a constitutive model are known as <em>Newtonian fluids</em>. Again, we should remember this relationship is little more than an educated guess. Fortunately, experimental results have verified that most gases and ordinary liquids are fairly Newtonian. Non-Newtonian fluids also very much exist, and their study opens another several cans of complicated worms. 
 
-Finally, inserting Eq. \ref{eq: stress tensor constitutive relation} into our second-law inequality, 
+Finally, inserting Eq. \ref{eq: stress tensor constitutive relation} into our second-law inequality, Eq. \ref{eq: entropy constitutive inequality}, 
+\begin{equation}
+\left(\lambda +\frac{2}{3}\mu\right)\left(E^k_k\right)^2+2\mu \left(E^{ij}-\frac{1}{3}E^k_k\delta^{ij}\right) \left(E_{ij}-\frac{1}{3}E^k_k\delta_{ij}\right) + k\partial_i\theta\partial^i\theta\geq 0.
+\end{equation}
+From which we constrain the constants,
+\begin{equation}
+\left(\lambda+\frac{2}{3}\right)\geq 0,\quad\mu\geq0,\quad k\geq0.,
+\end{equation}
+$$\mu$$ is the fluid viscosity and $$\left(\lambda+\frac{2}{3}\right)$$ is known as the bulk viscosity. 
+
+## The Equations of Motion for A Newtonian Fluid
 
 
 
