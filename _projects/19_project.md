@@ -70,7 +70,7 @@ To evaluate, observe that any surface element $$dA(t)$$ of $$V _m(t)$$ will move
 \end{equation}
 
 \begin{equation}
-\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right) \right]\right)=\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[\right]\right)
+\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right) \right]\right)=\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{A_m(t)} dA\ \right]\right)
 \end{equation}
 
 And via the divergence theorem, applied to the surface integral, we obtain the transport theorem,
@@ -79,7 +79,12 @@ And via the divergence theorem, applied to the surface integral, we obtain the t
 D_t\left[\int_{V_m(t)} dV\ B\left(\mathbf{x}(t),t\right)\right]=\int_{V_m(t)}dV\ \left[\partial_t B + \partial_i\left(B u^i\right)\right].
 \end{equation}
 
-We can immediately see that Eq. \ref{eq: continuity equation integral convective form} combined with Eq. \ref{eq: Reynolds transport theorem} yields the continuity equation Eq. \ref{eq: continuity equation} once again.
+We can immediately see that Eq. \ref{eq: continuity equation integral convective form} combined with Eq. \ref{eq: Reynolds transport theorem} yields the continuity equation Eq. \ref{eq: continuity equation} once again. It is also convenient to write Eq. \ref{eq: continuity equation} in terms of the convective derivative,
+\begin{equation}
+D_t \rho + \rho\partial_iu^i=0.
+\end{equation}
+From this, we see that if we approximate the material derivative of the density to be zero, $$D_t\rho=0$$, the continuity equation reduces to the incompressibility assumption, $$\partial_iu^i=0$$ for fluids.
+
 
 ## The Momentum Equation
 
@@ -146,7 +151,7 @@ D_t\left[\int_{V_m(t)} dV\ \rho\epsilon^i_{jk}x^j u^k \right] =\int_{V_m(t)} dV\
 We have used $$t^k=\hat{n} _l \sigma^{kl}$$. Applying the divergence theorem,
 
 \begin{equation}
-\int_{A_m(t)} dA\ \epsilon^i_{jk}x^j\hat{n} _l \sigma^{kl} = \int _{V_m(t)} dV\ .
+\int_{A_m(t)} dA\ \epsilon^i_{jk}x^j\hat{n} _l \sigma^{kl} = \int _{V_m(t)} dV\ \left[\epsilon^i \right].
 \end{equation}
 
 \begin{equation}
@@ -169,7 +174,10 @@ where $$e$$ is the internal energy per unit mass.
 
 The rate of change of the total energy with time is determined by the principle of energy conservation,
 \begin{equation}\label{eq: energy conservation schematic form}
-D_t\left[\int_{V_m(t)} dV\ \left[\frac{1}{2}\rho u^iu_i + \rho e\right]\right] =\left(\text{rate of work done on }V_m(t)\right) - \left(\text{rate of internal energy flux across }A_m(t)\right).
+D_t\left[\int_{V_m(t)} dV\ \left[\frac{1}{2}\rho u^iu_i + \rho e\right]\right] =\left(\text{rate of work done on }V_m(t)\right)
+\end{equation}
+\begin{equation}
+- \left(\text{rate of internal energy flux across }A_m(t)\right).\noname
 \end{equation}
 We already investigated the forces acting on $$V_m(t)$$; the first term on the right-hand side has a body force and a tangential component,
 \begin{equation}
@@ -182,7 +190,7 @@ D_t\left[\int_{V_m(t)} dV\ \left[\frac{1}{2}\rho u^iu_i + \rho e\right]\right] =
 \end{equation}
 Proceeding as usual, employing the divergence theorem, the Reynolds transport theorem, mass conservation, and setting the integrand to $$0$$, we find,
 \begin{equation}\label{eq: total energy balance}
-\rho\D_t\left[\frac{1}{2} u^iu_i +  e\right]=\partial_i\left(u_j\sigma^{ij}\right)+u_if^i-\partial_iq^i.
+\rho D_t\left[\frac{1}{2} u^iu_i +  e\right]=\partial_i\left(u_j\sigma^{ij}\right)+u_if^i-\partial_iq^i.
 \end{equation}
 Luckily, we already have a relationship for the mechanical energy balance through Eq. \ref{eq: Cauchy momentum equation},
 \begin{equation}
