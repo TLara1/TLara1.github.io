@@ -373,10 +373,29 @@ D_t\rho+\rho\partial_iu^i=0,
 \rho D_tu^i=f^i-\partial^ip+\partial^i\left[\left(\lambda+\frac{2}{3}\mu\right)\partial_ju^j\right]+2\partial_j\left[\mu E^{ij}\right]-\frac{2}{3}\partial^i\left[\mu\partial_ju^j\right],
 \end{equation}
 \begin{equation}
-\rho c_p D_t\theta =  \left(\lambda +\frac{2}{3}\mu\right)\left(E^k_k\right)^2+2\mu \left(E^{ij}-\frac{1}{3}E^k_k\delta^{ij}\right) \left(E_{ij}-\frac{1}{3}E^k_k\delta_{ij}\right) + k\partial_i\theta\partial^i\theta - \frac{\theta}{\rho} \frac{d\rho}{d\theta}\|_p D_t p.
+\rho c_p D_t\theta =  \left(\lambda +\frac{2}{3}\mu\right)\left(E^k_k\right)^2+2\mu \left(E^{ij}-\frac{1}{3}E^k_k\delta^{ij}\right) \left(E_{ij}-\frac{1}{3}E^k_k\delta_{ij}\right) + \partial_i\left(k\partial^i\theta\right) - \frac{\theta}{\rho} \frac{d\rho}{d\theta}\|_p D_t p.
+\end{equation}
+These are the continuity equation, the momentum equation, and the equation of thermal energy balance. The most common assumption to make is that of incompressibility, which is a statement that the density is independent of the pressure sch that $$D_t \rho=0$$. This is a very reasonable assumption if the characteristic fluid velocity is much lower than the speed of sound in the fluid, which is usually the case for liquids. Therefore, for an incompressible fluid, $$\partial_iu^i=0$$, and the velocity field is solenoidal.
+
+For an incompressible fluid, our equations simplify significantly, 
+\begin{equation}
+\partial_iu^i=0,
+\end{equation}
+\begin{equation}
+\rho D_tu^i=f^i-\partial^ip+2\partial_j\left[\mu E^{ij}\right],
+\end{equation}
+\begin{equation}
+\rho c_p D_t\theta = 2\mu E^{ij}E_{ij} + \partial_i\left(k\partial^i\theta\right) - \frac{\theta}{\rho} \frac{d\rho}{d\theta}\|_p D_t p.
 \end{equation}
 
-
+For a final simplification, if we assume the fluid is also isothermal and we assume that the viscosity can be approximated as constant, we obtain the **Navier-Stokes equations** for an incompressible, isothermal fluid,
+\begin{equation}
+\rho\partial_iu^i=0,
+\end{equation}
+\begin{equation}
+\rho D_tu^i=f^i-\partial^ip+\mu\partial^j\partial_ju^i,
+\end{equation}
+which should look somewhat familiar!
 
 ### Sources
 
