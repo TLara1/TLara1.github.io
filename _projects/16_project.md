@@ -3,7 +3,7 @@ layout: page
 title: On the Schwarzchild and Kerr Metrics - 12/25
 description:
 img: 
-importance: 1
+importance: 2
 category: Physics
 related_publications: false
 toc:
