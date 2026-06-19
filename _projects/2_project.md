@@ -3,7 +3,7 @@ layout: page
 title: On the Precession of Mercury's Perihelion - 1/25
 description:
 img: 
-importance: 3
+importance: 4
 category: Physics
 giscus_comments: false
 toc:
@@ -15,7 +15,7 @@ One of the earliest triumphs of Einstein's Theory of Relativity was the correct 
 
 ## I. Bessel Functions
 ### I.I Introduction to Bessel Functions
-Here we discuss Bessel Functions and their series expansions, which will help in our later analysis of orbital elements. Bessel functions, $$J_n(x)$$, of the first kind are defined as follows:
+Here, we discuss Bessel Functions and their series expansions, which will help in our later analysis of orbital elements. Bessel functions, $$J_n(x)$$, of the first kind are defined as follows:
 \begin{equation} \label{bessel definition}
     g(x,t) \equiv e^{\frac{x}{2}\left(t-\frac{1}{t}\right)} = \sum_{n=-\infty}^{\infty}J_n(x)t^n
 \end{equation}
