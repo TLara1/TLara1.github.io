@@ -3,7 +3,7 @@ layout: page
 title: On the Relativistic Euler Equations - 1/25
 description:
 img:
-importance: 4
+importance: 7
 category: Physics
 toc:
   beginning: true
