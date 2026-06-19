@@ -152,7 +152,7 @@ D_t\left[\int_{V_m(t)} dV\ \rho\epsilon^i_{jk}x^j u^k \right] =\int_{V_m(t)} dV\
 We have used $$t^k=\hat{n} _l \sigma^{kl}$$. Applying the divergence theorem,
 
 \begin{equation}
-\int_{A_m(t)} dA\ \epsilon^i _{jk}x^j\hat{n} _l \sigma^{kl} = \int _{V _m(t)} dV\ \left[ \epsilon^i _{lk} \sigma^{kl} \right].
+\int_{A_m(t)} dA\ \epsilon^i _{jk}x^j\hat{n} _l \sigma^{kl} = \int _{V _m(t)} dV\ \left[ \epsilon^i _{lk} \sigma^{kl} + \epsilon^i _{jk} \right].
 \end{equation}
 
 \begin{equation}
@@ -266,7 +266,7 @@ to find,
 ds = \frac{C_p}{\theta}d\theta -\frac{dv}{d\theta}|_p dp.
 \end{equation}
 
-Finally, we combine Eq. {eq: enthalpy differential element} with Eq. \ref{eq: entropy differential element final} to write the change in enthalpy in terms of the pressure, density, and temperature,
+Finally, we combine Eq. \ref{eq: enthalpy differential element} with Eq. \ref{eq: entropy differential element final} to write the change in enthalpy in terms of the pressure, density, and temperature,
 \begin{equation}
 dh = c_p d\theta + \left(v - \theta \frac{dv}{d\theta}|_p \right)dp = c_p d\theta + \left(\frac{1}{\rho} + \frac{\theta}{\rho^2} \frac{d\rho}{d\theta}|_p \right)dp.
 \end{equation}
@@ -305,7 +305,7 @@ Although this result is not instantly helpful, we will see that it aids in obtai
 ## Constitutive Relationships
 Let's pause and take stock of our progress. So far, we have obtained five differential equations from basic principles of mass, momentum, and energy conservation:
 <ol>    
-<li> The continuity equation, Eq. \ref{{eq: continuity equation}}</li>
+<li> The continuity equation, Eq. \ref{eq: continuity equation}</li>
 <li> Cauchy's equation, Eq. \ref{eq: Cauchy momentum equation}</li>
 <li> Thermal energy balance equation, Eq. \ref{eq: thermal energy balance equation}</li>
 </ol>
@@ -342,6 +342,23 @@ From which we conclude that the stress tensor must satisfy,
 \sigma^{ij}=-p\delta^{ij}+\tau^{ij}\left(\mathbf{u}\right),
 \end{equation}
 where $$\tau^{ij}$$ is an unknown element that depends on the fluid velocity and vanishes in the case of zero fluid motion.
+
+Specifically, the deviatoric stress $$\tau^{ij}$$ should be symmetric, and because deviatoric stress should not arise from rigid body motion, depend only on the rate of strain tensor $$E^{ij}$$. We proceed by making a guess, assuming the simplest constitutive relation, with the stress deviator depending linearly on the rate of strain,
+\begin{equation}
+\tau^{ij}=A^{ij}_{kl}E^{kl},
+\end{equation}
+where the fourth-order tensor $$A^{ijkl}$$ is symmetric in its first two indices. The most general isotropic such fourth-order tensor that is invariant under coordinate rotations is given by,
+
+\begin{equation}
+A_{ijkl}=\lambda\delta_{ij}\delta_{kl}+\mu\left(\delta_{ik}\delta_{jl}+\delta_{il}\delta_{jk}\right).
+\end{equation}
+With this choice, we find the most general constitutive relation for the stress tensor is,
+\begin{equation}\label{eq: stress tensor constitutive relation} 
+\sigma^{ij}=\left(-p+E^k_k\right)\delta^{ij}+2\mu E^{ij}.
+\end{equation}
+Fluids for which this serves as a constitutive model are known as <em>Newtonian fluids</em>. Again, we should remember this relationship is little more than an educated guess. Fortunately, experimental results have verified that most gases and ordinary liquids are fairly Newtonian. Non-Newtonian fluids also very much exist, and their study opens another several cans of complicated worms. 
+
+Finally, inserting Eq. \ref{eq: stress tensor constitutive relation} into our second-law inequality, 
 
 
 
