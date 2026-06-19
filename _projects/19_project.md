@@ -226,9 +226,9 @@ dh = de + pdv + vdp,
 \end{equation}
 where $$v=1/\rho$$ is the specific volume. Via the first law of thermodynamics, 
 \begin{equation}\label{eq: first law of thermodynamics}
-de=\theta dd - p dV,
+de=\theta ds - p dV,
 \end{equation}
-where $$dd$$ is the change in specific entropy of the system,
+where $$ds$$ is the change in specific entropy of the system,
 \begin{equation}\label{eq: enthalpy differential element}
 dh = \theta ds + vdp.
 \end{equation}
