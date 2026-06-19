@@ -467,6 +467,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/20_project/";
+            },},{id: "projects-on-the-anomalous-magnetic-moment-of-the-electron-7-26",
+          title: 'On the Anomalous Magnetic Moment of the Electron - 7/26',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/21_project/";
             },},{id: "projects-on-the-precession-of-mercury-39-s-perihelion-1-25",
           title: 'On the Precession of Mercury&amp;#39;s Perihelion - 1/25',
           description: "",
