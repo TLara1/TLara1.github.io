@@ -21,7 +21,7 @@ The desired description of fluid motion is much larger than any molecular length
 With this idea in mind, we go on to derive the governing physics using the classical conservation of mass and energy plus Newton's second and third laws of mechanics.
 
 ## Conservation of Mass
-Consider an arbitrarily chosen volume element of a fixed position and shape. Essentially, a "chunk" of space filled with fluid. At each point on the surface of this volume, there is a mass flux of fluid, $$\rho u^i\hat{n}_i$$, where $$u^i$$ is the local fluid velocity. Choosing $\hat{n}_i$$ as the unit normal to the surface pointing outwards, this flux is negative when fluid enters the volume and positive when it exits. Conservation of mass requires that the total mass in the volume is equal to the imbalance of mass flux in and out of the surface,
+Consider an arbitrarily chosen volume element of a fixed position and shape. Essentially, a "chunk" of space filled with fluid. At each point on the surface of this volume, there is a mass flux of fluid, $$\rho u^i\hat{n}_i$$, where $$u^i$$ is the local fluid velocity. Choosing $$\hat{n}_i$$ as the unit normal to the surface pointing outwards, this flux is negative when fluid enters the volume and positive when it exits. Conservation of mass requires that the total mass in the volume is equal to the imbalance of mass flux in and out of the surface,
 \begin{equation}
 \int_V dV\ \partial_t\rho=-\int _{A} dA\ \rho u^i\hat{n}_i,
 \end{equation}
@@ -66,12 +66,13 @@ and we rewrite the first term as,
 To evaluate, observe that any surface element $$dA(t)$$ of $$V _m(t)$$ will move a distance $$u^i\hat{n}_i\delta t$$ over the time interval $$\delta t$$. So for small time, $$dV\rightarrow dA u^i\hat{n} _i\delta t$$, and our volume intergral over $$V _m(t+\delta t)-V _m(t)$$ can be converted into an integral over the surface of $$V _m(t)$$,
 
 \begin{equation}
-\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right) \right]\right)=\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{A_m(t)} dA\ B\left(t+\delta t\right)u^i\hat{n}_i\delta t \right]\right)=\int_{A_m(t)} dA\ B u^i\hat{n} _i.
+\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right) \right]\right)=\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{A_m(t)} dA\ B\left(t+\delta t\right)u^i\hat{n}_i\delta t  \right]\right)
 \end{equation}
 
 \begin{equation}
-\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{V_m(t+\delta t)-V_m(t)} dV\ B\left(t+\delta t\right) \right]\right)=\lim_{\delta t\rightarrow 0}\left(\frac{1}{\delta t}\left[ \int_{A_m(t)} dA\ B\left(t+\delta t\right)u^i\hat{n}_i\delta t  \right]\right) =\int _{A _m(t)} dA\ B u^i\hat{n} _i.
+=\int _{A _m(t)} dA\ B u^i\hat{n} _i.\nonumber
 \end{equation}
+
 
 And via the divergence theorem, applied to the surface integral, we obtain the transport theorem,
 
@@ -151,7 +152,7 @@ D_t\left[\int_{V_m(t)} dV\ \rho\epsilon^i_{jk}x^j u^k \right] =\int_{V_m(t)} dV\
 We have used $$t^k=\hat{n} _l \sigma^{kl}$$. Applying the divergence theorem,
 
 \begin{equation}
-\int_{A_m(t)} dA\ \epsilon^i _{jk}x^j\hat{n} _l \sigma^{kl} = \int _{V_m(t)} dV\ \left[ \epsilon^i_{lk} \sigma^{kl} \right].
+\int_{A_m(t)} dA\ \epsilon^i _{jk}x^j\hat{n} _l \sigma^{kl} = \int _{V _m(t)} dV\ \left[ \epsilon^i _{lk} \sigma^{kl} \right].
 \end{equation}
 
 \begin{equation}
@@ -284,7 +285,7 @@ dS\geq \frac{dQ}{\theta}.
 \end{equation}
 When we apply the second law to our material volume, we find,
 \begin{equation}
-D_t\left[\int_{v_m(t)}dV\ \rho s\right]+\int_{A_m(t)}dA\ \frac{\hat{n}}_iq^i{\theta}\geq 0.
+D_t\left[\int_{v_m(t)}dV\ \rho s\right]+\int_{A_m(t)}dA\ \frac{\hat{n}_iq^i}{\theta}\geq 0.
 \end{equation}
 Proceeding as usual with the Reynolds transport theorem, continuity equation, and applying our result to an arbitrary control volume,
 
@@ -303,11 +304,11 @@ Although this result is not instantly helpful, we will see that it aids in obtai
 
 ## Constitutive Relationships
 Let's pause and take stock of our progress. So far, we have obtained five differential equations from basic principles of mass, momentum, and energy conservation:
-\begin{enumerate}
-\item The continuity equation, Eq. \ref{{eq: continuity equation}}
-\item Cauchy's equation, Eq. \ref{eq: Cauchy momentum equation}
-\item Thermal energy balance equation, Eq. \ref{eq: thermal energy balance equation}
-\end{enumerate}
+<ol>    
+<li> The continuity equation, Eq. \ref{{eq: continuity equation}}</li>
+<li> Cauchy's equation, Eq. \ref{eq: Cauchy momentum equation}</li>
+<li> Thermal energy balance equation, Eq. \ref{eq: thermal energy balance equation}</li>
+</ol>
 We also have a restriction on the symmetry of the stress tensor based on the conservation of angular momentum and an inequality based on the second law of thermodynamics. Unfortunately, our system is still severely undertermined, we have $$14$$ unkowns, $$\rho + u^i + \sigma^{ij} + p + q^i$$, for our five equations. We must find additional relationships in order to determine solutions for our independent variables.
 
 ## Fourier's Law
