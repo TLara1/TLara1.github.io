@@ -397,5 +397,10 @@ For a final simplification, if we assume the fluid is also isothermal and we ass
 \end{equation}
 which should look somewhat familiar!
 
+## Boundary Conditions
+
 ### Sources
+These notes follow very closely the first chapter of Leal's excellent book,
+
+Leal G. Advanced Transport Phenomena. Cambridge University Press; 2007.
 
