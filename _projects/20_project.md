@@ -31,7 +31,7 @@ That leaves the colloid-fluid interactions. In practice, this interaction is rat
 \end{equation}
 We can extract equations of motion from this Hamiltonian for the colloid,
 \begin{equation}
-M\dot{x}=P,\quad\dot{P}=-V'(x)+\sum_i\omega_i\left(q_i-x\right),
+M\dot{x}=P,\quad\dot{P}=-\partial_xV(x)+\sum_i\omega_i\left(q_i-x\right),
 \end{equation}
 and for the particles,
 \begin{equation}
@@ -53,7 +53,7 @@ q_i^P(t)=\int_0^tds\ f_i(t-s)x(s).
 \end{equation}
 Inserting this solution into Eq. \ref{eq: q harmonic oscillator equation}, we find,
 \begin{equation}
-\ddot{q}_i^P(t)+\omega_i^2q_i^P(t)=f_i(0)\dot{x}(t)+f_i'(0)x(t)+\int_0^tds\ \left[ f_i''(t-s)-\omega_i^2f_i(t-s) \right]x(s)=\omega_i^2x(t).
+\ddot{q}_i^P(t)+\omega_i^2q_i^P(t)=f_i(0)\dot{x}(t)+\partial_xf_i(0)x(t)+\int_0^tds\ \left[ \partial_x^2f_i(t-s)-\omega_i^2f_i(t-s) \right]x(s)=\omega_i^2x(t).
 \end{equation}
 Solving for the Green's function, we see,
 \begin{equation}
@@ -74,12 +74,17 @@ x(t)-q_i(t)=\int_0^tds\ \cos\left(\omega_i\left(t-s\right)\right)\dot{x}(s)+\lef
 \end{equation}
 We return to our momentum equation of motion for the colloid,
 \begin{equation}
-\dot{P}(t)=-V'(x)-\int_0^tds\ \left[\sum_i\omega_i^2\cos\left(\omega_i\left(t-s\right)\right)\frac{P(s)}{M}\right]+\sum_i\left[\omega_ip_i(0)\sin\left(\omega_i t\right)+\omega_i^2\left(q_i(0)-x(0)\right)\cos\left(\omega_i t\right)\right].
+\dot{P}(t)=-\partial_xV(x)-\int_0^tds\ \left[\sum_i\omega_i^2\cos\left(\omega_i\left(t-s\right)\right)\frac{P(s)}{M}\right]+\sum_i\left[\omega_ip_i(0)\sin\left(\omega_i t\right)+\omega_i^2\left(q_i(0)-x(0)\right)\cos\left(\omega_i t\right)\right].
 \end{equation}
 We rewrite in terms of a memory kernel, $$K(t-s)$$ and fluctations depending on the initial condition $$\xi(t)$$,
 \begin{equation}
-\dot{P}(t)=-V'(x)-\int_0^tds\ K(t-s)P(s)]\right]+\xi(t).
+\dot{P}(t)=-\partial_xV(x)-\int_0^tds\ K(t-s)P(s)]\right]+\xi(t),
 \end{equation}
+with,
+\begin{equation}
+K(t-s)=\sum_i\frac{\omega_i^2}{M}\cos\left(\omega_i\left(t-s\right)\right),\quad\xi(t)=\sum_i\left[\omega_ip_i(0)\sin\left(\omega_i t\right)+\omega_i^2\left(q_i(0)-x(0)\right)\cos\left(\omega_i t\right)\right].
+\end{equation}
+
 This should begin to look at least a little familiar. Now we take a slight deviation to discuss our assumption of the fluid being at equilibrium.
 
 ### Fluctuations and Friction
@@ -93,8 +98,16 @@ where $$\beta$$ is the Boltzmann weight. We use $$\sim$$ since we exclude the no
 \end{equation}
 where
 \begin{equation}
-\mathcal{P}\left(q_i(0)\right)\sim\exp\left[-\beta\frac{\omega_i^2}{2}\left(q_i(0)-x(0)\right)^2\right],\quad \mathcal{P}\left(p_i(0)\right)\sim\exp\left[-\beta\frac{p_i(0)^2}{2}\right]
+\mathcal{P}\left(q_i(0)\right)\sim\exp\left[-\beta\frac{\omega_i^2}{2}\left(q_i(0)-x(0)\right)^2\right],\quad \mathcal{P}\left(p_i(0)\right)\sim\exp\left[-\beta\frac{p_i(0)^2}{2}\right].
 \end{equation}
+
+Now the cool bit. Return to our fluctuation term, $$\xi(t)$$. From our probability distributions, we see that $$\xi(t)$$ is the sum of Gaussian Random Variables (GRVs), so $$\xi(t)$$ must also be a GRV. Since $$\xi(t)$$ is linear in $$p_i(0)$$ and $$q_i(0)-x(0)$$, and the mean of those distributions is zero, the mean of $$\xi(t)$$ is identically zero,
+\begin{equation}
+\langle\xi(t)\rangle=0.
+\end{equation}
+
+
+
 
 ### Sources
 This derivation largely follows from the lecture notes of my Statistical Dynamics II, 8.08, class taught by Professor Julien Tailleur during the 2026 IAP period.
