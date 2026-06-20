@@ -25,7 +25,10 @@ H=\frac{P^2}{2M}+V_{ext}(x)+\sum_iV_{FC}\left(x-q_i\right)+\sum_i\left[\frac{p_i
 
 This is an extremely general Hamiltonian that is rather unapproachable. We simplify by first assuming that the fluid is equilibrated such that we may ignore the impact of the external potential on the fluid particles and remove the fluid-fluid interaction terms for the same reason. Here we have assumed a seperation of scales, in that the time it takes the fluid to equilibriate is much smaller than the time describing any of the dynamics of the colloid. 
 
-That leaves the colloid-fluid interactions. In practice, this interaction is rather complicated, but we will assume it can be approximated as a harmonic oscillator. Effectively, we can imagine all the fluid particles attached to the colloid with little springs, interacting with the colloid and oscillating over time. Setting $$m=1$$ for convenience and assuming $$M\gg1$$,
+That leaves the colloid-fluid interactions. In practice, this interaction is rather complicated, but we will assume it can be approximated as a harmonic oscillator. Effectively, we can imagine all the fluid particles attached to the colloid with little springs, interacting with the colloid and oscillating over time. Setting $$m=1$$ for convenience and assuming $$M\gg1$$, the specfic Hamiltonian becomes,
+\begin{equation}
+\frac{P^2}{2M}+V_{ext}(x)+\sum_i\left[\frac{p_i^2}{2}+\frac{\omega_i^2}{2}\left(q_i-x\right)^2\right].
+\end{equation}
 
 
 
