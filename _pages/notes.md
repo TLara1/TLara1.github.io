@@ -2,9 +2,7 @@
 layout: page
 title: Notes
 permalink: /notes/
-description: A collection of notes I have compiled on interesting topics in physics and mathematics. These are created mostly for my personal reference; they are more concise and less clear than course notes one may find on the same topic. I don't promise these are without mistakes; if you find an error, please don't hesitate to let me know. I provide the dates for the creation of each page; I make fewer guarantees on the quality of notes with their age. I also especially do not gaurantee that the notation I use is consistent throughout. I oft change my preferences on the meanings of symbols and letters, but within each noteset, I think the notation is self-consistent.
-</div>
-In the future, I may provide notes on Oppenheimer-Snyder Stellar Collapse, the Weierstrass function, the electron's magnetic moment, the stability of thin-core vortex rings, or any other neat topic I encounter in my classes or research.
+description: A collection of notes I have compiled on interesting topics in physics and mathematics. These are created mostly for my personal reference; they are more concise and less clear than course notes one may find on the same topic. I don't promise these are without mistakes; if you find an error, please don't hesitate to let me know. I provide the dates for the creation of each page; I make fewer guarantees on the quality of notes with their age. I also especially do not gaurantee that the notation I use is consistent throughout. I oft change my preferences on the meanings of symbols and letters, but within each noteset, I think the notation is self-consistent. In the future, I may provide notes on Oppenheimer-Snyder Stellar Collapse, the Weierstrass function, the electron's magnetic moment, the stability of thin-core vortex rings, or any other neat topic I encounter in my classes or research.
 nav: true
 nav_order: 5
 display_categories: [Physics, Maths]
