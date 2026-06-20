@@ -16,20 +16,53 @@ Statistical Mechanics is cool. It's also shockingly useful. It's one of those ar
 Here we discuss the Langevin and then the Fokker-Planck Equations, obtaining the fun result that a system immersed in a fluid that is at equilibrium also tends towards equilibrium. 
 
 ## Colloid-Fluid Interaction Hamiltonian
-Consider a colloid of mass $$M$$ with position $$x$$ and momentum $$P$$ immersed in a fluid composed of particles with positions $$q$$ and momentema $$p$$. For simplicity, we will treat this problem in one dimension, but our results easily generalise to higher dimensions. In this context, a colloid is essentially just a large partcile relative to the particles composing the fluid, where "large" means a lengthscale of at least three orders of magnitude larger than the fluid particles.
+Consider a colloid of mass $$M$$ with position $$x$$ and momentum $$P$$ immersed in a fluid composed of particles with positions $$q$$ and momenta $p$$. For simplicity, we will treat this problem in one dimension, but our results easily generalise to higher dimensions. In this context, a colloid is essentially just a large particle relative to the particles composing the fluid, where "large" means a length scale of at least three orders of magnitude larger than the fluid particles.
 
-Our Hamiltonian has four sectors. First, the standerd description of the colloid motion, an interaction term between the colloid and the fluid, a fluid particle interaction term, and an interaction term between fluid particles,
+Our Hamiltonian has four sectors. First, the standard description of the colloid motion, an interaction term between the colloid and the fluid, a fluid particle interaction term, and an interaction term between fluid particles,
 \begin{equation}
-H=\frac{P^2}{2M}+V_{ext}(x)+\sum_iV_{FC}\left(x-q_i\right)+\sum_i\left[\frac{p_i^2}{2m}+V_{ext}\left(q_i\right)\right]+\sum_{i\neqj}V_{FF}\left(q_i-q_j\right).
+H=\frac{P^2}{2M}+V_{ext}(x)+\sum_iV_{FC}\left(x-q_i\right)+\sum_i\left[\frac{p_i^2}{2m}+V_{ext}\left(q_i\right)\right]+\sum_{i\neq j}V_{FF}\left(q_i-q_j\right).
 \end{equation}
 
-This is an extremely general Hamiltonian that is rather unapproachable. We simplify by first assuming that the fluid is equilibrated such that we may ignore the impact of the external potential on the fluid particles and remove the fluid-fluid interaction terms for the same reason. Here we have assumed a seperation of scales, in that the time it takes the fluid to equilibriate is much smaller than the time describing any of the dynamics of the colloid. 
+This is an extremely general Hamiltonian that is rather unapproachable. We simplify by first assuming that the fluid is equilibrated, such that we may ignore the impact of the external potential on the fluid particles and remove the fluid-fluid interaction terms for the same reason. Here, we have assumed a separation of scales, in that the time it takes the fluid to equilibrate is much shorter than the time describing any of the dynamics of the colloid. 
 
 That leaves the colloid-fluid interactions. In practice, this interaction is rather complicated, but we will assume it can be approximated as a harmonic oscillator. Effectively, we can imagine all the fluid particles attached to the colloid with little springs, interacting with the colloid and oscillating over time. Setting $$m=1$$ for convenience and assuming $$M\gg1$$, the specfic Hamiltonian becomes,
 \begin{equation}
 \frac{P^2}{2M}+V_{ext}(x)+\sum_i\left[\frac{p_i^2}{2}+\frac{\omega_i^2}{2}\left(q_i-x\right)^2\right].
 \end{equation}
+We can extract equations of motion from this Hamiltonian, for the colloid,
+\begin{equation}
+M\dot{x}=P,\quad\dot{P}=-V'(x)+\sum_i\omega_i\left(q_i-x\right),
+\end{equation}
+and for the particles,
+\begin{equation}
+\dot{q}_i=p_i,\quad\dot{p}_i=-\omega_i^2\left(q_i-x\right).
+\end{equation}
+We will solve the motion of the particles and insert this into the motion of the colloid.
 
+The colloid motion can be expressed as a harmonic oscillator plus a constant driving term,
+\begin{equation}\label{eq: q harmonic oscillator equation}
+\ddot{q}_i=-\omega_i^2q_i+\omega_i^2 x.
+\end{equation}
+The homogenous solution is straightforward, with a cosine term and sine term,
+\begin{equation}
+q_i^H(t)=A_i\cos\left(\omega_i t\right)+B_i\sin\left(\omega_i t\right).
+\end{equation}
+For the particular solution, we use the Green's function solution,
+\begin{equation}
+q_i^P(t)=\int_0^tds\ f_i(t-s)x(s).
+\end{equation}
+Inserting this solution into Eq. \ref{eq: q harmonic oscillator equation}, we find,
+\begin{equation}
+\ddot{q}_i^P(t)+\omega_i^2q_i^P=f_i(0)\dot{x}+f_i'(0)x+\int_0^tds\ \left[ f_i''(t-s)-\omega_i^2f_i(t-s) \right]x(s)=\omega_i^2x.
+\end{equation}
+Solving for the Green's function, we see,
+\begin{equation}
+f_i(t)=\omega_i\sin\left(\omega_i t\right).
+\end{equation}
+And combining the homogenous and particular solutions to solve for $$q_i(t)$$,
+\begin{equation}
+q_i(t)=q_i(0)\cos\left(\omega_i t\right)+\frac{p_i(0)}{\omega_i}\sin\left(\omega_i t\right)+\int_0^tds\ \omega_i\sin\left(\omega_i\left(t-s\right)\right)x(s).
+\end{equation}
 
 
 ### Sources
