@@ -16,7 +16,7 @@ These days, I am, ostensibly, someone who does fluids. I suppose there is not mu
 Because I am a physicist at heart, I use index notation throughout, summing over repeated indices.
 
 ## The Continuum Approximation
-The desired description of fluid motion is much larger than any molecular length scale of the fluid; we desire a description at a <em>macroscopic</em> level. By adopting the so-called <em>continuum hypothesis</em>, we assume that we can describe fluid motion on a much coarser scale than on the molecular scale that is still physically equivalent in the sense that we could obtain the former by some sophisticated averaging process of the latter. It is important to note that we never actually compute macroscopic averages of molecular variables, but this serves only to remind us that any variations in our macroscopic variables must occur on scales much larger than the scales associated with the molecular microstructures of the fluid. It must be possible to choose an averaging volume that is arbitrarily small relative to the macroscale while remaining much larger than the microscale. 
+The desired description of fluid motion is much larger than any molecular length scale of the fluid; we desire a description at a <em>macroscopic</em> level. By adopting the so-called <em>continuum hypothesis</em>, we assume that we can describe fluid motion on a much coarser scale than on the molecular scale that is still physically equivalent in the sense that we could obtain the former by some sophisticated averaging process of the latter. It is important to note that we never actually compute macroscopic averages of molecular variables, but this serves only to remind us that any variations in our macroscopic variables must occur on scales much larger than those associated with the fluid's molecular microstructures. It must be possible to choose an averaging volume that is arbitrarily small relative to the macroscale while remaining much larger than the microscale. 
 
 With this idea in mind, we go on to derive the governing physics using the classical conservation of mass and energy plus Newton's second and third laws of mechanics.
 
@@ -451,7 +451,15 @@ There is also a stress balance condition at the interface. Consider the force ba
 \begin{equation}
 \int_AdA\ \left(\sigma^{ij}-\tilde{\sigma}^{ij}\right)\hat{n}_j + \oint_C dS\ \gamma\hat{t}^i=0,
 \end{equation}
-the negative sign before $$\tilde{\sigma}^{ij}$$ is a consequence of our choice in the unit normal direction. Now consider the vector $$\hat{r}_i$$, which moves clockwise around the boundary $$C$$, as 
+the negative sign before $$\tilde{\sigma}^{ij}$$ is a consequence of our choice in the unit normal direction. Now consider the vector $$\hat{r}_i$$, which moves clockwise around the boundary $$C$$, so the tangent vector is, $$\hat{t}_i=\epsilon _{ijk}\hat{r}^j\hat{n}^k$$, from which is follows,
+\begin{equation}
+\oint_C dS\ \gamma\hat{t}^i=\oint_C dS\ \gamma\epsilon _{ijk}\hat{r}^j\hat{n}^k=\int_AdA\hat{n} _m\epsilon^{mjk}\partial_j\left(\gamma\epsilon^i _{kl}\hat{n}^l\right),
+\end{equation}
+where we have applied Stokes' theorem to turn the boundary integral into a surface integral. Then using the identities of the Levi-Cevita symbol, $$\epsilon^{mjk}\epsilon^i _{kl}=\delta^{ij}\delta^m_l-\delta^{im}\delta^j_l$$,
+\begin{equation}
+\oint_C dS\ \gamma\hat{t}^i=\int_AdA\left[\hat{n} j\partial^i\left(\gamma\hat{n}^j\right)-\hat{n}^i\partial_j\left(\gamma\hat{n}^j\right)\right].
+\end{equation}
+
 
 
 ### Sources
