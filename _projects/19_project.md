@@ -398,6 +398,24 @@ For a final simplification, if we assume the fluid is also isothermal and we ass
 which should look somewhat familiar!
 
 ## Boundary Conditions
+We aren't quite done. Any differential equation system requires boundary conditions to be soluble. Without boundary conditions, we cannot solve our problem. Here we discuss boudnary conditions for different types of interfaces and conditions. 
+
+Consider two phases denoted with velocities $$\mathbf{u}$$ and $$\tilde{\mathbf{u}}$$. The interface itself may also have a velocity denoted by $$\mathbf{u}_I$$. First, at the interface, we must have mass conservation, with the amoutn of "stuff" flowing between phases to match,
+\begin{equation}
+\rho\left(u^i-u^i_I\right)\hat{n}_i=\tilde{\rho}\left(\tilde{u}^i-u^i_I\right)\hat{n}_i\quad\text{at interface}.
+\end{equation}
+This also applies for a phase-transition process, for instance a liquid changing to a solid with a different density. In the case of equal densities between both phases, we simply have a normal velocity matching condition, $$u^i\hat{n}_i=\tilde{u}^i\hat{n}_i$$.
+
+
+
+
+
+
+
+###
+
+
+
 
 ### Sources
 These notes follow very closely the first chapter of Leal's excellent book,
