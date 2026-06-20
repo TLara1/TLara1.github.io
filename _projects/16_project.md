@@ -11,6 +11,7 @@ toc:
 ---
 
 ## Introduction
+What better way of spending a winter break than doing GR? I remember in our GR class, we were shown the Schwarzchild metric briefly and then the Kerr metric was brought up as some flavour of black magic. Luckily, we can derive both with loony tunes quantities of algebra. What follows is not particularly nuanced or sophisticated, just a lot of variable changes and head bashing. 
 
 Here, we derive the Schwarzschild and Kerr Metrics for static and rotating spherical bodies. We use natural units for simplicity, setting $$c=G=1$$.
 
