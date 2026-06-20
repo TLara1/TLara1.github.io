@@ -29,7 +29,7 @@ That leaves the colloid-fluid interactions. In practice, this interaction is rat
 \begin{equation}
 \frac{P^2}{2M}+V_{ext}(x)+\sum_i\left[\frac{p_i^2}{2}+\frac{\omega_i^2}{2}\left(q_i-x\right)^2\right].
 \end{equation}
-We can extract equations of motion from this Hamiltonian, for the colloid,
+We can extract equations of motion from this Hamiltonian for the colloid,
 \begin{equation}
 M\dot{x}=P,\quad\dot{P}=-V'(x)+\sum_i\omega_i\left(q_i-x\right),
 \end{equation}
@@ -41,9 +41,9 @@ We will solve the motion of the particles and insert this into the motion of the
 
 The colloid motion can be expressed as a harmonic oscillator plus a constant driving term,
 \begin{equation}\label{eq: q harmonic oscillator equation}
-\ddot{q}_i=-\omega_i^2q_i+\omega_i^2 x.
+\ddot{q}_i(t)=-\omega_i^2q_i(t)+\omega_i^2 x(t).
 \end{equation}
-The homogenous solution is straightforward, with a cosine term and sine term,
+The homogenous solution is straightforward, with a cosine term and a sine term,
 \begin{equation}
 q_i^H(t)=A_i\cos\left(\omega_i t\right)+B_i\sin\left(\omega_i t\right).
 \end{equation}
@@ -53,17 +53,37 @@ q_i^P(t)=\int_0^tds\ f_i(t-s)x(s).
 \end{equation}
 Inserting this solution into Eq. \ref{eq: q harmonic oscillator equation}, we find,
 \begin{equation}
-\ddot{q}_i^P(t)+\omega_i^2q_i^P=f_i(0)\dot{x}+f_i'(0)x+\int_0^tds\ \left[ f_i''(t-s)-\omega_i^2f_i(t-s) \right]x(s)=\omega_i^2x.
+\ddot{q}_i^P(t)+\omega_i^2q_i^P(t)=f_i(0)\dot{x}(t)+f_i'(0)x(t)+\int_0^tds\ \left[ f_i''(t-s)-\omega_i^2f_i(t-s) \right]x(s)=\omega_i^2x(t).
 \end{equation}
 Solving for the Green's function, we see,
 \begin{equation}
 f_i(t)=\omega_i\sin\left(\omega_i t\right).
 \end{equation}
-And combining the homogenous and particular solutions to solve for $$q_i(t)$$,
+And combining the homogeneous and particular solutions to solve for $$q_i(t)$$,
 \begin{equation}
 q_i(t)=q_i(0)\cos\left(\omega_i t\right)+\frac{p_i(0)}{\omega_i}\sin\left(\omega_i t\right)+\int_0^tds\ \omega_i\sin\left(\omega_i\left(t-s\right)\right)x(s).
 \end{equation}
+Via the integral product rule, we note,
+\begin{equation}
+\int_0^tds\ \omega_i\sin\left(\omega_i\left(t-s\right)\right)x(s)=x(t)-cos\left(\omega_i\left(t\right)\right)x(0)-\int_0^tds\ \cos\left(\omega_i\left(t-s\right)\right)\dot{x}(s).
+\end{equation}
+
+Now computing the colloid motion, first we find,
+\begin{equation}
+x(t)-q_i(t)=\int_0^tds\ \cos\left(\omega_i\left(t-s\right)\right)\dot{x}(s)+\left(x(0)-q_i(0)\right)\cos\left(\omega_i t\right)-\frac{p_i(0)}{\omega_i}\sin\left(\omega_i t\right).
+\end{equation}
+We return to our momentum equation of motion for the colloid,
+\begin{equation}
+\dot{P}(t)=-V'(x)-\int_0^tds\ \left[\sum_i\omega_i^2\cos\left(\omega_i\left(t-s\right)\right)\frac{P(s)}{M}\right]+\sum_i\left[\omega_ip_i(0)\sin\left(\omega_i t\right)+\omega_i^2\left(q_i(0)-x(0)\right)\cos\left(\omega_i t\right)\right].
+\end{equation}
+We rewrite in terms of a memory kernel, $$K(t-s)$$ and fluctations depending on the initial condition $$\xi(t)$$,
+\dot{P}(t)=-V'(x)-\int_0^tds\ K(t-s)P(s)]\right]+\xi(t).
+\end{equation}
+This should begin to look at least a little familiar. Now we take a slight deviation to discuss Gaussian Random Variables (GRVs).
+
+### Gaussian Random Variables
+
 
 
 ### Sources
-This derivation largely follows from the lecture notes of my Stastical Dynamics II, 8.08, class taught by Professor Julien Tailleur during the 2026 IAP period.
+This derivation largely follows from the lecture notes of my Statistical Dynamics II, 8.08, class taught by Professor Julien Tailleur during the 2026 IAP period.
