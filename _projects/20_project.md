@@ -81,7 +81,7 @@ We return to our momentum equation of motion for the colloid,
 \end{equation}
 We rewrite in terms of a memory kernel, $$K(t-s)$$ and fluctations depending on the initial condition $$\xi(t)$$,
 \begin{equation}
-\dot{P}(t)=-\partial_xV(x)-\int_0^tds\ K(t-s)P(s)]\right]+\xi(t),
+\dot{P}(t)=-\partial_xV(x)-\int_0^tds\ K(t-s)P(s)+\xi(t),
 \end{equation}
 with,
 \begin{equation}
