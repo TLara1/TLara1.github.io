@@ -448,7 +448,7 @@ with the sign chosen to be the outer unit normal vector in the context of the pr
 This is the general form of the kinematic boundary condition.
 
 There is also a stress balance condition at the interface. Consider the force balance for an arbitrary fluid surface element, denoted as $$A$$. Denote the unit normal at any point on $$A$$ as $$\hat{n}_i$$, and denote the boundary curve $$C$$ around the edge of the surface $$A$$. Let $$\hat{t}_i$$ be a unit vector that is normal to $$C$$ and tangent to $$\hat{n}_i$$ at each point. The traction imbalance integrated over the surface $$A$$ is compensated by a surface tension force with magnitude $$\gamma$$, known as the interfacial tension. Mathematically, we express this balance as,
-\begin{equation}
+\begin{equation}\label{eq: tension condition BC}
 \int_AdA\ \left(\sigma^{ij}-\tilde{\sigma}^{ij}\right)\hat{n}_j + \oint_C dS\ \gamma\hat{t}^i=0,
 \end{equation}
 the negative sign before $$\tilde{\sigma}^{ij}$$ is a consequence of our choice in the unit normal direction. Now consider the vector $$\hat{r}_i$$, which moves clockwise around the boundary $$C$$, so the tangent vector is, $$\hat{t}_i=\epsilon _{ijk}\hat{r}^j\hat{n}^k$$, from which is follows,
@@ -456,11 +456,23 @@ the negative sign before $$\tilde{\sigma}^{ij}$$ is a consequence of our choice 
 \oint_C dS\ \gamma\hat{t}^i=\oint_C dS\ \gamma\epsilon _{ijk}\hat{r}^j\hat{n}^k=\int_AdA\hat{n} _m\epsilon^{mjk}\partial_j\left(\gamma\epsilon^i _{kl}\hat{n}^l\right),
 \end{equation}
 where we have applied Stokes' theorem to turn the boundary integral into a surface integral. Then using the identities of the Levi-Cevita symbol, $$\epsilon^{mjk}\epsilon^i _{kl}=\delta^{ij}\delta^m_l-\delta^{im}\delta^j_l$$,
+\begin{equation}\label{eq: stokes boundary area tension}
+\oint_C dS\ \gamma\hat{t}^i=\int_AdA\left[\hat{n}_j\partial^i\left(\gamma\hat{n}^j\right)-\hat{n}^i\partial_j\left(\gamma\hat{n}^j\right)\right].
+\end{equation}
+Combining Eq. \ref{eq: tension condition BC} and Eq. \ref{eq: stokes boundary area tension} applied to an arbitrary surface element, and recalling that $$\hat{n}_j\partial^i\left(\hat{n}^j\right)=0$$, we find,
 \begin{equation}
-\oint_C dS\ \gamma\hat{t}^i=\int_AdA\left[\hat{n} j\partial^i\left(\gamma\hat{n}^j\right)-\hat{n}^i\partial_j\left(\gamma\hat{n}^j\right)\right].
+\left(\sigma^{ij}-\tilde{\sigma}^{ij}\right)\hat{n}_j+\left(\partial^i-\hat{n}^i\hat{n}^j\partial_j\right)\left[\gamma\right]-\gamma\hat{n}^i\partial_j\left(\hat{n}^j\right)=0.
+\end{equation}
+These are our final three boundary conditions: one in the normal direction and one each in the two tangential directions. In the normal direction, we have,
+\begin{equation}
+\left(\tilde{p}-p\right)+\left(\tau^{ij}-\tilde{\tau}^{ij}\right)\hat{n}_j\hat{n}_i-\gamma\partial_j\left(\hat{n}^j\right)=0.
+\end{equation}
+For each tangential direction, with tangent vectors components notated as $$\hat{t} _{(k)}^i$$ with $$k=1,2$$,
+\begin{equation}
+\left(\tau^j_i-\tilde{\tau}^j_i\right)\hat{n}_j\hat{t} _{(k)}^i+\hat{t} _{(k)}^i\partial_i\left[ \gamma \right]=0.
 \end{equation}
 
-
+ We have found all the boundary conditions necessary to solve our problem. We can now, at least in principle, tackle any problem involving Newtonian fluids.
 
 ### Sources
 These notes follow very closely the first chapter of Leal's excellent book,
