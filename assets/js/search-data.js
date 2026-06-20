@@ -462,8 +462,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-on-the-fokker-planck-equation-6-26",
-          title: 'On the Fokker-Planck Equation - 6/26',
+            },},{id: "projects-on-the-langevin-and-fokker-planck-equations-6-26",
+          title: 'On the Langevin and Fokker-Planck Equations - 6/26',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/20_project/";
