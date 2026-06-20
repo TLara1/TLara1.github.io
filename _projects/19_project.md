@@ -398,33 +398,60 @@ For a final simplification, if we assume the fluid is also isothermal and we ass
 which should look somewhat familiar!
 
 ## Boundary Conditions
-We aren't quite done. Any differential equation system requires boundary conditions to be soluble. Without boundary conditions, we cannot solve our problem. Here we discuss boudnary conditions for different types of interfaces and conditions. 
+We aren't quite done. Any differential equation system requires boundary conditions to be soluble. Without boundary conditions, we cannot solve our problem. Here, we discuss boundary conditions for different types of interfaces and conditions. 
 
-Consider two phases denoted with velocities $$\mathbf{u}$$ and $$\tilde{\mathbf{u}}$$. The interface itself may also have a velocity denoted by $$\mathbf{u}_I$$. First, at the interface, we must have mass conservation, with the amoutn of "stuff" flowing between phases to match,
-\begin{equation}
+Consider two phases denoted with velocities $$\mathbf{u}$$ and $$\tilde{\mathbf{u}}$$. The interface itself may also have a velocity denoted by $$\mathbf{u}_I$$. First, at the interface, we must have mass conservation, with the amount of "stuff" flowing between phases to match,
+\begin{equation}\label{eq: normal velocity mass conservation BC}
 \rho\left(u^i-u^i_I\right)\hat{n}_i=\tilde{\rho}\left(\tilde{u}^i-u^i_I\right)\hat{n}_i\quad\text{at interface}.
 \end{equation}
-This also applies for a phase-transition process, for instance a liquid changing to a solid with a different density. In the case of equal densities between both phases, we simply have a normal velocity matching condition, $$u^i\hat{n}_i=\tilde{u}^i\hat{n}_i$$.
+This also applies to a phase-transition process, for instance, a liquid changing to a solid with a different density. In the case of equal densities between both phases, we simply have a normal velocity matching condition, $$u^i\hat{n}_i=\tilde{u}^i\hat{n}_i$$.
 
-Now for thermal boundary conditions. First, any phase boundary should keep thermal equilvirum, so it follows that,
+Now for thermal boundary conditions. First, any phase boundary should keep thermal equilibrium, so it follows that,
 \begin{equation}
-\theta=\tidle{\theta}\quad\text{at interface}.
+\theta=\tilde{\theta}\quad\text{at interface}.
 \end{equation}
-The second boundary condition arrives from the conservation of thermal energy at the interface. This requires the total heat flux vectors match at the interface. The heat flux vector for a Fourier Law fluid is defined as,
+The second boundary condition arises from the conservation of thermal energy at the interface. This requires the total heat flux vectors to match at the interface. The heat flux vector for a Fourier Law fluid is defined as,
 \begin{equation}
 j^i=-k\partial^i\theta + \rho\left(u^i-u^i_I\right)C_p\left(\theta-\theta_\text{ref}\right).
 \end{equation}
-The heat flux vecotr is the sum of the surface flux vector and the convective heat flux. Matching the normal componenet of the heat flux vectors at the interface,
+The heat flux vector is the sum of the surface flux vector and the convective heat flux. Matching the normal component of the heat flux vectors at the interface,
 \begin{equation}
 -k\partial^i\hat{n} _i \theta+ \rho\left(u^i-u^i _I\right)\hat{n}_iC _p\left(\theta-\theta _\text{ref}\right)=-\tilde{k}\partial^i\hat{n} _i \tilde{\theta} + \tilde{\rho}\left(\tilde{u}^i-u^i_I\right)\hat{n} _i \tilde{C} _p\left(\tilde{\theta}-\theta _\text{ref}\right)\quad\text{at interface}.
 \end{equation}
+We can also express this relation in terms of the enthalpy $$H$$, replacing the $$C_p\Delta\theta$$ term,
+\begin{equation}
+-k\partial^i\hat{n} _i \theta+ \rho\left(u^i-u^i _I\right)\hat{n}_iH=-\tilde{k}\partial^i\hat{n} _i \tilde{\theta} + \tilde{\rho}\left(\tilde{u}^i-u^i_I\right)\hat{n} _i \tilde{H}\quad\text{at interface}.
+\end{equation}
+Employing Eq. \ref{eq: normal velocity mass conservation BC}, we may express the relation in terms of the <em>latent heat per unit mass</em>, $$\tilde{H}-H$$.
+\begin{equation}
+\tilde{k}\partial^i\hat{n} _i \tilde{\theta}= \rho\left(u^i-u^i_I\right)\hat{n} _i \left(\tilde{H}-H\right)\quad\text{at interface}.
+\end{equation}
+The thermal energy balance at the interface requires an imbalance in the heat flux equal to the change of enthalpy at the material boundary.
 
-Now there may also be dynamic boundaries. These are boundaries that move with the fluid flow
+Next is the tangential velocity match. There is no macroscopic principle underlying this relationship; the <em>no-slip</em> condition is generally accepted based on empirical evidence for Newtonian fluids. 
+\begin{equation}\label{eq: no slip condition}
+u^i-\left(u^i\hat{n}_i\right)\hat{n}^i=\tilde{u}^i-\left(\tilde{u}^i\hat{n}_i\right)\hat{n}^i\quad\text{at interface}.
+\end{equation}
 
+Eq. \ref{eq: normal velocity mass conservation BC} and Eq. \ref{eq: no slip condition} constitute only three conditions for six velocity components; there are a few other considerations to be considered at an interface. Here, we assume the interface is deformable and is between two fluids without a phase change. First, we introduce a scalar function $$\phi\left(\mathbf{x},t\right)$$ describing the interface such that for a set of points lying at the interface, $$\mathbf{x}_s$$,
+\begin{equation}
+\phi\left(\mathbf{x}_s,t\right)=0,
+\end{equation}
+From which it is simple to show that the unit normal to the surface is given by,
+\begin{equation}
+\hat{n}_i=\pm\frac{\partial_i\phi}{\sqrt{\partial_j\phi\partial^j\phi}},
+\end{equation}
+with the sign chosen to be the outer unit normal vector in the context of the problem. Because $$\phi$$ is always zero on the interface, its convective derivative along the interface must be zero,
+\begin{equation}
+\partial_t\phi+u^i\partial_i\phi=0\rightarrow\frac{\partial_t\phi}{\sqrt{\partial_j\phi\partial^j\phi}}+u^i\hat{n}_i=0\quad\text{at interface}.
+\end{equation}
+This is the general form of the kinematic boundary condition.
 
-###
-
-
+There is also a stress balance condition at the interface. Consider the force balance for an arbitrary fluid surface element, denoted as $$A$$. Denote the unit normal at any point on $$A$$ as $$\hat{n}_i$$, and denote the boundary curve $$C$$ around the edge of the surface $$A$$. Let $$\hat{t}_i$$ be a unit vector that is normal to $$C$$ and tangent to $$\hat{n}_i$$ at each point. The traction imbalance integrated over the surface $$A$$ is compensated by a surface tension force with magnitude $$\gamma$$, known as the interfacial tension. Mathematically, we express this balance as,
+\begin{equation}
+\int_AdA\ \left(\sigma^{ij}-\tilde{\sigma}^{ij}\right)\hat{n}_j + \oint_C dS\ \gamma\hat{t}^i=0,
+\end{equation}
+the negative sign before $$\tilde{\sigma}^{ij}$$ is a consequence of our choice in the unit normal direction. Now consider the vector $$\hat{r}_i$$, which moves clockwise around the boundary $$C$$, as 
 
 
 ### Sources
