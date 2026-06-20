@@ -105,8 +105,11 @@ Now the cool bit. Return to our fluctuation term, $$\xi(t)$$. From our probabili
 \begin{equation}
 \langle\xi(t)\rangle=0.
 \end{equation}
-
-
+The covariance is more interesting, consider
+\begin{equation}
+\langle\xi(t)\xi(t')\rangle=\langle\left(\sum_i\left[\omega_ip_i(0)\sin\left(\omega_i t\right)+\omega_i^2\left(q_i(0)-x(0)\right)\cos\left(\omega_i t\right)\right]\right)\left(\sum_j\left[t\rightarrow t'\right]\right),
+\end{equation}
+where $$\left[t\rightarrow t'\right]$$ schematically refers the same bracketed term with $$t$$ swapped to $$t'$$. This looks spooky but is really not too bad.
 
 
 ### Sources
