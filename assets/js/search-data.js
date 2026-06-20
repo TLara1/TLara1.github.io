@@ -507,14 +507,14 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
             },},{id: "projects-research-ideas-misc",
           title: 'research ideas misc',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Research_ideas+Brainstorming/";
+            },},{id: "projects-project-9",
+          title: 'project 9',
+          description: "another project with an image 🎉",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/example_project/";
             },},];
