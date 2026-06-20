@@ -23,7 +23,7 @@ Our Hamiltonian has four sectors. First, the standard description of the colloid
 H=\frac{P^2}{2M}+V_{ext}(x)+\sum_iV_{FC}\left(x-q_i\right)+\sum_i\left[\frac{p_i^2}{2m}+V_{ext}\left(q_i\right)\right]+\sum_{i\neq j}V_{FF}\left(q_i-q_j\right).
 \end{equation}
 
-This is an extremely general Hamiltonian that is rather unapproachable. We simplify by first assuming that the fluid is equilibrated, such that we may ignore the impact of the external potential on the fluid particles and remove the fluid-fluid interaction terms for the same reason. Here, we have assumed a separation of scales, in that the time it takes the fluid to equilibrate is much shorter than the time describing any of the dynamics of the colloid. 
+This is an extremely general Hamiltonian that is rather unapproachable. We simplify by first assuming that the fluid is equilibrated, such that we may ignore the impact of the external potential on the fluid particles and remove the fluid-fluid interaction terms for the same reason. Here, we have assumed a separation of scales, in that the time it takes the fluid to equilibrate is much shorter than the time describing any of the dynamics of the colloid. We will discuss this equilibrium condition more later.
 
 That leaves the colloid-fluid interactions. In practice, this interaction is rather complicated, but we will assume it can be approximated as a harmonic oscillator. Effectively, we can imagine all the fluid particles attached to the colloid with little springs, interacting with the colloid and oscillating over time. Setting $$m=1$$ for convenience and assuming $$M\gg1$$, the specfic Hamiltonian becomes,
 \begin{equation}
@@ -77,13 +77,24 @@ We return to our momentum equation of motion for the colloid,
 \dot{P}(t)=-V'(x)-\int_0^tds\ \left[\sum_i\omega_i^2\cos\left(\omega_i\left(t-s\right)\right)\frac{P(s)}{M}\right]+\sum_i\left[\omega_ip_i(0)\sin\left(\omega_i t\right)+\omega_i^2\left(q_i(0)-x(0)\right)\cos\left(\omega_i t\right)\right].
 \end{equation}
 We rewrite in terms of a memory kernel, $$K(t-s)$$ and fluctations depending on the initial condition $$\xi(t)$$,
+\begin{equation}
 \dot{P}(t)=-V'(x)-\int_0^tds\ K(t-s)P(s)]\right]+\xi(t).
 \end{equation}
-This should begin to look at least a little familiar. Now we take a slight deviation to discuss Gaussian Random Variables (GRVs).
+This should begin to look at least a little familiar. Now we take a slight deviation to discuss our assumption of the fluid being at equilibrium.
 
-### Gaussian Random Variables
-
-
+### Fluctuations and Friction
+We assumed that the fluid is at equilibrium, so at time $$t=0$$ the probability distribution of the fluid position and momenta follows the Boltzmann distribution,
+\begin{equation}
+\mathcal{P}\left(\{q_i(0),p_i(0)\}\right)\sim\exp\left[-\beta H_{F}\right]=\frac{1}{Z}\exp\left[-\beta\sum_i\left(\frac{p_i(0)^2}{2}+\frac{\omega_i}{2}\left(q_i(0)-x(0)\right)^2\right)\right],
+\end{equation}
+where $$\beta$$ is the Boltzmann weight. We use $$\sim$$ since we exclude the normalization factors, which are not significant in this calculation. Because the exponential is separable, the global probability distribution is a product of the probability distributions for each position and momentum,
+\begin{equation}
+\mathcal{P}\left(\{q_i(0),p_i(0)\}\right)\sim\prod_i\mathcal{P}\left(q_i(0)\right)\mathcal{P}\left(p_i(0)\right),
+\end{equation}
+where
+\begin{equation}
+\mathcal{P}\left(q_i(0)\right)\sim\exp\left[-\beta\frac{\omega_i^2}{2}\left(q_i(0)-x(0)\right)^2\right],\quad \mathcal{P}\left(p_i(0)\right)\sim\exp\left[-\beta\frac{p_i(0)^2}{2}\right]
+\end{equation}
 
 ### Sources
 This derivation largely follows from the lecture notes of my Statistical Dynamics II, 8.08, class taught by Professor Julien Tailleur during the 2026 IAP period.
