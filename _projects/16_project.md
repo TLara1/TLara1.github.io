@@ -616,7 +616,7 @@ which is solved by $$e^{\mu_2+\mu_3}=\frac{\rho^2}{\sqrt{\Delta}}$$.
 
 And finally, assembling all the components of our metric and performing a rescaling to remove $$R$$ factors
 \begin{equation}
-ds^2=-e^{2\nu}dt^2+e^{2\psi}\left(Rd\phi-\omega dt\right)^2+e^{2\mu_2}dr^2+R^2e^{\mu_3}d\theta^2
+ds^2=-e^{2\nu}dt^2+e^{2\psi}\left(Rd\phi-\omega dt\right)^2+e^{2\mu_2}dr^2+R^2e^{2\mu_3}d\theta^2
 \end{equation}
 \begin{equation}
 ds^2=-\frac{\Delta\rho^2}{\Sigma^2}dt^2+\frac{\Sigma^2}{\rho^2}\sin^2\left(\theta\right)\left(d\phi-\frac{2aMr}{\Sigma^2}dt\right)^2+\frac{\rho^2}{\Delta}\left(dr^2+\Delta d\theta^2\right)
