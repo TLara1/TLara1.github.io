@@ -406,10 +406,20 @@ Consider two phases denoted with velocities $$\mathbf{u}$$ and $$\tilde{\mathbf{
 \end{equation}
 This also applies for a phase-transition process, for instance a liquid changing to a solid with a different density. In the case of equal densities between both phases, we simply have a normal velocity matching condition, $$u^i\hat{n}_i=\tilde{u}^i\hat{n}_i$$.
 
+Now for thermal boundary conditions. First, any phase boundary should keep thermal equilvirum, so it follows that,
+\begin{equation}
+\theta=\tidle{\theta}\quad\text{at interface}.
+\end{equation}
+The second boundary condition arrives from the conservation of thermal energy at the interface. This requires the total heat flux vectors match at the interface. The heat flux vector for a Fourier Law fluid is defined as,
+\begin{equation}
+j^i=-k\partial^i\theta + \rho\left(u^i-u^i_I\right)C_p\left(\theta-\theta_\text{ref}\right).
+\end{equation}
+The heat flux vecotr is the sum of the surface flux vector and the convective heat flux. Matching the normal componenet of the heat flux vectors at the interface,
+\begin{equation}
+-k\partial^i\hat{n} _i \theta+ \rho\left(u^i-u^i _I\right)\hat{n}_iC _p\left(\theta-\theta _\text{ref}\right)=-\tilde{k}\partial^i\hat{n} _i \tilde{\theta} + \tilde{\rho}\left(\tilde{u}^i-u^i_I\right)\hat{n} _i \tilde{C} _p\left(\tilde{\theta}-\theta _\text{ref}\right)\quad\text{at interface}.
+\end{equation}
 
-
-
-
+Now there may also be dynamic boundaries. These are boundaries that move with the fluid flow
 
 
 ###
