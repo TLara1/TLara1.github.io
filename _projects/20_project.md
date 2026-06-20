@@ -74,7 +74,10 @@ x(t)-q_i(t)=\int_0^tds\ \cos\left(\omega_i\left(t-s\right)\right)\dot{x}(s)+\lef
 \end{equation}
 We return to our momentum equation of motion for the colloid,
 \begin{equation}
-\dot{P}(t)=-\partial_xV(x)-\int_0^tds\ \left[\sum_i\omega_i^2\cos\left(\omega_i\left(t-s\right)\right)\frac{P(s)}{M}\right]+\sum_i\left[\omega_ip_i(0)\sin\left(\omega_i t\right)+\omega_i^2\left(q_i(0)-x(0)\right)\cos\left(\omega_i t\right)\right].
+\dot{P}(t)=-\partial_xV(x)-\int_0^tds\ \left[\sum_i\omega_i^2\cos\left(\omega_i\left(t-s\right)\right)\frac{P(s)}{M}\right]
+\end{equation}
+\begin{equation}
++\sum_i\left[\omega_ip_i(0)\sin\left(\omega_i t\right)+\omega_i^2\left(q_i(0)-x(0)\right)\cos\left(\omega_i t\right)\right].\nonumber
 \end{equation}
 We rewrite in terms of a memory kernel, $$K(t-s)$$ and fluctations depending on the initial condition $$\xi(t)$$,
 \begin{equation}
