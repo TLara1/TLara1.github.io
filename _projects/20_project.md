@@ -15,9 +15,10 @@ Statistical Mechanics is cool. It's also shockingly useful. It's one of those ar
 
 Here we discuss the Langevin and then the Fokker-Planck Equations, obtaining the fun result that a system immersed in a fluid that is at equilibrium also tends towards equilibrium. 
 
-##
+## Colloid-Fluid Interaction Hamiltonian
+
 
 
 
 ### Sources
-
+This derivation largely follows from the lecture notes of my Stastical Dynamics II, 8.08, class taught by Professor Julien Tailleur during the 2026 IAP period.
