@@ -106,11 +106,11 @@ where
 
 Now the cool bit. Return to our fluctuation term, $$\xi(t)$$. From our probability distributions, we see that $$\xi(t)$$ is the sum of Gaussian Random Variables (GRVs), so $$\xi(t)$$ must also be a GRV. Since $$\xi(t)$$ is linear in $$p_i(0)$$ and $$q_i(0)-x(0)$$, and the mean of those distributions is zero, the mean of $$\xi(t)$$ is identically zero,
 \begin{equation}
-\langle\xi(t)\rangle=0.
+\leftlangle\xi(t)\rangle=0.
 \end{equation}
 The covariance is more interesting, consider
 \begin{equation}\label{eq: xi covariance}
-\langle\xi(t)\xi(t')\rangle=\langle\left(\sum_i\left[\omega_ip_i(0)\sin\left(\omega_i t\right)+\omega_i^2\left(q_i(0)-x(0)\right)\cos\left(\omega_i t\right)\right]\right)\left(\sum_j\left[t\rightarrow t'\right]\right)\rangle,
+\langle\xi(t)\xi(t')\rangle=\left\langle\left(\sum_i\left[\omega_ip_i(0)\sin\left(\omega_i t\right)+\omega_i^2\left(q_i(0)-x(0)\right)\cos\left(\omega_i t\right)\right]\right)\left(\sum_j\left[t\rightarrow t'\right]\right)\right\rangle,
 \end{equation}
 where $$\left[t\rightarrow t'\right]$$ schematically refers the same bracketed term with $$t$$ swapped to $$t'$$. This looks spooky but is really not too bad. Firstly, because the momenta for each particle are independent, 
 \begin{equation}
@@ -131,7 +131,7 @@ So, Eq. \ref{eq: xi covariance} simplifies to,
 \langle\xi(t)\xi(t')\rangle=\sum_i\frac{\omega_i^2}{\beta}\left[\sin\left(\omega_i t\right)\sin\left(\omega_i t'\right)+\cos\left(\omega_i t\right)\cos\left(\omega_i t'\right)\right].
 \end{equation}
 This reduces nicely to our memory kernel, Eq. \ref{eq: memory kernel definition}, 
-\begin{equation}\label{eq: xi covariance}
+\begin{equation}
 \langle\xi(t)\xi(t')\rangle=\sum_i\frac{\omega_i^2}{\beta}\cos\left(\omega_i\left(t-t'\right)\right)=\frac{1}{\beta}K(t-t').
 \end{equation}
 We have seen that we can express the fluctuations $$\xi(t)$$ as a Gaussian Random Variable with a covariance given by the memory kernel $$K(t-t')$$.
@@ -161,14 +161,30 @@ Let's begin by considering the motion of a variable driven only by random fluctu
 \dot{x}(t)=\eta(t),
 \end{equation}
 where $$\eta(t)$$ is a GRV as described earlier. We can solve Eq. \ref{eq: ito example variable} formally to find,
-\begin{equation}\label{eq: ito example variable}
+\begin{equation}
 x(t)=x(0)+\int_0^tds\ \eta(s).
 \end{equation}
 Then, taking the time derivative of $$x(t)$$,
 \begin{equation}
-\dot{x}(t)=\lim_{\delta t\rightarrow0}\left[\frac{x\left(t+\delta t\right)-x(t)}{\delta t}\right]=\lim_{\delta t\rightarrow0}\left[\frac{1}{\delta t}\int_{t}^{t+\delta t}ds\ \eta(s)\right]
+\dot{x}(t)=\lim_{\delta t\rightarrow0}\left[\frac{x\left(t+\delta t\right)-x(t)}{\delta t}\right]=\lim_{\delta t\rightarrow0}\left[\frac{1}{\delta t}\int_{t}^{t+\delta t}ds\ \eta(s)\right].
 \end{equation}
+This is not ideal; consider the covaraiance of $$\frac{1}{\delta t}\int_{t}^{t+\delta t}ds\ \eta(s)$$,
+\begin{equation}
+\left\langle\frac{1}{\delta t^2}\int_{t}^{t+\delta t}\int_{t}^{t+\delta t}duds\ \eta(s)\eta(u)\right\rangle=\frac{1}{\delta t^2}\int_{t}^{t+\delta t}\int_{t}^{t+\delta t}duds\ \delta\left(s-u\right)=\frac{1}{\delta t^2}\int_{t}^{t+\delta t}du=\frac{1}{\delta t}.
+\end{equation}
+When we take the limit of $$\delta t\rightarrow0$$, we see the variance of $$\dot{x}$$ is infinite! Formally speaking, $$x(t)$$ is not differentiable, which is the first problem. 
 
+For the second problem, consider,
+\begin{equation}\label{eq: chain rule result naive}
+\left\langle x^2(t)\right\rangle=\int_0^t\int_0^tduds\ \langle\eta(s)\eta(u)\rangle=t.
+\end{equation}
+Now via the chain rule,
+\begin{equation}
+\frac{d}{dt}\left[x^2(t)\right]=2x(t)\dot{x}(t)\ni2\int_0^tds\ \eta(s)\eta(t)\rightarrow\frac{d}{dt}\left[\langle x^2(t)\rangle\right]\sim\langle x(t)\eta(t)\rangle.
+\end{equation}
+Let's think about this. We know $$x(t)$$ is the sum of GRV "pushes" since $$\dot{x}(t)=\eta(t)$$. And because $$\eta(t)$$ is the current Gaussian "push", it should be independent of $$x(t)$$, yielding $$\langle x(t)\eta(t)\rangle=0$$. But that's in contradiction with our chain rule result, Eq. \ref{eq: chain rule result naive}. The second problem with naively applying the rules of calculus to a stochastic variable is that the chain rule is incompatible with causality! 
+
+There are two paths to proceed. Either we modify causality and keep the chain rule, or keep causality and modify the chain rule. Both approaches are valid, but we adopt the second as it is a bit more straightforward. This is known as the Itô prescription.
 
 
 ### Sources
