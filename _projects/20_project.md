@@ -153,7 +153,7 @@ where $$\eta(t)$$ is a Gaussian random variable with zero mean and delta covaria
 \begin{equation}
 \langle\eta(t)\rangle=0,\quad\langle\eta(t)\eta(t')\rangle=\delta(t-t').
 \end{equation}
-This is neat! We have shown that the motion of a colloid immersed in a fluid follows the usual potential gradient plus drag from moving through the fluid plus random thermal fluctuations. However, we will soon see that \ref{eq: langevin equation} is actually disastrous for doing classical calculus, and we will need a whole new machinery to operate on variables that evolve stochastically.
+This is neat! We have shown that the motion of a colloid immersed in a fluid follows the usual potential gradient plus drag from moving through the fluid plus random thermal fluctuations. However, we will soon see that Eq. \ref{eq: langevin equation} is actually disastrous for doing classical calculus, and we will need a whole new machinery to operate on variables that evolve stochastically.
 
 ## Itô Calculus
 Let's begin by considering the motion of a variable driven only by random fluctuations,
@@ -219,7 +219,7 @@ At order $$k=2$$, something interesting happens when we insert our expression fo
 
 In the limit of $$\delta t\rightarrow 0$$, all the terms vanish except for the $$d\eta(t)^2$$ since this term is $$\mathcal{O}(\delta t\right). This leaves,
 \begin{equation}
-\frac{1}{2\delta t}\left(dx^2\partial^2_xf(x))\rightarrow\frac{\partial_x^2f}{2}\left(\frac{d^2\deta}{dt^2}\right).
+\frac{1}{2\delta t}\left(dx^2\partial^2_xf(x)\right)\rightarrow\frac{\partial_x^2f}{2}\left(\frac{d^2\eta}{dt^2}\right).
 \end{equation}
 Now assuyme the covariance of the GRV $$\eta(t)$$ follows $$\langle\eta(t)\eta(t')\rangle=\sigma\delta(t-t')$$, we say $$\frac{d^2\deta}{dt^2}=\sigma$$ to represent the dispersion caused by the stochastic forcing. So, we obtain the Itô chain rule,
 \begin{equation}
@@ -263,18 +263,18 @@ Armed with the Fokker-Planck Equation, we wonder what the steady-state probabili
 
 Our probability distribution is a function of the position, $$x$$, momenta, $$P$$, and time $$t$$, $$\mathcal{P}\left(x,P,t\right)$$. In higher dimensions, the Fokker-Planck Equation is simply summed over all the relevant variables, so applying Eq. \ref{eq: Fokker Planck} to Eq. \ref{eq: langevin two variable},
 \begin{equation}
-\frac{d}{dt}\mathcal{P}=-\partial_x\left(\frac{P}{M}\mathcal{P}\right)-\partial_P\left(-(\partial_xV)\mathcal{P}-\frac{\gamma}{M}P\mathcal{P}-\frac{\gamma}{\beta}\partial_P\mathcal{P}\right)
+\frac{d}{dt}\mathcal{P}=-\partial_x\left(\frac{P}{M}\mathcal{P}\right)-\partial_P\left(-(\partial_xV)\mathcal{P}-\frac{\gamma P}{M}\mathcal{P}-\frac{\gamma}{\beta}\partial_P\mathcal{P}\right)
 \end{equation}
 \begin{equation}
 =-\frac{P}{M}\partial_x\mathcal{P}+\partial_P\left((\partial_xV)\mathcal{P}+\frac{\gamma P}{M}\mathcal{P}+\frac{\gamma}{\beta}\partial_P\mathcal{P}\right).
 \end{equation}
-This is known as Kramer's equation. We are looking for a steady state solution satisfying $$\frac{d}{dt}\mathcal{P}=0$$. To solve, we note that the differential equation looks fairly separable. Substitute the ansatz, $$\mathcal{P}=exp\left[\mathcal{A}(x)+\mathcal{B}(P)\right]$$,
+This is known as Kramer's equation. We are looking for a steady state solution satisfying $$\frac{d}{dt}\mathcal{P}=0$$. To solve, we note that the differential equation looks fairly separable. Substitute the ansatz, $$\mathcal{P}=\exp\left[\mathcal{A}(x)+\mathcal{B}(P)\right]$$,
 \begin{equation}\label{eq: kramers eq}
 -\frac{P}{M}\partial_x\mathcal{A}+(\partial_xV)\partial_P\mathcal{B}+\frac{\gamma}{M}+\frac{\gamma P}{M}\partial_P\mathcal{B}+\frac{\gamma}{\beta}\partial_P^2\mathcal{B}+\frac{\gamma}{\beta}\left(\partial_P\mathcal{B}\right)^2=0.
 \end{equation}
 Comparing the first two terms yields,
 \begin{equation}
-\frac{P}{M}\partial_x\mathcal{A}=(\partial_xV)\partial_P\mathcal{B}\rightarrow\mathcal{A}(x)=CV(x),quad\mathcal{B}(P)=C\frac{P^2}{2M},
+\frac{P}{M}\partial_x\mathcal{A}=(\partial_xV)\partial_P\mathcal{B}\rightarrow\mathcal{A}(x)=CV(x),\quad\mathcal{B}(P)=C\frac{P^2}{2M},
 \end{equation}
 where $$C$$ is an undetermined constant. Using this solution for $$\mathcal{B}$$ in the remaining terms of Eq. \ref{eq: kramers eq},
 \begin{equation}
