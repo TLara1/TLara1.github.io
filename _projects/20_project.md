@@ -109,10 +109,30 @@ Now the cool bit. Return to our fluctuation term, $$\xi(t)$$. From our probabili
 \langle\xi(t)\rangle=0.
 \end{equation}
 The covariance is more interesting, consider
-\begin{equation}
-\langle\xi(t)\xi(t')\rangle=\langle\left(\sum_i\left[\omega_ip_i(0)\sin\left(\omega_i t\right)+\omega_i^2\left(q_i(0)-x(0)\right)\cos\left(\omega_i t\right)\right]\right)\left(\sum_j\left[t\rightarrow t'\right]\right),
+\begin{equation}\label{eq: xi covariance}
+\langle\xi(t)\xi(t')\rangle=\langle\left(\sum_i\left[\omega_ip_i(0)\sin\left(\omega_i t\right)+\omega_i^2\left(q_i(0)-x(0)\right)\cos\left(\omega_i t\right)\right]\right)\left(\sum_j\left[t\rightarrow t'\right]\right)\rangle,
 \end{equation}
-where $$\left[t\rightarrow t'\right]$$ schematically refers the same bracketed term with $$t$$ swapped to $$t'$$. This looks spooky but is really not too bad.
+where $$\left[t\rightarrow t'\right]$$ schematically refers the same bracketed term with $$t$$ swapped to $$t'$$. This looks spooky but is really not too bad. Firstly, because the momenta for each particle are independent, 
+\begin{equation}
+\langle p_i(0)p_j(0)\rangle=\langle p_i(0)\rangle\langle p_j(0)\rangle\quad\text{if }i\neq j,
+\end{equation}
+\begin{equation}
+\langle p_i(0)p_i(0)\rangle=\frac{1}{\beta}.
+\end{equation}
+Similarly, for the positions,
+\begin{equation}
+\langle \left(q_i(0)-x(0)\right)\left(q_j(0)-x(0)\right)\rangle=\langle q_i(0)-x(0)\rangle\langle q_j(0)-x(0)\rangle\quad\text{if }i\neq j,
+\end{equation}
+\begin{equation}
+\langle \left(q_i(0)-x(0)\right)\left(q_i(0)-x(0)\right)\rangle=\frac{1}{\omega_i^2\beta}.
+\end{equation}
+So, Eq. \ref{eq: xi covariance} simplifies to,
+\begin{equation}\label{eq: xi covariance}
+\langle\xi(t)\xi(t')\rangle=\sum_i\left[\right]
+\end{equation}
+
+
+All the terms in Eq. \ref{eq: xi covariance} generally ta
 
 
 ### Sources
