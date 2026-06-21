@@ -4,7 +4,7 @@
     - name: Full Name
       value: Teo Lara
     - name: Languages
-      value: English, Spanish, French
+      value: English, Spanish, (Some) French
 
 - title: Education
   type: time_table
@@ -142,3 +142,11 @@
       year: 2022 - 2023
       description:
         - Planned and executed club meetings and events, including the 2022 OrigaMIT Convention, featuring 100+ attendees and dozens of workshops. 
+
+- title: Software Skills
+  type: time_table
+  contents:
+      items:
+        - Python, C++, Matlab, Mathematica, Gnuplot, Bash, Git, HPC, Paraview, VisIt, LaTeX
+
+        
