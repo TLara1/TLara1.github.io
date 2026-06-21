@@ -247,12 +247,24 @@ Because the probability distribution is properly normalized, we can freely apply
 \frac{d}{dt}\left[\mathcal{P}\left(x,t|x_0,0\right)\right]=-\int dy\ \left[\partial_y\left(\mathcal{P}\left(y,t|x_0,0\right)F(y)\right)\delta\left(y-x\right)\right]+\frac{\sigma}{2}\int dy\ \left[\partial^2_y\left(\mathcal{P}\left(y,t|x_0,0\right)\right)\delta\left(y-x\right)\right].
 \end{equation}
 And evaluating the integrals, we obtain the **Fokker-Planck Equation**,
-\begin{equation}
+\begin{equation}\label{eq: Fokker Planck}
 \frac{d}{dt}\left[\mathcal{P}\left(x,t|x_0,0\right)\right]=\partial_x\left(-F(x)+\frac{\sigma}{2}\partial_x\right)\mathcal{P}\left(x,t|x_0,0\right).
 \end{equation}
 This is just ordinary advection plus a spatial diffusion term arising from the stochastic forcing. Finally, we can return to our result of the fluid-immersed colloid.
 
 ## The Spread of Equilibrium
+Let's return to our Langevin equation written in terms of position and momenta,
+\begin{equation}\label{eq: langevin two variable}
+\dot{x}=\frac{P}{M},q\quad\pot{P}=-\partial_xV(x)-\frac{\gamma}{M}P+\sqrt{\frac{2\gamma}{\beta}}\eta(t).
+\end{equation}
+Our probability distribution is a function of the position, $$x$$, momenta, $$P$$, and time $$t$$, $$\mathcal{P}\left(x,P,t\right)$$. In higher dimensions, the Fokker-Planck Equation is simply summed over all the relevant variables, so applying Eq. \ref{eq: Fokker Planck} to Eq. \ref{eq: langevin two variable},
+\begin{equation}
+\frac{d}{dt}\mathcal{P}=-\partial_x\left(\frac{P}{M}\mathcal{P}\right)-\partial_P\left(-(\partial_xV)\mathcal{P}-\frac{\gamma}{M}P\mathcal{P}-\frac{\gamma}{\beta}\partial_P\mathcal{P}\right)
+\end{equation}
+\begin{equation}
+=-\frac{P}{M}\partial_x\mathcal{P}+\partial_P\left((\partial_xV)\mathcal{P}+\frac{\gamma}{M}P\mathcal{P}+\frac{\gamma}{\beta}\partial_P\mathcal{P}\right).
+\end{equation}
+This is known as Kramer's equation. To solve, we 
 
 
 
