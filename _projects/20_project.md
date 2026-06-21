@@ -250,6 +250,12 @@ And evaluating the integrals, we obtain the **Fokker-Planck Equation**,
 \begin{equation}
 \frac{d}{dt}\left[\mathcal{P}\left(x,t|x_0,0\right)\right]=\partial_x\left(-F(x)+\frac{\sigma}{2}\partial_x\right)\mathcal{P}\left(x,t|x_0,0\right).
 \end{equation}
+This is just ordinary advection plus a spatial diffusion term arising from the stochastic forcing. Finally, we can return to our result of the fluid-immersed colloid.
+
+## The Spread of Equilibrium
+
+
+
 
 ### Sources
 This derivation largely follows from the lecture notes of my Statistical Dynamics II, 8.08, class taught by Professor Julien Tailleur during the 2026 IAP period.
