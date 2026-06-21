@@ -267,11 +267,17 @@ Our probability distribution is a function of the position, $$x$$, momenta, $$P$
 =-\frac{P}{M}\partial_x\mathcal{P}+\partial_P\left((\partial_xV)\mathcal{P}+\frac{\gamma}{M}P\mathcal{P}+\frac{\gamma}{\beta}\partial_P\mathcal{P}\right).
 \end{equation}
 This is known as Kramer's equation. We are looking for a steady state solution satisfying $$\frac{d}{dt}\mathcal{P}=0$$. To solve, we note that the differential equation looks fairly separable. Substitute $$\mathcal{P}=exp\left[\mathcal{A}(x)+\mathcal{B}(P)\right],
-\begin{equation}
--\frac{P}{M}\partial_x\mathcal{A}+\frac{\gamma}{M}+(\partial_xV)\partial_P\mathcal{B}+\frac{\gamma}{M}P\partial_P\mathcal{B}+\frac{\gamma}{\beta}\partial_P^2\mathcal{B}=0
+\begin{equation}\label{eq: kramers eq}
+-\frac{P}{M}\partial_x\mathcal{A}+(\partial_xV)\partial_P\mathcal{B}+\frac{\gamma}{M}+\frac{\gamma}{M}P\partial_P\mathcal{B}+\frac{\gamma}{\beta}\partial_P^2\mathcal{B}=0.
 \end{equation}
-
-
+Comparing the first two terms yields,
+\begin{equation}
+\frac{P}{M}\partial_x\mathcal{A}=(\partial_xV)\partial_P\mathcal{B}\rightarrow\mathcal{A}(x)=CV(x),quad\mathcal{B}(P)=C\frac{P^2}{2M},
+\end{equation}
+where $$C$$ is an undetermined constant. Using this solution for $$\mathcal{B}$$ in the remaining terms of Eq. \ref{eq: kramers eq},
+\begin{equation}
+\frac{\gamma}{M}+C\frac{\gamma}{M^2}P^2+C\frac{\gamma}{M\beta}=0
+\end{equation}
 
 
 
