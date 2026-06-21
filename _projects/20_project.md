@@ -15,7 +15,7 @@ Statistical Mechanics is cool. It's also shockingly useful. It's one of those ar
 
 Here we discuss the Langevin (do not ask me to pronounce that word) and then the Fokker-Planck Equations, obtaining the fun result that a system immersed in a fluid that is at equilibrium also tends towards equilibrium. 
 
-## Colloid-Fluid Interaction Hamiltonian
+## Movement of a Fluid-Immersed Colloid
 Consider a colloid of mass $$M$$ with position $$x$$ and momentum $$P$$ immersed in a fluid composed of particles with positions $$q$$ and momenta $p$$. For simplicity, we will treat this problem in one dimension, but our results easily generalise to higher dimensions. In this context, a colloid is essentially just a large particle relative to the particles composing the fluid, where "large" means a length scale of at least three orders of magnitude larger than the fluid particles.
 
 Our Hamiltonian has four sectors. First, the standard description of the colloid motion, an interaction term between the colloid and the fluid, a fluid particle interaction term, and an interaction term between fluid particles,
@@ -146,14 +146,16 @@ the memory term becomes,
 \int_0^tds\ K(t-s)\dot{x}(s)=\gamma\dot{x}(t).
 \end{equation}
 After consulting Eq. \ref{eq: kernel form langevin}, we arrive at the Langevin equation,
-\begin{equation}
+\begin{equation}\label{eq: langevin equation}
 M\ddot{x}=-\partial_xV(x)-\gamma\dot{x}+\sqrt{\frac{2\gamma}{\beta}}\eta(t),
 \end{equation}
 where $$\eta(t)$$ is a Gaussian random variable with zero mean and delta covariance,
 \begin{equation}
 \langle\eta(t)\rangle=0,quad\langle\eta(t)\eta(t')\rangle=\delta(t-t').
 \end{equation}
+This is neat! We have shown that the motion of a colloid immersed in a fluid follows the usual potential gradient plus drag from moving through the fluid plus random thermal fluctuations. However, we will soon see that \ref{eq: langevin equation} is actually disastrous for doing classical calculus, and we will need a whole new machinery to operate on variables that evolve stochastically.
 
+## It\^o Calculus
 
 
 ### Sources
