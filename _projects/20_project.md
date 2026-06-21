@@ -106,7 +106,7 @@ where
 
 Now the cool bit. Return to our fluctuation term, $$\xi(t)$$. From our probability distributions, we see that $$\xi(t)$$ is the sum of Gaussian Random Variables (GRVs), so $$\xi(t)$$ must also be a GRV. Since $$\xi(t)$$ is linear in $$p_i(0)$$ and $$q_i(0)-x(0)$$, and the mean of those distributions is zero, the mean of $$\xi(t)$$ is identically zero,
 \begin{equation}
-langle\xi(t)\rangle=0.
+\langle\xi(t)\rangle=0.
 \end{equation}
 The covariance is more interesting, consider
 \begin{equation}\label{eq: xi covariance}
@@ -209,12 +209,14 @@ Now expanding $$f$$ via Taylor series,
 \end{equation}
 At order $$k=1$$, we recover the usual chain rule,
 \begin{equation}
-\frac{1}{\delta t}\left(dx\partial_xf(x))\rightarrow\dot{x}\partial_x f,
+\frac{1}{\delta t}\left(dx\partial_xf(x)\right)\rightarrow\dot{x}\partial_x f,
 \end{equation}
+
 At order $$k=2$$, something interesting happens when we insert our expression for $$dx$$, Eq. \ref{eq: def delta x},
 \begin{equation}
-\frac{1}{2\delta t}\left(dx^2\partial^2_xf(x))=\frac{\partial^2_xf}{2\delta t}\left)(F(x)^2\delta t^2+2F(x)d\eta(t)\delta t+d\eta(t)^2+\mathcal{O}\left(\delta t^{5/2}\right)\right).
+\frac{1}{2\delta t}\left(dx^2\partial^2_xf(x)\right)=\frac{\partial^2_xf}{2\delta t}\left)(F(x)^2\delta t^2+2F(x)d\eta(t)\delta t+d\eta(t)^2+\mathcal{O}\left(\delta t^{5/2}\right)\right).
 \end{equation}
+
 In the limit of $$\delta t\rightarrow 0$$, all the terms vanish except for the $$d\eta(t)^2$$ since this term is $$\mathcal{O}(\delta t\right). This leaves,
 \begin{equation}
 \frac{1}{2\delta t}\left(dx^2\partial^2_xf(x))\rightarrow\frac{\partial_x^2f}{2}\left(\frac{d^2\deta}{dt^2}\right).
@@ -255,7 +257,7 @@ This is just ordinary advection plus a spatial diffusion term arising from the s
 ## The Spread of Equilibrium
 Let's return to our Langevin equation written in terms of position and momenta,
 \begin{equation}\label{eq: langevin two variable}
-\dot{x}=\frac{P}{M},q\quad\pot{P}=-\partial_xV(x)-\frac{\gamma}{M}P+\sqrt{\frac{2\gamma}{\beta}}\eta(t).
+\dot{x}=\frac{P}{M},q\quad\dot{P}=-\partial_xV(x)-\frac{\gamma}{M}P+\sqrt{\frac{2\gamma}{\beta}}\eta(t).
 \end{equation}
 Armed with the Fokker-Planck Equation, we wonder what the steady-state probability distribution looks like for a Langevin particle.
 
@@ -264,11 +266,11 @@ Our probability distribution is a function of the position, $$x$$, momenta, $$P$
 \frac{d}{dt}\mathcal{P}=-\partial_x\left(\frac{P}{M}\mathcal{P}\right)-\partial_P\left(-(\partial_xV)\mathcal{P}-\frac{\gamma}{M}P\mathcal{P}-\frac{\gamma}{\beta}\partial_P\mathcal{P}\right)
 \end{equation}
 \begin{equation}
-=-\frac{P}{M}\partial_x\mathcal{P}+\partial_P\left((\partial_xV)\mathcal{P}+\frac{\gamma}{M}P\mathcal{P}+\frac{\gamma}{\beta}\partial_P\mathcal{P}\right).
+=-\frac{P}{M}\partial_x\mathcal{P}+\partial_P\left((\partial_xV)\mathcal{P}+\frac{\gamma P}{M}\mathcal{P}+\frac{\gamma}{\beta}\partial_P\mathcal{P}\right).
 \end{equation}
-This is known as Kramer's equation. We are looking for a steady state solution satisfying $$\frac{d}{dt}\mathcal{P}=0$$. To solve, we note that the differential equation looks fairly separable. Substitute $$\mathcal{P}=exp\left[\mathcal{A}(x)+\mathcal{B}(P)\right],
+This is known as Kramer's equation. We are looking for a steady state solution satisfying $$\frac{d}{dt}\mathcal{P}=0$$. To solve, we note that the differential equation looks fairly separable. Substitute the ansatz, $$\mathcal{P}=exp\left[\mathcal{A}(x)+\mathcal{B}(P)\right]$$,
 \begin{equation}\label{eq: kramers eq}
--\frac{P}{M}\partial_x\mathcal{A}+(\partial_xV)\partial_P\mathcal{B}+\frac{\gamma}{M}+\frac{\gamma}{M}P\partial_P\mathcal{B}+\frac{\gamma}{\beta}\partial_P^2\mathcal{B}=0.
+-\frac{P}{M}\partial_x\mathcal{A}+(\partial_xV)\partial_P\mathcal{B}+\frac{\gamma}{M}+\frac{\gamma P}{M}\partial_P\mathcal{B}+\frac{\gamma}{\beta}\partial_P^2\mathcal{B}+\frac{\gamma}{\beta}\left(\partial_P\mathcal{B}\right)^2=0.
 \end{equation}
 Comparing the first two terms yields,
 \begin{equation}
@@ -276,7 +278,7 @@ Comparing the first two terms yields,
 \end{equation}
 where $$C$$ is an undetermined constant. Using this solution for $$\mathcal{B}$$ in the remaining terms of Eq. \ref{eq: kramers eq},
 \begin{equation}
-\frac{\gamma}{M}+C\frac{\gamma}{M^2}P^2+C\frac{\gamma}{M\beta}=0
+\frac{\gamma}{M}+C\frac{\gamma P^2}{M^2}+C\frac{\gamma}{M\beta}+C^2\frac{\gamma P^2}{\beta M^2}=0
 \end{equation}
 
 
