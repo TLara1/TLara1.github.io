@@ -13,7 +13,7 @@ toc:
 ## Introduction
 Statistical Mechanics is cool. It's also shockingly useful. It's one of those areas of physics that ends up being helpful for a bunch of other areas and for lots of flavours of applied maths. 
 
-Here we discuss the Langevin and then the Fokker-Planck Equations, obtaining the fun result that a system immersed in a fluid that is at equilibrium also tends towards equilibrium. 
+Here we discuss the Langevin (do not ask me to pronounce that word) and then the Fokker-Planck Equations, obtaining the fun result that a system immersed in a fluid that is at equilibrium also tends towards equilibrium. 
 
 ## Colloid-Fluid Interaction Hamiltonian
 Consider a colloid of mass $$M$$ with position $$x$$ and momentum $$P$$ immersed in a fluid composed of particles with positions $$q$$ and momenta $p$$. For simplicity, we will treat this problem in one dimension, but our results easily generalise to higher dimensions. In this context, a colloid is essentially just a large particle relative to the particles composing the fluid, where "large" means a length scale of at least three orders of magnitude larger than the fluid particles.
@@ -25,13 +25,13 @@ H=\frac{P^2}{2M}+V_{ext}(x)+\sum_iV_{FC}\left(x-q_i\right)+\sum_i\left[\frac{p_i
 
 This is an extremely general Hamiltonian that is rather unapproachable. We simplify by first assuming that the fluid is equilibrated, such that we may ignore the impact of the external potential on the fluid particles and remove the fluid-fluid interaction terms for the same reason. Here, we have assumed a separation of scales, in that the time it takes the fluid to equilibrate is much shorter than the time describing any of the dynamics of the colloid. We will discuss this equilibrium condition more later.
 
-That leaves the colloid-fluid interactions. In practice, this interaction is rather complicated, but we will assume it can be approximated as a harmonic oscillator. Effectively, we can imagine all the fluid particles attached to the colloid with little springs, interacting with the colloid and oscillating over time. Setting $$m=1$$ for convenience and assuming $$M\gg1$$, the specfic Hamiltonian becomes,
+That leaves the colloid-fluid interactions. In practice, this interaction is rather complicated, but we will assume it can be approximated as a harmonic oscillator. Effectively, we can imagine all the fluid particles attached to the colloid with little springs, interacting with the colloid and oscillating over time. Setting $$m=1$$ for convenience and assuming $$M\gg1$$, the Hamiltonian becomes,
 \begin{equation}
-\frac{P^2}{2M}+V_{ext}(x)+\sum_i\left[\frac{p_i^2}{2}+\frac{\omega_i^2}{2}\left(q_i-x\right)^2\right].
+H=\frac{P^2}{2M}+V_{ext}(x)+\sum_i\left[\frac{p_i^2}{2}+\frac{\omega_i^2}{2}\left(q_i-x\right)^2\right].
 \end{equation}
 We can extract equations of motion from this Hamiltonian for the colloid,
 \begin{equation}
-M\dot{x}=P,\quad\dot{P}=-\partial_xV(x)+\sum_i\omega_i\left(q_i-x\right),
+M\dot{x}=P,\quad\dot{P}=-\partial_xV(x)+\sum_i\omega_i^2\left(q_i-x\right),
 \end{equation}
 and for the particles,
 \begin{equation}
@@ -65,7 +65,7 @@ q_i(t)=q_i(0)\cos\left(\omega_i t\right)+\frac{p_i(0)}{\omega_i}\sin\left(\omega
 \end{equation}
 Via the integral product rule, we note,
 \begin{equation}
-\int_0^tds\ \omega_i\sin\left(\omega_i\left(t-s\right)\right)x(s)=x(t)-cos\left(\omega_i\left(t\right)\right)x(0)-\int_0^tds\ \cos\left(\omega_i\left(t-s\right)\right)\dot{x}(s).
+\int_0^tds\ \omega_i\sin\left(\omega_i\left(t-s\right)\right)x(s)=x(t)-\cos\left(\omega_i\left(t\right)\right)x(0)-\int_0^tds\ \cos\left(\omega_i\left(t-s\right)\right)\dot{x}(s).
 \end{equation}
 
 Now computing the colloid motion, first we find,
@@ -74,23 +74,23 @@ x(t)-q_i(t)=\int_0^tds\ \cos\left(\omega_i\left(t-s\right)\right)\dot{x}(s)+\lef
 \end{equation}
 We return to our momentum equation of motion for the colloid,
 \begin{equation}
-\dot{P}(t)=-\partial_xV(x)-\int_0^tds\ \left[\sum_i\omega_i^2\cos\left(\omega_i\left(t-s\right)\right)\frac{P(s)}{M}\right]
+\dot{P}(t)=-\partial_xV(x)-\int_0^tds\ \left[\sum_i\omega_i^2\cos\left(\omega_i\left(t-s\right)\right)\dot{x}(s)\right]
 \end{equation}
 \begin{equation}
 +\sum_i\left[\omega_ip_i(0)\sin\left(\omega_i t\right)+\omega_i^2\left(q_i(0)-x(0)\right)\cos\left(\omega_i t\right)\right].\nonumber
 \end{equation}
 We rewrite in terms of a memory kernel, $$K(t-s)$$ and fluctations depending on the initial condition $$\xi(t)$$,
-\begin{equation}
-\dot{P}(t)=-\partial_xV(x)-\int_0^tds\ K(t-s)P(s)+\xi(t),
+\begin{equation}\label{eq: kernel form langevin}
+\dot{P}(t)=-\partial_xV(x)-\int_0^tds\ K(t-s)\dot{x}(s)+\xi(t),
 \end{equation}
 with,
-\begin{equation}
-K(t-s)=\sum_i\frac{\omega_i^2}{M}\cos\left(\omega_i\left(t-s\right)\right),\quad\xi(t)=\sum_i\left[\omega_ip_i(0)\sin\left(\omega_i t\right)+\omega_i^2\left(q_i(0)-x(0)\right)\cos\left(\omega_i t\right)\right].
+\begin{equation}\label{eq: memory kernel definition}
+K(t-s)=\sum_i\omega_i^2\cos\left(\omega_i\left(t-s\right)\right),\quad\xi(t)=\sum_i\left[\omega_ip_i(0)\sin\left(\omega_i t\right)+\omega_i^2\left(q_i(0)-x(0)\right)\cos\left(\omega_i t\right)\right].
 \end{equation}
 
 This should begin to look at least a little familiar. Now we take a slight deviation to discuss our assumption of the fluid being at equilibrium.
 
-### Fluctuations and Friction
+### Simplifying the Fluctuations
 We assumed that the fluid is at equilibrium, so at time $$t=0$$ the probability distribution of the fluid position and momenta follows the Boltzmann distribution,
 \begin{equation}
 \mathcal{P}\left(\{q_i(0),p_i(0)\}\right)\sim\exp\left[-\beta H_{F}\right]=\frac{1}{Z}\exp\left[-\beta\sum_i\left(\frac{p_i(0)^2}{2}+\frac{\omega_i}{2}\left(q_i(0)-x(0)\right)^2\right)\right],
@@ -127,12 +127,33 @@ Similarly, for the positions,
 \langle \left(q_i(0)-x(0)\right)\left(q_i(0)-x(0)\right)\rangle=\frac{1}{\omega_i^2\beta}.
 \end{equation}
 So, Eq. \ref{eq: xi covariance} simplifies to,
+\begin{equation}
+\langle\xi(t)\xi(t')\rangle=\sum_i\frac{\omega_i^2}{\beta}\left[\sin\left(\omega_i t\right)\sin\left(\omega_i t'\right)+\cos\left(\omega_i t\right)\cos\left(\omega_i t'\right)\right].
+\end{equation}
+This reduces nicely to our memory kernel, Eq. \ref{eq: memory kernel definition}, 
 \begin{equation}\label{eq: xi covariance}
-\langle\xi(t)\xi(t')\rangle=\sum_i\left[\right]
+\langle\xi(t)\xi(t')\rangle=\sum_i\frac{\omega_i^2}{\beta}\cos\left(\omega_i\left(t-t'\right)\right)=\frac{1}{\beta}K(t-t').
+\end{equation}
+We have seen that we can express the fluctuations $$\xi(t)$$ as a Gaussian Random Variable with a covariance given by the memory kernel $$K(t-t')$$.
+
+### The Langevin Equation
+The final key is in recalling our assumption that the bath relaxation time is much shorter than the timescale associated with the colloid. This allows us to simplify the memory kernel into a delta function, $$K(t-s)\sim\delta(t-s)$$. Physically, we are saying that because the fluid relaxes quickly to equilibrium relative to the colloid, the "memory" contributions of the fluid are negligible, and we can take its impacts to be instantaneous. Letting,
+\begin{equation}
+K(t-t')=2\gamma\delta\left(t-t'\right),
+\end{equation}
+the memory term becomes,
+\begin{equation}
+\int_0^tds\ K(t-s)\dot{x}(s)=\gamma\dot{x}(t).
+\end{equation}
+After consulting Eq. \ref{eq: kernel form langevin}, we arrive at the Langevin equation,
+\begin{equation}
+M\ddot{x}=-\partial_xV(x)-\gamma\dot{x}+\sqrt{\frac{2\gamma}{\beta}}\eta(t),
+\end{equation}
+where $$\eta(t)$$ is a Gaussian random variable with zero mean and delta covariance,
+\begin{equation}
+\langle\eta(t)\rangle=0,quad\langle\eta(t)\eta(t')\rangle=\delta(t-t').
 \end{equation}
 
-
-All the terms in Eq. \ref{eq: xi covariance} generally ta
 
 
 ### Sources
