@@ -106,7 +106,7 @@ where
 
 Now the cool bit. Return to our fluctuation term, $$\xi(t)$$. From our probability distributions, we see that $$\xi(t)$$ is the sum of Gaussian Random Variables (GRVs), so $$\xi(t)$$ must also be a GRV. Since $$\xi(t)$$ is linear in $$p_i(0)$$ and $$q_i(0)-x(0)$$, and the mean of those distributions is zero, the mean of $$\xi(t)$$ is identically zero,
 \begin{equation}
-\leftlangle\xi(t)\rangle=0.
+langle\xi(t)\rangle=0.
 \end{equation}
 The covariance is more interesting, consider
 \begin{equation}\label{eq: xi covariance}
@@ -145,7 +145,7 @@ the memory term becomes,
 \begin{equation}
 \int_0^tds\ K(t-s)\dot{x}(s)=\gamma\dot{x}(t).
 \end{equation}
-After consulting Eq. \ref{eq: kernel form langevin}, we arrive at the Langevin equation,
+After consulting Eq. \ref{eq: kernel form langevin}, we arrive at the **Langevin equation**,
 \begin{equation}\label{eq: langevin equation}
 M\ddot{x}=-\partial_xV(x)-\gamma\dot{x}+\sqrt{\frac{2\gamma}{\beta}}\eta(t),
 \end{equation}
@@ -195,9 +195,9 @@ where $$\eta(t)$$ is the usual GRV forcing. We are interested in evaluating the 
 dx = x(t+\delta t)-x(t)=\int_t^{t+\delta t}ds\ F(x(s))+\int_t^{t+\delta t}ds\ \eta(s)
 \end{equation}
 \begin{equation}
- =  F(x(t))dt + \mathcal\left(\delta t^2\right) + d\eta(t).\nonumber
+ =  F(x(t))dt + \mathcal{O}\left(\delta t^2\right) + d\eta(t).\nonumber
 \end{equation}
-We have compressed the second term into $$d\eta(t)$$. From Eq. \ref{eq: eta covar problem}, we refer to $$d\eta(t)\sim\mathcal{O}\left(\sqrt{\delta t}\right)$$. This will turn out to be the correction necessary to save the chain rule.
+We have compressed the second term into $$d\eta(t)$$. From Eq. \ref{eq: eta covar problem}, we refer to $$d\eta(t)$$ as proportational to the square root of $$\delta t$$, $$d\eta(t)\sim\mathcal{O}\left(\sqrt{\delta t}\right)$$. This will turn out to be the correction necessary to save the chain rule.
 
 Now taking the derivative of $$f\left(x(t)\right)$$,
 \begin{equation}
@@ -226,10 +226,30 @@ Now assuyme the covariance of the GRV $$\eta(t)$$ follows $$\langle\eta(t)\eta(t
 We have "fixed" the chain rule and can make sense of the derivative of a function of a stochastic variable. Now we extend this perspective to a probability distribution.
 
 ## The Fokker-Planck Equation
-
-
-
-
+It turns out to be much more practical to compute not the path of a single stochastic variable, but the probability distribution of a stochastically forced variable in phase space. Consider $$\mathcal{P}\left(x,t|x_0,0\right)$$, the probability to encounter our particle at location $$x$$ at time $$t$$ given that at time $$t=0$$ the particle inhabited $$x_0$$. This is a time-dependent probability distribution, so we can take a time derivative. First, notice we can rewrite $$\mathcal{P}\left(x,t|x_0,0\right)$$ in terms of a delta function,
+\begin{equation}
+\mathcal{P}\left(x,t|x_0,0\right)=\int dy\ \mathcal{P}\left(y,t|x_0,0\right)\delta(y-x)=\left\langle\delta(y(t)-x)\right\rangle.
+\end{equation}
+Notice that $$y(t)$$ carries the time dependence because we integrate over the variable $$y$$. Taking the time derivative and using our Itô chain rule,
+\begin{equation}
+\frac{d}{dt}\left[\mathcal{P}\left(x,t|x_0,0\right)\right]=\left\langle\frac{d}{dt}\delta(y(t)-x)\right\rangle=\left\langle\dot{y}\partial_y\delta\left(y(t)-x\right)+\frac{\sigma}{2}\partial^2_y\delta\left(y(t)-x\right)\right\rangle.
+\end{equation}
+Using the evolution of the stochastic variable $$\dot{y}=F(y)+\eta(t)$$,
+\begin{equation}
+\frac{d}{dt}\left[\mathcal{P}\left(x,t|x_0,0\right)\right]=\left\langle F(y)\partial_y\delta\left(y(t)-x\right)\right\rangle+\left\langle\partial_y\delta\left(y(t)-x\right)\eta(t)\right\rangle+\left\langle\frac{\sigma}{2}\partial^2_y\delta\left(y(t)-x\right)\right\rangle.
+\end{equation}
+The second term vanishes since it is proportional to $$\langle\eta\rangle=0$$. The other two terms leave us with,
+\begin{equation}
+\frac{d}{dt}\left[\mathcal{P}\left(x,t|x_0,0\right)\right]=\int dy\ \left[\mathcal{P}\left(y,t|x_0,0\right)F(y)\partial_y\delta\left(y-x\right)\right]+\frac{\sigma}{2}\int dy\ \left[\mathcal{P}\left(y,t|x_0,0\right)\partial^2_y\delta\left(y-x\right)\right].
+\end{equation}
+Because the probability distribution is properly normalized, we can freely apply the chain rule to remove the derivatives off the $$\delta$$ functions,
+\begin{equation}
+\frac{d}{dt}\left[\mathcal{P}\left(x,t|x_0,0\right)\right]=-\int dy\ \left[\partial_y\left(\mathcal{P}\left(y,t|x_0,0\right)F(y)\right)\delta\left(y-x\right)\right]+\frac{\sigma}{2}\int dy\ \left[\partial^2_y\left(\mathcal{P}\left(y,t|x_0,0\right)\right)\delta\left(y-x\right)\right].
+\end{equation}
+And evaluating the integrals, we obtain the **Fokker-Planck Equation**,
+\begin{equation}
+\frac{d}{dt}\left[\mathcal{P}\left(x,t|x_0,0\right)\right]=\partial_x\left(-F(x)+\frac{\sigma}{2}\partial_x\right)\mathcal{P}\left(x,t|x_0,0\right).
+\end{equation}
 
 ### Sources
 This derivation largely follows from the lecture notes of my Statistical Dynamics II, 8.08, class taught by Professor Julien Tailleur during the 2026 IAP period.
