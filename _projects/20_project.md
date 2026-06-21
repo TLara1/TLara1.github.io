@@ -257,6 +257,8 @@ Let's return to our Langevin equation written in terms of position and momenta,
 \begin{equation}\label{eq: langevin two variable}
 \dot{x}=\frac{P}{M},q\quad\pot{P}=-\partial_xV(x)-\frac{\gamma}{M}P+\sqrt{\frac{2\gamma}{\beta}}\eta(t).
 \end{equation}
+Armed with the Fokker-Planck Equation, we wonder what the steady-state probability distribution looks like for a Langevin particle.
+
 Our probability distribution is a function of the position, $$x$$, momenta, $$P$$, and time $$t$$, $$\mathcal{P}\left(x,P,t\right)$$. In higher dimensions, the Fokker-Planck Equation is simply summed over all the relevant variables, so applying Eq. \ref{eq: Fokker Planck} to Eq. \ref{eq: langevin two variable},
 \begin{equation}
 \frac{d}{dt}\mathcal{P}=-\partial_x\left(\frac{P}{M}\mathcal{P}\right)-\partial_P\left(-(\partial_xV)\mathcal{P}-\frac{\gamma}{M}P\mathcal{P}-\frac{\gamma}{\beta}\partial_P\mathcal{P}\right)
@@ -264,7 +266,11 @@ Our probability distribution is a function of the position, $$x$$, momenta, $$P$
 \begin{equation}
 =-\frac{P}{M}\partial_x\mathcal{P}+\partial_P\left((\partial_xV)\mathcal{P}+\frac{\gamma}{M}P\mathcal{P}+\frac{\gamma}{\beta}\partial_P\mathcal{P}\right).
 \end{equation}
-This is known as Kramer's equation. To solve, we 
+This is known as Kramer's equation. We are looking for a steady state solution satisfying $$\frac{d}{dt}\mathcal{P}=0$$. To solve, we note that the differential equation looks fairly separable. Substitute $$\mathcal{P}=exp\left[\mathcal{A}(x)+\mathcal{B}(P)\right],
+\begin{equation}
+-\frac{P}{M}\partial_x\mathcal{A}+\frac{\gamma}{M}+(\partial_xV)\partial_P\mathcal{B}+\frac{\gamma}{M}P\partial_P\mathcal{B}+\frac{\gamma}{\beta}\partial_P^2\mathcal{B}=0
+\end{equation}
+
 
 
 
