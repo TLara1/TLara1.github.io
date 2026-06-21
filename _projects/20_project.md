@@ -278,10 +278,13 @@ Comparing the first two terms yields,
 \end{equation}
 where $$C$$ is an undetermined constant. Using this solution for $$\mathcal{B}$$ in the remaining terms of Eq. \ref{eq: kramers eq},
 \begin{equation}
-\frac{\gamma}{M}+C\frac{\gamma P^2}{M^2}+C\frac{\gamma}{M\beta}+C^2\frac{\gamma P^2}{\beta M^2}=0
+\frac{\gamma}{M}+C\frac{\gamma P^2}{M^2}+C\frac{\gamma}{M\beta}+C^2\frac{\gamma P^2}{\beta M^2}=0,
 \end{equation}
-
-
+and we see $$C=-\beta$$. Therefore, the solution for the probability distribution is,
+\begin{equation}
+\mathcal{P}\left(x,P,t\right)=\exp\left[-\beta\left(\frac{P^2}{2M}+V(x)\right)\right]=\exp\left[-\beta H_C\right],
+\end{equation}
+where $$H_C$$ is the Hamiltonian of the undisturbed colloid. The steady state probability distribution of the colloid in a fluid is the Boltzmann distribution for the colloid Hamiltonian! This is a very interesting result, as it means that the equilibrium of the fluid is "contagious." Because the fluid is at equilibrium, the colloid will move towards equilibrium as well, towards the steady-state Boltzmann distribution.
 
 ### Sources
 This derivation largely follows from the lecture notes of my Statistical Dynamics II, 8.08, class taught by Professor Julien Tailleur during the 2026 IAP period.
