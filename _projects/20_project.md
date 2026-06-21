@@ -151,7 +151,7 @@ M\ddot{x}=-\partial_xV(x)-\gamma\dot{x}+\sqrt{\frac{2\gamma}{\beta}}\eta(t),
 \end{equation}
 where $$\eta(t)$$ is a Gaussian random variable with zero mean and delta covariance,
 \begin{equation}
-\langle\eta(t)\rangle=0,quad\langle\eta(t)\eta(t')\rangle=\delta(t-t').
+\langle\eta(t)\rangle=0,\quad\langle\eta(t)\eta(t')\rangle=\delta(t-t').
 \end{equation}
 This is neat! We have shown that the motion of a colloid immersed in a fluid follows the usual potential gradient plus drag from moving through the fluid plus random thermal fluctuations. However, we will soon see that \ref{eq: langevin equation} is actually disastrous for doing classical calculus, and we will need a whole new machinery to operate on variables that evolve stochastically.
 
