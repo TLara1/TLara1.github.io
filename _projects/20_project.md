@@ -155,7 +155,20 @@ where $$\eta(t)$$ is a Gaussian random variable with zero mean and delta covaria
 \end{equation}
 This is neat! We have shown that the motion of a colloid immersed in a fluid follows the usual potential gradient plus drag from moving through the fluid plus random thermal fluctuations. However, we will soon see that \ref{eq: langevin equation} is actually disastrous for doing classical calculus, and we will need a whole new machinery to operate on variables that evolve stochastically.
 
-## It\^o Calculus
+## Itô Calculus
+Let's begin by considering the motion of a variable driven only by random fluctuations,
+\begin{equation}\label{eq: ito example variable}
+\dot{x}(t)=\eta(t),
+\end{equation}
+where $$\eta(t)$$ is a GRV as described earlier. We can solve Eq. \ref{eq: ito example variable} formally to find,
+\begin{equation}\label{eq: ito example variable}
+x(t)=x(0)+\int_0^tds\ \eta(s).
+\end{equation}
+Then, taking the time derivative of $$x(t)$$,
+\begin{equation}
+\dot{x}(t)=\lim_{\delta t\rightarrow0}\left[\frac{x\left(t+\delta t\right)-x(t)}{\delta t}\right]=\lim_{\delta t\rightarrow0}\left[\frac{1}{\delta t}\int_{t}^{t+\delta t}ds\ \eta(s)\right]
+\end{equation}
+
 
 
 ### Sources
