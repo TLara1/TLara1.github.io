@@ -13,7 +13,7 @@
       institution: Massachusetts Institute of Technology, Cambridge, Massachusetts
       year: 2022 - 2026
       description:
-        - Majoring in Physics and Applied Mathematics
+        - Bachelor of Science in Physics, Bachelor of Science in Mathematics
         - 5.0/5.0 GPA
     - title: International Baccalaureate Recipient
       institution: Decatur High School, Decatur, Georgia
@@ -27,13 +27,13 @@
     - title: Undergraduate Researcher with the Dunkel Group (SPUR Program 2025)
       Faculty Supervisor: Jörn Dunkel
       institution: Massachusetts Institute of Technology
-      year: 2025
+      year: 2025 - 2026
       description:
         - Developing high-fidelity fluid–structure interaction simulations in IBAMR to analyse jellyfish propulsion and feeding efficiency.
     - title: Undergraduate Researcher with the Kamrin Solid Modelling Group
       Faculty Supervisor: Ken Kamrin
       institution: Massachusetts Institute of Technology and University of California, Berkeley
-      year: 2023 - 2025
+      year: 2023 - 2026
       description:
         - Creating advanced Eulerian computational frameworks to model soft solid–fluid interactions using reference map techniques.
     - title: Student Undergraduate Laboratory Internship (SULI) Student Researcher
@@ -106,16 +106,16 @@
       items:
         - Relativistic Quantum Field Theory I, II
         - Quantum Mechanics I, II, III
-        - Special + General Relativity
+        - Special, General Relativity
         - Statistical Mechanics
         - Classical Mechanics I, II
-        - Experimental Physics + Radio Astronomy Laboratory
+        - Experimental Physics, Radio Astronomy Laboratory
     - title: Mathematics
       items:
         - Numerical Methods for PDEs and Integral Equations
         - Numerical Methods for Linear Algebra
         - Applied Mathematics Seminar
-        - Real + Complex Analysis
+        - Real, Complex Analysis
         - Differential Geometry
         - Nonlinear Dynamics and Chaos
 
@@ -123,14 +123,14 @@
   type: time_table
   contents:
     - title: President of MIT French House Living Group
-      year: 2025
+      year: 2025 - 2026
       description:
         - Leading a 40-member residential community, overseeing operations, budgeting, event planning, and house engagement. 
     - title: Treasurer of MIT Strategic Game Society
-      year: 2025
+      year: 2025 - 2026
       description:
         - Managing and allocating funds for club operations, events, and new game acquisitions. 
-    - title: MIT Climbing Team Captain/Coach
+    - title: MIT Climbing Team Captain and Coach
       year: 2023-2025
       description:
         - Directed practices, mentored team members, and coordinated logistics for competitions and training programs every week. 
