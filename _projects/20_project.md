@@ -221,7 +221,7 @@ In the limit of $$\delta t\rightarrow 0$$, all the terms vanish except for the $
 \begin{equation}
 \frac{1}{2\delta t}\left(dx^2\partial^2_xf(x)\right)\rightarrow\frac{\partial_x^2f}{2}\left(\frac{d^2\eta}{dt^2}\right).
 \end{equation}
-Now assume the covariance of the GRV $$\eta(t)$$ follows $$\langle\eta(t)\eta(t')\rangle=\sigma\delta(t-t')$$, we say $$\frac{d^2\deta}{dt^2}=\sigma$$ to represent the dispersion caused by the stochastic forcing. So, we obtain the Itô chain rule,
+Now assume the covariance of the GRV $$\eta(t)$$ follows $$\langle\eta(t)\eta(t')\rangle=\sigma\delta(t-t')$$, we say $$\frac{d^2\eta}{dt^2}=\sigma$$ to represent the dispersion caused by the stochastic forcing. So, we obtain the Itô chain rule,
 \begin{equation}
 \frac{d}{dt}\left[f\left(x(t)\right)\right]=\dot{x}(t)f(x)+\frac{\sigma}{2}\partial_x^2f(x).
 \end{equation}
