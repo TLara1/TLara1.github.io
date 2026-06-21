@@ -191,11 +191,11 @@ Consider now a forced stochastic variable,
 \dot{x}(t)=F(x)+\eta(t),
 \end{equation}
 where $$\eta(t)$$ is the usual GRV forcing. We are interested in evaluating the time derivative of $$f\left(x(t)\right)$$, a function of $$x(t)$$. Formally,
-\begin{equation}
+\begin{equation}\label{eq: def delta x}
 dx = x(t+\delta t)-x(t)=\int_t^{t+\delta t}ds\ F(x(s))+\int_t^{t+\delta t}ds\ \eta(s)
 \end{equation}
 \begin{equation}
- =  F(x(t))dt + \mathcal\left(\delta t^2\right) + d\eta(t).
+ =  F(x(t))dt + \mathcal\left(\delta t^2\right) + d\eta(t).\nonumber
 \end{equation}
 We have compressed the second term into $$d\eta(t)$$. From Eq. \ref{eq: eta covar problem}, we refer to $$d\eta(t)\sim\mathcal{O}\left(\sqrt{\delta t}\right)$$. This will turn out to be the correction necessary to save the chain rule.
 
@@ -208,6 +208,26 @@ Now expanding $$f$$ via Taylor series,
 \frac{d}{dt}\left[f\left(x(t)\right)\right]=\lim_{\delta t\rightarrow0}\left[\frac{1}{\delta t}\sum_{k=1}^\infty\frac{(dx)^k}{k!}f^{(k)}(x)\right].
 \end{equation}
 At order $$k=1$$, we recover the usual chain rule,
+\begin{equation}
+\frac{1}{\delta t}\left(dx\partial_xf(x))\rightarrow\dot{x}\partial_x f,
+\end{equation}
+At order $$k=2$$, something interesting happens when we insert our expression for $$dx$$, Eq. \ref{eq: def delta x},
+\begin{equation}
+\frac{1}{2\delta t}\left(dx^2\partial^2_xf(x))=\frac{\partial^2_xf}{2\delta t}\left)(F(x)^2\delta t^2+2F(x)d\eta(t)\delta t+d\eta(t)^2+\mathcal{O}\left(\delta t^{5/2}\right)\right).
+\end{equation}
+In the limit of $$\delta t\rightarrow 0$$, all the terms vanish except for the $$d\eta(t)^2$$ since this term is $$\mathcal{O}(\delta t\right). This leaves,
+\begin{equation}
+\frac{1}{2\delta t}\left(dx^2\partial^2_xf(x))\rightarrow\frac{\partial_x^2f}{2}\left(\frac{d^2\deta}{dt^2}\right).
+\end{equation}
+Now assuyme the covariance of the GRV $$\eta(t)$$ follows $$\langle\eta(t)\eta(t')\rangle=\sigma\delta(t-t')$$, we say $$\frac{d^2\deta}{dt^2}=\sigma$$ to represent the dispersion caused by the stochastic forcing. So, we obtain the Itô chain rule,
+\begin{equation}
+\frac{d}{dt}\left[f\left(x(t)\right)\right]=\dot{x}(t)f(x)+\frac{\sigma}{2}\partial_x^2f(x).
+\end{equation}
+We have "fixed" the chain rule and can make sense of the derivative of a function of a stochastic variable. Now we extend this perspective to a probability distribution.
+
+## The Fokker-Planck Equation
+
+
 
 
 
