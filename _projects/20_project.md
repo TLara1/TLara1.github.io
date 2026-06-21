@@ -169,7 +169,7 @@ Then, taking the time derivative of $$x(t)$$,
 \dot{x}(t)=\lim_{\delta t\rightarrow0}\left[\frac{x\left(t+\delta t\right)-x(t)}{\delta t}\right]=\lim_{\delta t\rightarrow0}\left[\frac{1}{\delta t}\int_{t}^{t+\delta t}ds\ \eta(s)\right].
 \end{equation}
 This is not ideal; consider the covaraiance of $$\frac{1}{\delta t}\int_{t}^{t+\delta t}ds\ \eta(s)$$,
-\begin{equation}
+\begin{equation}\label{eq: eta covar problem}
 \left\langle\frac{1}{\delta t^2}\int_{t}^{t+\delta t}\int_{t}^{t+\delta t}duds\ \eta(s)\eta(u)\right\rangle=\frac{1}{\delta t^2}\int_{t}^{t+\delta t}\int_{t}^{t+\delta t}duds\ \delta\left(s-u\right)=\frac{1}{\delta t^2}\int_{t}^{t+\delta t}du=\frac{1}{\delta t}.
 \end{equation}
 When we take the limit of $$\delta t\rightarrow0$$, we see the variance of $$\dot{x}$$ is infinite! Formally speaking, $$x(t)$$ is not differentiable, which is the first problem. 
@@ -185,6 +185,30 @@ Now via the chain rule,
 Let's think about this. We know $$x(t)$$ is the sum of GRV "pushes" since $$\dot{x}(t)=\eta(t)$$. And because $$\eta(t)$$ is the current Gaussian "push", it should be independent of $$x(t)$$, yielding $$\langle x(t)\eta(t)\rangle=0$$. But that's in contradiction with our chain rule result, Eq. \ref{eq: chain rule result naive}. The second problem with naively applying the rules of calculus to a stochastic variable is that the chain rule is incompatible with causality! 
 
 There are two paths to proceed. Either we modify causality and keep the chain rule, or keep causality and modify the chain rule. Both approaches are valid, but we adopt the second as it is a bit more straightforward. This is known as the Itô prescription.
+
+Consider now a forced stochastic variable, 
+\begin{equation}
+\dot{x}(t)=F(x)+\eta(t),
+\end{equation}
+where $$\eta(t)$$ is the usual GRV forcing. We are interested in evaluating the time derivative of $$f\left(x(t)\right)$$, a function of $$x(t)$$. Formally,
+\begin{equation}
+dx = x(t+\delta t)-x(t)=\int_t^{t+\delta t}ds\ F(x(s))+\int_t^{t+\delta t}ds\ \eta(s)
+\end{equation}
+\begin{equation}
+ =  F(x(t))dt + \mathcal\left(\delta t^2\right) + d\eta(t).
+\end{equation}
+We have compressed the second term into $$d\eta(t)$$. From Eq. \ref{eq: eta covar problem}, we refer to $$d\eta(t)\sim\mathcal{O}\left(\sqrt{\delta t}\right)$$. This will turn out to be the correction necessary to save the chain rule.
+
+Now taking the derivative of $$f\left(x(t)\right)$$,
+\begin{equation}
+\frac{d}{dt}\left[f\left(x(t)\right)\right]=\lim_{\delta t\rightarrow0}\left[\frac{f\left(x+\delta x\right)-f(x)}{\delta t}\right].
+\end{equation}
+Now expanding $$f$$ via Taylor series,
+\begin{equation}
+\frac{d}{dt}\left[f\left(x(t)\right)\right]=\lim_{\delta t\rightarrow0}\left[\frac{1}{\delta t}\sum_{k=1}^\infty\frac{(dx)^k}{k!}f^{(k)}(x)\right].
+\end{equation}
+At order $$k=1$$, we recover the usual chain rule,
+
 
 
 ### Sources
