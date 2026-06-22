@@ -14,7 +14,7 @@ Over the summer of 2023, I spent most of my days in the Bush Applied Math Lab wi
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/video/davis_1.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true autoplay=true %}
+        {% include video.liquid path="assets/video/davis_1.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
 <div class="caption">
