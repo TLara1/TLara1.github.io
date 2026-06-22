@@ -12,13 +12,9 @@ toc:
 
 Over the summer of 2023, I spent most of my days in the Bush Applied Math Lab within the MIT department. My work involved observing and studying the "walking" behaviours of droplets. Turns out, when a thin layer of oil is vibrated quickly enough, small droplets will bounce over the oil's surface, propelled by their own wave patterns in so-called "pilot-wave" dynamics. 
 
-<div style="text-align: center;">
-  {% include figure.liquid loading="eager" path="assets/img/Images_Figures_Videos_website_bush_22/EasytoFollowExample.jpg" title="Sample Droplet" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
-</div>
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/video/davis_1.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        {% include video.liquid path="assets/video/davis_1.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true autoplay=true %}
     </div>
 </div>
 <div class="caption">
@@ -35,18 +31,3 @@ Over the summer of 2023, I spent most of my days in the Bush Applied Math Lab wi
         {% include figure.liquid loading="eager" path="assets/img/Images_Figures_Videos_website_bush_22/Untitled.png" title="Droplet track 2" class="img-fluid rounded z-depth-0" width="400" height="auto" %}
     </div>
 </div>
-
-
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" controls=true %}
-    </div>
-</div>
-<div class="caption">
-    A simple, elegant caption looks good between video rows, after each row, or doesn't have to be there at all.
-</div>
-
