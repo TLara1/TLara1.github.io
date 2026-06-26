@@ -10,9 +10,11 @@ related_publications: true
 
 My longest continued research project involves modelling immersed solid self-contact in an entirely Eulerian framework. Most fluid-structure interaction formalisms model fluid and solid regions as distinct entities, usually using a fixed Eulerian grid for the former and a set of evolving Lagrangian points for the latter. Our method is entirely Eulerian, placing the fluid and solid on equal footing on a constant grid. This is advantageous in its simplicity and efficiency, but with only one universal velocity field, simulating solid contacts is tricky. Specifically, solid self-contacts are complicated as solids cannot "see" themselves and have no natural way to prevent self-penetration.
 
-https://drive.google.com/file/d/16JIHRK3oJRgcA-MJ0quRW9mJ3hombR7l/view?usp=sharing
-
-
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="https://drive.google.com/file/d/16JIHRK3oJRgcA-MJ0quRW9mJ3hombR7l/view?usp=sharing" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 <div style="text-align: center;">
   {% include figure.liquid loading="eager" path="assets/img/Figures_Solidmech_Notes/Accordian_vectors_v2.png" title="Accordian force vectors" class="img-fluid rounded z-depth-0" width="auto" height="400" %}
