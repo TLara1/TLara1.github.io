@@ -13,11 +13,14 @@ For my class on numerical methods for partial differential equations, my final p
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/video/omega_fouer_test1.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        {% include video.liquid path="assets/video/omega_fouer_test2.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="assets/video/ur_fouer_test2.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
 <div class="caption">
-    An example simulation of an arbitrary vorticity field. Note the blocks and refined areas of the grid follow the deforming flow such that computational importance is centered on regions where it is most necessary.
+    An example simulation of an arbitrary initial field. Note the blocks and refined areas of the grid follow the deforming flow such that computational importance is centered on regions where it is most necessary.
 </div>
 
 
