@@ -467,8 +467,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/20_project/";
-            },},{id: "projects-on-the-anomalous-magnetic-moment-of-the-electron-7-26",
-          title: 'On the Anomalous Magnetic Moment of the Electron - 7/26',
+            },},{id: "projects-on-the-renormalization-of-quantum-electrodynamics",
+          title: 'On the Renormalization of Quantum Electrodynamics',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/21_project/";
