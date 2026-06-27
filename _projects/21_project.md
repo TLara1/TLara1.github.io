@@ -77,8 +77,8 @@ and,
 $$f^{ab}_c$$ is known as a structure constant.
 
 ### Building a Lagrangian
-We have waded through the more nebulous bits that teeter on the edge of abstract mathematics. Onto the more interesting things. Because our observables should be invarient under the transform of Eq. \ref{eq: gauge transform}, so should our Lagrangian. To build such a Lagrangian, we first need a covariant derivative. A covariant derivative $$D_\mu$$ transforms in the same way as our matter field, satisfying, 
-\begin{equation}\label{eq: covarient derivative transformation condition}
+We have waded through the more nebulous bits that teeter on the edge of abstract mathematics. Onto the more interesting things. Because our observables should be invariant under the transform of Eq. \ref{eq: gauge transform}, so should our Lagrangian. To build such a Lagrangian, we first need a covariant derivative. A covariant derivative $$D_\mu$$ transforms in the same way as our matter field, satisfying, 
+\begin{equation}\label{eq: covariant derivative transformation condition}
 D_\mu\psi\left(\mathbf{x}\right)\rightarrow D' _\mu\psi'\left(\mathbf{x}\right)=U\left(\mathbf{x}\right)D _\mu\psi\left(\mathbf{x}\right). 
 \end{equation}
 
@@ -116,14 +116,39 @@ A' _\mu = U \left(A _\mu + i g^{-1} \partial _\mu\right) U^\dagger,
 \end{equation}
 where we have used the unitarity of $$U$$. 
 
-Because $$A _\mu$$ is a matrix in the matter field indices, we should be able to express it in terms of the basis matrices $$T_a$$ such that $$A _\mu \left(\mathbf{x}\right) = A^a _\mu\left(\mathbf{x}\right) T_a$$. It is easiest to do this by recalling that any transform $$U$$ can be compiled as the result of many infinitesimal transforms. So, we will only consider the transform under $$U\left(\mathbf{x}\right)=1+i\alpha^a\left(\mathbf{x}\right)T_a$$, for $$\alpha$$ small enough to neglect second-order terms. If we can obtain the appropriate transformation for $$A^a _\mu$$ in this case, it will be equivalent to the full transform in generality. Applying this idea,
+Because $$A _\mu$$ is a matrix in the matter field indices, we should be able to express it in terms of the basis matrices $$T_a$$ such that $$A _\mu \left(\mathbf{x}\right) = A^a _\mu\left(\mathbf{x}\right) T_a$$. It is easiest to do this by recalling that any transform $$U$$ can be compiled as the result of many infinitesimal transforms. So, we will only consider the transform under $$U\left(\mathbf{x}\right)=1+i\alpha^a\left(\mathbf{x}\right)T_a$$, for $$\alpha$$ small enough to neglect second-order terms. If we can obtain the appropriate transformation for $$A^a _\mu$$ in this case, it will be equivalent to the full transform in general. Applying this idea,
 \begin{equation}
 A' ^a _\muT_a = \left(1+i\alpha^bT_b\right)\left(A^a _\mu T_a + i g^{-1} \partial _\mu\right) \left(1-i\alpha^cT_c\right) = \left(A^a _\mu +g^{-1} \partial _\mu\alpha^a\right)T_a+iA^a _\mu\alpha^b\left(T_bT_a-T_aT_b\right),
 \end{equation}
-\begin{equation}
+\begin{equation}\label{eq: A matrix component form transform}
 A' ^a _\mu = \left(A^a _\mu +g^{-1} \partial _\mu\alpha^a\right) + A^b _\mu\alpha^cf_{bc}^a,
 \end{equation}
 we have used Eq. \ref{eq: structure constant commutation relation} to insert the structure constant.
+
+We almost have all of the ingredients we need for our Lagrangian. Next, we construct the field strength tensor. Since the covariant derivative transforms as $$D_\mu'\psi'=UD_\mu\psi$$, it follows that $$D_\mu'=UD_\muU^\dagger$$. From this, we note that the commutator of the covariant derivatives transforms in the same way,
+\begin{equation}
+\left[D_\mu,D_\nu\right]\rightarrow\left[D' _\mu,D' _\nu\right]=U\left[D_\mu,D_\nu\right]U^\dagger.
+\end{equation}
+We define the field strength tensor that transforms in the same way,
+\begin{equation}
+G_{\mu\nu}=\frac{i}{g}\left[D_\mu,D_\nu\right]=\partial_\muA_\nu-\partial_\nuA_\mu-ig\left[A_\mu,A_\nu\right].
+\end{equation}
+In terms of the $$T_a$$ basis elements, the componenets $$G^a_{\mu\nu}$$ can be easily found to be,
+\begin{equation}\label{eq: field strength tensor component form}
+G^a_{\mu\nu}=\partial_\muA_\nu^a-\partial_\nuA_\mu^a+gA^b _\muA^c _\nuf^a _{bc}.
+\end{equation}
+We may also ask how the components, $$G^a _{\mu\nu}$$, act under a gauge transform. It is possible to use Eq. \ref{eq: field strength tensor component form} to solve for $$G'^a _{\mu\nu}$$ directly since we know how $$A _\nu^a$$ transforms from Eq. \ref{eq: A matrix component form transform}, but it is easier to recall the matrix transform is straightforward,
+\begin{equation}
+G _{\mu\nu}\rightarrow G' _{\mu\nu}=UG _{\mu\nu}U^\dagger,
+\end{equation}
+and use the same infinitesimal transformation trick we previously employed,
+\begin{equation}
+G'^a _{\mu\nu}T_a=\left(1+i\alpha^bT_b\right)G^a _{\mu\nu}T_a\left(1-i\alpha^cT_c\right)=G^a _{\mu\nu}T_a+G^b _{\mu\nu}\alpha^c f^c _{bc}T_a.
+\begin{equation}
+
+The field strength tensor $$G _{\mu\nu}$$ has a host of desirable properties.
+
+
 
 
 
