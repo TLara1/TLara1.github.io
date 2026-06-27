@@ -20,7 +20,7 @@ Note here that we will only look at the tip of the QFT iceberg. Things become **
 ## Notation and Convention
 We use the standard non-dimensionalization setting $$c=\hbar=1$$. We use the mostly negative metric convention,
 \begin{equation}
-ds^2=\eta^\{mu\nu}x_\mu x_\nu = dt^2-dx^2-dy^2-dz^2,
+ds^2=\eta^{\mu\nu}x_\mu x_\nu = dt^2-dx^2-dy^2-dz^2,
 \end{equation}
 apologies if this was not the convention you used in your physics education. 
 
@@ -33,18 +33,33 @@ A useful property that follows from Eq. \ref{eq: gamma anticommutation relation}
 \begin{equation}
 \left(\gamma^\mu\right)^\dagger=\gamma^0\gamma^\mu\gamma^0.
 \end{equation}
-We also define the $$\bar{ }$$ operation as,
+We also define the adjoint $$\bar{ }$$ operation as,
 \begin{equation}
 \bar{\psi}^\mu=\psi^\dagger\gamma^0,
 \end{equation}
 where $$\psi$$ is a four-component spinor.
 
 ## The Lagrangian of Quantum Electrodynamics
-The Lagrangian of Quantum Electrodynamics is,
+I was originally going to simply present the Lagrangian of Quantum Electrodynamics and move on with my life, but I'm feeling like a completionist this morning, so we will derive it. We begin with matter fields $$\psi_i\left(\mathbf{x}\right)$$ for $$i=1,2,...N$$. Note that each $$\psi_i$$ can be a scalar, spinor, tensor, etc. field, for the moment, our indices run over the field index, not the internal indices that may be associated with each $$\psi_i$$.
+
+We require that our physical observables be invariant under the local transform,
+\begin{equation}
+\psi_i\left(\mathbf{x}\right)\rightarrow U_{ij}\left(\mathbf{x}\right)\psi_j\left(\mathbf{x}\right),
+\end{equation}
+where the matrix $$\mathbf{U}$$ satisfies,
+\begin{equation}
+\mathbf{U}^\dagger\mathbf{U}=\mathbf{I}.
+\end{equation}
+This is a statement that our physical observable, $$\left|\psi\right\|^2$$ is unchanged under the transform.
+
+
+
+
+The Lagrangian of Quantum Electrodynamics (QED) for a spinor$$-1/2$$ field $$\psi$$ is,
 \begin{equation}\label{eq: QED Lagrangian}
 \mathcal{L}=\bar{\psi}\left(i\not D-m\right)\psi-\frac{1}{4}F^{\mu\nu}F_{\mu\nu},
 \end{equation}
-I have used slash notation to indicate, $$\not D=\gamma^\mu D_\mu$$. $$D_\mu$$ is the covariant derivative,
+We have used slash notation to indicate, $$\not D=\gamma^\mu D_\mu$$. $$D_\mu$$ is the covariant derivative,
 \begin{equation}
 D_\mu=\partial_\mu+ie A_\mu,
 \end{equation}
@@ -52,6 +67,15 @@ where $$e$$ is the coupling constant equal to the charge of the Dirac field and 
 \begin{equation}
 F_{\mu\nu}=\partial_\mu A_\nu - \partial_\nu A_\mu.
 \end{equation}
+
+There are many ways to derive our Lagrangian, which we will omit here. We will only here show that Eq. \ref{eq: QED Lagrangian} satisfies several properties of interest. 
+
+### Gauge Invariance
+First, we note our Lagrangian is invariant under a $$U(1)$$ Gauge transform $$\alpha\left(\mathbf{x}\right)$$,
+\begin{equation}
+\psi\left(\mathbf{x}\right)\rightarrow e^{i\alpha\left(\mathbf{x}\right)}
+\end{equation}
+
 
 
 
