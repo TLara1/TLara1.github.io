@@ -78,7 +78,7 @@ $$f^{ab}_c$$ is known as a structure constant.
 
 ### Building a Lagrangian
 Excellent, we have waded through the more nebulous bits that teeter on the edge of abstract mathematics. Onto the more interesting things. Because our observables should be invarient under the transform of Eq. \ref{eq: gauge transform}, so should our Lagrangian. To build such a Lagrangian, we first need a covariant derivative. A covariant derivative $$D_\mu$$ transforms in the same way as our matter field, satisfying 
-\begin{equation}
+\begin{equation}\label{eq: covarient derivative transformation condition}
 D_\mu\psi\left(\mathbf{x}\right)\rightarrow D' _\mu\psi'\left(\mathbf{x}\right)=U\left(\mathbf{x}\right)D _\mu\psi\left(\mathbf{x}\right)$$. 
 \end{equation}
 
@@ -86,14 +86,25 @@ D_\mu\psi\left(\mathbf{x}\right)\rightarrow D' _\mu\psi'\left(\mathbf{x}\right)=
 
 We may ask ourselves, what is the problem with an ordinary derivative $$\partial_\mu$$? Consider,
 \begin{equation}\label{eq: partial_mu failed transform}
-\partial_mu\psi\left(\mathbf{x}\right)\rightarrow\partial_mu\psi'\left(\mathbf{x}\right)=\partial_mu\left(e^{i\alpha(x)^aT_a}\right)\psi\left(\mathbf{x}\right)=e^{i\alpha(x)^aT_a}\partial_mu\psi\left(\mathbf{x}\right)+i\partial_mu\left(\alpha(x)^a\right)T_ae^{i\alpha(x)^aT_a}\psi\left(\mathbf{x}\right).
+\partial_mu\psi\left(\mathbf{x}\right)\rightarrow\partial_mu\psi'\left(\mathbf{x}\right)=\partial_mu\left(U\left(\mathbf{x}\right)\psi\left(\mathbf{x}\right)\right)=U\left(\mathbf{x}\right)\partial_mu\psi\left(\mathbf{x}\right)+\partial_mu\left(U\left(\mathbf{x}\right)\right)\psi\left(\mathbf{x}\right).
 \end{equation}
 We have used Eq. \ref{eq: U transform exponential form}. Clearly $$\partial_\mu$$ does not transform as we hoped, but Eq. \ref{eq: partial_mu failed transform} is suggestive. Let's try a covariant derivative,
 \begin{equation}\label{eq: covarient derivative definition}
-D _\mu=\partial_mu-i g A^a _\mu\left(\mathbf{x}\right)T_a,
+D _\mu=\partial_mu-i g A _\mu\left(\mathbf{x}\right),
 \end{equation}
-where $$A^a _\mu\left(\mathbf{x}\right)$$ is a gauge field that also transforms in a special way under our transformation rule. Employing Eq. \ref{eq: covarient derivative definition},
-
+where $$g$$ is a coupling constant and $$A^a _\mu\left(\mathbf{x}\right)$$ is a gauge field that also transforms in a special way under our transformation rule. Employing Eq. \ref{eq: covarient derivative definition},
+\begin{equation}
+D_mu\psi\left(\mathbf{x}\right)\rightarrow D'_mu\psi'\left(\mathbf{x}\right)=U\partial_mu\psi+\partial_mu\left(U\right)\psi - i g A' _\mu\left(\mathbf{x}\right) U\psi.
+\end{equation}
+We see our transformation condition, Eq. \ref{eq: covarient derivative transformation condition}, is satisfied if,
+\begin{equation}
+\partial_mu\left(U\right) - i g A' _\mu\left(\mathbf{x}\right) U = - i g A\left(\mathbf{x}\right) U.
+\end{equation}
+From this we conclude $$A _\mu$$ transforms as,
+\begin{equation}
+A _\mu\rightarrow A' _\mu = U \left(A - i g^{-1} U^{-1} \partial \left(U\right)\right) U^{-1}.
+\end{equation}
+We ma
 
 
 
