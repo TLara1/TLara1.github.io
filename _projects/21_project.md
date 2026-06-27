@@ -131,7 +131,7 @@ We almost have all of the ingredients we need for our Lagrangian. Next, we const
 \end{equation}
 We define the field strength tensor that transforms in the same way,
 \begin{equation}
-G_{\mu\nu}=\frac{i}{g}\left[D_\mu,D_\nu\right]=\partial_\muA_\nu-\partial_\nuA_\mu-ig\left[A_\mu,A_\nu\right].
+G_{\mu\nu}=\frac{i}{g}\left[D_\mu,D_\nu\right]=\partial_\mu A_\nu-\partial_\nu A_\mu-ig\left[A_\mu,A_\nu\right].
 \end{equation}
 In terms of the $$T_a$$ basis elements, the componenets $$G^a_{\mu\nu}$$ can be easily found to be,
 \begin{equation}\label{eq: field strength tensor component form}
@@ -158,10 +158,26 @@ after consulting Eq. \ref{eq: T matrix trace}. We define the gauge group of our 
 \begin{equation}\label{eq: Gauge Lagrangian}
 \mathcal{L} _\text{gauge}=-\frac{1}{4}G^{a\ \mu\nu}G _{a\ \mu\nu},
 \begin{equation}
-which describes the interactions between the gauge fields $$A _\mu\left(\mathbf{x}\right)$$. This Lagrangian is both gauge invariant and Lorentz invariant; of course there are other Lagrangians we could write down that have these properties, but as we will soon see many of those possibilities may not be renormalizable. Also, Eq. \ref{eq: Gauge Lagrangian} gives rise to Maxwell's equations. Using the usual Euler-Lagrange equation,
-\begin{equation}\label{eq: Euler-Lagrange Equation}
-\frac{}{}\left(\\right)
+which describes the interactions between the gauge fields $$A _\mu\left(\mathbf{x}\right)$$. This Lagrangian is both gauge invariant and Lorentz invariant; of course there are other Lagrangians we could write down that have these properties, but as we will soon see many of those possibilities may not be renormalizable. 
+
+Also, Eq. \ref{eq: Gauge Lagrangian} gives rise to Maxwell's equations. Writing out the Lagrangian, Eq. \ref{eq: Gauge Lagrangian} in full,
 \begin{equation}
+\mathcal{L} _\text{gauge}=-\frac{1}{4}\left(\partial^\mu A^{a\ \nu}-\partial^\nu A^{a\ \mu}+gA^{b\ \mu}A^{c\ \nu}f^a _{bc}\right)\left(\partial _\mu A _{a\ \nu}-\partial _\nu A _{a\ \mu}+gA^b _\mu A^c _\nu f _{abc}\right)
+\begin{equation}
+\begin{equation}
+=-\frac{1}{2}\left(\partial^\mu A^{a\ \nu}\partial _\mu A _{a\ \nu}-\partial^\mu A^{a\ \nu}\partial ^\nu A ^{a\ \mu}\right)-gf _{abc}A^b _\mu A^c _\nu\partial _\mu A _{a\ \nu}-\frac{1}{4}g^2f^a _{bc}f _{ade}A^{b\ \mu}A^{c\ \nu}A^d _\mu A^e _\nu.
+\begin{equation}
+
+
+
+
+
+
+
+
+
+
+
 
 ### Spinor fields
 We have found an adequate term to insert into our Lagrangian that is both lorentz invari
