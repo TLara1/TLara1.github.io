@@ -39,4 +39,12 @@ We also define the $$\bar{ }$$ operation as,
 \end{equation}
 where $$\psi$$ is a four-component spinor.
 
+## The Lagrangian of Quantum Electrodynamics
+The Lagrangian of Quantum Electrodynamics is,
+\begin{equation}\label{eq: QED Lagrangian}
+\mathcal{L}=\bar{\psi}\left(i\not D-m\right)\psi-\frac{1}{4}F^{\mu\nu}F_{\mu\nu}
+\end{equation}
+
+
+
 ### Sources
