@@ -22,10 +22,21 @@ We use the standard non-dimensionalization setting $$c=\hbar=1$$. We use the mos
 \begin{equation}
 ds^2=\eta^\{mu\nu}x_\mu x_\nu = dt^2-dx^2-dy^2-dz^2,
 \end{equation}
-apologies if this was not the convention you used in your physics education. We use Gamma matrices, $$\gamma^mu$$ with $$\mu=0,1,2,3$$ satisfying the anticommutation relation,
-\begin{equation}
-\{\gamma^mu,\gamma^nu\}=\eta^{\mu\nu}
-\end{equation}
+apologies if this was not the convention you used in your physics education. 
 
+We use Gamma matrices, $$\gamma^\mu$$ with $$\mu=0,1,2,3$$ satisfying the anticommutation relation,
+\begin{equation}\label{eq: gamma anticommutation relation}
+\{\gamma^mu,\gamma^nu\}=\eta^{\mu\nu}.
+\end{equation}
+Here we have suppressed spinor indices and will continue to do so. Keep in mind that $$\gamma^mu$$ is a four-by-four matrix in spinor space. 
+A useful property that follows from Eq. \ref{eq: gamma anticommutation relation} is,
+\begin{equation}
+\left(\gamma^\mu\right)^\dagger=\gamma^0\gamma^\mu\gamma^0.
+\end{equation}
+We also define the $$\bar{ }$$ operation as,
+\begin{equation}
+\bar{\psi}^\mu=\psi^\dagger\gamma^0,
+\end{equation}
+where $$\psi$$ is a four-component spinor.
 
 ### Sources
