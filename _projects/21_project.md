@@ -76,7 +76,7 @@ and,
 \end{equation}
 $$f^{ab}_c$$ is known as a structure constant.
 
-### Building a Lagrangian
+### The Gauge Field and Field Strength Tensor
 We have waded through the more nebulous bits that teeter on the edge of abstract mathematics. Onto the more interesting things. Because our observables should be invariant under the transform of Eq. \ref{eq: gauge transform}, so should our Lagrangian. To build such a Lagrangian, we first need a covariant derivative. A covariant derivative $$D_\mu$$ transforms in the same way as our matter field, satisfying, 
 \begin{equation}\label{eq: covariant derivative transformation condition}
 D_\mu\psi\left(\mathbf{x}\right)\rightarrow D' _\mu\psi'\left(\mathbf{x}\right)=U\left(\mathbf{x}\right)D _\mu\psi\left(\mathbf{x}\right). 
@@ -146,17 +146,28 @@ and use the same infinitesimal transformation trick we previously employed,
 G'^a _{\mu\nu}T_a=\left(1+i\alpha^bT_b\right)G^a _{\mu\nu}T_a\left(1-i\alpha^cT_c\right)=G^a _{\mu\nu}T_a+G^b _{\mu\nu}\alpha^c f^c _{bc}T_a.
 \begin{equation}
 
-The field strength tensor $$G _{\mu\nu}$$ has a host of desirable properties. First, it is a local function of our gauge fields, not a differential operator, which is what we want for our Lagrangian. Second, it is only first-order in the derivatives of the Gauge fields, so we can combine two of these tensors to obtain a quantity that is second-order. To build a Lagrangian, we require Lorentz and gauge invariance. The first of these is easy to do, make sure there are no free indices since scalars are Lorentz invariant. For the second condition, we can take the trace over matter field indices, observing that,
+The field strength tensor $$G _{\mu\nu}$$ has a host of desirable properties. First, it is a local function of our gauge fields, not a differential operator, which is what we want for our Lagrangian. Second, it is only first-order in the derivatives of the Gauge fields, so we can combine two of these tensors to obtain a quantity that is second-order. To build a Lagrangian, we require Lorentz and gauge invariance. The first of these is easy to do: make sure there are no free indices since scalars are Lorentz invariant (more on Lorentz invariance soon). For the second condition, we can take the trace over matter field indices, observing that,
 \begin{equation}
 \text{Tr}\left(G^{\mu\nu}G _{\mu\nu}\right)\rightarrow\text{Tr}\left(G'^{\mu\nu}G' _{\mu\nu}\right)=\text{Tr}\left(UG^{\mu\nu}U^\dagger UG _{\mu\nu}U^\dagger\right)=\text{Tr}\left(G^{\mu\nu}G _{\mu\nu}\right).
 \begin{equation}
 Or, in component form,
 \begin{equation}
-\text{Tr}\left(G^{a\ \mu\nu}G _{b\ \mu\nu}T_aT^b\right)=G^{a\ \mu\nu}G _{b\ \mu\nu}\text{Tr}\left(T_aT^b\right)=\frac{1}{2}G^{a\ \mu\nu}G _{a\ \mu\nu},
+\text{Tr}\left(G^{a\ \mu\nu}G _{b\ \mu\nu}T_aT^b\right)=G^{a\ \mu\nu}G _{b\ \mu\nu}\text{Tr}\left(T _aT^b\right)=\frac{1}{2}G^{a\ \mu\nu}G _{a\ \mu\nu},
 \begin{equation}
-after consulting Eq. \ref{eq: T matrix trace}.
+after consulting Eq. \ref{eq: T matrix trace}. We define the gauge group of our Lagrangian,
+\begin{equation}\label{eq: Gauge Lagrangian}
+\mathcal{L} _\text{gauge}=-\frac{1}{4}G^{a\ \mu\nu}G _{a\ \mu\nu},
+\begin{equation}
+which describes the interactions between the gauge fields $$A _\mu\left(\mathbf{x}\right)$$. This Lagrangian is both gauge invariant and Lorentz invariant; of course there are other Lagrangians we could write down that have these properties, but as we will soon see many of those possibilities may not be renormalizable. Also, Eq. \ref{eq: Gauge Lagrangian} gives rise to Maxwell's equations. Using the usual Euler-Lagrange equation,
+\begin{equation}\label{eq: Euler-Lagrange Equation}
+\frac{}{}\left(\\right)
+\begin{equation}
+
+### Spinor fields
+We have found an adequate term to insert into our Lagrangian that is both lorentz invari
 
 
+, but it seems that our mass fields $$\psi$$ have fallen by the wayside. Let's consider a spinor field $$\psi$$. <em
 
 
 
