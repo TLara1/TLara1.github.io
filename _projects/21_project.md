@@ -46,11 +46,32 @@ We require that our physical observables be invariant under the local transform,
 \begin{equation}
 \psi_i\left(\mathbf{x}\right)\rightarrow U_{ij}\left(\mathbf{x}\right)\psi_j\left(\mathbf{x}\right),
 \end{equation}
-where the matrix $$\mathbf{U}$$ satisfies,
+where the matrix $$\mathbf{U}$$ is unitary,
 \begin{equation}
-\mathbf{U}^\dagger\mathbf{U}=\mathbf{I}.
+\mathbf{U}^\dagger\mathbf{U}=\mathbf{I},
 \end{equation}
-This is a statement that our physical observable, $$\left|\psi\right\|^2$$ is unchanged under the transform.
+and,
+This is a statement that our observable $$\left|\psi\right\|^2$$ is unchanged under our transform. 
+
+Now since the transformation matrix is unitary, we can express $$\mathbf{U}\left(\mathbf{x}\right)$$ as a matrix exponential,
+\begin{equation}
+\mathbf{U}\left(\mathbf{x}\right)=e^{i\alpha(x)^a\mathbf{T}_a}, 
+\end{equation}
+where each $$\alpha^a(x)$$ function is real and each $$\mathbf{T}_a$$ matrix is hermitian,
+\begin{equation}
+\mathbf{T}_a=\mathbf{T}_a^\dagger.
+\end{equation}
+We have done nothing more than expressed the unitary $$\mathbf{U}\left(\mathbf{x}\right)$$ as an exponent raised to a Hermitian matrix and then expressed this Hermitian matrix along the basis with elements $$\mathbf{T}_a$$. 
+
+Excellent, now there is a good amount of group theory I will sweep under the rug here, and we will content ourselves without proof that our $$\mathbf{T}_a$$ basis matrices can be chosen to satisfy the following properties while still spanning the space for all available hermitian matrices,
+\begin{equation}
+\text{Tr}\left(\mathbf{T}_a\mathbf{T} _b\right)=\frac{1}{2} \delta _{ab},
+\end{equation}
+and,
+\begin{equation}
+\left[\mathbf{T}^a,\mathbf{T}^b\right]=iC^{ab}_c\mathbf{T}^c.
+\end{equation}
+
 
 
 
