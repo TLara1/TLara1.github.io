@@ -42,7 +42,15 @@ where $$\psi$$ is a four-component spinor.
 ## The Lagrangian of Quantum Electrodynamics
 The Lagrangian of Quantum Electrodynamics is,
 \begin{equation}\label{eq: QED Lagrangian}
-\mathcal{L}=\bar{\psi}\left(i\not D-m\right)\psi-\frac{1}{4}F^{\mu\nu}F_{\mu\nu}
+\mathcal{L}=\bar{\psi}\left(i\not D-m\right)\psi-\frac{1}{4}F^{\mu\nu}F_{\mu\nu},
+\end{equation}
+I have used slash notation to indicate, $$\not D=\gamma^\mu D_\mu$$. $$D_\mu$$ is the covariant derivative,
+\begin{equation}
+D_\mu=\partial_\mu+ie A_\mu,
+\end{equation}
+where $$e$$ is the coupling constant equal to the charge of the Dirac field and $$A_\mu$$ is the gauge field. $$F_{\mu\nu}$$ is the electromagnetic field strength tensor,
+\begin{equation}
+F_{\mu\nu}=\partial_\mu A_\nu - \partial_\nu A_\mu.
 \end{equation}
 
 
