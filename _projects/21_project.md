@@ -67,7 +67,7 @@ where each $$\alpha^a(x)$$ function is real and each $$\mathbf{T}_a$$ matrix is 
 We have done nothing more than express the unitary $$\mathbf{U}\left(\mathbf{x}\right)$$ as an exponent raised to a Hermitian matrix and then expressed this Hermitian matrix along the basis with elements $$\mathbf{T}_a$$. 
 
 Excellent, now there is a good amount of group theory I will sweep under the rug here, and we will content ourselves without proof that our $$\mathbf{T}_a$$ basis matrices can be chosen to satisfy the following properties while still spanning the space for all available hermitian matrices,
-\begin{equation}
+\begin{equation}\label{eq: T matrix trace}
 \text{Tr}\left(\mathbf{T} _a\mathbf{T} _b\right)=\frac{1}{2} \delta _{ab},
 \end{equation}
 and,
@@ -146,9 +146,15 @@ and use the same infinitesimal transformation trick we previously employed,
 G'^a _{\mu\nu}T_a=\left(1+i\alpha^bT_b\right)G^a _{\mu\nu}T_a\left(1-i\alpha^cT_c\right)=G^a _{\mu\nu}T_a+G^b _{\mu\nu}\alpha^c f^c _{bc}T_a.
 \begin{equation}
 
-The field strength tensor $$G _{\mu\nu}$$ has a host of desirable properties.
-
-
+The field strength tensor $$G _{\mu\nu}$$ has a host of desirable properties. First, it is a local function of our gauge fields, not a differential operator, which is what we want for our Lagrangian. Second, it is only first-order in the derivatives of the Gauge fields, so we can combine two of these tensors to obtain a quantity that is second-order. To build a Lagrangian, we require Lorentz and gauge invariance. The first of these is easy to do, make sure there are no free indices since scalars are Lorentz invariant. For the second condition, we can take the trace over matter field indices, observing that,
+\begin{equation}
+\text{Tr}\left(G^{\mu\nu}G _{\mu\nu}\right)\rightarrow\text{Tr}\left(G'^{\mu\nu}G' _{\mu\nu}\right)=\text{Tr}\left(UG^{\mu\nu}U^\dagger UG _{\mu\nu}U^\dagger\right)=\text{Tr}\left(G^{\mu\nu}G _{\mu\nu}\right).
+\begin{equation}
+Or, in component form,
+\begin{equation}
+\text{Tr}\left(G^{a\ \mu\nu}G _{b\ \mu\nu}T_aT^b\right)=G^{a\ \mu\nu}G _{b\ \mu\nu}\text{Tr}\left(T_aT^b\right)=\frac{1}{2}G^{a\ \mu\nu}G _{a\ \mu\nu},
+\begin{equation}
+after consulting Eq. \ref{eq: T matrix trace}.
 
 
 
