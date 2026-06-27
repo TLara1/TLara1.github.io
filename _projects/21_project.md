@@ -40,7 +40,8 @@ We also define the adjoint $$\bar{ }$$ operation as,
 where $$\psi$$ is a four-component spinor.
 
 ## The Lagrangian of Quantum Electrodynamics
-I was originally going to simply present the Lagrangian of Quantum Electrodynamics and move on with my life, but I'm feeling like a completionist this morning, so we will derive it. Feel fully free to skip this if you cannot be bothered, but I find it interesting.
+I was originally going to simply present the Lagrangian of Quantum Electrodynamics and move on with my life, but I'm feeling like a completionist this morning, so we will derive it. We'll start with the full non-Abelian theory and then go from there.
+Feel fully free to skip this if you cannot be bothered, but I find it interesting.
 
 ### Gauge Theory Transform
 We begin with matter fields $$\psi_i\left(\mathbf{x}\right)$$ for $$i=1,2,...N$$. Note that each $$\psi_i$$ can be a scalar, spinor, tensor, etc. field, for the moment, our indices run over the field index, not the internal indices that may be associated with each $$\psi_i$$.
@@ -53,7 +54,6 @@ where the matrix $$\mathbf{U}$$ is unitary,
 \begin{equation}
 \mathbf{U}^\dagger\mathbf{U}=\mathbf{I},
 \end{equation}
-and,
 This is a statement that the inner product $$\left|\psi\right|^2=\left|\psi'\right|^2$$ is unchanged under our transform. 
 
 Now since the transformation matrix is unitary, we can express $$\mathbf{U}\left(\mathbf{x}\right)$$ as a matrix exponential,
@@ -77,7 +77,7 @@ and,
 $$f^{ab}_c$$ is known as a structure constant.
 
 ### Building a Lagrangian
-Excellent, we have waded through the more nebulous bits that teeter on the edge of abstract mathematics. Onto the more interesting things. Because our observables should be invarient under the transform of Eq. \ref{eq: gauge transform}, so should our Lagrangian. To build such a Lagrangian, we first need a covariant derivative. A covariant derivative $$D_\mu$$ transforms in the same way as our matter field, satisfying 
+We have waded through the more nebulous bits that teeter on the edge of abstract mathematics. Onto the more interesting things. Because our observables should be invarient under the transform of Eq. \ref{eq: gauge transform}, so should our Lagrangian. To build such a Lagrangian, we first need a covariant derivative. A covariant derivative $$D_\mu$$ transforms in the same way as our matter field, satisfying, 
 \begin{equation}\label{eq: covarient derivative transformation condition}
 D_\mu\psi\left(\mathbf{x}\right)\rightarrow D' _\mu\psi'\left(\mathbf{x}\right)=U\left(\mathbf{x}\right)D _\mu\psi\left(\mathbf{x}\right). 
 \end{equation}
@@ -88,14 +88,14 @@ We may ask ourselves, what is the problem with an ordinary derivative $$\partial
 \begin{equation}\label{eq: partial_mu failed transform}
 \partial_\mu\psi\left(\mathbf{x}\right)\rightarrow\partial_\mu\psi'\left(\mathbf{x}\right)=\partial_\mu\left(U\left(\mathbf{x}\right)\psi\left(\mathbf{x}\right)\right)=U\left(\mathbf{x}\right)\partial_\mu\psi\left(\mathbf{x}\right)+\partial_\mu\left(U\left(\mathbf{x}\right)\right)\psi\left(\mathbf{x}\right).
 \end{equation}
-We have used Eq. \ref{eq: U transform exponential form}. Clearly $$\partial_\mu$$ does not transform as we hoped, but Eq. \ref{eq: partial_mu failed transform} is suggestive. Let's try a covariant derivative,
+Clearly $$\partial_\mu$$ does not transform as we hoped, but Eq. \ref{eq: partial_mu failed transform} is suggestive. Let's try a covariant derivative,
 \begin{equation}\label{eq: covarient derivative definition}
 D _\mu =\partial _\mu-i g A _\mu\left(\mathbf{x}\right),
 \end{equation}
 where $$g$$ is a coupling constant and $$A^a _\mu\left(\mathbf{x}\right)$$ is a gauge field that also transforms in a special way under our transformation rule. Employing Eq. \ref{eq: covarient derivative definition},
 
 \begin{equation}
-D_\mu\psi\left(\mathbf{x}\right)\rightarrow D'_\mu\psi'\left(\mathbf{x}\right)=U\partial _\mu\psi+\partial _\mu\left(U\right)\psi - i g A' _\mu\left(\mathbf{x}\right) U\psi.
+D_\mu\psi\left(\mathbf{x}\right)\rightarrow D'_\mu\psi'\left(\mathbf{x}\right)=U\partial _\mu\psi+\partial _\mu U\psi - i g A' _\mu\left(\mathbf{x}\right) U\psi.
 \end{equation}
 
 We see our transformation condition, Eq. \ref{eq: covarient derivative transformation condition}, is satisfied if,
@@ -114,7 +114,7 @@ which gives us,
 \begin{equation}
 A' _\mu = U \left(A + i g^{-1} \partial _\mu\right) U^\dagger,
 \end{equation}
-we have also used the unitarity of $$U$$. 
+where we have used the unitarity of $$U$$. 
 
 Because $$A _\mu$$ is a matrix in the matter field indices, we should be able to express it in terms of the basis matrices $$T_a$$ such that $$A _\mu \left(\mathbf{x}\right) = A^a_\mu\left(\mathbf{x}\right) T_a$$. 
 
