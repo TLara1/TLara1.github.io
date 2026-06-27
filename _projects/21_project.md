@@ -26,7 +26,7 @@ apologies if this was not the convention you used in your physics education.
 
 We use Gamma matrices, $$\gamma^\mu$$ with $$\mu=0,1,2,3$$ satisfying the anticommutation relation,
 \begin{equation}\label{eq: gamma anticommutation relation}
-\{\gamma^mu,\gamma^nu\}=\eta^{\mu\nu}.
+\left\lbrace\gamma^\mu,\gamma^\nu\right\rbrace=\eta^{\mu\nu}.
 \end{equation}
 Here we have suppressed spinor indices and will continue to do so. Keep in mind that $$\gamma^mu$$ is a four-by-four matrix in spinor space. 
 A useful property that follows from Eq. \ref{eq: gamma anticommutation relation} is,
