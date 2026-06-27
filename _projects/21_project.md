@@ -68,11 +68,11 @@ We have done nothing more than express the unitary $$\mathbf{U}\left(\mathbf{x}\
 
 Excellent, now there is a good amount of group theory I will sweep under the rug here, and we will content ourselves without proof that our $$\mathbf{T}_a$$ basis matrices can be chosen to satisfy the following properties while still spanning the space for all available hermitian matrices,
 \begin{equation}
-\text{Tr}\left(\mathbf{T}_a\mathbf{T} _b\right)=\frac{1}{2} \delta _{ab},
+\text{Tr}\left(\mathbf{T} _a\mathbf{T} _b\right)=\frac{1}{2} \delta _{ab},
 \end{equation}
 and,
-\begin{equation}
-\left[\mathbf{T}^a,\mathbf{T}^b\right]=if^{ab}_c\mathbf{T}^c.
+\begin{equation}\label{eq: structure constant commutation relation}
+\left[\mathbf{T} _a,\mathbf{T} _b\right]=if^{c} _{ab}\mathbf{T} _c.
 \end{equation}
 $$f^{ab}_c$$ is known as a structure constant.
 
@@ -112,11 +112,20 @@ We may simplify by noting,
 \end{equation}
 which gives us,
 \begin{equation}
-A' _\mu = U \left(A + i g^{-1} \partial _\mu\right) U^\dagger,
+A' _\mu = U \left(A _\mu + i g^{-1} \partial _\mu\right) U^\dagger,
 \end{equation}
 where we have used the unitarity of $$U$$. 
 
-Because $$A _\mu$$ is a matrix in the matter field indices, we should be able to express it in terms of the basis matrices $$T_a$$ such that $$A _\mu \left(\mathbf{x}\right) = A^a_\mu\left(\mathbf{x}\right) T_a$$. 
+Because $$A _\mu$$ is a matrix in the matter field indices, we should be able to express it in terms of the basis matrices $$T_a$$ such that $$A _\mu \left(\mathbf{x}\right) = A^a _\mu\left(\mathbf{x}\right) T_a$$. It is easiest to do this by recalling that any transform $$U$$ can be compiled as the result of many infinitesimal transforms. So, we will only consider the transform under $$U\left(\mathbf{x}\right)=1+i\alpha^a\left(\mathbf{x}\right)T_a$$, for $$\alpha$$ small enough to neglect second-order terms. If we can obtain the appropriate transformation for $$A^a _\mu$$ in this case, it will be equivalent to the full transform in generality. Applying this idea,
+\begin{equation}
+A' ^a _\muT_a = \left(1+i\alpha^bT_b\right)\left(A^a _\mu T_a + i g^{-1} \partial _\mu\right) \left(1-i\alpha^cT_c\right) = \left(A^a _\mu +g^{-1} \partial _\mu\alpha^a\right)T_a+iA^a _\mu\alpha^b\left(T_bT_a-T_aT_b\right),
+\end{equation}
+\begin{equation}
+A' ^a _\mu = \left(A^a _\mu +g^{-1} \partial _\mu\alpha^a\right) + A^b _\mu\alpha^cf_{bc}^a,
+\end{equation}
+we have used Eq. \ref{eq: structure constant commutation relation} to insert the structure constant.
+
+
 
 
 
