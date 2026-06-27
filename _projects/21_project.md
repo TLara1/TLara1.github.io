@@ -40,28 +40,31 @@ We also define the adjoint $$\bar{ }$$ operation as,
 where $$\psi$$ is a four-component spinor.
 
 ## The Lagrangian of Quantum Electrodynamics
-I was originally going to simply present the Lagrangian of Quantum Electrodynamics and move on with my life, but I'm feeling like a completionist this morning, so we will derive it. We begin with matter fields $$\psi_i\left(\mathbf{x}\right)$$ for $$i=1,2,...N$$. Note that each $$\psi_i$$ can be a scalar, spinor, tensor, etc. field, for the moment, our indices run over the field index, not the internal indices that may be associated with each $$\psi_i$$.
+I was originally going to simply present the Lagrangian of Quantum Electrodynamics and move on with my life, but I'm feeling like a completionist this morning, so we will derive it. Feel fully free to skip this if you cannot be bothered, but I find it interesting.
 
-We require that our physical observables be invariant under the local transform,
-\begin{equation}
-\psi_i\left(\mathbf{x}\right)\rightarrow U_{ij}\left(\mathbf{x}\right)\psi_j\left(\mathbf{x}\right),
+### Gauge Theory Transform
+We begin with matter fields $$\psi_i\left(\mathbf{x}\right)$$ for $$i=1,2,...N$$. Note that each $$\psi_i$$ can be a scalar, spinor, tensor, etc. field, for the moment, our indices run over the field index, not the internal indices that may be associated with each $$\psi_i$$.
+
+We require that in our theory, our physical observables be invariant under the local transform,
+\begin{equation}\label{eq: gauge transform}
+\psi_i\left(\mathbf{x}\right)\rightarrow \psi_i\left(\mathbf{x}\right)'=U_{ij}\left(\mathbf{x}\right)\psi_j\left(\mathbf{x}\right),
 \end{equation}
 where the matrix $$\mathbf{U}$$ is unitary,
 \begin{equation}
 \mathbf{U}^\dagger\mathbf{U}=\mathbf{I},
 \end{equation}
 and,
-This is a statement that our observable $$\left|\psi\right\|^2$$ is unchanged under our transform. 
+This is a statement that the inner product $$\left|\psi\right\|^2=\left|\psi'\right\|^2$$ is unchanged under our transform. 
 
 Now since the transformation matrix is unitary, we can express $$\mathbf{U}\left(\mathbf{x}\right)$$ as a matrix exponential,
-\begin{equation}
+\begin{equation}\label{eq: U transform exponential form}
 \mathbf{U}\left(\mathbf{x}\right)=e^{i\alpha(x)^a\mathbf{T}_a}, 
 \end{equation}
 where each $$\alpha^a(x)$$ function is real and each $$\mathbf{T}_a$$ matrix is hermitian,
 \begin{equation}
 \mathbf{T}_a=\mathbf{T}_a^\dagger.
 \end{equation}
-We have done nothing more than expressed the unitary $$\mathbf{U}\left(\mathbf{x}\right)$$ as an exponent raised to a Hermitian matrix and then expressed this Hermitian matrix along the basis with elements $$\mathbf{T}_a$$. 
+We have done nothing more than express the unitary $$\mathbf{U}\left(\mathbf{x}\right)$$ as an exponent raised to a Hermitian matrix and then expressed this Hermitian matrix along the basis with elements $$\mathbf{T}_a$$. 
 
 Excellent, now there is a good amount of group theory I will sweep under the rug here, and we will content ourselves without proof that our $$\mathbf{T}_a$$ basis matrices can be chosen to satisfy the following properties while still spanning the space for all available hermitian matrices,
 \begin{equation}
@@ -69,8 +72,29 @@ Excellent, now there is a good amount of group theory I will sweep under the rug
 \end{equation}
 and,
 \begin{equation}
-\left[\mathbf{T}^a,\mathbf{T}^b\right]=iC^{ab}_c\mathbf{T}^c.
+\left[\mathbf{T}^a,\mathbf{T}^b\right]=if^{ab}_c\mathbf{T}^c.
 \end{equation}
+$$f^{ab}_c$$ is known as a structure constant.
+
+### Building a Lagrangian
+Excellent, we have waded through the more nebulous bits that teeter on the edge of abstract mathematics. Onto the more interesting things. Because our observables should be invarient under the transform of Eq. \ref{eq: gauge transform}, so should our Lagrangian. To build such a Lagrangian, we first need a covariant derivative. A covariant derivative $$D_\mu$$ transforms in the same way as our matter field, satisfying 
+\begin{equation}
+D_\mu\psi\left(\mathbf{x}\right)\rightarrow D' _\mu\psi'\left(\mathbf{x}\right)=U\left(\mathbf{x}\right)D _\mu\psi\left(\mathbf{x}\right)$$. 
+\end{equation}
+
+<em>Note that from here onward, for clarity, I will be suppressing the indices associated with matter fields and also removing the **bold** lettering on matrices acting on matter field indices.</em>. 
+
+We may ask ourselves, what is the problem with an ordinary derivative $$\partial_\mu$$? Consider,
+\begin{equation}\label{eq: partial_mu failed transform}
+\partial_mu\psi\left(\mathbf{x}\right)\rightarrow\partial_mu\psi'\left(\mathbf{x}\right)=\partial_mu\left(e^{i\alpha(x)^aT_a}\right)\psi\left(\mathbf{x}\right)=e^{i\alpha(x)^aT_a}\partial_mu\psi\left(\mathbf{x}\right)+i\partial_mu\left(\alpha(x)^a\right)T_ae^{i\alpha(x)^aT_a}\psi\left(\mathbf{x}\right).
+\end{equation}
+We have used Eq. \ref{eq: U transform exponential form}. Clearly $$\partial_\mu$$ does not transform as we hoped, but Eq. \ref{eq: partial_mu failed transform} is suggestive. Let's try a covariant derivative,
+\begin{equation}\label{eq: covarient derivative definition}
+D _\mu=\partial_mu-i g A^a _\mu\left(\mathbf{x}\right)T_a,
+\end{equation}
+where $$A^a _\mu\left(\mathbf{x}\right)$$ is a gauge field that also transforms in a special way under our transformation rule. Employing Eq. \ref{eq: covarient derivative definition},
+
+
 
 
 
