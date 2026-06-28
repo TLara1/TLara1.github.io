@@ -191,10 +191,18 @@ With the usual Euler-Lagrange Equations,
 \begin{equation}
 \partial_\nu\left(\frac{\partial\mathcal{L} _\text{gauge}}{\partial\left(\partial _\nu A _{a\ \mu}\right)}\right)-\frac{\partial\mathcal{L} _\text{gauge}}{\partial A _{a\ \mu}}=0,
 \begin{equation}
+
 we obtain the following equations of motion,
+
 \begin{equation}
-=-\partial _\nu \left(\partial^\nu A^{a\ \mu}-\partial^\mu A^{a\ \nu}\right)-gf _{abc}\partial _\nu\left(A^{b\ \nu} A^{c\ \mu}\right)+2gf _{bac} A^{c\ \nu}\partial ^\mu A^b _{\nu}+\frac{1}{2}g^2f^{ba} _{c}f _{bde}A^{c\ \nu}A^d _\mu A^e _\nu=0.
+=-\partial _\nu \left(\partial^\nu A^{a\ \mu}-\partial^\mu A^{a\ \nu}\right)- gf _{abc}\partial _\nu\left(A^{b\ \nu} A^{c\ \mu}\right)+gf _{bac} \left( A^{c\ \nu}\partial ^\mu A^b _{\nu} - A^{c\ \nu}\partial _\nu A^{b\ \mu}\right)
+
+
+
+
++\frac{1}{2}g^2f^{ba} _{c}f _{bde}A^{c\ \nu}A^d _\mu A^e _\nu=0.
 \begin{equation}
+
 In a slightly cleaner form,
 \begin{equation}
 =\partial^2 A^{a\ \mu}-\partial _\mu\partial^\nu A^{a\ \nu}+gf _{abc}\left(A^{b\ \nu}\partial _\nuA^{c\ \mu}+A^{c\ \mu}\partial _\nu A^{b\ \nu}\right)
