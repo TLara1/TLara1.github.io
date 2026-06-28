@@ -477,6 +477,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/22_project/";
+            },},{id: "projects-qed-renormalization-loop-integrals",
+          title: 'QED Renormalization, loop integrals',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/23_project/";
             },},{id: "projects-on-the-precession-of-mercury-39-s-perihelion-1-25",
           title: 'On the Precession of Mercury&amp;#39;s Perihelion - 1/25',
           description: "",
