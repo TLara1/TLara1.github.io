@@ -130,6 +130,14 @@ and we obtain the critical anticommutation relation,
 \begin{equation}
 \left\lbrace\gamma^\mu,\gamma^\nu\right\rbrace=2\eta^{\mu\nu}.
 \end{equation}
+The commutation relation is also helpful, 
+\begin{equation}
+\left\[\gamma^\mu,\gamma^\nu\right\]=2\eta^{\mu\nu}-2\gamma^\nu\gamma^\mu,
+\end{equation}
+as is the  relation,
+\begin{equation}
+\left[\left\[\gamma^\mu,\gamma^\nu\right\],\gamma^\lambda\right] = 4\eta^{\nu\lambda}\gamma^\mu-4\eta^{\mu\lambda}\gamma^\nu.
+\end{equation}
 From the hermiticty of $$\alpha$$ and $$\beta$$, we can also find the conjugate relationship,
 \begin{equation}
 \left(\gamma^\mu\right) ^\dagger=\gamma^0\gamma^\mu\gamma^0.
@@ -170,6 +178,8 @@ We wish to have the same equation, which, after multiplying by $$S^{-1}$$, we se
 \begin{equation}
 S^{-1}\gamma^\nu S\partial_\nu\psi -  m S \psi = \Lambda^\nu_\mu \gamma^\mu.
 \end{equation}
+To solve this equation,
+
 
 
 
