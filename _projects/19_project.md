@@ -472,7 +472,7 @@ For each tangential direction, with tangent vectors components notated as $$\hat
 \left(\tau^j_i-\tilde{\tau}^j_i\right)\hat{n}_j\hat{t} _{(k)}^i+\hat{t} _{(k)}^i\partial_i\left[ \gamma \right]=0.
 \end{equation}
 
- We have found all the boundary conditions necessary to solve our problem. We can now, at least in principle, tackle any problem involving Newtonian fluids.
+ We have found all the boundary conditions necessary to solve our problem. Armed with a physical description of the fluid field and all relevant boundary conditions for a given interface, we can now, at least in principle, tackle any problem involving Newtonian fluids. Granted, by "tackle" I mean to approach the problem as a physicist would, who happily stops once the governing equations of motion are found and the problem is determined to be soluble. As to actually getting solutions, that is up to the very clever mathematician.
 
 ### Sources
 These notes follow very closely the first chapter of Leal's excellent book,
