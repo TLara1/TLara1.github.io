@@ -13,12 +13,12 @@ toc:
 ## Introduction
 I was halfway through writing my notes on quantum electrodynamics when I realized I wanted to discuss the Dirac Equation in more depth. So here we are. 
 
-The main idea is that the Schrödinger equation is well and good for non-relativistic quantum mechanics, but since it is not Lorentz invariant, it is inadequate for a relativistic theory. This is troubling unless your name is Paul Dirac and the year is 1928, in which case you decide to invent new math and change the trajectory of the next century of physics research.
+The main idea is that the Schrödinger equation is well and good for non-relativistic quantum mechanics, but since it is not Lorentz covarient, it is inadequate for a relativistic theory. This is troubling unless your name is Paul Dirac and the year is 1928, in which case you decide to invent new math and change the trajectory of the next century of physics research.
 
 As usual, we use $$c=\hbar=1$$ for simplicity.
 
 ## The Failures of the Schrödinger Equation
-The usual Schrödinger equation for a wavefunction $$\psi(\mathbf{x}\right)$$ is,
+The usual Schrödinger equation for a wavefunction $$\psi\left(\mathbf{x}\right)$$ is,
 \begin{equation}
 i\partial_t\psi=H\left[ \psi \right]=-\partial_i\partial^i\psi+V\left(\mathbf{x}\right)\psi.
 \end{equation}
@@ -30,20 +30,22 @@ t\rightarrow t' = \gamma t - \gamma v x,\quad x\rightarrow x' = \gamma x - \gamm
 \end{equation}
 where $$\gamma=\left(1-v^2\right)^{-1/2}$$ is the Lorentz factor.
 
-The wavefunction $$\psi$$ describes events at points in spacetime. Under a change of coordinates, there is no reason to expect $$\psi$$ to transform as a scalar; we therefore consider the most general transform,
+The wavefunction $$\psi$$ describes events at points in spacetime. Under a change of coordinates, there is no reason to expect $$\psi$$ to transform as a scalar; we therefore consider a general transform,
 \begin{equation}
-\psi(\mathbf{x}'\right)=f(\mathbf{x}\right)\psi(\mathbf{x}\right),
+\psi(\mathbf{x}'\right)=f\left(\mathbf{x}\right)\psi\left(\mathbf{x}\right),
 \end{equation}
-and look for a function $$f(\mathbf{x}\right)$$ such that the Schrödinger equation is invarient.
+and look for a function $$f\left(\mathbf{x}\right)$$ such that the Schrödinger equation is unchanged after our transformation. When $$f\neq1$$, our transform is said to be covariant rather than invariant.
 
 For the left-hand side of the Schrödinger equation,
 \begin{equation}\label{eq: transformed Schrodinger LHS}
 i\partial_{t'}\psi'=i\partial_{t'}\left( f\psi\right)=i\gamma \left(f\partial_t\psi+ v f\partial_x\psi+\psi\partial_t f+ v\psi\partial_x f\right).
 \end{equation}
 For the right-hand side, ignoring the potential to assess the validity of the free equation,
+
 \begin{equation}\label{eq: transformed Schrodinger RHS}
--\partial^2_{x'}\psi'=- f \partial^2_{x'}\psi - 2\partial_{x'} f \partial_{x'}\psi - \psi \partial^2_{x'}f 
+-\partial^2 _{x'}\psi'= -f \partial^2 _{x'}\psi - 2\partial _{x'} f \partial _{x'}\psi - \psi \partial^2 _{x'}f 
 \end{equation}
+
 \begin{equation}
 =-\gamma^2 f \left(\partial_x^2\psi + 2 v \partial_x\partial_t\psi +  v^2\partial_t^2\psi\right) -\gamma^2 \psi \left(\partial_x^2 f + 2 v \partial_x\partial_t f +  v^2\partial_t^2 f \right) - \gamma^2\left(\partial_x\psi + v \partial_t\psi \right) \left(\partial_x f + v \partial_t f \right).
 \end{equation}
@@ -75,25 +77,25 @@ Inserting the Klein-Gordon equation in Eq. \ref{eq: squared shrodinger}, we find
 -\alpha^i\alpha^j\partial_i\partial_j\psi + \beta^2m^2\psi - i\left(\beta\alpha^i+\alpha^i\beta\right)\partial_i\psi=- \partial_i\partial^i\psi + m^2\psi.
 \end{equation}
 This gives the following conditions for $$\alpha$$ and $$\beta$$,
-\begin{equation}
+\begin{equation}\label{eq: alpha beta condition 1}
 \alpha_i\alpha_j+\alpha_j\alpha_i=0\ i\neq j,
 \end{equation}
-\begin{equation}
+\begin{equation}\label{eq: alpha beta condition 2}
 \alpha_i^2=1,
 \end{equation}
-\begin{equation}
+\begin{equation}\label{eq: alpha beta condition 3}
 \beta^2=1,
 \end{equation}
-\begin{equation}
+\begin{equation}\label{eq: alpha beta condition 4}
 \beta\alpha^i+\alpha^i\beta = 0
 \end{equation}
 \begin{equation}
 \alpha_i^\dagger=\alpha_i,
 \end{equation}
-\begin{equation}
+\begin{equation}\label{eq: alpha beta condition 6}
 \beta^\dagger=\beta,
 \end{equation}
-where the last two conditions follow from the Hermiticity of the Hamiltonian. But we have a huge problem, since $$i=1,2,3$$, this is $$6+3+1+3+3+1=17$$ conditions for four variables. 
+where the last two conditions follow from the Hermiticity of the Hamiltonian. But we have a huge problem, since $$i=1,2,3$$, Eq. \ref\label{eq: alpha beta condition 1}-Eq. \ref\label{eq: alpha beta condition 6} impose $$6+3+1+3+3+1=17$$ conditions for four variables. 
 
 So what are we to do? Well, what if $$\alpha_i$$ and $$\beta$$ are not scalars but $$N\times N$$ matrices? If instead of four variables we have $$4N^2$$, we could satisfy the $$17$$ equations with $$N=3$$. But turns out we need an even $$N$$ for the following reason, we we now soncider $$\alpha$$ and $$\beta$$ as matrices,
 \begin{equation}
@@ -103,7 +105,26 @@ Using $$\beta^2=1\rightarrow\beta=\beta^{-1}$$,
 \begin{equation}
 \text{Tr}\left(\alpha^i\right)=-\text{Tr}\left(\beta^{-1}\alpha^i\beta\right)=-\text{Tr}\left(\alpha^i\right)\rightarrow\text{Tr}\left(\alpha^i\right)=0.
 \end{equation}
-By an equivalent arguement, $$\beta$$ is also traceless, so the smallest $$N$$ we can have is $$N=4$$. 
+By an equivalent argument, $$\beta$$ is also traceless, so the smallest $$N$$ we can have is $$N=4$$. 
+
+We define the gamma matrices,
+\begin{equation}
+\gamma^0=i\beta,\quad\gamma^i=i\beta\alpha_i.
+\end{equation}
+Using Eq. \ref\label{eq: alpha beta condition 2} and Eq. \ref\label{eq: alpha beta condition 3}, we find,
+\begin{equation}
+\left(\gamma^0|right)^2=-1,\quad\left(\gamma^i\right)^2=1.
+\end{equation}
+Using Eq. \ref\label{eq: alpha beta condition 1} and Eq. \ref\label{eq: alpha beta condition 4}, we find,
+\begin{equation}
+\gamma^\mu\gamma^\nu+\gamma^\nu\gamma^\mu=0\ \mu\neq\nu,
+\end{equation}
+and we obtain the critical anticommutation relation,
+\begin{equation}
+\left\br
+\end{equation}
+
+i\alpha_i\beta=-\gamma^i\beta
 
 
 
@@ -117,16 +138,6 @@ By an equivalent arguement, $$\beta$$ is also traceless, so the smallest $$N$$ w
 
 
 
-
-
-
-
-
-
-
-
-
-\]
 
 
 
