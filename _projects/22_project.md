@@ -19,6 +19,7 @@ As usual, we use $$c=\hbar=1$$ for simplicity, and we use the mostly negative me
 \begin{equation}
 ds^2=\eta^{\mu\nu}x_\mu x_\nu = dt^2-dx^2-dy^2-dz^2.
 \end{equation}
+There are also a few conventions for gamma matrices that I will introduce when they come up.
 
 ## The Failures of the Schrödinger Equation
 The usual Schrödinger equation for a wavefunction $$\psi\left(\mathbf{x}\right)$$ is,
