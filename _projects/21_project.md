@@ -153,7 +153,7 @@ G _{\mu\nu} \rightarrow G' _{\mu\nu} =U G _{\mu\nu} U^\dagger,
 and use the same infinitesimal transformation trick we previously employed,
 
 \begin{equation}
-G'^a _{\mu\nu} T _a=\left(1+i\alpha^b T _b\right)G^a _{\mu\nu}T _a\left(1-i\alpha^c T _c\right) = G^a _{\mu\nu} T _a+ G^b _{\mu\nu} \alpha^c f^a _{bc} T_a.
+G' ^a _{\mu\nu} T _a=\left(1+i \alpha^b T _b\right) G^a _{\mu\nu} T _a\left(1-i\alpha^c T _c\right) = G^a _{\mu\nu} T _a + G^b _{\mu\nu} \alpha^c f^a _{bc} T_a.
 \begin{equation}
 
 The field strength tensor $$G _{\mu\nu}$$ has a host of desirable properties. First, it is a local function of our gauge fields, not a differential operator, which is what we want for our Lagrangian. Second, it is only first-order in the derivatives of the Gauge fields, so we can combine two of these tensors to obtain a quantity that is second-order. To build a Lagrangian, we require Lorentz and gauge invariance. The first of these is easy to do: make sure there are no free indices since scalars are Lorentz invariant (more on Lorentz invariance soon). For the second condition, we can take the trace over matter field indices, observing that,
@@ -186,18 +186,33 @@ Calculating the variation with respect to $$\partial _\nu A _{a\ \mu}$$,
 
 \begin{equation}
 \frac{\partial\mathcal{L} _{\text{gauge}}}{\partial\left(\partial _\nu A _{a\ \mu}\right)} = -\frac{1}{2} G _{b\ \alpha\beta} \frac{G ^{b\ \alpha\beta}}{\partial\left(\partial _\nu A _{a\ \mu}\right)},
-\begin{equation}
+\end{equation}
 \begin{equation}
 \frac{G _{b\ \alpha\beta}}{\partial\left(\partial _\nu A _{a\ \mu}\right)} = \delta^{ab}\left(\delta^{\alpha\nu}\delta^{\beta\mu}-\delta^{\alpha\mu}\delta^{\beta\nu}\right),
-\begin{equation}
+\end{equation}
 \begin{equation}
 G _{b\ \alpha\beta} \frac{G ^{b\ \alpha\beta}}{\partial\left(\partial _\nu A _{a\ \mu}\right)} = \delta^{ab}\left(\delta^{\alpha\nu}\delta^{\beta\mu}-\delta^{\alpha\mu}\delta^{\beta\nu}\right)G _{b\ \alpha\beta}=2G^{a \nu \mu}.
-\begin{equation}
+\end{equation}
 \begin{equation}
 \frac{\partial\mathcal{L} _{\text{gauge}}}{\partial\left(\partial _\nu A _{a\ \mu}\right)} = - G^{a \nu \mu}.
-\begin{equation}
+\end{equation}
 
 Next, the variation with respect to $$A _{a\ \mu}$$,
+
+\begin{equation}
+\frac{\partial\mathcal{L} _{\text{gauge}}}{\partial A _{a\ \mu}} = -\frac{1}{2} G _{b\ \alpha\beta} \frac{G ^{b\ \alpha\beta}}{\partial A _{a\ \mu}},
+\begin{equation}
+\begin{equation}
+\frac{G ^{b\ \alpha\beta}}{\partial A _{a\ \mu}} = g f^{ba} _c \left( \delta^{\alpha\mu} A^{c \beta} - \delta^{\beta\mu} A^{c \alpha} \right),
+\end{equation}
+\begin{equation}
+G _{b\ \alpha\beta} \frac{G ^{b\ \alpha\beta}}{\partial A _{a\ \mu}} = 2 g  f^{ba} _c G ^\mu _{b\ \alpha}  A^{c \alpha} , 
+\end{equation}
+\begin{equation}
+\frac{\partial\mathcal{L} _{\text{gauge}}}{\partial A _{a\ \mu}} =\end{equation} =  g  f^{abc} A _{b\ \nu} G ^{\nu\mu} _c .
+\end{equation}
+
+
 
 
 
