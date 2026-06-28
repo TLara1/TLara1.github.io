@@ -467,8 +467,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/20_project/";
-            },},{id: "projects-on-the-renormalization-of-quantum-electrodynamics",
-          title: 'On the Renormalization of Quantum Electrodynamics',
+            },},{id: "projects-on-the-renormalization-of-quantum-electrodynamics-7-26",
+          title: 'On the Renormalization of Quantum Electrodynamics - 7/26',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/21_project/";
