@@ -212,43 +212,16 @@ G _{b\ \alpha\beta} \frac{G ^{b\ \alpha\beta}}{\partial A _{a\ \mu}} = 2 g  f^{b
 \frac{\partial\mathcal{L} _{\text{gauge}}}{\partial A _{a\ \mu}} =\end{equation} =  g  f^{abc} A _{b\ \nu} G ^{\nu\mu} _c .
 \end{equation}
 
-
-
-
-
-
-With the usual Euler-Lagrange Equations,
-
-
-
-we obtain the following equations of motion,
-
+The Euler-Lagrange equations yield,
 \begin{equation}
-=-\partial _\nu \left(\partial^\nu A^{a\ \mu}-\partial^\mu A^{a\ \nu}\right)- gf _{abc}\partial _\nu\left(A^{b\ \nu} A^{c\ \mu}\right)+gf _{bac} \left( A^{c\ \nu}\partial ^\mu A^b _{\nu} - A^{c\ \nu}\partial _\nu A^{b\ \mu}\right)
+\partial_\nu G^{a \nu \mu} + g  f^{abc} A _{b\ \nu} G ^{\nu\mu} _c = 0
+\end{equation}
 
-
-
-
-+\frac{1}{2}g^2f^{ba} _{c}f _{bde}A^{c\ \nu}A^d _\mu A^e _\nu=0.
+In the case when the gauge fields do not interact, the theory is fully Abelian and we can set $$g = 0$$. We define the abelian field strength tensor, $$F^{\mu\nu}=\partial^\mu A^\nu - \partial^\nu A^\mu$$, and our equations of motion greatly simplify to,
 \begin{equation}
-
-In a slightly cleaner form,
-\begin{equation}
-=\partial^2 A^{a\ \mu}-\partial _\mu\partial^\nu A^{a\ \nu}+gf _{abc}\left(A^{b\ \nu}\partial _\nuA^{c\ \mu}+A^{c\ \mu}\partial _\nu A^{b\ \nu}\right)
-
-\partial _\nu\left(A^{b\ \nu} A^{c\ \mu}\right)
-
-
-+2gf _{abc}\partial _\nu\left(A^{b\ \nu} A^{c\ \mu}\right)-2gf _{bac} A^{c\ \nu}\partial ^\mu A^b _{\nu}-g^2f^{ba} _{c}f _{bde}A^{c\ \nu}A^d _\mu A^e _\nu=0.
-\begin{equation}
-
-
-
-
-
-
-
-
+\partial_\nu F^{a \nu \mu} = \partial^\nu \partial^\mu A^\nu - \partial^\mu \partial^\nu A^\mu = 0,
+\end{equation}
+which we recognize as Maxwell's equations, as we would expect.
 
 ### Spinor fields
 We have found an adequate term to insert into our Lagrangian that is both lorentz invari
