@@ -13,9 +13,9 @@ toc:
 ## Introduction
 I was halfway through writing my notes on quantum electrodynamics when I realized I wanted to discuss the Dirac Equation in more depth. So here we are. 
 
-The main idea is that the Schrödinger equation is well and good for non-relativistic quantum mechanics, but since it is not Lorentz covarient, it is inadequate for a relativistic theory. This is troubling unless your name is Paul Dirac and the year is 1928, in which case you decide to invent new math and change the trajectory of the next century of physics research.
+The main idea is that the Schrödinger equation is well and good for non-relativistic quantum mechanics, but since it is not Lorentz covariant, it is inadequate for a relativistic theory. This is troubling unless your name is Paul Dirac and the year is 1928, in which case you decide to invent new math and change the trajectory of the next century of physics research.
 
-As usual, we use $$c=\hbar=1$$ for simplicity and we use the mostly negative metric convention,
+As usual, we use $$c=\hbar=1$$ for simplicity, and we use the mostly negative metric convention,
 \begin{equation}
 ds^2=\eta^{\mu\nu}x_\mu x_\nu = dt^2-dx^2-dy^2-dz^2.
 \end{equation}
@@ -172,13 +172,33 @@ We expect our $$psi$$ spinor field to transform following,
 \end{equation}
 where $$S$$ is a function of the transformation matrix. This is nothing more than a special case of our covariant transform used previously, Eq. \ref{eq: psi transform f rule}, it will turn out that $$S$$ does not need spacetime dependence. Also, remember that $$S$$ is also a matrix in spinor space. Under a Lorentz transform, the Dirac equation transforms as,
 \begin{equation}
-\gamma^\mu\partial_\mu\psi -  m  \psi \rightarrow \left(\Lambda^{-1}\right)^\nu_\mu \gamma^\mu S\partial_\nu\psi -  m S \psi = 0.
+\gamma^\mu\partial_\mu\psi -  m  \psi \rightarrow \gamma^\mu\partial_{\mu'}\psi' -  m  \psi'  = \left(\Lambda^{-1}\right)^\nu_\mu \gamma^\mu S\partial_\nu\psi -  m S \psi = 0.
 \end{equation}
 We wish to have the same equation, which, after multiplying by $$S^{-1}$$, we see can be achieved if we pick $$S$$ such that,
-\begin{equation}
-S^{-1}\gamma^\nu S\partial_\nu\psi -  m S \psi = \Lambda^\nu_\mu \gamma^\mu.
+\begin{equation}\label{eq: covariance S relation}
+S^{-1}\gamma^\nu S = \Lambda^\nu_\mu \gamma^\mu.
 \end{equation}
-To solve this equation,
+To solve this equation, we will consider the infinitesimal transform, $$\Lambda^\nu_\mu=\delta^\nu_\mu+\omega^\nu_\mu$$. We do this without loss of generality, since any transform can be made of the sum of infinitesimal transforms. Now we will use the exponential ansatz,
+\begin{equation}\label{eq: S ansatz}
+S = e^{ -\frac{i}{2}\omega_{\mu\nu}\Sigma^{\mu\nu}} = 1 - \frac{i}{2}\omega_{\mu\nu}\Sigma^{\mu\nu} + \mathcal{O}\left(\omega^2\right),
+\end{equation}
+where $$\Sigma^{\mu\nu}$$ is a matrix in spinor space that is yet to be determined. Inserting Eq. \ref{eq: S ansatz} into Eq. \ref{eq: covariance S relation},
+\begin{equation}
+\left(1 + \frac{i}{2}\omega_{\alpha\beta}\Sigma^{\alpha\beta}\right)\gamma^\nu\left(1 - \frac{i}{2}\omega_{\lambda\sigma}\Sigma^{\lambda\sigma}\right) = \left(\delta^\nu_\mu+\omega^\nu_\mu\right) \gamma^\mu,
+\end{equation}
+\begin{equation}
+\left(1 + \frac{i}{2}\omega_{\alpha\beta}\Sigma^{\alpha\beta}\right)\gamma^\nu\left(1 - \frac{i}{2}\omega_{\lambda\sigma}\Sigma^{\lambda\sigma}\right) = \gamma^\nu+\omega^\nu_\mu\gamma^\mu
+\end{equation}
+
+
+\left(1 + \frac{i}{2}\omega_{\alpha\beta}\Sigma^{\alpha\beta}\right)\gamma^\nu\left(1 - \frac{i}{2}\omega_{\lambda\sigma}\Sigma^{\lambda\sigma}\right)
+
+
+ \frac{i}{2}\omega_{\alpha\beta}\Sigma^{\alpha\beta}\gamma^\nu - \frac{i}{2}\omega_{\lambda\sigma}\gamma^\nu\Sigma^{\lambda\sigma}  = \omega^\nu_\mu\gamma^\mu
+
+
+
+
 
 
 
