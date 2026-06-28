@@ -98,7 +98,7 @@ This gives the following conditions for $$\alpha$$ and $$\beta$$,
 \begin{equation}\label{eq: alpha beta condition 6}
 \beta^\dagger=\beta,
 \end{equation}
-where the last two conditions follow from the Hermiticity of the Hamiltonian. But we have a huge problem, since $$i=1,2,3$$, Eq. \ref\label{eq: alpha beta condition 1}-Eq. \ref\label{eq: alpha beta condition 6} impose $$6+3+1+3+3+1=17$$ conditions for four variables. 
+where the last two conditions follow from the Hermiticity of the Hamiltonian. But we have a huge problem, since $$i=1,2,3$$, Eq. \ref{eq: alpha beta condition 1}-Eq. \ref{eq: alpha beta condition 6} impose $$6+3+1+3+3+1=17$$ conditions for four variables. 
 
 So what are we to do? Well, what if $$\alpha_i$$ and $$\beta$$ are not scalars but $$N\times N$$ matrices? If instead of four variables we have $$4N^2$$, we could satisfy the $$17$$ equations with $$N=3$$. But turns out we need an even $$N$$ for the following reason, we we now soncider $$\alpha$$ and $$\beta$$ as matrices,
 \begin{equation}
@@ -158,7 +158,7 @@ We have obtained the Dirac equation! This is a fully relativistic version of the
 where the slash notation is used to notate $$\not\partial=\gamma^\mu\partial_\mu$$.
 
 ## Lorentz Covariance of the Dirac Equation
-We have stated, and we expect the Dirac equation to be Lorentz covariant, but we have not determined how our wavefunction $$\psi$$ transforms. We will follow the same procedure we used to show that the unmodified Schrödinger equation was not covariant; performing a Lorentz transform and then determining an adequate modification to $$psi$$ such that the Dirac equation in the new basis is unchanged. Our procedure this time around will be somewhat more sophisticated. Let's consider a Lorentz transform,
+We have stated, and we expect the Dirac equation to be Lorentz covariant, but we have not determined how our wavefunction $$\psi$$ transforms. We will follow the same procedure we used to show that the unmodified Schrödinger equation was not covariant; performing a Lorentz transform and then determining an adequate modification to $$\psi$$ such that the Dirac equation in the new basis is unchanged. Our procedure this time around will be somewhat more sophisticated. Let's consider a Lorentz transform,
 \begin{equation}
 x^{\mu}\rightarrow x'^\mu=\Lambda^\mu_\nu x^\nu,
 \end{equation}
@@ -231,8 +231,14 @@ We haved used $$\left(\gamma^0\right)^2=-1$$. Secondly, note that because $$S$$ 
 \bar{\psi}\psi\rightarrow \psi^\dagger S^\dagger \gamma^0 S \psi = -\psi^\dagger \gamma^0S^{-1}\gamma^0 \gamma^0 S \psi = \bar{\psi}\psi.
 \end{equation}
 
+## The Dirac Lagrangian
+Finally, it is easy to verify that the Lagrangian that gives rise to the Dirac equation is,
+\begin{equation}
+\mathcal{L}_\text{dirac}=\bar{\psi}\left(\not\partial-m\right)\psi.
+\end{equation}
+Variation with respect to $$\bar{\psi}$$ returns the Dirac equation. Note also that $$\mathcal{L} _\text{dirac}$$ is Lorentz covariant as required for a valid relativistic theory. 
 
-
+There is more to be said about the Dirac equation and the Lagrangian, but for the moment, we will leave the discussion here. We have found the failings of the usual Schrödinger equation, constructed a relativistic version that is first order in all its derivatives and is consistent with the Klein-Gordon equation, and determined how the spinor fields of this new equation transform covariantly.
 
 ### Sources
 I primarily followed my own course notes from 8.323, Relativistic Quantum Field Theory I, taught by Professor Hong Liu during the 2025 Spring semester.
