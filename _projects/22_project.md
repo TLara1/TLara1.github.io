@@ -15,7 +15,10 @@ I was halfway through writing my notes on quantum electrodynamics when I realize
 
 The main idea is that the Schrödinger equation is well and good for non-relativistic quantum mechanics, but since it is not Lorentz covarient, it is inadequate for a relativistic theory. This is troubling unless your name is Paul Dirac and the year is 1928, in which case you decide to invent new math and change the trajectory of the next century of physics research.
 
-As usual, we use $$c=\hbar=1$$ for simplicity.
+As usual, we use $$c=\hbar=1$$ for simplicity and we use the mostly negative metric convention,
+\begin{equation}
+ds^2=\eta^{\mu\nu}x_\mu x_\nu = dt^2-dx^2-dy^2-dz^2.
+\end{equation}
 
 ## The Failures of the Schrödinger Equation
 The usual Schrödinger equation for a wavefunction $$\psi\left(\mathbf{x}\right)$$ is,
@@ -123,11 +126,23 @@ and we obtain the critical anticommutation relation,
 \begin{equation}
 \left\lbrace\gamma^\mu,\gamma^\nu\right\rbrace=2\eta^{\mu\nu}.
 \end{equation}
+From the hermiticty of $$\alpha$$ and $$\beta$$, we can also find the conjugate relationship,
+\begin{equation}
+\left(\gamma^\mu\right) ^\dagger=\gamma^0\gamma^\mu\gamma^0.
+\end{equation}
 
-
-
-
-
+We have said a lot about these matrices, but what about our wavefunction $$\psi$$? What happens now that $$\psi$$ is being multiplied by matrices? Well, $$\psi$$ turns into a four-component spinor. Instead of having one value at a spacetime location $$\mathbf{x}$$, the spinor $$\psi$$ has four. There is more to be said about the properties of spinors, but for the moment, we will treat it as a glorified vector and make sure we take care of its order in any calculation as commutation is no longer guaranteed. Returning to our Hamiltonian, $$H = -i\alpha^i\partial_i + \beta m$$, rewritten in terms of our gamma matrices,
+\begin{equation}
+H = -i\gamma^0\gamma^i\partial_i - i m \gamma^0.
+\end{equation}
+And from the Schrödinger equation,
+\begin{equation}
+i\partial_t\psi = H\psi = -i\gamma^0\gamma^i\partial_i\psi - i m \gamma^0 \psi \ rightarrow \gamma^\mu\partial_\mu\psi -  m  \psi = 0.
+\end{equation}
+We have obtained the Dirac equation! This is a fully relativistic version of the Schrödinger equation, which is first-order in both time and space. The Dirac equation will often be written as,
+\begin{equation}
+\left(
+\end{equation}
 
 
 
