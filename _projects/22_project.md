@@ -135,7 +135,7 @@ The commutation relation is also helpful,
 \left\[\gamma^\mu,\gamma^\nu\right\]=2\eta^{\mu\nu}-2\gamma^\nu\gamma^\mu,
 \end{equation}
 as is the  relation,
-\begin{equation}
+\begin{equation}\label{eq: gamma commutator commutator relation}
 \left[\left\[\gamma^\mu,\gamma^\nu\right\],\gamma^\lambda\right] = 4\eta^{\nu\lambda}\gamma^\mu-4\eta^{\mu\lambda}\gamma^\nu.
 \end{equation}
 From the hermiticty of $$\alpha$$ and $$\beta$$, we can also find the conjugate relationship,
@@ -178,7 +178,23 @@ We wish to have the same equation, which, after multiplying by $$S^{-1}$$, we se
 \begin{equation}\label{eq: covariance S relation}
 S^{-1}\gamma^\nu S = \Lambda^\nu_\mu \gamma^\mu.
 \end{equation}
-To solve this equation, we will consider the infinitesimal transform, $$\Lambda^\nu_\mu=\delta^\nu_\mu+\omega^\nu_\mu$$. We do this without loss of generality, since any transform can be made of the sum of infinitesimal transforms. Now we will use the exponential ansatz,
+
+To solve this equation, we will consider the infinitesimal transform,
+\begin{equation}
+\Lambda^\nu_\mu=\delta^\nu_\mu+\omega^\nu_\mu. 
+\end{equation}
+Because a Lorentz transform preserves the metric,
+\begin{equation}
+\eta^{\mu\nu}=\eta^{\alpha\beta}\Lambda^\mu_\alpha\Lambda^\nu _\beta,
+\end{equation}
+we can show that $$\omega _{\nu\mu}=-\omega _{\mu\nu}$$ is antisymmetric.
+
+\begin{equation}
+\eta^{\mu\nu}=\eta^{\alpha\beta}\left(\delta^\mu_\alpha+\omega^\mu_\alpha\right)\left(\delta^\nu_\beta+\omega^\nu_\beta\right)=\eta^{\mu\nu}+\omega^{\mu\nu}+\omega^{\nu\mu}\rightarrow\omega^{\mu\nu}=-\omega^{\nu\mu}.
+\end{equation}
+Physically, this makes sense. There are six transforms, three rotations and three boosts, so we should expect six independent components in our transformation matrix.
+
+We do this without loss of generality, since any transform can be made of the sum of infinitesimal transforms. Now we will use the exponential ansatz,
 \begin{equation}\label{eq: S ansatz}
 S = e^{ -\frac{i}{2}\omega_{\mu\nu}\Sigma^{\mu\nu}} = 1 - \frac{i}{2}\omega_{\mu\nu}\Sigma^{\mu\nu} + \mathcal{O}\left(\omega^2\right),
 \end{equation}
@@ -187,20 +203,33 @@ where $$\Sigma^{\mu\nu}$$ is a matrix in spinor space that is yet to be determin
 \left(1 + \frac{i}{2}\omega_{\alpha\beta}\Sigma^{\alpha\beta}\right)\gamma^\nu\left(1 - \frac{i}{2}\omega_{\lambda\sigma}\Sigma^{\lambda\sigma}\right) = \left(\delta^\nu_\mu+\omega^\nu_\mu\right) \gamma^\mu,
 \end{equation}
 \begin{equation}
-\left(1 + \frac{i}{2}\omega_{\alpha\beta}\Sigma^{\alpha\beta}\right)\gamma^\nu\left(1 - \frac{i}{2}\omega_{\lambda\sigma}\Sigma^{\lambda\sigma}\right) = \gamma^\nu+\omega^\nu_\mu\gamma^\mu
+\frac{i}{2}\omega_{\alpha\beta}\left[\Sigma^{\alpha\beta},\gamma^\nu\right]  = \omega^\nu_\mu\gamma^\mu.
+\end{equation}
+Via the antisymmetry of $$\omega^{\nu\mu}$$, we may rewrite the right-hand side as,
+\begin{equation}
+\omega^\nu_\mu\gamma^\mu = \eta^{\nu\alpha}\omega_{\alpha\mu}\gamma^\mu = \frac{1}{2}\omega_{\alpha\beta}\left(\eta^{\nu\alpha}\gamma^\beta-\eta^{\nu\beta}\gamma^\alpha\right),
+\end{equation}
+from which we conclude we are looking for a $$\Sigma^{\alpha\beta}$$ satisfying,
+\begin{equation}
+i\left[\Sigma^{\alpha\beta},\gamma^\nu\right]  = \eta^{\nu\alpha}\gamma^\beta-\eta^{\nu\beta}\gamma^\alpha.
+\end{equation}
+Luckily, we have already seen a relation that follows this property, via Eq. \ref{eq: gamma commutator commutator relation},
+\begin{equation}
+\Sigma^{\alpha\beta}  = \frac{i}{4}\left\[\gamma^\alpha,\gamma^\beta\right\].
+\end{equation}
+So, under a Lorentz transformation, the $$\psi$$ spinor field transforms as,
+\begin{equation}
+\psi\rightarrow\psi'= e^{ -\frac{i}{2}\omega_{\mu\nu}\Sigma^{\mu\nu}}\psi,\quad \Sigma^{\mu\nu} = \frac{i}{4}\left\[\gamma^\mu,\gamma^\nu\right\].
 \end{equation}
 
-
-\left(1 + \frac{i}{2}\omega_{\alpha\beta}\Sigma^{\alpha\beta}\right)\gamma^\nu\left(1 - \frac{i}{2}\omega_{\lambda\sigma}\Sigma^{\lambda\sigma}\right)
-
-
- \frac{i}{2}\omega_{\alpha\beta}\Sigma^{\alpha\beta}\gamma^\nu - \frac{i}{2}\omega_{\lambda\sigma}\gamma^\nu\Sigma^{\lambda\sigma}  = \omega^\nu_\mu\gamma^\mu
-
-
-
-
-
-
+Now, briefly, two more identities, first, the conjugate of $$S$$, using $$\left(\Sigma^{\mu\nu}\right)^\dagger=-\gamma^0\Sigma^{\mu\nu}\gamma^0$$,
+\begin{equation}
+S^\dagger=e^{-\frac{i}{2}\omega_{\mu\nu}\gamma^0\Sigma^{\mu\nu}\gamma^0} =-\gamma^0 e^{ \frac{i}{2}\omega_{\mu\nu}\Sigma^{\mu\nu}}\gamma^0 = -\gamma^0S^{-1}\gamma^0.
+\end{equation}
+We haved used $$\left(\gamma^0\right)^2=-1$$. Secondly, note that because $$S$$ is clearly not unitary, $$\psi^\dagger\psi$$ is not Lorentz invarient, but if we define $$\bar{\psi}=\psi^\dagger\gamma^0\psi$$, the quantity $$\bar{\psi}\psi$$ is a Lorentz scalar,
+\begin{equation}
+\bar{\psi}\psi\rightarrow \psi^\dagger S^\dagger \gamma^0 S \psi = -\psi^\dagger \gamma^0S^{-1}\gamma^0 \gamma^0 S \psi = \bar{\psi}\psi.
+\end{equation}
 
 
 
