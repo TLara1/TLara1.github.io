@@ -121,10 +121,8 @@ Using Eq. \ref\label{eq: alpha beta condition 1} and Eq. \ref\label{eq: alpha be
 \end{equation}
 and we obtain the critical anticommutation relation,
 \begin{equation}
-\left\br
+\left\lbrace\gamma^\mu,\gamma^\nu\right\rbrace=2\eta^{\mu\nu}.
 \end{equation}
-
-i\alpha_i\beta=-\gamma^i\beta
 
 
 
