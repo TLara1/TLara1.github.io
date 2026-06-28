@@ -20,7 +20,7 @@ As usual, we use $$c=\hbar=1$$ for simplicity.
 ## The Failures of the Schrödinger Equation
 The usual Schrödinger equation for a wavefunction $$\psi(\mathbf{x}\right)$$ is,
 \begin{equation}
-i\partial_t\psi=H\left[\psi\right]=-\partial_i\partial^i\psi+V\left(\mathbf{x}\right)\psi.
+i\partial_t\psi=H\left[ \psi \right]=-\partial_i\partial^i\psi+V\left(\mathbf{x}\right)\psi.
 \end{equation}
 We know our physics should be true in any frame of reference, that is to say, the Schrödinger equation should apply after we perform a Lorentz transform, denoting the transformed coordinates $$\mathbf{x}'$$, and the transformed wavefunction as $$\psi'\left(\mathbf{x}'\right)$$, it should be true that $$i\partial_{t'}\psi'=H'\left[\psi'\right]$$. As we will see, this is not the case.
 
@@ -93,46 +93,40 @@ This gives the following conditions for $$\alpha$$ and $$\beta$$,
 \begin{equation}
 \beta^\dagger=\beta,
 \end{equation}
-where the last two conditions follow from the Hermiticity of the Hamiltonian. But we have a huge problem, since $$i=1,2,3$$, this is 
+where the last two conditions follow from the Hermiticity of the Hamiltonian. But we have a huge problem, since $$i=1,2,3$$, this is $$6+3+1+3+3+1=17$$ conditions for four variables. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-We see that $$i\partial_{t'}\psi'\neq H'\left[\psi'\right]$$ and the Schrödinger equation is not Lorentz invariant. Now, 
-
+So what are we to do? Well, what if $$\alpha_i$$ and $$\beta$$ are not scalars but $$N\times N$$ matrices? If instead of four variables we have $$4N^2$$, we could satisfy the $$17$$ equations with $$N=3$$. But turns out we need an even $$N$$ for the following reason, we we now soncider $$\alpha$$ and $$\beta$$ as matrices,
 \begin{equation}
-i\partial_t\psi-i v \partial_x\psi = - \partial_x^2\psi + 2 v \partial_x\partial_t\psi -  v^2\partial_t^2\psi +V\psi.
+\beta\alpha^i+\alpha^i\beta = 0\rightarrow\alpha^i=-\beta^{-1}\alpha^i\beta
 \end{equation}
-
+Using $$\beta^2=1\rightarrow\beta=\beta^{-1}$$,
 \begin{equation}
--i v \partial_x\psi =  2 v \partial_x\partial_t\psi -  v^2\partial_t^2\psi .
+\text{Tr}\left(\alpha^i\right)=-\text{Tr}\left(\beta^{-1}\alpha^i\beta\right)=-\text{Tr}\left(\alpha^i\right)\rightarrow\text{Tr}\left(\alpha^i\right)=0.
 \end{equation}
+By an equivalent arguement, $$\beta$$ is also traceless, so the smallest $$N$$ we can have is $$N=4$$. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\]
 
 
 
