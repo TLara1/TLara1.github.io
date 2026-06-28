@@ -117,26 +117,33 @@ A' _\mu = U \left(A _\mu + i g^{-1} \partial _\mu\right) U^\dagger,
 where we have used the unitarity of $$U$$. 
 
 Because $$A _\mu$$ is a matrix in the matter field indices, we should be able to express it in terms of the basis matrices $$T_a$$ such that $$A _\mu \left(\mathbf{x}\right) = A^a _\mu\left(\mathbf{x}\right) T_a$$. It is easiest to do this by recalling that any transform $$U$$ can be compiled as the result of many infinitesimal transforms. So, we will only consider the transform under $$U\left(\mathbf{x}\right)=1+i\alpha^a\left(\mathbf{x}\right)T_a$$, for $$\alpha$$ small enough to neglect second-order terms. If we can obtain the appropriate transformation for $$A^a _\mu$$ in this case, it will be equivalent to the full transform in general. Applying this idea,
+
 \begin{equation}
 A' ^a _\muT_a = \left(1+i\alpha^bT_b\right)\left(A^a _\mu T_a + i g^{-1} \partial _\mu\right) \left(1-i\alpha^cT_c\right) = \left(A^a _\mu +g^{-1} \partial _\mu\alpha^a\right)T_a+iA^a _\mu\alpha^b\left(T_bT_a-T_aT_b\right),
 \end{equation}
+
 \begin{equation}\label{eq: A matrix component form transform}
 A' ^a _\mu = \left(A^a _\mu +g^{-1} \partial _\mu\alpha^a\right) + A^b _\mu\alpha^cf_{bc}^a,
 \end{equation}
+
 we have used Eq. \ref{eq: structure constant commutation relation} to insert the structure constant.
 
 We almost have all of the ingredients we need for our Lagrangian. Next, we construct the field strength tensor. Since the covariant derivative transforms as $$D_\mu'\psi'=UD_\mu\psi$$, it follows that $$D_\mu'=UD_\mu U^\dagger$$. From this, we note that the commutator of the covariant derivatives transforms in the same way,
+
 \begin{equation}
-\left[D_\mu,D_\nu\right]\rightarrow\left[D' _\mu,D' _\nu\right]=U\left[D_\mu,D_\nu\right]U^\dagger.
+\left[D _\mu,D _\nu\right]\rightarrow\left[D' _\mu,D' _\nu\right]=U\left[D _\mu,D _\nu\right]U^\dagger.
 \end{equation}
+
 We define the field strength tensor that transforms in the same way,
 \begin{equation}
 G_{\mu\nu}=\frac{i}{g}\left[D_\mu,D_\nu\right]=\partial_\mu A_\nu-\partial_\nu A_\mu-ig\left[A_\mu,A_\nu\right].
 \end{equation}
 In terms of the $$T_a$$ basis elements, the componenets $$G^a_{\mu\nu}$$ can be easily found to be,
+
 \begin{equation}\label{eq: field strength tensor component form}
-G^a_{\mu\nu}=\partial_\muA_\nu^a-\partial_\nuA_\mu^a+gA^b _\muA^c _\nuf^a _{bc}.
+G^a _{\mu\nu}=\partial _\mu A _\nu^a-\partial _\nu A _\mu^a+gA^b _\mu A^c _\nu f^a _{bc}.
 \end{equation}
+
 We may also ask how the components, $$G^a _{\mu\nu}$$, act under a gauge transform. It is possible to use Eq. \ref{eq: field strength tensor component form} to solve for $$G'^a _{\mu\nu}$$ directly since we know how $$A _\nu^a$$ transforms from Eq. \ref{eq: A matrix component form transform}, but it is easier to recall the matrix transform is straightforward,
 
 \begin{equation}
@@ -146,33 +153,35 @@ G _{\mu\nu}\rightarrow G' _{\mu\nu}=UG _{\mu\nu}U^\dagger,
 and use the same infinitesimal transformation trick we previously employed,
 
 \begin{equation}
-G'^a _{\mu\nu}T_a=\left(1+i\alpha^bT_b\right)G^a _{\mu\nu}T_a\left(1-i\alpha^cT_c\right)=G^a _{\mu\nu}T_a+G^b _{\mu\nu}\alpha^c f^a _{bc}T_a.
+G'^a _{\mu\nu}T_a=\left(1+i\alpha^bT _b\right)G^a _{\mu\nu}T _a\left(1-i\alpha^cT _c\right)=G^a _{\mu\nu}T _a+G^b _{\mu\nu}\alpha^c f^a _{bc}T_a.
 \begin{equation}
 
 The field strength tensor $$G _{\mu\nu}$$ has a host of desirable properties. First, it is a local function of our gauge fields, not a differential operator, which is what we want for our Lagrangian. Second, it is only first-order in the derivatives of the Gauge fields, so we can combine two of these tensors to obtain a quantity that is second-order. To build a Lagrangian, we require Lorentz and gauge invariance. The first of these is easy to do: make sure there are no free indices since scalars are Lorentz invariant (more on Lorentz invariance soon). For the second condition, we can take the trace over matter field indices, observing that,
 
 \begin{equation}
-\text{Tr}\left(G^{\mu\nu}G _{\mu\nu}\right)\rightarrow\text{Tr}\left(G'^{\mu\nu}G' _{\mu\nu}\right)=\text{Tr}\left(UG^{\mu\nu}U^\dagger UG _{\mu\nu}U^\dagger\right)=\text{Tr}\left(G^{\mu\nu}G _{\mu\nu}\right).
+\text{Tr}\left(G^{\mu\nu}G _{\mu\nu}\right)\rightarrow\text{Tr}\left(G'^{\mu\nu}G' _{\mu\nu}\right)=\text{Tr}\left( UG^{\mu\nu}U^\dagger UG _{\mu\nu}U^\dagger\right) =\text{Tr}\left(G^{\mu\nu}G _{\mu\nu}\right).
 \begin{equation}
 
 Or, in component form,
 
 \begin{equation}
-\text{Tr}\left(G^{a\ \mu\nu}G _{b\ \mu\nu}T_aT^b\right)=G^{a\ \mu\nu}G _{b\ \mu\nu}\text{Tr}\left(T _aT^b\right)=\frac{1}{2}G^{a\ \mu\nu}G _{a\ \mu\nu},
+\text{Tr}\left(G^{a\ \mu\nu}G _{b\ \mu\nu}T_aT^b\right) =G^{a\ \mu\nu}G _{b\ \mu\nu}\text{Tr}\left(T _aT^b\right) =\frac{1}{2}G^{a\ \mu\nu}G _{a\ \mu\nu},
 \begin{equation}
 
 after consulting Eq. \ref{eq: T matrix trace}. We define the gauge group of our Lagrangian,
 
 \begin{equation}\label{eq: Gauge Lagrangian}
-\mathcal{L} _\text{gauge}=-\frac{1}{4}G^{a\ \mu\nu}G _{a\ \mu\nu},
+\mathcal{L} _\text{gauge} =-\frac{1}{4} G^{a\ \mu\nu}G _{a\ \mu\nu},
 \begin{equation}
 
-which describes the interactions between the gauge fields $$A _\mu\left(\mathbf{x}\right)$$. This Lagrangian is both gauge invariant and Lorentz invariant; of course there are other Lagrangians we could write down that have these properties, but as we will soon see many of those possibilities may not be renormalizable. 
+which describes the interactions between the gauge fields $$A _\mu\left(\mathbf{x}\right)$$. This Lagrangian is both gauge invariant and Lorentz invariant; of course, there are other Lagrangians we could write down that have these properties, but as we will soon see, many of those possibilities may not be renormalizable and thus not adequate to describe our theory. 
 
 Also, Eq. \ref{eq: Gauge Lagrangian} gives rise to Maxwell's equations. Writing out the Lagrangian, Eq. \ref{eq: Gauge Lagrangian} in full,
+
 \begin{equation}
-\mathcal{L} _\text{gauge}=-\frac{1}{4}\left(\partial^\mu A^{a\ \nu}-\partial^\nu A^{a\ \mu}+gA^{b\ \mu}A^{c\ \nu}f^a _{bc}\right)\left(\partial _\mu A _{a\ \nu}-\partial _\nu A _{a\ \mu}+gA^b _\mu A^c _\nu f _{abc}\right)
+\mathcal{L} _\text{gauge} = -\frac{1}{4}\left(\partial^\mu A^{a\ \nu} -\partial^\nu A^{a\ \mu}+gA^{b\ \mu}A^{c\ \nu}f^a _{bc}\right)\left(\partial _\mu A _{a\ \nu}-\partial _\nu A _{a\ \mu}+gA^b _\mu A^c _\nu f _{abc}\right)
 \begin{equation}
+
 \begin{equation}
 =-\frac{1}{2}\left(\partial^\mu A^{a\ \nu}\partial _\mu A _{a\ \nu}-\partial^\mu A^{a\ \nu}\partial ^\nu A ^{a\ \mu}\right)-gf _{abc}A^{b\ \mu} A^{c\ \nu}\partial _\mu A^a_{\nu}-\frac{1}{4}g^2f^a _{bc}f _{ade}A^{b\ \mu}A^{c\ \nu}A^d _\mu A^e _\nu.
 \begin{equation}
