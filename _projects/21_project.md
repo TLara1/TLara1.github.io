@@ -119,11 +119,11 @@ where we have used the unitarity of $$U$$.
 Because $$A _\mu$$ is a matrix in the matter field indices, we should be able to express it in terms of the basis matrices $$T_a$$ such that $$A _\mu \left(\mathbf{x}\right) = A^a _\mu\left(\mathbf{x}\right) T_a$$. It is easiest to do this by recalling that any transform $$U$$ can be compiled as the result of many infinitesimal transforms. So, we will only consider the transform under $$U\left(\mathbf{x}\right)=1+i\alpha^a\left(\mathbf{x}\right)T_a$$, for $$\alpha$$ small enough to neglect second-order terms. If we can obtain the appropriate transformation for $$A^a _\mu$$ in this case, it will be equivalent to the full transform in general. Applying this idea,
 
 \begin{equation}
-A' ^a _\muT_a = \left(1+i\alpha^bT_b\right)\left(A^a _\mu T_a + i g^{-1} \partial _\mu\right) \left(1-i\alpha^cT_c\right) = \left(A^a _\mu +g^{-1} \partial _\mu\alpha^a\right)T_a+iA^a _\mu\alpha^b\left(T_bT_a-T_aT_b\right),
+A' ^a _\mu T_a = \left(1+i\alpha^bT _b\right)\left(A^a _\mu T_a + i g^{-1} \partial _\mu\right) \left(1-i\alpha^cT_c\right) = \left(A^a _\mu +g^{-1} \partial _\mu\alpha^a\right)T_a+iA^a _\mu\alpha^b\left(T _b T _a-T _a T _b\right),
 \end{equation}
 
 \begin{equation}\label{eq: A matrix component form transform}
-A' ^a _\mu = \left(A^a _\mu +g^{-1} \partial _\mu\alpha^a\right) + A^b _\mu\alpha^cf_{bc}^a,
+A' ^a _\mu = \left(A^a _\mu +g^{-1} \partial _\mu\alpha^a\right) + A^b _\mu \alpha^c f _{bc}^a,
 \end{equation}
 
 we have used Eq. \ref{eq: structure constant commutation relation} to insert the structure constant.
@@ -153,7 +153,7 @@ G _{\mu\nu}\rightarrow G' _{\mu\nu}=UG _{\mu\nu}U^\dagger,
 and use the same infinitesimal transformation trick we previously employed,
 
 \begin{equation}
-G'^a _{\mu\nu}T_a=\left(1+i\alpha^bT _b\right)G^a _{\mu\nu}T _a\left(1-i\alpha^cT _c\right)=G^a _{\mu\nu}T _a+G^b _{\mu\nu}\alpha^c f^a _{bc}T_a.
+G'^a _{\mu\nu} T _a=\left(1+i\alpha^b T _b\right)G^a _{\mu\nu}T _a\left(1-i\alpha^c T _c\right) = G^a _{\mu\nu} T _a+ G^b _{\mu\nu} \alpha^c f^a _{bc} T_a.
 \begin{equation}
 
 The field strength tensor $$G _{\mu\nu}$$ has a host of desirable properties. First, it is a local function of our gauge fields, not a differential operator, which is what we want for our Lagrangian. Second, it is only first-order in the derivatives of the Gauge fields, so we can combine two of these tensors to obtain a quantity that is second-order. To build a Lagrangian, we require Lorentz and gauge invariance. The first of these is easy to do: make sure there are no free indices since scalars are Lorentz invariant (more on Lorentz invariance soon). For the second condition, we can take the trace over matter field indices, observing that,
