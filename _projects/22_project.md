@@ -34,8 +34,8 @@ t\rightarrow t' = \gamma t - \gamma v x,\quad x\rightarrow x' = \gamma x - \gamm
 where $$\gamma=\left(1-v^2\right)^{-1/2}$$ is the Lorentz factor.
 
 The wavefunction $$\psi$$ describes events at points in spacetime. Under a change of coordinates, there is no reason to expect $$\psi$$ to transform as a scalar; we therefore consider a general transform,
-\begin{equation}
-\psi(\mathbf{x}'\right)=f\left(\mathbf{x}\right)\psi\left(\mathbf{x}\right),
+\begin{equation}\label{eq: psi transform f rule}
+\psi\left(\mathbf{x}'\right)=f\left(\mathbf{x}\right)\psi\left(\mathbf{x}\right),
 \end{equation}
 and look for a function $$f\left(\mathbf{x}\right)$$ such that the Schrödinger equation is unchanged after our transformation. When $$f\neq1$$, our transform is said to be covariant rather than invariant.
 
@@ -108,20 +108,24 @@ Using $$\beta^2=1\rightarrow\beta=\beta^{-1}$$,
 \begin{equation}
 \text{Tr}\left(\alpha^i\right)=-\text{Tr}\left(\beta^{-1}\alpha^i\beta\right)=-\text{Tr}\left(\alpha^i\right)\rightarrow\text{Tr}\left(\alpha^i\right)=0.
 \end{equation}
-By an equivalent argument, $$\beta$$ is also traceless, so the smallest $$N$$ we can have is $$N=4$$. 
+By an equivalent argument, $$\beta$$ is also traceless, so the smallest $$N$$ we can have is $$N=4$$. So the only way to obtain a Hamiltonian that is first-order in space and is consistent with the Klein-Gordon equation is to turn $$\alpha^i$$ and $$\beta$$ into $$4\times4$$ matrices. Note that because $$4\times4^2=64>17$$, our conditions do not fully determine our matrix coefficients. In fact, there are infinitely many representations of matrices that we may choose. What is important is not the matrix components themselves, but the relationships between the matrices. Picking a set of matrices is nothing more than choosing a representation for our answer, akin to a change of coordinate basis.
 
 We define the gamma matrices,
 \begin{equation}
 \gamma^0=i\beta,\quad\gamma^i=i\beta\alpha_i.
 \end{equation}
 Using Eq. \ref\label{eq: alpha beta condition 2} and Eq. \ref\label{eq: alpha beta condition 3}, we find,
+
 \begin{equation}
-\left(\gamma^0|right)^2=-1,\quad\left(\gamma^i\right)^2=1.
+\left(\gamma^0\right)^2=-1,\quad\left(\gamma^i\right)^2=1.
 \end{equation}
-Using Eq. \ref\label{eq: alpha beta condition 1} and Eq. \ref\label{eq: alpha beta condition 4}, we find,
+
+Using Eq. \label{eq: alpha beta condition 1} and Eq. \label{eq: alpha beta condition 4}, we find,
+
 \begin{equation}
 \gamma^\mu\gamma^\nu+\gamma^\nu\gamma^\mu=0\ \mu\neq\nu,
 \end{equation}
+
 and we obtain the critical anticommutation relation,
 \begin{equation}
 \left\lbrace\gamma^\mu,\gamma^\nu\right\rbrace=2\eta^{\mu\nu}.
@@ -137,22 +141,35 @@ H = -i\gamma^0\gamma^i\partial_i - i m \gamma^0.
 \end{equation}
 And from the Schrödinger equation,
 \begin{equation}
-i\partial_t\psi = H\psi = -i\gamma^0\gamma^i\partial_i\psi - i m \gamma^0 \psi \ rightarrow \gamma^\mu\partial_\mu\psi -  m  \psi = 0.
+i\partial_t\psi = H\psi = -i\gamma^0\gamma^i\partial_i\psi - i m \gamma^0 \psi \rightarrow \gamma^\mu\partial_\mu\psi -  m  \psi = 0.
 \end{equation}
 We have obtained the Dirac equation! This is a fully relativistic version of the Schrödinger equation, which is first-order in both time and space. The Dirac equation will often be written as,
 \begin{equation}
-\left(
+\left(\not\partial-m\right)\psi=0,
 \end{equation}
+where the slash notation is used to notate $$\not\partial=\gamma^\mu\partial_\mu$$.
 
-
-
-
-
-
-
-
-
-
+## Lorentz Covariance of the Dirac Equation
+We have stated, and we expect the Dirac equation to be Lorentz covariant, but we have not determined how our wavefunction $$\psi$$ transforms. We will follow the same procedure we used to show that the unmodified Schrödinger equation was not covariant; performing a Lorentz transform and then determining an adequate modification to $$psi$$ such that the Dirac equation in the new basis is unchanged. Our procedure this time around will be somewhat more sophisticated. Let's consider a Lorentz transform,
+\begin{equation}
+x^{\mu}\rightarrow x'^\mu=\Lambda^\mu_\nu x^\nu,
+\end{equation}
+where $$\Lambda^\mu_\nu$$ is the transformation matrix. Derivatives transform as,
+\begin{equation}
+\partial_\mu\rightarrow\partial_{\mu'}=\left(\Lambda^{-1}\right)^\nu_\mu\partial_\nu.
+\end{equation}
+We expect our $$psi$$ spinor field to transform following,
+\begin{equation}
+\psi\left(\mathbf{x}\right)\rightarrow\psi'\left(\mathbf{x}'\right)=S\left(\Lambda\right)\psi\left(\mathbf{x}\right),
+\end{equation}
+where $$S$$ is a function of the transformation matrix. This is nothing more than a special case of our covariant transform used previously, Eq. \ref{eq: psi transform f rule}, it will turn out that $$S$$ does not need spacetime dependence. Also, remember that $$S$$ is also a matrix in spinor space. Under a Lorentz transform, the Dirac equation transforms as,
+\begin{equation}
+\gamma^\mu\partial_\mu\psi -  m  \psi \rightarrow \left(\Lambda^{-1}\right)^\nu_\mu \gamma^\mu S\partial_\nu\psi -  m S \psi = 0.
+\end{equation}
+We wish to have the same equation, which, after multiplying by $$S^{-1}$$, we see can be achieved if we pick $$S$$ such that,
+\begin{equation}
+S^{-1}\gamma^\nu S\partial_\nu\psi -  m S \psi = \Lambda^\nu_\mu \gamma^\mu.
+\end{equation}
 
 
 
