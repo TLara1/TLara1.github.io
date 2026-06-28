@@ -147,7 +147,7 @@ G^a _{\mu\nu}=\partial _\mu A _\nu^a-\partial _\nu A _\mu^a+gA^b _\mu A^c _\nu f
 We may also ask how the components, $$G^a _{\mu\nu}$$, act under a gauge transform. It is possible to use Eq. \ref{eq: field strength tensor component form} to solve for $$G'^a _{\mu\nu}$$ directly since we know how $$A _\nu^a$$ transforms from Eq. \ref{eq: A matrix component form transform}, but it is easier to recall the matrix transform is straightforward,
 
 \begin{equation}
-G _{\mu\nu}\rightarrow G' _{\mu\nu}=UG _{\mu\nu}U^\dagger,
+G _{\mu\nu} \rightarrow G' _{\mu\nu} =U G _{\mu\nu} U^\dagger,
 \end{equation}
 
 and use the same infinitesimal transformation trick we previously employed,
@@ -171,7 +171,7 @@ Or, in component form,
 after consulting Eq. \ref{eq: T matrix trace}. We define the gauge group of our Lagrangian,
 
 \begin{equation}\label{eq: Gauge Lagrangian}
-\mathcal{L} _\text{gauge} =-\frac{1}{4} G^{a\ \mu\nu}G _{a\ \mu\nu},
+\mathcal{L} _\text{gauge} = -\frac{1}{4} G^{a\ \mu\nu} G _{a\ \mu\nu},
 \begin{equation}
 
 which describes the interactions between the gauge fields $$A _\mu\left(\mathbf{x}\right)$$. This Lagrangian is both gauge invariant and Lorentz invariant; of course, there are other Lagrangians we could write down that have these properties, but as we will soon see, many of those possibilities may not be renormalizable and thus not adequate to describe our theory. 
@@ -183,8 +183,9 @@ Also, Eq. \ref{eq: Gauge Lagrangian} gives rise to Maxwell's equations. Writing 
 \begin{equation}
 
 \begin{equation}
-=-\frac{1}{2}\left(\partial^\mu A^{a\ \nu}\partial _\mu A _{a\ \nu}-\partial^\mu A^{a\ \nu}\partial ^\nu A ^{a\ \mu}\right)-gf _{abc}A^{b\ \mu} A^{c\ \nu}\partial _\mu A^a_{\nu}-\frac{1}{4}g^2f^a _{bc}f _{ade}A^{b\ \mu}A^{c\ \nu}A^d _\mu A^e _\nu.
+=-\frac{1}{2}\left(\partial^\mu A^{a\ \nu} \partial _\mu A _{a\ \nu} -\partial^\mu A^{a\ \nu}\partial _\nu A _{a\ \mu}\right) - gf _{abc} A^{b\ \mu} A^{c\ \nu}\partial _\mu A^a_{\nu} -\frac{1}{4}g^2f^a _{bc}f _{ade}A^{b\ \mu}A^{c\ \nu}A^d _\mu A^e _\nu.
 \begin{equation}
+
 With the usual Euler-Lagrange Equations,
 
 \begin{equation}
