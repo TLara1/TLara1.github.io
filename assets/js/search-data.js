@@ -482,6 +482,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/23_project/";
+            },},{id: "projects-spin1-2-pset-question-thing-very-cool",
+          title: 'spin1/2 pset question thing very cool',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/24_project/";
             },},{id: "projects-on-the-precession-of-mercury-39-s-perihelion-1-25",
           title: 'On the Precession of Mercury&amp;#39;s Perihelion - 1/25',
           description: "",
