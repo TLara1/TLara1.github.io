@@ -171,26 +171,40 @@ Or, in component form,
 after consulting Eq. \ref{eq: T matrix trace}. We define the gauge group of our Lagrangian,
 
 \begin{equation}\label{eq: Gauge Lagrangian}
-\mathcal{L} _\text{gauge} = -\frac{1}{4} G^{a\ \mu\nu} G _{a\ \mu\nu},
+\mathcal{L} _{\text{gauge}} = -\frac{1}{4} G^{a\ \mu\nu} G _{a\ \mu\nu},
 \begin{equation}
 
 which describes the interactions between the gauge fields $$A _\mu\left(\mathbf{x}\right)$$. This Lagrangian is both gauge invariant and Lorentz invariant; of course, there are other Lagrangians we could write down that have these properties, but as we will soon see, many of those possibilities may not be renormalizable and thus not adequate to describe our theory. 
 
-Also, Eq. \ref{eq: Gauge Lagrangian} gives rise to Maxwell's equations. Writing out the Lagrangian, Eq. \ref{eq: Gauge Lagrangian} in full,
+For fun, we can write out the equations of motion of Eq. \ref{eq: Gauge Lagrangian} using the Euler-Lagrange equations,
 
 \begin{equation}
-\mathcal{L} _\text{gauge} = -\frac{1}{4}\left(\partial^\mu A^{a\ \nu} -\partial^\nu A^{a\ \mu}+gA^{b\ \mu}A^{c\ \nu}f^a _{bc}\right)\left(\partial _\mu A _{a\ \nu}-\partial _\nu A _{a\ \mu}+gA^b _\mu A^c _\nu f _{abc}\right)
+\partial_\nu\left(\frac{\partial\mathcal{L} _{\text{gauge}}}{\partial\left(\partial _\nu A _{a\ \mu}\right)}\right)-\frac{\partial\mathcal{L} _{\text{gauge}}}{\partial A _{a\ \mu}}=0.
 \begin{equation}
 
+Calculating the variation with respect to $$\partial _\nu A _{a\ \mu}$$,
+
 \begin{equation}
-=-\frac{1}{2}\left(\partial^\mu A^{a\ \nu} \partial _\mu A _{a\ \nu} -\partial^\mu A^{a\ \nu}\partial _\nu A _{a\ \mu}\right) - gf _{abc} A^{b\ \mu} A^{c\ \nu}\partial _\mu A^a_{\nu} -\frac{1}{4}g^2f^a _{bc}f _{ade}A^{b\ \mu}A^{c\ \nu}A^d _\mu A^e _\nu.
+\frac{\partial\mathcal{L} _{\text{gauge}}}{\partial\left(\partial _\nu A _{a\ \mu}\right)} = -\frac{1}{2} G _{b\ \alpha\beta} \frac{G ^{b\ \alpha\beta}}{\partial\left(\partial _\nu A _{a\ \mu}\right)},
 \begin{equation}
+\begin{equation}
+\frac{G _{b\ \alpha\beta}}{\partial\left(\partial _\nu A _{a\ \mu}\right)} = \delta^{ab}\left(\delta^{\alpha\nu}\delta^{\beta\mu}-\delta^{\alpha\mu}\delta^{\beta\nu}\right),
+\begin{equation}
+\begin{equation}
+G _{b\ \alpha\beta} \frac{G ^{b\ \alpha\beta}}{\partial\left(\partial _\nu A _{a\ \mu}\right)} = \delta^{ab}\left(\delta^{\alpha\nu}\delta^{\beta\mu}-\delta^{\alpha\mu}\delta^{\beta\nu}\right)G _{b\ \alpha\beta}=2G^{a \nu \mu}.
+\begin{equation}
+\begin{equation}
+\frac{\partial\mathcal{L} _{\text{gauge}}}{\partial\left(\partial _\nu A _{a\ \mu}\right)} = - G^{a \nu \mu}.
+\begin{equation}
+
+Next, the variation with respect to $$A _{a\ \mu}$$,
+
+
+
 
 With the usual Euler-Lagrange Equations,
 
-\begin{equation}
-\partial_\nu\left(\frac{\partial\mathcal{L} _\text{gauge}}{\partial\left(\partial _\nu A _{a\ \mu}\right)}\right)-\frac{\partial\mathcal{L} _\text{gauge}}{\partial A _{a\ \mu}}=0,
-\begin{equation}
+
 
 we obtain the following equations of motion,
 
