@@ -39,15 +39,37 @@ We also define the adjoint $$\bar{ }$$ operation as,
 \begin{equation}
 \bar{\psi}^\mu=\psi^\dagger\gamma^0,
 \end{equation}
-where $$\psi$$ is a four-component spinor.
+where $$\psi$$ is a four-component spinor. We use the $$\not$$ notation to denote a combination with the gamma matrices,
+\begin{equation}
+\not{p}=\gamma^\mu p_\mu.
+\end{equation}
 
 Onward and upward.
 
 ## The QED Lagrangian and Feynman Rules. 
 The Lagrangian for QED describing the interactions between a spin-1/2 spinor field $$\psi\left(\mathbf{X}\right)$$ and a gauge field $$A_\mu\left(\mathbf{x}\right)$$ is,
-\begin{equation}
-\mathcal{L} _\text{QED}=\bar{\psi}\left(i\not D-m\right)\psi-\frac{1}{4}F^{\mu\nu}F _{\mu\nu}.
+\begin{equation}\label{eq: QED Lagrangian}
+\mathcal{L} _\text{QED}=\bar{\psi}\left(i\not D-m\right)\psi-\frac{1}{4}F^{\mu\nu}F _{\mu\nu}-\frac{1}{2\xi}\left(\partial _\mu A^\mu\right)^2,
 \end{equation}
+where $$D _\mu$$ is the covarient derivative, 
+\begin{equation}
+D _\mu = \partial _\mu+i e A _\mu,
+\end{equation}
+$$e$$ is known as the coupling constant. $$F^{\mu\nu}$$ is the field strength tensor defined as,
+\begin{equation}
+F^{\mu\nu}=\partial^\mu A^\nu - \partial^\nu A^\mu.
+\end{equation}
+Finally, the last term in Eq. \ref{eq: QED Lagrangian} is a gauge-coupling term that arises from gauge symmetry and the Fadeev-Popov procedure. The constant $$\xi$$ is a gauge constant, whose value does not influence the physics. 
+
+The QED action comes from integrating the Lagrangian, after application of the product rule, we find,
+\begin{equation}
+S_\text{QED}=\int dx^4\ \mathcal{L} _\text{QED}=\int dx^4\ \bar{\psi} \left(i\not\partial- m\right)\psi +\frac{1}{2} A^\mu\left( \eta _{\mu\nu}\partial^2  - \left( 1 - \frac{1}{\epsilon}\right) \partial _\mu \partial _\nu  \right)A^\nu - e \bar{\psi}\not A \psi.
+\end{equation}
+From this action, it is fairly straightforward to obtain the Feynman rules for the fermionic and photonic propagators in momentum space, a procedure that I will not discuss here. The Feynman rules for internal propagators are,
+\begin{equation}
+
+\end{equation}
+
 
 
 
