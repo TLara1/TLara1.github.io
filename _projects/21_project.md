@@ -144,7 +144,7 @@ Finally, we are ready to start integrating to determine the value of $$\Pi\left(
 \begin{equation}\label{1pi fermion loop integral}
 i q^2 \Pi\left(q\right) t _{T\ \mu\nu} = \left(-i e\right)^2(-1)\int\bar{d}^dk\ \frac{\text{tr}\left[\gamma^\mu i\left(\not k+m\right)i\gamma^\nu\left(\not q + \not k +m \right)\right]}{\left(k^2-m^2\right)\left(\left(k+q\right)^2-m^2\right)}.
 \end{equation}
-I have written the integral in $$d$$ dimensions, which should be $$d=4$$, but we will keep as $$d$$ for now for reasons that will be evident later.
+I have written the integral in $$d$$ dimensions, which should be $$d=4$$, but we will keep it as $$d$$ for now for reasons that will be evident later.
 
 Lovely. Okay, here we go. First, we use the Feynman parameterization, which is the integral identity,
 \begin{equation}
@@ -152,12 +152,43 @@ Lovely. Okay, here we go. First, we use the Feynman parameterization, which is t
 \end{equation}
 The denominator of the integrand of Eq. \ref{1pi fermion loop integral} becomes,
 \begin{equation}
-\left[Den\right]=\left(x\left(k+q\right)^2+\left(1-x\right)k^2-m^2\right)^2=\left(\ell^2-\Delta\right)^2,quad\ell=k+xq,\ \Delta=m^2-x\left(1-x\right)q^2.
+\left[\text{Den}\right]=\left(x\left(k+q\right)^2+\left(1-x\right)k^2-m^2\right)^2=\left(\ell^2-\Delta\right)^2,\quad\ell=k+xq,\ \Delta=m^2-x\left(1-x\right)q^2.
 \end{equation}
 In substituting $$\ell$$ and $$\Delta$$, we have simply completed the square. Since $$\ell$$ is linear in $$k$$, our integral over $$k$$ becomes an integral over $$\ell$$. 
 
-The numerator is a bit trickier. With our gamma matrix trace identities, we have
+The numerator is a bit trickier. With our gamma matrix trace identities, we have,
+\begin{equation}
+\left[\text{Num}\right]=-\text{tr}\left[(\gamma^\mu \not k \gamma^\nu+m\gamma^\mu\gamma^\nu)\left(\not q + \not k +m \right)\right] = -4 m^2 eta^{\mu\nu} - 4\left(2k^\mu k^\nu + k^\mu q^\nu + k^\nu q^\mu - \eta^{\mu\nu} (k^2 + k^\alpha q_\alpha\right) \right),
+\end{equation}
+and substituting in $$\ell$$,
+\begin{equation}
+-\frac{1}{4}\left[\text{Num}\right]=\left(\ell^\mu-x q^\mu\right) \left(\ell^\nu+\left(1-x\right)q^\nu\right) + \left(\ell^\nu-x q^\nu\right) \left(\ell^\mu+\left(1-x\right)q^\mu\right) - \eta^{\mu\nu}\left(\left(\ell^\alpha-x q^\alpha\right) \left(\ell_\alpha+\left(1-x\right)q_alpha\right)-m^2\right).
+\end{equation}
+We can simplify. Since the denominator is even in $$\ell$$, any term in the numerator that is odd in $$\ell$$ integrates to $$0$$
+\begin{equation}
+-\frac{1}{4}\left[\text{Num}\right]=2\left(\ell^\mu\ell^\nu-x\left(1-x\right) q^\mu q^\nu\right) - \eta^{\mu\nu} \left(\ell^2 - x(1-x)q^2-m^2\right).
+\end{equation}
+Now let's consider the $$\ell^\mu\ell^nu$$ terms. The integral over these terms can be written as,
+\begin{equation}
+I^{\mu\nu}=\int \bar{d}^d \ell\ \frac{\ell^\mu\ell^\nu}{f\left(\ell^2\right)},
+\end{equation}
+but we know $$I^{\mu\nu}$$ should have no preferred direction and is symmetric in its indices, so it must be proportional to the metric, writing,
+\begin{equation}
+I^{\mu\nu}=C\eta^{\mu\nu},
+\end{equation}
+by normalization,
+\begin{equation}
+I^{\mu\nu}\eta_{\mu\nu}=C\eta^{\mu\nu}\eta_{\mu\nu}=Cd,
+\end{equation}
+for a $$d$$-dimensional spacetime. So, we conclude that we can replace the $$\ell^\mu\ell^\nu$$ terms with $$\eta^{\mu\nu}\ell^2/d$$, and the numerator becomes,
+\begin{equation}
+-\frac{1}{4}\left[\text{Num}\right]=x\left(1-x\right)\left(q^2\eta^{\mu\nu} -2  q^\mu q^\nu \right) + m^2\eta^{\mu\nu} + \left(\frac{2}{d} - 1\right)\ell^2.
+\end{equation}
 
+We have two integrals to evaluate. First terms in the numerator with constant coefficients,
+\begin{equation}
+\int
+\end{equation}
 
 
 
