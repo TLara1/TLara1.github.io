@@ -113,15 +113,15 @@ By an equivalent argument, $$\beta$$ is also traceless, so the smallest $$N$$ we
 
 We define the gamma matrices,
 \begin{equation}
-\gamma^0=i\beta,\quad\gamma^i=i\beta\alpha_i.
+\gamma^0=\beta,\quad\gamma^i=\beta\alpha_i.
 \end{equation}
-Using Eq. \ref\label{eq: alpha beta condition 2} and Eq. \ref\label{eq: alpha beta condition 3}, we find,
+Using Eq. \ref{eq: alpha beta condition 2} and Eq. \ref{eq: alpha beta condition 3}, we find,
 
 \begin{equation}
-\left(\gamma^0\right)^2=-1,\quad\left(\gamma^i\right)^2=1.
+\left(\gamma^0\right)^2=1,\quad\left(\gamma^i\right)^2=-1.
 \end{equation}
 
-Using Eq. \label{eq: alpha beta condition 1} and Eq. \label{eq: alpha beta condition 4}, we find,
+Using Eq. \ref{eq: alpha beta condition 1} and Eq. \ref{eq: alpha beta condition 4}, we find,
 
 \begin{equation}
 \gamma^\mu\gamma^\nu+\gamma^\nu\gamma^\mu=0\ \mu\neq\nu,
@@ -139,6 +139,7 @@ as is the  relation,
 \begin{equation}\label{eq: gamma commutator commutator relation}
 \left[\left\[\gamma^\mu,\gamma^\nu\right\],\gamma^\lambda\right] = 4\eta^{\nu\lambda}\gamma^\mu-4\eta^{\mu\lambda}\gamma^\nu.
 \end{equation}
+
 From the hermiticty of $$\alpha$$ and $$\beta$$, we can also find the conjugate relationship,
 \begin{equation}
 \left(\gamma^\mu\right) ^\dagger=\gamma^0\gamma^\mu\gamma^0.
@@ -146,15 +147,15 @@ From the hermiticty of $$\alpha$$ and $$\beta$$, we can also find the conjugate 
 
 We have said a lot about these matrices, but what about our wavefunction $$\psi$$? What happens now that $$\psi$$ is being multiplied by matrices? Well, $$\psi$$ turns into a four-component spinor. Instead of having one value at a spacetime location $$\mathbf{x}$$, the spinor $$\psi$$ has four. There is more to be said about the properties of spinors, but for the moment, we will treat it as a glorified vector and make sure we take care of its order in any calculation as commutation is no longer guaranteed. Returning to our Hamiltonian, $$H = -i\alpha^i\partial_i + \beta m$$, rewritten in terms of our gamma matrices,
 \begin{equation}
-H = -i\gamma^0\gamma^i\partial_i - i m \gamma^0.
+H = -i\gamma^0\gamma^i\partial_i +  m \gamma^0.
 \end{equation}
 And from the Schrödinger equation,
 \begin{equation}
-i\partial_t\psi = H\psi = -i\gamma^0\gamma^i\partial_i\psi - i m \gamma^0 \psi \rightarrow \gamma^\mu\partial_\mu\psi -  m  \psi = 0.
+i\partial_t\psi = H\psi = -i\gamma^0\gamma^i\partial_i\psi + m \gamma^0 \psi \rightarrow \gamma^\mu\partial_\mu\psi +  m  \psi = 0.
 \end{equation}
 We have obtained the Dirac equation! This is a fully relativistic version of the Schrödinger equation, which is first-order in both time and space. The Dirac equation will often be written as,
 \begin{equation}
-\left(\not\partial-m\right)\psi=0,
+\left(i\not\partial-m\right)\psi=0,
 \end{equation}
 where the slash notation is used to notate $$\not\partial=\gamma^\mu\partial_\mu$$.
 
@@ -173,7 +174,7 @@ We expect our $$psi$$ spinor field to transform following,
 \end{equation}
 where $$S$$ is a function of the transformation matrix. This is nothing more than a special case of our covariant transform used previously, Eq. \ref{eq: psi transform f rule}, it will turn out that $$S$$ does not need spacetime dependence. Also, remember that $$S$$ is also a matrix in spinor space. Under a Lorentz transform, the Dirac equation transforms as,
 \begin{equation}
-\gamma^\mu\partial_\mu\psi -  m  \psi \rightarrow \gamma^\mu\partial_{\mu'}\psi' -  m  \psi'  = \left(\Lambda^{-1}\right)^\nu_\mu \gamma^\mu S\partial_\nu\psi -  m S \psi = 0.
+i\gamma^\mu\partial_\mu\psi -  m  \psi \rightarrow i\gamma^\mu\partial_{\mu'}\psi' -  m  \psi'  = i\left(\Lambda^{-1}\right)^\nu_\mu \gamma^\mu S\partial_\nu\psi -  m S \psi = 0.
 \end{equation}
 We wish to have the same equation, which, after multiplying by $$S^{-1}$$, we see can be achieved if we pick $$S$$ such that,
 \begin{equation}\label{eq: covariance S relation}
@@ -223,19 +224,24 @@ So, under a Lorentz transformation, the $$\psi$$ spinor field transforms as,
 \psi\rightarrow\psi'= e^{ -\frac{i}{2}\omega_{\mu\nu}\Sigma^{\mu\nu}}\psi,\quad \Sigma^{\mu\nu} = \frac{i}{4}\left\[\gamma^\mu,\gamma^\nu\right\].
 \end{equation}
 
-Now, briefly, two more identities, first, the conjugate of $$S$$, using $$\left(\Sigma^{\mu\nu}\right)^\dagger=-\gamma^0\Sigma^{\mu\nu}\gamma^0$$,
+Now, briefly, a few more identities, first, the conjugate of $$S$$, 
 \begin{equation}
-S^\dagger=e^{-\frac{i}{2}\omega_{\mu\nu}\gamma^0\Sigma^{\mu\nu}\gamma^0} =-\gamma^0 e^{ \frac{i}{2}\omega_{\mu\nu}\Sigma^{\mu\nu}}\gamma^0 = -\gamma^0S^{-1}\gamma^0.
+\left(\Sigma^{\mu\nu}\right)^\dagger=-\frac{i}{4}\left\[\gamma^\mu,\gamma^\nu\right\]^\dagger=\frac{i}{4}\gamma^0\left\[\gamma^\mu,\gamma^\nu\right\]\gamma^0=\gamma^0\Sigma^{\mu\nu}\gamma^0.
 \end{equation}
-We haved used $$\left(\gamma^0\right)^2=-1$$. Secondly, note that because $$S$$ is clearly not unitary, $$\psi^\dagger\psi$$ is not Lorentz invarient, but if we define $$\bar{\psi}=\psi^\dagger\gamma^0\psi$$, the quantity $$\bar{\psi}\psi$$ is a Lorentz scalar,
+From which we obtain,
 \begin{equation}
-\bar{\psi}\psi\rightarrow \psi^\dagger S^\dagger \gamma^0 S \psi = -\psi^\dagger \gamma^0S^{-1}\gamma^0 \gamma^0 S \psi = \bar{\psi}\psi.
+S^\dagger=e^{\frac{i}{2}\omega_{\mu\nu}\gamma^0\Sigma^{\mu\nu}\gamma^0} =\gamma^0 e^{ \frac{i}{2}\omega_{\mu\nu}\Sigma^{\mu\nu}}\gamma^0 = \gamma^0S^{-1}\gamma^0.
 \end{equation}
+We haved used $$\left(\gamma^0\right)^2=1$$. Secondly, note that because $$S$$ is clearly not unitary, $$\psi^\dagger\psi$$ is not Lorentz invarient, but if we define $$\bar{\psi}=\psi^\dagger\gamma^0\psi$$, the quantity $$\bar{\psi}\psi$$ is a Lorentz scalar,
+\begin{equation}
+\bar{\psi}\psi\rightarrow \psi^\dagger S^\dagger \gamma^0 S \psi = \psi^\dagger \gamma^0S^{-1}\gamma^0 \gamma^0 S \psi = \bar{\psi}\psi.
+\end{equation}
+Similarly, it can be shown that $$\bar{\psi}\not \partial \psi$$ is also a Lorentz invariant after consulting Eq. \ref{eq: covariance S relation}.
 
 ## The Dirac Lagrangian
 Finally, it is easy to verify that the Lagrangian that gives rise to the Dirac equation is,
 \begin{equation}
-\mathcal{L}_\text{dirac}=\bar{\psi}\left(\not\partial-m\right)\psi.
+\mathcal{L}_\text{dirac}=\bar{\psi}\left(i\not\partial-m\right)\psi.
 \end{equation}
 Variation with respect to $$\bar{\psi}$$ returns the Dirac equation. Note also that $$\mathcal{L} _\text{dirac}$$ is Lorentz covariant as required for a valid relativistic theory. 
 
