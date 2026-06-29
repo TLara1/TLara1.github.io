@@ -154,20 +154,27 @@ The denominator of the integrand of Eq. \ref{1pi fermion loop integral} becomes,
 \begin{equation}
 \left[\text{Den}\right]=\left(x\left(k+q\right)^2+\left(1-x\right)k^2-m^2\right)^2=\left(\ell^2-\Delta\right)^2,\quad\ell=k+xq,\ \Delta=m^2-x\left(1-x\right)q^2.
 \end{equation}
-In substituting $$\ell$$ and $$\Delta$$, we have simply completed the square. Since $$\ell$$ is linear in $$k$$, our integral over $$k$$ becomes an integral over $$\ell$$. 
+In substituting $$\ell$$ and $$\Delta$$, we have simply completed the square. Since $$\ell$$ is linear in $$k$$, our integral over $$k$$ becomes an integral over $$\ell$$,
+\begin{equation}
+\int\bar{d}^dk\ \frac{\left[\text{Num}\right]}{\left[\text{Den}\right]} = \int\bar{d}^d\ell\ \int_0^1 dx \frac{\left[\text{Num}\right]}{ \left(\ell^2-\Delta \right)^2 }.
+\end{equation}
 
 The numerator is a bit trickier. With our gamma matrix trace identities, we have,
 \begin{equation}
-\left[\text{Num}\right]=-\text{tr}\left[(\gamma^\mu \not k \gamma^\nu+m\gamma^\mu\gamma^\nu)\left(\not q + \not k +m \right)\right] = -4 m^2 eta^{\mu\nu} - 4\left(2k^\mu k^\nu + k^\mu q^\nu + k^\nu q^\mu - \eta^{\mu\nu} (k^2 + k^\alpha q_\alpha\right) \right),
+\left[\text{Num}\right]=-\text{tr}\left[\left(\gamma^\mu \not k \gamma^\nu+m\gamma^\mu\gamma^\nu\right)\left(\not q + \not k +m \right)\right] = -4 m^2 eta^{\mu\nu} - 4\left( 2k^\mu k^\nu + k^\mu q^\nu + k^\nu q^\mu - \eta^{\mu\nu} \left(k^2 + k^\alpha q_\alpha\right) \right),
 \end{equation}
 and substituting in $$\ell$$,
 \begin{equation}
--\frac{1}{4}\left[\text{Num}\right]=\left(\ell^\mu-x q^\mu\right) \left(\ell^\nu+\left(1-x\right)q^\nu\right) + \left(\ell^\nu-x q^\nu\right) \left(\ell^\mu+\left(1-x\right)q^\mu\right) - \eta^{\mu\nu}\left(\left(\ell^\alpha-x q^\alpha\right) \left(\ell_\alpha+\left(1-x\right)q_alpha\right)-m^2\right).
+-\frac{1}{4}\left[\text{Num}\right]=\left(\ell^\mu-x q^\mu\right) \left(\ell^\nu+\left(1-x\right)q^\nu\right) + \left(\ell^\nu-x q^\nu\right) \left(\ell^\mu+\left(1-x\right)q^\mu\right)
+\end{equation}
+\begin{equation}
+ - \eta^{\mu\nu}\left(\left(\ell^\alpha-x q^\alpha\right) \left(\ell_\alpha+\left(1-x\right)q_alpha\right)-m^2\right).\nonumber
 \end{equation}
 We can simplify. Since the denominator is even in $$\ell$$, any term in the numerator that is odd in $$\ell$$ integrates to $$0$$
 \begin{equation}
 -\frac{1}{4}\left[\text{Num}\right]=2\left(\ell^\mu\ell^\nu-x\left(1-x\right) q^\mu q^\nu\right) - \eta^{\mu\nu} \left(\ell^2 - x(1-x)q^2-m^2\right).
 \end{equation}
+
 Now let's consider the $$\ell^\mu\ell^nu$$ terms. The integral over these terms can be written as,
 \begin{equation}
 I^{\mu\nu}=\int \bar{d}^d \ell\ \frac{\ell^\mu\ell^\nu}{f\left(\ell^2\right)},
@@ -217,7 +224,30 @@ Using the exact same procedure for the $$\ell^2$$ integrals, we obtain
 \begin{equation}
 \int\bar{d}^d\ell\ \frac{\ell^2}{\left(\ell^2-\Delta\right)^2}=-\frac{ 2\pi^{d/2}i }{\left(2\pi\right)^d\Gamma\left(d/2\right) }\int_0^\infty dr_E\ \frac{r_E^{d+1}}{ \left( r_E^2+\Delta \right)^2}=-\frac{ i }{\left(4\pi\right)^{d/2}\Gamma\left(d/2\right)}\Gamma\left(1+d/2\right)\Gamma\left(1-d/2\right)\Delta^{d/2-1}.
 \end{equation}
-Evaluating the Gamma functions at $$d=4$$ except when it would cause a divergence, we 
+We may modify this slightly with the recurance relation $$\Gamma\left(z+1\right)=z\Gamma\left(z\right)$$,
+\begin{equation}
+\int\bar{d}^d\ell\ \frac{\ell^2}{\left(\ell^2-\Delta\right)^2}=-\frac{ i }{\left(4\pi\right)^{d/2}\Gamma\left(d/2\right)\left(1-d/2\right)}\Gamma\left(1+d/2\right)\Gamma\left(2-d/2\right)\Delta^{d/2-1}.
+\end{equation}
+
+Evaluating the Gamma functions at $$d=4$$ except when it would cause a divergence, we integrate over $$\ell$$ for the terms in our numerator,
+\begin{equation}
+\int\bar{d}^d\ell\ \frac{ x\left(1-x\right)\left(q^2\eta^{\mu\nu} -2  q^\mu q^\nu \right) + m^2\eta^{\mu\nu} }{ \left(\ell^2-\Delta \right)^2 }=\frac{ i }{ \left(4\pi\right)^{d/2} }\left( x\left(1-x\right)\left(q^2\eta^{\mu\nu} -2  q^\mu q^\nu \right) + m^2\eta^{\mu\nu} \right)\Gamma\left(2-d/2\right)\Delta^{d/2-2}
+\end{equation}
+\begin{equation}
+=\frac{ i }{ \left(4\pi\right)^{d/2} }\left( 2x\left(1-x\right)q^2 t^{\mu\nu}_T + \Delta \eta^{\mu\nu} \right)\Gamma\left(2-d/2\right)\Delta^{d/2-2}.
+\end{equation}
+For the $$\ell^2$$ term,
+\begin{equation}
+\int\bar{d}^d\ell\ \frac{ \left(\frac{2}{d} - 1\right)\ell^2 }{ \left(\ell^2-\Delta \right)^2 }= -\frac{ i }{\left(4\pi\right)^{d/2}}\Gamma\left(2-d/2\right)\Delta^{d/2-1}.
+\end{equation}
+As expected, the non-$$t^{\mu\nu}_T$$ terms cancel, and writing out our loop integral in full,
+\begin{equation}
+\int\bar{d}^d\ell\ \frac{\left[\text{Num}\right]}{ \left(\ell^2-\Delta \right)^2 } = -\frac{ 8i }{ \left(4\pi\right)^{d/2} }q^2 t^{\mu\nu}_T\Gamma\left(2-d/2\right)x\left(1-x\right)\Delta^{d/2-2}.
+\end{equation}
+
+Wonderful, now we need only evaluate the integral over $$x$$ arising from the Feynman parametrization.
+
+
 
 
 
