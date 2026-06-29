@@ -61,14 +61,16 @@ F^{\mu\nu}=\partial^\mu A^\nu - \partial^\nu A^\mu.
 \end{equation}
 Finally, the last term in Eq. \ref{eq: QED Lagrangian} is a gauge-coupling term that arises from gauge symmetry and the Fadeev-Popov procedure. The constant $$\xi$$ is a gauge constant, whose value does not influence the physics. 
 
-The QED action comes from integrating the Lagrangian, after application of the product rule, we find,
+The QED action comes from integrating the Lagrangian; after application of the product rule, we find,
 \begin{equation}
 S_\text{QED}=\int dx^4\ \mathcal{L} _\text{QED}=\int dx^4\ \bar{\psi} \left(i\not\partial- m\right)\psi +\frac{1}{2} A^\mu\left( \eta _{\mu\nu}\partial^2  - \left( 1 - \frac{1}{\epsilon}\right) \partial _\mu \partial _\nu  \right)A^\nu - e \bar{\psi}\not A \psi.
 \end{equation}
-From this action, it is fairly straightforward to obtain the Feynman rules for the fermionic and photonic propagators in momentum space, a procedure that I will not discuss here. The Feynman rules for internal propagators are,
-\begin{equation}
+From this action, it is fairly straightforward to obtain the Feynman rules for the fermionic and photonic propagators in momentum space, a procedure that I will not discuss here. The Feynman rules for internal propagators are:
 
-\end{equation}
+<div style="text-align: center;">
+  {% include figure.liquid loading="eager" path="assets/img/QED_diagrams/QED_feynman_rules.png" title="QED_feynman_rules" class="img-fluid rounded z-depth-0" width="auto" height="300" %}
+</div>
+
 
 
 
