@@ -70,7 +70,7 @@ From this action, it is fairly straightforward to obtain the Feynman rules for t
 <div style="text-align: center;">
   {% include figure.liquid loading="eager" path="assets/img/QED_diagrams/QED_feynman_rules.png" title="QED_feynman_rules" class="img-fluid rounded z-depth-0" width="auto" height="300" %}
 </div>
-
+There are also a few rules for external propagators that we will not mention, as they are unimportant in this context.
 
 
 
