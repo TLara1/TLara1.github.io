@@ -35,6 +35,12 @@ A useful property that follows from Eq. \ref{eq: gamma anticommutation relation}
 \begin{equation}
 \left(\gamma^\mu\right)^\dagger=\gamma^0\gamma^\mu\gamma^0.
 \end{equation}
+There are also a number of properties involving the traces of the gamma matrices,
+\begin{equation}
+\text{tr}\left[\gamma^\mu\gamma^\nu\right]=4\eta_{\mu\nu},\quad\text{tr}\left[\gamma^\mu\gamma^\nu\gamma^\alpha\gamma^\beta\right]=4\left(\eta_{\mu\nu}\eta_{\alpha\beta}-\eta_{\mu\alpha}\eta_{\nu\beta}+\eta_{\mu\beta}\eta_{\nu\alpha}\right).
+\end{equation}
+Furthermore, due to anticommutation, the trace of a product of an odd number of gamma matrices is zero.
+
 We also define the adjoint $$\bar{ }$$ operation as,
 \begin{equation}
 \bar{\psi}^\mu=\psi^\dagger\gamma^0,
@@ -150,7 +156,9 @@ The denominator of the integrand of Eq. \ref{1pi fermion loop integral} becomes,
 \end{equation}
 In substituting $$\ell$$ and $$\Delta$$, we have simply completed the square. Since $$\ell$$ is linear in $$k$$, our integral over $$k$$ becomes an integral over $$\ell$$. 
 
-The numerator is a bit trickier. We 
+The numerator is a bit trickier. With our gamma matrix trace identities, we have
+
+
 
 
 ### Sources
