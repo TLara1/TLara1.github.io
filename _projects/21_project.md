@@ -130,8 +130,10 @@ Therefore, corrections beyond first-order should be proportional to $$t _{T\ \mu
 
 Finally, we are ready to start integrating to determine the value of $$\Pi\left(q\right)$$. Reading off the Feynman rules from the 1PI 1-loop diagram,
 \begin{equation}
-i q^2 \Pi\left(q\right) t _{T\ \mu\nu} = \left(-i e\right)^2(-1)\int\bar{d}^dk\ \frac{\epsilon^{*}\left[\gamma^\mu\right]}{}
+i q^2 \Pi\left(q\right) t _{T\ \mu\nu} = \left(-i e\right)^2(-1)\int\bar{d}^dk\ \frac{\text{tr}\left[\gamma^\mu i\left(\not k+m\right)i\gamma^\nu\left(\not q + \not k +m \right)\right]}{\left(k^2-m^2\right)\left(\left(k+q\right)^2-m^2\right)}.
 \end{equation}
+Lovely. Okay, here we go. First, we use the Feynman paramterization, which is the integral identity,
+
 
 
 
