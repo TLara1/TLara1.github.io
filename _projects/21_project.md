@@ -13,9 +13,9 @@ toc:
 ## Introduction
 Oh dear. This is a terrible idea. I shudder at the thought of all the notation I will need to get right here. Wish me luck, please proceed with caution.
 
-I am, unfortunately, no longer much of a theoretical physicist. I took three semesters of Quantum Field Theory (QFT) and decided it was not for me. But there is a beauty in the calculations of QFT, the slow methodical alignment of a malestrom of algebra and indices. I doubt these notes will serve me much in the future, but I wish to conserve some fraction of what I learned in QFT in a more permanent manner. 
+I am, unfortunately, no longer much of a theoretical physicist. I took three semesters of Quantum Field Theory (QFT) and decided it was not for me. But there is a beauty in the calculations of QFT, the slow methodical alignment of a maelstrom of algebra and indices. I doubt these notes will serve me much in the future, but I wish to conserve some fraction of what I learned in QFT in a more permanent manner. 
 
-Here, we will compute the first-order renormalization of the theory of Quantum Electrodynamics (QED). That is to say, we will identify the four counterterms necessary to remove divergences from 1-loop level QED diagrams. This will mostly involve resolving some very nasty-looking integrals, but after doing these calculations once, they can be done a thousand times. 
+Here, we will compute the first-order renormalization of the theory of Quantum Electrodynamics (QED). That is to say, we will identify the four counterterms necessary to remove divergences from 1-loop level QED diagrams. This will mostly involve resolving some very nasty-looking integrals, but after doing these calculations once, they can be done a thousand times. I will not present every detail, leaving some things untouched. Otherwise, these notes would quickly spiral into an entire semester's worth of content. 
 
 Note here that we will only look at the tip of the QFT iceberg. Things become **severely** more complicated at higher orders of loop calculation, and everything I will present is fairly straightforward. For the sake of not complicating things too much, I will not go too too in-depth here, leaving the more sophisticated details to those who are more qualified than me.
 
@@ -86,7 +86,7 @@ It can be shown that the external propagators satisfy the relations,
 \not p u = m u,\quad \not p v= -m v,
 \end{equation}
 \begin{equation}
-\epsilon^\mup_\mu = 0,
+\epsilon^\mu p_\mu = 0,
 \end{equation}
 \begin{equation}
 \sum_{s} u \bar{u}=\not{p}+m,\quad\sum_{r} v \bar{v}=\not{p}-m,
@@ -98,7 +98,35 @@ It can be shown that the external propagators satisfy the relations,
 These relations will come in handy when resolving our diagrams. 
 
 ## The Photonic Propagator at One Loop
-In this section, we are interested in the two-point photonic propagator, which in general, will have a diagram resembling 
+In this section, we are interested in the two-point photonic propagator $$D_{\mu\nu}$$, which in general, will have a diagram resembling: 
+
+<div style="text-align: center;">
+  {% include figure.liquid loading="eager" path="assets/img/QED_diagrams/D_munu_photon_propagator.png" title="D_munu_photon_propagator" class="img-fluid rounded z-depth-0" width="auto" height="270" %}
+</div>
+
+The "stuff" in the diagram represents some general interaction contained within the two external legs. This general interaction can be decomposed as a sum of the tree-level diagram and 1-particle irreducible (1PI) diagrams, where the (1PI) diagrams are those that cannot be split in two by cutting a single line. To first loop order, the contribution to $$D_{\mu\nu}$$ consists of the tree-level diagram and a single 1PI ferminoic loop. 
+
+Via the Ward-Takahashi identity, which is essentially Noether's Theorem applied to path integrals, it can be shown that the two-point photonic propagator satisfies,
+\begin{equation}
+\frac{i}{\xi}q^2q^\mu D_{\mu\nu}=q_\nu.
+\end{equation}
+For convenience, denote the tensor and the projector,
+\begin{equation}
+t_{\mu\nu}=\eta_{\mu\nu}-\left(1-\xi\right)\frac{q_\mu q_\nu}{q^2},\quad t _{T\ \mu\nu}=\eta_{\mu\nu}-\frac{q_\mu q_\nu}{q^2},
+\end{equation}
+noting that,
+\begin{equation}
+t^\alpha{T\ \mu}t_{\alpha\nu}=t_{T\ \mu\nu},\quad t _{\mu\nu}q^\mu = \xi q _\nu,\quad t _{T\ \mu\nu}q^\mu=0.
+\end{equation}
+At tree-level, the propagator takes the form,
+\begin{equation}
+ D^\text{tree} _{\mu\nu}= -\frac{i}{q^2}t _{\mu\nu},
+\end{equation}
+from which we identify,
+\begin{equation}
+\frac{i}{\xi}q^2q^\mu D^\text{tree} _{\mu\nu}=q _\nu.
+\end{equation}
+Therefore, corrections beyond first-order should be proportional to $$t _{T\ \mu\nu}$$ which is orthogonal to $$q^\nu$$. And with this in mind, we write the 1PI diagram for an internal fermion loop as $$i q^2 \Pi\left(q\right) t _{T\ \mu\nu}$$, where $$\Pi\left(q\right)$$ is a function of the momentum to be determined.
 
 
 
