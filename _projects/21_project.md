@@ -39,9 +39,13 @@ We also define the adjoint $$\bar{ }$$ operation as,
 \begin{equation}
 \bar{\psi}^\mu=\psi^\dagger\gamma^0,
 \end{equation}
-where $$\psi$$ is a four-component spinor. We use the $$\not$$ notation to denote a combination with the gamma matrices,
+where $$\psi$$ is a four-component spinor. We use the $$\not p$$ notation to denote a combination with the gamma matrices,
 \begin{equation}
 \not{p}=\gamma^\mu p_\mu.
+\end{equation}
+We also use the $$\bar d$$ notation to indicate division by $$2\pi$$, 
+\begin{equation}
+\bar{d} k = \frac{d k}{2\pi}
 \end{equation}
 
 Onward and upward.
@@ -92,7 +96,7 @@ It can be shown that the external propagators satisfy the relations,
 \sum_{s} u^{(s)} \bar{u}^{(s)}=\not{p}+m,\quad\sum_{r} v^{(r)} \bar{v}^{(r)}=\not{p}-m,
 \end{equation}
 \begin{equation}
-\sum_{s} \epsilon^\mu \left(\epsilon^{*}\right) ^\nu = -\eta^{\mu\nu} + \left(1-\xi\right)\frac{p^\mup^nu}{p^2}.
+\sum_{s} \epsilon^\mu \left(\epsilon^{*}\right) ^\nu = -\eta^{\mu\nu} + \left(1-\xi\right)\frac{p^\mu p^nu}{p^2}.
 \end{equation}
 
 These relations will come in handy when resolving our diagrams. 
@@ -111,9 +115,11 @@ Via the Ward-Takahashi identity, which is essentially Noether's Theorem applied 
 \frac{i}{\xi}q^2q^\mu D_{\mu\nu}=q_\nu.
 \end{equation}
 For convenience, denote the tensor and the projector,
+
 \begin{equation}
-t_{\mu\nu}=\eta_{\mu\nu}-\left(1-\xi\right)\frac{q_\mu q_\nu}{q^2},\quad t _{T\ \mu\nu}=\eta_{\mu\nu}-\frac{q_\mu q_\nu}{q^2},
+t_{\mu\nu}=\eta_{\mu\nu}-\left(1-\xi\right)\frac{q_\mu q_\nu}{q^2},\quad t _{T\ \mu\nu}=\eta _{\mu\nu}-\frac{q _\mu q _\nu}{q^2},
 \end{equation}
+
 noting that,
 \begin{equation}
 t^\alpha{T\ \mu}t_{\alpha\nu}=t_{T\ \mu\nu},\quad t _{\mu\nu}q^\mu = \xi q _\nu,\quad t _{T\ \mu\nu}q^\mu=0.
@@ -129,12 +135,22 @@ from which we identify,
 Therefore, corrections beyond first-order should be proportional to $$t _{T\ \mu\nu}$$ which is orthogonal to $$q^\nu$$. And with this in mind, we write the 1PI diagram for an internal fermion loop as $$i q^2 \Pi\left(q\right) t _{T\ \mu\nu}$$, where $$\Pi\left(q\right)$$ is a function of the momentum to be determined.
 
 Finally, we are ready to start integrating to determine the value of $$\Pi\left(q\right)$$. Reading off the Feynman rules from the 1PI 1-loop diagram,
-\begin{equation}
+\begin{equation}\label{1pi fermion loop integral}
 i q^2 \Pi\left(q\right) t _{T\ \mu\nu} = \left(-i e\right)^2(-1)\int\bar{d}^dk\ \frac{\text{tr}\left[\gamma^\mu i\left(\not k+m\right)i\gamma^\nu\left(\not q + \not k +m \right)\right]}{\left(k^2-m^2\right)\left(\left(k+q\right)^2-m^2\right)}.
 \end{equation}
-Lovely. Okay, here we go. First, we use the Feynman paramterization, which is the integral identity,
+I have written the integral in $$d$$ dimensions, which should be $$d=4$$, but we will keep as $$d$$ for now for reasons that will be evident later.
 
+Lovely. Okay, here we go. First, we use the Feynman parameterization, which is the integral identity,
+\begin{equation}
+\frac{1}{ab}=\int_0^1dx\ \frac{1}{\left(ax+b\left(1-x\right)\right)^2}.
+\end{equation}
+The denominator of the integrand of Eq. \ref{1pi fermion loop integral} becomes,
+\begin{equation}
+\left[Den\right]=\left(x\left(k+q\right)^2+\left(1-x\right)k^2-m^2\right)^2=\left(\ell^2-\Delta\right)^2,quad\ell=k+xq,\ \Delta=m^2-x\left(1-x\right)q^2.
+\end{equation}
+In substituting $$\ell$$ and $$\Delta$$, we have simply completed the square. Since $$\ell$$ is linear in $$k$$, our integral over $$k$$ becomes an integral over $$\ell$$. 
 
+The numerator is a bit trickier. We 
 
 
 ### Sources
