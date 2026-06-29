@@ -185,10 +185,39 @@ for a $$d$$-dimensional spacetime. So, we conclude that we can replace the $$\el
 -\frac{1}{4}\left[\text{Num}\right]=x\left(1-x\right)\left(q^2\eta^{\mu\nu} -2  q^\mu q^\nu \right) + m^2\eta^{\mu\nu} + \left(\frac{2}{d} - 1\right)\ell^2.
 \end{equation}
 
-We have two integrals to evaluate. First terms in the numerator with constant coefficients,
+We have two integrals to evaluate. First, terms in the numerator that have constant coefficients,
 \begin{equation}
-\int
+\int\bar{d}^d\ell\ \frac{1}{\left(\ell^2-\Delta\right)^2}=i\int\bar{d}^d\ell_E\ \frac{1}{ \left( \ell_E^2+\Delta \right)^2 }.
 \end{equation}
+We have performed a Wick Rotation, the Euclidean momenta $$\ell_E^\mu$$ are related to $$\ell^\mu$$ with,
+\begin{equation}
+\ell_E^0=i\ell^0,\ \ell_E^i=\ell^i.
+\end{equation}
+from which it follows that,
+\begin{equation}
+\ell^2=\eta_{\mu\nu}\ell^\mu\ell^nu=-\ell_E^2=-\left(\ell_E^0\right)^2-\left(\ell_E^1\right)^2-\left(\ell_E^2\right)^2-\left(\ell_E^3\right)^2.
+\end{equation}
+We can now transform the integral into spherical coordinates with the $$d$$-dimensional radius $$r_E^2=\ell_E^2$$ and,
+\begin{equation}
+\bar{d}^d\ell_E = dr_E r_E^{d-1} d\Sigma_d.
+\end{equation}
+We evaluate the $$d-1$$ angular dependence using the standard result for the volume of a $$d$$ ball,
+\begin{equation}
+\int d\Sigma_d = \frac{2\pi^{d/2}}{\Gamma\left(d/2\right)}.
+\end{equation}
+In summary, our integral has been transformed into,
+\begin{equation}
+\int\bar{d}^d\ell\ \frac{1}{\left(\ell^2-\Delta\right)^2}=\frac{ 2\pi^{d/2}i }{\left(2\pi\right)^d\Gamma\left(d/2\right)}\int_0^\infty dr_E\ \frac{r_E^{d-1}}{ \left( r_E^2+\Delta \right)^2}.
+\end{equation}
+After evaluating the final integral using the Beta function, we find
+\begin{equation}
+\int\bar{d}^d\ell\ \frac{1}{\left(\ell^2-\Delta\right)^2}=\frac{ i }{ \left(4\pi\right)^{d/2} }\Gamma\left(2-d/2\right)\Delta^{d/2-2}.
+\end{equation}
+Using the exact same procedure for the $$\ell^2$$ integrals, we obtain
+\begin{equation}
+\int\bar{d}^d\ell\ \frac{\ell^2}{\left(\ell^2-\Delta\right)^2}=-\frac{ 2\pi^{d/2}i }{\left(2\pi\right)^d\Gamma\left(d/2\right) }\int_0^\infty dr_E\ \frac{r_E^{d+1}}{ \left( r_E^2+\Delta \right)^2}=-\frac{ i }{\left(4\pi\right)^{d/2}\Gamma\left(d/2\right)}\Gamma\left(1+d/2\right)\Gamma\left(1-d/2\right)\Delta^{d/2-1}.
+\end{equation}
+Evaluating the Gamma functions at $$d=4$$ except when it would cause a divergence, we 
 
 
 
