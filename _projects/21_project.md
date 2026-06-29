@@ -89,16 +89,16 @@ It can be shown that the external propagators satisfy the relations,
 \epsilon^\mu p_\mu = 0,
 \end{equation}
 \begin{equation}
-\sum_{s} u \bar{u}=\not{p}+m,\quad\sum_{r} v \bar{v}=\not{p}-m,
+\sum_{s} u^{(s)} \bar{u}^{(s)}=\not{p}+m,\quad\sum_{r} v^{(r)} \bar{v}^{(r)}=\not{p}-m,
 \end{equation}
 \begin{equation}
-\sum_{s} \epsilon^\mu \left(\epsilon^*\right)^\nu = -\eta^{\mu\nu} + \left(1-\xi\right)\frac{p^\mup^nu}{p^2}.
+\sum_{s} \epsilon^\mu \left(\epsilon^{*}\right) ^\nu = -\eta^{\mu\nu} + \left(1-\xi\right)\frac{p^\mup^nu}{p^2}.
 \end{equation}
 
 These relations will come in handy when resolving our diagrams. 
 
 ## The Photonic Propagator at One Loop
-In this section, we are interested in the two-point photonic propagator $$D_{\mu\nu}$$, which in general, will have a diagram resembling: 
+In this section, we are interested in the two-point photonic propagator $$D_{\mu\nu}$$, which, in general, will have a diagram resembling: 
 
 <div style="text-align: center;">
   {% include figure.liquid loading="eager" path="assets/img/QED_diagrams/D_munu_photon_propagator.png" title="D_munu_photon_propagator" class="img-fluid rounded z-depth-0" width="auto" height="270" %}
@@ -128,7 +128,10 @@ from which we identify,
 \end{equation}
 Therefore, corrections beyond first-order should be proportional to $$t _{T\ \mu\nu}$$ which is orthogonal to $$q^\nu$$. And with this in mind, we write the 1PI diagram for an internal fermion loop as $$i q^2 \Pi\left(q\right) t _{T\ \mu\nu}$$, where $$\Pi\left(q\right)$$ is a function of the momentum to be determined.
 
-
+Finally, we are ready to start integrating to determine the value of $$\Pi\left(q\right)$$. Reading off the Feynman rules from the 1PI 1-loop diagram,
+\begin{equation}
+i q^2 \Pi\left(q\right) t _{T\ \mu\nu} = \left(-i e\right)^2(-1)\int\bar{d}^dk\ \frac{\epsilon^{*}\left[\gamma^\mu\right]}{}
+\end{equation}
 
 
 
