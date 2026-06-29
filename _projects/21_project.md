@@ -75,12 +75,30 @@ The QED action comes from integrating the Lagrangian; after application of the p
 \begin{equation}
 S_\text{QED}=\int dx^4\ \mathcal{L} _\text{QED}=\int dx^4\ \bar{\psi} \left(i\not\partial- m\right)\psi +\frac{1}{2} A^\mu\left( \eta _{\mu\nu}\partial^2  - \left( 1 - \frac{1}{\epsilon}\right) \partial _\mu \partial _\nu  \right)A^\nu - e \bar{\psi}\not A \psi.
 \end{equation}
-From this action, it is fairly straightforward to obtain the Feynman rules for the fermionic and photonic propagators in momentum space, a procedure that I will not discuss here. For external propagators, the procedure involves solving the free-space equations of motion.
+From this action, it is fairly straightforward to obtain the Feynman rules for the fermionic and photonic propagators in momentum space, a procedure that I will not discuss here. For external propagators, the procedure involves solving the free-space equations of motion. Each external line has two polarizations noted by the indices $$r$$ and $$s$$.
 
 <div style="text-align: center;">
   {% include figure.liquid loading="eager" path="assets/img/QED_diagrams/QED_feynman_rules.png" title="QED_feynman_rules" class="img-fluid rounded z-depth-0" width="auto" height="270" %}
 </div>
 
+It can be shown that the external propagators satisfy the relations,
+\begin{equation}
+\not p u = m u,\quad \not p v= -m v,
+\end{equation}
+\begin{equation}
+\epsilon^\mup_\mu = 0,
+\end{equation}
+\begin{equation}
+\sum_{s} u \bar{u}=\not{p}+m,\quad\sum_{r} v \bar{v}=\not{p}-m,
+\end{equation}
+\begin{equation}
+\sum_{s} \epsilon^\mu \left(\epsilon^*\right)^\nu = -\eta^{\mu\nu} + \left(1-\xi\right)\frac{p^\mup^nu}{p^2}.
+\end{equation}
+
+These relations will come in handy when resolving our diagrams. 
+
+## The Photonic Propagator at One Loop
+In this section, we are interested in the two-point photonic propagator, which in general, will have a diagram resembling 
 
 
 
