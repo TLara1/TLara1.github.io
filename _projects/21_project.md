@@ -46,7 +46,7 @@ Onward and upward.
 ## The QED Lagrangian and Feynman Rules. 
 The Lagrangian for QED describing the interactions between a spin-1/2 spinor field $$\psi\left(\mathbf{X}\right)$$ and a gauge field $$A_\mu\left(\mathbf{x}\right)$$ is,
 \begin{equation}
-\mathcal{L}_\text{QED}=\\left(\not D
+\mathcal{L} _\text{QED}=\bar{\psi}\left(i\not D-m\right)\psi-\frac{1}{4}F^{\mu\nu}F _{\mu\nu}.
 \end{equation}
 
 
