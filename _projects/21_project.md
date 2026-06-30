@@ -379,10 +379,10 @@ For the numerator,
 Dropping terms that are odd in $$\ell$$ and employing our gamma matrix identities,
 \begin{equation}
 \left[\text{Num}\right] = -\left(1-\xi\right)\left[ 
--\ell^2\left(\left(1+x\right)\not p-m\right) + 2 (1-x)  \not \ell \ell^\mu p_mu+x^2\not p((1-x)\not p + m)\not p \right]
+-\ell^2\left(\left(1+x\right)\not p-m\right) + 2 (1-x)  \not \ell \ell^\mu p_mu+x^2p^2\left((1-x)\not p + m\right)\right]
 \end{equation}
 \begin{equation}
- = -\left(1-\xi\right)\left[-\ell^2\left(\left(1+x-\frac{2\left(1-x\right)}{d}\right)\not p-m\right) + x^2\not p((1-x)\not p + m)\not p \right]. \nonumber
+ = -\left(1-\xi\right)\left[-\ell^2\left(\left(1+x-\frac{2\left(1-x\right)}{d}\right)\not p-m\right) + x^2p^2\left((1-x)\not p + m\right) \right]. \nonumber
 \end{equation}
 Evaluating the integrals over $$\ell$$,
 \begin{equation}
@@ -396,6 +396,20 @@ and,
 =\frac{ i \left(2-\epsilon\right)}{ 2\left(4\pi\right)^2 }\frac{\left(4\pi\right)^{\epsilon} }{\epsilon}\Gamma\left(1+\epsilon\right)\Delta^{-\epsilon}.\nonumber
 \end{equation}
 Evaluating the numerator,
+\begin{equation}
+\left[ \text{Num} \right] = -\left(1-\xi\right)\frac{i\left(4\pi\right)^{\epsilon}}{2\left(4\pi\right)^2} \left[  -\frac{\left(2-\epsilon\right)}{\epsilon}\left(\left(1+x-\frac{2\left(1-x\right)}{4-2\epsilon}\right)\not p-m\right) - x^2p^2\left((1-x)\not p + m\right) \Delta ^{-1} \right] \Gamma\left(1+\epsilon\right)\Delta^{-\epsilon}.
+\end{equation}
+We see there will be a term of order $$\epsilon^{-1}$$ in addition to the finite term. Expanding around $$\epsilon=0$$,
+\begin{equation}
+-\frac{\left(2-\epsilon\right)}{\epsilon}\left(\left(1+x-\frac{2\left(1-x\right)}{4-2\epsilon}\right)\not p-m\right) \Gamma\left(1+\epsilon\right)\Delta^{-\epsilon} = \left(\frac{1}{\epsilon}\left(-\left(1+3x\right)\not p +2m\right)+\frac{1}{2}\left(1+3x\right)\not p - m + ...\right) \Gamma\left(1+\epsilon\right)\Delta^{-\epsilon},
+\end{equation}
+\begin{equation}
+= \frac{1}{\epsilon}\left(-\left(1+3x\right)\not p +2m\right)+\frac{1}{2}\left(1+3x\right)\not p - m + \left(\left(1+3x\right)\not p - 2m\right)\left(\gamma_E+\log\left(\Delta\right)\right) ...\nonumber
+\end{equation}
+For the finite term,
+\begin{equation}
+- x^2p^2\left((1-x)\not p + m\right) \Delta ^{-1-\epsilon} \Gamma\left(1+\epsilon\right) = - x^2p^2\left((1-x)\not p + m\right).
+\end{equation}
 
 
 
