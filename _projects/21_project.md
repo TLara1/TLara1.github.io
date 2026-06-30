@@ -360,7 +360,7 @@ I = \frac{ i }{ \left(4\pi\right)^{2} }\int_0^1 dx\ \left[ \frac{2}{\epsilon}\le
 \end{equation}
 and performing the integral and removing terms linear in $$\epsilon$$,
 \begin{equation}
-I = \frac{ i }{ \left(4\pi\right)^{2} }\left[\frac{1}{\epsilon}\left(4m-\not p\right)+\left(-2\left(1+2\gamma_E\right)m+\left(1+\gamma_E\right)\not p\right) + 2\int_0^1 dx\ \left(x\not p -2m\right)\log\left(\frac{\left(1-x\right)\left(m^2-xp^2\right)}{4\pi}\right)\right].
+I = \frac{ i }{ \left(4\pi\right)^{2} }\left[\frac{1}{\epsilon}\left(4m-\not p\right)+\left(-2\left(1+2\gamma_E\right)m+\left(1+\gamma_E\right)\not p\right) + 2\int_0^1 dx\ \left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi}\right)\right].
 \end{equation}
 Excellent.
 
@@ -451,33 +451,22 @@ I_\xi = -\left(1-\xi\right) \frac{i}{2\left(4\pi\right)^2} \left[\frac{2}{\epsil
 \end{equation}
 Adding this to $$I$$,
 \begin{equation}
-I + I_\xi = -\left(1-\xi\right) \frac{i}{\left(4\pi\right)^2} \left[\frac{1}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(\frac{1}{2}+\gamma_E\right) + \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right].
+I + I_\xi = \frac{ i }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}\not p + 2\int_0^1 dx\ \left[\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi}\right)  - \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right] \right]
 \end{equation}
-
-
-
-\xi \frac{i}{\left(4\pi\right)^2} \left[\frac{1}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(\frac{1}{2}+\gamma_E\right) + \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right]
-
-\frac{i}{\left(4\pi\right)^2} \left[\frac{1}{\epsilon}\left(\not p-m\right) + \left(m - \not p \right)\left(\frac{1}{2}+\gamma_E\right) - \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right]
-
-+ \frac{ i }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(4m-\not p\right)+\left(-2\left(1+2\gamma_E\right)m+\left(1+\gamma_E\right)\not p\right) + 2\int_0^1 dx\ \left(x\not p -2m\right)\log\left(\frac{\left(1-x\right)\left(m^2-xp^2\right)}{4\pi}\right)\right]
-
-
-
-\frac{ i }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)+\left(-2\left(1+2\gamma_E\right)m+\left(1+\gamma_E\right)\not p\right)
-
-
-
-
-+\left(-2\left(1+2\gamma_E\right)m+\left(1+\gamma_E\right)\not p\right) + 2\int_0^1 dx\ \left(x\not p -2m\right)\log\left(\frac{\left(1-x\right)\left(m^2-xp^2\right)}{4\pi}\right)\right]
-
-
-
-
+\begin{equation}
++ \xi \frac{i}{\left(4\pi\right)^2} \left[\frac{1}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(\frac{1}{2}+\gamma_E\right) + \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right] \nonumber.
+\end{equation}
 And thus, our full fermionic 1PI propagator is,
 \begin{equation}
-\Sigma = -\left(1-\xi\right) \frac{i}{2\left(4\pi\right)^2} \left[\frac{2}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(1+2\gamma_E\right) + 2\int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right].
+\Sigma = \frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}\not p + 2\int_0^1 dx\ \left[\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi\mu}\right)  - \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi\mu}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right] \right]
 \end{equation}
+\begin{equation}
++ \xi \frac{i}{\left(4\pi\right)^2} \left[\frac{1}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(\frac{1}{2}+\gamma_E\right) + \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi\mu}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right] \nonumber.
+\end{equation}
+We have again used $$e=e'\mu$$ to obtain the correct dimensions in the logarithmic terms.
+
+
+
 
 
 ### Sources
