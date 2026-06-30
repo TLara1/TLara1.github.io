@@ -375,15 +375,15 @@ We must employ the three-parameter Feynman trick,
 \end{equation}
 and rewrite the denominator as,
 \begin{equation}
-\left[\text{Den}\right] = \left(\left(k-p\right)^2 + \left(-p^2 -m^2 + 2kp\right)x\right)^3 = \left(\ell^2-\Delta\right)^3,
+\left[\text{Den}\right] = \left(\left(k-p\right)^2 + \left(-p^2 -m^2 + 2kp\right)x\right)^3 = \left(\ell^2-\Delta'\right)^3,
 \end{equation}
 \begin{equation}
-\ell=k-\left(1-x\right)p,\ \Delta = x\left(m^2+x\left(x-1\right)p^2\right).
+\ell=k-\left(1-x\right)p,\ \Delta' = x\left(m^2+x\left(x-1\right)p^2\right).
 \end{equation}
 Integrating over $$y$$ and accounting for the prefactor, the integral becomes,
 
 \begin{equation}
-I_\xi = \int\bar{d}^d\ell\ \int _0^1 dx\ 2\left(1-x\right)\frac{\left[\text{Num}\right]}{\left(\ell-\Delta\right)^3}.
+I_\xi = \int\bar{d}^d\ell\ \int _0^1 dx\ 2\left(1-x\right)\frac{\left[\text{Num}\right]}{\left(\ell-\Delta'\right)^3}.
 \end{equation}
 
 For the numerator,
@@ -400,39 +400,84 @@ Dropping terms that are odd in $$\ell$$ and employing our gamma matrix identitie
 \end{equation}
 Evaluating the integrals over $$\ell$$,
 \begin{equation}
-\int\bar{d}^d\ell\ \frac{1}{\left(\ell^2-\Delta\right)^3}=-\frac{ i }{ 2\left(4\pi\right)^{2} }\left(4\pi\right)^{\epsilon}\Gamma\left(1+\epsilon\right)\Delta^{-\left(1+\epsilon\right)},
+\int\bar{d}^d\ell\ \frac{1}{\left(\ell^2-\Delta'\right)^3}=-\frac{ i }{ 2\left(4\pi\right)^{2} }\Gamma\left(1+\epsilon\right)\left(\frac{\Delta}{4\pi}\right)^{-\epsilon}\Delta'^{-1},
 \end{equation}
 and,
 \begin{equation}
-\int\bar{d}^d\ell\ \frac{\ell^2}{\left(\ell^2-\Delta\right)^3}=\frac{ i }{ 2\left(4\pi\right)^{2} \Gamma{2-\epsilon}}\left(4\pi\right)^{\epsilon}\Gamma{3-\epsilon}\Gamma\left(\epsilon\right)\Delta^{-\epsilon}
+\int\bar{d}^d\ell\ \frac{\ell^2}{\left(\ell^2-\Delta'\right)^3}=\frac{ i }{ 2\left(4\pi\right)^{2} \Gamma{2-\epsilon}}\Gamma{3-\epsilon}\Gamma\left(\epsilon\right)\left(\frac{\Delta'}{4\pi}\right)^{-\epsilon}
 \end{equation}
 \begin{equation}
-=\frac{ i \left(2-\epsilon\right)}{ 2\left(4\pi\right)^2 }\frac{\left(4\pi\right)^{\epsilon} }{\epsilon}\Gamma\left(1+\epsilon\right)\Delta^{-\epsilon}.\nonumber
+=\frac{ i \left(2-\epsilon\right)}{ 2\epsilon\left(4\pi\right)^2 }\Gamma\left(1+\epsilon\right)\left(\frac{\Delta'}{4\pi}\right)^{-\epsilon}.\nonumber
 \end{equation}
 Evaluating the numerator,
 \begin{equation}
-\left[ \text{Num} \right] = -\left(1-\xi\right)\frac{i\left(4\pi\right)^{\epsilon}}{2\left(4\pi\right)^2} \left[  -\frac{\left(2-\epsilon\right)}{\epsilon}\left(\left(1+x-\frac{2\left(1-x\right)}{4-2\epsilon}\right)\not p-m\right) - x^2p^2\left((1-x)\not p + m\right) \Delta ^{-1} \right]
+\left[ \text{Num} \right] = -\left(1-\xi\right)\frac{i}{2\left(4\pi\right)^2} \left[  -\frac{\left(2-\epsilon\right)}{\epsilon}\left(\left(1+x-\frac{2\left(1-x\right)}{4-2\epsilon}\right)\not p-m\right) - x^2p^2\left((1-x)\not p + m\right) \Delta' ^{-1} \right]
 \end{equation}
 \begin{equation}
-\times\Gamma\left(1+\epsilon\right)\Delta^{-\epsilon}.\nonumber
+\times\Gamma\left(1+\epsilon\right)\left(\frac{\Delta'}{4\pi}\right)^{-\epsilon}.\nonumber
 \end{equation}
 We see there will be a term of order $$\epsilon^{-1}$$ in addition to the finite term. Expanding around $$\epsilon=0$$,
 \begin{equation}
--\frac{\left(2-\epsilon\right)}{\epsilon}\left(\left(1+x-\frac{2\left(1-x\right)}{4-2\epsilon}\right)\not p-m\right) \Gamma\left(1+\epsilon\right)\Delta^{-\epsilon} 
+-\frac{\left(2-\epsilon\right)}{\epsilon}\left(\left(1+x-\frac{2\left(1-x\right)}{4-2\epsilon}\right)\not p-m\right) \Gamma\left(1+\epsilon\right)\left(\frac{\Delta'}{4\pi}\right)^{-\epsilon}
 \end{equation}
 \begin{equation}
- = \left(\frac{1}{\epsilon}\left(-\left(1+3x\right)\not p +2m\right)+\frac{1}{2}\left(1+3x\right)\not p - m + ...\right) \Gamma\left(1+\epsilon\right)\Delta^{-\epsilon}\nonumber
+ = \left(\frac{1}{\epsilon}\left(-\left(1+3x\right)\not p +2m\right)+\frac{1}{2}\left(1+3x\right)\not p - m + ...\right) \Gamma\left(1+\epsilon\right)\left(\frac{\Delta'}{4\pi}\right)^{-\epsilon}\nonumber
 \end{equation}
 \begin{equation}
-= \frac{1}{\epsilon}\left(-\left(1+3x\right)\not p +2m\right)+\frac{1}{2}\left(1+3x\right)\not p - m + \left(\left(1+3x\right)\not p - 2m\right)\left(\gamma_E+\log\left(\Delta\right)\right) + ...\nonumber
+= \frac{1}{\epsilon}\left(-\left(1+3x\right)\not p +2m\right)+\frac{1}{2}\left(1+3x\right)\not p - m + \left(\left(1+3x\right)\not p - 2m\right)\left(\gamma_E+\log\left(\frac{\Delta'}{4\pi}\right)\right) + ...\nonumber
 \end{equation}
 For the finite term,
 \begin{equation}
-x^2p^2\left((1-x)\not p + m\right) \Delta ^{-1-\epsilon} \Gamma\left(1+\epsilon\right) = - x^2p^2\left((1-x)\not p + m\right) + ...
+-x^2p^2\left((1-x)\not p + m\right) \Delta' ^{-1} \Gamma\left(1+\epsilon\right) \left(\frac{\Delta}{4\pi}\right)^{-\epsilon}  = -x^2p^2\left((1-x)\not p + m\right)\Delta' ^{-1} + ...
+\end{equation}
+The full integral to leading order in $$\epsilon$$ is expressed as the sum of two integrals over $$x$$,
+\begin{equation}
+I_\xi = -\left(1-\xi\right) \frac{i}{2\left(4\pi\right)^2} \left[I_\xi^A+I_\xi^B\right],
+\end{equation}
+\begin{equation}
+I_\xi^A = \int_0^1 dx\ 2\left(1-x\right)  \left[ \frac{1}{\epsilon}\left(-\left(1+3x\right)\not p +2m\right)+\frac{1}{2}\left(1+3x\right)\not p - m + \left(\left(1+3x\right)\not p - 2m\right)\left(\gamma_E+\log\left(\frac{\Delta'}{4\pi}\right)\right) \right],
+\end{equation}
+and,
+\begin{equation}
+I_\xi^B = -\int_0^1 dx\ 2\left(1-x\right) x^2p^2\left((1-x)\not p + m\right)\Delta' ^{-1}.
+\end{equation}
+Evaluating the first of these,
+\begin{equation}
+I_\xi^A = \frac{2}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(1+2\gamma_E\right) + 2\int_0^1 dx\ \left(1-x\right)\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi}\right).
+\end{equation}
+We combine to find the gauge-dependent integral,
+\begin{equation}
+I_\xi = -\left(1-\xi\right) \frac{i}{2\left(4\pi\right)^2} \left[\frac{2}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(1+2\gamma_E\right) + 2\int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta' ^{-1}\right] \right].
+\end{equation}
+Adding this to $$I$$,
+\begin{equation}
+I + I_\xi = -\left(1-\xi\right) \frac{i}{\left(4\pi\right)^2} \left[\frac{1}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(\frac{1}{2}+\gamma_E\right) + \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right].
 \end{equation}
 
 
 
+\xi \frac{i}{\left(4\pi\right)^2} \left[\frac{1}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(\frac{1}{2}+\gamma_E\right) + \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right]
+
+\frac{i}{\left(4\pi\right)^2} \left[\frac{1}{\epsilon}\left(\not p-m\right) + \left(m - \not p \right)\left(\frac{1}{2}+\gamma_E\right) - \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right]
+
++ \frac{ i }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(4m-\not p\right)+\left(-2\left(1+2\gamma_E\right)m+\left(1+\gamma_E\right)\not p\right) + 2\int_0^1 dx\ \left(x\not p -2m\right)\log\left(\frac{\left(1-x\right)\left(m^2-xp^2\right)}{4\pi}\right)\right]
+
+
+
+\frac{ i }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)+\left(-2\left(1+2\gamma_E\right)m+\left(1+\gamma_E\right)\not p\right)
+
+
+
+
++\left(-2\left(1+2\gamma_E\right)m+\left(1+\gamma_E\right)\not p\right) + 2\int_0^1 dx\ \left(x\not p -2m\right)\log\left(\frac{\left(1-x\right)\left(m^2-xp^2\right)}{4\pi}\right)\right]
+
+
+
+
+And thus, our full fermionic 1PI propagator is,
+\begin{equation}
+\Sigma = -\left(1-\xi\right) \frac{i}{2\left(4\pi\right)^2} \left[\frac{2}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(1+2\gamma_E\right) + 2\int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right].
+\end{equation}
 
 
 ### Sources
