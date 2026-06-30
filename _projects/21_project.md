@@ -283,9 +283,9 @@ Finally, including all terms and writing the 1PI function $$\Pi(q)$$, we obtain,
 \Pi= 2\frac{ e^2}{ 4\pi^2 } \left(-\frac{1}{6}\epsilon^{-1}+\frac{\gamma_E}{6}+
 \int_0^1 dx\ x\left(1-x\right)\log\left(m^2-x(1-x)q^2\right)\right).
 \end{equation}
-This is interesting! We have obtained the value of the 1PI function at the first loop order. Higher loop order contribute terms to higher orders of $$e$$. The idea of renormalization is that we will eventually sweep the divergent $$\epsilon^{-1}$$ term into the $$e$$ coupling constant, but before going through that procedure, we should asses the other loop diagrams, as these will inform other parts of our renormalization scheme. 
+This is interesting! We have obtained the value of the 1PI function at the first loop order. Higher loop orders contribute terms to higher orders of $$e$$. The idea of renormalization is that we will eventually sweep the divergent $$\epsilon^{-1}$$ term into the $$e$$ coupling constant, but before going through that procedure, we should assess the other loop diagrams, as these will inform other parts of our renormalization scheme. 
 
-
+## The Fermionic Propagator at One Loop
 
 
 
