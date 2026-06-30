@@ -41,6 +41,12 @@ There are also a number of properties involving the traces of the gamma matrices
 \end{equation}
 Furthermore, due to anticommutation, the trace of a product of an odd number of gamma matrices is zero.
 
+A few more properties related to the sums of gamma matrices that can be similarly obtained from the commutation relation,
+\begin{equation}
+\gamma^mu\gamma_mu = d,\quad\gamma^mu\gamma^nu\gamma_\nu=\left(2-d\right)\gamma^\nu,
+\end{equation}
+where $$d$$ is the number of spacetime dimensions.
+
 We also define the adjoint $$\bar{ }$$ operation as,
 \begin{equation}
 \bar{\psi}^\mu=\psi^\dagger\gamma^0,
@@ -144,7 +150,7 @@ Finally, we are ready to start integrating to determine the value of $$\Pi\left(
 \begin{equation}\label{1pi fermion loop integral}
 i q^2 \Pi\left(q\right) t _{T\ \mu\nu} = \left(-i e\right)^2(-1)\int\bar{d}^dk\ \frac{\text{tr}\left[\gamma^\mu i\left(\not k+m\right)i\gamma^\nu\left(\not q + \not k +m \right)\right]}{\left(k^2-m^2\right)\left(\left(k+q\right)^2-m^2\right)}.
 \end{equation}
-I have written the integral in $$d$$ dimensions, which should be $$d=4$$, but we will keep it as $$d$$ for now for reasons that will be evident later. The factor of $$(-1)$$ arises from the presence of a closed Fermion loop.
+I have written the integral in $$d$$ dimensions, which should be $$d=4$$, but we will keep it as $$d$$ for now for reasons that will be evident later. The factor of $$(-1)$$ arises from the presence of a closed Fermion loop and we take the trace over the closed fermion loop.
 
 Lovely. Okay, here we go. First, we use the Feynman parameterization, which is the integral identity,
 \begin{equation}
@@ -234,10 +240,10 @@ Using the exact same procedure for the $$\ell^2$$ integrals, we obtain
 \end{equation}
 We may modify this slightly with the recurance relation $$\Gamma\left(z+1\right)=z\Gamma\left(z\right)$$,
 \begin{equation}
-\int\bar{d}^d\ell\ \frac{\ell^2}{\left(\ell^2-\Delta\right)^2}=-\frac{ i }{\left(4\pi\right)^{d/2}\Gamma\left(d/2\right)\left(1-d/2\right)}\Gamma\left(1+d/2\right)\Gamma\left(2-d/2\right)\Delta^{d/2-1}.
+\int\bar{d}^d\ell\ \frac{\ell^2}{\left(\ell^2-\Delta\right)^2}=-\frac{ i }{\left(4\pi\right)^{d/2}\left(1-d/2\right)}\frac{d}{2}\Gamma\left(2-d/2\right)\Delta^{d/2-1}.
 \end{equation}
 
-Evaluating the Gamma functions at $$d=4$$ except when it would cause a divergence, we integrate over $$\ell$$ for the terms in our numerator,
+We are ready to integrate over $$\ell$$ for the terms in our numerator,
 \begin{equation}
 \int\bar{d}^d\ell\ \frac{ x\left(1-x\right)\left(q^2\eta^{\mu\nu} -2  q^\mu q^\nu \right) + m^2\eta^{\mu\nu} }{ \left(\ell^2-\Delta \right)^2 }
 \end{equation}
@@ -249,7 +255,10 @@ Evaluating the Gamma functions at $$d=4$$ except when it would cause a divergenc
 \end{equation}
 For the $$\ell^2$$ term,
 \begin{equation}
-\int\bar{d}^d\ell\ \frac{ \left(\frac{2}{d} - 1\right)\ell^2 }{ \left(\ell^2-\Delta \right)^2 }= -\frac{ i }{\left(4\pi\right)^{d/2}}\Gamma\left(2-d/2\right)\Delta^{d/2-1}.
+\int\bar{d}^d\ell\ \frac{ \left(\frac{2}{d} - 1\right)\ell^2 }{ \left(\ell^2-\Delta \right)^2 }= -\frac{ i \left(\frac{2}{d} - 1\right)}{\left(4\pi\right)^{d/2}\left(1-d/2\right)}\frac{d}{2}\Gamma\left(2-d/2\right)\Delta^{d/2-1}.
+\end{equation}
+\begin{equation}
+= -\frac{ i }{\left(4\pi\right)^{d/2}}\Gamma\left(2-d/2\right)\Delta^{d/2-1}.\nonumber
 \end{equation}
 As expected, the non-$$t^{\mu\nu}_T$$ terms cancel, and writing out our loop integral in full,
 \begin{equation}
@@ -258,11 +267,11 @@ As expected, the non-$$t^{\mu\nu}_T$$ terms cancel, and writing out our loop int
 
 Wonderful, now we need only evaluate the integral over $$x$$ arising from the Feynman parametrization, which means calculating the integral,
 \begin{equation}
-\Gamma\left(2-d/2\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{d/2-2},
+\frac{\Gamma\left(2-d/2\right)}{ \left(4\pi\right)^{d/2} } \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{d/2-2},
 \end{equation}
 for $$d=4$$. Unfortunately, this expression is divergent as $$d\rightarrow4$$, which is the whole reason we need to go about this program of renormalization. The key is that because we have reduced the complicated integral into this simple form, it is easy to extract the divergent element. We will replace $$d\rightarrow 4-2\epsilon$$, and study the limit as $$\epsilon\rightarrow0$$. We need only retain terms that are order $$\epsilon^0$$ or smaller, as the rest will vanish.
 \begin{equation}
-\Gamma\left(2-d/2\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{d/2-2}=\Gamma\left(\epsilon\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{-\epsilon},
+\frac{\Gamma\left(2-d/2\right)}{ \left(4\pi\right)^{d/2} }  \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{d/2-2}=\frac{1}{\left(4\pi\right)^2}4\pi^\epsilon\Gamma\left(\epsilon\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{-\epsilon},
 \end{equation}
 with the usual expansion for small $$\epsilon$$,
 \begin{equation}
@@ -270,23 +279,58 @@ with the usual expansion for small $$\epsilon$$,
 \end{equation}
 where $$\gamma_E$$ is Euler's gamma constant. Expanding,
 \begin{equation}
-\Gamma\left(\epsilon\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{-\epsilon} = \int_0^1 dx\ x\left(1-x\right)\left(\frac{1}{\epsilon}-\gamma_E+...\right)\left(1-\epsilon\log\left(m^2-x(1-x)q^2\right)+...\right)
+4\pi^\epsilon\Gamma\left(\epsilon\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{-\epsilon} = \int_0^1 dx\ x\left(1-x\right)\left(\frac{1}{\epsilon}-\gamma_E+...\right)\left(1+\epsilon\log\left(4\pi\right)-\epsilon\log\left(m^2-x(1-x)q^2\right)+...\right)
 \end{equation}
 \begin{equation}
-\Gamma\left(\epsilon\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{-\epsilon} = \frac{1}{6}\epsilon^{-1}-\frac{\gamma_E}{6}-
+4\pi^\epsilon\Gamma\left(\epsilon\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{-\epsilon} = \frac{1}{6}\epsilon^{-1}+\frac{1}{6}\left(\log\left(4\pi\right)-\gamma_E\right) -
 \int_0^1 dx\ x\left(1-x\right)\log\left(m^2-x(1-x)q^2\right) + ...
 \end{equation}
 where all unwritten terms vanish with $$\epsilon$$. The integral over $$x$$ is convergent, although perhaps imaginary in the massless limit $$\m\rightarrow0$$.
 
 Finally, including all terms and writing the 1PI function $$\Pi(q)$$, we obtain,
 \begin{equation}
-\Pi= 2\frac{ e^2}{ 4\pi^2 } \left(-\frac{1}{6}\epsilon^{-1}+\frac{\gamma_E}{6}+
+\Pi= 2\frac{ e^2}{ 4\pi^2 } \left(-\frac{1}{6}\epsilon^{-1}-\frac{1}{6}\left(\log\left(4\pi\right)-\gamma_E\right)+
 \int_0^1 dx\ x\left(1-x\right)\log\left(m^2-x(1-x)q^2\right)\right).
 \end{equation}
-This is interesting! We have obtained the value of the 1PI function at the first loop order. Higher loop orders contribute terms to higher orders of $$e$$. The idea of renormalization is that we will eventually sweep the divergent $$\epsilon^{-1}$$ term into the $$e$$ coupling constant, but before going through that procedure, we should assess the other loop diagrams, as these will inform other parts of our renormalization scheme. 
+There is a slight problem in the dimensionality of our answer. Notice that we are taking the logarithm of a dimensional quantity, which cannot possibly be correct. We can resolve this by performing the rescaling,
+\begin{equation}
+e\rightarrow e'\left(\mu\right)\mu^{\epsilon},
+\end{equation}
+where $$\mu$$ has dimension 1 and $$e'$$ is dimensionless. Inserting the appropriate factors of $$\mu$$ before expanding in small $$\epsilon$$, we find,
+\begin{equation}
+\Pi= 2\frac{ e'^2}{ 4\pi^2 } \left(-\frac{1}{6}\epsilon^{-1}-\frac{1}{6}\left(\log\left(4\pi\right)-\gamma_E\right)+
+\int_0^1 dx\ x\left(1-x\right)\log\left(\frac{m^2-x(1-x)q^2}{\mu^2}\right)\right).
+\end{equation}
+This resolution may seem a little off the cuff, we will return to these ideas later after assessing all other loop diagrams and formalize the rescalings for $$e$$ and the other scales in the problem.
 
 ## The Fermionic Propagator at One Loop
+In the same vein as our photonic calculation, we calculate the 1-loop correction for the fermionic two-point propagator $$S(p)$$. Again, the general propagators can be decomposed as a sum of the tree-level diagram and 1PI diagrams. 
 
+<div style="text-align: center;">
+  {% include figure.liquid loading="eager" path="assets/img/QED_diagrams/S_fermion_propagator.png" title="S_fermion_propagator" class="img-fluid rounded z-depth-0" width="auto" height="270" %}
+</div>
+
+The 1PI diagram we calculate is $$i\Sigma(p)$$. We perform the calculation in a general gauge to verify the gauge-fixing term $$\xi$$ is irrelevant to our final results. Consulting our Feynman diagram, the loop integral is,
+\begin{equation}\label{1pi fermion loop integral}
+i \Sigma = \left(-i e\right)^2 \left[ \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(-i\eta^_{\mu\nu}\right)}{\left(k^2-m^2\right)\left(k-p\right)^2} + \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(i\left(1-\xi\right)\left(k-p\right)_\mu\left(k-p\right) _\nu \right) }{\left(k^2-m^2\right)\left(k-p\right)^4} \right].
+\end{equation}
+\begin{equation}
+ = \left(-i e\right)^2 \left[ I + I_\xi\right].
+\end{equation}
+where $$I$$ and $$I_xi$$ denote the ordinary and the gauge integrals, respectively. As the steps are repeated from our previous loop integral, we will be a little more terse this time around.
+
+The first of these looks somewhat more wholesome, so let's begin there.
+\begin{equation}
+I = \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(-i\eta^_{\mu\nu}\right)}{\left(k^2-m^2\right)\left(k-p\right)^2}.
+\end{equation}
+With Feynman parameters,
+\begin{equation}
+\left[\text{Den}\right] = (k-p)^2x + (k^2-m^2)(1-x) = \left(\ell-\Delta\right)^2,\quad\ell=k-xp,\ \Delta = \left(1-x\right)\left(m^2-xp^2\right).
+\end{equation}
+The numerator becomes
+\begin{equation}
+\left[\text{Num}\right] = \gamma^\mu \left(\not k + m\right)\gamma_\mu = 
+\end{equation}
 
 
 
