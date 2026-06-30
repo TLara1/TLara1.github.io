@@ -350,8 +350,14 @@ We must employ the three-parameter Feynman trick,
 \end{equation}
 and rewrite the denominator as,
 \begin{equation}
-\left[\text{Den}\right] = \frac{1}{2}\left(\left(k-p\right)^2 + \left(-p^2 -m^2 + 2kp\right)x\right)^3 = \left(\ell-\Delta\right)^3,\quad\ell=k-\left(1-x\right)p,\ \Delta = x\left(m^2+x\left(x-1\right)p^2\right).
+\left[\text{Den}\right] = \left(\left(k-p\right)^2 + \left(-p^2 -m^2 + 2kp\right)x\right)^3 = \left(\ell-\Delta\right)^3,\quad\ell=k-\left(1-x\right)p,\ \Delta = x\left(m^2+x\left(x-1\right)p^2\right).
 \end{equation}
+Integrating over $$y$$ and accounting for the prefactor, the integral becomes,
+
+\begin{equation}
+I_\xi = \int\bar{d}^d\ell\ \int _0^1 dx\ 2\left(1-x\right)\frac{\left[\text{Num}\right]}{\left(\ell-\Delta\right)^3}.
+\end{equation}
+For the numerator,
 
 
 
