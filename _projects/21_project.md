@@ -147,7 +147,7 @@ from which we identify,
 Therefore, corrections beyond first-order should be proportional to $$t _{T\ \mu\nu}$$ which is orthogonal to $$q^\nu$$. And with this in mind, we write the 1PI diagram for an internal fermion loop as $$i q^2 \Pi\left(q\right) t _{T\ \mu\nu}$$, where $$\Pi\left(q\right)$$ is a function of the momentum to be determined.
 
 Finally, we are ready to start integrating to determine the value of $$\Pi\left(q\right)$$. Reading off the Feynman rules from the 1PI 1-loop diagram,
-\begin{equation}\label{1pi fermion loop integral}
+\begin{equation}\label{1pi photon loop integral}
 i q^2 \Pi\left(q\right) t _{T\ \mu\nu} = \left(-i e\right)^2(-1)\int\bar{d}^dk\ \frac{\text{tr}\left[\gamma^\mu i\left(\not k+m\right)i\gamma^\nu\left(\not q + \not k +m \right)\right]}{\left(k^2-m^2\right)\left(\left(k+q\right)^2-m^2\right)}.
 \end{equation}
 I have written the integral in $$d$$ dimensions, which should be $$d=4$$, but we will keep it as $$d$$ for now for reasons that will be evident later. The factor of $$(-1)$$ arises from the presence of a closed Fermion loop and we take the trace over the closed fermion loop.
@@ -156,7 +156,7 @@ Lovely. Okay, here we go. First, we use the Feynman parameterization, which is t
 \begin{equation}
 \frac{1}{ab}=\int_0^1dx\ \frac{1}{\left(ax+b\left(1-x\right)\right)^2}.
 \end{equation}
-The denominator of the integrand of Eq. \ref{1pi fermion loop integral} becomes,
+The denominator of the integrand of Eq. \ref{1pi photon loop integral} becomes,
 \begin{equation}
 \left[\text{Den}\right]=\left( x\left(k+q\right)^2+\left(1-x\right)k^2-m^2 \right)^2=\left(\ell^2-\Delta\right)^2,\quad\ell=k+xq,\ \Delta=m^2-x\left(1-x\right)q^2.
 \end{equation}
@@ -271,7 +271,10 @@ Wonderful, now we need only evaluate the integral over $$x$$ arising from the Fe
 \end{equation}
 for $$d=4$$. Unfortunately, this expression is divergent as $$d\rightarrow4$$, which is the whole reason we need to go about this program of renormalization. The key is that because we have reduced the complicated integral into this simple form, it is easy to extract the divergent element. We will replace $$d\rightarrow 4-2\epsilon$$, and study the limit as $$\epsilon\rightarrow0$$. We need only retain terms that are order $$\epsilon^0$$ or smaller, as the rest will vanish.
 \begin{equation}
-\frac{\Gamma\left(2-d/2\right)}{ \left(4\pi\right)^{d/2} }  \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{d/2-2}=\frac{1}{\left(4\pi\right)^2}4\pi^\epsilon\Gamma\left(\epsilon\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{-\epsilon},
+\frac{\Gamma\left(2-d/2\right)}{ \left(4\pi\right)^{d/2} }  \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{d/2-2}
+\end{equation}
+\begin{equation}
+=\frac{1}{\left(4\pi\right)^2}4\pi^\epsilon\Gamma\left(\epsilon\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{-\epsilon},\nonumber
 \end{equation}
 with the usual expansion for small $$\epsilon$$,
 \begin{equation}
@@ -330,6 +333,7 @@ i \Sigma = \left(-i e\right)^2 \left[ \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\n
 
 where $$I$$ and $$I_xi$$ denote the ordinary and the gauge integrals, respectively. As the steps are repeated from our previous loop integral, we will be a little more terse this time around.
 
+### Gauge-less Integral
 The first of these looks somewhat more wholesome, so let's begin there.
 \begin{equation}
 I = \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(-i\eta_{\mu\nu}\right)}{\left(k^2-m^2\right)\left(k-p\right)^2}.
@@ -346,7 +350,7 @@ we have dropped the term linear in $$\ell$$ that vanishes over integration. Usin
 \begin{equation}
 \int\bar{d}^d\ell\ \frac{1}{\left(\ell^2-\Delta\right)^2}=\frac{ i }{ \left(4\pi\right)^{2} }\left(4\pi\right)^{\epsilon}\Gamma\left(\epsilon\right)\Delta^{-\epsilon}.
 \end{equation}
-This gives the expression for I,
+This gives the expression for $$I$$,
 \begin{equation}
 I = \frac{ i }{ \left(4\pi\right)^{2} }\Gamma\left(\epsilon\right)\int_0^1 dx\ \left(\left(4-2\epsilon\right)m + (2\epsilon-2) x\not p\right)\left(\frac{\Delta}{4\pi}\right)^{-\epsilon}.
 \end{equation}
@@ -360,6 +364,7 @@ I = \frac{ i }{ \left(4\pi\right)^{2} }\left[\frac{1}{\epsilon}\left(4m-\not p\r
 \end{equation}
 Excellent.
 
+### Gauge-full Integral
 The second, less wholesome integral is,
 \begin{equation}
 I_\xi = \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(i\left(1-\xi\right)\left(k-p\right)_\mu\left(k-p\right) _\nu \right) }{\left(k^2-m^2\right)\left(k-p\right)^4}.
@@ -406,18 +411,24 @@ and,
 \end{equation}
 Evaluating the numerator,
 \begin{equation}
-\left[ \text{Num} \right] = -\left(1-\xi\right)\frac{i\left(4\pi\right)^{\epsilon}}{2\left(4\pi\right)^2} \left[  -\frac{\left(2-\epsilon\right)}{\epsilon}\left(\left(1+x-\frac{2\left(1-x\right)}{4-2\epsilon}\right)\not p-m\right) - x^2p^2\left((1-x)\not p + m\right) \Delta ^{-1} \right] \Gamma\left(1+\epsilon\right)\Delta^{-\epsilon}.
+\left[ \text{Num} \right] = -\left(1-\xi\right)\frac{i\left(4\pi\right)^{\epsilon}}{2\left(4\pi\right)^2} \left[  -\frac{\left(2-\epsilon\right)}{\epsilon}\left(\left(1+x-\frac{2\left(1-x\right)}{4-2\epsilon}\right)\not p-m\right) - x^2p^2\left((1-x)\not p + m\right) \Delta ^{-1} \right]
+\end{equation}
+\begin{equation}
+\times\Gamma\left(1+\epsilon\right)\Delta^{-\epsilon}.\nonumber
 \end{equation}
 We see there will be a term of order $$\epsilon^{-1}$$ in addition to the finite term. Expanding around $$\epsilon=0$$,
 \begin{equation}
--\frac{\left(2-\epsilon\right)}{\epsilon}\left(\left(1+x-\frac{2\left(1-x\right)}{4-2\epsilon}\right)\not p-m\right) \Gamma\left(1+\epsilon\right)\Delta^{-\epsilon} = \left(\frac{1}{\epsilon}\left(-\left(1+3x\right)\not p +2m\right)+\frac{1}{2}\left(1+3x\right)\not p - m + ...\right) \Gamma\left(1+\epsilon\right)\Delta^{-\epsilon},
+-\frac{\left(2-\epsilon\right)}{\epsilon}\left(\left(1+x-\frac{2\left(1-x\right)}{4-2\epsilon}\right)\not p-m\right) \Gamma\left(1+\epsilon\right)\Delta^{-\epsilon} 
+\end{equation}
+\begin{equation}
+ = \left(\frac{1}{\epsilon}\left(-\left(1+3x\right)\not p +2m\right)+\frac{1}{2}\left(1+3x\right)\not p - m + ...\right) \Gamma\left(1+\epsilon\right)\Delta^{-\epsilon}\nonumber
 \end{equation}
 \begin{equation}
 = \frac{1}{\epsilon}\left(-\left(1+3x\right)\not p +2m\right)+\frac{1}{2}\left(1+3x\right)\not p - m + \left(\left(1+3x\right)\not p - 2m\right)\left(\gamma_E+\log\left(\Delta\right)\right) + ...\nonumber
 \end{equation}
 For the finite term,
 \begin{equation}
-- x^2p^2\left((1-x)\not p + m\right) \Delta ^{-1-\epsilon} \Gamma\left(1+\epsilon\right) = - x^2p^2\left((1-x)\not p + m\right) + ...
+x^2p^2\left((1-x)\not p + m\right) \Delta ^{-1-\epsilon} \Gamma\left(1+\epsilon\right) = - x^2p^2\left((1-x)\not p + m\right) + ...
 \end{equation}
 
 
