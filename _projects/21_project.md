@@ -158,7 +158,7 @@ Lovely. Okay, here we go. First, we use the Feynman parameterization, which is t
 \end{equation}
 The denominator of the integrand of Eq. \ref{1pi fermion loop integral} becomes,
 \begin{equation}
-\left[\text{Den}\right]=\left(x\left(k+q\right)^2+\left(1-x\right)k^2-m^2\right)^2=\left(\ell^2-\Delta\right)^2,\quad\ell=k+xq,\ \Delta=m^2-x\left(1-x\right)q^2.
+\left[\text{Den}\right]=\left( x\left(k+q\right)^2+\left(1-x\right)k^2-m^2 \right)^2=\left(\ell^2-\Delta\right)^2,\quad\ell=k+xq,\ \Delta=m^2-x\left(1-x\right)q^2.
 \end{equation}
 In substituting $$\ell$$ and $$\Delta$$, we have simply completed the square. Since $$\ell$$ is linear in $$k$$, our integral over $$k$$ becomes an integral over $$\ell$$,
 \begin{equation}
@@ -312,7 +312,7 @@ In the same vein as our photonic calculation, we calculate the 1-loop correction
 
 The 1PI diagram we calculate is $$i\Sigma(p)$$. We perform the calculation in a general gauge to verify the gauge-fixing term $$\xi$$ is irrelevant to our final results. Consulting our Feynman diagram, the loop integral is,
 \begin{equation}\label{1pi fermion loop integral}
-i \Sigma = \left(-i e\right)^2 \left[ \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(-i\eta^_{\mu\nu}\right)}{\left(k^2-m^2\right)\left(k-p\right)^2} + \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(i\left(1-\xi\right)\left(k-p\right)_\mu\left(k-p\right) _\nu \right) }{\left(k^2-m^2\right)\left(k-p\right)^4} \right].
+i \Sigma = \left(-i e\right)^2 \left[ \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(-i\eta_{\mu\nu}\right)}{\left(k^2-m^2\right)\left(k-p\right)^2} + \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(i\left(1-\xi\right)\left(k-p\right)_\mu\left(k-p\right) _\nu \right) }{\left(k^2-m^2\right)\left(k-p\right)^4} \right].
 \end{equation}
 \begin{equation}
  = \left(-i e\right)^2 \left[ I + I_\xi\right].
@@ -321,11 +321,11 @@ where $$I$$ and $$I_xi$$ denote the ordinary and the gauge integrals, respective
 
 The first of these looks somewhat more wholesome, so let's begin there.
 \begin{equation}
-I = \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(-i\eta^_{\mu\nu}\right)}{\left(k^2-m^2\right)\left(k-p\right)^2}.
+I = \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(-i\eta_{\mu\nu}\right)}{\left(k^2-m^2\right)\left(k-p\right)^2}.
 \end{equation}
 With Feynman parameters,
 \begin{equation}
-\left[\text{Den}\right] = (k-p)^2x + (k^2-m^2)(1-x) = \left(\ell-\Delta\right)^2,\quad\ell=k-xp,\ \Delta = \left(1-x\right)\left(m^2-xp^2\right).
+\left[\text{Den}\right] = \left((k-p)^2x + (k^2-m^2)(1-x)\right)^2 = \left(\ell-\Delta\right)^2,\quad\ell=k-xp,\ \Delta = \left(1-x\right)\left(m^2-xp^2\right).
 \end{equation}
 The numerator becomes
 \begin{equation}
@@ -337,7 +337,20 @@ we have dropped the term linear in $$\ell$$ that vanishes over integration. Usin
 \end{equation}
 This gives the expression for I,
 \begin{equation}
-I = \frac{ i }{ \left(4\pi\right)^{2} }\left(4\pi\right)^\epsilon\Gamma\left(\epsilon\right)\int_0^1 dx\ \left(\left(4-2\epsilon\right)m + (2\epsilon-2)\not p\right)\left(1-x\right)^{-\epsilon}\left(m^2-xp^2\right)^{-\epsilon}.
+I = \frac{ i }{ \left(4\pi\right)^{2} }\left(4\pi\right)^\epsilon\Gamma\left(\epsilon\right)\int_0^1 dx\ \left(\left(4-2\epsilon\right)m + (2\epsilon-2) x\not p\right)\left(1-x\right)^{-\epsilon}\left(m^2-xp^2\right)^{-\epsilon}.
+\end{equation}
+
+The second, less wholesome integral.
+\begin{equation}
+I_\xi = \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(i\left(1-\xi\right)\left(k-p\right)_\mu\left(k-p\right) _\nu \right) }{\left(k^2-m^2\right)\left(k-p\right)^4}.
+\end{equation}
+We must employ the three-parameter Feynman trick,
+\begin{equation}
+\frac{1}{abc} =\int_0^1dx\ \int_0^{1-x}dy\ \frac{2}{\left(c+(a-c)x+(b-c)y\right)^3},
+\end{equation}
+and rewrite the denominator as,
+\begin{equation}
+\left[\text{Den}\right] = \frac{1}{2}\left(\left(k-p\right)^2 + \left(-p^2 -m^2 + 2kp\right)x\right)^3 = \left(\ell-\Delta\right)^3,\quad\ell=k-\left(1-x\right)p,\ \Delta = x\left(m^2+x\left(x-1\right)p^2\right).
 \end{equation}
 
 
