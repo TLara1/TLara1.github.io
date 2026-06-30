@@ -285,7 +285,7 @@ where $$\gamma_E$$ is Euler's gamma constant. Expanding,
 4\pi^\epsilon\Gamma\left(\epsilon\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{-\epsilon} = \frac{1}{6}\epsilon^{-1}+\frac{1}{6}\left(\log\left(4\pi\right)-\gamma_E\right) -
 \int_0^1 dx\ x\left(1-x\right)\log\left(m^2-x(1-x)q^2\right) + ...
 \end{equation}
-where all unwritten terms vanish with $$\epsilon$$. The integral over $$x$$ is convergent, although perhaps imaginary in the massless limit $$\m\rightarrow0$$.
+where all unwritten terms vanish with $$\epsilon$$. The integral over $$x$$ is convergent, although perhaps imaginary in the massless limit $$m\rightarrow0$$, which is okay as far as renormalization is concerned.
 
 Finally, including all terms and writing the 1PI function $$\Pi(q)$$, we obtain,
 \begin{equation}
@@ -329,7 +329,15 @@ With Feynman parameters,
 \end{equation}
 The numerator becomes
 \begin{equation}
-\left[\text{Num}\right] = \gamma^\mu \left(\not k + m\right)\gamma_\mu = 
+\left[\text{Num}\right] = \gamma^\mu \left(\not k + m\right)\gamma_\mu = dm + (2-d)\not k = dm + (2-d) x \not p,
+\end{equation}
+we have dropped the term linear in $$\ell$$ that vanishes over integration. Using the same dimensional regularization as we did previously in $$d=4-2\epsilon$$ dimensions,
+\begin{equation}
+\int\bar{d}^d\ell\ \frac{1}{\left(\ell^2-\Delta\right)^2}=\frac{ i }{ \left(4\pi\right)^{d/2} }\Gamma\left(\epsilon\right)\Delta^{-\epsilon}.
+\end{equation}
+This gives the expression for I,
+\begin{equation}
+I = \frac{ i }{ \left(4\pi\right)^{2} }\left(4\pi\right)^\epsilon\Gamma\left(\epsilon\right)\int_0^1 dx\ \left(\left(4-2\epsilon\right)m + (2\epsilon-2)\not p\right)\left(1-x\right)^{-\epsilon}\left(m^2-xp^2\right)^{-\epsilon}.
 \end{equation}
 
 
