@@ -13,7 +13,7 @@ toc:
 ## Introduction
 Oh dear. This is a terrible idea. I shudder at the thought of all the notation I will need to get right here. Wish me luck, please proceed with caution.
 
-I am, unfortunately, no longer much of a theoretical physicist. I took three semesters of Quantum Field Theory (QFT) and decided it was not for me. But there is a beauty in the calculations of QFT, the slow methodical alignment of a maelstrom of algebra and indices. I doubt these notes will serve me much in the future, but I wish to conserve some fraction of what I learned in QFT in a more permanent manner. 
+I am, unfortunately, no longer much of a theoretical physicist. I took three semesters of Quantum Field Theory (QFT) and decided it was not for me. But there is a beauty in the calculations of QFT, the slow methodical alignment of a maelstrom of algebra and indices. I doubt these notes will serve me much in the future, but I wish to conserve some fraction of what I learned in QFT in a more permanent manner. (You can clearly tell I wrote this **before** embarking on my calculations. I am currently halfway through and am wondering why I ever decided this was a good or reasonable idea).
 
 Here, we will compute the first-order renormalization of the theory of Quantum Electrodynamics (QED). That is to say, we will identify the four counterterms necessary to remove divergences from 1-loop level QED diagrams. This will mostly involve resolving some very nasty-looking integrals, but after doing these calculations once, they can be done a thousand times. I will not present every detail, leaving some things untouched. Otherwise, these notes would quickly spiral into an entire semester's worth of content. 
 
@@ -321,7 +321,7 @@ In the same vein as our photonic calculation, we calculate the 1-loop correction
   {% include figure.liquid loading="eager" path="assets/img/QED_diagrams/S_fermion_propagator.png" title="S_fermion_propagator" class="img-fluid rounded z-depth-0" width="auto" height="270" %}
 </div>
 
-The 1PI diagram we calculate is $$i\Sigma(p)$$. We perform the calculation in a general gauge to verify the gauge-fixing term $$\xi$$ is irrelevant to our final results. Consulting our Feynman diagram, the loop integral is,
+The 1PI diagram we calculate is $$i\Sigma(p)$$. We perform the calculation in a general gauge. Consulting our Feynman diagram, the loop integral is,
 
 \begin{equation}\label{1pi fermion loop integral}
 i \Sigma = \left(-i e\right)^2 \left[ \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(-i\eta_{\mu\nu}\right)}{\left(k^2-m^2\right)\left(k-p\right)^2} + \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(i\left(1-\xi\right)\left(k-p\right) _\mu\left(k-p\right) _\nu \right) }{\left(k^2-m^2\right)\left(k-p\right)^4} \right].
@@ -458,14 +458,12 @@ I + I_\xi = \frac{ i }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\ri
 \end{equation}
 And thus, our full fermionic 1PI propagator is,
 \begin{equation}
-\Sigma = \frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}\not p + 2\int_0^1 dx\ \left[\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi\mu}\right)  - \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi\mu}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right] \right]
+\Sigma = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}\not p + 2\int_0^1 dx\ \left[\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi\mu}\right)  - \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi\mu}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right] \right]
 \end{equation}
 \begin{equation}
-+ \xi \frac{i}{\left(4\pi\right)^2} \left[\frac{1}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(\frac{1}{2}+\gamma_E\right) + \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi\mu}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right] \nonumber.
+- \xi \frac{i}{\left(4\pi\right)^2} \left[\frac{1}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(\frac{1}{2}+\gamma_E\right) + \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi\mu}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right] \nonumber.
 \end{equation}
-We have again used $$e=e'\mu$$ to obtain the correct dimensions in the logarithmic terms.
-
-
+We have again used $$e=e'\mu$$ to obtain the correct dimensions in the logarithmic terms. There is, again, more to be said about the divergences with $$\epsilon^{-1}$$, but before that we have one more diagram to calculate. 
 
 
 
