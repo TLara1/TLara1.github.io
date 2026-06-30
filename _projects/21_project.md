@@ -144,7 +144,7 @@ Finally, we are ready to start integrating to determine the value of $$\Pi\left(
 \begin{equation}\label{1pi fermion loop integral}
 i q^2 \Pi\left(q\right) t _{T\ \mu\nu} = \left(-i e\right)^2(-1)\int\bar{d}^dk\ \frac{\text{tr}\left[\gamma^\mu i\left(\not k+m\right)i\gamma^\nu\left(\not q + \not k +m \right)\right]}{\left(k^2-m^2\right)\left(\left(k+q\right)^2-m^2\right)}.
 \end{equation}
-I have written the integral in $$d$$ dimensions, which should be $$d=4$$, but we will keep it as $$d$$ for now for reasons that will be evident later.
+I have written the integral in $$d$$ dimensions, which should be $$d=4$$, but we will keep it as $$d$$ for now for reasons that will be evident later. The factor of $$(-1)$$ arises from the presence of a closed Fermion loop.
 
 Lovely. Okay, here we go. First, we use the Feynman parameterization, which is the integral identity,
 \begin{equation}
@@ -264,7 +264,29 @@ for $$d=4$$. Unfortunately, this expression is divergent as $$d\rightarrow4$$, w
 \begin{equation}
 \Gamma\left(2-d/2\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{d/2-2}=\Gamma\left(\epsilon\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{-\epsilon},
 \end{equation}
-with 
+with the usual expansion for small $$\epsilon$$,
+\begin{equation}
+\Gamma\left(\epsilon\right)=\frac{1}{\epsilon}-\gamma_E+\mathcal{O}\left(\epsilon\right),\quad A^\epsilon=1+\epsilon\log\left(A\right),
+\end{equation}
+where $$\gamma_E$$ is Euler's gamma constant. Expanding,
+\begin{equation}
+\Gamma\left(\epsilon\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{-\epsilon} = \int_0^1 dx\ x\left(1-x\right)\left(\frac{1}{\epsilon}-\gamma_E+...\right)\left(1-\epsilon\log\left(m^2-x(1-x)q^2\right)+...\right)
+\end{equation}
+\begin{equation}
+\Gamma\left(\epsilon\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{-\epsilon} = \frac{1}{6}\epsilon^{-1}-\frac{\gamma_E}{6}-
+\int_0^1 dx\ x\left(1-x\right)\log\left(m^2-x(1-x)q^2\right) + ...
+\end{equation}
+where all unwritten terms vanish with $$\epsilon$$. The integral over $$x$$ is convergent, although perhaps imaginary in the massless limit $$\m\rightarrow0$$.
+
+Finally, including all terms and writing the 1PI function $$\Pi(q)$$, we obtain,
+\begin{equation}
+\Pi= 2\frac{ e^2}{ 4\pi^2 } \left(-\frac{1}{6}\epsilon^{-1}+\frac{\gamma_E}{6}+
+\int_0^1 dx\ x\left(1-x\right)\log\left(m^2-x(1-x)q^2\right)\right).
+\end{equation}
+This is interesting! We have obtained the value of the 1PI function at the first loop order. Higher loop order contribute terms to higher orders of $$e$$. The idea of renormalization is that we will eventually sweep the divergent $$\epsilon^{-1}$$ term into the $$e$$ coupling constant, but before going through that procedure, we should asses the other loop diagrams, as these will inform other parts of our renormalization scheme. 
+
+
+
 
 
 
