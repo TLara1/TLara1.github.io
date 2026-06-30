@@ -348,8 +348,17 @@ we have dropped the term linear in $$\ell$$ that vanishes over integration. Usin
 \end{equation}
 This gives the expression for I,
 \begin{equation}
-I = \frac{ i }{ \left(4\pi\right)^{2} }\left(4\pi\right)^\epsilon\Gamma\left(\epsilon\right)\int_0^1 dx\ \left(\left(4-2\epsilon\right)m + (2\epsilon-2) x\not p\right)\left(1-x\right)^{-\epsilon}\left(m^2-xp^2\right)^{-\epsilon}.
+I = \frac{ i }{ \left(4\pi\right)^{2} }\Gamma\left(\epsilon\right)\int_0^1 dx\ \left(\left(4-2\epsilon\right)m + (2\epsilon-2) x\not p\right)\left(\frac{\Delta}{4\pi}\right)^{-\epsilon}.
 \end{equation}
+Expanding the integrand around small $$\epsilon$$,
+\begin{equation}
+I = \frac{ i }{ \left(4\pi\right)^{2} }\int_0^1 dx\ \left[ \frac{2}{\epsilon}\left(m - x\not p\right) +2\left(x \not p-m\right)+2\left(x\not p -2m\right)\left(\log\left(\frac{\Delta}{4\pi}\right)+\gamma_E\right) + ... \right]
+\end{equation}
+and performing the integral and removing terms linear in $$\epsilon$$,
+\begin{equation}
+I = \frac{ i }{ \left(4\pi\right)^{2} }\left[\frac{1}{\epsilon}\left(4m-\not p\right)+\left(-2\left(1+2\gamma_E\right)m+\left(1+\gamma_E\right)\not p\right) + 2\int_0^1 dx\ \left(x\not p -2m\right)\log\left(\frac{\left(1-x\right)\left(m^2-xp^2\right)}{4\pi}\right)\right].
+\end{equation}
+Excellent.
 
 The second, less wholesome integral is,
 \begin{equation}
@@ -361,7 +370,7 @@ We must employ the three-parameter Feynman trick,
 \end{equation}
 and rewrite the denominator as,
 \begin{equation}
-\left[\text{Den}\right] = \left(\left(k-p\right)^2 + \left(-p^2 -m^2 + 2kp\right)x\right)^3 = \left(\ell-\Delta\right)^3,
+\left[\text{Den}\right] = \left(\left(k-p\right)^2 + \left(-p^2 -m^2 + 2kp\right)x\right)^3 = \left(\ell^2-\Delta\right)^3,
 \end{equation}
 \begin{equation}
 \ell=k-\left(1-x\right)p,\ \Delta = x\left(m^2+x\left(x-1\right)p^2\right).
@@ -404,12 +413,13 @@ We see there will be a term of order $$\epsilon^{-1}$$ in addition to the finite
 -\frac{\left(2-\epsilon\right)}{\epsilon}\left(\left(1+x-\frac{2\left(1-x\right)}{4-2\epsilon}\right)\not p-m\right) \Gamma\left(1+\epsilon\right)\Delta^{-\epsilon} = \left(\frac{1}{\epsilon}\left(-\left(1+3x\right)\not p +2m\right)+\frac{1}{2}\left(1+3x\right)\not p - m + ...\right) \Gamma\left(1+\epsilon\right)\Delta^{-\epsilon},
 \end{equation}
 \begin{equation}
-= \frac{1}{\epsilon}\left(-\left(1+3x\right)\not p +2m\right)+\frac{1}{2}\left(1+3x\right)\not p - m + \left(\left(1+3x\right)\not p - 2m\right)\left(\gamma_E+\log\left(\Delta\right)\right) ...\nonumber
+= \frac{1}{\epsilon}\left(-\left(1+3x\right)\not p +2m\right)+\frac{1}{2}\left(1+3x\right)\not p - m + \left(\left(1+3x\right)\not p - 2m\right)\left(\gamma_E+\log\left(\Delta\right)\right) + ...\nonumber
 \end{equation}
 For the finite term,
 \begin{equation}
-- x^2p^2\left((1-x)\not p + m\right) \Delta ^{-1-\epsilon} \Gamma\left(1+\epsilon\right) = - x^2p^2\left((1-x)\not p + m\right).
+- x^2p^2\left((1-x)\not p + m\right) \Delta ^{-1-\epsilon} \Gamma\left(1+\epsilon\right) = - x^2p^2\left((1-x)\not p + m\right) + ...
 \end{equation}
+
 
 
 
