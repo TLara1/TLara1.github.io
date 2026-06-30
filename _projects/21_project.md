@@ -161,15 +161,20 @@ In substituting $$\ell$$ and $$\Delta$$, we have simply completed the square. Si
 
 The numerator is a bit trickier. With our gamma matrix trace identities, we have,
 \begin{equation}
-\left[\text{Num}\right]=-\text{tr}\left[\left(\gamma^\mu \not k \gamma^\nu+m\gamma^\mu\gamma^\nu\right)\left(\not q + \not k +m \right)\right] = -4 m^2 eta^{\mu\nu} - 4\left( 2k^\mu k^\nu + k^\mu q^\nu + k^\nu q^\mu - \eta^{\mu\nu} \left(k^2 + k^\alpha q_\alpha\right) \right),
+\left[\text{Num}\right]=-\text{tr}\left[\left(\gamma^\mu \not k \gamma^\nu+m\gamma^\mu\gamma^\nu\right)\left(\not q + \not k +m \right)\right] 
+\end{equation}
+\begin{equation}
+= -4 m^2 \eta^{\mu\nu} - 4\left( 2k^\mu k^\nu + k^\mu q^\nu + k^\nu q^\mu - \eta^{\mu\nu} \left(k^2 + k^\alpha q_\alpha\right) \right), \nonumber
 \end{equation}
 and substituting in $$\ell$$,
 \begin{equation}
 -\frac{1}{4}\left[\text{Num}\right]=\left(\ell^\mu-x q^\mu\right) \left(\ell^\nu+\left(1-x\right)q^\nu\right) + \left(\ell^\nu-x q^\nu\right) \left(\ell^\mu+\left(1-x\right)q^\mu\right)
 \end{equation}
+
 \begin{equation}
- - \eta^{\mu\nu}\left(\left(\ell^\alpha-x q^\alpha\right) \left(\ell_\alpha+\left(1-x\right)q_alpha\right)-m^2\right).\nonumber
+-\eta^{\mu\nu}\left(\left(\ell^\alpha-x q^\alpha\right) \left(\ell_\alpha+\left(1-x\right)q_alpha\right)-m^2\right).\nonumber
 \end{equation}
+
 We can simplify. Since the denominator is even in $$\ell$$, any term in the numerator that is odd in $$\ell$$ integrates to $$0$$
 \begin{equation}
 -\frac{1}{4}\left[\text{Num}\right]=2\left(\ell^\mu\ell^\nu-x\left(1-x\right) q^\mu q^\nu\right) - \eta^{\mu\nu} \left(\ell^2 - x(1-x)q^2-m^2\right).
@@ -206,11 +211,11 @@ from which it follows that,
 \end{equation}
 We can now transform the integral into spherical coordinates with the $$d$$-dimensional radius $$r_E^2=\ell_E^2$$ and,
 \begin{equation}
-\bar{d}^d\ell_E = dr_E r_E^{d-1} d\Sigma_d.
+\bar{d}^d\ell_E = dr_E r_E^{d-1} d\Omega_d.
 \end{equation}
 We evaluate the $$d-1$$ angular dependence using the standard result for the volume of a $$d$$ ball,
 \begin{equation}
-\int d\Sigma_d = \frac{2\pi^{d/2}}{\Gamma\left(d/2\right)}.
+\int d\Omega_d = \frac{2\pi^{d/2}}{\Gamma\left(d/2\right)}.
 \end{equation}
 In summary, our integral has been transformed into,
 \begin{equation}
@@ -222,7 +227,10 @@ After evaluating the final integral using the Beta function, we find
 \end{equation}
 Using the exact same procedure for the $$\ell^2$$ integrals, we obtain
 \begin{equation}
-\int\bar{d}^d\ell\ \frac{\ell^2}{\left(\ell^2-\Delta\right)^2}=-\frac{ 2\pi^{d/2}i }{\left(2\pi\right)^d\Gamma\left(d/2\right) }\int_0^\infty dr_E\ \frac{r_E^{d+1}}{ \left( r_E^2+\Delta \right)^2}=-\frac{ i }{\left(4\pi\right)^{d/2}\Gamma\left(d/2\right)}\Gamma\left(1+d/2\right)\Gamma\left(1-d/2\right)\Delta^{d/2-1}.
+\int\bar{d}^d\ell\ \frac{\ell^2}{\left(\ell^2-\Delta\right)^2}=-\frac{ 2\pi^{d/2}i }{\left(2\pi\right)^d\Gamma\left(d/2\right) }\int_0^\infty dr_E\ \frac{r_E^{d+1}}{ \left( r_E^2+\Delta \right)^2}
+\end{equation}
+\begin{equation}
+=-\frac{ i }{\left(4\pi\right)^{d/2}\Gamma\left(d/2\right)}\Gamma\left(1+d/2\right)\Gamma\left(1-d/2\right)\Delta^{d/2-1}.\nonumber
 \end{equation}
 We may modify this slightly with the recurance relation $$\Gamma\left(z+1\right)=z\Gamma\left(z\right)$$,
 \begin{equation}
@@ -231,10 +239,13 @@ We may modify this slightly with the recurance relation $$\Gamma\left(z+1\right)
 
 Evaluating the Gamma functions at $$d=4$$ except when it would cause a divergence, we integrate over $$\ell$$ for the terms in our numerator,
 \begin{equation}
-\int\bar{d}^d\ell\ \frac{ x\left(1-x\right)\left(q^2\eta^{\mu\nu} -2  q^\mu q^\nu \right) + m^2\eta^{\mu\nu} }{ \left(\ell^2-\Delta \right)^2 }=\frac{ i }{ \left(4\pi\right)^{d/2} }\left( x\left(1-x\right)\left(q^2\eta^{\mu\nu} -2  q^\mu q^\nu \right) + m^2\eta^{\mu\nu} \right)\Gamma\left(2-d/2\right)\Delta^{d/2-2}
+\int\bar{d}^d\ell\ \frac{ x\left(1-x\right)\left(q^2\eta^{\mu\nu} -2  q^\mu q^\nu \right) + m^2\eta^{\mu\nu} }{ \left(\ell^2-\Delta \right)^2 }
 \end{equation}
 \begin{equation}
-=\frac{ i }{ \left(4\pi\right)^{d/2} }\left( 2x\left(1-x\right)q^2 t^{\mu\nu}_T + \Delta \eta^{\mu\nu} \right)\Gamma\left(2-d/2\right)\Delta^{d/2-2}.
+=\frac{ i }{ \left(4\pi\right)^{d/2} }\left( x\left(1-x\right)\left(q^2\eta^{\mu\nu} -2  q^\mu q^\nu \right) + m^2\eta^{\mu\nu} \right)\Gamma\left(2-d/2\right)\Delta^{d/2-2}\nonumber
+\end{equation}
+\begin{equation}
+=\frac{ i }{ \left(4\pi\right)^{d/2} }\left( 2x\left(1-x\right)q^2 t^{\mu\nu}_T + \Delta \eta^{\mu\nu} \right)\Gamma\left(2-d/2\right)\Delta^{d/2-2}.\nonumber
 \end{equation}
 For the $$\ell^2$$ term,
 \begin{equation}
@@ -245,9 +256,15 @@ As expected, the non-$$t^{\mu\nu}_T$$ terms cancel, and writing out our loop int
 \int\bar{d}^d\ell\ \frac{\left[\text{Num}\right]}{ \left(\ell^2-\Delta \right)^2 } = -\frac{ 8i }{ \left(4\pi\right)^{d/2} }q^2 t^{\mu\nu}_T\Gamma\left(2-d/2\right)x\left(1-x\right)\Delta^{d/2-2}.
 \end{equation}
 
-Wonderful, now we need only evaluate the integral over $$x$$ arising from the Feynman parametrization.
-
-
+Wonderful, now we need only evaluate the integral over $$x$$ arising from the Feynman parametrization, which means calculating the integral,
+\begin{equation}
+\Gamma\left(2-d/2\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{d/2-2},
+\end{equation}
+for $$d=4$$. Unfortunately, this expression is divergent as $$d\rightarrow4$$, which is the whole reason we need to go about this program of renormalization. The key is that because we have reduced the complicated integral into this simple form, it is easy to extract the divergent element. We will replace $$d\rightarrow 4-2\epsilon$$, and study the limit as $$\epsilon\rightarrow0$$. We need only retain terms that are order $$\epsilon^0$$ or smaller, as the rest will vanish.
+\begin{equation}
+\Gamma\left(2-d/2\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{d/2-2}=\Gamma\left(\epsilon\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{-\epsilon},
+\end{equation}
+with 
 
 
 
