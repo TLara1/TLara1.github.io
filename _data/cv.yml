@@ -9,16 +9,15 @@
 - title: Education
   type: time_table
   contents:
-    - title: Fourth Year Undergraduate
-      institution: Massachusetts Institute of Technology, Cambridge, Massachusetts
+    - institution: Massachusetts Institute of Technology, Cambridge, Massachusetts
       year: 2022 - 2026
       description:
         - Bachelor of Science in Physics, Bachelor of Science in Mathematics
         - 5.0/5.0 GPA
-    - title: International Baccalaureate Recipient
-      institution: Decatur High School, Decatur, Georgia
+    - institution: Decatur High School, Decatur, Georgia
       year: 2018 - 2022
       description:
+        - International Baccalaureate Recipient
         - 4.0/4.0 GPA
 
 - title: Experience
@@ -108,7 +107,7 @@
         - Quantum Mechanics I, II, III
         - Special, General Relativity
         - Statistical Mechanics
-        - Classical Mechanics I, II
+        - Classical Mechanics I, II, III
         - Experimental Physics, Radio Astronomy Laboratory
     - title: Mathematics
       items:
