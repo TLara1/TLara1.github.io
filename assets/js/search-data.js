@@ -482,8 +482,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/23_project/";
-            },},{id: "projects-spin1-2-pset-question-thing-very-cool",
-          title: 'spin1/2 pset question thing very cool',
+            },},{id: "projects-24-project",
+          title: '24_project',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/24_project/";
