@@ -279,12 +279,20 @@ with the usual expansion for small $$\epsilon$$,
 \end{equation}
 where $$\gamma_E$$ is Euler's gamma constant. Expanding,
 \begin{equation}
-4\pi^\epsilon\Gamma\left(\epsilon\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{-\epsilon} = \int_0^1 dx\ x\left(1-x\right)\left(\frac{1}{\epsilon}-\gamma_E+...\right)\left(1+\epsilon\log\left(4\pi\right)-\epsilon\log\left(m^2-x(1-x)q^2\right)+...\right)
+4\pi^\epsilon\Gamma\left(\epsilon\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{-\epsilon}
 \end{equation}
 \begin{equation}
-4\pi^\epsilon\Gamma\left(\epsilon\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{-\epsilon} = \frac{1}{6}\epsilon^{-1}+\frac{1}{6}\left(\log\left(4\pi\right)-\gamma_E\right) -
-\int_0^1 dx\ x\left(1-x\right)\log\left(m^2-x(1-x)q^2\right) + ...
+= \int_0^1 dx\ x\left(1-x\right)\left(\frac{1}{\epsilon}-\gamma_E+...\right)\left(1+\epsilon\log\left(4\pi\right)-\epsilon\log\left(m^2-x(1-x)q^2\right)+...\right)\nonumber
 \end{equation}
+
+\begin{equation}
+4\pi^\epsilon\Gamma\left(\epsilon\right) \int_0^1 dx\ x\left(1-x\right)\left(m^2-x(1-x)q^2\right)^{-\epsilon}
+\end{equation}
+\begin{equation}
+= \frac{1}{6}\epsilon^{-1}+\frac{1}{6}\left(\log\left(4\pi\right)-\gamma_E\right) -
+\int_0^1 dx\ x\left(1-x\right)\log\left(m^2-x(1-x)q^2\right) + ...\nonumber
+\end{equation}
+
 where all unwritten terms vanish with $$\epsilon$$. The integral over $$x$$ is convergent, although perhaps imaginary in the massless limit $$m\rightarrow0$$, which is okay as far as renormalization is concerned.
 
 Finally, including all terms and writing the 1PI function $$\Pi(q)$$, we obtain,
@@ -311,12 +319,15 @@ In the same vein as our photonic calculation, we calculate the 1-loop correction
 </div>
 
 The 1PI diagram we calculate is $$i\Sigma(p)$$. We perform the calculation in a general gauge to verify the gauge-fixing term $$\xi$$ is irrelevant to our final results. Consulting our Feynman diagram, the loop integral is,
+
 \begin{equation}\label{1pi fermion loop integral}
-i \Sigma = \left(-i e\right)^2 \left[ \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(-i\eta_{\mu\nu}\right)}{\left(k^2-m^2\right)\left(k-p\right)^2} + \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(i\left(1-\xi\right)\left(k-p\right)_\mu\left(k-p\right) _\nu \right) }{\left(k^2-m^2\right)\left(k-p\right)^4} \right].
+i \Sigma = \left(-i e\right)^2 \left[ \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(-i\eta_{\mu\nu}\right)}{\left(k^2-m^2\right)\left(k-p\right)^2} + \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(i\left(1-\xi\right)\left(k-p\right) _\mu\left(k-p\right) _\nu \right) }{\left(k^2-m^2\right)\left(k-p\right)^4} \right].
 \end{equation}
+
 \begin{equation}
- = \left(-i e\right)^2 \left[ I + I_\xi\right].
+ = \left(-i e\right)^2 \left[ I + I _\xi\right].
 \end{equation}
+
 where $$I$$ and $$I_xi$$ denote the ordinary and the gauge integrals, respectively. As the steps are repeated from our previous loop integral, we will be a little more terse this time around.
 
 The first of these looks somewhat more wholesome, so let's begin there.
@@ -327,20 +338,20 @@ With Feynman parameters,
 \begin{equation}
 \left[\text{Den}\right] = \left((k-p)^2x + (k^2-m^2)(1-x)\right)^2 = \left(\ell-\Delta\right)^2,\quad\ell=k-xp,\ \Delta = \left(1-x\right)\left(m^2-xp^2\right).
 \end{equation}
-The numerator becomes
+The numerator becomes, after using gamma matrix identities,
 \begin{equation}
 \left[\text{Num}\right] = \gamma^\mu \left(\not k + m\right)\gamma_\mu = dm + (2-d)\not k = dm + (2-d) x \not p,
 \end{equation}
 we have dropped the term linear in $$\ell$$ that vanishes over integration. Using the same dimensional regularization as we did previously in $$d=4-2\epsilon$$ dimensions,
 \begin{equation}
-\int\bar{d}^d\ell\ \frac{1}{\left(\ell^2-\Delta\right)^2}=\frac{ i }{ \left(4\pi\right)^{d/2} }\Gamma\left(\epsilon\right)\Delta^{-\epsilon}.
+\int\bar{d}^d\ell\ \frac{1}{\left(\ell^2-\Delta\right)^2}=\frac{ i }{ \left(4\pi\right)^{2} }\left(4\pi\right)^{\epsilon}\Gamma\left(\epsilon\right)\Delta^{-\epsilon}.
 \end{equation}
 This gives the expression for I,
 \begin{equation}
 I = \frac{ i }{ \left(4\pi\right)^{2} }\left(4\pi\right)^\epsilon\Gamma\left(\epsilon\right)\int_0^1 dx\ \left(\left(4-2\epsilon\right)m + (2\epsilon-2) x\not p\right)\left(1-x\right)^{-\epsilon}\left(m^2-xp^2\right)^{-\epsilon}.
 \end{equation}
 
-The second, less wholesome integral.
+The second, less wholesome integral is,
 \begin{equation}
 I_\xi = \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(i\left(1-\xi\right)\left(k-p\right)_\mu\left(k-p\right) _\nu \right) }{\left(k^2-m^2\right)\left(k-p\right)^4}.
 \end{equation}
@@ -350,14 +361,42 @@ We must employ the three-parameter Feynman trick,
 \end{equation}
 and rewrite the denominator as,
 \begin{equation}
-\left[\text{Den}\right] = \left(\left(k-p\right)^2 + \left(-p^2 -m^2 + 2kp\right)x\right)^3 = \left(\ell-\Delta\right)^3,\quad\ell=k-\left(1-x\right)p,\ \Delta = x\left(m^2+x\left(x-1\right)p^2\right).
+\left[\text{Den}\right] = \left(\left(k-p\right)^2 + \left(-p^2 -m^2 + 2kp\right)x\right)^3 = \left(\ell-\Delta\right)^3,
+\end{equation}
+\begin{equation}
+\ell=k-\left(1-x\right)p,\ \Delta = x\left(m^2+x\left(x-1\right)p^2\right).
 \end{equation}
 Integrating over $$y$$ and accounting for the prefactor, the integral becomes,
 
 \begin{equation}
 I_\xi = \int\bar{d}^d\ell\ \int _0^1 dx\ 2\left(1-x\right)\frac{\left[\text{Num}\right]}{\left(\ell-\Delta\right)^3}.
 \end{equation}
+
 For the numerator,
+\begin{equation}
+\left[\text{Num}\right] = -\left(1-\xi\right)\left(\not k-\not p\right) \left(\not k + m\right)\left(\not k-\not p\right) =  -\left(1-\xi\right)\left(\not \ell-x\not p\right) \left(\not \ell+(1-x)\not p + m\right)\left(\not \ell-x\not p\right).
+\end{equation}
+Dropping terms that are odd in $$\ell$$ and employing our gamma matrix identities,
+\begin{equation}
+\left[\text{Num}\right] = -\left(1-\xi\right)\left[ 
+-\ell^2\left(\left(1+x\right)\not p-m\right) + 2 (1-x)  \not \ell \ell^\mu p_mu+x^2\not p((1-x)\not p + m)\not p \right]
+\end{equation}
+\begin{equation}
+ = -\left(1-\xi\right)\left[-\ell^2\left(\left(1+x-\frac{2\left(1-x\right)}{d}\right)\not p-m\right) + x^2\not p((1-x)\not p + m)\not p \right]. \nonumber
+\end{equation}
+Evaluating the integrals over $$\ell$$,
+\begin{equation}
+\int\bar{d}^d\ell\ \frac{1}{\left(\ell^2-\Delta\right)^3}=-\frac{ i }{ 2\left(4\pi\right)^{2} }\left(4\pi\right)^{\epsilon}\Gamma\left(1+\epsilon\right)\Delta^{-\left(1+\epsilon\right)},
+\end{equation}
+and,
+\begin{equation}
+\int\bar{d}^d\ell\ \frac{\ell^2}{\left(\ell^2-\Delta\right)^3}=\frac{ i }{ 2\left(4\pi\right)^{2} \Gamma{2-\epsilon}}\left(4\pi\right)^{\epsilon}\Gamma{3-\epsilon}\Gamma\left(\epsilon\right)\Delta^{-\epsilon}
+\end{equation}
+\begin{equation}
+=\frac{ i \left(2-\epsilon\right)}{ 2\left(4\pi\right)^2 }\frac{\left(4\pi\right)^{\epsilon} }{\epsilon}\Gamma\left(1+\epsilon\right)\Delta^{-\epsilon}.\nonumber
+\end{equation}
+Evaluating the numerator,
+
 
 
 
