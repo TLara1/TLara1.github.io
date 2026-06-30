@@ -1,10 +1,10 @@
 ---
 layout: page
-title: spin1/2 pset question thing very cool
+title: 
 description:
 img: 
 importance: 3
-category: Physics
+category: 
 related_publications: false
 toc:
   beginning: true
