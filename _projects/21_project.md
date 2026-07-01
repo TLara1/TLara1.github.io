@@ -618,7 +618,9 @@ Let's check on our non-$$\ell$$ terms,
 We are nearly there, I promise. 
 
 First, we use the **Gordon Identity**
-
+\begin{equation}
+\bar{u}\left(p'\right)\gamma^\mu u\left(p\right) = \frac{1}{2m}\left[\left(p' ^\mu + p^\mu\right) + 2i\Sigma^{\mu\nu}\left( p'_\nu - p _\nu\right) \right].
+\end{equation}
 
 
 
