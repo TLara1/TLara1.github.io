@@ -522,7 +522,7 @@ After a bit of algebra, we find we can rewrite the denominator as,
 
 The integral becomes,
 \begin{equation}
-I = \int \bar{d}^d ell\  \int_0^1dx\ \int_0^{1-x}dy\ 2\frac{\left[\text{Num}\right]}{\left( \ell^2-\Delta \right)^3 }.
+I = \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ 2\frac{\left[\text{Num}\right]}{\left( \ell^2-\Delta \right)^3 }.
 \end{equation}
 
 For the numerator,
