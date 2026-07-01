@@ -324,14 +324,14 @@ In the same vein as our photonic calculation, we calculate the 1-loop correction
 The 1PI diagram we calculate is $$i\Sigma(p)$$. We perform the calculation in a general gauge. Consulting our Feynman diagram, the loop integral is,
 
 \begin{equation}\label{1pi fermion loop integral}
-i \Sigma = \left(-i e\right)^2 \left[ \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(-i\eta_{\mu\nu}\right)}{\left(k^2-m^2\right)\left(k-p\right)^2} + \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(i\left(1-\xi\right)\left(k-p\right) _\mu\left(k-p\right) _\nu \right) }{\left(k^2-m^2\right)\left(k-p\right)^4} \right].
+i \Sigma = \left(-i e\right)^2 \int\bar{d}^dk\ \left[ \left( \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(-i\eta_{\mu\nu}\right)}{\left(k^2-m^2\right)\left(k-p\right)^2} \right) + \left( \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(i\left(1-\xi\right)\left(k-p\right) _\mu\left(k-p\right) _\nu \right) }{\left(k^2-m^2\right)\left(k-p\right)^4} \right) \right]
 \end{equation}
 
 \begin{equation}
  = \left(-i e\right)^2 \left[ I + I _\xi\right].
 \end{equation}
 
-where $$I$$ and $$I_xi$$ denote the ordinary and the gauge integrals, respectively. As the steps are repeated from our previous loop integral, we will be a little more terse this time around.
+where $$I$$ and $$I_\xi$$ denote the ordinary and the gauge integrals, respectively. As the steps are repeated from our previous loop integral, we will be a little more terse this time around.
 
 ### Gauge-less Integral
 The first of these looks somewhat more wholesome, so let's begin there.
@@ -435,8 +435,13 @@ The full integral to leading order in $$\epsilon$$ is expressed as the sum of tw
 I_\xi = -\left(1-\xi\right) \frac{i}{2\left(4\pi\right)^2} \left[I_\xi^A+I_\xi^B\right],
 \end{equation}
 \begin{equation}
-I_\xi^A = \int_0^1 dx\ 2\left(1-x\right)  \left[ \frac{1}{\epsilon}\left(-\left(1+3x\right)\not p +2m\right)+\frac{1}{2}\left(1+3x\right)\not p - m + \left(\left(1+3x\right)\not p - 2m\right)\left(\gamma_E+\log\left(\frac{\Delta'}{4\pi}\right)\right) \right],
+I_\xi^A = \int_0^1 dx\ 2\left(1-x\right)  \left[ \frac{1}{\epsilon}\left(-\left(1+3x\right)\not p +2m\right)+\frac{1}{2}\left(1+3x\right)\not p - m \right. 
 \end{equation}
+
+\begin{equation}
+\left. + \left(\left(1+3x\right)\not p - 2m\right)\left(\gamma_E+\log\left(\frac{\Delta'}{4\pi}\right)\right) \right], \nonumber
+\end{equation}
+
 and,
 \begin{equation}
 I_\xi^B = -\int_0^1 dx\ 2\left(1-x\right) x^2p^2\left((1-x)\not p + m\right)\Delta' ^{-1}.
@@ -447,8 +452,12 @@ I_\xi^A = \frac{2}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left
 \end{equation}
 We combine to find the gauge-dependent integral,
 \begin{equation}
-I_\xi = -\left(1-\xi\right) \frac{i}{2\left(4\pi\right)^2} \left[\frac{2}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(1+2\gamma_E\right) + 2\int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta' ^{-1}\right] \right].
+I_\xi = -\left(1-\xi\right) \frac{i}{2\left(4\pi\right)^2} \left[\frac{2}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(1+2\gamma_E\right) \right.
 \end{equation}
+\begin{equation}
+\left. + 2\int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta' ^{-1}\right] \right]. \nonumber
+\end{equation}
+
 Adding this to $$I$$,
 \begin{equation}
 I + I_\xi = \frac{ i }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}\not p + 2\int_0^1 dx\ \left[\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi}\right)  - \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right] \right]
@@ -466,9 +475,7 @@ And thus, our full fermionic 1PI propagator is,
 We have again used $$e=e'\mu$$ to obtain the correct dimensions in the logarithmic terms. There is, again, more to be said about the divergences with $$\epsilon^{-1}$$, but before that we have one more diagram to calculate. 
 
 ## The Three-Point Vertex at One Loop
-One more diagram to do. This is the one loop correction to the three point vertex
-
-
+One more diagram to do. This is the one-loop correction to the three-point vertex. The general three-point interaction can be decomposed into two fermionic two-point interactions and a photonic general propagator, leading to a three-point 1-PI vertex. This vertex, $$\Gamma^\mu(p,p')$$ is a function of the momenta of the incoming particles. 
 
 <div style="text-align: center;">
   {% include figure.liquid loading="eager" path="assets/img/QED_diagrams/3pt_loop_diagram.png" title="3pt_loop_diagram" class="img-fluid rounded z-depth-0" width="auto" height="270" %}
