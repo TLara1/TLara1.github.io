@@ -522,8 +522,14 @@ After a bit of algebra, we find we can rewrite the denominator as,
 
 The integral becomes,
 \begin{equation}
-I = \int \bar{d}^d ell\  \int_0^1dx\ \int_0^{1-x}dy\ \frac{\left[\text{Num}\right]}{\left( \ell^2-\Delta \right)^3 }.
+I = \int \bar{d}^d ell\  \int_0^1dx\ \int_0^{1-x}dy\ 2\frac{\left[\text{Num}\right]}{\left( \ell^2-\Delta \right)^3 }.
 \end{equation}
+
+For the numerator,
+\begin{equation}
+\left[\text{Num}\right] = i\bar{u}\left(p'\right)\gamma^\nu \left(\not \ell - y \not p + \left(1-x\right)\not p' +m \right)\gamma^\mu \left(\not \ell + \left(1-y\right) \not p -x \not p' +m \right) \gamma_\nu u\left(p\right).
+\end{equation}
+Our first observation is
 
 
 
