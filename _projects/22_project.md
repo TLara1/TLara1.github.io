@@ -238,6 +238,9 @@ We haved used $$\left(\gamma^0\right)^2=1$$. Secondly, note that because $$S$$ i
 \end{equation}
 Similarly, it can be shown that $$\bar{\psi}\not \partial \psi$$ is also a Lorentz invariant after consulting Eq. \ref{eq: covariance S relation}.
 
+## Solutions to the Dirac Equation
+
+
 ## The Dirac Lagrangian
 Finally, it is easy to verify that the Lagrangian that gives rise to the Dirac equation is,
 \begin{equation}
