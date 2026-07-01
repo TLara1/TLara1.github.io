@@ -265,10 +265,10 @@ Using the gamma matrix commutation rules, Eq. \ref {eq: gamma commutator relatio
 \begin{equation}
 \gamma^\mu \not p+ \not p' \gamma^\mu =  \frac{1}{2}\left[\not p' - \not p, \gamma^\mu \right] + \left(p' ^\mu + p^\mu\right) = -2i\Sigma^{\mu\nu}\left( p'_\nu - p _\nu\right) + \left(p' ^\mu + p^\mu\right),
 \end{equation}
-and we obtain the the **Gordon Identity**,
+and we obtain the **Gordon Identity**,
 
 \begin{equation}
-\bar{u}\left(p'\right)\gamma^\mu u\left(p\right) = i\frac{1}{2m}\left[\left(p' ^\mu + p^\mu\right) + 2i\Sigma^{\mu\nu}\left( p'_\nu - p _\nu\right) \right].
+\bar{u}\left(p'\right)\gamma^\mu u\left(p\right) = \frac{1}{2m}\left[\left(p' ^\mu + p^\mu\right) + 2i\Sigma^{\mu\nu}\left( p'_\nu - p _\nu\right) \right].
 \end{equation}
 This looks somewhat strange, but is very useful for computing integrals in Quantum Field Theory.
 
