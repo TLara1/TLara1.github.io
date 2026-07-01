@@ -541,7 +541,8 @@ The $$\not \ell$$ term is,
 \begin{equation}
 = frac{\left(d-2\right)^2}{d}\ell^2\gamma^\mu.\nonumber
 \end{equation}
-The other terms are less pleasant. We use the identities, 
+
+The other non-$$\ell$$ terms are less pleasant. We use the identities, 
 \begin{equation}
 \bar{u}\not p'=\bar{u}m,\quad \not p u = m u,
 \end{equation}
@@ -553,18 +554,75 @@ The other terms are less pleasant. We use the identities,
 \end{equation}
 This is where the fun begins, multiplying out all nine terms,
 \begin{equation}
-\bar{u}\left(xm \gamma^\nu + 2\left(1-x\right) p'^\nu - y\gamma^\nu\not p\right)\gamma^\mu\left(ym \gamma_\nu + 2\left(1-y\right) p_\nu - x\not p'\gamma_\nu\right) u = \bar{u}\left[ xy(2-d)m^2\gamma^\mu + 2x(1-y)m\not p \gamma^\mu + 2y(1-x)m\gamma^\mu\not p' - x^2 m \gamma^\nu\gamma^\mu\not p'\gamma_\nu - y^2 m \gamma^\nu \not p \gamma^\mu \gamma_\nu + 4(1-x)(1-y) p'^\nu p_\nu \gamma^\mu - 2x(1-x)\gamma^\mu \not p'^2 -2y(1-y)\not p^2 \gamma^\mu + xy\gamma^\nu\not p\gamma^\mu \not p'\gamma_\nu \right] u.
+\left[\text{non-}\ell\text{ terms}\right] = \bar{u}\left(xm \gamma^\nu + 2\left(1-x\right) p'^\nu - y\gamma^\nu\not p\right)\gamma^\mu\left(ym \gamma_\nu + 2\left(1-y\right) p_\nu - x\not p'\gamma_\nu\right) u = \bar{u}\left[ xy(2-d)m^2\gamma^\mu + 2x(1-y)m\not p \gamma^\mu + 2y(1-x)m\gamma^\mu\not p' - x^2 m \gamma^\nu\gamma^\mu\not p'\gamma_\nu - y^2 m \gamma^\nu \not p \gamma^\mu \gamma_\nu + 4(1-x)(1-y) p'^\nu p_\nu \gamma^\mu - 2x(1-x)\gamma^\mu \not p'^2 -2y(1-y)\not p^2 \gamma^\mu + xy\gamma^\nu\not p\gamma^\mu \not p'\gamma_\nu \right] u.
 \end{equation}
 We must simplify to have terms with only one or no gamma matrices, we omit the outside $$\bar{u}$$ and $$u$$ from the following equations for ease of notation,
 \begin{equation}
-2x(1-y)m\not p \gamma^\mu = -2x(1-y)m^2\gamma^\mu + 2x(1-y)p^\mu,
+2x(1-y)m\not p \gamma^\mu = -2x(1-y)m^2\gamma^\mu + 4x(1-y)mp^\mu,
 \end{equation}
 \begin{equation}
-2y(1-x)m\gamma^\mu\not p' = -2y(1-x)m^2\gamma^\mu + 2y(1-x)p'^\mu,
+2y(1-x)m\gamma^\mu\not p' = -2y(1-x)m^2\gamma^\mu + 4y(1-x)mp'^\mu,
 \end{equation}
 \begin{equation}
-- x^2 m \gamma^\nu\gamma^\mu\not p'\gamma_\nu = 
+-x^2 m \gamma^\nu\gamma^\mu\not p'\gamma_\nu = x^2(2-d) m \gamma^\mu \not p' - 2x^2m \not p'\gamma^\mu = -x^2(4-d)m^2 \gamma^\mu + 2x^2(2-d)mp'^\mu,
 \end{equation}
+\begin{equation}
+-y^2 m \gamma^\nu \not p \gamma^\mu \gamma_\nu = -y^2(4-d)m^2 \gamma^\mu + 2y^2(2-d)mp^\mu,
+\end{equation}
+\begin{equation}
+-2x(1-x)\gamma^\mu \not p'^2 = -2x(1-x)m^2\gamma^\mu,
+\end{equation}
+\begin{equation}
+-2y(1-y)\not p^2 \gamma^\mu = -2y(1-y)m^2\gamma^\mu,
+\end{equation}
+and the fun one,
+\begin{equation}
+xy\gamma^\nu\not p\gamma^\mu \not p'\gamma_\nu = xy\left(-\not p \gamma^\nu + 2 p^\nu\right)\gamma^mu\left(-\gamma_\nu \not p' + 2p'_\nu\right) = xy(2-d)\not p \gamma^\mu \not p' + 4xy p'^\nu p _\nu \gamma^\mu - 2xy\left(\not p \not p' \gamma^\mu + \gamma^\mu \not p \not p'\right)
+\end{equation}
+
+\begin{equation}
+= - xy(4-d)\not p \not p' \gamma^\mu  + 2xy(2-d)m p'^\mu + 4xy p'^\nu p _\nu \gamma^\mu - 2xy \gamma^\mu \not p \not p' \nonumber
+\end{equation}
+
+\begin{equation}
+= xy(4-d)\not p' \not p \gamma^\mu + (d-4) xyp'^\nu p _\nu \gamma^\mu  + 2xy(2-d)m p'^\mu  + 2xy \gamma^\mu \not p' \not p \nonumber
+\end{equation}
+
+\begin{equation}
+= -xy(6-d) m^2 \gamma^\mu  + 2xy(4-d)m \left(p'^\mu + p^\mu\right) + (d-4) xyp'^\nu p _\nu \gamma^\mu  \nonumber
+\end{equation}
+
+Now we combine all of these terms.
+
+For $$m^2\gamma^\mu$$,
+\begin{equation}
+xy(2-d)-2x(1-y)-2y(1-x)-x^2(4-d)-y^2(4-d)-xy(6-d) =  -2\left(\left(x+y\right)+(4-d)\left(x^2+y^2\right)\right).
+\end{equation}
+For $$p'^\nu p _\nu \gamma^\mu$$,
+\begin{equation}
+4(1-x)(1-y) + (d-4) xy = 4-4x-4y+dxy.
+\end{equation}
+For $$m p'^\mu $$,
+\begin{equation}
+4y(1-x) + 2y^2(2-d) + 2xy(4-d) = 2\left(\left(2 - d\right)xy + 2y + y^2(2-d)\right).
+\end{equation}
+For $$m p^\mu $$,
+\begin{equation}
+4x(1-y) + 2x^2(2-d) + 2xy(4-d) = 2\left(\left(2 - d\right)xy + 2x + x^2(2-d)\right).
+\end{equation}
+
+Let's check on our non-$$\ell$$ terms,
+\begin{equation}
+\left[\text{non-}\ell\text{ terms}\right] = -2\left(\left(x+y\right)+(4-d)\left(x^2+y^2\right)\right)m^2\gamma^\mu + \left(4-4x-4y+dxy\right)p'^\nu p _\nu \gamma^\mu + 2\left(\left(2 - d\right)xy + 2y + y^2(2-d)\right)m p'^\mu + 2\left(\left(2 - d\right)xy + 2x + x^2(2-d)\right)m p^\mu.
+\end{equation}
+We are nearly there, I promise. 
+
+First, we introduce the **Gordon Identity**
+
+
+
+
+
 
 ### Sources
 I sought to do this without any external sources. Mainly to see if I still could. I only reviewed my own notes taken during my Quantum Field Theory II class (8.324), taught by Professor Ian Stewart during the 2025 Fall semester.
