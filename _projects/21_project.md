@@ -389,7 +389,7 @@ and rewrite the denominator as,
 Integrating over $$y$$ and accounting for the prefactor, the integral becomes,
 
 \begin{equation}
-I_\xi = \int\bar{d}^d\ell\ \int _0^1 dx\ 2\left(1-x\right)\frac{\left[\text{Num}\right]}{\left(\ell-\Delta'\right)^3}.
+I_\xi = \int\bar{d}^d\ell\ \int _0^1 dx\ 2\left(1-x\right)\frac{\left[\text{Num}\right]}{\left(\ell^2-\Delta'\right)^3}.
 \end{equation}
 
 For the numerator,
@@ -410,7 +410,7 @@ Evaluating the integrals over $$\ell$$,
 \end{equation}
 and,
 \begin{equation}
-\int\bar{d}^d\ell\ \frac{\ell^2}{\left(\ell^2-\Delta'\right)^3}=\frac{ i }{ 2\left(4\pi\right)^{2} \Gamma{2-\epsilon}}\Gamma{3-\epsilon}\Gamma\left(\epsilon\right)\left(\frac{\Delta'}{4\pi}\right)^{-\epsilon}
+\int\bar{d}^d\ell\ \frac{\ell^2}{\left(\ell^2-\Delta'\right)^3}=\frac{ i }{ 2\left(4\pi\right)^{2} \Gamma\left(2-\epsilon\right)}\Gamma\left(3-\epsilon\right)\Gamma\left(\epsilon\right)\left(\frac{\Delta'}{4\pi}\right)^{-\epsilon}
 \end{equation}
 \begin{equation}
 =\frac{ i \left(2-\epsilon\right)}{ 2\epsilon\left(4\pi\right)^2 }\Gamma\left(1+\epsilon\right)\left(\frac{\Delta'}{4\pi}\right)^{-\epsilon}.\nonumber
@@ -504,7 +504,26 @@ i e M^\mu = \left(-ie\right)^3 \left [ \int \bar{d}^d k\ \frac{\bar{u}\left(p'\r
 We once again have an integral without the gauge term, $$I$$, and an integral with the gauge term, $$I_\xi$$. We saved the best for last; these integrals are the nastiest of the bunch. On with the show!
 
 ### Gauge-less Integral
+Starting with the less terrible integral,
+\begin{equation}
+I = \int \bar{d}^d k\ \frac{\bar{u}\left(p'\right)\gamma^\nu i\left(\not k + \not p' +m \right)\left(-i \eta_{\nu\alpha}\right)\gamma^\mu i\left(\not k + \not p +m \right) \gamma^\alpha u\left(p\right)}{\left(\left(k+p'\right)^2-m^2\right)\left(k^2\right)\left(\left(k+p\right)-m^2\right)}.
+\end{equation}
+Again, with the three-parameter Feynman trick,
+\begin{equation}
+\frac{1}{abc} =\int_0^1dx\ \int_0^{1-x}dy\ \frac{2}{\left(c+(a-c)x+(b-c)y\right)^3},
+\end{equation}
+After a bit of algebra, we find we can rewrite the denominator as,
+\begin{equation}
+\left[\text{Den}\right] = \left(k^2 + \left(2kp'+p'^2-m^2\right)x + \left(2kp+p^2-m^2\right)y \right)^3= \left(\ell^2-\Delta\right)^3,
+\end{equation}
+\begin{equation}
+\ell= k + x p' + y p,\ \Delta = \left( xp'+ yp\right)^2 - x\left(p'^2-m^2\right) - y \left(p^2-m^2\right).
+\end{equation}
 
+The integral becomes,
+\begin{equation}
+I = \int \bar{d}^d ell\  \int_0^1dx\ \int_0^{1-x}dy\ \frac{\left[\text{Num}\right]}{\left( \ell^2-\Delta \right)^3 }.
+\end{equation}
 
 
 
