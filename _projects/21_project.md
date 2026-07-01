@@ -469,4 +469,10 @@ We have again used $$e=e'\mu$$ to obtain the correct dimensions in the logarithm
 One more diagram to do. This is the one loop correction to the three point vertex
 
 
+
+<div style="text-align: center;">
+  {% include figure.liquid loading="eager" path="assets/img/QED_diagrams/3pt_loop_diagram.png" title="3pt_loop_diagram" class="img-fluid rounded z-depth-0" width="auto" height="270" %}
+</div>
+
+
 ### Sources
