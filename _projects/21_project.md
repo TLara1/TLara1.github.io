@@ -617,7 +617,7 @@ Let's check on our non-$$\ell$$ terms,
 \end{equation}
 We are nearly there, I promise. 
 
-First, we introduce the **Gordon Identity**
+First, we use the **Gordon Identity**
 
 
 
