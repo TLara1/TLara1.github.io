@@ -32,7 +32,7 @@ We use Gamma matrices, $$\gamma^\mu$$ with $$\mu=0,1,2,3$$ satisfying the antico
 \begin{equation}\label{eq: gamma anticommutation relation}
 \left\lbrace\gamma^\mu,\gamma^\nu\right\rbrace=\eta^{\mu\nu}.
 \end{equation}
-Here we have suppressed spinor indices and will continue to do so. Keep in mind that $$\gamma^mu$$ is a four-by-four matrix in spinor space. 
+Here we have suppressed spinor indices and will continue to do so. Keep in mind that $$\gamma^\mu$$ is a four-by-four matrix in spinor space. 
 A useful property that follows from Eq. \ref{eq: gamma anticommutation relation} is,
 \begin{equation}
 \left(\gamma^\mu\right)^\dagger=\gamma^0\gamma^\mu\gamma^0.
@@ -45,7 +45,7 @@ Furthermore, due to anticommutation, the trace of a product of an odd number of 
 
 A few more properties related to the sums of gamma matrices that can be similarly obtained from the commutation relation,
 \begin{equation}
-\gamma^mu\gamma_mu = d,\quad\gamma^mu\gamma^nu\gamma_\nu=\left(2-d\right)\gamma^\nu,
+\gamma^\mu\gamma_\mu = d,\quad\gamma^\mu\gamma^\nu\gamma_\nu=\left(2-d\right)\gamma^\nu,
 \end{equation}
 where $$d$$ is the number of spacetime dimensions.
 
@@ -399,7 +399,7 @@ For the numerator,
 Dropping terms that are odd in $$\ell$$ and employing our gamma matrix identities,
 \begin{equation}
 \left[\text{Num}\right] = -\left(1-\xi\right)\left[ 
--\ell^2\left(\left(1+x\right)\not p-m\right) + 2 (1-x)  \not \ell \ell^\mu p_mu+x^2p^2\left((1-x)\not p + m\right)\right]
+-\ell^2\left(\left(1+x\right)\not p-m\right) + 2 (1-x)  \not \ell \ell^\mu p_\mu+x^2p^2\left((1-x)\not p + m\right)\right]
 \end{equation}
 \begin{equation}
  = -\left(1-\xi\right)\left[-\ell^2\left(\left(1+x-\frac{2\left(1-x\right)}{d}\right)\not p-m\right) + x^2p^2\left((1-x)\not p + m\right) \right]. \nonumber
@@ -519,6 +519,7 @@ After a bit of algebra, we find we can rewrite the denominator as,
 \begin{equation}
 \ell= k + x p' + y p,\ \Delta = \left( xp'+ yp\right)^2 - x\left(p'^2-m^2\right) - y \left(p^2-m^2\right).
 \end{equation}
+Here we will apply the 
 
 The integral becomes,
 \begin{equation}
@@ -529,11 +530,41 @@ For the numerator,
 \begin{equation}
 \left[\text{Num}\right] = i\bar{u}\left(p'\right)\gamma^\nu \left(\not \ell - y \not p + \left(1-x\right)\not p' +m \right)\gamma^\mu \left(\not \ell + \left(1-y\right) \not p -x \not p' +m \right) \gamma_\nu u\left(p\right).
 \end{equation}
-Our first observation is
-
-
-
-
+Our first observation is to drop terms in odd powers of $$\ell$$,
+\begin{equation}
+\left[\text{Num}\right] = i\bar{u}\gamma^\nu \left[\not \ell\gamma^\mu\not \ell +\left(\left(1-x\right)\not p' -y \not p + m\right) \gamma^\mu \left(\left(1-y\right)\not p - x\not p' + m \right)\right]\gamma_\nu u.
+\end{equation}
+The $$\not \ell$$ term is,
+\begin{equation}
+\gamma^\nu\not \ell\gamma^\mu\not \ell\gamma_\nu = \gamma^\nu\left(-\not\ell^2\gamma^\mu+2\not\ell\ell^\mu\right)\gamma_\nu = \left(d-2\right)\ell^2\gamma^\mu-2\ell^2\gamma^\mu+\frac{4}{d}\ell^2\gamma^2
+\end{equation}
+\begin{equation}
+= frac{\left(d-2\right)^2}{d}\ell^2\gamma^\mu.\nonumber
+\end{equation}
+The other terms are less pleasant. We use the identities, 
+\begin{equation}
+\bar{u}\not p'=\bar{u}m,\quad \not p u = m u,
+\end{equation}
+\begin{equation}
+\bar{u}\gamma^\nu \left(\left(1-x\right)\not p' -y \not p + m\right) = \bar{u}\left(xm \gamma^\nu + 2\left(1-x\right) p'^\nu - y\gamma^\nu\not p\right),
+\end{equation}
+\begin{equation}
+\left(\left(1-y\right)\not p -x \not p' + m\right)\gamma_\nu u = \left(ym \gamma_\nu + 2\left(1-y\right) p_\nu - x\not p'\gamma_\nu\right) u.
+\end{equation}
+This is where the fun begins, multiplying out all nine terms,
+\begin{equation}
+\bar{u}\left(xm \gamma^\nu + 2\left(1-x\right) p'^\nu - y\gamma^\nu\not p\right)\gamma^\mu\left(ym \gamma_\nu + 2\left(1-y\right) p_\nu - x\not p'\gamma_\nu\right) u = \bar{u}\left[ xy(2-d)m^2\gamma^\mu + 2x(1-y)m\not p \gamma^\mu + 2y(1-x)m\gamma^\mu\not p' - x^2 m \gamma^\nu\gamma^\mu\not p'\gamma_\nu - y^2 m \gamma^\nu \not p \gamma^\mu \gamma_\nu + 4(1-x)(1-y) p'^\nu p_\nu \gamma^\mu - 2x(1-x)\gamma^\mu \not p'^2 -2y(1-y)\not p^2 \gamma^\mu + xy\gamma^\nu\not p\gamma^\mu \not p'\gamma_\nu \right] u.
+\end{equation}
+We must simplify to have terms with only one or no gamma matrices, we omit the outside $$\bar{u}$$ and $$u$$ from the following equations for ease of notation,
+\begin{equation}
+2x(1-y)m\not p \gamma^\mu = -2x(1-y)m^2\gamma^\mu + 2x(1-y)p^\mu,
+\end{equation}
+\begin{equation}
+2y(1-x)m\gamma^\mu\not p' = -2y(1-x)m^2\gamma^\mu + 2y(1-x)p'^\mu,
+\end{equation}
+\begin{equation}
+- x^2 m \gamma^\nu\gamma^\mu\not p'\gamma_\nu = 
+\end{equation}
 
 ### Sources
 I sought to do this without any external sources. Mainly to see if I still could. I only reviewed my own notes taken during my Quantum Field Theory II class (8.324), taught by Professor Ian Stewart during the 2025 Fall semester.
