@@ -617,12 +617,19 @@ Let's check on our non-$$\ell$$ terms,
 \end{equation}
 We are nearly there, I promise. 
 
-First, we use the **Gordon Identity**
+First, we rewrite the momentum terms using $$q=p'-p$$ and $$p'+p$$,
 \begin{equation}
-\bar{u}\left(p'\right)\gamma^\mu u\left(p\right) = \frac{1}{2m}\left[\left(p' ^\mu + p^\mu\right) + 2i\Sigma^{\mu\nu}\left( p'_\nu - p _\nu\right) \right].
+ 2\left(\left(2 - d\right)xy + 2y + y^2(2-d)\right)m p'^\mu + 2\left(\left(2 - d\right)xy + 2x + x^2(2-d)\right)m p^\mu = 2(y+x)(1+\frac{2-d}{2}\left(y+x\right))
+m\left(p'^\mu+p^\mu\right) + 2\left(y-x\right)(1+\frac{2-d}{2}\left(y+x\right)\right)mq^\mu.
 \end{equation}
-
-
+A first simplification: because the $$q^\mu$$ is odd under the exchange $$y\leftrightarrow x$$, it vanishes over the $$x$$, $$y$$ integral. As for the second term, using the **Gordon Identity**
+\begin{equation}
+\bar{u}\left(p'\right)\gamma^\mu u\left(p\right) = \frac{1}{2m}\bar{u}\left(p'\right)\left[\left(p' ^\mu + p^\mu\right) + 2i\Sigma^{\mu\nu}q_\nu \right]u\left(p\right) ,
+\end{equation}
+we may replace,
+\begin{equation}
+p' ^\mu + p^\mu = 2m\gamma^\mu - 2i\Sigma^{\mu\nu}q_\nu.
+\end{equation}
 
 
 
