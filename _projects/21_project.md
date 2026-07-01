@@ -49,9 +49,9 @@ A few more properties related to the sums of gamma matrices that can be similarl
 \end{equation}
 where $$d$$ is the number of spacetime dimensions.
 
-We also define the adjoint $$\bar{ }$$ operation as,
+We also define the adjoint $$\bar{\psi}^\mu$$ operation as,
 \begin{equation}
-\bar{\psi}^\mu=\psi^\dagger\gamma^0,
+\bar{\psi}^\mu=\left(\psi^\mu\right)^\dagger\gamma^0,
 \end{equation}
 where $$\psi$$ is a four-component spinor. We use the $$\not p$$ notation to denote a combination with the gamma matrices,
 \begin{equation}
