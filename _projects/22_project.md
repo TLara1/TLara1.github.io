@@ -132,7 +132,7 @@ and we obtain the critical anticommutation relation,
 \left\lbrace\gamma^\mu,\gamma^\nu\right\rbrace=2\eta^{\mu\nu}.
 \end{equation}
 The commutation relation is also helpful, 
-\begin{equation}
+\begin{equation}\label{eq: gamma commutator relation}
 \left\[\gamma^\mu,\gamma^\nu\right\]=2\eta^{\mu\nu}-2\gamma^\nu\gamma^\mu,
 \end{equation}
 as is the  relation,
@@ -157,7 +157,7 @@ We have obtained the Dirac equation! This is a fully relativistic version of the
 \begin{equation}
 \left(i\not\partial-m\right)\psi=0,
 \end{equation}
-where the slash notation is used to notate $$\not\partial=\gamma^\mu\partial_\mu$$.
+where the slash notation is used to denote $$\not\partial=\gamma^\mu\partial_\mu$$.
 
 ## Lorentz Covariance of the Dirac Equation
 We have stated, and we expect the Dirac equation to be Lorentz covariant, but we have not determined how our wavefunction $$\psi$$ transforms. We will follow the same procedure we used to show that the unmodified Schrödinger equation was not covariant; performing a Lorentz transform and then determining an adequate modification to $$\psi$$ such that the Dirac equation in the new basis is unchanged. Our procedure this time around will be somewhat more sophisticated. Let's consider a Lorentz transform,
@@ -224,7 +224,7 @@ So, under a Lorentz transformation, the $$\psi$$ spinor field transforms as,
 \psi\rightarrow\psi'= e^{ -\frac{i}{2}\omega_{\mu\nu}\Sigma^{\mu\nu}}\psi,\quad \Sigma^{\mu\nu} = \frac{i}{4}\left\[\gamma^\mu,\gamma^\nu\right\].
 \end{equation}
 
-Now, briefly, a few more identities, first, the conjugate of $$S$$, 
+Now, briefly, a few more identities: first, the conjugate of $$S$$, 
 \begin{equation}
 \left(\Sigma^{\mu\nu}\right)^\dagger=-\frac{i}{4}\left\[\gamma^\mu,\gamma^\nu\right\]^\dagger=\frac{i}{4}\gamma^0\left\[\gamma^\mu,\gamma^\nu\right\]\gamma^0=\gamma^0\Sigma^{\mu\nu}\gamma^0.
 \end{equation}
@@ -239,6 +239,38 @@ We haved used $$\left(\gamma^0\right)^2=1$$. Secondly, note that because $$S$$ i
 Similarly, it can be shown that $$\bar{\psi}\not \partial \psi$$ is also a Lorentz invariant after consulting Eq. \ref{eq: covariance S relation}.
 
 ## Solutions to the Dirac Equation
+There are two solutions to the Dirac equation,
+\begin{equation}
+\psi^+=v(p)e^{i x^\mu p_\mu},\quad\psi^-=u(p)e^{-i x^\mu p_\mu}.
+\end{equation}
+The functions $$u(p)$$ and $$v(p)$$ satisfy,
+\begin{equation}\label{eq. u equations}
+\left(\not p + m\right)v = 0,\quad\left(\not p -m\right)u=0.
+\end{equation}
+There is more to be said about $$u$$ and $$v$$, but here we will only derive the **Gordon Identity**. 
+
+Consider the conjugate of Eq. \ref{eq. u equations}
+\begin{equation}\label{eq. u conjugate equations}
+\bar{u}\left(\not p -m\right)u=0.
+\end{equation}
+From Eq. \ref{eq. u equations} and Eq. \ref{eq. u conjugate equations}
+\begin{equation}
+m\bar{u}\left(p'\right)\gamma^\mu u\left(p\right) = \bar{u}\left(p'\right)\gamma^\mu \not p u\left(p\right),\quad m\bar{u}\left(p'\right)\gamma^\mu u\left(p\right) = \bar{u}\left(p'\right)\not p' \gamma^\mu u\left(p\right).
+\end{equation}
+Adding and dividing by two,
+\begin{equation}
+\bar{u}\left(p'\right)\gamma^\mu u\left(p\right) = frac{1}{2m}\bar{u}\left(p'\right)\left(\gamma^\mu \not p+ \not p' \gamma^\mu\right)u\left(p\right).
+\end{equation}
+Using the gamma matrix commutation rules, Eq. \ref {eq: gamma commutator relation}, it is easy to find
+\begin{equation}
+\gamma^\mu \not p+ \not p' \gamma^\mu =  \frac{1}{2}\left[\not p' - \not p, \gamma^\mu \right] + \left(p' ^\mu + p^\mu\right) = -2i\Sigma^{\mu\nu}\left( p'_\nu - p _\nu\right) + \left(p' ^\mu + p^\mu\right),
+\end{equation}
+and we obtain the the **Gordon Identity**,
+
+\begin{equation}
+\bar{u}\left(p'\right)\gamma^\mu u\left(p\right) = i\frac{1}{2m}\left[\left(p' ^\mu + p^\mu\right) + 2i\Sigma^{\mu\nu}\left( p'_\nu - p _\nu\right) \right].
+\end{equation}
+This looks somewhat strange, but is very useful for computing integrals in Quantum Field Theory.
 
 
 ## The Dirac Lagrangian
