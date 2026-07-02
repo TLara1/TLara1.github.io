@@ -124,7 +124,7 @@ In this section, we are interested in the two-point photonic propagator $$D_{\mu
 
 The "stuff" in the diagram represents some general interaction contained within the two external legs. This general interaction can be decomposed as a sum of the tree-level diagram and 1-particle irreducible (1PI) diagrams, where the (1PI) diagrams are those that cannot be split in two by cutting a single line. To first loop order, the contribution to $$D_{\mu\nu}$$ consists of the tree-level diagram and a single 1PI ferminoic loop. 
 
-Via the Ward-Takahashi identity, which is essentially Noether's Theorem applied to path integrals, it can be shown that the two-point photonic propagator satisfies,
+Via the **Ward-Takahashi identity**, which is essentially Noether's Theorem applied to path integrals, it can be shown that the two-point photonic propagator satisfies,
 \begin{equation}
 \frac{i}{\xi}q^2q^\mu D_{\mu\nu}=q_\nu.
 \end{equation}
@@ -147,6 +147,20 @@ from which we identify,
 \frac{i}{\xi}q^2q^\mu D^\text{tree} _{\mu\nu}=q _\nu.
 \end{equation}
 Therefore, corrections beyond first-order should be proportional to $$t _{T\ \mu\nu}$$ which is orthogonal to $$q^\nu$$. And with this in mind, we write the 1PI diagram for an internal fermion loop as $$i q^2 \Pi\left(q\right) t _{T\ \mu\nu}$$, where $$\Pi\left(q\right)$$ is a function of the momentum to be determined.
+
+Beyond tree level, the general propagator can be written as the sum of 1PI diagrams. First tree level, then tree level followed by 1PI followed by tree level, then tree level, 1PI, tree level, 1PI, tree level, and so forth
+
+
+schematically,
+\begin{equation}
+ D_{\mu\nu} =  D^\text{tree} _{\mu\nu} - i q^2 \Pi\left(q\right) t _{T\ \mu\nu} - \left(i q^2 \Pi\left(q\right)\right)^2 t _{T\ \mu\nu} - ...
+\end{equation}
+our expression for the tree-level expression motivates us to write,
+
+\begin{equation}
+ D_{\mu\nu} =  -\frac{i}{q^2}t _{\mu\nu}- i q^2 \Pi\left(q\right) t _{T\ \mu\nu} - \left(i q^2 \Pi\left(q\right)\right)^2 t _{T\ \mu\nu} - ...
+\end{equation}
+
 
 Finally, we are ready to start integrating to determine the value of $$\Pi\left(q\right)$$. Reading off the Feynman rules from the 1PI 1-loop diagram,
 \begin{equation}\label{1pi photon loop integral}
@@ -818,9 +832,12 @@ F_1 = \frac{ e'^2}{\left(4\pi\right)^{2}}\left[-xi \frac{1}{\epsilon} - \gamma_E
 
 We have finished all of our integrals! Stand up, stretch, go outside. The hard part is behind us, now we just go through the renormalization procedure.
 
-
-
-
+## Renormalization
+Taking a step back and returning to our QED Lagrangian, Eq. \ref{eq: QED Lagrangian}
+\begin{equation}
+\mathcal{L} _\text{QED}=\bar{\psi}_0\left(i\not \partial-e _0\not A _0-m_0\right)\psi_0-\frac{1}{4}F_0^{\mu\nu}F _{0\ \mu\nu}-\frac{1}{2\xi _0}\left(\partial _\mu A _0 ^\mu\right)^2.
+\end{equation}
+We have added a $$0$$ indicator to all or our bare fields and constants for reasons that will be evidently shortly. 
 
 
 
