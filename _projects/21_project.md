@@ -497,23 +497,23 @@ One more diagram to do. This is the one-loop correction to the three-point verte
 Using our Feynman rules as usual, the loop integral is,
 
 \begin{equation}
-i M^\mu = \left(-ie\right)^3 \left [ \int \bar{d}^d k\ \frac{\bar{u}\left(p'\right)\gamma^\nu i\left(\not k + \not p' +m \right)\left(-i \eta_{\nu\alpha}\right)\gamma^\mu i\left(\not k + \not p +m \right) \gamma^\alpha u\left(p\right)}{\left(\left(k+p'\right)^2-m^2\right)\left(k^2\right)\left(\left(k+p\right)-m^2\right)} \right.
+i M^\mu = \left(-ie\right)^3 \left [ \int \bar{d}^d k\ \frac{\bar{u}\left(p'\right)\gamma^\nu i\left(\not k + \not p' +m \right)\left(-i \eta_{\nu\alpha}\right)\gamma^\mu i\left(\not k + \not p +m \right) \gamma^\alpha u\left(p\right)}{\left(\left(k+p'\right)^2-m^2\right)\left(k^2\right)\left(\left(k+p\right)^2-m^2\right)} \right.
 \end{equation}
 
 \begin{equation}
-+\left. \int \bar{d}^d k\ \frac{\bar{u}\left(p'\right)\gamma^\nu i\left(\not k + \not p' +m \right)\left(i\left(1-\xi\right)k_\alpha k_\nu\right)\gamma^\mu i\left(\not k + \not p +m \right) \gamma^\alpha u\left(p\right)}{\left(\left(k+p'\right)^2-m^2\right)\left(k^4\right)\left(\left(k+p\right)-m^2\right)} \right]. \nonumber
++\left. \int \bar{d}^d k\ \frac{\bar{u}\left(p'\right)\gamma^\nu i\left(\not k + \not p' +m \right)\left(i\left(1-\xi\right)k_\alpha k_\nu\right)\gamma^\mu i\left(\not k + \not p +m \right) \gamma^\alpha u\left(p\right)}{\left(\left(k+p'\right)^2-m^2\right)\left(k^4\right)\left(\left(k+p\right)^2-m^2\right)} \right]. \nonumber
 \end{equation}
 
 \begin{equation}
-= \left(-ie\right)^3 \left[ I + I_\xi\right].
+= i M^\mu_\text{gaugeless} + i M^\mu_\text{gaugefull}.
 \end{equation}
 
-We once again have an integral without the gauge term, $$I$$, and an integral with the gauge term, $$I_\xi$$. We saved the best for last; these integrals are the nastiest of the bunch. On with the show!
+We once again have an integral without the gauge term, and one with the gauge term. We saved the best for last; these integrals are the nastiest of the bunch. On with the show!
 
 ### Gauge-less Integral
 Starting with the less terrible integral,
 \begin{equation}
-I = \int \bar{d}^d k\ \frac{\bar{u}\left(p'\right)\gamma^\nu i\left(\not k + \not p' +m \right)\left(-i \eta_{\nu\alpha}\right)\gamma^\mu i\left(\not k + \not p +m \right) \gamma^\alpha u\left(p\right)}{\left(\left(k+p'\right)^2-m^2\right)\left(k^2\right)\left(\left(k+p\right)-m^2\right)}.
+ i M^\mu_\text{gaugeless} = \left(-ie\right)^3  \int \bar{d}^d k\ \frac{\bar{u}\left(p'\right)\gamma^\nu i\left(\not k + \not p' +m \right)\left(-i \eta_{\nu\alpha}\right)\gamma^\mu i\left(\not k + \not p +m \right) \gamma^\alpha u\left(p\right)}{\left(\left(k+p'\right)^2-m^2\right)\left(k^2\right)\left(\left(k+p\right)^2-m^2\right)}.
 \end{equation}
 Again, with the three-parameter Feynman trick,
 \begin{equation}
@@ -530,7 +530,7 @@ Here we have applied the on-shell condition, setting $$p^2=p'^2=m^2$$ to simplif
 
 The integral becomes,
 \begin{equation}
-I = \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ 2\frac{\left[\text{Num}\right]}{\left( \ell^2-\Delta \right)^3 }.
+ i M^\mu_\text{gaugeless} = \left(-ie\right)^3 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ 2\frac{\left[\text{Num}\right]}{\left( \ell^2-\Delta \right)^3 }.
 \end{equation}
 
 For the numerator,
@@ -667,7 +667,7 @@ Setting $$d=4$$,
 \left[\text{non-}\ell\text{ terms}\right] _{d=4} = -2\left(\left(x+y\right) - 2(y+x)\left(1-y-x\right)\right)m^2\gamma^\mu
 \end{equation}
 \begin{equation}
-+ 4(1-x)(1-y)p'^\nu p _\nu \gamma^\mu - 4i(x+y)\left(1-y-x\right)m\Sigma^{\mu\nu}q _\nu\nonumber.
++4(1-x)(1-y)p'^\nu p _\nu \gamma^\mu - 4i(x+y)\left(1-y-x\right)m\Sigma^{\mu\nu}q _\nu\nonumber.
 \end{equation}
 
 And finally, using the on-shell condition,
@@ -716,12 +716,45 @@ F_1^\text{gaugeless} = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \
 
 Beginning with the $$\ell^2$$ term,
 \begin{equation}
- \frac{1}{\left(4\pi\right)^{2}}\int_0^1dx\ \int_0^{1-x}dy\ 2\left(1-\epsilon\right)^2 \Gamma\left(\epsilon\right)\left(\frac{\Delta}{4\pi}\right)^{-\epsilon} = \frac{2}{\left(4\pi\right)^{2}}\int_0^1dx\ \int_0^{1-x}dy\ \left[\frac{1}{\epsilon} - \gamma_E - 2 -\log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi}\right)\right]
+ \frac{ e^2}{\left(4\pi\right)^{2}}\int_0^1dx\ \int_0^{1-x}dy\ 2\left(1-\epsilon\right)^2 \Gamma\left(\epsilon\right)\left(\frac{\Delta}{4\pi}\right)^{-\epsilon} = \frac{2}{\left(4\pi\right)^{2}}\int_0^1dx\ \int_0^{1-x}dy\ \left[\frac{1}{\epsilon} - \gamma_E - 2 -\log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi}\right)\right]
 \end{equation}
 \begin{equation}
-= \frac{1}{\left(4\pi\right)^{2}}\left[\frac{1}{\epsilon} - \gamma_E - 2 - 2\int_0^1dx\ \int_0^{1-x}dy\ \log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi}\right) \right]. \nonumber
+= \frac{ e^2}{\left(4\pi\right)^{2}}\left[\frac{1}{\epsilon} - \gamma_E - 2 - 2\int_0^1dx\ \int_0^{1-x}dy\ \log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi}\right) \right]. \nonumber
 \end{equation}
-There is a divergent and a finite contribution.
+There is a divergent and a finite contribution. For the non-$$\ell$$ term, there is only the integral,
+\begin{equation}
+ = \frac{ 2 e^2 }{ \left(4\pi\right)^2 }\int_0^1dx\ \int_0^{1-x}dy\ \frac{\left(\left(x+y\right) - 2(y+x)\left(1-y-x\right) -2(1-x)(1-y)\right)m^2 + (1-x)(1-y)q^2}{ m^2\left(x+y\right)^2 -xy q^2 } . 
+\end{equation}
+This integral is not always convergent, but we will address that a little later. For the moment, we are satisfied that it does not diverge as $$d\rightarrow4$$.
+
+
+### Gauge-full Integral
+Now for the less pleasant integral,
+\begin{equation}
+ i M^\mu_\text{gaugfull} = \left(-ie\right)^3  \int \bar{d}^d k\ \frac{\bar{u}\left(p'\right)\gamma^\nu i\left(\not k + \not p' +m \right)\left(i \left(1-\xi\right)k_\alpha k_\nu\right)\gamma^\mu i\left(\not k + \not p +m \right) \gamma^\alpha u\left(p\right)}{\left(\left(k+p'\right)^2-m^2\right)\left(k^4\right)\left(\left(k+p\right)^2-m^2\right)}
+\end{equation}
+\begin{equation}
+= \left(-ie\right)^3  \left(-i \left(1-\xi\right)\right)\int \bar{d}^d k\ \frac{\bar{u}\left(p'\right)\not k \left(\not k + \not p' +m \right)\gamma^\mu \left(\not k + \not p +m \right) \not k u\left(p\right)}{\left(\left(k+p'\right)^2-m^2\right)\left(k^4\right)\left(\left(k+p\right)^2-m^2\right)}. \nonumber
+\end{equation}
+
+Now with the $$n$$-paramter Feynman trick,
+\begin{equation}
+\frac{1}{a_1a_2,...a_n} =\Gamma\left(n\right)\int_0^1dx_1\ \int_0^1dx_2\ ... \int_0^1dx_n\ \frac{\delta\left(1-u_1-u_2-...u_n\right)}{\left(a_1u_1+a_2u_2+...a_n u_n\right)^n},
+\end{equation}
+The denominator is actually identical to our previous one with an extra power,
+\begin{equation}
+\left[\text{Den}\right] = \left(\ell^2-\Delta\right)^4,
+\end{equation}
+\begin{equation}
+\ell= k + x p' + y p,\ \Delta = \left( xp'+ yp\right)^2 = m^2\left(x+y\right)^2 -xy q^2.
+\end{equation}
+
+The integral becomes,
+\begin{equation}
+ i M^\mu_\text{gaugeless} = \left(-ie\right)^3  \left(-6i \left(1-\xi\right)\right) \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1}dy\ \int_0^{1}dz\ \int_0^1 dw\ \frac{\left[\text{Num}\right]}{\left( \ell^2-\Delta \right)^4}.
+
+\end{equation}
+
 
 
 
