@@ -490,7 +490,7 @@ One more diagram to do. This is the one-loop correction to the three-point verte
 Using our Feynman rules as usual, the loop integral is,
 
 \begin{equation}
-i e M^\mu = \left(-ie\right)^3 \left [ \int \bar{d}^d k\ \frac{\bar{u}\left(p'\right)\gamma^\nu i\left(\not k + \not p' +m \right)\left(-i \eta_{\nu\alpha}\right)\gamma^\mu i\left(\not k + \not p +m \right) \gamma^\alpha u\left(p\right)}{\left(\left(k+p'\right)^2-m^2\right)\left(k^2\right)\left(\left(k+p\right)-m^2\right)} \right.
+i M^\mu = \left(-ie\right)^3 \left [ \int \bar{d}^d k\ \frac{\bar{u}\left(p'\right)\gamma^\nu i\left(\not k + \not p' +m \right)\left(-i \eta_{\nu\alpha}\right)\gamma^\mu i\left(\not k + \not p +m \right) \gamma^\alpha u\left(p\right)}{\left(\left(k+p'\right)^2-m^2\right)\left(k^2\right)\left(\left(k+p\right)-m^2\right)} \right.
 \end{equation}
 
 \begin{equation}
@@ -656,19 +656,20 @@ Reorganizing slightly, we identify two form factors,
 \begin{equation}
 \left[\text{Num}\right] = -2i\bar{u}\left[ \left[F_1\text{ term}\right]\gamma^\mu + \left[F_2\text{ term}\right]\frac{2i\Sigma^{\mu\nu}q _\nu}{2m}\right].
 \end{equation}
-$$F_1$$ is proportional to $$\gamma^\mu$$ and represents a modification to the tree-level charge $$e$$ due to the interaction loop and $$F_2$$ is associated with the electron's spin, pairing the spin with the electromagnetic field. Compuing the full 3-point vertex without the gauge terms,
+$$F_1$$ is proportional to $$\gamma^\mu$$ and represents a modification to the tree-level charge $$e$$ due to the interaction loop and $$F_2$$ is associated with the electron's spin, pairing the spin with the electromagnetic field. Computing the full 3-point vertex without the gauge terms,
 
 \begin{equation}
-i e M^\mu_\text{gaugeless} = -4i\left(-ie\right)^3 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \bar{u}\left[ \frac{\left[F_1\text{ term}\right]}{\left( \ell^2-\Delta \right)^3 }\gamma^\mu + \frac{\left[F_2\text{ term}\right]}{\left( \ell^2-\Delta \right)^3 } \frac{2i\Sigma^{\mu\nu}q _\nu}{2m} \right]u.
+i M^\mu_\text{gaugeless} = -i e \bar{u} \left[ F_1^\text{gaugeless}\gamma^\mu + F_2^\text{gaugeless}\frac{2i\Sigma^{\mu\nu}q _\nu}{2m} \right] u,
 \end{equation}
-
-First, we compute $$F_2$$, with the usual integration over $$\ell$$,
 \begin{equation}
-F_2^\text{gaugeless} = 
+F_1^\text{gaugeless} = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \frac{\left[F_1\text{ term}\right]}{\left( \ell^2-\Delta \right)^3 },
+\end{equation}
+\begin{equation}
+F_2^\text{gaugeless} = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \frac{\left[F_2\text{ term}\right]}{\left( \ell^2-\Delta \right)^3 }.
 \end{equation}
 
 
-
+F_2^\text{gaugeless} = \left(-ie\right)^2 * 2 
 
 
 
