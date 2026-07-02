@@ -685,7 +685,7 @@ Reorganizing slightly, we identify two form factors,
 \begin{equation}
 \left[\text{Num}\right] = -2i\bar{u}\left[ \left[F_1\text{ term}\right]\gamma^\mu + \left[F_2\text{ term}\right]\frac{2i\Sigma^{\mu\nu}q _\nu}{2m}\right].
 \end{equation}
-$$F_1$$ is proportional to $$\gamma^\mu$$ and represents a modification to the tree-level charge $$e$$ due to the interaction loop and $$F_2$$ is associated with the electron's spin, pairing the spin with the electromagnetic field. Computing the full 3-point vertex without the gauge terms,
+$$F_1$$ is proportional to $$\gamma^\mu$$ and represents a modification to the tree-level charge $$e$$ due to the interaction loop, and $$F_2$$ is associated with the electron's spin, pairing the spin with the electromagnetic field. Computing the full 3-point vertex without the gauge terms,
 
 \begin{equation}
 i M^\mu_\text{gaugeless} = -i e \bar{u} \left[ F_1^\text{gaugeless}\gamma^\mu + F_2^\text{gaugeless}\frac{2i\Sigma^{\mu\nu}q _\nu}{2m} \right] u,
@@ -703,11 +703,17 @@ F_2^\text{gaugeless} = 4ie^2 \frac{-i}{2\left(4\pi\right)^2 }\int_0^1dx\ \int_0^
 \end{equation}
 where $$\hat{q}^2=q^2/m^2$$.
 
+Now for $$F_1$$,
+\begin{equation}
+F_1^\text{gaugeless} = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \frac{\left[-\frac{\left(d-2\right)^2 }{2d}\ell^2  + \left(\left(x+y\right) - 2(y+x)\left(1-y-x\right) -2(1-x)(1-y)\right)m^2 + (1-x)(1-y)q^2 \right]}{\left( \ell^2-\Delta \right)^3 }
+\end{equation}
+\begin{equation}
+ = -4ie^2 \frac{i}{\left(4\pi\right)^{d/2}}\int_0^1dx\ \int_0^{1-x}dy\ \left[ \frac{d\left(d-2\right)^2 }{2d}\Gamma\left(2-d/2\right)\Delta^{d/2-2} + \frac{1}{2}\frac{\left(\left(x+y\right) - 2(y+x)\left(1-y-x\right) -2(1-x)(1-y)\right)m^2 + (1-x)(1-y)q^2}{m^2\left(x+y\right)^2 -xy q^2} \right] \nonumber
+\end{equation}
 
-
-
-
-
+\begin{equation}
+ = 4e^2 \frac{1}{\left(4\pi\right)^{d/2}}\int_0^1dx\ \int_0^{1-x}dy\ \left[ \frac{d\left(d-2\right)^2 }{2d}\Gamma\left(2-d/2\right)\Delta^{d/2-2} + \frac{1}{2}\frac{\left(\left(x+y\right) - 2(y+x)\left(1-y-x\right) -2(1-x)(1-y)\right)m^2 + (1-x)(1-y)q^2}{m^2\left(x+y\right)^2 -xy q^2} \right] \nonumber
+\end{equation}
 
 
 
