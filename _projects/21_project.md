@@ -751,11 +751,17 @@ The denominator is actually identical to our previous one with an extra power,
 
 The integral becomes,
 \begin{equation}
- i M^\mu_\text{gaugeless} = \left(-ie\right)^3  \left(-6i \left(1-\xi\right)\right) \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1}dy\ \int_0^{1}dz\ \int_0^1 dw\ \frac{\left[\text{Num}\right]}{\left( \ell^2-\Delta \right)^4}.
-
+ i M^\mu_\text{gaugeless} = \left(-ie\right)^3  \left(-6i \left(1-\xi\right)\right) \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1}dy\ \int_0^{1}dz\ \int_0^1 dw\ \delta\left(1-x-y-w-z\right)\frac{\left[\text{Num}\right]}{\left( \ell^2-\Delta \right)^4}
+\end{equation}
+\begin{equation}
+ i M^\mu_\text{gaugeless} = \left(-ie\right)^3  \left(-6i \left(1-\xi\right)\right) \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1}dy\ \left(1-x-y\right)\frac{\left[\text{Num}\right]}{\left( \ell^2-\Delta \right)^4}\nonumber.
 \end{equation}
 
-
+Again, starting with the numerator,
+\begin{equation}
+\left[\text{Num}\right] = \bar{u}\not k \left(\not k + \not p' +m \right)\gamma^\mu \left(\not k + \not p +m \right) \not k u = \bar{u}\left(\not \ell - x\not p' - y\not p \right) \left(\not \ell +\left(1-x\right) \not p' -y \not p +m \right)\gamma^\mu \left(\not\ell + \left(1-y\right)\not p -x\not p' +m \right)\left(\not \ell - x\not p' - y\not p \right) u.
+\end{equation}
+Here I wave my white flag. I will not be doing the full Dirac algebra for this numerator. A back-of-the-envelope calculation tells you there are $$74$$ terms that have even powers of $$\ell$$, and each of those terms will generically split into a few more as we compute the gamma matrix commutators. Fortunately, we don't actually need to do all the algebra. In fact, we haven't had to do so much math as we have been doing throughout this entire noteset. 
 
 
 
