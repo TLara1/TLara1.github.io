@@ -585,22 +585,22 @@ xy\gamma^\nu\not p\gamma^\mu \not p'\gamma_\nu = xy\left(-\not p \gamma^\nu + 2 
 \end{equation}
 
 \begin{equation}
-= xy(4-d)\not p' \not p \gamma^\mu + (d-4) xyp'^\nu p _\nu \gamma^\mu  + 2xy(2-d)m p'^\mu  + 2xy \gamma^\mu \not p' \not p \nonumber
+= xy(4-d)\not p' \not p \gamma^\mu + 2(d-4) xyp'^\nu p _\nu \gamma^\mu  + 2xy(2-d)m p'^\mu  + 2xy \gamma^\mu \not p' \not p \nonumber
 \end{equation}
 
 \begin{equation}
-= -xy(6-d) m^2 \gamma^\mu  + 2xy(4-d)m \left(p'^\mu + p^\mu\right) + (d-4) xyp'^\nu p _\nu \gamma^\mu  \nonumber
+= -xy(6-d) m^2 \gamma^\mu  + 2xy(4-d)m \left(p'^\mu + p^\mu\right) + 2(d-4) xyp'^\nu p _\nu \gamma^\mu  \nonumber
 \end{equation}
 
 Now we combine all of these terms.
 
 For $$m^2\gamma^\mu$$,
 \begin{equation}
-xy(2-d)-2x(1-y)-2y(1-x)-x^2(4-d)-y^2(4-d)-xy(6-d) =  -2\left(\left(x+y\right)+(4-d)\left(x^2+y^2\right)\right).
+xy(2-d)-2x(1-y)-2y(1-x)-x^2(4-d)-y^2(4-d)-2x(1-x)-2y(1-y)-xy(6-d) =  -2\left(2\left(x+y\right)-\left(x^2+y^2\right)+\frac{4-d}{2}\left(x^2+y^2\right)\right).
 \end{equation}
 For $$p'^\nu p _\nu \gamma^\mu$$,
 \begin{equation}
-4(1-x)(1-y) + (d-4) xy = 4-4x-4y+dxy.
+4(1-x)(1-y) + 2(d-4) xy = 2\left(2(1-x)(1-y) + (d-4)\right)
 \end{equation}
 For $$m p'^\mu $$,
 \begin{equation}
@@ -613,14 +613,14 @@ For $$m p^\mu $$,
 
 Let's check on our non-$$\ell$$ terms,
 \begin{equation}
-\left[\text{non-}\ell\text{ terms}\right] = -2\left(\left(x+y\right)+(4-d)\left(x^2+y^2\right)\right)m^2\gamma^\mu + \left(4-4x-4y+dxy\right)p'^\nu p _\nu \gamma^\mu + 2\left(\left(2 - d\right)xy + 2y + y^2(2-d)\right)m p'^\mu + 2\left(\left(2 - d\right)xy + 2x + x^2(2-d)\right)m p^\mu.
+\left[\text{non-}\ell\text{ terms}\right] = -2\left(2\left(x+y\right)-\left(x^2+y^2\right)+\frac{4-d}{2}\left(x^2+y^2\right)\right)m^2\gamma^\mu + 2\left(2(1-x)(1-y) + (d-4)\right)p'^\nu p _\nu \gamma^\mu + 2\left(\left(2 - d\right)xy + 2y + y^2(2-d)\right)m p'^\mu + 2\left(\left(2 - d\right)xy + 2x + x^2(2-d)\right)m p^\mu.
 \end{equation}
 We are nearly there, I promise. 
 
 First, we rewrite the momentum terms using $$q=p'-p$$ and $$p'+p$$,
 \begin{equation}
- 2\left(\left(2 - d\right)xy + 2y + y^2(2-d)\right)m p'^\mu + 2\left(\left(2 - d\right)xy + 2x + x^2(2-d)\right)m p^\mu = 2(y+x)(1+\frac{2-d}{2}\left(y+x\right))
-m\left(p'^\mu+p^\mu\right) + 2\left(y-x\right)(1+\frac{2-d}{2}\left(y+x\right)\right)mq^\mu.
+ 2\left(\left(2 - d\right)xy + 2y + y^2(2-d)\right)m p'^\mu + 2\left(\left(2 - d\right)xy + 2x + x^2(2-d)\right)m p^\mu = 2(y+x)\left(1+\frac{2-d}{2}\left(y+x\right)\right)
+m\left(p'^\mu+p^\mu\right) + 2\left(y-x\right)\left(1+\frac{2-d}{2}\left(y+x\right)\right)mq^\mu.
 \end{equation}
 A first simplification: because the $$q^\mu$$ is odd under the exchange $$y\leftrightarrow x$$, it vanishes over the $$x$$, $$y$$ integral. As for the second term, using the **Gordon Identity**
 \begin{equation}
@@ -630,6 +630,34 @@ we may replace,
 \begin{equation}
 p' ^\mu + p^\mu = 2m\gamma^\mu - 2i\Sigma^{\mu\nu}q_\nu.
 \end{equation}
+The non-$$\ell$$ terms become,
+\begin{equation}
+\left[\text{non-}\ell\text{ terms}\right] = -2\left(2\left(x+y\right)-\left(x^2+y^2\right)+\frac{4-d}{2}\left(x^2+y^2\right) - 2(x+y)\left(1+\frac{2-d}{2}\left(y+x\right)\right)\right)m^2\gamma^\mu + 2\left(2(1-x)(1-y) + (d-4)\right)p'^\nu p _\nu \gamma^\mu - 4i(y+x)\left(1+\frac{2-d}{2}\left(y+x\right)\right)m\Sigma^{\mu\nu}q _\nu.
+\end{equation}
+
+Now we can make a very important observation that we should've noticed earlier. The denominator is of the form $$\left(\ell^2-\Delta\right)^3$$ and the numerator has no terms proportional to $$\ell$$. So integrating over $$\ell$$ in four dimensions is actually convergent. Therefore, in these non-$$\ell$$ terms for the numerator, we can safely set $$d=4$$ since any terms proportional to $$\epsilon$$ will vanish when we take the limit of $$\epsilon\rightarrow0$$ and do not contribute to finite terms. 
+Setting $$d=4$$,
+\begin{equation}
+\left[\text{non-}\ell\text{ terms}\right] _{d=4} = -2\left(\left(x+y\right) - 2(y+x)\left(1-y-x\right)\right)m^2\gamma^\mu + 4(1-x)(1-y)p'^\nu p _\nu \gamma^\mu - 4i(x+y)\left(1-y-x\right)m\Sigma^{\mu\nu}q _\nu.
+\end{equation}
+
+
+
+We are nearly there, I promise. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
