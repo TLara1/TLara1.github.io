@@ -723,7 +723,7 @@ where $$\hat{q}^2=q^2/m^2$$. We have partially evaluated the integral over $$x$$
 
 Now for $$F_1$$,
 \begin{equation}
-F_1^\text{gaugeless} = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \frac{\left[-\frac{\left(d-2\right)^2 }{2d}\ell^2  + \left(\left(\left(x+y\right) +2(x+y)^2-2(1+xy)\right)m^2 + (1-x)(1-y)q^2 \right]}{\left( \ell^2-\Delta \right)^3 }
+F_1^\text{gaugeless} = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \frac{\left[ -\frac{\left(d-2\right)^2 }{2d}\ell^2  + \left( \left(x+y\right) +2(x+y)^2-2(1+xy) \right)m^2 + (1-x)(1-y)q^2 \right]}{\left( \ell^2-\Delta \right)^3 }
 \end{equation}
 \begin{equation}
  = -4ie^2 \frac{i}{4\left(4\pi\right)^{d/2}}\int_0^1dx\ \int_0^{1-x}dy\ \left[ \frac{d\left(d-2\right)^2 }{2d}\Gamma\left(2-d/2\right)\Delta^{d/2-2} + 2\frac{\left(\left(x+y\right) +2(x+y)^2-2(1+xy)\right)m^2 + (1-x)(1-y)q^2}{m^2\left(x+y\right)^2 -xy q^2} \right] \nonumber
@@ -734,10 +734,10 @@ F_1^\text{gaugeless} = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \
 
 Beginning with the $$\ell^2$$ term,
 \begin{equation}
- \frac{ e^2}{\left(4\pi\right)^{2}}\int_0^1dx\ \int_0^{1-x}dy\ 2\left(1-\epsilon\right)^2 \Gamma\left(\epsilon\right)\left(\frac{\Delta}{4\pi}\right)^{-\epsilon} = \frac{2}{\left(4\pi\right)^{2}}\int_0^1dx\ \int_0^{1-x}dy\ \left[\frac{1}{\epsilon} - \gamma_E - 2 -\log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi}\right)\right]
+ \frac{ e^2}{\left(4\pi\right)^{2}}\int_0^1dx\ \int_0^{1-x}dy\ 2\left(1-\epsilon\right)^2 \Gamma\left(\epsilon\right)\left(\frac{\Delta}{4\pi}\right)^{-\epsilon} = \frac{2e'}{\left(4\pi\right)^{2}}\int_0^1dx\ \int_0^{1-x}dy\ \left[\frac{1}{\epsilon} - \gamma_E - 2 -\log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi\mu}\right)\right]
 \end{equation}
 \begin{equation}
-= \frac{ e^2}{\left(4\pi\right)^{2}}\left[\frac{1}{\epsilon} - \gamma_E - 2 - 2\int_0^1dx\ \int_0^{1-x}dy\ \log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi}\right) \right]. \nonumber
+= \frac{ e'^2}{\left(4\pi\right)^{2}}\left[\frac{1}{\epsilon} - \gamma_E - 2 - 2\int_0^1dx\ \int_0^{1-x}dy\ \log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi\mu}\right) \right]. \nonumber
 \end{equation}
 There is a divergent and a finite contribution. For the non-$$\ell$$ term, there is only the integral,
 \begin{equation}
@@ -749,7 +749,7 @@ This integral is not always convergent, but we will address that a little later.
 ### Gauge-full Integral
 Now for the less pleasant integral,
 \begin{equation}
- i M^\mu_\text{gaugfull} = \left(-ie\right)^3  \int \bar{d}^d k\ \frac{\bar{u}\left(p'\right)\gamma^\nu i\left(\not k + \not p' +m \right)\left(i \left(1-\xi\right)k_\alpha k_\nu\right)\gamma^\mu i\left(\not k + \not p +m \right) \gamma^\alpha u\left(p\right)}{\left(\left(k+p'\right)^2-m^2\right)\left(k^4\right)\left(\left(k+p\right)^2-m^2\right)}
+ i M^\mu_\text{gauge} = \left(-ie\right)^3  \int \bar{d}^d k\ \frac{\bar{u}\left(p'\right)\gamma^\nu i\left(\not k + \not p' +m \right)\left(i \left(1-\xi\right)k_\alpha k_\nu\right)\gamma^\mu i\left(\not k + \not p +m \right) \gamma^\alpha u\left(p\right)}{\left(\left(k+p'\right)^2-m^2\right)\left(k^4\right)\left(\left(k+p\right)^2-m^2\right)}
 \end{equation}
 \begin{equation}
 = \left(-ie\right)^3  \left(-i \left(1-\xi\right)\right)\int \bar{d}^d k\ \frac{\bar{u}\left(p'\right)\not k \left(\not k + \not p' +m \right)\gamma^\mu \left(\not k + \not p +m \right) \not k u\left(p\right)}{\left(\left(k+p'\right)^2-m^2\right)\left(k^4\right)\left(\left(k+p\right)^2-m^2\right)}. \nonumber
@@ -769,10 +769,10 @@ The denominator is actually identical to our previous one with an extra power,
 
 The integral becomes,
 \begin{equation}
- i M^\mu_\text{gaugeless} = \left(-ie\right)^3  \left(-6i \left(1-\xi\right)\right) \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1}dy\ \int_0^{1}dz\ \int_0^1 dw\ \delta\left(1-x-y-w-z\right)\frac{\left[\text{Num}\right]}{\left( \ell^2-\Delta \right)^4}
+ i M^\mu_\text{gauge} = \left(-ie\right)^3  \left(-6i \left(1-\xi\right)\right) \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1}dy\ \int_0^{1}dz\ \int_0^1 dw\ \delta\left(1-x-y-w-z\right)\frac{\left[\text{Num}\right]}{\left( \ell^2-\Delta \right)^4}
 \end{equation}
 \begin{equation}
- i M^\mu_\text{gaugeless} = \left(-ie\right)^3  \left(-6i \left(1-\xi\right)\right) \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1}dy\ \left(1-x-y\right)\frac{\left[\text{Num}\right]}{\left( \ell^2-\Delta \right)^4}\nonumber.
+= \left(-ie\right)^3  \left(-6i \left(1-\xi\right)\right) \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \left(1-x-y\right)\frac{\left[\text{Num}\right]}{\left( \ell^2-\Delta \right)^4}\nonumber.
 \end{equation}
 
 Again, starting with the numerator,
@@ -781,10 +781,45 @@ Again, starting with the numerator,
 \end{equation}
 Here I wave my white flag. I will not be doing the full Dirac algebra for this numerator. A back-of-the-envelope calculation tells you there are $$74$$ terms that have even powers of $$\ell$$, and each of those terms will generically split into a few more as we compute the gamma matrix commutators. 
 
-Fortunately, we don't actually need to do all the algebra. In fact, we haven't had to do so much math as we have been doing throughout this entire noteset. Well not really. If we are interested in both the divergent **and** the finite portions of the loop integrals as we have been, it is necessary to fully calculate the numerator Dirac algebra. But, as we have already seen, it is only the high powers of $$\ell$$ that contribute to the divergent portions of the integral. In this case, since the denominator goes with $$\ell^8$$, only terms in the numerator proportional to $$\ell^4$$ will result in divergences. For this gauge term we only calculate this divergence and ignore the finite contribution. Later, we will say more about why we ignore these contributions in the greater context of renormalizability, but for now, let's worry about the divergent term.
+Fortunately, we don't actually need to do all the algebra. In fact, we haven't had to do so much math as we have been doing throughout this entire noteset. Well, not really. If we are interested in both the divergent **and** the finite portions of the loop integrals as we have been, it is necessary to fully calculate the numerator Dirac algebra. But, as we have already seen, it is only the high powers of $$\ell$$ that contribute to the divergent portions of the integral. In this case, since the denominator goes with $$\ell^8$$, only terms in the numerator proportional to $$\ell^4$$ will result in divergences. For this gauge term, we only calculate this divergence and ignore the finite contribution. Later, we will say more about why we ignore these contributions in the greater context of renormalizability, but for now, let's worry about the divergent term.
 \begin{equation}
-\left[\text{Num}\right]_\text{divergent} = \bar{u}\not \ell \not \ell \gamma^\mu \not \ell \not \ell u.
+\left[\text{Num}\right]_\text{divergent} = \bar{u}\not \ell \not \ell \gamma^\mu \not \ell \not \ell u = \ell^4 \bar{u}\gamma^\mu u.
 \end{equation}
+We see the divergent gauge contribution is added to $$F_1$$,
+
+\begin{equation}
+F_{1\ \text{divergent}}^\text{gauge} = 6i\left(e\right)^2\left(1-\xi\right)\int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \left(1-x-y\right)\frac{\ell^4}{\left( \ell^2-\Delta \right)^4}.
+\end{equation}
+
+The general integral over $$\ell$$ follows from the same computations we did previously,
+\begin{equation}
+\int \bar{d}^d \ell\  \frac{\left(\ell^2 \right)^\alpha}{\left( \ell^2-\Delta \right)^\beta} = \frac{i\left(-1\right)^{\alpha-\beta }}{\left(4\pi\right)^{d/2}}\frac{\Gamma\left(d/2+\alpha\right)}{\Gamma\left(d/2\right)}\frac{\Gamma\left(\beta-\alpha-d/2\right)}{\Gamma\left(\beta\right)}\Delta^{d/2+\alpha-\beta}.
+\end{equation}
+From this, it is much more evident that a divergence exists when $$d/2+\alpha-\beta=0$$, meaning in the case of $$\beta=4$$, $$\alpha=2$$ is the divergence-causing term. We can directly compute $$F_{1\ \text{divergent}}^\text{gauge}$$,
+\begin{equation}
+F_{1\ \text{divergent}}^\text{gauge} = -\left(e\right)^2\left(1-\xi\right) \frac{1}{\left(4\pi\right)^{d/2}}\frac{\Gamma\left(d/2+2\right)}{\Gamma\left(d/2\right)}\Gamma\left(2-d/2\right)\int_0^1dx\ \int_0^{1-x}dy\ \left(1-x-y\right) \Delta^{d/2-2}
+\end{equation}
+\begin{equation}
+ = -\left(e\right)^2\left(1-\xi\right) \frac{1}{\left(4\pi\right)^{d/2}}\frac{d}{2}\left(\frac{d}{2}+1\right)\Gamma\left(\epsilon\right)\int_0^1dx\ \int_0^{1-x}dy\ \left(1-x-y\right) \left(\frac{\Delta}{4\pi}\right)^{-\epsilon}
+\end{equation}
+\begin{equation}
+ = -\left(e\right)^2\left(1-\xi\right) \frac{1}{\left(4\pi\right)^{2}}\frac{1}{\epsilon}.
+\end{equation}
+This is the divergent portion, and notice that the $$\epsilon^{-1}$$ terms not proportional to $$\xi$$ actually vanish!,
+\begin{equation}
+F_1 = \frac{ e'^2}{\left(4\pi\right)^{2}}\left[-xi \frac{1}{\epsilon} - \gamma_E - 2 - 2\int_0^1dx\ \int_0^{1-x}dy\ \log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi\mu}\right) \right.
+\end{equation}
+\begin{equation}
++\left. 2\mu^\epsilon\int_0^1dx\ \int_0^{1-x}dy\ \frac{\left(\left(x+y\right) +2(x+y)^2-2(1+xy)\right)m^2 + (1-x)(1-y)q^2}{ m^2\left(x+y\right)^2 -xy q^2 } \right. \nonumber
+\end{equation}
+\begin{equation}
++\left(1-\xi\right)\left[\text{term of \mathcal{O}\left(\epsilon^0\right)}\right]. \nonumber
+\end{equation}
+
+We have finished all of our integrals! Stand up, stretch, go outside. The hard part is behind us, now we just go through the renormalization procedure.
+
+
+
 
 
 
