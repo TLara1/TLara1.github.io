@@ -466,14 +466,21 @@ I_\xi = -\left(1-\xi\right) \frac{i}{2\left(4\pi\right)^2} \left[\frac{2}{\epsil
 
 Adding this to $$I$$,
 \begin{equation}
-I + I_\xi = \frac{ i }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}\not p + 2\int_0^1 dx\ \left[\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi}\right)  - \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right] \right]
+I + I_\xi = \frac{ i }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}\not p \right. 
 \end{equation}
+\begin{equation}
+\left.+ 2\int_0^1 dx\ \left[\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi}\right)  - \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right] \right] \nonumber
+\end{equation}
+
 \begin{equation}
 +\xi \frac{i}{\left(4\pi\right)^2} \left[\frac{1}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(\frac{1}{2}+\gamma_E\right) + \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right] \nonumber.
 \end{equation}
 And thus, our full fermionic 1PI propagator is,
 \begin{equation}
-\Sigma = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}\not p + 2\int_0^1 dx\ \left[\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi\mu}\right)  - \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi\mu}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right] \right]
+\Sigma = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}\not p + \right.
+\end{equation}
+\begin{equation}
+\Sigma = \left. + 2\int_0^1 dx\ \left[\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi\mu}\right)  - \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi\mu}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right] \right] \nonumber
 \end{equation}
 \begin{equation}
 -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[\frac{1}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(\frac{1}{2}+\gamma_E\right) + \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta}{4\pi\mu}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta ^{-1}\right] \right] \nonumber.
@@ -554,8 +561,12 @@ The other non-$$\ell$$ terms are less pleasant. We use the identities,
 \end{equation}
 This is where the fun begins, multiplying out all nine terms,
 \begin{equation}
-\left[\text{non-}\ell\text{ terms}\right] = \bar{u}\left(xm \gamma^\nu + 2\left(1-x\right) p'^\nu - y\gamma^\nu\not p\right)\gamma^\mu\left(ym \gamma_\nu + 2\left(1-y\right) p_\nu - x\not p'\gamma_\nu\right) u = \bar{u}\left[ xy(2-d)m^2\gamma^\mu + 2x(1-y)m\not p \gamma^\mu + 2y(1-x)m\gamma^\mu\not p' - x^2 m \gamma^\nu\gamma^\mu\not p'\gamma_\nu - y^2 m \gamma^\nu \not p \gamma^\mu \gamma_\nu + 4(1-x)(1-y) p'^\nu p_\nu \gamma^\mu - 2x(1-x)\gamma^\mu \not p'^2 -2y(1-y)\not p^2 \gamma^\mu + xy\gamma^\nu\not p\gamma^\mu \not p'\gamma_\nu \right] u.
+\left[\text{non-}\ell\text{ terms}\right] = \bar{u}\left(xm \gamma^\nu + 2\left(1-x\right) p'^\nu - y\gamma^\nu\not p\right)\gamma^\mu\left(ym \gamma_\nu + 2\left(1-y\right) p_\nu - x\not p'\gamma_\nu\right) u
 \end{equation}
+\begin{equation}
+ = \bar{u}\left[ xy(2-d)m^2\gamma^\mu + 2x(1-y)m\not p \gamma^\mu + 2y(1-x)m\gamma^\mu\not p' - x^2 m \gamma^\nu\gamma^\mu\not p'\gamma_\nu - y^2 m \gamma^\nu \not p \gamma^\mu \gamma_\nu + 4(1-x)(1-y) p'^\nu p_\nu \gamma^\mu - 2x(1-x)\gamma^\mu \not p'^2 -2y(1-y)\not p^2 \gamma^\mu + xy\gamma^\nu\not p\gamma^\mu \not p'\gamma_\nu \right] u \nonumber.
+\end{equation}
+
 We must simplify to have terms with only one or no gamma matrices; we omit the outside $$\bar{u}$$ and $$u$$ from the following equations for ease of notation,
 \begin{equation}
 2x(1-y)m\not p \gamma^\mu = -2x(1-y)m^2\gamma^\mu + 4x(1-y)mp^\mu,
@@ -577,7 +588,11 @@ We must simplify to have terms with only one or no gamma matrices; we omit the o
 \end{equation}
 and the fun one,
 \begin{equation}
-xy\gamma^\nu\not p\gamma^\mu \not p'\gamma_\nu = xy\left(-\not p \gamma^\nu + 2 p^\nu\right)\gamma^mu\left(-\gamma_\nu \not p' + 2p'_\nu\right) = xy(2-d)\not p \gamma^\mu \not p' + 4xy p'^\nu p _\nu \gamma^\mu - 2xy\left(\not p \not p' \gamma^\mu + \gamma^\mu \not p \not p'\right)
+xy\gamma^\nu\not p\gamma^\mu \not p'\gamma_\nu = xy\left(-\not p \gamma^\nu + 2 p^\nu\right)\gamma^mu\left(-\gamma_\nu \not p' + 2p'_\nu\right)
+\end{equation}
+
+\begin{equation}
+= xy(2-d)\not p \gamma^\mu \not p' + 4xy p'^\nu p _\nu \gamma^\mu - 2xy\left(\not p \not p' \gamma^\mu + \gamma^\mu \not p \not p'\right)  \nonumber
 \end{equation}
 
 \begin{equation}
@@ -596,7 +611,10 @@ Now we combine all of these terms.
 
 For $$m^2\gamma^\mu$$,
 \begin{equation}
-xy(2-d)-2x(1-y)-2y(1-x)-x^2(4-d)-y^2(4-d)-2x(1-x)-2y(1-y)-xy(6-d) =  -2\left(2\left(x+y\right)-\left(x^2+y^2\right)+\frac{4-d}{2}\left(x^2+y^2\right)\right).
+xy(2-d)-2x(1-y)-2y(1-x)-x^2(4-d)-y^2(4-d)-2x(1-x)-2y(1-y)-xy(6-d)
+\end{equation}
+\begin{equation}
+=  -2\left(2\left(x+y\right)-\left(x^2+y^2\right)+\frac{4-d}{2}\left(x^2+y^2\right)\right) \nonumber.
 \end{equation}
 For $$p'^\nu p _\nu \gamma^\mu$$,
 \begin{equation}
@@ -613,14 +631,19 @@ For $$m p^\mu $$,
 
 Let's check on our non-$$\ell$$ terms,
 \begin{equation}
-\left[\text{non-}\ell\text{ terms}\right] = -2\left(2\left(x+y\right)-\left(x^2+y^2\right)+\frac{4-d}{2}\left(x^2+y^2\right)\right)m^2\gamma^\mu + 2\left(2(1-x)(1-y) + (d-4)\right)p'^\nu p _\nu \gamma^\mu + 2\left(\left(2 - d\right)xy + 2y + y^2(2-d)\right)m p'^\mu + 2\left(\left(2 - d\right)xy + 2x + x^2(2-d)\right)m p^\mu.
+\left[\text{non-}\ell\text{ terms}\right] = -2\left(2\left(x+y\right)-\left(x^2+y^2\right)+\frac{4-d}{2}\left(x^2+y^2\right)\right)m^2\gamma^\mu
 \end{equation}
+\begin{equation}
++ 2\left(2(1-x)(1-y) + (d-4)\right)p'^\nu p _\nu \gamma^\mu + 2\left(\left(2 - d\right)xy + 2y + y^2(2-d)\right)m p'^\mu + 2\left(\left(2 - d\right)xy + 2x + x^2(2-d)\right)m p^\mu \nonumber.
+\end{equation} 
 We are nearly there, I promise. 
 
 First, we rewrite the momentum terms using $$q=p'-p$$ and $$p'+p$$,
 \begin{equation}
- 2\left(\left(2 - d\right)xy + 2y + y^2(2-d)\right)m p'^\mu + 2\left(\left(2 - d\right)xy + 2x + x^2(2-d)\right)m p^\mu = 2(y+x)\left(1+\frac{2-d}{2}\left(y+x\right)\right)
-m\left(p'^\mu+p^\mu\right) + 2\left(y-x\right)\left(1+\frac{2-d}{2}\left(y+x\right)\right)mq^\mu.
+ 2\left(\left(2 - d\right)xy + 2y + y^2(2-d)\right)m p'^\mu + 2\left(\left(2 - d\right)xy + 2x + x^2(2-d)\right)m p^\mu
+\end{equation}
+\begin{equation}
+= 2(y+x)\left(1+\frac{2-d}{2}\left(y+x\right)\right)m\left(p'^\mu+p^\mu\right) + 2\left(y-x\right)\left(1+\frac{2-d}{2}\left(y+x\right)\right)mq^\mu \nonumber.
 \end{equation}
 A first simplification: because the $$q^\mu$$ is odd under the exchange $$y\leftrightarrow x$$, it vanishes over the $$x$$, $$y$$ integral. As for the second term, using the **Gordon Identity**,
 \begin{equation}
@@ -632,26 +655,32 @@ p' ^\mu + p^\mu = 2m\gamma^\mu - 2i\Sigma^{\mu\nu}q_\nu.
 \end{equation}
 The non-$$\ell$$ terms become,
 \begin{equation}
-\left[\text{non-}\ell\text{ terms}\right] = -2\left(2\left(x+y\right)-\left(x^2+y^2\right)+\frac{4-d}{2}\left(x^2+y^2\right) - 2(x+y)\left(1+\frac{2-d}{2}\left(y+x\right)\right)\right)m^2\gamma^\mu + 2\left(2(1-x)(1-y) + (d-4)\right)p'^\nu p _\nu \gamma^\mu - 4i(y+x)\left(1+\frac{2-d}{2}\left(y+x\right)\right)m\Sigma^{\mu\nu}q _\nu.
+\left[\text{non-}\ell\text{ terms}\right] = -2\left(2\left(x+y\right)-\left(x^2+y^2\right)+\frac{4-d}{2}\left(x^2+y^2\right) - 2(x+y)\left(1+\frac{2-d}{2}\left(y+x\right)\right)\right)m^2\gamma^\mu
+\end{equation}
+\begin{equation}
++ 2\left(2(1-x)(1-y) + (d-4)\right)p'^\nu p _\nu \gamma^\mu - 4i(y+x)\left(1+\frac{2-d}{2}\left(y+x\right)\right)m\Sigma^{\mu\nu}q _\nu\nonumber.
 \end{equation}
 
 Now we can make a very important observation that we should've noticed earlier. The denominator is of the form $$\left(\ell^2-\Delta\right)^3$$ and the numerator has no terms proportional to $$\ell$$. So integrating over $$\ell$$ in four dimensions is actually convergent. Therefore, in these non-$$\ell$$ terms for the numerator, we can safely set $$d=4$$ since any terms proportional to $$\epsilon$$ will vanish when we take the limit of $$\epsilon\rightarrow0$$ and do not contribute to finite terms. 
 Setting $$d=4$$,
 \begin{equation}
-\left[\text{non-}\ell\text{ terms}\right] _{d=4} = -2\left(\left(x+y\right) - 2(y+x)\left(1-y-x\right)\right)m^2\gamma^\mu + 4(1-x)(1-y)p'^\nu p _\nu \gamma^\mu - 4i(x+y)\left(1-y-x\right)m\Sigma^{\mu\nu}q _\nu.
+\left[\text{non-}\ell\text{ terms}\right] _{d=4} = -2\left(\left(x+y\right) - 2(y+x)\left(1-y-x\right)\right)m^2\gamma^\mu
+\end{equation}
+\begin{equation}
++ 4(1-x)(1-y)p'^\nu p _\nu \gamma^\mu - 4i(x+y)\left(1-y-x\right)m\Sigma^{\mu\nu}q _\nu\nonumber.
 \end{equation}
 
 And finally, using the on-shell condition,
 \begin{equation}
 p'^\nu p _\nu = -\frac{q^2}{2}+m^2,
 \end{equation}
-and the final numerator with both $$\ell$$ and non-$\ell$ terms is,
+and the final numerator with both $$\ell$$ and non-$$\ell$$ terms is,
 \begin{equation}
-\left[\text{Num}\right] = -2i\bar{u}\left[ -frac{\left(d-2\right)^2}{2d}\ell^2\gamma^\mu  + \left(\left(x+y\right) - 2(y+x)\left(1-y-x\right) -2(1-x)(1-y)\right)m^2\gamma^\mu + (1-x)(1-y)q^2 \gamma^\mu + 2i(x+y)\left(1-y-x\right)m\Sigma^{\mu\nu}q _\nu \right].
+\left[\text{Num}\right] = -2i\bar{u}\left[ -\frac{\left(d-2\right)^2}{2d}\ell^2\gamma^\mu  + \left(\left(x+y\right) - 2(y+x)\left(1-y-x\right) -2(1-x)(1-y)\right)m^2\gamma^\mu + (1-x)(1-y)q^2 \gamma^\mu + 2i(x+y)\left(1-y-x\right)m\Sigma^{\mu\nu}q _\nu \right].
 \end{equation}
 Reorganizing slightly, we identify two form factors,  
 \begin{equation}
-\left[\text{Num}\right] = -2i\bar{u}\left[ \left( -frac{\left(d-2\right)^2 }{2d}\ell^2  + \left(\left(x+y\right) - 2(y+x)\left(1-y-x\right) -2(1-x)(1-y)\right)m^2 + (1-x)(1-y)q^2 \right) \gamma^\mu + \frac{2i\Sigma^{\mu\nu}q _\nu}{2m}2m^2(x+y)\left(1-y-x\right) \right],
+\left[\text{Num}\right] = -2i\bar{u}\left[ \left( -\frac{\left(d-2\right)^2 }{2d}\ell^2  + \left(\left(x+y\right) - 2(y+x)\left(1-y-x\right) -2(1-x)(1-y)\right)m^2 + (1-x)(1-y)q^2 \right) \gamma^\mu + \frac{2i\Sigma^{\mu\nu}q _\nu}{2m}2m^2(x+y)\left(1-y-x\right) \right],
 \end{equation}
 \begin{equation}
 \left[\text{Num}\right] = -2i\bar{u}\left[ \left[F_1\text{ term}\right]\gamma^\mu + \left[F_2\text{ term}\right]\frac{2i\Sigma^{\mu\nu}q _\nu}{2m}\right].
@@ -667,6 +696,8 @@ F_1^\text{gaugeless} = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \
 \begin{equation}
 F_2^\text{gaugeless} = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \frac{\left[F_2\text{ term}\right]}{\left( \ell^2-\Delta \right)^3 }.
 \end{equation}
+
+
 
 
 F_2^\text{gaugeless} = \left(-ie\right)^2 * 2 
