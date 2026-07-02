@@ -136,7 +136,7 @@ t_{\mu\nu}=\eta_{\mu\nu}-\left(1-\xi\right)\frac{q_\mu q_\nu}{q^2},\quad t _{T\ 
 
 noting that,
 \begin{equation}
-t^\alpha{T\ \mu}t_{\alpha\nu}=t_{T\ \mu\nu},\quad t _{\mu\nu}q^\mu = \xi q _\nu,\quad t _{T\ \mu\nu}q^\mu=0.
+t^\alpha_{T\ \mu}t_{T\ \alpha\nu}=t_{T\ \mu\nu},\quad t^\alpha_{T\ \mu}t_{\alpha\nu}=t_{T\ \mu\nu},\quad t _{\mu\nu}q^\mu = \xi q _\nu,\quad t _{T\ \mu\nu}q^\mu=0.
 \end{equation}
 At tree-level, the propagator takes the form,
 \begin{equation}
@@ -148,18 +148,19 @@ from which we identify,
 \end{equation}
 Therefore, corrections beyond first-order should be proportional to $$t _{T\ \mu\nu}$$ which is orthogonal to $$q^\nu$$. And with this in mind, we write the 1PI diagram for an internal fermion loop as $$i q^2 \Pi\left(q\right) t _{T\ \mu\nu}$$, where $$\Pi\left(q\right)$$ is a function of the momentum to be determined.
 
-Beyond tree level, the general propagator can be written as the sum of 1PI diagrams. First tree level, then tree level followed by 1PI followed by tree level, then tree level, 1PI, tree level, 1PI, tree level, and so forth
-
-
-schematically,
+Beyond tree level, the general propagator can be written as the sum of 1PI diagrams. First tree level, then tree level followed by 1PI followed by tree level, then tree level, 1PI, tree level, 1PI, tree level, and so forth,
 \begin{equation}
- D_{\mu\nu} =  D^\text{tree} _{\mu\nu} - i q^2 \Pi\left(q\right) t _{T\ \mu\nu} - \left(i q^2 \Pi\left(q\right)\right)^2 t _{T\ \mu\nu} - ...
+ D^{\mu\nu} =  \frac{i}{q^2}t _{\mu\nu} + \left(\frac{i}{q^2}t ^{\mu\alpha}\right)\left(i q^2 \Pi t _{T\ \alpha\beta}\right)\left(\frac{i}{q^2}t ^{\beta\nu}\right) + \left(\frac{i}{q^2}t ^{\mu\alpha}\right)\left(i q^2 \Pi t _{T\ \alpha\beta}\right)\left(\frac{i}{q^2}t ^{\beta\gamma}\right)\left(i q^2 \Pi t _{T\ \gamma\sigma}\right)\left(\frac{i}{q^2}t _{\sigma\nu}\right) + ...
 \end{equation}
-our expression for the tree-level expression motivates us to write,
 
 \begin{equation}
- D_{\mu\nu} =  -\frac{i}{q^2}t _{\mu\nu}- i q^2 \Pi\left(q\right) t _{T\ \mu\nu} - \left(i q^2 \Pi\left(q\right)\right)^2 t _{T\ \mu\nu} - ...
+ D^{\mu\nu} =  \frac{i}{q^2}t _{\mu\nu} -\frac{i}{q^2}\left(\Pi +\Pi^2+...\right) t ^{T \mu\nu} .\nonumber
+ \end{equation}
+ Recalling the solution for a geometric series,
+\begin{equation}
+ D^{\mu\nu} =  -\frac{i}{q^2}\frac{1}{1 - \Pi} - \xi\frac{i}{q^2}\frac{q^\muq^\nu}{q^2}.
 \end{equation}
+This is interesting but not instantly helpful. When we renormalize, it will become more relevant.
 
 
 Finally, we are ready to start integrating to determine the value of $$\Pi\left(q\right)$$. Reading off the Feynman rules from the 1PI 1-loop diagram,
