@@ -524,9 +524,9 @@ After a bit of algebra, we find we can rewrite the denominator as,
 \left[\text{Den}\right] = \left(k^2 + \left(2kp'+p'^2-m^2\right)x + \left(2kp+p^2-m^2\right)y \right)^3= \left(\ell^2-\Delta\right)^3,
 \end{equation}
 \begin{equation}
-\ell= k + x p' + y p,\ \Delta = \left( xp'+ yp\right)^2.
+\ell= k + x p' + y p,\ \Delta = \left( xp'+ yp\right)^2 = m^2\left(x+y\right)^2 -xy q^2.
 \end{equation}
-Here we have applied the on-shell condition, setting $$p^2=p'^2=m^2$$ to simplify $$\Delta$$.
+Here we have applied the on-shell condition, setting $$p^2=p'^2=m^2$$ to simplify $$\Delta$$, and also used $$q^\mu=p'^\mu-p^\mu$$.
 
 The integral becomes,
 \begin{equation}
@@ -649,7 +649,7 @@ A first simplification: because the $$q^\mu$$ is odd under the exchange $$y\left
 \begin{equation}
 \bar{u}\left(p'\right)\gamma^\mu u\left(p\right) = \frac{1}{2m}\bar{u}\left(p'\right)\left[\left(p' ^\mu + p^\mu\right) + 2i\Sigma^{\mu\nu}q_\nu \right]u\left(p\right) ,
 \end{equation}
-which can be derived from the Dirac equation, we may replace,
+which can be derived from the Dirac equation; we may replace,
 \begin{equation}
 p' ^\mu + p^\mu = 2m\gamma^\mu - 2i\Sigma^{\mu\nu}q_\nu.
 \end{equation}
@@ -697,10 +697,11 @@ F_1^\text{gaugeless} = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \
 F_2^\text{gaugeless} = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \frac{\left[F_2\text{ term}\right]}{\left( \ell^2-\Delta \right)^3 }.
 \end{equation}
 
-
-
-
-F_2^\text{gaugeless} = \left(-ie\right)^2 * 2 
+Now we evaluate the $$\ell$$ integrals with the usual $$d$$ dimensional integration tricks. Beginning with the non-divergent $$F_2$$ integral,
+\begin{equation}
+F_2^\text{gaugeless} = 4ie^2 \frac{-i}{2\left(4\pi\right)^2 }\int_0^1dx\ \int_0^{1-x}dy\ \frac{2m^2(x+y)\left(1-y-x\right)} {m^2\left(x+y\right)^2 -xy q^2} = \frac{2e^2}{\left(4\pi\right)^2 }\int_0^1dz\  \frac{1} {1+z(z-1)\hat{q}^2}.
+\end{equation}
+where $$\hat{q}^2=q^2/m^2$$.
 
 
 
