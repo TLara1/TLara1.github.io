@@ -152,7 +152,7 @@ Finally, we are ready to start integrating to determine the value of $$\Pi\left(
 \begin{equation}\label{1pi photon loop integral}
 i q^2 \Pi\left(q\right) t _{T\ \mu\nu} = \left(-i e\right)^2(-1)\int\bar{d}^dk\ \frac{\text{tr}\left[\gamma^\mu i\left(\not k+m\right)i\gamma^\nu\left(\not q + \not k +m \right)\right]}{\left(k^2-m^2\right)\left(\left(k+q\right)^2-m^2\right)}.
 \end{equation}
-I have written the integral in $$d$$ dimensions, which should be $$d=4$$, but we will keep it as $$d$$ for now for reasons that will be evident later. The factor of $$(-1)$$ arises from the presence of a closed Fermion loop and we take the trace over the closed fermion loop.
+I have written the integral in $$d$$ dimensions, which should be $$d=4$$, but we will keep it as $$d$$ for now for reasons that will be evident later. The factor of $$(-1)$$ arises from the presence of a closed Fermion loop, and we take the trace over the closed fermion loop.
 
 Lovely. Okay, here we go. First, we use the Feynman parameterization, which is the integral identity,
 \begin{equation}
@@ -517,9 +517,9 @@ After a bit of algebra, we find we can rewrite the denominator as,
 \left[\text{Den}\right] = \left(k^2 + \left(2kp'+p'^2-m^2\right)x + \left(2kp+p^2-m^2\right)y \right)^3= \left(\ell^2-\Delta\right)^3,
 \end{equation}
 \begin{equation}
-\ell= k + x p' + y p,\ \Delta = \left( xp'+ yp\right)^2 - x\left(p'^2-m^2\right) - y \left(p^2-m^2\right).
+\ell= k + x p' + y p,\ \Delta = \left( xp'+ yp\right)^2.
 \end{equation}
-Here we will apply the 
+Here we have applied the on-shell condition, setting $$p^2=p'^2=m^2$$ to simplify $$\Delta$$.
 
 The integral becomes,
 \begin{equation}
@@ -556,7 +556,7 @@ This is where the fun begins, multiplying out all nine terms,
 \begin{equation}
 \left[\text{non-}\ell\text{ terms}\right] = \bar{u}\left(xm \gamma^\nu + 2\left(1-x\right) p'^\nu - y\gamma^\nu\not p\right)\gamma^\mu\left(ym \gamma_\nu + 2\left(1-y\right) p_\nu - x\not p'\gamma_\nu\right) u = \bar{u}\left[ xy(2-d)m^2\gamma^\mu + 2x(1-y)m\not p \gamma^\mu + 2y(1-x)m\gamma^\mu\not p' - x^2 m \gamma^\nu\gamma^\mu\not p'\gamma_\nu - y^2 m \gamma^\nu \not p \gamma^\mu \gamma_\nu + 4(1-x)(1-y) p'^\nu p_\nu \gamma^\mu - 2x(1-x)\gamma^\mu \not p'^2 -2y(1-y)\not p^2 \gamma^\mu + xy\gamma^\nu\not p\gamma^\mu \not p'\gamma_\nu \right] u.
 \end{equation}
-We must simplify to have terms with only one or no gamma matrices, we omit the outside $$\bar{u}$$ and $$u$$ from the following equations for ease of notation,
+We must simplify to have terms with only one or no gamma matrices; we omit the outside $$\bar{u}$$ and $$u$$ from the following equations for ease of notation,
 \begin{equation}
 2x(1-y)m\not p \gamma^\mu = -2x(1-y)m^2\gamma^\mu + 4x(1-y)mp^\mu,
 \end{equation}
@@ -641,13 +641,31 @@ Setting $$d=4$$,
 \left[\text{non-}\ell\text{ terms}\right] _{d=4} = -2\left(\left(x+y\right) - 2(y+x)\left(1-y-x\right)\right)m^2\gamma^\mu + 4(1-x)(1-y)p'^\nu p _\nu \gamma^\mu - 4i(x+y)\left(1-y-x\right)m\Sigma^{\mu\nu}q _\nu.
 \end{equation}
 
+And finally, using the on-shell condition,
+\begin{equation}
+p'^\nu p _\nu = -\frac{q^2}{2}+m^2,
+\end{equation}
+and the final numerator with both $$\ell$$ and non-$\ell$ terms is,
+\begin{equation}
+\left[\text{Num}\right] = -2i\bar{u}\left[ -frac{\left(d-2\right)^2}{2d}\ell^2\gamma^\mu  + \left(\left(x+y\right) - 2(y+x)\left(1-y-x\right) -2(1-x)(1-y)\right)m^2\gamma^\mu + (1-x)(1-y)q^2 \gamma^\mu + 2i(x+y)\left(1-y-x\right)m\Sigma^{\mu\nu}q _\nu \right].
+\end{equation}
+Reorganizing slightly, we identify two form factors,  
+\begin{equation}
+\left[\text{Num}\right] = -2i\bar{u}\left[ \left( -frac{\left(d-2\right)^2 }{2d}\ell^2  + \left(\left(x+y\right) - 2(y+x)\left(1-y-x\right) -2(1-x)(1-y)\right)m^2 + (1-x)(1-y)q^2 \right) \gamma^\mu + \frac{2i\Sigma^{\mu\nu}q _\nu}{2m}2m^2(x+y)\left(1-y-x\right) \right],
+\end{equation}
+\begin{equation}
+\left[\text{Num}\right] = -2i\bar{u}\left[ \left[F_1\text{ term}\right]\gamma^\mu + \left[F_2\text{ term}\right]\frac{2i\Sigma^{\mu\nu}q _\nu}{2m}\right].
+\end{equation}
+$$F_1$$ is proportional to $$\gamma^\mu$$ and represents a modification to the tree-level charge $$e$$ due to the interaction loop and $$F_2$$ is associated with the electron's spin, pairing the spin with the electromagnetic field. Compuing the full 3-point vertex without the gauge terms,
 
+\begin{equation}
+i e M^\mu_\text{gaugeless} = -4i\left(-ie\right)^3 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \bar{u}\left[ \frac{\left[F_1\text{ term}\right]}{\left( \ell^2-\Delta \right)^3 }\gamma^\mu + \frac{\left[F_2\text{ term}\right]}{\left( \ell^2-\Delta \right)^3 } \frac{2i\Sigma^{\mu\nu}q _\nu}{2m} \right]u.
+\end{equation}
 
-We are nearly there, I promise. 
-
-
-
-
+First, we compute $$F_2$$, with the usual integration over $$\ell$$,
+\begin{equation}
+F_2^\text{gaugeless} = 
+\end{equation}
 
 
 
