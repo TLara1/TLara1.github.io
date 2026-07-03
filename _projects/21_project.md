@@ -898,16 +898,30 @@ We also require that the photon remain massless; at a photon energy of $$q^2=0$$
 \begin{equation}
 D^{\mu\nu}=-\frac{i}{q^2}\frac{1}{1-\Pi}t^{\mu\nu}_T-\xi\frac{i}{q^2}\frac{q^\mu q^\nu}{q^2},
 \end{equation}
-the propagator already has a pole at $$q^2=0$$. 
-
-
-we see this condition requires,
+the propagator already has a pole at $$q^2=0$$. Requiring a unit residue results in,
 \begin{equation}
 \Pi\left(q^2=0\right)=0.
 \end{equation}
 
+Our final condition comes from the Ward Identity. Via the Schwinger-Dyson equation, it can be shown that,
+\begin{equation}
+\frac{i}{\xi}q^2q^\mu V_\mu\left(p,p'\right) = ie\left(S\left(p\right)-S\left(p'\right)\right).
+\end{equation}
+This looks odd, but is just a result of applying Noether's Theorem to the path integral again, nothing too bad. Using our other Ward-Takahashi Identity, $$frac{i}{\xi}q^2q^\mu D_{\mu \nu}=q_\nu$$,
+\begin{equation}
+\frac{i}{\xi}q^2q^\mu V_\mu\left(p,p'\right) = -\frac{i}{\xi}q^2q^\mu S\left(p'\right) D_{\mu\nu}\left(q\right)\Gamma^\nu\left(p,p'\right)S\left(p\right) = -q_\nu S\left(p'\right) \Gamma^\nu\left(p,p'\right)S\left(p\right),
+\end{equation}
+and,
+\begin{equation}
+ q_\nu \Gamma^\nu\left(p,p'\right) = -ie\left(S^{-1}\left(p'\right)-S^{-1}\left(p\right)\right).
+\end{equation}
+This is the Ward Identity. In the limit of $$p\rightarrow0$$, $$p'\rightarrow0$$,
+\begin{equation}
+\Gamma^\nu\left(p,p\right) = -ie\frac{dS^{-1}\left(p\right)}{d p_\nu}.
+\end{equation}
+Which fixes the value of the three-point vertex.
 
-
+We have all our conditions; now we can begin renormalizing.
 
 
 
