@@ -144,7 +144,7 @@ At tree-level, the propagator takes the form,
 \end{equation}
 from which we identify,
 \begin{equation}
-\frac{i}{\xi}q^2q^\mu D^\text{tree} _{\mu\nu}=q _\nu.
+\frac{i}{\xi}q^2q^\mu D^\text{tree} _{\mu\nu}=q _\nu .
 \end{equation}
 Therefore, corrections beyond first-order should be proportional to $$t _{T\ \mu\nu}$$ which is orthogonal to $$q^\nu$$. And with this in mind, we write the 1PI diagram for an internal fermion loop as $$i q^2 \Pi\left(q\right) t _{T\ \mu\nu}$$, where $$\Pi\left(q\right)$$ is a function of the momentum to be determined.
 
