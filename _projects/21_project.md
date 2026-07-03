@@ -150,15 +150,15 @@ Therefore, corrections beyond first-order should be proportional to $$t _{T\ \mu
 
 Beyond tree level, the general propagator can be written as the sum of 1PI diagrams. First tree level, then tree level followed by 1PI followed by tree level, then tree level, 1PI, tree level, 1PI, tree level, and so forth,
 \begin{equation}
- D^{\mu\nu} =  \frac{i}{q^2}t _{\mu\nu} + \left(\frac{i}{q^2}t ^{\mu\alpha}\right)\left(i q^2 \Pi t _{T\ \alpha\beta}\right)\left(\frac{i}{q^2}t ^{\beta\nu}\right) + \left(\frac{i}{q^2}t ^{\mu\alpha}\right)\left(i q^2 \Pi t _{T\ \alpha\beta}\right)\left(\frac{i}{q^2}t ^{\beta\gamma}\right)\left(i q^2 \Pi t _{T\ \gamma\sigma}\right)\left(\frac{i}{q^2}t _{\sigma\nu}\right) + ...
+ D^{\mu\nu} =  -\frac{i}{q^2}t _{\mu\nu} + \left(-\frac{i}{q^2}t ^{\mu\alpha}\right)\left(i q^2 \Pi t _{T\ \alpha\beta}\right)\left(-\frac{i}{q^2}t ^{\beta\nu}\right) + \left(-\frac{i}{q^2}t ^{\mu\alpha}\right)\left(i q^2 \Pi t _{T\ \alpha\beta}\right)\left(-\frac{i}{q^2}t ^{\beta\gamma}\right)\left(i q^2 \Pi t _{T\ \gamma\sigma}\right)\left(-\frac{i}{q^2}t _{\sigma\nu}\right) + ...
 \end{equation}
 
 \begin{equation}
- D^{\mu\nu} =  \frac{i}{q^2}t _{\mu\nu} -\frac{i}{q^2}\left(\Pi +\Pi^2+...\right) t_T ^{ \mu\nu} .\nonumber
+ D^{\mu\nu} =  -\frac{i}{q^2}t _{\mu\nu} -\frac{i}{q^2}\left(\Pi +\Pi^2+...\right) t_T ^{ \mu\nu} .\nonumber
  \end{equation}
  Recalling the solution for a geometric series,
 \begin{equation}
- D^{\mu\nu} =  -\frac{i}{q^2}\frac{1}{1 - \Pi} - \xi \frac{i}{q^2} \frac{q^\mu q^\nu}{q^2}.
+ D^{\mu\nu} =  -\frac{i}{q^2}\frac{1}{1 - \Pi}t_T ^{ \mu\nu} - \xi \frac{i}{q^2} \frac{q^\mu q^\nu}{q^2}.
 \end{equation}
 This is interesting but not instantly helpful. When we renormalize, it will become more relevant.
 
@@ -349,8 +349,9 @@ This can be simplified by a geometric series,
 S =  \frac{i}{\not p - m}\left(1 + \left(i \Sigma\right)\left(\frac{i}{\not p - m}\right) +\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right)\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right)+...\right),
 \end{equation}
 as,
+
 \begin{equation}
-left(i \Sigma\right)\left(\frac{i}{\not p - m}\right) = -\frac{\Sigma}{\not p - m},
+\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right) = -\frac{\Sigma}{\not p - m},
 \end{equation}
 
 \begin{equation}
@@ -360,7 +361,7 @@ S =  \frac{i}{\not p - m}\left(1 -\frac{\Sigma}{\not p - m} +\left(-\frac{\Sigma
 Recalling our geometric series,
 
 \begin{equation}
-S =  \frac{i}{\not p - m}\left(\frac{1}{1+\frac{\Sigma}{\not p - m}} = \frac{i}{\not p - m + \Sigma}.
+S =  \frac{i}{\not p - m}\left(\frac{1}{1+\frac{\Sigma}{\not p - m}}\right) = \frac{i}{\not p - m + \Sigma}.
 \end{equation}
 
 This is again an interesting result relating the general propagator and the 1PI function which we will employ later.
@@ -856,13 +857,13 @@ F_1 = \frac{ e'^2}{\left(4\pi\right)^{2}}\left[-xi \frac{1}{\epsilon} - \gamma_E
 +\left. 2\mu^\epsilon\int_0^1dx\ \int_0^{1-x}dy\ \frac{\left(\left(x+y\right) +2(x+y)^2-2(1+xy)\right)m^2 + (1-x)(1-y)q^2}{ m^2\left(x+y\right)^2 -xy q^2 } \right. \nonumber
 \end{equation}
 \begin{equation}
-+\left(1-\xi\right)\left[\text{term of \mathcal{O}\left(\epsilon^0\right)}\right]. \nonumber
++\left(1-\xi\right)\left[\text{term of } \mathcal{O}\left(\epsilon^0\right)\right]. \nonumber
 \end{equation}
 
 We have finished all of our integrals! Stand up, stretch, go outside. The hard part is behind us, now we just go through the renormalization procedure.
 
 ## Renormalization
-Taking a step back and returning to our QED Lagrangian, Eq. \ref{eq: QED Lagrangian}
+Taking a step back and returning to our QED Lagrangian, Eq. \ref{eq: QED Lagrangian},
 \begin{equation}
 \mathcal{L} _\text{QED}=\bar{\psi}_0\left(i\not \partial-e _0\not A _0-m_0\right)\psi_0-\frac{1}{4}F_0^{\mu\nu}F _{0\ \mu\nu}-\frac{1}{2\xi _0}\left(\partial _\mu A _0 ^\mu\right)^2.
 \end{equation}
@@ -880,18 +881,33 @@ Z_i = 1+\delta_i,
 where the constants $$\delta_i$$ begin at one-loop order.
 
 ### The On-Shell Scheme
-We have four renormalization constants and require four conditions to set these. We use the **On-Shell** renormalization scheme which dictates the fermionic propagator should have a pole when $$p^2=m_p^2$$, where $$m_p$$ is known as the pole mass. Using our formulation of the 2pt electron propagator, 
+We have four renormalization constants and require four conditions to set these. We use the **On-Shell** renormalization scheme in which the renormalized mass is identified with the physical pole mass of the electron. The fermionic propagator should have a pole when $$p^2=m_p^2$$, where $$m_p$$ is known as the pole mass. Using our formulation of the 2pt electron propagator, 
 \begin{equation}
 S = \frac{i}{\not p - m + \Sigma},
 \end{equation}
 this condition requires,
 \begin{equation}
-\Sigma\left(p=m_p\right)=0.
+\Sigma\left(\not p=m_p\right)=0.
 \end{equation}
-Because the residue of $$S$$ should approach $$1$$ as $$p\rightarrow m_p$$, we also require,
+Because the residue of $$S$$ should approach unity as $$p\rightarrow m_p$$, we also require,
 \begin{equation}
-\left.\frac{d\Sigma}{dp}\right|_{p=m_p}=0.
+\left.\frac{d\Sigma}{dp}\right|_{\not p=m_p}=0.
 \end{equation}
+
+We also require that the photon remain massless; at a photon energy of $$q^2=0$$, the photonic propagator should have a pole with unit residue. Using the two-point photonic propagator,
+\begin{equation}
+D^{\mu\nu}=-\frac{i}{q^2}\frac{1}{1-\Pi}t^{\mu\nu}_T-\xi\frac{i}{q^2}\frac{q^\mu q^\nu}{q^2},
+\end{equation}
+the propagator already has a pole at $$q^2=0$$. 
+
+
+we see this condition requires,
+\begin{equation}
+\Pi\left(q^2=0\right)=0.
+\end{equation}
+
+
+
 
 
 
