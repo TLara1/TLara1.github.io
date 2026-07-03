@@ -532,13 +532,13 @@ And thus, our full fermionic 1PI propagator is,
 \Sigma = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}\not p \right.
 \end{equation}
 \begin{equation}
-\left. + 2\int_0^1 dx\ \left[\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi\mu}\right)  - \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi\mu}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta' ^{-1}\right] \right] \right] \nonumber
+\left. + 2\int_0^1 dx\ \left[\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi\mu^2}\right)  - \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi\mu^2}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta' ^{-1}\right] \right] \right] \nonumber
 \end{equation}
 \begin{equation}
 -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[\frac{1}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(\frac{1}{2}+\gamma_E\right) \right. \nonumber
 \end{equation}
 \begin{equation}
-\left. + \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi\mu}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta' ^{-1}\right] \right] \nonumber.
+\left. + \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi\mu^2}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta' ^{-1}\right] \right] \nonumber.
 \end{equation}
 We have again used $$e=e'\mu$$ to obtain the correct dimensions in the logarithmic terms. There is, again, more to be said about the divergences with $$\epsilon^{-1}$$, but before that we have one more diagram to calculate. 
 
@@ -911,12 +911,15 @@ we have defined,
 \end{equation}
 
 Each term in the counter Lagrangian modifies the corresponding propagator. Writing general propagators and vertices in terms of bare and counterterms,
+
 \begin{equation}
-D_{\mu\nu}^\text{bare}=D_{\mu\nu}(q)^\text{renormalized} - \frac{i\delta_A}{q^2}t_{T\ \mu\nu} +\left[\text{Higher-Order Coutnerterms\right],
+D _{\mu\nu}^\text{bare}=D _{\mu\nu}(q)^\text{renormalized} - \frac{i\delta_A}{q^2}t _{T\ \mu\nu} +\left[\text{Higher-Order Coutnerterms\right],
 \end{equation}
+
 \begin{equation}
-S^\text{bare}=S^\text{renormalized} +\frac{i}{\not p - m}\left(i \delta_\psi\left(\not p -m\right) -i m\delta_m\right)\frac{i}{\not p - m} +\left[\text{Higher-Order Coutnerterms\right],
+S^\text{bare}=S^\text{renormalized} +\frac{i}{\not p - m}\left(i \delta_\psi\left(\not p -m\right) -i m\delta _m\right)\frac{i}{\not p - m} +\left[\text{Higher-Order Coutnerterms\right],
 \end{equation}
+
 \begin{equation}
 V_\mu^\text{bar}=i S^\text{bare} D_{\mu\nu}^\text{bare} \left(\Gamma^{\nu\ \text{renormalized}} - ie\delta_1\gamma^\nu\right) i S^\text{bare} +\left[\text{Higher-Order Coutnerterms\right].
 \end{equation}
@@ -924,17 +927,17 @@ V_\mu^\text{bar}=i S^\text{bare} D_{\mu\nu}^\text{bare} \left(\Gamma^{\nu\ \text
 We have all of the vertices and propagators; now we just need to decide how we should determine the values of our counterterms. 
 
 ### The On-Shell Scheme
-We have four renormalization constants and require four conditions to set these. We use the **On-Shell** renormalization scheme in which the renormalized mass is identified with the physical pole mass of the electron. The fermionic propagator should have a pole when $$p^2=m_p^2$$, where $$m_p$$ is known as the pole mass. Using our formulation of the 2pt electron propagator, 
+We have four renormalization constants and require four conditions to set these. We use the **On-Shell** renormalization scheme in which the renormalized mass is identified with the physical pole mass of the electron. The fermionic propagator should have a pole when $$p^2=m^2$$, where $$m$$ is the renormalized mass. Using our formulation of the 2pt electron propagator, 
 \begin{equation}
 S = \frac{i}{\not p - m + \Sigma},
 \end{equation}
-this condition requires,
+ a pole at $$\not p = m$$ requires,
 \begin{equation}
-\Sigma^\text{renormalized}\left(\not p=m_p\right)=0.
+\Sigma^\text{renormalized}\left(\not p=m\right)=0.
 \end{equation}
-Because the residue of $$S$$ should approach unity as $$p\rightarrow m_p$$, we also require,
+Because the residue of $$S$$ should approach unity as $$p\rightarrow m$$, we also require,
 \begin{equation}
-\left.\frac{d\Sigma^\text{renormalized}}{dp}\right|_{\not p=m_p}=0.
+\left.\frac{d\Sigma^\text{renormalized}}{dp}\right|_{\not p=m}=0.
 \end{equation}
 
 We also require that the photon remain massless; at a photon energy of $$q^2=0$$, the photonic propagator should have a pole with unit residue. Using the two-point photonic propagator,
@@ -962,7 +965,7 @@ This is the Ward Identity. In the limit of $$p\rightarrow0$$, $$p'\rightarrow0$$
 \begin{equation}
 \Gamma^{\nu\ \text{renormalized}}\left(p,p\right) = -ie\frac{d\left(S^\text{renormalized}\right)^{-1}\left(p\right)}{d p_\nu}.
 \end{equation}
-Which fixes the value of the three-point vertex.
+This fixes the value of the three-point vertex.
 
 We have all our conditions for our renormalized propagators; we just need to compare the lengthy integrals we calculated with our counters and use the four conditions to assign values to each $$\delta_i$$. 
 
@@ -982,7 +985,42 @@ Because we are working at first loop order, we are free to substitute $$e_0\righ
 \end{equation}
 The next term contributes at order $$e^4$$.
 
+Now for the fermion. To first loop order, the bare term reads,
+\begin{equation}
+\Sigma^\text{bare} = \Sigma^\text{renormalized} + \left(\delta_\psi\left(\not p - m\right) - m\delta _m\right).
+\end{equation}
+The two-point fermion loop integral in terms of bare parameters is,
 
+\begin{equation}
+\Sigma^\text{bare}\left(\not p = m\right) = -\frac{ e_0'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}m \right.
+\end{equation}
+\begin{equation}
+\left. + 2\int_0^1 dx\ \left[m\left(x -2\right)\log\left(\frac{\Delta}{4\pi\mu^2}\right)  - \left(1-x\right)\left[m\left(-1+3x\right) \log\left(\frac{\Delta'}{4\pi\mu^2}\right)-x^2m^3\left(2-x\right)\Delta' ^{-1}\right] \right] \right] \nonumber
+\end{equation}
+\begin{equation}
+-\xi \frac{e_0'^2 }{\left(4\pi\right)^2} \left[ \int_0^1 dx\ \left(1-x\right)\left[m\left(-1+3x\right)\log\left(\frac{\Delta'}{4\pi\mu^2}\right)-x^2m^3\left(2-x\right)\Delta' ^{-1}\right] \right] \nonumber.
+\end{equation}
+Inserting,
+\begin{equation}
+\Delta = m^2\left(1-x\right)^2,\quad \Delta' = m^2x\left(1-x\left(1-x\right)\right),
+\end{equation}
+
+\begin{equation}
+\Sigma^\text{bare}\left(\not p = m\right) = -\frac{ e_0'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}m \right.
+\end{equation}
+\begin{equation}
+\left. + 2\int_0^1 dx\ \left[m\left(x -2\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)  - \left(1-x\right)\left[m\left(-1+3x\right) \log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)-m\frac{x\left(2-x\right)}{\left(1-x\left(1-x\right)\right)}\right] \right] \right] \nonumber
+\end{equation}
+\begin{equation}
+-\xi \frac{e_0'^2 }{\left(4\pi\right)^2} \left[ \int_0^1 dx\ \left(1-x\right)\left[m\left(-1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)-m\frac{x\left(2-x\right)}{\left(1-x\left(1-x\right)\right)}\right] \right] \nonumber.
+\end{equation}
+
+
+
+
+
+
+Inserting,
 
 
 
