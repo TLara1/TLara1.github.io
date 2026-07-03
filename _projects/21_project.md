@@ -150,8 +150,12 @@ Therefore, corrections beyond first-order should be proportional to $$t _{T\ \mu
 
 Beyond tree level, the general propagator can be written as the sum of 1PI diagrams. First tree level, then tree level followed by 1PI followed by tree level, then tree level, 1PI, tree level, 1PI, tree level, and so forth,
 \begin{equation}
- D^{\mu\nu} =  -\frac{i}{q^2}t _{\mu\nu} + \left(-\frac{i}{q^2}t ^{\mu\alpha}\right)\left(i q^2 \Pi t _{T\ \alpha\beta}\right)\left(-\frac{i}{q^2}t ^{\beta\nu}\right) + \left(-\frac{i}{q^2}t ^{\mu\alpha}\right)\left(i q^2 \Pi t _{T\ \alpha\beta}\right)\left(-\frac{i}{q^2}t ^{\beta\gamma}\right)\left(i q^2 \Pi t _{T\ \gamma\sigma}\right)\left(-\frac{i}{q^2}t _{\sigma\nu}\right) + ...
+ D^{\mu\nu} =  -\frac{i}{q^2}t _{\mu\nu} + \left(-\frac{i}{q^2}t ^{\mu\alpha}\right)\left(i q^2 \Pi t _{T\ \alpha\beta}\right)\left(-\frac{i}{q^2}t ^{\beta\nu}\right)
 \end{equation}
+\begin{equation}
+ + \left(-\frac{i}{q^2}t ^{\mu\alpha}\right)\left(i q^2 \Pi t _{T\ \alpha\beta}\right)\left(-\frac{i}{q^2}t ^{\beta\gamma}\right)\left(i q^2 \Pi t _{T\ \gamma\sigma}\right)\left(-\frac{i}{q^2}t _{\sigma\nu}\right) + ...\nonumber
+\end{equation}
+
 
 \begin{equation}
  D^{\mu\nu} =  -\frac{i}{q^2}t _{\mu\nu} -\frac{i}{q^2}\left(\Pi +\Pi^2+...\right) t_T ^{ \mu\nu} .\nonumber
@@ -742,8 +746,11 @@ and the final numerator with both $$\ell$$ and non-$$\ell$$ terms is,
 \end{equation}
 Reorganizing slightly, we identify two form factors,  
 \begin{equation}
-\left[\text{Num}\right] = -2i\bar{u}\left[ \left( -\frac{\left(d-2\right)^2 }{2d}\ell^2  + \left(\left(x+y\right) +2(x+y)^2-2(1+xy)\right)m^2 + (1-x)(1-y)q^2 \right) \gamma^\mu + \frac{2i\Sigma^{\mu\nu}q _\nu}{2m}2m^2(x+y)\left(1-y-x\right) \right]u,
+\left[\text{Num}\right] = -2i\bar{u}\left[ \left( -\frac{\left(d-2\right)^2 }{2d}\ell^2  + \left(\left(x+y\right) +2(x+y)^2-2(1+xy)\right)m^2 + (1-x)(1-y)q^2 \right) \gamma^\mu \right.
 \end{equation}
+\begin{equation}
+\left. + \frac{2i\Sigma^{\mu\nu}q _\nu}{2m}2m^2(x+y)\left(1-y-x\right) \right]u \nonumber,
+\end{equation} 
 \begin{equation}
 \left[\text{Num}\right] = -2i\bar{u}\left[ \left[F_1\text{ term}\right]\gamma^\mu + \left[F_2\text{ term}\right]\frac{2i\Sigma^{\mu\nu}q _\nu}{2m}\right].
 \end{equation}
@@ -761,7 +768,7 @@ F_2^\text{gaugeless} = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \
 
 Now we evaluate the $$\ell$$ integrals with the usual $$d$$-dimensional integration tricks. Beginning with the non-divergent $$F_2$$ integral,
 \begin{equation}
-F_2^\text{gaugeless} = 4ie^2 \frac{-i}{2\left(4\pi\right)^2 }\int_0^1dx\ \int_0^{1-x}dy\ \frac{2m^2(x+y)\left(1-y-x\right)} {m^2\left(x+y\right)^2 -xy q^2} = \frac{2e^2}{\left(4\pi\right)^2 }\int_0^1dz\  \frac{1} {1+z(z-1)\hat{q}^2}.
+F_2^\text{gaugeless} = 2ie^2 \frac{-i}{\left(4\pi\right)^2 }\int_0^1dx\ \int_0^{1-x}dy\ \frac{2m^2(x+y)\left(1-y-x\right)} {m^2\left(x+y\right)^2 -xy q^2} = \frac{2e^2}{\left(4\pi\right)^2 }\int_0^1dz\  \frac{1} {1+z(z-1)\hat{q}^2}.
 \end{equation}
 where $$\hat{q}^2=q^2/m^2$$. We have partially evaluated the integral over $$x$$ and $$y$$, performing a change of variables to write the integral in a  cleaner form.
 
@@ -778,7 +785,10 @@ F_1^\text{gaugeless} = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \
 
 Beginning with the $$\ell^2$$ term,
 \begin{equation}
- \frac{ e^2}{\left(4\pi\right)^{2}}\int_0^1dx\ \int_0^{1-x}dy\ 2\left(1-\epsilon\right)^2 \Gamma\left(\epsilon\right)\left(\frac{\Delta}{4\pi}\right)^{-\epsilon} = \frac{2e'}{\left(4\pi\right)^{2}}\int_0^1dx\ \int_0^{1-x}dy\ \left[\frac{1}{\epsilon} - \gamma_E - 2 -\log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi\mu}\right)\right]
+ \frac{ e^2}{\left(4\pi\right)^{2}}\int_0^1dx\ \int_0^{1-x}dy\ 2\left(1-\epsilon\right)^2 \Gamma\left(\epsilon\right)\left(\frac{\Delta}{4\pi}\right)^{-\epsilon}
+\end{equation}
+\begin{equation}
+ = \frac{2e'}{\left(4\pi\right)^{2}}\int_0^1dx\ \int_0^{1-x}dy\ \left[\frac{1}{\epsilon} - \gamma_E - 2 -\log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi\mu}\right)\right]  \nonumber
 \end{equation}
 \begin{equation}
 = \frac{ e'^2}{\left(4\pi\right)^{2}}\left[\frac{1}{\epsilon} - \gamma_E - 2 - 2\int_0^1dx\ \int_0^{1-x}dy\ \log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi\mu}\right) \right]. \nonumber
@@ -813,7 +823,7 @@ The denominator is actually identical to our previous one with an extra power,
 
 The integral becomes,
 \begin{equation}
- i M^\mu_\text{gauge} = \left(-ie\right)^3  \left(-6i \left(1-\xi\right)\right) \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1}dy\ \int_0^{1}dz\ \int_0^1 dw\ \delta\left(1-x-y-w-z\right)\frac{\left[\text{Num}\right]}{\left( \ell^2-\Delta \right)^4}
+ i M^\mu_\text{gauge} = \left(-ie\right)^3  \left(-6i \left(1-\xi\right)\right) \int \bar{d}^d \ell\  \int_0^1dxdydzdw\ \delta\left(1-x-y-w-z\right)\frac{\left[\text{Num}\right]}{\left( \ell^2-\Delta \right)^4}
 \end{equation}
 \begin{equation}
 = \left(-ie\right)^3  \left(-6i \left(1-\xi\right)\right) \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \left(1-x-y\right)\frac{\left[\text{Num}\right]}{\left( \ell^2-\Delta \right)^4}\nonumber.
@@ -821,7 +831,10 @@ The integral becomes,
 
 Again, starting with the numerator,
 \begin{equation}
-\left[\text{Num}\right] = \bar{u}\not k \left(\not k + \not p' +m \right)\gamma^\mu \left(\not k + \not p +m \right) \not k u = \bar{u}\left(\not \ell - x\not p' - y\not p \right) \left(\not \ell +\left(1-x\right) \not p' -y \not p +m \right)\gamma^\mu \left(\not\ell + \left(1-y\right)\not p -x\not p' +m \right)\left(\not \ell - x\not p' - y\not p \right) u.
+\left[\text{Num}\right] = \bar{u}\not k \left(\not k + \not p' +m \right)\gamma^\mu \left(\not k + \not p +m \right) \not k u
+\end{equation}
+\begin{equation}
+= \bar{u}\left(\not \ell - x\not p' - y\not p \right) \left(\not \ell +\left(1-x\right) \not p' -y \not p +m \right)\gamma^\mu \left(\not\ell + \left(1-y\right)\not p -x\not p' +m \right)\left(\not \ell - x\not p' - y\not p \right) u\nonumber.
 \end{equation}
 Here I wave my white flag. I will not be doing the full Dirac algebra for this numerator. A back-of-the-envelope calculation tells you there are $$74$$ terms that have even powers of $$\ell$$, and each of those terms will generically split into a few more as we compute the gamma matrix commutators. 
 
