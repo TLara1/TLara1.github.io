@@ -154,11 +154,11 @@ Beyond tree level, the general propagator can be written as the sum of 1PI diagr
 \end{equation}
 
 \begin{equation}
- D^{\mu\nu} =  \frac{i}{q^2}t _{\mu\nu} -\frac{i}{q^2}\left(\Pi +\Pi^2+...\right) t ^{T \mu\nu} .\nonumber
+ D^{\mu\nu} =  \frac{i}{q^2}t _{\mu\nu} -\frac{i}{q^2}\left(\Pi +\Pi^2+...\right) t_T ^{ \mu\nu} .\nonumber
  \end{equation}
  Recalling the solution for a geometric series,
 \begin{equation}
- D^{\mu\nu} =  -\frac{i}{q^2}\frac{1}{1 - \Pi} - \xi\frac{i}{q^2}\frac{q^\muq^\nu}{q^2}.
+ D^{\mu\nu} =  -\frac{i}{q^2}\frac{1}{1 - \Pi} - \xi \frac{i}{q^2} \frac{q^\mu q^\nu}{q^2}.
 \end{equation}
 This is interesting but not instantly helpful. When we renormalize, it will become more relevant.
 
@@ -338,7 +338,30 @@ In the same vein as our photonic calculation, we calculate the 1-loop correction
   {% include figure.liquid loading="eager" path="assets/img/QED_diagrams/S_fermion_propagator.png" title="S_fermion_propagator" class="img-fluid rounded z-depth-0" width="auto" height="270" %}
 </div>
 
-The 1PI diagram we calculate is $$i\Sigma(p)$$. We perform the calculation in a general gauge. Consulting our Feynman diagram, the loop integral is,
+The 1PI diagram we calculate is $$i\Sigma(p)$$. Like the photonic propagator, we can write the general $$S$$ two-point function in terms of a series of the 1PI function $$i\Sigma$$,
+
+\begin{equation}
+S =  \frac{i}{\not p - m} + \left(\frac{i}{\not p - m}\right)\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right) + \left(\frac{i}{\not p - m}\right)\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right)\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right)+...
+\end{equation}
+This can be simplified by a geometric series,
+
+\begin{equation}
+S =  \frac{i}{\not p - m}\left(1 + \left(i \Sigma\right)\left(\frac{i}{\not p - m}\right) +\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right)\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right)+...\right),
+\end{equation}
+as,
+left(i \Sigma\right)\left(\frac{i}{\not p - m}\right) = -\frac{\Sigma}{\not p - m},
+\end{equation}
+\begin{equation}
+S =  \frac{i}{\not p - m}\left(1 -\frac{\Sigma}{\not p - m} +\left(-\frac{\Sigma}{\not p - m}\right)^2+...\right),
+\end{equation}
+Recalling our geometric series,
+\begin{equation}
+S =  \frac{i}{\not p - m}\left(\frac{1}{1+\frac{\Sigma}{\not p - m}} = \frac{i}{\not p - m + \Sigma}.
+\end{equation}
+This is again an interesting result relating the general propagator and the 1PI function which we will employ later.
+
+
+We perform the calculation in a general gauge. Consulting our Feynman diagram, the loop integral is,
 
 \begin{equation}\label{1pi fermion loop integral}
 i \Sigma = \left(-i e\right)^2 \left[\int\bar{d}^dk\  \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(-i\eta_{\mu\nu}\right)}{\left(k^2-m^2\right)\left(k-p\right)^2} \right.
