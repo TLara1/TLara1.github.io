@@ -65,7 +65,7 @@ We also use the $$\bar d$$ notation to indicate division by $$2\pi$$,
 Onward and upward.
 
 ## The QED Lagrangian and Feynman Rules. 
-The Lagrangian for QED describing the interactions between a spin-1/2 spinor field $$\psi\left(\mathbf{X}\right)$$ and a gauge field $$A_\mu\left(\mathbf{x}\right)$$ is,
+The Lagrangian for QED describing the interactions between a spin-1/2 spinor field $$\psi\left(\mathbf{x}\right)$$ and a gauge field $$A_\mu\left(\mathbf{x}\right)$$ is,
 \begin{equation}\label{eq: QED Lagrangian}
 \mathcal{L} _\text{QED}=\bar{\psi}\left(i\not D-m\right)\psi-\frac{1}{4}F^{\mu\nu}F _{\mu\nu}-\frac{1}{2\xi}\left(\partial _\mu A^\mu\right)^2,
 \end{equation}
@@ -153,7 +153,7 @@ Beyond tree level, the general propagator can be written as the sum of 1PI diagr
  D^{\mu\nu} =  -\frac{i}{q^2}t _{\mu\nu} + \left(-\frac{i}{q^2}t ^{\mu\alpha}\right)\left(i q^2 \Pi t _{T\ \alpha\beta}\right)\left(-\frac{i}{q^2}t ^{\beta\nu}\right)
 \end{equation}
 \begin{equation}
- + \left(-\frac{i}{q^2}t ^{\mu\alpha}\right)\left(i q^2 \Pi t _{T\ \alpha\beta}\right)\left(-\frac{i}{q^2}t ^{\beta\gamma}\right)\left(i q^2 \Pi t _{T\ \gamma\sigma}\right)\left(-\frac{i}{q^2}t _{\sigma\nu}\right) + ...\nonumber
++\left(-\frac{i}{q^2}t ^{\mu\alpha}\right)\left(i q^2 \Pi t _{T\ \alpha\beta}\right)\left(-\frac{i}{q^2}t ^{\beta\gamma}\right)\left(i q^2 \Pi t _{T\ \gamma\sigma}\right)\left(-\frac{i}{q^2}t _{\sigma\nu}\right) + ...\nonumber
 \end{equation}
 
 
@@ -900,11 +900,28 @@ and expanding to first order in $$\delta_i$$, since higher orders of $$\delta_i$
 \mathcal{L} _\text{QED}= \mathcal{L} _\text{QED}^\text{renormalized} + \mathcal{L} _\text{QED}^\text{counter},
 \end{equation}
 \begin{equation}
-mathcal{L} _\text{QED}^\text{renormalized} = \bar{\psi}\left(i\not \partial-e \not A -m_0\right)\psi-\frac{1}{4}F^{\mu\nu}F _{\mu\nu}-\frac{1}{2\xi }\left(\partial _\mu A ^\mu\right)^2
+\mathcal{L} _\text{QED}^\text{renormalized} = \bar{\psi}\left(i\not \partial-e \not A -m\right)\psi-\frac{1}{4}F^{\mu\nu}F _{\mu\nu}-\frac{1}{2\xi }\left(\partial _\mu A ^\mu\right)^2
 \end{equation}
 \begin{equation}
-\mathcal{L} _\text{QED}^\text{counter} = \delta _\psi \bar{\psi} i\not \partial \psi
+\mathcal{L} _\text{QED}^\text{counter} = \delta _\psi \bar{\psi} i\not \partial \psi - \left(\delta _\psi + \delta _m\right)m \bar{\psi}\psi - \delta_1 e \bar{\psi} \not A \psi - \frac{1}{4} \delta_A F^{\mu\nu}F _{\mu\nu},
 \end{equation}
+we have defined,
+\begin{equation}
+\delta_1 = \delta _\psi + \frac{1}{2}\delta_A + \delta_e.
+\end{equation}
+
+Each term in the counter Lagrangian modifies the corresponding propagator. Writing general propagators and vertices in terms of bare and counterterms,
+\begin{equation}
+D_{\mu\nu}^\text{bare}=D_{\mu\nu}(q)^\text{renormalized} - \frac{i\delta_A}{q^2}t_{T\ \mu\nu} +\left[\text{Higher-Order Coutnerterms\right],
+\end{equation}
+\begin{equation}
+S^\text{bare}=S^\text{renormalized} +\frac{i}{\not p - m}\left(i \delta_\psi\left(\not p -m\right) -i m\delta_m\right)\frac{i}{\not p - m} +\left[\text{Higher-Order Coutnerterms\right],
+\end{equation}
+\begin{equation}
+V_\mu^\text{bar}=i S^\text{bare} D_{\mu\nu}^\text{bare} \left(\Gamma^{\nu\ \text{renormalized}} - ie\delta_1\gamma^\nu\right) i S^\text{bare} +\left[\text{Higher-Order Coutnerterms\right].
+\end{equation}
+
+
 
 ### The On-Shell Scheme
 We have four renormalization constants and require four conditions to set these. We use the **On-Shell** renormalization scheme in which the renormalized mass is identified with the physical pole mass of the electron. The fermionic propagator should have a pole when $$p^2=m_p^2$$, where $$m_p$$ is known as the pole mass. Using our formulation of the 2pt electron propagator, 
