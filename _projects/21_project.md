@@ -26,7 +26,7 @@ We use the standard non-dimensionalization setting $$c=\hbar=1$$. We use the mos
 \begin{equation}
 ds^2=\eta^{\mu\nu}x_\mu x_\nu = dt^2-dx^2-dy^2-dz^2,
 \end{equation}
-apologies if this was not the convention you used in your physics education. 
+apologies if this was not the convention you used in your physics education. None of the ideas change, but the algebra will differ.
 
 We use Gamma matrices, $$\gamma^\mu$$ with $$\mu=0,1,2,3$$ satisfying the anticommutation relation,
 \begin{equation}\label{eq: gamma anticommutation relation}
@@ -891,7 +891,9 @@ The renormalization constants are determined order by order in perturbation theo
 \begin{equation}
 Z_i = 1+\delta_i,
 \end{equation}
-where the constants $$\delta_i$$ begin at one-loop order.
+where the constants $$\delta_i$$ begin at one-loop order. These terms invoke a split Lagrangian, into one built the counterterms $$\delta_i$$ and one with the renormalized fields. Replacing the bare terms with renormalized terms, 
+
+
 
 ### The On-Shell Scheme
 We have four renormalization constants and require four conditions to set these. We use the **On-Shell** renormalization scheme in which the renormalized mass is identified with the physical pole mass of the electron. The fermionic propagator should have a pole when $$p^2=m_p^2$$, where $$m_p$$ is known as the pole mass. Using our formulation of the 2pt electron propagator, 
@@ -935,6 +937,8 @@ This is the Ward Identity. In the limit of $$p\rightarrow0$$, $$p'\rightarrow0$$
 Which fixes the value of the three-point vertex.
 
 We have all our conditions; now we can begin renormalizing.
+
+
 
 
 
