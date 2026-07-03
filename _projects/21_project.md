@@ -349,15 +349,20 @@ This can be simplified by a geometric series,
 S =  \frac{i}{\not p - m}\left(1 + \left(i \Sigma\right)\left(\frac{i}{\not p - m}\right) +\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right)\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right)+...\right),
 \end{equation}
 as,
+\begin{equation}
 left(i \Sigma\right)\left(\frac{i}{\not p - m}\right) = -\frac{\Sigma}{\not p - m},
 \end{equation}
+
 \begin{equation}
 S =  \frac{i}{\not p - m}\left(1 -\frac{\Sigma}{\not p - m} +\left(-\frac{\Sigma}{\not p - m}\right)^2+...\right),
 \end{equation}
+
 Recalling our geometric series,
+
 \begin{equation}
 S =  \frac{i}{\not p - m}\left(\frac{1}{1+\frac{\Sigma}{\not p - m}} = \frac{i}{\not p - m + \Sigma}.
 \end{equation}
+
 This is again an interesting result relating the general propagator and the 1PI function which we will employ later.
 
 
@@ -861,8 +866,32 @@ Taking a step back and returning to our QED Lagrangian, Eq. \ref{eq: QED Lagrang
 \begin{equation}
 \mathcal{L} _\text{QED}=\bar{\psi}_0\left(i\not \partial-e _0\not A _0-m_0\right)\psi_0-\frac{1}{4}F_0^{\mu\nu}F _{0\ \mu\nu}-\frac{1}{2\xi _0}\left(\partial _\mu A _0 ^\mu\right)^2.
 \end{equation}
-We have added a $$0$$ indicator to all or our bare fields and constants for reasons that will be evidently shortly. 
+We have added a $$0$$ indicator to all of our bare fields. The idea of renormalization is to express these bare quantities in terms of renormalized fields and physical parameters together with multiplicative renormalization constants. The divergences arising in loop calculations are absorbed into these constants, leaving finite predictions for physical observables.
 
+\begin{equation}
+\psi_0=Z^{1/2}_\psi\psi,\quad m_0=Z_m m,\quad A_0^\mu = Z_A^{1/2}A^\mu,\quad e_0=Z_e e, \quad \xi_0=Z_A\xi.
+\end{equation}
+For the gauge parameter $$\xi$$, we may choose any coupling we desire, and it is more convenient to pick $$Z^A$$. We also raise some couplings to the half power for convenience. 
+
+The renormalization constants are determined order by order in perturbation theory and admit an expansion in powers of the coupling,
+\begin{equation}
+Z_i = 1+\delta_i,
+\end{equation}
+where the constants $$\delta_i$$ begin at one-loop order.
+
+### The On-Shell Scheme
+We have four renormalization constants and require four conditions to set these. We use the **On-Shell** renormalization scheme which dictates the fermionic propagator should have a pole when $$p^2=m_p^2$$, where $$m_p$$ is known as the pole mass. Using our formulation of the 2pt electron propagator, 
+\begin{equation}
+S = \frac{i}{\not p - m + \Sigma},
+\end{equation}
+this condition requires,
+\begin{equation}
+\Sigma\left(p=m_p\right)=0.
+\end{equation}
+Because the residue of $$S$$ should approach $$1$$ as $$p\rightarrow m_p$$, we also require,
+\begin{equation}
+\left.\frac{d\Sigma}{dp}\right|_{p=m_p}=0.
+\end{equation}
 
 
 
