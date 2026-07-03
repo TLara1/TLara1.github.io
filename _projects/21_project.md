@@ -891,9 +891,20 @@ The renormalization constants are determined order by order in perturbation theo
 \begin{equation}
 Z_i = 1+\delta_i,
 \end{equation}
-where the constants $$\delta_i$$ begin at one-loop order. These terms invoke a split Lagrangian, into one built the counterterms $$\delta_i$$ and one with the renormalized fields. Replacing the bare terms with renormalized terms, 
-
-
+where the constants $$\delta_i$$ begin at one-loop order. These terms invoke a split Lagrangian, into one built from the counterterms $$\delta_i$$ and one with the renormalized fields. Replacing the bare terms with renormalized terms, 
+\begin{equation}
+\mathcal{L} _\text{QED}= Z _\psi \bar{\psi} i\not \partial \psi - Z _\psi Z _m m \bar{\psi}\psi - Z _\psi Z_A^{1/2}Z _e e \bar{\psi} \not A \psi - \frac{1}{4} Z_A F^{\mu\nu}F _{\mu\nu} -\frac{1}{2\xi }\left(\partial _\mu A  ^\mu\right)^2,
+\end{equation}
+and expanding to first order in $$\delta_i$$, since higher orders of $$\delta_i$$ correspond to higher-order loop corrections,
+\begin{equation}
+\mathcal{L} _\text{QED}= \mathcal{L} _\text{QED}^\text{renormalized} + \mathcal{L} _\text{QED}^\text{counter},
+\end{equation}
+\begin{equation}
+mathcal{L} _\text{QED}^\text{renormalized} = \bar{\psi}\left(i\not \partial-e \not A -m_0\right)\psi-\frac{1}{4}F^{\mu\nu}F _{\mu\nu}-\frac{1}{2\xi }\left(\partial _\mu A ^\mu\right)^2
+\end{equation}
+\begin{equation}
+\mathcal{L} _\text{QED}^\text{counter} = \delta _\psi \bar{\psi} i\not \partial \psi
+\end{equation}
 
 ### The On-Shell Scheme
 We have four renormalization constants and require four conditions to set these. We use the **On-Shell** renormalization scheme in which the renormalized mass is identified with the physical pole mass of the electron. The fermionic propagator should have a pole when $$p^2=m_p^2$$, where $$m_p$$ is known as the pole mass. Using our formulation of the 2pt electron propagator, 
