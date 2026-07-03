@@ -329,7 +329,7 @@ There is a slight problem in the dimensionality of our answer. Notice that we ar
 e\rightarrow e'\left(\mu\right)\mu^{\epsilon},
 \end{equation}
 where $$\mu$$ has dimension 1 and $$e'$$ is dimensionless. Inserting the appropriate factors of $$\mu$$ before expanding in small $$\epsilon$$, we find,
-\begin{equation}
+\begin{equation}\label{eq: Pi one loop}
 \Pi= 2\frac{ e'^2}{ 4\pi^2 } \left(-\frac{1}{6}\epsilon^{-1}-\frac{1}{6}\left(\log\left(4\pi\right)-\gamma_E\right)+
 \int_0^1 dx\ x\left(1-x\right)\log\left(\frac{m^2-x(1-x)q^2}{\mu^2}\right)\right).
 \end{equation}
@@ -921,7 +921,7 @@ S^\text{bare}=S^\text{renormalized} +\frac{i}{\not p - m}\left(i \delta_\psi\lef
 V_\mu^\text{bar}=i S^\text{bare} D_{\mu\nu}^\text{bare} \left(\Gamma^{\nu\ \text{renormalized}} - ie\delta_1\gamma^\nu\right) i S^\text{bare} +\left[\text{Higher-Order Coutnerterms\right].
 \end{equation}
 
-
+We have all of the vertices and propagators; now we just need to decide how we should determine the values of our counterterms. 
 
 ### The On-Shell Scheme
 We have four renormalization constants and require four conditions to set these. We use the **On-Shell** renormalization scheme in which the renormalized mass is identified with the physical pole mass of the electron. The fermionic propagator should have a pole when $$p^2=m_p^2$$, where $$m_p$$ is known as the pole mass. Using our formulation of the 2pt electron propagator, 
@@ -930,11 +930,11 @@ S = \frac{i}{\not p - m + \Sigma},
 \end{equation}
 this condition requires,
 \begin{equation}
-\Sigma\left(\not p=m_p\right)=0.
+\Sigma^\text{renormalized}\left(\not p=m_p\right)=0.
 \end{equation}
 Because the residue of $$S$$ should approach unity as $$p\rightarrow m_p$$, we also require,
 \begin{equation}
-\left.\frac{d\Sigma}{dp}\right|_{\not p=m_p}=0.
+\left.\frac{d\Sigma^\text{renormalized}}{dp}\right|_{\not p=m_p}=0.
 \end{equation}
 
 We also require that the photon remain massless; at a photon energy of $$q^2=0$$, the photonic propagator should have a pole with unit residue. Using the two-point photonic propagator,
@@ -943,7 +943,7 @@ D^{\mu\nu}=-\frac{i}{q^2}\frac{1}{1-\Pi}t^{\mu\nu}_T-\xi\frac{i}{q^2}\frac{q^\mu
 \end{equation}
 the propagator already has a pole at $$q^2=0$$. Requiring a unit residue results in,
 \begin{equation}
-\Pi\left(q^2=0\right)=0.
+\Pi^\text{renormalized}\left(q^2=0\right)=0.
 \end{equation}
 
 Our final condition comes from the Ward Identity. Via the Schwinger-Dyson equation, it can be shown that,
@@ -960,11 +960,28 @@ and,
 \end{equation}
 This is the Ward Identity. In the limit of $$p\rightarrow0$$, $$p'\rightarrow0$$,
 \begin{equation}
-\Gamma^\nu\left(p,p\right) = -ie\frac{dS^{-1}\left(p\right)}{d p_\nu}.
+\Gamma^{\nu\ \text{renormalized}}\left(p,p\right) = -ie\frac{d\left(S^\text{renormalized}\right)^{-1}\left(p\right)}{d p_\nu}.
 \end{equation}
 Which fixes the value of the three-point vertex.
 
-We have all our conditions; now we can begin renormalizing.
+We have all our conditions for our renormalized propagators; we just need to compare the lengthy integrals we calculated with our counters and use the four conditions to assign values to each $$\delta_i$$. 
+
+## Assigning Counterterms and Renormalization
+Starting with the photon. Recalling the bare term to first loop order,
+\begin{equation}
+\Pi^\text{bare}\left( q^2 \right) = \Pi^\text{renormalized}\left( q^2 \right) + \delta_A.
+\end{equation}
+We already found the one-loop integral in terms of bare parameters, Eq. \ref{eq: Pi one loop},
+\begin{equation}
+\Pi^\text{bare}\left( 0 \right) = 2\frac{ e_0'^2}{ 4\pi^2 } \left(-\frac{1}{6}\epsilon^{-1}-\frac{1}{6}\left(\log\left(4\pi\right)-\gamma_E\right)+
+\int_0^1 dx\ x\left(1-x\right)\log\left(\frac{m^2}{\mu^2}\right)\right) = -\frac{ e'^2}{ 12\pi^2 } \left( \epsilon^{-1} -\gamma_E+\log\left(\frac{4\pi \mu^2 }{m^2}\right) \right).
+\end{equation}
+Because we are working at first loop order, we are free to substitute $$e_0\rightarrow e$$ here. We identify $$\delta_A$$ necessary to set $$\Pi^\text{renormalized}\left(0\right)=0$$ at first loop order,
+\begin{equation}
+\delta_A = -\frac{ e'^2}{ 12\pi^2 } \left( \epsilon^{-1} -\gamma_E+\log\left(\frac{4\pi \mu^2 }{m^2}\right) \right).
+\end{equation}
+The next term contributes at order $$e^4$$.
+
 
 
 
