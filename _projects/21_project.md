@@ -345,12 +345,12 @@ In the same vein as our photonic calculation, we calculate the 1-loop correction
 The 1PI diagram we calculate is $$i\Sigma(p)$$. Like the photonic propagator, we can write the general $$S$$ two-point function in terms of a series of the 1PI function $$i\Sigma$$,
 
 \begin{equation}
-S =  \frac{i}{\not p - m} + \left(\frac{i}{\not p - m}\right)\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right) + \left(\frac{i}{\not p - m}\right)\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right)\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right)+...
+iS =  \frac{i}{\not p - m} + \left(\frac{i}{\not p - m}\right)\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right) + \left(\frac{i}{\not p - m}\right)\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right)\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right)+...
 \end{equation}
 This can be simplified by a geometric series,
 
 \begin{equation}
-S =  \frac{i}{\not p - m}\left(1 + \left(i \Sigma\right)\left(\frac{i}{\not p - m}\right) +\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right)\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right)+...\right),
+iS =  \frac{i}{\not p - m}\left(1 + \left(i \Sigma\right)\left(\frac{i}{\not p - m}\right) +\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right)\left(i \Sigma\right)\left(\frac{i}{\not p - m}\right)+...\right),
 \end{equation}
 as,
 
@@ -359,13 +359,13 @@ as,
 \end{equation}
 
 \begin{equation}
-S =  \frac{i}{\not p - m}\left(1 -\frac{\Sigma}{\not p - m} +\left(-\frac{\Sigma}{\not p - m}\right)^2+...\right),
+iS =  \frac{i}{\not p - m}\left(1 -\frac{\Sigma}{\not p - m} +\left(-\frac{\Sigma}{\not p - m}\right)^2+...\right).
 \end{equation}
 
 Recalling our geometric series,
 
 \begin{equation}
-S =  \frac{i}{\not p - m}\left(\frac{1}{1+\frac{\Sigma}{\not p - m}}\right) = \frac{i}{\not p - m + \Sigma}.
+iS =  \frac{i}{\not p - m}\left(\frac{1}{1+\frac{\Sigma}{\not p - m}}\right) = \frac{i}{\not p - m + \Sigma}.
 \end{equation}
 
 This is again an interesting result relating the general propagator and the 1PI function which we will employ later.
@@ -929,7 +929,7 @@ We have all of the vertices and propagators; now we just need to decide how we s
 ### The On-Shell Scheme
 We have four renormalization constants and require four conditions to set these. We use the **On-Shell** renormalization scheme in which the renormalized mass is identified with the physical pole mass of the electron. The fermionic propagator should have a pole when $$p^2=m^2$$, where $$m$$ is the renormalized mass. Using our formulation of the 2pt electron propagator, 
 \begin{equation}
-S = \frac{i}{\not p - m + \Sigma},
+iS = \frac{i}{\not p - m + \Sigma},
 \end{equation}
  a pole at $$\not p = m$$ requires,
 \begin{equation}
@@ -1080,7 +1080,7 @@ Evaluating the $$x$$ integrals,
 \end{equation}
 and let,
 \begin{equation}
-I_{UV} = \int_0^1 dx\ \frac{x(x-2)}{\left(1-x\right)},
+I_{IR} = \int_0^1 dx\ \frac{x(x-2)}{\left(1-x\right)},
 \end{equation}
 which we will return to later.
 
@@ -1089,7 +1089,7 @@ The full term is,
 \left.\frac{d\Sigma}{d\not p}\right| _{\not p=m} = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{2}\right.
 \end{equation}
 \begin{equation}
-+2\log\left(\frac{m^2}{4\pi\mu^2}\right) +3 -4 I _{UV} \nonumber
++2\log\left(\frac{m^2}{4\pi\mu^2}\right) +3 -4 I _{IR} \nonumber
 \end{equation}
 \begin{equation}
 \left. - 2\left[\log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2}\right] \right]
@@ -1104,10 +1104,17 @@ and the gauge integral terms,
 \end{equation}
 which reduces to,
 \begin{equation}
-\left.\frac{d\Sigma}{d\not p}\right| _{\not p=m} = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[ \frac{5}{2} - 2\frac{\pi}{\sqrt{3}} -4 I_{UV} \right] -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[-\frac{1}{\epsilon}  + \log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2} \right]. 
+\frac{d\Sigma}{d\not p}\right| _{\not p=m} = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[ \frac{5}{2} - 2\frac{\pi}{\sqrt{3}} -4 I_{IR} \right] -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[-\frac{1}{\epsilon}  + \log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2} \right]. 
 \end{equation}
 
 
+
+
+And finally, our last quantity to compute is the three point vertex, with the condition
+
+\begin{equation}
+\Gamma^{\mu\ \text{bare}} = \Gamma^{\mu\ \text{renormalized}} - i e\delta_1\gamma^\mu. 
+\end{equation}
 
 
 
