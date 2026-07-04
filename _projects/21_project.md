@@ -1003,12 +1003,12 @@ Inserting,
 \begin{equation}
 \Delta\left(p=m\right) = m^2\left(1-x\right)^2,\quad \Delta'\left(p=m\right) = m^2x\left(1-x\left(1-x\right)\right),
 \end{equation}
-
+we calculate $$\Sigma$$ at $$\not p =m$$,
 \begin{equation}
 \Sigma^\text{bare}\left(\not p = m\right) = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}m \right.
 \end{equation}
 \begin{equation}
-\left. + 2\int_0^1 dx\ \left[m\left(x -2\right)\log\left(m^2\frac{\left(1-x\right)^2}{4\pi\mu^2}\right)  - \left(1-x\right)\left[m\left(-1+3x\right) \log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)-m\frac{x\left(2-x\right)}{\left(1-x\left(1-x\right)\right)}\right] \right] \right] \nonumber
+\left. + 2\int_0^1 dx\ \left[m\left(x -2\right)\log\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right)  - \left(1-x\right)\left[m\left(-1+3x\right) \log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)-m\frac{x\left(2-x\right)}{\left(1-x\left(1-x\right)\right)}\right] \right] \right] \nonumber
 \end{equation}
 \begin{equation}
 -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[ \int_0^1 dx\ \left(1-x\right)\left[m\left(-1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)-m\frac{x\left(2-x\right)}{\left(1-x\left(1-x\right)\right)}\right] \right] \nonumber.
