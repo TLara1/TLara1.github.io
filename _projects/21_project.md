@@ -1013,7 +1013,7 @@ Inserting,
 \begin{equation}
 -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[ \int_0^1 dx\ \left(1-x\right)\left[m\left(-1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)-m\frac{x\left(2-x\right)}{\left(1-x\left(1-x\right)\right)}\right] \right] \nonumber.
 \end{equation}
-We evaluate the finite integrals over $$x$$, these aren't terribly interesting, as they are just plain old numbers,
+We evaluate the finite integrals over $$x$$, 
 \begin{equation}
 \int_0^1 dx\ \left(x -2\right)\log\left(\left(1-x\right)^2\right) = \frac{5}{2},
 \end{equation}
@@ -1021,16 +1021,19 @@ We evaluate the finite integrals over $$x$$, these aren't terribly interesting, 
 \int_0^1 dx\ \left(1-x\right)\left(-1+3x\right) \log\left(x\left(1-x\left(1-x\right)\right)\right) = \frac{\pi}{\sqrt{3}}-\frac{3}{2},
 \end{equation}
 \begin{equation}
-\int_0^1 dx\ \left(1-x\right)\left(-1+3x\right) \log\left(x\left(1-x\left(1-x\right)\right)\right) = \int_0^1 dx\ \frac{x\left(1-x\right)\left(2-x\right)}{\left(1-x\left(1-x\right)\right)} = \frac{\pi}{\sqrt{3}}-\frac{3}{2},
-\end{equation}
-we simplify the expression for $$\Sigma^\text{bare}\left(\not p = m\right)$$,
-\begin{equation}
-\Sigma^\text{bare}\left(\not p = m\right) = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}m + 2\left(\frac{5}{2}m-\frac{3}{2}m\log\left(\frac{m^2}{4\pi\mu^2}\right)\right) \right]
+\int_0^1 dx\ \left(1-x\right)\left(-1+3x\right) \log\left(x\left(1-x\left(1-x\right)\right)\right) = \frac{\pi}{\sqrt{3}}-\frac{3}{2},
 \end{equation}
 \begin{equation}
-= -\frac{ 3 m e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}-\gamma_E+\frac{4}{3} + \log\left(\frac{4\pi\mu^2}{m^2}\right) \right] \nonumber.
+\int_0^1 dx\ \frac{x\left(1-x\right)\left(2-x\right)}{\left(1-x\left(1-x\right)\right)} = \frac{\pi}{\sqrt{3}}-\frac{3}{2}.
 \end{equation}
-
+This is interesting: the two integrals of the gauge term are equivalent. Now we simplify the expression for $$\Sigma^\text{bare}\left(\not p = m\right)$$,
+\begin{equation}
+\Sigma^\text{bare}\left(\not p = m\right) = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}m + 2\left(\frac{5}{2}m-\frac{3}{2}m\log\left(\frac{m^2}{4\pi\mu^2}\right)\right) \right],
+\end{equation}
+and the gauge term entirely drops. The only remaining contributions are gauge-independent! This is expected since our choice of gauge should not influence our renormalization procedure. The gauge parameter has no influence on the pole location, so it should not influence the result of $$\delta_m$$. We obtain,
+\begin{equation}
+\Sigma^\text{bare}\left(\not p = m\right) = -\frac{ 3 m e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}-\gamma_E+\frac{4}{3} + \log\left(\frac{4\pi\mu^2}{m^2}\right) \right] \nonumber.
+\end{equation}
 Using,
 \begin{equation}
 \Sigma^\text{bare}\left(\not p = m\right) = \Sigma^\text{renormalized}\left(\not p = m\right) - m\delta _m,
@@ -1039,6 +1042,7 @@ we identify $$\delta_m$$,
 \begin{equation}
 \delta_m = \frac{ 3 e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}-\gamma_E+\frac{4}{3} + \log\left(\frac{4\pi\mu^2}{m^2}\right) \right].
 \end{equation}
+
 
 
 
