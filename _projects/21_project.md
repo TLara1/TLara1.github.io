@@ -913,15 +913,15 @@ we have defined,
 Each term in the counter Lagrangian modifies the corresponding propagator. Writing general propagators and vertices in terms of bare and counterterms,
 
 \begin{equation}
-D _{\mu\nu}^\text{bare}=D _{\mu\nu}(q)^\text{renormalized} - \frac{i\delta_A}{q^2}t _{T\ \mu\nu} +\left[\text{Higher-Order Coutnerterms\right],
+D _{\mu\nu}^\text{bare}=D _{\mu\nu}(q)^\text{renormalized} - \frac{i\delta_A}{q^2}t _{T\ \mu\nu} +\left[\text{Higher-Order Coutnerterms}\right],
 \end{equation}
 
 \begin{equation}
-S^\text{bare}=S^\text{renormalized} +\frac{i}{\not p - m}\left(i \delta_\psi\left(\not p -m\right) -i m\delta _m\right)\frac{i}{\not p - m} +\left[\text{Higher-Order Coutnerterms\right],
+S^\text{bare}=S^\text{renormalized} +\frac{i}{\not p - m}\left(i \delta_\psi\left(\not p -m\right) -i m\delta _m\right)\frac{i}{\not p - m} +\left[\text{Higher-Order Coutnerterms}\right],
 \end{equation}
 
 \begin{equation}
-V_\mu^\text{bar}=i S^\text{bare} D_{\mu\nu}^\text{bare} \left(\Gamma^{\nu\ \text{renormalized}} - ie\delta_1\gamma^\nu\right) i S^\text{bare} +\left[\text{Higher-Order Coutnerterms\right].
+V_\mu^\text{bar}=i S^\text{bare} D_{\mu\nu}^\text{bare} \left(\Gamma^{\nu\ \text{renormalized}} - ie\delta_1\gamma^\nu\right) i S^\text{bare} +\left[\text{Higher-Order Coutnerterms}\right].
 \end{equation}
 
 We have all of the vertices and propagators; now we just need to decide how we should determine the values of our counterterms. 
@@ -1045,13 +1045,29 @@ we identify $$\delta_m$$,
 
 Now for $$\delta_\psi$$, this requires the derivative of $$\Sigma$$ with respect to $$\not p$$. Using
 \begin{equation}
-\frac{\Delta}{d\left(p=m\right) = m^2\left(1-x\right)^2,\quad \Delta'\left(p=m\right) = m^2x\left(1-x\left(1-x\right)\right),
+\left.\frac{\Delta}{d\not p}\right|_(\not p=m\right) = -2x\left(1-x\right)m,\quad \left.\frac{\Delta'}{d\not p}\right| _(\not p=m\right) = -2x^2\left(1-x\right)m,
+\end{equation}
+we calculate,
+
+
+
+\begin{equation}
+\Sigma = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{2} \right.
+\end{equation}
+\begin{equation}
+\left. + 2\int_0^1 dx\ \left[\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi\mu^2}\right)  - \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi\mu^2}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta' ^{-1}\right] \right] \right] \nonumber
+\end{equation}
+\begin{equation}
+-\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[\frac{1}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(\frac{1}{2}+\gamma_E\right) \right. \nonumber
+\end{equation}
+\begin{equation}
+\left. + \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi\mu^2}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta' ^{-1}\right] \right] \nonumber.
 \end{equation}
 
 
+\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi\mu^2}\right) 
 
-
-
+x\log\left(\frac{\Delta}{4\pi\mu^2}\right) + 4\pi\mu^2 \left(x\not p -2m\right)/(m^2\left(1-x\right)^2) (-2x\left(1-x\right)m)
 
 
 ### Sources
