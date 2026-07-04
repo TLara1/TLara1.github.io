@@ -1089,7 +1089,7 @@ The full term is,
 \left.\frac{d\Sigma}{d\not p}\right| _{\not p=m} = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{2}\right.
 \end{equation}
 \begin{equation}
-+\left[2\log\left(\frac{m^2}{4\pi\mu^2}\right) +3 -4 I_{UV} \right]\nonumber
++2\log\left(\frac{m^2}{4\pi\mu^2}\right) +3 -4 I _{UV} \nonumber
 \end{equation}
 \begin{equation}
 \left. - 2\left[\log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2}\right] \right]
@@ -1098,9 +1098,17 @@ The full term is,
 -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[-\frac{1}{\epsilon} \right. \nonumber
 \end{equation}
 and the gauge integral terms,
+
 \begin{equation}
-\left. + \left[\log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2}\right] \right]. \nonumber
+\left. + \log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2}\right] . \nonumber
 \end{equation}
+which reduces to,
+\begin{equation}
+\left.\frac{d\Sigma}{d\not p}\right| _{\not p=m} = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[ \frac{5}{2} - 2\frac{\pi}{\sqrt{3}} -4 I_{UV} \right] -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[-\frac{1}{\epsilon}  + \log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2} \right]. 
+\end{equation}
+
+
+
 
 
 
