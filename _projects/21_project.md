@@ -1159,7 +1159,10 @@ We have notated $$\epsilon_{\text{IR}}$$ to specify that this term arises from a
 
 which reduces to,
 \begin{equation}
-\left. \frac{d\Sigma}{d\not p}\right| _{\not p=m} = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[ \frac{2}{\epsilon _{\text{IR}}} + \frac{11}{2} - 2\frac{\pi}{\sqrt{3}} + 6\gamma_E- 2\log\left(\frac{m^2}{4\pi\mu^2}\right) \right] -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[ -\frac{1}{\epsilon}  + \log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2} \right]. 
+\left. \frac{d\Sigma}{d\not p}\right| _{\not p=m} = -\frac{ 2 e'^2 }{ \left(4\pi\right)^2 }\left[ \frac{1}{\epsilon _{\text{IR}}} + \frac{11}{4} - \frac{\pi}{\sqrt{3}} + 3\gamma_E- \log\left(\frac{m^2}{4\pi\mu^2}\right) \right]
+\end{equation}
+\begin{equation}
+-\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[ -\frac{1}{\epsilon}  + \log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2} \right]. \nonumber
 \end{equation}
 
 From this, we identify the value of $$\delta _\psi$$,
