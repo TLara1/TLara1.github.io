@@ -937,7 +937,7 @@ S = \frac{i}{\not p - m + \Sigma},
 \end{equation}
 Because the residue of $$S$$ should approach unity as $$p\rightarrow m$$, we also require,
 \begin{equation}
-\left.\frac{d\Sigma^\text{renormalized}}{dp}\right|_{\not p=m}=0.
+\left.\frac{d\Sigma^\text{renormalized}}{d\not p}\right|_{\not p=m}=0.
 \end{equation}
 
 We also require that the photon remain massless; at a photon energy of $$q^2=0$$, the photonic propagator should have a pole with unit residue. Using the two-point photonic propagator,
@@ -953,7 +953,7 @@ Our final condition comes from the Ward Identity. Via the Schwinger-Dyson equati
 \begin{equation}
 \frac{i}{\xi}q^2q^\mu V_\mu\left(p,p'\right) = ie\left(S\left(p\right)-S\left(p'\right)\right).
 \end{equation}
-This looks odd, but is just a result of applying Noether's Theorem to the path integral again, nothing too bad. Using our other Ward-Takahashi Identity, $$frac{i}{\xi}q^2q^\mu D_{\mu \nu}=q_\nu$$,
+This looks odd, but is just a result of applying Noether's Theorem to the path integral again, nothing too bad. Using our other Ward-Takahashi Identity, $$\frac{i}{\xi}q^2q^\mu D_{\mu \nu}=q_\nu$$,
 \begin{equation}
 \frac{i}{\xi}q^2q^\mu V_\mu\left(p,p'\right) = -\frac{i}{\xi}q^2q^\mu S\left(p'\right) D_{\mu\nu}\left(q\right)\Gamma^\nu\left(p,p'\right)S\left(p\right) = -q_\nu S\left(p'\right) \Gamma^\nu\left(p,p'\right)S\left(p\right),
 \end{equation}
@@ -1001,7 +1001,7 @@ We already know the two-point fermion loop integral. And, again since we are fir
 \end{equation}
 Inserting,
 \begin{equation}
-\Delta = m^2\left(1-x\right)^2,\quad \Delta' = m^2x\left(1-x\left(1-x\right)\right),
+\Delta\left(p=m\right) = m^2\left(1-x\right)^2,\quad \Delta'\left(p=m\right) = m^2x\left(1-x\left(1-x\right)\right),
 \end{equation}
 
 \begin{equation}
@@ -1043,7 +1043,10 @@ we identify $$\delta_m$$,
 \delta_m = \frac{ 3 e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}-\gamma_E+\frac{4}{3} + \log\left(\frac{4\pi\mu^2}{m^2}\right) \right].
 \end{equation}
 
-
+Now for $$\delta_\psi$$, this requires the derivative of $$\Sigma$$ with respect to $$\not p$$. Using
+\begin{equation}
+\frac{\Delta}{d\left(p=m\right) = m^2\left(1-x\right)^2,\quad \Delta'\left(p=m\right) = m^2x\left(1-x\left(1-x\right)\right),
+\end{equation}
 
 
 
