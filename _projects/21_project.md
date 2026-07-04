@@ -1188,6 +1188,9 @@ and using the Ward condition in the renormalized fields, we find,
 \end{equation}
 We have set the value of our final counterterm.
 
+Now, we should be good physicists and verify that this counterterm does actually remove the divergence from our vertex loop diagram.
+
+
 
 ### Sources
 I sought to do this without any external sources. Mainly to see if I still could. I only reviewed my own notes taken during my Quantum Field Theory II class (8.324), taught by Professor Ian Stewart during the 2025 Fall semester.
