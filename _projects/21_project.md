@@ -389,7 +389,7 @@ where $$I$$ and $$I_\xi$$ denote the ordinary and the gauge integrals, respectiv
 
 ### Gauge-less Integral
 The first of these looks somewhat more wholesome, so let's begin there.
-\begin{equation}
+\begin{equation}\label{eq: gauegelss lintegral 1}
 I = \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(-i\eta_{\mu\nu}\right)}{\left(k^2-m^2\right)\left(k-p\right)^2}.
 \end{equation}
 With Feynman parameters,
@@ -405,7 +405,7 @@ we have dropped the term linear in $$\ell$$ that vanishes over integration. Usin
 \int\bar{d}^d\ell\ \frac{1}{\left(\ell^2-\Delta\right)^2}=\frac{ i }{ \left(4\pi\right)^{2} }\left(4\pi\right)^{\epsilon}\Gamma\left(\epsilon\right)\Delta^{-\epsilon}.
 \end{equation}
 This gives the expression for $$I$$,
-\begin{equation}
+\begin{equation}\label{eq: gauegelss lintegral 2}
 I = \frac{ i }{ \left(4\pi\right)^{2} }\Gamma\left(\epsilon\right)\int_0^1 dx\ \left(\left(4-2\epsilon\right)m + (2\epsilon-2) x\not p\right)\left(\frac{\Delta}{4\pi}\right)^{-\epsilon}.
 \end{equation}
 Expanding the integrand around small $$\epsilon$$,
@@ -540,7 +540,7 @@ And thus, our full fermionic 1PI propagator is,
 \begin{equation}
 \left. + \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi\mu^2}\right)-\frac{x^2p^2}{\Delta'}\left((1-x)\not p + m\right)\right] \right] \nonumber.
 \end{equation}
-We have again used $$e=e'\mu$$ to obtain the correct dimensions in the logarithmic terms. There is, again, more to be said about the divergences with $$\epsilon^{-1}$$, but before that we have one more diagram to calculate. 
+We have again used $$e=e'\mu$$ to obtain the correct dimensions in the logarithmic terms. There is, again, more to be said about the divergences with $$\epsilon^{-1}$$, but before that we have one more diagram to calculate. Also, keen-eyed readers may have noted that one of the integrals over $$x$$ is not actually convergent. We will discuss more on that a bit later as well.
 
 ## The Three-Point Vertex at One Loop
 One more diagram to do. This is the one-loop correction to the three-point vertex. The general three-point interaction can be decomposed into two fermionic two-point interactions and a photonic general propagator, leading to a three-point 1-PI vertex. This vertex, $$\Gamma^\mu(p,p')$$ is a function of the momenta of the incoming particles. We calculate the first-order diagram for $$\Gamma^\mu(p,p')$$ as shown in the following diagram:
@@ -977,6 +977,8 @@ This fixes the value of the three-point vertex. Note that the identity applies t
 We have all our conditions for our renormalized propagators; we just need to compare the lengthy integrals we calculated with our counters and use the four conditions to assign values to each $$\delta_i$$. 
 
 ## Assigning Counterterms and Renormalization
+
+### Photonic Counter
 Starting with the photon. Recalling the bare term to first loop order,
 \begin{equation}
 \Pi^\text{bare}\left( q^2 \right) = \Pi^\text{renormalized}\left( q^2 \right) + \delta_A.
@@ -992,6 +994,7 @@ Because we are working at first loop order, we are free to substitute $$e_0\righ
 \end{equation}
 The next term contributes at order $$e^4$$.
 
+### Fermionic Counter
 Now for the fermion. To first loop order, the bare term reads,
 \begin{equation}
 \Sigma^\text{bare} = \Sigma^\text{renormalized} + \left(\delta_\psi\left(\not p - m\right) - m\delta _m\right).
@@ -1089,34 +1092,60 @@ and let,
 \begin{equation}
 I_{IR} = \int_0^1 dx\ \frac{x(x-2)}{\left(1-x\right)},
 \end{equation}
-which we will return to later.
 
-The full term is,
+This integral is not convergent as $$x\rightarrow1$$. This is known as an infrared divergence. All of our other divergences so far have resulted from $$\ell\rightarrow\infinity$$, the so-called high-energy or ultraviolet limit. But in this case, the problem is on the other end of the spectrum. Returning to the integral that gave rise to $$I_{IR}$$, the problem was in the gaugeless term for the fermionic loop integral, Eq. \ref{eq: gauegelss lintegral 1},
 \begin{equation}
-\left.\frac{d\Sigma}{d\not p}\right| _{\not p=m} = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{2}\right.
+I = \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(-i\eta_{\mu\nu}\right)}{\left(k^2-m^2\right)\left(k-p\right)^2} = \frac{ i }{ \left(4\pi\right)^{2} }\Gamma\left(\epsilon\right)\int_0^1 dx\ \left(\left(4-2\epsilon\right)m + (2\epsilon-2) x\not p\right)\left(\frac{\Delta}{4\pi}\right)^{-\epsilon}.
+\end{equation}
+Previously, we expanded in terms of small $$\epsilon$$ and then took the derivative with respect to $$\not p$$, but to isolate the divergence, we will perform the opposite procedure,
+\begin{equation}
+i e^2\frac{d}{d\not p}\left(I\right) =- \frac{  e'^2 }{ \left(4\pi\right)^{2} }\Gamma\left(\epsilon\right)\int_0^1 dx\ \left [\left((2\epsilon-2) x\right)\left(\frac{\Delta}{4\pi\mu^2}\right)^{-\epsilon} +2\left(4\pi\mu^2\right)^{-1}\epsilon\left(\left(4-2\epsilon\right)m + (2\epsilon-2) x\not p\right)\left(\left(1-x\right)x\not p\right)\left(\frac{\Delta}{4\pi\mu^2}\right)^{-1-\epsilon}\right].
+\end{equation}
+Setting $$\not p = m$$, 
+\begin{equation}
+i e^2\frac{d}{d\not p}\left(I\right) =- \frac{  e'^2 }{ \left(4\pi\right)^{2} }\Gamma\left(\epsilon\right)\int_0^1 dx\ \left [\left((2\epsilon-2) x\right)\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right)^{-\epsilon} +2\left(4\pi\mu^2\right)^{-1}\epsilon m^2\left(\left(4-2\epsilon\right) + (2\epsilon-2) x\right)\left(\left(1-x\right)x\right)\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right)^{-1-\epsilon}\right].
+\end{equation}
+We recognize the first term as the usual UV divergence as $$\epsilon\rightarrow0$$, the second term converges in this limit, but diverges as we take $$x\rightarrow1$$. We identify this as $$I'_ {IR}$$,
+\begin{equation}
+i e^2 I'_ {IR} = - \frac{ 2  e'^2 }{ \left(4\pi\right)^{2} }\Gamma\left(\epsilon\right)\int_0^1 dx\  \left(\frac{m^2}{4\pi\mu^2} \right)^{-\epsilon} \epsilon \left(\left(4-2\epsilon\right) + (2\epsilon-2) x\right)x \left( \left(1-x\right) \right)^{-1-2\epsilon}.
+\end{equation}
+Indeed, if we take $$\epsilon\rightarrow0$$, we see,
+\begin{equation}
+i e^2 \lim_{\epsilon\rightarrow 0}\left(I'_ {IR}\right) = \frac{ 4 e'^2 }{ \left(4\pi\right)^{2} }\int_0^1 dx\  \frac{x(2-x)}{\left(1-x\right) } = \frac{ 4 e'^2 }{ \left(4\pi\right)^{2} }I_{IR},
+\end{equation}
+which is the term causing the IR divergence. But if we integrate before taking the limit of small $$\epsilon$$, we obtain,
+\begin{equation}
+i e^2 I'_ {IR} = - \frac{ 2  e'^2 }{ \left(4\pi\right)^{2} }\left(\frac{m^2}{4\pi\mu^2} \right)^{-\epsilon} \Gamma\left(\epsilon\right)\epsilon \int_0^1 dx\    \left(\left(4-2\epsilon\right) + (2\epsilon-2) x\right)x \left( \left(1-x\right) \right)^{-1-2\epsilon}
 \end{equation}
 \begin{equation}
-+2\log\left(\frac{m^2}{4\pi\mu^2}\right) +3 -4 I _{IR} \nonumber
+= \frac{ 2  e'^2 }{ \left(4\pi\right)^{2} }\left(\frac{m^2}{4\pi\mu^2} \right)^{-\epsilon} \Gamma\left(\epsilon\right)\epsilon \left[\frac{\left(4-2\epsilon\right)\Gamma\left(-2\epsilon\right)}{\Gamma\left(2-2\epsilon\right)} + 2\frac{\left(2-2\epsilon\right)\Gamma\left(-2\epsilon\right)}{\Gamma\left(3-2\epsilon\right)}\right]. \nonumber
+\end{equation}
+Using the usual Gamma function expansions near $$\epsilon=0$$, to finite order,
+\begin{equation}
+i e^2 I'_ {IR} = - \frac{ 2  e'^2 }{ \left(4\pi\right)^{2} } \left[ \frac{1}{\epsilon_{\text{IR}}} + 1 +3\gamma_E- \log\left(\frac{m^2}{4\pi\mu^2}\right) \right].
+\end{equation}
+We have notated $$\epsilon_{\text{IR}}$$ to specify that this term arises from an $$IR$$, not a $$UV$$ divergence. Having isolated this divergence, we may construct the full term,
+\begin{equation}
+\left.\frac{d\Sigma}{d\not p}\right| _{\not p=m} = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[ \frac{1}{2} +2\log\left(\frac{m^2}{4\pi\mu^2}\right) +3 + 2\left( \frac{1}{\epsilon _{\text{IR}}} + 1 + 3\gamma_E- \log\left(\frac{m^2}{4\pi\mu^2}\right)\right) \right.
 \end{equation}
 \begin{equation}
-\left. - 2\left[\log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2}\right] \right]
+\left. - 2\left[\log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2}\right] \right] \nonumber
 \end{equation}
 \begin{equation}
--\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[-\frac{1}{\epsilon} \right. \nonumber
-\end{equation}
-\begin{equation}
-\left. + \log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2}\right] . \nonumber
+-\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[-\frac{1}{\epsilon} + \log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2}\right] . \nonumber
 \end{equation}
 
 which reduces to,
-
 \begin{equation}
-\frac{d\Sigma}{d\not p}\right| _{\not p=m} = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[ \frac{5}{2} - 2\frac{\pi}{\sqrt{3}} -4 I _{IR} \right] -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[ -\frac{1}{\epsilon}  + \log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2} \right]. 
+\frac{d\Sigma}{d\not p}\right| _{\not p=m} = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[ \frac{2}{\epsilon _{\text{IR}}} + \frac{11}{2} - 2\frac{\pi}{\sqrt{3}} + 6\gamma_E- 2\log\left(\frac{m^2}{4\pi\mu^2}\right) \right] -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[ -\frac{1}{\epsilon}  + \log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2} \right]. 
 \end{equation}
 
+From this, we identify the value of $$\delta _\psi$$,
+\begin{equation}
+\delta _\psi = -\frac{ 2 e'^2 }{ \left(4\pi\right)^2 }\left[ \frac{1}{\epsilon _{\text{IR}}} + \frac{11}{4} - \frac{\pi}{\sqrt{3}} + 3\gamma_E- \log\left(\frac{m^2}{4\pi\mu^2}\right) \right] -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[ -\frac{1}{\epsilon}  + \log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2} \right]. 
+\end{equation}
 
-
-
+### Vertex Counter
 And finally, our last quantity to compute is the three-point vertex, with the condition
 \begin{equation}
 \Gamma^{\nu\ \text{bare}}\left(p,p\right) = -ie\frac{d\left(S^\text{bare}\right)^{-1}\left(p\right)}{d p_\nu} = -i e\gamma^\mu\left(1 + \frac{d\Sigma^\text{bare}}{d\not p}\right).
@@ -1127,7 +1156,7 @@ Using the relationship between the bare and renormalized couplings,
 \end{equation}
 and using the Ward condition in the renormalized fields, we find,
 \begin{equation}
-\delta_1 = \delta_\psi.
+\delta_1 = \delta_\psi\rightarrow \delta_e = -\frac{1}{2}\delta_A = \frac{ e'^2}{ 24\pi^2 } \left( \epsilon^{-1} -\gamma_E+\log\left(\frac{4\pi \mu^2 }{m^2}\right) \right).
 \end{equation}
 We have set the value of our final counterterm.
 
