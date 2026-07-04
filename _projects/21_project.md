@@ -963,9 +963,13 @@ and,
 \end{equation}
 This is the Ward Identity. In the limit of $$p\rightarrow0$$, $$p'\rightarrow0$$,
 \begin{equation}
-\Gamma^{\nu\ \text{renormalized}}\left(p,p\right) = -ie\frac{d\left(S^\text{renormalized}\right)^{-1}\left(p\right)}{d p_\nu}.
+\Gamma^{\nu\ \text{bare}}\left(p,p\right) = -ie\frac{d\left(S^\text{bare}\right)^{-1}\left(p\right)}{d p_\nu} = -i e\gamma^\mu\left(1 + \frac{d\Sigma^\text{bare}}{d\not p}\right),
 \end{equation}
-This fixes the value of the three-point vertex.
+\begin{equation}
+\Gamma^{\nu\ \text{renormalized}}\left(p,p\right) = -ie\frac{d\left(S^\text{bare}\right)^{-1}\left(p\right)}{d p_\nu} = -i e\gamma^\mu\left(1 + \frac{d\Sigma^\text{renormalized}}{d\not p}\right).
+\end{equation}
+
+This fixes the value of the three-point vertex. Note that the identity applies to both the bare and renormalized operators since it is a general statement arising from our path integral, not a physical condition imposed by the on-shell scheme.
 
 We have all our conditions for our renormalized propagators; we just need to compare the lengthy integrals we calculated with our counters and use the four conditions to assign values to each $$\delta_i$$. 
 
@@ -1110,14 +1114,19 @@ which reduces to,
 
 
 
-And finally, our last quantity to compute is the three point vertex, with the condition
-
+And finally, our last quantity to compute is the three-point vertex, with the condition
 \begin{equation}
-\Gamma^{\mu\ \text{bare}} = \Gamma^{\mu\ \text{renormalized}} - i e\delta_1\gamma^\mu. 
+\Gamma^{\nu\ \text{bare}}\left(p,p\right) = -ie\frac{d\left(S^\text{bare}\right)^{-1}\left(p\right)}{d p_\nu} = -i e\gamma^\mu\left(1 + \frac{d\Sigma^\text{bare}}{d\not p}\right).
 \end{equation}
-
-
-
+Using the relationship between the bare and renormalized couplings,
+\begin{equation}
+\Gamma^{\mu\ \text{bare}} = \Gamma^{\mu\ \text{renormalized}} - i e\delta_1\gamma^\mu = -i e\gamma^\mu\left(1 + \frac{d\Sigma^\text{renormalized}}{d\not p} + \delta_\psi\right),
+\end{equation}
+and using the Ward condition in the renormalized fields, we find,
+\begin{equation}
+\delta_1 = \delta_\psi.
+\end{equation}
+We have set the value of our final counterterm.
 
 
 ### Sources
