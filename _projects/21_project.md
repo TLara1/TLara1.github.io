@@ -17,9 +17,9 @@ Back in high school, I would always aspire to fill my notebooks and chalkboards 
 
 I am, unfortunately, no longer much of a theoretical physicist. I took three semesters of QFT and decided it was not for me. But there is a beauty in the calculations of QFT, the slow methodical alignment of a maelstrom of algebra and indices. I doubt these notes will serve me much in the future, but I wish to conserve some fraction of what I learned in QFT in a more permanent manner. (You can clearly tell I wrote this **before** embarking on my calculations. I am currently halfway through and am wondering why I ever decided this was a good or reasonable idea).
 
-Here, we will compute the first-order renormalization of the theory of Quantum Electrodynamics (QED). That is to say, we will identify the four counterterms necessary to remove divergences from 1-loop level QED diagrams. This will mostly involve resolving some very nasty-looking integrals, but after doing these calculations once, they can be done a thousand times. I will not present every detail, leaving some things untouched. Otherwise, these notes would quickly spiral into an entire semester's worth of content. 
+Here, we will compute the first-order renormalization of the theory of Quantum Electrodynamics (QED). That is to say, we will identify the four counterterms necessary to remove divergences from 1-loop level QED diagrams. This will mostly involve resolving some very nasty-looking integrals, but after doing these calculations once, they can be done a thousand times. I will not present every detail, leaving some things untouched. Otherwise, these notes would quickly spiral into an entire semester's worth of content. There is a lot of algebra here. I spent a long time trying to make sure everything was right, but be warned I do make mistakes.
 
-Note here that we will only look at the tip of the QFT iceberg. Things become **severely** more complicated at higher orders of loop calculation, and everything I will present is fairly straightforward. For the sake of not complicating things too much, I will not go too too in-depth here, leaving the more sophisticated details to those who are more qualified than me.
+Note here that we will only look at the tip of the QFT iceberg. Things become **severely** more complicated at higher orders of loop calculation, and everything I will present is relatively straightforward. For the sake of not complicating things too much, I will not go too too in-depth here, leaving the more sophisticated details to those who are more qualified than me, again, it is very easy to go down rabbit holes when doing these sorts of things.
 
 ## Notation and Convention
 We use the standard non-dimensionalization setting $$c=\hbar=1$$. We use the mostly negative metric convention,
@@ -37,17 +37,17 @@ A useful property that follows from Eq. \ref{eq: gamma anticommutation relation}
 \begin{equation}
 \left(\gamma^\mu\right)^\dagger=\gamma^0\gamma^\mu\gamma^0.
 \end{equation}
-There are also a number of properties involving the traces of the gamma matrices,
+There are also several properties involving the traces of the gamma matrices,
 \begin{equation}
 \text{tr}\left[\gamma^\mu\gamma^\nu\right]=4\eta_{\mu\nu},\quad\text{tr}\left[\gamma^\mu\gamma^\nu\gamma^\alpha\gamma^\beta\right]=4\left(\eta_{\mu\nu}\eta_{\alpha\beta}-\eta_{\mu\alpha}\eta_{\nu\beta}+\eta_{\mu\beta}\eta_{\nu\alpha}\right).
 \end{equation}
-Furthermore, due to anticommutation, the trace of a product of an odd number of gamma matrices is zero.
+Furthermore, due to anticommutation, the trace of a product of an odd number of gamma matrices is zero. All of these properties are relatively straightforward to derive given the anticommutation result.
 
 A few more properties related to the sums of gamma matrices that can be similarly obtained from the commutation relation,
 \begin{equation}
 \gamma^\mu\gamma_\mu = d,\quad\gamma^\mu\gamma^\nu\gamma_\nu=\left(2-d\right)\gamma^\nu,
 \end{equation}
-where $$d$$ is the number of spacetime dimensions.
+where $$d$$ is the number of spacetime dimensions. Note that $$d\neq4$$ necessarily.
 
 We also define the adjoint $$\bar{\psi}^\mu$$ operation as,
 \begin{equation}
