@@ -1057,7 +1057,7 @@ then the gaugeless integral terms,
 +2\int_0^1 dx\ \left[x \log\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right) -2 \frac{x(x-2)}{\left(1-x\right)}\right] \nonumber
 \end{equation}
 \begin{equation}
-\left. - 2\int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right) -2 \frac{ x^2\left(-1+3x\right) \left(1-x\right)}{x\left(1-x\left(1-x\right)\right)} -\frac{x\left(5-x\right)}{\left(1-x\left(1-x\right)\right)} -2\frac{x^2(2-x)(1-x)}{\left(1-x\left(1-x\right)\right)^2} \right] \right] \nonumber
+\left. - 2\int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right) -2 \frac{ x\left(-1+3x\right) \left(1-x\right)}{\left(1-x\left(1-x\right)\right)} -\frac{x\left(5-3x\right)}{\left(1-x\left(1-x\right)\right)} -2\frac{x^2(2-x)(1-x)}{\left(1-x\left(1-x\right)\right)^2} \right] \right] \nonumber
 \end{equation}
 and the gauge polynomial terms,
 \begin{equation}
@@ -1065,12 +1065,42 @@ and the gauge polynomial terms,
 \end{equation}
 and the gauge integral terms,
 \begin{equation}
-\left. + \int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right) -2 \frac{ x^2\left(-1+3x\right) \left(1-x\right)}{x\left(1-x\left(1-x\right)\right)} -\frac{x\left(5-x\right)}{\left(1-x\left(1-x\right)\right)} -2\frac{x^2(2-x)(1-x)}{\left(1-x\left(1-x\right)\right)^2} \right] \right]. \nonumber
+\left. + \int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right) -2 \frac{ x\left(-1+3x\right) \left(1-x\right)}{\left(1-x\left(1-x\right)\right)} -\frac{x\left(5-3x\right)}{\left(1-x\left(1-x\right)\right)} -2\frac{x^2(2-x)(1-x)}{\left(1-x\left(1-x\right)\right)^2} \right] \right]. \nonumber
 \end{equation}
 
 Evaluating the $$x$$ integrals,
+\begin{equation}
+\int_0^1 dx\ x \log\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right) = \log\left(\frac{m^2}{4\pi\mu^2}\right) +\frac{3}{2},
+\end{equation}
+\begin{equation}
+\int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right) \right] = \log\left(\frac{m^2}{4\pi\mu^2}\right) +\frac{2\pi}{\sqrt{3}}-5,
+\end{equation}
+\begin{equation}
+\int_0^1 dx\ \left(1-x\right)\left[ -2 \frac{ x\left(-1+3x\right) \left(1-x\right)}{\left(1-x\left(1-x\right)\right)} -\frac{x\left(5-3x\right)}{\left(1-x\left(1-x\right)\right)} -2\frac{x^2(2-x)(1-x)}{\left(1-x\left(1-x\right)\right)^2} \right] = \frac{-2\sqrt{3}\pi - 9}{2},
+\end{equation}
+and let,
+\begin{equation}
+I_{UV} = \int_0^1 dx\ \frac{x(x-2)}{\left(1-x\right)},
+\end{equation}
+which we will return to later.
 
-
+The full term is,
+\begin{equation}
+\left.\frac{d\Sigma}{d\not p}\right| _{\not p=m} = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{2}\right.
+\end{equation}
+\begin{equation}
++\left[2\log\left(\frac{m^2}{4\pi\mu^2}\right) +3 -4 I_{UV} \right]\nonumber
+\end{equation}
+\begin{equation}
+\left. - 2\left[\log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2}\right] \right]
+\end{equation}
+\begin{equation}
+-\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[-\frac{1}{\epsilon} \right. \nonumber
+\end{equation}
+and the gauge integral terms,
+\begin{equation}
+\left. + \left[\log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2}\right] \right]. \nonumber
+\end{equation}
 
 
 
