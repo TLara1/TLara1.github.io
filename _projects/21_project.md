@@ -13,7 +13,7 @@ toc:
 ## Introduction
 Oh dear. This is a terrible idea. I shudder at the thought of all the notation I will need to get right here. Wish me luck, please proceed with caution.
 
-Back in high school, I would always aspire to fill my notebooks and chalkboards with deranged mathematical scribblings that looked oh so incomprehensible. Unfortunately, as I learned more physics and maths, the incomprehensible became comprehensible and my scribblings never quite reached the heights of insanity to which I aspired. Except in Quantum Field Theory (QFT). Even the most organized, well-documented, structured QFT calculation (that these notes certainly are not) looks like a mess, with enough symbols and letters to boggle even the most intrepid physicist.
+Back in high school, I would always aspire to fill my notebooks and chalkboards with deranged mathematical scribblings that looked oh so incomprehensible. Unfortunately, as I learned more physics and maths, the incomprehensible became comprehensible and my scribblings never quite reached the heights of insanity to which I aspired, except in Quantum Field Theory (QFT). Even the most organized, well-documented, structured QFT calculation (that these notes certainly are not) looks like a mess, with enough symbols and letters to boggle even the most intrepid physicist.
 
 I am, unfortunately, no longer much of a theoretical physicist. I took three semesters of QFT and decided it was not for me. But there is a beauty in the calculations of QFT, the slow methodical alignment of a maelstrom of algebra and indices. I doubt these notes will serve me much in the future, but I wish to conserve some fraction of what I learned in QFT in a more permanent manner. (You can clearly tell I wrote this **before** embarking on my calculations. I am currently halfway through and am wondering why I ever decided this was a good or reasonable idea).
 
@@ -777,7 +777,10 @@ where $$\hat{q}^2=q^2/m^2$$. We have partially evaluated the integral over $$x$$
 
 Now for $$F_1$$,
 \begin{equation}
-F_1^\text{gaugeless} = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \frac{\left[ -\frac{\left(d-2\right)^2 }{2d}\ell^2  + \left(2\left(x+y\right) + (x+y)^2-2 \right)m^2 + (1-x)(1-y)q^2 \right]}{\left( \ell^2-\Delta \right)^3 }
+F_1^\text{gaugeless}
+\end{equation}
+\begin{equation}
+ = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \frac{ -\frac{\left(d-2\right)^2 }{2d}\ell^2  + \left(2\left(x+y\right) + (x+y)^2-2 \right)m^2 + (1-x)(1-y)q^2 }{\left( \ell^2-\Delta \right)^3 } \nonumber
 \end{equation}
 \begin{equation}
  = -4ie^2 \frac{i}{4\left(4\pi\right)^{d/2}}\int_0^1dx\ \int_0^{1-x}dy\ \left[ \frac{d\left(d-2\right)^2 }{2d}\Gamma\left(2-d/2\right)\Delta^{d/2-2} + 2\frac{\left(2\left(x+y\right) + (x+y)^2-2\right)m^2 + (1-x)(1-y)q^2}{m^2\left(x+y\right)^2 -xy q^2} \right] \nonumber
@@ -986,8 +989,12 @@ Starting with the photon. Recalling the bare term to first loop order,
 We already found the one-loop integral in terms of bare parameters, Eq. \ref{eq: Pi one loop},
 \begin{equation}
 \Pi^\text{bare}\left( 0 \right) = 2\frac{ e_0'^2}{ 4\pi^2 } \left(-\frac{1}{6}\epsilon^{-1}-\frac{1}{6}\left(\log\left(4\pi\right)-\gamma_E\right)+
-\int_0^1 dx\ x\left(1-x\right)\log\left(\frac{m^2}{\mu^2}\right)\right) = -\frac{ e'^2}{ 12\pi^2 } \left( \epsilon^{-1} -\gamma_E+\log\left(\frac{4\pi \mu^2 }{m^2}\right) \right).
+\int_0^1 dx\ x\left(1-x\right)\log\left(\frac{m^2}{\mu^2}\right)\right)
 \end{equation}
+\begin{equation}
+ = -\frac{ e'^2}{ 12\pi^2 } \left( \epsilon^{-1} -\gamma_E+\log\left(\frac{4\pi \mu^2 }{m^2}\right) \right). \nonumber
+\end{equation}
+
 Because we are working at first loop order, we are free to substitute $$e_0\rightarrow e$$ here. We identify $$\delta_A$$ necessary to set $$\Pi^\text{renormalized}\left(0\right)=0$$ at first loop order,
 \begin{equation}
 \delta_A = -\frac{ e'^2}{ 12\pi^2 } \left( \epsilon^{-1} -\gamma_E+\log\left(\frac{4\pi \mu^2 }{m^2}\right) \right).
@@ -1018,8 +1025,16 @@ we calculate $$\Sigma$$ at $$\not p =m$$,
 \Sigma^\text{bare}\left(\not p = m\right) = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}m \right.
 \end{equation}
 \begin{equation}
+ + 2\int_0^1 dx\ \left[m\left(x -2\right)\log\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right) \right]
+\end{equation}
+\begin{equation}
+\left. - 2\int_0^1 dx\ \left[ \left(1-x\right)\left[m\left(-1+3x\right) \log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)-m\frac{x\left(2-x\right)}{\left(1-x\left(1-x\right)\right)}\right] \right] \right] \nonumber
+\end{equation}
+\begin{equation}
 \left. + 2\int_0^1 dx\ \left[m\left(x -2\right)\log\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right)  - \left(1-x\right)\left[m\left(-1+3x\right) \log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)-m\frac{x\left(2-x\right)}{\left(1-x\left(1-x\right)\right)}\right] \right] \right] \nonumber
 \end{equation}
+
+
 \begin{equation}
 -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[ \int_0^1 dx\ \left(1-x\right)\left[m\left(-1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)-m\frac{x\left(2-x\right)}{\left(1-x\left(1-x\right)\right)}\right] \right] \nonumber.
 \end{equation}
@@ -1027,9 +1042,6 @@ we calculate $$\Sigma$$ at $$\not p =m$$,
 We evaluate the finite integrals over $$x$$, 
 \begin{equation}
 \int_0^1 dx\ \left(x -2\right)\log\left(\left(1-x\right)^2\right) = \frac{5}{2},
-\end{equation}
-\begin{equation}
-\int_0^1 dx\ \left(1-x\right)\left(-1+3x\right) \log\left(x\left(1-x\left(1-x\right)\right)\right) = \frac{\pi}{\sqrt{3}}-\frac{3}{2},
 \end{equation}
 \begin{equation}
 \int_0^1 dx\ \left(1-x\right)\left(-1+3x\right) \log\left(x\left(1-x\left(1-x\right)\right)\right) = \frac{\pi}{\sqrt{3}}-\frac{3}{2},
@@ -1086,7 +1098,10 @@ Evaluating the $$x$$ integrals,
 \int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right) \right] = \log\left(\frac{m^2}{4\pi\mu^2}\right) +\frac{2\pi}{\sqrt{3}}-5,
 \end{equation}
 \begin{equation}
-\int_0^1 dx\ \left(1-x\right)\left[ -2 \frac{ x\left(-1+3x\right) \left(1-x\right)}{\left(1-x\left(1-x\right)\right)} -\frac{x\left(5-3x\right)}{\left(1-x\left(1-x\right)\right)} -2\frac{x^2(2-x)(1-x)}{\left(1-x\left(1-x\right)\right)^2} \right] = \frac{-2\sqrt{3}\pi - 9}{2},
+\int_0^1 dx\ \left(1-x\right)\left[ -2 \frac{ x\left(-1+3x\right) \left(1-x\right)}{\left(1-x\left(1-x\right)\right)} -\frac{x\left(5-3x\right)}{\left(1-x\left(1-x\right)\right)} -2\frac{x^2(2-x)(1-x)}{\left(1-x\left(1-x\right)\right)^2} \right]
+\end{equation}
+\begin{equation}
+= \frac{-2\sqrt{3}\pi - 9}{2}, \nonumber
 \end{equation}
 and let,
 \begin{equation}
@@ -1099,12 +1114,19 @@ I = \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(-i\
 \end{equation}
 Previously, we expanded in terms of small $$\epsilon$$ and then took the derivative with respect to $$\not p$$, but to isolate the divergence, we will perform the opposite procedure,
 \begin{equation}
-i e^2\frac{d}{d\not p}\left(I\right) =- \frac{  e'^2 }{ \left(4\pi\right)^{2} }\Gamma\left(\epsilon\right)\int_0^1 dx\ \left [\left((2\epsilon-2) x\right)\left(\frac{\Delta}{4\pi\mu^2}\right)^{-\epsilon} +2\left(4\pi\mu^2\right)^{-1}\epsilon\left(\left(4-2\epsilon\right)m + (2\epsilon-2) x\not p\right)\left(\left(1-x\right)x\not p\right)\left(\frac{\Delta}{4\pi\mu^2}\right)^{-1-\epsilon}\right].
+i e^2\frac{d}{d\not p}\left(I\right) =- \frac{  e'^2 }{ \left(4\pi\right)^{2} }\Gamma\left(\epsilon\right)\int_0^1 dx\ \left [\left((2\epsilon-2) x\right)\left(\frac{\Delta}{4\pi\mu^2}\right)^{-\epsilon} \right.
+\end{equation}
+\begin{equation}
+\left. +2\left(4\pi\mu^2\right)^{-1}\epsilon\left(\left(4-2\epsilon\right)m + (2\epsilon-2) x\not p\right)\left(\left(1-x\right)x\not p\right)\left(\frac{\Delta}{4\pi\mu^2}\right)^{-1-\epsilon}\right]. \nonumber
 \end{equation}
 Setting $$\not p = m$$, 
 \begin{equation}
-i e^2\frac{d}{d\not p}\left(I\right) =- \frac{  e'^2 }{ \left(4\pi\right)^{2} }\Gamma\left(\epsilon\right)\int_0^1 dx\ \left [\left((2\epsilon-2) x\right)\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right)^{-\epsilon} +2\left(4\pi\mu^2\right)^{-1}\epsilon m^2\left(\left(4-2\epsilon\right) + (2\epsilon-2) x\right)\left(\left(1-x\right)x\right)\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right)^{-1-\epsilon}\right].
+i e^2\frac{d}{d\not p}\left(I\right) =- \frac{  e'^2 }{ \left(4\pi\right)^{2} }\Gamma\left(\epsilon\right)\int_0^1 dx\ \left [\left((2\epsilon-2) x\right)\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right)^{-\epsilon} \right.
 \end{equation}
+\begin{equation}
+\left. +2\left(4\pi\mu^2\right)^{-1}m^2\epsilon \left(\left(4-2\epsilon\right) + (2\epsilon-2) x\right)\left(\left(1-x\right)x\right)\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right)^{-1-\epsilon}\right]. \nonumber
+\end{equation}
+
 We recognize the first term as the usual UV divergence as $$\epsilon\rightarrow0$$, the second term converges in this limit, but diverges as we take $$x\rightarrow1$$. We identify this as $$I'_ {IR}$$,
 \begin{equation}
 i e^2 I'_ {IR} = - \frac{ 2  e'^2 }{ \left(4\pi\right)^{2} }\Gamma\left(\epsilon\right)\int_0^1 dx\  \left(\frac{m^2}{4\pi\mu^2} \right)^{-\epsilon} \epsilon \left(\left(4-2\epsilon\right) + (2\epsilon-2) x\right)x \left( \left(1-x\right) \right)^{-1-2\epsilon}.
@@ -1142,7 +1164,10 @@ which reduces to,
 
 From this, we identify the value of $$\delta _\psi$$,
 \begin{equation}
-\delta _\psi = -\frac{ 2 e'^2 }{ \left(4\pi\right)^2 }\left[ \frac{1}{\epsilon _{\text{IR}}} + \frac{11}{4} - \frac{\pi}{\sqrt{3}} + 3\gamma_E- \log\left(\frac{m^2}{4\pi\mu^2}\right) \right] -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[ -\frac{1}{\epsilon}  + \log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2} \right]. 
+\delta _\psi = -\frac{ 2 e'^2 }{ \left(4\pi\right)^2 }\left[ \frac{1}{\epsilon _{\text{IR}}} + \frac{11}{4} - \frac{\pi}{\sqrt{3}} + 3\gamma_E- \log\left(\frac{m^2}{4\pi\mu^2}\right) \right]
+\end{equation}
+\begin{equation}
+-\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[ -\frac{1}{\epsilon}  + \log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2} \right]. \nonumber
 \end{equation}
 
 ### Vertex Counter
