@@ -1013,6 +1013,7 @@ Inserting,
 \begin{equation}
 -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[ \int_0^1 dx\ \left(1-x\right)\left[m\left(-1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)-m\frac{x\left(2-x\right)}{\left(1-x\left(1-x\right)\right)}\right] \right] \nonumber.
 \end{equation}
+
 We evaluate the finite integrals over $$x$$, 
 \begin{equation}
 \int_0^1 dx\ \left(x -2\right)\log\left(\left(1-x\right)^2\right) = \frac{5}{2},
@@ -1045,29 +1046,33 @@ we identify $$\delta_m$$,
 
 Now for $$\delta_\psi$$, this requires the derivative of $$\Sigma$$ with respect to $$\not p$$. Using
 \begin{equation}
-\left.\frac{\Delta}{d\not p}\right|_(\not p=m\right) = -2x\left(1-x\right)m,\quad \left.\frac{\Delta'}{d\not p}\right| _(\not p=m\right) = -2x^2\left(1-x\right)m,
+\left.\frac{\Delta}{d\not p}\right|_{\not p=m} = -2x\left(1-x\right)m,\quad \left.\frac{\Delta'}{d\not p}\right| _{\not p=m} = -2x^2\left(1-x\right)m,
 \end{equation}
-we calculate,
-
-
-
+we calculate $$\left.\frac{d\Sigma}{d\not p}\right| _{\not p=m}$$. Starting with the gaugeless polynomial terms,
 \begin{equation}
-\Sigma = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{2} \right.
+\left.\frac{d\Sigma}{d\not p}\right| _{\not p=m} = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{2}\right.
 \end{equation}
+then the gaugeless integral terms,
 \begin{equation}
-\left. + 2\int_0^1 dx\ \left[\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi\mu^2}\right)  - \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi\mu^2}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta' ^{-1}\right] \right] \right] \nonumber
++ 2\int_0^1 dx\ \left[x \log\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right) -2 \frac{x(x-2)}{\left(1-x\right)}\right] \nonumber
 \end{equation}
 \begin{equation}
--\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[\frac{1}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(\frac{1}{2}+\gamma_E\right) \right. \nonumber
+\left. - 2\int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right) -2 \frac{ x^2\left(-1+3x\right) \left(1-x\right)}{x\left(1-x\left(1-x\right)\right)} -\frac{x\left(5-x\right)}{\left(1-x\left(1-x\right)\right)} -2\frac{x^2(2-x)(1-x)}{\left(1-x\left(1-x\right)\right)^2} \right] \right] \nonumber
 \end{equation}
+and the gauge polynomial terms,
 \begin{equation}
-\left. + \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi\mu^2}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta' ^{-1}\right] \right] \nonumber.
+-\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[-\frac{1}{\epsilon} \right. \nonumber
+\end{equation}
+and the gauge integral terms,
+\begin{equation}
+\left. + \int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right) -2 \frac{ x^2\left(-1+3x\right) \left(1-x\right)}{x\left(1-x\left(1-x\right)\right)} -\frac{x\left(5-x\right)}{\left(1-x\left(1-x\right)\right)} -2\frac{x^2(2-x)(1-x)}{\left(1-x\left(1-x\right)\right)^2} \right] \right]. \nonumber
 \end{equation}
 
+Evaluating the $$x$$ integrals,
 
-\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi\mu^2}\right) 
 
-x\log\left(\frac{\Delta}{4\pi\mu^2}\right) + 4\pi\mu^2 \left(x\not p -2m\right)/(m^2\left(1-x\right)^2) (-2x\left(1-x\right)m)
+
+
 
 
 ### Sources
