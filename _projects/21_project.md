@@ -517,14 +517,14 @@ Adding this to $$I$$,
 I + I_\xi = \frac{ i }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}\not p \right. 
 \end{equation}
 \begin{equation}
-\left.+ 2\int_0^1 dx\ \left[\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi}\right)  - \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta' ^{-1}\right] \right] \right] \nonumber
+\left.+ 2\int_0^1 dx\ \left[\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi}\right)  - \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi}\right)-\frac{x^2p^2}{\Delta'}\left((1-x)\not p + m\right)\right] \right] \right] \nonumber
 \end{equation}
 
 \begin{equation}
 +\xi \frac{i}{\left(4\pi\right)^2} \left[\frac{1}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(\frac{1}{2}+\gamma_E\right)\right. \nonumber
 \end{equation}
 \begin{equation}
-\left. + \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta' ^{-1}\right] \right] \nonumber.
+\left. + \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi}\right)-\frac{x^2p^2}{\Delta'}\left((1-x)\not p + m\right) \right] \right] \nonumber.
 \end{equation}
 
 And thus, our full fermionic 1PI propagator is,
@@ -532,13 +532,13 @@ And thus, our full fermionic 1PI propagator is,
 \Sigma = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}\not p \right.
 \end{equation}
 \begin{equation}
-\left. + 2\int_0^1 dx\ \left[\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi\mu^2}\right)  - \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi\mu^2}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta' ^{-1}\right] \right] \right] \nonumber
+\left. + 2\int_0^1 dx\ \left[\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi\mu^2}\right)  - \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi\mu^2}\right)-\frac{x^2p^2}{\Delta'}\left((1-x)\not p + m\right) \right] \right] \right] \nonumber
 \end{equation}
 \begin{equation}
 -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[\frac{1}{\epsilon}\left(m-\not p\right) + \left(\not p -m \right)\left(\frac{1}{2}+\gamma_E\right) \right. \nonumber
 \end{equation}
 \begin{equation}
-\left. + \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi\mu^2}\right)-x^2p^2\left((1-x)\not p + m\right)\Delta' ^{-1}\right] \right] \nonumber.
+\left. + \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p - 2m\right)\log\left(\frac{\Delta'}{4\pi\mu^2}\right)-\frac{x^2p^2}{\Delta'}\left((1-x)\not p + m\right)\right] \right] \nonumber.
 \end{equation}
 We have again used $$e=e'\mu$$ to obtain the correct dimensions in the logarithmic terms. There is, again, more to be said about the divergences with $$\epsilon^{-1}$$, but before that we have one more diagram to calculate. 
 
@@ -730,27 +730,30 @@ The non-$$\ell$$ terms become,
 We can make a very important observation that we should've noticed earlier. The denominator is of the form $$\left(\ell^2-\Delta\right)^3$$ and the numerator has no terms proportional to $$\ell$$. So integrating over $$\ell$$ in four dimensions is actually convergent. Therefore, in these non-$$\ell$$ terms for the numerator, we can safely set $$d=4$$ since any terms proportional to $$\epsilon$$ will vanish when we take the limit of $$\epsilon\rightarrow0$$ and do not contribute to finite terms. 
 Setting $$d=4$$,
 \begin{equation}
-\left[\text{non-}\ell\text{ terms}\right] _{d=4} = -2\left(\left(x+y\right) - 2(y+x)\left(1-y-x\right)\right)m^2\gamma^\mu
+\left[\text{non-}\ell\text{ terms}\right] _{d=4} = -2\left(\left(x+y\right) +2xy - (y+x)\left(1-y-x\right)\right)m^2\gamma^\mu
 \end{equation}
 \begin{equation}
 +4(1-x)(1-y)p'^\nu p _\nu \gamma^\mu - 4i(x+y)\left(1-y-x\right)m\Sigma^{\mu\nu}q _\nu\nonumber.
 \end{equation}
-
 And finally, using the on-shell condition,
 \begin{equation}
 p'^\nu p _\nu = -\frac{q^2}{2}+m^2,
 \end{equation}
+\begin{equation}
+\left[\text{non-}\ell\text{ terms}\right] _{d=4} = -2\left(\left(x+y\right) +2xy - (y+x)\left(1-y-x\right) -2(1-x)(1-y)\right)m^2\gamma^\mu
+\end{equation}
+\begin{equation}
+-2(1-x)(1-y)q^2 \gamma^\mu - 4i(x+y)\left(1-y-x\right)m\Sigma^{\mu\nu}q _\nu\nonumber.
+\end{equation}
+
 and the final numerator with both $$\ell$$ and non-$$\ell$$ terms is,
 \begin{equation}
-\left[\text{Num}\right] = -2i\bar{u}\left[ -\frac{\left(d-2\right)^2}{2d}\ell^2\gamma^\mu  + \left(\left(x+y\right) - 2(y+x)\left(1-y-x\right) -2(1-x)(1-y)\right)m^2\gamma^\mu + (1-x)(1-y)q^2 \gamma^\mu + 2i(x+y)\left(1-y-x\right)m\Sigma^{\mu\nu}q _\nu \right]u.
-\end{equation}
-Reorganizing slightly, we identify two form factors,  
-\begin{equation}
-\left[\text{Num}\right] = -2i\bar{u}\left[ \left( -\frac{\left(d-2\right)^2 }{2d}\ell^2  + \left(\left(x+y\right) +2(x+y)^2-2(1+xy)\right)m^2 + (1-x)(1-y)q^2 \right) \gamma^\mu \right.
+\left[\text{Num}\right] = -2i\bar{u}\left[ \left( -\frac{\left(d-2\right)^2 }{2d}\ell^2  + \left(2\left(x+y\right) + (x+y)^2-2\right)m^2 + (1-x)(1-y)q^2 \right) \gamma^\mu \right.
 \end{equation}
 \begin{equation}
-\left. + \frac{2i\Sigma^{\mu\nu}q _\nu}{2m}2m^2(x+y)\left(1-y-x\right) \right]u \nonumber,
+\left. + \frac{2i\Sigma^{\mu\nu}q _\nu}{2m}2m^2(x+y)\left(1-y-x\right) \right]u \nonumber.
 \end{equation} 
+We identify the two form factors, $$F_1$$ and $$F_2$$,
 \begin{equation}
 \left[\text{Num}\right] = -2i\bar{u}\left[ \left[F_1\text{ term}\right]\gamma^\mu + \left[F_2\text{ term}\right]\frac{2i\Sigma^{\mu\nu}q _\nu}{2m}\right].
 \end{equation}
@@ -774,13 +777,13 @@ where $$\hat{q}^2=q^2/m^2$$. We have partially evaluated the integral over $$x$$
 
 Now for $$F_1$$,
 \begin{equation}
-F_1^\text{gaugeless} = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \frac{\left[ -\frac{\left(d-2\right)^2 }{2d}\ell^2  + \left( \left(x+y\right) +2(x+y)^2-2(1+xy) \right)m^2 + (1-x)(1-y)q^2 \right]}{\left( \ell^2-\Delta \right)^3 }
+F_1^\text{gaugeless} = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \frac{\left[ -\frac{\left(d-2\right)^2 }{2d}\ell^2  + \left(2\left(x+y\right) + (x+y)^2-2 \right)m^2 + (1-x)(1-y)q^2 \right]}{\left( \ell^2-\Delta \right)^3 }
 \end{equation}
 \begin{equation}
- = -4ie^2 \frac{i}{4\left(4\pi\right)^{d/2}}\int_0^1dx\ \int_0^{1-x}dy\ \left[ \frac{d\left(d-2\right)^2 }{2d}\Gamma\left(2-d/2\right)\Delta^{d/2-2} + 2\frac{\left(\left(x+y\right) +2(x+y)^2-2(1+xy)\right)m^2 + (1-x)(1-y)q^2}{m^2\left(x+y\right)^2 -xy q^2} \right] \nonumber
+ = -4ie^2 \frac{i}{4\left(4\pi\right)^{d/2}}\int_0^1dx\ \int_0^{1-x}dy\ \left[ \frac{d\left(d-2\right)^2 }{2d}\Gamma\left(2-d/2\right)\Delta^{d/2-2} + 2\frac{\left(2\left(x+y\right) + (x+y)^2-2\right)m^2 + (1-x)(1-y)q^2}{m^2\left(x+y\right)^2 -xy q^2} \right] \nonumber
 \end{equation}
 \begin{equation}
- = \frac{ e^2 }{ \left(4\pi\right)^2 }\int_0^1dx\ \int_0^{1-x}dy\ \left[ 2\left(1-\epsilon\right)^2 \Gamma\left(\epsilon\right)\left(\frac{\Delta}{4\pi}\right)^{-\epsilon} + 2\frac{\left(\left(x+y\right) +2(x+y)^2-2(1+xy)\right)m^2 + (1-x)(1-y)q^2}{ m^2\left(x+y\right)^2 -xy q^2 } \right]. \nonumber
+ = \frac{ e^2 }{ \left(4\pi\right)^2 }\int_0^1dx\ \int_0^{1-x}dy\ \left[ 2\left(1-\epsilon\right)^2 \Gamma\left(\epsilon\right)\left(\frac{\Delta}{4\pi}\right)^{-\epsilon} + 2\frac{\left(2\left(x+y\right) + (x+y)^2-2\right)m^2 + (1-x)(1-y)q^2}{ m^2\left(x+y\right)^2 -xy q^2 } \right]. \nonumber
 \end{equation}
 
 Beginning with the $$\ell^2$$ term,
@@ -795,7 +798,7 @@ Beginning with the $$\ell^2$$ term,
 \end{equation}
 There is a divergent and a finite contribution. For the non-$$\ell$$ term, there is only the integral,
 \begin{equation}
- = \frac{ 2 e^2 }{ \left(4\pi\right)^2 }\int_0^1dx\ \int_0^{1-x}dy\ \frac{\left(\left(x+y\right) +2(x+y)^2-2(1+xy)\right)m^2 + (1-x)(1-y)q^2}{ m^2\left(x+y\right)^2 -xy q^2 } . 
+ = \frac{ 2 e^2 }{ \left(4\pi\right)^2 }\int_0^1dx\ \int_0^{1-x}dy\ \frac{\left(2\left(x+y\right) + (x+y)^2-2\right)m^2 + (1-x)(1-y)q^2}{ m^2\left(x+y\right)^2 -xy q^2 } . 
 \end{equation}
 This integral is not always convergent, but we will address that a little later. For the moment, we are satisfied that it does not diverge as $$d\rightarrow4$$. We have completed all of the Gauge-less integrals.
 
@@ -1101,14 +1104,14 @@ The full term is,
 \begin{equation}
 -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[-\frac{1}{\epsilon} \right. \nonumber
 \end{equation}
-and the gauge integral terms,
-
 \begin{equation}
 \left. + \log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2}\right] . \nonumber
 \end{equation}
+
 which reduces to,
+
 \begin{equation}
-\frac{d\Sigma}{d\not p}\right| _{\not p=m} = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[ \frac{5}{2} - 2\frac{\pi}{\sqrt{3}} -4 I_{IR} \right] -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[-\frac{1}{\epsilon}  + \log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2} \right]. 
+\frac{d\Sigma}{d\not p}\right| _{\not p=m} = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[ \frac{5}{2} - 2\frac{\pi}{\sqrt{3}} -4 I _{IR} \right] -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[ -\frac{1}{\epsilon}  + \log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2} \right]. 
 \end{equation}
 
 
