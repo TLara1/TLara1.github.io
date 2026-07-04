@@ -1054,7 +1054,7 @@ we calculate $$\left.\frac{d\Sigma}{d\not p}\right| _{\not p=m}$$. Starting with
 \end{equation}
 then the gaugeless integral terms,
 \begin{equation}
-+ 2\int_0^1 dx\ \left[x \log\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right) -2 \frac{x(x-2)}{\left(1-x\right)}\right] \nonumber
++2\int_0^1 dx\ \left[x \log\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right) -2 \frac{x(x-2)}{\left(1-x\right)}\right] \nonumber
 \end{equation}
 \begin{equation}
 \left. - 2\int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right) -2 \frac{ x^2\left(-1+3x\right) \left(1-x\right)}{x\left(1-x\left(1-x\right)\right)} -\frac{x\left(5-x\right)}{\left(1-x\left(1-x\right)\right)} -2\frac{x^2(2-x)(1-x)}{\left(1-x\left(1-x\right)\right)^2} \right] \right] \nonumber
