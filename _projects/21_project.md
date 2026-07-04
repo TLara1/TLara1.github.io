@@ -989,16 +989,15 @@ Now for the fermion. To first loop order, the bare term reads,
 \begin{equation}
 \Sigma^\text{bare} = \Sigma^\text{renormalized} + \left(\delta_\psi\left(\not p - m\right) - m\delta _m\right).
 \end{equation}
-The two-point fermion loop integral in terms of bare parameters is,
-
+We already know the two-point fermion loop integral. And, again since we are first order, we may replace the bare $$e_0\rightarrow e$$ and $$m_0\rightarrow m$$,
 \begin{equation}
-\Sigma^\text{bare}\left(\not p = m\right) = -\frac{ e_0'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}m \right.
+\Sigma^\text{bare}\left(\not p = m\right) = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}m \right.
 \end{equation}
 \begin{equation}
 \left. + 2\int_0^1 dx\ \left[m\left(x -2\right)\log\left(\frac{\Delta}{4\pi\mu^2}\right)  - \left(1-x\right)\left[m\left(-1+3x\right) \log\left(\frac{\Delta'}{4\pi\mu^2}\right)-x^2m^3\left(2-x\right)\Delta' ^{-1}\right] \right] \right] \nonumber
 \end{equation}
 \begin{equation}
--\xi \frac{e_0'^2 }{\left(4\pi\right)^2} \left[ \int_0^1 dx\ \left(1-x\right)\left[m\left(-1+3x\right)\log\left(\frac{\Delta'}{4\pi\mu^2}\right)-x^2m^3\left(2-x\right)\Delta' ^{-1}\right] \right] \nonumber.
+-\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[ \int_0^1 dx\ \left(1-x\right)\left[m\left(-1+3x\right)\log\left(\frac{\Delta'}{4\pi\mu^2}\right)-x^2m^3\left(2-x\right)\Delta' ^{-1}\right] \right] \nonumber.
 \end{equation}
 Inserting,
 \begin{equation}
@@ -1006,21 +1005,44 @@ Inserting,
 \end{equation}
 
 \begin{equation}
-\Sigma^\text{bare}\left(\not p = m\right) = -\frac{ e_0'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}m \right.
+\Sigma^\text{bare}\left(\not p = m\right) = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}m \right.
 \end{equation}
 \begin{equation}
-\left. + 2\int_0^1 dx\ \left[m\left(x -2\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)  - \left(1-x\right)\left[m\left(-1+3x\right) \log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)-m\frac{x\left(2-x\right)}{\left(1-x\left(1-x\right)\right)}\right] \right] \right] \nonumber
+\left. + 2\int_0^1 dx\ \left[m\left(x -2\right)\log\left(m^2\frac{\left(1-x\right)^2}{4\pi\mu^2}\right)  - \left(1-x\right)\left[m\left(-1+3x\right) \log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)-m\frac{x\left(2-x\right)}{\left(1-x\left(1-x\right)\right)}\right] \right] \right] \nonumber
 \end{equation}
 \begin{equation}
--\xi \frac{e_0'^2 }{\left(4\pi\right)^2} \left[ \int_0^1 dx\ \left(1-x\right)\left[m\left(-1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)-m\frac{x\left(2-x\right)}{\left(1-x\left(1-x\right)\right)}\right] \right] \nonumber.
+-\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[ \int_0^1 dx\ \left(1-x\right)\left[m\left(-1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)-m\frac{x\left(2-x\right)}{\left(1-x\left(1-x\right)\right)}\right] \right] \nonumber.
+\end{equation}
+We evaluate the finite integrals over $$x$$, these aren't terribly interesting, as they are just plain old numbers,
+\begin{equation}
+\int_0^1 dx\ \left(x -2\right)\log\left(\left(1-x\right)^2\right) = \frac{5}{2},
+\end{equation}
+\begin{equation}
+\int_0^1 dx\ \left(1-x\right)\left(-1+3x\right) \log\left(x\left(1-x\left(1-x\right)\right)\right) = \frac{\pi}{\sqrt{3}}-\frac{3}{2},
+\end{equation}
+\begin{equation}
+\int_0^1 dx\ \left(1-x\right)\left(-1+3x\right) \log\left(x\left(1-x\left(1-x\right)\right)\right) = \int_0^1 dx\ \frac{x\left(1-x\right)\left(2-x\right)}{\left(1-x\left(1-x\right)\right)} = \frac{\pi}{\sqrt{3}}-\frac{3}{2},
+\end{equation}
+we simplify the expression for $$\Sigma^\text{bare}\left(\not p = m\right)$$,
+\begin{equation}
+\Sigma^\text{bare}\left(\not p = m\right) = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}m + 2\left(\frac{5}{2}m-\frac{3}{2}m\log\left(\frac{m^2}{4\pi\mu^2}\right)\right) \right]
+\end{equation}
+\begin{equation}
+= -\frac{ 3 m e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}-\gamma_E+\frac{4}{3} + \log\left(\frac{4\pi\mu^2}{m^2}\right) \right] \nonumber.
+\end{equation}
+
+Using,
+\begin{equation}
+\Sigma^\text{bare}\left(\not p = m\right) = \Sigma^\text{renormalized}\left(\not p = m\right) - m\delta _m,
+\end{equation}
+we identify $$\delta_m$$,
+\begin{equation}
+\delta_m = \frac{ 3 e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}-\gamma_E+\frac{4}{3} + \log\left(\frac{4\pi\mu^2}{m^2}\right) \right].
 \end{equation}
 
 
 
 
-
-
-Inserting,
 
 
 
