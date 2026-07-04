@@ -1093,7 +1093,7 @@ and let,
 I_{IR} = \int_0^1 dx\ \frac{x(x-2)}{\left(1-x\right)},
 \end{equation}
 
-This integral is not convergent as $$x\rightarrow1$$. This is known as an infrared divergence. All of our other divergences so far have resulted from $$\ell\rightarrow\infinity$$, the so-called high-energy or ultraviolet limit. But in this case, the problem is on the other end of the spectrum. Returning to the integral that gave rise to $$I_{IR}$$, the problem was in the gaugeless term for the fermionic loop integral, Eq. \ref{eq: gauegelss lintegral 1},
+This integral is not convergent as $$x\rightarrow1$$. This is known as an infrared divergence. All of our other divergences so far have resulted from $$\ell\rightarrow\infty$$, the so-called high-energy or ultraviolet limit. But in this case, the problem is on the other end of the spectrum. Returning to the integral that gave rise to $$I_{IR}$$, the problem was in the gaugeless term for the fermionic loop integral, Eq. \ref{eq: gauegelss lintegral 1},
 \begin{equation}
 I = \int\bar{d}^dk\ \frac{\gamma^\mu i\left(\not k + m\right)\gamma^\nu\left(-i\eta_{\mu\nu}\right)}{\left(k^2-m^2\right)\left(k-p\right)^2} = \frac{ i }{ \left(4\pi\right)^{2} }\Gamma\left(\epsilon\right)\int_0^1 dx\ \left(\left(4-2\epsilon\right)m + (2\epsilon-2) x\not p\right)\left(\frac{\Delta}{4\pi}\right)^{-\epsilon}.
 \end{equation}
@@ -1137,7 +1137,7 @@ We have notated $$\epsilon_{\text{IR}}$$ to specify that this term arises from a
 
 which reduces to,
 \begin{equation}
-\frac{d\Sigma}{d\not p}\right| _{\not p=m} = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[ \frac{2}{\epsilon _{\text{IR}}} + \frac{11}{2} - 2\frac{\pi}{\sqrt{3}} + 6\gamma_E- 2\log\left(\frac{m^2}{4\pi\mu^2}\right) \right] -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[ -\frac{1}{\epsilon}  + \log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2} \right]. 
+\left. \frac{d\Sigma}{d\not p}\right| _{\not p=m} = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[ \frac{2}{\epsilon _{\text{IR}}} + \frac{11}{2} - 2\frac{\pi}{\sqrt{3}} + 6\gamma_E- 2\log\left(\frac{m^2}{4\pi\mu^2}\right) \right] -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[ -\frac{1}{\epsilon}  + \log\left(\frac{m^2}{4\pi\mu^2}\right) - \frac{\pi}{\sqrt{3}} -\frac{1}{2} \right]. 
 \end{equation}
 
 From this, we identify the value of $$\delta _\psi$$,
