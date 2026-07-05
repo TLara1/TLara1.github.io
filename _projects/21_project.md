@@ -1241,7 +1241,7 @@ We must verify the infrared behaviour of both integrals. We know $$F_2$$ is conv
 u=x+y,\quad v=\frac{x}{x+y}
 \end{equation}
 \begin{equation}
-\int_0^1dx\ \int_0^{1-x}dy\ \log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi\mu}\right) = \int_0^1du dv\ u\log\left(\frac{u^2\left( m^2- \left(1-v\right)q^2 \right)}\right)}{4\pi\mu}\right) = -\frac{1}{2} + \frac{1}{2}\int_0^1 dv\ \log\left(\frac{\left( m^2- v\left(1-v\right)q^2 \right)}\right)}{4\pi\mu}\right),
+\int_0^1dx\ \int_0^{1-x}dy\ \log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi\mu}\right) = \int_0^1du dv\ u\log\left(\frac{u^2\left( m^2- \left(1-v\right)q^2 \right)}{4\pi\mu}\right) = -\frac{1}{2} + \frac{1}{2}\int_0^1 dv\ \log\left(\frac{\left( m^2- v\left(1-v\right)q^2 \right)}{4\pi\mu}\right),
 \end{equation}
 \begin{equation}
 = -\frac{1}{2} + \int_0^{1/2}dt\ \log\left(\frac{m^2-\frac{1}{4}q^2+q^2t^2}{4\pi\mu^2}\right) =  \frac{1}{2}\log\left(\frac{m^2}{4\pi \mu^2}\right)  -\frac{3}{2} + \frac{2}{\hat{q}}\sqrt{1-\frac{1}{4}\hat{q}^2}}\arctan\left(\frac{\hat{q}}{ 2\sqrt{1-\frac{1}{4}\hat{q}^2}}\right).
@@ -1270,15 +1270,26 @@ One bit I promised to return to was the $$\mu$$ energy scale. We used $$\mu$$ pu
 \begin{equation}
 \mu\frac{d}{d\mu}\left(e_0\right)=\mu\frac{d}{d\mu}\left(Z_e\left(\mu\right) \mu^{2\epsilon} e'\left(\mu\right)\right)=0,
 \end{equation}
-we have written $$e'=e'left(\mu\right)$$ since in general, the renormalized coupling may have dependence on $$\mu$$. To first loop order, using $$Z_e=1+\delta_e$$,
+we have written $$e'=e'\left( \mu \right)$$ since in general, the renormalized coupling may have dependence on $$\mu$$. To first loop order, using $$Z_e=1+\delta_e$$,
 \begin{equation}
-\mu^{1+2\epsilon}e'\frac{d\delta_e}{d\mu} + \mu^{1+2\epsilon}\left(1+\delta_e)\left(\mu\right)\frac{d e'}{d\mu} +2\epsilon\left(1+\delta_e)e'\mu^{2\epsilon} = 0.
+\mu^{1+2\epsilon}e'\frac{\partial\delta_e}{\partial\mu} + \mu^{1+2\epsilon}e'\frac{\partial\delta_e}{\partial e'}\frac{\partial e'}{\partial \mu} + \mu^{1+2\epsilon}\left(1+\delta_e)\frac{\partial e'}{\partial \mu} +2\epsilon\left(1+\delta_e)e'\mu^{2\epsilon} = 0.
 \end{equation}
-Define the $$\beta$$ function,
+Define the $$\beta$$ function to order $$\delta$$,
 \begin{equation}
-$$\beta\left(e'\right) = \left(\mu\right)\frac{d e'}{d\mu} = - 2\epsilon\left(1+\delta_e)e'\mu^{2\epsilon}
+\beta = \left(\mu\right)\frac{d e'}{d\mu} = - 2\epsilon e' - e'\left(1+\delta_e\right)^{-1}\left(\frac{\partial\delta_e}{\partial\mu} + \frac{\partial\delta_e}{\partial e'}\frac{\partial e'}{\partial \mu} \right) = - 2\epsilon e'  + e'\left(\frac{\partial\delta_e}{\partial\mu} + \mu^{-1}\beta\frac{\partial\delta_e}{\partial e'}\right).
+\end{equation}
+Solving,
+\begin{equation}
+\frac{d\delta_e}{d\mu} = \frac{ e'^2}{ 24\pi^2 } \frac{2}{\mu},
+\end{equation}
 
-\mu^{1+2\epsilon}e'\left(\mu\right)\frac{d\delta_e}{d\mu} + \mu^{1+2\epsilon}\left(1+\delta_e)\left(\mu\right)\frac{d e'}{d\mu} +2\epsilon\left(1+\delta_e)e'\mu^{2\epsilon} = 0.
+\begin{equation}
+\frac{\partial\delta_e}{\partial\mu} + \mu^{-1}\beta\frac{\partial\delta_e}{\partial e'} = \frac{ e'^2}{ 24\pi^2 } \frac{2}{\mu} + \mu^{-1}\beta\frac{ e'}{ 12\pi^2 } \left( \epsilon^{-1} -\gamma_E+\log\left(\frac{4\pi \mu^2 }{m^2}\right) \right),
+\end{equation}
+We see that $$\beta\sim\mathcal{O}\left(e'^3\right)$$, so we neglect the $$\sim \beta e'$$ term. This term is proportional to $$\epsilon^{-1}$$, but that divergence would be removed if we calculated to a higher loop order. To first-loop order therefore,
+
+\begin{equation}
+\frac{\partial\delta_e}{\partial\mu} + \mu^{-1}\beta\frac{\partial\delta_e}{\partial e'} = \frac{ e'^2}{ 24\pi^2 } \frac{2}{\mu} + \mu^{-1}\beta\frac{ e'}{ 12\pi^2 } \left( \epsilon^{-1} -\gamma_E+\log\left(\frac{4\pi \mu^2 }{m^2}\right) \right),
 \end{equation}
 
 
