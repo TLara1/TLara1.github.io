@@ -1247,8 +1247,12 @@ u=x+y,\quad v=\frac{x}{x+y},
 \end{equation}
 
 \begin{equation}
-= -\frac{1}{2} + \int_0^{1/2}dt\ \log\left( \frac{m^2-\frac{1}{4}q^2+q^2t^2}{4\pi\mu^2} \right) =  \frac{1}{2}\log\left(\frac{m^2}{4\pi \mu^2}\right)  -\frac{3}{2} + \frac{2}{\hat{q}} \sqrt{1-\frac{1}{4}\hat{q}^2}\arctan\left(\frac{\hat{q}}{ 2\sqrt{1-\frac{1}{4}\hat{q}^2}}\right).
+= -\frac{1}{2} + \int_0^{1/2}dt\ \log\left( \frac{m^2-\frac{1}{4}q^2+q^2t^2}{4\pi\mu^2} \right)  \nonumber
 \end{equation}
+\begin{equation}
+=  \frac{1}{2}\log\left(\frac{m^2}{4\pi \mu^2}\right)  -\frac{3}{2} + \frac{2}{\hat{q}} \sqrt{1-\frac{1}{4}\hat{q}^2}\arctan\left(\frac{\hat{q}}{ 2\sqrt{1-\frac{1}{4}\hat{q}^2}}\right). \nonumber
+\end{equation}
+
 with $$\hat{q}=q/m$$. This integral is finite if perhaps imaginary. 
 
 We are not so fortunate with the second integral, which clearly diverges as $$x,y\rightarrow0$$. This term arises entirely from the integral,
@@ -1274,13 +1278,13 @@ D\left(v\right) = m^2-v(1-v)q^2,\ N_0 = -2m^2+q^2,\ N_1 = -N_0,\ N_2 = m^2+v(1-v
 \end{equation}
 Integrating over $$u$$,
 \begin{equation}
-e^2 I =  \frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{\left(4\pi\mu^2\right)^{-\epsilon}}\int_0^1dv\ D^{-1-2\epsilon}\left(\right)
-
-
-
-
-int_0^{1}dv\ \Gamma\left(1+\epsilon\right) u\left(2u + u^2-2 \right)m^2 + (1-uv)(1-u(1-v))q^2 \right)\left(m^2u^2-u^2v(1-v)q^2\right)^{-1-\epsilon}=\frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{\left(4\pi\mu^2\right)^{-\epsilon}}\int_u^1du\ \int_0^{1}dv\ \Gamma\left(1+\epsilon\right) u^{-1-2\epsilon}D\left(v\right)^{-1-\epsilon}\left[N_0+uN_1+u^2N_2\right],
+e^2 I =  \frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{ \left(4\pi\mu^2 \right)^{-\epsilon} }\Gamma\left(1+\epsilon\right)\int_0^1dv\ D^{-1-2\epsilon}\left(-\frac{1}{2\epsilon}N_0 + \frac{1}{1-2\epsilon}N_1 + \frac{1}{2-2\epsilon}N_2\right),
 \end{equation}
+from which we identify the IR divergent term,
+\begin{equation}
+e^2 I_{IR} =  \frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{ \left(4\pi\mu^2 \right)^{-\epsilon} }\Gamma\left(1+\epsilon\right)\left(\frac{1}{2\epsilon}\left(2m^2-q^2\right) \right)\int_0^1dv\ \left(m^2-v(1-v)q^2\right)^{-1-2\epsilon},
+\end{equation}
+
 
 
 ## The Running Coupling
