@@ -1098,7 +1098,7 @@ then the gaugeless integral terms,
 +2\int_0^1 dx\ \left[x \log\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right) -2 \frac{x(x-2)}{\left(1-x\right)}\right] \nonumber
 \end{equation}
 \begin{equation}
-- 2\int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right) \nonumber
+-2\int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right) \nonumber
 \end{equation}
 \begin{equation}
 \left. \left. -2 \frac{ x\left(-1+3x\right) \left(1-x\right)}{\left(1-x\left(1-x\right)\right)} -\frac{x\left(5-3x\right)}{\left(1-x\left(1-x\right)\right)} -2\frac{x^2(2-x)(1-x)}{\left(1-x\left(1-x\right)\right)^2} \right] \right] \nonumber
@@ -1109,7 +1109,7 @@ and the gauge polynomial terms,
 \end{equation}
 and the gauge integral terms,
 \begin{equation}
-+ \int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)  \nonumber
++\int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)  \nonumber
 \end{equation}
 \begin{equation}
 \left. \left. -2 \frac{ x\left(-1+3x\right) \left(1-x\right)}{\left(1-x\left(1-x\right)\right)} -\frac{x\left(5-3x\right)}{\left(1-x\left(1-x\right)\right)} -2\frac{x^2(2-x)(1-x)}{\left(1-x\left(1-x\right)\right)^2} \right] \right]. \nonumber
@@ -1126,7 +1126,7 @@ Evaluating the $$x$$ integrals,
 \int_0^1 dx\ \left(1-x\right)\left[ -2 \frac{ x\left(-1+3x\right) \left(1-x\right)}{\left(1-x\left(1-x\right)\right)} -\frac{x\left(5-3x\right)}{\left(1-x\left(1-x\right)\right)} -2\frac{x^2(2-x)(1-x)}{\left(1-x\left(1-x\right)\right)^2} \right]
 \end{equation}
 \begin{equation}
-= \frac{-2\sqrt{3}\pi - 9}{2}, \nonumber
+=\frac{-2\sqrt{3}\pi - 9}{2}, \nonumber
 \end{equation}
 and let,
 \begin{equation}
@@ -1223,9 +1223,11 @@ with,
 \begin{equation}
 F_1 = \frac{ e'^2}{\left(4\pi\right)^{2}}\left[ \xi \frac{1}{\epsilon} - \gamma_E - 2 - 2\int_0^1dx\ \int_0^{1-x}dy\ \log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi\mu}\right) \right.
 \end{equation}
+
 \begin{equation}
-+2\int_0^1dx\ \int_0^{1-x}dy\ \frac{ \left( \left(x+y\right) +2(x+y)^2-2(1+xy) \right)m^2 + (1-x)(1-y)q^2 }{ m^2\left(x+y\right)^2 -xy q^2 } \right] \nonumber
+\left. +2\int_0^1dx\ \int_0^{1-x}dy\ \frac{ \left( \left(x+y\right) +2(x+y)^2-2(1+xy) \right)m^2 + (1-x)(1-y)q^2 }{ m^2\left(x+y\right)^2 -xy q^2 } \right] \nonumber
 \end{equation}
+
 \begin{equation}
 +\left(1-\xi\right)\left[\text{term of } \mathcal{O}\left(\epsilon^0\right)\right] , \nonumber
 \end{equation}
@@ -1234,7 +1236,33 @@ and,
 F_2 = 2ie^2 \frac{2e^2}{\left(4\pi\right)^2 }\int_0^1dx\  \frac{m^2} {m^2+x(x-1)q^2}  . \nonumber
 \end{equation}
 
-We must verify the infrared behaviour of both integrals. We know $$F_2$$ is convergent in the infrared, which makes sense as the counterterm, $$ie\delta_1\gamma^\mu$$ can already only impact $$F_1$$.
+We must verify the infrared behaviour of both integrals. We know $$F_2$$ is convergent in the infrared, which makes sense as the counterterm, $$ie\delta_1\gamma^\mu$$ can only impact $$F_1$$. For the first $$F_1$$ integral, this is most easily solved with a change of variables,
+\begin{equation}
+u=x+y,\quad v=\frac{x}{x+y}
+\end{equation}
+\begin{equation}
+\int_0^1dx\ \int_0^{1-x}dy\ \log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi\mu}\right) = \int_0^1du dv\ u\log\left(\frac{u^2\left( m^2- \left(1-v\right)q^2 \right)}\right)}{4\pi\mu}\right) = -\frac{1}{2} + \frac{1}{2}\int_0^1 dv\ \log\left(\frac{\left( m^2- v\left(1-v\right)q^2 \right)}\right)}{4\pi\mu}\right),
+\end{equation}
+\begin{equation}
+= -\frac{1}{2} + \int_0^{1/2}dt\ \log\left(\frac{m^2-\frac{1}{4}q^2+q^2t^2}{4\pi\mu^2}\right) =  \frac{1}{2}\log\left(\frac{m^2}{4\pi \mu^2}\right)  -\frac{3}{2} + \frac{2}{\hat{q}}\sqrt{1-\frac{1}{4}\hat{q}^2}}\arctan\left(\frac{\hat{q}}{ 2\sqrt{1-\frac{1}{4}\hat{q}^2}}\right).
+\end{equation}
+with $$\hat{q}=q/m$$. This integral is finite if perhaps imaginary. 
+
+We are not so fortunate with the second integral, which clearly diverges as $$x,y\rightarrow0$$. We extract the integral IR divergence 
+
+
+
+
+
+
+
+
+## The Running Coupling
+One bit I promised to return to was the $$\mu$$ energy scale. We used $$\mu$$ purely to obtain the correct dimensions and have our logarithms make sense. In principle, $$\mu$$ can be anything we chose, but any observable should be independent of our choice of $$\mu$$. 
+
+
+
+
 
 
 ### Sources
