@@ -477,8 +477,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/22_project/";
-            },},{id: "projects-on-the-yang-mills-lagrangian",
-          title: 'On the Yang-Mills Lagrangian',
+            },},{id: "projects-on-the-yang-mills-lagrangian-7-26",
+          title: 'On the Yang-Mills Lagrangian - 7/26',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/23_project/";
