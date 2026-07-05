@@ -238,7 +238,7 @@ We haved used $$\left(\gamma^0\right)^2=1$$. Secondly, note that because $$S$$ i
 \end{equation}
 Similarly, it can be shown that $$\bar{\psi}\not \partial \psi$$ is also a Lorentz invariant after consulting Eq. \ref{eq: covariance S relation}.
 
-## Solutions to the Dirac Equation
+## Solutions to the Dirac Equation and the Gordon Identity
 There are two solutions to the Dirac equation,
 \begin{equation}
 \psi^+=v(p)e^{i x^\mu p_\mu},\quad\psi^-=u(p)e^{-i x^\mu p_\mu}.
@@ -259,7 +259,7 @@ m\bar{u}\left(p'\right)\gamma^\mu u\left(p\right) = \bar{u}\left(p'\right)\gamma
 \end{equation}
 Adding and dividing by two,
 \begin{equation}
-\bar{u}\left(p'\right)\gamma^\mu u\left(p\right) = frac{1}{2m}\bar{u}\left(p'\right)\left(\gamma^\mu \not p+ \not p' \gamma^\mu\right)u\left(p\right).
+\bar{u}\left(p'\right)\gamma^\mu u\left(p\right) = \frac{1}{2m}\bar{u}\left(p'\right)\left(\gamma^\mu \not p+ \not p' \gamma^\mu\right)u\left(p\right).
 \end{equation}
 Using the gamma matrix commutation rules, Eq. \ref {eq: gamma commutator relation}, it is easy to find
 \begin{equation}
