@@ -1287,12 +1287,15 @@ e^2 I_{IR} =  \frac{-ie^2 }{4 \left(4\pi\right)^2}\frac{1}{\epsilon_\text{IR}}\l
 
 This gives the IR divergent portion of $$F_1$$ as,
 \begin{equation}
-F_1^\text{divergent IR} = \frac{ e'^2}{\left(4\pi\right)^{2}}\left[ \xi \frac{1}{\epsilon} - \frac{1}{4\epsilon_\text{IR}}\left(2m^2-q^2\right)\int_0^1dv\ \left(m^2-v(1-v)q^2\right)^{-1},
+F _1^\text{divergent IR} = \frac{ e'^2}{\left(4\pi\right)^{2}}\left[ \xi \frac{1}{\epsilon} - \frac{1}{4\epsilon _\text{IR}}\left(2m^2-q^2\right)\int_0^1dv\ \left(m^2-v(1-v)q^2\right)^{-1},
 \end{equation}
+
 and we recognize the divergent portion of $$\Gamma^{\mu\ \text{bare}} as,
+
 \begin{equation}
 \Gamma^{\mu\ \text{divergent}} = \left(-ie \gamma^\mu\right)\frac{ e'^2}{\left(4\pi\right)^{2}}\left[ \xi \frac{1}{\epsilon} - \frac{1}{\epsilon_\text{IR}}\left(2m^2-q^2\right)\int_0^1dv\ \left(m^2-v(1-v)q^2\right)^{-1} \right].
 \end{equation}
+
 and setting $$q=0$$,
 \begin{equation}
 \Gamma^{\mu\ \text{bare divergent}}\left(q=0\right) = \left(-ie \gamma^\mu\right)\frac{ e'^2}{\left(4\pi\right)^{2}}\left[ \xi \frac{1}{\epsilon} - \frac{2}{\epsilon_\text{IR}}\right],
@@ -1324,7 +1327,7 @@ We have completed our renormalization procedure to one loop, identifying the cou
 \delta _\psi = \frac{1}{2\pi}\frac{ e'^2 }{  4\pi }\left[ -\frac{1}{\epsilon _{\text{IR}}} - \frac{11}{4} + \frac{\pi}{\sqrt{3}} - 3\gamma_E + \log\left(\frac{m^2}{4\pi\mu^2}\right) \right]
 \end{equation}
 \begin{equation}
-+\xi \frac{1}{4\pi}\frac{ e'^2 }\frac{e'^2 }{ 4\pi } \left[ \frac{1}{\epsilon}  + \frac{\pi}{\sqrt{3}} + \frac{1}{2} - \log\left(\frac{m^2}{4\pi\mu^2}\right) \right]. \nonumber
++\xi \frac{1}{4\pi}\frac{e'^2 }{ 4\pi } \left[ \frac{1}{\epsilon}  + \frac{\pi}{\sqrt{3}} + \frac{1}{2} - \log\left(\frac{m^2}{4\pi\mu^2}\right) \right]. \nonumber
 \end{equation}
 At higher order, counterterms begin to have $$e^4$$ terms which are obtained by computing the divergences of diagrams with multiple loops. 
 
@@ -1365,13 +1368,13 @@ $$\beta\sim\mathcal{O}\left(e'^3\right)$$, so we neglect the $$\sim \beta e'$$ t
 
 With $$\beta$$, we can solve for the running coupling,
 \begin{equation}
-\frac{1}{e'^3}\frac{d e'}{d\mu} = \frac{\mu^{-1}}{ 12\pi^2 }\rightarrow e'\left(\mu\right)^2 = \frac{e'_0^2}{ 1-\frac{e'_0^2}{6\pi^2}\log\left(\frac{\mu}{\mu_0}\right)}
+\frac{1}{e'^{3}}\frac{d e'}{d\mu} = \frac{\mu^{-1}}{ 12\pi^2 }\rightarrow e'\left(\mu\right)^{2} = \frac{e'_0^{2}}{ 1-\frac{e'_0^{2}}{6\pi^2}\log\left(\frac{\mu}{\mu_0}\right)}
 \end{equation}
 The running coupling $$e'\left(\mu\right)$$ increases with $$\mu$$. $$\mu$$ was introduced as an arbitrary parameter, and in practice, it is most convenient to set $$\mu\sim m$$ or proportional to any other characteristic dimension such that logarithms of $$m/\mu$$ are of order one. The increase of $$e'$$ with $$\mu$$ reflects the fact that the electric charge that is measured changes with respect to the momentum transfer of the process, as $$p^2=m^2$$. 
 
 Notice also that at,
 \begin{equation}
- 1-\frac{e_0^2}{6\pi^2}\log\left(\frac{\mu}{\mu_\text{pole}}\right) = 0\rightarrow \mu_\text{pole} = \mu_0 e^{ \frac{6\pi^2}{e'_0^2} },
+ 1-\frac{e_0^{2} }{6\pi^2}\log\left(\frac{\mu}{\mu_\text{pole}}\right) = 0\rightarrow \mu_\text{pole} = \mu_0 e^{ \frac{6\pi^2}{e'_0^2} },
 \end{equation}
 $$e'$$ becomes infinite; this is the Landau pole. It may seem troublesome that the coupling parameter can become infinite in the high-energy regime, but actually we don't have that much to worry about. Setting $$e'_0 = 4\pi\frac{1}{137}$$ and setting $$\mu_0=0.5$$MeV as the electron mass, we obtain,
 
