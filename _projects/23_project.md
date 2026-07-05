@@ -177,8 +177,9 @@ G _{b\ \alpha\beta} \frac{G ^{b\ \alpha\beta}}{\partial\left(\partial _\nu A _{a
 Next, the variation with respect to $$A _{a\ \mu}$$,
 
 \begin{equation}
-\frac{\partial\mathcal{L} _{\text{gauge}}}{\partial A _{a\ \mu}} = -\frac{1}{2} G _{b\ \alpha\beta} \frac{G ^{b\ \alpha\beta}}{\partial A _{a\ \mu}},
+\frac{ \partial\mathcal{L} _{\text{gauge}}}{\partial A _{a\ \mu}} = -\frac{1}{2} G _{b\ \alpha\beta} \frac{G ^{b\ \alpha\beta}} {\partial A _{a\ \mu}},
 \end{equation}
+
 \begin{equation}
 \frac{G ^{b\ \alpha\beta}}{\partial A _{a\ \mu}} = g f^{ba} _c \left( \delta^{\alpha\mu} A^{c \beta} - \delta^{\beta\mu} A^{c \alpha} \right),
 \end{equation}
