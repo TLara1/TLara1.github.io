@@ -778,7 +778,11 @@ Now we evaluate the $$\ell$$ integrals with the usual $$d$$-dimensional integrat
 \begin{equation}
 F_2^\text{gaugeless} = 2ie^2 \frac{-i}{\left(4\pi\right)^2 }\int_0^1dx\ \int_0^{1-x}dy\ \frac{2m^2(x+y)\left(1-y-x\right)} {m^2\left(x+y\right)^2 -xy q^2} = \frac{2e^2}{\left(4\pi\right)^2 }\int_0^1dz\  \frac{1} {1+z(z-1)\hat{q}^2}.
 \end{equation}
-where $$\hat{q}^2=q^2/m^2$$. We have partially evaluated the integral over $$x$$ and $$y$$, performing a change of variables to write the integral in a  cleaner form.
+where $$\hat{q}^2=q^2/m^2$$. We have partially evaluated the integral over $$x$$ and $$y$$, performing a change of variables to write the integral in a  cleaner form. Note that in the limit of $$q^2\rightarrow0$$, 
+\begin{equation}
+F_2(0) = \frac{2e^2}{\left(4\pi\right)^2 }.
+\end{equation}
+This is the first-order loop correction to the electron's magnetic moment, and one of the most well-verified experimental predictions of QED. We will see shortly that this holds independently of the gauge parameter as well. Had I performed this calculation eighty years ago, it would be worth a Nobel Prize!
 
 Now for $$F_1$$,
 \begin{equation}
@@ -879,6 +883,19 @@ F_1 = \frac{ e'^2}{\left(4\pi\right)^{2}}\left[ \xi \frac{1}{\epsilon} - \gamma_
 \end{equation}
 \begin{equation}
 \left. +\left(1-\xi\right)\left[\text{term of } \mathcal{O}\left(\epsilon^0\right)\right] \right]. \nonumber
+\end{equation}
+
+We can also show that there are no gauge contributions to $$F_2$$. Return to the numerator, and define $$w_1=k+p'$$ and $$w_2=k+p$$,
+\begin{equation}
+\left[\text{Num}\right] = \bar{u}\left(\not w_1 -\not p'\right) \left(\not w_1 +m \right)\gamma^\mu \left(\not w_2 +m \right) \left(\not w_2 - \not p\right) u.
+\end{equation}
+Walking $$\not p'$$ and $$\not p$$ into $$\bar{u}$$ and $$u$$,
+\begin{equation}
+\left[\text{Num}\right] = \bar{u}\left(\not w_1 -m\right) \left(\not w_1 +m \right)\gamma^\mu \left(\not w_2 +m \right) \left(\not w_2 - m\right) u = \bar{u} \left(w_1 -m^2\right)^2 \gamma^\mu \left( w_2 - m^2 \right)^2 u.
+\end{equation}
+so, the gauge contribution is purely proportional to $$\gamma^\mu$$, and $$F_2^\text{gauge}=0$$, resulting in,
+\begin{equation}
+F_2 = \frac{2e^2}{\left(4\pi\right)^2 }\int_0^1dz\  \frac{1} {1+z(z-1)\hat{q}^2}.
 \end{equation}
 
 We have finished all of our integrals! Stand up, stretch, go outside. The hard part is behind us, now we just go through the renormalization procedure.
@@ -1196,7 +1213,7 @@ and using the Ward condition in the renormalized fields, we find,
 \end{equation}
 We have set the value of our final counterterm.
 
-Now, we should be good physicists and verify that this counterterm does actually remove the divergence from our vertex loop diagram. Because we did not calculate the finite vertex gauge-related terms, we will satisfy ourselves to make the comparison at divergent and finite order in the gaugeless terms and to divergent order in the gauge terms. 
+Now, we should be good physicists and verify that this counterterm does actually remove the divergence from our vertex loop diagram. We already identified all the divergent terms in the loop diagram, and these should be canceled by the $$\delta_1$$ counterterm.
 
 From our loop integral for the vertex term,
 \begin{equation}
@@ -1214,9 +1231,10 @@ F_1 = \frac{ e'^2}{\left(4\pi\right)^{2}}\left[ \xi \frac{1}{\epsilon} - \gamma_
 \end{equation}
 and,
 \begin{equation}
-F_2^\text{gaugeless} = 2ie^2 \left[ \frac{2e^2}{\left(4\pi\right)^2 }\int_0^1dx\  \frac{m^2} {m^2+x(x-1)q^2} \right] +\left(1-\xi\right)\left[\text{term of } \mathcal{O}\left(\epsilon^0\right)\right]. \nonumber
+F_2 = 2ie^2 \frac{2e^2}{\left(4\pi\right)^2 }\int_0^1dx\  \frac{m^2} {m^2+x(x-1)q^2}  . \nonumber
 \end{equation}
 
+We must verify the infrared behaviour of both integrals. We know $$F_2\left(0\right)$$ is convergent, the IR divergence comes in $$F_1$$, indeed if we set 
 
 
 
