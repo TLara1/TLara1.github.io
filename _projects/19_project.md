@@ -3,7 +3,7 @@ layout: page
 title: On the Navier-Stokes Equations - 6/26
 description:
 img: 
-importance: 1
+importance: 90
 category: Maths
 related_publications: false
 toc:
