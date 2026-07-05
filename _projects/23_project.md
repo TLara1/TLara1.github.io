@@ -1,6 +1,6 @@
 ---
 layout: page
-title: On the Yang-Mills Lagrangian
+title: On the Yang-Mills Lagrangian - 7/26
 description:
 img: 
 importance: 3
@@ -12,7 +12,7 @@ toc:
 
 
 
-## The Yang Mills Lagrangian
+## The Yang-Mills Lagrangian
 I was originally going to simply present the Lagrangian of Quantum Electrodynamics and move on with my life, but I'm feeling like a completionist this morning, so we will derive it. We'll start with the full non-Abelian theory and then go from there.
 Feel fully free to skip this if you cannot be bothered, but I find it interesting.
 
@@ -228,3 +228,6 @@ First, we note our Lagrangian is invariant under a $$U(1)$$ Gauge transform $$\a
 \end{equation}
 
 
+
+### Sources
+This was done using my own notes taken during my Quantum Field Theory II class (8.324), taught by Professor Ian Stewart during the 2025 Fall semester and my Quantum Feidl Theory III class (8.325) taught by Professor Daniel Harlow during the 2026 Spring semester.
