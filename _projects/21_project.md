@@ -1027,13 +1027,13 @@ Now for the fermion. To first loop order, the bare term reads,
 \end{equation}
 We already know the two-point fermion loop integral. And, again since we are first order, we may replace the bare $$e_0\rightarrow e$$ and $$m_0\rightarrow m$$,
 \begin{equation}
-\Sigma^\text{bare}\left(\not p = m\right) = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}m \right.
+\Sigma^\text{bare}\left(\not p = m\right) = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}\not p \right.
 \end{equation}
 \begin{equation}
-\left. + 2\int_0^1 dx\ \left[m\left(x -2\right)\log\left(\frac{\Delta}{4\pi\mu^2}\right)  - \left(1-x\right)\left[m\left(-1+3x\right) \log\left(\frac{\Delta'}{4\pi\mu^2}\right)-x^2m^3\left(2-x\right)\Delta' ^{-1}\right] \right] \right] \nonumber
+\left. + 2\int_0^1 dx\ \left[\left(x\not p -2m\right)\log\left(\frac{\Delta}{4\pi\mu^2}\right)  - \left(1-x\right)\left[\left(\left(1+3x\right)\not p -2m\right) \log\left(\frac{\Delta'}{4\pi\mu^2}\right)-x^2p^2\left(\left(1-x\right)\not p + m\right)\Delta' ^{-1}\right] \right] \right] \nonumber
 \end{equation}
 \begin{equation}
--\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[ \int_0^1 dx\ \left(1-x\right)\left[m\left(-1+3x\right)\log\left(\frac{\Delta'}{4\pi\mu^2}\right)-x^2m^3\left(2-x\right)\Delta' ^{-1}\right] \right] \nonumber.
+-\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[ \int_0^1 dx\ \left(1-x\right)\left[\left(\left(1+3x\right)\not p -2m\right)\log\left(\frac{\Delta'}{4\pi\mu^2}\right)-x^2p^2\left(\left(1-x\right)\not p + m\right)\Delta' ^{-1}\right] \right] \nonumber.
 \end{equation}
 Inserting,
 \begin{equation}
@@ -1049,10 +1049,6 @@ we calculate $$\Sigma$$ at $$\not p =m$$,
 \begin{equation}
 \left. - 2\int_0^1 dx\ \left[ \left(1-x\right)\left[m\left(-1+3x\right) \log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)-m\frac{x\left(2-x\right)}{\left(1-x\left(1-x\right)\right)}\right] \right] \right] \nonumber
 \end{equation}
-\begin{equation}
-\left. + 2\int_0^1 dx\ \left[m\left(x -2\right)\log\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right)  - \left(1-x\right)\left[m\left(-1+3x\right) \log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)-m\frac{x\left(2-x\right)}{\left(1-x\left(1-x\right)\right)}\right] \right] \right] \nonumber
-\end{equation}
-
 
 \begin{equation}
 -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[ \int_0^1 dx\ \left(1-x\right)\left[m\left(-1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)-m\frac{x\left(2-x\right)}{\left(1-x\left(1-x\right)\right)}\right] \right] \nonumber.
@@ -1098,19 +1094,22 @@ then the gaugeless integral terms,
 +2\int_0^1 dx\ \left[x \log\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right) -2 \frac{x(x-2)}{\left(1-x\right)}\right] \nonumber
 \end{equation}
 \begin{equation}
--2\int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right) \nonumber
+-2\int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right) \right. \nonumber
 \end{equation}
+
 \begin{equation}
 \left. \left. -2 \frac{ x\left(-1+3x\right) \left(1-x\right)}{\left(1-x\left(1-x\right)\right)} -\frac{x\left(5-3x\right)}{\left(1-x\left(1-x\right)\right)} -2\frac{x^2(2-x)(1-x)}{\left(1-x\left(1-x\right)\right)^2} \right] \right] \nonumber
 \end{equation}
+
 and the gauge polynomial terms,
 \begin{equation}
 -\xi \frac{e'^2 }{\left(4\pi\right)^2} \left[-\frac{1}{\epsilon} \right. \nonumber
 \end{equation}
 and the gauge integral terms,
 \begin{equation}
-+\int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)  \nonumber
++\int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)  \right. \nonumber
 \end{equation}
+
 \begin{equation}
 \left. \left. -2 \frac{ x\left(-1+3x\right) \left(1-x\right)}{\left(1-x\left(1-x\right)\right)} -\frac{x\left(5-3x\right)}{\left(1-x\left(1-x\right)\right)} -2\frac{x^2(2-x)(1-x)}{\left(1-x\left(1-x\right)\right)^2} \right] \right]. \nonumber
 \end{equation}
