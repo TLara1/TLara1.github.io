@@ -3,14 +3,14 @@ layout: page
 title: On the Relativistic Euler Equations - 1/25
 description:
 img:
-importance: 7
+importance: 100
 category: Physics
 toc:
   beginning: true
 ---
 ## Introduction
 
-The relativistic form of the Euler Equations are used to describe relativistic fluids. These equations appear quite naturally from the continuity of the stress-energy tensor, and in the appropriate limit, reduce to the non-relativistic version.
+The relativistic form of the Euler equations is used to describe relativistic fluids. These equations appear quite naturally from the continuity of the stress-energy tensor, and in the appropriate limit, reduce to the non-relativistic version.
 
 ## Derivation
 The continuity equation of the stress-energy tensor is given by:
@@ -63,7 +63,7 @@ In a flat spacetime, $$ h^{\mu\nu} = \eta^{\mu\nu}+u^\mu u^\nu$$, and the 4-velo
   \rho u^\nu u^\mu_{;\nu} = \rho\left(v^i_{,0} + v^j v^i_{,j}\right)
 \end{equation}
 
-As for the right hand side, approximating $$v^i v^j = 0$$:
+As for the right-hand side, approximating $$v^i v^j = 0$$:
 
 \begin{equation}
   P _{;\nu} u^\mu u^\nu = P _{,0} + v^i P _{,0}
