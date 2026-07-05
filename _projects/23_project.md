@@ -3,7 +3,7 @@ layout: page
 title: On the Yang-Mills Lagrangian - 7/26
 description:
 img: 
-importance: 3
+importance: 52
 category: Physics
 related_publications: false
 toc:
