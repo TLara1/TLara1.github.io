@@ -3,7 +3,7 @@ layout: page
 title: On the Langevin and Fokker-Planck Equations - 6/26
 description:
 img: 
-importance: 6
+importance: 60
 category: Physics
 related_publications: false
 toc:
