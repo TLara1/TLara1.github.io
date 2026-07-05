@@ -777,10 +777,7 @@ where $$\hat{q}^2=q^2/m^2$$. We have partially evaluated the integral over $$x$$
 
 Now for $$F_1$$,
 \begin{equation}
-F_1^\text{gaugeless}
-\end{equation}
-\begin{equation}
- = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \frac{ -\frac{\left(d-2\right)^2 }{2d}\ell^2  + \left(2\left(x+y\right) + (x+y)^2-2 \right)m^2 + (1-x)(1-y)q^2 }{\left( \ell^2-\Delta \right)^3 } \nonumber
+F_1^\text{gaugeless} = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \frac{ -\frac{\left(d-2\right)^2 }{2d}\ell^2  + \left(2\left(x+y\right) + (x+y)^2-2 \right)m^2 + (1-x)(1-y)q^2 }{\left( \ell^2-\Delta \right)^3 }
 \end{equation}
 \begin{equation}
  = -4ie^2 \frac{i}{4\left(4\pi\right)^{d/2}}\int_0^1dx\ \int_0^{1-x}dy\ \left[ \frac{d\left(d-2\right)^2 }{2d}\Gamma\left(2-d/2\right)\Delta^{d/2-2} + 2\frac{\left(2\left(x+y\right) + (x+y)^2-2\right)m^2 + (1-x)(1-y)q^2}{m^2\left(x+y\right)^2 -xy q^2} \right] \nonumber
@@ -870,7 +867,7 @@ F_{1\ \text{divergent}}^\text{gauge} = -\left(e\right)^2\left(1-\xi\right) \frac
 \end{equation}
 This is the divergent portion, and notice that the $$\epsilon^{-1}$$ terms not proportional to $$\xi$$ actually vanish!,
 \begin{equation}
-F_1 = \frac{ e'^2}{\left(4\pi\right)^{2}}\left[-xi \frac{1}{\epsilon} - \gamma_E - 2 - 2\int_0^1dx\ \int_0^{1-x}dy\ \log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi\mu}\right) \right.
+F_1 = \frac{ e'^2}{\left(4\pi\right)^{2}}\left[-\xi \frac{1}{\epsilon} - \gamma_E - 2 - 2\int_0^1dx\ \int_0^{1-x}dy\ \log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi\mu}\right) \right.
 \end{equation}
 \begin{equation}
 +\left. 2\mu^\epsilon\int_0^1dx\ \int_0^{1-x}dy\ \frac{\left(\left(x+y\right) +2(x+y)^2-2(1+xy)\right)m^2 + (1-x)(1-y)q^2}{ m^2\left(x+y\right)^2 -xy q^2 } \right. \nonumber
@@ -927,7 +924,7 @@ S^\text{bare}=S^\text{renormalized} +\frac{i}{\not p - m}\left(i \delta_\psi\lef
 \end{equation}
 
 \begin{equation}
-V_\mu^\text{bar}=i S^\text{bare} D_{\mu\nu}^\text{bare} \left(\Gamma^{\nu\ \text{renormalized}} - ie\delta_1\gamma^\nu\right) i S^\text{bare} +\left[\text{Higher-Order Coutnerterms}\right].
+V_\mu^\text{bare}=i S^\text{bare} D_{\mu\nu}^\text{bare} \left(\Gamma^{\nu\ \text{renormalized}} - ie\delta_1\gamma^\nu\right) i S^\text{bare} +\left[\text{Higher-Order Coutnerterms}\right].
 \end{equation}
 
 We have all of the vertices and propagators; now we just need to decide how we should determine the values of our counterterms. 
@@ -1188,7 +1185,11 @@ and using the Ward condition in the renormalized fields, we find,
 \end{equation}
 We have set the value of our final counterterm.
 
-Now, we should be good physicists and verify that this counterterm does actually remove the divergence from our vertex loop diagram.
+Now, we should be good physicists and verify that this counterterm does actually remove the divergence from our vertex loop diagram. Because we did not calculate the finite vertex gauge-related terms, we will satisfy ourselves to make the comparison at divergent and finite order in the gaugeless terms and to divergent order in the gauge terms. 
+
+From our loop integral for the vertex term,
+
+
 
 
 
