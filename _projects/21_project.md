@@ -1328,6 +1328,21 @@ We have completed our renormalization procedure to one loop, identifying the cou
 \end{equation}
 At higher order, counterterms begin to have $$e^4$$ terms which are obtained by computing the divergences of diagrams with multiple loops. 
 
+The renormalized parameters are related to the bare parameters with,
+\begin{equation}
+A^\mu = \left(1 - \frac{1}{2}\delta_A\right)A_0^\mu,
+\end{equation}
+\begin{equation}
+m = \left(1 - \delta_m\right)m_0,
+\end{equation}
+\begin{equation}
+e = \left(1 - \delta_e\right)e_0,
+\end{equation}
+\begin{equation}
+\psi = \left(1 - \frac{1}{2}\delta_\psi\right)\psi_0.
+\end{equation}
+
+There is one more bit of physics to be momentarily discussed, but let's pause to take stock of what we have done. Renormalization, at the end of the day, is nothing more than systematically sweeping infinities under the rug. Sure, it took $$200$$ equations and twice as many equations, but we have verified that infinity is no obstacle for the adventurous physicist.
 
 
 ## The Running Coupling
