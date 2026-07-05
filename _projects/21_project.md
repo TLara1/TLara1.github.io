@@ -938,15 +938,15 @@ we have defined,
 Each term in the counter Lagrangian modifies the corresponding propagator. Writing general propagators and vertices in terms of bare and counterterms,
 
 \begin{equation}
-D _{\mu\nu}^\text{bare}=D _{\mu\nu}(q)^\text{renormalized} - \frac{i\delta_A}{q^2}t _{T\ \mu\nu} +\left[\text{Higher-Order Coutnerterms}\right],
+D _{\mu\nu}^\text{bare}=D _{\mu\nu}(q)^\text{renormalized} - \frac{i\delta_A}{q^2}t _{T\ \mu\nu} +\left[\text{Higher-Order Counterterms}\right],
 \end{equation}
 
 \begin{equation}
-S^\text{bare}=S^\text{renormalized} +\frac{i}{\not p - m}\left(i \delta_\psi\left(\not p -m\right) -i m\delta _m\right)\frac{i}{\not p - m} +\left[\text{Higher-Order Coutnerterms}\right],
+S^\text{bare}=S^\text{renormalized} +\frac{i}{\not p - m}\left(i \delta_\psi\left(\not p -m\right) -i m\delta _m\right)\frac{i}{\not p - m} +\left[\text{Higher-Order Counterterms}\right],
 \end{equation}
 
 \begin{equation}
-V_\mu^\text{bare}=i S^\text{bare} D_{\mu\nu}^\text{bare} \left(\Gamma^{\nu\ \text{renormalized}} - ie\delta_1\gamma^\nu\right) i S^\text{bare} +\left[\text{Higher-Order Coutnerterms}\right].
+V_\mu^\text{bare}=i S^\text{bare} D_{\mu\nu}^\text{bare} \left(\Gamma^{\nu\ \text{renormalized}} - ie\delta_1\gamma^\nu\right) i S^\text{bare} +\left[\text{Higher-Order Counterterms}\right].
 \end{equation}
 
 We have all of the vertices and propagators; now we just need to decide how we should determine the values of our counterterms. 
