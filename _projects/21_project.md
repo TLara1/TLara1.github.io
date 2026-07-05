@@ -1283,6 +1283,10 @@ $\beta\sim\mathcal{O}\left(e'^3\right)$$, so we neglect the $$\sim \beta e'$$ te
 \beta = \left(\mu\right)\frac{d e'}{d\mu} = e'\mu\frac{\partial\delta_e}{\partial\mu} = \frac{ e'^3}{ 12\pi^2 }.
 \end{equation}
 
+With $$\beta$$, we can solve for the running coupling,
+\begin{equation}
+\frac{1}{e'^3}\left(\mu\right)\frac{d e'}{d\mu} = e'\mu\frac{\partial\delta_e}{\partial\mu} = \frac{ e'^3}{ 12\pi^2 }.
+\end{equation}
 
 
 ### Sources
