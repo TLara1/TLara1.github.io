@@ -3,7 +3,7 @@ layout: page
 title: On the Renormalization of Quantum Electrodynamics - 7/26
 description:
 img: 
-importance: 1
+importance: 50
 category: Physics
 related_publications: false
 toc:
