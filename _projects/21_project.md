@@ -874,15 +874,15 @@ F_{1\ \text{divergent}}^\text{gauge} = -\left(e\right)^2\left(1-\xi\right) \frac
 \begin{equation}
  = -\left(e\right)^2\left(1-\xi\right) \frac{1}{\left(4\pi\right)^{2}}\frac{1}{\epsilon}.
 \end{equation}
-This is the divergent portion, and notice that the $$\epsilon^{-1}$$ terms not proportional to $$\xi$$ actually vanish!,
+This is the divergent portion, and notice that the $$\epsilon^{-1}$$ divergent terms not proportional to $$\xi$$ actually vanish!,
 \begin{equation}
 F_1 = \frac{ e'^2}{\left(4\pi\right)^{2}}\left[ \xi \frac{1}{\epsilon} - \gamma_E - 2 - 2\int_0^1dx\ \int_0^{1-x}dy\ \log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi\mu}\right) \right.
 \end{equation}
 \begin{equation}
-+2\int_0^1dx\ \int_0^{1-x}dy\ \frac{ \left( \left(x+y\right) +2(x+y)^2-2(1+xy) \right)m^2 + (1-x)(1-y)q^2 }{ m^2\left(x+y\right)^2 -xy q^2 } \nonumber
+\left. +2\int_0^1dx\ \int_0^{1-x}dy\ \frac{ \left( \left(x+y\right) +2(x+y)^2-2(1+xy) \right)m^2 + (1-x)(1-y)q^2 }{ m^2\left(x+y\right)^2 -xy q^2 } \right]\nonumber
 \end{equation}
 \begin{equation}
-\left. +\left(1-\xi\right)\left[\text{term of } \mathcal{O}\left(\epsilon^0\right)\right] \right]. \nonumber
++\left(1-\xi\right)\left[\text{term of } \mathcal{O}\left(\epsilon^0\right)\right] . \nonumber
 \end{equation}
 
 We can also show that there are no gauge contributions to $$F_2$$. Return to the numerator, and define $$w_1=k+p'$$ and $$w_2=k+p$$,
@@ -1248,8 +1248,16 @@ u=x+y,\quad v=\frac{x}{x+y}
 \end{equation}
 with $$\hat{q}=q/m$$. This integral is finite if perhaps imaginary. 
 
-We are not so fortunate with the second integral, which clearly diverges as $$x,y\rightarrow0$$. We extract the integral IR divergence 
+We are not so fortunate with the second integral, which clearly diverges as $$x,y\rightarrow0$$. This term arises entirely from the integral,
+\begin{equation}
+I = \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \frac{\left(2\left(x+y\right) + (x+y)^2-2 \right)m^2 + (1-x)(1-y)q^2 }{\left( \ell^2-\Delta \right)^3 },
+\end{equation}
+our procedure will be identical to the previous treatment, integrating first over $$x$$ and $$y$$ and only then taking the limit of small $$\epsilon$$. Note we are only looking for the divergent term and will neglect finite terms since we are already ignoring the gauge-dependent finite terms and because we set $$d=4$$ in the gamma matrix algebra to arrive at this expression. 
 
+Integrating over $$\ell$$,
+\begin{equation}
+e^2 I =  \frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{\left(4\pi\mu^2\right)^{-\epsilon}}\int_0^1dx\ \int_0^{1-x}dy\ \Gamma\left(1+\epsilon\right)\left(\left(2\left(x+y\right) + (x+y)^2-2 \right)m^2 + (1-x)(1-y)q^2 \right)\left(m^2\left(x+y\right)^2-xyq^2\right)^{-1-\epsilon}.
+\end{equation}
 
 
 
@@ -1258,9 +1266,20 @@ We are not so fortunate with the second integral, which clearly diverges as $$x,
 
 
 ## The Running Coupling
-One bit I promised to return to was the $$\mu$$ energy scale. We used $$\mu$$ purely to obtain the correct dimensions and have our logarithms make sense. In principle, $$\mu$$ can be anything we chose, but any observable should be independent of our choice of $$\mu$$. 
+One bit I promised to return to was the $$\mu$$ energy scale. We used $$\mu$$ purely to obtain the correct dimensions and have our logarithms make sense. In principle, $$\mu$$ can be anything we chose, so the bare $$e_0$$ should be fully independent of it,
+\begin{equation}
+\mu\frac{d}{d\mu}\left(e_0\right)=\mu\frac{d}{d\mu}\left(Z_e\left(\mu\right) \mu^{2\epsilon} e'\left(\mu\right)\right)=0,
+\end{equation}
+we have written $$e'=e'left(\mu\right)$$ since in general, the renormalized coupling may have dependence on $$\mu$$. To first loop order, using $$Z_e=1+\delta_e$$,
+\begin{equation}
+\mu^{1+2\epsilon}e'\frac{d\delta_e}{d\mu} + \mu^{1+2\epsilon}\left(1+\delta_e)\left(\mu\right)\frac{d e'}{d\mu} +2\epsilon\left(1+\delta_e)e'\mu^{2\epsilon} = 0.
+\end{equation}
+Define the $$\beta$$ function,
+\begin{equation}
+$$\beta\left(e'\right) = \left(\mu\right)\frac{d e'}{d\mu} = - 2\epsilon\left(1+\delta_e)e'\mu^{2\epsilon}
 
-
+\mu^{1+2\epsilon}e'\left(\mu\right)\frac{d\delta_e}{d\mu} + \mu^{1+2\epsilon}\left(1+\delta_e)\left(\mu\right)\frac{d e'}{d\mu} +2\epsilon\left(1+\delta_e)e'\mu^{2\epsilon} = 0.
+\end{equation}
 
 
 
