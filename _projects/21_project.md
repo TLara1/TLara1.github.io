@@ -1241,10 +1241,14 @@ We must verify the infrared behaviour of both integrals. We know $$F_2$$ is conv
 u=x+y,\quad v=\frac{x}{x+y},
 \end{equation}
 \begin{equation}
-\int_0^1dx\ \int_0^{1-x}dy\ \log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi\mu}\right) = \int_0^1du dv\ u\log\left(\frac{u^2\left( m^2- \left(1-v\right)q^2 \right)}{4\pi\mu}\right) = -\frac{1}{2} + \frac{1}{2}\int_0^1 dv\ \log\left(\frac{\left( m^2- v\left(1-v\right)q^2 \right)}{4\pi\mu}\right),
+\int_0^1dx\ \int_0^{1-x}dy\ \log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi\mu}\right) = \int_0^1du dv\ u\log\left(\frac{u^2\left( m^2- \left(1-v\right)q^2 \right)}{4\pi\mu}\right) 
 \end{equation}
 \begin{equation}
-= -\frac{1}{2} + \int_0^{1/2}dt\ \log\left(\frac{m^2-\frac{1}{4}q^2+q^2t^2}{4\pi\mu^2}\right) =  \frac{1}{2}\log\left(\frac{m^2}{4\pi \mu^2}\right)  -\frac{3}{2} + \frac{2}{\hat{q}}\sqrt{1-\frac{1}{4}\hat{q}^2}}\arctan\left(\frac{\hat{q}}{ 2\sqrt{1-\frac{1}{4}\hat{q}^2}}\right).
+= -\frac{1}{2} + \frac{1}{2}\int_0^1 dv\ \log\left(\frac{\left( m^2- v\left(1-v\right)q^2 \right)}{4\pi\mu}\right), \nonumber
+\end{equation}
+
+\begin{equation}
+= -\frac{1}{2} + \int_0^{1/2}dt\ \log\left( \frac{m^2-\frac{1}{4}q^2+q^2t^2}{4\pi\mu^2} \right) =  \frac{1}{2}\log\left(\frac{m^2}{4\pi \mu^2}\right)  -\frac{3}{2} + \frac{2}{\hat{q}} \sqrt{1-\frac{1}{4}\hat{q}^2}\arctan\left(\frac{\hat{q}}{ 2\sqrt{1-\frac{1}{4}\hat{q}^2}}\right).
 \end{equation}
 with $$\hat{q}=q/m$$. This integral is finite if perhaps imaginary. 
 
@@ -1264,7 +1268,7 @@ with a change of variables,
 u=x+y,\quad v=\frac{x}{x+y},
 \end{equation}
 \begin{equation}
-e^2 I =  \frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{\left(4\pi\mu^2\right)^{-\epsilon}}\int_0^1du\ \int_0^{1}dv\ \Gamma\left(1+\epsilon\right) u\left(2u + u^2-2 \right)m^2 + (1-uv)(1-u(1-v))q^2 \right)\left(m^2u^2-u^2v(1-v)q^2\right)^{-1-\epsilon}=\frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{\left(4\pi\mu^2\right)^{-\epsilon}}\int_u^1du\ \int_0^{1}dv\ \Gamma\left(1+\epsilon\right) u^{-1-2\epsilon}D\left(v\right)^{-1-\epsilon}\left[N_0+uN_1+u^2N_2\right],
+e^2 I =  \frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{ \left(4\pi\mu^2 \right)^{-\epsilon} }\int_0^1du\ \int_0^{1}dv\ \Gamma\left(1+\epsilon\right) u\left( \left(2u + u^2-2 \right)m^2 + (1-uv)(1-u(1-v))q^2 \right)\left(m^2u^2-u^2v(1-v)q^2\right)^{-1-\epsilon}=\frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{ \left(4\pi\mu^2 \right)^{-\epsilon} }\int_0^1 du\ \int_0^1 dv\ \Gamma\left(1+\epsilon\right) u^{-1-2\epsilon}D\left(v\right)^{-1-\epsilon}\left[ N_0+uN_1+u^2N_2 \right],
 \end{equation}
 \begin{equation}
 D\left(v\right) = m^2-v(1-v)q^2,\ N_0 = -2m^2+q^2,\ N_1 = -N_0,\ N_2 = m^2+v(1-v).
@@ -1293,7 +1297,7 @@ Define the $$\beta$$ function to order $$\delta$$,
 \begin{equation}
 \beta = \left(\mu\right)\frac{d e'}{d\mu} = - 2\epsilon e' - e'\mu\left(1+\delta_e\right)^{-1}\left(\frac{\partial\delta_e}{\partial\mu} + \frac{\partial\delta_e}{\partial e'}\frac{\partial e'}{\partial \mu} \right) = - 2\epsilon e'  + e'\mu\left(\frac{\partial\delta_e}{\partial\mu} + \mu^{-1}\beta\frac{\partial\delta_e}{\partial e'}\right).
 \end{equation}
-$\beta\sim\mathcal{O}\left(e'^3\right)$$, so we neglect the $$\sim \beta e'$$ term. This term is proportional to $$\epsilon^{-1}$$, but that divergence would be removed if we calculated to a higher loop order. To first-loop order therefore and setting $$d=4$$,
+$$\beta\sim\mathcal{O}\left(e'^3\right)$$, so we neglect the $$\sim \beta e'$$ term. This term is proportional to $$\epsilon^{-1}$$, but that divergence would be removed if we calculated to a higher loop order. To first-loop order therefore and setting $$d=4$$,
 \begin{equation}
 \beta = \left(\mu\right)\frac{d e'}{d\mu} = e'\mu\frac{\partial\delta_e}{\partial\mu} = \frac{ e'^3}{ 12\pi^2 }.
 \end{equation}
