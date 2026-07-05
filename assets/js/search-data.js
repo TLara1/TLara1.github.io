@@ -477,8 +477,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/22_project/";
-            },},{id: "projects-qed-renormalization-loop-integrals",
-          title: 'QED Renormalization, loop integrals',
+            },},{id: "projects-on-the-yang-mills-lagrangian",
+          title: 'On the Yang-Mills Lagrangian',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/23_project/";
