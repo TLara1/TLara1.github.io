@@ -1272,26 +1272,16 @@ One bit I promised to return to was the $$\mu$$ energy scale. We used $$\mu$$ pu
 \end{equation}
 we have written $$e'=e'\left( \mu \right)$$ since in general, the renormalized coupling may have dependence on $$\mu$$. To first loop order, using $$Z_e=1+\delta_e$$,
 \begin{equation}
-\mu^{1+2\epsilon}e'\frac{\partial\delta_e}{\partial\mu} + \mu^{1+2\epsilon}e'\frac{\partial\delta_e}{\partial e'}\frac{\partial e'}{\partial \mu} + \mu^{1+2\epsilon}\left(1+\delta_e)\frac{\partial e'}{\partial \mu} +2\epsilon\left(1+\delta_e)e'\mu^{2\epsilon} = 0.
+\mu^{1+2\epsilon}e'\frac{\partial\delta_e}{\partial\mu} + \mu^{1+2\epsilon}e'\frac{\partial\delta_e}{\partial e'}\frac{\partial e'}{\partial \mu} + \mu^{1+2\epsilon}\left(1+\delta_e\right)\frac{\partial e'}{\partial \mu} +2\epsilon\left(1+\delta_e\right)e'\mu^{2\epsilon} = 0.
 \end{equation}
 Define the $$\beta$$ function to order $$\delta$$,
 \begin{equation}
-\beta = \left(\mu\right)\frac{d e'}{d\mu} = - 2\epsilon e' - e'\left(1+\delta_e\right)^{-1}\left(\frac{\partial\delta_e}{\partial\mu} + \frac{\partial\delta_e}{\partial e'}\frac{\partial e'}{\partial \mu} \right) = - 2\epsilon e'  + e'\left(\frac{\partial\delta_e}{\partial\mu} + \mu^{-1}\beta\frac{\partial\delta_e}{\partial e'}\right).
+\beta = \left(\mu\right)\frac{d e'}{d\mu} = - 2\epsilon e' - e'\mu\left(1+\delta_e\right)^{-1}\left(\frac{\partial\delta_e}{\partial\mu} + \frac{\partial\delta_e}{\partial e'}\frac{\partial e'}{\partial \mu} \right) = - 2\epsilon e'  + e'\mu\left(\frac{\partial\delta_e}{\partial\mu} + \mu^{-1}\beta\frac{\partial\delta_e}{\partial e'}\right).
 \end{equation}
-Solving,
+$\beta\sim\mathcal{O}\left(e'^3\right)$$, so we neglect the $$\sim \beta e'$$ term. This term is proportional to $$\epsilon^{-1}$$, but that divergence would be removed if we calculated to a higher loop order. To first-loop order therefore and setting $$d=4$$,
 \begin{equation}
-\frac{d\delta_e}{d\mu} = \frac{ e'^2}{ 24\pi^2 } \frac{2}{\mu},
+\beta = \left(\mu\right)\frac{d e'}{d\mu} = e'\mu\frac{\partial\delta_e}{\partial\mu} = \frac{ e'^3}{ 12\pi^2 }.
 \end{equation}
-
-\begin{equation}
-\frac{\partial\delta_e}{\partial\mu} + \mu^{-1}\beta\frac{\partial\delta_e}{\partial e'} = \frac{ e'^2}{ 24\pi^2 } \frac{2}{\mu} + \mu^{-1}\beta\frac{ e'}{ 12\pi^2 } \left( \epsilon^{-1} -\gamma_E+\log\left(\frac{4\pi \mu^2 }{m^2}\right) \right),
-\end{equation}
-We see that $$\beta\sim\mathcal{O}\left(e'^3\right)$$, so we neglect the $$\sim \beta e'$$ term. This term is proportional to $$\epsilon^{-1}$$, but that divergence would be removed if we calculated to a higher loop order. To first-loop order therefore,
-
-\begin{equation}
-\frac{\partial\delta_e}{\partial\mu} + \mu^{-1}\beta\frac{\partial\delta_e}{\partial e'} = \frac{ e'^2}{ 24\pi^2 } \frac{2}{\mu} + \mu^{-1}\beta\frac{ e'}{ 12\pi^2 } \left( \epsilon^{-1} -\gamma_E+\log\left(\frac{4\pi \mu^2 }{m^2}\right) \right),
-\end{equation}
-
 
 
 
