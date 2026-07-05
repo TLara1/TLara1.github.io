@@ -1,9 +1,9 @@
 ---
 layout: page
-title: On the Schwarzchild and Kerr Metrics - 12/25
+title: On the Schwarzschild and Kerr Metrics - 12/25
 description:
 img: 
-importance: 2
+importance: 70
 category: Physics
 related_publications: false
 toc:
@@ -11,7 +11,7 @@ toc:
 ---
 
 ## Introduction
-What better way of spending a winter break than doing GR? I remember in our GR class, we were shown the Schwarzchild metric briefly and then the Kerr metric was brought up as some flavour of black magic. Luckily, we can derive both with loony tunes quantities of algebra. What follows is not particularly nuanced or sophisticated, just a lot of variable changes and head bashing. 
+What better way of spending a winter break than doing GR? I remember in our GR class, we were shown the Schwarzschild metric briefly and then the Kerr metric was brought up as some flavour of black magic. Luckily, we can derive both with loony tunes quantities of algebra. What follows is not particularly nuanced or sophisticated, just a lot of variable changes and head bashing. 
 
 Here, we derive the Schwarzschild and Kerr Metrics for static and rotating spherical bodies. We use natural units for simplicity, setting $$c=G=1$$.
 
@@ -238,7 +238,7 @@ g_{\theta\theta}=R^2e^{2\mu_3}=R^2e^{\mu_2+\mu_3}e^{\mu_3-\mu_2}=CR^2\rho^2
 \begin{equation}
 g_{\phi\phi}=R^2e^{2\psi}=R^2e^\beta\chi^{-1}=-R^2\delta\rho^2
 \end{equation}
-Now with a simple change of coordinates we can relate this metric to the usual Schwarzschild metric, observing that $$\Delta=\rho^2-2\rho\sqrt{M^2-a^2}$$
+Now, with a simple change of coordinates, we can relate this metric to the usual Schwarzschild metric, observing that $$\Delta=\rho^2-2\rho\sqrt{M^2-a^2}$$
 \begin{equation}
 ds^2=\left(1-\frac{2\sqrt{M^2-a^2}}{\rho}\right)dt^2+C\left(1-\frac{2\sqrt{M^2-a^2}}{\rho}\right)^{-1}dr^2+CR^2\rho^2d\theta^2-R^2\rho^2\sin^2(\theta)d\phi^2
 \end{equation}
@@ -253,7 +253,7 @@ Our derivation of the Schwarzschild metric was not the simplest or most straight
 \begin{equation}
 ds^2=g_{tt}dt^2+Rg_{t\phi}dtd\phi+g_{rr}dr^2+R^2g_{\theta\theta}d\theta^2+R^2g_{\phi\phi}d\phi^2
 \end{equation}
-$$g_{t\phi}$$ will introduce a new unkown into our equations, and we write
+$$g_{t\phi}$$ will introduce a new unknown into our equations, and we write
 \begin{equation}
 ds^2=\left(-e^{2\nu}+\omega^2e^{2\psi}\right)dt^2-2R\omega e^{2\psi}dtd\phi^2+e^{2\mu_2}dr^2+R^2e^{2\mu_3}d\theta^2+R^2e^{2\psi}d\phi^2
 \end{equation}
@@ -636,6 +636,6 @@ We find that, in the limit $$a\rightarrow0$$, the metric reduces to the Schwarzs
 ### Sources
 I closely followed <a href="https://itp.uni-frankfurt.de/~hees/gen-phys/derivation-of-the-kerr-metric-Wagner.pdf"> this derivation</a> by David Wagner. 
 
-I also consulted Chandreskar's Derivation from 1978:
+I also consulted Chandrasekhar's derivation from 1978:
 
 _Subrahmanyan Chandrasekhar; The Kerr metric and stationary axisymmetric gravitational fields. Proc. A 1 January 1978; 358 (1695): 405–420._
