@@ -1264,10 +1264,20 @@ with a change of variables,
 u=x+y,\quad v=\frac{x}{x+y},
 \end{equation}
 \begin{equation}
-e^2 I =  \frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{\left(4\pi\mu^2\right)^{-\epsilon}}\int_u^1du\ \int_0^{1}dv\ \Gamma\left(1+\epsilon\right) u\left(2u + u^2-2 \right)m^2 + (1-uv)(1-u(1-v))q^2 \right)\left(m^2u^2-uvu(1-v)q^2\right)^{-1-\epsilon},
+e^2 I =  \frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{\left(4\pi\mu^2\right)^{-\epsilon}}\int_0^1du\ \int_0^{1}dv\ \Gamma\left(1+\epsilon\right) u\left(2u + u^2-2 \right)m^2 + (1-uv)(1-u(1-v))q^2 \right)\left(m^2u^2-u^2v(1-v)q^2\right)^{-1-\epsilon}=\frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{\left(4\pi\mu^2\right)^{-\epsilon}}\int_u^1du\ \int_0^{1}dv\ \Gamma\left(1+\epsilon\right) u^{-1-2\epsilon}D\left(v\right)^{-1-\epsilon}\left[N_0+uN_1+u^2N_2\right],
 \end{equation}
+\begin{equation}
+D\left(v\right) = m^2-v(1-v)q^2,\ N_0 = -2m^2+q^2,\ N_1 = -N_0,\ N_2 = m^2+v(1-v).
+\end{equation}
+Integrating over $$u$$,
+\begin{equation}
+e^2 I =  \frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{\left(4\pi\mu^2\right)^{-\epsilon}}\int_0^1dv\ D^{-1-2\epsilon}\left(\right)
 
-u-uv
+
+
+
+int_0^{1}dv\ \Gamma\left(1+\epsilon\right) u\left(2u + u^2-2 \right)m^2 + (1-uv)(1-u(1-v))q^2 \right)\left(m^2u^2-u^2v(1-v)q^2\right)^{-1-\epsilon}=\frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{\left(4\pi\mu^2\right)^{-\epsilon}}\int_u^1du\ \int_0^{1}dv\ \Gamma\left(1+\epsilon\right) u^{-1-2\epsilon}D\left(v\right)^{-1-\epsilon}\left[N_0+uN_1+u^2N_2\right],
+\end{equation}
 
 
 ## The Running Coupling
@@ -1290,7 +1300,7 @@ $\beta\sim\mathcal{O}\left(e'^3\right)$$, so we neglect the $$\sim \beta e'$$ te
 
 With $$\beta$$, we can solve for the running coupling,
 \begin{equation}
-\frac{1}{e'^3}\frac{d e'}{d\mu} = \frac{\mu^{-1}}{ 12\pi^2 }\rightarrow e'^2\left(\mu\right) = \frac{e_0^2}{ 1-\frac{e_0^2}{6\pi}\log\left(\frac{\mu}{\mu_0}\right)}
+\frac{1}{e'^3}\frac{d e'}{d\mu} = \frac{\mu^{-1}}{ 12\pi^2 }\rightarrow e'\left(\mu\right)^2 = \frac{e_0^2}{ 1-\frac{e_0^2}{6\pi}\log\left(\frac{\mu}{\mu_0}\right)}
 \end{equation}
 The running coupling $$e'\left(\mu\right)$$ increases with $$\mu$$.
 
