@@ -14,11 +14,16 @@ actual real advection diffusion with a solid boundry in ibamr.
 problem is only the solid is only enforced with the fluid, not the advection field. There is no way to keep the advection field 0 inside in the solid area.
 
 Field theory for fluid beyond just stokes flow. THe idea here being is that I think we are doing dissipation wrong. There has to be a more fundamental represntation that enforce energy "dissipation." I mean dissipation is just turning energy into something else. Can we interpt dissipation in this way such that somethign is conserved? random thought, but dissipation is just moving into thermal noise right? See Dalls Albritton Research
+THIS IS A REAL THING - Navier Stokes Renormalization Group, very neat, need to look into more
 
 RMT spectral method and RMT amr. this is a fully eulerian method, I think a chebyshev solver could be really fast, just have to work out the stiff insides of the solids?
 but spectral rmt would be cool
 
 flag flapping 3d more realistic
+
+swimming jelly in stokes flow, more sophisticated calculations
+
+stokes flows colloids as field theory, there is something here I think...
 
 field theory for classical gravity? as in perturbative expansion in low mass ratio?
 
@@ -46,17 +51,13 @@ Publish CNT paper, jellyfish paper, Ken FSI paper.
 take notes fluids for PhD
 Ken RMT code organize - add to RMT github
 AMR for RMT code?
-remanage passwords
 new headshot
-clean up google files
 get a good note taking system for PhD
-Big QFT notes
 bird project github?
 RMT github
 Website polish, add videos links to papers, etc. remove old links/leftovers, figure out related publications, many videos would be big!
 fisherman story polish and add to website?
 get better dressed
-buy new computer
 buy headphones
 buy new belt
 
@@ -91,7 +92,7 @@ Suhas Jain - Georgia Tech
 Leif Ritroph - NYU Courant
 Michael Shelly - NYU Courant
 Charles Peskin - NYU Courant, FSI problems, IB method
-Mike O'Neal - NYU Courant
+Mike O'Neal - NYU Courant, numerical boundary integral methods
 Leslie Greengard - NYU Courant, numerical PDEs, FMM
 Marsha Berger - NYU Courant, numerical PDEs, AMR
 Eric Lauga - Cambridge, Low Re swimming, biomathematics
@@ -107,7 +108,7 @@ Saverio Spagnolie - UW Madison
 Chris Rycroft - UW Madison, numerical FSI, RMT
 John Bush - MIT, hydrodynamic quantum analogs, biomathematics
 Jorn Dunkel - MIT, inverse problems biomathematics
-Keaton Burns - MIT, spectral methods, numberical PDEs, Dedalus
+Keaton Burns - MIT, spectral methods, numerical PDEs, Dedalus
 Ken Kamrin - UC Berkeley, solid mechanics, granular media, FSI
 
 
