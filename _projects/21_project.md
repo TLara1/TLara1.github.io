@@ -1238,7 +1238,7 @@ F_2 = 2ie^2 \frac{2e^2}{\left(4\pi\right)^2 }\int_0^1dx\  \frac{m^2} {m^2+x(x-1)
 
 We must verify the infrared behaviour of both integrals. We know $$F_2$$ is convergent in the infrared, which makes sense as the counterterm, $$ie\delta_1\gamma^\mu$$ can only impact $$F_1$$. For the first $$F_1$$ integral, this is most easily solved with a change of variables,
 \begin{equation}
-u=x+y,\quad v=\frac{x}{x+y}
+u=x+y,\quad v=\frac{x}{x+y},
 \end{equation}
 \begin{equation}
 \int_0^1dx\ \int_0^{1-x}dy\ \log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi\mu}\right) = \int_0^1du dv\ u\log\left(\frac{u^2\left( m^2- \left(1-v\right)q^2 \right)}{4\pi\mu}\right) = -\frac{1}{2} + \frac{1}{2}\int_0^1 dv\ \log\left(\frac{\left( m^2- v\left(1-v\right)q^2 \right)}{4\pi\mu}\right),
@@ -1256,13 +1256,18 @@ our procedure will be identical to the previous treatment, integrating first ove
 
 Integrating over $$\ell$$,
 \begin{equation}
-e^2 I =  \frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{\left(4\pi\mu^2\right)^{-\epsilon}}\int_0^1dx\ \int_0^{1-x}dy\ \Gamma\left(1+\epsilon\right)\left(\left(2\left(x+y\right) + (x+y)^2-2 \right)m^2 + (1-x)(1-y)q^2 \right)\left(m^2\left(x+y\right)^2-xyq^2\right)^{-1-\epsilon}.
+e^2 I =  \frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{\left(4\pi\mu^2\right)^{-\epsilon}}\int_0^1dx\ \int_0^{1-x}dy\ \Gamma\left(1+\epsilon\right)\left(\left(2\left(x+y\right) + (x+y)^2-2 \right)m^2 + (1-x)(1-y)q^2 \right)\left(m^2\left(x+y\right)^2-xyq^2\right)^{-1-\epsilon},
+\end{equation}
+with a change of variables,
+
+\begin{equation}
+u=x+y,\quad v=\frac{x}{x+y},
+\end{equation}
+\begin{equation}
+e^2 I =  \frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{\left(4\pi\mu^2\right)^{-\epsilon}}\int_u^1du\ \int_0^{1}dv\ \Gamma\left(1+\epsilon\right) u\left(2u + u^2-2 \right)m^2 + (1-uv)(1-u(1-v))q^2 \right)\left(m^2u^2-uvu(1-v)q^2\right)^{-1-\epsilon},
 \end{equation}
 
-
-
-
-
+u-uv
 
 
 ## The Running Coupling
@@ -1285,8 +1290,9 @@ $\beta\sim\mathcal{O}\left(e'^3\right)$$, so we neglect the $$\sim \beta e'$$ te
 
 With $$\beta$$, we can solve for the running coupling,
 \begin{equation}
-\frac{1}{e'^3}\left(\mu\right)\frac{d e'}{d\mu} = e'\mu\frac{\partial\delta_e}{\partial\mu} = \frac{ e'^3}{ 12\pi^2 }.
+\frac{1}{e'^3}\frac{d e'}{d\mu} = \frac{\mu^{-1}}{ 12\pi^2 }\rightarrow e'^2\left(\mu\right) = \frac{e_0^2}{ 1-\frac{e_0^2}{6\pi}\log\left(\frac{\mu}{\mu_0}\right)}
 \end{equation}
+The running coupling $$e'\left(\mu\right)$$ increases with $$\mu$$.
 
 
 ### Sources
