@@ -10,11 +10,15 @@ toc:
   beginning: true
 ---
 
+## Introduction
+I stopped taking much quantum field theory once we got to quantum chromodynamics. I think at some point things became more conceptual and less algebraic, which is somewhat less to my liking. What I did enjoy was the Yand-Mills Lagrangian. It is a neat use of beginning at very basic first principles and arriving at a physical theory.
 
+I will not discuss much of the group theory; I will actually do my best to avoid it, mainly because I am not that familiar with it. Everything here should be nicely self-contained and one does not need to know group algebra things to proceed.
 
-## The Yang-Mills Lagrangian
-I was originally going to simply present the Lagrangian of Quantum Electrodynamics and move on with my life, but I'm feeling like a completionist this morning, so we will derive it. We'll start with the full non-Abelian theory and then go from there.
-Feel fully free to skip this if you cannot be bothered, but I find it interesting.
+We set $$c=\hbar=1$$ for simplicity, and we use the mostly negative metric convention,
+\begin{equation}
+ds^2=\eta^{\mu\nu}x_\mu x_\nu = dt^2-dx^2-dy^2-dz^2.
+\end{equation}
 
 ### Gauge Theory Transform
 We begin with matter fields $$\psi_i\left(\mathbf{x}\right)$$ for $$i=1,2,...N$$. Note that each $$\psi_i$$ can be a scalar, spinor, tensor, etc. field, for the moment, our indices run over the field index, not the internal indices that may be associated with each $$\psi_i$$.
@@ -39,7 +43,7 @@ where each $$\alpha^a(x)$$ function is real and each $$\mathbf{T}_a$$ matrix is 
 \end{equation}
 We have done nothing more than express the unitary $$\mathbf{U}\left(\mathbf{x}\right)$$ as an exponent raised to a Hermitian matrix and then expressed this Hermitian matrix along the basis with elements $$\mathbf{T}_a$$. 
 
-Excellent, now there is a good amount of group theory I will sweep under the rug here, and we will content ourselves without proof that our $$\mathbf{T}_a$$ basis matrices can be chosen to satisfy the following properties while still spanning the space for all available hermitian matrices,
+Excellent, now there is a good amount of group theory I will sweep under the rug here, and we will content ourselves without proof that our $$\mathbf{T}_a$$ basis matrices can be chosen to satisfy the following properties while still spanning the space for all available Hermitian matrices,
 \begin{equation}\label{eq: T matrix trace}
 \text{Tr}\left(\mathbf{T} _a\mathbf{T} _b\right)=\frac{1}{2} \delta _{ab},
 \end{equation}
@@ -126,26 +130,26 @@ G _{\mu\nu} \rightarrow G' _{\mu\nu} =U G _{\mu\nu} U^\dagger,
 and use the same infinitesimal transformation trick we previously employed,
 
 \begin{equation}
-G' ^a _{\mu\nu} T _a=\left(1+i \alpha^b T _b\right) G^a _{\mu\nu} T _a\left(1-i\alpha^c T _c\right) = G^a _{\mu\nu} T _a + G^b _{\mu\nu} \alpha^c f^a _{bc} T_a.
-\begin{equation}
+{G'}^a _{\mu\nu} T _a=\left(1+i \alpha^b T _b\right) G^a _{\mu\nu} T _a\left(1-i\alpha^c T _c\right) = G^a _{\mu\nu} T _a + G^b _{\mu\nu} \alpha^c f^a _{bc} T_a.
+\end{equation}
 
 The field strength tensor $$G _{\mu\nu}$$ has a host of desirable properties. First, it is a local function of our gauge fields, not a differential operator, which is what we want for our Lagrangian. Second, it is only first-order in the derivatives of the Gauge fields, so we can combine two of these tensors to obtain a quantity that is second-order. To build a Lagrangian, we require Lorentz and gauge invariance. The first of these is easy to do: make sure there are no free indices since scalars are Lorentz invariant (more on Lorentz invariance soon). For the second condition, we can take the trace over matter field indices, observing that,
 
 \begin{equation}
 \text{Tr}\left(G^{\mu\nu}G _{\mu\nu}\right)\rightarrow\text{Tr}\left(G'^{\mu\nu}G' _{\mu\nu}\right)=\text{Tr}\left( UG^{\mu\nu}U^\dagger UG _{\mu\nu}U^\dagger\right) =\text{Tr}\left(G^{\mu\nu}G _{\mu\nu}\right).
-\begin{equation}
+\end{equation}
 
 Or, in component form,
 
 \begin{equation}
 \text{Tr}\left(G^{a\ \mu\nu}G _{b\ \mu\nu}T_aT^b\right) =G^{a\ \mu\nu}G _{b\ \mu\nu}\text{Tr}\left(T _aT^b\right) =\frac{1}{2}G^{a\ \mu\nu}G _{a\ \mu\nu},
-\begin{equation}
+\end{equation}
 
 after consulting Eq. \ref{eq: T matrix trace}. We define the gauge group of our Lagrangian,
 
 \begin{equation}\label{eq: Gauge Lagrangian}
 \mathcal{L} _{\text{gauge}} = -\frac{1}{4} G^{a\ \mu\nu} G _{a\ \mu\nu},
-\begin{equation}
+\end{equation}
 
 which describes the interactions between the gauge fields $$A _\mu\left(\mathbf{x}\right)$$. This Lagrangian is both gauge invariant and Lorentz invariant; of course, there are other Lagrangians we could write down that have these properties, but as we will soon see, many of those possibilities may not be renormalizable and thus not adequate to describe our theory. 
 
@@ -153,7 +157,7 @@ For fun, we can write out the equations of motion of Eq. \ref{eq: Gauge Lagrangi
 
 \begin{equation}
 \partial_\nu\left(\frac{\partial\mathcal{L} _{\text{gauge}}}{\partial\left(\partial _\nu A _{a\ \mu}\right)}\right)-\frac{\partial\mathcal{L} _{\text{gauge}}}{\partial A _{a\ \mu}}=0.
-\begin{equation}
+\end{equation}
 
 Calculating the variation with respect to $$\partial _\nu A _{a\ \mu}$$,
 
@@ -174,7 +178,7 @@ Next, the variation with respect to $$A _{a\ \mu}$$,
 
 \begin{equation}
 \frac{\partial\mathcal{L} _{\text{gauge}}}{\partial A _{a\ \mu}} = -\frac{1}{2} G _{b\ \alpha\beta} \frac{G ^{b\ \alpha\beta}}{\partial A _{a\ \mu}},
-\begin{equation}
+\end{equation}
 \begin{equation}
 \frac{G ^{b\ \alpha\beta}}{\partial A _{a\ \mu}} = g f^{ba} _c \left( \delta^{\alpha\mu} A^{c \beta} - \delta^{\beta\mu} A^{c \alpha} \right),
 \end{equation}
@@ -190,14 +194,14 @@ The Euler-Lagrange equations yield,
 \partial_\nu G^{a \nu \mu} + g  f^{abc} A _{b\ \nu} G ^{\nu\mu} _c = 0
 \end{equation}
 
-In the case when the gauge fields do not interact, the theory is fully Abelian and we can set $$g = 0$$. We define the abelian field strength tensor, $$F^{\mu\nu}=\partial^\mu A^\nu - \partial^\nu A^\mu$$, and our equations of motion greatly simplify to,
+In the case when the gauge fields do not interact, the theory is fully Abelian, and we can set $$g = 0$$. We define the abelian field strength tensor, $$F^{\mu\nu}=\partial^\mu A^\nu - \partial^\nu A^\mu$$, and our equations of motion greatly simplify to,
 \begin{equation}
 \partial_\nu F^{a \nu \mu} = \partial^\nu \partial^\mu A^\nu - \partial^\mu \partial^\nu A^\mu = 0,
 \end{equation}
 which we recognize as Maxwell's equations, as we would expect.
 
 ### Spinor fields
-We have found an adequate term to insert into our Lagrangian that is both lorentz invari
+We have found an adequate term to insert into our Lagrangian that is both Lorentz invariant
 
 
 , but it seems that our mass fields $$\psi$$ have fallen by the wayside. Let's consider a spinor field $$\psi$$. <em
