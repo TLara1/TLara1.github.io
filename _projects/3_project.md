@@ -3,7 +3,7 @@ layout: page
 title: Elasticity Theory and the Deformation of Two Colliding Disks - 1/25
 description:
 img:
-importance: 5
+importance: 90
 category: Physics
 giscus_comments: false
 toc:
@@ -22,7 +22,7 @@ For a body in equilibrium, in Einstein's summation convention:
   \sigma_{ij,j}=0
 \end{equation}
 
-The stress tensor for an isotropic, homogenous material is given via Hooke's law:
+The stress tensor for an isotropic, homogeneous material is given via Hooke's law:
 
 \begin{equation}\label{Hooke's law}
   \sigma_{ij}=C_{ijkl}\epsilon_{kl}=\lambda\delta_{ij}\epsilon_{kk}+2\mu\epsilon_{ij}
@@ -257,7 +257,7 @@ From \eqref{sigmaxx+sigmayy complex}, $$\varphi^ { '} _{,z}$$ must be complex, s
 \end{equation}
 It is immediately obvious that $$D=0$$ and we are free to set either $$\gamma$$ or $$\gamma^{'}$$, so in principal, this means we can chose $$\varphi\left(0\right)=0$$ or $$\psi\left(0\right)=0$$, but never both.
 
-## II. Solutions for Boundry Problems
+## II. Solutions for Boundary Problems
 
 ### II.I Relevant Details From Complex Analysis
 
@@ -312,7 +312,7 @@ Where $$f$$ is a function that is analytic for $$z\in S$$.
 
 ### II.II Complex Mapping
 
-In general, we will study a finite region $$S$$ in the complex plane, we will move this region to a unit disk in the $$\zeta$$ plane, via: $$z=\omega\left(\zeta\right)$$. With \eqref{U complex}:
+In general, we will study a finite region $$S$$ in the complex plane; we will move this region to a unit disk in the $$\zeta$$ plane, via: $$z=\omega\left(\zeta\right)$$. With \eqref{U complex}:
 
 \begin{equation}
   \varphi\left(\zeta\right)+\frac{\omega\left(\zeta\right)\bar{\varphi}_{,\zeta}\left(\bar{\zeta}\right)}{\bar{\omega} _{,\zeta}\left(\bar{\zeta}\right)}+\bar{\psi}\left(\bar{\zeta}\right)= U _{,x}+iU _{,y}
@@ -359,14 +359,14 @@ With:
   \mathcal{B}\equiv\frac{1}{2\pi i}\oint _\gamma\frac{\bar{f}}{\varsigma-\zeta}d\varsigma\nonumber
 \end{equation}
 
-### II.III Boundry terms
+### II.III Boundary terms
 Here we discuss the physical meaning of the $$f=U_{,x}+iU_{,y}$$ function. First consider a length of the edge of our body from points $$A$$ to $$B$$. Considering $$ds$$ as an infinitesimal length along the edge of our object, the $$x$$ and $$y$$ components of the force normal to the length $$AB$$ can be found by:
 
 \begin{equation} \label{Fequation}
   F_i = \int_A^B\sigma_{ij}n_jds \nonumber
 \end{equation}
 
-Where $$n_i$$ is the normal direction pointing out of the solid. The components of the normal vector are found by differentiating since the tangential direction is given by $$t_i\equiv\frac{dx_i}{ds}$$, we find:
+Where $$n_i$$ is the normal direction pointing out of the solid. The components of the normal vector are found by differentiating, since the tangential direction is given by $$t_i\equiv\frac{dx_i}{ds}$$, we find:
 
 \begin{equation}
   n_x=\frac{dy}{ds}\nonumber
