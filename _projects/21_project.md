@@ -765,7 +765,7 @@ We identify the two form factors, $$F_1$$ and $$F_2$$,
 $$F_1$$ is proportional to $$\gamma^\mu$$ and represents a modification to the tree-level charge $$e$$ due to the interaction loop, and $$F_2$$ is associated with the electron's spin, pairing the spin with the electromagnetic field. Computing the full 3-point vertex without the gauge terms,
 
 \begin{equation}
-i M^\mu_\text{gaugeless} = -i e \bar{u} \left[ F_1^\text{gaugeless}\gamma^\mu + F_2^\text{gaugeless}\frac{2i\Sigma^{\mu\nu}q _\nu}{2m} \right] u,
+i M^\mu_\text{gaugeless} = -i e \bar{u} \left[ F_1^\text{gaugeless}\gamma^\mu + F_2^\text{gaugeless}\frac{2i\Sigma^{\mu\nu}q _\nu}{2m} \right] u = \bar{u}\Gamma^\mu u,
 \end{equation}
 \begin{equation}
 F_1^\text{gaugeless} = 4ie^2 \int \bar{d}^d \ell\  \int_0^1dx\ \int_0^{1-x}dy\ \frac{\left[F_1\text{ term}\right]}{\left( \ell^2-\Delta \right)^3 },
@@ -1216,7 +1216,7 @@ Now, we should be good physicists and verify that this counterterm does actually
 
 From our loop integral for the vertex term,
 \begin{equation}
-\Gamma^{\mu\ \text{bare}} = F_1^\text{bare}\gamma^\mu + F_2^\text{bare}\frac{2i\Sigma^{\mu\nu}q_\nu}{2m} = \Gamma^{\mu \text{renormalized}}-ie\delta_1\gamma^mu,
+\Gamma^{\mu\ \text{bare}} = -i e\left( F_1^\text{bare}\gamma^\mu + F_2^\text{bare}\frac{ 2i\Sigma^{\mu\nu}q_\nu }{2m} \right) = \Gamma^{\mu \text{renormalized}}-ie\delta_1\gamma^mu,
 \end{equation}
 with,
 \begin{equation}
@@ -1253,7 +1253,7 @@ u=x+y,\quad v=\frac{x}{x+y},
 =  \frac{1}{2}\log\left(\frac{m^2}{4\pi \mu^2}\right)  -\frac{3}{2} + \frac{2}{\hat{q}} \sqrt{1-\frac{1}{4}\hat{q}^2}\arctan\left(\frac{\hat{q}}{ 2\sqrt{1-\frac{1}{4}\hat{q}^2}}\right). \nonumber
 \end{equation}
 
-with $$\hat{q}=q/m$$. This integral is finite if perhaps imaginary. 
+with $$\hat{q}=q/m$$. This integral is finite, if perhaps imaginary. 
 
 We are not so fortunate with the second integral, which clearly diverges as $$x,y\rightarrow0$$. This term arises entirely from the integral,
 \begin{equation}
@@ -1282,17 +1282,51 @@ e^2 I =  \frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{ \left(4\pi\mu^2 \right)^
 \end{equation}
 from which we identify the IR divergent term,
 \begin{equation}
-e^2 I_{IR} =  \frac{-ie^2 }{2 \left(4\pi\right)^2}\frac{1}{2\epsilon_\text{IR}}\left(2m^2-q^2\right)\int_0^1dv\ \left(m^2-v(1-v)q^2\right)^{-1}.
+e^2 I_{IR} =  \frac{-ie^2 }{4 \left(4\pi\right)^2}\frac{1}{\epsilon_\text{IR}}\left(2m^2-q^2\right)\int_0^1dv\ \left(m^2-v(1-v)q^2\right)^{-1}.
 \end{equation}
 
-This gives the divergent portion of $$F_1$$ as,
+This gives the IR divergent portion of $$F_1$$ as,
 \begin{equation}
-F_1^\text{divergent} = \frac{ e'^2}{\left(4\pi\right)^{2}}\left[ \xi \frac{1}{\epsilon} - \frac{1}{4\epsilon_\text{IR}}\left(2m^2-q^2\right)\int_0^1dv\ \left(m^2-v(1-v)q^2\right)^{-1},
+F_1^\text{divergent IR} = \frac{ e'^2}{\left(4\pi\right)^{2}}\left[ \xi \frac{1}{\epsilon} - \frac{1}{4\epsilon_\text{IR}}\left(2m^2-q^2\right)\int_0^1dv\ \left(m^2-v(1-v)q^2\right)^{-1},
 \end{equation}
-and we recognize the 
+and we recognize the divergent portion of $$\Gamma^{\mu\ \text{bare}} as,
+\begin{equation}
+\Gamma^{\mu\ \text{divergent}} = \left(-ie \gamma^\mu\right)\frac{ e'^2}{\left(4\pi\right)^{2}}\left[ \xi \frac{1}{\epsilon} - \frac{1}{\epsilon_\text{IR}}\left(2m^2-q^2\right)\int_0^1dv\ \left(m^2-v(1-v)q^2\right)^{-1} \right].
+\end{equation}
+and setting $$q=0$$,
+\begin{equation}
+\Gamma^{\mu\ \text{bare divergent}}\left(q=0\right) = \left(-ie \gamma^\mu\right)\frac{ e'^2}{\left(4\pi\right)^{2}}\left[ \xi \frac{1}{\epsilon} - \frac{2}{\epsilon_\text{IR}}\right],
+\end{equation}
+which is canceled by,
+\begin{equation}
+\delta_1 = \frac{ e'^2}{\left(4\pi\right)^{2}}\left[ \xi \frac{1}{\epsilon} - \frac{2}{\epsilon_\text{IR}}\right],
+\end{equation}
+comparing to the divergent portion of $$\delta_\psi$$,
 
+\begin{equation}
+\delta _\psi = \frac{ e'^2 }{ \left(4\pi\right)^2 }\left[ - \frac{2}{\epsilon _{\text{IR}}} + \xi \frac{1}{\epsilon} \right],
+\end{equation}
 
+we indeed find $$\delta_1 = \delta_\psi$$ as expected. We only found this relation at divergent order, but in general, due to the Ward identity, it holds to all loop orders.
 
+### Final Renormalization
+We have completed our renormalization procedure to one loop, identifying the counterterms,
+\begin{equation}
+\delta_A = \frac{1}{3\pi}\frac{ e'^2}{ 4\pi } \left[ -\frac{1}{\epsilon} +\gamma_E-\log\left(\frac{4\pi \mu^2 }{m^2}\right) \right],
+\end{equation}
+\begin{equation}
+\delta_m = \frac{3}{4\pi}\frac{ e'^2 }{ 4\pi  }\left[\frac{1}{\epsilon}-\gamma_E+\frac{4}{3} + \log\left(\frac{4\pi\mu^2}{m^2}\right) \right],
+\end{equation}
+\begin{equation}
+\delta_e = \frac{1}{6\pi}\frac{ e'^2}{ 4\pi } \left[ \frac{1}{\epsilon} -\gamma_E+\log\left(\frac{4\pi \mu^2 }{m^2}\right) \right],
+\end{equation}
+\begin{equation}
+\delta _\psi = \frac{1}{2\pi}\frac{ e'^2 }{  4\pi }\left[ -\frac{1}{\epsilon _{\text{IR}}} - \frac{11}{4} + \frac{\pi}{\sqrt{3}} - 3\gamma_E + \log\left(\frac{m^2}{4\pi\mu^2}\right) \right]
+\end{equation}
+\begin{equation}
++\xi \frac{1}{4\pi}\frac{ e'^2 }\frac{e'^2 }{ 4\pi } \left[ \frac{1}{\epsilon}  + \frac{\pi}{\sqrt{3}} + \frac{1}{2} - \log\left(\frac{m^2}{4\pi\mu^2}\right) \right]. \nonumber
+\end{equation}
+At higher order, counterterms begin to have $$e^4$$ terms which are obtained by computing the divergences of diagrams with multiple loops. 
 
 
 
@@ -1322,12 +1356,12 @@ The running coupling $$e'\left(\mu\right)$$ increases with $$\mu$$. $$\mu$$ was 
 
 Notice also that at,
 \begin{equation}
- 1-\frac{e_0^2}{6\pi^2}\log\left(\frac{\mu}{\mu_\text{pole}}\right) = 0\rightarrow \mu_\text{pole} = \mu_0 e^{\frac{6\pi^2}{e'_0^2}},
+ 1-\frac{e_0^2}{6\pi^2}\log\left(\frac{\mu}{\mu_\text{pole}}\right) = 0\rightarrow \mu_\text{pole} = \mu_0 e^{ \frac{6\pi^2}{e'_0^2} },
 \end{equation}
 $$e'$$ becomes infinite; this is the Landau pole. It may seem troublesome that the coupling parameter can become infinite in the high-energy regime, but actually we don't have that much to worry about. Setting $$e'_0 = 4\pi\frac{1}{137}$$ and setting $$\mu_0=0.5$$MeV as the electron mass, we obtain,
 
 \begin{equation}
-\mu_\text{pole} = 0.5 e^{\frac{3\pi}2}\times 137}\ \text{MeV}\approx 5\times 10^{279}\ \text{MeV}.
+\mu_\text{pole} = 0.5 e^{\frac{3\pi}{2}\times 137}\ \text{MeV}\approx 5\times 10^{279}\ \text{MeV}.
 \end{equation}
 This is the energy scale at which we expect QED to break down since we can no longer perform perturbative expansions and $$e$$ is very much not small. Fortunately, this scale is ridiculously larger than anything ever imaginably possible, and QED breaks down for other reasons much, much earlier than this pole. 
 
