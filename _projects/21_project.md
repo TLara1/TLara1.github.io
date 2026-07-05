@@ -17,9 +17,9 @@ Back in high school, I would always aspire to fill my notebooks and chalkboards 
 
 I am, unfortunately, no longer much of a theoretical physicist. I took three semesters of QFT and decided it was not for me. But there is a beauty in the calculations of QFT, the slow methodical alignment of a maelstrom of algebra and indices. I doubt these notes will serve me much in the future, but I wish to conserve some fraction of what I learned in QFT in a more permanent manner. (You can clearly tell I wrote this **before** embarking on my calculations. I am currently halfway through and am wondering why I ever decided this was a good or reasonable idea).
 
-Here, we will compute the first-order renormalization of the theory of Quantum Electrodynamics (QED). That is to say, we will identify the four counterterms necessary to remove divergences from 1-loop level QED diagrams. This will mostly involve resolving some very nasty-looking integrals, but after doing these calculations once, they can be done a thousand times. I will not present every detail, leaving some things untouched. Otherwise, these notes would quickly spiral into an entire semester's worth of content. There is a lot of algebra here. I spent a long time trying to make sure everything was right, but be warned I do make mistakes.
+Here, we will compute the first-order renormalization of the theory of Quantum Electrodynamics (QED). That is to say, we will identify the four counterterms necessary to remove divergences from 1-loop level QED diagrams. This will mostly involve resolving some very nasty-looking integrals, but after doing these calculations once, they can be done a thousand times. I will not present every detail, leaving some things untouched. Otherwise, these notes would quickly spiral into an entire semester's worth of content. There is a lot of algebra here. I spent a long time trying to make sure everything was right, but be warned, I do make mistakes.
 
-Note here that we will only look at the tip of the QFT iceberg. Things become **severely** more complicated at higher orders of loop calculation, and everything I will present is relatively straightforward. For the sake of not complicating things too much, I will not go too too in-depth here, leaving the more sophisticated details to those who are more qualified than me, again, it is very easy to go down rabbit holes when doing these sorts of things.
+Note here that we will only look at the tip of the QFT iceberg. Things become **severely** more complicated at higher orders of loop calculation, and everything I will present is relatively straightforward. For the sake of not complicating things too much, I will not go too too in-depth here, leaving the more sophisticated details to those who are more qualified than me; again, it is very easy to go down rabbit holes when doing these sorts of things.
 
 ## Notation and Convention
 We use the standard non-dimensionalization setting $$c=\hbar=1$$. We use the mostly negative metric convention,
@@ -872,13 +872,13 @@ F_{1\ \text{divergent}}^\text{gauge} = -\left(e\right)^2\left(1-\xi\right) \frac
 \end{equation}
 This is the divergent portion, and notice that the $$\epsilon^{-1}$$ terms not proportional to $$\xi$$ actually vanish!,
 \begin{equation}
-F_1 = \frac{ e'^2}{\left(4\pi\right)^{2}}\left[-\xi \frac{1}{\epsilon} - \gamma_E - 2 - 2\int_0^1dx\ \int_0^{1-x}dy\ \log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi\mu}\right) \right.
+F_1 = \frac{ e'^2}{\left(4\pi\right)^{2}}\left[ \xi \frac{1}{\epsilon} - \gamma_E - 2 - 2\int_0^1dx\ \int_0^{1-x}dy\ \log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi\mu}\right) \right.
 \end{equation}
 \begin{equation}
-+\left. 2\mu^\epsilon\int_0^1dx\ \int_0^{1-x}dy\ \frac{\left(\left(x+y\right) +2(x+y)^2-2(1+xy)\right)m^2 + (1-x)(1-y)q^2}{ m^2\left(x+y\right)^2 -xy q^2 } \right. \nonumber
++2\int_0^1dx\ \int_0^{1-x}dy\ \frac{ \left( \left(x+y\right) +2(x+y)^2-2(1+xy) \right)m^2 + (1-x)(1-y)q^2 }{ m^2\left(x+y\right)^2 -xy q^2 } \nonumber
 \end{equation}
 \begin{equation}
-+\left(1-\xi\right)\left[\text{term of } \mathcal{O}\left(\epsilon^0\right)\right]. \nonumber
+\left. +\left(1-\xi\right)\left[\text{term of } \mathcal{O}\left(\epsilon^0\right)\right] \right]. \nonumber
 \end{equation}
 
 We have finished all of our integrals! Stand up, stretch, go outside. The hard part is behind us, now we just go through the renormalization procedure.
@@ -1202,9 +1202,20 @@ From our loop integral for the vertex term,
 \begin{equation}
 \Gamma^{\mu\ \text{bare}} = F_1\gamma^\mu + F_2\frac{2i\Sigma^{\mu\nu}q_\nu}{2m},
 \end{equation}
-
-
-
+with,
+\begin{equation}
+F_1 = \frac{ e'^2}{\left(4\pi\right)^{2}}\left[ \xi \frac{1}{\epsilon} - \gamma_E - 2 - 2\int_0^1dx\ \int_0^{1-x}dy\ \log\left(\frac{m^2\left(x+y\right)^2 -xy q^2}{4\pi\mu}\right) \right.
+\end{equation}
+\begin{equation}
++2\int_0^1dx\ \int_0^{1-x}dy\ \frac{ \left( \left(x+y\right) +2(x+y)^2-2(1+xy) \right)m^2 + (1-x)(1-y)q^2 }{ m^2\left(x+y\right)^2 -xy q^2 } \right] \nonumber
+\end{equation}
+\begin{equation}
++\left(1-\xi\right)\left[\text{term of } \mathcal{O}\left(\epsilon^0\right)\right] , \nonumber
+\end{equation}
+and,
+\begin{equation}
+F_2^\text{gaugeless} = 2ie^2 \left[ \frac{2e^2}{\left(4\pi\right)^2 }\int_0^1dx\  \frac{m^2} {m^2+x(x-1)q^2} \right] +\left(1-\xi\right)\left[\text{term of } \mathcal{O}\left(\epsilon^0\right)\right]. \nonumber
+\end{equation}
 
 
 
