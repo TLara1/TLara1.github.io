@@ -1,6 +1,6 @@
 ---
 layout: page
-title: QED Renormalization, loop integrals
+title: On the Yang-Mills Lagrangian
 description:
 img: 
 importance: 3
@@ -12,7 +12,7 @@ toc:
 
 
 
-## The Lagrangian of Quantum Electrodynamics
+## The Yang Mills Lagrangian
 I was originally going to simply present the Lagrangian of Quantum Electrodynamics and move on with my life, but I'm feeling like a completionist this morning, so we will derive it. We'll start with the full non-Abelian theory and then go from there.
 Feel fully free to skip this if you cannot be bothered, but I find it interesting.
 
