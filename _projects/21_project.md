@@ -1290,10 +1290,10 @@ e^2 I_{IR} =  \frac{-ie^2 }{4 \left(4\pi\right)^2}\frac{1}{\epsilon_\text{IR}}\l
 
 This gives the IR divergent portion of $$F_1$$ as,
 \begin{equation}
-F _1^\text{divergent IR} = \frac{ e'^2}{\left(4\pi\right)^{2}}\left[ \xi \frac{1}{\epsilon} - \frac{1}{4\epsilon _\text{IR}}\left(2m^2-q^2\right)\int_0^1dv\ \left(m^2-v(1-v)q^2\right)^{-1},
+F _1^\text{divergent IR} = \frac{ e'^2 }{\left(4\pi\right)^{2}}\left[ \xi \frac{1}{\epsilon} - \frac{1}{4\epsilon _\text{IR}}\left(2m^2-q^2\right)\int_0^1dv\ \left(m^2-v(1-v)q^2\right)^{-1} \right],
 \end{equation}
 
-and we recognize the divergent portion of $$\Gamma^{\mu\ \text{bare}} as,
+and we recognize the divergent portion of $$\Gamma^{\mu\ \text{bare}}$$ as,
 
 \begin{equation}
 \Gamma^{\mu\ \text{divergent}} = \left(-ie \gamma^\mu\right)\frac{ e'^2}{\left(4\pi\right)^{2}}\left[ \xi \frac{1}{\epsilon} - \frac{1}{\epsilon_\text{IR}}\left(2m^2-q^2\right)\int_0^1dv\ \left(m^2-v(1-v)q^2\right)^{-1} \right].
