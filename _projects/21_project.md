@@ -1234,8 +1234,7 @@ and,
 F_2 = 2ie^2 \frac{2e^2}{\left(4\pi\right)^2 }\int_0^1dx\  \frac{m^2} {m^2+x(x-1)q^2}  . \nonumber
 \end{equation}
 
-We must verify the infrared behaviour of both integrals. We know $$F_2\left(0\right)$$ is convergent, the IR divergence comes in $$F_1$$, indeed if we set 
-
+We must verify the infrared behaviour of both integrals. We know $$F_2$$ is convergent in the infrared, which makes sense as the counterterm, $$ie\delta_1\gamma^\mu$$ can already only impact $$F_1$$.
 
 
 ### Sources
