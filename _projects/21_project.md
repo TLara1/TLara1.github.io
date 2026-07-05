@@ -1263,7 +1263,7 @@ our procedure will be identical to the previous treatment, integrating first ove
 
 Integrating over $$\ell$$,
 \begin{equation}
-e^2 I =  \frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{\left(4\pi\mu^2\right)^{-\epsilon}}\int_0^1dx\ \int_0^{1-x}dy\ \Gamma\left(1+\epsilon\right)\left(\left(2\left(x+y\right) + (x+y)^2-2 \right)m^2 + (1-x)(1-y)q^2 \right)\left(m^2\left(x+y\right)^2-xyq^2\right)^{-1-\epsilon},
+e^2 I =  \frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{\left(4\pi\mu^2\right)^{-\epsilon}}\int_0^1dx\ \int_0^{1-x}dy\ \Gamma\left(1+\epsilon\right)\frac{\left(2\left(x+y\right) + (x+y)^2-2 \right)m^2 + (1-x)(1-y)q^2 }{ \left( m^2\left(x+y\right)^2-xyq^2 \right)^{1+\epsilon} },
 \end{equation}
 with a change of variables,
 
@@ -1271,7 +1271,10 @@ with a change of variables,
 u=x+y,\quad v=\frac{x}{x+y},
 \end{equation}
 \begin{equation}
-e^2 I =  \frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{ \left(4\pi\mu^2 \right)^{-\epsilon} }\int_0^1du\ \int_0^{1}dv\ \Gamma\left(1+\epsilon\right) u\left( \left(2u + u^2-2 \right)m^2 + (1-uv)(1-u(1-v))q^2 \right)\left(m^2u^2-u^2v(1-v)q^2\right)^{-1-\epsilon}=\frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{ \left(4\pi\mu^2 \right)^{-\epsilon} }\int_0^1 du\ \int_0^1 dv\ \Gamma\left(1+\epsilon\right) u^{-1-2\epsilon}D\left(v\right)^{-1-\epsilon}\left[ N_0+uN_1+u^2N_2 \right],
+e^2 I =  \frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{ \left(4\pi\mu^2 \right)^{-\epsilon} }\int_0^1du\ \int_0^{1}dv\ \Gamma\left(1+\epsilon\right) u \frac{\left(2u + u^2-2 \right)m^2 + (1-uv)(1-u(1-v))q^2}{\left(m^2u^2-u^2v(1-v)q^2\right)^{1+\epsilon}}
+\end{equation}
+\begin{equation}
+=\frac{-ie^2 }{2 \left(4\pi\right)^2} \frac{1}{ \left(4\pi\mu^2 \right)^{-\epsilon} }\int_0^1 du\ \int_0^1 dv\ \Gamma\left(1+\epsilon\right) u^{-1-2\epsilon}D\left(v\right)^{-1-\epsilon}\left[ N_0+uN_1+u^2N_2 \right], \nonumber
 \end{equation}
 \begin{equation}
 D\left(v\right) = m^2-v(1-v)q^2,\ N_0 = -2m^2+q^2,\ N_1 = -N_0,\ N_2 = m^2+v(1-v).
