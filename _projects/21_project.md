@@ -711,6 +711,11 @@ A first simplification: because the $$q^\mu$$ is odd under the exchange $$y\left
 \begin{equation}
 \bar{u}\left(p'\right)\gamma^\mu u\left(p\right) = \frac{1}{2m}\bar{u}\left(p'\right)\left[\left(p' ^\mu + p^\mu\right) + 2i\Sigma^{\mu\nu}q_\nu \right]u\left(p\right) ,
 \end{equation}
+where,
+\begin{equation}
+\Sigma^{\mu\nu} = \frac{i}{4}\left\lbrace\gamma^\mu\right\rbrace,
+\end{equation}
+
 which can be derived from the Dirac equation; we may replace,
 \begin{equation}
 p' ^\mu + p^\mu = 2m\gamma^\mu - 2i\Sigma^{\mu\nu}q_\nu.
@@ -1022,7 +1027,7 @@ we calculate $$\Sigma$$ at $$\not p =m$$,
 \Sigma^\text{bare}\left(\not p = m\right) = -\frac{ e'^2 }{ \left(4\pi\right)^2 }\left[\frac{1}{\epsilon}\left(3m\right)-3m\left(\frac{1}{2}+\gamma_E\right)+\frac{1}{2}m \right.
 \end{equation}
 \begin{equation}
- + 2\int_0^1 dx\ \left[m\left(x -2\right)\log\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right) \right]
++2\int_0^1 dx\ \left[m\left(x -2\right)\log\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right) \right]
 \end{equation}
 \begin{equation}
 \left. - 2\int_0^1 dx\ \left[ \left(1-x\right)\left[m\left(-1+3x\right) \log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)-m\frac{x\left(2-x\right)}{\left(1-x\left(1-x\right)\right)}\right] \right] \right] \nonumber
@@ -1076,7 +1081,10 @@ then the gaugeless integral terms,
 +2\int_0^1 dx\ \left[x \log\left(\frac{m^2\left(1-x\right)^2}{4\pi\mu^2}\right) -2 \frac{x(x-2)}{\left(1-x\right)}\right] \nonumber
 \end{equation}
 \begin{equation}
-\left. - 2\int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right) -2 \frac{ x\left(-1+3x\right) \left(1-x\right)}{\left(1-x\left(1-x\right)\right)} -\frac{x\left(5-3x\right)}{\left(1-x\left(1-x\right)\right)} -2\frac{x^2(2-x)(1-x)}{\left(1-x\left(1-x\right)\right)^2} \right] \right] \nonumber
+- 2\int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right) \nonumber
+\end{equation}
+\begin{equation}
+\left. \left. -2 \frac{ x\left(-1+3x\right) \left(1-x\right)}{\left(1-x\left(1-x\right)\right)} -\frac{x\left(5-3x\right)}{\left(1-x\left(1-x\right)\right)} -2\frac{x^2(2-x)(1-x)}{\left(1-x\left(1-x\right)\right)^2} \right] \right] \nonumber
 \end{equation}
 and the gauge polynomial terms,
 \begin{equation}
@@ -1084,7 +1092,10 @@ and the gauge polynomial terms,
 \end{equation}
 and the gauge integral terms,
 \begin{equation}
-\left. + \int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right) -2 \frac{ x\left(-1+3x\right) \left(1-x\right)}{\left(1-x\left(1-x\right)\right)} -\frac{x\left(5-3x\right)}{\left(1-x\left(1-x\right)\right)} -2\frac{x^2(2-x)(1-x)}{\left(1-x\left(1-x\right)\right)^2} \right] \right]. \nonumber
++ \int_0^1 dx\ \left(1-x\right)\left[ \left(1+3x\right)\log\left(\frac{m^2x\left(1-x\left(1-x\right)\right)}{4\pi\mu^2}\right)  \nonumber
+\end{equation}
+\begin{equation}
+\left. \left. -2 \frac{ x\left(-1+3x\right) \left(1-x\right)}{\left(1-x\left(1-x\right)\right)} -\frac{x\left(5-3x\right)}{\left(1-x\left(1-x\right)\right)} -2\frac{x^2(2-x)(1-x)}{\left(1-x\left(1-x\right)\right)^2} \right] \right]. \nonumber
 \end{equation}
 
 Evaluating the $$x$$ integrals,
@@ -1188,6 +1199,11 @@ We have set the value of our final counterterm.
 Now, we should be good physicists and verify that this counterterm does actually remove the divergence from our vertex loop diagram. Because we did not calculate the finite vertex gauge-related terms, we will satisfy ourselves to make the comparison at divergent and finite order in the gaugeless terms and to divergent order in the gauge terms. 
 
 From our loop integral for the vertex term,
+\begin{equation}
+\Gamma^{\mu\ \text{bare}} = F_1\gamma^\mu + F_2\frac{2i\Sigma^{\mu\nu}q_\nu}{2m},
+\end{equation}
+
+
 
 
 
