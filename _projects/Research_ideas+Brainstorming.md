@@ -98,7 +98,7 @@ Marsha Berger - NYU Courant, numerical PDEs, AMR
 Eric Lauga - Cambridge, Low Re swimming, biomathematics
 Duncan Hewitt - Cambridge
 Ray Goldstein - Cambridge
-Shreyas Mandre - Cambridge, biomathematics, evolution math
+Shreyas Mandre - Cambridge, biomathematics, evolution math, fsi problems
 Peter Howell - Oxford
 Ian Hewitt - Oxford, geological flows, ice/glacier modeling
 Sarah Waters - Oxford, psychological flows, biomathematics
