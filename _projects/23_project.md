@@ -214,13 +214,18 @@ transforms as a Lorentz four vector for the Lorentz transform matrix $$\Lambda^\
 \begin{equation}
 \bar{\psi}_i\not \partial \psi_i\quad\text{and}\quad\bar{\psi}_i\not A \psi_i,
 \end{equation}
-are both Lorentz scalars and invariant under a transform. As for Gauge invarience, 
+are both Lorentz scalars and invariant under a transform. As for gauge invariance, this is also straightforward to show using the properties of the covariant derivative,
+\begin{equation}
+\mathcal{L} _{\text{dirac}} \rightarrow  \sum_i \bar{\psi} _i  U^\dagger U \left(i \not D - m_i\right)\psi _i = \mathcal{L} _{\text{dirac}}.
+\end{equation}
+The equations of motion are nothing more than the Dirac equations for each spinor field $$i$$ with an added source term from the gauge field,
+\begin{equation}\label{eq: dirac lagrangian eom}
+\left(i\not\partial-m\right)\psi _i = -g\not A \psi _i.
+\end{equation}
+Note that Eq. \ref{eq: dirac lagrangian eom} involves couplings between the spinor fields since $$\not A$$ is a matrix in matter field indices. 
 
-
-
-
-
-
+### Scalar fields
+One final type of field are scalars. These are the easiest.
 
 
 The Lagrangian of Quantum Electrodynamics (QED) for a spinor$$-1/2$$ field $$\psi$$ is,
