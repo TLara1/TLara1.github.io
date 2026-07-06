@@ -170,6 +170,7 @@ Calculating the variation with respect to $$\partial _\nu A _{a\ \mu}$$,
 \begin{equation}
 G _{b\ \alpha\beta} \frac{G ^{b\ \alpha\beta}}{\partial\left(\partial _\nu A _{a\ \mu}\right)} = \delta^{ab}\left(\delta^{\alpha\nu}\delta^{\beta\mu}-\delta^{\alpha\mu}\delta^{\beta\nu}\right)G _{b\ \alpha\beta}=2G^{a \nu \mu}.
 \end{equation}
+
 \begin{equation}
 \frac{\partial\mathcal{L} _{\text{gauge}}}{\partial\left(\partial _\nu A _{a\ \mu}\right)} = - G^{a \nu \mu}.
 \end{equation}
@@ -187,7 +188,7 @@ Next, the variation with respect to $$A _{a\ \mu}$$,
 G _{b\ \alpha\beta} \frac{G ^{b\ \alpha\beta}}{\partial A _{a\ \mu}} = 2 g  f^{ba} _c G ^\mu _{b\ \alpha}  A^{c \alpha} , 
 \end{equation}
 \begin{equation}
-\frac{\partial\mathcal{L} _{\text{gauge}}}{\partial A _{a\ \mu}} =\end{equation} =  g  f^{abc} A _{b\ \nu} G ^{\nu\mu} _c .
+\frac{\partial\mathcal{L} _{\text{gauge}}}{\partial A _{a\ \mu}} =  g  f^{abc} A _{b\ \nu} G ^{\nu\mu} _c .
 \end{equation}
 
 The Euler-Lagrange equations yield,
@@ -225,31 +226,30 @@ The equations of motion are nothing more than the Dirac equations for each spino
 Note that Eq. \ref{eq: dirac lagrangian eom} involves couplings between the spinor fields since $$\not A$$ is a matrix in matter field indices. 
 
 ### Scalar fields
-One final type of field are scalars. These are the easiest.
-
-
-The Lagrangian of Quantum Electrodynamics (QED) for a spinor$$-1/2$$ field $$\psi$$ is,
-\begin{equation}\label{eq: QED Lagrangian}
-\mathcal{L}=\bar{\psi}\left(i\not D-m\right)\psi-\frac{1}{4}F^{\mu\nu}F_{\mu\nu},
-\end{equation}
-We have used slash notation to indicate, $$\not D=\gamma^\mu D_\mu$$. $$D_\mu$$ is the covariant derivative,
+One final type of field are scalars. These are the easiest. The Lagrangian for scalar fields $$\phi_i$$ is,
 \begin{equation}
-D_\mu=\partial_\mu+ie A_\mu,
+\mathcal{L} _{\text{scalar}} = \sum_i \left( D _\mu\phi _i\right)^\dagger\left( D^\mu\phi _i\right) - m_i^2\phi_i^\dagger\phi _i.
 \end{equation}
-where $$e$$ is the coupling constant equal to the charge of the Dirac field and $$A_\mu$$ is the gauge field. $$F_{\mu\nu}$$ is the electromagnetic field strength tensor,
+There are no free indices, so the Lagrangian is easily Lorentz invariant. It is also gauge invariant due to our usage of the covariant derivative. The equations of motion are,
 \begin{equation}
-F_{\mu\nu}=\partial_\mu A_\nu - \partial_\nu A_\mu.
+\left(D _\mu D^\mu + m^2\right)\phi_i = 0,
 \end{equation}
+since $$\phi$$ and $$\phi^\dagger$$ are indepedent fields. 
 
-There are many ways to derive our Lagrangian, which we will omit here. We will only here show that Eq. \ref{eq: QED Lagrangian} satisfies several properties of interest. 
-
-### Gauge Invariance
-First, we note our Lagrangian is invariant under a $$U(1)$$ Gauge transform $$\alpha\left(\mathbf{x}\right)$$,
+## Yang Mills Lagrangian Summary
+Our Lagrangian, adding all terms,
 \begin{equation}
-\psi\left(\mathbf{x}\right)\rightarrow e^{i\alpha\left(\mathbf{x}\right)}
+\mathcal{L} _{\text{Yang Mills}} = -\frac{1}{4} G^{a\ \mu\nu} G _{a\ \mu\nu} + \sum_i \bar{\psi} _i \left(i \not D - m^\psi _i\right)\psi _i + \sum_i \left( D _\mu\phi _i\right)^\dagger\left( D^\mu\phi _i\right) - \left(m_i^\phi\right) ^2}\phi_i^\dagger\phi _i.
 \end{equation}
-
-
+Where we use,
+\begin{equation}
+G^a _{\mu\nu} = \partial _\mu A_\nu^a - \partial _\nu A _\mu^a + gA^b _\mu A^c _\nu f^a _{bc},
+\end{equation}
+and,
+\begin{equation}
+D _\mu = \partial _\mu - i g A^a _\mu T _a.
+\end{equation}
+This is the Lagrangian for the Yang-Mills theory. There is **a lot** more to be said about gauge fixing and propagators and loops and renormalization and whatnot, but we will leave things here for now.
 
 ### Sources
 This was done using my own notes taken during my Quantum Field Theory II class (8.324), taught by Professor Ian Stewart during the 2025 Fall semester and my Quantum Feidl Theory III class (8.325) taught by Professor Daniel Harlow during the 2026 Spring semester.
