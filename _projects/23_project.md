@@ -238,13 +238,16 @@ since $$\phi$$ and $$\phi^\dagger$$ are indepedent fields.
 
 ## Yang Mills Lagrangian Summary
 Our Lagrangian, adding all terms,
+
 \begin{equation}
-\mathcal{L} _{\text{Yang Mills}} = -\frac{1}{4} G^{a\ \mu\nu} G _{a\ \mu\nu} + \sum_i \bar{\psi} _i \left(i \not D - m^\psi _i\right)\psi _i + \sum_i \left( D _\mu\phi _i\right)^\dagger\left( D^\mu\phi _i\right) - \left(m_i^\phi\right) ^2}\phi_i^\dagger\phi _i.
+\mathcal{L} _{\text{Yang Mills}} = -\frac{1}{4} G^{a\ \mu\nu} G _{a\ \mu\nu} + \sum _i \bar{\psi} _i \left(i \not D - m^\psi _i\right)\psi _i + \sum_i \left( D _\mu\phi _i\right)^\dagger\left( D^\mu\phi _i\right) - \left(m_i^\phi\right) ^2}\phi_i^\dagger\phi _i.
 \end{equation}
+
 Where we use,
 \begin{equation}
-G^a _{\mu\nu} = \partial _\mu A_\nu^a - \partial _\nu A _\mu^a + gA^b _\mu A^c _\nu f^a _{bc},
+G^a _{\mu\nu} = \partial _\mu A _\nu^a - \partial _\nu A _\mu^a + gA^b _\mu A^c _\nu f^a _{bc},
 \end{equation}
+
 and,
 \begin{equation}
 D _\mu = \partial _\mu - i g A^a _\mu T _a.
