@@ -133,7 +133,7 @@ and use the same infinitesimal transformation trick we previously employed,
 {G'}^a _{\mu\nu} T _a=\left(1+i \alpha^b T _b\right) G^a _{\mu\nu} T _a\left(1-i\alpha^c T _c\right) = G^a _{\mu\nu} T _a + G^b _{\mu\nu} \alpha^c f^a _{bc} T_a.
 \end{equation}
 
-The field strength tensor $$G _{\mu\nu}$$ has a host of desirable properties. First, it is a local function of our gauge fields, not a differential operator, which is what we want for our Lagrangian. Second, it is only first-order in the derivatives of the Gauge fields, so we can combine two of these tensors to obtain a quantity that is second-order. To build a Lagrangian, we require Lorentz and gauge invariance. The first of these is easy to do: make sure there are no free indices since scalars are Lorentz invariant (more on Lorentz invariance soon). For the second condition, we can take the trace over matter field indices, observing that,
+The field strength tensor $$G _{\mu\nu}$$ has a host of desirable properties. First, it is a local function of our gauge fields, not a differential operator, which is what we want for our Lagrangian. Second, it is only first-order in the derivatives of the Gauge fields, so we can combine two of these tensors to obtain a quantity that is second-order. To build a Lagrangian, we require Lorentz and gauge invariance. The first of these is easy to do: make sure there are no free indices since scalars are Lorentz invariant. For the second condition, we can take the trace over matter field indices, observing that,
 
 \begin{equation}
 \text{Tr}\left(G^{\mu\nu}G _{\mu\nu}\right)\rightarrow\text{Tr}\left(G'^{\mu\nu}G' _{\mu\nu}\right)=\text{Tr}\left( UG^{\mu\nu}U^\dagger UG _{\mu\nu}U^\dagger\right) =\text{Tr}\left(G^{\mu\nu}G _{\mu\nu}\right).
@@ -151,7 +151,7 @@ after consulting Eq. \ref{eq: T matrix trace}. We define the gauge group of our 
 \mathcal{L} _{\text{gauge}} = -\frac{1}{4} G^{a\ \mu\nu} G _{a\ \mu\nu},
 \end{equation}
 
-which describes the interactions between the gauge fields $$A _\mu\left(\mathbf{x}\right)$$. This Lagrangian is both gauge invariant and Lorentz invariant; of course, there are other Lagrangians we could write down that have these properties, but as we will soon see, many of those possibilities may not be renormalizable and thus not adequate to describe our theory. 
+which describes the interactions between the gauge fields $$A _\mu\left(\mathbf{x}\right)$$. This Lagrangian is both gauge invariant and Lorentz invariant; of course, there are other Lagrangians we could write down that have these properties, but we stick with the old adage of keeping things simple, stupid.
 
 For fun, we can write out the equations of motion of Eq. \ref{eq: Gauge Lagrangian} using the Euler-Lagrange equations,
 
@@ -202,10 +202,22 @@ In the case when the gauge fields do not interact, the theory is fully Abelian, 
 which we recognize as Maxwell's equations, as we would expect.
 
 ### Spinor fields
-We have found an adequate term to insert into our Lagrangian that is both Lorentz invariant
+We have found an adequate term to insert into our Lagrangian that is both Lorentz and gauge invariant, but we have somewhat forgotten about our mass fields. We add these by using the Dirac Lagrangian, replacing the partial derivative with a covariant derivative,
+\begin{equation}
+\mathcal{L} _{\text{dirac}} = \sum_i \bar{\psi} _i \left(i \not D - m_i\right)\psi _i,
+\end{equation}
+the index $$i$$ sums over all the spinor fields in our theory, each one coupling with the gauge field $$A _\mu$$. Showing Lorentz invariance is straightforward since,
+\begin{equation}
+\bar{\psi}_i\gamma^\mu\psi_i \rightarrow \Lambda^\mu _\nu \bar{\psi}'_i\gamma^\mu\psi'_i,
+\end{equation}
+transforms as a Lorentz four vector for the Lorentz transform matrix $$\Lambda^\mu_nu$$, then 
+\begin{equation}
+\bar{\psi}_i\not \partial \psi_i\quad\text{and}\quad\bar{\psi}_i\not A \psi_i,
+\end{equation}
+are both Lorentz scalars and invariant under a transform. As for Gauge invarience, 
 
 
-, but it seems that our mass fields $$\psi$$ have fallen by the wayside. Let's consider a spinor field $$\psi$$. <em
+
 
 
 
