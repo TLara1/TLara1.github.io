@@ -168,7 +168,7 @@ where $$\Lambda^\mu_\nu$$ is the transformation matrix. Derivatives transform as
 \begin{equation}
 \partial_\mu\rightarrow\partial_{\mu'}=\left(\Lambda^{-1}\right)^\nu_\mu\partial_\nu.
 \end{equation}
-We expect our $$psi$$ spinor field to transform following,
+We expect our $$\psi$$ spinor field to transform following,
 \begin{equation}
 \psi\left(\mathbf{x}\right)\rightarrow\psi'\left(\mathbf{x}'\right)=S\left(\Lambda\right)\psi\left(\mathbf{x}\right),
 \end{equation}
