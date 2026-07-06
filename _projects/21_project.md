@@ -1371,13 +1371,13 @@ $$\beta\sim\mathcal{O}\left(e' ^3\right)$$, so we neglect the $$\sim \beta e'$$ 
 
 With $$\beta$$, we can solve for the running coupling,
 \begin{equation}
-\frac{1}{e' ^{3}}\frac{d e'}{d\mu} = \frac{\mu^{-1}}{ 12\pi^2 }\rightarrow e' \left(\mu\right)^{2} = \frac{e' _0 ^{2}}{ 1-\frac{e' _0 ^{2}}{6\pi^2}\log\left(\frac{\mu}{\mu_0}\right)}
+\frac{1}{e' ^{3}}\frac{d e'}{d\mu} = \frac{\mu^{-1}}{ 12\pi^2 }\rightarrow e' \left(\mu\right)^{2} = \frac{e' ^{2} _0}{ 1-\frac{e' ^{2} _0}{6\pi^2}\log\left(\frac{\mu}{\mu _0}\right)}
 \end{equation}
 The running coupling $$e'\left(\mu\right)$$ increases with $$\mu$$. $$\mu$$ was introduced as an arbitrary parameter, and in practice, it is most convenient to set $$\mu\sim m$$ or proportional to any other characteristic dimension such that logarithms of $$m/\mu$$ are of order one. The increase of $$e'$$ with $$\mu$$ reflects the fact that the electric charge that is measured changes with respect to the momentum transfer of the process, as $$p^2=m^2$$. 
 
 Notice also that at,
 \begin{equation}
- 1-\frac{e_0^{2} }{6\pi^2}\log\left(\frac{\mu}{\mu_\text{pole}}\right) = 0\rightarrow \mu_\text{pole} = \mu_0 e^{ \frac{6\pi^2}{e' _0^2} },
+ 1-\frac{e^{2} _0 }{6\pi^2}\log\left(\frac{\mu}{\mu _\text{pole}}\right) = 0\rightarrow \mu _\text{pole} = \mu_0 e^{ \frac{6\pi^2}{e' ^2 _0} },
 \end{equation}
 $$e'$$ becomes infinite; this is the Landau pole. It may seem troublesome that the coupling parameter can become infinite in the high-energy regime, but actually we don't have that much to worry about. Setting $$e'_0 = 4\pi\frac{1}{137}$$ and setting $$\mu_0=0.5$$MeV as the electron mass, we obtain,
 
