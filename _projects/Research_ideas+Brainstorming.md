@@ -41,6 +41,8 @@ growth and matter, fsi problem solid has constantly changing reference configura
 
 cracking? how do things crack, underwater? related, designs on coral reefs? 
 
+RMT flappers can easily do a paper with flappers and itneractions and modelling an actuations contact system with also friction
+
 What's the best shape for a hat? 
 
 bird migration, more general noisy sensing navigation without gradient
