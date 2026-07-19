@@ -2,7 +2,7 @@
 layout: page
 title: Modelling Fluid-Solid Interaction and Collision Problems
 description:
-img: assets/img/Figures_Solidmech_Notes/matlab_psi_examples.png
+img: assets/img/RMT_videos_img/accordian_disk.gif
 importance: 2
 category: 2025
 related_publications: true
