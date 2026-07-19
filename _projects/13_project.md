@@ -2,7 +2,7 @@
 layout: page
 title: Simulating Jellyfish Feeding Efficiency
 description:
-img: assets/img/Pictures_Website_Jellyfish/Cover_picture.png
+img: assets/img/Pictures_Website_Jellyfish/Mov6_Vorticitymag_contour_Re1000_AAurita.gif
 importance: 1
 category: 2025
 related_publications: false
