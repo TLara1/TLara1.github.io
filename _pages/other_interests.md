@@ -97,7 +97,7 @@ I wish I could say I played <em>Magic: The Gathering</em>, but I mostly just rea
 </div>
 
 ## MIT French House _La Maison Française_
-During my time at MIT, I lived in the <a href="https://web.mit.edu/lmf/www/index.html">La Maison Française</a> (LMF) living group and had the privilege of serving as president during my senior year. (LMF) is a 40ish-person community dedicated to daily dinners, a clean kitchen, and various vaguely French-themed activities and events. If you are a current or incoming MIT student, I highly recommend checking us out.
+During my time at MIT, I lived in the <a href="https://web.mit.edu/lmf/www/index.html">La Maison Française</a> (LMF) living group and had the privilege of serving as president during my senior year. LMF is a 40ish-person community dedicated to daily dinners, a clean kitchen, and various vaguely French-themed activities and events. If you are a current or incoming MIT student, I highly recommend checking us out.
 
 ## Origami
 In middle and high school, I did a good amount of origami, even designing my own models. I did a few exhibitions at my high school and library, and during my freshman year I was a member of <a href="http://origamit.mit.edu/"> OrigaMIT</a>, but these days I'm afraid I have not the time. Someday, I may go back to relearn some paper folding, but for now my works remain a pleasant memory of simpler, less busy times. 
