@@ -16,5 +16,5 @@ While astronomical surveys of exoplanets can often reveal important planetary or
   {% include figure.liquid loading="eager" path="assets/img/Pictures-Website_Millholland2023/TOImigrationchart(7x7).png" title="TOI Migration Chart" class="img-fluid rounded z-depth-0" width="500" height="auto" %}
 </div>
 
-<p> The results of our study can be found in <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad10a0">our publication</a>.
+<p> The results of our study can be found in our publication .
 
