@@ -72,18 +72,24 @@ I have played the clarinet for 13 years, first with the Decatur High School Wind
 </div>
 
 ## Board, War, and Role-Playing Games
-<div style="text-align: center;">
-      {% include figure.liquid loading="eager" path="assets/img/warhammer_video/Dinos1.png" title="Seraphon 1" class="img-fluid rounded z-depth-0" width="650" height="auto" %}
-</div>  
-<div style="text-align: center;">
-      {% include figure.liquid loading="eager" path="assets/img/warhammer_video/Dinos2.png" title="Seraphon 1" class="img-fluid rounded z-depth-0" width="650" height="auto" %}
-</div>  
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="assets/img/warhammer_video/seraphon_2022_no_sounds.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+    </div>
+</div>
 <div class="caption">
     My beloved 0-5 Seraphon.
 </div>
 
 <div align="justify">
 In the little free time I do have, I enjoy playing board games, particularly with the <a href="https://www.mit.edu/~sgs/games/games.html">MIT Strategic Game Society (SGS)</a>. I mainly enjoyer heavier thematic games and my favourites include all the usual suspects: <em>Spirit Island</em>, <em>Oath</em>, <em>Caverna</em>, <em>Barrage</em>, <em>War of the Ring</em>, <em>Glomhaven</em>, <em>Root</em>, <em>Clash of Cultures</em>, and of course, <em>Twilight Imperium</em>. Notably, I actually prefer the 3rd edition of <em>Twilight Imperium</em> over the fourth. A worse game perhaps, but there is a certain old-fashioned charm that I feel was polished away in TI4. In terms of lighter games, I think <em>Fort</em> is the best deck-building game money can buy, and I recently acquired <em>Irish Gauge</em>, which is a devilishly good time. Last but not least, I always forget how good <em>The King is Dead</em> is, a beauty of minimalist design.
+
+<div style="text-align: center;">
+  {% include figure.liquid loading="eager" path="assets/img/warhammer_video/blahaj.jpg" title="Blahaj Gaming" class="img-fluid rounded z-depth-0" width="400" height="auto" %}
+</div>
+<div class="caption">
+    They are so unbelievably locked in.
+</div>
   
 </div>
 <div align="justify">
