@@ -105,7 +105,8 @@
       items:
         - Relativistic Quantum Field Theory I, II
         - Quantum Mechanics I, II, III
-        - Special, General Relativity
+        - General Relativity
+        - Special Relativity
         - Statistical Mechanics
         - Classical Mechanics I, II, III
         - Experimental Physics, Radio Astronomy Laboratory
@@ -114,7 +115,8 @@
         - Numerical Methods for PDEs and Integral Equations
         - Numerical Methods for Linear Algebra
         - Applied Mathematics Seminar
-        - Real, Complex Analysis
+        - Complex Analysis
+        - Real Analysis
         - Differential Geometry
         - Nonlinear Dynamics and Chaos
         - Linear Algebra
