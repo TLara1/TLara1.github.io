@@ -144,9 +144,10 @@
       description:
         - Planned and executed club meetings and events, including the 2022 OrigaMIT Convention, featuring 100+ attendees and dozens of workshops. 
 
-- title: Software Skills
+- title: Skills
   type: nested_list
   contents:
+    - title: Software
       items:
         - Python, C++, Matlab, Mathematica, Gnuplot, Bash, Git, HPC, Paraview, VisIt, LaTeX
 
