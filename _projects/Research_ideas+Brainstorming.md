@@ -87,6 +87,11 @@ Some Basic Problems of the Mathematical Theory of Elasticity, Muskhelishvili
 Numerical Relativity, Shibata
 An Introduction To Quantum Field Theory, Peskin & Shroeder
 
+CONFERENCES THAT ARE INTERSTING
+APS DFD
+USNCCM
+APS (large)
+USNCTAM
 
 INTERESTING PEOPLE
 Karthik Menon - Georgia Tech
