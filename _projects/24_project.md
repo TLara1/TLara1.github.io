@@ -80,9 +80,9 @@ But consider,
 \begin{equation}
 \sigma^1 _{ij}e^2 _{ij}=\sigma^1 _{ij}\partial_j u^2_i = \partial _j\left(\sigma^1 _{ij}u^2_i\right)-u^2_i\partial _j\sigma^1 _{ij}=\partial _j\left(\sigma^2_{ij}u^1_i\right)-u^1 _i\partial _j\sigma^2 _{ij}.
 \end{equation}
-And integrating over the region $$V$$ and applying the divergence theorem,
+And integrating over the region $$V$$ and applying the divergence theorem, where $$n_i$$ is a unit vecotr pointing out of the region $$V$$,
 \begin{equation}\label{eq: Reciprocal theorem}
-\oint _S dS\ \sigma^1 _{ij}u^2_i n_j - \int_V dV\ u^2 _i\partial _j\sigma^1_{ij} = \oint _S dS\ \sigma^2 _{ij}u^1_i n_j - \int_V dV\ u^1 _i\partial _j\sigma^2 _{ij}.
+\oint _S dS\ \sigma^1 _{ij}u^2_i n_j - \int_V dV\ u^2 _i\partial _j\sigma^1 _{ij} = \oint _S dS\ \sigma^2 _{ij}u^1_i n_j - \int_V dV\ u^1 _i\partial _j\sigma^2 _{ij}.
 \end{equation}
 Eq. \ref{eq: Reciprocal theorem} is known as the Reciprocal theorem.
 
