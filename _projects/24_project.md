@@ -110,23 +110,29 @@ This is helpful, but we are also interested in the case of a particle immersed i
 \begin{equation}
 \text{if}\ \mathbf{x}\in V_f,\quad u^D_k\left(\mathbf{x}\right)=-\frac{1}{8\pi\mu}\oint _{S_p} dS\left(\mathbf{\xi}\right)\ \sigma^D _{ij}\left(\mathbf{\xi}\right)\mathcal{G} _{ik}\left(\mathbf{x}-\mathbf{\xi}\right)\hat{n}_j\left(\mathbf{\xi}\right)-\oint _{S _p} dS\left(\mathbf{\xi}\right)\ \left(u^p_i-u^\infty_i\right)\Sigma _{ijk}\left(\mathbf{\xi}-\mathbf{x}\right) \hat{n}_j\left(\mathbf{\xi}\right)\nonumber
 \end{equation}
-\begin{equation}
+\begin{equation}\label{eq: integral represntation outside particle}
 -\frac{1}{8\pi\mu}\oint _{S _\infty} dS\left(\mathbf{\xi}\right)\ \sigma^D _{ij}\left(\mathbf{\xi}\right)\mathcal{G} _{ik}\left(\mathbf{x}-\mathbf{\xi}\right)\hat{n}_j\left(\mathbf{\xi}\right) 
 -\oint _{S _\infty} dS\left(\mathbf{\xi}\right)\ u^D_i\Sigma _{ijk}\left(\mathbf{\xi}-\mathbf{x}\right) \hat{n}_j\left(\mathbf{\xi}\right),
 \end{equation}
-where $$\hat{n}_i$$ points **into** the fluid region in the direction opposite to $$n_i$$. Now apply the same integral representation to the region inside the particle where the velocity 
-\text{if}\ \mathbf{x}\in V _p, \quad u_k^p- u^\infty_k = \frac{1}{8\pi\mu}\oint _{S_p} dS\left(\mathbf{\xi}\right)\ \left(\sigma^P _{ij}-\sigma^\infty _{ij}\left(\mathbf{\xi}\right)\right)\mathcal{G} _{ik}\left(\mathbf{x}-\mathbf{\xi}\right)\hat{n}_j\left(\mathbf{\xi}\right) + \oint _{S _p} dS\left(\mathbf{\xi}\right)\ \left(u^p_i-u^\infty_i\right)\Sigma _{ijk}\left(\mathbf{\xi}-\mathbf{x}\right) \hat{n}_j\left(\mathbf{\xi}\right).
+where $$\hat{n}_i$$ points **into** the fluid region in the direction opposite to $$n_i$$. The integrals over $$S _\infty$$ vanish as the edge of the boundary approaches infinity if $$u^D_i\rightarrow0$$ and $$r\sigma^D _{ij}\rightarrow0$$ as $$r\rightarrow\infty$$ as $$\mathcal{G} _{ij}\sim r^{-1}$$ and $$\Sigma _{ijk}\sim r^{-2}$$ and $$dS\sim r^2$$. The first condition holds, $$u^D_i\rightarrow0$$, as we expect the influence of the particle to vanish far from its surface and by the definition of $$u_i^\infty$$. We similarly expect $$\sigma^D _{ij}\sim r^{-2}$$ since the gradient of the disturbance field goes with, $$\partial_i u^D_j\rightarrow r^{-2}$$.
+
+Now apply the same integral representation to the region inside the particle where the velocity 
+\begin{equation}\label{eq: integral represntation inside particle}
+\text{if}\ \mathbf{x}\in V _p, \quad u_k^p- u^\infty_k = \frac{1}{8\pi\mu}\oint _{S_p} dS\left(\mathbf{\xi}\right)\ \left(\sigma^p _{ij}-\sigma^\infty _{ij}\left(\mathbf{\xi}\right)\right)\mathcal{G} _{ik}\left(\mathbf{x}-\mathbf{\xi}\right)\hat{n}_j\left(\mathbf{\xi}\right) + \oint _{S _p} dS\left(\mathbf{\xi}\right)\ \left(u^p_i-u^\infty_i\right)\Sigma _{ijk}\left(\mathbf{\xi}-\mathbf{x}\right) \hat{n}_j\left(\mathbf{\xi}\right).
 \end{equation}
+The surface traction integral, $$\sigma^p _{ij}$$ vanishes, since its net contribution is a constant pressure term in the case of a rigid body and the integral over the solenoidal Green's function vanishes. 
 
-
-
-
-
+We add Eq. \ref{eq: integral representation outside particle} and Eq. \ref{eq: integral represntation inside particle} to obtain a representation of the velocity field everywhere. Integrals over $$S_\infty$$ are also removed since they vanish as discussed above,
+\begin{equation}
+u_k\left(\mathbf{x}\right) = u_k^\infty -\frac{1}{8\pi\mu}\oint _{S_p} dS\left(\mathbf{\xi}\right)\ \sigma _{ij}\left(\mathbf{\xi}\right)\mathcal{G} _{ik}\left(\mathbf{x}-\mathbf{\xi}\right)\hat{n}_j\left(\mathbf{\xi}\right).
+\end{equation}
+So the disturbance field everywhere in the fluid domain can be expressed as a surface integral with a Green's function kernel over the stress at the particle surface. 
 
 ### The Multipole Expansion
-The notes here are based on Kim and Karrila's _Microhydrodynamics_.
 
 
 
 
 ### Sources
+The notes here are based on Kim and Karrila's _Microhydrodynamics_.
+
