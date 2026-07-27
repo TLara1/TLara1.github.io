@@ -482,8 +482,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/23_project/";
-            },},{id: "projects-24-project",
-          title: '24_project',
+            },},{id: "projects-on-the-effective-viscosity-of-a-spherical-suspension-8-26",
+          title: 'On the Effective Viscosity of a Spherical Suspension - 8/26',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/24_project/";
