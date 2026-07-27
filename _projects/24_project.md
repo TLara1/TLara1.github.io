@@ -51,25 +51,35 @@ where $$\mathcal{G} _{ij}$$ is the Oseen Tensor and $$\mathcal{P}_i$$ is the cor
 \mathcal{G} _{ij} = \frac{1}{r}\delta _{ij}+\frac{1}{r^3}x_ix_j,
 \end{equation}
 \begin{equation}
-\mathcal{P} _i = 2\mu\frac{x_i}{r^3}.
+\mathcal{P} _i = 2\mu\frac{x _i}{r^3}.
 \end{equation}
+Now we may also construct the stress field tensor,
+\begin{equation}
+\sigma _{ij}=\frac{F_k}{8\pi \mu}\left(-\mathcal{P} _k\delta _{ij} + \mu\left(\partial_i\mathcal{G} _{jk}+\partial_j\mathcal{G} _{ik}\right)\right) = \frac{F_k}{8\pi \mu}\Sigma _{ijk},
+\end{equation}
+with,
+\begin{equation}
+\Sigma _{ijk} = -\mathcal{P} _k\delta _{ij} + \mu\left(\partial_i\mathcal{G} _{jk}+\partial_j\mathcal{G} _{ik}\right) =  -\mu\frac{6}{r^5}x_ix_jx_k.
+\end{equation}
+
 
 ### The Integral Representation with Green's Functions
 We derived the Green's functions to power a representation of the velocity field as a surface integral. First, we will need the reciprocal theorem. 
 
 Consider a closed region of fluid $$V$$ enclosed by a surface $$S$$. Two velocity fields $$u_i^1$$ and $$u_i^2$$ satisfy the Stokes Equations with different boundary conditions on the surface $$S$$. Now notice,
 \begin{equation}
-\sigma^1_{ij}e^2_{ij}=2\mu e^1_{ij}e^2_{ij}=\sigma^2_{ij}e^1_{ij}.
+\sigma^1_{ij}e^2_{ij}=2\mu e^1_{ij}e^2_{ij}=\sigma^2_{ij}e^1 _{ij}.
 \end{equation}
 But consider,
 \begin{equation}
-\sigma^1_{ij}e^2_{ij}=\sigma^1_{ij}\partial_j u^2_i = \partial_j\left(\sigma^1_{ij}u^2_i\right)-u^2_i\partial_j\sigma^1_{ij}=\partial_j\left(\sigma^2_{ij}u^1_i\right)-u^1_i\partial_j\sigma^2_{ij}.
+\sigma^1 _{ij}e^2 _{ij}=\sigma^1 _{ij}\partial_j u^2_i = \partial _j\left(\sigma^1 _{ij}u^2_i\right)-u^2_i\partial _j\sigma^1 _{ij}=\partial _j\left(\sigma^2_{ij}u^1_i\right)-u^1 _i\partial _j\sigma^2 _{ij}.
 \end{equation}
 And integrating over the region $$V$$ and applying the divergence theorem,
 \begin{equation}\label{eq: Reciprocal theorem}
-\oint_S dS\ \sigma^1_{ij}u^2_i n_j - \int_V dV\ u^2_i\partial_j\sigma^1_{ij} = \oint_S dS\ \sigma^2_{ij}u^1_i n_j - \int_V dV\ u^1_i\partial_j\sigma^2_{ij}.
+\oint _S dS\ \sigma^1 _{ij}u^2_i n_j - \int_V dV\ u^2 _i\partial _j\sigma^1_{ij} = \oint _S dS\ \sigma^2 _{ij}u^1_i n_j - \int_V dV\ u^1 _i\partial _j\sigma^2_{ij}.
 \end{equation}
 Eq. \ref{eq: Reciprocal theorem} is known as the Reciprocal theorem and will come in very handy in the integral representations that follow.
+
 
 
 
