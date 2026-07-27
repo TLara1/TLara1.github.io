@@ -18,7 +18,7 @@ toc:
 ### The Green's Function for Stokes Flow
 
 ### The Multipole Expansion
-
+The notes here are based on Kim and Karrila's _Microhydrodynamics_.
 
 
 
