@@ -129,7 +129,24 @@ u_k\left(\mathbf{x}\right) = u_k^\infty -\frac{1}{8\pi\mu}\oint _{S_p} dS\left(\
 So the disturbance field everywhere in the fluid domain can be expressed as a surface integral with a Green's function kernel over the stress at the particle surface. 
 
 ### The Multipole Expansion
-Now we may
+Now we may expand the integral representation in the far field, the limit of $$|\mathbf{x}|\gg|\mathbf{\xi}|$$ so that $$\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{\xi}\right)\approx\mathcal{G} _{ij}\left(\mathbf{x}\right)$$. Formally, expanding the Green's function around $$\mathbf{\xi}=0$$,
+\begin{equation}
+\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{\xi}\right)=\sum _{n=0}^\infty\frac{\left(-1\right)^n}{n!}\left(\xi_k\partial_k\right)^n\mathcal{G} _{ij}\left(\mathbf{x}\right).
+\end{equation}
+Inserting this into the velocity integral,
+\begin{equation}
+u_k\left(\mathbf{x}\right) -u_k^\infty =  -\frac{1}{8\pi\mu}\sum _{n=0}^\infty\frac{\left(-1\right)^n}{n!}\oint _{S_p} dS\left(\mathbf{\xi}\right)\ \left(\sigma _{ij} \hat{n}_j\left(\mathbf{\xi}\right) \xi _{k_1}\xi _{k_2}...\xi _{k_n}\right)\partial _{k_1}\partial _{k_2}...\partial _{k_n}\mathcal{G} _{ik}\left(\mathbf{x}\right),
+\end{equation}
+\begin{equation}
+u_k\left(\mathbf{x}\right) -u_k^\infty =  -\frac{F _i}{8\pi\mu}\mathcal{G} _{ik}\left(\mathbf{x}\right) + -\frac{D _{ij}}{8\pi\mu}\partial_j\mathcal{G} _{ik}\left(\mathbf{x}\right)+...,
+\end{equation}
+with,
+\begin{equation}
+F _i = \oint _{S_p} dS\left(\mathbf{\xi}\right)\ \sigma _{ij} \hat{n}_j \left(\mathbf{\xi}\right),
+\end{equation}
+\begin{equation}
+D _{ij} = \oint _{S_p} dS\left(\mathbf{\xi}\right)\ \sigma _{il} \hat{n}_l\xi _j \left(\mathbf{\xi}\right).
+\end{equation}
 
 
 
