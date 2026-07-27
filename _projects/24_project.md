@@ -86,7 +86,7 @@ And integrating over the region $$V$$ and applying the divergence theorem, where
 \end{equation}
 Eq. \ref{eq: Reciprocal theorem} is known as the Reciprocal theorem.
 
-We can also apply the Reciprocal theorem to the Green's function representation. Let u^1_i correspond to the solution of the Stokes Equations in the presence of a point forcing at $$\mathbf{x}$$ and let $$u^2$$ be replaced by $$u$$, the velocity field in the region of interest. Eq. \ref{eq: Reciprocal theorem} becomes,
+We can also apply the Reciprocal theorem to the Green's function representation. Let $$u^1_i$$ correspond to the solution of the Stokes Equations in the presence of a point forcing at $$\mathbf{x}$$ and let $$u^2$$ be replaced by $$u$$, the velocity field in the region of interest. Eq. \ref{eq: Reciprocal theorem} becomes,
 \begin{equation}
 \oint _S dS\left(\mathbf{\xi}\right)\ F_k\Sigma _{ijk}\left(\mathbf{\xi}-\mathbf{x}\right)u_i\left(\mathbf{\xi}\right) n_j\left(\mathbf{\xi}\right)+\int_V dV\left(\mathbf{\xi}\right)\ u _i\left(\mathbf{\xi}\right) F_i\delta\left(\mathbf{\xi}-\mathbf{x}\right)\nonumber
 \end{equation}
@@ -129,7 +129,7 @@ u_k\left(\mathbf{x}\right) = u_k^\infty -\frac{1}{8\pi\mu}\oint _{S_p} dS\left(\
 So the disturbance field everywhere in the fluid domain can be expressed as a surface integral with a Green's function kernel over the stress at the particle surface. 
 
 ### The Multipole Expansion
-
+Now we may
 
 
 
