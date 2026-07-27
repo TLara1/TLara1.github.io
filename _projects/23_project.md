@@ -255,4 +255,4 @@ D _\mu = \partial _\mu - i g A^a _\mu T _a.
 This is the Lagrangian for the Yang-Mills theory. There is **a lot** more to be said about gauge fixing and propagators and loops and renormalization and whatnot, but we will leave things here for now.
 
 ### Sources
-This was done using my own notes taken during my Quantum Field Theory II class (8.324), taught by Professor Ian Stewart during the 2025 Fall semester and my Quantum Feidl Theory III class (8.325) taught by Professor Daniel Harlow during the 2026 Spring semester.
+This was done using my own notes taken during my Quantum Field Theory II class (8.324), taught by Professor Ian Stewart during the 2025 Fall semester, and my Quantum Field Theory III class (8.325), taught by Professor Daniel Harlow during the 2026 Spring semester.
