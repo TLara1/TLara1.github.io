@@ -80,7 +80,7 @@ But consider,
 \begin{equation}
 \sigma^1 _{ij}e^2 _{ij}=\sigma^1 _{ij}\partial_j u^2_i = \partial _j\left(\sigma^1 _{ij}u^2_i\right)-u^2_i\partial _j\sigma^1 _{ij}=\partial _j\left(\sigma^2_{ij}u^1_i\right)-u^1 _i\partial _j\sigma^2 _{ij}.
 \end{equation}
-And integrating over the region $$V$$ and applying the divergence theorem, where $$n_i$$ is a unit vecotr pointing out of the region $$V$$,
+And integrating over the region $$V$$ and applying the divergence theorem, where $$n_i$$ is a unit vecotr pointing out of the fluid-filled region $$V$$,
 \begin{equation}\label{eq: Reciprocal theorem}
 \oint _S dS\ \sigma^1 _{ij}u^2_i n_j - \int_V dV\ u^2 _i\partial _j\sigma^1 _{ij} = \oint _S dS\ \sigma^2 _{ij}u^1_i n_j - \int_V dV\ u^1 _i\partial _j\sigma^2 _{ij}.
 \end{equation}
@@ -94,23 +94,27 @@ We can also apply the Reciprocal theorem to the Green's function representation.
 = \oint _S dS\left(\mathbf{\xi}\right)\ \sigma _{ij}\left(\mathbf{\xi}\right)\frac{F_k}{8\pi \mu}\mathcal{G} _{ik}\left(\mathbf{\xi}-\mathbf{x}\right)n_j\left(\mathbf{\xi}\right) - \int_V dV\left(\mathbf{\xi}\right)\ \frac{F_k}{8\pi \mu}\mathcal{G} _{ik}\left(\mathbf{\xi}-\mathbf{x}\right)\partial _j\sigma _{ij}\left(\mathbf{\xi}\right).
 \end{equation}
 
-
 As this holds for any $$F_k$$ forcing, we can do away with this index, and assuming the $$u$$ field is force-free such that $$\partial _j\sigma _{ij}=0$$,
 \begin{equation}
 \frac{1}{8\pi\mu}\oint _S dS\left(\mathbf{\xi}\right)\ \sigma _{ij}\left(\mathbf{\xi}\right)\mathcal{G} _{ik}\left(\mathbf{\xi}-\mathbf{x}\right)n_j\left(\mathbf{\xi}\right) =\oint _S dS\left(\mathbf{\xi}\right)\ \Sigma _{ijk}\left(\mathbf{\xi}-\mathbf{x}\right)u_i\left(\mathbf{\xi}\right) n_j\left(\mathbf{\xi}\right)+\int_V dV\left(\mathbf{\xi}\right)\ u _k\left(\mathbf{\xi}\right) \delta\left(\mathbf{\xi}-\mathbf{x}\right).
 \end{equation}
 Now we can exchange the order of $$\mathbf{x}$$ and $$\mathbf{\xi}$$ using $$\mathcal{G} _{ij}\left(-\mathbf{x}\right)=\mathcal{G} _{ij}\left(\mathbf{x}\right)$$ and $$\Sigma _{ijk}\left(-\mathbf{x}\right)=-\Sigma _{ijk}\left(\mathbf{x}\right)$$. For the velocity field inside the region $$V$$, the $$\delta$$ function integral turns into $$u_k\left(\mathbf{x}\right)$$, while outside this region, it evaluate to $$0$$, giving the following surface integral representation for the velocity,
-\begin{equation}
+\begin{equation}\label{eq: surface integral velocity representation 1}
 \text{if}\ \mathbf{x}\in V,\quad u_k\left(\mathbf{x}\right)=\frac{1}{8\pi\mu}\oint _S dS\left(\mathbf{\xi}\right)\ \sigma _{ij}\left(\mathbf{\xi}\right)\mathcal{G} _{ik}\left(\mathbf{x}-\mathbf{\xi}\right)n_j\left(\mathbf{\xi}\right) + \oint _S dS\left(\mathbf{\xi}\right)\ \Sigma _{ijk}\left(\mathbf{\xi}-\mathbf{x}\right)u_i\left(\mathbf{\xi}\right) n_j\left(\mathbf{\xi}\right),
 \end{equation}
-\begin{equation}
+\begin{equation}\label{eq: surface integral velocity representation 2}
 \text{if}\ \mathbf{x}\notin V,\quad 0=\frac{1}{8\pi\mu}\oint _S dS\left(\mathbf{\xi}\right)\ \sigma _{ij}\left(\mathbf{\xi}\right)\mathcal{G} _{ik}\left(\mathbf{x}-\mathbf{\xi}\right)n_j\left(\mathbf{\xi}\right) + \oint _S dS\left(\mathbf{\xi}\right)\ \Sigma _{ijk}\left(\mathbf{\xi}-\mathbf{x}\right)u_i\left(\mathbf{\xi}\right) n_j\left(\mathbf{\xi}\right).
 \end{equation}
 
-This is helpful, but we are also interested in the case of a particle immersed in a fluid region
+This is helpful, but we are also interested in the case of a particle immersed in a fluid region. Consider now a fluid region $$V_f$$ bounded by a particle surface $$S_p$$ and a far-away surface $$S_\infty$$. The particle undergoes some motion such that $$u_i=u^p_i$$ on the surface of the particle, and far away from the particle there is ambient flow $$u_i=u^\infty_i$$ on $$S_\infty$$. We are interested in evaluating the disturbance field $$u^D_i=u_i-u^\infty_i$$ in the region $$V_f$$. With Eq. \ref{eq: surface integral velocity representation 1} and Eq. \ref{eq: surface integral velocity representation 2}, we see,
+\begin{equation}
+\text{if}\ \mathbf{x}\in V_f,\quad u^D_k\left(\mathbf{x}\right)=-\frac{1}{8\pi\mu}\oint _{S_p} dS\left(\mathbf{\xi}\right)\ \sigma^D _{ij}\left(\mathbf{\xi}\right)\mathcal{G} _{ik}\left(\mathbf{x}-\mathbf{\xi}\right)\hat{n}_j\left(\mathbf{\xi}\right)-\oint _{S _p} dS\left(\mathbf{\xi}\right)\ \left(u^p_i-u^\infty_i\right)\Sigma _{ijk}\left(\mathbf{\xi}-\mathbf{x}\right) \hat{n}_j\left(\mathbf{\xi}\right)
+-\frac{1}{8\pi\mu}\oint _{S _\infty} dS\left(\mathbf{\xi}\right)\ \sigma^D _{ij}\left(\mathbf{\xi}\right)\mathcal{G} _{ik}\left(\mathbf{x}-\mathbf{\xi}\right)\hat{n}_j\left(\mathbf{\xi}\right) 
+-\oint _{S _\infty} dS\left(\mathbf{\xi}\right)\ u^D_i\Sigma _{ijk}\left(\mathbf{\xi}-\mathbf{x}\right) \hat{n}_j\left(\mathbf{\xi}\right),
+\end{equation}
+where $$\hat{n}_i$$ points **into** the fluid region in the direction opposite to $$n_i$$.
 
 
-and will come in very handy in the integral representations that follow.
 
 
 
