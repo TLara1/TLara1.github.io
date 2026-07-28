@@ -121,7 +121,7 @@ Now apply the same integral representation to the region inside the particle whe
 \text{if}\ \mathbf{x}\in V _p, \quad u_k^p- u^\infty_k = \frac{1}{8\pi\mu}\oint _{S_p} dS\left(\mathbf{\xi}\right)\ \left(\sigma^p _{ij}-\sigma^\infty _{ij}\left(\mathbf{\xi}\right)\right)\mathcal{G} _{ik}\left(\mathbf{x}-\mathbf{\xi}\right)\hat{n}_j\left(\mathbf{\xi}\right)\nonumber
 \end{equation}
 \begin{equation}\label{eq: integral represntation inside particle}
-+ \oint _{S _p} dS\left(\mathbf{\xi}\right)\ \left(u^p_i-u^\infty_i\right)\Sigma _{ijk}\left(\mathbf{\xi}-\mathbf{x}\right) \hat{n}_j\left(\mathbf{\xi}\right).
++\oint _{S _p} dS\left(\mathbf{\xi}\right)\ \left(u^p_i-u^\infty_i\right)\Sigma _{ijk}\left(\mathbf{\xi}-\mathbf{x}\right) \hat{n}_j\left(\mathbf{\xi}\right).
 \end{equation}
 
 
@@ -143,7 +143,7 @@ Inserting this into the velocity integral,
 u_k\left(\mathbf{x}\right) -u_k^\infty =  -\frac{1}{8\pi\mu}\sum _{n=0}^\infty\frac{\left(-1\right)^n}{n!}\oint _{S_p} dS\left(\mathbf{\xi}\right)\ \left(\sigma _{ij} \hat{n}_j\left(\mathbf{\xi}\right) \xi _{k_1}\xi _{k_2}...\xi _{k_n}\right)\partial _{k_1}\partial _{k_2}...\partial _{k_n}\mathcal{G} _{ik}\left(\mathbf{x}\right),
 \end{equation}
 \begin{equation}
-u_k\left(\mathbf{x}\right) -u_k^\infty =  -\frac{F _i}{8\pi\mu}\mathcal{G} _{ik}\left(\mathbf{x}\right) +\frac{D _{ij}}{8\pi\mu}\partial_j\mathcal{G} _{ik}\left(\mathbf{x}\right)+...,
+u_k\left(\mathbf{x}\right) -u_k^\infty =  -F _i\frac{\mathcal{G} _{ik}\left(\mathbf{x}\right)}{8\pi\mu} +D _{ij}\frac{\partial_j\mathcal{G} _{ik}\left(\mathbf{x}\right)}{8\pi\mu}+...,
 \end{equation}
 with,
 \begin{equation}
@@ -168,7 +168,7 @@ We may also identify the relation of the rotlet with the torque pseudovector,
 \end{equation}
 and,
 \begin{equation}
-T _{jk}=\epsilon _{jkl}T _l.
+T _{jk}=-\frac{1}{2}\epsilon _{jkl}T _l.
 \end{equation}
 Next, we will use the multipole expansion to identify the velocity field around a spherical particle
 
@@ -208,11 +208,11 @@ for a translating sphere, the multipole expansion has only these two terms, and 
 
 Now for the rotating case. At $$r=a$$, 
 \begin{equation}
-\epsilon_{jkl}\epsilon{nml}\partial_m\mathcal{G} _{in}\left(r=a\right) = \partial_k\mathcal{G} _{ij}\left(r=a\right)-\partial_j\mathcal{G} _{ik}\left(r=a\right) = \frac{2}{a^3}\left(\delta _{ik}x_j-\delta _{ij}x_k\right) = \frac{2}{a^3}\epsilon _{jkl}\epsilon _{ilm}x_m.
+\epsilon_{jkl}\epsilon_{nml}\partial_m\mathcal{G} _{in}\left(r=a\right) = \partial_k\mathcal{G} _{ij}\left(r=a\right)-\partial_j\mathcal{G} _{ik}\left(r=a\right) = \frac{2}{a^3}\left(\delta _{ik}x_j-\delta _{ij}x_k\right) = \frac{2}{a^3}\epsilon _{jkl}\epsilon _{ilm}x_m.
 \end{equation}
 So set the velocity field,
 \begin{equation}
-u_i\left(\mathbf{x}\right)=4\mu\pi a^3\epsilon{ljk}\frac{\partial_l\mathcal{G} _{ik}\left(\mathbf{x}\right)}{8\pi\mu}\left(\Omega_j-\Omega^\infty_j\right) + \epsilon _{ijk}\Omega^\infty _jx _k
+u_i\left(\mathbf{x}\right)=4\mu\pi a^3\epsilon _{ljk}\frac{\partial_l\mathcal{G} _{ik}\left(\mathbf{x}\right)}{8\pi\mu}\left(\Omega_j-\Omega^\infty_j\right) + \epsilon _{ijk}\Omega^\infty _jx _k
 \end{equation}
 
 And lastly, for the strained case. At $$r=a$$,
@@ -228,8 +228,22 @@ and we identify the velocity field as,
 u_i\left(\mathbf{x}\right)= \frac{20}{3}\pi\mu a^3 \left(E _{jk}^\infty-E _{jk}^p\right) \left(1+\frac{a^2}{10}\right)\frac{\partial_k\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} + E^\infty _{ij}x _j.
 \end{equation}
 
+In summary, we may express our velocity field as a sum of the translational, rotational, and straining modes,
+\begin{equation}
+u_i\left(\mathbf{x}\right)= \left[-F_j\left(1+\frac{a^2}{6}\right) + S_{jk}\left(1+\frac{a^2}{10}\right)\partial_k -\frac{1}{2} \epsilon_{jkl}T _k\partial_l\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} + u^\infinity _i,
+\end{equation}
+\begin{equation}
+F_i = 6\pi\mu a\left(U^\infty _j -U _j\right),
+\end{equation}
 
+\begin{equation}
+S_{jk} = \frac{20}{3}\pi\mu a^3 \left(E _{jk}^\infty-E _{jk}^p\right),
+\end{equation}
+\begin{equation}
+T _k = 8\mu\pi a^3\left( \Omega^\infty_k-\Omega_k\right).
+\end{equation}
 
+### Faxén Laws
 
 
 ### Sources
