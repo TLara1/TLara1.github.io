@@ -230,7 +230,7 @@ u_i\left(\mathbf{x}\right)= \frac{20}{3}\pi\mu a^3 \left(E _{jk}^\infty-E _{jk}^
 
 In summary, we may express our velocity field as a sum of the translational, rotational, and straining modes,
 \begin{equation}
-u_i\left(\mathbf{x}\right)= \left[-F_j\left(1+\frac{a^2}{6}\right) + S_{jk}\left(1+\frac{a^2}{10}\right)\partial_k -\frac{1}{2} \epsilon_{jkl}T _k\partial_l\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} + u^\infinity _i,
+u_i\left(\mathbf{x}\right)= \left[-F_j\left(1+\frac{a^2}{6}\right) + S_{jk}\left(1+\frac{a^2}{10}\right)\partial_k -\frac{1}{2} \epsilon_{jkl}T _k\partial_l\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} + u^\infty _i,
 \end{equation}
 \begin{equation}
 F_i = 6\pi\mu a\left(U^\infty _j -U _j\right),
@@ -244,6 +244,8 @@ T _k = 8\mu\pi a^3\left( \Omega^\infty_k-\Omega_k\right).
 \end{equation}
 
 ### Faxén Laws
+We require one last element, that being the inverse relations. Suppose we are given the ambient flow and particle motion; how do we determine the moments?
+
 
 
 ### Sources
