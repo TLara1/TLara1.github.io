@@ -202,10 +202,14 @@ Considering first the translation case. Notice at $$r=a$$,
 \end{equation}
 from which the velocity is represented as,
 \begin{equation}
-u_i\left(\mathbf{x}\right)=-6\pi\mu a\left(U^\infty_j-U_j\right)\left(1+\frac{a^2}{6}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} + U^infty_i,
+u_i\left(\mathbf{x}\right)=-6\pi\mu a\left(U^\infty_j-U_j\right)\left(1+\frac{a^2}{6}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} + U^\infty_i,
 \end{equation}
 for a translating sphere, the multipole expansion has only these two terms, and only two derivative terms of the Green's function are necessary.
 
+Now for the rotating case. At $$r=a$$, 
+\begin{equation}
+\partial_k\mathcal{G} _{ij}\left(r=a\right)-\partial_j\mathcal{G} _{ik}\left(r=a\right) = \frac{2}{a^3}\left(\delta _{ik}x_j-\delta _{ij}x_k\right) = \frac{2}{a^3}\epsilon _{ilm}\epsilon _{jkl}x_m.
+\end{equation}
 
 
 ### Sources
