@@ -117,12 +117,17 @@ This is helpful, but we are also interested in the case of a particle immersed i
 where $$\hat{n}_i$$ points **into** the fluid region in the direction opposite to $$n_i$$. The integrals over $$S _\infty$$ vanish as the edge of the boundary approaches infinity if $$u^D_i\rightarrow0$$ and $$r\sigma^D _{ij}\rightarrow0$$ as $$r\rightarrow\infty$$ as $$\mathcal{G} _{ij}\sim r^{-1}$$ and $$\Sigma _{ijk}\sim r^{-2}$$ and $$dS\sim r^2$$. The first condition holds, $$u^D_i\rightarrow0$$, as we expect the influence of the particle to vanish far from its surface and by the definition of $$u_i^\infty$$. We similarly expect $$\sigma^D _{ij}\sim r^{-2}$$ since the gradient of the disturbance field goes with, $$\partial_i u^D_j\rightarrow r^{-2}$$.
 
 Now apply the same integral representation to the region inside the particle where the velocity 
-\begin{equation}\label{eq: integral represntation inside particle}
-\text{if}\ \mathbf{x}\in V _p, \quad u_k^p- u^\infty_k = \frac{1}{8\pi\mu}\oint _{S_p} dS\left(\mathbf{\xi}\right)\ \left(\sigma^p _{ij}-\sigma^\infty _{ij}\left(\mathbf{\xi}\right)\right)\mathcal{G} _{ik}\left(\mathbf{x}-\mathbf{\xi}\right)\hat{n}_j\left(\mathbf{\xi}\right) + \oint _{S _p} dS\left(\mathbf{\xi}\right)\ \left(u^p_i-u^\infty_i\right)\Sigma _{ijk}\left(\mathbf{\xi}-\mathbf{x}\right) \hat{n}_j\left(\mathbf{\xi}\right).
+\begin{equation}
+\text{if}\ \mathbf{x}\in V _p, \quad u_k^p- u^\infty_k = \frac{1}{8\pi\mu}\oint _{S_p} dS\left(\mathbf{\xi}\right)\ \left(\sigma^p _{ij}-\sigma^\infty _{ij}\left(\mathbf{\xi}\right)\right)\mathcal{G} _{ik}\left(\mathbf{x}-\mathbf{\xi}\right)\hat{n}_j\left(\mathbf{\xi}\right)\nonumber
 \end{equation}
+\begin{equation}\label{eq: integral represntation inside particle}
++ \oint _{S _p} dS\left(\mathbf{\xi}\right)\ \left(u^p_i-u^\infty_i\right)\Sigma _{ijk}\left(\mathbf{\xi}-\mathbf{x}\right) \hat{n}_j\left(\mathbf{\xi}\right).
+\end{equation}
+
+
 The surface traction integral, $$\sigma^p _{ij}$$ vanishes, since its net contribution is a constant pressure term in the case of a rigid body and the integral over the solenoidal Green's function vanishes. 
 
-We add Eq. \ref{eq: integral representation outside particle} and Eq. \ref{eq: integral represntation inside particle} to obtain a representation of the velocity field everywhere. Integrals over $$S_\infty$$ are also removed since they vanish as discussed above,
+We add Eq. \ref{eq: integral represntation outside particle} and Eq. \ref{eq: integral represntation inside particle} to obtain a representation of the velocity field everywhere. Integrals over $$S_\infty$$ are also removed since they vanish as discussed above,
 \begin{equation}
 u_k\left(\mathbf{x}\right) = u_k^\infty -\frac{1}{8\pi\mu}\oint _{S_p} dS\left(\mathbf{\xi}\right)\ \sigma _{ij}\left(\mathbf{\xi}\right)\mathcal{G} _{ik}\left(\mathbf{x}-\mathbf{\xi}\right)\hat{n}_j\left(\mathbf{\xi}\right).
 \end{equation}
@@ -147,6 +152,59 @@ F _i = \oint _{S_p} dS\left(\mathbf{\xi}\right)\ \sigma _{ij} \hat{n}_j \left(\m
 \begin{equation}
 D _{ij} = \oint _{S_p} dS\left(\mathbf{\xi}\right)\ \sigma _{il} \hat{n}_l\left(\mathbf{\xi}\right)\xi _j .
 \end{equation}
+$$F _i$$ is known as the _stokeslet_, the next effect is the dipole $$D _{ij}$$ that decays with $$r^{-2}$$. Because the isotropic portion of $$D _{ij}$$ has no dynamic significance since $$\partial_i\mathcal{G} _{ij}=0$$, we can split the term into a symmetric _stresslet_ and an antisymmetric _rotlet_,
+\begin{equation}
+D _{ij} -\frac{1}{3}D _{kk}\delta _{ij} = S _{ij} + T _{ij},
+\end{equation}
+\begin{equation}
+S _{ij} = \frac{1}{2}\oint _{S_p} dS\left(\mathbf{\xi}\right)\ \left(\sigma _{il}\xi _j + \sigma _{jl} \xi _i\right)\hat{n}_l\left(\mathbf{\xi}\right) - \frac{1}{3}\oint _{S_p} dS\left(\mathbf{\xi}\right)\ \sigma _{lm}\xi _l \hat{n}_m\left(\mathbf{\xi}\right)\delta _{ij},
+\end{equation}
+\begin{equation}
+T _{ij} = \frac{1}{2}\oint _{S_p} dS\left(\mathbf{\xi}\right)\ \left(\sigma _{il}\xi _j - \sigma _{jl} \xi _i\right)\hat{n}_l\left(\mathbf{\xi}\right).
+\end{equation}
+We may also identify the relation of the rotlet with the torque pseudovector,
+\begin{equation}
+-\epsilon _{ijk}T _{jk} = -\epsilon _{ijk}\oint _{S_p} dS\left(\mathbf{\xi}\right)\ \sigma _{jl} \xi _k \hat{n}_l\left(\mathbf{\xi}\right) = T _i,
+\end{equation}
+and,
+\begin{equation}
+T _{jk}=\epsilon _{jkl}T _l.
+\end{equation}
+Next, we will use the multipole expansion to identify the velocity field around a spherical particle
+
+### The Singularity System for Spheres
+First, we identify a few derivatives of the Oseen tensor,
+\begin{equation}
+\mathcal{G} _{ij} = \frac{1}{r}\delta _{ij}+\frac{1}{r^3}x_ix_j,
+\end{equation}
+\begin{equation}
+\partial_k\mathcal{G} _{ij} = \frac{1}{r^3}\left(-\delta _{ij}x_k+\delta _{ik}x_j+\delta _{jk}x_i\right)-\frac{3}{r^5}x _ix _jx _k,
+\end{equation}
+\begin{equation}
+\partial^2\mathcal{G} _{ij} = \frac{2}{r^3}\delta _{ij}-\frac{6}{r^5}x_ix_j,
+\end{equation}
+\begin{equation}
+\partial_k\partial^2\mathcal{G} _{ij} = -\frac{6}{r^5}\left(\delta _{ij}x_k+\delta _{ik}x_j+\delta _{jk}x_i\right)+\frac{30}{r^7}x _ix _jx _k.
+\end{equation}
+
+We seek to identify the velocity field in the presence of a sphere undergoing rigid-body motion. The sphere's surface velocity has a translational, rotational, and straining component,
+\begin{equation}
+u^p_i = U_i + \epsilon_{ijk}\Omega_jx_k + E_{ij}x_j,
+\end{equation}
+with the boundary condition that at $$r=a$$, the velocity is, $$u_i\left(r=a\right)=u^p_i$$. The sphere also sits in an ambient flow, with the far-field velocity taking the form,
+\begin{equation}
+u^\infty_i = U^\infty_i + \epsilon_{ijk}\Omega^\infty_jx_k + E^\infty_{ij}x_j.
+\end{equation}
+
+Considering first the translation case. Notice at $$r=a$$,
+\begin{equation}
+\left(1+\frac{a^2}{6}\right)\mathcal{G} _{ij}\left(r=a\right) = \frac{4}{3a}\delta _{ij},
+\end{equation}
+from which the velocity is represented as,
+\begin{equation}
+u_i\left(\mathbf{x}\right)=-6\pi\mu a\left(U^\infty_j-U_j\right)\left(1+\frac{a^2}{6}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} + U^infty_i,
+\end{equation}
+for a translating sphere, the multipole expansion has only these two terms, and only two derivative terms of the Green's function are necessary.
 
 
 
