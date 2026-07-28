@@ -208,8 +208,28 @@ for a translating sphere, the multipole expansion has only these two terms, and 
 
 Now for the rotating case. At $$r=a$$, 
 \begin{equation}
-\partial_k\mathcal{G} _{ij}\left(r=a\right)-\partial_j\mathcal{G} _{ik}\left(r=a\right) = \frac{2}{a^3}\left(\delta _{ik}x_j-\delta _{ij}x_k\right) = \frac{2}{a^3}\epsilon _{ilm}\epsilon _{jkl}x_m.
+\epsilon_{jkl}\epsilon{nml}\partial_m\mathcal{G} _{in}\left(r=a\right) = \partial_k\mathcal{G} _{ij}\left(r=a\right)-\partial_j\mathcal{G} _{ik}\left(r=a\right) = \frac{2}{a^3}\left(\delta _{ik}x_j-\delta _{ij}x_k\right) = \frac{2}{a^3}\epsilon _{jkl}\epsilon _{ilm}x_m.
 \end{equation}
+So set the velocity field,
+\begin{equation}
+u_i\left(\mathbf{x}\right)=4\mu\pi a^3\epsilon{ljk}\frac{\partial_l\mathcal{G} _{ik}\left(\mathbf{x}\right)}{8\pi\mu}\left(\Omega_j-\Omega^\infty_j\right) + \epsilon _{ijk}\Omega^\infty _jx _k
+\end{equation}
+
+And lastly, for the strained case. At $$r=a$$,
+\begin{equation}
+\left(1+\frac{a^2}{10}\right)\left(\partial_k\mathcal{G} _{ij}\left(r=a\right)+\partial_j\mathcal{G} _{ik}\left(r=a\right)\right) = -\frac{6}{5a^3}\left(\delta _{ij}x_k+\delta _{ik}x_j-\frac{2}{3}\delta _{jk}x_i\right),
+\end{equation}
+As $$E^p _{ij}=E^p _{ji}$$ and $$E^p _{kk}=0$$,
+\begin{equation}
+E _{jk}^p\left(1+\frac{a^2}{10}\right)\partial_k\mathcal{G} _{ij}\left(r=a\right) = \frac{1}{2}E _{jk}^p\left(1+\frac{a^2}{10}\right)\left(\partial_k\mathcal{G} _{ij}\left(r=a\right)+\partial_j\mathcal{G} _{ik}\left(r=a\right)\right) = -\frac{6}{5a^3}E _{ik}^px_k,
+\end{equation}
+and we identify the velocity field as,
+\begin{equation}
+u_i\left(\mathbf{x}\right)= \frac{20}{3}\pi\mu a^3 \left(E _{jk}^\infty-E _{jk}^p\right) \left(1+\frac{a^2}{10}\right)\frac{\partial_k\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} + E^\infty _{ij}x _j.
+\end{equation}
+
+
+
 
 
 ### Sources
