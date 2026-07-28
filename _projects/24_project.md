@@ -136,7 +136,7 @@ So the disturbance field everywhere in the fluid domain can be expressed as a su
 ### The Multipole Expansion
 Now we may expand the integral representation in the far field, the limit of $$|\mathbf{x}|\gg|\mathbf{\xi}|$$ so that $$\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{\xi}\right)\approx\mathcal{G} _{ij}\left(\mathbf{x}\right)$$. Formally, expanding the Green's function around $$\mathbf{\xi}=0$$,
 \begin{equation}
-\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{\xi}\right)=\sum _{n=0}^\infty\frac{\left(-1\right)^n}{n!}\left(\xi_k\partial_k\right)^n\mathcal{G} _{ij}\left(\mathbf{x}\right).
+\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{\xi}\right)=\sum _{n=0}^\infty\frac{ \left(-1\right)^n }{n!}\left(\xi_k\partial_k\right)^n\mathcal{G} _{ij}\left(\mathbf{x}\right).
 \end{equation}
 Inserting this into the velocity integral,
 \begin{equation}
@@ -219,13 +219,13 @@ And lastly, for the strained case. At $$r=a$$,
 \begin{equation}
 \left(1+\frac{a^2}{10}\right)\left(\partial_k\mathcal{G} _{ij}\left(r=a\right)+\partial_j\mathcal{G} _{ik}\left(r=a\right)\right) = -\frac{6}{5a^3}\left(\delta _{ij}x_k+\delta _{ik}x_j-\frac{2}{3}\delta _{jk}x_i\right),
 \end{equation}
-As $$E^p _{ij}=E^p _{ji}$$ and $$E^p _{kk}=0$$,
+As $$E _{ij}=E _{ji}$$ and $$E _{kk}=0$$,
 \begin{equation}
-E _{jk}^p\left(1+\frac{a^2}{10}\right)\partial_k\mathcal{G} _{ij}\left(r=a\right) = \frac{1}{2}E _{jk}^p\left(1+\frac{a^2}{10}\right)\left(\partial_k\mathcal{G} _{ij}\left(r=a\right)+\partial_j\mathcal{G} _{ik}\left(r=a\right)\right) = -\frac{6}{5a^3}E _{ik}^px_k,
+E _{jk}\left(1+\frac{a^2}{10}\right)\partial_k\mathcal{G} _{ij}\left(r=a\right) = \frac{1}{2}E _{jk}\left(1+\frac{a^2}{10}\right)\left(\partial_k\mathcal{G} _{ij}\left(r=a\right)+\partial_j\mathcal{G} _{ik}\left(r=a\right)\right) = -\frac{6}{5a^3}E _{ik}x_k,
 \end{equation}
 and we identify the velocity field as,
 \begin{equation}
-u_i\left(\mathbf{x}\right)= \frac{20}{3}\pi\mu a^3 \left(E _{jk}^\infty-E _{jk}^p\right) \left(1+\frac{a^2}{10}\right)\frac{\partial_k\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} + E^\infty _{ij}x _j.
+u_i\left(\mathbf{x}\right)= \frac{20}{3}\pi\mu a^3 \left(E _{jk}^\infty-E _{jk}\right) \left(1+\frac{a^2}{10}\right)\frac{\partial_k\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} + E^\infty _{ij}x _j.
 \end{equation}
 
 In summary, we may express our velocity field as a sum of the translational, rotational, and straining modes,
@@ -237,7 +237,7 @@ F_i = 6\pi\mu a\left(U^\infty _j -U _j\right),
 \end{equation}
 
 \begin{equation}
-S_{jk} = \frac{20}{3}\pi\mu a^3 \left(E _{jk}^\infty-E _{jk}^p\right),
+S_{jk} = \frac{20}{3}\pi\mu a^3 \left(E _{jk}^\infty-E _{jk}\right),
 \end{equation}
 \begin{equation}
 T _k = 8\mu\pi a^3\left( \Omega^\infty_k-\Omega_k\right).
@@ -245,6 +245,8 @@ T _k = 8\mu\pi a^3\left( \Omega^\infty_k-\Omega_k\right).
 
 ### Faxén Laws
 We require one last element, that being the inverse relations. Suppose we are given the ambient flow and particle motion; how do we determine the moments?
+
+We begin again with the reciprocal theorem, Eq. \ref{eq: Reciprocal theorem}, 
 
 
 
