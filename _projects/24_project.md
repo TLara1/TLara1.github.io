@@ -256,8 +256,17 @@ F^2_i U_i  - F_iu^1 _i\left(\mahtbf{y}\right) = 0,
 \end{equation}
 where $$F^2_i$$ is the force on the particle,
 \begin{equation}
-\oint _{S_p} dS\ \sigma^2 _{ij} \hat{n}_j.
+F^2_i = \oint _{S_p} dS\ \sigma^2 _{ij} \hat{n}_j.
 \end{equation}
+We can write $$u^1_i$$ from our singularity solution,
+\begin{equation}
+u^1 _i = U_j \mathcal\left[\frac{\mathcal{G}_{ij}\left(\mathbf{x}-\mathbf{\xi}\right)}{8\pi\mu}\right],
+\end{equation}
+where $$\mathcal{F}$$ is a linear functional and $$\mathbf{\xi}$$ is the centre of the sphere, from which we identify,
+\begin{equation}
+F^2_i = \mathcal\left[F_j\frac{\mathcal{G}_{ij}\left(\mathbf{y}-\mathbf{\xi}\right)}{8\pi\mu}\right]
+\end{equation}
+
 
 
 ### Sources
