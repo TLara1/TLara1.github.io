@@ -198,11 +198,11 @@ u^\infty_i = U^\infty_i + \epsilon_{ijk}\Omega^\infty_jx_k + E^\infty_{ij}x_j.
 
 Considering first the translation case. Notice at $$r=a$$,
 \begin{equation}
-\left(1+\frac{a^2}{6}\right)\mathcal{G} _{ij}\left(r=a\right) = \frac{4}{3a}\delta _{ij},
+\left(1+\frac{a^2}{6}\partial^2\right)\mathcal{G} _{ij}\left(r=a\right) = \frac{4}{3a}\delta _{ij},
 \end{equation}
 from which the velocity is represented as,
 \begin{equation}
-u_i\left(\mathbf{x}\right)=-6\pi\mu a\left(U^\infty_j-U_j\right)\left(1+\frac{a^2}{6}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} + U^\infty_i,
+u_i\left(\mathbf{x}\right)=-6\pi\mu a\left(U^\infty_j-U_j\right)\left(1+\frac{a^2}{6}\partial^2\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} + U^\infty_i,
 \end{equation}
 for a translating sphere, the multipole expansion has only these two terms, and only two derivative terms of the Green's function are necessary.
 
@@ -217,20 +217,20 @@ u_i\left(\mathbf{x}\right)=4\mu\pi a^3\epsilon _{ljk}\frac{\partial_l\mathcal{G}
 
 And lastly, for the strained case. At $$r=a$$,
 \begin{equation}
-\left(1+\frac{a^2}{10}\right)\left(\partial_k\mathcal{G} _{ij}\left(r=a\right)+\partial_j\mathcal{G} _{ik}\left(r=a\right)\right) = -\frac{6}{5a^3}\left(\delta _{ij}x_k+\delta _{ik}x_j-\frac{2}{3}\delta _{jk}x_i\right),
+\left(1+\frac{a^2}{10}\partial^2\right)\left(\partial_k\mathcal{G} _{ij}\left(r=a\right)+\partial_j\mathcal{G} _{ik}\left(r=a\right)\right) = -\frac{6}{5a^3}\left(\delta _{ij}x_k+\delta _{ik}x_j-\frac{2}{3}\delta _{jk}x_i\right),
 \end{equation}
 As $$E _{ij}=E _{ji}$$ and $$E _{kk}=0$$,
 \begin{equation}
-E _{jk}\left(1+\frac{a^2}{10}\right)\partial_k\mathcal{G} _{ij}\left(r=a\right) = \frac{1}{2}E _{jk}\left(1+\frac{a^2}{10}\right)\left(\partial_k\mathcal{G} _{ij}\left(r=a\right)+\partial_j\mathcal{G} _{ik}\left(r=a\right)\right) = -\frac{6}{5a^3}E _{ik}x_k,
+E _{jk}\left(1+\frac{a^2}{10}\partial^2\right)\partial_k\mathcal{G} _{ij}\left(r=a\right) = \frac{1}{2}E _{jk}\left(1+\frac{a^2}{10}\partial^2\right)\left(\partial_k\mathcal{G} _{ij}\left(r=a\right)+\partial_j\mathcal{G} _{ik}\left(r=a\right)\right) = -\frac{6}{5a^3}E _{ik}x_k,
 \end{equation}
 and we identify the velocity field as,
 \begin{equation}
-u_i\left(\mathbf{x}\right)= \frac{20}{3}\pi\mu a^3 \left(E _{jk}^\infty-E _{jk}\right) \left(1+\frac{a^2}{10}\right)\frac{\partial_k\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} + E^\infty _{ij}x _j.
+u_i\left(\mathbf{x}\right)= \frac{20}{3}\pi\mu a^3 \left(E _{jk}^\infty-E _{jk}\right) \left(1+\frac{a^2}{10}\partial^2\right)\frac{\partial_k\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} + E^\infty _{ij}x _j.
 \end{equation}
 
 In summary, we may express our velocity field as a sum of the translational, rotational, and straining modes,
 \begin{equation}
-u_i\left(\mathbf{x}\right)= \left[-F_j\left(1+\frac{a^2}{6}\right) + S_{jk}\left(1+\frac{a^2}{10}\right)\partial_k -\frac{1}{2} \epsilon_{jkl}T _k\partial_l\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} + u^\infty _i,
+u_i\left(\mathbf{x}\right)= \left[-F_j\left(1+\frac{a^2}{6}\partial^2\right) + S_{jk}\left(1+\frac{a^2}{10}\partial^2\right)\partial_k -\frac{1}{2} \epsilon_{jkl}T _k\partial_l\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} + u^\infty _i,
 \end{equation}
 \begin{equation}
 F_i = 6\pi\mu a\left(U^\infty _j -U _j\right),
@@ -266,7 +266,19 @@ where $$\mathcal{F}$$ is a linear functional and $$\mathbf{\xi}$$ is the centre 
 \begin{equation}
 F^2_i = \mathcal\left[F_j\frac{\mathcal{G}_{ij}\left(\mathbf{y}-\mathbf{\xi}\right)}{8\pi\mu}\right].
 \end{equation}
-But the element in the functional is nothing more than the ambient $$u_i^2$$ field evaluated at the sphere centre
+But the element in the functional is nothing more than the ambient $$u_i^2$$ field evaluated at the sphere centre, so the force on the translating sphere is,
+\begin{equation}
+F_i = 6\pi\mu a\left( 1+\frac{a^2 }{6}\partial^2 \right)u_i^\infty\left(\mathbf{\xi}\right).
+\end{equation}
+By a similar argument, one can find the rotlet and stresslet,
+\begin{equation}
+T_i = 8\pi\mu a^3 \Omega _i^\infty\left(\mathbf{\xi}\right),
+\end{equation}
+
+\begin{equation}
+S_{ij} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)E _{ij}^\infty\left(\mathbf{\xi}\right).
+\end{equation}
+
 
 
 
