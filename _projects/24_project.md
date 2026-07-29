@@ -279,6 +279,8 @@ T_i = 8\pi\mu a^3 \Omega _i^\infty\left(\mathbf{\xi}\right),
 S_{ij} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)E _{ij}^\infty\left(\mathbf{\xi}\right).
 \end{equation}
 
+## Method of Reflections for Widely Separated Spheres
+
 
 
 
