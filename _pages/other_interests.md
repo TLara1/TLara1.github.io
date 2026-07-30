@@ -122,6 +122,18 @@ In middle and high school, I did a good amount of origami, even designing my own
 
 <div class="row">
     <div class="col-sm mt-2 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/AnárionFront.JPG" title="Anarion" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
+    </div>
+    <div class="col-sm mt-2 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/men_manus.jpg" title="MenetManus" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
+    </div>
+</div>
+<div class="caption">
+    (Left) <em>Anárion</em> 2022, original model designed with 48x48 box pleating. (Right) <em>Men et Manus</em> 2022, designed by Brian Chan.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-2 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/dklb_origami_exhibit.jpg" title="DKLB_exhibit" class="img-fluid rounded z-depth-0" width="auto" height="400" %}
     </div>
     <div class="col-sm mt-2 mt-md-0">
