@@ -85,7 +85,7 @@ I have played the clarinet for 13 years, first with the Decatur High School Wind
 In the little free time I do have, I enjoy playing board games, particularly with the <a href="https://www.mit.edu/~sgs/games/games.html">MIT Strategic Game Society (SGS)</a>. I mainly enjoyer heavier thematic games and my favourites include all the usual suspects: <em>Spirit Island</em>, <em>Oath</em>, <em>Caverna</em>, <em>Barrage</em>, <em>War of the Ring</em>, <em>Glomhaven</em>, <em>Root</em>, <em>Clash of Cultures</em>, and of course, <em>Twilight Imperium</em>. Notably, I actually prefer the 3rd edition of <em>Twilight Imperium</em> over the fourth. A worse game perhaps, but there is a certain old-fashioned charm that I feel was polished away in TI4. In terms of lighter games, I think <em>Fort</em> is the best deck-building game money can buy, and I recently acquired <em>Irish Gauge</em>, which is a devilishly good time. Last but not least, I always forget how good <em>The King is Dead</em> is, a beauty of minimalist design.
 
 <div style="text-align: center;">
-  {% include figure.liquid loading="eager" path="assets/img/warhammer_video/blahaj.jpg" title="Blahaj Gaming" class="img-fluid rounded z-depth-0" width="400" height="auto" %}
+  {% include figure.liquid loading="eager" path="assets/img/warhammer_video/blahaj.jpg" title="Blahaj Gaming" class="img-fluid rounded z-depth-0" width="350" height="auto" %}
 </div>
 <div class="caption">
     They are so unbelievably locked in.
@@ -106,18 +106,18 @@ I wish I could say I played <em>Magic: The Gathering</em>, but I mostly just rea
 During my time at MIT, I lived in the <a href="https://web.mit.edu/lmf/www/index.html">La Maison Française</a> (LMF) living group and had the privilege of serving as president during my senior year. LMF is a 40ish-person community dedicated to daily dinners, a clean kitchen, and various vaguely French-themed activities and events. If you are a current or incoming MIT student, I highly recommend checking us out.
 
 ## Origami
-In middle and high school, I did a good amount of origami, even designing my own models. I did a few exhibitions at my high school and library, and during my freshman year I was a member of <a href="http://origamit.mit.edu/"> OrigaMIT</a>, but these days I'm afraid I have not the time. Someday, I may go back to relearn some paper folding, but for now my works remain a pleasant memory of simpler, less busy times. 
+In middle and high school, I did a good amount of origami, even designing my own models. I did a few exhibitions at my high school and library, and during my freshman year of college I was a member of <a href="http://origamit.mit.edu/"> OrigaMIT</a>, but these days I'm afraid I mostly have not the time. Nevertheless, every now and then it is fun to go back and be an artist.
 
 <div class="row">
     <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/AnárionFront.JPG" title="Anarion" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
+        {% include figure.liquid loading="eager" path="assets/img/Loong1.jpg" title="Loong 1" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
     </div>
     <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/men_manus.jpg" title="MenetManus" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
+        {% include figure.liquid loading="eager" path="assets/img/Loong2.jpg" title="Loong 2" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
     </div>
 </div>
 <div class="caption">
-    (Left) <em>Anárion</em> 2022, original model designed with 48x48 box pleating. (Right) <em>Men et Manus</em> 2022, designed by Brian Chan.
+    Loong designed by Li Changqi 2026, finished after my long hiatus from origami.
 </div>
 
 <div class="row">
