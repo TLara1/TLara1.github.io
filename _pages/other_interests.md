@@ -53,7 +53,7 @@ I have climbed for almost 12 years now, focusing mostly on bouldering. Some of m
   <li>Central Rock Gym Framingham Flaming Ham 2023 - 6th place</li>
 </ul>
 
-<p>I also do a dangerously high amount of Moonboarding, having completed 502 benchmark problems. I am ranked 54th in the United States in the Moonboard rankings, a testament to my love of 40-degree crimp ladders. I also do a good amount of setting on CRG Cambridge's new spray wall, which is good fun! I've recently lacked a local moonboard, so I've begin tearing through climbs on the Tension Board.</p>
+<p>I also do a dangerously high amount of Moonboarding, having completed 502 benchmark problems. I am ranked 54th in the United States in the Moonboard rankings, a testament to my love of 40-degree crimp ladders. I also do a good amount of setting on CRG Cambridge's new spray wall, which is good fun! I've recently lacked a local moonboard, so I've begun tearing through climbs on the Tension Board 2.</p>
 
 ## Clarinet Playing
 <div style="text-align: center;">
@@ -82,7 +82,7 @@ I have played the clarinet for 13 years, first with the Decatur High School Wind
 </div>
 
 <div align="justify">
-In the little free time I do have, I enjoy playing board games, particularly with the <a href="https://www.mit.edu/~sgs/games/games.html">MIT Strategic Game Society (SGS)</a>. I mainly enjoyer heavier thematic games and my favourites include all the usual suspects: <em>Spirit Island</em>, <em>Oath</em>, <em>Caverna</em>, <em>Barrage</em>, <em>War of the Ring</em>, <em>Glomhaven</em>, <em>Root</em>, <em>Clash of Cultures</em>, and of course, <em>Twilight Imperium</em>. Notably, I actually prefer the 3rd edition of <em>Twilight Imperium</em> over the fourth. A worse game perhaps, but there is a certain old-fashioned charm that I feel was polished away in TI4. In terms of lighter games, I think <em>Fort</em> is the best deck-building game money can buy, and I recently acquired <em>Irish Gauge</em>, which is a devilishly good time. Last but not least, I always forget how good <em>The King is Dead</em> is, a beauty of minimalist design.
+In the little free time I do have, I enjoy playing board games, particularly with the <a href="https://www.mit.edu/~sgs/games/games.html">MIT Strategic Game Society (SGS)</a>. I mainly enjoyer heavier thematic games and my favourites include all the usual suspects: <em>Spirit Island</em>, <em>Oath</em>, <em>Caverna</em>, <em>Barrage</em>, <em>War of the Ring</em>, <em>Glomhaven</em>, <em>Root</em>, <em>Clash of Cultures</em>, and of course, <em>Twilight Imperium</em>. Notably, I actually prefer the 3rd edition of <em>Twilight Imperium</em> over the fourth. A worse game perhaps, but there is a certain old-fashioned grognard-ian charm that I feel was polished away in TI4. In terms of lighter games, I think <em>Fort</em> is the best deck-building game money can buy, and I recently acquired <em>Irish Gauge</em>, which is a devilishly good time. Last but not least, I always forget how good <em>The King is Dead</em> is, a beauty of minimalist design.
 
 <div style="text-align: center;">
   {% include figure.liquid loading="eager" path="assets/img/warhammer_video/blahaj.jpg" title="Blahaj Gaming" class="img-fluid rounded z-depth-0" width="350" height="auto" %}
@@ -96,10 +96,10 @@ In the little free time I do have, I enjoy playing board games, particularly wit
 I also played a good amount of <em>Warhammer: Age of Sigmar</em> back in high school. I was quite fond of my little plastic dinosaur army and the angry dwarf who accompanied them, although I was never too good at actually playing the game. Unfortunately, nowadays I am much less able to indulge in my miniature-painting pursuits (although rumours have it, I am becoming interested in <em>Trench Crusade</em>). 
 </div>
 <div align="justify">
-As one may guess, I have also explored tabletop role-playing games, game-mastering <em>Dungeon World</em> and <em>Dungeons and Dragons</em> campaigns for my friends over the last two years. I've become quite curious about <em>Draw Steel</em> recently, though I haven't played yet.
+As one may guess, I have also explored tabletop role-playing games, game-mastering <em>Dungeon World</em> and <em>Dungeons and Dragons</em> campaigns for my friends over the last two years. I've become quite curious about <em>Draw Steel</em> recently, though I haven't played yet. One of these days I'll try <em>Rifts</em>; everyone I tell about it seems to run away for some reason...
 </div>
 <div align="justify">
-I wish I could say I played <em>Magic: The Gathering</em>, but I mostly just read articles on the CEDH meta and watch LSV force artifacts in Vintage Cube, which is always entertaining. Every now and again, when an interesting in-universe set is released, you may find me at the prerelease convincing myself that five-colour good stuff is in fact not viable.
+I wish I could say I played <em>Magic: The Gathering</em>, but I mostly just read articles on the CEDH meta and watch LSV force artifacts in Vintage Cube, which is always entertaining. Now and again, when an interesting in-universe set is released, you may find me at the prerelease, convincing myself that five-colour good stuff is, in fact, not viable. If I were ever to play again, more or less competitively, I would for sure be playing Pauper.
 </div>
 
 ## MIT French House _La Maison Française_
