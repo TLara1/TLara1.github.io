@@ -315,6 +315,18 @@ In our zeroth-order expansion, the boundary condition is not satisfied due to th
 \begin{equation}
 u_i^{1\ (0)}\left(\mathbf{x} = \mathbf{x}^1\right) = U_i^1 + u_i^{2\ (0)}\left(\mathbf{x} = \mathbf{x}^1\right) + u^\infty _i.
 \end{equation}
+Our second-order corrections are the _reflexion_ fields designed to cancel the contribution from the opposing sphere. For the first particle, the first-order correction is a velocity field such that
+\begin{equation}
+u_i^{1\ (1)}\left(\mathbf{x} = \mathbf{x}^1\right) = - u_i^{2\ (0)}\left(\mathbf{x} = \mathbf{x}^1\right),
+\end{equation}
+such that the combined velocity field,
+\begin{equation}
+u_i^{(1)}  = u_i^{1\ (0)} + u_i^{2\ (0)} + u_i^{1\ (1)} + u_i^{2\ (1)} + u^\infty _i,
+\end{equation}
+has a boundary error that is of a higher order than the previous velocity field. This scheme can be generalized as the particle fields "reflect" on each other. For the n-th order first sphere velocity field, we find a velocity field satisfying,
+\begin{equation}
+u_i^{1\ (n)}\left(\mathbf{x} = \mathbf{x}^1\right) = - u_i^{2\ (n-1)}\left(\mathbf{x} = \mathbf{x}^1\right).
+\end{cases}
 
 
 
