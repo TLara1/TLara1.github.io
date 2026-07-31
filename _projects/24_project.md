@@ -285,31 +285,38 @@ F_i = 6\pi\mu a\left( 1+\frac{a^2 }{6}\partial^2 \right)u_i^\infty\left(\mathbf{
 \end{equation}
 By a similar argument, one can find the rotlet and stresslet,
 \begin{equation}
-T_i = 8\pi\mu a^3 \Omega _i^\infty\left(\mathbf{\xi}\right),
+T_i = 4\pi\mu a^3 \epsilon_{ijk}\partial_ju_k^\infty\vline_{\mathbf{xi}},
 \end{equation}
-
 \begin{equation}
-S_{ij} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)E _{ij}^\infty\left(\mathbf{\xi}\right).
+S_{ij} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^\infty+\partial_ju_i^\infty\right)\vline_{\mathbf{xi}}.
 \end{equation}
 
 ## Method of Reflections for Widely Separated Spheres
-We can solve for the flow in the presence of a single sphere; can we resolve the problem with multiple spheres? Yes, more or less. The idea of the method of reflections is to expand the velocity field in terms of the ratio $$a/R$$, where $$a$$ is the sphere radius and $$R$$ is the separation between spheres. We assume this ratio is small such that the expansion can be truncated at a given order and provide an accurate approximation of the multiple-sphere velocity field.
+We can solve for the flow in the presence of a single sphere; can we resolve the problem with multiple spheres? Yes, more or less. The idea behind the method of reflections is to expand the velocity field in terms of the ratio $$a/R$$, where $$a$$ is the sphere's radius and $$R$$ is the separation between the spheres. We assume this ratio is small such that the expansion can be truncated at a given order and provide an accurate approximation of the multiple-sphere velocity field.
 
-We consider two spheres centred at $$\mathbf{x}_1$$ and $$\mathbf{x}_2$$ with the same radius $$a$$ (this is for simplification; generally, the sphere radii can be different). We take the spheres to be nonrotating and translating with velocities $$U^1_i$$ and $$U^2_i$$. The zeroth-order solution is simply the Stokes solution for the disturbance caused by the isolated spheres,
+We consider two spheres centred at $$\mathbf{x}_1$$ and $$\mathbf{x}_2$$ with the same radius $$a$$ (for simplicity; in general, the sphere radii can differ). We take the spheres to be nonrotating and translating with velocities $$U^1_i$$ and $$U^2_i$$. The zeroth-order solution is simply the Stokes solution for the disturbance caused by the isolated spheres,
 \begin{equation}
-u_i^{(0)} = u_i^{1\ (0)} + u_i^{2\ (0)} + u^\infty _i,
-\end{equation}
-\begin{equation}
-u_i^{a\ (0)} = u_i^{1\ (0)} + u_i^{2\ (0)},
+u_i^{(0)}\left(\mathbf{x}\right)  = u_i^{1\ (0)}\left(\mathbf{x}\right) + u_i^{2\ (0)}\left(\mathbf{x}\right) + u^\infty _i,
 \end{equation}
 where the zeroeth-order contribution from sphere $$a$$ is,
 \begin{equation}
-u_i^{a\ (0)} = -F_j^{a\ (0)} \left(1+\frac{a^2}{6}\partial^2\right) \frac{\mathcal{G} _{ij}\left(\mathbf{x} - \mathbf{x}^a\right)}{8\pi\mu} ,
+u_i^{a\ (0)}\left(\mathbf{x}\right) = -F_j^{a\ (0)} \left(1+\frac{a^2}{6}\partial^2\right) \frac{\mathcal{G} _{ij}\left(\mathbf{x} - \mathbf{x}^a\right)}{8\pi\mu} ,
 \end{equation}
 \begin{equation}
 F_j^{a\ (0)} = 6\pi\mu a\left(U^\infty _j -U^a _j\right).
 \end{equation}
 We can equivalently treat the case of rotated and strained spheres using our spherical singularity expansion.
+
+The zeroeth-order field is not quite correct since the boundary conditions at the translating spheres are not satisfied. For each translating sphere, the velocity field at the sphere surface should be the translating velocity,
+\begin{equation}
+u_i\left(\mathbf{x} = \mathbf{x}^a\right) = U_i^a + u^\infty _i,
+\end{equation}
+In our zeroth-order expansion, the boundary condition is not satisfied due to the influence of the partner particle. For instance, at the first sphere,
+\begin{equation}
+u_i^{1\ (0)}\left(\mathbf{x} = \mathbf{x}^1\right) = U_i^1 + u_i^{2\ (0)}\left(\mathbf{x} = \mathbf{x}^1\right) + u^\infty _i.
+\end{equation}
+
+
 
 
 ### Sources
