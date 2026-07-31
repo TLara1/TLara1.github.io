@@ -330,11 +330,12 @@ u_i^{(1)}  = u_i^{1\ (0)} + u_i^{2\ (0)} + u_i^{1\ (1)} + u_i^{2\ (1)} + u^\inft
 has a boundary error that is of a higher order than the previous velocity field. This scheme can be generalized as the particle fields "reflect" on each other. For the n-th order first sphere velocity field, we find a velocity field satisfying,
 \begin{equation}
 u_i^{1\ (n)}\left(\mathbf{x} = \mathbf{x}^1\right) = - u_i^{2\ (n-1)}\left(\mathbf{x} = \mathbf{x}^1\right).
-\end{cases}
+\end{equation}
 
 With our spherical singularity solution and Faxén Laws, finding reflected fields is not too difficult. For the $$a$$-th sphere, with $$b$$ indices representing the opposite sphere,
+
 \begin{equation}
-u_i^{a\ (1)}\left(\mathbf{x}\right) = -\left[-F_j^{a\ (1)}\left(1+\frac{a^2}{6}\partial^2\right) + S^{a\ (1)}_{jk}\left(1+\frac{a^2}{10}\partial^2\right)\partial_k -\frac{1}{2} \epsilon_{jkl}T^{a\ (1)} _k\partial_l\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}^a\right)}{8\pi\mu}.
+u_i^{a\ (1)}\left(\mathbf{x}\right) = -\left[-F_j^{a\ (1)}\left(1+\frac{a^2}{6}\partial^2\right) + S^{a\ (1)}_{jk}\left(1+\frac{a^2}{10}\partial^2\right)\partial_k -\frac{1}{2} \epsilon_{jkl} T^{a\ (1)} _k\partial_l\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}^a\right)}{8\pi\mu}.
 \end{equation}
 
 
