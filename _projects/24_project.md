@@ -141,9 +141,11 @@ Now we may expand the integral representation in the far field, the limit of $$|
 \end{equation}
 
 Inserting this into the velocity integral,
+
 \begin{equation}
-u_k\left(\mathbf{x}\right) -u_k^\infty =  -\frac{1}{8\pi\mu}\sum _{n=0}^\infty\frac{\left(-1\right)^n}{n!}\oint _{S_p} dS\left(\mathbf{\xi}\right)\ \left(\sigma _{ij} \hat{n}_j\left(\mathbf{\xi}\right) \xi _{k_1}\xi _{k_2}...\xi _{k_n}\right)\partial _{k_1}\partial _{k_2}...\partial _{k_n}\mathcal{G} _{ik}\left(\mathbf{x}\right),
+u_k\left(\mathbf{x}\right) -u_k^\infty =  -\frac{1}{8\pi\mu}\sum _{n=0}^\infty\frac{ \left(-1\right)^n }{n!}\oint _{S_p} dS\left(\mathbf{\xi}\right)\ \left(\sigma _{ij} \hat{n}_j\left(\mathbf{\xi}\right) \xi _{k_1}\xi _{k_2}...\xi _{k_n}\right)\partial _{k_1}\partial _{k_2}...\partial _{k_n}\mathcal{G} _{ik}\left(\mathbf{x}\right),
 \end{equation}
+
 \begin{equation}
 u_k\left(\mathbf{x}\right) -u_k^\infty =  -F _i\frac{\mathcal{G} _{ik}\left(\mathbf{x}\right)}{8\pi\mu} +D _{ij}\frac{\partial_j\mathcal{G} _{ik}\left(\mathbf{x}\right)}{8\pi\mu}+...,
 \end{equation}
@@ -272,9 +274,11 @@ u^1 _i = U _j \mathcal\left[ \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{\xi
 \end{equation}
 
 where $$\mathcal{F}$$ is a linear functional and $$\mathbf{\xi}$$ is the centre of the sphere, from which we identify,
+
 \begin{equation}
-F^2_i = \mathcal\left[F_j\frac{\mathcal{G}_{ij}\left(\mathbf{y}-\mathbf{\xi}\right)}{8\pi\mu}\right].
+F^2_i = \mathcal\left[ F_j\frac{\mathcal{G} _{ij}\left(\mathbf{y}-\mathbf{\xi}\right)}{8\pi\mu} \right].
 \end{equation}
+
 But the element in the functional is nothing more than the ambient $$u_i^2$$ field evaluated at the sphere centre, so the force on the translating sphere is,
 \begin{equation}
 F_i = 6\pi\mu a\left( 1+\frac{a^2 }{6}\partial^2 \right)u_i^\infty\left(\mathbf{\xi}\right).
@@ -291,7 +295,21 @@ S_{ij} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)E _{ij}
 ## Method of Reflections for Widely Separated Spheres
 We can solve for the flow in the presence of a single sphere; can we resolve the problem with multiple spheres? Yes, more or less. The idea of the method of reflections is to expand the velocity field in terms of the ratio $$a/R$$, where $$a$$ is the sphere radius and $$R$$ is the separation between spheres. We assume this ratio is small such that the expansion can be truncated at a given order and provide an accurate approximation of the multiple-sphere velocity field.
 
-We consider two spheres centred at $$\mathbf{x}_1$$ and $$\mathbf{x}_2$$ with the same radius $$a$$ (this is for simplification; generally, the sphere radii can be different). We take the spheres to be nonrotating, and translating with velocities $$U^1_i$$ and $$U^2_i$$. The zeroeth order solution is simply the Stokes solution for the disturbance cause dby the isolated spheres. 
+We consider two spheres centred at $$\mathbf{x}_1$$ and $$\mathbf{x}_2$$ with the same radius $$a$$ (this is for simplification; generally, the sphere radii can be different). We take the spheres to be nonrotating and translating with velocities $$U^1_i$$ and $$U^2_i$$. The zeroth-order solution is simply the Stokes solution for the disturbance caused by the isolated spheres,
+\begin{equation}
+u_i^{(0)} = u_i^{1\ (0)} + u_i^{2\ (0)} + u^\infty _i,
+\end{equation}
+\begin{equation}
+u_i^{a\ (0)} = u_i^{1\ (0)} + u_i^{2\ (0)},
+\end{equation}
+where the zeroeth-order contribution from sphere $$a$$ is,
+\begin{equation}
+u_i^{a\ (0)} = -F_j^{a\ (0)} \left(1+\frac{a^2}{6}\partial^2\right) \frac{\mathcal{G} _{ij}\left(\mathbf{x} - \mathbf{x}^a\right)}{8\pi\mu} ,
+\end{equation}
+\begin{equation}
+F_j^{a\ (0)} = 6\pi\mu a\left(U^\infty _j -U^a _j\right).
+\end{equation}
+We can equivalently treat the case of rotated and strained spheres using our spherical singularity expansion.
 
 
 ### Sources
