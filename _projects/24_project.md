@@ -147,8 +147,9 @@ u_k\left(\mathbf{x}\right) -u_k^\infty =  -\frac{1}{8\pi\mu}\sum _{n=0}^\infty\f
 \end{equation}
 
 \begin{equation}
-u_k\left(\mathbf{x}\right) -u_k^\infty =  -F _i\frac{\mathcal{G} _{ik}\left(\mathbf{x}\right)}{8\pi\mu} +D _{ij}\frac{\partial_j\mathcal{G} _{ik}\left(\mathbf{x}\right)}{8\pi\mu}+...,
+u _k\left(\mathbf{x} \right) -u _k^\infty =  -F _i\frac{\mathcal{G} _{ik}\left(\mathbf{x}\right)}{8\pi\mu} +D _{ij}\frac{\partial_j\mathcal{G} _{ik}\left(\mathbf{x}\right)}{8\pi\mu} + ...,
 \end{equation}
+
 with,
 \begin{equation}
 F _i = \oint _{S_p} dS\left(\mathbf{\xi}\right)\ \sigma _{ij} \hat{n}_j \left(\mathbf{\xi}\right),
@@ -270,13 +271,13 @@ F^2_i = \oint _{S_p} dS\ \sigma^2 _{ij} \hat{n} _j.
 We can write $$u^1_i$$ from our singularity solution,
 
 \begin{equation}
-u^1 _i = U _j \mathcal\left[ \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{\xi}\right)}{8\pi\mu} \right],
+u^1 _i = U _j \mathcal\left( \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{\xi}\right)}{8\pi\mu} \right),
 \end{equation}
 
 where $$\mathcal{F}$$ is a linear functional and $$\mathbf{\xi}$$ is the centre of the sphere, from which we identify,
 
 \begin{equation}
-F^2_i = \mathcal\left[ F_j\frac{\mathcal{G} _{ij}\left(\mathbf{y}-\mathbf{\xi}\right)}{8\pi\mu} \right].
+F^2_i = \mathcal\left( F_j\frac{\mathcal{G} _{ij}\left(\mathbf{y}-\mathbf{\xi}\right)}{8\pi\mu} \right).
 \end{equation}
 
 But the element in the functional is nothing more than the ambient $$u_i^2$$ field evaluated at the sphere centre, so the force on the translating sphere is,
@@ -285,10 +286,11 @@ F_i = 6\pi\mu a\left( 1+\frac{a^2 }{6}\partial^2 \right)u_i^\infty\left(\mathbf{
 \end{equation}
 By a similar argument, one can find the rotlet and stresslet,
 \begin{equation}
-T_i = 4\pi\mu a^3 \epsilon_{ijk}\partial_ju_k^\infty\vline_{\mathbf{xi}},
+T_i = 4\pi\mu a^3 \epsilon_{ijk}\partial_ju_k^\infty\| _{\mathbf{xi}},
 \end{equation}
+
 \begin{equation}
-S_{ij} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^\infty+\partial_ju_i^\infty\right)\vline_{\mathbf{xi}}.
+S_{ij} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^\infty+\partial_ju_i^\infty\right)\| _{\mathbf{xi}}.
 \end{equation}
 
 ## Method of Reflections for Widely Separated Spheres
