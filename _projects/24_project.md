@@ -289,7 +289,7 @@ S_{ij} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)E _{ij}
 \end{equation}
 
 ## Method of Reflections for Widely Separated Spheres
-
+We can solve for the flow in the presence of a single sphere, can we resolve the problem with multiple spheres? Yes, more or less. The idea of the method of reflections is to expand the velocity field in terms of the ratio $$a/R$$, where $$a$$ is the sphere radius and $$R$$ is the separation between spheres. We assume this ratio is small such that the expansion can be truncated at a given order and provide an accurate approximation of the multiple-sphere velocity field.
 
 
 
