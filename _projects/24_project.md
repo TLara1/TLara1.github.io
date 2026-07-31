@@ -152,11 +152,13 @@ u _k\left(\mathbf{x} \right) -u _k^\infty =  -F _i\frac{\mathcal{G} _{ik}\left(\
 
 with,
 \begin{equation}
-F _i = \oint _{S_p} dS\left(\mathbf{\xi}\right)\ \sigma _{ij} \hat{n}_j \left(\mathbf{\xi}\right),
+F _i = \oint _{S_p} dS \left(\mathbf{\xi}\right)\ \sigma _{ij} \hat{n}_j \left( \mathbf{\xi} \right),
 \end{equation}
+
 \begin{equation}
 D _{ij} = \oint _{S_p} dS\left(\mathbf{\xi}\right)\ \sigma _{il} \hat{n}_l\left(\mathbf{\xi}\right)\xi _j .
 \end{equation}
+
 $$F _i$$ is known as the _stokeslet_, the next effect is the dipole $$D _{ij}$$ that decays with $$r^{-2}$$. Because the isotropic portion of $$D _{ij}$$ has no dynamic significance since $$\partial_i\mathcal{G} _{ij}=0$$, we can split the term into a symmetric _stresslet_ and an antisymmetric _rotlet_,
 \begin{equation}
 D _{ij} -\frac{1}{3}D _{kk}\delta _{ij} = S _{ij} + T _{ij},
