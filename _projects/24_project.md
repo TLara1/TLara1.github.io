@@ -312,14 +312,16 @@ F_j^{a\ (0)} = 6\pi\mu a\left(U^\infty _j -U^a _j\right).
 We can equivalently treat the case of rotated and strained spheres using our spherical singularity expansion.
 
 The zeroeth-order field is not quite correct since the boundary conditions at the translating spheres are not satisfied. For each translating sphere, the velocity field at the sphere surface should be the translating velocity,
+
 \begin{equation}
 u_i\left(\mathbf{x} = \mathbf{x}^a\right) = U_i^a + u^\infty _i,
 \end{equation}
+
 In our zeroth-order expansion, the boundary condition is not satisfied due to the influence of the partner particle. For instance, at the first sphere,
 \begin{equation}
 u_i^{1\ (0)}\left(\mathbf{x} = \mathbf{x}^1\right) = U_i^1 + u_i^{2\ (0)}\left(\mathbf{x} = \mathbf{x}^1\right) + u^\infty _i.
 \end{equation}
-Our second-order corrections are the _reflexion_ fields designed to cancel the contribution from the opposing sphere. For the first particle, the first-order correction is a velocity field such that
+Our second-order corrections are the reflection fields designed to cancel the contribution from the opposing sphere. For the first particle, the first-order correction is a velocity field such that
 \begin{equation}
 u_i^{1\ (1)}\left(\mathbf{x} = \mathbf{x}^1\right) = - u_i^{2\ (0)}\left(\mathbf{x} = \mathbf{x}^1\right),
 \end{equation}
@@ -336,6 +338,21 @@ With our spherical singularity solution and Faxén Laws, finding reflected field
 
 \begin{equation}
 u_i^{a\ (1)}\left(\mathbf{x}\right) = -\left[-F_j^{a\ (1)}\left(1+\frac{a^2}{6}\partial^2\right) + S^{a\ (1)}_{jk}\left(1+\frac{a^2}{10}\partial^2\right)\partial_k -\frac{1}{2} \epsilon_{jkl} T^{a\ (1)} _k\partial_l\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}^a\right)}{8\pi\mu}.
+\end{equation}
+
+The force, stress, and torque are obtained with the Faxén relations for the first sphere,
+\begin{equation}
+F_i^{a\ (1)} = 6\pi\mu a\left( 1+\frac{a^2 }{6}\partial^2 \right)u_i^{2\ (0)}\|_{ \mathbf{x}=\mathbf{x}^1 },
+\end{equation}
+
+
+By a similar argument, one can find the rotlet and stresslet,
+\begin{equation}
+T_i = 4\pi\mu a^3 \epsilon_{ijk}\partial_ju_k^\infty\| _{\mathbf{xi}},
+\end{equation}
+
+\begin{equation}
+S_{ij} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^\infty+\partial_ju_i^\infty\right)\| _{\mathbf{xi}}.
 \end{equation}
 
 
