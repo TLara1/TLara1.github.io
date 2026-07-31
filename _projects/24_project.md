@@ -328,6 +328,10 @@ has a boundary error that is of a higher order than the previous velocity field.
 u_i^{1\ (n)}\left(\mathbf{x} = \mathbf{x}^1\right) = - u_i^{2\ (n-1)}\left(\mathbf{x} = \mathbf{x}^1\right).
 \end{cases}
 
+With our spherical singularity solution and Faxén Laws, finding reflected fields is not too difficult. For the $$a$$-th sphere, with $$b$$ indices representing the opposite sphere,
+\begin{equation}
+u_i^{a\ (1)}\left(\mathbf{x}\right) = -\left[-F_j^{a\ (1)}\left(1+\frac{a^2}{6}\partial^2\right) + S^{a\ (1)}_{jk}\left(1+\frac{a^2}{10}\partial^2\right)\partial_k -\frac{1}{2} \epsilon_{jkl}T^{a\ (1)} _k\partial_l\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}^a\right)}{8\pi\mu}.
+\end{equation}
 
 
 
