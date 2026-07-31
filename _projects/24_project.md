@@ -273,13 +273,13 @@ F^2_i = \oint _{S_p} dS\ \sigma^2 _{ij} \hat{n} _j.
 We can write $$u^1_i$$ from our singularity solution,
 
 \begin{equation}
-u^1 _i = U _j \mathcal\left( \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{\xi}\right)}{8\pi\mu} \right),
+u^1 _i = U _j \mathcal{F}\left[ \frac{\mathcal{G} _{ij}\left( \mathbf{x}-\mathbf{\xi} \right) }{8\pi\mu} \right],
 \end{equation}
 
 where $$\mathcal{F}$$ is a linear functional and $$\mathbf{\xi}$$ is the centre of the sphere, from which we identify,
 
 \begin{equation}
-F^2_i = \mathcal\left( F_j\frac{\mathcal{G} _{ij}\left(\mathbf{y}-\mathbf{\xi}\right)}{8\pi\mu} \right).
+F^2_i = \mathcal{F} \left[ F_j\frac{\mathcal{G} _{ij}\left(\mathbf{y}-\mathbf{\xi}\right)}{8\pi\mu} \right].
 \end{equation}
 
 But the element in the functional is nothing more than the ambient $$u_i^2$$ field evaluated at the sphere centre, so the force on the translating sphere is,
