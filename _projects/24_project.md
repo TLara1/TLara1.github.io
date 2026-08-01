@@ -193,6 +193,9 @@ First, we identify a few derivatives of the Oseen tensor,
 \begin{equation}
 \partial_k\partial^2\mathcal{G} _{ij} = -\frac{6}{r^5}\left(\delta _{ij}x_k+\delta _{ik}x_j+\delta _{jk}x_i\right)+\frac{30}{r^7}x _ix _jx _k.
 \end{equation}
+\begin{equation}
+\partial^2\partial^2\mathcal{G} _{ij} = 0.
+\end{equation}
 
 We seek to identify the velocity field in the presence of a sphere undergoing rigid-body motion. The sphere's surface velocity has a translational, rotational, and straining component,
 \begin{equation}
@@ -288,15 +291,15 @@ F_i = 6\pi\mu a\left( 1+\frac{a^2 }{6}\partial^2 \right)u_i^\infty\left(\mathbf{
 \end{equation}
 By a similar argument, one can find the rotlet and stresslet,
 \begin{equation}
-T_i = 4\pi\mu a^3 \epsilon_{ijk}\partial_ju_k^\infty\| _{\mathbf{xi}},
+T_i = 4\pi\mu a^3 \epsilon_{ijk}\partial_ju_k^\infty\| _{\mathbf{\xi}},
 \end{equation}
 
 \begin{equation}
-S_{ij} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^\infty+\partial_ju_i^\infty\right)\| _{\mathbf{xi}}.
+S_{ij} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^\infty+\partial_ju_i^\infty\right)\| _{\mathbf{\xi}}.
 \end{equation}
 
 ## Method of Reflections for Widely Separated Spheres
-We can solve for the flow in the presence of a single sphere; can we resolve the problem with multiple spheres? Yes, more or less. The idea behind the method of reflections is to expand the velocity field in terms of the ratio $$a/R$$, where $$a$$ is the sphere's radius and $$R$$ is the separation between the spheres. We assume this ratio is small such that the expansion can be truncated at a given order and provide an accurate approximation of the multiple-sphere velocity field.
+We can solve for the flow in the presence of a single sphere; can we resolve the problem with multiple spheres? Yes, more or less. The idea behind the method of reflections is to expand the velocity field in terms of the ratio $$\alpha=a/R$$, where $$a$$ is the sphere's radius and $$R$$ is the separation between the spheres. We assume this ratio is small such that the expansion can be truncated at a given order and provide an accurate approximation of the multiple-sphere velocity field.
 
 We consider two spheres centred at $$\mathbf{x}_1$$ and $$\mathbf{x}_2$$ with the same radius $$a$$ (for simplicity; in general, the sphere radii can differ). We take the spheres to be nonrotating and translating with velocities $$U^1_i$$ and $$U^2_i$$. The zeroth-order solution is simply the Stokes solution for the disturbance caused by the isolated spheres,
 \begin{equation}
@@ -337,23 +340,36 @@ u_i^{1\ (n)}\left(\mathbf{x} = \mathbf{x}^1\right) = - u_i^{2\ (n-1)}\left(\math
 With our spherical singularity solution and Faxén Laws, finding reflected fields is not too difficult. For the $$a$$-th sphere, with $$b$$ indices representing the opposite sphere,
 
 \begin{equation}
-u_i^{a\ (1)}\left(\mathbf{x}\right) = -\left[-F_j^{a\ (1)}\left(1+\frac{a^2}{6}\partial^2\right) + S^{a\ (1)}_{jk}\left(1+\frac{a^2}{10}\partial^2\right)\partial_k -\frac{1}{2} \epsilon_{jkl} T^{a\ (1)} _k\partial_l\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}^a\right)}{8\pi\mu}.
+u_i^{a\ (1)}\left(\mathbf{x}\right) = -\left[ -F _j^{a\ (1)}\left(1+\frac{a^2}{6}\partial^2\right) + S^{a\ (1)} _{jk}\left(1+\frac{a^2}{10}\partial^2\right)\partial _k -\frac{1}{2} \epsilon _{jkl} T^{a\ (1)} _k\partial _l\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}^a\right)}{8\pi\mu}.
 \end{equation}
 
 The force, stress, and torque are obtained with the Faxén relations for the first sphere,
 \begin{equation}
-F_i^{a\ (1)} = 6\pi\mu a\left( 1+\frac{a^2 }{6}\partial^2 \right)u_i^{2\ (0)}\|_{ \mathbf{x}=\mathbf{x}^1 },
+F_i^{1\ (1)} = 6\pi\mu a\left( 1+\frac{a^2 }{6}\partial^2 \right)u_i^{2\ (0)}\| _{ \mathbf{x}=\mathbf{x}^1 },
 \end{equation}
-
-
-By a similar argument, one can find the rotlet and stresslet,
 \begin{equation}
-T_i = 4\pi\mu a^3 \epsilon_{ijk}\partial_ju_k^\infty\| _{\mathbf{xi}},
+=-F_j^{2\ (0)}\left[  \frac{3}{4}\left(\delta _{ij}+d _id _j\right)\alpha +  \frac{1}{2}\left(\delta _{ij}-3d _id _j\right)\alpha^3 \right],
 \end{equation}
-
 \begin{equation}
-S_{ij} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^\infty+\partial_ju_i^\infty\right)\| _{\mathbf{xi}}.
+T_i^{1\ (1)} =  4\pi\mu a^3 \epsilon _{ijk}\partial_ju_k^{2\ (0)}\| _{ \mathbf{x}=\mathbf{x}^1 },
 \end{equation}
+\begin{equation}
+= - a \alpha^2 \epsilon _{ijk}F_j^{2\ (0)}d_k,
+\end{equation}
+\begin{equation}
+F_i^{1\ (1)} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^{2\ (0)}+\partial_ju_i^{2\ (0)}\right)\| _{ \mathbf{x}=\mathbf{x}^1 },
+\end{equation}
+\begin{equation}
+ = -a F_k^{2\ (0)}\left[ \frac{5}{6}\left(\delta _{ij}d_k - 3d _id _jd _k\right)\alpha^2 + \frac{4}{3}\left(-\delta _{ij}d_k-2\delta _{ik}d_j+5d _id _jd _k\right)\right].
+\end{equation}
+Recall that $$\alpha=a/R$$ is our small expansion parameter. $$R$$ is the distance between the two spheres, $$R=|\mathbf{x}^1-\mathbf{x}^2|$$ and $$d_i=\left(\mathbf{x}^1_i-\mathbf{x}^2\right)/R$$ is a unit vector pointing between them. One can repeat this process for the second sphere and equivalently for all higher moments to expand the velocity field as a series in terms of $$\alpha$$. For computations, it is often more practical to proceed in wavenumber space where one may express the reflection operation as a matrix transform.
+
+## The Effective Viscosity for a Suspension of Widely Seperated Spheres
+
+
+
+
+
 
 
 
