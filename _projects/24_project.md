@@ -364,8 +364,8 @@ F_i^{1\ (1)} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\
 \end{equation}
 Recall that $$\alpha=a/R$$ is our small expansion parameter. $$R$$ is the distance between the two spheres, $$R=|\mathbf{x}^1-\mathbf{x}^2|$$ and $$d_i=\left(\mathbf{x}^1_i-\mathbf{x}^2\right)/R$$ is a unit vector pointing between them. One can repeat this process for the second sphere and equivalently for all higher moments to expand the velocity field as a series in terms of $$\alpha$$. For computations, it is often more practical to proceed in wavenumber space where one may express the reflection operation as a matrix transform.
 
-## The Effective Viscosity for a Suspension of Widely Seperated Spheres
-
+## The Effective Viscosity for a Suspension of Widely Separated Spheres
+We are finally able to approach the problem of interest.
 
 
 
