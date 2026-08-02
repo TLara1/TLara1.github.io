@@ -367,7 +367,21 @@ Recall that $$\alpha=a/R$$ is our small expansion parameter. $$R$$ is the distan
 ## The Effective Viscosity for a Suspension of Widely Separated Spheres
 We are finally able to approach the problem of interest. The idea is as follows. Suppose we have a suspension of spherical particles in a fluid. The suspension is dilute such that the particle number density is low, and from far enough away we can treat the suspension as an ordinary fluid. This suspension fluid will not have the same viscosity as the un-suspension-ified fluid due to the particles within. Our objective is to use what we know about the interactions of particles and fluids to compute the effective viscosity of this fluid as a power series in the particle number density, which is a small number. 
 
+Formally, consider a fluid within a volume $$V$$ containing a suspension of spherical particles with volume fraction $$\phi$$. Let there be $$N$$ particles with radius $$a$$, such that the volume fraction is,
+\begin{equation}
+\phi\frac{4}{3}\pi N\frac{a^3}{V}\ll 1.
+\end{equation}
+In addition to considering a dilute suspension, we consider the limit of a widely separated suspension such that the average particle separation scale is small,
+\begin{equation}
+\langle\alpha\ranlge = \frac{a}{\langle R\rangle}\ll 1.
+\end{equation}
+This follows from our assumption of a dilute suspension. As
+\begin{equation}
+\langle R \rangle \sim \left(\frac{V}{N}\right)^{\frac{1}{3}}\sim\phi^{-\frac{1}{3}}\rightarrow\alpha\sim\phi^{\frac{1}{3}},
+\end{equation}
+and we can use our method of reflections to expand the inter-particle interactions as a power series in $$\alpha\sim\phi^{\frac{1}{3}}$$. 
 
+Our objective is to compute the effective fluid viscosity $$\mu^\text{eff}$$ as a power series in $$\phi$$.
 
 
 
