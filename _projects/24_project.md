@@ -357,12 +357,12 @@ T_i^{1\ (1)} =  4\pi\mu a^3 \epsilon _{ijk}\partial_ju_k^{2\ (0)}\| _{ \mathbf{x
 = - a \alpha^2 \epsilon _{ijk}F_j^{2\ (0)}d_k,
 \end{equation}
 \begin{equation}
-F_i^{1\ (1)} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^{2\ (0)}+\partial_ju_i^{2\ (0)}\right)\| _{ \mathbf{x}=\mathbf{x}^1 },
+S _{ij}^{1\ (1)} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^{2\ (0)}+\partial_ju_i^{2\ (0)}\right)\| _{ \mathbf{x}=\mathbf{x}^1 },
 \end{equation}
 \begin{equation}
  = -a F_k^{2\ (0)}\left[ \frac{5}{6}\left(\delta _{ij}d_k - 3d _id _jd _k\right)\alpha^2 + \frac{4}{3}\left(-\delta _{ij}d_k-2\delta _{ik}d_j+5d _id _jd _k\right)\right].
 \end{equation}
-Recall that $$\alpha=a/R$$ is our small expansion parameter. $$R$$ is the distance between the two spheres, $$R=|\mathbf{x}^1-\mathbf{x}^2|$$ and $$d_i=\left(\mathbf{x}^1_i-\mathbf{x}^2\right)/R$$ is a unit vector pointing between them. One can repeat this process for the second sphere and equivalently for all higher moments to expand the velocity field as a series in terms of $$\alpha$$. For computations, it is often more practical to proceed in wavenumber space where one may express the reflection operation as a matrix transform.
+Recall that $$\alpha=a/R$$ is our small expansion parameter. $$R$$ is the distance between the two spheres, $$R=|\mathbf{x}^1-\mathbf{x}^2|$$ and $$d_i=\left(x^1_i-x_i^2\right)/R$$ is a unit vector pointing between them. One can repeat this process for the second sphere and equivalently for all higher moments to expand the velocity field as a series in terms of $$\alpha$$. For computations, it is often more practical to proceed in wavenumber space where one may express the reflection operation as a matrix transform.
 
 ## The Effective Viscosity for a Suspension of Widely Separated Spheres
 We are finally able to approach the problem of interest. The idea is as follows. Suppose we have a suspension of spherical particles in a fluid. The suspension is dilute such that the particle number density is low, and from far enough away we can treat the suspension as an ordinary fluid. This suspension fluid will not have the same viscosity as the un-suspension-ified fluid due to the particles within. Our objective is to use what we know about the interactions of particles and fluids to compute the effective viscosity of this fluid as a power series in the particle number density, which is a small number. 
@@ -373,7 +373,7 @@ Formally, consider a fluid within a volume $$V$$ containing a suspension of sphe
 \end{equation}
 In addition to considering a dilute suspension, we consider the limit of a widely separated suspension such that the average particle separation scale is small,
 \begin{equation}
-\langle\alpha\ranlge = \frac{a}{\langle R\rangle}\ll 1.
+\langle\alpha\rangle = \frac{a}{\langle R\rangle}\ll 1.
 \end{equation}
 This follows from our assumption of a dilute suspension. As
 \begin{equation}
@@ -381,7 +381,22 @@ This follows from our assumption of a dilute suspension. As
 \end{equation}
 and we can use our method of reflections to expand the inter-particle interactions as a power series in $$\alpha\sim\phi^{\frac{1}{3}}$$. 
 
-Our objective is to compute the effective fluid viscosity $$\mu^\text{eff}$$ as a power series in $$\phi$$.
+Our objective is to compute the effective fluid viscosity $$\mu^\text{eff}$$ as a power series in $$\phi$$. The effective viscosity is such that the bulk average stress looks Newtonian,
+\begin{equation}
+\langle\sigma_{ij}\rangle = -\langle p\rangle \delta_{ij} + 2\mu^\text{eff}\langle e_{ij}\rangle.
+\end{equation}
+The average stress is computed by integrating over the domain $$V$$,
+\begin{equation}
+\langle\sigma_{ij}\rangle = \frac{1}{V}\int_{V} dV\ \sigma_{ij} = -\langle p\rangle \delta_{ij} + 2\mu \langle e_{ij}\rangle + \frac{1}{V}\int_{\sum V_n}dV\ \sigma_{ij},
+\end{equation}
+where we have seperated the stress tensor over the fluid portion with the fluid viscosity $$\mu$$ plus a contribution from averaging over all particles where $$\sum V_n$$ represents the region occupied by our suspended particles. Define this as the particle stress contribution so,
+\begin{equation}
+\sigma_{ij}^\text{particle} = \frac{1}{V}\sum_n\int_{V_n}dV\ \sigma_{ij} = \frac{1}{V}\sum_n\int_{V_n}dV\ \partial_k\left(\sigma_{ik}x_j\right) - \frac{1}{V}\sum_n\int_{V_n}dV\ x_j\partial_k\sigma_{ik}
+\end{equation}
+\begin{equation}
+= \frac{1}{V}\sum_n\oint_{S_n}dS\ \sigma_{ik}x_j\hat{n}_k = \frac{1}{V}\sum _n S _{ij}^{(n)}  = \frac{N}{V}\langle S _{ij}\rangle.
+\end{equation}
+where $$\langle S _{ij}\rangle is the average stresslet over all $$N$$ particles and we have used the fact that $$\partial _k\sigma _{ik}=0$$ in the absence of external forcings. So all we really need to do is calculate the average stresslet, $$\langle S _{ij}\rangle$$, over all particles in the suspension. We do this by averaging over all configurations of particles. Let $$\mathcal{P}\left(\mathbf{x}_2|\mathbf{x}_1\right)$$ describe the probability of encountering a particle at $$\mathbf{x}_2$$ given a particle exists and $$\mathbf{x}_1$$.
 
 
 
