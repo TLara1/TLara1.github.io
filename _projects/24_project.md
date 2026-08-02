@@ -395,7 +395,7 @@ S _{ij}^{1\ (1)} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \rig
 \right) + \frac{a^2}{5}\left( -\frac{12}{R^5}\left(\delta _{ij}\delta _{lk}+\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il}\right)+\frac{60}{R^5}\left(\delta _{ij}d_k+\delta _{ik}d_j+\delta _{jk}d_i\right)d_l+\frac{60}{R^5}\left(\delta _{il}d _kd _j + \delta _{jl}d _id _k + \delta _{kl}d_id _j\right)-\frac{420}{R^5}d _id _jd _kd _l\right) \right],
 \end{equation}
 dropping a few terms on the basis that $$S^{2\ (0)} _{kl}=S^{2\ (0)} _{lk}$$ and $$S^{2\ (0)} _{kk}=0$$,
-\begin{equation}
+\begin{equation}\label{eq: S11 stresslet reflection}
 = \frac{5}{2} S^{2\ (0)} _{kl} \alpha^3\left[\left( -\delta _{ij}d_kd_l- \delta _{jl}d _id _k - \delta _{il}d _jd _k +5d _id _jd _kd _l \right) + \frac{\alpha^2}{5}\left( -4\delta _{ik}\delta _{jl}+12\left(\delta _{ij}d_k+2\delta _{ik}d_j+2\delta _{jk}d_i\right)d_l-70d _id _jd _kd _l\right) \right].
 \end{equation}
 This looks a little scary, but we will be able to simplify further. 
@@ -445,9 +445,9 @@ At order $$\phi^0$$, the particle interactions are not considered, and the stres
 \end{equation}
 And to linear order, the particle stress is,
 \begin{equation}
-\frac{N}{V}\langle S _{ij}^0\rangle. = \frac{20}{3}\pi\mu a^3 \frac{N}{V}\left(1 + \frac{a^2}{10}\partial^2\right)\langle e _{ij}\rangle = 5\mu\phi\langle e _{ij}\rangle + \mathcal{O}\left(\alpha^2\phi\right),
+\frac{N}{V}\langle S _{ij}^0\rangle = \frac{20}{3}\pi\mu a^3 \frac{N}{V}\left(1 + \frac{a^2}{10}\partial^2\right)\langle e _{ij}\rangle = 5\mu\phi\langle e _{ij}\rangle + \mathcal{O}\left(\alpha^2\phi\right),
 \end{equation}
-we drop the higher-order correction since we know $$\alpha\sim\phi^{\frac{1}{3}}$$. To linear order in $$\phi$$, we obtain the effective viscosity,
+we drop the higher-order correction since we know $$\alpha\sim\phi^{\frac{1}{3}}$$, we will return to these corrections later. To linear order in $$\phi$$, we obtain the effective viscosity,
 \begin{equation}
 \langle\sigma _{ij}\rangle = -\langle p\rangle \delta _{ij} + 2\mu\left(1+\frac{5}{2}\phi+\mathcal{O}\left(\phi^{5/3}\right)\right)\langle e _{ij}\rangle.
 \end{equation}
@@ -460,9 +460,15 @@ where the volume integral is from $$R=2a$$ since particles cannot, in principle,
 \begin{equation}
 \langle S _{ij}^1\rangle = \int _{R\geq 2a} dV\left(\mathbf{x}_2\right)\ \mathcal{P}\left(\mathbf{x}_2|\mathbf{x}_1\right) S^\text{interaction} _{ij}\left(\mathbf{x}_1,\mathbf{x}_2\right),
 \end{equation}
-where $$S^\text{interaction} _{ij}$$ is the interaction stresslet between two particles, computed only from the interaction terms. To calculate $$S^\text{interaction} _{ij}$$, we return to the method of reflections.
+where $$S^\text{interaction} _{ij}$$ is the interaction stresslet between two particles, computed only from the interaction terms. To calculate $$S^\text{interaction} _{ij}$$, we return to the method of reflections. For the two-sphere case, $$S^\text{interaction} _{ij}$$ is given by the reflection stresslet, $$S _{ij}^{1\ (1)}$$, Eq. \ref{eq: S11 stresslet reflection}. $$S _{ij}^{1\ (1)}$$ is of $$\mathcal{O}\left(R^{-3}\right)$$, and we are left with computing the integral,
+\begin{equation}
+\frac{5}{2} S^{2\ (0)} _{kl} a^3 \int _{R\geq 2a} dV\left(\mathbf{x}\right)\ \mathcal{P}\left(\mathbf{x}|\mathbf{0}\right) R^{-5}\left[\left( -\delta _{ij}x_kx_l- \delta _{jl}x _ix _k - \delta _{il}x _jx _k +5R^{-2}x _ix _jx _kx _l \right) + \frac{a^2}{5}R^{-2}\left( -4R^2\delta _{ik}\delta _{jl}+12\left(\delta _{ij}x_k+2\delta _{ik}x_j+2\delta _{jk}x_i\right)x_l-70R^{-2}x _ix _jx _kx _l\right) \right].
+\end{equation}
+We have set $$\mathbf{x}_1=\mathbf{0}$$ for convenience. Integrating each term, starting with the purely spherical component,
+\begin{equation}
+\int _{R\geq 2a} dV\left(\mathbf{x}\right)\ \mathcal{P}\left(\mathbf{x}|\mathbf{0}\right) R^{-3} = 
 
-
+\end{equation}
 
 
 
