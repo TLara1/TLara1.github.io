@@ -196,6 +196,12 @@ First, we identify a few derivatives of the Oseen tensor,
 \begin{equation}
 \partial^2\partial^2\mathcal{G} _{ij} = 0.
 \end{equation}
+\begin{equation}
+\partial_k\partial_l\mathcal{G} _{ij} = \frac{1}{r^3}\left( -\delta _{ij}\delta _{lk}+\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il} \right) -\frac{3}{r^5}\left(-\delta _{ij}x_k+\delta _{ik}x_j+\delta _{jk}x_i\right)x_l-\frac{3}{r^5}\left(\delta _{il}x _kx _j + \delta _{jl}x _ix _k + \delta _{kl}x _ix _j\right)+\frac{15}{r^7}x _ix _jx _kx _l,
+\end{equation}
+\begin{equation}
+\partial_k\partial_l\partial^2\mathcal{G} _{ij} = -\frac{6}{r^5}\left(\delta _{ij}\delta _{lk}+\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il}\right)+\frac{30}{r^7}\left(\delta _{ij}x_k+\delta _{ik}x_j+\delta _{jk}x_i\right)x_l+\frac{30}{r^7}\left(\delta _{il}x _kx _j + \delta _{jl}x _ix _k + \delta _{kl}x _ix _j\right)-\frac{210}{r^9}x _ix _jx _kx _l.
+\end{equation}
 
 We seek to identify the velocity field in the presence of a sphere undergoing rigid-body motion. The sphere's surface velocity has a translational, rotational, and straining component,
 \begin{equation}
@@ -305,7 +311,7 @@ We consider two spheres centred at $$\mathbf{x}_1$$ and $$\mathbf{x}_2$$ with th
 \begin{equation}
 u_i^{(0)}\left(\mathbf{x}\right)  = u_i^{1\ (0)}\left(\mathbf{x}\right) + u_i^{2\ (0)}\left(\mathbf{x}\right) + u^\infty _i,
 \end{equation}
-where the zeroeth-order contribution from sphere $$a$$ is,
+and the ambient $$u^\infty _i=U^\infty_i$$ is purely translation. The zeroeth-order contribution from sphere $$a$$ is,
 \begin{equation}
 u_i^{a\ (0)}\left(\mathbf{x}\right) = -F_j^{a\ (0)} \left(1+\frac{a^2}{6}\partial^2\right) \frac{\mathcal{G} _{ij}\left(\mathbf{x} - \mathbf{x}^a\right)}{8\pi\mu} ,
 \end{equation}
@@ -317,9 +323,8 @@ We can equivalently treat the case of rotated and strained spheres using our sph
 The zeroeth-order field is not quite correct since the boundary conditions at the translating spheres are not satisfied. For each translating sphere, the velocity field at the sphere surface should be the translating velocity,
 
 \begin{equation}
-u_i\left(\mathbf{x} = \mathbf{x}^a\right) = U_i^a + u^\infty _i,
+u_i\left(\mathbf{x} = \mathbf{x}^a\right) = U_i^a,
 \end{equation}
-
 In our zeroth-order expansion, the boundary condition is not satisfied due to the influence of the partner particle. For instance, at the first sphere,
 \begin{equation}
 u_i^{1\ (0)}\left(\mathbf{x} = \mathbf{x}^1\right) = U_i^1 + u_i^{2\ (0)}\left(\mathbf{x} = \mathbf{x}^1\right) + u^\infty _i.
@@ -330,7 +335,7 @@ u_i^{1\ (1)}\left(\mathbf{x} = \mathbf{x}^1\right) = - u_i^{2\ (0)}\left(\mathbf
 \end{equation}
 such that the combined velocity field,
 \begin{equation}
-u_i^{(1)}  = u_i^{1\ (0)} + u_i^{2\ (0)} + u_i^{1\ (1)} + u_i^{2\ (1)} + u^\infty _i,
+u_i^{(1)}  = u_i^{1\ (0)} + u_i^{2\ (0)} + u_i^{1\ (1)} + u_i^{2\ (1)}
 \end{equation}
 has a boundary error that is of a higher order than the previous velocity field. This scheme can be generalized as the particle fields "reflect" on each other. For the n-th order first sphere velocity field, we find a velocity field satisfying,
 \begin{equation}
@@ -364,6 +369,57 @@ S _{ij}^{1\ (1)} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \rig
 \end{equation}
 Recall that $$\alpha=a/R$$ is our small expansion parameter. $$R$$ is the distance between the two spheres, $$R=|\mathbf{x}^1-\mathbf{x}^2|$$ and $$d_i=\left(x^1_i-x_i^2\right)/R$$ is a unit vector pointing between them. One can repeat this process for the second sphere and equivalently for all higher moments to expand the velocity field as a series in terms of $$\alpha$$. For computations, it is often more practical to proceed in wavenumber space where one may express the reflection operation as a matrix transform.
 
+We can perform an identical expansion for the cases of an initial torque or stress. In particular, a particle in an ambient stress field is relevant for our later viscosity calculation; this is the case in which,
+\begin{equation}
+u_i\left(\mathbf{x} =  \mathbf{x} ^a\right) = E^a_{ij}x_j
+\end{equation}
+so the zeroeth-order contribution is,
+\begin{equation}
+u_i\left(\mathbf{x}\right)^a = S^{a\ (0)} _{jk}\left(1+\frac{a^2 }{10}\partial^2\right)\partial_k\frac{\mathcal{G} _{ij}\left(\mathbf{x} - \mathbf{x}^a\right)}{8\pi\mu},
+\end{equation}
+\begin{equation}
+S^{a\ (0)} _{jk} = \frac{20}{3}\pi\mu a^3\left(E^\infty _{ij}x _j - E^a _{ij}x _j\right).
+\end{equation}
+The first-order stresslet contribution to the first sphere is,
+\begin{equation}
+S _{ij}^{1\ (1)} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^{2\ (0)}+\partial_ju_i^{2\ (0)}\right)\| _{ \mathbf{x}=\mathbf{x}^1 },
+\end{equation}
+\begin{equation}
+= \frac{5}{12} S^{2\ (0)} _{kl} a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\left(1+\frac{a^2 }{10}\partial^2\right)\partial_l\left(\partial_i\mathcal{G} _{jk}\left(R\right)+\partial_j\mathcal{G} _{ik}\left(R\right)\right)
+\end{equation}
+\begin{equation}
+= \frac{5}{12} S^{2\ (0)} _{kl} a^3\left[\partial_i\partial_l\mathcal{G} _{jk}\left(R\right)+\partial_j\partial_l\mathcal{G} _{ik}\left(R\right) + \frac{a^2}{5}\left( \partial_i\partial_l\partial^2\mathcal{G} _{jk}\left(R\right)+\partial_j\partial_l\partial^2\mathcal{G} _{ik}\left(R\right)\right) \right],
+\end{equation}
+
+
+
+\partial_i\partial_l\mathcal{G} _{jk}\left(R\right)+\partial_j\partial_l\mathcal{G} _{ik}\left(R\right)
+
+
+
+\frac{2 }{R^3}\left(\delta _{ij}\delta _{kl} \right) -\frac{6}{R^5}\delta _{ij}x_kx_l-\frac{6}{r^5}\left(\delta _{kl}x _ix _j + \delta _{jl}x _ix _k + \delta _{il}x _jx _k\right)+\frac{30}{R^7}x _ix _jx _kx _l
++
+
+
+
+\partial_i\partial_l\partial^2\mathcal{G} _{jk}\left(R\right)+\partial_j\partial_l\partial^2\mathcal{G} _{ik}\left(R\right)\right)
+
+
+
+
+
+\begin{equation}
+\partial_k\partial_l\mathcal{G} _{ij} = \frac{1}{r^3}\left( -\delta _{ij}\delta _{lk}+\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il} \right) -\frac{3}{r^5}\left(-\delta _{ij}x_k+\delta _{ik}x_j+\delta _{jk}x_i\right)x_l-\frac{3}{r^5}\left(\delta _{il}x _kx _j + \delta _{jl}x _ix _k + \delta _{kl}x _ix _j\right)+\frac{15}{r^7}x _ix _jx _kx _l,
+\end{equation}
+\begin{equation}
+\partial_k\partial_l\partial^2\mathcal{G} _{ij} = -\frac{6}{r^5}\left(\delta _{ij}\delta _{lk}+\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il}\right)+\frac{30}{r^7}\left(\delta _{ij}x_k+\delta _{ik}x_j+\delta _{jk}x_i\right)x_l+\frac{30}{r^7}\left(\delta _{il}x _kx _j + \delta _{jl}x _ix _k + \delta _{kl}x _ix _j\right)-\frac{210}{r^9}x _ix _jx _kx _l.
+\end{equation}
+
+
+
+
+
+
 ## The Effective Viscosity for a Suspension of Widely Separated Spheres
 We are finally able to approach the problem of interest. The idea is as follows. Suppose we have a suspension of spherical particles in a fluid. The suspension is dilute such that the particle number density is low, and from far enough away we can treat the suspension as an ordinary fluid. This suspension fluid will not have the same viscosity as the un-suspension-ified fluid due to the particles within. Our objective is to use what we know about the interactions of particles and fluids to compute the effective viscosity of this fluid as a power series in the particle number density, which is a small number. 
 
@@ -396,11 +452,11 @@ where we have separated the stress tensor over the fluid portion with the fluid 
 \begin{equation}
 = \frac{1}{V}\sum_n\oint_{S_n}dS\ \sigma_{ik}x_j\hat{n}_k = \frac{1}{V}\sum _n S _{ij}^{(n)}  = \frac{N}{V}\langle S _{ij}\rangle.
 \end{equation}
-where $$\langle S _{ij}\rangle$$ is the average stresslet over all $$N$$ particles and we have used the fact that $$\partial _k\sigma _{ik}=0$$ in the absence of external forcings. So all we really need to do is calculate the average stresslet, $$\langle S _{ij}\rangle$$, over all particles in the suspension. We write this average as a series in the parameter $$\phi$$,
+where $$\langle S _{ij}\rangle$$ is the average stresslet over all $$N$$ particles and we have used the fact that $$\partial _k\sigma _{ik}=0$$ in the absence of external forcings. So all we really need to do is calculate the average stresslet, $$\langle S _{ij}\rangle$$, over all particles in the suspension. We write this average as a series,
 \begin{equation}
-\langle S _{ij}\rangle = \langle S _{ij}^0\rangle + \phi \langle S _{ij}^1\rangle + ...
+\langle S _{ij}\rangle = \langle S _{ij}^0\rangle + \langle S _{ij}^1\rangle + ...
 \end{equation}
-Each order in $$\phi$$ involves a higher order of particle-particle interactions. 
+Each order represents a higher order of particle-particle interactions. $$\langle S _{ij}^0$$ are the stresslet effects from isolated particles, $$\langle S _{ij}^1$$ are the stresslet effects from the first particle-particle reflection interactions, $$\langle S _{ij}^2$$ are the effects from the second reflection, and so on.
 
 At order $$\phi^0$$, the particle interactions are not considered, and the stresslet is obtained from the Faxén relation, Eq. \ref{eq: stresslet flaxen relation},
 \begin{equation}
@@ -408,7 +464,7 @@ At order $$\phi^0$$, the particle interactions are not considered, and the stres
 \end{equation}
 And to linear order, the particle stress is,
 \begin{equation}
-\frac{N}{V}\langle S _{ij}^0\rangle. = \frac{20}{3}\pi\mu a^3 \frac{N}{V}\left(1 + \frac{a^2}{10}\partial^2\right)\langle e _{ij}\rangle = 5\phi\langle e _{ij}\rangle + \mathcal{O}\left(\alpha^2\phi\right),
+\frac{N}{V}\langle S _{ij}^0\rangle. = \frac{20}{3}\pi\mu a^3 \frac{N}{V}\left(1 + \frac{a^2}{10}\partial^2\right)\langle e _{ij}\rangle = 5\mu\phi\langle e _{ij}\rangle + \mathcal{O}\left(\alpha^2\phi\right),
 \end{equation}
 we drop the higher-order correction since we know $$\alpha\sim\phi^{\frac{1}{3}}$$. To linear order in $$\phi$$, we obtain the effective viscosity,
 \begin{equation}
@@ -419,9 +475,13 @@ At linear order in $$\phi$$, computing $$\langle S _{ij}^1\rangle$$ is more invo
 \begin{equation}
 \int _{R\geq 2a} dV\left(\mathbf{x}_2\right)\ \mathcal{P}\left(\mathbf{x}_2|\mathbf{x}_1\right) = N,
 \end{equation}
-where the volume integral is from $$R=2a$$ since particles cannot, in principle, touch each other.
+where the volume integral is from $$R=2a$$ since particles cannot, in principle, touch each other. So $$\langle S _{ij}^1\rangle$$ is obtained by,
+\begin{equation}
+\langle S _{ij}^1\rangle = \int _{R\geq 2a} dV\left(\mathbf{x}_2\right)\ \mathcal{P}\left(\mathbf{x}_2|\mathbf{x}_1\right) S^\text{interaction} _{ij}\left(\mathbf{x}_1,\mathbf{x}_2\right),
+\end{equation}
+where $$S^\text{interaction} _{ij}$$ is the interaction stresslet between two particles, computed only from the interaction terms. To calculate $$S^\text{interaction} _{ij}$$, we return to the method of reflections.
 
-To compute the averaged interaction stresslet we must integrate over all particle configurations
+
 
 
 
