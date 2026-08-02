@@ -454,21 +454,44 @@ we drop the higher-order correction since we know $$\alpha\sim\phi^{\frac{1}{3}}
 
 At linear order in $$\phi$$, computing $$\langle S _{ij}^1\rangle$$ is more involved since we need to consider the particle-particle interactions. Let $$\mathcal{P}\left(\mathbf{x}_2|\mathbf{x}_1\right)$$ be the probability distribution of encountering a particle at $$\mathbf{x}_2$$ given a particle exists at $$\mathbf{x} _1$$. We normalize this probability distribution such that,
 \begin{equation}
-\int _{R\geq 2a} dV\left(\mathbf{x}_2\right)\ \mathcal{P}\left(\mathbf{x}_2|\mathbf{x}_1\right) = N,
+\int _{R\geq 2a} dV\left(\mathbf{x}_2\right)\ \mathcal{P}\left(\mathbf{x}_2|\mathbf{x}_1\right) = N - 1,
 \end{equation}
-where the volume integral is from $$R=2a$$ since particles cannot, in principle, touch each other. So $$\langle S _{ij}^1\rangle$$ is obtained by,
+where the volume integral is from $$R=2a$$ since particles cannot touch each other. The distribution is normalized to $$N-1$$ to account for the missing particle not being counted at $$\mathbf{x}_1$$. So $$\langle S _{ij}^1\rangle$$ is obtained by,
 \begin{equation}
 \langle S _{ij}^1\rangle = \int _{R\geq 2a} dV\left(\mathbf{x}_2\right)\ \mathcal{P}\left(\mathbf{x}_2|\mathbf{x}_1\right) S^\text{interaction} _{ij}\left(\mathbf{x}_1,\mathbf{x}_2\right),
 \end{equation}
 where $$S^\text{interaction} _{ij}$$ is the interaction stresslet between two particles, computed only from the interaction terms. To calculate $$S^\text{interaction} _{ij}$$, we return to the method of reflections. For the two-sphere case, $$S^\text{interaction} _{ij}$$ is given by the reflection stresslet, $$S _{ij}^{1\ (1)}$$, Eq. \ref{eq: S11 stresslet reflection}. $$S _{ij}^{1\ (1)}$$ is of $$\mathcal{O}\left(R^{-3}\right)$$, and we are left with computing the integral,
-\begin{equation}
+\begin{equation}\label{eq: integral phi^2 correction}
 \frac{5}{2} S^{2\ (0)} _{kl} a^3 \int _{R\geq 2a} dV\left(\mathbf{x}\right)\ \mathcal{P}\left(\mathbf{x}|\mathbf{0}\right) R^{-5}\left[\left( -\delta _{ij}x_kx_l- \delta _{jl}x _ix _k - \delta _{il}x _jx _k +5R^{-2}x _ix _jx _kx _l \right) + \frac{a^2}{5}R^{-2}\left( -4R^2\delta _{ik}\delta _{jl}+12\left(\delta _{ij}x_k+2\delta _{ik}x_j+2\delta _{jk}x_i\right)x_l-70R^{-2}x _ix _jx _kx _l\right) \right].
 \end{equation}
-We have set $$\mathbf{x}_1=\mathbf{0}$$ for convenience. Integrating each term, starting with the purely spherical component,
-\begin{equation}
-\int _{R\geq 2a} dV\left(\mathbf{x}\right)\ \mathcal{P}\left(\mathbf{x}|\mathbf{0}\right) R^{-3} = 
+We have set $$\mathbf{x}_1=\mathbf{0}$$ for convenience. 
 
+We have a few integrals to do, but we should first set the probability distribution $$\mathcal{P}$$. This describes how particles are arranged around each other. A most flatfooted approach is assuming an isotropic particle distribution such that the probability density is constant and,
+\begin{equation}
+\mathcal{P}\left(\mathbf{x}\right)=0\quad\text{if}\ R\leq2a,
 \end{equation}
+\begin{equation}
+\mathcal{P}\left(\mathbf{x}\right)=\frac{N-1}{V}\quad\text{if}\ R>2a.
+\end{equation}
+This is saying that the probability of encountering a particle is the same everywhere, which is a decent first-order approximation for our dilute suspension. We will calculate the integral of Eq. \ref{eq: integral phi^2 correction} in this case. A few useful identities,
+\begin{equation}
+ \int _{R\geq 2a} dV \frac{x_kx_l}{R^5} =  \int _{r\geq 2a} dr\ r^{-1}\int d\Omega\ d _kd _l = \frac{4}{3}\pi\log\left(\frac{L}{2a}\right)\delta _{kl},
+\end{equation}
+\begin{equation}
+ \int _{R\geq 2a} dV \frac{x_ix_jx_kx_l}{R^7} =  \int _{r\geq 2a} dr\ r^{-1}\int d\Omega\ d _id _jd _kd _l = \frac{4}{15}\pi\log\left(\frac{L}{2a}\right)\left(\delta _{ij}\delta _{kl} + \delta _{ik}\delta _{jl} + \delta _{il}\delta _{kj}\right),
+\end{equation}
+these are found by decomposing the integral into spherical coordinates and computing the angular portion over $$d\Omega$$. Using the angular integrals and the fact that $$S^{2\ (0)} _{kk} = 0$$, we find
+\begin{equation}
+S^{2\ (0)} _{kl} \int _{R\geq 2a} dV R^{-5}\left( -\delta _{ij}x_kx_l- \delta _{jl}x _ix _k - \delta _{il}x _jx _k +5R^{-2}x _ix _jx _kx _l \right) = 0,
+\end{equation}
+\begin{equation}
+S^{2\ (0)} _{kl} \int _{R\geq 2a} dV R^{-7}\left( -4R^2\delta _{ik}\delta _{jl}+12\left(\delta _{ij}x_k+2\delta _{ik}x_j+2\delta _{jk}x_i\right)x_l-70R^{-2}x _ix _jx _kx _l \right)  = S^{2\ (0)} _{kl} \int _{r\geq 2a}dr\ r^{-3}\left[-16\pi\delta _{ik}\delta _{jl} +32\pi\left(\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il}\right) - \frac{56}{3}\pi \left( \delta _{ik}\delta _{jl} + \delta _{il}\delta _{kj}\right)\right] = 30\pi S^{2\ (0)} _{ij}\frac{1}{8a^2}.
+\end{equation}
+We have set the region size $$V$$ to be large. All in all, we obtain,
+
+
+\langle S _{ij}^1\rangle  = \frac{5}{2}a \frac{15}{4}
+
 
 
 
