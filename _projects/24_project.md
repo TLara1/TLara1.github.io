@@ -294,7 +294,7 @@ By a similar argument, one can find the rotlet and stresslet,
 T_i = 4\pi\mu a^3 \epsilon_{ijk}\partial_ju_k^\infty\| _{\mathbf{\xi}},
 \end{equation}
 
-\begin{equation}
+\begin{equation}\label{eq: stresslet flaxen relation}
 S_{ij} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^\infty+\partial_ju_i^\infty\right)\| _{\mathbf{\xi}}.
 \end{equation}
 
@@ -389,15 +389,39 @@ The average stress is computed by integrating over the domain $$V$$,
 \begin{equation}
 \langle\sigma_{ij}\rangle = \frac{1}{V}\int_{V} dV\ \sigma_{ij} = -\langle p\rangle \delta_{ij} + 2\mu \langle e_{ij}\rangle + \frac{1}{V}\int_{\sum V_n}dV\ \sigma_{ij},
 \end{equation}
-where we have seperated the stress tensor over the fluid portion with the fluid viscosity $$\mu$$ plus a contribution from averaging over all particles where $$\sum V_n$$ represents the region occupied by our suspended particles. Define this as the particle stress contribution so,
+where we have separated the stress tensor over the fluid portion with the fluid viscosity $$\mu$$ plus a contribution from averaging over all particles, where $$\sum V_n$$ represents the region occupied by our suspended particles. Define this as the particle stress contribution so,
 \begin{equation}
 \sigma_{ij}^\text{particle} = \frac{1}{V}\sum_n\int_{V_n}dV\ \sigma_{ij} = \frac{1}{V}\sum_n\int_{V_n}dV\ \partial_k\left(\sigma_{ik}x_j\right) - \frac{1}{V}\sum_n\int_{V_n}dV\ x_j\partial_k\sigma_{ik}
 \end{equation}
 \begin{equation}
 = \frac{1}{V}\sum_n\oint_{S_n}dS\ \sigma_{ik}x_j\hat{n}_k = \frac{1}{V}\sum _n S _{ij}^{(n)}  = \frac{N}{V}\langle S _{ij}\rangle.
 \end{equation}
-where $$\langle S _{ij}\rangle is the average stresslet over all $$N$$ particles and we have used the fact that $$\partial _k\sigma _{ik}=0$$ in the absence of external forcings. So all we really need to do is calculate the average stresslet, $$\langle S _{ij}\rangle$$, over all particles in the suspension. We do this by averaging over all configurations of particles. Let $$\mathcal{P}\left(\mathbf{x}_2|\mathbf{x}_1\right)$$ describe the probability of encountering a particle at $$\mathbf{x}_2$$ given a particle exists and $$\mathbf{x}_1$$.
+where $$\langle S _{ij}\rangle$$ is the average stresslet over all $$N$$ particles and we have used the fact that $$\partial _k\sigma _{ik}=0$$ in the absence of external forcings. So all we really need to do is calculate the average stresslet, $$\langle S _{ij}\rangle$$, over all particles in the suspension. We write this average as a series in the parameter $$\phi$$,
+\begin{equation}
+\langle S _{ij}\rangle = \langle S _{ij}^0\rangle + \phi \langle S _{ij}^1\rangle + ...
+\end{equation}
+Each order in $$\phi$$ involves a higher order of particle-particle interactions. 
 
+At order $$\phi^0$$, the particle interactions are not considered, and the stresslet is obtained from the Faxén relation, Eq. \ref{eq: stresslet flaxen relation},
+\begin{equation}
+\langle S _{ij}^0\rangle = \frac{20}{3}\pi\mu a^3 \left(1 + \frac{a^2}{10}\partial^2\right)\langle e _{ij}\rangle.
+\end{equation}
+And to linear order, the particle stress is,
+\begin{equation}
+\frac{N}{V}\langle S _{ij}^0\rangle. = \frac{20}{3}\pi\mu a^3 \frac{N}{V}\left(1 + \frac{a^2}{10}\partial^2\right)\langle e _{ij}\rangle = 5\phi\langle e _{ij}\rangle + \mathcal{O}\left(\alpha^2\phi\right),
+\end{equation}
+we drop the higher-order correction since we know $$\alpha\sim\phi^{\frac{1}{3}}$$. To linear order in $$\phi$$, we obtain the effective viscosity,
+\begin{equation}
+\langle\sigma _{ij}\rangle = -\langle p\rangle \delta _{ij} + 2\mu\left(1+\frac{5}{2}\phi+\mathcal{O}\left(\phi^{5/3}\right)\right)\langle e _{ij}\rangle.
+\end{equation}
+
+At linear order in $$\phi$$, computing $$\langle S _{ij}^1\rangle$$ is more involved since we need to consider the particle-particle interactions. Let $$\mathcal{P}\left(\mathbf{x}_2|\mathbf{x}_1\right)$$ be the probability distribution of encountering a particle at $$\mathbf{x}_2$$ given a particle exists at $$\mathbf{x} _1$$. We normalize this probability distribution such that,
+\begin{equation}
+\int _{R\geq 2a} dV\left(\mathbf{x}_2\right)\ \mathcal{P}\left(\mathbf{x}_2|\mathbf{x}_1\right) = N,
+\end{equation}
+where the volume integral is from $$R=2a$$ since particles cannot, in principle, touch each other.
+
+To compute the averaged interaction stresslet we must integrate over all particle configurations
 
 
 
