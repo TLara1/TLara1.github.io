@@ -180,7 +180,7 @@ T _{jk}=-\frac{1}{2}\epsilon _{jkl}T _l.
 Next, we will use the multipole expansion to identify the velocity field around a spherical particle
 
 ### The Singularity System for Spheres
-First, we identify a few derivatives of the Oseen tensor,
+First, we identify a few derivatives of the Oseen tensor which will come in handy,
 \begin{equation}
 \mathcal{G} _{ij} = \frac{1}{r}\delta _{ij}+\frac{1}{r^3}x_ix_j,
 \end{equation}
@@ -197,10 +197,16 @@ First, we identify a few derivatives of the Oseen tensor,
 \partial^2\partial^2\mathcal{G} _{ij} = 0.
 \end{equation}
 \begin{equation}
-\partial_k\partial_l\mathcal{G} _{ij} = \frac{1}{r^3}\left( -\delta _{ij}\delta _{lk}+\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il} \right) -\frac{3}{r^5}\left(-\delta _{ij}x_k+\delta _{ik}x_j+\delta _{jk}x_i\right)x_l-\frac{3}{r^5}\left(\delta _{il}x _kx _j + \delta _{jl}x _ix _k + \delta _{kl}x _ix _j\right)+\frac{15}{r^7}x _ix _jx _kx _l,
+\partial_k\partial_l\mathcal{G} _{ij} = \frac{1}{r^3}\left( -\delta _{ij}\delta _{lk}+\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il} \right) -\frac{3}{r^5}\left(-\delta _{ij}x_k+\delta _{ik}x_j+\delta _{jk}x_i\right)x_l\nonumber
 \end{equation}
 \begin{equation}
-\partial_k\partial_l\partial^2\mathcal{G} _{ij} = -\frac{6}{r^5}\left(\delta _{ij}\delta _{lk}+\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il}\right)+\frac{30}{r^7}\left(\delta _{ij}x_k+\delta _{ik}x_j+\delta _{jk}x_i\right)x_l+\frac{30}{r^7}\left(\delta _{il}x _kx _j + \delta _{jl}x _ix _k + \delta _{kl}x _ix _j\right)-\frac{210}{r^9}x _ix _jx _kx _l.
+-\frac{3}{r^5}\left(-\delta _{ij}x_k+\delta _{ik}x_j+\delta _{jk}x_i\right)x_l-\frac{3}{r^5}\left(\delta _{il}x _kx _j + \delta _{jl}x _ix _k + \delta _{kl}x _ix _j\right)+\frac{15}{r^7}x _ix _jx _kx _l,
+\end{equation}
+\begin{equation}
+\partial_k\partial_l\partial^2\mathcal{G} _{ij} = -\frac{6}{r^5}\left(\delta _{ij}\delta _{lk}+\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il}\right)+\frac{30}{r^7}\left(\delta _{ij}x_k+\delta _{ik}x_j+\delta _{jk}x_i\right)x_l\nonumber
+\end{equation}
+\begin{equation}
++\frac{30}{r^7}\left(\delta _{il}x _kx _j + \delta _{jl}x _ix _k + \delta _{kl}x _ix _j\right)-\frac{210}{r^9}x _ix _jx _kx _l.
 \end{equation}
 
 We seek to identify the velocity field in the presence of a sphere undergoing rigid-body motion. The sphere's surface velocity has a translational, rotational, and straining component,
@@ -392,11 +398,14 @@ S _{ij}^{1\ (1)} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \rig
 \end{equation}
 \begin{equation}
 = \frac{5}{12} S^{2\ (0)} _{kl} a^3\left[\left( \frac{2}{R^3}\left(\delta _{ij}\delta _{kl} \right) -\frac{6}{R^3}\delta _{ij}d_kd_l-\frac{6}{R^3}\left(\delta _{kl}d _id _j + \delta _{jl}d _id _k + \delta _{il}d _jd _k\right)+\frac{30}{R^3}d _id _jd _kd _l
-\right) + \frac{a^2}{5}\left( -\frac{12}{R^5}\left(\delta _{ij}\delta _{lk}+\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il}\right)+\frac{60}{R^5}\left(\delta _{ij}d_k+\delta _{ik}d_j+\delta _{jk}d_i\right)d_l+\frac{60}{R^5}\left(\delta _{il}d _kd _j + \delta _{jl}d _id _k + \delta _{kl}d_id _j\right)-\frac{420}{R^5}d _id _jd _kd _l\right) \right],
+\right) \right.
+\end{equation}
+\begin{equation}
+\left. + \frac{a^2}{5}\left( -\frac{12}{R^5}\left(\delta _{ij}\delta _{lk}+\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il}\right)+\frac{60}{R^5}\left(\delta _{ij}d_k+\delta _{ik}d_j+\delta _{jk}d_i\right)d_l+\frac{60}{R^5}\left(\delta _{il}d _kd _j + \delta _{jl}d _id _k + \delta _{kl}d_id _j\right)-\frac{420}{R^5}d _id _jd _kd _l\right) \right],
 \end{equation}
 dropping a few terms on the basis that $$S^{2\ (0)} _{kl}=S^{2\ (0)} _{lk}$$ and $$S^{2\ (0)} _{kk}=0$$,
 \begin{equation}\label{eq: S11 stresslet reflection}
-= \frac{5}{2} S^{2\ (0)} _{kl} \alpha^3\left[\left( -\delta _{ij}d_kd_l- \delta _{jl}d _id _k - \delta _{il}d _jd _k +5d _id _jd _kd _l \right) + \frac{\alpha^2}{5}\left( -4\delta _{ik}\delta _{jl}+10\left(\delta _{ij}d_k+2\delta _{ik}d_j+2\delta _{jk}d_i\right)d_l-70d _id _jd _kd _l\right) \right].
+S _{ij}^{1\ (1)} = \frac{5}{2} S^{2\ (0)} _{kl} \alpha^3\left[\left( -\delta _{ij}d_kd_l- \delta _{jl}d _id _k - \delta _{il}d _jd _k +5d _id _jd _kd _l \right) + \frac{\alpha^2}{5}\left( -4\delta _{ik}\delta _{jl}+10\left(\delta _{ij}d_k+2\delta _{ik}d_j+2\delta _{jk}d_i\right)d_l-70d _id _jd _kd _l\right) \right].
 \end{equation}
 This looks a little scary, but we will be able to simplify further. 
 
@@ -437,7 +446,7 @@ where $$\langle S _{ij}\rangle$$ is the average stresslet over all $$N$$ particl
 \begin{equation}
 \langle S _{ij}\rangle = \langle S _{ij}^0\rangle + \langle S _{ij}^1\rangle + ...
 \end{equation}
-Each order represents a higher order of particle-particle interactions. $$\langle S _{ij}^0$$ are the stresslet effects from isolated particles, $$\langle S _{ij}^1$$ are the stresslet effects from the first particle-particle reflection interactions, $$\langle S _{ij}^2$$ are the effects from the second reflection, and so on.
+Each order represents a higher order of particle-particle interactions. $$\langle S _{ij}^0 \rangle$$ are the stresslet effects from isolated particles, $$\langle S _{ij}^1 \rangle$$ are the stresslet effects from the first particle-particle reflection interactions, $$\langle S _{ij}^2$$ are the effects from the second reflection, and so on.
 
 ### Linear Corrections 
 At order $$\phi^0$$, the particle interactions are not considered, and the stresslet is obtained from the Faxén relation, Eq. \ref{eq: stresslet flaxen relation},
