@@ -378,7 +378,7 @@ so the zeroeth-order contribution is,
 u_i\left(\mathbf{x}\right)^a = S^{a\ (0)} _{jk}\left(1+\frac{a^2 }{10}\partial^2\right)\partial_k\frac{\mathcal{G} _{ij}\left(\mathbf{x} - \mathbf{x}^a\right)}{8\pi\mu},
 \end{equation}
 \begin{equation}
-S^{a\ (0)} _{jk} = \frac{20}{3}\pi\mu a^3\left(E^\infty _{ij}x _j - E^a _{ij}x _j\right).
+S^{a\ (0)} _{jk} = \frac{20}{3}\pi\mu a^3\left(E^\infty _{jk}- E^a _{jk}\right).
 \end{equation}
 The first-order stresslet contribution to the first sphere is,
 \begin{equation}
@@ -396,7 +396,7 @@ S _{ij}^{1\ (1)} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \rig
 \end{equation}
 dropping a few terms on the basis that $$S^{2\ (0)} _{kl}=S^{2\ (0)} _{lk}$$ and $$S^{2\ (0)} _{kk}=0$$,
 \begin{equation}\label{eq: S11 stresslet reflection}
-= \frac{5}{2} S^{2\ (0)} _{kl} \alpha^3\left[\left( -\delta _{ij}d_kd_l- \delta _{jl}d _id _k - \delta _{il}d _jd _k +5d _id _jd _kd _l \right) + \frac{\alpha^2}{5}\left( -4\delta _{ik}\delta _{jl}+12\left(\delta _{ij}d_k+2\delta _{ik}d_j+2\delta _{jk}d_i\right)d_l-70d _id _jd _kd _l\right) \right].
+= \frac{5}{2} S^{2\ (0)} _{kl} \alpha^3\left[\left( -\delta _{ij}d_kd_l- \delta _{jl}d _id _k - \delta _{il}d _jd _k +5d _id _jd _kd _l \right) + \frac{\alpha^2}{5}\left( -4\delta _{ik}\delta _{jl}+10\left(\delta _{ij}d_k+2\delta _{ik}d_j+2\delta _{jk}d_i\right)d_l-70d _id _jd _kd _l\right) \right].
 \end{equation}
 This looks a little scary, but we will be able to simplify further. 
 
@@ -439,6 +439,7 @@ where $$\langle S _{ij}\rangle$$ is the average stresslet over all $$N$$ particl
 \end{equation}
 Each order represents a higher order of particle-particle interactions. $$\langle S _{ij}^0$$ are the stresslet effects from isolated particles, $$\langle S _{ij}^1$$ are the stresslet effects from the first particle-particle reflection interactions, $$\langle S _{ij}^2$$ are the effects from the second reflection, and so on.
 
+### Linear Corrections 
 At order $$\phi^0$$, the particle interactions are not considered, and the stresslet is obtained from the Faxén relation, Eq. \ref{eq: stresslet flaxen relation},
 \begin{equation}
 \langle S _{ij}^0\rangle = \frac{20}{3}\pi\mu a^3 \left(1 + \frac{a^2}{10}\partial^2\right)\langle e _{ij}\rangle.
@@ -452,6 +453,7 @@ we drop the higher-order correction since we know $$\alpha\sim\phi^{\frac{1}{3}}
 \langle\sigma _{ij}\rangle = -\langle p\rangle \delta _{ij} + 2\mu\left(1+\frac{5}{2}\phi+\mathcal{O}\left(\phi^{5/3}\right)\right)\langle e _{ij}\rangle.
 \end{equation}
 
+### Quadratic Corrections 
 At linear order in $$\phi$$, computing $$\langle S _{ij}^1\rangle$$ is more involved since we need to consider the particle-particle interactions. Let $$\mathcal{P}\left(\mathbf{x}_2|\mathbf{x}_1\right)$$ be the probability distribution of encountering a particle at $$\mathbf{x}_2$$ given a particle exists at $$\mathbf{x} _1$$. We normalize this probability distribution such that,
 \begin{equation}
 \int _{R\geq 2a} dV\left(\mathbf{x}_2\right)\ \mathcal{P}\left(\mathbf{x}_2|\mathbf{x}_1\right) = N - 1,
@@ -462,7 +464,7 @@ where the volume integral is from $$R=2a$$ since particles cannot touch each oth
 \end{equation}
 where $$S^\text{interaction} _{ij}$$ is the interaction stresslet between two particles, computed only from the interaction terms. To calculate $$S^\text{interaction} _{ij}$$, we return to the method of reflections. For the two-sphere case, $$S^\text{interaction} _{ij}$$ is given by the reflection stresslet, $$S _{ij}^{1\ (1)}$$, Eq. \ref{eq: S11 stresslet reflection}. $$S _{ij}^{1\ (1)}$$ is of $$\mathcal{O}\left(R^{-3}\right)$$, and we are left with computing the integral,
 \begin{equation}\label{eq: integral phi^2 correction}
-\frac{5}{2} S^{2\ (0)} _{kl} a^3 \int _{R\geq 2a} dV\left(\mathbf{x}\right)\ \mathcal{P}\left(\mathbf{x}|\mathbf{0}\right) R^{-5}\left[\left( -\delta _{ij}x_kx_l- \delta _{jl}x _ix _k - \delta _{il}x _jx _k +5R^{-2}x _ix _jx _kx _l \right) + \frac{a^2}{5}R^{-2}\left( -4R^2\delta _{ik}\delta _{jl}+12\left(\delta _{ij}x_k+2\delta _{ik}x_j+2\delta _{jk}x_i\right)x_l-70R^{-2}x _ix _jx _kx _l\right) \right].
+\frac{5}{2} S^{2\ (0)} _{kl} a^3 \int _{R\geq 2a} dV\left(\mathbf{x}\right)\ \mathcal{P}\left(\mathbf{x}|\mathbf{0}\right) R^{-5}\left[\left( -\delta _{ij}x_kx_l- \delta _{jl}x _ix _k - \delta _{il}x _jx _k +5R^{-2}x _ix _jx _kx _l \right) + \frac{a^2}{5}R^{-2}\left( -4R^2\delta _{ik}\delta _{jl}+10\left(\delta _{ij}x_k+2\delta _{ik}x_j+2\delta _{jk}x_i\right)x_l-70R^{-2}x _ix _jx _kx _l\right) \right].
 \end{equation}
 We have set $$\mathbf{x}_1=\mathbf{0}$$ for convenience. 
 
@@ -473,7 +475,9 @@ We have a few integrals to do, but we should first set the probability distribut
 \begin{equation}
 \mathcal{P}\left(\mathbf{x}\right)=\frac{N-1}{V}\quad\text{if}\ R>2a.
 \end{equation}
-This is saying that the probability of encountering a particle is the same everywhere, which is a decent first-order approximation for our dilute suspension. We will calculate the integral of Eq. \ref{eq: integral phi^2 correction} in this case. A few useful identities,
+This is saying that the probability of encountering a particle is the same everywhere, which is a decent first-order approximation for our dilute suspension. We will study this assumption closer later.
+
+We will calculate the integral of Eq. \ref{eq: integral phi^2 correction} in this case. A few useful identities,
 \begin{equation}
  \int _{R\geq 2a} dV \frac{x_kx_l}{R^5} =  \int _{r\geq 2a} dr\ r^{-1}\int d\Omega\ d _kd _l = \frac{4}{3}\pi\log\left(\frac{L}{2a}\right)\delta _{kl},
 \end{equation}
@@ -485,12 +489,30 @@ these are found by decomposing the integral into spherical coordinates and compu
 S^{2\ (0)} _{kl} \int _{R\geq 2a} dV R^{-5}\left( -\delta _{ij}x_kx_l- \delta _{jl}x _ix _k - \delta _{il}x _jx _k +5R^{-2}x _ix _jx _kx _l \right) = 0,
 \end{equation}
 \begin{equation}
-S^{2\ (0)} _{kl} \int _{R\geq 2a} dV R^{-7}\left( -4R^2\delta _{ik}\delta _{jl}+12\left(\delta _{ij}x_k+2\delta _{ik}x_j+2\delta _{jk}x_i\right)x_l-70R^{-2}x _ix _jx _kx _l \right)  = S^{2\ (0)} _{kl} \int _{r\geq 2a}dr\ r^{-3}\left[-16\pi\delta _{ik}\delta _{jl} +32\pi\left(\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il}\right) - \frac{56}{3}\pi \left( \delta _{ik}\delta _{jl} + \delta _{il}\delta _{kj}\right)\right] = 30\pi S^{2\ (0)} _{ij}\frac{1}{8a^2}.
+S^{2\ (0)} _{kl} \int _{R\geq 2a} dV R^{-7}\left( -4R^2\delta _{ik}\delta _{jl}+10\left(\delta _{ij}x_k+2\delta _{ik}x_j+2\delta _{jk}x_i\right)x_l-70R^{-2}x _ix _jx _kx _l \right)  = S^{2\ (0)} _{kl} \int _{r\geq 2a}dr\ \pi r^{-3}\left[ -16\delta _{ik}\delta _{jl} +\frac{40}{3}\left(\delta _{ij}\delta _{kl} + 2\delta _{ik}\delta _{jl} + 2\delta _{jk}\delta _{il}\right) - \frac{56}{3} \left(\delta _{ij}\delta _{kl} + \delta _{ik}\delta _{jl} + \delta _{il}\delta _{kj}\right) \right] = 
+
+\frac{10}{3}\pi S^{2\ (0)} _{ij}\frac{1}{8a^2}
+
+
+x_k+2\delta _{ik}x_j+2\delta _{jk}x_i\right)
+
+
+
+
+
+
+
+-16\pi\delta _{ik}\delta _{jl} +32\pi\left(\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il}\right) - \frac{56}{3}\pi \left( \delta _{ik}\delta _{jl} + \delta _{il}\delta _{kj}\right)\right] = 30\pi S^{2\ (0)} _{ij}\frac{1}{8a^2}.
 \end{equation}
 We have set the region size $$V$$ to be large. All in all, we obtain,
+\begin{equation}
+\langle S _{ij}^1\rangle  = \frac{15}{8}\pi S^{2\ (0)} _{ij}  a^3 \frac{N-1}{V} = \frac{25}{2}\pi^2\mu a^6 \frac{N-1}{V} \langle e _{ij}\rangle = 
 
+\end{equation}
 
-\langle S _{ij}^1\rangle  = \frac{5}{2}a \frac{15}{4}
+\frac{25 * 3* 3}{2 * 4 * 4} \phi \mu \frac{4}{3} \pi a^3
+
+\frac{75}{4 * 4}
 
 
 
