@@ -498,9 +498,15 @@ We will calculate the integral of Eq. \ref{eq: integral phi^2 correction} in thi
  \int d\Omega\ d _id _jd _kd _l = \frac{4}{15}\pi \left(\delta _{ij}\delta _{kl} + \delta _{ik}\delta _{jl} + \delta _{il}\delta _{kj}\right).
 \end{equation}
 
+Performing the angular integration portion of our integral,
+\begin{equation}
+\int d\Omega\ \left(-\delta _{ij}d_kd_l- \delta _{jl}d _id _k - \delta _{il}d _jd _k +5d _id _jd _kd _l\right) = 0
+\end{equation}
+\begin{equation}
+\int d\Omega\ \left( -4\delta _{ik}\delta _{jl}+10\left(\delta _{ij}d_k+2\delta _{ik}d_j+2\delta _{jk}d_i\right)d_l-70d _id _jd _kd _l\right) = 0
+\right]
 
-
-
+\end{equation}
 
 
 
