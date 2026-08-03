@@ -471,9 +471,13 @@ where the volume integral is from $$R=2a$$ since particles cannot touch each oth
 \begin{equation}
 \langle S _{ij}^1\rangle = \int _{R\geq 2a} dV\left(\mathbf{x}_2\right)\ \mathcal{P}\left(\mathbf{x}_2|\mathbf{x}_1\right) S^\text{interaction} _{ij}\left(\mathbf{x}_1,\mathbf{x}_2\right),
 \end{equation}
-where $$S^\text{interaction} _{ij}$$ is the interaction stresslet between two particles, computed only from the interaction terms. To calculate $$S^\text{interaction} _{ij}$$, we return to the method of reflections. For the two-sphere case, $$S^\text{interaction} _{ij}$$ is given by the reflection stresslet, $$S _{ij}^{1\ (1)}$$, Eq. \ref{eq: S11 stresslet reflection}. $$S _{ij}^{1\ (1)}$$ is of $$\mathcal{O}\left(R^{-3}\right)$$, and we are left with computing the integral,
+where $$S^\text{interaction} _{ij}$$ is the interaction stresslet between two particles, computed only from the interaction terms. To calculate $$S^\text{interaction} _{ij}$$, we return to the method of reflections. For the two-sphere case, $$S^\text{interaction} _{ij}$$ is given by the reflection stresslet, $$S _{ij}^{1\ (1)}$$, Eq. \ref{eq: S11 stresslet reflection}. 
+\begin{equation}
+S^\text{interaction} _{ij} = S _{ij}^{1\ (1)} = \frac{5}{2} S^{2\ (0)} _{kl} \alpha^3\left[\left( -\delta _{ij}d_kd_l- \delta _{jl}d _id _k - \delta _{il}d _jd _k +5d _id _jd _kd _l \right) + \frac{\alpha^2}{5}\left( -4\delta _{ik}\delta _{jl}+10\left(\delta _{ij}d_k+2\delta _{ik}d_j+2\delta _{jk}d_i\right)d_l-70d _id _jd _kd _l\right) \right],
+\end{equation}
+and we are left with computing the integral,
 \begin{equation}\label{eq: integral phi^2 correction}
-\frac{5}{2} S^{2\ (0)} _{kl} a^3 \int _{R\geq 2a} dV\left(\mathbf{x}\right)\ \mathcal{P}\left(\mathbf{x}|\mathbf{0}\right) R^{-5}\left[\left( -\delta _{ij}x_kx_l- \delta _{jl}x _ix _k - \delta _{il}x _jx _k +5R^{-2}x _ix _jx _kx _l \right) + \frac{a^2}{5}R^{-2}\left( -4R^2\delta _{ik}\delta _{jl}+10\left(\delta _{ij}x_k+2\delta _{ik}x_j+2\delta _{jk}x_i\right)x_l-70R^{-2}x _ix _jx _kx _l\right) \right].
+\frac{5}{2} S^{2\ (0)} _{kl} a^3 \int _{R\geq 2a} dV\left(\mathbf{x}\right)\ \mathcal{P}\left(\mathbf{x}|\mathbf{0}\right) R^{-3} \left[\left( -\delta _{ij}d_kd_l- \delta _{jl}d _id _k - \delta _{il}d _jd _k +5d _id _jd _kd _l \right) + \frac{a^2}{5}R^{-2}\left( -4\delta _{ik}\delta _{jl}+10\left(\delta _{ij}d_k+2\delta _{ik}d_j+2\delta _{jk}d_i\right)d_l-70d _id _jd _kd _l\right) \right].
 \end{equation}
 We have set $$\mathbf{x}_1=\mathbf{0}$$ for convenience. 
 
@@ -486,14 +490,31 @@ We have a few integrals to do, but we should first set the probability distribut
 \end{equation}
 This is saying that the probability of encountering a particle is the same everywhere, which is a decent first-order approximation for our dilute suspension. We will study this assumption closer later.
 
-We will calculate the integral of Eq. \ref{eq: integral phi^2 correction} in this case. A few useful identities,
+We will calculate the integral of Eq. \ref{eq: integral phi^2 correction} in this case. A few useful identities to deal with the angular integrals,
 \begin{equation}
- \int _{R\geq 2a} dV \frac{x_kx_l}{R^5} =  \int _{r\geq 2a} dr\ r^{-1}\int d\Omega\ d _kd _l = \frac{4}{3}\pi\log\left(\frac{L}{2a}\right)\delta _{kl},
+ \int d\Omega\ d_kd_l = \frac{4}{3}\pi\delta _{kl}
 \end{equation}
 \begin{equation}
- \int _{R\geq 2a} dV \frac{x_ix_jx_kx_l}{R^7} =  \int _{r\geq 2a} dr\ r^{-1}\int d\Omega\ d _id _jd _kd _l = \frac{4}{15}\pi\log\left(\frac{L}{2a}\right)\left(\delta _{ij}\delta _{kl} + \delta _{ik}\delta _{jl} + \delta _{il}\delta _{kj}\right),
+ \int d\Omega\ d _id _jd _kd _l = \frac{4}{15}\pi \left(\delta _{ij}\delta _{kl} + \delta _{ik}\delta _{jl} + \delta _{il}\delta _{kj}\right).
 \end{equation}
-these are found by decomposing the integral into spherical coordinates and computing the angular portion over $$d\Omega$$. Using the angular integrals and the fact that $$S^{2\ (0)} _{kk} = 0$$, we find
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Using the angular integrals and the fact that $$S^{2\ (0)} _{kk} = 0$$, we find
 \begin{equation}
 S^{2\ (0)} _{kl} \int _{R\geq 2a} dV R^{-5}\left( -\delta _{ij}x_kx_l- \delta _{jl}x _ix _k - \delta _{il}x _jx _k +5R^{-2}x _ix _jx _kx _l \right) = 0,
 \end{equation}
