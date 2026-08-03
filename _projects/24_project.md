@@ -200,7 +200,7 @@ First, we identify a few derivatives of the Oseen tensor which will come in hand
 \partial_k\partial_l\mathcal{G} _{ij} = \frac{1}{r^3}\left( -\delta _{ij}\delta _{lk}+\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il} \right) -\frac{3}{r^5}\left(-\delta _{ij}x_k+\delta _{ik}x_j+\delta _{jk}x_i\right)x_l\nonumber
 \end{equation}
 \begin{equation}
--\frac{3}{r^5}\left(-\delta _{ij}x_k+\delta _{ik}x_j+\delta _{jk}x_i\right)x_l-\frac{3}{r^5}\left(\delta _{il}x _kx _j + \delta _{jl}x _ix _k + \delta _{kl}x _ix _j\right)+\frac{15}{r^7}x _ix _jx _kx _l,
+-\frac{3}{r^5}\left(\delta _{il}x _kx _j + \delta _{jl}x _ix _k + \delta _{kl}x _ix _j\right)+\frac{15}{r^7}x _ix _jx _kx _l,
 \end{equation}
 \begin{equation}
 \partial_k\partial_l\partial^2\mathcal{G} _{ij} = -\frac{6}{r^5}\left(\delta _{ij}\delta _{lk}+\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il}\right)+\frac{30}{r^7}\left(\delta _{ij}x_k+\delta _{ik}x_j+\delta _{jk}x_i\right)x_l\nonumber
@@ -397,7 +397,7 @@ S _{ij}^{1\ (1)} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \rig
 = \frac{5}{12} S^{2\ (0)} _{kl} a^3\left[\partial_i\partial_l\mathcal{G} _{jk}\left(R\right)+\partial_j\partial_l\mathcal{G} _{ik}\left(R\right) + \frac{a^2}{5}\left( \partial_i\partial_l\partial^2\mathcal{G} _{jk}\left(R\right)+\partial_j\partial_l\partial^2\mathcal{G} _{ik}\left(R\right)\right) \right],
 \end{equation}
 \begin{equation}
-= \frac{5}{12} S^{2\ (0)} _{kl} a^3\left[\left( \frac{2}{R^3}\left(\delta _{ij}\delta _{kl} \right) -\frac{6}{R^3}\delta _{ij}d_kd_l-\frac{6}{R^3}\left(\delta _{kl}d _id _j + \delta _{jl}d _id _k + \delta _{il}d _jd _k\right)+\frac{30}{R^3}d _id _jd _kd _l
+= \frac{5}{12} S^{2\ (0)} _{kl} a^3\left[\left( \frac{2}{R^3}\delta _{ij}\delta _{kl} -\frac{6}{R^3}\delta _{ij}d_kd_l-\frac{6}{R^3}\left(\delta _{kl}d _id _j + \delta _{jl}d _id _k + \delta _{il}d _jd _k\right)+\frac{30}{R^3}d _id _jd _kd _l
 \right) \right.
 \end{equation}
 \begin{equation}
@@ -510,8 +510,11 @@ Performing the angular integration portion of our integral,
 
 
 
+-16\delta _{ik}\delta _{jl}+\frac{160}{3}\delta _{jl}\delta _{ik}-\frac{112}{3}\delta _{il}\delta _{kj}
 
 
+
+14 * 4/3
 
 
 
