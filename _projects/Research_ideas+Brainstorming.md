@@ -47,6 +47,8 @@ What's the best shape for a hat?
 
 bird migration, more general noisy sensing navigation without gradient
 
+effective viscosities of suspensions, spherical, not spherical, viscoelastic, viscoplastic, granular, etc.?
+
 To DO summer 2026
 Get better handwriting, find blackboard, get good at writing on it.
 Publish CNT paper, jellyfish paper, Ken FSI paper.
