@@ -49,6 +49,8 @@ bird migration, more general noisy sensing navigation without gradient
 
 effective viscosities of suspensions, spherical, not spherical, viscoelastic, viscoplastic, granular, etc.?
 
+cilia transport, lagrangian transport via Cilia, fortune and Lauga, lots of remaining questions about cilia transport passive and active matter, healthy/unhealthy cilia and transport especially could be interesting.
+
 To DO summer 2026
 Get better handwriting, find blackboard, get good at writing on it.
 Publish CNT paper, jellyfish paper, Ken FSI paper.
@@ -98,27 +100,34 @@ USNCTAM
 INTERESTING PEOPLE
 Karthik Menon - Georgia Tech
 Suhas Jain - Georgia Tech
+
 Leif Ritroph - NYU Courant
 Michael Shelly - NYU Courant
 Charles Peskin - NYU Courant, FSI problems, IB method
 Mike O'Neal - NYU Courant, numerical boundary integral methods
 Leslie Greengard - NYU Courant, numerical PDEs, FMM
 Marsha Berger - NYU Courant, numerical PDEs, AMR
+
 Eric Lauga - Cambridge, Low Re swimming, biomathematics
 Duncan Hewitt - Cambridge
-Ray Goldstein - Cambridge
+Ray Goldstein - Cambridge, biomathematics, experiments
 Shreyas Mandre - Cambridge, biomathematics, evolution math, fsi problems
+
 Peter Howell - Oxford
 Ian Hewitt - Oxford, geological flows, ice/glacier modeling
 Sarah Waters - Oxford, psychological flows, biomathematics
+
 Laurel Ohm - UW Madison, numerics Stokes Flow
 Dallas Albritton - UW Madison, PDE analysis on Navier-Stokes
 Saverio Spagnolie - UW Madison
 Chris Rycroft - UW Madison, numerical FSI, RMT
+
 John Bush - MIT, hydrodynamic quantum analogs, biomathematics
 Jorn Dunkel - MIT, inverse problems biomathematics
 Keaton Burns - MIT, spectral methods, numerical PDEs, Dedalus
+
 Ken Kamrin - UC Berkeley, solid mechanics, granular media, FSI
+
 
 
 
