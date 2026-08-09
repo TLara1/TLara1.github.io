@@ -57,9 +57,15 @@
 - title: Presentations
   type: time_table
   contents:
+    - year: 2026
+      items:
+        - T. Lara, K. Kamrin, "Simulating Contact-Rich Fluid-Structure Interaction Problems," US Association for Computational Mechanics Student Chapter Seminar Series, Webinar, August 2026.
     - year: 2025
       items:
-        - USNCCM18 Conference, Speaker and Poster; "Unified Eulerian method for fluid-immersed self- and multi-body solid contact"
+        - T. Lara, A. Tripathi, H. Walden, "The Fluid Dynamics of Feeding Jellyfish," SPUR Student Project Seminar Series, Cambridge, MA, August 2025.
+    - year: 2025
+      items:
+        - T. Lara, K. Kamrin, "Unified Eulerian method for fluid-immersed self- and multi-body solid contact," US National Congress on Computational Mechanics, Chicago, IL, July 2025.
 
 - title: Honours and Awards
   type: time_table
