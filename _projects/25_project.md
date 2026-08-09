@@ -8,14 +8,15 @@ category: 2026
 related_publications: false
 ---
 
-Videos
+In an extension of my work modeling Eulerian fluid-immersed solid contacts, we improved our contact model by incorporating frictional forces. A frictional contact between tangentially sliding bodies requires a notion of the velocities of those bodies. Usually this is straightforward when modeling rigid bodies since each body will have its own velocity, but in our Eulerian framework, all we have is a global velocity field. There is no concept of a single body's velocity, so adding frictional forces is nontrivial. To resolve this, we introduce a solid-body velocity-averaging procedure that averages the velocity field across the fluid gap between bodies near the fluid-solid interface. This averaging procedure involves a local integral calculation similar to that in our contact formalism, so much so that we can perform it at the same time as the calculation for the self-contact forces. Our friction method allows us to model tangential shearing contact between sliding bodies, while remaining in a fluid bath and interacting with the surrounding fluid flow. 
+
+
+<p> We have validated our model on several benchmarks, including convergence to the classical analytic Hertz-Mindlin solution for weakly deforming shearing disks, a block sliding on a ramp, a ball-bearing rotating disk inside a hoop to assess frictional torque balance, and a periodically shearing U "violin" shape demonstrating a closed hysteresis loop. 
+    
 
 USACM talk powerpoint
 
 
-
-
-<a href="https://1drv.ms/p/c/862b1b0b1baeb400/IQDNN1aMA-a-RIctqTugPHSyAbrQ5h3VgHGd6lQfeHrQ9zY?e=gAGnzF"> USACM</a>
 
 
 
@@ -44,5 +45,6 @@ caption
 caption
 </div>
 
+I recently presented this work at a student webinar of the  <a href="https://1drv.ms/p/c/862b1b0b1baeb400/IQDNN1aMA-a-RIctqTugPHSyAbrQ5h3VgHGd6lQfeHrQ9zY?e=gAGnzF"> US Association of Computational Mechanics</a>.
 
 
