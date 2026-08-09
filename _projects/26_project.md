@@ -19,6 +19,8 @@ videos
         {% include video.liquid path="assets/img/Pictures_Website_Jellyfish/Vorticity_slice_Re1000.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
+
+
 <div class="caption">
     Swimming jellyfish with vorticity contours; notice vortex ring formations both moving upwards into the bell region for feeding and away from the bell for propulsion.
 </div>
