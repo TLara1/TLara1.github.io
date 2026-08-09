@@ -1,11 +1,9 @@
 ---
 layout: page
-title: On the Effective Viscosity of a Spherical Suspensio
+title: Fluid-Immersed Eulerian Frictional Contacts
 description:
 img: 
-importance: 84
-category: Maths
+importance: 1
+category: 2026
 related_publications: false
-toc:
-  beginning: true
 ---
