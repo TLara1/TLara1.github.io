@@ -494,7 +494,7 @@ ninja.data = [{
               window.location.href = "/projects/25_project/";
             },},{id: "projects-26-project",
           title: '26_project',
-          description: "Vortex Dynamics and Jellyfish Feeding",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/26_project/";
             },},{id: "projects-on-the-precession-of-mercury-39-s-perihelion-1-25",
