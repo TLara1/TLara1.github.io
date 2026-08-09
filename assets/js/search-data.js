@@ -487,8 +487,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/24_project/";
-            },},{id: "projects-on-the-effective-viscosity-of-a-spherical-suspensio",
-          title: 'On the Effective Viscosity of a Spherical Suspensio',
+            },},{id: "projects-fluid-immersed-eulerian-frictional-contacts",
+          title: 'Fluid-Immersed Eulerian Frictional Contacts',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/25_project/";
