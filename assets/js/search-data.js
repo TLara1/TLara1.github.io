@@ -492,8 +492,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/25_project/";
-            },},{id: "projects-26-project",
-          title: '26_project',
+            },},{id: "projects-vortex-rings-and-jellyfish-feeding",
+          title: 'Vortex Rings and Jellyfish Feeding',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/26_project/";
