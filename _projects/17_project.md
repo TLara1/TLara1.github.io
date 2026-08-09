@@ -3,7 +3,7 @@ layout: page
 title: Block-Structured AMR
 description:
 img: assets/website_project_icon_gifs/AMR_sample.gif
-importance: 1
+importance: 3
 category: 2026
 related_publications: false
 ---
