@@ -22,10 +22,10 @@ USACM talk powerpoint
 
 <div class="column">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/img/RMT_videos_img/supplemental_video_4_squished_bent_U - Trim.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        {% include video.liquid path="assets/img/RMT_videos_img/supplemental_video_4_squished_bent_U - Trim.mp4" class="img-fluid rounded z-depth-1" controls=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/img/RMT_videos_img/supplemental_video_1_sliding_bent_U_mu05.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        {% include video.liquid path="assets/img/RMT_videos_img/supplemental_video_1_sliding_bent_U_mu05.mp4" class="img-fluid rounded z-depth-1" controls=true %}
     </div>
 </div>
 
