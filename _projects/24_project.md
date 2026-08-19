@@ -411,6 +411,50 @@ so we may relate,
 This is neat and will be helpful. 
 
 Now consider the seemingly unrelated function,
+\begin{equation}
+G_n\left(\mathbf{x}\right)=\int_{\lambda\left(\mathbf{x}\right)}^\infty dt\ \delta\left(t\right)^{-1}p\left(x,y,z,t)^n,
+\end{equation}
+where,
+\begin{equation}
+\delta\left(t\right)=\sqrt{\left(a^2+t\right)\left(b^2+t\right)\left(c^2+t\right)},
+\end{equation}
+\begin{equation}
+p\left(x,y,z,t)=\frac{x^2}{a^2+t}+\frac{y^2}{b^2+t}+\frac{z^2}{c^2+t}-1,
+\end{equation}
+and $$\lambda\left(\mathbf{x}\right)$$ is the positive root of $$p\left(x,y,z,t)=0$$. We may establish a similar relation between $$G_n\left(\mathbf{x};u\right)$$ and $$G_{n+1}\left(\mathbf{x};1\right)$$ as we did for $$H_n$$. Consider,
+\begin{equation}
+int_0^1 du\ u^{2n+2}G_n\left(\mathbf{x};u\right)=\int_0^1 du\ \int_{\lambda\left(\mathbf{x};u\right)}^\infty dt\ \delta\left(t;u\right)^{-1}u^{2n+2}\left(\frac{x^2}{u^2a^2+t}+\frac{y^2}{u^2b^2+t}+\frac{z^2}{u^2c^2+t}-1\right)^n.
+\end{equation}
+Now change variables with $$\tau=u^{-2} t$$, and $$v\left(u\right)=\lambda\left(u\right)/u^2$$,
+\begin{equation}\label{eq: G unchanged order integral}
+=\int_0^1 du\ \int_{v\left(u\right)}^\infty d\tau\ \delta\left(\tau\right)^{-1}u\left( \frac{x^2}{a^2+\tau }+\frac{y^2}{b^2+\tau }+\frac{z^2}{ c^2+\tau }-u^2 \right)^n.
+\end{equation}
+Now we change the order of integration. We know,
+\begin{equation}
+u^2v\left(u\right)=\lambda\left(u\right)\rightarrow \frac{x^2}{u^2a^2+u^2v}+\frac{y^2}{u^2b^2+u^2v}+\frac{z^2}{u^2c^2+u^2v}=1\rightarrow \frac{x^2}{a^2+u^2v}+\frac{y^2}{b^2+v}+\frac{z^2}{c^2+v}=u^2.
+\end{equation}
+Therefore the inverse function of $$v\left(u\right)$$, $$v^{-1}$$ which is defined by, $$v^{-1}\left(v\left(u\right)\right)=u$$, is given by,
+\begin{equation}
+v^{-1}\left(v\right)=\sqrt{ frac{x^2}{a^2+v}+\frac{y^2}{b^2+v}+\frac{z^2}{c^2+v} }.
+\end{equation}
+With this, the region of integration in Eq. \ref{eq: G unchanged order integral} is,
+\begin{equation}
+0\leq u\leq 1\quad v\left(u\right)\leq\tau\leq\infty \leftrightarrow v\left(1\right)\leq\tau\leq\infty\quad v^{-1}\left(\tau\right)\leq u \leq 1,
+\end{equation}
+and we may rewrite,
+\begin{equation}
+int_0^1 du\ u^{2n+2}G_n\left(\mathbf{x};u\right)=\int_\lambda^\infty d\tau\ \int_{v^{-1}\left(\tau\right)}^1 du\ \delta\left(\tau\right)^{-1}u\left( \left(v^{-1}\left(\tau\right)\right)^2-u^2 \right)^n,
+\end{equation}
+\begin{equation}
+=-\frac{1}{2\left(n+1\right)}\int_\lambda^\infty d\tau\ \int_{v^{-1}\left(\tau\right)}^1 du\ \delta\left(\tau\right)^{-1} \left( \left(v^{-1}\left(\tau\right)\right)^2-u^2 \right)^{n+1}.
+\end{equation}
+so,
+\begin{equation}
+-2\left(n+1\right)int_0^1 du\ u^{2n+2}G_n\left(\mathbf{x};u\right)=G_{n+1}\left(\mathbf{x};1\right).
+\end{equation}
+
+
+
 
 
 
