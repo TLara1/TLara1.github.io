@@ -369,7 +369,7 @@ a_E=\sqrt{a^2-c^2},
 b_E=\sqrt{b^2-c^2},
 \end{equation}
 \begin{equation}
-q\left(\mathbf{x}\right)=sqrt{1-\frac{x^2}{a_E^2}-\frac{y^2}{b_E^2}}.
+q\left(\mathbf{x}\right)=\sqrt{1-\frac{x^2}{a_E^2}-\frac{y^2}{b_E^2}}.
 \end{equation}
 
 ### Singularity System
@@ -398,12 +398,14 @@ which defines the region of integration $$E_u$$. Now consider the integral,
 \end{equation}
 where we swapped the order of integration to integrate over $$u$$ first. Performing this trick with Eq. \ref{eq: H_n u transform},
 \begin{equation}
-\int_0^1 du\ u^{2n+2}H_n\left(\mathbf{x};u\right)=\int_0^1 du\ \int_{E_u} dA\left(\mathbf{x'}\right)\ \frac{u}{2\pi a_E b_E}\left(u^2-w^2\right)^{n-\frac{1}{2}}\frac{1}{|\mathbf{x}-\mathbf{x}'|}=\int_{E} dA\left(\mathbf{x'}\right)\ \int_w^1 du\ \frac{u}{2\pi a_E b_E}\left(u^2-w^2\right)^{n-\frac{1}{2}}\frac{1}{|\mathbf{x}-\mathbf{x}'|},
+\int_0^1 du\ u^{2n+2}H_n\left(\mathbf{x};u\right)=\int_0^1 du\ \int_{E_u} dA\left(\mathbf{x'}\right)\ \frac{u}{2\pi a_E b_E}\left(u^2-w^2\right)^{n-\frac{1}{2}}\frac{1}{|\mathbf{x}-\mathbf{x}'|},
 \end{equation}
-
+=\int_{E} dA\left(\mathbf{x'}\right)\ \int_w^1 du\ \frac{u}{2\pi a_E b_E}\left(u^2-w^2\right)^{n-\frac{1}{2}}\frac{1}{|\mathbf{x}-\mathbf{x}'|},
+\end{equation}
 \begin{equation}
 = \int_{E} dA\left(\mathbf{x'}\right)\ \frac{1}{2\pi a_E b_E}\frac{1}{2n+1}\left(1-w^2\right)^{n+\frac{1}{2}}\frac{1}{|\mathbf{x}-\mathbf{x}'|}= \int_{E} dA\left(\mathbf{x'}\right)\ \frac{1}{2\pi a_E b_E}\frac{q\left(\mathbf{x}'\right)^{2n+1}}{2n+1}\frac{1}{|\mathbf{x}-\mathbf{x}'|},
 \end{equation}
+
 so we may relate,
 \begin{equation}
 \left(2n+1\right)\int_0^1 du\ u^{2n+2}H_n\left(\mathbf{x};u\right)=H_{n+1}\left(\mathbf{x};1\right).
@@ -412,30 +414,34 @@ This is neat and will be helpful.
 
 Now consider the seemingly unrelated function,
 \begin{equation}
-G_n\left(\mathbf{x}\right)=\int_{\lambda\left(\mathbf{x}\right)}^\infty dt\ \delta\left(t\right)^{-1}p\left(x,y,z,t)^n,
+G_n\left(\mathbf{x}\right)=\int_{\lambda\left(\mathbf{x}\right)}^\infty dt\ \frac{1}{\Delta\left(t\right)}p\left(x,y,z,t\right)^n,
 \end{equation}
+
 where,
 \begin{equation}
-\delta\left(t\right)=\sqrt{\left(a^2+t\right)\left(b^2+t\right)\left(c^2+t\right)},
+\Delta\left(t\right)=\sqrt{\left(a^2+t\right)\left(b^2+t\right)\left(c^2+t\right)},
 \end{equation}
 \begin{equation}
-p\left(x,y,z,t)=\frac{x^2}{a^2+t}+\frac{y^2}{b^2+t}+\frac{z^2}{c^2+t}-1,
+p\left(x,y,z,t\right)=\frac{x^2}{a^2+t}+\frac{y^2}{b^2+t}+\frac{z^2}{c^2+t}-1,
 \end{equation}
-and $$\lambda\left(\mathbf{x}\right)$$ is the positive root of $$p\left(x,y,z,t)=0$$. We may establish a similar relation between $$G_n\left(\mathbf{x};u\right)$$ and $$G_{n+1}\left(\mathbf{x};1\right)$$ as we did for $$H_n$$. Consider,
+and $$\lambda\left(\mathbf{x}\right)$$ is the positive root of $$p\left(t\right)=0$$. We may establish a similar relation between $$G_n\left(\mathbf{x};u\right)$$ and $$G_{n+1}\left(\mathbf{x};1\right)$$ as we did for $$H_n$$. Consider,
 \begin{equation}
-int_0^1 du\ u^{2n+2}G_n\left(\mathbf{x};u\right)=\int_0^1 du\ \int_{\lambda\left(\mathbf{x};u\right)}^\infty dt\ \delta\left(t;u\right)^{-1}u^{2n+2}\left(\frac{x^2}{u^2a^2+t}+\frac{y^2}{u^2b^2+t}+\frac{z^2}{u^2c^2+t}-1\right)^n.
+\int_0^1 du\ u^{2n+2}G_n\left(\mathbf{x};u\right)=\int_0^1 du\ \int_{\lambda\left(\mathbf{x};u\right)}^\infty dt\ \Delta\left(t;u\right)^{-1}u^{2n+2}\left(\frac{x^2}{u^2a^2+t}+\frac{y^2}{u^2b^2+t}+\frac{z^2}{u^2c^2+t}-1\right)^n,
 \end{equation}
-Now change variables with $$\tau=u^{-2} t$$, and $$v\left(u\right)=\lambda\left(u\right)/u^2$$,
+now change variables with $$\tau=u^{-2} t$$, and $$v\left(u\right)=\lambda\left(u\right)/u^2$$,
 \begin{equation}\label{eq: G unchanged order integral}
-=\int_0^1 du\ \int_{v\left(u\right)}^\infty d\tau\ \delta\left(\tau\right)^{-1}u\left( \frac{x^2}{a^2+\tau }+\frac{y^2}{b^2+\tau }+\frac{z^2}{ c^2+\tau }-u^2 \right)^n.
+=\int_0^1 du\ \int_{v\left(u\right)}^\infty d\tau\ \Delta\left(\tau\right)^{-1}u\left( \frac{x^2}{a^2+\tau }+\frac{y^2}{b^2+\tau }+\frac{z^2}{ c^2+\tau }-u^2 \right)^n.
 \end{equation}
 Now we change the order of integration. We know,
 \begin{equation}
-u^2v\left(u\right)=\lambda\left(u\right)\rightarrow \frac{x^2}{u^2a^2+u^2v}+\frac{y^2}{u^2b^2+u^2v}+\frac{z^2}{u^2c^2+u^2v}=1\rightarrow \frac{x^2}{a^2+u^2v}+\frac{y^2}{b^2+v}+\frac{z^2}{c^2+v}=u^2.
+u^2v\left(u\right)=\lambda\left(u\right)\rightarrow \frac{x^2}{u^2a^2+u^2v}+\frac{y^2}{u^2b^2+u^2v}+\frac{z^2}{u^2c^2+u^2v}=1,
+\end{equation}
+\begin{equation}
+\rightarrow \frac{x^2}{a^2+u^2v}+\frac{y^2}{b^2+v}+\frac{z^2}{c^2+v}=u^2.
 \end{equation}
 Therefore the inverse function of $$v\left(u\right)$$, $$v^{-1}$$ which is defined by, $$v^{-1}\left(v\left(u\right)\right)=u$$, is given by,
 \begin{equation}
-v^{-1}\left(v\right)=\sqrt{ frac{x^2}{a^2+v}+\frac{y^2}{b^2+v}+\frac{z^2}{c^2+v} }.
+v^{-1}\left(v\right)=\sqrt{ \frac{x^2}{a^2+v}+\frac{y^2}{b^2+v}+\frac{z^2}{c^2+v} }.
 \end{equation}
 With this, the region of integration in Eq. \ref{eq: G unchanged order integral} is,
 \begin{equation}
@@ -443,26 +449,26 @@ With this, the region of integration in Eq. \ref{eq: G unchanged order integral}
 \end{equation}
 and we may rewrite,
 \begin{equation}
-int_0^1 du\ u^{2n+2}G_n\left(\mathbf{x};u\right)=\int_\lambda^\infty d\tau\ \int_{v^{-1}\left(\tau\right)}^1 du\ \delta\left(\tau\right)^{-1}u\left( \left(v^{-1}\left(\tau\right)\right)^2-u^2 \right)^n,
+\int_0^1 du\ u^{2n+2}G_n\left(\mathbf{x};u\right)=\int_\lambda^\infty d\tau\ \int_{v^{-1}\left(\tau\right)}^1 du\ \Delta\left(\tau\right)^{-1}u\left( \left(v^{-1}\left(\tau\right)\right)^2-u^2 \right)^n,
 \end{equation}
 \begin{equation}
-=-\frac{1}{2\left(n+1\right)}\int_\lambda^\infty d\tau\ \int_{v^{-1}\left(\tau\right)}^1 du\ \delta\left(\tau\right)^{-1} \left( \left(v^{-1}\left(\tau\right)\right)^2-u^2 \right)^{n+1}.
+=-\frac{1}{2\left(n+1\right)}\int_\lambda^\infty d\tau\ \int_{v^{-1}\left(\tau\right)}^1 du\ \Delta\left(\tau\right)^{-1} \left( \left(v^{-1}\left(\tau\right)\right)^2-u^2 \right)^{n+1}.
 \end{equation}
 so,
 \begin{equation}
--2\left(n+1\right)int_0^1 du\ u^{2n+2}G_n\left(\mathbf{x};u\right)=G_{n+1}\left(\mathbf{x};1\right).
+-2\left(n+1\right)\int_0^1 du\ u^{2n+2}G_n\left(\mathbf{x};u\right)=G_{n+1}\left(\mathbf{x};1\right).
 \end{equation}
 
 Finally, we relate $$H_n$$ with $$G_n$$ via induction. Consider $$G_0$$,
 \begin{equation}
-G_0\left(\mathbf{x}\right)=\int_{\lambda\left(\mathbf{x}\right)}^\infty dt\ \delta\left(t\right)^{-1}.
+G_0\left(\mathbf{x}\right)=\int_{\lambda\left(\mathbf{x}\right)}^\infty dt\ \Delta\left(t\right)^{-1}.
 \end{equation}
-We show $$G_0$$ is harmonic.
+Now we show $$G_0$$ is harmonic.
 \begin{equation}
-\partial_\lambda G_0 = -\frac{1}{\Delta\left(\lambda)}\rightarrow\partial_i G_0 = -\frac{1}{\Delta\left(\lambda)}\partial_i\lambda.
+\partial_\lambda G_0 = -\frac{1}{\Delta\left(\lambda\right)}\rightarrow\partial_i G_0 = -\frac{1}{\Delta\left(\lambda\right)}\partial_i\lambda.
 \end{equation}
 \begin{equation}
-\partial^2 G_0 = -\frac{\partial^2\lambda}{\Delta\left(\lambda)}+\frac{\partial_\lambda\Delta\left(\lambda)}{\Delta\left(\lambda)^2}|\partial_i\lambda|^2.
+\partial^2 G_0 = -\frac{\partial^2\lambda}{\Delta\left(\lambda\right)}+\frac{\partial_\lambda\Delta\left(\lambda\right)}{\Delta\left(\lambda\right)^2}|\partial_i\lambda|^2.
 \end{equation}
 Evaluating using the definition of $$\lambda\left(\mathbf{x}\right)$$,
 \begin{equation}
@@ -474,7 +480,7 @@ S\left(\lambda\right)=\frac{x^2}{\left(a^2+\lambda\right)^2}+\frac{y^2}{\left( b
 \end{equation}
 where $$a_i=a,b,c$$. This also gives us,
 \begin{equation}
-|\partial_i\lambda\end{equation}|^2=\frac{4}{S}
+|\partial_i\lambda|^2=\frac{4}{S}
 \end{equation}
 Now for the second derivative, take another derivative, for instance along $$x$$,
 \begin{equation}
@@ -493,19 +499,24 @@ So the laplaciacion of $$\lambda$$ is,
 \end{equation}
 With,
 \begin{equation}
-\frac{\partial_\lambda\Delta\left(\lambda)}{\Delta\left(\lambda)}=\frac{1}{2}\left(\frac{1}{a_1^2+\lambda}+\frac{1}{a_2^2+\lambda}+\frac{1}{a_3^2+\lambda}\right),
+\frac{\partial_\lambda\Delta\left(\lambda\right)}{\Delta\left(\lambda\right)}=\frac{1}{2}\left(\frac{1}{a_1^2+\lambda}+\frac{1}{a_2^2+\lambda}+\frac{1}{a_3^2+\lambda}\right),
 \end{equation}
 we see,
 \begin{equation}
-\partial^2\lambda=\frac{\partial_\lambda\Delta\left(\lambda)}{\Delta\left(\lambda)}|\partial_i\lambda\end{equation}|^2,
+\partial^2\lambda=\frac{\partial_\lambda\Delta\left(\lambda\right)}{\Delta\left(\lambda\right)}|\partial_i\lambda|^2,
 \end{equation}
 from which we find that
 \begin{equation}
-\partial^2 G_0 = -\frac{\partial^2\lambda}{\Delta\left(\lambda)}+\frac{\partial_\lambda\Delta\left(\lambda)}{\Delta\left(\lambda)^2}|\partial_i\lambda|^2 = 0,
+\partial^2 G_0 = -\frac{\partial^2\lambda}{\Delta\left(\lambda\right)}+\frac{\partial_\lambda\Delta\left(\lambda\right)}{\Delta\left(\lambda\right)^2}|\partial_i\lambda|^2 = 0,
 \end{equation}
 and $$G_0$$ is biharmonic as we hoped. 
 
 Because $$G_0$$ is biharmonic, we may express it in the region outside of the ellipsoid as,
+
+
+
+
+
 
 
 
