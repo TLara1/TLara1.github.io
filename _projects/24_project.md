@@ -1,6 +1,6 @@
 ---
 layout: page
-title: On Slender Body Theory, Jeffery Orbits, and the Rheology of Dilute Spheroid Suspensions
+title: On Slender Body Theory, Jeffery Orbits, and the Rheology of Dilute Spheroid Suspensions - 8/26
 description:
 img: 
 importance: 84
@@ -129,7 +129,7 @@ Now apply the same integral representation to the region inside the particle whe
 The surface traction integral, $$\sigma^p _{ij}$$ vanishes, since its net contribution is a constant pressure term in the case of a rigid body and the integral over the solenoidal Green's function vanishes. 
 
 We add Eq. \ref{eq: integral represntation outside particle} and Eq. \ref{eq: integral represntation inside particle} to obtain a representation of the velocity field everywhere. Integrals over $$S_\infty$$ are also removed since they vanish as discussed above,
-\begin{equation}
+\begin{equation}\label{eq: greens function integral rep}
 u_k\left(\mathbf{x}\right) = u_k^\infty -\frac{1}{8\pi\mu}\oint _{S_p} dS\left(\mathbf{\xi}\right)\ \sigma _{ij}\left(\mathbf{\xi}\right)\mathcal{G} _{ik}\left(\mathbf{x}-\mathbf{\xi}\right)\hat{n}_j\left(\mathbf{\xi}\right).
 \end{equation}
 So the disturbance field everywhere in the fluid domain can be expressed as a surface integral with a Green's function kernel over the stress at the particle surface. 
@@ -199,23 +199,23 @@ First, we calculate a few derivatives of the Oseen tensor, which will come in ha
 \end{equation}
 This last identity is expected since the velocity field is biharmonic by definition.
 
-We consider the velocity prescribed on the spherical surface as a superposition of translational, rotational, and symmetric $$\left(E_{ij}=E_{ji}\right)$$ straining modes,
+We consider the velocity prescribed on the spherical surface located at the origin as a superposition of translational, rotational, and symmetric $$\left(E_{ij}=E_{ji}\right)$$ straining modes,
 \begin{equation}
 u^p_i = U_i + \epsilon_{ijk}\Omega_jx_k + E_{ij}x_j.
 \end{equation}
 Generally, we may also explore higher-order components, but these are calculated in much the same way and will end up corresponding to higher-order modes of the multipole expansion, which are of less interest to us. The sphere also sits in an ambient flow, with the far-field velocity taking the form,
 \begin{equation}
-u^\infty_i = U^\infty_i + \epsilon_{ijk}\Omega^\infty_jx_k + E^\infty_{ij}x_j.
+u^\infty_i = U^\infty_i + \epsilon_{ijk}\Omega^\infty_jx_k + E^\infty_{ij}x_j,
 \end{equation}
-The boundary conditions describe the velocity at the sphere's surface,
+where $$U^\infty_i$$, $$\Omega^\infty_j$$, and $$E^\infty_{ij}$$ are constant. The boundary conditions describe the velocity at the sphere's surface,
 \begin{equation}
 u_i\left(r=a\right)=u^p_i
 \end{equation}
 where $a$ is the radius of the sphere, and the velocity far from the sphere takes the far-field unperturbed values,
 \begin{equation}
-u_i\left(r\rightarrow\infty)=u^\infty_i.
+u_i\left(r\rightarrow\infty\right)=u^\infty_i.
 \end{equation}
-Note that we have assumed we know the velocity of the sphere within the moving fluid. Suppose instead we know the velocity of the sphere in a quesient fluid and are intested in the dynamics in the presence of $$u^\infty_i$$. This could be the case if we are studying, for instance, a swimming body. In this case, if the body would translate with an intrinsic velocity $$u^s_i$$ in the absence of $$u^\infty_i$$, we simply replace $$u^p_i\rightarrow u^s_i+u^\infty_i$$.
+Note that we have assumed we know the velocity of the sphere within the moving fluid. Suppose instead we know the velocity of the sphere in a quiescent fluid and are interested in the dynamics in the presence of $$u^\infty_i$$. This could be the case if we are studying, for instance, a swimming body. In this case, if the body would translate with an intrinsic velocity $$u^s_i$$ in the absence of $$u^\infty_i$$, we simply replace $$u^p_i\rightarrow u^s_i+u^\infty_i$$.
 
 Considering first the translation case. Notice at $$r=a$$,
 \begin{equation}
@@ -253,7 +253,7 @@ In summary, we may express our velocity field as a sum of the translational, rot
 \begin{equation}
 u_i\left(\mathbf{x}\right)= \left[-F_j\left(1+\frac{a^2}{6}\partial^2\right) + S_{jk}\left(1+\frac{a^2}{10}\partial^2\right)\partial_k -\frac{1}{2} \epsilon_{jkl}T _k\partial_l\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} + u^\infty _i,
 \end{equation}
-\begin{equation}
+\begin{equation}\label{eq: force translating particle const background}
 F_i = 6\pi\mu a\left(U^\infty _i -U _i\right),
 \end{equation}
 
@@ -266,26 +266,25 @@ T _k = 8\mu\pi a^3\left( \Omega^\infty_k-\Omega_k\right).
 $$F _i$$, $$S _{jk}$$, $$T _k$$ are the hydrodynamic force, stress, and torque associated with the particle's motion, as in this is the force exerted by the fluid onto the particle. Simply reverse the signs for the force experienced by the fluid.
 
 ### Faxén Laws
-We require one last element, that being the inverse relations. Suppose we are given the ambient flow and particle motion; how do we determine the moments?
+We require one last element, that being the inverse relations. We know how to find the flow given the background fluid motion and the behaviour of the sphere, but suppose we are instead given a non-constant background flow $$u^\infty_i\left(\mathbf{x}\right)$$, how do we determine the moments $$F_i\left(\mathbf{x}\right)$$, $$T_i\left(\mathbf{x}\right)$$, and $$S_{ij}\left(\mathbf{x}\right)$$?
 
-We begin again with the reciprocal theorem, Eq. \ref{eq: Reciprocal theorem}, 
+We first consider purely translational motion, starting again with the reciprocal theorem, Eq. \ref{eq: Reciprocal theorem}, 
 \begin{equation}\label{eq: flaxen reciprocal theorem}
 \oint _{S_p} dS\ \sigma^1 _{ij}u^2_i \hat{n}_j + \int_V dV\ u^2 _i\partial _j\sigma^1 _{ij} = \oint _{S_p} dS\ \sigma^2 _{ij}u^1 _i \hat{n} _j + \int_V dV\ u^1 _i\partial _j\sigma^2 _{ij},
 \end{equation}
-
-where $$\hat{n}_i$$ is the vector pointing out of the particle into the fluid. Now let $$u^1 _i$$ be the solution for a spherical particle translating with velocity $$U_i$$ in a quiescent fluid. Note that this means that $$\partial _j\sigma _{ij}^1=0$$. For the second velocity field, $$u^2 _i$$ be the velocity field generated by a point force $$F _i\delta\left(\mathbf{x}-\mathbf{y}\right)$$ where $$\mathbf{y}$$ lies outside of the particle and the particle is stationary. Then on $$S _p$$, $$u_i^2=0$$, and $$\partial _j\sigma _{ij}^2=-F _i\delta\left(\mathbf{x}-\mathbf{y}\right)$$. Inserting these fields into Eq. \ref{eq: flaxen reciprocal theorem},
+where $$\hat{n}_i$$ is the vector pointing out of the particle into the fluid. Now let $$u^1 _i$$ be the solution for a spherical particle translating with velocity $$U_i$$ in a quiescent fluid. Note that this means that $$\partial _j\sigma _{ij}^1=0$$ since the auxiliary flow satisfies the homogeneous Stokes momentum equation in the fluid. For the second velocity field, $$u^2 _i$$, choose the velocity field generated by a point force $$P _i\delta\left(\mathbf{x}-\mathbf{y}\right)$$ where $$\mathbf{y}$$ lies outside of the particle and the particle is stationary. Because the second particle is stationary, we have $$u_i^2=0$$ on the particle surface, and $$\partial _j\sigma _{ij}^2=-P _i\delta\left(\mathbf{x}-\mathbf{y}\right)$$ from the point force. Inserting these fields into Eq. \ref{eq: flaxen reciprocal theorem},
 
 \begin{equation}
-F^2_i U_i  - F_iu^1 _i\left(\mathbf{y}\right) = 0,
+F^2_i U_i  - P_iu^1 _i\left(\mathbf{y}\right) = 0,
 \end{equation}
 
-where $$F^2_i$$ is the force on the particle,
+where $$F^2_i$$ is the hydrodynamic force on the second particle,
 
 \begin{equation}
 F^2_i = \oint _{S_p} dS\ \sigma^2 _{ij} \hat{n} _j.
 \end{equation}
 
-We can write $$u^1_i$$ from our singularity solution,
+We can write $$u^1_i$$ with our singularity solution,
 
 \begin{equation}
 u^1 _i = U _j \mathcal{F}\left[ \frac{\mathcal{G} _{ij}\left( \mathbf{x}-\mathbf{\xi} \right) }{8\pi\mu} \right],
@@ -294,17 +293,25 @@ u^1 _i = U _j \mathcal{F}\left[ \frac{\mathcal{G} _{ij}\left( \mathbf{x}-\mathbf
 \mathcal{F}\left[f\right]=6\pi\mu a\left( 1+\frac{a^2 }{6}\partial^2 \right)f,
 \end{equation}
 
-where $$\mathcal{F}$$ is a linear functional and $$\mathbf{\xi}$$ is the centre of the sphere, from which we identify,
+where $$\mathcal{F}$$ is a linear functional and $$\mathbf{\xi}$$ is the centre of the sphere, from which we identify
 
 \begin{equation}
-F^2_i = F_j \mathcal{F} \left[ \frac{\mathcal{G} _{ij}\left(\mathbf{y}-\mathbf{\xi}\right)}{8\pi\mu} \right].
+F^2_i = P_j \mathcal{F} \left[ \frac{\mathcal{G} _{ij}\left(\mathbf{y}-\mathbf{\xi}\right)}{8\pi\mu} \right].
 \end{equation}
 
-But the element in the functional is nothing more than the ambient $$u_i^2$$ field evaluated at the sphere centre, so the force on the translating sphere is,
+But the element in the functional is nothing more than the ambient $$u_i^2$$ field evaluated at the sphere centre, 
 \begin{equation}
-F_i = 6\pi\mu a\left( 1+\frac{a^2 }{6}\partial^2 \right)u_i^\infty\left(\mathbf{\xi}\right).
+P_j \mathcal{F} \left[ \frac{\mathcal{G} _{ij}\left(\mathbf{y}-\mathbf{\xi}\right)}{8\pi\mu} \right] = \mathcal{F} \left[u^2_i\left(\mathbf{x}\right)\right]_{\mathbf{x}=\mathbf{\xi}}.
 \end{equation}
-By a similar argument, one can find the rotlet and stresslet,
+Consider now an ambient flow field $$u_i^\infty\left(\mathbf{x}\right)$$. This flow field can be generated using our Green's function integral representation, Eq. \ref{eq: greens function integral rep}. So if the second particle sits in an ambient field $$u_i^\infty\left(\mathbf{x}\right)$$ constructed from a superposition of Green's functions, we may identify the force on the second particle as,
+
+\begin{equation}
+F^2_i = \mathcal{F} \left[ u_i^\infty\left(\mathbf{x}\right) \right]_{\mathbf{x}=\mathbf{\xi}} = 6\pi\mu a\left( 1+\frac{a^2 }{6}\partial^2 \right)u_i^\infty\left(\mathbf{\xi}\right).
+\end{equation}
+
+The force on the stationary particle is obtained using the same functional that gave us our multipole expansions. Notice that if the ambient flow is constant, $$u_i^\infty\left(\mathbf{\xi}\right)=U^\infty_i$$, we recover Eq. \ref{eq: force translating particle const background}.
+
+By a similar argument with the reciprocal theorem, one can find the rotlet and stresslet,
 \begin{equation}
 T_i = 4\pi\mu a^3 \epsilon_{ijk}\partial_ju_k^\infty\| _{\mathbf{\xi}},
 \end{equation}
@@ -313,7 +320,7 @@ T_i = 4\pi\mu a^3 \epsilon_{ijk}\partial_ju_k^\infty\| _{\mathbf{\xi}},
 S_{ij} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^\infty+\partial_ju_i^\infty\right)\| _{\mathbf{\xi}}.
 \end{equation}
 
-TODO REDO FAXEN SECTION
+
 
 ### Example Motion for Rigid Body Swimming
 
