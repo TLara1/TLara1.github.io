@@ -482,8 +482,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/23_project/";
-            },},{id: "projects-on-the-effective-viscosity-of-a-spherical-suspension-8-26",
-          title: 'On the Effective Viscosity of a Spherical Suspension - 8/26',
+            },},{id: "projects-on-slender-body-theory-jeffery-orbits-and-the-rheology-of-dilute-spheroid-suspensions",
+          title: 'On Slender Body Theory, Jeffery Orbits, and the Rheology of Dilute Spheroid Suspensions...',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/24_project/";
