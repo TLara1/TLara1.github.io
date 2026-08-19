@@ -512,12 +512,25 @@ from which we find that
 and $$G_0$$ is biharmonic as we hoped. 
 
 Because $$G_0$$ is biharmonic, we may express it in the region outside of the ellipsoid as,
-
-
-
-
-
-
+\begin{equation}
+G_0 = \int_E dA\left(\mathbf{x'}\right)\ \frac{ \sigma\left(\mathbf{x}'\right)}\frac{1}{|\mathbf{x}-\mathbf{x}'|},
+\end{equation}
+where $$\sigma\left(\mathbf{x}'\right)$$ is some kernel. We will show that $$G_0=2H_0$$, obtaining $$\sigma$$ via Gauss's law,
+\begin{equation}
+\left(\frac{\partial G_0}{\partial n}\right)^+-\left(\frac{\partial G_0}{\partial n}\right)^-=-4\pi\sigma,
+\end{equation}
+where $$\left(\frac{\partial G_0}{\partial n}\right)^\pm$$ is the derivative of $$G_0$$ in the normal direction approaching the ellipsoid surface from either the outside or the inside of the region. Now,
+\begin{equation}
+\frac{\partial G_0}{\partial n}=\frac{\partial G_0}{\partial\lambda}\frac{\partial\lambda}{\partial n}.
+\end{equation}
+Using our previous computations,
+\begin{equation}
+\hat{n}_i=\frac{\partial_i\lambda}{|\partial_i\lambda|}\rightarrow\frac{\partial\lambda}{\partial n}=\hat{n}_i\partial_i\lambda=|\partial_i\lambda|=\frac{2}{\sqrt{S\left(\lambda\right)}},
+\end{equation}
+so,
+\begin{equation}
+\frac{\partial G_0}{\partial n}=-\frac{2}{\Delta\left(\lambda\right)}\frac{1}{\sqrt{S\left(\lambda\right)}}.
+\end{equation}
 
 
 
