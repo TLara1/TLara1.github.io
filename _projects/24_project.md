@@ -211,10 +211,11 @@ The boundary conditions describe the velocity at the sphere's surface,
 \begin{equation}
 u_i\left(r=a\right)=u^p_i
 \end{equation}
-where $a$ is the radius of the sphere, and the velocity far from the sphere is the flow takes the far-field unperturbed values,
+where $a$ is the radius of the sphere, and the velocity far from the sphere takes the far-field unperturbed values,
 \begin{equation}
-u_i\left(r\rightarrow\infty)=u^\infty_i
+u_i\left(r\rightarrow\infty)=u^\infty_i.
 \end{equation}
+Note that we have assumed we know the velocity of the sphere within the moving fluid. Suppose instead we know the velocity of the sphere in a quesient fluid and are intested in the dynamics in the presence of $$u^\infty_i$$. This could be the case if we are studying, for instance, a swimming body. In this case, if the body would translate with an intrinsic velocity $$u^s_i$$ in the absence of $$u^\infty_i$$, we simply replace $$u^p_i\rightarrow u^s_i+u^\infty_i$$.
 
 Considering first the translation case. Notice at $$r=a$$,
 \begin{equation}
@@ -264,7 +265,6 @@ T _k = 8\mu\pi a^3\left( \Omega^\infty_k-\Omega_k\right).
 \end{equation}
 $$F _i$$, $$S _{jk}$$, $$T _k$$ are the hydrodynamic force, stress, and torque associated with the particle's motion, as in this is the force exerted by the fluid onto the particle. Simply reverse the signs for the force experienced by the fluid.
 
-
 ### Faxén Laws
 We require one last element, that being the inverse relations. Suppose we are given the ambient flow and particle motion; how do we determine the moments?
 
@@ -312,6 +312,10 @@ T_i = 4\pi\mu a^3 \epsilon_{ijk}\partial_ju_k^\infty\| _{\mathbf{\xi}},
 \begin{equation}\label{eq: stresslet flaxen relation}
 S_{ij} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^\infty+\partial_ju_i^\infty\right)\| _{\mathbf{\xi}}.
 \end{equation}
+
+TODO REDO FAXEN SECTION
+
+### Example Motion for Rigid Body Swimming
 
 ## Method of Reflections for Widely Separated Spheres
 We can solve for the flow in the presence of a single sphere; can we resolve the problem with multiple spheres? Yes, more or less. The idea behind the method of reflections is to expand the velocity field in terms of the ratio $$\alpha=a/R$$, where $$a$$ is the sphere's radius and $$R$$ is the separation between the spheres. We assume this ratio is small such that the expansion can be truncated at a given order and provide an accurate approximation of the multiple-sphere velocity field.
