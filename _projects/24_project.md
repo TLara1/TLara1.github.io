@@ -462,7 +462,7 @@ We show $$G_0$$ is harmonic.
 \partial_\lambda G_0 = -\frac{1}{\Delta\left(\lambda)}\rightarrow\partial_i G_0 = -\frac{1}{\Delta\left(\lambda)}\partial_i\lambda.
 \end{equation}
 \begin{equation}
-\partial^2 G_0 = -\frac{1}{\Delta\left(\lambda)}\partial^2\lambda+\frac{\partial_\lambda\Delta\left(\lambda)}{\Delta\left(\lambda)^2}|\partial_i\lambda|^2.
+\partial^2 G_0 = -\frac{\partial^2\lambda}{\Delta\left(\lambda)}+\frac{\partial_\lambda\Delta\left(\lambda)}{\Delta\left(\lambda)^2}|\partial_i\lambda|^2.
 \end{equation}
 Evaluating using the definition of $$\lambda\left(\mathbf{x}\right)$$,
 \begin{equation}
@@ -472,7 +472,11 @@ with,
 \begin{equation}
 S\left(\lambda\right)=\frac{x^2}{\left(a^2+\lambda\right)^2}+\frac{y^2}{\left( b^2+\lambda \right)^2}+\frac{z^2}{\left(c^2+\lambda \right)^2},
 \end{equation}
-where $$a_i=a,b,c$$. Taking another derivative, for instance along $$x$$,
+where $$a_i=a,b,c$$. This also gives us,
+\begin{equation}
+|\partial_i\lambda\end{equation}|^2=\frac{4}{S}
+\end{equation}
+Now for the second derivative, take another derivative, for instance along $$x$$,
 \begin{equation}
 \partial_x^2\lambda=\frac{2}{a_1^2+\lambda}\frac{1}{S\left(\lambda\right)}-\frac{4x^2}{\left(a_1^2+\lambda\right)^3}\frac{1}{S\left(\lambda\right)^2}-\frac{2x}{a_1^2+\lambda}\frac{1}{S\left(\lambda\right)^2}\left( \frac{2x}{\left(a_1^2+\lambda\right)^2}-\frac{4x}{a_1^2+\lambda}\frac{T\left(\lambda\right)}{S\left(\lambda\right)}\right),
 \end{equation}
@@ -488,7 +492,28 @@ So the laplaciacion of $$\lambda$$ is,
 =\left(\frac{1}{a_1^2+\lambda}+\frac{1}{a_2^2+\lambda}+\frac{1}{a_3^2+\lambda}\right)\frac{2}{S\left(\lambda\right)}.
 \end{equation}
 With,
-\frac{\partial_\lambda\Delta\left(\lambda)}{\Delta\left(\lambda)^2}=
+\begin{equation}
+\frac{\partial_\lambda\Delta\left(\lambda)}{\Delta\left(\lambda)}=\frac{1}{2}\left(\frac{1}{a_1^2+\lambda}+\frac{1}{a_2^2+\lambda}+\frac{1}{a_3^2+\lambda}\right),
+\end{equation}
+we see,
+\begin{equation}
+\partial^2\lambda=\frac{\partial_\lambda\Delta\left(\lambda)}{\Delta\left(\lambda)}|\partial_i\lambda\end{equation}|^2,
+\end{equation}
+from which we find that
+\begin{equation}
+\partial^2 G_0 = -\frac{\partial^2\lambda}{\Delta\left(\lambda)}+\frac{\partial_\lambda\Delta\left(\lambda)}{\Delta\left(\lambda)^2}|\partial_i\lambda|^2 = 0,
+\end{equation}
+and $$G_0$$ is biharmonic as we hoped. 
+
+Because $$G_0$$ is biharmonic, we may express it in the region outside of the ellipsoid as,
+
+
+
+
+
+
+
+
 
 
 
