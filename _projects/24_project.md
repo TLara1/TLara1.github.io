@@ -305,11 +305,11 @@ P_j \mathcal{F} \left[ \frac{\mathcal{G} _{ij}\left(\mathbf{y}-\mathbf{\xi}\righ
 \end{equation}
 Consider now an ambient flow field $$u_i^\infty\left(\mathbf{x}\right)$$. This flow field can be generated using our Green's function integral representation, Eq. \ref{eq: greens function integral rep}. So if the second particle sits in an ambient field $$u_i^\infty\left(\mathbf{x}\right)$$ constructed from a superposition of Green's functions, we may identify the force on the second particle as,
 
-\begin{equation}
-F^2_i = \mathcal{F} \left[ u_i^\infty\left(\mathbf{x}\right) \right]_{\mathbf{x}=\mathbf{\xi}} = 6\pi\mu a\left( 1+\frac{a^2 }{6}\partial^2 \right)u_i^\infty\left(\mathbf{\xi}\right).
+\begin{equation}\label{eq: force flaxen relation}
+F_i = \mathcal{F} \left[ u_i^\infty\left(\mathbf{x}\right) \right]_{\mathbf{x}=\mathbf{\xi}} = 6\pi\mu a\left( 1+\frac{a^2 }{6}\partial^2 \right)u_i^\infty\left(\mathbf{x}\right)\| _{\mathbf{\xi}}.
 \end{equation}
 
-The force on the stationary particle is obtained using the same functional that gave us our multipole expansions. Notice that if the ambient flow is constant, $$u_i^\infty\left(\mathbf{\xi}\right)=U^\infty_i$$, we recover Eq. \ref{eq: force translating particle const background}.
+The force on the stationary particle is obtained using the same functional that gave us our multipole expansions. Notice that if the ambient flow is constant, $$u_i^\infty\left(\mathbf{x}\right)=U^\infty_i$$, we recover Eq. \ref{eq: force translating particle const background}.
 
 By a similar argument with the reciprocal theorem, one can find the rotlet and stresslet,
 \begin{equation}
@@ -320,9 +320,39 @@ T_i = 4\pi\mu a^3 \epsilon_{ijk}\partial_ju_k^\infty\| _{\mathbf{\xi}},
 S_{ij} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^\infty+\partial_ju_i^\infty\right)\| _{\mathbf{\xi}}.
 \end{equation}
 
-
-
 ### Example Motion for Rigid Body Swimming
+This is somewhat supplementary, but helpful in understanding our Faxén and multipole relations. Suppose we have a spherical swimmer in a flow $$u_i^\infty\left(\mathbf{x}\right)$$. In the absence of the flow, the swimmer would undergo rigid body motion with velocity $$U^s_i$$ and angular velocity $$\Omega^s_i$$, so that the velocity of the flow at the sphere's surface is given by,
+\begin{equation}
+u_i\left(r=a\right)=U^s_i+\epsilon_{ijk}\Omega^s_jr_k+u_i^\infty\left(r=a\right).
+\end{equation}
+We are interested in the resulting translational and rotational velocity of our swimmer in the flow, denoted by $$U^p_i$$ and $$\Omega^p_i$$. From our Faxén relation, Eq. \ref{eq: force flaxen relation}, the hydrodynamic force on the sphere is, 
+\begin{equation}
+F^\text{hydro}_i = 6\pi\mu a\left( 1+\frac{a^2 }{6}\partial^2 \right)\left(u_i^\infty\left(\mathbf{x}\right)-U^p_i\right)\| _{\mathbf{\xi}}.
+\end{equation}
+The sphere also experiences a propulsive swimming force $$F_i^\text{swim}$$, producing the translational swimming with velocity $$U^s_i$$. This force is found with Eq. \ref{eq: force translating particle const background},
+\begin{equation}
+F^\text{swim}_i = 6\pi\mu a U^s_i,
+\end{equation}
+where the sign has changed since $$F_i^\text{swim}$$ is the force required by the sphere to move through a quiescent fluid. The sphere's internal propulsive force must balance with the next hydrodynamic force, as there is no net force experienced by the swimming particle, resulting in,
+\begin{equation}
+F^\text{swim}_i + F^\text{hydro}_i = 0.
+\end{equation}
+From this, it is not difficult to identify the velocity of the sphere,
+\begin{equation}
+U^p_i = \left( 1+\frac{a^2 }{6}\partial^2 \right)\left(u_i^\infty\left(\mathbf{x}\right)\right)\| _{\mathbf{\xi}} + U^s_i.
+\end{equation}
+The angular velocity is similarly identified,
+\begin{equation}
+\Omega^p_i = \frac{1}{2}\epsilon _{ijk}\partial_j u_k^\infty\| _{\mathbf{\xi}} + \Omega^s_i.
+\end{equation}
+
+Supposing the position of the sphere center is given by $$X_i$$ and its orientation unit vector is $$p_i$$,
+\begin{equation}
+\dot{X}_i = U^p_i = \left( 1+\frac{a^2 }{6}\partial^2 \right)\left(u_i^\infty\left(\mathbf{x}\right)\right)\| _{\mathbf{X}} + U^s_i,
+\end{equation}
+\begin{equation}
+\dot{p}_i = \epsilon _{ijk}\Omega^p_jp_k = \frac{1}{2}\epsilon _{ijk}\epsilon _{jlm}\partial_l u_m^\infty\| _{\mathbf{\xi}} + \epsilon _{ijk}\Omega^s_j.
+\end{equation}
 
 ## Method of Reflections for Widely Separated Spheres
 We can solve for the flow in the presence of a single sphere; can we resolve the problem with multiple spheres? Yes, more or less. The idea behind the method of reflections is to expand the velocity field in terms of the ratio $$\alpha=a/R$$, where $$a$$ is the sphere's radius and $$R$$ is the separation between the spheres. We assume this ratio is small such that the expansion can be truncated at a given order and provide an accurate approximation of the multiple-sphere velocity field.
