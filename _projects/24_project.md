@@ -1,6 +1,6 @@
 ---
 layout: page
-title: On the Effective Viscosity of a Spherical Suspension - 8/26
+title: On Slender Body Theory, Jeffery Orbits, and the Rheology of Dilute Spheroid Suspensions
 description:
 img: 
 importance: 84
@@ -11,9 +11,10 @@ toc:
 ---
 
 ## Introduction
-Imagine my surprise when encountering the word "renormalization" when learning about microhydrodynamics. Renormalization is that bit from quantum field theory! What is it doing in my book about little particles in Stokes flows? Turns out there is a whole scheme when working with suspensions of widely separated particles. So here we are! Let's learn about spherical suspensions and why renormalization comes up.
 
-## Singularity System for Spheres
+
+## Singularity Systems
+The Green's function is our most fundamental tool for studying solutions to the Stokes Equations. Once we develop the singularity solution and integral representations, we may proceed to spherical and spheroid solutions.
 
 ### The Stokes Equations
 We begin with the Stokes equations,
@@ -180,7 +181,7 @@ T _{jk}=-\frac{1}{2}\epsilon _{jkl}T _l.
 Next, we will use the multipole expansion to identify the velocity field around a spherical particle
 
 ### The Singularity System for Spheres
-First, we identify a few derivatives of the Oseen tensor which will come in handy,
+First, we calculate a few derivatives of the Oseen tensor, which will come in handy,
 \begin{equation}
 \mathcal{G} _{ij} = \frac{1}{r}\delta _{ij}+\frac{1}{r^3}x_ix_j,
 \end{equation}
@@ -196,26 +197,23 @@ First, we identify a few derivatives of the Oseen tensor which will come in hand
 \begin{equation}
 \partial^2\partial^2\mathcal{G} _{ij} = 0.
 \end{equation}
-\begin{equation}
-\partial_k\partial_l\mathcal{G} _{ij} = \frac{1}{r^3}\left( -\delta _{ij}\delta _{lk}+\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il} \right) -\frac{3}{r^5}\left(-\delta _{ij}x_k+\delta _{ik}x_j+\delta _{jk}x_i\right)x_l\nonumber
-\end{equation}
-\begin{equation}
--\frac{3}{r^5}\left(\delta _{il}x _kx _j + \delta _{jl}x _ix _k + \delta _{kl}x _ix _j\right)+\frac{15}{r^7}x _ix _jx _kx _l,
-\end{equation}
-\begin{equation}
-\partial_k\partial_l\partial^2\mathcal{G} _{ij} = -\frac{6}{r^5}\left(\delta _{ij}\delta _{lk}+\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il}\right)+\frac{30}{r^7}\left(\delta _{ij}x_k+\delta _{ik}x_j+\delta _{jk}x_i\right)x_l\nonumber
-\end{equation}
-\begin{equation}
-+\frac{30}{r^7}\left(\delta _{il}x _kx _j + \delta _{jl}x _ix _k + \delta _{kl}x _ix _j\right)-\frac{210}{r^9}x _ix _jx _kx _l.
-\end{equation}
+This last identity is expected since the velocity field is biharmonic by definition.
 
-We seek to identify the velocity field in the presence of a sphere undergoing rigid-body motion. The sphere's surface velocity has a translational, rotational, and straining component,
+We consider the velocity prescribed on the spherical surface as a superposition of translational, rotational, and symmetric $$\left(E_{ij}=E_{ji}\right)$$ straining modes,
 \begin{equation}
-u^p_i = U_i + \epsilon_{ijk}\Omega_jx_k + E_{ij}x_j,
+u^p_i = U_i + \epsilon_{ijk}\Omega_jx_k + E_{ij}x_j.
 \end{equation}
-with the boundary condition that at $$r=a$$, the velocity is, $$u_i\left(r=a\right)=u^p_i$$. The sphere also sits in an ambient flow, with the far-field velocity taking the form,
+Generally, we may also explore higher-order components, but these are calculated in much the same way and will end up corresponding to higher-order modes of the multipole expansion, which are of less interest to us. The sphere also sits in an ambient flow, with the far-field velocity taking the form,
 \begin{equation}
 u^\infty_i = U^\infty_i + \epsilon_{ijk}\Omega^\infty_jx_k + E^\infty_{ij}x_j.
+\end{equation}
+The boundary conditions describe the velocity at the sphere's surface,
+\begin{equation}
+u_i\left(r=a\right)=u^p_i
+\end{equation}
+where $a$ is the radius of the sphere, and the velocity far from the sphere is the flow takes the far-field unperturbed values,
+\begin{equation}
+u_i\left(r\rightarrow\infty)=u^\infty_i
 \end{equation}
 
 Considering first the translation case. Notice at $$r=a$$,
@@ -255,7 +253,7 @@ In summary, we may express our velocity field as a sum of the translational, rot
 u_i\left(\mathbf{x}\right)= \left[-F_j\left(1+\frac{a^2}{6}\partial^2\right) + S_{jk}\left(1+\frac{a^2}{10}\partial^2\right)\partial_k -\frac{1}{2} \epsilon_{jkl}T _k\partial_l\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} + u^\infty _i,
 \end{equation}
 \begin{equation}
-F_i = 6\pi\mu a\left(U^\infty _j -U _j\right),
+F_i = 6\pi\mu a\left(U^\infty _i -U _i\right),
 \end{equation}
 
 \begin{equation}
@@ -264,6 +262,8 @@ S_{jk} = \frac{20}{3}\pi\mu a^3 \left(E _{jk}^\infty-E _{jk}\right),
 \begin{equation}
 T _k = 8\mu\pi a^3\left( \Omega^\infty_k-\Omega_k\right).
 \end{equation}
+$$F _i$$, $$S _{jk}$$, $$T _k$$ are the hydrodynamic force, stress, and torque associated with the particle's motion, as in this is the force exerted by the fluid onto the particle. Simply reverse the signs for the force experienced by the fluid.
+
 
 ### Faxén Laws
 We require one last element, that being the inverse relations. Suppose we are given the ambient flow and particle motion; how do we determine the moments?
@@ -290,11 +290,14 @@ We can write $$u^1_i$$ from our singularity solution,
 \begin{equation}
 u^1 _i = U _j \mathcal{F}\left[ \frac{\mathcal{G} _{ij}\left( \mathbf{x}-\mathbf{\xi} \right) }{8\pi\mu} \right],
 \end{equation}
+\begin{equation}
+\mathcal{F}\left[f\right]=6\pi\mu a\left( 1+\frac{a^2 }{6}\partial^2 \right)f,
+\end{equation}
 
 where $$\mathcal{F}$$ is a linear functional and $$\mathbf{\xi}$$ is the centre of the sphere, from which we identify,
 
 \begin{equation}
-F^2_i = \mathcal{F} \left[ F_j\frac{\mathcal{G} _{ij}\left(\mathbf{y}-\mathbf{\xi}\right)}{8\pi\mu} \right].
+F^2_i = F_j \mathcal{F} \left[ \frac{\mathcal{G} _{ij}\left(\mathbf{y}-\mathbf{\xi}\right)}{8\pi\mu} \right].
 \end{equation}
 
 But the element in the functional is nothing more than the ambient $$u_i^2$$ field evaluated at the sphere centre, so the force on the translating sphere is,
