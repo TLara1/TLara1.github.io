@@ -11,7 +11,7 @@ toc:
 ---
 
 ## Introduction
-
+I spent a good amount of this summer combing through Kim and Karilla's Microhydrodynamics. 
 
 ## Singularity Systems
 The Green's function is our most fundamental tool for studying solutions to the Stokes Equations. Once we develop the singularity solution and integral representations, we may proceed to spherical and spheroid solutions.
@@ -565,5 +565,5 @@ We have set the region size $$V$$ to be large. All in all, we obtain,
 
 
 ### Sources
-The notes here are based on Kim and Karrila's _Microhydrodynamics_.
+The notes here are based on Kim and Karrila's _Microhydrodynamics Principles and Selected Applications_ and Eric Lauga's _Fluid Dynamics of Cell Motility_, both great books with rather boring titles.
 
