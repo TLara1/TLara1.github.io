@@ -351,8 +351,72 @@ Supposing the position of the sphere center is given by $$X_i$$ and its orientat
 \dot{X}_i = U^p_i = \left( 1+\frac{a^2 }{6}\partial^2 \right)\left(u_i^\infty\left(\mathbf{x}\right)\right)\| _{\mathbf{X}} + U^s_i,
 \end{equation}
 \begin{equation}
-\dot{p}_i = \epsilon _{ijk}\Omega^p_jp_k = \frac{1}{2}\epsilon _{ijk}\epsilon _{jlm}\partial_l u_m^\infty\| _{\mathbf{\xi}} + \epsilon _{ijk}\Omega^s_j.
+\dot{p}_i = \epsilon _{ijk}\Omega^p_jp_k = \frac{1}{2}\epsilon _{ijk}\epsilon _{jlm}\partial_l u_m^\infty\| _{\mathbf{X}}p_k + \epsilon _{ijk}\Omega^s_jp_k.
 \end{equation}
+
+## The Singularity System for Ellipsoids
+Now we are interested in the same procedure we did for spheres but for a triaxial ellipsoid. Let the surface of the ellipsoid be given by,
+\begin{equation}
+\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1,
+\end{equation}
+with $$a\geq b\geq c$$. We will present a solution base don the multipole expansion, as we did for spheres. 
+
+First we define a few important quantities,
+\begin{equation}
+a_E=sqrt(a^2-c^2},
+\end{equation}
+\begin{equation}
+b_E=sqrt(b^2-c^2},
+\end{equation}
+\begin{equation}
+q\left(\mathbf{x}\right)=sqrt{1-\frac{x^2}{a_E^2}-\frac{y^2}{b_E^2}}.
+\end{equation}
+
+### Singularity System
+Define the function,
+\begin{equation}
+H_n\left(\mathbf{x}\right)=\int_E dA\left(\mathbf{x'}\right)\ \frac{ q\left(\mathbf{x}'\right)^{2n-1}}{2\pi a_E b_E}\frac{1}{|\mathbf{x}-\mathbf{x}'|}.
+\end{equation}
+Because $$\partial_x^2\frac{1}{|\mathbf{x}-\mathbf{x}'|}=0$$ is harmonic, $$\partial_x^2 H_n\left(\mathbf{x}\right)=0$$ is also harmonic outside the region of integration by linearity. $$\int_E$$ is an integral over the surface of the ellipse. Now denote the similar function, $$H_n\left(\mathbf{x};u\right)$$ denoites that the particle size has been rescaled by $$u$$, $$a$$, $$b$$, and $$c$$, and replaced by $$au$$, $$bu$$, and $$cu$$, clearly $$H_n\left(\mathbf{x}\right)=H_n\left(\mathbf{x};1\right)$$. We show that $$H_{n+1}\left(\mathbf{x};1\right)$$ is related to an integral over $$u$$ of $$H_n\left(\mathbf{x};u\right)$$. Consider,
+\begin{equation}\label{eq: H_n u transform}
+u^{2n+2}H_n\left(\mathbf{x};u\right)=\int_{E_u} dA\left(\mathbf{x'}\right)\ \frac{u^{2n}}{2\pi a_E b_E}\left(1-\frac{x^2}{u^2a_E^2}+\frac{y^2}{u^2b_E^2}\right)^{n-\frac{1}{2}}\frac{1}{|\mathbf{x}-\mathbf{x}'|},
+\end{equation}
+\begin{equation}\label
+=\int_{E_u} dA\left(\mathbf{x'}\right)\ \frac{u}{2\pi a_E b_E}\left(u^2-\frac{x^2}{a_E^2}-\frac{y^2}{b_E^2}\right)^{n-\frac{1}{2}}\frac{1}{|\mathbf{x}-\mathbf{x}'|},
+\end{equation}
+where we integrate over the scaled ellipsoid $$E_u$$. The integral over $$E_u$$ is over the region where,
+\begin{equation}
+\sqrt{1-\frac{x^2}{u^2a_E^2}-\frac{y^2}{u^2b_E^2}}\in\mathbb{R},
+\end{equation}
+since $$E_u$$ should be the region where the integrand is real. We can rewrite this condition as,
+\begin{equation}
+w\left(x,y\right)^2=\frac{x^2}{u^2a_E^2}+\frac{y^2}{u^2b_E^2}}\leq u^2\leftrightarrow\left(x,y\right)\in E_u,
+\end{equation}
+which defines the region of integration $$E_u$$. Now consider the integral,
+\begin{equation}
+\int_0^1 du\ \int_{E_u} dA\left(\mathbf{x'}\right)\ = \int_{E} dA\left(\mathbf{x'}\right)\ \int_w^1 du\,
+\end{equation}
+where we swapped the order of integration to integrate over $$u$$ first. Performing this trick with Eq. \ref{eq: H_n u transform},
+\begin{equation}
+\int_0^1 du\ u^{2n+2}H_n\left(\mathbf{x};u\right)=\int_0^1 du\ \int_{E_u} dA\left(\mathbf{x'}\right)\ \frac{u}{2\pi a_E b_E}\left(u^2-w^2\right)^{n-\frac{1}{2}}\frac{1}{|\mathbf{x}-\mathbf{x}'|}=\int_{E} dA\left(\mathbf{x'}\right)\ \int_w^1 du\ \frac{u}{2\pi a_E b_E}\left(u^2-w^2\right)^{n-\frac{1}{2}}\frac{1}{|\mathbf{x}-\mathbf{x}'|},
+\end{equation}
+
+\begin{equation}
+= \int_{E} dA\left(\mathbf{x'}\right)\ \frac{1}{2\pi a_E b_E}\frac{1}{2n+1}\left(1-w^2\right)^{n+\frac{1}{2}}\frac{1}{|\mathbf{x}-\mathbf{x}'|}= \int_{E} dA\left(\mathbf{x'}\right)\ \frac{1}{2\pi a_E b_E}\frac{q\left(\mathbf{x}'\right)^{2n+1}}{2n+1}\frac{1}{|\mathbf{x}-\mathbf{x}'|},
+\end{equation}
+so we may relate,
+\begin{equation}
+\left(2n+1\right)int_0^1 du\ u^{2n+2}H_n\left(\mathbf{x};u\right)=H_{n+1}\left(\mathbf{x};1\right).
+\end{equation}
+This is neat and will be helpful. 
+
+Now consider the seemingly unrelated function,
+
+
+
+
+
+
 
 ## Method of Reflections for Widely Separated Spheres
 We can solve for the flow in the presence of a single sphere; can we resolve the problem with multiple spheres? Yes, more or less. The idea behind the method of reflections is to expand the velocity field in terms of the ratio $$\alpha=a/R$$, where $$a$$ is the sphere's radius and $$R$$ is the separation between the spheres. We assume this ratio is small such that the expansion can be truncated at a given order and provide an accurate approximation of the multiple-sphere velocity field.
