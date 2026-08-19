@@ -363,10 +363,10 @@ with $$a\geq b\geq c$$. We will present a solution base don the multipole expans
 
 First we define a few important quantities,
 \begin{equation}
-a_E=sqrt(a^2-c^2},
+a_E=\sqrt{a^2-c^2},
 \end{equation}
 \begin{equation}
-b_E=sqrt(b^2-c^2},
+b_E=\sqrt{b^2-c^2},
 \end{equation}
 \begin{equation}
 q\left(\mathbf{x}\right)=sqrt{1-\frac{x^2}{a_E^2}-\frac{y^2}{b_E^2}}.
@@ -390,7 +390,7 @@ where we integrate over the scaled ellipsoid $$E_u$$. The integral over $$E_u$$ 
 \end{equation}
 since $$E_u$$ should be the region where the integrand is real. We can rewrite this condition as,
 \begin{equation}
-w\left(x,y\right)^2=\frac{x^2}{u^2a_E^2}+\frac{y^2}{u^2b_E^2}}\leq u^2\leftrightarrow\left(x,y\right)\in E_u,
+w\left(x,y\right)^2=\frac{x^2}{u^2a_E^2}+\frac{y^2}{u^2b_E^2}\leq u^2\leftrightarrow\left(x,y\right)\in E_u,
 \end{equation}
 which defines the region of integration $$E_u$$. Now consider the integral,
 \begin{equation}
@@ -406,7 +406,7 @@ where we swapped the order of integration to integrate over $$u$$ first. Perform
 \end{equation}
 so we may relate,
 \begin{equation}
-\left(2n+1\right)int_0^1 du\ u^{2n+2}H_n\left(\mathbf{x};u\right)=H_{n+1}\left(\mathbf{x};1\right).
+\left(2n+1\right)\int_0^1 du\ u^{2n+2}H_n\left(\mathbf{x};u\right)=H_{n+1}\left(\mathbf{x};1\right).
 \end{equation}
 This is neat and will be helpful. 
 
@@ -453,11 +453,42 @@ so,
 -2\left(n+1\right)int_0^1 du\ u^{2n+2}G_n\left(\mathbf{x};u\right)=G_{n+1}\left(\mathbf{x};1\right).
 \end{equation}
 
-
-
-
-
-
+Finally, we relate $$H_n$$ with $$G_n$$ via induction. Consider $$G_0$$,
+\begin{equation}
+G_0\left(\mathbf{x}\right)=\int_{\lambda\left(\mathbf{x}\right)}^\infty dt\ \delta\left(t\right)^{-1}.
+\end{equation}
+We show $$G_0$$ is harmonic.
+\begin{equation}
+\partial_\lambda G_0 = -\frac{1}{\Delta\left(\lambda)}\rightarrow\partial_i G_0 = -\frac{1}{\Delta\left(\lambda)}\partial_i\lambda.
+\end{equation}
+\begin{equation}
+\partial^2 G_0 = -\frac{1}{\Delta\left(\lambda)}\partial^2\lambda+\frac{\partial_\lambda\Delta\left(\lambda)}{\Delta\left(\lambda)^2}|\partial_i\lambda|^2.
+\end{equation}
+Evaluating using the definition of $$\lambda\left(\mathbf{x}\right)$$,
+\begin{equation}
+\partial_i\left(\frac{x^2}{a_1^2+\lambda}+\frac{y^2}{a_2^2+\lambda}+\frac{z^2}{a_3^2+\lambda}\right)=0\rightarrow\partial_i\lambda=\frac{2x_i}{a_i^2+\lambda}\frac{1}{S\left(\lambda\right)},
+\end{equation}
+with,
+\begin{equation}
+S\left(\lambda\right)=\frac{x^2}{\left(a^2+\lambda\right)^2}+\frac{y^2}{\left( b^2+\lambda \right)^2}+\frac{z^2}{\left(c^2+\lambda \right)^2},
+\end{equation}
+where $$a_i=a,b,c$$. Taking another derivative, for instance along $$x$$,
+\begin{equation}
+\partial_x^2\lambda=\frac{2}{a_1^2+\lambda}\frac{1}{S\left(\lambda\right)}-\frac{4x^2}{\left(a_1^2+\lambda\right)^3}\frac{1}{S\left(\lambda\right)^2}-\frac{2x}{a_1^2+\lambda}\frac{1}{S\left(\lambda\right)^2}\left( \frac{2x}{\left(a_1^2+\lambda\right)^2}-\frac{4x}{a_1^2+\lambda}\frac{T\left(\lambda\right)}{S\left(\lambda\right)}\right),
+\end{equation}
+with,
+\begin{equation}
+T\left(\lambda\right)=\frac{x^2}{\left(a^2+\lambda\right)^3}+\frac{y^2}{\left( b^2+\lambda \right)^3}+\frac{z^2}{\left(c^2+\lambda \right)^3}.
+\end{equation}
+So the laplaciacion of $$\lambda$$ is,
+\begin{equation}
+\partial^2\lambda=\left(\frac{1}{a_1^2+\lambda}+\frac{1}{a_2^2+\lambda}+\frac{1}{a_3^2+\lambda}\right)\frac{2}{S\left(\lambda\right)}-\frac{4T\left(\lambda\right)}{S\left(\lambda\right)^2}-\frac{4T\left(\lambda\right)}{S\left(\lambda\right)^2}+\frac{8T\left(\lambda\right)}{S\left(\lambda\right)^2},
+\end{equation}
+\begin{equation}
+=\left(\frac{1}{a_1^2+\lambda}+\frac{1}{a_2^2+\lambda}+\frac{1}{a_3^2+\lambda}\right)\frac{2}{S\left(\lambda\right)}.
+\end{equation}
+With,
+\frac{\partial_\lambda\Delta\left(\lambda)}{\Delta\left(\lambda)^2}=
 
 
 
