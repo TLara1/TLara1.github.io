@@ -372,7 +372,7 @@ b_E=\sqrt{b^2-c^2},
 q\left(\mathbf{x}\right)=\sqrt{1-\frac{x^2}{a_E^2}-\frac{y^2}{b_E^2}}.
 \end{equation}
 
-### Singularity System
+### Singularity System for Ellipsoids
 Define the function,
 \begin{equation}
 H_n\left(\mathbf{x}\right)=\int_E dA\left(\mathbf{x'}\right)\ \frac{ q\left(\mathbf{x}'\right)^{2n-1}}{2\pi a_E b_E}\frac{1}{|\mathbf{x}-\mathbf{x}'|}.
@@ -400,14 +400,16 @@ where we swapped the order of integration to integrate over $$u$$ first. Perform
 \begin{equation}
 \int_0^1 du\ u^{2n+2}H_n\left(\mathbf{x};u\right)=\int_0^1 du\ \int_{E_u} dA\left(\mathbf{x'}\right)\ \frac{u}{2\pi a_E b_E}\left(u^2-w^2\right)^{n-\frac{1}{2}}\frac{1}{|\mathbf{x}-\mathbf{x}'|},
 \end{equation}
-=\int_{E} dA\left(\mathbf{x'}\right)\ \int_w^1 du\ \frac{u}{2\pi a_E b_E}\left(u^2-w^2\right)^{n-\frac{1}{2}}\frac{1}{|\mathbf{x}-\mathbf{x}'|},
+\begin{equation}
+=\int _{E} dA\left(\mathbf{x'}\right)\ \int _w^1 du\ \frac{u}{2\pi a _E b _E}\left(u^2-w^2\right)^{n-\frac{1}{2}}\frac{1}{|\mathbf{x}-\mathbf{x}'|},
 \end{equation}
+
 \begin{equation}
 = \int_{E} dA\left(\mathbf{x'}\right)\ \frac{1}{2\pi a_E b_E}\frac{1}{2n+1}\left(1-w^2\right)^{n+\frac{1}{2}}\frac{1}{|\mathbf{x}-\mathbf{x}'|}= \int_{E} dA\left(\mathbf{x'}\right)\ \frac{1}{2\pi a_E b_E}\frac{q\left(\mathbf{x}'\right)^{2n+1}}{2n+1}\frac{1}{|\mathbf{x}-\mathbf{x}'|},
 \end{equation}
 
 so we may relate,
-\begin{equation}
+\begin{equation}\label{eq: H_N reccurance}
 \left(2n+1\right)\int_0^1 du\ u^{2n+2}H_n\left(\mathbf{x};u\right)=H_{n+1}\left(\mathbf{x};1\right).
 \end{equation}
 This is neat and will be helpful. 
@@ -455,7 +457,7 @@ and we may rewrite,
 =-\frac{1}{2\left(n+1\right)}\int_\lambda^\infty d\tau\ \int_{v^{-1}\left(\tau\right)}^1 du\ \Delta\left(\tau\right)^{-1} \left( \left(v^{-1}\left(\tau\right)\right)^2-u^2 \right)^{n+1}.
 \end{equation}
 so,
-\begin{equation}
+\begin{equation}\label{eq: G_N reccurance}
 -2\left(n+1\right)\int_0^1 du\ u^{2n+2}G_n\left(\mathbf{x};u\right)=G_{n+1}\left(\mathbf{x};1\right).
 \end{equation}
 
@@ -531,6 +533,50 @@ so,
 \begin{equation}
 \frac{\partial G_0}{\partial n}=-\frac{2}{\Delta\left(\lambda\right)}\frac{1}{\sqrt{S\left(\lambda\right)}}.
 \end{equation}
+
+
+
+There are several ways to approach the surface, one of these is the limit in which $$z\rightarrow0$$
+FINISH
+
+
+With this established, all we need to do is consult our recurrence relations. From Eq. \ref{eq: H_N reccurance} and Eq. \ref{eq: H_N reccurance},
+\begin{equation}
+H_1=\frac{1}{2}\int_0^1du\ u^{2n+2}G_0=-\frac{1}{4}G_1.
+\end{equation}
+Assume the following holds,
+\begin{equation}
+H_n=\frac{\left(-1\right)^{n}}{2^{2n+1}}\frac{\left(2n\right)!}{n!n!}G_n,
+\end{equation}
+which satisfies the base case of $$n=1$$. We demonstrate this holds for $$n=1$$ to unite $$H_n$$ and $$G_n$$ with induction. Multiply by $$u^{2n+2}$$ and integrate,
+\begin{equation}
+\int_0^1du\ u^{2n+2}H_n=\frac{\left(n\right)^{-1}}{2^{2n+1}}\frac{\left(2n\right)!}{n!n!}\int_0^1du\ u^{2n+2} G_n,
+\end{equation}
+\begin{equation}
+H_{n+1}=\frac{\left(-1\right)^{n}}{2^{2n+1}}\frac{\left(2n\right)!}{n!n!}\frac{\left(2n+1\right)}{-2\left(n+1\right)} G_{n+1},
+\end{equation}
+\begin{equation}
+H_{n+1}=\frac{\left(-1\right)^{n+1}}{2^{2\left(n+1\right)}}\frac{\left(2\left(n+1\right)\right)!}{\left(n+1\right)!\left(n+1\right)!} G_{n+1},
+\end{equation}
+proving our relation with induction. 
+
+The big key takeaway here is that since $$H_n\left(\mathbf{x}\right)$$ is **harmonic** for all $$n$$, we have proven that $$G_n\left(\mathbf{x}\right)$$ is also **harmonic** for all $$n$$. We will also use this identity to relate the $$G_n$$ functions to the usual $$\mathcal{G}_{ij}$$ Oseen tensor.
+
+### Multipole Expansion for Ellipsoids
+We are prepared to actually build the velocity field $$v_i$$. First a few derivatives of $$G_n$$,
+\begin{equation}
+\partial_iG_n=-\frac{1}{\Delta\left(\lambda\right)}p\left(\lambda\right)^n\partial_i\lambda+\int_\lambda^\infty dt\ \frac{1}{\Delta\left(t\right)}\partial_i\left(p\left(t\right)^n\right),
+\end{equation}
+\begin{equation}
+=\int_\lambda^\infty dt\ \frac{1}{\Delta\left(t\right)}\frac{2nx_i}{a_i^2+t}p\left(t\right)^{n-1},
+\end{equation}
+where the first term vanished since $$p\left(\lambda\right)=0$$ by definition. Similarly,
+\begin{equation}
+\partial_i\partial_jG_n=2n\delta_{ij}\int_\lambda^\infty dt\ \frac{1}{\Delta\left(t\right)}\frac{1}{a_i^2+t}p\left(t\right)^{n-1}+4n\left(n-1\right)x_ix_j\int_\lambda^\infty dt\ \frac{1}{\Delta\left(t\right)}\frac{p\left(t\right)^{n-2}}{\left(a_i^2+t\right)\left(a_j^2+t\right)},
+\end{equation}
+
+
+
 
 
 
