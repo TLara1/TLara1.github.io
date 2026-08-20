@@ -574,9 +574,30 @@ where the first term vanished since $$p\left(\lambda\right)=0$$ by definition. S
 \begin{equation}
 \partial_i\partial_jG_n=2n\delta_{ij}\int_\lambda^\infty dt\ \frac{1}{\Delta\left(t\right)}\frac{1}{a_i^2+t}p\left(t\right)^{n-1}+4n\left(n-1\right)x_ix_j\int_\lambda^\infty dt\ \frac{1}{\Delta\left(t\right)}\frac{p\left(t\right)^{n-2}}{\left(a_i^2+t\right)\left(a_j^2+t\right)},
 \end{equation}
-
-
-
+and for an arbitrary number of derivatives,
+\begin{equation}
+\partial_{k_1}\partial__{k_2}...\partial_{k_n}G_n=\sum_{m=0}^{\lceil n/2 \rceil}2^{n-m}\frac{n!}{m!}\left[\left(\delta_{k_1k_2}...\delta_{k_{2m-1}}\delta_{2m}x_{k_{2m+1}}...x_{k_n}\right) \int_\lambda^\infty dt\ \frac{1}{\Delta\left(t\right)}\frac{p\left(t\right)^{m}}{\prod_{\alpha=1}^n \left(a_{k_\alpha}^2+t\right)} + ... + \left(\text{sym}\right) \right].
+\end{equation}
+In the term shown, $$\alpha\neqk_2,k_4,...,k_{2m}$$. The $$\left(\text{sym}\right)$$ denotes that at each $$m$$ we take all permutations of the indices $$k_i$$, and we have only shown one explicitly. The key idea is that at the ellipsoid surface, $$\lambda=0$$, the definite integrals become constants depending on the shape of the ellipse. So at the ellipsoid surface with $$\lambda=0$$, we find,
+\begin{equation}\label{eq: partial n+1 Gn}
+\partial_{k_1}\partial__{k_2}...\partial_{k_n}\partial_{k_n+1}G_n| _{\lambda=0} = -2n!x _{k_1}x _{k_2}...x _{k_n}\frac{1}{\Delta\left(0\right)\prod _{\alpha=1}^n \left(a _{k _\alpha}^2\right)}\frac{\partial\lambda}{\partial x _{k _{n+1}}}\vline _{\lambda=0} + \text{polynomial of degree } n-1.
+\end{equation}
+At the surface,
+\begin{equation}
+\frac{\partial\lambda}{\partial x _{k _{n+1}}}\vline _{\lambda=0} = \frac{2x _{k _{n+1}}}{a _{k _{n+1}}^2}\sum_{l=1}^3\left(\frac{x_l^2}{a _l^4}\right)^{-1}.
+\end{equation}
+Thus Eq. \ref{eq: partial n+1 Gn} has no term of order $$n$$, only a term of order $$n+1$$ and terms of $$n-1$$ and lower. Observe the leading-order terms at the particle surface,
+\begin{equation}
+-x_j\partial_i\partial^{n-1}G _{n-1}| _{\lambda=0} = 2^n \left(n-1)right)! x_i x_j x _{k_1}x _{k_2}...x _{k _{n-1}}a_i^{-2}\left[\Delta\left(0\right)\left( \sum _{l=1}^3\frac{x_l^2 }{a _l^4} \right) \prod _{\alpha=1}^{n-1} \left(a _{k _\alpha}^2\right)\right]^{-1}+...,
+\end{equation}
+\begin{equation}
+\partial_i\partial_j\partial^{n-1}G _n| _{\lambda=0} = -2^{n+1} n! x_i x_j x _{k_1}x _{k_2}...x _{k _{n-1}}a_i^{-2}a_j^{-2}\left[\Delta\left(0\right)\left( \sum _{l=1}^3\frac{x_l^2 }{a _l^4} \right) \prod _{\alpha=1}^{n-1} \left(a _{k _\alpha}^2\right)\right]^{-1}+...,
+\end{equation}
+so the combination,
+\begin{equation}
+x_j\partial_i\partial^{n-1}G _{n-1}| _{\lambda=0} - \frac{a_j^2}{2n}\partial_i\partial_j\partial^{n-1}G _n| _{\lambda=0},
+\end{equation}
+has only terms of order $$n-1$$ and lower, the order $$n+1$$ terms cancel entirely. 
 
 
 
