@@ -611,7 +611,7 @@ Thus Eq. \ref{eq: partial n+1 Gn} has no term of order $$n$$, only a term of ord
 so the combination,
 
 \begin{equation}\label{eq: superposition G functions for v}
-A\delta _{ij}\partial^{n-1}G_{n-1}-x_j\partial_i\partial^{n-1}G _{n-1} + \frac{a_j^2}{2n}\partial_i\partial_j\partial^{n-1}G _n,
+A\delta _{ij}\partial^{n-1}G _{n-1} - x_j\partial_i\partial^{n-1} G _{n-1} + \frac{a_j^2 }{2n}\partial_i\partial_j\partial^{n-1}G _n,
 \end{equation}
 
 has only terms of order $$n-1$$ and lower when evaluated on the particle surface; the order $$n+1$$ terms cancel entirely. The coefficient $$A$$ can be picked to cancel the $$n-1$$ coefficient of the second two terms while simultaneously prescribing a boundary condition at order $$n-1$$.
@@ -671,13 +671,15 @@ where we have removed the boundary terms. This gives us,
 \left(\delta _{ij}-x_j\partial _i\right)H _{n-2m} - \frac{a_j^2}{2\left(n-2m\right)+1}\partial_i\partial_jH _{n-2m+1} = \frac{1}{2\pi a_E b_E}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left[\left(\delta _{ij}-x_j\partial _i\right) -  \frac{a_j^2}{2\left(n-2m\right)+1}q\left(\mathbf{x}'\right)^2\partial_i\partial_j \right]\frac{1}{|\mathbf{x}-\mathbf{x}'|}.
 \end{equation}
 Relating the first term to the Oseen tensor,
+
 \begin{equation}
-\int_E dA'\ \left[q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left(\delta _{ij}-x_j\partial _i\right)]\frac{1}{|\mathbf{x}-\mathbf{x}'|} =  \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left( \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) - x'_j\partial_i\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right]\right) ,
+\int_E dA'\ \left[q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left(\delta _{ij}-x_j\partial _i\right)]\frac{1}{|\mathbf{x}-\mathbf{x}'|} =  \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left( \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) - x'_j\partial_i\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|} \right]\right) ,
 \end{equation}
 
 \begin{equation}
-= \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1} \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) + \frac{a_j^2-c^2}{2\left(n-2m\right)+1}\partial_i\partial_j \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1} \frac{1}{|\mathbf{x}-\mathbf{x}'}},
+= \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1} \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) + \frac{a_j^2-c^2}{2\left(n-2m\right)+1}\partial_i\partial_j \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1} \frac{1}{|\mathbf{x}-\mathbf{x}'|},
 \end{equation}
+
 \begin{equation}
 =\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1} \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) - \frac{a_j^2-c^2}{4\left(n-2m\right)+2}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
 \end{equation}
@@ -692,7 +694,7 @@ Hence,
 And we write the velocity field using the Oseen tensor,
 
 \begin{equation}
-u_i = \sum_{m=0}^{\lceil n/2 \rceil} C\left(n,m\right) \left( \left(-1\right)^{n-2m}2^{2\left(n-2m\right)+1}\frac{\left(n-2m\right)!\left(n-2m\right)!}{\left(2\left(n-2m\right)\right)!}\right) \frac{1}{2\pi a_E b_E} \frac{L _{(n-2m)j}}{8\pi\mu} \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)+2}\partial^2 \right] \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
+u_i = \sum_{m=0}^{\lceil n/2 \rceil} \frac{1}{2\pi a_E b_E} \frac{L _{(n-2m)j}}{8\pi\mu} \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)+2}\partial^2 \right] \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
 \end{equation}
 where we have defined,
 \begin{equation}
