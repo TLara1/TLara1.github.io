@@ -618,13 +618,13 @@ has only terms of order $$n-1$$ and lower when evaluated on the particle surface
 
 Now for the expansion. At the particle surface, $$n$$ modes are prescribed, so the flow at the particle is given by,
 \begin{equation}
-u_i^p=H^{(n)} _{i k_1 k_2 ...k_n} x _{k_1}x _{k_2}x _{k_n}.
+u_i^p=Q^{(n)} _{i k_1 k_2 ...k_n} x _{k_1}x _{k_2}x _{k_n}.
 \end{equation}
 The velocity field requires a polynomial of degree $$n$$ to represent the boundary condition, so it must contain a term of the form,
 \begin{equation}
 u_i \ni A^{(n)} _{jk _1 k_2...k _n}\partial _{k_1}\partial _{k_2}...\partial _{k _n}\left[\left(\delta _{ij}-x_j\partial_i\right)G _{n} + \frac{a_j^2}{2\left(n+1\right)}\partial_i\partial_jG _{n+1}\right],
 \end{equation}
-which, on the boundary, contains terms of order $$n$$, $$n-2$$, $$n-4$$, and so forth. The coefficient $$A^{(n)} _{jk _1 k_2...k _n}$$ is picked to match the boundary condition $$H^{(n)} _{i k_1 k_2 ...k_n}$$. To cancel the order $$n-2$$ terms, the velocity field must contain a term that is of order no higher than $$n-2$$ on the boundary,
+which, on the boundary, contains terms of order $$n$$, $$n-2$$, $$n-4$$, and so forth. The coefficient $$A^{(n)} _{jk _1 k_2...k _n}$$ is picked to match the boundary condition $$Q^{(n)} _{i k_1 k_2 ...k_n}$$. To cancel the order $$n-2$$ terms, the velocity field must contain a term that is of order no higher than $$n-2$$ on the boundary,
 \begin{equation}
 u_i \ni A^{(n-2)} _{jk _1 k_2...k _{n-2}}\partial _{k_1}\partial _{k_2}...\partial _{k _{n-2}}\left[\left(\delta _{ij}-x_j\partial_i\right)G _{n-2} + \frac{a_j^2}{2\left(n-1\right)}\partial_i\partial_jG _{n-1}\right],
 \end{equation}
@@ -633,6 +633,8 @@ where $$A^{(n-2)} _{jk _1 k_2...k _{n-2}}$$ is picked to cancel the $$n-2$$ term
 \begin{equation}\label{u solution Gn rep}
 u_i = \sum_{m=0}^{\lceil n/2 \rceil} C\left(n,m\right)\frac{L _{(n-2m)j}}{8\pi\mu} \left[\left(\delta _{ij}-x_j\partial _i\right)G _{n-2m} + \frac{a_j^2}{2\left(n-2m+1\right)}\partial_i\partial_jG _{n-2m+1}\right],
 \end{equation}
+WE NEED TO DO n-1 I BELIEVE, otherwise we have a divide by 0 error in second term. FIX FINISH
+
 
 $$C\left(n,m\right)$$ is a coefficient we will discuss shortly, and the operator is defined as,
 \begin{equation}
@@ -701,6 +703,8 @@ where we have defined,
 C\left(n,m\right) = \frac{\left(-1\right)^{n-2m}}{2^{2\left(n-2m\right)+1}}\frac{\left(2\left(n-2m\right)\right)!}{\left(n-2m\right)!\left(n-2m\right)!},
 \end{equation}
 for convenience.
+All that remains is determing the $$\mathbf{A}^{(n)}$$ coefficients to the $$\mathbf{Q}^{(n)}$$ boundary condition. From here forward, we will focus only on the $$n=0$$ translation case and the $$n=1$$ linear case, as these are the most physical applications, and higher-order generalizations are mostly computed using the same, albeit longer, method.
+
 
 
 
