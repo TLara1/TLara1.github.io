@@ -550,7 +550,7 @@ With this established, all we need to do is consult our recurrence relations. Fr
 H_1=\frac{1}{2}\int_0^1du\ u^{2n+2}G_0=-\frac{1}{4}G_1.
 \end{equation}
 Assume the following holds,
-\begin{equation}
+\begin{equation}\label{eq: Hn Gn relation}
 H_n=\frac{\left(-1\right)^{n}}{2^{2n+1}}\frac{\left(2n\right)!}{n!n!}G_n,
 \end{equation}
 which satisfies the base case of $$n=1$$. We demonstrate this holds for $$n=1$$ to unite $$H_n$$ and $$G_n$$ with induction. Multiply by $$u^{2n+2}$$ and integrate,
@@ -626,16 +626,20 @@ u_i \ni A^{(n-2)} _{jk _1 k_2...k _{n-2}}\partial _{k_1}\partial _{k_2}...\parti
 \end{equation}
 where $$A^{(n-2)} _{jk _1 k_2...k _{n-2}}$$ is picked to cancel the $$n-2$$ terms from the higher order first polynomial. We repeat this process to represent the velocity field as a sum of these polynomials,
 
-\begin{equation}
+\begin{equation}\label{u solution Gn rep}
 u_i = \sum_{m=0}^{\lceil n/2 \rceil} C\left(n,m\right)\frac{L _{(n-2m)j}}{8\pi\mu} \left[\left(\delta _{ij}-x_j\partial _i\right)G _{n-2m} + \frac{a_j^2}{2\left(n-2m+1\right)}\partial_i\partial_jG _{n-2m+1}\right],
 \end{equation}
 
-the operator is defined as,
+$$C\left(n,m\right)$$ is a coeffient we will discuss shortly, and the operator is defined as,
 \begin{equation}
-L _{(n)j}= A _{jk_1k_2...k_{n}}\partial _{k_1}\partial_{k_2}...\partial _{k _{n}}.
+L _{(n)j}= A^{(n)} _{jk_1k_2...k _{n}}\partial _{k_1}\partial _{k_2}...\partial _{k _{n}}.
 \end{equation}
+This is excellent; we have a series solution for the velocity field provided that the $$A^{(n)} _{jk_1k_2...k _{n}}$$ coefficients can be solved for. We want to derive a multipole expansion, which we can do by relating our $$G_n$$ terms to $$H_n$$ terms using Eq. \ref{eq: Hn Gn relation} and then relating the $$H _n$$ terms to the Oseen tensor $$\mathcal{G} _{ij}$$.
 
-
+Combining Eq. \ref{eq: Hn Gn relation} with Eq. \ref{u solution Gn rep},
+\begin{equation}
+u_i = \sum_{m=0}^{\lceil n/2 \rceil} C\left(n,m\right) \left(\left(-1\right)^{n-2m}2^{2\left(n-2m\right)+1}\frac{\left(n-2m\right)!\left(n-2m\right)!}{\left(2\left(n-2m\right)\right) \frac{L _{(n-2m)j}}{8\pi\mu} \left[\left(\frac{\left(n-2m\right)!\left(n-2m\right)!}{\left(2\left(n-2m\right)\right)!}\right)\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m} - \left(2\frac{\left(n-1+2m\right)}{2\left(n-2m\right)+1}\right)\frac{a_j^2}{2\left(n-2m+1\right)}\partial_i\partial_jH _{n-2m+1}\right].
+\end{equation}
 
 
 
