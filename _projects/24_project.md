@@ -638,8 +638,55 @@ This is excellent; we have a series solution for the velocity field provided tha
 
 Combining Eq. \ref{eq: Hn Gn relation} with Eq. \ref{u solution Gn rep},
 \begin{equation}
-u_i = \sum_{m=0}^{\lceil n/2 \rceil} C\left(n,m\right) \left(\left(-1\right)^{n-2m}2^{2\left(n-2m\right)+1}\frac{\left(n-2m\right)!\left(n-2m\right)!}{\left(2\left(n-2m\right)\right) \frac{L _{(n-2m)j}}{8\pi\mu} \left[\left(\frac{\left(n-2m\right)!\left(n-2m\right)!}{\left(2\left(n-2m\right)\right)!}\right)\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m} - \left(2\frac{\left(n-1+2m\right)}{2\left(n-2m\right)+1}\right)\frac{a_j^2}{2\left(n-2m+1\right)}\partial_i\partial_jH _{n-2m+1}\right].
+u_i = \sum_{m=0}^{\lceil n/2 \rceil} C\left(n,m\right) \left(\left(-1\right)^{n-2m}2^{2\left(n-2m\right)+1}\frac{\left(n-2m\right)!\left(n-2m\right)!}{\left(2\left(n-2m\right)\right) \frac{L _{(n-2m)j}}{8\pi\mu} \left[\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m} - \left(2\frac{\left(n-2m+1\right)}{2\left(n-2m\right)+1}\right)\frac{a_j^2}{2\left(n-2m+1\right)}\partial_i\partial_jH _{n-2m+1}\right].
 \end{equation}
+
+Now to relate to the Oseen tensor. First consider,
+\begin{equation}
+\mathcal{G}_{ij}\left(\mathbf{x}-\mathbf{x}'\right)=\frac{\delta _{ij}}{|\mathbf{x}-\mathbf{x}'|}-\left(\mathbf{x}-\mathbf{x}'\right)_i\partial _j\left(\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right),
+\end{equation}
+and,
+\begin{equation}
+partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)=-\partial_i\partial_j\left(\frac{2}{|\mathbf{x}-\mathbf{x}'|}\right).
+\end{equation}
+Now using,
+\begin{equation}
+\frac{\partial q\left(\mathbf{x}'\right)^{n+2}}{\partial x'_j}=-\frac{\left(n+2\right)x_j'}{a_j^2-c^2}q\left(\mathbf{x}'\right)^{n},
+\end{equation}
+so,
+\begin{equation}
+\int_E dA'\ x_j'\frac{q\left(\mathbf{x}'\right)^n}{|\mathbf{x}-\mathbf{x}'|} = -\frac{a_j^2-c^2}{n+2}\int_E dA'\ \frac{1}{|\mathbf{x}-\mathbf{x}'|}\frac{\partial q\left(\mathbf{x}'\right)^{n+2}}{\partial x'_j}.
+\end{equation}
+Integrating by parts,
+\begin{equation}
+= \frac{a_j^2-c^2}{n+2}\int_E dA'\ q\left(\mathbf{x}'\right)^{n+2} \frac{\partial }{\partial x'_j}\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right],
+\end{equation}
+\begin{equation}
+= -\frac{a_j^2-c^2}{n+2}\frac{\partial}{\partial x_j}\int_E dA'\ q\left(\mathbf{x}'\right)^{n+2} \frac{1}{|\mathbf{x}-\mathbf{x}|}.
+\end{equation}
+This gives us,
+\begin{equation}
+\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m} - \frac{a_j^2}{2\left(n-2m\right)+1}\partial_i\partial_jH _{n-2m+1} = \frac{1}{2\pi a_E b_E}\int_E dA'\ \left[q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left(\delta _{ij}-x_j\partial _i\right) -  \frac{a_j^2}{2\left(n-2m\right)+1}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1}\partial_i\partial_j \right]\frac{1}{|\mathbf{x}-\mathbf{x}'|}.
+\end{equation}
+Relating the first term to the Oseen tensor,
+\begin{equation}
+\int_E dA'\ \left[q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left(\delta _{ij}-x_j\partial _i\right)]\frac{1}{|\mathbf{x}-\mathbf{x}'|} =  \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left( \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) - x'_j\partial_i\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right]\right) ,
+\end{equation}
+\begin{equation}
+= \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1} \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) + \frac{a_j^2-c^2}{2\left(n-2m\right)+1}\partial_i\partial_j \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1} \frac{1}{|\mathbf{x}-\mathbf{x}'}},
+\end{equation}
+\begin{equation}
+= \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1} \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) - \frac{a_j^2-c^2}{4\left(n-2m\right)+1}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
+\end{equation}
+For the second term,
+\begin{equation}
+- \int_E dA'\ \frac{a_j^2}{2\left(n-2m\right)+1}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1}\partial_i\partial_j \left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right] =  \int_E dA'\ \frac{a_j^2}{4\left(n-2m\right)+1}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1}\partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
+\end{equation}
+Hence,
+\begin{equation}
+\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m} - \frac{a_j^2}{2\left(n-2m\right)+1}\partial_i\partial_jH _{n-2m+1} = \frac{1}{2\pi a_E b_E}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)+1}\partial^2 \right] \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
+\end{equation}
+
 
 
 
