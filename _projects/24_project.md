@@ -582,23 +582,27 @@ where the first term vanished since $$p\left(\lambda\right)=0$$ by definition. S
 and for an arbitrary number of derivatives,
 
 \begin{equation}
-\partial_{k_1}\partial__{k_2}...\partial_{k_n}G_n=\sum_{m=0}^{\lceil n/2 \rceil}2^{n-m}\frac{n!}{m!}\left[\left(\delta_{k_1 k_2}...\delta_{k_{2m-1}k_{2m}}x_{k_{2m+1}}...x_{k_n}\right) \int_\lambda^\infty dt\ \frac{1}{\Delta\left(t\right)}\frac{p\left(t\right)^{m} }{\prod_{\alpha=1}^n \left(a_{k_\alpha}^2+t\right)} + ... + \left(\text{sym}\right) \right].
+\partial_{k_1}\partial_{k_2}...\partial_{k_n}G_n=\sum_{m=0}^{\lceil n/2 \rceil}2^{n-m}\frac{n!}{m!}\left[\left(\delta_{k_1 k_2}...\delta_{k_{2m-1}k_{2m}}x_{k_{2m+1}}...x_{k_n}\right) \int_\lambda^\infty dt\ \frac{1}{\Delta\left(t\right)}\frac{p\left(t\right)^{m} }{\prod_{\alpha=1}^n \left(a_{k_\alpha}^2+t\right)} + ... + \left(\text{sym}\right) \right].
 \end{equation}
 
 In the term shown, $$\alpha\neq k_2,k_4,...,k_{2m}$$. The $$\left(\text{sym}\right)$$ denotes that at each $$m$$ we take all permutations of the indices $$k_i$$, and we have only shown one explicitly. The key idea is that at the ellipsoid surface, $$\lambda=0$$, the definite integrals become constants depending on the shape of the ellipse. So at the ellipsoid surface with $$\lambda=0$$, we find,
 
 \begin{equation}\label{eq: partial n+1 Gn}
-\partial_{k_1}\partial__{k_2}...\partial_{k_n}\partial_{k_n+1}G_n\vline _{\lambda=0} = -2n!x _{k_1}x _{k_2}...x _{k_n}\frac{1}{\Delta\left(0\right)\prod _{\alpha=1}^n \left(a _{k _\alpha}^2\right)}\frac{\partial\lambda}{\partial x _{k _{n+1}}}\vline _{\lambda=0} + \text{polynomial of degree } n-1.
+\partial_{k_1}\partial_{k_2}...\partial_{k_n}\partial_{k_n+1}G_n\vline _{\lambda=0} = -2n!x _{k_1}x _{k_2}...x _{k_n}\frac{1}{\Delta\left(0\right)\prod _{\alpha=1}^n \left(a _{k _\alpha}^2\right)}\frac{\partial\lambda}{\partial x _{k _{n+1}}}\vline _{\lambda=0} + \text{polynomial of degree } n-1.
 \end{equation}
 
 At the surface,
+
 \begin{equation}
-\frac{\partial\lambda}{\partial x _{k _{n+1}}}\vline _{\lambda=0} = \frac{2x _{k _{n+1}}}{a _{k _{n+1}}^2}\sum_{l=1}^3\left(\frac{x_l^2}{a _l^4}\right)^{-1}.
+\frac{\partial\lambda}{\partial x _{k _{n+1}}}\vline _{\lambda=0} = \frac{2x _{k _{n+1}}} { a _{k _{n+1} }^2 }\sum _{l=1}^3\left(\frac{x_l^2}{a _l^4}\right)^{-1}.
 \end{equation}
+
 Thus Eq. \ref{eq: partial n+1 Gn} has no term of order $$n$$, only a term of order $$n+1$$ and terms of $$n-1$$ and lower. We now compress the derivative notation such that $$\partial _{k_1}\partial _{k_2}...\partial _{k_n}=\partial^n$$. Observe the leading-order terms at the particle surface,
+
 \begin{equation}
 -x_j\partial_i\partial^{n-1}G _{n-1}| _{\lambda=0} = 2^n \left(n-1)right)! x_i x_j x _{k_1}x _{k_2}...x _{k _{n-1}}a_i^{-2}\left[\Delta\left(0\right)\left( \sum _{l=1}^3\frac{ x_l^2 }{a _l^4} \right) \prod _{\alpha=1}^{n-1} \left( a _{k _\alpha}^2 \right)\right]^{-1}+...,
 \end{equation}
+
 \begin{equation}
 \partial_i\partial_j\partial^{n-1}G _n| _{\lambda=0} = -2^{n+1} n! x_i x_j x _{k_1}x _{k_2}...x _{k _{n-1}}a_i^{-2}a_j^{-2}\left[\Delta\left(0\right)\left( \sum _{l=1}^3\frac{x_l^2 }{a _l^4} \right) \prod _{\alpha=1}^{n-1} \left(a _{k _\alpha}^2\right)\right]^{-1}+...,
 \end{equation}
@@ -610,28 +614,36 @@ has only terms of order $$n-1$$ and lower when evaluated on the particle surface
 
 Now for the expansion. At the particle surface, $$n$$ modes are prescribed, so the flow at the particle is given by,
 \begin{equation}
-u_i^p=H^{(0)}_i+H^{(0)} _i+H^{(0)} _{i k_1} x _{k_1}+H^{(2)} _{i k_1 k_2} x _{k_1}x _{k_2}+...
+u_i^p=H^{(n)} _{i k_1 k_2 ...k_n} x _{k_1}x _{k_2}x _{k_n}.
 \end{equation}
-The velocity field can be assembled from a sum of Eq. \ref{eq: superposition G functions for v}
-
+The velocity field requires a polynomial of degree $$n$$ to represent the boundary condition, so it must contain a term of the form,
+\begin{equation}
+u_i \ni A^{(n)} _{jk _1 k_2...k _n}\partial _{k_1}\partial _{k_2}...\partial _{k _n}\left[\left(\delta _{ij}-x_j\partial_i\right)G _{n} + \frac{a_j^2}{2\left(n+1\right)}\partial_i\partial_jG _{n+1}\right],
+\end{equation}
+which, on the boundary, contains terms of order $$n$$, $$n-2$$, $$n-4$$, and so forth. The coefficient $$A^{(n)} _{jk _1 k_2...k _n}$$ is picked to match the boundary condition $$H^{(n)} _{i k_1 k_2 ...k_n}$$. To cancel the order $$n-2$$ terms, the velocity field must contain a term that is of order no higher than $$n-2$$ on the boundary,
+\begin{equation}
+u_i \ni A^{(n-2)} _{jk _1 k_2...k _{n-2}}\partial _{k_1}\partial _{k_2}...\partial _{k _{n-2}}\left[\left(\delta _{ij}-x_j\partial_i\right)G _{n-2} + \frac{a_j^2}{2\left(n-1\right)}\partial_i\partial_jG _{n-1}\right],
+\end{equation}
+where $$A^{(n-2)} _{jk _1 k_2...k _{n-2}}$$ is picked to cancel the $$n-2$$ terms from the higher order first polynomial. We repeat this process to represent the velocity field as a sum of these polynomials,
 
 \begin{equation}
-u_i=\sum_{m=0}
-
-\frac{L_{j}}{}
-
-\left[\left(\delta _{ij}-x _j\partial _i\right)G _{n-1} + \frac{a_j^2}{2n}\partial_i\partial_j G _n \right],
-
-\right]
-
-A\delta _{ij}\partial^{n-1}G_{n-1}-x_j\partial_i\partial^{n-1}G _{n-1} + \frac{a_j^2}{2n}\partial_i\partial_j\partial^{n-1}G _n,
+u_i = \sum_{m=0}^{\lceil n/2 \rceil} C\left(n,m\right)\frac{L _{(n-2m)j}}{8\pi\mu} \left[\left(\delta _{ij}-x_j\partial _i\right)G _{n-2m} + \frac{a_j^2}{2\left(n-2m+1\right)}\partial_i\partial_jG _{n-2m+1}\right],
 \end{equation}
-The operator is defined as,
+
+the operator is defined as,
 \begin{equation}
-L _{(n)j}= A _{jk_1k_2...k_{n-1}}\partial_{k_1}\partial_{k_2}...\partial _{k _{n-1}}
-
-
+L _{(n)j}= A _{jk_1k_2...k_{n}}\partial _{k_1}\partial_{k_2}...\partial _{k _{n}}.
 \end{equation}
+
+
+
+
+
+
+
+
+
+
 
 
 
