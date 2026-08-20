@@ -588,28 +588,30 @@ and for an arbitrary number of derivatives,
 In the term shown, $$\alpha\neq k_2,k_4,...,k_{2m}$$. The $$\left(\text{sym}\right)$$ denotes that at each $$m$$ we take all permutations of the indices $$k_i$$, and we have only shown one explicitly. The key idea is that at the ellipsoid surface, $$\lambda=0$$, the definite integrals become constants depending on the shape of the ellipse. So at the ellipsoid surface with $$\lambda=0$$, we find,
 
 \begin{equation}\label{eq: partial n+1 Gn}
-\partial_{k_1}\partial_{k_2}...\partial_{k_n}\partial_{k_n+1}G_n\vline _{\lambda=0} = -2n!x _{k_1}x _{k_2}...x _{k_n}\frac{1}{\Delta\left(0\right)\prod _{\alpha=1}^n \left(a _{k _\alpha}^2\right)}\frac{\partial\lambda}{\partial x _{k _{n+1}}}\vline _{\lambda=0} + \text{polynomial of degree } n-1.
+\partial_{k_1}\partial_{k_2}...\partial_{k_n}\partial_{k_n+1}G_n\vert _{\lambda=0} = -2n!x _{k_1}x _{k_2}...x _{k_n}\frac{1}{\Delta\left(0\right)\prod _{\alpha=1}^n \left(a _{k _\alpha}^2\right)}\frac{\partial\lambda}{\partial x _{k _{n+1}}}\vert _{\lambda=0} + \text{polynomial of degree } n-1.
 \end{equation}
 
 At the surface,
 
 \begin{equation}
-\frac{\partial\lambda}{\partial x _{k _{n+1}}}\vline _{\lambda=0} = \frac{2x _{k _{n+1}}} { a _{k _{n+1} }^2 }\sum _{l=1}^3\left(\frac{x_l^2}{a _l^4}\right)^{-1}.
+\frac{\partial\lambda}{\partial x _{k _{n+1}}}\vert _{\lambda=0} = \frac{2x _{k _{n+1}}} { a _{k _{n+1} }^2 }\sum _{l=1}^3\left(\frac{x_l^2}{a _l^4}\right)^{-1}.
 \end{equation}
 
 Thus Eq. \ref{eq: partial n+1 Gn} has no term of order $$n$$, only a term of order $$n+1$$ and terms of $$n-1$$ and lower. We now compress the derivative notation such that $$\partial _{k_1}\partial _{k_2}...\partial _{k_n}=\partial^n$$. Observe the leading-order terms at the particle surface,
 
 \begin{equation}
--x_j\partial_i\partial^{n-1}G _{n-1}| _{\lambda=0} = 2^n \left(n-1)right)! x_i x_j x _{k_1}x _{k_2}...x _{k _{n-1}}a_i^{-2}\left[\Delta\left(0\right)\left( \sum _{l=1}^3\frac{ x_l^2 }{a _l^4} \right) \prod _{\alpha=1}^{n-1} \left( a _{k _\alpha}^2 \right)\right]^{-1}+...,
+-x_j\partial_i\partial^{n-1}G _{n-1}| _{\lambda=0} = 2^n \left(n-1\right)! x_i x_j x _{k_1}x _{k_2}...x _{k _{n-1}}a_i^{-2}\left[\Delta\left(0\right)\left( \sum _{l=1}^3\frac{ x_l^2 }{a _l^4} \right) \prod _{\alpha=1}^{n-1} \left( a _{k _\alpha}^2 \right)\right]^{-1}+...,
 \end{equation}
 
 \begin{equation}
 \partial_i\partial_j\partial^{n-1}G _n| _{\lambda=0} = -2^{n+1} n! x_i x_j x _{k_1}x _{k_2}...x _{k _{n-1}}a_i^{-2}a_j^{-2}\left[\Delta\left(0\right)\left( \sum _{l=1}^3\frac{x_l^2 }{a _l^4} \right) \prod _{\alpha=1}^{n-1} \left(a _{k _\alpha}^2\right)\right]^{-1}+...,
 \end{equation}
 so the combination,
+
 \begin{equation}\label{eq: superposition G functions for v}
 A\delta _{ij}\partial^{n-1}G_{n-1}-x_j\partial_i\partial^{n-1}G _{n-1} + \frac{a_j^2}{2n}\partial_i\partial_j\partial^{n-1}G _n,
 \end{equation}
+
 has only terms of order $$n-1$$ and lower when evaluated on the particle surface; the order $$n+1$$ terms cancel entirely. The coefficient $$A$$ can be picked to cancel the $$n-1$$ coefficient of the second two terms while simultaneously prescribing a boundary condition at order $$n-1$$.
 
 Now for the expansion. At the particle surface, $$n$$ modes are prescribed, so the flow at the particle is given by,
@@ -630,24 +632,25 @@ where $$A^{(n-2)} _{jk _1 k_2...k _{n-2}}$$ is picked to cancel the $$n-2$$ term
 u_i = \sum_{m=0}^{\lceil n/2 \rceil} C\left(n,m\right)\frac{L _{(n-2m)j}}{8\pi\mu} \left[\left(\delta _{ij}-x_j\partial _i\right)G _{n-2m} + \frac{a_j^2}{2\left(n-2m+1\right)}\partial_i\partial_jG _{n-2m+1}\right],
 \end{equation}
 
-$$C\left(n,m\right)$$ is a coeffient we will discuss shortly, and the operator is defined as,
+$$C\left(n,m\right)$$ is a coefficient we will discuss shortly, and the operator is defined as,
 \begin{equation}
 L _{(n)j}= A^{(n)} _{jk_1k_2...k _{n}}\partial _{k_1}\partial _{k_2}...\partial _{k _{n}}.
 \end{equation}
 This is excellent; we have a series solution for the velocity field provided that the $$A^{(n)} _{jk_1k_2...k _{n}}$$ coefficients can be solved for. We want to derive a multipole expansion, which we can do by relating our $$G_n$$ terms to $$H_n$$ terms using Eq. \ref{eq: Hn Gn relation} and then relating the $$H _n$$ terms to the Oseen tensor $$\mathcal{G} _{ij}$$.
 
 Combining Eq. \ref{eq: Hn Gn relation} with Eq. \ref{u solution Gn rep},
+
 \begin{equation}
-u_i = \sum_{m=0}^{\lceil n/2 \rceil} C\left(n,m\right) \left(\left(-1\right)^{n-2m}2^{2\left(n-2m\right)+1}\frac{\left(n-2m\right)!\left(n-2m\right)!}{\left(2\left(n-2m\right)\right) \frac{L _{(n-2m)j}}{8\pi\mu} \left[\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m} - \left(2\frac{\left(n-2m+1\right)}{2\left(n-2m\right)+1}\right)\frac{a_j^2}{2\left(n-2m+1\right)}\partial_i\partial_jH _{n-2m+1}\right].
+u_i = \sum_{m=0}^{\lceil n/2 \rceil} C\left(n,m\right) \left( \left(-1\right)^{n-2m}2^{2\left(n-2m\right)+1}\frac{\left(n-2m\right)!\left(n-2m\right)!}{\left(2\left(n-2m\right)\right)!}\right) \frac{L _{(n-2m)j}}{8\pi\mu} \left[\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m} - \left(2\frac{\left(n-2m+1\right)}{2\left(n-2m\right)+1}\right)\frac{a_j^2}{2\left(n-2m+1\right)}\partial_i\partial_jH _{n-2m+1}\right].
 \end{equation}
 
-Now to relate to the Oseen tensor. First consider,
+Now, to relate to the Oseen tensor. First consider,
 \begin{equation}
 \mathcal{G}_{ij}\left(\mathbf{x}-\mathbf{x}'\right)=\frac{\delta _{ij}}{|\mathbf{x}-\mathbf{x}'|}-\left(\mathbf{x}-\mathbf{x}'\right)_i\partial _j\left(\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right),
 \end{equation}
 and,
 \begin{equation}
-partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)=-\partial_i\partial_j\left(\frac{2}{|\mathbf{x}-\mathbf{x}'|}\right).
+\partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)=-\partial_i\partial_j\left(\frac{2}{|\mathbf{x}-\mathbf{x}'|}\right).
 \end{equation}
 Now using,
 \begin{equation}
@@ -659,19 +662,18 @@ so,
 \end{equation}
 Integrating by parts,
 \begin{equation}
-= \frac{a_j^2-c^2}{n+2}\int_E dA'\ q\left(\mathbf{x}'\right)^{n+2} \frac{\partial }{\partial x'_j}\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right],
-\end{equation}
-\begin{equation}
-= -\frac{a_j^2-c^2}{n+2}\frac{\partial}{\partial x_j}\int_E dA'\ q\left(\mathbf{x}'\right)^{n+2} \frac{1}{|\mathbf{x}-\mathbf{x}|}.
+= \frac{a_j^2-c^2}{n+2}\int_E dA'\ q\left(\mathbf{x}'\right)^{n+2} \frac{\partial }{\partial x'_j}\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right] = -\frac{a_j^2-c^2}{n+2}\frac{\partial}{\partial x_j}\int_E dA'\ q\left(\mathbf{x}'\right)^{n+2} \frac{1}{|\mathbf{x}-\mathbf{x}|}.
 \end{equation}
 This gives us,
 \begin{equation}
 \left(\delta _{ij}-x_j\partial _i\right)H _{n-2m} - \frac{a_j^2}{2\left(n-2m\right)+1}\partial_i\partial_jH _{n-2m+1} = \frac{1}{2\pi a_E b_E}\int_E dA'\ \left[q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left(\delta _{ij}-x_j\partial _i\right) -  \frac{a_j^2}{2\left(n-2m\right)+1}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1}\partial_i\partial_j \right]\frac{1}{|\mathbf{x}-\mathbf{x}'|}.
 \end{equation}
+
 Relating the first term to the Oseen tensor,
 \begin{equation}
 \int_E dA'\ \left[q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left(\delta _{ij}-x_j\partial _i\right)]\frac{1}{|\mathbf{x}-\mathbf{x}'|} =  \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left( \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) - x'_j\partial_i\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right]\right) ,
 \end{equation}
+
 \begin{equation}
 = \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1} \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) + \frac{a_j^2-c^2}{2\left(n-2m\right)+1}\partial_i\partial_j \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1} \frac{1}{|\mathbf{x}-\mathbf{x}'}},
 \end{equation}
@@ -680,7 +682,7 @@ Relating the first term to the Oseen tensor,
 \end{equation}
 For the second term,
 \begin{equation}
-- \int_E dA'\ \frac{a_j^2}{2\left(n-2m\right)+1}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1}\partial_i\partial_j \left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right] =  \int_E dA'\ \frac{a_j^2}{4\left(n-2m\right)+1}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1}\partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
+-\int_E dA'\ \frac{a_j^2}{2\left(n-2m\right)+1}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1}\partial_i\partial_j \left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right] =  \int_E dA'\ \frac{a_j^2}{4\left(n-2m\right)+1}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1}\partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
 \end{equation}
 Hence,
 \begin{equation}
