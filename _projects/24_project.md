@@ -300,9 +300,11 @@ F^2_i = P_j \mathcal{F} \left[ \frac{\mathcal{G} _{ij}\left(\mathbf{y}-\mathbf{\
 \end{equation}
 
 But the element in the functional is nothing more than the ambient $$u_i^2$$ field evaluated at the sphere centre, 
+
 \begin{equation}
-P_j \mathcal{F} \left[ \frac{\mathcal{G} _{ij}\left(\mathbf{y}-\mathbf{\xi}\right)}{8\pi\mu} \right] = \mathcal{F} \left[u^2_i\left(\mathbf{x}\right)\right]_{\mathbf{x}=\mathbf{\xi}}.
+P_j \mathcal{F} \left[ \frac{\mathcal{G}_{ij} \left(\mathbf{y}-\mathbf{\xi}\right) }{8\pi\mu} \right] = \mathcal{F} \left[u^2_i\left( \mathbf{x} \right)\right] _{\mathbf{x}=\mathbf{\xi}}.
 \end{equation}
+
 Consider now an ambient flow field $$u_i^\infty\left(\mathbf{x}\right)$$. This flow field can be generated using our Green's function integral representation, Eq. \ref{eq: greens function integral rep}. So if the second particle sits in an ambient field $$u_i^\infty\left(\mathbf{x}\right)$$ constructed from a superposition of Green's functions, we may identify the force on the second particle as,
 
 \begin{equation}\label{eq: force flaxen relation}
@@ -578,13 +580,17 @@ where the first term vanished since $$p\left(\lambda\right)=0$$ by definition. S
 \partial_i\partial_jG_n=2n\delta_{ij}\int_\lambda^\infty dt\ \frac{1}{\Delta\left(t\right)}\frac{1}{a_i^2+t}p\left(t\right)^{n-1}+4n\left(n-1\right)x_ix_j\int_\lambda^\infty dt\ \frac{1}{\Delta\left(t\right)}\frac{p\left(t\right)^{n-2}}{\left(a_i^2+t\right)\left(a_j^2+t\right)},
 \end{equation}
 and for an arbitrary number of derivatives,
+
 \begin{equation}
-\partial_{k_1}\partial__{k_2}...\partial_{k_n}G_n=\sum_{m=0}^{\lceil n/2 \rceil}2^{n-m}\frac{n!}{m!}\left[\left(\delta_{k_1 k_2}...\delta_{k_{2m-1}}\delta_{2m}x_{k_{2m+1}}...x_{k_n}\right) \int_\lambda^\infty dt\ \frac{1}{\Delta\left(t\right)}\frac{p\left(t\right)^{m}}{\prod_{\alpha=1}^n \left(a_{k_\alpha}^2+t\right)} + ... + \left(\text{sym}\right) \right].
+\partial_{k_1}\partial__{k_2}...\partial_{k_n}G_n=\sum_{m=0}^{\lceil n/2 \rceil}2^{n-m}\frac{n!}{m!}\left[\left(\delta_{k_1 k_2}...\delta_{k_{2m-1}k_{2m}}x_{k_{2m+1}}...x_{k_n}\right) \int_\lambda^\infty dt\ \frac{1}{\Delta\left(t\right)}\frac{p\left(t\right)^{m} }{\prod_{\alpha=1}^n \left(a_{k_\alpha}^2+t\right)} + ... + \left(\text{sym}\right) \right].
 \end{equation}
+
 In the term shown, $$\alpha\neq k_2,k_4,...,k_{2m}$$. The $$\left(\text{sym}\right)$$ denotes that at each $$m$$ we take all permutations of the indices $$k_i$$, and we have only shown one explicitly. The key idea is that at the ellipsoid surface, $$\lambda=0$$, the definite integrals become constants depending on the shape of the ellipse. So at the ellipsoid surface with $$\lambda=0$$, we find,
+
 \begin{equation}\label{eq: partial n+1 Gn}
-\partial_{k_1}\partial__{k_2}...\partial_{k_n}\partial_{k_n+1}G_n| _{\lambda=0} = -2n!x _{k_1}x _{k_2}...x _{k_n}\frac{1}{\Delta\left(0\right)\prod _{\alpha=1}^n \left(a _{k _\alpha}^2\right)}\frac{\partial\lambda}{\partial x _{k _{n+1}}}\vline _{\lambda=0} + \text{polynomial of degree } n-1.
+\partial_{k_1}\partial__{k_2}...\partial_{k_n}\partial_{k_n+1}G_n\vline _{\lambda=0} = -2n!x _{k_1}x _{k_2}...x _{k_n}\frac{1}{\Delta\left(0\right)\prod _{\alpha=1}^n \left(a _{k _\alpha}^2\right)}\frac{\partial\lambda}{\partial x _{k _{n+1}}}\vline _{\lambda=0} + \text{polynomial of degree } n-1.
 \end{equation}
+
 At the surface,
 \begin{equation}
 \frac{\partial\lambda}{\partial x _{k _{n+1}}}\vline _{\lambda=0} = \frac{2x _{k _{n+1}}}{a _{k _{n+1}}^2}\sum_{l=1}^3\left(\frac{x_l^2}{a _l^4}\right)^{-1}.
@@ -597,21 +603,35 @@ Thus Eq. \ref{eq: partial n+1 Gn} has no term of order $$n$$, only a term of ord
 \partial_i\partial_j\partial^{n-1}G _n| _{\lambda=0} = -2^{n+1} n! x_i x_j x _{k_1}x _{k_2}...x _{k _{n-1}}a_i^{-2}a_j^{-2}\left[\Delta\left(0\right)\left( \sum _{l=1}^3\frac{x_l^2 }{a _l^4} \right) \prod _{\alpha=1}^{n-1} \left(a _{k _\alpha}^2\right)\right]^{-1}+...,
 \end{equation}
 so the combination,
-\begin{equation}
+\begin{equation}\label{eq: superposition G functions for v}
 A\delta _{ij}\partial^{n-1}G_{n-1}-x_j\partial_i\partial^{n-1}G _{n-1} + \frac{a_j^2}{2n}\partial_i\partial_j\partial^{n-1}G _n,
 \end{equation}
 has only terms of order $$n-1$$ and lower when evaluated on the particle surface; the order $$n+1$$ terms cancel entirely. The coefficient $$A$$ can be picked to cancel the $$n-1$$ coefficient of the second two terms while simultaneously prescribing a boundary condition at order $$n-1$$.
 
 Now for the expansion. At the particle surface, $$n$$ modes are prescribed, so the flow at the particle is given by,
 \begin{equation}
-u_i^p=H^{(0)}_i+H^{(0)} _i+H^{(0)} _{i k_1} x_{k_1}+H^{(0)}_i+...
+u_i^p=H^{(0)}_i+H^{(0)} _i+H^{(0)} _{i k_1} x _{k_1}+H^{(2)} _{i k_1 k_2} x _{k_1}x _{k_2}+...
 \end{equation}
+The velocity field can be assembled from a sum of Eq. \ref{eq: superposition G functions for v}
 
 
+\begin{equation}
+u_i=\sum_{m=0}
+
+\frac{L_{j}}{}
+
+\left[\left(\delta _{ij}-x _j\partial _i\right)G _{n-1} + \frac{a_j^2}{2n}\partial_i\partial_j G _n \right],
+
+\right]
+
+A\delta _{ij}\partial^{n-1}G_{n-1}-x_j\partial_i\partial^{n-1}G _{n-1} + \frac{a_j^2}{2n}\partial_i\partial_j\partial^{n-1}G _n,
+\end{equation}
+The operator is defined as,
+\begin{equation}
+L _{(n)j}= A _{jk_1k_2...k_{n-1}}\partial_{k_1}\partial_{k_2}...\partial _{k _{n-1}}
 
 
-
-
+\end{equation}
 
 
 
