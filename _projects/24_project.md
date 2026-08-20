@@ -11,7 +11,9 @@ toc:
 ---
 
 ## Introduction
-I spent a good amount of this summer combing through Kim and Karilla's Microhydrodynamics. 
+I spent a good amount of this summer combing through Kim and Karilla's Microhydrodynamics.  
+
+FINISH
 
 ## Singularity Systems
 The Green's function is our most fundamental tool for studying solutions to the Stokes Equations. Once we develop the singularity solution and integral representations, we may proceed to spherical and spheroid solutions.
@@ -650,7 +652,7 @@ Now, to relate to the Oseen tensor. First consider,
 \end{equation}
 and,
 \begin{equation}
-\partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)=-\partial_i\partial_j\left(\frac{2}{|\mathbf{x}-\mathbf{x}'|}\right).
+\partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)=-2\partial_i\partial_j\left(\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right).
 \end{equation}
 Now using,
 \begin{equation}
@@ -662,13 +664,12 @@ so,
 \end{equation}
 Integrating by parts,
 \begin{equation}
-= \frac{a_j^2-c^2}{n+2}\int_E dA'\ q\left(\mathbf{x}'\right)^{n+2} \frac{\partial }{\partial x'_j}\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right] = -\frac{a_j^2-c^2}{n+2}\frac{\partial}{\partial x_j}\int_E dA'\ q\left(\mathbf{x}'\right)^{n+2} \frac{1}{|\mathbf{x}-\mathbf{x}|}.
+= \frac{a_j^2-c^2}{n+2}\int_E dA'\ q\left(\mathbf{x}'\right)^{n+2} \frac{\partial }{\partial x'_j}\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right] = -\frac{a_j^2-c^2}{n+2}\frac{\partial}{\partial x_j}\int_E dA'\ q\left(\mathbf{x}'\right)^{n+2} \frac{1}{|\mathbf{x}-\mathbf{x}|},
 \end{equation}
-This gives us,
+where we have removed the boundary terms. This gives us,
 \begin{equation}
-\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m} - \frac{a_j^2}{2\left(n-2m\right)+1}\partial_i\partial_jH _{n-2m+1} = \frac{1}{2\pi a_E b_E}\int_E dA'\ \left[q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left(\delta _{ij}-x_j\partial _i\right) -  \frac{a_j^2}{2\left(n-2m\right)+1}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1}\partial_i\partial_j \right]\frac{1}{|\mathbf{x}-\mathbf{x}'|}.
+\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m} - \frac{a_j^2}{2\left(n-2m\right)+1}\partial_i\partial_jH _{n-2m+1} = \frac{1}{2\pi a_E b_E}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left[\left(\delta _{ij}-x_j\partial _i\right) -  \frac{a_j^2}{2\left(n-2m\right)+1}q\left(\mathbf{x}'\right)^2\partial_i\partial_j \right]\frac{1}{|\mathbf{x}-\mathbf{x}'|}.
 \end{equation}
-
 Relating the first term to the Oseen tensor,
 \begin{equation}
 \int_E dA'\ \left[q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left(\delta _{ij}-x_j\partial _i\right)]\frac{1}{|\mathbf{x}-\mathbf{x}'|} =  \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left( \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) - x'_j\partial_i\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right]\right) ,
@@ -678,15 +679,15 @@ Relating the first term to the Oseen tensor,
 = \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1} \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) + \frac{a_j^2-c^2}{2\left(n-2m\right)+1}\partial_i\partial_j \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1} \frac{1}{|\mathbf{x}-\mathbf{x}'}},
 \end{equation}
 \begin{equation}
-= \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1} \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) - \frac{a_j^2-c^2}{4\left(n-2m\right)+1}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
+=\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1} \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) - \frac{a_j^2-c^2}{4\left(n-2m\right)+2}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
 \end{equation}
 For the second term,
 \begin{equation}
--\int_E dA'\ \frac{a_j^2}{2\left(n-2m\right)+1}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1}\partial_i\partial_j \left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right] =  \int_E dA'\ \frac{a_j^2}{4\left(n-2m\right)+1}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1}\partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
+-\int_E dA'\ \frac{a_j^2}{2\left(n-2m\right)+1}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1}\partial_i\partial_j \left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right] =  \int_E dA'\ \frac{a_j^2}{4\left(n-2m\right)+2}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1}\partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
 \end{equation}
 Hence,
 \begin{equation}
-\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m} - \frac{a_j^2}{2\left(n-2m\right)+1}\partial_i\partial_jH _{n-2m+1} = \frac{1}{2\pi a_E b_E}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)+1}\partial^2 \right] \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
+\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m} - \frac{a_j^2}{2\left(n-2m\right)+1}\partial_i\partial_jH _{n-2m+1} = \frac{1}{2\pi a_E b_E}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)+2}\partial^2 \right] \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
 \end{equation}
 
 
