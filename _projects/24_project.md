@@ -396,10 +396,10 @@ where we integrate over the scaled ellipsoid $$E_u$$. The integral over $$E_u$$ 
 \end{equation}
 since $$E_u$$ should be the region where the integrand is real. We can rewrite this condition as,
 \begin{equation}
-w\left(x,y\right)^2=\frac{x^2}{u^2a_E^2}+\frac{y^2}{u^2b_E^2}\leq u^2\leftrightarrow\left(x,y\right)\in E_u,
+w\left(x,y\right)^2=\frac{x^2}{a_E^2}+\frac{y^2}{b_E^2}\leq u^2\leftrightarrow\left(x,y\right)\in E_u,
 \end{equation}
 which defines the region of integration $$E_u$$. Now consider the integral,
-\begin{equation}
+\begin{equation}\label{eq: w change order integration}
 \int_0^1 du\ \int_{E_u} dA\left(\mathbf{x'}\right)\ = \int_{E} dA\left(\mathbf{x'}\right)\ \int_w^1 du\,
 \end{equation}
 where we swapped the order of integration to integrate over $$u$$ first. Performing this trick with Eq. \ref{eq: H_n u transform},
@@ -811,7 +811,7 @@ With Eq. \ref{eq: I sinh D verion} and Eq. \ref{eq: J sinh D verion},
 \begin{equation}
 J_1\left(\mathbf{x}\right) =   \int_E dA'\ f_1\left(\mathbf{x}'\right) \left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{2}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu} = \left[\frac{\sinh\tilde{D}}{\tilde{D}} + \frac{c^2}{2}\frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\left(\frac{\sinh\tilde{D}}{\tilde{D}}\right)\partial^2\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 \end{equation}
-Using the power series expansion of $$\sinh$$, the operator becomes,'
+Using the power series expansion of $$\sinh$$, the operator becomes,
 \begin{equation}\label{eq: tilde D power series operator}
 \frac{\sinh\tilde{D}}{\tilde{D}} + \frac{c^2}{2}\frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\left(\frac{\sinh\tilde{D}}{\tilde{D}}\right)\partial^2 = \sum_n=0^\infty\left( \frac{1}{\left(2n+1\right)!}\tilde{D}^{2n}+c^2\frac{n}{\left(2n+1\right)!}\tilde{D}^{2\left(n-1\right)}\partial^2 \right).
 \end{equation}
@@ -832,7 +832,36 @@ From this, it is not difficult to obtain the rather elegant identity,
 J_1\left(\mathbf{x}\right) = \left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 \end{equation}
 
-The last remaining step is to relate $$J_n$$ and $$J _{n-1}$$, which we do with the same $$u$$ trick we used to derive the relations between the $$G_n$$s and $$H_n$$s.
+The last remaining step is to relate $$J_n$$ and $$J _{n-1}$$, which we do with the same $$u$$ trick we used to derive the relations between the $$G_n$$s and $$H_n$$s. Consider,
+\begin{equation}
+\int_0^1 du\ u^{2n}J_n\left(\mathbf{x};u\right) =\int_0^1 du\ \int _{E_u} dA'\ u^{2n-2}\frac{1}{2\pi a_E b_E}q\left(\mathbf{x}';u\right)^{2n-3} \left[ 1 + \frac{u^2 c^2 q\left(\mathbf{x}';u\right)^2}{4n-2}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu},
+\end{equation}
+\begin{equation}
+=\int_0^1 du\ \int _{E_u} dA'\ u\frac{1}{2\pi a_E b_E}\left( u^2-\frac{ x^2 }{a_E^2}-\frac{y^2}{b_E^2}\right)^{n-3/2}
+\left[ 1 + \frac{c^2}{4n-2}\left( u^2-\frac{ x^2 }{a_E^2}-\frac{y^2}{b_E^2}\right)\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu}.
+\end{equation}
+Changing the order of integration as we did in Eq. \ref{eq: w change order integration},
+\begin{equation}
+= \int _{E} dA'\ \int_w^1 du\ u\frac{1}{2\pi a_E b_E}\left( u^2-w^2\right)^{n-3/2}
+\left[ 1 + \frac{c^2}{4n-2}\left( u^2-w^2\right)\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu},
+\end{equation}
+\begin{equation}
+= \frac{1}{2n-1}\int _{E} dA'\ \frac{1}{2\pi a_E b_E}\left( 1-w^2\right)^{n-1/2}
+\left[ 1 + \frac{c^2}{4n+2}\left( 1-w^2\right)\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu}.
+\end{equation}
+So that we obtain the recurrence relation, 
+\begin{equation}
+J _{n+1}\left(\mathbf{x};u\right) = \left(2n-1\right)\int _0^1 du\ u^{2n}J_n\left(\mathbf{x};u\right).
+\end{equation}
+We once employ the series expansion of $$\sinh$$ and $$D\left(u\right)=uD
+\begin{equation}
+J _{2}\left(\mathbf{x};u\right) = \int_0^1 du\ u^2 \sum_k=0^\infty \left(\frac{1}{\left(2k+1\right)!} u^{2k}D^{2k}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} = \sum_k=0^\infty \left(\frac{2k+2}{\left(2k+3\right)!} D^{2k}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} = \left(\frac{1}{D}\frac{\partial}{D}\right)\left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
+\end{equation}
+
+
+
+
+
 
 
 
