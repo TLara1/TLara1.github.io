@@ -857,9 +857,11 @@ We once employ the series expansion of $$\sinh$$ and $$D\left(u\right)=uD
 \begin{equation}
 J _{2}\left(\mathbf{x};u\right) = \int_0^1 du\ u^2 \sum_k=0^\infty \left(\frac{1}{\left(2k+1\right)!} u^{2k}D^{2k}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} = \sum_k=0^\infty \left(\frac{2k+2}{\left(2k+3\right)!} D^{2k}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} = \left(\frac{1}{D}\frac{\partial}{D}\right)\left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 \end{equation}
-
-
-
+Having demonstrated the base case, we verify,
+\begin{equation}
+J _{n}\left(\mathbf{x};u\right) = \left(\frac{\sinh D}{D}\right)^{n-1}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+\end{equation}
+via recursion. 
 
 
 
