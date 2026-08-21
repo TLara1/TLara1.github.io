@@ -717,7 +717,7 @@ Eq. \ref{eq: Jn integral} is certainly not nice to write down or study; for our 
 
 First, consider,
 \begin{equation}
-I\left(\mathbf{x}\right)=\int_E dA'\ f_1\left(\mathbf{x}'\right) \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
+I _{ij}\left(\mathbf{x}\right)=\int_E dA'\ f_1\left(\mathbf{x}'\right) \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
 \end{equation}
 The integration region is where the function $$f_1\left(\mathbf{x}'\right)$$ is real,
 \begin{equation}
@@ -729,22 +729,54 @@ x'=a_E\rho'\cos\phi'\quad y'=b_E\rho'\sin\phi',
 \end{equation}
 so the integral becomes,
 \begin{equation}
-I\left(\mathbf{x}\right)= \int_0^{2\pi}\int_0^1 d\phi\ d\rho\ \frac{\rho}{2\pi\sqrt{1-\rho^2}}\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
+I _{ij}\left(\mathbf{x}\right)= \int_0^{2\pi}\int_0^1 d\phi\ d\rho\ \frac{\rho}{2\pi\sqrt{1-\rho^2}}\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
 \end{equation}
 Now substitute $$\rho=\sin\theta$$,
 \begin{equation}
-I\left(\mathbf{x}\right)= \frac{1}{2\pi}\int_0^{2\pi}\int_0^{\pi/2} d\phi\ d\theta\ \sin\theta\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
+I _{ij}\left(\mathbf{x}\right)= \frac{1}{2\pi}\int_0^{2\pi}\int_0^{\pi/2} d\phi\ d\theta\ \sin\theta\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
 \end{equation}
-Our integral has been converted to a simple integration over the upper half unit sphere. Now turning our attention to the Green's function. Using,
+Our integral has been converted to a simple integration over the upper half unit sphere. Now turning our attention to the Green's function. Using our changed variables,
+\begin{equation}\label{eq: G exponent form}
+\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) = e^{-\left(x'\partial_x+y'\partial_y\right)}\mathcal{G} _{ij}\left(\mathbf{x}\right) = e^{-\sin\theta'\left(a_E\cos\phi'\partial_x+b_E\sin\phi'\right)}\mathcal{G} _{ij}\left(\mathbf{x}\right).
+\end{equation}
+Now define,
 \begin{equation}
-\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) = e^{-\left(x'\partial_x+y'\partial_y\right)}\mathcal{G} _{ij}\left(\mathbf{x}\right) = \sum _{n=0}^\infty\frac{\left(-1\right)^n}{n!}\left(x'\partial_x+y'\partial_y\right)^n\mathcal{G} _{ij}\left(\mathbf{x}\right).
+\tilde{D}^2=a_E^2\partial^2_x+b_E^2\partial^2_y,
 \end{equation}
+and also the angle,
+\begin{equation}
+\alpha=\tan^{-1}\left(\frac{a_E\partial_x}{b_E\partial_y}\right),
+\end{equation}
+we may transform the exponent in Eq. \ref{eq: G exponent form} to,
+\begin{equation}
+e^{-\sin\theta'\left(a_E\cos\phi'\partial_x+b_E\sin\phi'\right)} = e^{-\tilde{D}\sin\theta'\sin\left(\phi'+\alpha\right)}.
+\end{equation}
+The integral operator becomes,
+\begin{equation}
+I _{ij}\left(\mathbf{x}\right)= \frac{1}{2\pi}\int_0^{2\pi}\int_0^{\pi/2} d\phi\ d\theta\ \sin\theta e^{-\tilde{D}\sin\theta'\sin\left(\phi'+\alpha\right)} \mathcal{G} _{ij}\left(\mathbf{x}\right).
+\end{equation}
+Because we integrate from $$\phi'=0$$ to $$\phi'=2\pi$$ and the function $$\sin\left(\phi'+\alpha\right)$$ is periodic in this range, we may remove $$\alpha$$ without changing the value of the integral,
+\begin{equation}
+I _{ij}\left(\mathbf{x}\right)= \frac{1}{2\pi}\int_0^{2\pi}\int_0^{\pi/2} d\phi\ d\theta\ \sin\theta e^{-\tilde{D}\sin\theta'\sin\left(\phi'\right)} \mathcal{G} _{ij}\left(\mathbf{x}\right).
+\end{equation}
+We notice the integrand is equivalent when integrated in the range $$\pi/2\leq\theta'\leq\pi$$, so we convert the integral to act over the complete unit sphere,
+\begin{equation}
+I _{ij}\left(\mathbf{x}\right)= \frac{1}{4\pi}\int_0^{2\pi}\int_0^{\pi} d\phi\ d\theta\ \sin\theta e^{-\tilde{D}\sin\theta'\sin\phi'} \mathcal{G} _{ij}\left(\mathbf{x}\right).
+\end{equation}
+Now the fun part. The integral is over the surface of the unit sphere, and we note that the exponent, when written in Cartesian form, is $$y$$. Because we are free to orient our axis as we please due to the rotational symmetry of the region of integration, we pick a coordinate system to orient the exponent along the $$z$$ direction, such that,
+\begin{equation}
+I _{ij}\left(\mathbf{x}\right)= \frac{1}{4\pi}\int_0^{2\pi}\int_0^{\pi} d\nu'\ d\eta'\ \sin\eta' e^{-\tilde{D}\cos\eta'} \mathcal{G} _{ij}\left(\mathbf{x}\right),
+\end{equation}
+where $$\nu'$$ and $$\eta'$$ are our rotated spherical coordinates. Now integrate over both variables to obtain,
+\begin{equation}
+I _{ij}\left(\mathbf{x}\right)= \frac{\sinh\tilde{D}}{\tilde{D}}\mathcal{G} _{ij}\left(\mathbf{x}\right).
+\end{equation}
+This is interesting; we have replaced the integral over the ellipsoid with an analytic operator. 
 
-
-
-
-
-
+Now for a similar identity, consider
+\begin{equation}
+J _{ij}\left(\mathbf{x}\right)=\int_E dA'\ f_1\left(\mathbf{x}'\right)q^2\left(\mathbf{x}'\right) \partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
+\end{equation}
 
 
 
