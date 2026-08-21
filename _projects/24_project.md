@@ -713,25 +713,33 @@ Hence,
 And we write down the velocity field using the Oseen tensor,
 
 \begin{equation}
-u_i = \sum_{m=0}^{\lceil n/2 \rceil} \frac{1}{2\pi a_E b_E} \frac{L _{(n-2m-1)j}}{8\pi\mu} \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)-2}\partial^2 \right] \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
+u_i = \sum_{m=0}^{\lceil\left(n-1\right)/2 \rceil} \frac{1}{2\pi a_E b_E} \frac{L _{(n-2m-1)j}}{8\pi\mu} \int_E dA'\ \left(2\left(n-2m\right)-1\right) q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)-2}\partial^2 \right] \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
 \end{equation}
 where we have defined,
 \begin{equation}
-C\left(n,m\right) = \frac{\left(-1\right)^{n-2m-1}}{2^{2\left(n-2m\right)-1}}\frac{\left(2\left(n-2m-1\right)\right)!}{\left(n-2m-1\right)!\left(n-2m-1\right)!},
+C\left(n,m\right) = \frac{\left(-1\right)^{n-2m-1}}{2^{2\left(n-2m\right)-1}}\frac{\left(2\left(n-2m-1\right)\right)!}{\left(2\left(n-2m\right)-1\right)\left(n-2m-1\right)!\left(n-2m-1\right)!},
 \end{equation}
 for convenience.
-All that remains is determing the $$\mathbf{A}^{(n)}$$ coefficients to the $$\mathbf{Q}^{(n)}$$ boundary condition. From here forward, we will focus only on the $$n=0$$ translation case and the $$n=1$$ linear case, as these are the most physical applications, and higher-order generalizations are mostly computed using the same, albeit longer, method.
+All that remains is determing the $$\mathbf{A}^{(n)}$$ coefficients to the $$\mathbf{Q}^{(n)}$$ boundary condition. We seperated the $$\left(2\left(n-2m\right)-1\right)$$ term to simplify the next set of calculations.
 
-### Far Field Series Form For Ellipsoidal Velocity Field
+
+
+### Far-Field Series Form For Ellipsoidal Velocity Field
 Define the following integral,
 \begin{equation}\label{eq: Jn integral}
-J_n\left(\mathbf{x}\right) =   \int_E dA'\ f_n\left(\mathbf{x}'\right) \left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4n-2}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu},
+J_{n\ ij}\left(\mathbf{x}\right) =   \int_E dA'\ f_n\left(\mathbf{x}'\right) \left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4n-2}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu},
 \end{equation}
 with,
 \begin{equation}
-f_n\left(\mathbf{x}'\right) = \frac{1}{2\pi a_E b_E} q\left(\mathbf{x}'\right)^{2n-3} = \frac{1}{2\pi a_E b_E}\left(1-\frac{x'^2}{a_E^2}-\frac{y'^2}{b_E^2}\right)^{n-3/2}.
+f_n\left(\mathbf{x}'\right) = \frac{2n-1}{2\pi a_E b_E} q\left(\mathbf{x}'\right)^{2n-3} = \frac{2n-1}{2\pi a_E b_E}\left(1-\frac{x'^2}{a_E^2}-\frac{y'^2}{b_E^2}\right)^{n-3/2}.
 \end{equation}
-Eq. \ref{eq: Jn integral} is certainly not nice to write down or study; for our purposes, it would be much more practical if we could write down a series representation of this integral that we can evaluate in the limit of the far field as an asymptotic solution.
+The velocity field can be expressed as,
+
+\begin{equation}
+u_i = \sum_{m=0}^{\lceil\left(n-1\right)/2 \rceil} \frac{L _{(n-2m-1)j}} J _{\left(n-2m\right)\ ij}.
+\end{equation}
+
+Eq. \ref{eq: Jn integral} is certainly not nice to write or study; for our purposes, it would be much more practical to obtain a series representation of this integral that we can evaluate in the far-field limit as an asymptotic solution.
 
 First, consider,
 \begin{equation}
@@ -836,48 +844,64 @@ From this, it is not difficult to obtain the rather elegant identity,
 \frac{\sinh\tilde{D}}{\tilde{D}} + \frac{c^2}{2}\frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\left(\frac{\sinh\tilde{D}}{\tilde{D}}\right)\partial^2 = \frac{\sinh D}{D},
 \end{equation}
 \begin{equation}
-J_1\left(\mathbf{x}\right) = \left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
+J_{1\ ij}\left(\mathbf{x}\right) = \left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 \end{equation}
 
-The last remaining step is to relate $$J_n$$ and $$J _{n-1}$$, which we do with the same $$u$$ trick we used to derive the relations between the $$G_n$$s and $$H_n$$s. Consider,
+The last remaining step is to relate $$J_{n\ ij}$$ and $$J _{\left(n-1\right)\ ij}$$, which we do with the same $$u$$ trick we used to derive the relations between the $$G_n$$s and $$H_n$$s. Consider,
 \begin{equation}
-\int_0^1 du\ u^{2n}J_n\left(\mathbf{x};u\right) =\int_0^1 du\ \int _{E_u} dA'\ u^{2n-2}\frac{1}{2\pi a_E b_E}q\left(\mathbf{x}';u\right)^{2n-3} \left[ 1 + \frac{u^2 c^2 q\left(\mathbf{x}';u\right)^2}{4n-2}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu},
+\int_0^1 du\ u^{2n}J _{n\ ij}\left(\mathbf{x};u\right) =\int_0^1 du\ \int _{E_u} dA'\ u^{2n-2}\frac{2n-1}{2\pi a_E b_E}q\left(\mathbf{x}';u\right)^{2n-3} \left[ 1 + \frac{u^2 c^2 q\left(\mathbf{x}';u\right)^2}{4n-2}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu},
 \end{equation}
 \begin{equation}
-=\int_0^1 du\ \int _{E_u} dA'\ u\frac{1}{2\pi a_E b_E}\left( u^2-\frac{ x^2 }{a_E^2}-\frac{y^2}{b_E^2}\right)^{n-3/2}
+=\int_0^1 du\ \int _{E_u} dA'\ u\frac{2n-1}{2\pi a_E b_E}\left( u^2-\frac{ x^2 }{a_E^2}-\frac{y^2}{b_E^2}\right)^{n-3/2}
 \left[ 1 + \frac{c^2}{4n-2}\left( u^2-\frac{ x^2 }{a_E^2}-\frac{y^2}{b_E^2}\right)\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu}.
 \end{equation}
 Changing the order of integration as we did in Eq. \ref{eq: w change order integration},
 \begin{equation}
-= \int _{E} dA'\ \int_w^1 du\ u\frac{1}{2\pi a_E b_E}\left( u^2-w^2\right)^{n-3/2}
+= \int _{E} dA'\ \int_w^1 du\ u\frac{2n-1}{2\pi a_E b_E}\left( u^2-w^2\right)^{n-3/2}
 \left[ 1 + \frac{c^2}{4n-2}\left( u^2-w^2\right)\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu},
 \end{equation}
 \begin{equation}
-= \frac{1}{2n-1}\int _{E} dA'\ \frac{1}{2\pi a_E b_E}\left( 1-w^2\right)^{n-1/2}
+= \int _{E} dA'\ \frac{1}{2\pi a_E b_E}\left( 1-w^2\right)^{n-1/2}
 \left[ 1 + \frac{c^2}{4n+2}\left( 1-w^2\right)\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu}.
 \end{equation}
 So that we obtain the recurrence relation, 
 \begin{equation}
-J _{n+1}\left(\mathbf{x};u\right) = \left(2n-1\right)\int _0^1 du\ u^{2n}J_n\left(\mathbf{x};u\right).
+J _{\left(n+1\right)\ ij}\left(\mathbf{x};u\right) = \int _0^1 du\ u^{2n}J _{n\ ij}\left(\mathbf{x};u\right).
 \end{equation}
 We once employ the series expansion of $$\sinh$$ and $$D\left(u\right)=uD$$,
 \begin{equation}
-J _{2}\left(\mathbf{x};u\right) = \int_0^1 du\ u^2 \sum _{k=0}^\infty \left(\frac{1}{\left(2k+1\right)!} u^{2k}D^{2k}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} = \sum _{k=0}^\infty \left(\frac{2k+2}{\left(2k+3\right)!} D^{2k}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+J _{2\ ij}\left(\mathbf{x};u\right) = \int_0^1 du\ u^2 \sum _{k=0}^\infty \left(\frac{1}{\left(2k+1\right)!} u^{2k}D^{2k}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} = \sum _{k=0}^\infty \left(\frac{2k+2}{\left(2k+3\right)!} D^{2k}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
 \begin{equation}
 = \left(\frac{1}{D}\frac{\partial}{D}\right)\left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 \end{equation}
 Having demonstrated the base case, we verify,
 \begin{equation}
-J _{n}\left(\mathbf{x};u\right) = \left(\frac{\sinh D}{D}\right)^{n-1}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+J _{n\ ij}\left(\mathbf{x}\right) = \left(\frac{\sinh D}{D}\right)^{n-1}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
 via recursion. Assume the relation holds and integrate,
 \begin{equation}
-J _{n+1}\left(\mathbf{x};u\right) = \left(2n-1\right)\int_0^1 du\ u^{2n} \left(\frac{\sinh D}{D}\right)^{n-1}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+J _{\left(n+1\right) ij}\left(\mathbf{x}\right) = \int_0^1 du\ u^{2n} \left(\frac{\sinh D}{D}\right)^{n-1}\left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
 \begin{equation}
-J _{n+1}\left(\mathbf{x};u\right) = \left(2n-1\right)\int_0^1 du\ u^{2n} \left(\frac{\sinh D}{D}\right)^{n-1}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+= \int_0^1 du\ u^{2k+2} \sum _{k=0}^\infty \left(\frac{\left(2k\right)(2k-2\right)...\left(2k-2\left(n-2\right) \right) }{\left(2k+1\right)!} D^{2k-2\left(n-1\right)}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
+\begin{equation}
+= \sum _{k=0}^\infty \left(\frac{\left(2k+2\right)\left(2k\right)(2k-2\right)...\left(2k-2\left(n-2\right) \right) }{\left(2k+3\right)!} D^{2k-2\left(n-1\right)}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+\end{equation}
+\begin{equation}
+= \sum _{k=0}^\infty \left(\frac{\left(2k\right)\left(2k-2\right)...\left(2k-2\left(n-1\right) \right) }{\left(2k+1\right)!} D^{2k-2\left(n-1\right)-2}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+\end{equation}
+\begin{equation}
+= \left(\frac{1}{D}\frac{\partial}{D}\right)^n\left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
+\end{equation}
+We have finished our proof. After long last, we may write the velocity field in terms of only the derivatives of the Oseen tensor, without any integrals,
+\begin{equation}
+u_i = \sum _{m=0}^{\lceil\left(n-1\right)/2 \rceil} \frac{L _{(n-2m-1)j}} \left(\frac{\sinh D}{D}\right)^{\left(n-2m\right)-1}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}.
+\end{equation}
+
+
+
 
 
 
