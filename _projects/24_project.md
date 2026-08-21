@@ -733,14 +733,25 @@ I\left(\mathbf{x}\right)= \int_0^{2\pi}\int_0^1 d\phi\ d\rho\ \frac{\rho}{2\pi\s
 \end{equation}
 Now substitute $$\rho=\sin\theta$$,
 \begin{equation}
-I\left(\mathbf{x}\right)= \int_0^{2\pi}\int_0^{\pi/2} d\phi\ d\theta\ \sin\theta\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
+I\left(\mathbf{x}\right)= \frac{1}{2\pi}\int_0^{2\pi}\int_0^{\pi/2} d\phi\ d\theta\ \sin\theta\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
 \end{equation}
-Now
+Our integral has been converted to a simple integration over the upper half unit sphere. Now turning our attention to the Green's function. Using,
+\begin{equation}
+\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) = e^{-\left(x'\partial_x+y'\partial_y\right)}\mathcal{G} _{ij}\left(\mathbf{x}\right) = \sum _{n=0}^\infty\frac{\left(-1\right)^n}{n!}\left(x'\partial_x+y'\partial_y\right)^n\mathcal{G} _{ij}\left(\mathbf{x}\right).
+\end{equation}
 
 
 
 
-I\left(\mathbf{x}\right)=
+
+
+
+
+
+
+
+
+strange no z? E int region
 
 
 
