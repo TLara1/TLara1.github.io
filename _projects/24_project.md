@@ -674,7 +674,7 @@ where we have removed the boundary terms. This gives us,
 Relating the first term to the Oseen tensor,
 
 \begin{equation}
-\int_E dA'\ \left[q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left(\delta _{ij}-x_j\partial _i\right)]\frac{1}{|\mathbf{x}-\mathbf{x}'|} =  \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left( \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) - x'_j\partial_i\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|} \right]\right) ,
+\int_E dA'\ \left[q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left(\delta _{ij}-x_j\partial _i\right)\right]\frac{1}{|\mathbf{x}-\mathbf{x}'|} =  \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left( \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) - x'_j\partial_i\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|} \right]\right) ,
 \end{equation}
 
 \begin{equation}
@@ -711,22 +711,38 @@ J_n\left(\mathbf{x}\right) =   \int_E dA'\ f_n\left(\mathbf{x}'\right) \left[ 1 
 \end{equation}
 with,
 \begin{equation}
-f_n\left(\mathbf{x}'\right) = \frac{1}{2\pi a_E b_E} q\left(\mathbf{x}'\right)^{2n-3}.
+f_n\left(\mathbf{x}'\right) = \frac{1}{2\pi a_E b_E} q\left(\mathbf{x}'\right)^{2n-3} = \frac{1}{2\pi a_E b_E}\left(1-\frac{x'^2}{a_E^2}-\frac{y'^2}{b_E^2}\right)^{n-3/2}.
 \end{equation}
 Eq. \ref{eq: Jn integral} is certainly not nice to write down or study; for our purposes, it would be much more practical if we could write down a series representation of this integral that we can evaluate in the limit of the far field as an asymptotic solution.
 
 First, consider,
 \begin{equation}
-\int_E dA'\ f_1\left(\mathbf{x}'\right) \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
+I\left(\mathbf{x}\right)=\int_E dA'\ f_1\left(\mathbf{x}'\right) \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
 \end{equation}
-since,
+The integration region is where the function $$f_1\left(\mathbf{x}'\right)$$ is real,
 \begin{equation}
-\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) = e^\left(-x'_i\partial_i\right)\mathcal{G} _{ij}\left(\mathbf{x}\right),
+\left(x,y\right)\in E\leftrightarrow \frac{x^2}{a_E^2}+\frac{y^2}{b_E^2}\leq1.
 \end{equation}
-our task is to evaluate the operator,
+Now consider the change of variables,
 \begin{equation}
-\int_E dA'\ f_1\left(\mathbf{x}'\right) e^\left(-x'_i\partial_i\right),
+x'=a_E\rho'\cos\phi'\quad y'=b_E\rho'\sin\phi',
 \end{equation}
+so the integral becomes,
+\begin{equation}
+I\left(\mathbf{x}\right)= \int_0^{2\pi}\int_0^1 d\phi\ d\rho\ \frac{\rho}{2\pi\sqrt{1-\rho^2}}\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
+\end{equation}
+Now substitute $$\rho=\sin\theta$$,
+\begin{equation}
+I\left(\mathbf{x}\right)= \int_0^{2\pi}\int_0^{\pi/2} d\phi\ d\theta\ \sin\theta\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
+\end{equation}
+Now
+
+
+
+
+I\left(\mathbf{x}\right)=
+
+
 
 
 
