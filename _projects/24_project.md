@@ -557,7 +557,7 @@ Assume the following holds,
 \begin{equation}\label{eq: Hn Gn relation}
 H_n=\frac{\left(-1\right)^{n}}{2^{2n+1}}\frac{\left(2n\right)!}{n!n!}G_n,
 \end{equation}
-which satisfies the base case of $$n=1$$. We demonstrate this holds for $$n=1$$ to unite $$H_n$$ and $$G_n$$ with induction. Multiply by $$u^{2n+2}$$ and integrate,
+which satisfies the base case of $$n=1$$. We demonstrated this holds for $$n=1$$ to unite $$H_n$$ and $$G_n$$ with induction. Multiply by $$u^{2n+2}$$ and integrate,
 \begin{equation}
 \int_0^1du\ u^{2n+2}H_n=\frac{\left(n\right)^{-1}}{2^{2n+1}}\frac{\left(2n\right)!}{n!n!}\int_0^1du\ u^{2n+2} G_n,
 \end{equation}
@@ -672,8 +672,12 @@ so,
 \end{equation}
 Integrating by parts,
 \begin{equation}
-= \frac{a_j^2-c^2}{n+2}\int_E dA'\ q\left(\mathbf{x}'\right)^{p+2} \frac{\partial }{\partial x'_j}\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right] = -\frac{a_j^2-c^2}{p+2}\frac{\partial}{\partial x_j}\int_E dA'\ q\left(\mathbf{x}'\right)^{p+2} \frac{1}{|\mathbf{x}-\mathbf{x}|},
+= \frac{a_j^2-c^2}{n+2}\int_E dA'\ q\left(\mathbf{x}'\right)^{p+2} \frac{\partial }{\partial x'_j}\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right]\nonumber
 \end{equation}
+\begin{equation}
+= -\frac{a_j^2-c^2}{p+2}\frac{\partial}{\partial x_j}\int_E dA'\ q\left(\mathbf{x}'\right)^{p+2} \frac{1}{|\mathbf{x}-\mathbf{x}|},
+\end{equation}
+
 where we have removed the boundary terms. This gives us,
 \begin{equation}
 \left(\delta _{ij}-x_j\partial _i\right)H _{n-2m-1} - \frac{a_j^2}{2\left(n-2m\right)-1}\partial_i\partial_jH _{n-2m} = \frac{1}{2\pi a_E b_E}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left[\left(\delta _{ij}-x_j\partial _i\right) -  \frac{a_j^2}{2\left(n-2m\right)-1}q\left(\mathbf{x}'\right)^2\partial_i\partial_j \right]\frac{1}{|\mathbf{x}-\mathbf{x}'|}.
@@ -693,7 +697,10 @@ Relating the first term to the Oseen tensor,
 \end{equation}
 For the second term,
 \begin{equation}
--\int_E dA'\ \frac{a_j^2}{2\left(n-2m\right)-1}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\partial_i\partial_j \left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right] =  \int_E dA'\ \frac{a_j^2}{4\left(n-2m\right)-2}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
+-\int_E dA'\ \frac{a_j^2}{2\left(n-2m\right)-1}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\partial_i\partial_j \left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right]\nonumber
+\end{equation}
+\begin{equation}
+ =  \int_E dA'\ \frac{a_j^2}{4\left(n-2m\right)-2}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
 \end{equation}
 Hence,
 \begin{equation}
@@ -801,7 +808,7 @@ J _{ij}\left(\mathbf{x}\right)=\frac{1}{4}\int_0^{\pi} d\eta'\ \sin^3\eta'e^{-\t
 \end{equation}
 With a change of variables and integration by parts,
 \begin{equation}
-J _{ij}\left(\mathbf{x}\right)=\frac{1}{4}\int _{-1}^{1} du'\ \left(1-u^2\right) e^{-\tilde{D}u'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right) = -\frac{1}{2\tilde{D}}\int _{-1}^{1} du'\ u e^{-\tilde{D}u'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right),
+J _{ij}\left(\mathbf{x}\right)=\frac{1}{4}\int _{-1}^{1} du'\ \left(1-u'^2\right) e^{-\tilde{D}u'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right) = -\frac{1}{2\tilde{D}}\int _{-1}^{1} du'\ u' e^{-\tilde{D}u'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right),
 \end{equation}
 from which we identify,
 \begin{equation}\label{eq: J sinh D verion}
@@ -813,7 +820,7 @@ J_1\left(\mathbf{x}\right) =   \int_E dA'\ f_1\left(\mathbf{x}'\right) \left[ 1 
 \end{equation}
 Using the power series expansion of $$\sinh$$, the operator becomes,
 \begin{equation}\label{eq: tilde D power series operator}
-\frac{\sinh\tilde{D}}{\tilde{D}} + \frac{c^2}{2}\frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\left(\frac{\sinh\tilde{D}}{\tilde{D}}\right)\partial^2 = \sum_n=0^\infty\left( \frac{1}{\left(2n+1\right)!}\tilde{D}^{2n}+c^2\frac{n}{\left(2n+1\right)!}\tilde{D}^{2\left(n-1\right)}\partial^2 \right).
+\frac{\sinh\tilde{D}}{\tilde{D}} + \frac{c^2}{2}\frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\left(\frac{\sinh\tilde{D}}{\tilde{D}}\right)\partial^2 = \sum _{n=0}^\infty\left( \frac{1}{\left(2n+1\right)!}\tilde{D}^{2n}+c^2\frac{n}{\left(2n+1\right)!}\tilde{D}^{2\left(n-1\right)}\partial^2 \right).
 \end{equation}
 
 If we define the operator,
@@ -822,7 +829,7 @@ D^2=a^2\partial_x^2+b^2\partial_y^2+c^2\partial_z^2=\tilde{D}^2+c^2\partial^2,
 \end{equation}
 we may greatly simplify Eq. \ref{eq: tilde D power series operator}. Because the Oseen tensor is biharmonic, $$\partial^2\partial^2\mathbf{\mathcal{G}}=0$$, 
 \begin{equation}
-\tidle{D}^{2n}=\left(D^2-c^2\partial^2\right)^{n}=D^{2n}-c^2n\tilde{D}^{2\left(n-1\right)}\partial^2.
+\tilde{D}^{2n}=\left(D^2-c^2\partial^2\right)^{n}=D^{2n}-c^2n\tilde{D}^{2\left(n-1\right)}\partial^2.
 \end{equation}
 From this, it is not difficult to obtain the rather elegant identity,
 \begin{equation}
@@ -853,16 +860,24 @@ So that we obtain the recurrence relation,
 \begin{equation}
 J _{n+1}\left(\mathbf{x};u\right) = \left(2n-1\right)\int _0^1 du\ u^{2n}J_n\left(\mathbf{x};u\right).
 \end{equation}
-We once employ the series expansion of $$\sinh$$ and $$D\left(u\right)=uD
+We once employ the series expansion of $$\sinh$$ and $$D\left(u\right)=uD$$,
 \begin{equation}
-J _{2}\left(\mathbf{x};u\right) = \int_0^1 du\ u^2 \sum_k=0^\infty \left(\frac{1}{\left(2k+1\right)!} u^{2k}D^{2k}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} = \sum_k=0^\infty \left(\frac{2k+2}{\left(2k+3\right)!} D^{2k}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} = \left(\frac{1}{D}\frac{\partial}{D}\right)\left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
+J _{2}\left(\mathbf{x};u\right) = \int_0^1 du\ u^2 \sum _{k=0}^\infty \left(\frac{1}{\left(2k+1\right)!} u^{2k}D^{2k}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} = \sum _{k=0}^\infty \left(\frac{2k+2}{\left(2k+3\right)!} D^{2k}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+\end{equation}
+\begin{equation}
+= \left(\frac{1}{D}\frac{\partial}{D}\right)\left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 \end{equation}
 Having demonstrated the base case, we verify,
 \begin{equation}
 J _{n}\left(\mathbf{x};u\right) = \left(\frac{\sinh D}{D}\right)^{n-1}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
-via recursion. 
-
+via recursion. Assume the relation holds and integrate,
+\begin{equation}
+J _{n+1}\left(\mathbf{x};u\right) = \left(2n-1\right)\int_0^1 du\ u^{2n} \left(\frac{\sinh D}{D}\right)^{n-1}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+\end{equation}
+\begin{equation}
+J _{n+1}\left(\mathbf{x};u\right) = \left(2n-1\right)\int_0^1 du\ u^{2n} \left(\frac{\sinh D}{D}\right)^{n-1}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+\end{equation}
 
 
 
