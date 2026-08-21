@@ -711,12 +711,20 @@ with,
 \begin{equation}
 f_n\left(\mathbf{x}'\right) = \frac{1}{2\pi a_E b_E} q\left(\mathbf{x}'\right)^{2n-3}.
 \end{equation}
-Eq. \ref{eq: Jn integral} is certainly not nice to write down or study, for our purposes, it would be much more practicle if we could write down a series representation of this integral that we can evaluate in the limit of the far field as an asymptotic solution.
+Eq. \ref{eq: Jn integral} is certainly not nice to write down or study; for our purposes, it would be much more practical if we could write down a series representation of this integral that we can evaluate in the limit of the far field as an asymptotic solution.
 
-
-
-
-
+First, consider,
+\begin{equation}
+\int_E dA'\ f_1\left(\mathbf{x}'\right) \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
+\end{equation}
+since,
+\begin{equation}
+\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) = e^\left(-x'_i\partial_i\right)\mathcal{G} _{ij}\left(\mathbf{x}\right),
+\end{equation}
+our task is to evaluate the operator,
+\begin{equation}
+\int_E dA'\ f_1\left(\mathbf{x}'\right) e^\left(-x'_i\partial_i\right),
+\end{equation}
 
 
 
