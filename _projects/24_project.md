@@ -616,36 +616,33 @@ A\delta _{ij}\partial^{n-1}G _{n-1} - x_j\partial_i\partial^{n-1} G _{n-1} + \fr
 
 has only terms of order $$n-1$$ and lower when evaluated on the particle surface; the order $$n+1$$ terms cancel entirely. The coefficient $$A$$ can be picked to cancel the $$n-1$$ coefficient of the second two terms while simultaneously prescribing a boundary condition at order $$n-1$$.
 
-Now for the expansion. At the particle surface, $$n$$ modes are prescribed, so the flow at the particle is given by,
+Now for the expansion. At the particle surface, suppose an $$\left(n-1\right)$$0th order field is prescribed, so the flow at the particle is given by,
 \begin{equation}
-u_i^p=Q^{(n)} _{i k_1 k_2 ...k_n} x _{k_1}x _{k_2}x _{k_n}.
+u_i^p=Q^{(n-1)} _{i k_1 k_2 ...k _{n-1}} x _{k_1}x _{k_2}x _{k _(n-1)}.
 \end{equation}
-The velocity field requires a polynomial of degree $$n$$ to represent the boundary condition, so it must contain a term of the form,
+The velocity field requires a polynomial of degree $$n-1$$ to represent the boundary condition, so it must contain a term of the form,
 \begin{equation}
-u_i \ni A^{(n)} _{jk _1 k_2...k _n}\partial _{k_1}\partial _{k_2}...\partial _{k _n}\left[\left(\delta _{ij}-x_j\partial_i\right)G _{n} + \frac{a_j^2}{2\left(n+1\right)}\partial_i\partial_jG _{n+1}\right],
+u_i \ni A^{(n-1)} _{jk _1 k_2...k _n}\partial _{k_1}\partial _{k_2}...\partial _{k _{n-1}}\left[\left(\delta _{ij}-x_j\partial_i\right)G _{n-1} + \frac{a_j^2}{2n}\partial_i\partial_jG _n\right],
 \end{equation}
-which, on the boundary, contains terms of order $$n$$, $$n-2$$, $$n-4$$, and so forth. The coefficient $$A^{(n)} _{jk _1 k_2...k _n}$$ is picked to match the boundary condition $$Q^{(n)} _{i k_1 k_2 ...k_n}$$. To cancel the order $$n-2$$ terms, the velocity field must contain a term that is of order no higher than $$n-2$$ on the boundary,
+which, on the boundary, contains terms of order $$n-1$$, $$n-3$$, $$n-5$$, and so forth. The coefficient $$\mathbf{A}^{(n-1)}$$ is picked to match the boundary condition $$\mathbf{Q}^{(n)}$$. To cancel the order $$n-3$$ terms, the velocity field must contain a term that is of order no higher than $$n-3$$ on the boundary,
 \begin{equation}
-u_i \ni A^{(n-2)} _{jk _1 k_2...k _{n-2}}\partial _{k_1}\partial _{k_2}...\partial _{k _{n-2}}\left[\left(\delta _{ij}-x_j\partial_i\right)G _{n-2} + \frac{a_j^2}{2\left(n-1\right)}\partial_i\partial_jG _{n-1}\right],
+u_i \ni A^{(n-3)} _{jk _1 k_2...k _{n-3}}\partial _{k_1}\partial _{k_2}...\partial _{k _{n-3}}\left[\left(\delta _{ij}-x_j\partial_i\right)G _{n-3} + \frac{a_j^2}{2\left(n-2\right)}\partial_i\partial_jG _{n-2}\right],
 \end{equation}
-where $$A^{(n-2)} _{jk _1 k_2...k _{n-2}}$$ is picked to cancel the $$n-2$$ terms from the higher order first polynomial. We repeat this process to represent the velocity field as a sum of these polynomials,
+where $$A^{(n-3)} _{jk _1 k_2...k _{n-3}}$$ is picked to cancel the $$n-3$$ terms from the higher order first polynomial. We repeat this process to represent the velocity field as a sum of these polynomials,
 
 \begin{equation}\label{u solution Gn rep}
-u_i = \sum_{m=0}^{\lceil n/2 \rceil} C\left(n,m\right)\frac{L _{(n-2m)j}}{8\pi\mu} \left[\left(\delta _{ij}-x_j\partial _i\right)G _{n-2m} + \frac{a_j^2}{2\left(n-2m+1\right)}\partial_i\partial_jG _{n-2m+1}\right],
+u_i = \sum_{m=0}^{\lceil \left(n-1\right)/2 \rceil} C\left(n,m\right)\frac{L _{(n-2m-1)j}}{8\pi\mu} \left[\left(\delta _{ij}-x_j\partial _i\right)G _{n-2m-1} + \frac{a_j^2}{2\left(n-2m\right)}\partial_i\partial_jG _{n-2m}\right],
 \end{equation}
-WE NEED TO DO n-1 I BELIEVE, otherwise we have a divide by 0 error in second term. FIX FINISH
-
-
 $$C\left(n,m\right)$$ is a coefficient we will discuss shortly, and the operator is defined as,
 \begin{equation}
-L _{(n)j}= A^{(n)} _{jk_1k_2...k _{n}}\partial _{k_1}\partial _{k_2}...\partial _{k _{n}}.
+L _{(p)j}= A^{(p)} _{jk_1k_2...k _{p}}\partial _{k_1}\partial _{k_2}...\partial _{k _{p}}.
 \end{equation}
 This is excellent; we have a series solution for the velocity field provided that the $$A^{(n)} _{jk_1k_2...k _{n}}$$ coefficients can be solved for. We want to derive a multipole expansion, which we can do by relating our $$G_n$$ terms to $$H_n$$ terms using Eq. \ref{eq: Hn Gn relation} and then relating the $$H _n$$ terms to the Oseen tensor $$\mathcal{G} _{ij}$$.
 
 Combining Eq. \ref{eq: Hn Gn relation} with Eq. \ref{u solution Gn rep},
 
 \begin{equation}
-u_i = \sum_{m=0}^{\lceil n/2 \rceil} C\left(n,m\right) \left( \left(-1\right)^{n-2m}2^{2\left(n-2m\right)+1}\frac{\left(n-2m\right)!\left(n-2m\right)!}{\left(2\left(n-2m\right)\right)!}\right) \frac{L _{(n-2m)j}}{8\pi\mu} \left[\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m} - \left(2\frac{\left(n-2m+1\right)}{2\left(n-2m\right)+1}\right)\frac{a_j^2}{2\left(n-2m+1\right)}\partial_i\partial_jH _{n-2m+1}\right].
+u_i = \sum_{m=0}^{\lceil \left(n-1\right)/2 \rceil} C\left(n,m\right) \left( \left(-1\right)^{n-2m-1}2^{2\left(n-2m\right)-1}\frac{\left(n-2m-1\right)!\left(n-2m-1\right)!}{\left(2\left(n-2m-1\right)\right)!}\right) \frac{L _{(n-2m-1)j}}{8\pi\mu} \left[\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m-1} - \left(2\frac{\left(n-2m\right)}{2\left(n-2m\right)-1}\right)\frac{a_j^2}{2\left(n-2m\right)}\partial_i\partial_jH _{n-2m+1}\right].
 \end{equation}
 
 Now, to relate to the Oseen tensor. First consider,
@@ -658,52 +655,54 @@ and,
 \end{equation}
 Now using,
 \begin{equation}
-\frac{\partial q\left(\mathbf{x}'\right)^{n+2}}{\partial x'_j}=-\frac{\left(n+2\right)x_j'}{a_j^2-c^2}q\left(\mathbf{x}'\right)^{n},
+\frac{\partial q\left(\mathbf{x}'\right)^{p+2}}{\partial x'_j}=-\frac{\left(p+2\right)x_j'}{a_j^2-c^2}q\left(\mathbf{x}'\right)^{p},
 \end{equation}
 so,
 \begin{equation}
-\int_E dA'\ x_j'\frac{q\left(\mathbf{x}'\right)^n}{|\mathbf{x}-\mathbf{x}'|} = -\frac{a_j^2-c^2}{n+2}\int_E dA'\ \frac{1}{|\mathbf{x}-\mathbf{x}'|}\frac{\partial q\left(\mathbf{x}'\right)^{n+2}}{\partial x'_j}.
+\int_E dA'\ x_j'\frac{q\left(\mathbf{x}'\right)^p}{|\mathbf{x}-\mathbf{x}'|} = -\frac{a_j^2-c^2}{n+2}\int_E dA'\ \frac{1}{|\mathbf{x}-\mathbf{x}'|}\frac{\partial q\left(\mathbf{x}'\right)^{p+2}}{\partial x'_j}.
 \end{equation}
 Integrating by parts,
 \begin{equation}
-= \frac{a_j^2-c^2}{n+2}\int_E dA'\ q\left(\mathbf{x}'\right)^{n+2} \frac{\partial }{\partial x'_j}\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right] = -\frac{a_j^2-c^2}{n+2}\frac{\partial}{\partial x_j}\int_E dA'\ q\left(\mathbf{x}'\right)^{n+2} \frac{1}{|\mathbf{x}-\mathbf{x}|},
+= \frac{a_j^2-c^2}{n+2}\int_E dA'\ q\left(\mathbf{x}'\right)^{p+2} \frac{\partial }{\partial x'_j}\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right] = -\frac{a_j^2-c^2}{p+2}\frac{\partial}{\partial x_j}\int_E dA'\ q\left(\mathbf{x}'\right)^{p+2} \frac{1}{|\mathbf{x}-\mathbf{x}|},
 \end{equation}
 where we have removed the boundary terms. This gives us,
 \begin{equation}
-\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m} - \frac{a_j^2}{2\left(n-2m\right)+1}\partial_i\partial_jH _{n-2m+1} = \frac{1}{2\pi a_E b_E}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left[\left(\delta _{ij}-x_j\partial _i\right) -  \frac{a_j^2}{2\left(n-2m\right)+1}q\left(\mathbf{x}'\right)^2\partial_i\partial_j \right]\frac{1}{|\mathbf{x}-\mathbf{x}'|}.
+\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m-1} - \frac{a_j^2}{2\left(n-2m\right)-1}\partial_i\partial_jH _{n-2m} = \frac{1}{2\pi a_E b_E}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left[\left(\delta _{ij}-x_j\partial _i\right) -  \frac{a_j^2}{2\left(n-2m\right)-1}q\left(\mathbf{x}'\right)^2\partial_i\partial_j \right]\frac{1}{|\mathbf{x}-\mathbf{x}'|}.
 \end{equation}
 Relating the first term to the Oseen tensor,
 
 \begin{equation}
-\int_E dA'\ \left[q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left(\delta _{ij}-x_j\partial _i\right)]\frac{1}{|\mathbf{x}-\mathbf{x}'|} =  \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left( \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) - x'_j\partial_i\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|} \right]\right) ,
+\int_E dA'\ \left[q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left(\delta _{ij}-x_j\partial _i\right)]\frac{1}{|\mathbf{x}-\mathbf{x}'|} =  \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left( \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) - x'_j\partial_i\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|} \right]\right) ,
 \end{equation}
 
 \begin{equation}
-= \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1} \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) + \frac{a_j^2-c^2}{2\left(n-2m\right)+1}\partial_i\partial_j \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1} \frac{1}{|\mathbf{x}-\mathbf{x}'|},
+= \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3} \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) + \frac{a_j^2-c^2}{2\left(n-2m\right)-1}\partial_i\partial_j \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1} \frac{1}{|\mathbf{x}-\mathbf{x}'|},
 \end{equation}
 
 \begin{equation}
-=\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1} \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) - \frac{a_j^2-c^2}{4\left(n-2m\right)+2}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
+=\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3} \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right) - \frac{a_j^2-c^2}{4\left(n-2m\right)-2}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
 \end{equation}
 For the second term,
 \begin{equation}
--\int_E dA'\ \frac{a_j^2}{2\left(n-2m\right)+1}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1}\partial_i\partial_j \left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right] =  \int_E dA'\ \frac{a_j^2}{4\left(n-2m\right)+2}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)+1}\partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
+-\int_E dA'\ \frac{a_j^2}{2\left(n-2m\right)-1}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\partial_i\partial_j \left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right] =  \int_E dA'\ \frac{a_j^2}{4\left(n-2m\right)-2}q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
 \end{equation}
 Hence,
 \begin{equation}
-\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m} - \frac{a_j^2}{2\left(n-2m\right)+1}\partial_i\partial_jH _{n-2m+1} = \frac{1}{2\pi a_E b_E}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)+2}\partial^2 \right] \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
+\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m-1} - \frac{a_j^2}{2\left(n-2m\right)+1}\partial_i\partial_jH _{n-2m} = \frac{1}{2\pi a_E b_E}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)-2}\partial^2 \right] \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
 \end{equation}
 And we write the velocity field using the Oseen tensor,
 
 \begin{equation}
-u_i = \sum_{m=0}^{\lceil n/2 \rceil} \frac{1}{2\pi a_E b_E} \frac{L _{(n-2m)j}}{8\pi\mu} \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-1}\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)+2}\partial^2 \right] \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
+u_i = \sum_{m=0}^{\lceil n/2 \rceil} \frac{1}{2\pi a_E b_E} \frac{L _{(n-2m-1)j}}{8\pi\mu} \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)-2}\partial^2 \right] \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
 \end{equation}
 where we have defined,
 \begin{equation}
-C\left(n,m\right) = \frac{\left(-1\right)^{n-2m}}{2^{2\left(n-2m\right)+1}}\frac{\left(2\left(n-2m\right)\right)!}{\left(n-2m\right)!\left(n-2m\right)!},
+C\left(n,m\right) = \frac{\left(-1\right)^{n-2m-1}}{2^{2\left(n-2m\right)-1}}\frac{\left(2\left(n-2m-1\right)\right)!}{\left(n-2m-1\right)!\left(n-2m-1\right)!},
 \end{equation}
 for convenience.
 All that remains is determing the $$\mathbf{A}^{(n)}$$ coefficients to the $$\mathbf{Q}^{(n)}$$ boundary condition. From here forward, we will focus only on the $$n=0$$ translation case and the $$n=1$$ linear case, as these are the most physical applications, and higher-order generalizations are mostly computed using the same, albeit longer, method.
+
+
 
 
 
