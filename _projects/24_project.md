@@ -722,8 +722,6 @@ C\left(n,m\right) = \frac{\left(-1\right)^{n-2m-1}}{2^{2\left(n-2m\right)-1}}\fr
 for convenience.
 All that remains is determing the $$\mathbf{A}^{(n)}$$ coefficients to the $$\mathbf{Q}^{(n)}$$ boundary condition.
 
-
-
 ### Far-Field Series Form For Ellipsoidal Velocity Field
 Define the following integral,
 \begin{equation}\label{eq: Jn integral}
@@ -908,16 +906,8 @@ In ellipsoidal coordinates,
 u_i\left(\mathbf{x}\right)-U_i^\infty=\frac{1}{16\pi\mu}A_j^{(0)}\left[ \delta_{ij}G_{0}\left(\mathbf{x}\right)-x_j\partial_iG_{0}\left(\mathbf{x}\right)+\frac{a_j^2}{2}\partial_i\partial_jG_{1}\left(\mathbf{x}\right) \right].
 \end{equation}
 \begin{equation}
-u_i\left(\mathbf{x}\right)-\epsilon_{ijk}\Omega^\infty_jx_k-E_{ij}^\infty x_j = 
-
-\left[ \delta_{ij}G_{1}\left(\mathbf{x}\right)-x_j\partial_iG_{1}\left(\mathbf{x}\right)+\frac{a_j^2}{4}\partial_i\partial_jG_{2}\left(\mathbf{x}\right) \right]
-
--1/8 * 6/3 *
-
-
-U_i^\infty=\frac{1}{16\pi\mu}A_j^{(0)}\left[ \delta_{ij}G_{0}\left(\mathbf{x}\right)-x_j\partial_iG_{0}\left(\mathbf{x}\right)+\frac{a_j^2}{2}\partial_i\partial_jG_{1}\left(\mathbf{x}\right) \right].
+u_i\left(\mathbf{x}\right)-\epsilon_{ijk}\Omega^\infty_jx_k-E_{ij}^\infty x_j = \frac{3}{32\pi\mu}A_{jk}^{(1)}\partial_k\left[ \delta_{ij}G_{1}\left(\mathbf{x}\right)-x_j\partial_iG_{1}\left(\mathbf{x}\right)+\frac{a_j^2}{4}\partial_i\partial_jG_{2}\left(\mathbf{x}\right) \right]
 \end{equation}
-
 
 In terms of the Oseen tensor,
 
