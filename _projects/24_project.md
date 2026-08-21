@@ -881,13 +881,13 @@ J _{n\ ij}\left(\mathbf{x}\right) = \left(\frac{\sinh D}{D}\right)^{n-1}\frac{\m
 \end{equation}
 via recursion. Assume the relation holds and integrate,
 \begin{equation}
-J _{\left(n+1\right) ij}\left(\mathbf{x}\right) = \int_0^1 du\ u^{2n} \left(\frac{\sinh D}{D}\right)^{n-1}\left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+J _{\left(n+1\right)\ ij}\left(\mathbf{x}\right) = \int_0^1 du\ u^{2n} \left(\frac{\sinh D}{D}\right)^{n-1}\left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
 \begin{equation}
-= \int_0^1 du\ u^{2k+2} \sum _{k=0}^\infty \left(\frac{\left(2k\right)(2k-2\right)...\left(2k-2\left(n-2\right) \right) }{\left(2k+1\right)!} D^{2k-2\left(n-1\right)}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+= \int_0^1 du\ u^{2k+2} \sum _{k=0}^\infty \left(\frac{\left(2k\right)\left(2k-2\right)...\left(2k-2\left(n-2\right) \right) }{\left(2k+1\right)!} D^{2k-2\left(n-1\right)}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
 \begin{equation}
-= \sum _{k=0}^\infty \left(\frac{\left(2k+2\right)\left(2k\right)(2k-2\right)...\left(2k-2\left(n-2\right) \right) }{\left(2k+3\right)!} D^{2k-2\left(n-1\right)}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+= \sum _{k=0}^\infty \left( \frac{\left(2k+2\right)\left(2k\right)\left(2k-2\right)...\left( 2k-2\left(n-2\right) \right) }{\left(2k+3\right)!} D^{2k-2\left(n-1\right)}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
 \begin{equation}
 = \sum _{k=0}^\infty \left(\frac{\left(2k\right)\left(2k-2\right)...\left(2k-2\left(n-1\right) \right) }{\left(2k+1\right)!} D^{2k-2\left(n-1\right)-2}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
