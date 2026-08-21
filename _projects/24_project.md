@@ -702,7 +702,16 @@ C\left(n,m\right) = \frac{\left(-1\right)^{n-2m-1}}{2^{2\left(n-2m\right)-1}}\fr
 for convenience.
 All that remains is determing the $$\mathbf{A}^{(n)}$$ coefficients to the $$\mathbf{Q}^{(n)}$$ boundary condition. From here forward, we will focus only on the $$n=0$$ translation case and the $$n=1$$ linear case, as these are the most physical applications, and higher-order generalizations are mostly computed using the same, albeit longer, method.
 
-
+### Far Field Series Form For Ellipsoidal Velocity Field
+Define the following integral,
+\begin{equation}\label{eq: Jn integral}
+J_n\left(\mathbf{x}\right) =   \int_E dA'\ f_n\left(\mathbf{x}'\right) \left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)-2}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu},
+\end{equation}
+with,
+\begin{equation}
+f_n\left(\mathbf{x}'\right) = \frac{1}{2\pi a_E b_E} q\left(\mathbf{x}'\right)^{2n-3}.
+\end{equation}
+Eq. \ref{eq: Jn integral} is certainly not nice to write down or study, for our purposes, it would be much more practicle if we could write down a series representation of this integral that we can evaluate in the limit of the far field as an asymptotic solution.
 
 
 
