@@ -586,7 +586,7 @@ where the first term vanished since $$p\left(\lambda\right)=0$$ by definition. S
 and for an arbitrary number of derivatives,
 
 \begin{equation}
-\partial_{k_1}\partial_{k_2}...\partial_{k_n}G_n=\sum_{m=0}^{\lceil n/2 \rceil}2^{n-m}\frac{n!}{m!}\left[\left(\delta_{k_1 k_2}...\delta_{k_{2m-1}k_{2m}}x_{k_{2m+1}}...x_{k_n}\right) \int_\lambda^\infty dt\ \frac{1}{\Delta\left(t\right)}\frac{p\left(t\right)^{m} }{\prod_{\alpha=1}^n \left(a_{k_\alpha}^2+t\right)} + ... + \left(\text{sym}\right) \right].
+\partial_{k_1}\partial_{k_2}...\partial_{k_n}G_n=\sum_{m=0}^{\lfloor n/2 \rfloor}2^{n-m}\frac{n!}{m!}\left[\left(\delta_{k_1 k_2}...\delta_{k_{2m-1}k_{2m}}x_{k_{2m+1}}...x_{k_n}\right) \int_\lambda^\infty dt\ \frac{1}{\Delta\left(t\right)}\frac{p\left(t\right)^{m} }{\prod_{\alpha=1}^n \left(a_{k_\alpha}^2+t\right)} + ... + \left(\text{sym}\right) \right].
 \end{equation}
 
 In the term shown, $$\alpha\neq k_2,k_4,...,k_{2m}$$. The $$\left(\text{sym}\right)$$ denotes that at each $$m$$ we take all permutations of the indices $$k_i$$, and we have only shown one explicitly. The key idea is that at the ellipsoid surface, $$\lambda=0$$, the definite integrals become constants depending on the shape of the ellipse. So at the ellipsoid surface with $$\lambda=0$$, we find,
@@ -595,7 +595,7 @@ In the term shown, $$\alpha\neq k_2,k_4,...,k_{2m}$$. The $$\left(\text{sym}\rig
 \partial_{k_1}\partial_{k_2}...\partial_{k_n}\partial_{k_n+1}G_n\vert _{\lambda=0} = -2n!x _{k_1}x _{k_2}...x _{k_n}\frac{1}{\Delta\left(0\right)\prod _{\alpha=1}^n \left(a _{k _\alpha}^2\right)}\frac{\partial\lambda}{\partial x _{k _{n+1}}}\vert _{\lambda=0} \nonumber
 \end{equation}
 \begin{equation}\label{eq: partial n+1 Gn}
-+ \text{polynomial of degree } n-1.
++\text{polynomial of degree } n-1.
 \end{equation}
 
 At the surface,
@@ -636,22 +636,22 @@ u_i \ni A^{(n-3)} _{jk _1 k_2...k _{n-3}}\partial _{k_1}\partial _{k_2}...\parti
 where $$A^{(n-3)} _{jk _1 k_2...k _{n-3}}$$ is picked to cancel the $$n-3$$ terms from the higher order first polynomial. We repeat this process to represent the velocity field as a sum of these polynomials,
 
 \begin{equation}\label{u solution Gn rep}
-u_i = \sum_{m=0}^{\lceil \left(n-1\right)/2 \rceil} C\left(n,m\right)\frac{L _{(n-2m-1)j}}{8\pi\mu} \left[\left(\delta _{ij}-x_j\partial _i\right)G _{n-2m-1} + \frac{a_j^2}{2\left(n-2m\right)}\partial_i\partial_jG _{n-2m}\right],
+u_i = \sum_{m=0}^{\lfloor \left(n-1\right)/2 \rfloor} \left(2\left(n-2m\right)-1\right) C\left(n,m\right)\frac{L _{(n-2m-1)j}}{8\pi\mu} \left[\left(\delta _{ij}-x_j\partial _i\right)G _{n-2m-1} + \frac{a_j^2}{2\left(n-2m\right)}\partial_i\partial_jG _{n-2m}\right],
 \end{equation}
-$$C\left(n,m\right)$$ is a coefficient we will discuss shortly, and the operator is defined as,
+we pulled out $$\left(2\left(n-2m\right)-1\right)$$ for convenience, $$C\left(n,m\right)$$ is a coefficient we will discuss shortly, and the $$\mathbf{L}$$ operator is defined as,
 \begin{equation}
-L _{(p)j}= A^{(p)} _{jk_1k_2...k _{p}}\partial _{k_1}\partial _{k_2}...\partial _{k _{p}}.
+L _{(p)j}= \left(-1\right)^n A^{(p)} _{jk_1k_2...k _{p}}\partial _{k_1}\partial _{k_2}...\partial _{k _{p}}.
 \end{equation}
 This is excellent; we have a series solution for the velocity field provided that the $$A^{(n)} _{jk_1k_2...k _{n}}$$ coefficients can be solved for. We want to derive a multipole expansion, which we can do by relating our $$G_n$$ terms to $$H_n$$ terms using Eq. \ref{eq: Hn Gn relation} and then relating the $$H _n$$ terms to the Oseen tensor $$\mathcal{G} _{ij}$$.
 
 Combining Eq. \ref{eq: Hn Gn relation} with Eq. \ref{u solution Gn rep},
 
 \begin{equation}
-u_i = \sum_{m=0}^{\lceil \left(n-1\right)/2 \rceil} C\left(n,m\right) \left( \left(-1\right)^{n-2m-1}2^{2\left(n-2m\right)-1}\frac{\left(n-2m-1\right)!\left(n-2m-1\right)!}{\left(2\left(n-2m-1\right)\right)!}\right) \nonumber
+u_i = \sum_{m=0}^{\lfloor \left(n-1\right)/2 \rfloor} \left(2\left(n-2m\right)-1\right)C\left(n,m\right) \left( \left(-1\right)^{n-2m-1}2^{2\left(n-2m\right)-1}\frac{\left(n-2m-1\right)!\left(n-2m-1\right)!}{\left(2\left(n-2m-1\right)\right)!}\right) \nonumber
 \end{equation}
 
 \begin{equation}
-\times \frac{L _{(n-2m-1)j}}{8\pi\mu} \left[\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m-1} - \left(2\frac{\left(n-2m\right)}{2\left(n-2m\right)-1}\right)\frac{a_j^2}{2\left(n-2m\right)}\partial_i\partial_jH _{n-2m+1}\right].
+\times \frac{L _{(n-2m-1)j}}{8\pi\mu} \left[\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m-1} - \left(2\frac{\left(n-2m\right)}{2\left(n-2m\right)-1}\right)\frac{a_j^2}{2\left(n-2m\right)}\partial_i\partial_jH _{n-2m}\right].
 \end{equation}
 
 Now, to relate to the Oseen tensor. First consider,
@@ -713,14 +713,14 @@ Hence,
 And we write down the velocity field using the Oseen tensor,
 
 \begin{equation}
-u_i = \sum_{m=0}^{\lceil\left(n-1\right)/2 \rceil} \frac{1}{2\pi a_E b_E} \frac{L _{(n-2m-1)j}}{8\pi\mu} \int_E dA'\ \left(2\left(n-2m\right)-1\right) q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)-2}\partial^2 \right] \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
+u_i = \sum_{m=0}^{\lfloor\left(n-1\right)/2 \rfloor} \frac{1}{2\pi a_E b_E} \frac{L _{(n-2m-1)j}}{8\pi\mu} \int_E dA'\ \left(2\left(n-2m\right)-1\right) q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)-2}\partial^2 \right] \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
 \end{equation}
 where we have defined,
 \begin{equation}
-C\left(n,m\right) = \frac{\left(-1\right)^{n-2m-1}}{2^{2\left(n-2m\right)-1}}\frac{\left(2\left(n-2m-1\right)\right)!}{\left(2\left(n-2m\right)-1\right)\left(n-2m-1\right)!\left(n-2m-1\right)!},
+C\left(n,m\right) = \frac{\left(-1\right)^{n-2m-1}}{2^{2\left(n-2m\right)-1}}\frac{\left(2\left(n-2m-1\right)\right)!}{\left(n-2m-1\right)!\left(n-2m-1\right)!},
 \end{equation}
 for convenience.
-All that remains is determing the $$\mathbf{A}^{(n)}$$ coefficients to the $$\mathbf{Q}^{(n)}$$ boundary condition. We seperated the $$\left(2\left(n-2m\right)-1\right)$$ term to simplify the next set of calculations.
+All that remains is determing the $$\mathbf{A}^{(n)}$$ coefficients to the $$\mathbf{Q}^{(n)}$$ boundary condition.
 
 
 
@@ -736,7 +736,7 @@ f_n\left(\mathbf{x}'\right) = \frac{2n-1}{2\pi a_E b_E} q\left(\mathbf{x}'\right
 The velocity field can be expressed as,
 
 \begin{equation}
-u_i = \sum_{m=0}^{\lceil\left(n-1\right)/2 \rceil} \frac{L _{(n-2m-1)j}} J _{\left(n-2m\right)\ ij}.
+u_i = \sum_{m=0}^{\lfloor\left(n-1\right)/2 \rfloor} \frac{L _{(n-2m-1)j}} J _{\left(n-2m\right)\ ij}.
 \end{equation}
 
 Eq. \ref{eq: Jn integral} is certainly not nice to write or study; for our purposes, it would be much more practical to obtain a series representation of this integral that we can evaluate in the far-field limit as an asymptotic solution.
@@ -897,12 +897,29 @@ J _{\left(n+1\right)\ ij}\left(\mathbf{x}\right) = \int_0^1 du\ u^{2n} \left(\fr
 \end{equation}
 We have finished our proof. After long last, we may write the velocity field in terms of only the derivatives of the Oseen tensor, without any integrals,
 \begin{equation}
-u_i = \sum _{m=0}^{\lceil\left(n-1\right)/2 \rceil} \frac{L _{(n-2m-1)j}} \left(\frac{\sinh D}{D}\right)^{\left(n-2m\right)-1}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
+u_i = \sum _{m=0}^{\lfloor\left(n-1\right)/2 \rfloor} \frac{L _{(n-2m-1)j}} \left(\frac{\sinh D}{D}\right)^{\left(n-2m\right)-1}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 \end{equation}
 
 ### Summary of Basic Singularity Solutions for Ellipsoids
-Here we summarize the velocity field solutions in the three cases of interest for our ellipsoid, those being translation, rotation, and strain.
+Here we summarize the velocity field solutions in the three cases of interest for our ellipsoid, those being translation, rotation, and strain. The first of these is an order-zero boundary condition, so $$n=1$$, the latter two are first order, corresponding to $$n=2$$. 
 
+In ellipsoidal coordinates,
+\begin{equation}
+u_i\left(\mathbf{x}\right)-U_i^\infty=\frac{1}{16\pi\mu}A_j^{(0)}\left[ \delta_{ij}G_{0}\left(\mathbf{x}\right)-x_j\partial_iG_{0}\left(\mathbf{x}\right)+\frac{a_j^2}{2}\partial_i\partial_jG_{1}\left(\mathbf{x}\right) \right].
+\end{equation}
+\begin{equation}
+u_i\left(\mathbf{x}\right)-\epsilon_{ijk}\Omega^\infty_jx_k-E_{ij}^\infty x_j = 
+
+\left[ \delta_{ij}G_{1}\left(\mathbf{x}\right)-x_j\partial_iG_{1}\left(\mathbf{x}\right)+\frac{a_j^2}{4}\partial_i\partial_jG_{2}\left(\mathbf{x}\right) \right]
+
+-1/8 * 6/3 *
+
+
+U_i^\infty=\frac{1}{16\pi\mu}A_j^{(0)}\left[ \delta_{ij}G_{0}\left(\mathbf{x}\right)-x_j\partial_iG_{0}\left(\mathbf{x}\right)+\frac{a_j^2}{2}\partial_i\partial_jG_{1}\left(\mathbf{x}\right) \right].
+\end{equation}
+
+
+In terms of the Oseen tensor,
 
 
 
