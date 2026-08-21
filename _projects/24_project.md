@@ -897,9 +897,11 @@ J _{\left(n+1\right)\ ij}\left(\mathbf{x}\right) = \int_0^1 du\ u^{2n} \left(\fr
 \end{equation}
 We have finished our proof. After long last, we may write the velocity field in terms of only the derivatives of the Oseen tensor, without any integrals,
 \begin{equation}
-u_i = \sum _{m=0}^{\lceil\left(n-1\right)/2 \rceil} \frac{L _{(n-2m-1)j}} \left(\frac{\sinh D}{D}\right)^{\left(n-2m\right)-1}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}.
+u_i = \sum _{m=0}^{\lceil\left(n-1\right)/2 \rceil} \frac{L _{(n-2m-1)j}} \left(\frac{\sinh D}{D}\right)^{\left(n-2m\right)-1}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 \end{equation}
 
+### Summary of Basic Singularity Solutions for Ellipsoids
+Here we summarize the velocity field solutions in the three cases of interest for our ellipsoid, those being translation, rotation, and strain.
 
 
 
