@@ -572,7 +572,7 @@ proving our relation with induction.
 The big key takeaway here is that since $$H_n\left(\mathbf{x}\right)$$ is **harmonic** for all $$n$$, we have proven that $$G_n\left(\mathbf{x}\right)$$ is also **harmonic** for all $$n$$. We will also use this identity to relate the $$G_n$$ functions to the usual $$\mathcal{G}_{ij}$$ Oseen tensor.
 
 ### Multipole Expansion for Ellipsoids
-We are prepared to actually build the velocity field $$v_i$$. First a few derivatives of $$G_n$$,
+We are prepared to actually build the velocity field $$u_i$$. First a few derivatives of $$G_n$$,
 \begin{equation}
 \partial_iG_n=-\frac{1}{\Delta\left(\lambda\right)}p\left(\lambda\right)^n\partial_i\lambda+\int_\lambda^\infty dt\ \frac{1}{\Delta\left(t\right)}\partial_i\left(p\left(t\right)^n\right),
 \end{equation}
@@ -734,7 +734,7 @@ f_n\left(\mathbf{x}'\right) = \frac{2n-1}{2\pi a_E b_E} q\left(\mathbf{x}'\right
 The velocity field can be expressed as,
 
 \begin{equation}
-u_i = \sum_{m=0}^{\lfloor\left(n-1\right)/2 \rfloor} \frac{L _{(n-2m-1)j}} J _{\left(n-2m\right)\ ij}.
+u_i = \sum_{m=0}^{\lfloor\left(n-1\right)/2 \rfloor} \frac{L _{(n-2m-1)j}}{8\pi\mu} J _{\left(n-2m\right)\ ij}.
 \end{equation}
 
 Eq. \ref{eq: Jn integral} is certainly not nice to write or study; for our purposes, it would be much more practical to obtain a series representation of this integral that we can evaluate in the far-field limit as an asymptotic solution.
@@ -875,11 +875,11 @@ J _{2\ ij}\left(\mathbf{x};u\right) = \int_0^1 du\ u^2 \sum _{k=0}^\infty \left(
 \end{equation}
 Having demonstrated the base case, we verify,
 \begin{equation}
-J _{n\ ij}\left(\mathbf{x}\right) = \left(\frac{\sinh D}{D}\right)^{n-1}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+J _{n\ ij}\left(\mathbf{x}\right) = \left(\frac{\partial }{\partial D}\right)^{n-1} \left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
 via recursion. Assume the relation holds and integrate,
 \begin{equation}
-J _{\left(n+1\right)\ ij}\left(\mathbf{x}\right) = \int_0^1 du\ u^{2n} \left(\frac{\sinh D}{D}\right)^{n-1}\left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+J _{\left(n+1\right)\ ij}\left(\mathbf{x}\right) = \int_0^1 du\ u^{2n} \left(\frac{\partial }{\partial D}\right)^{n-1} \left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
 \begin{equation}
 = \int_0^1 du\ u^{2k+2} \sum _{k=0}^\infty \left(\frac{\left(2k\right)\left(2k-2\right)...\left(2k-2\left(n-2\right) \right) }{\left(2k+1\right)!} D^{2k-2\left(n-1\right)}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
@@ -895,7 +895,7 @@ J _{\left(n+1\right)\ ij}\left(\mathbf{x}\right) = \int_0^1 du\ u^{2n} \left(\fr
 \end{equation}
 We have finished our proof. After long last, we may write the velocity field in terms of only the derivatives of the Oseen tensor, without any integrals,
 \begin{equation}
-u_i = \sum _{m=0}^{\lfloor\left(n-1\right)/2 \rfloor} \frac{L _{(n-2m-1)j}} \left(\frac{\sinh D}{D}\right)^{\left(n-2m\right)-1}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
+u_i = \sum _{m=0}^{\lfloor\left(n-1\right)/2 \rfloor} \frac{L _{(n-2m-1)j}} \left(\frac{\partial }{\partial D}\right)^{n-2m-1} \left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 \end{equation}
 
 ### Summary of Basic Singularity Solutions for Ellipsoids
@@ -903,20 +903,30 @@ Here we summarize the velocity field solutions in the three cases of interest fo
 
 In ellipsoidal coordinates,
 \begin{equation}
-u_i\left(\mathbf{x}\right)-U_i^\infty=\frac{1}{16\pi\mu}A_j^{(0)}\left[ \delta_{ij}G_{0}\left(\mathbf{x}\right)-x_j\partial_iG_{0}\left(\mathbf{x}\right)+\frac{a_j^2}{2}\partial_i\partial_jG_{1}\left(\mathbf{x}\right) \right].
+u_i\left(\mathbf{x}\right)-U_i^\infty=\frac{1}{16\pi\mu}A_j^{(0)}\left[ \delta_{ij}G_{0}\left(\mathbf{x}\right)-x_j\partial_iG_{0}\left(\mathbf{x}\right)+\frac{a_j^2}{2}\partial_i\partial_jG_{1}\left(\mathbf{x}\right) \right],
 \end{equation}
 \begin{equation}
-u_i\left(\mathbf{x}\right)-\epsilon_{ijk}\Omega^\infty_jx_k-E_{ij}^\infty x_j = \frac{3}{32\pi\mu}A_{jk}^{(1)}\partial_k\left[ \delta_{ij}G_{1}\left(\mathbf{x}\right)-x_j\partial_iG_{1}\left(\mathbf{x}\right)+\frac{a_j^2}{4}\partial_i\partial_jG_{2}\left(\mathbf{x}\right) \right]
+u_i\left(\mathbf{x}\right)-\epsilon_{ijk}\Omega^\infty_jx_k-E_{ij}^\infty x_j = \frac{3}{32\pi\mu}A_{jk}^{(1)}\partial_k\left[ \delta_{ij}G_{1}\left(\mathbf{x}\right)-x_j\partial_iG_{1}\left(\mathbf{x}\right)+\frac{a_j^2}{4}\partial_i\partial_jG_{2}\left(\mathbf{x}\right) \right].
+\end{equation}
+In terms of the integral over the Oseen tensor,
+\begin{equation}
+u_i\left(\mathbf{x}\right)-U_i^\infty=A_j^{(0)} \int_E dA'\ f_1\left(\mathbf{x}'\right)\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{2}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu},
 \end{equation}
 
-In terms of the Oseen tensor,
+\begin{equation}
+u_i\left(\mathbf{x}\right)-\epsilon_{ijk}\Omega^\infty_jx_k-E_{ij}^\infty x_j = -A_{jk}^{(1)}\partial_k \int_E dA'\ f_2\left(\mathbf{x}'\right)\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{6}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu}.
+\end{equation}
+And last but not least, in terms of our multipole series,
+\begin{equation}
+u_i\left(\mathbf{x}\right)-U_i^\infty=A_j^{(0)} \left(\frac{\sinh D}{D}\right) \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu},
+\end{equation}
+\begin{equation}
+u_i\left(\mathbf{x}\right)-\epsilon _{ijk}\Omega^\infty_jx_k-E_{ij}^\infty x_j = -A _{jk}^{(0)}\partial_k \left(\frac{\partial }{\partial D}\right)\left(\frac{\sinh D}{D}\right) \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu},
+\end{equation}
 
 
 
-
-
-
-
+u_i = \sum _{m=0}^{\lfloor\left(n-1\right)/2 \rfloor} \frac{L _{(n-2m-1)j}} \left(\frac{\sinh D}{D}\right)^{\left(n-2m\right)-1}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 
 
 
