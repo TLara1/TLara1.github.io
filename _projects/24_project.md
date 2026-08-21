@@ -644,7 +644,11 @@ This is excellent; we have a series solution for the velocity field provided tha
 Combining Eq. \ref{eq: Hn Gn relation} with Eq. \ref{u solution Gn rep},
 
 \begin{equation}
-u_i = \sum_{m=0}^{\lceil \left(n-1\right)/2 \rceil} C\left(n,m\right) \left( \left(-1\right)^{n-2m-1}2^{2\left(n-2m\right)-1}\frac{\left(n-2m-1\right)!\left(n-2m-1\right)!}{\left(2\left(n-2m-1\right)\right)!}\right) \frac{L _{(n-2m-1)j}}{8\pi\mu} \left[\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m-1} - \left(2\frac{\left(n-2m\right)}{2\left(n-2m\right)-1}\right)\frac{a_j^2}{2\left(n-2m\right)}\partial_i\partial_jH _{n-2m+1}\right].
+u_i = \sum_{m=0}^{\lceil \left(n-1\right)/2 \rceil} C\left(n,m\right) \left( \left(-1\right)^{n-2m-1}2^{2\left(n-2m\right)-1}\frac{\left(n-2m-1\right)!\left(n-2m-1\right)!}{\left(2\left(n-2m-1\right)\right)!}\right) \nonumber
+\end{equation}
+
+\begin{equation}
+\times \frac{L _{(n-2m-1)j}}{8\pi\mu} \left[\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m-1} - \left(2\frac{\left(n-2m\right)}{2\left(n-2m\right)-1}\right)\frac{a_j^2}{2\left(n-2m\right)}\partial_i\partial_jH _{n-2m+1}\right].
 \end{equation}
 
 Now, to relate to the Oseen tensor. First consider,
@@ -690,9 +694,13 @@ For the second term,
 \end{equation}
 Hence,
 \begin{equation}
-\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m-1} - \frac{a_j^2}{2\left(n-2m\right)+1}\partial_i\partial_jH _{n-2m} = \frac{1}{2\pi a_E b_E}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)-2}\partial^2 \right] \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
+\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m-1} - \frac{a_j^2}{2\left(n-2m\right)+1}\partial_i\partial_jH _{n-2m} \nonumber
 \end{equation}
-And we write the velocity field using the Oseen tensor,
+\begin{equation}
+= \frac{1}{2\pi a_E b_E}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)-2}\partial^2 \right] \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
+\end{equation}
+
+And we write down the velocity field using the Oseen tensor,
 
 \begin{equation}
 u_i = \sum_{m=0}^{\lceil n/2 \rceil} \frac{1}{2\pi a_E b_E} \frac{L _{(n-2m-1)j}}{8\pi\mu} \int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)-2}\partial^2 \right] \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
@@ -781,7 +789,7 @@ With the same procedure performed for our previous integral,
 \begin{equation}
 J _{ij}\left(\mathbf{x}\right)=\frac{1}{4\pi}\int_0^{2\pi}\int_0^{\pi} d\phi'\ d\theta'\ \sin\theta'\cos^2\theta' e^{-\tilde{D}\sin\theta'\sin\phi'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right).
 \end{equation}
-We perform the same rotation trick, taking $$y'\rightarrow z'$$, except now, we must also recall this requires transforming $$z'\righarrow y'$$ which modifies the term in front of the exponent,
+We perform the same rotation trick, taking $$y'\rightarrow z'$$, except now, we must also recall this requires transforming $$z'\rightarrow y'$$ which modifies the term in front of the exponent,
 \begin{equation}
 J _{ij}\left(\mathbf{x}\right)=\frac{1}{4\pi}\int_0^{2\pi}\int_0^{\pi} d\nu'\ d\eta'\ \cos^2\nu'\sin^3\eta'e^{-\tilde{D}\cos\eta'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right),
 \end{equation}
