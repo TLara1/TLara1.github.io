@@ -591,8 +591,11 @@ and for an arbitrary number of derivatives,
 
 In the term shown, $$\alpha\neq k_2,k_4,...,k_{2m}$$. The $$\left(\text{sym}\right)$$ denotes that at each $$m$$ we take all permutations of the indices $$k_i$$, and we have only shown one explicitly. The key idea is that at the ellipsoid surface, $$\lambda=0$$, the definite integrals become constants depending on the shape of the ellipse. So at the ellipsoid surface with $$\lambda=0$$, we find,
 
+\begin{equation}
+\partial_{k_1}\partial_{k_2}...\partial_{k_n}\partial_{k_n+1}G_n\vert _{\lambda=0} = -2n!x _{k_1}x _{k_2}...x _{k_n}\frac{1}{\Delta\left(0\right)\prod _{\alpha=1}^n \left(a _{k _\alpha}^2\right)}\frac{\partial\lambda}{\partial x _{k _{n+1}}}\vert _{\lambda=0} \nonumber
+\end{equation}
 \begin{equation}\label{eq: partial n+1 Gn}
-\partial_{k_1}\partial_{k_2}...\partial_{k_n}\partial_{k_n+1}G_n\vert _{\lambda=0} = -2n!x _{k_1}x _{k_2}...x _{k_n}\frac{1}{\Delta\left(0\right)\prod _{\alpha=1}^n \left(a _{k _\alpha}^2\right)}\frac{\partial\lambda}{\partial x _{k _{n+1}}}\vert _{\lambda=0} + \text{polynomial of degree } n-1.
++ \text{polynomial of degree } n-1.
 \end{equation}
 
 At the surface,
@@ -715,7 +718,7 @@ All that remains is determing the $$\mathbf{A}^{(n)}$$ coefficients to the $$\ma
 ### Far Field Series Form For Ellipsoidal Velocity Field
 Define the following integral,
 \begin{equation}\label{eq: Jn integral}
-J_n\left(\mathbf{x}\right) =   \int_E dA'\ f_n\left(\mathbf{x}'\right) \left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)-2}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu},
+J_n\left(\mathbf{x}\right) =   \int_E dA'\ f_n\left(\mathbf{x}'\right) \left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4n-2}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu},
 \end{equation}
 with,
 \begin{equation}
@@ -776,7 +779,7 @@ Now the fun part. The integral is over the surface of the unit sphere, and we no
 I _{ij}\left(\mathbf{x}\right)= \frac{1}{4\pi}\int_0^{2\pi}\int_0^{\pi} d\nu'\ d\eta'\ \sin\eta' e^{-\tilde{D}\cos\eta'} \mathcal{G} _{ij}\left(\mathbf{x}\right),
 \end{equation}
 where $$\nu'$$ and $$\eta'$$ are our rotated spherical coordinates. Now integrate over both variables to obtain,
-\begin{equation}
+\begin{equation}\label{eq: I sinh D verion}
 I _{ij}\left(\mathbf{x}\right)= \frac{\sinh\tilde{D}}{\tilde{D}}\mathcal{G} _{ij}\left(\mathbf{x}\right).
 \end{equation}
 This is interesting; we have replaced the integral over the ellipsoid with an analytic operator. 
@@ -801,18 +804,35 @@ With a change of variables and integration by parts,
 J _{ij}\left(\mathbf{x}\right)=\frac{1}{4}\int _{-1}^{1} du'\ \left(1-u^2\right) e^{-\tilde{D}u'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right) = -\frac{1}{2\tilde{D}}\int _{-1}^{1} du'\ u e^{-\tilde{D}u'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right),
 \end{equation}
 from which we identify,
+\begin{equation}\label{eq: J sinh D verion}
+J _{ij}\left(\mathbf{x}\right)= \frac{1}{2}\frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\int _{-1}^{1} du'\ e^{-\tilde{D}u'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right) = \frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\left(\frac{\sinh\tilde{D}}{\tilde{D}}\right)\partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right).
+\end{equation}
+With Eq. \ref{eq: I sinh D verion} and Eq. \ref{eq: J sinh D verion}, 
 \begin{equation}
-J _{ij}\left(\mathbf{x}\right)= \frac{1}{2}\frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\int _{-1}^{1} du'\ e^{-\tilde{D}u'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right) = \frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\frac{\sinh\tilde{D}}{\tilde{D}}\mathcal{G} _{ij}\left(\mathbf{x}\right).
+J_1\left(\mathbf{x}\right) =   \int_E dA'\ f_1\left(\mathbf{x}'\right) \left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{2}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu} = \left[\frac{\sinh\tilde{D}}{\tilde{D}} + \frac{c^2}{2}\frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\left(\frac{\sinh\tilde{D}}{\tilde{D}}\right)\partial^2\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
+\end{equation}
+Using the power series expansion of $$\sinh$$, the operator becomes,'
+\begin{equation}\label{eq: tilde D power series operator}
+\frac{\sinh\tilde{D}}{\tilde{D}} + \frac{c^2}{2}\frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\left(\frac{\sinh\tilde{D}}{\tilde{D}}\right)\partial^2 = \sum_n=0^\infty\left( \frac{1}{\left(2n+1\right)!}\tilde{D}^{2n}+c^2\frac{n}{\left(2n+1\right)!}\tilde{D}^{2\left(n-1\right)}\partial^2 \right).
 \end{equation}
 
+If we define the operator,
+\begin{equation}
+D^2=a^2\partial_x^2+b^2\partial_y^2+c^2\partial_z^2=\tilde{D}^2+c^2\partial^2,
+\end{equation}
+we may greatly simplify Eq. \ref{eq: tilde D power series operator}. Because the Oseen tensor is biharmonic, $$\partial^2\partial^2\mathbf{\mathcal{G}}=0$$, 
+\begin{equation}
+\tidle{D}^{2n}=\left(D^2-c^2\partial^2\right)^{n}=D^{2n}-c^2n\tilde{D}^{2\left(n-1\right)}\partial^2.
+\end{equation}
+From this, it is not difficult to obtain the rather elegant identity,
+\begin{equation}
+\frac{\sinh\tilde{D}}{\tilde{D}} + \frac{c^2}{2}\frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\left(\frac{\sinh\tilde{D}}{\tilde{D}}\right)\partial^2 = \frac{\sinh D}{D},
+\end{equation}
+\begin{equation}
+J_1\left(\mathbf{x}\right) = \left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
+\end{equation}
 
-
-
-
-
-
-strange no z? E int region
-
+The last remaining step is to relate $$J_n$$ and $$J _{n-1}$$, which we do with the same $$u$$ trick we used to derive the relations between the $$G_n$$s and $$H_n$$s.
 
 
 
