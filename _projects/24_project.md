@@ -900,6 +900,7 @@ We have finished our proof. After long last, we may write the velocity field in 
 u_i = \sum _{m=0}^{\lfloor\left(n-1\right)/2 \rfloor} \frac{L _{(n-2m-1)j}} \left(\frac{\partial }{\partial D}\right)^{n-2m-1} \left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 \end{equation}
 
+
 ### Summary of Basic Singularity Solutions for Ellipsoids
 Here we summarize the velocity field solutions in the three cases of interest for our ellipsoid, those being translation, rotation, and strain. The first of these is an order-zero boundary condition, so $$n=1$$, the latter two are first order, corresponding to $$n=2$$. 
 
@@ -919,16 +920,92 @@ u_i\left(\mathbf{x}\right)-U_i^\infty=A_j^{(0)} \int_E dA'\ f_1\left(\mathbf{x}'
 u_i\left(\mathbf{x}\right)-\epsilon_{ijk}\Omega^\infty_jx_k-E_{ij}^\infty x_j = -A_{jk}^{(1)}\partial_k \int_E dA'\ f_2\left(\mathbf{x}'\right)\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{6}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu}.
 \end{equation}
 And last but not least, in terms of our multipole series,
-\begin{equation}
-u_i\left(\mathbf{x}\right)-U_i^\infty=A_j^{(0)} \left(\frac{\sinh D}{D}\right) \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu},
+\begin{equation}\label{eq: velocity field translation ellipsoid multipole}
+u_i\left(\mathbf{x}\right)-U_i^\infty=A_j^{(0)} \left(\frac{\sinh D}{D}\right) \frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
 \begin{equation}
-u_i\left(\mathbf{x}\right)-\epsilon _{ijk}\Omega^\infty_jx_k-E_{ij}^\infty x_j = -3A _{jk}^{(0)}\partial_k \left(\frac{\partial }{\partial D}\right)\left(\frac{\sinh D}{D}\right) \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu}.
+u_i\left(\mathbf{x}\right)-\epsilon _{ijk}\Omega^\infty_jx_k-E_{ij}^\infty x_j = -3A _{jk}^{(0)}\partial_k \left(\frac{1}{D}\frac{\partial }{\partial D}\right)\left(\frac{\sinh D}{D}\right) \frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 \end{equation}
 
 
+With our representation of the velocity field, we now must identify the moments, relating the $$\mathb{A}^{(n)}$$ terms to the boundary conditions on the ellipsoid. This is done by evaluating the velocity field on the surface of the ellipsoid then reverse engineering the approaite moments to satisfy boundary conditions by inverting a linear system. This is difficult to do in the general case, we instead focus on the limit of a prolate spheroid in which the expressions reduce to much simpler forms. A prolate spheroid has $$a>b=c$$, becoming slender bodies in the limit of $$c/a\ll1$$. 
+
+For a prolate spheroid, the operator becomes,
+\begin{equation}
+D^2=a^2\partial_x^2+c^2\left(\partial_y^2+\partial_z^2\right)=a_E^2\partial_x^2+c^2\partial^2,
+\end{equation}
+if we define the operator,
+\begin{equation}
+D_x^2=a_E^2\partial_x^2,
+\end{equation}
+due to the biharmonicity of the Oseen tensor, we may replace,
+\begin{equation}
+D^2 = D_x^2 + k c^2 \partial^2.
+\end{equation}
+Also,
+\begin{equation}
+\frac{1}{D}frac{\partial }{\partial D} = \frac{1}{D_x}frac{\partial }{\partial D_x}.
+\end{equation}
+The expression in the multipole expansion can be simplified,
+\begin{equation}
+\left(\frac{1}{D}frac{\partial }{\partial D}\right)^n\left(\frac{\sinh D}{D}\right) \mathcal{G} _{ij}\left(\mathbf{x}\right) = \left(\frac{1}{D_x}frac{\partial }{\partial D_x}}\right)^n\sum_{k=0}^\infty\frac{1}{\left(2k+1\right)!}\left(D_x^{2k}+kc^2D_x^{2k-2}\partial^2\right)\mathcal{G} _{ij}\left(\mathbf{x}\right)\nonumber
+\end{equation}
+\begin{equation}
+= \left(\frac{1}{D_x}frac{\partial }{\partial D_x}}\right)^n\left(\frac{\sinh D_x}{D_x}\right)\mathcal{G} _{ij}\left(\mathbf{x}\right) + \frac{c^2}{2}\frac{1}{D_x}\left(\frac{1}{D_x}frac{\partial }{\partial D_x}}\right)^{n-1}\left(\frac{\sinh D_x}{D_x}\right)\partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right).
+\end{equation}
+Employing $$D_x$$ instead of $$D$$ is crucial since we may recast $$D_x$$ as a translation operator to simplify evaluations of the multipole moments at the spheroid boundary.
 
 
+## Determining Multipole Coefficients for the Prolate Spheroid
+
+
+### Translation
+Consider the boundary condition,
+\begin{equation}
+u_i\left(r=\text{ellipsoid surface}\right)=U^p_i.
+\end{equation}
+We evaluate the velocity field in the multipole representation, Eq. \ref{eq: velocity field translation ellipsoid multipole} to determine the relationship between $$A_j^{(0)}$$ and $$U^p_i$$. 
+
+First, note,
+\begin{equation}
+\left(\frac{\sinh D_x}{D_x}\right) \mathcal{G} _{ij}\left(\mathbf{x}\right) = \int_0^1 dt\ \cosh\left(tD_x\right) \mathcal{G} _{ij}\left(\mathbf{x}\right),
+\end{equation}
+\begin{equation}
+= \frac{1}{2}\int_0^1 dt\ \left[e^{tD_x}+e^{-tD_x}\right]\mathcal{G} _{ij}\left(\mathbf{x}\right) = \frac{1}{2}\int_0^1 dt\ \left[ \mathcal{G} _{ij}\left(\mathbf{x}+ta_E\hat{\mathbf{e}}_x\right) + \mathcal{G} _{ij}\left(\mathbf{x}-ta_E\hat{\mathbf{e}}_x\right) \right].
+\end{equation}
+We can perform the integrals over $$t$$ fairly straightforwardly, although they are somewhat cumbersome,
+\begin{equation}
+\int_0^1dt\ \frac{1}{\sqrt{\left(x\pm a_Et\right)^2+\rho^2}}=\pm \frac{1}{a_E}\log{\left(\rho\sqrt{\left(x\pm a_Et\right)^2}+\rho\left(x\pm a_E\right)\right)\vert_{t=0}^{t=1},
+\end{equation}
+\begin{equation}
+\int_0^1 dt\ \cosh\left(tD\right) \frac{1}{r} = \frac{1}{2a_E}\log\left(\frac{\sqrt{\left(x+a_E\right)^2+\rho^2}+ \left(x+a_E\right)}{\sqrt{\left(x-a_E\right)^2+\rho^2}+ \left(x-a_E\right)}\right).
+\end{equation}
+We have defined $$\rho^2=y^2+z^2$$. We may evaluate this anywhere on the spheroid boundary, it is convenient to pick $$x=a$$, $$\rho=0$$, 
+\begin{equation}
+\left(\frac{\sinh D_x}{D_x}\right) \frac{1}{r}\vert_\left(r=\text{ellipsoid surface}\right) = \frac{1}{2ae}\log\left(\frac{1+e}{1-e}\right),
+\end{equation}
+where $$e=a_E/a$$ is the spheroid eccentricity. 
+
+For the second part of the Oseen tensor,
+\begin{equation}
+\int_0^1dt\ \frac{1}{\left(\left(x\pm a_Et\right)^2+\rho^2\right)^{3/2}} = \pm \frac{x\pm a_E}{a_E\rho^2\sqrt{\left(x\pm a_E\right)^2+\rho^2}}\vert_{t=0}^{t=1},
+\end{equation}
+\begin{equation}
+\int_0^1 dt\ \cosh\left(tD\right) \frac{1}{r^3} = \frac{1}{2a_E\rho^2}\left(\frac{x+ a_E}{\sqrt{\left(x+ a_E\right)^2+\rho^2}} - \frac{x- a_E}{\sqrt{\left(x- a_E\right)^2+\rho^2}}\right).
+\end{equation}
+\begin{equation}
+\int_0^1dt\ \frac{\left(x\pm a_Et\right)}{\left(\left(x\pm a_Et\right)^2+\rho^2\right)^{3/2}} = \mp\frac{1}{a_E\sqrt{\left(x\pm a_E\right)^2+\rho^2}}\vert_{t=0}^{t=1},
+\end{equation}
+\begin{equation}
+\int_0^1 dt\ \cosh\left(tD\right) \frac{x}{r^3} = \frac{1}{2a_E}\left(\frac{1}{\sqrt{\left(x- a_E\right)^2+\rho^2}} - \frac{1}{\sqrt{\left(x+ a_E\right)^2+\rho^2}}\right).
+\end{equation}
+\begin{equation}
+\int_0^1dt\ \frac{\left(x\pm a_Et\right)^2}{\left(\left(x\pm a_Et\right)^2+\rho^2\right)^{3/2}} = \pm \frac{1}{a_E}\left(
+log\left(\rho\sqrt{\left(x\pm a_Et\right)^2+\rho^2}+\rho\left(x\pm a_Et\right)\right) - \frac{x\pm a_E t}{\sqrt{\left(x\pm a_Et\right)^2+\rho^2}}\right),
+\end{equation}
+\begin{equation}
+\int_0^1 dt\ \cosh\left(tD\right) \frac{x^2}{r^3} = \frac{1}{2a_E}\left(\log\left(\frac{\sqrt{\left(x+a_E\right)^2+\rho^2}+ \left(x+a_E\right)}{\sqrt{\left(x-a_E\right)^2+\rho^2}+ \left(x-a_E\right)}\right) - \frac{x+a_E}{\sqrt{\left(x+a_E\right)^2+\rho^2}} + \frac{x-a_E}{\sqrt{\left(x-a_E\right)^2+\rho^2}}\right)
+\end{equation}
 
 
 
