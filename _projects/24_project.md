@@ -969,15 +969,19 @@ We evaluate the velocity field in the multipole representation, Eq. \ref{eq: vel
 
 First, note,
 \begin{equation}
-\left(\frac{\sinh D_x}{D_x}\right) \mathcal{G} _{ij}\left(\mathbf{x}\right) = \int_0^1 dt\ \cosh\left(tD_x\right) \mathcal{G} _{ij}\left(\mathbf{x}\right),
+\left(\frac{\sinh D_x}{D_x}\right) \mathcal{G} _{ij}\left(\mathbf{x}\right) = \int _0^1 dt\ \cosh\left(tD _x\right) \mathcal{G} _{ij}\left(\mathbf{x}\right),
 \end{equation}
+
 \begin{equation}
-= \frac{1}{2}\int_0^1 dt\ \left[e^{tD_x}+e^{-tD_x}\right]\mathcal{G} _{ij}\left(\mathbf{x}\right) = \frac{1}{2}\int_0^1 dt\ \left[ \mathcal{G} _{ij}\left(\mathbf{x}+ta_E\hat{\mathbf{e}}_x\right) + \mathcal{G} _{ij}\left(\mathbf{x}-ta_E\hat{\mathbf{e}}_x\right) \right].
+= \frac{1}{2}\int_0^1 dt\ \left[e^{tD _x}+e^{-tD _x}\right]\mathcal{G} _{ij}\left(\mathbf{x}\right) = \frac{1}{2}\int _0^1 dt\ \left[ \mathcal{G} _{ij}\left(\mathbf{x}+ta_E\hat{\mathbf{e}}_x\right) + \mathcal{G} _{ij}\left(\mathbf{x}-ta_E\hat{\mathbf{e}}_x\right) \right].
 \end{equation}
-We can perform the integrals over $$t$$ fairly straightforwardly, although they are somewhat cumbersome,
+
+We can perform the integrals over $$t$$ fairly straightforwardly, although they are somewhat cumbersome, 
+
 \begin{equation}
-\int_0^1dt\ \frac{1}{\sqrt{\left(x\pm a_Et\right)^2+\rho^2}}=\pm \frac{1}{a_E}\log{\left(\rho\sqrt{\left(x\pm a_Et\right)^2}+\rho\left(x\pm a_E\right)\right)\vert_{t=0}^{t=1},
+\int_0^1dt\ \frac{1}{\sqrt{\left(x\pm a_Et\right)^2+\rho^2}}=\pm \frac{1}{a _E}\log{\left(\rho\sqrt{\left(x\pm a _Et\right)^2}+\rho\left(x\pm a_E\right)\right)\vert _{t=0}^{t=1},
 \end{equation}
+
 \begin{equation}
 \int_0^1 dt\ \cosh\left(tD\right) \frac{1}{r} = \frac{1}{2a_E}\log\left(\frac{\sqrt{\left(x+a_E\right)^2+\rho^2}+ \left(x+a_E\right)}{\sqrt{\left(x-a_E\right)^2+\rho^2}+ \left(x-a_E\right)}\right).
 \end{equation}
