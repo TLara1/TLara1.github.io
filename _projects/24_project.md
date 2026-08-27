@@ -979,7 +979,7 @@ First, note,
 We can perform the integrals over $$t$$ fairly straightforwardly, although they are somewhat cumbersome, 
 
 \begin{equation}
-\int_0^1dt\ \frac{1}{\sqrt{\left(x\pm a_Et\right)^2+\rho^2}}=\pm \frac{1}{a _E}\log{\left(\rho\sqrt{\left(x\pm a _Et\right)^2}+\rho\left(x\pm a_E\right)\right)\vert _{t=0}^{t=1},
+\int_0^1dt\ \frac{1}{\sqrt{\left(x\pm a_Et\right)^2+\rho^2}}=\pm \frac{1}{a _E}\log{\left(\sqrt{\left(x\pm a _Et\right)^2+\rho^2}+\left(x\pm a_E\right)\right)\vert _{t=0}^{t=1},
 \end{equation}
 
 \begin{equation}
@@ -1006,12 +1006,12 @@ For the second part of the Oseen tensor,
 \end{equation}
 \begin{equation}
 \int_0^1dt\ \frac{\left(x\pm a_Et\right)^2}{\left(\left(x\pm a_Et\right)^2+\rho^2\right)^{3/2}} = \pm \frac{1}{a_E}\left(
-log\left(\rho\sqrt{\left(x\pm a_Et\right)^2+\rho^2}+\rho\left(x\pm a_Et\right)\right) - \frac{x\pm a_E t}{\sqrt{\left(x\pm a_Et\right)^2+\rho^2}}\right),
+log\left(\sqrt{\left(x\pm a_Et\right)^2+\rho^2}+\left(x\pm a_Et\right)\right) - \frac{x\pm a_E t}{\sqrt{\left(x\pm a_Et\right)^2+\rho^2}}\right),
 \end{equation}
 \begin{equation}
-\int_0^1 dt\ \cosh\left(tD\right) \frac{x^2}{r^3} = \frac{1}{2a_E}\left(\log\left(\frac{\sqrt{\left(x+a_E\right)^2+\rho^2}+ \left(x+a_E\right)}{\sqrt{\left(x-a_E\right)^2+\rho^2}+ \left(x-a_E\right)}\right) - \frac{x+a_E}{\sqrt{\left(x+a_E\right)^2+\rho^2}} + \frac{x-a_E}{\sqrt{\left(x-a_E\right)^2+\rho^2}}\right)
+\int_0^1 dt\ \cosh\left(tD\right) \frac{x^2}{r^3} = \frac{1}{2a_E}\left(\log\left(\frac{\sqrt{\left(x+a_E\right)^2+\rho^2}+ \left(x+a_E\right)}{\sqrt{\left(x-a_E\right)^2+\rho^2}+ \left(x-a_E\right)}\right) - \frac{x+a_E}{\sqrt{\left(x+a_E\right)^2+\rho^2}} + \frac{x-a_E}{\sqrt{\left(x-a_E\right)^2+\rho^2}}\right).
 \end{equation}
-
+We also need to evaluate terms proportional to $$r^{-5}$$ since these appear in the second derivative of $$\mathcal{G}_{ij}$$.
 
 
 
