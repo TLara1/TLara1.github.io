@@ -822,7 +822,7 @@ J _{ij}\left(\mathbf{x}\right)= \frac{1}{2}\frac{1}{\tilde{D}}\frac{\partial}{\p
 \end{equation}
 With Eq. \ref{eq: I sinh D verion} and Eq. \ref{eq: J sinh D verion}, 
 \begin{equation}
-J _{1 ij}\left(\mathbf{x}\right) =   \int_E dA'\ f_1\left(\mathbf{x}'\right) \left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{2}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu} = \left[\frac{\sinh\tilde{D}}{\tilde{D}} + \frac{c^2}{2}\frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\left(\frac{\sinh\tilde{D}}{\tilde{D}}\right)\partial^2\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
+J _{1\ ij}\left(\mathbf{x}\right) =   \int_E dA'\ f_1\left(\mathbf{x}'\right) \left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{2}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu} = \left[\frac{\sinh\tilde{D}}{\tilde{D}} + \frac{c^2}{2}\frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\left(\frac{\sinh\tilde{D}}{\tilde{D}}\right)\partial^2\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 \end{equation}
 Using the power series expansion of $$\sinh$$, the operator becomes,
 \begin{equation}\label{eq: tilde D power series operator}
@@ -897,8 +897,9 @@ J _{\left(n+1\right)\ ij}\left(\mathbf{x}\right) = \left(\prod _{m=1} ^{\lfloor 
 
 We have finished our proof. After long last, we may write the velocity field in terms of only the derivatives of the Oseen tensor, without any integrals,
 \begin{equation}
-u_i = \sum _{m=0}^{\lfloor\left(n-1\right)/2 \rfloor} \frac{L _{(n-2m-1)j}} \left(\frac{\partial }{\partial D}\right)^{n-2m-1} \left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right) }{8\pi\mu}.
+u_i = \sum _{m=0}^{\lfloor\left( n-1 \right)/2 \rfloor} L _{(n-2m-1)j} \left(\frac{\partial }{\partial D}\right)^{n-2m-1} \left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x} \right) }{8\pi\mu}.
 \end{equation}
+
 
 
 ### Summary of Basic Singularity Solutions for Ellipsoids
@@ -949,10 +950,11 @@ Also,
 \end{equation}
 The expression in the multipole expansion can be simplified,
 \begin{equation}
-\left(\frac{1}{D}\frac{\partial }{\partial D}\right)^n\left(\frac{\sinh D}{D}\right) \mathcal{G} _{ij}\left(\mathbf{x}\right) = \left(\frac{1}{D _x}frac{\partial }{\partial D_x}}\right)^n\sum _{k=0}^\infty\frac{1}{\left(2k+1\right)!}\left(D _x^{2k}+kc^2D _x^{2k-2}\partial^2\right)\mathcal{G} _{ij}\left(\mathbf{x}\right)\nonumber
+\left(\frac{1}{D}\frac{\partial }{\partial D}\right)^n\left(\frac{\sinh D}{D}\right) \mathcal{G} _{ij}\left(\mathbf{x}\right) = \left( \frac{1}{D _x}frac{\partial }{\partial D_x} \right)^n\sum _{k=0}^\infty\frac{1}{\left(2k+1\right)!}\left(D _x^{2k}+kc^2D _x^{2k-2}\partial^2\right)\mathcal{G} _{ij}\left(\mathbf{x}\right)\nonumber
 \end{equation}
+
 \begin{equation}
-= \left(\frac{1}{D_x}frac{\partial }{\partial D _x}}\right)^n\left(\frac{\sinh D_x}{D_x}\right)\mathcal{G} _{ij}\left(\mathbf{x}\right) + \frac{c^2}{2}\frac{1}{D _x}\left(\frac{1}{D _x}frac{\partial }{\partial D_x}}\right)^{n-1}\left(\frac{\sinh D _x}{D _x}\right)\partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right).
+= \left(\frac{1}{D_x}frac{\partial }{\partial D _x} \right)^n\left(\frac{\sinh D_x}{D_x}\right)\mathcal{G} _{ij}\left(\mathbf{x}\right) + \frac{c^2}{2}\frac{1}{D _x}\left( \frac{1}{D _x}frac{\partial }{\partial D_x} \right)^{n-1}\left(\frac{\sinh D _x}{D _x}\right)\partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right).
 \end{equation}
 Employing $$D_x$$ instead of $$D$$ is crucial since we may recast $$D_x$$ as a translation operator to simplify evaluations of the multipole moments at the spheroid boundary.
 
@@ -1006,14 +1008,18 @@ For the second part of the Oseen tensor,
 \end{equation}
 \begin{equation}
 \int_0^1dt\ \frac{\left(x\pm a_Et\right)^2}{\left(\left(x\pm a_Et\right)^2+\rho^2\right)^{3/2}} = \pm \frac{1}{a_E}\left(
-log\left(\sqrt{\left(x\pm a_Et\right)^2+\rho^2}+\left(x\pm a_Et\right)\right) - \frac{x\pm a_E t}{\sqrt{\left(x\pm a_Et\right)^2+\rho^2}}\right),
+\log\left(\sqrt{\left(x\pm a_Et\right)^2+\rho^2}+\left(x\pm a_Et\right)\right) - \frac{x\pm a_E t}{\sqrt{\left(x\pm a_Et\right)^2+\rho^2}}\right)\vert_{t=0}^{t=1},
 \end{equation}
 \begin{equation}
 \int_0^1 dt\ \cosh\left(tD\right) \frac{x^2}{r^3} = \frac{1}{2a_E}\left(\log\left(\frac{\sqrt{\left(x+a_E\right)^2+\rho^2}+ \left(x+a_E\right)}{\sqrt{\left(x-a_E\right)^2+\rho^2}+ \left(x-a_E\right)}\right) - \frac{x+a_E}{\sqrt{\left(x+a_E\right)^2+\rho^2}} + \frac{x-a_E}{\sqrt{\left(x-a_E\right)^2+\rho^2}}\right).
 \end{equation}
-We also need to evaluate terms proportional to $$r^{-5}$$ since these appear in the second derivative of $$\mathcal{G}_{ij}$$.
 
+In summary, at the ellipsoid surface we obtain,
+\begin{equation}
+\left(\frac{\sinh D_x}{D_x}\right) \mathcal{G} _{ij}\left(\mathbf{x}=\text{ellipsoid surface\right) = \delta _{ij}\frac{1}{2ae}\log\left(\frac{1+e}{1-e}\right) + d _id _j\left(\frac{1}{2ae}\log\left(\frac{1+e}{1-e}\right) - \right)
 
+\int _0^1 dt\ \cosh\left(tD _x\right) \mathcal{G} _{ij}\left(\mathbf{x}\right),
+\end{equation}
 
 
 
