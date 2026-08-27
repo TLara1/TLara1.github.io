@@ -917,18 +917,19 @@ u_i\left(\mathbf{x}\right)-U_i^\infty=A_j^{(0)} \int_E dA'\ f_1\left(\mathbf{x}'
 \end{equation}
 
 \begin{equation}
-u_i\left(\mathbf{x}\right)-\epsilon_{ijk}\Omega^\infty_jx_k-E_{ij}^\infty x_j = -A_{jk}^{(1)}\partial_k \int_E dA'\ f_2\left(\mathbf{x}'\right)\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{6}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu}.
+u_i\left(\mathbf{x}\right)-\epsilon _{ijk}\Omega^\infty _jx _k-E _{ij}^\infty x _j = -A_{jk}^{(1)}\partial _k \int _E dA'\ f _2\left(\mathbf{x}'\right)\left[1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{6}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu}.
 \end{equation}
+
 And last but not least, in terms of our multipole series,
 \begin{equation}\label{eq: velocity field translation ellipsoid multipole}
 u_i\left(\mathbf{x}\right)-U_i^\infty=A_j^{(0)} \left(\frac{\sinh D}{D}\right) \frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
 \begin{equation}
-u_i\left(\mathbf{x}\right)-\epsilon _{ijk}\Omega^\infty_jx_k-E_{ij}^\infty x_j = -3A _{jk}^{(0)}\partial_k \left(\frac{1}{D}\frac{\partial }{\partial D}\right)\left(\frac{\sinh D}{D}\right) \frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
+u _i\left(\mathbf{x}\right)-\epsilon _{ijk}\Omega^\infty_jx_k-E_{ij}^\infty x _j = -3A _{jk}^{(0)}\partial _k \left(\frac{1}{D}\frac{\partial }{\partial D}\right)\left(\frac{\sinh D}{D}\right) \frac{\mathcal{G}  _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 \end{equation}
 
 
-With our representation of the velocity field, we now must identify the moments, relating the $$\mathb{A}^{(n)}$$ terms to the boundary conditions on the ellipsoid. This is done by evaluating the velocity field on the surface of the ellipsoid then reverse engineering the approaite moments to satisfy boundary conditions by inverting a linear system. This is difficult to do in the general case, we instead focus on the limit of a prolate spheroid in which the expressions reduce to much simpler forms. A prolate spheroid has $$a>b=c$$, becoming slender bodies in the limit of $$c/a\ll1$$. 
+With our representation of the velocity field, we now must identify the moments, relating the $$\mathbf{A}^{(n)}$$ terms to the boundary conditions on the ellipsoid. This is done by evaluating the velocity field on the surface of the ellipsoid, then reverse-engineering the appropriate moments to satisfy the boundary conditions by inverting a linear system. This is difficult to do in the general case; instead, we focus on the limit of a prolate spheroid, where the expressions reduce to much simpler forms. A prolate spheroid has $$a>b=c$$, becoming slender bodies in the limit of $$c/a\ll1$$. 
 
 For a prolate spheroid, the operator becomes,
 \begin{equation}
@@ -944,14 +945,14 @@ D^2 = D_x^2 + k c^2 \partial^2.
 \end{equation}
 Also,
 \begin{equation}
-\frac{1}{D}frac{\partial }{\partial D} = \frac{1}{D_x}frac{\partial }{\partial D_x}.
+\frac{1}{D}\frac{\partial }{\partial D} = \frac{1}{D_x}frac{\partial }{\partial D_x}.
 \end{equation}
 The expression in the multipole expansion can be simplified,
 \begin{equation}
-\left(\frac{1}{D}frac{\partial }{\partial D}\right)^n\left(\frac{\sinh D}{D}\right) \mathcal{G} _{ij}\left(\mathbf{x}\right) = \left(\frac{1}{D_x}frac{\partial }{\partial D_x}}\right)^n\sum_{k=0}^\infty\frac{1}{\left(2k+1\right)!}\left(D_x^{2k}+kc^2D_x^{2k-2}\partial^2\right)\mathcal{G} _{ij}\left(\mathbf{x}\right)\nonumber
+\left(\frac{1}{D}\frac{\partial }{\partial D}\right)^n\left(\frac{\sinh D}{D}\right) \mathcal{G} _{ij}\left(\mathbf{x}\right) = \left(\frac{1}{D _x}frac{\partial }{\partial D_x}}\right)^n\sum _{k=0}^\infty\frac{1}{\left(2k+1\right)!}\left(D _x^{2k}+kc^2D _x^{2k-2}\partial^2\right)\mathcal{G} _{ij}\left(\mathbf{x}\right)\nonumber
 \end{equation}
 \begin{equation}
-= \left(\frac{1}{D_x}frac{\partial }{\partial D_x}}\right)^n\left(\frac{\sinh D_x}{D_x}\right)\mathcal{G} _{ij}\left(\mathbf{x}\right) + \frac{c^2}{2}\frac{1}{D_x}\left(\frac{1}{D_x}frac{\partial }{\partial D_x}}\right)^{n-1}\left(\frac{\sinh D_x}{D_x}\right)\partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right).
+= \left(\frac{1}{D_x}frac{\partial }{\partial D _x}}\right)^n\left(\frac{\sinh D_x}{D_x}\right)\mathcal{G} _{ij}\left(\mathbf{x}\right) + \frac{c^2}{2}\frac{1}{D _x}\left(\frac{1}{D _x}frac{\partial }{\partial D_x}}\right)^{n-1}\left(\frac{\sinh D _x}{D _x}\right)\partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right).
 \end{equation}
 Employing $$D_x$$ instead of $$D$$ is crucial since we may recast $$D_x$$ as a translation operator to simplify evaluations of the multipole moments at the spheroid boundary.
 
