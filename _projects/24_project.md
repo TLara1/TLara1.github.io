@@ -926,13 +926,14 @@ u_i\left(\mathbf{x}\right)-U_i^\infty=A_j^{(0)} \int_E dA'\ f_1\left(\mathbf{x}'
 \end{equation}
 
 \begin{equation}
-u_i\left(\mathbf{x}\right)-\epsilon _{ijk}\Omega^\infty _jx _k-E _{ij}^\infty x _j = -A_{jk}^{(1)}\partial _k \int _E dA'\ f _2\left(\mathbf{x}'\right)\left[1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{6}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu}.
+u_i\left(\mathbf{x}\right)-\epsilon _{ijk}\Omega^\infty _j x _k-E _{ij}^\infty x _j = -A _{jk}^{(1)}\partial _k \int _E dA'\ f _2\left(\mathbf{x}'\right)\left[1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{6}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu}.
 \end{equation}
 
 And last but not least, in terms of our multipole series,
 \begin{equation}\label{eq: velocity field translation ellipsoid multipole}
-u_i\left(\mathbf{x}\right)-U_i^\infty=A_j^{(0)} \left(\frac{\sinh D}{D}\right) \frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+u _i\left(\mathbf{x}\right)-U_i^\infty=A _j^{(0)} \left( \frac{\sinh D}{D}\right) \frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
+
 \begin{equation}
 u _i\left(\mathbf{x}\right)-\epsilon _{ijk}\Omega^\infty_jx_k-E_{ij}^\infty x _j = -3A _{jk}^{(0)}\partial _k \left(\frac{1}{D}\frac{\partial }{\partial D}\right)\left(\frac{\sinh D}{D}\right) \frac{\mathcal{G}  _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 \end{equation}
@@ -954,15 +955,15 @@ D^2 = D_x^2 + k c^2 \partial^2.
 \end{equation}
 Also,
 \begin{equation}
-\frac{1}{D}\frac{\partial }{\partial D} = \frac{1}{D_x}frac{\partial }{\partial D_x}.
+\frac{1}{D}\frac{\partial }{\partial D} = \frac{1}{D_x}\frac{\partial }{\partial D_x}.
 \end{equation}
 The expression in the multipole expansion can be simplified,
 \begin{equation}
-\left(\frac{1}{D}\frac{\partial }{\partial D}\right)^n\left(\frac{\sinh D}{D}\right) \mathcal{G} _{ij}\left(\mathbf{x}\right) = \left( \frac{1}{D _x}frac{\partial }{\partial D_x} \right)^n\sum _{k=0}^\infty\frac{1}{\left(2k+1\right)!}\left(D _x^{2k}+kc^2D _x^{2k-2}\partial^2\right)\mathcal{G} _{ij}\left(\mathbf{x}\right)\nonumber
+\left(\frac{1}{D}\frac{\partial }{\partial D}\right)^n\left(\frac{\sinh D}{D}\right) \mathcal{G} _{ij}\left(\mathbf{x}\right) = \left( \frac{1}{D _x}\frac{\partial }{\partial D_x} \right)^n\sum _{k=0}^\infty\frac{1}{\left(2k+1\right)!}\left(D _x^{2k}+kc^2D _x^{2k-2}\partial^2\right)\mathcal{G} _{ij}\left(\mathbf{x}\right)\nonumber
 \end{equation}
 
 \begin{equation}
-= \left(\frac{1}{D_x}frac{\partial }{\partial D _x} \right)^n\left(\frac{\sinh D_x}{D_x}\right)\mathcal{G} _{ij}\left(\mathbf{x}\right) + \frac{c^2}{2}\frac{1}{D _x}\left( \frac{1}{D _x}frac{\partial }{\partial D_x} \right)^{n-1}\left(\frac{\sinh D _x}{D _x}\right)\partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right).
+= \left(\frac{1}{D_x}frac{\partial }{\partial D _x} \right)^n\left(\frac{\sinh D_x}{D_x}\right)\mathcal{G} _{ij}\left(\mathbf{x}\right) + \frac{c^2}{2}\frac{1}{D _x}\left( \frac{1}{D _x}\frac{\partial }{\partial D_x} \right)^{n-1}\left(\frac{\sinh D _x}{D _x}\right)\partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right).
 \end{equation}
 Employing $$D_x$$ instead of $$D$$ is crucial since we may recast $$D_x$$ as a translation operator to simplify evaluations of the multipole moments at the spheroid boundary.
 
@@ -989,7 +990,7 @@ First, note,
 We can perform the integrals over $$t$$ fairly straightforwardly, although they are somewhat cumbersome, 
 
 \begin{equation}
-\int_0^1dt\ \frac{1}{\sqrt{\left(x\pm a_Et\right)^2+\rho^2}}=\pm \frac{1}{a _E}\log{\left(\sqrt{\left(x\pm a _Et\right)^2+\rho^2}+\left(x\pm a_E\right)\right)\vert _{t=0}^{t=1},
+\int_0^1 dt\ \frac{1}{\sqrt{\left(x\pm a_Et\right)^2+\rho^2}} =\pm \frac{1}{a _E}\log\left(\sqrt{\left(x\pm a _Et\right)^2+\rho^2}+\left(x\pm a_E\right)\right)\vert _{t=0}^{t=1},
 \end{equation}
 
 \begin{equation}
