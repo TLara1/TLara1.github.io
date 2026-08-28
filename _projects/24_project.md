@@ -1025,12 +1025,13 @@ For the second part of the Oseen tensor,
 
 In summary, at the ellipsoid surface we obtain,
 \begin{equation}
-\left(\frac{\sinh D_x}{D_x}\right) \mathcal{G} _{ij}\left(\mathbf{x}=\text{ellipsoid surface\right) = \delta _{ij}\frac{1}{2ae}\log\left(\frac{1+e}{1-e}\right) + d _id _j\left(\frac{1}{2ae}\log\left(\frac{1+e}{1-e}\right) - \right)
-
-\int _0^1 dt\ \cosh\left(tD _x\right) \mathcal{G} _{ij}\left(\mathbf{x}\right),
+\left(\frac{\sinh D_x}{D_x}\right) \mathcal{G} _{ij}\left(\mathbf{x}=\text{ellipsoid surface}\right) = \frac{1}{2ae}\log\left(\frac{1+e}{1-e}\right)\left(\delta _{ij} + d _id _j\right),
 \end{equation}
+where $d_i$ is the orientation direction unit vector of the spheroid. Matching our boudnary condition we see,
 
-
+\begin{equation}
+A_j^{(0)}\frac{1}{8\pi\mu ae}\log\left(\frac{1+e}{1-e}\right)\left(\delta _{ij} + d _id _j\right)=U_i^P-U_i^\infty
+\end{equation}
 
 
 
