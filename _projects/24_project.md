@@ -868,14 +868,15 @@ J _{\left(n+1\right)\ ij}\left(\mathbf{x};1\right) = \left(2n+1\right) \int _0^1
 \end{equation}
 We once again employ the series expansion of $$\sinh$$ and $$D\left(u\right)=uD$$,
 \begin{equation}
-J _{2\ ij}\left(\mathbf{x};u\right) = 3\int_0^1 du\ u^2 \sum _{k=0}^\infty \left(\frac{1}{\left(2k+1\right)!} u^{2k}D^{2k}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} = 3\sum _{k=0}^\infty \left(\frac{2k+2}{\left(2k+3\right)!} D^{2k}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+J _{2\ ij}\left(\mathbf{x};1\right) = 3\int_0^1 du\ u^2 \sum _{k=0}^\infty \left(\frac{1}{\left(2k+1\right)!} u^{2k}D^{2k}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} = 3\sum _{k=0}^\infty \left(\frac{2k+2}{\left(2k+3\right)!} D^{2k}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
 \begin{equation}
 = 3\sum _{k=1}^\infty \left(\frac{2k}{\left(2k+1\right)!} D^{2k-2}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
 \begin{equation}
-= 3\left(\frac{1}{D}\frac{\partial}{D}\right)\left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
+= 3\left(\frac{1}{D}\frac{\partial}{\partial D}\right)\left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 \end{equation}
+
 Having demonstrated the base case, we verify,
 \begin{equation}
 J _{n\ ij}\left(\mathbf{x}\right) = \left(\prod _{m=1} ^{n} \left(2m-1\right)\right)
@@ -887,25 +888,24 @@ J _{\left(n+1\right)\ ij}\left(\mathbf{x}\right) = \left(\prod _{m=1} ^{n} \left
 \end{equation}
 
 \begin{equation}
-= \left(\prod _{m=1} ^n \left(2m-1\right)\right) (2n+1) \int_0^1 du\ \sum _{k=n-1}^\infty u^{2k+2n} \frac{\left(2k\right)\left(2k-2\right)...\left(2k-2\left(n-2\right) \right) }{\left(2k+1\right)!} D^{2k-2\left(n-1\right)}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+= \left(\prod _{m=1} ^n \left(2m-1\right)\right) (2n+1) \int_0^1 du\ \sum _{k=n-1}^\infty u^{2n+2k-2\left(n-1\right)} \frac{\left(2k\right)\left(2k-2\right)...\left(2k-2\left(n-2\right) \right) }{\left(2k+1\right)!} D^{2k-2\left(n-1\right)}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
 
 \begin{equation}
-= \left(\prod _{m=1} ^n \left(2m-1\right)\right) (2n+1) \sum _{k=n-1}^\infty \frac{\left(2k\right)\left(2k-2\right)...\left(2k-2\left(n-2\right) \right) }{\left(2k+2n+1\right)\left(2k+1\right)!} D^{2k-2\left(n-1\right)}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+= \left(\prod _{m=1} ^n \left(2m-1\right)\right) (2n+1) \sum _{k=n-1}^\infty \frac{\left(2k\right)\left(2k-2\right)...\left(2k-2\left(n-2\right) \right) }{\left(2k+3\right)\left(2k+1\right)!} D^{2k-2\left(n-1\right)}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
 
 \begin{equation}
-= \left(\prod _{m=1} ^n \left(2m-1\right)\right) (2n+1) \sum _{k=n}^\infty \frac{\left(2k-2\right)\left(2k-4\right)...\left(2k-2\left(n-1\right) \right) }{\left(2k+2n-1\right)\left(2k-1\right)!} D^{2k-2n}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+= \left(\prod _{m=1} ^{n+1} \left(2m-1\right)\right) \sum _{k=n}^\infty \frac{2k\left(2k-2\right)\left(2k-4\right)...\left(2k-2\left(n-1\right) \right) }{\left(2k+1\right)!} D^{2k-2n}\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
 
-
 \begin{equation}
-= \left(\prod _{m=1} ^{\lfloor n+1\rfloor} \left(2m-1\right)\right) \left(\frac{1}{D}\frac{\partial}{D}\right)^n\left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
+= \left(\prod _{m=1} ^{n+1} \left(2m-1\right)\right) \left(\frac{1}{D}\frac{\partial}{\partial D}\right)^n\left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 \end{equation}
 
 We have finished our proof. After long last, we may write the velocity field in terms of only the derivatives of the Oseen tensor, without any integrals,
 \begin{equation}
-u_i = \sum _{m=0}^{\lfloor\left( n-1 \right)/2 \rfloor} L _{(n-2m-1)j} \left(\frac{\partial }{\partial D}\right)^{n-2m-1} \left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x} \right) }{8\pi\mu}.
+u_i = \sum _{m=0}^{\lfloor\left( n-1 \right)/2 \rfloor} \left(\prod _{k=1} ^{n-2m} \left(2k-1\right)\right) L _{(n-2m-1)j} \left(\frac{\partial }{\partial D}\right)^{n-2m-1} \left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x} \right) }{8\pi\mu}.
 \end{equation}
 
 
