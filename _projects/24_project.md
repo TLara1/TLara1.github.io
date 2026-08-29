@@ -963,7 +963,7 @@ The expression in the multipole expansion can be simplified,
 \end{equation}
 
 \begin{equation}
-= \left(\frac{1}{D_x}\frac{\partial }{\partial D _x} \right)^n\left(\frac{\sinh D_x}{D_x}\right)\mathcal{G} _{ij}\left(\mathbf{x}\right) + \frac{c^2}{2}\frac{1}{D _x}\left( \frac{1}{D _x}\frac{\partial }{\partial D_x} \right)^{n+1}\left(\frac{\sinh D _x}{D _x}\right)\partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right).
+= \left(\frac{1}{D_x}\frac{\partial }{\partial D _x} \right)^n\left(\frac{\sinh D_x}{D_x}\right)\mathcal{G} _{ij}\left(\mathbf{x}\right) + \frac{c^2}{2}\left( \frac{1}{D _x}\frac{\partial }{\partial D_x} \right)^{n+1}\left(\frac{\sinh D _x}{D _x}\right)\partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right).
 \end{equation}
 Employing $$D_x$$ instead of $$D$$ is crucial since we may recast $$D_x$$ as a translation operator to simplify evaluations of the multipole moments at the spheroid boundary.
 
@@ -1016,7 +1016,7 @@ where $$e=a_E/a$$ is the spheroid eccentricity.
 
 For the second part of the Oseen tensor, we first integrate the terms in the directions perpendicular to the axis of the spheroid,
 \begin{equation}
-\int_0^1dt\ \frac{1}{\left(\left(x\pm a_Et\right)^2+\rho^2\right)^{3/2}} = \pm \frac{x\pm a_E}{a_E\rho^2\sqrt{\left(x\pm a_E\right)^2+\rho^2}}\vert_{t=0}^{t=1},
+\int_0^1dt\ \frac{1}{\left(\left(x\pm a_Et\right)^2+\rho^2\right)^{3/2}} = \pm \frac{x\pm a_Et}{a_E\rho^2\sqrt{\left(x\pm a_Et\right)^2+\rho^2}}\vert_{t=0}^{t=1},
 \end{equation}
 \begin{equation}
 \int_0^1 dt\ \cosh\left(tD\right) \frac{1}{r^3} = \frac{1}{2a_E\rho^2}\left(\frac{x+ a_E}{\sqrt{\left(x+ a_E\right)^2+\rho^2}} - \frac{x- a_E}{\sqrt{\left(x- a_E\right)^2+\rho^2}}\right).
@@ -1027,7 +1027,7 @@ This term vanishes at the spheroid surface; for example, the $$y$$ component,
 \end{equation}
 The term with one $$x$$ component also vanishes on the spheroid surface,
 \begin{equation}
-\int_0^1dt\ \frac{\left(x\pm a_Et\right)}{\left(\left(x\pm a_Et\right)^2+\rho^2\right)^{3/2}} = \mp\frac{1}{a_E\sqrt{\left(x\pm a_E\right)^2+\rho^2}}\vert_{t=0}^{t=1},
+\int_0^1dt\ \frac{\left(x\pm a_Et\right)}{\left(\left(x\pm a_Et\right)^2+\rho^2\right)^{3/2}} = \mp\frac{1}{a_E\sqrt{\left(x\pm a_Et\right)^2+\rho^2}}\vert_{t=0}^{t=1},
 \end{equation}
 \begin{equation}
 \int_0^1 dt\ \cosh\left(tD\right) \frac{x}{r^3} = \frac{1}{2a_E}\left(\frac{1}{\sqrt{\left(x- a_E\right)^2+\rho^2}} - \frac{1}{\sqrt{\left(x+ a_E\right)^2+\rho^2}}\right),
@@ -1055,7 +1055,7 @@ where $$d_i$$ is the orientation direction unit vector of the spheroid along whi
 
 Now for the Laplacian of the Oseen tensor,
 \begin{equation}
-\mathcal{G}_{ij} = 2\frac{\delta _{ij}}{r^3} - 6\frac{x _ix _j}{r^5}.
+\partial^2\mathcal{G}_{ij} = 2\frac{\delta _{ij}}{r^3} - 6\frac{x _ix _j}{r^5}.
 \end{equation}
 We have a few terms to evaluate, we will for convenience and clarity, omit a few steps,
 \begin{equation}
