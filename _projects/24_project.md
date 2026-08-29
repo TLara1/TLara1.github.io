@@ -1057,8 +1057,10 @@ Now for the Laplacian of the Oseen tensor,
 \begin{equation}
 \mathcal{G}_{ij} = 2\frac{\delta _{ij}}{r^3} - 6\frac{x _ix _j}{r^5}.
 \end{equation}
-We have a few terms to evaluate,
-
+We have a few terms to evaluate, we will for convenience and clarity, omit a few steps,
+\begin{equation}
+\int_0^1 dt\ \frac{1-t^2}{\left(\left(x\pm a_Et\right)^2+\rho^2\right)^3} = \frac{\left(\rho^2-x^2+a_E^2\right)t\pm\left( x a_E^2-x\rho^2-x^3 \right) }{a_E^2\rho^2\sqrt{\left(x\pm a_Et\right)^2+\rho^2}}-\frac{1}{a_E^3}\log\left(\sqrt{\left(x\pm a_Et\right)^2+\rho^2}+\left(a_Et\pm x\right)\right)\vert _{t=0}^{t=1},
+\end{equation}
 
 
 
