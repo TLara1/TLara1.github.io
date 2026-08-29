@@ -76,7 +76,7 @@ and beautiful\
 and alive.\
 You make me feel like me.
 
-I will miss so many things in my new life, but the miles weigh the most heavily when I think about you.\
+I will miss so many things in my new life, but the miles between us weigh the most heavily when I think about you.\
 I’m hanging on to the public bathroom map that we got from the library because I worry I'll forget about even the most mundane memories I have of you.\
 And I'll cry again if I forget even a single moment of the time we’ve spent together.
 
