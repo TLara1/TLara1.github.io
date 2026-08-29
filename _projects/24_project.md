@@ -935,7 +935,7 @@ u _i\left(\mathbf{x}\right)-U_i^\infty=A _j^{(0)} \left( \frac{\sinh D}{D}\right
 \end{equation}
 
 \begin{equation}
-u _i\left(\mathbf{x}\right)-\epsilon _{ijk}\Omega^\infty_jx_k-E_{ij}^\infty x _j = -3A _{jk}^{(0)}\partial _k \left(\frac{1}{D}\frac{\partial }{\partial D}\right)\left(\frac{\sinh D}{D}\right) \frac{\mathcal{G}  _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
+u _i\left(\mathbf{x}\right)-\epsilon _{ijk}\Omega^\infty _j x _k-E _{ij}^\infty x _j = -3A _{jk}^{(0)}\partial _k \left(\frac{1}{D}\frac{\partial }{\partial D}\right)\left(\frac{\sinh D}{D}\right) \frac{\mathcal{G}  _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 \end{equation}
 
 
@@ -951,7 +951,7 @@ D_x^2=a_E^2\partial_x^2,
 \end{equation}
 due to the biharmonicity of the Oseen tensor, we may replace,
 \begin{equation}
-D^2 = D_x^2 + k c^2 \partial^2.
+D^{2k} = D_x^{2k} + k c^2D_x^{2(k-1)} \partial^2.
 \end{equation}
 Also,
 \begin{equation}
@@ -963,7 +963,7 @@ The expression in the multipole expansion can be simplified,
 \end{equation}
 
 \begin{equation}
-= \left(\frac{1}{D_x}frac{\partial }{\partial D _x} \right)^n\left(\frac{\sinh D_x}{D_x}\right)\mathcal{G} _{ij}\left(\mathbf{x}\right) + \frac{c^2}{2}\frac{1}{D _x}\left( \frac{1}{D _x}\frac{\partial }{\partial D_x} \right)^{n-1}\left(\frac{\sinh D _x}{D _x}\right)\partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right).
+= \left(\frac{1}{D_x}\frac{\partial }{\partial D _x} \right)^n\left(\frac{\sinh D_x}{D_x}\right)\mathcal{G} _{ij}\left(\mathbf{x}\right) + \frac{c^2}{2}\frac{1}{D _x}\left( \frac{1}{D _x}\frac{\partial }{\partial D_x} \right)^{n-1}\left(\frac{\sinh D _x}{D _x}\right)\partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right).
 \end{equation}
 Employing $$D_x$$ instead of $$D$$ is crucial since we may recast $$D_x$$ as a translation operator to simplify evaluations of the multipole moments at the spheroid boundary.
 
@@ -1027,7 +1027,7 @@ In summary, at the ellipsoid surface we obtain,
 \begin{equation}
 \left(\frac{\sinh D_x}{D_x}\right) \mathcal{G} _{ij}\left(\mathbf{x}=\text{ellipsoid surface}\right) = \frac{1}{2ae}\log\left(\frac{1+e}{1-e}\right)\left(\delta _{ij} + d _id _j\right),
 \end{equation}
-where $d_i$ is the orientation direction unit vector of the spheroid. Matching our boudnary condition we see,
+where $d_i$ is the orientation direction unit vector of the spheroid. Matching our boundary condition, we see,
 
 \begin{equation}
 A_j^{(0)}\frac{1}{8\pi\mu ae}\log\left(\frac{1+e}{1-e}\right)\left(\delta _{ij} + d _id _j\right)=U_i^P-U_i^\infty
