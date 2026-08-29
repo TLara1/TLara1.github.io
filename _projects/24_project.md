@@ -1057,11 +1057,13 @@ Now for the Laplacian of the Oseen tensor,
 \begin{equation}
 \partial^2\mathcal{G}_{ij} = 2\frac{\delta _{ij}}{r^3} - 6\frac{x _ix _j}{r^5}.
 \end{equation}
-We have a few terms to evaluate, we will for convenience and clarity, omit a few steps,
+We have a few terms to evaluate; for convenience and clarity, we will omit a few steps,
 \begin{equation}
 \int_0^1 dt\ \frac{1-t^2}{\left(\left(x\pm a_Et\right)^2+\rho^2\right)^3} = \frac{\left(\rho^2-x^2+a_E^2\right)t\pm\left( x a_E^2-x\rho^2-x^3 \right) }{a_E^2\rho^2\sqrt{\left(x\pm a_Et\right)^2+\rho^2}}-\frac{1}{a_E^3}\log\left(\rho\sqrt{\left(x\pm a_Et\right)^2+\rho^2}+\rho\left(a_Et\pm x\right)\right)\vert _{t=0}^{t=1},
 \end{equation}
-
+\begin{equation}
+\frac{1}{2}\int_0^1 dt\ \frac{1-t^2}\cosh\left(tD_x\right)\frac{1}{r^3} = \frac{1}{4}\left(\frac{1}{a_E^3}\log\left(\frac{\rho^2}{\left(\sqrt{\left(a_E+x\right)^2+\rho^2}+\left(a_E+x\right)\right)\left(\sqrt{\left(a_E-x\right)^2+\rho^2}+\left(a_E-x\right)\right)}\right)\right)
+\end{equation}
 
 
 Matching our boundary condition, we see,
