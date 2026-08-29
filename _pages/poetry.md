@@ -77,14 +77,14 @@ and alive.\
 You make me feel like me.
 
 I will miss so many things in my new life, but the miles between us weigh the most heavily when I think about you.\
-I’m hanging on to the public bathroom map that we got from the library because I worry I'll forget about even the most mundane memories I have of you.\
+I’m hanging on to the public bathroom map that we got from the library because I worry I'll forget about the most mundane memories I have of you.\
 And I'll cry again if I forget even a single moment of the time we’ve spent together.
 
 And I know.\
 I know.\
 Knowing makes it worse.\
 Knowing is what makes me cry.\
-I know this is nothing and this is ridiculous. You have your life and your friends, and I have no idea how you feel, and we are going to be apart for so long.\
+I know this is nothing, and this is ridiculous. You have your life and your friends, and I have no idea how you feel, and we are going to be apart for so long.\
 And I don't want to change anything...\
 But...
 
@@ -104,7 +104,7 @@ but what they don't tell you about mountains is that they are sometimes far away
 Sometimes our wandering feet lead us on different paths, chasing different summits.\
 Sometimes we climb different mountains.
 
-If our trails ever do meet, let us put our hands together and climb a new mountain.\
+And when trails ever do meet again, let us put our hands together and climb a new mountain.\
 Let us then stop and see the view for as long as we may.\
 And do nothing.\
 Together.
