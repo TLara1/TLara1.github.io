@@ -374,7 +374,7 @@ a_E=\sqrt{a^2-c^2},
 \begin{equation}
 b_E=\sqrt{b^2-c^2},
 \end{equation}
-\begin{equation}
+\begin{equation}\label{eq: q(x) definition}
 q\left(\mathbf{x}\right)=\sqrt{1-\frac{x^2}{a_E^2}-\frac{y^2}{b_E^2}}.
 \end{equation}
 
@@ -586,8 +586,13 @@ where the first term vanished since $$p\left(\lambda\right)=0$$ by definition. S
 and for an arbitrary number of derivatives,
 
 \begin{equation}
-\partial_{k_1}\partial_{k_2}...\partial_{k_n}G_n=\sum_{m=0}^{\lfloor n/2 \rfloor}2^{n-m}\frac{n!}{m!}\left[\left(\delta_{k_1 k_2}...\delta_{k_{2m-1}k_{2m}}x_{k_{2m+1}}...x_{k_n}\right) \int_\lambda^\infty dt\ \frac{1}{\Delta\left(t\right)}\frac{p\left(t\right)^{m} }{\prod_{\alpha=1}^n \left(a_{k_\alpha}^2+t\right)} + ... + \left(\text{sym}\right) \right].
+\partial_{k_1}\partial_{k_2}...\partial_{k_n}G_n\nonumber
 \end{equation}
+\begin{equation}
+=\sum_{m=0}^{\lfloor n/2 \rfloor}2^{n-m}\frac{n!}{m!}\left[\left(\delta_{k_1 k_2}...\delta_{k_{2m-1}k_{2m}}x_{k_{2m+1}}...x_{k_n}\right) \int_\lambda^\infty dt\ \frac{1}{\Delta\left(t\right)}\frac{p\left(t\right)^{m} }{\prod_{\alpha=1}^n \left(a_{k_\alpha}^2+t\right)} + ... + \left(\text{sym}\right) \right].
+\end{equation}
+
+
 
 In the term shown, $$\alpha\neq k_2,k_4,...,k_{2m}$$. The $$\left(\text{sym}\right)$$ denotes that at each $$m$$ we take all permutations of the indices $$k_i$$, and we have only shown one explicitly. The key idea is that at the ellipsoid surface, $$\lambda=0$$, the definite integrals become constants depending on the shape of the ellipse. So at the ellipsoid surface with $$\lambda=0$$, we find,
 
@@ -621,7 +626,7 @@ A\delta _{ij}\partial^{n-1}G _{n-1} - x_j\partial_i\partial^{n-1} G _{n-1} + \fr
 
 has only terms of order $$n-1$$ and lower when evaluated on the particle surface; the order $$n+1$$ terms cancel entirely. The coefficient $$A$$ can be picked to cancel the $$n-1$$ coefficient of the second two terms while simultaneously prescribing a boundary condition at order $$n-1$$.
 
-Now for the expansion. At the particle surface, suppose an $$\left(n-1\right)$$0th order field is prescribed, so the flow at the particle is given by,
+Now for the expansion. At the particle surface, suppose an $$\left(n-1\right)$$-th order field is prescribed, so the flow at the particle is given by,
 \begin{equation}
 u_i^p=Q^{(n-1)} _{i k_1 k_2 ...k _{n-1}} x _{k_1}x _{k_2}x _{k _(n-1)}.
 \end{equation}
@@ -662,26 +667,30 @@ and,
 \begin{equation}
 \partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)=-2\partial_i\partial_j\left(\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right).
 \end{equation}
-Now using,
+Now using the definition of $$q\left(\mathbf{x}'\right)$$, Eq. \ref{eq: q(x) definition},
 \begin{equation}
 \frac{\partial q\left(\mathbf{x}'\right)^{p+2}}{\partial x'_j}=-\frac{\left(p+2\right)x_j'}{a_j^2-c^2}q\left(\mathbf{x}'\right)^{p},
 \end{equation}
-so,
+such that we may write,
 \begin{equation}
 \int_E dA'\ x_j'\frac{q\left(\mathbf{x}'\right)^p}{|\mathbf{x}-\mathbf{x}'|} = -\frac{a_j^2-c^2}{n+2}\int_E dA'\ \frac{1}{|\mathbf{x}-\mathbf{x}'|}\frac{\partial q\left(\mathbf{x}'\right)^{p+2}}{\partial x'_j}.
 \end{equation}
 Integrating by parts,
 \begin{equation}
-= \frac{a_j^2-c^2}{n+2}\int_E dA'\ q\left(\mathbf{x}'\right)^{p+2} \frac{\partial }{\partial x'_j}\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right]\nonumber
+\int_E dA'\ x_j'\frac{q\left(\mathbf{x}'\right)^p}{|\mathbf{x}-\mathbf{x}'|} =\frac{a_j^2-c^2}{n+2}\int_E dA'\ q\left(\mathbf{x}'\right)^{p+2} \frac{\partial }{\partial x'_j}\left[\frac{1}{|\mathbf{x}-\mathbf{x}'|}\right]\nonumber
 \end{equation}
 \begin{equation}
-= -\frac{a_j^2-c^2}{p+2}\frac{\partial}{\partial x_j}\int_E dA'\ q\left(\mathbf{x}'\right)^{p+2} \frac{1}{|\mathbf{x}-\mathbf{x}|},
+\int_E dA'\ x_j'\frac{q\left(\mathbf{x}'\right)^p}{|\mathbf{x}-\mathbf{x}'|} = -\frac{a_j^2-c^2}{p+2}\frac{\partial}{\partial x_j}\int_E dA'\ q\left(\mathbf{x}'\right)^{p+2} \frac{1}{|\mathbf{x}-\mathbf{x}|},
 \end{equation}
 
-where we have removed the boundary terms. This gives us,
+where we have removed the boundary terms. With the defition of our $$H_n$$ functions, we have,
 \begin{equation}
-\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m-1} - \frac{a_j^2}{2\left(n-2m\right)-1}\partial_i\partial_jH _{n-2m} = \frac{1}{2\pi a_E b_E}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left[\left(\delta _{ij}-x_j\partial _i\right) -  \frac{a_j^2}{2\left(n-2m\right)-1}q\left(\mathbf{x}'\right)^2\partial_i\partial_j \right]\frac{1}{|\mathbf{x}-\mathbf{x}'|}.
+\left(\delta _{ij}-x_j\partial _i\right)H _{n-2m-1} - \frac{a_j^2}{2\left(n-2m\right)-1}\partial_i\partial_jH _{n-2m}\nonumber
 \end{equation}
+\begin{equation}
+= \frac{1}{2\pi a_E b_E}\int_E dA'\ q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left[\left(\delta _{ij}-x_j\partial _i\right) -  \frac{a_j^2}{2\left(n-2m\right)-1}q\left(\mathbf{x}'\right)^2\partial_i\partial_j \right]\frac{1}{|\mathbf{x}-\mathbf{x}'|}.
+\end{equation}
+
 Relating the first term to the Oseen tensor,
 
 \begin{equation}
@@ -713,7 +722,7 @@ Hence,
 And we write down the velocity field using the Oseen tensor,
 
 \begin{equation}
-u_i = \sum_{m=0}^{\lfloor\left(n-1\right)/2 \rfloor} \frac{1}{2\pi a_E b_E} \frac{L _{(n-2m-1)j}}{8\pi\mu} \int_E dA'\ \left(2\left(n-2m\right)-1\right) q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)-2}\partial^2 \right] \mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right),
+u_i = \sum_{m=0}^{\lfloor\left(n-1\right)/2 \rfloor} \frac{1}{2\pi a_E b_E} L _{(n-2m-1)j} \int_E dA'\ \left(2\left(n-2m\right)-1\right) q\left(\mathbf{x}'\right)^{2\left(n-2m\right)-3}\left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{4\left(n-2m\right)-2}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu},
 \end{equation}
 where we have defined,
 \begin{equation}
@@ -799,31 +808,35 @@ This is interesting; we have replaced the integral over the ellipsoid with an an
 
 Now for a similar identity, consider
 \begin{equation}
-J _{ij}\left(\mathbf{x}\right)=\int_E dA'\ f_1\left(\mathbf{x}'\right)q^2\left(\mathbf{x}'\right) \partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
+I' _{ij}\left(\mathbf{x}\right)=\int_E dA'\ f_1\left(\mathbf{x}'\right)q^2\left(\mathbf{x}'\right) \partial^2\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right).
 \end{equation}
 With the same procedure performed for our previous integral,
 \begin{equation}
-J _{ij}\left(\mathbf{x}\right)=\frac{1}{4\pi}\int_0^{2\pi}\int_0^{\pi} d\phi'\ d\theta'\ \sin\theta'\cos^2\theta' e^{-\tilde{D}\sin\theta'\sin\phi'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right).
+I' _{ij}\left(\mathbf{x}\right)=\frac{1}{4\pi}\int_0^{2\pi}\int_0^{\pi} d\phi'\ d\theta'\ \sin\theta'\cos^2\theta' e^{-\tilde{D}\sin\theta'\sin\phi'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right).
 \end{equation}
 We perform the same rotation trick, taking $$y'\rightarrow z'$$, except now, we must also recall this requires transforming $$z'\rightarrow y'$$ which modifies the term in front of the exponent,
 \begin{equation}
-J _{ij}\left(\mathbf{x}\right)=\frac{1}{4\pi}\int_0^{2\pi}\int_0^{\pi} d\nu'\ d\eta'\ \cos^2\nu'\sin^3\eta'e^{-\tilde{D}\cos\eta'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right),
+I' _{ij}\left(\mathbf{x}\right)=\frac{1}{4\pi}\int_0^{2\pi}\int_0^{\pi} d\nu'\ d\eta'\ \cos^2\nu'\sin^3\eta'e^{-\tilde{D}\cos\eta'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right),
 \end{equation}
 \begin{equation}
-J _{ij}\left(\mathbf{x}\right)=\frac{1}{4}\int_0^{\pi} d\eta'\ \sin^3\eta'e^{-\tilde{D}\cos\eta'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right).
+I' _{ij}\left(\mathbf{x}\right)=\frac{1}{4}\int_0^{\pi} d\eta'\ \sin^3\eta'e^{-\tilde{D}\cos\eta'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right).
 \end{equation}
 With a change of variables and integration by parts,
 \begin{equation}
-J _{ij}\left(\mathbf{x}\right)=\frac{1}{4}\int _{-1}^{1} du'\ \left(1-u'^2\right) e^{-\tilde{D}u'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right) = -\frac{1}{2\tilde{D}}\int _{-1}^{1} du'\ u' e^{-\tilde{D}u'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right),
+I' _{ij}\left(\mathbf{x}\right)=\frac{1}{4}\int _{-1}^{1} du'\ \left(1-u'^2\right) e^{-\tilde{D}u'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right) = -\frac{1}{2\tilde{D}}\int _{-1}^{1} du'\ u' e^{-\tilde{D}u'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right),
 \end{equation}
 from which we identify,
 \begin{equation}\label{eq: J sinh D verion}
-J _{ij}\left(\mathbf{x}\right)= \frac{1}{2}\frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\int _{-1}^{1} du'\ e^{-\tilde{D}u'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right) = \frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\left(\frac{\sinh\tilde{D}}{\tilde{D}}\right)\partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right).
+I' _{ij}\left(\mathbf{x}\right)= \frac{1}{2}\frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\int _{-1}^{1} du'\ e^{-\tilde{D}u'} \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right) = \frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\left(\frac{\sinh\tilde{D}}{\tilde{D}}\right)\partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right).
 \end{equation}
 With Eq. \ref{eq: I sinh D verion} and Eq. \ref{eq: J sinh D verion}, 
 \begin{equation}
-J _{1\ ij}\left(\mathbf{x}\right) =   \int_E dA'\ f_1\left(\mathbf{x}'\right) \left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{2}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu} = \left[\frac{\sinh\tilde{D}}{\tilde{D}} + \frac{c^2}{2}\frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\left(\frac{\sinh\tilde{D}}{\tilde{D}}\right)\partial^2\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
+J _{1\ ij}\left(\mathbf{x}\right) =   \int_E dA'\ f_1\left(\mathbf{x}'\right) \left[ 1 + \frac{c^2q\left(\mathbf{x}'\right)^2}{2}\partial^2 \right] \frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}'\right)}{8\pi\mu},
 \end{equation}
+\begin{equation}
+J _{1\ ij}\left(\mathbf{x}\right) =\left[\frac{\sinh\tilde{D}}{\tilde{D}} + \frac{c^2}{2}\frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\left(\frac{\sinh\tilde{D}}{\tilde{D}}\right)\partial^2\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
+\end{equation}
+
 Using the power series expansion of $$\sinh$$, the operator becomes,
 \begin{equation}\label{eq: tilde D power series operator}
 \frac{\sinh\tilde{D}}{\tilde{D}} + \frac{c^2}{2}\frac{1}{\tilde{D}}\frac{\partial}{\partial\tilde{D}}\left(\frac{\sinh\tilde{D}}{\tilde{D}}\right)\partial^2 = \sum _{n=0}^\infty\left( \frac{1}{\left(2n+1\right)!}\tilde{D}^{2n}+c^2\frac{n}{\left(2n+1\right)!}\tilde{D}^{2\left(n-1\right)}\partial^2 \right).
@@ -871,10 +884,7 @@ We once again employ the series expansion of $$\sinh$$ and $$D\left(u\right)=uD$
 J _{2\ ij}\left(\mathbf{x};1\right) = 3\int_0^1 du\ u^2 \sum _{k=0}^\infty \left(\frac{1}{\left(2k+1\right)!} u^{2k}D^{2k}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} = 3\sum _{k=0}^\infty \left(\frac{2k+2}{\left(2k+3\right)!} D^{2k}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
 \begin{equation}
-= 3\sum _{k=1}^\infty \left(\frac{2k}{\left(2k+1\right)!} D^{2k-2}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
-\end{equation}
-\begin{equation}
-= 3\left(\frac{1}{D}\frac{\partial}{\partial D}\right)\left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
+= 3\sum _{k=1}^\infty \left(\frac{2k}{\left(2k+1\right)!} D^{2k-2}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu} = 3\left(\frac{1}{D}\frac{\partial}{\partial D}\right)\left(\frac{\sinh D}{D}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 \end{equation}
 
 Having demonstrated the base case, we verify,
