@@ -1062,14 +1062,23 @@ The simplification is somewhat involved, but after a good amount of algebra one 
 \begin{equation}
 \left(\frac{1}{D _x}\frac{\partial}{\partial D _x}\right)\left(\frac{\sinh D _x}{D _x}\right)\frac{1}{r^3}\vert _\left(r=\text{ellipsoid surface}\right) = \frac{1}{4a^3e^3}\left(\log\left(\frac{1-e}{1+e}\right)+\frac{2e}{1-e^2}\right).
 \end{equation}
-Now for the second terms of the Oseen Laplacian, only componenets along the principal direction are non-vanishing when evaluated on the ellipsoid surface
+Now for the second terms of the Oseen Laplacian, only components along the principal direction are non-vanishing when evaluated on the ellipsoid surface
 \begin{equation}
 \left(\frac{1}{D _x}\frac{\partial}{\partial D _x}\right)\left(\frac{\sinh D _x}{D _x}\right)\frac{x^2}{r^5}\vert _\left(r=\text{ellipsoid surface}\right) = \frac{1}{4a^3e^3}\left(\log\left(\frac{1-e}{1+e}\right)+\frac{2e\left(3-6e^2+11e^4\right)}{3\left(1-e^ 2\right)^3}.
 \end{equation}
+All told, with both bare and laplacian terms we have,
+\begin{equation}
+\left(\frac{\sinh D_x}{D_x}\right) \mathcal{G} _{ij}\left(\mathbf{x}=\text{ellipsoid surface}\right) + \frac{c^2}{2}\left(\frac{1}{D _x}\frac{\partial}{\partial D _x}\right)\left(\frac{\sinh D_x}{D_x}\right) \partial^2\mathcal{G} _{ij}\left(\mathbf{x}=\text{ellipsoid surface}\right) =  \frac{1}{2ae}\log\left(\frac{1+e}{1-e}\right)\left(\delta _{ij} + d _i d _j \right) + \frac{c^2}{4a^3e^3}\left( \log\left(\frac{1-e}{1+e}\right)+\frac{2e}{1-e^2} \right)\delta _{ij}- \frac{3c^2}{4a^3e^3}\left( \log\left(\frac{1-e}{1+e}\right)+\frac{2e\left(3-6e^2+11e^4\right)}{3\left(1-e^ 2\right)^3} \right)d _id _j,
+\end{equation}
+\begin{equation}
+=  \frac{1}{2ae}L\right)\left(\delta _{ij} + d _i d _j \right) + \frac{1-e^2}{4ae^3}\left(-L+\frac{2e}{1-e^2} \right)\delta _{ij}- \frac{3\left( 1-e^2 \right)}{4ae^3}\left( -L +\frac{2e\left(3-6e^2+11e^4\right)}{3\left(1-e^ 2\right)^3} \right)d _id _j,
+\end{equation}
 
+\begin{equation}
+=  \frac{1}{a}\left(\frac{L}{2e} -\right)\delta_{ij}
 
-
-
+\frac{1}{2ae}L\right)\left(\delta _{ij} + d _i d _j \right) + \frac{1-e^2}{4ae^3}\left(-L+\frac{2e}{1-e^2} \right)\delta _{ij}- \frac{3\left( 1-e^2 \right)}{4ae^3}\left( -L +\frac{2e\left(3-6e^2+11e^4\right)}{3\left(1-e^ 2\right)^3} \right)d _id _j,
+\end{equation}
 
 
 Matching our boundary condition, we see,
