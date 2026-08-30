@@ -104,14 +104,14 @@ but what they don't tell you about mountains is that they are sometimes far away
 Sometimes our wandering feet lead us on different paths, chasing different summits.\
 Sometimes we climb different mountains.
 
-And when trails ever do meet again, let us put our hands together and climb a new mountain.\
+But when trails do meet again, let us put our hands together and climb a new mountain.\
 Let us then stop and see the view for as long as we may.\
 And do nothing.\
 Together.
 
 So now I've told you, and you know. 
 
-Let's go play frisbee.
+Let's go play Frisbee.
 
 28/8/26
 
