@@ -17,6 +17,8 @@ I will almost certainly be doing the bulk of my PhD work on things related to th
 
 This is a walkthrough of the singularity system for spheres, then for the much more complex ellipsoids, then for prolate spheroids, and then for slender bodies. There are some applications throughout and discussed more at the end.
 
+FINISH INTRO
+
 ## Singularity Systems
 The Green's function is our most fundamental tool for studying solutions to the Stokes Equations. Once we develop the singularity solution and integral representations, we may proceed to spherical and spheroid solutions.
 
@@ -1004,55 +1006,30 @@ For the derivative term, after applying the integral product rule, we see,
 \begin{equation}
 = \frac{1}{2}\int _0^1 dt\ \left(1-t^2\right)\cosh\left(tD _x\right) \partial^2\mathcal{G} _{ij}\left(\mathbf{x}\right) = \frac{1}{4}\int _0^1 dt\ \left(1-t^2\right)\left[ \partial^2\mathcal{G} _{ij}\left(\mathbf{x}+ta_E\hat{\mathbf{e}}_x\right) + \partial^2\mathcal{G} _{ij}\left(\mathbf{x}-ta_E\hat{\mathbf{e}}_x\right) \right].
 \end{equation}
+We must evaluate the integrals over $$t$$ at the boundary of the elipsoid. The easiest place to evaluate on the spheroid surface is at $$x=a$$ and $$y=z=0$$. Because the integration is over $$t$$ and not over the cartesian variables, we can subtitute these values first to simplify the expressions.
 
-We can perform the integrals over $$t$$ fairly straightforwardly, although they are somewhat cumbersome. Beginning with the operators acting on the Oseen tensor,
+Beginning with the operators acting on the Oseen tensor,
 \begin{equation}
-\mathcal{G}_{ij} = \frac{\delta _{ij}}{r} + \frac{x _ix _j}{r^3}.
+\mathcal{G}_{ij}\vert _\left(r=\text{ellipsoid surface}\right) = \frac{\delta _{ij}}{x} + \frac{x _ix _j}{x^3}.
 \end{equation}
 For the first part,
 
 \begin{equation}
-\int_0^1 dt\ \frac{1}{\sqrt{\left(x\pm a_Et\right)^2+\rho^2}} =\pm \frac{1}{a _E}\log\left(\sqrt{\left(x\pm a _Et\right)^2+\rho^2}+\left(x\pm a_E\right)\right)\vert _{t=0}^{t=1},
+\int_0^1 dt\ \frac{1}{\sqrt{\left(a\pm a_Et\right)^2}} =\pm \frac{1}{a _E}\log\left(2\left(x\pm a_Et\right)\right)\vert _{t=0}^{t=1},
 \end{equation}
 
 \begin{equation}
-\int_0^1 dt\ \cosh\left(tD\right) \frac{1}{r} = \frac{1}{2a_E}\log\left(\frac{\sqrt{\left(x+a_E\right)^2+\rho^2}+ \left(x+a_E\right)}{\sqrt{\left(x-a_E\right)^2+\rho^2}+ \left(x-a_E\right)}\right).
+\int_0^1 dt\ \cosh\left(tD\right) \frac{1}{r} = \frac{1}{2a_E}\log\left(\frac{a+a_E}{a-a_E}\right).
 \end{equation}
-We have defined $$\rho^2=y^2+z^2$$. We may evaluate this anywhere on the spheroid boundary; it is convenient to pick $$x=a$$, $$\rho=0$$, 
+We obtain,
 \begin{equation}
 \left(\frac{\sinh D_x}{D_x}\right) \frac{1}{r}\vert_\left(r=\text{ellipsoid surface}\right) = \frac{1}{2ae}\log\left(\frac{1+e}{1-e}\right),
 \end{equation}
-where $$e=a_E/a$$ is the spheroid eccentricity. 
+where $$e=a_E/a$$ is the unitless spheroid eccentricity. 
 
-For the second part of the Oseen tensor, we first integrate the terms in the directions perpendicular to the axis of the spheroid,
+For the second part of the Oseen tensor, only terms parallel to the spheroid axis contribute when evaluated on the surface and result in the same integral,
 \begin{equation}
-\int_0^1dt\ \frac{1}{\left(\left(x\pm a_Et\right)^2+\rho^2\right)^{3/2}} = \pm \frac{x\pm a_Et}{a_E\rho^2\sqrt{\left(x\pm a_Et\right)^2+\rho^2}}\vert_{t=0}^{t=1},
-\end{equation}
-\begin{equation}
-\int_0^1 dt\ \cosh\left(tD\right) \frac{1}{r^3} = \frac{1}{2a_E\rho^2}\left(\frac{x+ a_E}{\sqrt{\left(x+ a_E\right)^2+\rho^2}} - \frac{x- a_E}{\sqrt{\left(x- a_E\right)^2+\rho^2}}\right).
-\end{equation}
-This term vanishes at the spheroid surface; for example, the $$y$$ component,
-\begin{equation}
-\left(\frac{\sinh D_x}{D_x}\right) \frac{y^2}{r^3}\vert_\left(r=\text{ellipsoid surface}\right) = 0.
-\end{equation}
-The term with one $$x$$ component also vanishes on the spheroid surface,
-\begin{equation}
-\int_0^1dt\ \frac{\left(x\pm a_Et\right)}{\left(\left(x\pm a_Et\right)^2+\rho^2\right)^{3/2}} = \mp\frac{1}{a_E\sqrt{\left(x\pm a_Et\right)^2+\rho^2}}\vert_{t=0}^{t=1},
-\end{equation}
-\begin{equation}
-\int_0^1 dt\ \cosh\left(tD\right) \frac{x}{r^3} = \frac{1}{2a_E}\left(\frac{1}{\sqrt{\left(x- a_E\right)^2+\rho^2}} - \frac{1}{\sqrt{\left(x+ a_E\right)^2+\rho^2}}\right),
-\end{equation}
-\begin{equation}
-\left(\frac{\sinh D_x}{D_x}\right) \frac{xy}{r^3}\vert_\left(r=\text{ellipsoid surface}\right) = 0.
-\end{equation}
-Only the term along the $$xx$$ direction remains on the ellipsoid surface,
-\begin{equation}
-\int_0^1dt\ \frac{\left(x\pm a_Et\right)^2}{\left(\left(x\pm a_Et\right)^2+\rho^2\right)^{3/2}} = \pm \frac{1}{a_E}\left(
-\log\left(\sqrt{\left(x\pm a_Et\right)^2+\rho^2}+\left(x\pm a_Et\right)\right) - \frac{x\pm a_E t}{\sqrt{\left(x\pm a_Et\right)^2+\rho^2}}\right)\vert_{t=0}^{t=1},
-\end{equation}
-\begin{equation}
-\int_0^1 dt\ \cosh\left(tD\right) \frac{x^2}{r^3} = \frac{1}{2a_E}\left(\log\left(\frac{\sqrt{\left(x+a_E\right)^2+\rho^2}+ \left(x+a_E\right)}{\sqrt{\left(x-a_E\right)^2+\rho^2}+ \left(x-a_E\right)}\right) - \frac{x+a_E}{\sqrt{\left(x+a_E\right)^2+\rho^2}} + \frac{x-a_E}{\sqrt{\left(x-a_E\right)^2+\rho^2}}\right).
-\end{equation}
+\int_0^1dt\ \frac{\left(a\pm a_Et\right)^2}{ \left(\left(x\pm a_Et\right)^2 \right)^{3/2} } = \int_0^1dt\ \frac{1}{\left(x\pm a_Et\right)},
 \begin{equation}
 \left(\frac{\sinh D_x}{D_x}\right) \frac{x^2}{r^3}\vert_\left(r=\text{ellipsoid surface}\right) = \frac{1}{2ae}\log\left(\frac{1+e}{1-e}\right).
 \end{equation}
@@ -1067,6 +1044,11 @@ Now for the Laplacian of the Oseen tensor,
 \begin{equation}
 \partial^2\mathcal{G} _{ij} = 2\frac{\delta _{ij}}{r^3} - 6\frac{x _ix _j}{r^5}.
 \end{equation}
+
+The integration procedure is very similar.
+
+CONTINUE FROM HERE
+
 
 We have a few terms to evaluate; for convenience and clarity, we will omit a few steps. After a good amount of algebra, one can obtain,
 The simplification is somewhat involved, but after a good amount of algebra one can obtain,
