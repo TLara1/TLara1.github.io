@@ -1092,10 +1092,28 @@ A_j^{(0)}\frac{1}{16\pi\mu ae^3}\left[\left(\frac{3e^2-1}{2}L+e\right)\delta _{i
 \end{equation}
 We invert to obtain,
 \begin{equation}
-A_j^{(0)} = 6\pi\mu a \frac{8e^3}{3}\left[ \left(\frac{3e^2-1}{2}L+e\right)^{-1}\delta_{jk} \right]\left(U_k^P-U_k^\infty\right)
-
-\frac{1}{16\pi\mu ae}\left[\left(\frac{3e^2-1}{2e^2}L+\frac{1}{e}\right)\delta_{ij}+\left(\frac{3-e^2}{2e^2}L-\frac{3}{e}\right)d_id_j\right]=U_i^P-U_i^\infty.
+A_j^{(0)} = 6\pi\mu a \frac{8e^3}{3}\left[ \left(\frac{3e^2-1}{2}L+e \right)^{-1}\delta_{jk} - \frac{\left(3-e^2 \right)L-6e}{\left(\left(1+e^2\right)L-2e\right)\left(\left( 3e^2-1 \right)L+2e\right)}d_jd_k\right]\left(U_k^P-U_k^\infty\right).
 \end{equation}
+it is more convenient to write $$A_j^{(0)}$$ in terms parallel and perpendicular to the orientation of the ellipsoid,
+\begin{equation}
+A_j^{(0)} = 6\pi\mu a \frac{8e^3}{3}\left[ \left(\left(e^2+1\right)L-2e \right)^{-1}d_jd_k + 2\left(\left(3e^2-1\right)L+2e \right)^{-1} \left(\delta _{jk}-d_jd_k\right) \right]\left(U_k^P-U_k^\infty\right).
+\end{equation}
+From this, we identify the force on the particle as,
+\begin{equation}
+u _i\left(\mathbf{x}\right)-U_i^\infty=-F_j\left[1 + \frac{1-e^2}{2}\left(\frac{1}{D_x}\frac{\partial}{\partial D_x}\right) \partial^2 \right]\left( \frac{\sinh D _x}{D _x}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+\end{equation}
+\begin{equation}
+F_j = 6\pi\mu a\left[ X^Ad_jd_k + Y^A\left(\delta _{jk}-d_jd_k\right)\right]\left(U_k^\infty-U_k^P\right),
+\end{equation}
+with,
+\begin{equation}
+X^A = \frac{8e^3}{3}\left(\left(e^2+1\right)L-2e \right)^{-1},
+\end{equation}
+and,
+\begin{equation}
+Y^A = \frac{16e^3}{3}\left(\left(3e^2-1\right)L+2e \right)^{-1}.
+\end{equation}
+
 
 
 
