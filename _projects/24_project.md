@@ -1057,17 +1057,17 @@ Now for the Laplacian of the Oseen tensor,
 \begin{equation}
 \partial^2\mathcal{G}_{ij} = 2\frac{\delta _{ij}}{r^3} - 6\frac{x _ix _j}{r^5}.
 \end{equation}
-We have a few terms to evaluate; for convenience and clarity, we will omit a few steps,
-\begin{equation}
-\int_0^1 dt\ \frac{1-t^2}{\left(\left(x\pm a_Et\right)^2+\rho^2\right)^3} = \frac{\left(\rho^2-x^2+a_E^2\right)t\pm\left( x a_E^2-x\rho^2-x^3 \right) }{a_E^2\rho^2\sqrt{\left(x\pm a_Et\right)^2+\rho^2}}-\frac{1}{a_E^3}\log\left(\rho\sqrt{\left(x\pm a_Et\right)^2+\rho^2}+\rho\left(a_Et\pm x\right)\right)\vert _{t=0}^{t=1},
-\end{equation}
-\begin{equation}
-\frac{1}{2}\int_0^1 dt\ \left( 1-t^2 \right)\cosh\left(tD_x\right)\frac{1}{r^3} = \frac{1}{4}\left(\frac{1}{a_E^3}\log\left( \frac{\rho^2}{ \left(\sqrt{\left(a_E+x\right)^2+\rho^2}+\left(a_E+x\right)\right)\left( \sqrt{\left(a_E-x\right)^2+\rho^2}+\left(a_E-x\right)\right) } \right) + \frac{a_E\left(\rho^2-x^2+a_E^2\right)+x\left(\rho^2+x^2-a_E^2\right)}{a_E^3\rho^2\sqrt{\left(a_E-x\right)^2+\rho^2}} + \frac{a_E\left(\rho^2-x^2+a_E^2\right)-x\left(\rho^2+x^2-a_E^2\right)}{a_E^3\rho^2\sqrt{\left(a_E+x\right)^2+\rho^2}}\right).
-\end{equation}
+We have a few terms to evaluate; for convenience and clarity, we will omit a few steps. After a good amount of algebra, one can obtain,
 The simplification is somewhat involved, but after a good amount of algebra one can obtain,
 \begin{equation}
-\left(\frac{1}{D _x}\frac{\partial}{\partial D _x}\right)\left(\frac{\sinh D _x}{D _x}\right)\frac{1}{r^3}\vert _\left(r=\text{ellipsoid surface}\right) = \frac{1}{4a^3e^3}\left(\log\left(\frac{1-e}{1+e}\right)+\frac{2e}{\left(1-e^2\right)}\right).
+\left(\frac{1}{D _x}\frac{\partial}{\partial D _x}\right)\left(\frac{\sinh D _x}{D _x}\right)\frac{1}{r^3}\vert _\left(r=\text{ellipsoid surface}\right) = \frac{1}{4a^3e^3}\left(\log\left(\frac{1-e}{1+e}\right)+\frac{2e}{1-e^2}\right).
 \end{equation}
+Now for the second terms of the Oseen Laplacian, only componenets along the principal direction are non-vanishing when evaluated on the ellipsoid surface
+\begin{equation}
+\left(\frac{1}{D _x}\frac{\partial}{\partial D _x}\right)\left(\frac{\sinh D _x}{D _x}\right)\frac{x^2}{r^5}\vert _\left(r=\text{ellipsoid surface}\right) = \frac{1}{4a^3e^3}\left(\log\left(\frac{1-e}{1+e}\right)+\frac{2e\left(3-6e^2+11e^4\right)}{3\left(1-e^ 2\right)^3}.
+\end{equation}
+
+
 
 
 
