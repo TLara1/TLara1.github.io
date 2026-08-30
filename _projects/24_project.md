@@ -1078,11 +1078,11 @@ For the second terms of the Oseen Laplacian, only components along the principal
 \end{equation}
 All told, with both bare and Laplacian terms we have,
 \begin{equation}
-\left(\frac{\sinh D_x}{D_x}\right) \mathcal{G} _{ij}\left(\mathbf{x}=\text{ellipsoid surface}\right) + \frac{c^2}{2}\left(\frac{1}{D _x}\frac{\partial}{\partial D _x}\right)\left(\frac{\sinh D_x}{D_x}\right)\partial^2\mathcal{G} _{ij}\left(\mathbf{x}=\text{ellipsoid surface}\right) = \frac{1}{2ae}\log\left(\frac{1+e}{1-e}\right)\left(\delta _{ij} + d _id _j\right) + \frac{1-e^2}{8ae^3}\left(\log\left(\frac{1-e}{1+e}\right)+\frac{2e}{1-e^2}\right)\left(\delta _{ij} + d _id _j\right),
+\left(\frac{\sinh D_x}{D_x}\right) \mathcal{G} _{ij}\left(\mathbf{x}=\text{ellipsoid surface}\right) + \frac{c^2}{2}\left(\frac{1}{D _x}\frac{\partial}{\partial D _x}\right)\left(\frac{\sinh D_x}{D_x}\right)\partial^2\mathcal{G} _{ij}\left(\mathbf{x}=\text{ellipsoid surface}\right) = \frac{1}{2ae}\log\left(\frac{1+e}{1-e}\right)\left(\delta _{ij} + d _id _j\right) + \frac{1-e^2}{8ae^3}\left(\log\left(\frac{1-e}{1+e}\right)+\frac{2e}{1-e^2}\right)\left(2\delta _{ij} - 6d _id _j\right),
 \end{equation}
 \begin{equation}
- = \frac{1}{4ae^2}\left( \frac{5e^2-1}{2e}L+1\right)\left(\delta _{ij} + d _id _j\right),
- \end{equation}
+= \frac{1}{2ae}\left[\left(\frac{3e^2-1}{2e^2}L+\frac{1}{e}\right)\delta_{ij}+\left(\frac{3-e^2}{2e^2}L-\frac{3}{e}\right)d_id_j\right],
+\end{equation}
 where we defined $$L=\log\left(\frac{1+e}{1-e}\right)$$.
 
 
