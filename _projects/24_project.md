@@ -1075,9 +1075,7 @@ All told, with both bare and laplacian terms we have,
 \end{equation}
 
 \begin{equation}
-=  \frac{1}{a}\left(\frac{L}{2e} -\right)\delta_{ij}
-
-\frac{1}{2ae}L\right)\left(\delta _{ij} + d _i d _j \right) + \frac{1-e^2}{4ae^3}\left(-L+\frac{2e}{1-e^2} \right)\delta _{ij}- \frac{3\left( 1-e^2 \right)}{4ae^3}\left( -L +\frac{2e\left(3-6e^2+11e^4\right)}{3\left(1-e^ 2\right)^3} \right)d _id _j,
+=  \frac{1}{a}\left[ \left(\frac{L}{2e} -  \frac{1-e^2}{4e^3}L+\frac{1}{2e^2}\right)\delta_{ij} + \left(\left(\frac{L}{2e} + \frac{3\left(1-e^2\right)}{ 4e^3}L - \frac{1}{2e^2\left(1-e^2\right)^2}\left(3-6e^2+11e^4\right)\right)d_id_j.
 \end{equation}
 
 
