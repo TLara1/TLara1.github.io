@@ -1072,21 +1072,26 @@ The simplification is somewhat involved, but after a good amount of algebra one 
 \begin{equation}
 \left(\frac{1}{D _x}\frac{\partial}{\partial D _x}\right)\left(\frac{\sinh D _x}{D _x}\right)\frac{1}{r^3}\vert _\left(r=\text{ellipsoid surface}\right) = \frac{1}{4a^3e^3}\left(\log\left(\frac{1-e}{1+e}\right)+\frac{2e}{1-e^2}\right).
 \end{equation}
-Now for the second terms of the Oseen Laplacian, only components along the principal direction are non-vanishing when evaluated on the ellipsoid surface
+For the second terms of the Oseen Laplacian, only components along the principal direction are non-vanishing when evaluated on the ellipsoid surface, and we obtain,
 \begin{equation}
-\left(\frac{1}{D _x}\frac{\partial}{\partial D _x}\right)\left(\frac{\sinh D _x}{D _x}\right)\frac{x^2}{r^5}\vert _\left(r=\text{ellipsoid surface}\right) = \frac{1}{4a^3e^3}\left(\log\left(\frac{1-e}{1+e}\right)+\frac{2e\left(3-6e^2+11e^4\right)}{3\left(1-e^ 2\right)^3}.
+\left(\frac{1}{D _x}\frac{\partial}{\partial D _x}\right)\left(\frac{\sinh D _x}{D _x}\right)\frac{x^2}{r^5}\vert _\left(r=\text{ellipsoid surface}\right) = \frac{1}{4a^3e^3}\left(\log\left(\frac{1-e}{1+e}\right)+\frac{2e}{1-e^2}\right).
 \end{equation}
-All told, with both bare and laplacian terms we have,
+All told, with both bare and Laplacian terms we have,
 \begin{equation}
-\left(\frac{\sinh D_x}{D_x}\right) \mathcal{G} _{ij}\left(\mathbf{x}=\text{ellipsoid surface}\right) + \frac{c^2}{2}\left(\frac{1}{D _x}\frac{\partial}{\partial D _x}\right)\left(\frac{\sinh D_x}{D_x}\right) \partial^2\mathcal{G} _{ij}\left(\mathbf{x}=\text{ellipsoid surface}\right) =  \frac{1}{2ae}\log\left(\frac{1+e}{1-e}\right)\left(\delta _{ij} + d _i d _j \right) + \frac{c^2}{4a^3e^3}\left( \log\left(\frac{1-e}{1+e}\right)+\frac{2e}{1-e^2} \right)\delta _{ij}- \frac{3c^2}{4a^3e^3}\left( \log\left(\frac{1-e}{1+e}\right)+\frac{2e\left(3-6e^2+11e^4\right)}{3\left(1-e^ 2\right)^3} \right)d _id _j,
+\left(\frac{\sinh D_x}{D_x}\right) \mathcal{G} _{ij}\left(\mathbf{x}=\text{ellipsoid surface}\right) + \frac{c^2}{2}\left(\frac{1}{D _x}\frac{\partial}{\partial D _x}\right)\left(\frac{\sinh D_x}{D_x}\right)\partial^2\mathcal{G} _{ij}\left(\mathbf{x}=\text{ellipsoid surface}\right) = \frac{1}{2ae}\log\left(\frac{1+e}{1-e}\right)\left(\delta _{ij} + d _id _j\right) + \frac{1-e^2}{8ae^3}\left(\log\left(\frac{1-e}{1+e}\right)+\frac{2e}{1-e^2}\right)\left(\delta _{ij} + d _id _j\right),
 \end{equation}
 \begin{equation}
-=  \frac{1}{2ae}L\right)\left(\delta _{ij} + d _i d _j \right) + \frac{1-e^2}{4ae^3}\left(-L+\frac{2e}{1-e^2} \right)\delta _{ij}- \frac{3\left( 1-e^2 \right)}{4ae^3}\left( -L +\frac{2e\left(3-6e^2+11e^4\right)}{3\left(1-e^ 2\right)^3} \right)d _id _j,
-\end{equation}
+ = \frac{1}{4ae^2}\left( \frac{5e^2-1}{2e}L+1\right)\left(\delta _{ij} + d _id _j\right),
+ \end{equation}
+where we defined $$L=\log\left(\frac{1+e}{1-e}\right)$$.
 
-\begin{equation}
-=  \frac{1}{a}\left[ \left(\frac{L}{2e} -  \frac{1-e^2}{4e^3}L+\frac{1}{2e^2}\right)\delta_{ij} + \left(\left(\frac{L}{2e} + \frac{3\left(1-e^2\right)}{ 4e^3}L - \frac{1}{2e^2\left(1-e^2\right)^2}\left(3-6e^2+11e^4\right)\right)d_id_j.
-\end{equation}
+
+
+
+
+
+
+
 
 
 Matching our boundary condition, we see,
