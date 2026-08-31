@@ -482,8 +482,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/23_project/";
-            },},{id: "projects-on-slender-body-theory-jeffery-orbits-and-the-rheology-of-dilute-spheroid-suspensions-8-26",
-          title: 'On Slender Body Theory, Jeffery Orbits, and the Rheology of Dilute Spheroid Suspensions...',
+            },},{id: "projects-on-spheres-and-spheroids-in-stokes-flow-8-26",
+          title: 'On Spheres and Spheroids in Stokes Flow - 8/26',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/24_project/";
