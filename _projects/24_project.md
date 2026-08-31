@@ -1029,6 +1029,7 @@ where $$e=a_E/a$$ is the unitless spheroid eccentricity.
 For the second part of the Oseen tensor, only terms parallel to the spheroid axis contribute when evaluated on the surface and result in the same integral,
 \begin{equation}
 \int_0^1dt\ \frac{\left(a\pm a_Et\right)^2}{ \left(\left(x\pm a_Et\right)^2 \right)^{3/2} } = \int_0^1dt\ \frac{1}{\left(x\pm a_Et\right)},
+\end{equation}
 \begin{equation}
 \left(\frac{\sinh D_x}{D_x}\right) \frac{x^2}{r^3}\vert_\left(r=\text{ellipsoid surface}\right) = \frac{1}{2ae}\log\left(\frac{1+e}{1-e}\right).
 \end{equation}
@@ -1118,10 +1119,16 @@ Y^C = \frac{4e^3}{3}\left( 2-e^2 \right)\left(\left(e^2+1\right)L-2e \right)^{-1
 \end{equation}
 There are similar expression for strain and also higher-order moments, but those are less important.
 
-
-
-
-
+## Slender Body Theory
+Consider now a needle-like rigid body with a length $$2a$$ much greater than its width. We will represent the body as a distribution of stokeslets, integrating over the body to show agreement with the results of our prolate spheroid full analytic result. Consider the velocity field produced by a constant line distribution of Stokeslets along the $$x$$ axis, with the velocity field given by integrating these Stokeslets,
+\begin{equation}
+u _i\left(\mathbf{x}\right) = f _j\int _{-a}^a d\xi\ \frac{\mathcal{G} _{ij}\left(\mathbf{x}+\xi\hat{\mathbf{e}}_x\right)}{8\pi\mu}.
+\end{equation}
+We evaluate along the center of the rod with $$x=0$$, defining $$\rho=\sqrt{y^2+z^2}\approx c\ll a$$, we find,
+\begin{equation}
+\int _{-a}^a d\xi\ \frac{1}{\sqrt{\xi^2+\rho^2}} = 2\log\left(\frac{2}{\epsilon}\right) + \mathcal{O}\left(\epsiloN^2\right),
+\end{equation}
+where $$\epsilon=c/a$$ is a small expansion parameter.
 
 
 
