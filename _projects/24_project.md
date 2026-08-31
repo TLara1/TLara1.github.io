@@ -215,7 +215,7 @@ where $$U^\infty_i$$, $$\Omega^\infty_j$$, and $$E^\infty_{ij}$$ are constant. T
 \begin{equation}
 u_i\left(r=a\right)=u^p_i
 \end{equation}
-where $a$ is the radius of the sphere, and the velocity far from the sphere takes the far-field unperturbed values,
+where $$a$$ is the radius of the sphere, and the velocity far from the sphere takes the far-field unperturbed values,
 \begin{equation}
 u_i\left(r\rightarrow\infty\right)=u^\infty_i.
 \end{equation}
@@ -1326,7 +1326,7 @@ d_x = sin\theta\cos\phi\quad d_y = \sin\theta\sin\phi\quad d_z = \cos\theta,
 \end{equation}
 we obtain,
 \begin{equation}
-- \dot{d}_z = \dot{\theta}\sin\theta = \dot{\gamma}\sin^2\theta\cos\theta\sin\phi\cos\phi,
+-\dot{d}_z = \dot{\theta}\sin\theta = \dot{\gamma}\sin^2\theta\cos\theta\sin\phi\cos\phi,
 \end{equation}
 \begin{equation}
 d_x\dot{d}_y - d_y \dot{d}_x = \sin^2\theta\dot{\phi} = - \frac{1}{2} \dot{\gamma} \sin^2\theta + \frac{1}{2}\dot{\gamma}\frac{Y^H}{Y^C}\sin^2\theta\left( \sin^2\phi-\cos^2\phi\right).
@@ -1336,15 +1336,15 @@ Consulting the expressions for $$Y^C$$ and $$Y^H$$, Eq. \ref{eq: Yc equation} an
 B = \frac{Y^H}{Y^C} = \frac{e^2}{2-e^2} = \frac{1-r^2}{1+r^2},
 \end{equation}
 where $$r=c/a$$ is the spheroid aspect ratio. The angular dynamics may be solved exactly with,
-\end{equation}
+\begin{equation}
 \dot{\phi} = - \frac{1}{2} \dot{\gamma} + \frac{1}{2}\dot{\gamma}\frac{1-r^2}{1+r^2}\left( 1 - 2 \cos^2\phi\right) = -\dot{\gamma}\frac{1}{1+r^2}\left( r^2\sin^2\phi + \cos^2\phi\right).
 \end{equation}
 We solve to obtain,
-\end{equation}
+\begin{equation}
 tan\left(\phi\right) = -\frac{1}{r}\tan\left(\frac{\dot{\gamma}t}{r+r^{-1}}\right).
 \end{equation}
 The period of rotation goes with,
-\end{equation}
+\begin{equation}
 T = \frac{2\pi}{\dot{\gamma}}\left(r+r^{-1}\right).
 \end{equation}
 As the rod becomes thinner and $$r\rightarrow\infty$$, the period increases and the rod becomes more aligned with the direction of flow. For a spherical object, $$r=1$$, the rotation is at a constant rate.
