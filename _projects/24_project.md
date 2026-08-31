@@ -943,7 +943,7 @@ u_i\left(\mathbf{x}\right)-\epsilon _{ijk}\Omega^\infty _j x _k-E _{ij}^\infty x
 
 And last but not least, in terms of our multipole series,
 \begin{equation}\label{eq: velocity field translation ellipsoid multipole}
-u _i\left(\mathbf{x}\right)-U_i^\infty=A _j^{(0)} \left( \frac{\sinh D}{D}\right) \frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+u _i\left(\mathbf{x}\right)-U_i^\infty=A _j^{(1)} \left( \frac{\sinh D}{D}\right) \frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
 
 \begin{equation}
@@ -982,7 +982,6 @@ Employing $$D_x$$ instead of $$D$$ is crucial since we may recast $$D_x$$ as a t
 
 ## Determining Multipole Coefficients for the Prolate Spheroid
 
-
 ### Translation
 Consider the boundary condition,
 \begin{equation}
@@ -1010,7 +1009,7 @@ We must evaluate the integrals over $$t$$ at the boundary of the elipsoid. The e
 
 Beginning with the operators acting on the Oseen tensor,
 \begin{equation}
-\mathcal{G}_{ij}\vert _\left(r=\text{ellipsoid surface}\right) = \frac{\delta _{ij}}{x} + \frac{x _ix _j}{x^3}.
+\mathcal{G}_{ij}\left(\mathbf{x}=\text{ellipsoid surface}\right) = \frac{\delta _{ij}}{x} + \frac{x _ix _j}{x^3}.
 \end{equation}
 For the first part,
 
@@ -1042,16 +1041,10 @@ where $$d_i$$ is the orientation direction unit vector of the spheroid along whi
 
 Now for the Laplacian of the Oseen tensor,
 \begin{equation}
-\partial^2\mathcal{G} _{ij} = 2\frac{\delta _{ij}}{r^3} - 6\frac{x _ix _j}{r^5}.
+\partial^2\mathcal{G} _{ij}\left(\mathbf{x}=\text{ellipsoid surface}\right) = 2\frac{\delta _{ij}}{x^3} - 6\frac{x _ix _j}{x^5}.
 \end{equation}
 
-The integration procedure is very similar.
-
-CONTINUE FROM HERE
-
-
-We have a few terms to evaluate; for convenience and clarity, we will omit a few steps. After a good amount of algebra, one can obtain,
-The simplification is somewhat involved, but after a good amount of algebra one can obtain,
+The integration procedure is very similar. For convenience and clarity, we will omit a few steps.
 \begin{equation}
 \left(\frac{1}{D _x}\frac{\partial}{\partial D _x}\right)\left(\frac{\sinh D _x}{D _x}\right)\frac{1}{r^3}\vert _\left(r=\text{ellipsoid surface}\right) = \frac{1}{4a^3e^3}\left(\log\left(\frac{1-e}{1+e}\right)+\frac{2e}{1-e^2}\right).
 \end{equation}
@@ -1061,21 +1054,28 @@ For the second terms of the Oseen Laplacian, only components along the principal
 \end{equation}
 All told, with both bare and Laplacian terms we have,
 \begin{equation}
-\left(\frac{\sinh D_x}{D_x}\right) \mathcal{G} _{ij}\left(\mathbf{x}=\text{ellipsoid surface}\right) + \frac{c^2}{2}\left(\frac{1}{D _x}\frac{\partial}{\partial D _x}\right)\left(\frac{\sinh D_x}{D_x}\right)\partial^2\mathcal{G} _{ij}\left(\mathbf{x}=\text{ellipsoid surface}\right) = \frac{1}{2ae}\log\left(\frac{1+e}{1-e}\right)\left(\delta _{ij} + d _id _j\right) + \frac{1-e^2}{8ae^3}\left(\log\left(\frac{1-e}{1+e}\right)+\frac{2e}{1-e^2}\right)\left(2\delta _{ij} - 6d _id _j\right),
+\left(\frac{\sinh D_x}{D_x}\right) \mathcal{G} _{ij}\left(\mathbf{x}=\text{ellipsoid surface}\right) + \frac{c^2}{2}\left(\frac{1}{D _x}\frac{\partial}{\partial D _x}\right)\left(\frac{\sinh D_x}{D_x}\right)\partial^2\mathcal{G} _{ij}\left(\mathbf{x}=\text{ellipsoid surface}\right) \nonumber
 \end{equation}
+\begin{equation}
+= \frac{1}{2ae}\log\left(\frac{1+e}{1-e}\right)\left(\delta _{ij} + d _id _j\right) + \frac{1-e^2}{8ae^3}\left(\log\left(\frac{1-e}{1+e}\right)+\frac{2e}{1-e^2}\right)\left(2\delta _{ij} - 6d _id _j\right),
+\end{equation}
+
 \begin{equation}
 = \frac{1}{2ae^3}\left[\left(\frac{3e^2-1}{2}L+e\right)\delta _{ij}+\left(\frac{3-e^2}{2}L-3e\right)d_id_j\right],
 \end{equation}
 where we defined $$L=\log\left(\frac{1+e}{1-e}\right)$$.
 
 Matching our boundary condition, we see,
+
 \begin{equation}
-A_j^{(0)}\frac{1}{16\pi\mu ae^3}\left[\left(\frac{3e^2-1}{2}L+e\right)\delta _{ij}+\left(\frac{3-e^2}{2}L-3e\right)d_id_j\right]=U_i^P-U_i^\infty.
+A_j^{(0)}\frac{1}{16\pi\mu ae^3 }\left[\left(\frac{3e^2-1}{2}L+e\right)\delta _{ij}+\left(\frac{3-e^2}{2}L-3e\right)d _id _j\right] =U _i^P-U _i^\infty.
 \end{equation}
+
 We invert to obtain,
 \begin{equation}
-A_j^{(0)} = 6\pi\mu a \frac{8e^3}{3}\left[ \left(\frac{3e^2-1}{2}L+e \right)^{-1}\delta_{jk} - \frac{\left(3-e^2 \right)L-6e}{\left(\left(1+e^2\right)L-2e\right)\left(\left( 3e^2-1 \right)L+2e\right)}d_jd_k\right]\left(U_k^P-U_k^\infty\right).
+A_j^{(0)} = 6\pi\mu a \frac{8e^3}{3}\left[ \left(\frac{3e^2-1}{2}L+e \right)^{-1}\delta_{jk} - \frac{\left(3-e^2 \right)L-6e}{\left(\left(1+e^2\right)L-2e\right)\left(\left( 3e^2-1 \right)L+2e\right)}d _jd _k\right]\left(U _k^P-U _k^\infty\right).
 \end{equation}
+
 it is more convenient to write $$A_j^{(0)}$$ in terms parallel and perpendicular to the orientation of the ellipsoid,
 \begin{equation}
 A_j^{(0)} = 6\pi\mu a \frac{8e^3}{3}\left[ \left(\left(e^2+1\right)L-2e \right)^{-1}d_jd_k + 2\left(\left(3e^2-1\right)L+2e \right)^{-1} \left(\delta _{jk}-d_jd_k\right) \right]\left(U_k^P-U_k^\infty\right).
@@ -1096,8 +1096,8 @@ and,
 Y^A = \frac{16e^3}{3}\left(\left(3e^2-1\right)L+2e \right)^{-1}.
 \end{equation}
 
-
-
+### Rotation and Strain
+Having determined the first-order moments, we now focus on the second order moments.
 
 ## Method of Reflections for Widely Separated Spheres
 We can solve for the flow in the presence of a single sphere; can we resolve the problem with multiple spheres? Yes, more or less. The idea behind the method of reflections is to expand the velocity field in terms of the ratio $$\alpha=a/R$$, where $$a$$ is the sphere's radius and $$R$$ is the separation between the spheres. We assume this ratio is small such that the expansion can be truncated at a given order and provide an accurate approximation of the multiple-sphere velocity field.
