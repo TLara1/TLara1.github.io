@@ -360,6 +360,107 @@ Supposing the position of the sphere center is given by $$X_i$$ and its orientat
 \dot{p}_i = \epsilon _{ijk}\Omega^p_jp_k = \frac{1}{2}\epsilon _{ijk}\epsilon _{jlm}\partial_l u_m^\infty\| _{\mathbf{X}}p_k + \epsilon _{ijk}\Omega^s_jp_k.
 \end{equation}
 
+
+## Method of Reflections for Widely Separated Spheres
+We can solve for the flow in the presence of a single sphere; can we resolve the problem with multiple spheres? Yes, more or less. The idea behind the method of reflections is to expand the velocity field in terms of the ratio $$\alpha=a/R$$, where $$a$$ is the sphere's radius and $$R$$ is the separation between the spheres. We assume this ratio is small such that the expansion can be truncated at a given order and provide an accurate approximation of the multiple-sphere velocity field.
+
+We consider two spheres centred at $$\mathbf{x}_1$$ and $$\mathbf{x}_2$$ with the same radius $$a$$ (for simplicity; in general, the sphere radii can differ). We take the spheres to be nonrotating and translating with velocities $$U^1_i$$ and $$U^2_i$$. The zeroth-order solution is simply the Stokes solution for the disturbance caused by the isolated spheres,
+\begin{equation}
+u_i^{(0)}\left(\mathbf{x}\right)  = u_i^{1\ (0)}\left(\mathbf{x}\right) + u_i^{2\ (0)}\left(\mathbf{x}\right) + u^\infty _i,
+\end{equation}
+and the ambient $$u^\infty _i=U^\infty_i$$ is purely translation. The zeroeth-order contribution from sphere $$a$$ is,
+\begin{equation}
+u_i^{a\ (0)}\left(\mathbf{x}\right) = -F_j^{a\ (0)} \left(1+\frac{a^2}{6}\partial^2\right) \frac{\mathcal{G} _{ij}\left(\mathbf{x} - \mathbf{x}^a\right)}{8\pi\mu} ,
+\end{equation}
+\begin{equation}
+F_j^{a\ (0)} = 6\pi\mu a\left(U^\infty _j -U^a _j\right).
+\end{equation}
+We can equivalently treat the case of rotated and strained spheres using our spherical singularity expansion.
+
+The zeroeth-order field is not quite correct since the boundary conditions at the translating spheres are not satisfied. For each translating sphere, the velocity field at the sphere surface should be the translating velocity,
+
+\begin{equation}
+u_i\left(\mathbf{x} = \mathbf{x}^a\right) = U_i^a,
+\end{equation}
+In our zeroth-order expansion, the boundary condition is not satisfied due to the influence of the partner particle. For instance, at the first sphere,
+\begin{equation}
+u_i^{1\ (0)}\left(\mathbf{x} = \mathbf{x}^1\right) = U_i^1 + u_i^{2\ (0)}\left(\mathbf{x} = \mathbf{x}^1\right) + u^\infty _i.
+\end{equation}
+Our second-order corrections are the reflection fields designed to cancel the contribution from the opposing sphere. For the first particle, the first-order correction is a velocity field such that
+\begin{equation}
+u_i^{1\ (1)}\left(\mathbf{x} = \mathbf{x}^1\right) = - u_i^{2\ (0)}\left(\mathbf{x} = \mathbf{x}^1\right),
+\end{equation}
+such that the combined velocity field,
+\begin{equation}
+u_i^{(1)}  = u_i^{1\ (0)} + u_i^{2\ (0)} + u_i^{1\ (1)} + u_i^{2\ (1)}
+\end{equation}
+has a boundary error that is of a higher order than the previous velocity field. This scheme can be generalized as the particle fields "reflect" on each other. For the n-th order first sphere velocity field, we find a velocity field satisfying,
+\begin{equation}
+u_i^{1\ (n)}\left(\mathbf{x} = \mathbf{x}^1\right) = - u_i^{2\ (n-1)}\left(\mathbf{x} = \mathbf{x}^1\right).
+\end{equation}
+
+With our spherical singularity solution and Faxén Laws, finding reflected fields is not too difficult. For the $$a$$-th sphere, with $$b$$ indices representing the opposite sphere,
+
+\begin{equation}
+u_i^{a\ (1)}\left(\mathbf{x}\right) = -\left[ -F _j^{a\ (1)}\left(1+\frac{a^2}{6}\partial^2\right) + S^{a\ (1)} _{jk}\left(1+\frac{a^2}{10}\partial^2\right)\partial _k -\frac{1}{2} \epsilon _{jkl} T^{a\ (1)} _k\partial _l\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}^a\right)}{8\pi\mu}.
+\end{equation}
+
+The force, stress, and torque are obtained with the Faxén relations for the first sphere,
+\begin{equation}
+F_i^{1\ (1)} = 6\pi\mu a\left( 1+\frac{a^2 }{6}\partial^2 \right)u_i^{2\ (0)}\| _{ \mathbf{x}=\mathbf{x}^1 },
+\end{equation}
+\begin{equation}
+=-F_j^{2\ (0)}\left[  \frac{3}{4}\left(\delta _{ij}+d _id _j\right)\alpha +  \frac{1}{2}\left(\delta _{ij}-3d _id _j\right)\alpha^3 \right],
+\end{equation}
+\begin{equation}
+T_i^{1\ (1)} =  4\pi\mu a^3 \epsilon _{ijk}\partial_ju_k^{2\ (0)}\| _{ \mathbf{x}=\mathbf{x}^1 },
+\end{equation}
+\begin{equation}
+= - a \alpha^2 \epsilon _{ijk}F_j^{2\ (0)}d_k,
+\end{equation}
+\begin{equation}
+S _{ij}^{1\ (1)} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^{2\ (0)}+\partial_ju_i^{2\ (0)}\right)\| _{ \mathbf{x}=\mathbf{x}^1 },
+\end{equation}
+\begin{equation}
+ = -a F_k^{2\ (0)}\left[ \frac{5}{6}\left(\delta _{ij}d_k - 3d _id _jd _k\right)\alpha^2 + \frac{4}{3}\left(-\delta _{ij}d_k-2\delta _{ik}d_j+5d _id _jd _k\right)\right].
+\end{equation}
+Recall that $$\alpha=a/R$$ is our small expansion parameter. $$R$$ is the distance between the two spheres, $$R=|\mathbf{x}^1-\mathbf{x}^2|$$ and $$d_i=\left(x^1_i-x_i^2\right)/R$$ is a unit vector pointing between them. One can repeat this process for the second sphere and equivalently for all higher moments to expand the velocity field as a series in terms of $$\alpha$$. For computations, it is often more practical to proceed in wavenumber space where one may express the reflection operation as a matrix transform.
+
+We can perform an identical expansion for the cases of an initial torque or stress. In particular, a particle in an ambient stress field is relevant for our later viscosity calculation; this is the case in which,
+\begin{equation}
+u_i\left(\mathbf{x} =  \mathbf{x} ^a\right) = E^a_{ij}x_j
+\end{equation}
+so the zeroeth-order contribution is,
+\begin{equation}
+u_i\left(\mathbf{x}\right)^a = S^{a\ (0)} _{jk}\left(1+\frac{a^2 }{10}\partial^2\right)\partial_k\frac{\mathcal{G} _{ij}\left(\mathbf{x} - \mathbf{x}^a\right)}{8\pi\mu},
+\end{equation}
+\begin{equation}
+S^{a\ (0)} _{jk} = \frac{20}{3}\pi\mu a^3\left(E^\infty _{jk}- E^a _{jk}\right).
+\end{equation}
+The first-order stresslet contribution to the first sphere is,
+\begin{equation}
+S _{ij}^{1\ (1)} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^{2\ (0)}+\partial_ju_i^{2\ (0)}\right)\| _{ \mathbf{x}=\mathbf{x}^1 },
+\end{equation}
+\begin{equation}
+= \frac{5}{12} S^{2\ (0)} _{kl} a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\left(1+\frac{a^2 }{10}\partial^2\right)\partial_l\left(\partial_i\mathcal{G} _{jk}\left(R\right)+\partial_j\mathcal{G} _{ik}\left(R\right)\right)
+\end{equation}
+\begin{equation}
+= \frac{5}{12} S^{2\ (0)} _{kl} a^3\left[\partial_i\partial_l\mathcal{G} _{jk}\left(R\right)+\partial_j\partial_l\mathcal{G} _{ik}\left(R\right) + \frac{a^2}{5}\left( \partial_i\partial_l\partial^2\mathcal{G} _{jk}\left(R\right)+\partial_j\partial_l\partial^2\mathcal{G} _{ik}\left(R\right)\right) \right],
+\end{equation}
+\begin{equation}
+= \frac{5}{12} S^{2\ (0)} _{kl} a^3\left[\left( \frac{2}{R^3}\delta _{ij}\delta _{kl} -\frac{6}{R^3}\delta _{ij}d_kd_l-\frac{6}{R^3}\left(\delta _{kl}d _id _j + \delta _{jl}d _id _k + \delta _{il}d _jd _k\right)+\frac{30}{R^3}d _id _jd _kd _l
+\right) \right.
+\end{equation}
+\begin{equation}
+\left. + \frac{a^2}{5}\left( -\frac{12}{R^5}\left(\delta _{ij}\delta _{lk}+\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il}\right)+\frac{60}{R^5}\left(\delta _{ij}d_k+\delta _{ik}d_j+\delta _{jk}d_i\right)d_l+\frac{60}{R^5}\left(\delta _{il}d _kd _j + \delta _{jl}d _id _k + \delta _{kl}d_id _j\right)-\frac{420}{R^5}d _id _jd _kd _l\right) \right],
+\end{equation}
+dropping a few terms on the basis that $$S^{2\ (0)} _{kl}=S^{2\ (0)} _{lk}$$ and $$S^{2\ (0)} _{kk}=0$$,
+\begin{equation}\label{eq: S11 stresslet reflection}
+S _{ij}^{1\ (1)} = \frac{5}{2} S^{2\ (0)} _{kl} \alpha^3\left[\left( -\delta _{ij}d_kd_l- \delta _{jl}d _id _k - \delta _{il}d _jd _k +5d _id _jd _kd _l \right) + \frac{\alpha^2}{5}\left( -4\delta _{ik}\delta _{jl}+10\left(\delta _{ij}d_k+2\delta _{ik}d_j+2\delta _{jk}d_i\right)d_l-70d _id _jd _kd _l\right) \right].
+\end{equation}
+This looks a little scary, but we will be able to simplify further. 
+
+
 ## The Singularity System for Ellipsoids
 Now we are interested in the same procedure we did for spheres but for a triaxial ellipsoid. Let the surface of the ellipsoid be given by,
 \begin{equation}
@@ -1112,11 +1213,11 @@ with,
 X^C = \frac{4e^3}{3}\left( 1-e^2 \right)\left(-\left(1-e^2\right)L+2e \right)^{-1},
 \end{equation}
 and,
-\begin{equation}
+\begin{equation}\label{eq: Yc equation}
 Y^C = \frac{4e^3}{3}\left( 2-e^2 \right)\left(\left(e^2+1\right)L-2e \right)^{-1},
 \end{equation}
 and,
-\begin{equation}
+\begin{equation}\label{eq: Yh equation}
 Y^H = \frac{4e^5}{3}\left(\left(e^2+1\right)L-2e \right)^{-1}.
 \end{equation}
 
@@ -1211,13 +1312,13 @@ d_n d_k d_i E _{kn}^\infty = d_i \dot{\gamma}d _xd _y.
 \end{equation}
 So, the evolution given component by component is,
 \begin{equation}
-\dot{d}_x = \frac{1}{2} \dot{\gamma} d_y + \frac{1}{2}\dot{\gamma}\frac{Y^H}{Y^C}\left(d_y - d_x^2d_y\right),
+\dot{d}_x = \frac{1}{2} \dot{\gamma} d_y + \frac{1}{2}\dot{\gamma}\frac{Y^H}{Y^C}\left(d_y - 2 d_x^2d_y\right),
 \end{equation}
 \begin{equation}
-\dot{d}_y = - \frac{1}{2} \dot{\gamma} d_x + \frac{1}{2}\dot{\gamma}\frac{Y^H}{Y^C}\left(d_x - d_y^2d_x\right),
+\dot{d}_y = - \frac{1}{2} \dot{\gamma} d_x + \frac{1}{2}\dot{\gamma}\frac{Y^H}{Y^C}\left(d_x - 2 d_y^2d_x\right),
 \end{equation}
 \begin{equation}
-\dot{d}_z = -\frac{1}{2}\dot{\gamma}d_xd_yd_z.
+\dot{d}_z = -\dot{\gamma}d_xd_yd_z.
 \end{equation}
 If we parametrize the orientation using spherical coordinates,
 \begin{equation}
@@ -1225,11 +1326,28 @@ d_x = sin\theta\cos\phi\quad d_y = \sin\theta\sin\phi\quad d_z = \cos\theta,
 \end{equation}
 we obtain,
 \begin{equation}
-- \dot{d}_z = \dot{\theta}\sin\theta = \frac{1}{2}\dot{\gamma}\sin^2\theta\cos\theta\sin\phi\cos\phi,
+- \dot{d}_z = \dot{\theta}\sin\theta = \dot{\gamma}\sin^2\theta\cos\theta\sin\phi\cos\phi,
 \end{equation}
 \begin{equation}
 d_x\dot{d}_y - d_y \dot{d}_x = \sin^2\theta\dot{\phi} = - \frac{1}{2} \dot{\gamma} \sin^2\theta + \frac{1}{2}\dot{\gamma}\frac{Y^H}{Y^C}\sin^2\theta\left( \sin^2\phi-\cos^2\phi\right).
 \end{equation}
+Consulting the expressions for $$Y^C$$ and $$Y^H$$, Eq. \ref{eq: Yc equation} and Eq. \ref{eq: Yh equation}, we may define the Bretherton constant,
+\begin{equation}
+B = \frac{Y^H}{Y^C} = \frac{e^2}{2-e^2} = \frac{1-r^2}{1+r^2},
+\end{equation}
+where $$r=c/a$$ is the spheroid aspect ratio. The angular dynamics may be solved exactly with,
+\end{equation}
+\dot{\phi} = - \frac{1}{2} \dot{\gamma} + \frac{1}{2}\dot{\gamma}\frac{1-r^2}{1+r^2}\left( 1 - 2 \cos^2\phi\right) = -\dot{\gamma}\frac{1}{1+r^2}\left( r^2\sin^2\phi + \cos^2\phi\right).
+\end{equation}
+We solve to obtain,
+\end{equation}
+tan\left(\phi\right) = -\frac{1}{r}\tan\left(\frac{\dot{\gamma}t}{r+r^{-1}}\right).
+\end{equation}
+The period of rotation goes with,
+\end{equation}
+T = \frac{2\pi}{\dot{\gamma}}\left(r+r^{-1}\right).
+\end{equation}
+As the rod becomes thinner and $$r\rightarrow\infty$$, the period increases and the rod becomes more aligned with the direction of flow. For a spherical object, $$r=1$$, the rotation is at a constant rate.
 
 
 
@@ -1237,105 +1355,6 @@ d_x\dot{d}_y - d_y \dot{d}_x = \sin^2\theta\dot{\phi} = - \frac{1}{2} \dot{\gamm
 
 
 
-
-## Method of Reflections for Widely Separated Spheres
-We can solve for the flow in the presence of a single sphere; can we resolve the problem with multiple spheres? Yes, more or less. The idea behind the method of reflections is to expand the velocity field in terms of the ratio $$\alpha=a/R$$, where $$a$$ is the sphere's radius and $$R$$ is the separation between the spheres. We assume this ratio is small such that the expansion can be truncated at a given order and provide an accurate approximation of the multiple-sphere velocity field.
-
-We consider two spheres centred at $$\mathbf{x}_1$$ and $$\mathbf{x}_2$$ with the same radius $$a$$ (for simplicity; in general, the sphere radii can differ). We take the spheres to be nonrotating and translating with velocities $$U^1_i$$ and $$U^2_i$$. The zeroth-order solution is simply the Stokes solution for the disturbance caused by the isolated spheres,
-\begin{equation}
-u_i^{(0)}\left(\mathbf{x}\right)  = u_i^{1\ (0)}\left(\mathbf{x}\right) + u_i^{2\ (0)}\left(\mathbf{x}\right) + u^\infty _i,
-\end{equation}
-and the ambient $$u^\infty _i=U^\infty_i$$ is purely translation. The zeroeth-order contribution from sphere $$a$$ is,
-\begin{equation}
-u_i^{a\ (0)}\left(\mathbf{x}\right) = -F_j^{a\ (0)} \left(1+\frac{a^2}{6}\partial^2\right) \frac{\mathcal{G} _{ij}\left(\mathbf{x} - \mathbf{x}^a\right)}{8\pi\mu} ,
-\end{equation}
-\begin{equation}
-F_j^{a\ (0)} = 6\pi\mu a\left(U^\infty _j -U^a _j\right).
-\end{equation}
-We can equivalently treat the case of rotated and strained spheres using our spherical singularity expansion.
-
-The zeroeth-order field is not quite correct since the boundary conditions at the translating spheres are not satisfied. For each translating sphere, the velocity field at the sphere surface should be the translating velocity,
-
-\begin{equation}
-u_i\left(\mathbf{x} = \mathbf{x}^a\right) = U_i^a,
-\end{equation}
-In our zeroth-order expansion, the boundary condition is not satisfied due to the influence of the partner particle. For instance, at the first sphere,
-\begin{equation}
-u_i^{1\ (0)}\left(\mathbf{x} = \mathbf{x}^1\right) = U_i^1 + u_i^{2\ (0)}\left(\mathbf{x} = \mathbf{x}^1\right) + u^\infty _i.
-\end{equation}
-Our second-order corrections are the reflection fields designed to cancel the contribution from the opposing sphere. For the first particle, the first-order correction is a velocity field such that
-\begin{equation}
-u_i^{1\ (1)}\left(\mathbf{x} = \mathbf{x}^1\right) = - u_i^{2\ (0)}\left(\mathbf{x} = \mathbf{x}^1\right),
-\end{equation}
-such that the combined velocity field,
-\begin{equation}
-u_i^{(1)}  = u_i^{1\ (0)} + u_i^{2\ (0)} + u_i^{1\ (1)} + u_i^{2\ (1)}
-\end{equation}
-has a boundary error that is of a higher order than the previous velocity field. This scheme can be generalized as the particle fields "reflect" on each other. For the n-th order first sphere velocity field, we find a velocity field satisfying,
-\begin{equation}
-u_i^{1\ (n)}\left(\mathbf{x} = \mathbf{x}^1\right) = - u_i^{2\ (n-1)}\left(\mathbf{x} = \mathbf{x}^1\right).
-\end{equation}
-
-With our spherical singularity solution and Faxén Laws, finding reflected fields is not too difficult. For the $$a$$-th sphere, with $$b$$ indices representing the opposite sphere,
-
-\begin{equation}
-u_i^{a\ (1)}\left(\mathbf{x}\right) = -\left[ -F _j^{a\ (1)}\left(1+\frac{a^2}{6}\partial^2\right) + S^{a\ (1)} _{jk}\left(1+\frac{a^2}{10}\partial^2\right)\partial _k -\frac{1}{2} \epsilon _{jkl} T^{a\ (1)} _k\partial _l\right]\frac{\mathcal{G} _{ij}\left(\mathbf{x}-\mathbf{x}^a\right)}{8\pi\mu}.
-\end{equation}
-
-The force, stress, and torque are obtained with the Faxén relations for the first sphere,
-\begin{equation}
-F_i^{1\ (1)} = 6\pi\mu a\left( 1+\frac{a^2 }{6}\partial^2 \right)u_i^{2\ (0)}\| _{ \mathbf{x}=\mathbf{x}^1 },
-\end{equation}
-\begin{equation}
-=-F_j^{2\ (0)}\left[  \frac{3}{4}\left(\delta _{ij}+d _id _j\right)\alpha +  \frac{1}{2}\left(\delta _{ij}-3d _id _j\right)\alpha^3 \right],
-\end{equation}
-\begin{equation}
-T_i^{1\ (1)} =  4\pi\mu a^3 \epsilon _{ijk}\partial_ju_k^{2\ (0)}\| _{ \mathbf{x}=\mathbf{x}^1 },
-\end{equation}
-\begin{equation}
-= - a \alpha^2 \epsilon _{ijk}F_j^{2\ (0)}d_k,
-\end{equation}
-\begin{equation}
-S _{ij}^{1\ (1)} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^{2\ (0)}+\partial_ju_i^{2\ (0)}\right)\| _{ \mathbf{x}=\mathbf{x}^1 },
-\end{equation}
-\begin{equation}
- = -a F_k^{2\ (0)}\left[ \frac{5}{6}\left(\delta _{ij}d_k - 3d _id _jd _k\right)\alpha^2 + \frac{4}{3}\left(-\delta _{ij}d_k-2\delta _{ik}d_j+5d _id _jd _k\right)\right].
-\end{equation}
-Recall that $$\alpha=a/R$$ is our small expansion parameter. $$R$$ is the distance between the two spheres, $$R=|\mathbf{x}^1-\mathbf{x}^2|$$ and $$d_i=\left(x^1_i-x_i^2\right)/R$$ is a unit vector pointing between them. One can repeat this process for the second sphere and equivalently for all higher moments to expand the velocity field as a series in terms of $$\alpha$$. For computations, it is often more practical to proceed in wavenumber space where one may express the reflection operation as a matrix transform.
-
-We can perform an identical expansion for the cases of an initial torque or stress. In particular, a particle in an ambient stress field is relevant for our later viscosity calculation; this is the case in which,
-\begin{equation}
-u_i\left(\mathbf{x} =  \mathbf{x} ^a\right) = E^a_{ij}x_j
-\end{equation}
-so the zeroeth-order contribution is,
-\begin{equation}
-u_i\left(\mathbf{x}\right)^a = S^{a\ (0)} _{jk}\left(1+\frac{a^2 }{10}\partial^2\right)\partial_k\frac{\mathcal{G} _{ij}\left(\mathbf{x} - \mathbf{x}^a\right)}{8\pi\mu},
-\end{equation}
-\begin{equation}
-S^{a\ (0)} _{jk} = \frac{20}{3}\pi\mu a^3\left(E^\infty _{jk}- E^a _{jk}\right).
-\end{equation}
-The first-order stresslet contribution to the first sphere is,
-\begin{equation}
-S _{ij}^{1\ (1)} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^{2\ (0)}+\partial_ju_i^{2\ (0)}\right)\| _{ \mathbf{x}=\mathbf{x}^1 },
-\end{equation}
-\begin{equation}
-= \frac{5}{12} S^{2\ (0)} _{kl} a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\left(1+\frac{a^2 }{10}\partial^2\right)\partial_l\left(\partial_i\mathcal{G} _{jk}\left(R\right)+\partial_j\mathcal{G} _{ik}\left(R\right)\right)
-\end{equation}
-\begin{equation}
-= \frac{5}{12} S^{2\ (0)} _{kl} a^3\left[\partial_i\partial_l\mathcal{G} _{jk}\left(R\right)+\partial_j\partial_l\mathcal{G} _{ik}\left(R\right) + \frac{a^2}{5}\left( \partial_i\partial_l\partial^2\mathcal{G} _{jk}\left(R\right)+\partial_j\partial_l\partial^2\mathcal{G} _{ik}\left(R\right)\right) \right],
-\end{equation}
-\begin{equation}
-= \frac{5}{12} S^{2\ (0)} _{kl} a^3\left[\left( \frac{2}{R^3}\delta _{ij}\delta _{kl} -\frac{6}{R^3}\delta _{ij}d_kd_l-\frac{6}{R^3}\left(\delta _{kl}d _id _j + \delta _{jl}d _id _k + \delta _{il}d _jd _k\right)+\frac{30}{R^3}d _id _jd _kd _l
-\right) \right.
-\end{equation}
-\begin{equation}
-\left. + \frac{a^2}{5}\left( -\frac{12}{R^5}\left(\delta _{ij}\delta _{lk}+\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il}\right)+\frac{60}{R^5}\left(\delta _{ij}d_k+\delta _{ik}d_j+\delta _{jk}d_i\right)d_l+\frac{60}{R^5}\left(\delta _{il}d _kd _j + \delta _{jl}d _id _k + \delta _{kl}d_id _j\right)-\frac{420}{R^5}d _id _jd _kd _l\right) \right],
-\end{equation}
-dropping a few terms on the basis that $$S^{2\ (0)} _{kl}=S^{2\ (0)} _{lk}$$ and $$S^{2\ (0)} _{kk}=0$$,
-\begin{equation}\label{eq: S11 stresslet reflection}
-S _{ij}^{1\ (1)} = \frac{5}{2} S^{2\ (0)} _{kl} \alpha^3\left[\left( -\delta _{ij}d_kd_l- \delta _{jl}d _id _k - \delta _{il}d _jd _k +5d _id _jd _kd _l \right) + \frac{\alpha^2}{5}\left( -4\delta _{ik}\delta _{jl}+10\left(\delta _{ij}d_k+2\delta _{ik}d_j+2\delta _{jk}d_i\right)d_l-70d _id _jd _kd _l\right) \right].
-\end{equation}
-This looks a little scary, but we will be able to simplify further. 
 
 
 ## The Effective Viscosity for a Suspension of Widely Separated Spheres
