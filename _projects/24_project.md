@@ -426,39 +426,57 @@ S _{ij}^{1\ (1)} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \rig
 \end{equation}
 Recall that $$\alpha=a/R$$ is our small expansion parameter. $$R$$ is the distance between the two spheres, $$R=|\mathbf{x}^1-\mathbf{x}^2|$$ and $$d_i=\left(x^1_i-x_i^2\right)/R$$ is a unit vector pointing between them. One can repeat this process for the second sphere and equivalently for all higher moments to expand the velocity field as a series in terms of $$\alpha$$. For computations, it is often more practical to proceed in wavenumber space where one may express the reflection operation as a matrix transform.
 
-We can perform an identical expansion for the cases of an initial torque or stress. In particular, a particle in an ambient stress field is relevant for our later viscosity calculation; this is the case in which,
+## The Effective Viscosity for a Suspension of Widely Separated Spheres
+We are finally able to approach the problem of interest. The idea is as follows. Suppose we have a suspension of spherical particles in a fluid. The suspension is dilute such that the particle number density is low, and from far enough away we can treat the suspension as an ordinary fluid. This suspension fluid will not have the same viscosity as the un-suspension-ified fluid due to the particles within. Our objective is to use what we know about the interactions of particles and fluids to compute the effective viscosity of this fluid as a power series in the particle number density, which is a small number. 
+
+Formally, consider a fluid within a volume $$V$$ containing a suspension of spherical particles with volume fraction $$\phi$$. Let there be $$N$$ particles with radius $$a$$, such that the volume fraction is,
 \begin{equation}
-u_i\left(\mathbf{x} =  \mathbf{x} ^a\right) = E^a_{ij}x_j
+\phi\frac{4}{3}\pi N\frac{a^3}{V}\ll 1.
 \end{equation}
-so the zeroeth-order contribution is,
+In addition to considering a dilute suspension, we consider the limit of a widely separated suspension such that the average particle separation scale is small,
 \begin{equation}
-u_i\left(\mathbf{x}\right)^a = S^{a\ (0)} _{jk}\left(1+\frac{a^2 }{10}\partial^2\right)\partial_k\frac{\mathcal{G} _{ij}\left(\mathbf{x} - \mathbf{x}^a\right)}{8\pi\mu},
+\langle\alpha\rangle = \frac{a}{\langle R\rangle}\ll 1.
+\end{equation}
+This follows from our assumption of a dilute suspension. As
+\begin{equation}
+\langle R \rangle \sim \left(\frac{V}{N}\right)^{\frac{1}{3}}\sim\phi^{-\frac{1}{3}}\rightarrow\alpha\sim\phi^{\frac{1}{3}},
+\end{equation}
+and we can use our method of reflections to expand the inter-particle interactions as a power series in $$\alpha\sim\phi^{\frac{1}{3}}$$. 
+
+Our objective is to compute the effective fluid viscosity $$\mu^\text{eff}$$ as a power series in $$\phi$$. The effective viscosity is such that the bulk average stress looks Newtonian,
+\begin{equation}
+\langle\sigma_{ij}\rangle = -\langle p\rangle \delta_{ij} + 2\mu^\text{eff}\langle e_{ij}\rangle.
+\end{equation}
+The average stress is computed by integrating over the domain $$V$$,
+\begin{equation}
+\langle\sigma_{ij}\rangle = \frac{1}{V}\int_{V} dV\ \sigma_{ij} = -\langle p\rangle \delta_{ij} + 2\mu \langle e_{ij}\rangle + \frac{1}{V}\int_{\sum V_n}dV\ \sigma_{ij},
+\end{equation}
+where we have separated the stress tensor over the fluid portion with the fluid viscosity $$\mu$$ plus a contribution from averaging over all particles, where $$\sum V_n$$ represents the region occupied by our suspended particles. Define this as the particle stress contribution so,
+\begin{equation}
+\sigma_{ij}^\text{particle} = \frac{1}{V}\sum_n\int_{V_n}dV\ \sigma_{ij} = \frac{1}{V}\sum_n\int_{V_n}dV\ \partial_k\left(\sigma_{ik}x_j\right) - \frac{1}{V}\sum_n\int_{V_n}dV\ x_j\partial_k\sigma_{ik}
 \end{equation}
 \begin{equation}
-S^{a\ (0)} _{jk} = \frac{20}{3}\pi\mu a^3\left(E^\infty _{jk}- E^a _{jk}\right).
+= \frac{1}{V}\sum_n\oint_{S_n}dS\ \sigma_{ik}x_j\hat{n}_k = \frac{1}{V}\sum _n S _{ij}^{(n)}  = \frac{N}{V}\langle S _{ij}\rangle.
 \end{equation}
-The first-order stresslet contribution to the first sphere is,
+where $$\langle S _{ij}\rangle$$ is the average stresslet over all $$N$$ particles and we have used the fact that $$\partial _k\sigma _{ik}=0$$ in the absence of external forcings. So all we really need to do is calculate the average stresslet, $$\langle S _{ij}\rangle$$, over all particles in the suspension. We write this average as a series,
 \begin{equation}
-S _{ij}^{1\ (1)} = \frac{20}{3}\pi\mu a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\frac{1}{2}\left(\partial_iu_j^{2\ (0)}+\partial_ju_i^{2\ (0)}\right)\| _{ \mathbf{x}=\mathbf{x}^1 },
+\langle S _{ij}\rangle = \langle S _{ij}^0\rangle + \langle S _{ij}^1\rangle + ...
 \end{equation}
+Each order represents a higher order of particle-particle interactions. $$\langle S _{ij}^0 \rangle$$ are the stresslet effects from isolated particles, $$\langle S _{ij}^1 \rangle$$ are the stresslet effects from the first particle-particle reflection interactions, $$\langle S _{ij}^2$$ are the effects from the second reflection, and so on.
+
+### Linear Corrections 
+At order $$\phi^0$$, the particle interactions are not considered, and the stresslet is obtained from the Faxén relation, Eq. \ref{eq: stresslet flaxen relation},
 \begin{equation}
-= \frac{5}{12} S^{2\ (0)} _{kl} a^3\left( 1+\frac{a^2 }{10}\partial^2 \right)\left(1+\frac{a^2 }{10}\partial^2\right)\partial_l\left(\partial_i\mathcal{G} _{jk}\left(R\right)+\partial_j\mathcal{G} _{ik}\left(R\right)\right)
+\langle S _{ij}^0\rangle = \frac{20}{3}\pi\mu a^3 \left(1 + \frac{a^2}{10}\partial^2\right)\langle e _{ij}\rangle.
 \end{equation}
+And to linear order, the particle stress is,
 \begin{equation}
-= \frac{5}{12} S^{2\ (0)} _{kl} a^3\left[\partial_i\partial_l\mathcal{G} _{jk}\left(R\right)+\partial_j\partial_l\mathcal{G} _{ik}\left(R\right) + \frac{a^2}{5}\left( \partial_i\partial_l\partial^2\mathcal{G} _{jk}\left(R\right)+\partial_j\partial_l\partial^2\mathcal{G} _{ik}\left(R\right)\right) \right],
+\frac{N}{V}\langle S _{ij}^0\rangle = \frac{20}{3}\pi\mu a^3 \frac{N}{V}\left(1 + \frac{a^2}{10}\partial^2\right)\langle e _{ij}\rangle = 5\mu\phi\langle e _{ij}\rangle + \mathcal{O}\left(\alpha^2\phi\right),
 \end{equation}
+we drop the higher-order correction since we know $$\alpha\sim\phi^{\frac{1}{3}}$$, we will return to these corrections later. To linear order in $$\phi$$, we obtain the effective viscosity,
 \begin{equation}
-= \frac{5}{12} S^{2\ (0)} _{kl} a^3\left[\left( \frac{2}{R^3}\delta _{ij}\delta _{kl} -\frac{6}{R^3}\delta _{ij}d_kd_l-\frac{6}{R^3}\left(\delta _{kl}d _id _j + \delta _{jl}d _id _k + \delta _{il}d _jd _k\right)+\frac{30}{R^3}d _id _jd _kd _l
-\right) \right.
+\langle\sigma _{ij}\rangle = -\langle p\rangle \delta _{ij} + 2\mu\left(1+\frac{5}{2}\phi+\mathcal{O}\left(\phi^{5/3}\right)\right)\langle e _{ij}\rangle.
 \end{equation}
-\begin{equation}
-\left. + \frac{a^2}{5}\left( -\frac{12}{R^5}\left(\delta _{ij}\delta _{lk}+\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il}\right)+\frac{60}{R^5}\left(\delta _{ij}d_k+\delta _{ik}d_j+\delta _{jk}d_i\right)d_l+\frac{60}{R^5}\left(\delta _{il}d _kd _j + \delta _{jl}d _id _k + \delta _{kl}d_id _j\right)-\frac{420}{R^5}d _id _jd _kd _l\right) \right],
-\end{equation}
-dropping a few terms on the basis that $$S^{2\ (0)} _{kl}=S^{2\ (0)} _{lk}$$ and $$S^{2\ (0)} _{kk}=0$$,
-\begin{equation}\label{eq: S11 stresslet reflection}
-S _{ij}^{1\ (1)} = \frac{5}{2} S^{2\ (0)} _{kl} \alpha^3\left[\left( -\delta _{ij}d_kd_l- \delta _{jl}d _id _k - \delta _{il}d _jd _k +5d _id _jd _kd _l \right) + \frac{\alpha^2}{5}\left( -4\delta _{ik}\delta _{jl}+10\left(\delta _{ij}d_k+2\delta _{ik}d_j+2\delta _{jk}d_i\right)d_l-70d _id _jd _kd _l\right) \right].
-\end{equation}
-This looks a little scary, but we will be able to simplify further. 
 
 
 ## The Singularity System for Ellipsoids
@@ -466,7 +484,7 @@ Now we are interested in the same procedure we did for spheres but for a triaxia
 \begin{equation}
 \frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1,
 \end{equation}
-with $$a\geq b\geq c$$. We will present a solution base don the multipole expansion, as we did for spheres. 
+with $$a\geq b\geq c$$. We will present a solution based on the multipole expansion, as we did for spheres. 
 
 First we define a few important quantities,
 \begin{equation}
@@ -1354,151 +1372,6 @@ As the rod becomes thinner and $$r\rightarrow\infty$$, the period increases and 
 
 
 
-
-
-
-## The Effective Viscosity for a Suspension of Widely Separated Spheres
-We are finally able to approach the problem of interest. The idea is as follows. Suppose we have a suspension of spherical particles in a fluid. The suspension is dilute such that the particle number density is low, and from far enough away we can treat the suspension as an ordinary fluid. This suspension fluid will not have the same viscosity as the un-suspension-ified fluid due to the particles within. Our objective is to use what we know about the interactions of particles and fluids to compute the effective viscosity of this fluid as a power series in the particle number density, which is a small number. 
-
-Formally, consider a fluid within a volume $$V$$ containing a suspension of spherical particles with volume fraction $$\phi$$. Let there be $$N$$ particles with radius $$a$$, such that the volume fraction is,
-\begin{equation}
-\phi\frac{4}{3}\pi N\frac{a^3}{V}\ll 1.
-\end{equation}
-In addition to considering a dilute suspension, we consider the limit of a widely separated suspension such that the average particle separation scale is small,
-\begin{equation}
-\langle\alpha\rangle = \frac{a}{\langle R\rangle}\ll 1.
-\end{equation}
-This follows from our assumption of a dilute suspension. As
-\begin{equation}
-\langle R \rangle \sim \left(\frac{V}{N}\right)^{\frac{1}{3}}\sim\phi^{-\frac{1}{3}}\rightarrow\alpha\sim\phi^{\frac{1}{3}},
-\end{equation}
-and we can use our method of reflections to expand the inter-particle interactions as a power series in $$\alpha\sim\phi^{\frac{1}{3}}$$. 
-
-Our objective is to compute the effective fluid viscosity $$\mu^\text{eff}$$ as a power series in $$\phi$$. The effective viscosity is such that the bulk average stress looks Newtonian,
-\begin{equation}
-\langle\sigma_{ij}\rangle = -\langle p\rangle \delta_{ij} + 2\mu^\text{eff}\langle e_{ij}\rangle.
-\end{equation}
-The average stress is computed by integrating over the domain $$V$$,
-\begin{equation}
-\langle\sigma_{ij}\rangle = \frac{1}{V}\int_{V} dV\ \sigma_{ij} = -\langle p\rangle \delta_{ij} + 2\mu \langle e_{ij}\rangle + \frac{1}{V}\int_{\sum V_n}dV\ \sigma_{ij},
-\end{equation}
-where we have separated the stress tensor over the fluid portion with the fluid viscosity $$\mu$$ plus a contribution from averaging over all particles, where $$\sum V_n$$ represents the region occupied by our suspended particles. Define this as the particle stress contribution so,
-\begin{equation}
-\sigma_{ij}^\text{particle} = \frac{1}{V}\sum_n\int_{V_n}dV\ \sigma_{ij} = \frac{1}{V}\sum_n\int_{V_n}dV\ \partial_k\left(\sigma_{ik}x_j\right) - \frac{1}{V}\sum_n\int_{V_n}dV\ x_j\partial_k\sigma_{ik}
-\end{equation}
-\begin{equation}
-= \frac{1}{V}\sum_n\oint_{S_n}dS\ \sigma_{ik}x_j\hat{n}_k = \frac{1}{V}\sum _n S _{ij}^{(n)}  = \frac{N}{V}\langle S _{ij}\rangle.
-\end{equation}
-where $$\langle S _{ij}\rangle$$ is the average stresslet over all $$N$$ particles and we have used the fact that $$\partial _k\sigma _{ik}=0$$ in the absence of external forcings. So all we really need to do is calculate the average stresslet, $$\langle S _{ij}\rangle$$, over all particles in the suspension. We write this average as a series,
-\begin{equation}
-\langle S _{ij}\rangle = \langle S _{ij}^0\rangle + \langle S _{ij}^1\rangle + ...
-\end{equation}
-Each order represents a higher order of particle-particle interactions. $$\langle S _{ij}^0 \rangle$$ are the stresslet effects from isolated particles, $$\langle S _{ij}^1 \rangle$$ are the stresslet effects from the first particle-particle reflection interactions, $$\langle S _{ij}^2$$ are the effects from the second reflection, and so on.
-
-### Linear Corrections 
-At order $$\phi^0$$, the particle interactions are not considered, and the stresslet is obtained from the Faxén relation, Eq. \ref{eq: stresslet flaxen relation},
-\begin{equation}
-\langle S _{ij}^0\rangle = \frac{20}{3}\pi\mu a^3 \left(1 + \frac{a^2}{10}\partial^2\right)\langle e _{ij}\rangle.
-\end{equation}
-And to linear order, the particle stress is,
-\begin{equation}
-\frac{N}{V}\langle S _{ij}^0\rangle = \frac{20}{3}\pi\mu a^3 \frac{N}{V}\left(1 + \frac{a^2}{10}\partial^2\right)\langle e _{ij}\rangle = 5\mu\phi\langle e _{ij}\rangle + \mathcal{O}\left(\alpha^2\phi\right),
-\end{equation}
-we drop the higher-order correction since we know $$\alpha\sim\phi^{\frac{1}{3}}$$, we will return to these corrections later. To linear order in $$\phi$$, we obtain the effective viscosity,
-\begin{equation}
-\langle\sigma _{ij}\rangle = -\langle p\rangle \delta _{ij} + 2\mu\left(1+\frac{5}{2}\phi+\mathcal{O}\left(\phi^{5/3}\right)\right)\langle e _{ij}\rangle.
-\end{equation}
-
-### Quadratic Corrections 
-At linear order in $$\phi$$, computing $$\langle S _{ij}^1\rangle$$ is more involved since we need to consider the particle-particle interactions. Let $$\mathcal{P}\left(\mathbf{x}_2|\mathbf{x}_1\right)$$ be the probability distribution of encountering a particle at $$\mathbf{x}_2$$ given a particle exists at $$\mathbf{x} _1$$. We normalize this probability distribution such that,
-\begin{equation}
-\int _{R\geq 2a} dV\left(\mathbf{x}_2\right)\ \mathcal{P}\left(\mathbf{x}_2|\mathbf{x}_1\right) = N - 1,
-\end{equation}
-where the volume integral is from $$R=2a$$ since particles cannot touch each other. The distribution is normalized to $$N-1$$ to account for the missing particle not being counted at $$\mathbf{x}_1$$. So $$\langle S _{ij}^1\rangle$$ is obtained by,
-\begin{equation}
-\langle S _{ij}^1\rangle = \int _{R\geq 2a} dV\left(\mathbf{x}_2\right)\ \mathcal{P}\left(\mathbf{x}_2|\mathbf{x}_1\right) S^\text{interaction} _{ij}\left(\mathbf{x}_1,\mathbf{x}_2\right),
-\end{equation}
-where $$S^\text{interaction} _{ij}$$ is the interaction stresslet between two particles, computed only from the interaction terms. To calculate $$S^\text{interaction} _{ij}$$, we return to the method of reflections. For the two-sphere case, $$S^\text{interaction} _{ij}$$ is given by the reflection stresslet, $$S _{ij}^{1\ (1)}$$, Eq. \ref{eq: S11 stresslet reflection}. 
-\begin{equation}
-S^\text{interaction} _{ij} = S _{ij}^{1\ (1)} = \frac{5}{2} S^{2\ (0)} _{kl} \alpha^3\left[\left( -\delta _{ij}d_kd_l- \delta _{jl}d _id _k - \delta _{il}d _jd _k +5d _id _jd _kd _l \right) + \frac{\alpha^2}{5}\left( -4\delta _{ik}\delta _{jl}+10\left(\delta _{ij}d_k+2\delta _{ik}d_j+2\delta _{jk}d_i\right)d_l-70d _id _jd _kd _l\right) \right],
-\end{equation}
-and we are left with computing the integral,
-\begin{equation}\label{eq: integral phi^2 correction}
-\frac{5}{2} S^{2\ (0)} _{kl} a^3 \int _{R\geq 2a} dV\left(\mathbf{x}\right)\ \mathcal{P}\left(\mathbf{x}|\mathbf{0}\right) R^{-3} \left[\left( -\delta _{ij}d_kd_l- \delta _{jl}d _id _k - \delta _{il}d _jd _k +5d _id _jd _kd _l \right) + \frac{a^2}{5}R^{-2}\left( -4\delta _{ik}\delta _{jl}+10\left(\delta _{ij}d_k+2\delta _{ik}d_j+2\delta _{jk}d_i\right)d_l-70d _id _jd _kd _l\right) \right].
-\end{equation}
-We have set $$\mathbf{x}_1=\mathbf{0}$$ for convenience. 
-
-We have a few integrals to do, but we should first set the probability distribution $$\mathcal{P}$$. This describes how particles are arranged around each other. A most flatfooted approach is assuming an isotropic particle distribution such that the probability density is constant and,
-\begin{equation}
-\mathcal{P}\left(\mathbf{x}\right)=0\quad\text{if}\ R\leq2a,
-\end{equation}
-\begin{equation}
-\mathcal{P}\left(\mathbf{x}\right)=\frac{N-1}{V}\quad\text{if}\ R>2a.
-\end{equation}
-This is saying that the probability of encountering a particle is the same everywhere, which is a decent first-order approximation for our dilute suspension. We will study this assumption closer later.
-
-We will calculate the integral of Eq. \ref{eq: integral phi^2 correction} in this case. A few useful identities to deal with the angular integrals,
-\begin{equation}
- \int d\Omega\ d_kd_l = \frac{4}{3}\pi\delta _{kl}
-\end{equation}
-\begin{equation}
- \int d\Omega\ d _id _jd _kd _l = \frac{4}{15}\pi \left(\delta _{ij}\delta _{kl} + \delta _{ik}\delta _{jl} + \delta _{il}\delta _{kj}\right).
-\end{equation}
-
-Performing the angular integration portion of our integral,
-\begin{equation}
-\int d\Omega\ \left(-\delta _{ij}d_kd_l- \delta _{jl}d _id _k - \delta _{il}d _jd _k +5d _id _jd _kd _l\right) = 0
-\end{equation}
-\begin{equation}
-\int d\Omega\ \left( -4\delta _{ik}\delta _{jl}+10\left(\delta _{ij}d_k+2\delta _{ik}d_j+2\delta _{jk}d_i\right)d_l-70d _id _jd _kd _l\right) = 0
-\right]
-
-\end{equation}
-
-
-
--16\delta _{ik}\delta _{jl}+\frac{160}{3}\delta _{jl}\delta _{ik}-\frac{112}{3}\delta _{il}\delta _{kj}
-
-
-
-14 * 4/3
-
-
-
-
-
-
-
-
-Using the angular integrals and the fact that $$S^{2\ (0)} _{kk} = 0$$, we find
-\begin{equation}
-S^{2\ (0)} _{kl} \int _{R\geq 2a} dV R^{-5}\left( -\delta _{ij}x_kx_l- \delta _{jl}x _ix _k - \delta _{il}x _jx _k +5R^{-2}x _ix _jx _kx _l \right) = 0,
-\end{equation}
-\begin{equation}
-S^{2\ (0)} _{kl} \int _{R\geq 2a} dV R^{-7}\left( -4R^2\delta _{ik}\delta _{jl}+10\left(\delta _{ij}x_k+2\delta _{ik}x_j+2\delta _{jk}x_i\right)x_l-70R^{-2}x _ix _jx _kx _l \right)  = S^{2\ (0)} _{kl} \int _{r\geq 2a}dr\ \pi r^{-3}\left[ -16\delta _{ik}\delta _{jl} +\frac{40}{3}\left(\delta _{ij}\delta _{kl} + 2\delta _{ik}\delta _{jl} + 2\delta _{jk}\delta _{il}\right) - \frac{56}{3} \left(\delta _{ij}\delta _{kl} + \delta _{ik}\delta _{jl} + \delta _{il}\delta _{kj}\right) \right] = 
-
-\frac{10}{3}\pi S^{2\ (0)} _{ij}\frac{1}{8a^2}
-
-
-x_k+2\delta _{ik}x_j+2\delta _{jk}x_i\right)
-
-
-
-
-
-
-
--16\pi\delta _{ik}\delta _{jl} +32\pi\left(\delta _{ik}\delta _{jl}+\delta _{jk}\delta _{il}\right) - \frac{56}{3}\pi \left( \delta _{ik}\delta _{jl} + \delta _{il}\delta _{kj}\right)\right] = 30\pi S^{2\ (0)} _{ij}\frac{1}{8a^2}.
-\end{equation}
-We have set the region size $$V$$ to be large. All in all, we obtain,
-\begin{equation}
-\langle S _{ij}^1\rangle  = \frac{15}{8}\pi S^{2\ (0)} _{ij}  a^3 \frac{N-1}{V} = \frac{25}{2}\pi^2\mu a^6 \frac{N-1}{V} \langle e _{ij}\rangle = 
-
-\end{equation}
-
-\frac{25 * 3* 3}{2 * 4 * 4} \phi \mu \frac{4}{3} \pi a^3
-
-\frac{75}{4 * 4}
 
 
 
