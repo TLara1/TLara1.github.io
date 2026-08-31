@@ -13,11 +13,9 @@ toc:
 ## Introduction
 I spent a good amount of this summer combing through Kim and Karilla's _Microhydrodynamics_. Turns out you can do really very cool things when the governing equations of your problem (Stokes equations) are linear. A few months ago, I had no idea the rabbit hole was so deep. 
 
-I will almost certainly be doing the bulk of my PhD work on things related to this, so I figured I should write up some half-decent notes. And by half-decent, I mean the interesting bits of the first half dozen chapters of _Microhydrodynamics_.
+I will almost certainly be doing the bulk of my PhD work on things related to this, so I figured I should write up some half-decent notes. And by half-decent, I mean the interesting bits of the first dozen chapters of _Microhydrodynamics_.
 
-This is a walkthrough of the singularity system for spheres, then for the much more complex ellipsoids, then for prolate spheroids, and then for slender bodies. There are some applications throughout and discussed more at the end.
-
-FINISH INTRO
+This is a walkthrough of the singularity system for spheres, then for the much more complex ellipsoids, then for prolate spheroids, and then for slender bodies. There are some applications throughout and discussed more at the end. These notes are a bit rougher than other ones, so proceed with caution.
 
 ## Singularity Systems
 The Green's function is our most fundamental tool for studying solutions to the Stokes Equations. Once we develop the singularity solution and integral representations, we may proceed to spherical and spheroid solutions.
