@@ -1139,25 +1139,40 @@ where $$\epsilon=c/a$$ is a small expansion parameter. Similar integrals that ar
 \int _{-a}^a d\xi\ \frac{\rho^2 }{\left(\xi^2+\rho^2\right)^{3/2}} = 2 + \mathcal{O}\left(\epsilon^2\right).
 \end{equation}
 So to order $$\mathcal{O}\left(\epsilon^2\right)$$, the velocity field is given by,
-
 \begin{equation}
-\mathbf{u}\left(\mathbf{x}\right) = \begin{pmatrix} 4\log\left(\frac{2}{\epsilon}\right) -2 & 0 & 0 \\ 
-0 & 2\log\left(\frac{2}{\epsilon}\right) + 2\cos^2\phi & 2\sin\phi\cos\phi \\ 
-0 & 2\sin\phi\cos\phi & 2\log\left(\frac{2}{\epsilon}\right) + 2\sin^2\phi 
-\end{pmatrix} 
-\begin{pmatrix} f_x \\
-f_y \\
-f_z 
-\end{pmatrix} + \mathcal{O}\left(\epsilon^2\right).
+u_i = \frac{1}{4\pi\mu E}f_j\left(2d _id _j + \left(\delta _{ij}-d _id _j\right)+ \mathcal{O}\left(E\right)\right),
 \end{equation}
-where $$\phi$$ is an angle measured up from the $$y$$-axis determining the location in the $$yz$$ plane on the surface of the ellipse on which the integrals are evaluated.
+where $$d_i$$ is the orientation direction and $$E=1/\log\left(2/\epsilon\right)$$ is a small expansion parameter. The force density depends on the translation velocity in the parallel and perpendicular directions,
+\begin{equation}
+f^\parallel = 2\pi\mu E U^\parallel,
+\end{equation}
+\begin{equation}
+f^\perp = 4\pi\mu E U^\perp,
+\end{equation}
+and we may write the drag per unit length as,
+\begin{equation}
+f_i\left(s\right) = -\left(c^parallel d _id _j + c^perp\left(\delta _{ij}-d _id _j\right)\right) U_j\left(s\right),
+\end{equation}
+where $$U_i(s)$$ is the local filament velocity parametrized by length $$s$$ and,
+\begin{equation}
+c^\parallel = 2\pi\mu E,
+\end{equation}
+\begin{equation}
+c^\perp = 4\pi\mu E.
+\end{equation}
 
-
-
-
-
-
-
+These are in good agreement with our results for the prolate spheroid. Recall for the translating spheroid we obtained a force density of,
+\begin{equation}
+f_j = 3\pi\mu \left[ X^Ad_jd_k + Y^A\left(\delta _{jk}-d_jd_k\right)\right]U_i.
+\end{equation}
+the limit of a thin needle is when $$\epsilon\rightarrow1$$, in this case,
+\begin{equation}
+X^A = \frac{8e^3}{3}\left(\left(e^2+1\right)L-2e \right)^{-1}\rightarrow\frac{4E}{6-3E}+\mathcal{O}\left(\epsilon^2\right),
+\end{equation}
+\begin{equation}
+Y^A = \frac{16e^3}{3}\left(\left(3e^2-1\right)L+2e \right)^{-1}\rightarrow\frac{8E}{6+3E}+\mathcal{O}\left(\epsilon^2\right),
+\end{equation}
+which results in the same values of $$c^\parallel$$ and $$c^\perp$$ for thin rigid bodies.
 
 
 
