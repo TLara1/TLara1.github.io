@@ -946,7 +946,7 @@ And last but not least, in terms of our multipole series,
 u _i\left(\mathbf{x}\right)-U_i^\infty=A _j^{(1)} \left( \frac{\sinh D}{D}\right) \frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
 
-\begin{equation}
+\begin{equation}\label{eq: velocity field first order torque strain ellipsoid multipole}
 u _i\left(\mathbf{x}\right)-\epsilon _{ijk}\Omega^\infty _j x _k-E _{ij}^\infty x _j = -3A _{jk}^{(0)}\partial _k \left(\frac{1}{D}\frac{\partial }{\partial D}\right)\left(\frac{\sinh D}{D}\right) \frac{\mathcal{G}  _{ij}\left(\mathbf{x}\right)}{8\pi\mu}.
 \end{equation}
 
@@ -1085,7 +1085,7 @@ From this, we identify the force on the particle as,
 u _i\left(\mathbf{x}\right)-U_i^\infty=-F_j\left[1 + \frac{1-e^2}{2}\left(\frac{1}{D_x}\frac{\partial}{\partial D_x}\right) \partial^2 \right]\left( \frac{\sinh D _x}{D _x}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
 \begin{equation}
-F_j = 6\pi\mu a\left[ X^Ad_jd_k + Y^A\left(\delta _{jk}-d_jd_k\right)\right]\left(U_k^\infty-U_k^P\right),
+F_j = 6\pi\mu a\left[ X^Ad_jd_k + Y^A\left(\delta _{jk}-d_jd_k\right)\right]\left(U_j^\infty-U_j^P\right),
 \end{equation}
 with,
 \begin{equation}
@@ -1096,8 +1096,48 @@ and,
 Y^A = \frac{16e^3}{3}\left(\left(3e^2-1\right)L+2e \right)^{-1}.
 \end{equation}
 
-### Rotation and Strain
-Having determined the first-order moments, we now focus on the second order moments.
+### Rotation
+Having determined the first-order moments, we now focus on the rotational case.
+\begin{equation}
+u_i\left(r=\text{ellipsoid surface}\right)=\epsilon_{ijk}\Omega^p_jx_k.
+\end{equation}
+The procedure is similar as with translation with somewhat more involved integrals. For brevity, and because I mainly don't want to we simply quote the results,
+\begin{equation}
+u _i\left(\mathbf{x}\right)-\epsilon _{ijk}\Omega^\infty_jx_k =\frac{3}{2}\epsilon _{jkl}T_k\partial_l\left[1 + \frac{1-e^2}{2}\left(\frac{1}{D_x}\frac{\partial}{\partial D_x}\right) \partial^2 \right]\left(\frac{1}{D_x}\frac{\partial}{\partial D_x}\right)\left( \frac{\sinh D _x}{D _x}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
+\end{equation}
+\begin{equation}
+T_k = 8\pi\mu a^3\left[ X^Cd_jd_k + Y^C\left(\delta _{jk}-d_jd_k\right)\right]\left(\Omega_k^\infty-\Omega_k^P\right),
+\end{equation}
+with,
+\begin{equation}
+X^C = \frac{4e^3}{3}\left( 1-e^2 \right)\left(-\left(1-e^2\right)L+2e \right)^{-1},
+\end{equation}
+and,
+\begin{equation}
+Y^C = \frac{4e^3}{3}\left( 2-e^2 \right)\left(\left(e^2+1\right)L-2e \right)^{-1}.
+\end{equation}
+There are similar expression for strain and also higher-order moments, but those are less important.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Method of Reflections for Widely Separated Spheres
 We can solve for the flow in the presence of a single sphere; can we resolve the problem with multiple spheres? Yes, more or less. The idea behind the method of reflections is to expand the velocity field in terms of the ratio $$\alpha=a/R$$, where $$a$$ is the sphere's radius and $$R$$ is the separation between the spheres. We assume this ratio is small such that the expansion can be truncated at a given order and provide an accurate approximation of the multiple-sphere velocity field.
