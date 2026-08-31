@@ -1,6 +1,6 @@
 ---
 layout: page
-title: On Slender Body Theory, Jeffery Orbits, and the Rheology of Dilute Spheroid Suspensions - 8/26
+title: On Spheres and Spheroids in Stokes Flow - 8/26
 description:
 img: 
 importance: 84
