@@ -1104,8 +1104,8 @@ The procedure is similar as with translation with somewhat more involved integra
 \begin{equation}
 u _i\left(\mathbf{x}\right)-\epsilon _{ijk}\Omega^\infty_jx_k =\frac{3}{2}\epsilon _{jkl}T_k\partial_l\left[1 + \frac{1-e^2}{2}\left(\frac{1}{D_x}\frac{\partial}{\partial D_x}\right) \partial^2 \right]\left(\frac{1}{D_x}\frac{\partial}{\partial D_x}\right)\left( \frac{\sinh D _x}{D _x}\right)\frac{\mathcal{G} _{ij}\left(\mathbf{x}\right)}{8\pi\mu},
 \end{equation}
-\begin{equation}
-T_k = 8\pi\mu a^3\left[ X^Cd_jd_k + Y^C\left(\delta _{jk}-d_jd_k\right)\right]\left(\Omega_k^\infty-\Omega_k^P\right),
+\begin{equation}\label{eq: torque prolate spheroid}
+T_j = 8\pi\mu a^3\left[ X^Cd_jd_k + Y^C\left(\delta _{jk}-d_jd_k\right)\right]\left(\Omega_k^\infty-\Omega_k^P\right)-8\pi\mu a^3Y^H\epsilon _{jkl}d _ld _nE _{kn}^\infty,
 \end{equation}
 with,
 \begin{equation}
@@ -1113,8 +1113,13 @@ X^C = \frac{4e^3}{3}\left( 1-e^2 \right)\left(-\left(1-e^2\right)L+2e \right)^{-
 \end{equation}
 and,
 \begin{equation}
-Y^C = \frac{4e^3}{3}\left( 2-e^2 \right)\left(\left(e^2+1\right)L-2e \right)^{-1}.
+Y^C = \frac{4e^3}{3}\left( 2-e^2 \right)\left(\left(e^2+1\right)L-2e \right)^{-1},
 \end{equation}
+and,
+\begin{equation}
+Y^H = \frac{4e^5}{3}\left(\left(e^2+1\right)L-2e \right)^{-1}.
+\end{equation}
+
 There are similar expression for strain and also higher-order moments, but those are less important.
 
 ## Slender Body Theory
@@ -1149,7 +1154,7 @@ f^\perp = 4\pi\mu E U^\perp,
 \end{equation}
 and we may write the drag per unit length as,
 \begin{equation}
-f_i\left(s\right) = -\left(c^parallel d _id _j + c^perp\left(\delta _{ij}-d _id _j\right)\right) U_j\left(s\right),
+f_i\left(s\right) = -\left(c^\parallel d _id _j + c^\perp\left(\delta _{ij}-d _id _j\right)\right) U_j\left(s\right),
 \end{equation}
 where $$U_i(s)$$ is the local filament velocity parametrized by length $$s$$ and,
 \begin{equation}
@@ -1171,6 +1176,63 @@ X^A = \frac{8e^3}{3}\left(\left(e^2+1\right)L-2e \right)^{-1}\rightarrow\frac{4E
 Y^A = \frac{16e^3}{3}\left(\left(3e^2-1\right)L+2e \right)^{-1}\rightarrow\frac{8E}{6+3E}+\mathcal{O}\left(\epsilon^2\right),
 \end{equation}
 which results in the same values of $$c^\parallel$$ and $$c^\perp$$ for thin rigid bodies.
+
+## Jeffery Orbits
+We consider a prolate spheroid in a torque free field $$T_i=0$$. From Eq. \ref{eq: torque prolate spheroid}, we find rotational motion follows as,
+\begin{equation}
+\left[ X^Cd_jd_k + Y^C\left(\delta _{jk}-d_jd_k\right)\right]\left(\Omega_k^\infty-\Omega_k^P\right) = Y^H\epsilon _{jkl}d _ld _nE _{kn}^\infty,
+\end{equation}
+\begin{equation}
+\epsilon _{ikm}x _m \left(\Omega _k^\infty-\Omega _k^P\right) = \frac{Y^H}{Y^C}\epsilon _{ijm}x _m\epsilon _{jkl}d _ld _nE _{kn}^\infty,
+\end{equation}
+\begin{equation}\label{eq: jeffry equation prolate spheroid}
+\epsilon _{ikm}x _m \Omega _k^P = \epsilon _{ikm}x _m \Omega _k^\infty + \frac{Y^H}{Y^C} \left(\delta _{ik} d_n d_jx_j - d_n x_k d_i \right) E _{kn}^\infty.
+\end{equation}
+We can use this equation to understand the rotation of a torque free axisymmetric particle in a shear flow given by $$u_i^\infty = \dot{\gamma}y\hat{e}^{(x)}_i$$. For such a flow, the vorticity and strain are,
+\begin{equation}
+\Omega _i^\infty = \frac{1}{2}\epsilon _{ijk}\partial_ju_k^\infty = -\frac{1}{2} \dot{\gamma}\hat{e}^{(z)}_i,
+\end{equation}
+\begin{equation}
+E _{ij}^\infty = \frac{1}{2}\left(\partial_iu_j^\infty + \partial_ju_i^\infty\right) = \frac{1}{2}\dot{\gamma}\left(\delta _{iy}\hat{e}^{(x)}_j + \delta _{jy}\hat{e}^{(x)}_i\right).
+\end{equation}
+To understand the time evolution of the particle orientation, simply replace $$x_i$$ with $$d_i$$ in Eq. \ref{eq: jeffry equation prolate spheroid},
+\begin{equation}
+\dot{d}_i = \epsilon _{ikm}d _m \Omega _k^P = \epsilon _{ikm}d _m \Omega _k^\infty + \frac{Y^H}{Y^C} \left(\delta _{ik} d_n - d_n d_k d_i \right) E _{kn}^\infty.
+\end{equation}
+Considering each part of this expression with our torque and strain, we find,
+\begin{equation}
+\epsilon _{ikm}d _m \Omega _k^\infty  = -\frac{1}{2} \dot{\gamma} \left(d _x\hat{e}^{(y)}_i - d _y\hat{e}^{(x)}_i\right),
+\end{equation}
+\begin{equation}
+ d_j E _{ij}^\infty = \frac{1}{2}\dot{\gamma}\left(d_x\hat{e}^{(y)}_i + d_y\hat{e}^{(x)}_i\right),
+\end{equation}
+\begin{equation}
+d_n d_k d_i E _{kn}^\infty = d_i \dot{\gamma}d _xd _y.
+\end{equation}
+So, the evolution given component by component is,
+\begin{equation}
+\dot{d}_x = \frac{1}{2} \dot{\gamma} d_y + \frac{1}{2}\dot{\gamma}\frac{Y^H}{Y^C}\left(d_y - d_x^2d_y\right),
+\end{equation}
+\begin{equation}
+\dot{d}_y = - \frac{1}{2} \dot{\gamma} d_x + \frac{1}{2}\dot{\gamma}\frac{Y^H}{Y^C}\left(d_x - d_y^2d_x\right),
+\end{equation}
+\begin{equation}
+\dot{d}_z = -\frac{1}{2}\dot{\gamma}d_xd_yd_z.
+\end{equation}
+If we parametrize the orientation using spherical coordinates,
+\begin{equation}
+d_x = sin\theta\cos\phi\quad d_y = \sin\theta\sin\phi\quad d_z = \cos\theta,
+\end{equation}
+we obtain,
+\begin{equation}
+- \dot{d}_z = \dot{\theta}\sin\theta = \frac{1}{2}\dot{\gamma}\sin^2\theta\cos\theta\sin\phi\cos\phi,
+\end{equation}
+\begin{equation}
+d_x\dot{d}_y - d_y \dot{d}_x = \sin^2\theta\dot{\phi} = - \frac{1}{2} \dot{\gamma} \sin^2\theta + \frac{1}{2}\dot{\gamma}\frac{Y^H}{Y^C}\sin^2\theta\left( \sin^2\phi-\cos^2\phi\right).
+\end{equation}
+
+
+
 
 
 
