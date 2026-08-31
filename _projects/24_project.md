@@ -1140,8 +1140,10 @@ where $$\epsilon=c/a$$ is a small expansion parameter. Similar integrals that ar
 \end{equation}
 So to order $$\mathcal{O}\left(\epsilon^2\right)$$, the velocity field is given by,
 
-
-
+\begin{equation}
+\mathbf{u}\left(\mathbf{x}\right) = \begin{pmatrix} 4\log\left(\frac{2}{\epsilon}\right) -2 & 0 & 0 \\ 0 & 2\log\left(\frac{2}{\epsilon}\right) + 2\cos^2\phi & 2\sin\phi\cos\phi \\ 0 & 2\sin\phi\cos\phi & 2\log\left(\frac{2}{\epsilon}\right) + 2\sin^2\phi \end{pmatrix} \begin{pmatrix} f_x \\ f_y \\ f_z \end{pmatrix} + \mathcal{O}\left(\epsilon^2\right).
+\end{equation}
+where $$\phi$$ is an angle measured up from the $$y$$-axis determining the location in the $$yz$$ plane on the surface of the ellipse on which the integrals are evaluated.
 
 
 
