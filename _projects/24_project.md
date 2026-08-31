@@ -1124,13 +1124,21 @@ Consider now a needle-like rigid body with a length $$2a$$ much greater than its
 \begin{equation}
 u _i\left(\mathbf{x}\right) = f _j\int _{-a}^a d\xi\ \frac{\mathcal{G} _{ij}\left(\mathbf{x}+\xi\hat{\mathbf{e}}_x\right)}{8\pi\mu}.
 \end{equation}
-We evaluate along the center of the rod with $$x=0$$, defining $$\rho=\sqrt{y^2+z^2}\approx c\ll a$$, we find,
+We evaluate along the center of the rod with $$x=0$$ since the surface of the rod is moving at the same velocity Defining $$\rho=\sqrt{y^2+z^2}\approx c\ll a$$, we find,
 \begin{equation}
-\int _{-a}^a d\xi\ \frac{1}{\sqrt{\xi^2+\rho^2}} = 2\log\left(\frac{2}{\epsilon}\right) + \mathcal{O}\left(\epsiloN^2\right),
+\int _{-a}^a d\xi\ \frac{1}{\sqrt{\xi^2+\rho^2}} = 2\log\left(\frac{2}{\epsilon}\right) + \mathcal{O}\left(\epsilon^2\right),
 \end{equation}
-where $$\epsilon=c/a$$ is a small expansion parameter.
-
-
+where $$\epsilon=c/a$$ is a small expansion parameter. Similar integrals that are part of the Oseen tensor are,
+\begin{equation}
+\int _{-a}^a d\xi\ \frac{\xi^2 }{\left(\xi^2+\rho^2\right)^{3/2}} = 2\log\left(\frac{2}{\epsilon}\right) -2 + \mathcal{O}\left(\epsilon^2\right),
+\end{equation}
+\begin{equation}
+\int _{-a}^a d\xi\ \frac{\xi \rho}{\left(\xi^2+\rho^2\right)^{3/2}} = \mathcal{O}\left(\epsilon^2\right),
+\end{equation}
+\begin{equation}
+\int _{-a}^a d\xi\ \frac{\rho^2 }{\left(\xi^2+\rho^2\right)^{3/2}} = 2 + \mathcal{O}\left(\epsilon^2\right).
+\end{equation}
+So to order $$\mathcal{O}\left(\epsilon^2\right)$$, the velocity field is given by,
 
 
 
