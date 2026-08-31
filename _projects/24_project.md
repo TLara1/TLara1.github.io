@@ -1386,15 +1386,6 @@ T = \frac{2\pi}{\dot{\gamma}}\left(r+r^{-1}\right).
 As the rod becomes thinner and $$r\rightarrow\infty$$, the period increases and the rod becomes more aligned with the direction of flow. For a spherical object, $$r=1$$, the rotation is at a constant rate.
 
 
-
-
-
-
-
-
-
-
-
 ### Sources
 The notes here are based on Kim and Karrila's _Microhydrodynamics Principles and Selected Applications_ and Eric Lauga's _Fluid Dynamics of Cell Motility_, both great books with rather boring titles.
 
