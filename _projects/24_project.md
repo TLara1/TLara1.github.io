@@ -661,12 +661,30 @@ so,
 \begin{equation}
 \frac{\partial G_0}{\partial n}=-\frac{2}{\Delta\left(\lambda\right)}\frac{1}{\sqrt{S\left(\lambda\right)}}.
 \end{equation}
-
-
-
-There are several ways to approach the surface, one of these is the limit in which $$z\rightarrow0$$
-FINISH
-
+$$\frac{\partial G_0}{\partial n}$$ is discontinuous as $${\Delta\left(\lambda\right)}\rightarrow0$$, we pick $$\lambda=-c^2+\epsilon$$ and take the limit as $$\epsilon=0$$. To leading order,
+\begin{equation}
+\frac{1}{\Delta\left(\lambda\right)} = \frac{1}{\sqrt{\left(a_E^2+\epsilon\right)\left(b_E^2+\epsilon\right)\epsilon}}\approx\frac{1}{a _Eb _E\epsilon}.
+\end{equation}
+Now, since by the definition of $$\lambda$$,
+\begin{equation}
+\frac{x^2}{a^2+\lambda}+\frac{y^2}{b^2+\lambda}+\frac{z^2}{c^2+\lambda}=1\rightarrow\frac{z^2}{\epsilon} = 1 - \frac{x^2}{a_E^2} - \frac{y^2}{b_E^2} = q^2.
+\end{equation}
+So,
+\begin{equation}
+\frac{1}{\sqrt{S\left(\lambda\right)}} = \left(\frac{x^2}{\left( a_E^2+\epsilon \right)^2}+\frac{y^2}{\left( b_E^2+\epsilon \right)^2}+\frac{z^2}{\epsilon^2}\right)^{-1/2}\approx\frac{\epsilon}{q}=\frac{\sqrt{\epsilon}}{q}.
+\end{equation}
+This gives us,
+\begin{equation}
+\frac{\partial G_0}{\partial n}\approx-\frac{2}{a_Eb_Eq},
+\end{equation}
+as $$\epsilon\rightarrow0$$. Taking then the derivative from the inside of the sphere in the same way, $$\left(\frac{\partial G_0}{\partial n}\right)^+=-\left(\frac{\partial G_0}{\partial n}\right)^-$$, we obtain,
+\begin{equation}
+\sigma = \frac{1}{\pi}\frac{1}{a_Eb_Eq}.
+\end{equation}
+This value of $$\sigma$$ yeilds,
+\begin{equation}
+G_0 = 2\int_E dA\left(\mathbf{x'}\right)\ \frac{1}{2\pi a_E b_E}\frac{ q\left(\mathbf{x}'\right)^{-1}}{|\mathbf{x}-\mathbf{x}'|} = 2H _0.
+\end{equation}
 
 With this established, all we need to do is consult our recurrence relations. From Eq. \ref{eq: H_N reccurance} and Eq. \ref{eq: H_N reccurance},
 \begin{equation}
