@@ -74,6 +74,7 @@ The Fluid Dynamics of Cell Motility, Lauga
 Microhydrodynamics: Principles and Selected Applications, Kim & Karrila
 Advanced Transport Phenomena: Fluid Mechanics and Convective Transport Processes, Leal
 Mechanics of Swimming and Flying, Childress
+Dynamics of polymeric liquids : volume 2, kinetic theory, Bird, Curtiss, Armstrong, Hassager
 Boundary Integral and Singularity Methods for Linearized Viscous Flow, Pozrikidis 
 The Mathematical Theory of Viscous Incompressible Flow, Ladyzhenskaia 
 Microhydrodynamics, Brownian Motion, and Complex Fluids, Graham
