@@ -12,27 +12,29 @@ In an extension of my work modeling Eulerian fluid-immersed solid contacts, we i
 
 
 <p> We have validated our model on several benchmarks, including convergence to the classical analytic Hertz-Mindlin solution for weakly deforming shearing disks, a block sliding on a ramp, a ball-bearing rotating disk inside a hoop to assess frictional torque balance, and a periodically shearing U "violin" shape demonstrating a closed hysteresis loop. 
-    
-
-USACM talk powerpoint
 
 
-
-
-
-
-<div class="column">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/img/RMT_videos_img/supplemental_video_4_squished_bent_U - Trim.mp4" class="img-fluid rounded z-depth-1" controls=true %}
-    </div>
+<div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid path="assets/img/RMT_videos_img/supplemental_video_1_sliding_bent_U_mu05.mp4" class="img-fluid rounded z-depth-1" controls=true %}
     </div>
 </div>
-
 <div class="caption">
-caption
+A shearing "violin" shape with frictional self-contacts. Friction forces act opposite to the shearing motion and are equal in magnitude across both faces of the sliding U.
 </div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="assets/img/RMT_videos_img/supplemental_video_4_squished_bent_U - Trim.mp4" class="img-fluid rounded z-depth-1" controls=true %}
+    </div>
+</div>
+<div class="caption">
+A sandwiched U shape between two shearing rectangles. Frictional interactions cause the U to both translate and rotate along with the moving rods. The arms of the U also come into contact, experiencing frictional self-sliding.
+</div>
+
+
+
+
 
 
 <div class="row">
