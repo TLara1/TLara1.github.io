@@ -15,22 +15,27 @@ news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
+<div style="margin-left: 50px; margin-right: 50px;">
 
-<div align="justify" style="margin-bottom: 20px;">
-  Hello!
-</div>
-<div align="justify" style="margin-bottom: 20px;">
-  I am a fourth-year undergraduate at the Massachusetts Institute of Technology, where I am currently studying physics and applied mathematics. My research is mostly in these areas, and over the last few years, I have worked in computational celestial, fluid, and continuum solid mechanics. 
+  <div align="justify" style="margin-bottom: 20px;">
+    Hello!
   </div>
 
-<div align="justify" style="margin-bottom: 20px;">
-    This website is a bit of everything. I have found it to be a good place to dump my research experiences, publications, CV, and notes. Although mostly academic in scope, I have included some of my other interests because I do, after all, spend a good bit of brain power thinking of non-physics-y things. Feel free to click around and explore, although be warned that this entire website is still somewhat under construction, as I tend to update it infrequently on my rather limited free time. I am also by no means an expert at website-building, so certain pages may look a bit rough. 
+  <div align="justify" style="margin-bottom: 20px;">
+    I am a fourth-year undergraduate at the Massachusetts Institute of Technology, where I am currently studying physics and applied mathematics. My research is mostly in these areas, and over the last few years, I have worked in computational celestial, fluid, and continuum solid mechanics.
+  </div>
+
+  <div align="justify" style="margin-bottom: 20px;">
+    This website is a bit of everything. I have found it to be a good place to dump my research experiences, publications, CV, and notes. Although mostly academic in scope, I have included some of my other interests because I do, after all, spend a good bit of brain power thinking of non-physics-y things. Feel free to click around and explore, although be warned that this entire website is still somewhat under construction, as I tend to update it infrequently on my rather limited free time. I am also by no means an expert at website-building, so certain pages may look a bit rough.
+  </div>
+
+  <div align="justify" style="margin-bottom: 20px;">
+    For what it's worth, generative artificial intelligence was **not** used in any part of the creation of this website or the content contained within.
+  </div>
+
+  <div align="justify" style="margin-bottom: 20px;">
+    Enjoy!
+  </div>
+
 </div>
 
-<div align="justify" style="margin-bottom: 20px;">
-    For what it's worth, generative artificial intelligence was not used in any part of the creation of this website or the content contained within.
-</div>
-
-<div align="justify" style="margin-bottom: 20px;">
-  Enjoy!
-</div>
