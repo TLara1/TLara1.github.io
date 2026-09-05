@@ -15,7 +15,6 @@ news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-<div style="margin-left: 50px; margin-right: 50px;">
 
   <div align="justify" style="margin-bottom: 20px;">
     Hello!
@@ -30,12 +29,11 @@ social: true # includes social icons at the bottom of the page
   </div>
 
   <div align="justify" style="margin-bottom: 20px;">
-    For what it's worth, generative artificial intelligence was **not** used in any part of the creation of this website or the content contained within.
+    For what it's worth, generative artificial intelligence was <strong>not</strong> used in any part of the creation of this website or the content contained within.
   </div>
 
   <div align="justify" style="margin-bottom: 20px;">
     Enjoy!
   </div>
 
-</div>
 
