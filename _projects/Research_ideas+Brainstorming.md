@@ -61,11 +61,15 @@ new headshot
 get a good note taking system for PhD
 bird project github?
 RMT github
-Website polish, add videos links to papers, etc. remove old links/leftovers, figure out related publications, many videos would be big!
 fisherman story polish and add to website?
 get better dressed
 buy headphones
 buy new belt
+
+Website updates + Future fixes
+standardize image size on project page
+shrink images to save space
+change loading from eager->lazy on many images
 
 Reading List
 
