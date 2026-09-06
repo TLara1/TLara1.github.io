@@ -13,7 +13,7 @@ During the summer of 2024, I undertook an internship at the Lawrence Berkeley Na
 <p> The existing ELEQTRONeX framework used an analytical self-energy solution, valid specifically for CNTs with basic lead configurations. To calculate more general self-energies, we used a tight-binding approximation, leading to an iterative and eigenfunction-based self-energy approach. Using randomly generated matrices, we showed that our methods are much more efficient than alternative direct inversions, allowing for faster and more complex NEGF geometries.
 
 <div style="text-align: center;">
-  {% include figure.liquid loading="eager" path="assets/img/images_website_Sawant_2024/TopgateDiagram.png" title="Topgate Diagram" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
+  {% include figure.liquid loading="lazy" path="assets/img/images_website_Sawant_2024/TopgateDiagram.png" title="Topgate Diagram" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
 </div>
 
 <p> Motivated by discrepancies with experimental results, we also implemented point charges as external boundary conditions, which we demonstrated to have drastic impacts on our simulations.
