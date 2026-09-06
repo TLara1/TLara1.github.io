@@ -24,7 +24,7 @@ For my class on numerical methods for partial differential equations, my final p
 </div>
 
 
-{% include figure.liquid loading="eager" path="assets/img/Final_Project_Figures/convergence_analytic_with_snapshots_v2.png" title="Convergence as levels increases" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
+{% include figure.liquid loading="lazy" path="assets/img/Final_Project_Figures/convergence_analytic_with_snapshots_v2.png" title="Convergence as levels increases" class="img-fluid rounded z-depth-0" width="auto" height="600" %}
 
 I'm happy to report the code worked swimmingly. The level management and patch allocation/reallocation functioned as intended. With more levels, the computation accelerated without increasing computational cost quadratically.
 
