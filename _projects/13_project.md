@@ -10,7 +10,7 @@ related_publications: false
 I worked with the Dunkel group through MIT’s Summer Program for Undergraduate Research (SPUR), where I investigated nutrient transport in feeding jellyfish via fluid dynamic simulations. During locomotion, jellyfish generate vortex rings that both propel the jellyfish forward and pull nutrient-rich fluid toward the jellyfish’s underside for consumption. This project examines the coupling between paddling kinematics and nutrient uptake. An energy cost can be calculated for distinct paddling gaits, which the jellyfish must then recover with energy obtained from the ingested food. By varying paddling motions and frequencies, the project aims to optimise food transport dynamics, showing that simulated results match observational jellyfish studies. 
 
 <div style="text-align: center;">
-  {% include figure.liquid loading="eager" path="assets/img/Pictures_Website_Jellyfish/swimming_frames_Mode7_Re1000.png" title="Jellyfish Swimming" class="img-fluid rounded z-depth-0" width="auto" height="400" %}
+  {% include figure.liquid loading="lazy" path="assets/img/Pictures_Website_Jellyfish/swimming_frames_Mode7_Re1000.png" title="Jellyfish Swimming" class="img-fluid rounded z-depth-0" width="auto" height="400" %}
 </div>
 
 The underlying modelling challenge is a fluid-solid interaction problem in which the jellyfish body dynamically interacts with the surrounding fluid. In fluid-solid simulations, both the fluid and solid domains need to be evolved while enforcing interfacial momentum exchange. The current research approach to model jellyfish is the immersed boundary technique, in which the solid phase is represented as a Lagrangian force density embedded within an Eulerian fluid domain. Simulations are performed using <a href="https://ibamr.github.io/"> IBAMR </a>, a high-performance, parallelised implementation of the immersed boundary method that uses adaptive mesh refinement to resolve small-scale features near the fluid-solid interface. 
@@ -21,7 +21,7 @@ My project report can be found <a href="https://drive.google.com/file/d/1wSpSQzP
 "> MIT Math website </a> and my presentation is available <a href="https://docs.google.com/presentation/d/1Gu6dFYhLzMP1EHaO5eUDJuQ-xhAA6g5VM6_iXALEbM0/edit?usp=sharing"> here</a>. 
 
 <div style="text-align: center;">
-  {% include figure.liquid loading="eager" path="assets/img/Pictures_Website_Jellyfish/visualize_4_panel_cbar.png" title="Jellyfish Swimming" class="img-fluid rounded z-depth-0" width="auto" height="400" %}
+  {% include figure.liquid loading="lazy" path="assets/img/Pictures_Website_Jellyfish/visualize_4_panel_cbar.png" title="Jellyfish Swimming" class="img-fluid rounded z-depth-0" width="auto" height="400" %}
 </div>
 <div class="caption">
     <em>C. Hemisphaerica</em> swimming.
