@@ -224,7 +224,7 @@ This is Kepler's Equation, where $$\mathcal{M}$$ is known as the mean anomaly.
 
 ### III.II Two-Dimensional Orbital Elliptical Elements
 
-{% include figure.liquid loading="eager" path="assets/img/Figures_Cmech_Notes/Orbital_Element_diagram_v2.png" title="Orbital element diagram" class="img-fluid rounded z-depth-0" %}
+{% include figure.liquid loading="lazy" path="assets/img/Figures_Cmech_Notes/Orbital_Element_diagram_v2.png" title="Orbital element diagram" class="img-fluid rounded z-depth-0" %}
 
 From our orbital element diagram, we can immediately conclude:
 \begin{equation}\label{cos f equation}
@@ -257,7 +257,7 @@ In summary:
 To characterize the orientation of our ellipse in three-dimensional space with respect to a reference plane $$x,y,z$$, we introduce three new angles. The first is the inclination $$i$$, describing the tilt of the orbiting ellipse with respect to the $$x,y$$ plane. Any orbit with a nonzero inclination will intersect the reference plane at two points. The _ascending node_ is the point at which the body passes from negative $$z$$ to positive $$z$$, and the _descending node_ is the opposite.
 The angle between the _ascending node_ with the $$x$$ axis is the longitude of the ascending node, noted by $$\Omega$$. Finally, $$\omega$$, the argument of the pericentre determines the angle from the $$x,y$$ of the pericentre along the orbiting plane.
 
-{% include figure.liquid loading="eager" path="assets/img/Figures_Cmech_Notes/Orbital_3d_elemenets_v2.png" title="Orbital element diagram 3d" class="img-fluid rounded z-depth-0" %}
+{% include figure.liquid loading="lazy" path="assets/img/Figures_Cmech_Notes/Orbital_3d_elemenets_v2.png" title="Orbital element diagram 3d" class="img-fluid rounded z-depth-0" %}
 
 Schematically, the transformation from a vector $$\vec{r}$$ in the reference plane to a vector $$\vec{q}$$ in the orbiting ellipse can be thought of as three consecutive rotations. First, we rotate around the $$z$$ axis by $$\Omega$$ to align the $$x$$ axis with the ascending node. Then we rotate around the $$x$$ axis by $$I$$ to set the $$z$$ axis normal to the orbiting plane. Lastly, we rotate around the $$z$$ axis by $$\omega$$ to set the $$x$$ axis along the semi-minor axis. In summary, we define the rotation:
 
@@ -541,7 +541,7 @@ Now for $$I_3$$. With \eqref{P_2 def} and \eqref{P_3 def}:
     I_3=\frac{1}{P_2}\int\frac{\cos Id\theta}{\sin^2\theta\sqrt{1-\frac{\cos^2 I}{\sin^2\theta}}}
 \end{equation}
 
-{% include figure.liquid loading="eager" path="assets/img/Figures_Cmech_Notes/Spherical_Trig_diagram_v2.png" title="Spherical trigonometry diagram 3d" class="img-fluid rounded z-depth-0" %}
+{% include figure.liquid loading="lazy" path="assets/img/Figures_Cmech_Notes/Spherical_Trig_diagram_v2.png" title="Spherical trigonometry diagram 3d" class="img-fluid rounded z-depth-0" %}
 
 To proceed, we must consult spherical trigonometric relationships. We plot the angle created by the body's position on the orbital plane and the reference plane. Because $$\theta$$ is measured from the $$z$$ axis towards the reference plane, we must invert $$I$$.
 
