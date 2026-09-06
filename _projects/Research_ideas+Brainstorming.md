@@ -72,6 +72,7 @@ shrink images to save space
 change loading from eager->lazy on many images
 Change font to look more professional
 learn actually good looking colours
+Good fun icon?
 
 Reading List
 
