@@ -96,7 +96,7 @@ S_\text{QED}=\int dx^4\ \mathcal{L} _\text{QED}=\int dx^4\ \bar{\psi} \left(i\no
 From this action, it is fairly straightforward to obtain the Feynman rules for the fermionic and photonic propagators in momentum space, a procedure that I will not discuss here. For external propagators, the procedure involves solving the free-space equations of motion. Each external line has two polarizations noted by the indices $$r$$ and $$s$$.
 
 <div style="text-align: center;">
-  {% include figure.liquid loading="eager" path="assets/img/QED_diagrams/QED_feynman_rules.png" title="QED_feynman_rules" class="img-fluid rounded z-depth-0" width="auto" height="270" %}
+  {% include figure.liquid loading="lazy" path="assets/img/QED_diagrams/QED_feynman_rules.png" title="QED_feynman_rules" class="img-fluid rounded z-depth-0" width="auto" height="270" %}
 </div>
 
 It can be shown that the external propagators satisfy the relations,
@@ -119,7 +119,7 @@ These relations will come in handy when resolving our diagrams.
 In this section, we are interested in the two-point photonic propagator $$D_{\mu\nu}$$, which, in general, will have a diagram resembling: 
 
 <div style="text-align: center;">
-  {% include figure.liquid loading="eager" path="assets/img/QED_diagrams/D_munu_photon_propagator.png" title="D_munu_photon_propagator" class="img-fluid rounded z-depth-0" width="auto" height="270" %}
+  {% include figure.liquid loading="lazy" path="assets/img/QED_diagrams/D_munu_photon_propagator.png" title="D_munu_photon_propagator" class="img-fluid rounded z-depth-0" width="auto" height="270" %}
 </div>
 
 The "stuff" in the diagram represents some general interaction contained within the two external legs. This general interaction can be decomposed as a sum of the tree-level diagram and 1-particle irreducible (1PI) diagrams, where the (1PI) diagrams are those that cannot be split in two by cutting a single line. To first loop order, the contribution to $$D_{\mu\nu}$$ consists of the tree-level diagram and a single 1PI ferminoic loop. 
@@ -339,7 +339,7 @@ This resolution may seem a little off the cuff, we will return to these ideas la
 In the same vein as our photonic calculation, we calculate the 1-loop correction for the fermionic two-point propagator $$S(p)$$. Again, the general propagators can be decomposed as a sum of the tree-level diagram and 1PI diagrams. 
 
 <div style="text-align: center;">
-  {% include figure.liquid loading="eager" path="assets/img/QED_diagrams/S_fermion_propagator.png" title="S_fermion_propagator" class="img-fluid rounded z-depth-0" width="auto" height="270" %}
+  {% include figure.liquid loading="lazy" path="assets/img/QED_diagrams/S_fermion_propagator.png" title="S_fermion_propagator" class="img-fluid rounded z-depth-0" width="auto" height="270" %}
 </div>
 
 The 1PI diagram we calculate is $$i\Sigma(p)$$. Like the photonic propagator, we can write the general $$S$$ two-point function in terms of a series of the 1PI function $$i\Sigma$$,
@@ -546,7 +546,7 @@ We have again used $$e=e'\mu$$ to obtain the correct dimensions in the logarithm
 One more diagram to do. This is the one-loop correction to the three-point vertex. The general three-point interaction can be decomposed into two fermionic two-point interactions and a photonic general propagator, leading to a three-point 1-PI vertex. This vertex, $$\Gamma^\mu(p,p')$$ is a function of the momenta of the incoming particles. We calculate the first-order diagram for $$\Gamma^\mu(p,p')$$ as shown in the following diagram:
 
 <div style="text-align: center;">
-  {% include figure.liquid loading="eager" path="assets/img/QED_diagrams/3pt_loop_diagram.png" title="3pt_loop_diagram" class="img-fluid rounded z-depth-0" width="auto" height="270" %}
+  {% include figure.liquid loading="lazy" path="assets/img/QED_diagrams/3pt_loop_diagram.png" title="3pt_loop_diagram" class="img-fluid rounded z-depth-0" width="auto" height="270" %}
 </div>
 
 Using our Feynman rules as usual, the loop integral is,
