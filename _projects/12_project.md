@@ -12,10 +12,10 @@ For my numerical methods class, I studied the Fast Multipole Method (FMM). This 
 
 <div class="row">
   <div style="text-align: center;">
-    {% include figure.liquid loading="eager" path="assets/img/website_figure/error_figure.png" title="Error_figure" class="img-fluid rounded z-depth-0" width="450" height="auto" %}
+    {% include figure.liquid loading="lazy" path="assets/img/website_figure/error_figure.png" title="Error_figure" class="img-fluid rounded z-depth-0" width="450" height="auto" %}
   </div>
   <div style="text-align: center;">
-    {% include figure.liquid loading="eager" path="assets/img/website_figure/complexity_figure.png" title="Complexity_figure" class="img-fluid rounded z-depth-0" width="450" height="auto" %}
+    {% include figure.liquid loading="lazy" path="assets/img/website_figure/complexity_figure.png" title="Complexity_figure" class="img-fluid rounded z-depth-0" width="450" height="auto" %}
   </div>
 </div>
 
