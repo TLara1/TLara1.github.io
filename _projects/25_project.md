@@ -66,4 +66,5 @@ Disks and wavy rods colliding and settling due to gravity; all contacts here are
 A tank of creepy flappers swimming into each other and touching.
 </div>
 
+<p> We have published one publication related to this work {% cite Lara2027 %}.
 
