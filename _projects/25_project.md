@@ -5,7 +5,7 @@ description:
 img: assets/img/RMT_videos_img/flappers_n20_vorticity.gif
 importance: 1
 category: 2026
-related_publications: false
+related_publications: true
 ---
 
 I recently presented this work at a webinar of the student chapter of the US Association of Computational Mechanics. My slides can be found <a href="https://1drv.ms/p/c/862b1b0b1baeb400/IQDNN1aMA-a-RIctqTugPHSyAbrQ5h3VgHGd6lQfeHrQ9zY?e=gAGnzF"> here</a>, and the presentation was recorded <a href="https://www.youtube.com/watch?v=52YMncqQZ78"> here</a>!
