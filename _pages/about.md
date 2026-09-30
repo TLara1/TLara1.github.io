@@ -21,11 +21,7 @@ social: true # includes social icons at the bottom of the page
   </div>
 
   <div style="margin-bottom: 20px;">
-   I am a PhD student studying biological-flavoured maths at the University of Cambridge, supervised by professors Eric Lauga and Duncan Hewitt
-   
-    
-    
-    recently graduated from the Massachusetts Institute of Technology, where I studied physics and applied mathematics. My research is mostly in these areas, and over the last few years, I have worked in computational celestial, fluid, and continuum solid mechanics.
+   I am a PhD student studying biological-flavoured fluid mechanics at the University of Cambridge, supervised by professors <a href="https://www.damtp.cam.ac.uk/user/lauga/">Eric Lauga</a> and <a href="https://www.damtp.cam.ac.uk/user/drh39/">Duncan Hewitt</a>. I graduated from the Massachusetts Institute of Technology in 2022, where I studied physics and applied mathematics. In addition to my current research interests, over the last few years, I have also worked in celestial mechanics, continuum solid mechanics, and quantum transport problems.
   </div>
 
   <div align="justify" style="margin-bottom: 20px;">
