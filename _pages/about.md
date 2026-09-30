@@ -21,7 +21,11 @@ social: true # includes social icons at the bottom of the page
   </div>
 
   <div style="margin-bottom: 20px;">
-   I recently graduated from the Massachusetts Institute of Technology, where I studied physics and applied mathematics. My research is mostly in these areas, and over the last few years, I have worked in computational celestial, fluid, and continuum solid mechanics.
+   I am a PhD student studying biological-flavoured maths at the University of Cambridge, supervised by professors Eric Lauga and Duncan Hewitt
+   
+    
+    
+    recently graduated from the Massachusetts Institute of Technology, where I studied physics and applied mathematics. My research is mostly in these areas, and over the last few years, I have worked in computational celestial, fluid, and continuum solid mechanics.
   </div>
 
   <div align="justify" style="margin-bottom: 20px;">
