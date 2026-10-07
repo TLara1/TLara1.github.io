@@ -51,6 +51,8 @@ effective viscosities of suspensions, spherical, not spherical, viscoelastic, vi
 
 cilia transport, lagrangian transport via Cilia, fortune and Lauga, lots of remaining questions about cilia transport passive and active matter, healthy/unhealthy cilia and transport especially could be interesting.
 
+Number of holes for a salt shaker? Is there an optimum hole size/distribution/number that somehow makes the salt shaking and pouring process optimal? You can imagine too few holes is too slow and too many holes is too fast? Does this change based on the characteristics of the salt as well?
+
 To DO summer 2026
 Get better handwriting, find blackboard, get good at writing on it.
 Publish CNT paper, jellyfish paper, Ken FSI paper.
