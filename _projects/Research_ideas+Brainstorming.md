@@ -53,20 +53,13 @@ cilia transport, lagrangian transport via Cilia, fortune and Lauga, lots of rema
 
 Number of holes for a salt shaker? Is there an optimum hole size/distribution/number that somehow makes the salt shaking and pouring process optimal? You can imagine too few holes is too slow and too many holes is too fast? Does this change based on the characteristics of the salt as well?
 
-To DO summer 2026
-Get better handwriting, find blackboard, get good at writing on it.
-Publish CNT paper, jellyfish paper, Ken FSI paper.
-take notes fluids for PhD
-Ken RMT code organize - add to RMT github
-AMR for RMT code?
+To DO 
 new headshot
-get a good note taking system for PhD
-bird project github?
-RMT github
-fisherman story polish and add to website?
 get better dressed
 buy headphones
 buy new belt
+Work out solutions to Slow Viscous Flows examples and Biological Physics examples and add to webiste?
+
 
 Website updates + Future fixes
 standardize image size on project page
@@ -74,6 +67,7 @@ shrink images to save space
 change loading from eager->lazy on many images
 Change font to look more professional
 learn actually good looking colours
+Add teaching section to website
 Good fun icon?
 
 Reading List
