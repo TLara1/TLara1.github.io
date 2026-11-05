@@ -32,4 +32,5 @@ As a continuation of my previous jellyfish work with the MIT SPUR program, we co
     Swimming jellyfish with velocity vectors colored by magnitude.
 </div>
 
+I presented my work recently at the Girton College Pecha Kucha Research night event, my slides for the talk can be found here
 
