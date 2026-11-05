@@ -9,6 +9,8 @@
 - title: Education
   type: time_table
   contents:
+    - institution: University of Cambridge, Cambridge, United Kingdom
+      year: 2026 - 2030
     - institution: Massachusetts Institute of Technology, Cambridge, Massachusetts
       year: 2022 - 2026
       description:
@@ -23,6 +25,12 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Graduate Student in the Department of Applied Mathematics
+      Faculty Supervisor: Duncan Hewitt and Eric Lauga
+      institution: Cambridge University
+      year: 2026 - Current
+      description:
+        - Studying problems of biological motility in complex fluids.
     - title: Undergraduate Researcher with the Dunkel Group (SPUR Program 2025)
       Faculty Supervisor: Jörn Dunkel
       institution: Massachusetts Institute of Technology
@@ -60,6 +68,7 @@
     - year: 2026
       items:
         - T. Lara, K. Kamrin, "Simulating Contact-Rich Fluid-Structure Interaction Problems," US Association for Computational Mechanics Student Chapter Seminar Series, Webinar, August 2026.
+        - T. Lara, A. Tripathi, H. Walden, B. Weissbourd, J. Dunkel, "How jellyfish use fluid mechanics to feed without wasting energy," Girton College Student Research Night, Cambridge UK, November 2026.
     - year: 2025
       items:
         - T. Lara, A. Tripathi, H. Walden, "The Fluid Dynamics of Feeding Jellyfish," SPUR Student Project Seminar Series, Cambridge, MA, August 2025.
