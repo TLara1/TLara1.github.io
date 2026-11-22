@@ -46,6 +46,7 @@ I have climbed for almost 12 years now, focusing mostly on bouldering. Some of m
 <p>I also occasionally partake in local climbing competitions. Over the last few years, I have been a finalist in these competitions:</p>
 
 <ul>
+  <li>London University Bouldering Event Round 2 Rhino Brumely 2026 - 2nd place</li>
   <li>Rockspot Brookline Spooky Send-Off 2024 - 5th place</li>
   <li>Benchmark Climbing Battle of the Beast 2024 - 3rd place</li>
   <li>Central Rock Gym Harvard Ritual 2024 - 6th place</li>
